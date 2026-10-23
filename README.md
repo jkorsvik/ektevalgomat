@@ -7,21 +7,25 @@ source. Built from the research memo in `docs/research-memo.md`
 (2026-09-23) — see `docs/roadmap.md` for the full build history and
 exactly what's deliberately not built yet (a `rettelseslogg` UI,
 `konsistens`/`beneficiaries` fields the memo describes but no evidence
-yet needs). Current state (2026-10-13): 60 statements, 613 evidence
+yet needs). Current state (2026-10-24): 60 statements, 615 evidence
 files. That is the memo's 42 (utsagn 1-42), 2 "Tillegg" extras (44, 45),
 two owner-approved dimensions added after user feedback,
 "Tilgang, integrering og rettsstat" (46-51) and "Finansiering av
 fellesskapet" (52-58), utsagn-59 in "Norsk handlefrihet", and the two
 statsbudsjett 2027 statements (60, 61) added 2026-10-12. There is
 no utsagn 43, see roadmap "Phase 2r".
-53 of 60 statements have a coded position for all 9 parties. The rest
-(6, 45, 52, 55, 57, and 60/61, which carry institutional evidence
-only) are listed in roadmap.md's "Current state" section. Every statement is
-one claim with a "Hva betyr et svar i praksis?" box, and 13 are phrased
-in the opposite direction to hold the acquiescence spread at 12 points
-(was 41). Tests enforce both, see the roadmap. Every verbatim excerpt
-and every "stemte for/mot" is checked against its source by
-`tools/verify/verify_excerpts.py` and `tools/verify/verify_votes.py`.
+54 of 60 statements have a coded position for all 9 parties. The six
+that do not are utsagn-06 (7 of 9), utsagn-52 (8 of 9), utsagn-55 (7 of 9)
+and utsagn-57 (8 of 9), each one searched and left honestly empty, plus
+utsagn-60 and 61, which carry institutional evidence only. roadmap.md's
+"Current state" section says why each gap is a gap. Every statement is one
+claim with a "Hva betyr et svar i praksis?" box, and 13 are phrased in the
+opposite direction to hold the acquiescence spread at 12 points (was 41).
+Tests enforce both, see the roadmap. Every verbatim excerpt and every
+"stemte for/mot" is checked against its source by
+`tools/verify/verify_excerpts.py` and `tools/verify/verify_votes.py`; 316 of
+the 615 evidence rows carry such an excerpt, and the rest are votes and
+documents where the claim is the action itself, not a quotation.
 
 Live at **https://ektevalgomat.no**. A "small public Go server": Go
 stdlib `net/http`, content `go:embed`ded into the binary, a `FROM
@@ -78,7 +82,11 @@ changes evidence.
 `/healthz` returns 200 once the server is up. `/utsagn/{number}` renders
 the evidence-chain page for each statement. `/om` explains why this
 exists, `/metode` explains the methodology (source tiers, attribution),
-`/personvern` is the privacy page. `/resultat` is your own running match
+`/personvern` is the privacy page. `/data` lists the whole dataset and
+links it as files: `/data/utsagn.json`, `/data/evidens.json` and
+`/data/evidens.csv`, whose columns are documented on the page, because a
+reader who wants to check the project should not have to scrape HTML.
+`/resultat` is your own running match
 against documented party positions — same as `/`, still nothing ever
 reaches the server. `/` is the quiz itself — answers are stored in
 `localStorage` only.
@@ -134,6 +142,7 @@ curl localhost:8080/utsagn/1        # evidence chain for statement 1
 curl localhost:8080/metode          # methodology
 curl localhost:8080/om              # why this exists
 curl localhost:8080/personvern      # privacy page
+curl localhost:8080/data            # the dataset, and its file downloads
 curl localhost:8080/resultat        # your own running match
 ```
 
@@ -176,10 +185,14 @@ container up, and requires `/server healthcheck` to answer. Rollback is
 
 ## Corrections and the record of change
 
-This repository is published with a **single initial commit**, on
-purpose: a public history would carry the author's commit metadata and
-branch noise that has nothing to do with this project. There is therefore
-no git history to consult, and nothing here claims otherwise.
+The published history starts at the **initial public release**
+(`fbc64d8`, 2026-10-23). Every change since is a commit on `main`, and
+anything before that release is not published, so the history a reader can
+see begins where the project became public rather than where it began.
+
+Those commits are also not the record. A commit message is a note a
+developer writes for other developers, and half of what went wrong here was
+found by reading sources, not by reading diffs.
 
 The record of what changed lives in two files that ship with the code:
 

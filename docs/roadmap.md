@@ -14,21 +14,23 @@ Read this section first. The phase entries below are the build log, in
 order, and their "FINAL STATE" lines were true on the day they were
 written, not today.
 
-- **58 statements, 608 evidence files.** Memo statements 1-42, two
+- **60 statements, 615 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk
   handlefrihet". There is no utsagn 43 (see "Phase 2r").
-- **53 of 58 statements have a coded position for all 9 parties.** The
-  five that do not, each searched and left honestly empty (see "Phase
-  4b"): utsagn-06 7/9 (deliberate, see "Gap-fill pass"), utsagn-45 7/9
-  (R and Sp have only the Innst. 464 S context; neither program ties
-  EU/EØS to defence, `TestAddendumPendingCasesHaveNoFabricatedPartyPositions`),
-  utsagn-52 8/9 (Ap: "formuesskatt" appears nowhere in Innst. 2 S,
-  Innst. 3 S or Ap's program), utsagn-55 7/9 (Sp and MDG have no
-  total-level claim; R coded -2 from its program, file 603), utsagn-57
-  8/9 (Ap: only a Sp minister's sentence about Ap, file 710, which does
-  not set Ap's position).
+- **54 of 60 statements have a coded position for all 9 parties.** The
+  six that do not, each searched and left honestly empty (see "Phase 4b"):
+  utsagn-06 7/9 (deliberate, see "Gap-fill pass"), utsagn-52 8/9 (Ap:
+  "formuesskatt" appears nowhere in Innst. 2 S, Innst. 3 S or Ap's
+  program), utsagn-55 7/9 (Sp and MDG have no total-level claim; R coded -2
+  from its program, file 603), utsagn-57 8/9 (Ap: only a Sp minister's
+  sentence about Ap, file 710, which does not set Ap's position), and
+  utsagn-60 and 61, the two statsbudsjett statements, which carry
+  institutional evidence only and no party positions by design.
+  utsagn-45 was 7/9 when this block was first written and has since been
+  coded for R and Sp, so it is not on this list any more; the phase entries
+  below still describe it as it stood on their own date.
 - **Every source claim is machine-checked.** `tools/verify/verify_excerpts.py`
   fetches each source (full document) and requires every
   `verbatim_excerpt` to be in it: 309 checked, 0 failed (2026-10-03).
@@ -58,9 +60,11 @@ written, not today.
   corrections log (`internal/data/content/corrections/`), seven entries
   taken from this build log: five `rettelse` (something a reader could
   see was wrong and changed) and two `nesten` (caught before it reached
-  the site). This log plus this file are the complete public record: the
-  repository ships as a single initial commit, so there is no git history
-  to consult.
+  the site). This log plus this file are the readable public record, and
+  the gate below holds the count. The repository's git history starts at
+  the initial public release (`fbc64d8`, 2026-10-23): every change since is
+  a commit, and nothing before the release is published. Commits are still
+  not the record a reader is pointed to, because a reader cannot weigh one.
   `internal/data/corrections_test.go` and `TestOmPublishesEveryCorrection`
   are the gate.
 

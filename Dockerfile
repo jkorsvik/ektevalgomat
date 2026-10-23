@@ -32,6 +32,15 @@ COPY web ./web
 # only; the final image is FROM scratch and carries the one binary.
 COPY .github ./.github
 COPY CONTRIBUTING.md ./
+# The same trap, one level up: TestDocsStateTheRealCounts parses the
+# numbers out of README.md and docs/roadmap.md so prose cannot drift from
+# the dataset. It was written after finding the README claiming 613
+# evidence files against 615, 53 fully coded statements against 54, and
+# the roadmap two statements behind. Without these two files the test
+# fails inside the image only, which is the failure this comment exists
+# to stop repeating.
+COPY README.md ./
+COPY docs ./docs
 # Evidence YAML is parsed at package initialization — a malformed file is
 # a build-time bug. Run the focused test before producing an image so the
 # currently-running public site is never replaced by one that can't even

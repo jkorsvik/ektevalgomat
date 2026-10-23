@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* Generated, never hand-written: every number and every row on this page
+       comes from the dataset at build time. A "help us" page maintained by
+       hand drifts away from the real gaps and sends volunteers after work
+       that is already done, which is the fastest way to lose them. The test
+       fails if a count here stops matching the data. 2026-10-24. */}}
+  <h2>Hva som mangler, akkurat nå</h2>
+  <p class="prose-lede">
+    Av {{.StatementCount}} utsagn og {{.PartyCount}} partier er
+    {{.GapCells}} partiposisjoner ikke kodet, fordelt på
+    {{.GapStatements}} utsagn. Det er den eneste listen som betyr noe her:
+    alt annet på denne siden er arbeid som allerede er gjort.
+  </p>
+  <p>
+    De {{.GapCells}} cellene er ikke samme jobb. <strong>{{.NoSourceCells}}</strong>
+    mangler kilde helt: noen må finne den. <strong>{{.UncodedCells}}</strong>
+    har en kilde som allerede ligger på siden, men ingen som har skrevet hva
+    den sier: der er jobben å lese og mene noe.
+  </p>
+
+  {{if .Gaps}}
+  <table class="bidra-table">
+    <thead>
+      <tr><th>Utsagn</th><th>Parti</th><th>Hva som mangler</th><th></th></tr>
+    </thead>
+    <tbody>
+      {{range .Gaps}}
+      {{$g := .}}
+      {{range .Cells}}
+      <tr>
+        {{/* $ is the page root here, not the gap: without capturing $g the
+             link would build from the page and point at nothing. */}}
+        <td><a href="{{$g.Path}}">{{$g.Statement.ID}}</a>{{if $g.AllParties}} <span class="bidra-note">hele utsagnet</span>{{end}}</td>
+        <td><a href="/parti/{{.Party.ID}}">{{.Party.Name}}</a></td>
+        <td>{{if .NoSource}}ingen kilde{{else}}kilden er der, men ikke tolket{{end}}</td>
+        <td><a href="{{.IssueURL}}">meld fra <span aria-hidden="true">→</span></a></td>
+      </tr>
+      {{end}}
+      {{end}}
+    </tbody>
+  </table>
+  {{else}}
+  <p>Ingen celler mangler posisjon. Da er det ingenting å gjøre her, og det
+    skal denne siden si like tydelig som den sier hva som gjenstår.</p>
+  {{end}}
+
+  <h2>Kilder som er svake</h2>
+  <p>
+    {{.EvidenceCount}} kilder er samlet inn. {{.QuotedCount}} av dem har et
+    ordrett sitat som er sjekket mot dokumentet. {{.WeakCount}} kommer fra
+    noe annet enn en primærkilde:
+  </p>
+  <ul class="bidra-tiers">
+    {{range .WeakTiers}}
+    <li><strong>Kildegrad {{.Tier}}</strong>: {{.Count}} kilder. {{.Label}}</li>
+    {{end}}
+  </ul>
+  <p>
+    Den jobben er å bytte en sekundærkilde med den den selv viser til. Det
+    er kjedelig, det tar ti minutter per kilde, og det er den enkeltjobben
+    som løfter mest. <a href="/metode#kildegrad">Hva gradene betyr</a>.
+  </p>
+
+  <h2>Slik gjør du det</h2>
+  <ol class="bidra-steps">
+    <li>Velg én rad over. Ikke flere: én kilde er nok for å begynne.</li>
+    <li>Åpne kilden på utsagnssiden og les den. Ligger kilden der, les den
+      der. Mangler den, finn den hos den som eier den.</li>
+    <li>Trykk «meld fra». Skjemaet er forhåndsutfylt med utsagnet, partiet
+      og lenken, så du trenger bare å skrive hva kilden sier og hvor.</li>
+  </ol>
+  <p>
+    Du trenger ingen konto utover en vanlig GitHub-konto, og du trenger ikke
+    kunne kode. <a href="{{.Contributing}}">CONTRIBUTING.md</a> har alle
+    veiene inn, med tidsbruk, og hva som skjer med en melding etterpå.
+  </p>
+
+  <h2>Hva du ikke kan gjøre herfra</h2>
+  <p>
+    En melding er et forslag, ikke en endring. Ingen utenfor prosjektet kan
+    skrive i datasettet, og det er med vilje: en posisjon som er kodet feil
+    er verre enn en som mangler, fordi den ser ferdig ut. Alt du sender inn
+    blir lest av en person, og endringen havner i git med navnet ditt på
+    commiten hvis den tas inn.
+  </p>
+  <p>
+    Vi spør ikke om personopplysninger, og det er ingen innlogging her. Du
+    kan sjekke en påstand uten å si hvem du er.
+  </p>
+
+</main>
+
+<footer class="site">
+  <p>Ekte valgomat. Bygget {{year}}. <a href="/data">Åpne data <span aria-hidden="true">→</span></a></p>
+  <p>
+    Lisensiert under
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL-3.0</a>.
+    Kildekoden er åpen:
+    <a href="https://github.com/jkorsvik/ektevalgomat">github.com/jkorsvik/ektevalgomat</a>.
+    Metoden står under <a href="/metode">metode</a>.
+  </p>
+</footer>
+
+</body>
+</html>

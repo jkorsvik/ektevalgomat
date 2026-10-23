@@ -43,3 +43,50 @@ main > .metode-disclosure:first-of-type { margin-top: var(--sp-7); }
 .correction h3 { font-size: var(--fs-lg); margin: 0 0 var(--sp-3); }
 .correction-where { color: var(--muted); margin: 0 0 var(--sp-3); }
 .correction-note { margin-top: var(--sp-6); color: var(--muted); }
+
+/* /bidra: a real table, because the reader is scanning for one row to act on.
+   Collapsed to stacked lines on a narrow screen: four columns of Norwegian
+   party names cannot be read sideways on a phone. */
+.bidra-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--sp-5) 0;
+  font-size: var(--fs-md);
+}
+.bidra-table th,
+.bidra-table td {
+  text-align: left;
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.bidra-table th {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.bidra-table .bidra-note {
+  font-size: var(--fs-2xs);
+  color: var(--muted);
+  white-space: nowrap;
+}
+@media (max-width: 34rem) {
+  .bidra-table thead { display: none; }
+  .bidra-table tr { display: block; border-bottom: 1px solid var(--line); padding: var(--sp-3) 0; }
+  .bidra-table td { display: block; border: 0; padding: 0 0 var(--sp-1); }
+  /* Four stacked lines per row reads as four separate items. Keep the
+     statement and party on their own lines, then put what is missing and the
+     action on one: "ingen kilde · meld fra". */
+  .bidra-table td:nth-child(3),
+  .bidra-table td:nth-child(4) { display: inline-block; padding-right: var(--sp-3); }
+}
+.bidra-tiers,
+.bidra-steps {
+  margin: var(--sp-4) 0 var(--sp-5);
+  padding-left: var(--sp-7);
+}
+.bidra-tiers li,
+.bidra-steps li {
+  margin-bottom: var(--sp-2);
+}

@@ -86,8 +86,12 @@ exists, `/metode` explains the methodology (source tiers, attribution),
 links it as files: `/data/utsagn.json`, `/data/evidens.json` and
 `/data/evidens.csv`, whose columns are documented on the page, because a
 reader who wants to check the project should not have to scrape HTML.
-`/resultat` is your own running match
-against documented party positions — same as `/`, still nothing ever
+`/bidra` lists what is missing right
+now — which parties have no coded position on which statements, and which
+sources are weak — generated from the dataset at build time and gated by a
+test, because a hand-kept "help us" list drifts away from the real gaps and
+sends volunteers after work that is already done. `/resultat` is your own
+running match against documented party positions — same as `/`, still nothing ever
 reaches the server. `/` is the quiz itself — answers are stored in
 `localStorage` only.
 

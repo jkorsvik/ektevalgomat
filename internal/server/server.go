@@ -490,6 +490,7 @@ func New(logger *slog.Logger) http.Handler {
 	programTmpl := page("program.html.tmpl")
 	programsTmpl := page("programs.html.tmpl")
 	budgetTmpl := page("budget.html.tmpl")
+	bidraTmpl := page("bidra.html.tmpl")
 
 	payload := buildQuizPayload(ds)
 	payloadJSON, err := payload.MarshalIndent()
@@ -671,6 +672,14 @@ func New(logger *slog.Logger) http.Handler {
 		}
 		if err := dataTmpl.Execute(w, vm); err != nil {
 			logger.Error("render data", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
+	mux.HandleFunc("GET /bidra", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := bidraTmpl.Execute(w, buildBidraPage(ds, SnapshotDate)); err != nil {
+			logger.Error("render bidra", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}
 	})

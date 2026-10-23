@@ -910,6 +910,7 @@
     region.innerHTML = "";
     var card = buildStatementCard(DATA.statements[currentIndex]);
     region.appendChild(card);
+    region.appendChild(el("p", "lede key-hint", "Tips: tast 1–5 for å svare, S for «vet ikke»."));
     updateProgress();
     renderNav();
     if (focus) {
@@ -1578,14 +1579,38 @@
     });
 
     var wrap = el("div", "summary-card");
-    wrap.appendChild(el("h2", null, "Hvem er du mest på linje med?"));
-
+    // The headline names a ranking, so it only appears when there IS one.
+    // Above a thin or empty sample it would ask a question the page then
+    // refuses to answer (2026-10-23 review).
     if (documented.length === 0) {
+      wrap.appendChild(el("h2", null, "Resultatet ditt"));
       wrap.appendChild(el("p", "lede", "Ingen av utsagnene du har svart på med en posisjon, har en partiposisjon med kilde ennå. Det finnes derfor ingenting å sammenligne svaret ditt mot."));
       return wrap;
     }
 
     var overall = computeAggregate(documented);
+    // A ranking built on one or two answered statements is not a ranking.
+    // It is a single data point dressed up as a percentage. Until the sample
+    // is thick enough to mean anything, say so instead of printing a
+    // headline "100% samsvar" next to a party the visitor has matched on
+    // exactly one question. The per-statement tables below still show the
+    // per-question match, which is honest at any N.
+    var MIN_RANKING_N = 10;
+    if (documented.length < MIN_RANKING_N) {
+      wrap.appendChild(el("h2", null, "Resultatet ditt så langt"));
+      wrap.appendChild(
+        el(
+          "p",
+          "summary-lede",
+          "Du har foreløpig svart på " + documented.length + " utsagn med en partiposisjon med kilde. " +
+            "Det er for tynt grunnlag til å rangere partiene mot hverandre. " +
+            "Svar på minst " + MIN_RANKING_N + " for å se en rangering. " +
+            "Utsagnene under viser likevel samsvaret ditt per utsagn."
+        )
+      );
+      return wrap;
+    }
+    wrap.appendChild(el("h2", null, "Hvem er du mest på linje med?"));
     // A tie at the top is a tie. The headline used to name overall[0], so the
     // order of the data picked a winner among parties with the same number.
     var lead = leaders(overall);
@@ -1745,6 +1770,41 @@
       )
     );
 
+    // The evidence-strength label appears in a table column below but
+    // used to have no explanation anywhere on this page. It is defined on
+    // the statement pages and in /metode, but this is where people read
+    // it 119 times. A legend directly above the first table closes that
+    // gap without sending anyone to another page (2026-10-23 review).
+    var legend = document.createElement("details");
+    legend.className = "disclosure evidens-legend";
+    var legendSum = document.createElement("summary");
+    legendSum.textContent = "Hva betyr evidensstyrken?";
+    legend.appendChild(legendSum);
+    var legendList = document.createElement("ul");
+    [
+      ["●●● Sterk", "minst én kilde i klasse A: en offisiell avstemning, en lov eller et register."],
+      ["●●○ Moderat", "beste kilde er klasse B: partiets eget program eller en grundig redegjørelse."],
+      ["●○○ Svak", "bare klasse C eller lavere: debatt, intervju eller sekundær omtale."],
+      ["○○○ Ingen kodet posisjon", "kilder er listet, men ingen av dem koder et standpunkt. Vises som kontekst."],
+      ["Ingen evidens innhentet ennå", "vi har ikke funnet noen kilde for denne cellen."]
+    ].forEach(function (row) {
+      var li = document.createElement("li");
+      var strong = document.createElement("strong");
+      strong.textContent = row[0];
+      li.appendChild(strong);
+      li.appendChild(document.createTextNode(" — " + row[1]));
+      legendList.appendChild(li);
+    });
+    legend.appendChild(legendList);
+    var metodeLink = document.createElement("p");
+    metodeLink.className = "lede";
+    var ml = document.createElement("a");
+    ml.href = "/metode";
+    ml.textContent = "Les mer om kildene og evidensstyrken";
+    metodeLink.appendChild(ml);
+    legend.appendChild(metodeLink);
+    wrap.appendChild(legend);
+
     // Say the skip count out loud. A "vet ikke" is a real reply but not a
     // position, so it is held out of the match entirely — and a
     // percentage must never read as more complete than the answers
@@ -1764,6 +1824,26 @@
 
     wrap.appendChild(renderSummary());
 
+    // The page is ~29 000 px tall with 60 statement tables. A compact
+    // jump index at the top is the cheapest way to make the detail
+    // reachable without a scroll marathon (2026-10-23 review). It is a
+    // <details> so it stays out of the way until asked for.
+    var toc = document.createElement("details");
+    toc.className = "disclosure result-toc";
+    var tocSum = document.createElement("summary");
+    tocSum.textContent = "Hopp til et utsagn (" + DATA.statements.length + ")";
+    toc.appendChild(tocSum);
+    var tocGrid = document.createElement("div");
+    tocGrid.className = "toc-grid";
+    DATA.statements.forEach(function (st) {
+      var a = document.createElement("a");
+      a.href = "#resultat-utsagn-" + st.number;
+      a.textContent = st.number + (st.short_name ? " " + st.short_name : "");
+      tocGrid.appendChild(a);
+    });
+    toc.appendChild(tocGrid);
+    wrap.appendChild(toc);
+
     DATA.statements.forEach(function (st) {
 
       var cells = DATA.cells[st.id] || {};
@@ -1779,6 +1859,12 @@
       });
 
       var section = el("div", "statement-result");
+      // resultat-utsagn-, NOT utsagn-: that prefix is the quiz card's id,
+      // owned solely by statementCardId() and treated by handleHash as
+      // "open question N". Reusing it here would both duplicate the id
+      // scheme (web/dom_id_guard_test.go fails on that) and make a TOC
+      // click call showQuestion() on a page with no #quiz-region.
+      section.id = "resultat-utsagn-" + st.number;
       var heading = el("h3", null, "Utsagn " + st.number + (st.short_name ? ": " + st.short_name : ""));
       section.appendChild(heading);
 
@@ -1804,6 +1890,17 @@
 
       var table = document.createElement("table");
       table.className = "party-overview";
+      var thead = document.createElement("thead");
+      var headRow = document.createElement("tr");
+      ["Parti", "Samsvar", "Dokumentasjon"].forEach(function (label) {
+        var th = document.createElement("th");
+        th.scope = "col";
+        th.textContent = label;
+        headRow.appendChild(th);
+      });
+      thead.appendChild(headRow);
+      table.appendChild(thead);
+      var tbody = document.createElement("tbody");
       documented.forEach(function (d) {
         var userReply = answers[st.id];
         var matchPct = pct(userReply, d.cell.party_position);
@@ -1821,9 +1918,15 @@
           scoreText = "Ikke besvart";
         }
         row.appendChild(el("td", null, scoreText));
-        row.appendChild(el("td", "po-value", d.cell.evidensstyrke || ""));
-        table.appendChild(row);
+        // po-evidence, not po-value: .po-value is hidden under 520px on
+        // the statement pages because the exact -2..+2 value repeats in
+        // the per-party card below. Here the column IS the evidence
+        // signal and has no repeat below, so it keeps its own class and
+        // stays visible on a phone (2026-10-23 review).
+        row.appendChild(el("td", "po-evidence", d.cell.evidensstyrke || ""));
+        tbody.appendChild(row);
       });
+      table.appendChild(tbody);
       section.appendChild(table);
 
       if (undocumented.length > 0) {
@@ -1834,12 +1937,24 @@
         details.appendChild(summary);
         var uTable = document.createElement("table");
         uTable.className = "party-overview party-overview-empty";
+        var uHead = document.createElement("thead");
+        var uHeadRow = document.createElement("tr");
+        ["Parti", "Status"].forEach(function (label) {
+          var th = document.createElement("th");
+          th.scope = "col";
+          th.textContent = label;
+          uHeadRow.appendChild(th);
+        });
+        uHead.appendChild(uHeadRow);
+        uTable.appendChild(uHead);
+        var uBody = document.createElement("tbody");
         undocumented.forEach(function (party) {
           var row = document.createElement("tr");
           row.appendChild(el("td", "po-party", party.short));
           row.appendChild(el("td", null, "Ikke vurdert"));
-          uTable.appendChild(row);
+          uBody.appendChild(row);
         });
+        uTable.appendChild(uBody);
         details.appendChild(uTable);
         section.appendChild(details);
       }
@@ -1875,6 +1990,40 @@
     if (replied === 0) return null;
     return { index: first < 0 ? DATA.statements.length - 1 : first, replied: replied };
   }
+
+  // Number-key shortcuts (2026-10-23 review): 1-5 pick a point on the
+  // scale, S picks «vet ikke». Restricted to the one-question view —
+  // in utforskermodus every card is on screen at once, so "the current
+  // statement" would be whichever one happened to be in view. A modifier
+  // key or a text field turns the shortcut off, so it can never eat a
+  // normal keystroke. The action is a real .click() on the same button a
+  // pointer would use, so focus, aria-pressed and the announce() call all
+  // follow the existing path instead of a second implementation.
+  document.addEventListener("keydown", function (e) {
+    if (PAGE === "resultat") return;
+    if (viewMode !== "enkel") return;
+    if (reviewing || showingResult) return;
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    var t = e.target;
+    if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT" || t.isContentEditable)) return;
+    var st = DATA.statements[currentIndex];
+    if (!st) return;
+    var card = document.getElementById(statementCardId(st.number));
+    if (!card) return;
+    var buttons = card.querySelectorAll(".scale button");
+    var idx = -1;
+    if (e.key >= "1" && e.key <= "5") {
+      idx = Number(e.key) - 1;
+    } else if (e.key === "s" || e.key === "S") {
+      idx = SCALE.length; // the skip button is the last child of .scale
+    } else {
+      return;
+    }
+    var btn = buttons[idx];
+    if (!btn) return;
+    e.preventDefault();
+    btn.click();
+  });
 
   noteState.nosave = !Store.available(storage);
   noteState.dropped = Store.droppedMessage(loadReport.kept, loadReport.dropped);

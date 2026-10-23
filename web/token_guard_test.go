@@ -35,15 +35,17 @@ func TestEveryColourComesFromAToken(t *testing.T) {
 		}
 		files++
 		body := string(b)
-		tokens += len(hex.FindAllString(rootBlock.FindString(body), -1))
+		tokens += len(hex.FindAllString(strings.Join(rootBlock.FindAllString(body, -1), "\n"), -1))
 
-		// Skip the :root block; that is where colours are defined.
-		rooted := ""
-		if loc := rootBlock.FindStringIndex(body); loc != nil {
-			rooted = body[:loc[0]] + strings.Repeat("\n", strings.Count(body[loc[0]:loc[1]], "\n")) + body[loc[1]:]
-		} else {
-			rooted = body
-		}
+		// Skip every :root block; those are where colours are defined.
+		// 2026-10-23: the dark theme added a second :root block inside
+		// @media (prefers-color-scheme: dark). Reading only the first one
+		// would have made the gate fail on any legitimate second theme,
+		// which is not the rule it enforces — the rule is "every colour
+		// is a token", not "there is exactly one block of tokens".
+		rooted := rootBlock.ReplaceAllStringFunc(body, func(block string) string {
+			return strings.Repeat("\n", strings.Count(block, "\n"))
+		})
 		for _, line := range strings.Split(rooted, "\n") {
 			if !hex.MatchString(line) {
 				continue
@@ -112,4 +114,59 @@ func TestEverySizeComesFromAToken(t *testing.T) {
 	if checked != 0 {
 		t.Fatalf("%d declarations still use a raw length", checked)
 	}
+}
+
+// TestDarkThemeDefinesEveryToken keeps the second token block honest. A
+// dark theme that forgets a token silently inherits the light value for
+// that one property (a white card on a dark page, an accent that vanishes
+// into the surface), and nothing else in the suite would notice. So: the
+// dark block must define exactly the same custom-property names as the
+// light one — no missing token, and no token invented only for dark.
+func TestDarkThemeDefinesEveryToken(t *testing.T) {
+	b, err := fs.ReadFile(Static, "static/css/style.css")
+	if err != nil {
+		t.Fatalf("read style.css: %v", err)
+	}
+	rootBlocks := regexp.MustCompile(`(?s):root\s*\{(.*?)\}`).FindAllStringSubmatch(string(b), -1)
+	if len(rootBlocks) != 2 {
+		t.Fatalf("found %d :root blocks, want 2 (light and prefers-color-scheme dark)", len(rootBlocks))
+	}
+	// A token is a COLOUR token when its light value is a hex literal.
+	// Type, space, family and width tokens are theme-independent on
+	// purpose, so the dark block must not repeat them; it must repeat
+	// every colour, exactly.
+	tokenValue := regexp.MustCompile(`(?m)^\s*(--[a-z0-9-]+)\s*:\s*([^;]+);`)
+	hexValue := regexp.MustCompile(`#[0-9a-fA-F]{3,8}\b`)
+	values := func(block string) map[string]string {
+		out := map[string]string{}
+		for _, m := range tokenValue.FindAllStringSubmatch(block, -1) {
+			out[m[1]] = strings.TrimSpace(m[2])
+		}
+		return out
+	}
+	light, dark := values(rootBlocks[0][1]), values(rootBlocks[1][1])
+	colourTokens := 0
+	for name, value := range light {
+		if !hexValue.MatchString(value) {
+			continue
+		}
+		colourTokens++
+		dv, ok := dark[name]
+		if !ok {
+			t.Errorf("dark theme does not define %s, so it silently inherits the light colour %s", name, value)
+			continue
+		}
+		if !hexValue.MatchString(dv) {
+			t.Errorf("dark theme defines %s as %q, which is not a hex colour", name, dv)
+		}
+	}
+	if colourTokens < 8 {
+		t.Fatalf("only %d colour tokens found in the light theme; the check would prove nothing", colourTokens)
+	}
+	for name := range dark {
+		if _, ok := light[name]; !ok {
+			t.Errorf("dark theme defines %s, which the light theme does not; the two themes have drifted", name)
+		}
+	}
+	t.Logf("light %d colour tokens, dark %d tokens", colourTokens, len(dark))
 }

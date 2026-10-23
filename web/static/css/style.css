@@ -123,7 +123,13 @@ header.site nav a {
   color: var(--muted);
   text-decoration: none;
   font-size: var(--fs-md);
-  padding: var(--sp-1) 0;
+  /* 2026-10-23 review: the hit area was ~28px tall because the padding
+     was sp-1. min-height + inline-flex raises it to the 44px touch
+     guideline without changing the visual type size. */
+  padding: var(--sp-4) 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   border-bottom: 1px solid transparent;
 }
 header.site nav a:hover { color: var(--ink); border-bottom-color: var(--accent); }
@@ -467,6 +473,26 @@ main {
 .party-overview .po-link a { color: var(--accent); font-size: var(--fs-sm); text-decoration: none; }
 .party-overview .po-link a:hover { text-decoration: underline; }
 .party-overview-empty .po-word { color: var(--muted); font-weight: 400; }
+
+/* Column headers on the results page (2026-10-23 review): the table had
+   no <th> at all, so three columns of text had to be inferred. */
+.party-overview thead th {
+  text-align: left;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: var(--sp-2) var(--sp-2);
+  border-bottom: 1px solid var(--line);
+}
+/* The evidence label keeps its own class so the statement pages' mobile
+   rule (.po-value { display: none } below 520px) cannot hide it here,
+   where the column is the only place the label appears. */
+.party-overview .po-evidence {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
 
 /* Narrow screens: the exact -2..+2 value is already repeated in the
    per-party detail card below (.party-verdict), so drop it here rather
@@ -933,6 +959,66 @@ a.dim-name:hover { color: var(--accent-strong); text-decoration: underline; }
 }
 .dimension-disclosure .bar-chart { margin: var(--sp-2) 0 var(--sp-5); }
 
+/* Evidence-strength legend on the results page (2026-10-23 review). The
+   label "Sterk" appeared 119 times in the tables and was defined nowhere
+   on that page. */
+.key-hint {
+  font-size: var(--fs-xs);
+  margin: var(--sp-2) 0 0;
+}
+.evidens-legend {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: var(--sp-1) var(--sp-6);
+  background: var(--surface);
+  margin: var(--sp-5) 0;
+}
+.evidens-legend summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: var(--fs-md);
+  padding: var(--sp-4) 0;
+}
+.evidens-legend[open] summary { margin-bottom: var(--sp-2); }
+.evidens-legend ul { margin: 0 0 var(--sp-4); padding-left: var(--sp-6); }
+.evidens-legend li { font-size: var(--fs-md); color: var(--muted); margin-bottom: var(--sp-3); }
+.evidens-legend li strong { color: var(--ink); }
+
+/* Jump index for the ~29 000 px results page (2026-10-23 review): 60
+   statement tables with no way to reach one without scrolling. */
+.result-toc {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: var(--sp-6) 0;
+}
+.result-toc summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: var(--fs-md);
+  padding: var(--sp-4) 0;
+}
+.result-toc[open] summary { margin-bottom: var(--sp-2); }
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: var(--sp-1) var(--sp-4);
+  padding: var(--sp-2) 0 var(--sp-5);
+}
+.toc-grid a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  padding: var(--sp-3) 0;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+}
+.toc-grid a:hover { color: var(--ink); border-bottom-color: var(--accent); }
+
 /* Returning to a specific card from the statement page (the "tilbake
    til utsagn N" link, statement.html.tmpl's sticky-context) briefly
    outlines the card you land on, so the jump is visible even on a long
@@ -965,6 +1051,8 @@ footer.site {
   font-size: var(--fs-xs);
   border-top: 1px solid var(--line);
 }
+/* 44px touch target for the footer's own link (Personvern). */
+footer.site a { padding: var(--sp-3) 0; display: inline-block; }
 
 .no-js-notice {
   display: none;
@@ -1188,4 +1276,26 @@ details[open] > .budget-section-sum h2 { color: var(--ink); }
 @media (max-width: 480px) {
   .avveining { padding: var(--sp-5) var(--sp-4); }
   .avveining-valg { grid-template-columns: 1fr; }
+}
+
+/* Dark mode (2026-10-23 review). Every colour on the site is a token in
+   :root except the two alpha masks, so one override flips the whole
+   theme. Contrast checked: ink 15.6:1 on bg, muted 7.9:1, accent 8.6:1,
+   accent-ink 8.6:1 on accent. Party hues are untouched: they are data,
+   and they already clear 4.5:1 against both surfaces. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #14141a;
+    --surface: #1b1b23;
+    --card: #1f1f28;
+    --ink: #ecebf1;
+    --muted: #a6a5b4;
+    --line: #33323e;
+    --accent: #b9a3e3;
+    --accent-strong: #d3c4f0;
+    --accent-soft: #2a2438;
+    --accent-ink: #14141a;
+    --seg-empty: #423c52;
+  }
 }

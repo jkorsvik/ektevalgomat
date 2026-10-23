@@ -776,6 +776,11 @@
     fs.appendChild(ephWrap);
     eph.addEventListener("change", function () {
       ephemeral = eph.checked;
+      // The nav reads `ephemeral` (the /resultat link becomes an inline
+      // "Se resultatet her" button), and nothing re-renders it on a toggle,
+      // so without this the control kept showing the link it was built
+      // with. 2026-10-23.
+      renderNav();
       paintNote();
       if (ephemeral) {
         announce("Midlertidig økt er slått på. Nye svar lagres ikke på denne enheten.");
@@ -880,6 +885,25 @@
     });
     nav.appendChild(next);
 
+    // An ephemeral session has no /resultat link, because nothing is stored
+    // for that page to read. Before this, the ONLY way to see a result was
+    // to answer all the way to the last question and go through the review,
+    // so the inline result added in the 2026-10-23 pass was unreachable for
+    // 59 of 60 questions. Offer it as soon as there is something to show.
+    // Rendered unconditionally in ephemeral mode, not gated on
+    // countAnswered(): a click on an answer updates the card in place and
+    // never re-runs renderNav, so a conditional button would stay absent
+    // until the next question. The inline result has its own empty state,
+    // so opening it before answering is honest rather than broken.
+    if (ephemeral) {
+      var showNow = el("button", "quiz-btn quiz-to-result", "Se resultatet her");
+      showNow.type = "button";
+      showNow.addEventListener("click", function () {
+        renderInlineResult();
+      });
+      nav.appendChild(showNow);
+    }
+
     if (!ephemeral) {
       var openResult = document.createElement("a");
       openResult.className = "quiz-to-result";
@@ -910,7 +934,16 @@
     region.innerHTML = "";
     var card = buildStatementCard(DATA.statements[currentIndex]);
     region.appendChild(card);
-    region.appendChild(el("p", "lede key-hint", "Tips: tast 1–5 for å svare, S for «vet ikke»."));
+    // The hint goes directly under the scale, not after the card: below the
+    // card it landed past the fold on a 900px viewport, so the shortcut it
+    // documents was invisible at the moment it applied.
+    var scaleEl = card.querySelector(".scale");
+    if (scaleEl && scaleEl.parentNode) {
+      scaleEl.parentNode.insertBefore(
+        el("p", "lede key-hint", "Tips: tast 1–5 for å svare, S for «vet ikke»."),
+        scaleEl.nextSibling
+      );
+    }
     updateProgress();
     renderNav();
     if (focus) {

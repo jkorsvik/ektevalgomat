@@ -20,10 +20,13 @@ import (
 // YAML, open a pull request, and let the existing poll-deploy.sh cron
 // rebuild within a few minutes.
 //
-// The record of what changed is NOT the git history here. This repository
-// was published with a single initial commit, deliberately, so it carries
-// no history to consult. Two files carry the record instead, and both
-// ship with the code:
+// The record of what changed is NOT primarily the git history. The published
+// history starts at the initial public release (fbc64d8, 2026-10-23) and every
+// change since is a commit, but nothing before that release is published, so
+// the history a reader can see begins where the project became public rather
+// than where it began. Commits are also a developer's note to other
+// developers. Two files carry the record instead, and both ship with the
+// code:
 //
 //   - docs/roadmap.md — the day-by-day build log, including the research
 //     reversals that never reached the site.

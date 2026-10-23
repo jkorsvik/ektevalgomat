@@ -28,6 +28,11 @@ budget/        de alternative budsjettene
 corrections/   rettelsesloggen, som vises på /om
 ```
 
+Samme innhold serveres også som filer på `/data` (JSON og CSV, generert fra
+disse filene ved hvert kall). Endrer du skjemaet, endrer du det ett sted:
+`evidenceColumns` i `internal/server/opendata.go`, som gir CSV-overskriften,
+JSON-feltene og tabellen på /data. En test krever at de tre er enige.
+
 En påstand i `evidence/` er den enheten du bidrar med. Den sier hva et parti
 har gjort eller ment, på hvilket grunnlag, og hvor det står:
 

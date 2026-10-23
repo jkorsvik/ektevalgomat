@@ -483,6 +483,7 @@ func New(logger *slog.Logger) http.Handler {
 	indexTmpl := page("index.html.tmpl")
 	statementTmpl := page("statement.html.tmpl")
 	metodeTmpl := page("metode.html.tmpl")
+	dataTmpl := page("data.html.tmpl")
 	omTmpl := page("om.html.tmpl")
 	personvernTmpl := page("personvern.html.tmpl")
 	resultatTmpl := page("resultat.html.tmpl")
@@ -641,6 +642,49 @@ func New(logger *slog.Logger) http.Handler {
 			logger.Error("render metode", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}
+	})
+
+	// Open data. The JSON and CSV are generated from the same dataset the
+	// pages render, so a reader checking the export and a reader checking a
+	// statement card are looking at one source.
+	mux.HandleFunc("GET /data", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		total, withQuote := quoteCounts(ds)
+		vm := struct {
+			Meta           pageMeta
+			SnapshotDate   string
+			Licence        string
+			StatementCount int
+			EvidenceCount  int
+			WithQuote      int
+			Columns        []evidenceColumn
+		}{
+			Meta: meta("Data · Ekte valgomat",
+				"Hele datasettet bak valgomaten som filer: utsagn og påstander med kilde, som JSON og CSV, med forklaring av hver kolonne.",
+				"/data"),
+			SnapshotDate:   SnapshotDate,
+			Licence:        licenceNote,
+			StatementCount: len(ds.Statements),
+			EvidenceCount:  total,
+			WithQuote:      withQuote,
+			Columns:        evidenceColumns,
+		}
+		if err := dataTmpl.Execute(w, vm); err != nil {
+			logger.Error("render data", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
+	mux.HandleFunc("GET /data/utsagn.json", func(w http.ResponseWriter, r *http.Request) {
+		serveStatementsJSON(w, ds)
+	})
+
+	mux.HandleFunc("GET /data/evidens.json", func(w http.ResponseWriter, r *http.Request) {
+		serveEvidenceJSON(w, ds)
+	})
+
+	mux.HandleFunc("GET /data/evidens.csv", func(w http.ResponseWriter, r *http.Request) {
+		serveEvidenceCSV(w, ds)
 	})
 
 	mux.HandleFunc("GET /om", func(w http.ResponseWriter, r *http.Request) {

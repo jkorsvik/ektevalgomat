@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* 2026-10-23. The dataset was reachable only through the site or the
+       repo, so "sjekk det selv" meant "read our Go, one card at a time".
+       This page is the same data in files a spreadsheet or a script can
+       take, and it is where a consumer finds out what the columns mean
+       before guessing. Column names and descriptions come from
+       server.evidenceColumns, the same list the CSV header is built from,
+       so this page cannot describe a column the file does not have. */}}
+  <h2>Hele datasettet, som filer</h2>
+  <p class="prose-lede">
+    Alt valgomaten bygger på ligger åpent: {{.StatementCount}} utsagn og
+    {{.EvidenceCount}} påstander med kilde. Du kan laste det ned og sjekke
+    det selv, uten å lese kode og uten å spørre noen.
+  </p>
+
+  <table class="results">
+    <tr><th>Fil</th><th>Innhold</th><th>Format</th></tr>
+    <tr>
+      <td><a href="/data/utsagn.json">utsagn.json</a></td>
+      <td>{{.StatementCount}} utsagn: nummer, dimensjon, tekst, hva som står på spill</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td><a href="/data/evidens.json">evidens.json</a></td>
+      <td>{{.EvidenceCount}} påstander med kilde, sitat, posisjon og merknader</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td><a href="/data/evidens.csv">evidens.csv</a></td>
+      <td>Samme påstander, én rad per påstand</td>
+      <td>CSV, UTF-8</td>
+    </tr>
+  </table>
+
+  <p>
+    Hver fil har <code>schema_version</code> og <code>snapshot_date</code> i
+    toppen, slik at du kan se når den er hentet og om feltene er endret.
+    Lisens: {{.Licence}}. Kildekoden er
+    <a href="https://github.com/jkorsvik/ektevalgomat">åpen</a>.
+  </p>
+
+  <h3>Slik henger filene sammen</h3>
+  <p>
+    <code>statement_id</code> i evidens peker på <code>id</code> i utsagn, og
+    <code>party_id</code> peker på partiets id (<code>ap</code>,
+    <code>frp</code>, <code>h</code>, og så videre). Det er hele
+    koblingen: en påstand sier at ett parti har én posisjon på ett utsagn, og
+    hvor det står.
+  </p>
+  <p>
+    {{.WithQuote}} av {{.EvidenceCount}} påstander har et ordrett sitat fra
+    kilden lagret i <code>verbatim_excerpt</code>. Der er cellen tom, og det
+    betyr ikke at sitatet er uinteressant, bare at det ikke er lagret. Slå
+    opp <code>source_url</code> i stedet.
+  </p>
+
+  <h3>Åpne CSV-filen i et regneark</h3>
+  <p>
+    Filen er UTF-8 uten BOM, fordi et BOM-tegn gjør at et skript som leser
+    første kolonnenavn får et usynlig tegn foran og feiler uten å si fra. I
+    Excel: velg <em>Data</em>, deretter <em>Fra tekst/CSV</em>, velg filen, og sett
+    tegnoppsett til <em>65001: Unicode (UTF-8)</em>. Da vises æ, ø og å
+    riktig. Numbers og Excel åpner den direkte.
+  </p>
+
+  <h3>Kolonnene i evidens</h3>
+  <table class="results data-columns">
+    <tr><th>Kolonne</th><th>Betyr</th></tr>
+    {{range .Columns}}
+    <tr><td><code>{{.Name}}</code></td><td>{{.Doc}}</td></tr>
+    {{end}}
+  </table>
+
+  <h3>Det som ikke er med</h3>
+  <p>
+    Prosjektet lagrer påstanden og lenken, men ikke en kopi av dokumentet.
+    Derfor kan en påstand bli usjekkbar hvis kilden flytter eller fjerner
+    siden sin. Vi sier det her fordi et datasett som ser komplett ut er
+    verre enn ett som sier hva det mangler.
+  </p>
+
+  <h3>Vil du bidra?</h3>
+  <p>
+    Du trenger ikke kode. Det nyttigste er å sjekke en påstand mot kilden
+    sin og si fra når tolkningen ikke stemmer.
+    <a href="https://github.com/jkorsvik/ektevalgomat/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+    forklarer reglene dataene følger, og hva som må kjøres før en endring tas
+    inn.
+  </p>
+</main>
+
+<footer class="site">
+  <p>Ekte valgomat. Bygget {{year}}. <a href="/metode">Metoden <span aria-hidden="true">→</span></a></p>
+  <p>
+    Lisensiert under
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL-3.0</a>.
+    Kildekoden er åpen:
+    <a href="https://github.com/jkorsvik/ektevalgomat">github.com/jkorsvik/ektevalgomat</a>.
+  </p>
+</footer>
+
+</body>
+</html>

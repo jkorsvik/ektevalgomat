@@ -27,7 +27,7 @@ func sitemap(w http.ResponseWriter, r *http.Request, ds *data.Dataset) {
 	add := func(path string) {
 		b.WriteString("  <url><loc>" + siteBase + path + "</loc></url>\n")
 	}
-	for _, p := range []string{"/", "/partier", "/budsjett", "/metode", "/om", "/personvern"} {
+	for _, p := range []string{"/", "/partier", "/budsjett", "/metode", "/data", "/om", "/personvern"} {
 		add(p)
 	}
 	for _, s := range ds.Statements {

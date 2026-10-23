@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Send e-post i stedet
+    url: mailto:jkorsvik@outlook.com?subject=Ekte%20valgomat%20-%20tilbakemelding
+    about: Har du ikke GitHub-konto, går det helt fint å sende en e-post.
+  - name: Hvordan bidra
+    url: https://github.com/jkorsvik/ektevalgomat/blob/main/CONTRIBUTING.md
+    about: Reglene dataene følger, hvordan en påstand er bygget, og gatene du bør kjøre før en pull request.

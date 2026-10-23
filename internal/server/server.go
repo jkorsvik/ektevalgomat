@@ -13,6 +13,7 @@ import (
 	"io/fs"
 	"log/slog"
 	"net/http"
+	"net/url"
 	"strconv"
 	"strings"
 	"time"
@@ -244,6 +245,53 @@ func addendumCount(ds *data.Dataset) int {
 // the figure the front page and /om show as the number of existing
 // statements; the memo's original PLAN is a separate figure
 // (plannedMemoTotal), always presented as a plan.
+// repoURL is the public tracker a reader is sent to when they want to
+// report a bad source reading or propose a statement. It is the same repo
+// the footer already links; the difference is that these links arrive with
+// the claim or statement already filled in.
+const repoURL = "https://github.com/jkorsvik/ektevalgomat"
+
+// issueURL builds a prefilled "new issue" link. Prefilling matters more
+// than it looks: a report that starts empty becomes "one of the statements
+// about defence, I think the FrP one is wrong", which cannot be acted on
+// without a round trip. With the evidence id and its source in the body,
+// the report is already specific.
+//
+// The templates are Markdown files, not issue forms, because only Markdown
+// templates honour a prefilled body through the URL.
+func issueURL(tmplName, title, body string) string {
+	q := url.Values{}
+	q.Set("template", tmplName)
+	// Empty values are left out rather than sent as "title=": GitHub keeps
+	// an empty title parameter, which leaves a blank required field where
+	// the template's own placeholder would have been.
+	if title != "" {
+		q.Set("title", title)
+	}
+	if body != "" {
+		q.Set("body", body)
+	}
+	return repoURL + "/issues/new?" + q.Encode()
+}
+
+// quoteCounts reports how many evidence claims carry an archived verbatim
+// excerpt from their source, and how many carry none.
+//
+// Derived from the dataset on every render, never written down. /metode
+// states the two numbers to a visitor as a promise about what they can
+// check on the page, so a hand-typed pair would go stale the first time a
+// claim was added — the same trap the roadmap records for planned
+// statement counts ("it is a PLAN, never a count of statements that
+// exist").
+func quoteCounts(ds *data.Dataset) (total, withQuote int) {
+	for _, e := range ds.Evidence {
+		if e.VerbatimExcerpt != "" {
+			withQuote++
+		}
+	}
+	return len(ds.Evidence), withQuote
+}
+
 func coreStatementBuilt(ds *data.Dataset) int {
 	return len(ds.Statements) - addendumCount(ds)
 }
@@ -419,6 +467,8 @@ func New(logger *slog.Logger) http.Handler {
 		"evidenceClassBadge": evidenceClassBadge,
 		"evidensstyrkeDots":  evidensstyrkeDots,
 		"sourceTierShort":    sourceTierShort,
+		"issueURL":           issueURL,
+		"siteBase":           func() string { return siteBase },
 		"nok":                nok,
 		"dateNO":             dateNO,
 		"pct":                pct,
@@ -571,14 +621,21 @@ func New(logger *slog.Logger) http.Handler {
 
 	mux.HandleFunc("GET /metode", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		evidenceTotal, evidenceWithQuote := quoteCounts(ds)
 		vm := struct {
-			Meta         pageMeta
-			SnapshotDate string
+			Meta                 pageMeta
+			SnapshotDate         string
+			EvidenceTotal        int
+			EvidenceWithQuote    int
+			EvidenceWithoutQuote int
 		}{
 			Meta: meta("Metode · Ekte valgomat",
 				"Slik blir en partiposisjon til: hva som er kilde, hva som er tolkning, og hvorfor tre separate mål aldri slås sammen til én score.",
 				"/metode"),
-			SnapshotDate: SnapshotDate,
+			SnapshotDate:         SnapshotDate,
+			EvidenceTotal:        evidenceTotal,
+			EvidenceWithQuote:    evidenceWithQuote,
+			EvidenceWithoutQuote: evidenceTotal - evidenceWithQuote,
 		}
 		if err := metodeTmpl.Execute(w, vm); err != nil {
 			logger.Error("render metode", "err", err)

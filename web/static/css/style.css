@@ -1042,6 +1042,11 @@ a.dim-name:hover { color: var(--accent-strong); text-decoration: underline; }
 }
 .cta-card a.cta-link:hover { background: var(--accent); color: var(--accent-ink); }
 
+/* Secondary ways in, under the primary CTA: a reader without a GitHub
+   account is not left out, so e-post is one of three links rather than
+   the only one. */
+.cta-card .cta-secondary { margin-top: var(--sp-4); font-size: var(--fs-sm); }
+
 
 footer.site {
   max-width: var(--max-width);

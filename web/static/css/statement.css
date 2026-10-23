@@ -234,3 +234,41 @@
 .theme-point-topic { display: block; font-weight: 600; font-size: var(--fs-md); }
 .theme-point-quote { display: block; font-size: var(--fs-md); }
 .theme-point-where { display: block; font-size: var(--fs-xs); color: var(--muted); }
+
+/* --- Honesty about what is not stored, and the way in ---------------------
+   A claim with no stored quote says so in the same quiet voice as
+   .sc-limit: an annotation about the record, not an error the reader
+   caused. /metode#sitatdekning carries the totals. */
+
+.sc-noquote {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  margin: var(--sp-3) 0 0;
+  padding-left: var(--sp-5);
+  border-left: 3px solid var(--line);
+}
+
+/* The report link sits where the doubt arises, on the claim itself, so a
+   reader never has to remember an id to reach the tracker. */
+.sc-report { margin: var(--sp-5) 0 0; font-size: var(--fs-sm); }
+/* A standalone link, not one inside a sentence, so it gets the same 44px
+   target as the rest of the site. WCAG 2.5.8 exempts links inline in text;
+   this one is not, and it measured 16px before. */
+.sc-report a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--accent-strong);
+}
+
+/* The statement page's one contribution hook. A paragraph, not a heading,
+   so it stays out of the heading order; 44px tall like every other link
+   the site asks a finger to hit. */
+.stmt-contribute { margin: var(--sp-4) 0 0; font-size: var(--fs-sm); }
+.stmt-contribute a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: var(--sp-2) 0;
+  color: var(--accent-strong);
+}

@@ -40,6 +40,13 @@
     <p class="hero-question"><strong>Hva handler dette om?</strong> {{.Statement.PrimaryQuestion}}</p>
     {{end}}
     <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+    {{/* The one place on a statement page where a reader who disagrees
+         has somewhere to go. Prefilled with the statement and its own
+         URL, so "dette utsagnet er skjevt formulert" arrives as a report
+         about utsagn N and not as a hunt. 2026-10-23. */}}
+    <p class="stmt-contribute">
+      <a href='{{issueURL "foresla-utsagn.md" (printf "Endringsforslag: utsagn %d" .Statement.Number) (printf "Utsagn %d: %s\n\nSide: %s/utsagn/%d\n\nHva bør endres, og hvorfor? Ta med kilde hvis du har en.\n" .Statement.Number .Statement.Text (siteBase) .Statement.Number)}}'>Foreslå endring på dette utsagnet <span aria-hidden="true">→</span></a>
+    </p>
   </section>
 
   {{/* The evidence chain (2026-10-13): which steps of claim-to-outcome
@@ -295,10 +302,21 @@ sub-label, so the heading order stays h1 > h2 > h3 > h4.
     <summary>Originalkilden og begrunnelsen</summary>
     {{if .VerbatimExcerpt}}
     <blockquote class="verbatim">{{.VerbatimExcerpt}}</blockquote>
+    {{else}}
+    {{/* Half the claims carry no stored quote. Saying so is the honest
+         option: without it the card looks like a claim whose source simply
+         was not quoted, and a reader cannot tell whether the quote was
+         skipped or never checked. /metode#sitatdekning states the totals.
+         2026-10-23. */}}
+    <p class="sc-noquote">Her er det ikke lagret et ordrett sitat fra kilden.{{if .SourceURL}} <a href="{{.SourceURL}}" target="_blank" rel="noopener">Les originalkilden selv</a> for å vurdere påstanden.{{else}} Kilden har ingen lenke i datasettet.{{end}}</p>
     {{end}}
     <p class="claim">{{.ClaimAction}}</p>
     <p class="sc-facts">Status {{.Status}} · Tillit {{.ClaimConfidence}}{{if .AttributionConfidence}} · Tilskriving {{.AttributionConfidence}}{{end}}</p>
     {{if .SourceURL}}<p class="source-doc-meta">{{.SourceName}} · <a href="{{.SourceURL}}" target="_blank" rel="noopener">↗ Åpne originalkilden</a></p>{{else}}<p class="source-doc-meta">{{.SourceName}}</p>{{end}}
+    {{/* The report link sits on the claim, not on a contact page: doubt
+         about one reading arises here, and a prefilled report needs no
+         account of what the reader was looking at. 2026-10-23. */}}
+    <p class="sc-report"><a href='{{issueURL "rapporter-kilde.md" (printf "Kildesjekk: %s" .ID) (printf "Kildefil: `%s`\nUtsagn: %s\nKilde: %s\n%s\n\nHva mener du er feil, og hva sier kilden?\n" .ID .StatementID .SourceName .SourceURL)}}'>Meld fra om feil i denne kilden <span aria-hidden="true">→</span></a></p>
   </details>
 </article>
 {{end}}

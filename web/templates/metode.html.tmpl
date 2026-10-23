@@ -112,6 +112,30 @@
     </div>
   </details>
 
+  {{/* Quote coverage: a visitor can check a claim here only when the
+       sentence it rests on is stored. It is stored for some claims and not
+       others, so the page states both numbers instead of letting the
+       reader discover the gap one claim at a time. Both are derived from
+       the dataset on every render (server.quoteCounts), never typed in. */}}
+  <details class="disclosure metode-disclosure">
+    <summary>Sitatdekning: hvilke påstander kan du sjekke her?</summary>
+    <div id="sitatdekning">
+    <p>
+      {{.EvidenceWithQuote}} av {{.EvidenceTotal}} påstander i datasettet
+      har et ordrett sitat fra kilden lagret. Der kan du lese setningen
+      påstanden bygger på uten å forlate siden. De øvrige
+      {{.EvidenceWithoutQuote}} viser hvilken kilde påstanden bygger på,
+      men ikke teksten, så der må du åpne kilden selv.
+    </p>
+    <p>
+      Forskjellen sier hva slags kilde det er, ikke hvor sterk den er. Et
+      voteringsresultat har et utfall, ikke et sitat, og står likevel som
+      kildegrad A. Begge tallene regnes ut fra datasettet hver gang denne
+      siden vises.
+    </p>
+    </div>
+  </details>
+
   <details class="disclosure metode-disclosure">
     <summary>Påvirkning utenfra er ikke det samme som styring</summary>
     <div id="attribusjon">

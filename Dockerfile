@@ -22,6 +22,16 @@ RUN go mod download
 COPY cmd ./cmd
 COPY internal ./internal
 COPY web ./web
+# Two tests read the contribution files rather than the code: the guard
+# that every prefilled issue link names a template that exists
+# (.github/ISSUE_TEMPLATE/*.md) and the guard that CONTRIBUTING.md names
+# every gate. Without them here, `go test ./...` fails inside the image
+# while passing in CI, which is how this line came to exist: the deploy
+# on 2026-10-23 failed the build with "CONTRIBUTING.md is the front door
+# for a contributor: no such file". They are copied for the test stage
+# only; the final image is FROM scratch and carries the one binary.
+COPY .github ./.github
+COPY CONTRIBUTING.md ./
 # Evidence YAML is parsed at package initialization — a malformed file is
 # a build-time bug. Run the focused test before producing an image so the
 # currently-running public site is never replaced by one that can't even

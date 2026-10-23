@@ -33,7 +33,10 @@ import hashlib
 import json
 import pathlib
 import sys
+import time
 import unicodedata
+import urllib.error
+from urllib.parse import urlparse
 
 import yaml
 
@@ -173,7 +176,7 @@ def main() -> int:
 
         if url not in texts:
             try:
-                texts[url] = ve.to_text(ve.fetch(url))
+                texts[url] = _fetch_with_retry(url)
             except Exception as e:  # noqa: BLE001 - report, never hide
                 texts[url] = e
         text = texts[url]
@@ -238,7 +241,59 @@ def main() -> int:
         print("\nproblems:")
         for p in problems:
             print("  " + p)
+        if fetch_failed:
+            print(
+                "\nA refused source is usually rate limiting, not a dead link: one host in\n"
+                "this dataset answers 429 to a burst of requests. The cache keeps every\n"
+                "document that succeeded, so re-running in a few minutes retries only the\n"
+                "failures. This build is incomplete and exits non-zero either way, and\n"
+                "check_archive.py refuses to call an archive with a missing window complete."
+            )
     return 0 if not problems else 1
+
+
+def _fetch_with_retry(url: str, attempts: int = 4) -> str:
+    """Fetch one source, retrying only what is worth retrying.
+
+    A first build fetches every distinct source, and one host in this dataset
+    answers 429 when several of its documents are asked for in a row. That is
+    transient back-pressure, not a broken source, but without a retry it ends
+    a five-minute build with a partial archive and an exit code the newcomer
+    has no way to interpret. Found on a clean-cache rebuild on 2026-10-24:
+    four Rødt documents in a row, 312 of 316 windows, everything else fine.
+
+    Retries 429 and 5xx, honoring Retry-After when the server sends one, and
+    gives up after `attempts`. Any other error is raised at once: a 404 is a
+    fact about the source and retrying it would only waste the reader's time.
+    """
+    delay = 2.0
+    for attempt in range(1, attempts + 1):
+        try:
+            return ve.to_text(ve.fetch(url))
+        except urllib.error.HTTPError as e:
+            retryable = e.code == 429 or 500 <= e.code < 600
+            if not retryable or attempt == attempts:
+                raise
+            wait = _retry_after(e) or delay
+            host = urlparse(url).hostname or url
+            print(
+                f"  {e.code} from {host}, retrying in {wait:.0f}s ({attempt}/{attempts - 1})",
+                file=sys.stderr,
+            )
+            time.sleep(wait)
+            delay *= 3
+    raise AssertionError("retry loop fell through")
+
+
+def _retry_after(e: urllib.error.HTTPError) -> float | None:
+    """The server's own wait, in seconds, when it sends one we can use."""
+    raw = (e.headers or {}).get("Retry-After")
+    if not raw:
+        return None
+    try:
+        return max(1.0, float(raw))
+    except ValueError:
+        return None
 
 
 def _date(cache_file: pathlib.Path) -> str:

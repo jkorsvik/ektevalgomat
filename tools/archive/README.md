@@ -40,6 +40,32 @@ Fetches each distinct `source_url` once, cached under
 uv run tools/archive/build_archive.py --out <dir>
 ```
 
+## Reproducing it yourself
+
+The build is self-sufficient: it fetches every distinct `source_url` itself and
+caches the bytes, so a fresh clone needs nothing but network access and `uv`.
+
+Measured on a **clean clone and an empty cache** on 2026-10-24:
+
+```
+archived 312 of 615 evidence items      # 299 rows have no excerpt to archive
+fetch failed: 4                          # all four: roedt.no, HTTP 429
+```
+
+That is the honest cold-start result, and it is not a bug in this tool. The
+four failures are Rødt's programme, and `roedt.no` answered 429 to every
+attempt: the build retried with backoff (2s, 6s, 18s, honouring `Retry-After`
+when sent), and `curl` with both a default and a browser user agent got 429
+directly from the host, so the block is on the requesting address rather than
+in the request. The 316 entries measured below came from documents fetched
+before that block, which the cache still holds.
+
+So: a first run can come back short on one host, exits 1, and names what it
+could not fetch. The cache keeps everything that succeeded, so re-running
+later retries only the failures. `check_archive.py` is what decides whether an
+archive is complete: it fails when a quoted claim has no window, so a partial
+build can never be mistaken for a whole one.
+
 ## Gate
 
 Re-proves the archive against the data with no network:

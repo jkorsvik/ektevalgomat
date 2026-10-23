@@ -2,7 +2,7 @@
 name: Foreslå et utsagn, eller en endring i et
 about: Et tema mangler, et utsagn er skjevt formulert, eller et nytt bør til
 title: "Endringsforslag: "
-labels: forslag
+labels: enhancement
 ---
 
 ## Hva gjelder forslaget?

@@ -2,7 +2,7 @@
 name: Rapporter en kilde som er tolket feil
 about: En partiposisjon, en dato eller et sitat stemmer ikke med kilden
 title: "Kildesjekk: "
-labels: kildesjekk
+labels: bug
 ---
 
 ## Hvilken påstand gjelder det?

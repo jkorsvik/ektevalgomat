@@ -1111,6 +1111,29 @@ a.program-topic:hover { text-decoration: underline; }
 .budget-figure-note { color: var(--muted); font-size: var(--fs-xs); line-height: 1.4; }
 .budget-section { margin: var(--sp-9) 0; }
 .budget-lede { color: var(--muted); max-width: 46rem; }
+/* The archived window is raw extracted text: keep its line breaks, but let
+   it wrap rather than scroll sideways, because the interesting part of a
+   quote often sits mid-paragraph in a 3 000-character window. */
+.source-window-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  /* Tokens only: a literal hex here failed the token guard, and the guard is
+     right — the dark theme redefines both of these and a fallback would keep
+     a light panel inside a dark page. */
+  background: var(--surface);
+  border-left: 3px solid var(--line);
+  padding: var(--sp-5);
+  margin: var(--sp-5) 0;
+  max-height: 24em;
+  overflow-y: auto;
+}
+.source-window code {
+  font-size: 0.85em;
+  overflow-wrap: anywhere;
+}
+
 .budget-table { width: 100%; border-collapse: collapse; margin-top: var(--sp-6); }
 .budget-table th, .budget-table td { text-align: left; padding: var(--sp-3) var(--sp-4); border-bottom: 1px solid var(--line); }
 .budget-table th.num, .budget-table td.num { text-align: right; font-variant-numeric: tabular-nums; }

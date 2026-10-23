@@ -65,6 +65,16 @@ jobs:
           python3 -m pip install --quiet --disable-pip-version-check pyyaml
           python3 tools/autopilot/test_gate.py
 
+      # The archive is committed, so it can be checked without network: this
+      # is the gate that decides whether the stored windows still cover every
+      # quoted claim and still hold their quote. Without it, an evidence edit
+      # could leave a claim whose window silently belongs to an older text.
+      - name: source archive covers every quoted claim (python)
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet --disable-pip-version-check pyyaml
+          python3 tools/archive/check_archive.py --archive internal/data/archive
+
       - name: client-side scoring and robustness checks (node)
         run: |
           set -euo pipefail

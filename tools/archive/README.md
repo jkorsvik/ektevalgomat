@@ -94,15 +94,26 @@ About 500 KB of text, 1.4 MB on disk with the per-entry JSONL. This replaces
 an earlier spanning design that produced a single 358 KB window for one claim
 and quietly republished most of a Stortinget report.
 
-## Not yet wired in
+## How it is wired in
 
-The archive is not committed and no page reads it. Publishing it means
-putting bounded third-party text in a public repository and on the site, so
-it waits for an explicit decision. When that lands:
+Built into `internal/data/archive/` and embedded next to the YAML content,
+because the runtime container is `FROM scratch` with no filesystem to read:
 
-1. build into the repo, for example `internal/data/archive/`,
-2. embed it next to the templates and render the window on the claim card,
-   beside the quote it verifies,
-3. add `check_archive.py --archive internal/data/archive` to CI,
-4. state the policy on `/data`: what is stored, what is not, and how to ask
-   for a window to be removed.
+| piece | what it does |
+|---|---|
+| `internal/data/archive.go` | embeds `entries.jsonl` and `windows/`, loaded once at start |
+| `/utsagn/{n}` | shows the window per claim under "Kildeteksten rundt sitatet", with the date read and the document's SHA-256 |
+| `/data` | states what is stored, what is not, and how to ask for a window to be removed |
+| `.github/workflows/ci.yml` | runs `check_archive.py` on every push, offline |
+| `internal/data/archive_test.go` | coverage and provenance against the dataset, not against the manifest |
+| `internal/server/source_window_test.go` | the rendered page actually shows a window, with its provenance |
+
+The key is the evidence **`id`** field, not the filename. Keying on the
+filename produced 316 windows no page could find, which the coverage test
+caught before anything shipped.
+
+Deliberately not checked in Go: whether the quote appears in the window.
+`check_archive.py` owns that, because it owns the normalisation that makes a
+verbatim comparison fair. A second normaliser would eventually disagree with
+the first, and the disagreement would look like a bad claim instead of a bad
+test.

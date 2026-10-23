@@ -179,6 +179,19 @@ func (p statementPage) SourcedOnlyCount() int {
 type evidenceView struct {
 	data.Evidence
 	SourceTierLabel string
+	// Window is the stored text around the quoted excerpt, when one exists.
+	// It travels with the row rather than being looked up in the template so
+	// a missing window is a nil pointer here, not a silent blank on the page.
+	Window *data.SourceWindow
+}
+
+// withWindow attaches the archived source window for one evidence row.
+func withWindow(e data.Evidence) evidenceView {
+	v := evidenceView{Evidence: e, SourceTierLabel: sourceTierLabel(e.SourceTier)}
+	if w, ok := data.SourceWindowFor(e.ID); ok {
+		v.Window = &w
+	}
+	return v
 }
 
 type partyEvidenceRow struct {
@@ -201,9 +214,7 @@ func buildStatementPage(ds *data.Dataset, statement data.Statement) statementPag
 
 	for _, e := range all {
 		if !e.IsPartyEvidence() {
-			page.InstitutionalEvidence = append(page.InstitutionalEvidence, evidenceView{
-				Evidence: e, SourceTierLabel: sourceTierLabel(e.SourceTier),
-			})
+			page.InstitutionalEvidence = append(page.InstitutionalEvidence, withWindow(e))
 		}
 	}
 
@@ -215,7 +226,7 @@ func buildStatementPage(ds *data.Dataset, statement data.Statement) statementPag
 		var items []evidenceView
 		for _, e := range all {
 			if e.PartyID == party.ID {
-				items = append(items, evidenceView{Evidence: e, SourceTierLabel: sourceTierLabel(e.SourceTier)})
+				items = append(items, withWindow(e))
 			}
 		}
 		cell := scoring.ComputeCell(ds, statement.ID, party.ID)

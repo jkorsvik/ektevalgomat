@@ -85,12 +85,31 @@
     {{end}}
   </table>
 
+  <h3>Kildeteksten rundt sitatet</h3>
+  <p>
+    For hver påstand som har et ordrett sitat lagrer prosjektet
+    <strong>{{.ArchiveCount}} tekstiutdrag</strong>: noen hundre tegn rundt
+    hvert sitat, hentet fra det dokumentet sitatet er sjekket mot. Hvert
+    utdrag har datoen det ble lest og dokumentets SHA-256, så et utdrag kan
+    knyttes til én bestemt henting og ikke til «nettet». Du ser utdraget på
+    påstandskortet, under «Kildeteksten rundt sitatet».
+  </p>
+  <p>
+    Det gjør en påstand sjekkbar også når kilden flytter eller fjerner siden
+    sin. Teksten er råuttrekk, ikke rensket: meny og navigasjon fra nettsiden
+    kan stå i utdraget, fordi det er dette uttrekket sitatet ble verifisert
+    mot. Å rense det ville laget en andre versjon av kilden som kunne si noe
+    annet enn den første.
+  </p>
+
   <h3>Det som ikke er med</h3>
   <p>
-    Prosjektet lagrer påstanden og lenken, men ikke en kopi av dokumentet.
-    Derfor kan en påstand bli usjekkbar hvis kilden flytter eller fjerner
-    siden sin. Vi sier det her fordi et datasett som ser komplett ut er
-    verre enn ett som sier hva det mangler.
+    Prosjektet lagrer <em>ikke</em> hele dokumenter. Et utdrag er ikke en
+    kopi: rapportene, avisartiklene og partiprogrammene ligger fortsatt bare
+    hos dem som eier dem. Vil du lese mer enn utdraget, lenker hvert kort til
+    hele kilden. Vil du at et utdrag fjernes,{" "}
+    <a href="https://github.com/jkorsvik/ektevalgomat/issues/new?template=rapporter-kilde.md">si fra i en sak</a>,
+    så tas det ut uten at påstanden mister lenken sin.
   </p>
 
   <h3>Vil du bidra?</h3>

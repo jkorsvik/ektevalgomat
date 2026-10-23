@@ -658,6 +658,7 @@ func New(logger *slog.Logger) http.Handler {
 			StatementCount int
 			EvidenceCount  int
 			WithQuote      int
+			ArchiveCount   int
 			Columns        []evidenceColumn
 		}{
 			Meta: meta("Data · Ekte valgomat",
@@ -668,6 +669,7 @@ func New(logger *slog.Logger) http.Handler {
 			StatementCount: len(ds.Statements),
 			EvidenceCount:  total,
 			WithQuote:      withQuote,
+			ArchiveCount:   data.SourceWindowCount(),
 			Columns:        evidenceColumns,
 		}
 		if err := dataTmpl.Execute(w, vm); err != nil {

@@ -53,7 +53,10 @@ def load_data() -> dict[str, dict]:
     out = {}
     for f in sorted(EVIDENCE.glob("*.yaml")):
         d = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
-        out[f.stem] = {
+        # Same key the builder writes and the site looks up: the evidence
+        # `id`, not the filename. See the note in build_archive.py.
+        eid = (d.get("id") or "").strip() or f.stem
+        out[eid] = {
             "excerpt": (d.get("verbatim_excerpt") or "").strip(),
             "source_url": d.get("source_url") or "",
         }

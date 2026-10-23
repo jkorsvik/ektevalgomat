@@ -312,6 +312,18 @@ sub-label, so the heading order stays h1 > h2 > h3 > h4.
          2026-10-23. */}}
     <p class="sc-noquote">Her er det ikke lagret et ordrett sitat fra kilden.{{if .SourceURL}} <a href="{{.SourceURL}}" target="_blank" rel="noopener">Les originalkilden selv</a> for å vurdere påstanden.{{else}} Kilden har ingen lenke i datasettet.{{end}}</p>
     {{end}}
+    {{/* The stored window is the answer to a dead link: when a source moves
+         or deletes a page, this is the text the claim was checked against,
+         with the fingerprint of the exact retrieval. Collapsed inside the
+         source disclosure so a claim card stays readable. 2026-10-24. */}}
+    {{if .Window}}
+    <details class="disclosure source-window">
+      <summary>Kildeteksten rundt sitatet</summary>
+      <p class="sc-facts">Lest {{.Window.FetchedAt}} · {{.Window.WindowChars}} tegn rundt sitatet{{if gt .Window.Fragments 1}} i {{.Window.Fragments}} deler{{end}} · dokumentets SHA-256 <code>{{.Window.DocumentSHA256}}</code></p>
+      <pre class="source-window-text">{{.Window.Text}}</pre>
+      <p class="sc-window-note">Dette er et utdrag, ikke hele dokumentet: teksten rundt sitatet, slik den ble lest, rå og urenset, så meny og navigasjon fra nettsiden kan stå i den. <a href="{{.Window.FetchedURL}}" target="_blank" rel="noopener">Åpne hele kilden</a>.</p>
+    </details>
+    {{end}}
     <p class="claim">{{.ClaimAction}}</p>
     <p class="sc-facts">Status {{.Status}} · Tillit {{.ClaimConfidence}}{{if .AttributionConfidence}} · Tilskriving {{.AttributionConfidence}}{{end}}</p>
     {{if .SourceURL}}<p class="source-doc-meta">{{.SourceName}} · <a href="{{.SourceURL}}" target="_blank" rel="noopener">↗ Åpne originalkilden</a></p>{{else}}<p class="source-doc-meta">{{.SourceName}}</p>{{end}}

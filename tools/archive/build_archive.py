@@ -168,6 +168,17 @@ def main() -> int:
         if not excerpt:
             no_excerpt += 1
             continue
+        # The key is the evidence `id` field, which is what the loader gives
+        # the row and therefore what a page looks up. Keying on the filename
+        # instead produced 316 windows that no page could find: the files are
+        # 04-rodt-votering.yaml, the ids are ev-2026-04-21-rodt-votering.
+        # Found before shipping, by the Go test that checks coverage against
+        # the dataset rather than against the archive's own manifest.
+        eid = (d.get("id") or "").strip()
+        if not eid:
+            problems.append(f"{f.stem}: has an excerpt but no id field in the YAML")
+            unlocatable += 1
+            continue
         url = d.get("source_url") or ""
         if not url:
             problems.append(f"{f.stem}: has an excerpt but no source_url")
@@ -196,16 +207,17 @@ def main() -> int:
         body = cache_file.read_bytes()
         window = ELISION.join(text[lo:hi].strip() for lo, hi in slices)
 
-        (out / "windows" / f"{f.stem}.txt").write_text(window + "\n", encoding="utf-8")
+        (out / "windows" / f"{eid}.txt").write_text(window + "\n", encoding="utf-8")
         entries.append(
             {
-                "evidence_id": f.stem,
+                "evidence_id": eid,
+                "evidence_file": f.stem,
                 "source_url": url,
                 "fetched_url": fetched_url,
                 "fetched_at": _date(cache_file),
                 "document_sha256": hashlib.sha256(body).hexdigest(),
                 "document_bytes": len(body),
-                "window_file": f"windows/{f.stem}.txt",
+                "window_file": f"windows/{eid}.txt",
                 "window_chars": len(window),
                 "excerpt_chars": len(excerpt),
                 "fragments": len(slices),

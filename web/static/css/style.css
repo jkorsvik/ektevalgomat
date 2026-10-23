@@ -1114,6 +1114,27 @@ a.program-topic:hover { text-decoration: underline; }
 .budget-table { width: 100%; border-collapse: collapse; margin-top: var(--sp-6); }
 .budget-table th, .budget-table td { text-align: left; padding: var(--sp-3) var(--sp-4); border-bottom: 1px solid var(--line); }
 .budget-table th.num, .budget-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* At 390px the budget table ran 31px past the viewport, which on the one page
+   whose content is the numbers means a sideways scroll. Two causes, both
+   measured: the table's own sp-4 side padding, and the department column
+   holding single words like "Kunnskapsdepartementet" that cannot break and so
+   set the column's minimum at 233px. Padding alone fixed nothing, because the
+   base rule above comes later in this file and overrode it; this block sits
+   after that rule on purpose. (2026-10-23) */
+@media (max-width: 520px) {
+  .budget-table th, .budget-table td {
+    padding-left: var(--sp-2);
+    padding-right: var(--sp-2);
+    font-size: var(--fs-md);
+  }
+  /* Safety net only. At this size the department names fit without breaking;
+     keeping the rule means a longer one degrades to a break inside the cell
+     instead of pushing the table past the viewport again. */
+  .budget-table th:first-child, .budget-table td:first-child {
+    overflow-wrap: anywhere;
+  }
+}
 /* No up/down colour. The :root note above says red and green stay out
    entirely because "they read as a verdict", and a budget change is not a
    verdict: more money to a department is neither good nor bad. The +/− sign

@@ -1,0 +1,82 @@
+# Source archive
+
+The project stores the claim and the citation, but not the document. That
+leaves one hole: when a source moves or deletes a page, a claim becomes
+uncheckable, and the honest answer to "show me" becomes a dead link.
+
+This directory closes that hole as far as it can be closed without
+republishing documents.
+
+## What is stored
+
+For each claim that carries a `verbatim_excerpt`, roughly 400 characters
+either side of every quoted fragment, taken from the text the verifier
+already read. Quoted fragments that sit far apart in one document are stored
+as separate windows joined by ` […] `, so a reader can see that the claim
+rests on two places without being handed the pages between them.
+
+Recorded with every window, because a window without provenance is just an
+anonymous quotation:
+
+| field | why |
+|---|---|
+| `source_url` | as the data wrote it, so the window can be matched to its claim |
+| `fetched_url` | after widening (`?all=true` for Stortinget publications) |
+| `fetched_at` | when the document was retrieved |
+| `document_sha256` | of the bytes actually read, tying a window to one retrieval |
+| `window` | the source's own text, original casing and punctuation |
+
+The text is raw extracted text, so a page that renders a menu above its
+content has that menu in its window. That is what the extractor saw and what
+the quote was verified against; cleaning it would make the archive a second,
+disagreeing version of the source.
+
+## Build
+
+Fetches each distinct `source_url` once, cached under
+`~/.cache/ektevalgomat-sources`, so a rebuild is offline after the first run.
+
+```sh
+uv run tools/archive/build_archive.py --out <dir>
+```
+
+## Gate
+
+Re-proves the archive against the data with no network:
+
+```sh
+uv run tools/archive/check_archive.py --archive <dir>
+```
+
+It fails when a quoted claim has no window, when a window does not hold its
+quote, when a fragment is joined without an elision marker, when provenance
+is incomplete, and when it checked nothing at all. Each of those was
+mutation-tested: deleting a window, cutting a quote out of a window, dropping
+an entry, drifting a `source_url`, removing an elision, and emptying the
+archive all fail the gate.
+
+## Measured, 2026-10-23
+
+```
+archived 316 of 615 evidence items (the other 299 have no excerpt)
+unlocatable: 0   fetch failed: 0
+windows: 316   chars: 490941   median: 1214   max: 5583
+distinct sources: 69
+```
+
+About 500 KB of text, 1.4 MB on disk with the per-entry JSONL. This replaces
+an earlier spanning design that produced a single 358 KB window for one claim
+and quietly republished most of a Stortinget report.
+
+## Not yet wired in
+
+The archive is not committed and no page reads it. Publishing it means
+putting bounded third-party text in a public repository and on the site, so
+it waits for an explicit decision. When that lands:
+
+1. build into the repo, for example `internal/data/archive/`,
+2. embed it next to the templates and render the window on the claim card,
+   beside the quote it verifies,
+3. add `check_archive.py --archive internal/data/archive` to CI,
+4. state the policy on `/data`: what is stored, what is not, and how to ask
+   for a window to be removed.

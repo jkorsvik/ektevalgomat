@@ -1,0 +1,35 @@
+id: ev-2025-06-h-havbunnsmineraler14-for
+statement_id: utsagn-14
+party_id: h
+actor: "Høyre (energi- og miljøkomiteen)"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre er medforslagsstiller sammen med FrP på DENNE konkrete
+  tidsplanen, men er samtidig en del av flertallet bak den vedtatte,
+  mer gradvise hovedtilrådingen. Alle 23 fremmøtte stemte for.
+claim_action: >
+  Votering_id 25349, Høyre 23 for, 0 mot. Fra Høyres merknad: Høyre
+  fikk betydelig gjennomslag for høyere miljøstandarder og en
+  skrittvis tilnærming for å øke kunnskapsgrunnlaget før Stortinget
+  tar stilling til de første utvinningstillatelsene, men ser positivt
+  på at utlysningsrunder gjennomføres — med forbehold om at tidspunktet
+  ikke bør avgjøres i budsjettforhandlinger.
+verbatim_excerpt: >
+  Høyre fikk betydelig gjennomslag gjennom behandlingen for høyere
+  miljøstandarder og en skrittvis tilnærming for å øke
+  kunnskapsgrunnlaget før Stortinget tar stilling til de første
+  utvinningstillatelsene.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); votering_id 25349"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Høyre stemte for den konkrete FrP/H-tidsplanen (forslag 1)
+  OG for den mer generelle hovedtilrådingen — begge peker samme vei
+  (utvinning bør startes), bare med ulik grad av bindende detalj.
+retrieved_at: "2026-09-24"

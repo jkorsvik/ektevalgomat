@@ -1,0 +1,28 @@
+id: ev-2026-partiprogram-krf-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2025 (landsmøtevedtatt stortingsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "KrF vil fjerne formueskatten på arbeidende kapital, men samtidig ha økt formueskatt på de dyreste primærboligene — en eksplisitt, todelt retning."
+claim_action: >
+  KrFs stortingsprogram 2025–2029 lister både "fjerne formueskatten på
+  arbeidende kapital" og, i et annet punkt, "ha økt formueskatt på de
+  dyreste primærboligene" — én reduksjon og én økning av samme skatt,
+  rettet mot ulike formuestyper.
+verbatim_excerpt: >
+  Fjerne formueskatten på arbeidende kapital. [...] Ha økt formueskatt
+  på de dyreste primærboligene.
+status: programfestet
+position: 0
+source_tier: C
+source_name: "KrFs stortingsprogram 2025–2029"
+source_url: "https://krf.no/content/uploads/2025/05/Partiprogram-2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet 0 (nøytral/delt): KrFs eget program peker eksplisitt to veier
+  på formuesskatten — ned for arbeidende kapital, opp for de dyreste
+  primærboligene. Ingen samlet nedtrapping som utsagnet spør om. Tier
+  C, ikke tier A.
+retrieved_at: "2026-09-27"

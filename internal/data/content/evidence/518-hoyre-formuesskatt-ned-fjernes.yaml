@@ -1,0 +1,36 @@
+id: ev-2026-innst188s-hoyre-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: h
+actor: "Høyre"
+date: "2026-03-24"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyres egen merknad i Innst. 188 S sier eksplisitt at formuesskatten bør avskaffes i sin helhet, som neste steg etter en økt bunnfradrag-heving."
+claim_action: >
+  I Innst. 188 S (2025–2026) skriver Høyre at partiet ønsker å øke
+  bunnfradraget i formuesskatten, og at "formuesskatten bør deretter
+  avskaffes i sin helhet" — et eksplisitt, ubetinget mål om full
+  avvikling, ikke bare en delvis reduksjon. Dette stemmer med Høyres
+  program, som mer forsiktig sier "fjerne formuesskatten på arbeidende
+  kapital" og "øke bunnfradraget på all formuesskatt" som kortsiktige
+  skritt mot det samme målet.
+verbatim_excerpt: >
+  «Formuesskatten bør deretter avskaffes i sin helhet.»
+status: dokumentert
+position: 2
+source_tier: A
+source_name: "Innst. 188 S (2025–2026), Høyres merknad"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2, kilde oppgradert fra parti­program til en reell innstilling
+  (tier A): denne setningen er en eksplisitt, ordrett uttalt ambisjon
+  om FULL avvikling av formuesskatten, ikke bare et partiprogram-
+  sitat om delvis reduksjon på "arbeidende kapital". De to kildene er
+  ikke motstridende — programmets tiltak (fjerne skatt på arbeidende
+  kapital, øke bunnfradraget) er de konkrete, kortsiktige skrittene;
+  denne merknaden i Innst. 188 S sier eksplisitt hva Høyre mener bør
+  skje "deretter": full avvikling. Ikke en votering i seg selv, men en
+  skriftlig komitémerknad i en reell sak, samme evidensklasse som
+  brukes gjennomgående ellers i datasettet.
+retrieved_at: "2026-09-27"

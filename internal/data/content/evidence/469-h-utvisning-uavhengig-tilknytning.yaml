@@ -1,0 +1,35 @@
+id: ev-2026-04-14-h-utvisning-uavhengig-tilknytning
+statement_id: utsagn-46
+party_id: h
+actor: "Høyre"
+date: "2026-04-14"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre skriver at det støtter FrPs ambisjon om utvisning uavhengig av tilknytning, men stemte selv for en mildere, rettighetsavgrenset variant."
+claim_action: >
+  Høyres egen merknad i Innst. 205 S sier eksplisitt at partiet støtter
+  ambisjonen i FrPs forslag nr. 2 om at alvorlig kriminalitet som
+  hovedregel skal føre til utvisning uavhengig av tilknytning til
+  riket. Høyre stemte likevel mot forslag nr. 2 selv (votering 27441)
+  og fremmet i stedet, sammen med Sp, sitt eget forslag nr. 3 om en
+  bredere regelverksgjennomgang innenfor folkerettslige rammer
+  (votering 27440).
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Høyre vil likevel understreke at forslagets
+  ambisjon – at alvorlig kriminalitet som hovedregel skal føre til
+  utvisning uavhengig av tilknytning til riket – er en ambisjon Høyre
+  støtter.»
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026); votering_id 27441 (14.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: Høyres egen tekst uttrykker eksplisitt støtte til
+  ambisjonen, men partiet stemte mot selve forslaget (0 for, 14 mot,
+  bekreftet [OK] i votes.py) og forfektet i stedet en mer forsiktig
+  variant med rettssikkerhetsgarantier (se utsagn-47). Samme "enig i
+  ambisjonen, ikke i det konkrete forslaget"-mønster som gjentatte
+  ganger ellers i dette datasettet.
+retrieved_at: "2026-09-27"

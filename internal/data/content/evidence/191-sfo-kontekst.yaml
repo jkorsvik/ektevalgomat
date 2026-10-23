@@ -1,0 +1,50 @@
+id: ev-2026-01-13-sfo-kontekst
+statement_id: utsagn-32
+party_id: ""
+actor: "Utdannings- og forskningskomiteen / Stortinget i plenum"
+date: "2026-01-13"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Prop. 160 L (2024–2025), Innst. 78 L (2025–2026): endring i
+  opplæringslova om rett til 12 timer gratis skolefritidsordning per
+  uke for elever på 1.–3. trinn. Komiteens flertall (H, FrP, KrF, V)
+  ville avvise lovfestingen og bare la ordningen bli stående som en
+  budsjettbevilgning; Ap, SV, Sp og Rødt sto bak et eget forslag om å
+  lovfeste retten direkte i loven. Forslaget vant en alternativ
+  votering 52 mot 49, og hele loven ble deretter vedtatt 53 mot 48 —
+  en sak der Stortinget faktisk styrket en velferdsordning for barn
+  utover det regjeringens egen lovproposisjon isolert la opp til.
+claim_action: >
+  Votering_id 26667 (alternativ votering mellom innstillingen og
+  forslag nr. 1 fra Ap, SV, Sp og Rødt): "Elevar på 1. til 3. trinn
+  har rett til 12 timar gratis skolefritidsordning per veke." Vedtatt
+  52 for (Ap 31, SV 5, Sp 6, Rødt 5, MDG 5) mot 49 (FrP 29, H 14, KrF
+  4, V 1, samt 1 Ap-representant). Sluttvotering over hele loven
+  (votering_id 26668): 53 for / 48 mot.
+status: forslag_vedtatt
+position: null
+source_tier: A
+source_name: "Innst. 78 L (2025–2026); votering_id 26667, 26668"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-078l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Første utsagn i datasettet der Stortinget faktisk STYRKER en
+  konkret velferdsrettighet for barn utover regjeringens egen
+  proposisjon, ikke bare avviser eller vedtar en svakere
+  kompromiss-tekst. Fire ulike, alle dokumenterte, grunner til å
+  stemme mot finnes i denne saken — en sjeldenhet i datasettet, der
+  mot-siden oftest er udokumentert eller deler én generell
+  begrunnelse: KrF vil heller bruke pengene på skolen selv
+  (ressursprioritering, se evidence/197), Venstre er bekymret for et
+  ufinansiert kommunalt pålegg (se evidence/198), FrP vil evaluere
+  bemannings- og finansieringsbehovet FØRST, ikke avvise målet (se
+  evidence/199), og Høyre vil prioritere kommunalt handlingsrom over
+  en ny individuell rettighet og viser til at ressurssituasjonen i
+  SFO allerede er forverret av gratis kjernetid (se evidence/200).
+  Ap, SV, Sp og Rødt deler én merknad som eksplisitt kobler denne
+  loven til et tidligere flertallsvedtak i statsbudsjettet for 2025 —
+  lovfestingen gjør en budsjettbevilgning til en rettighet som ikke
+  kan reverseres i neste budsjettforhandling uten et nytt lovvedtak.
+retrieved_at: "2026-09-24"

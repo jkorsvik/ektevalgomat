@@ -1,0 +1,25 @@
+id: ev-2026-04-14-rodt-utvisning-uavhengig-tilknytning
+statement_id: utsagn-46
+party_id: rodt
+actor: "Rødt"
+date: "2026-04-14"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Rødt stemte mot FrPs forslag om utvisning uavhengig av tilknytning, uten egen merknad om nettopp dette forslaget."
+claim_action: >
+  Rødt har ikke egen tekst i Innst. 205 S om FrPs forslag nr. 2
+  spesifikt. Stemte mot forslag nr. 2 (votering 27441).
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026); votering 27441 (14.04.2026)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27441&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1 ut fra stemmegivning alene: Rødt er medlem av komiteen (del
+  av komiteens flertall som beskriver dagens regelverk generelt), men
+  har ingen egen tekst som tar stilling til nettopp forslag 2s
+  «uavhengig av tilknytning»-formulering. evidensstyrke_cap moderat.
+  Bekreftet [OK] i votes.py: Rødt 0 for / 3 mot.
+retrieved_at: "2026-09-27"

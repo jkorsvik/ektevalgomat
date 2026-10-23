@@ -1,0 +1,16 @@
+id: utsagn-26
+number: 26
+dimension: "Universell grunnmur"
+primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
+case_tag: mobildekning_offentlige_veier_2030
+short_name: "Mobildekning på alle offentlige veier innen 2030"
+text: >
+  Regjeringen bør sørge for at alle offentlige veier i Norge har
+  mobildekning innen 2030, som en bindende frist.
+practical_stakes:
+  enig: >
+    Regjeringen forplikter seg til en bindende frist: alle offentlige veier
+    i Norge skal ha mobildekning innen 2030.
+  uenig: >
+    Ingen slik bindende frist innføres. Mobildekning på alle offentlige
+    veier innen 2030 forblir et langsiktig mål, ikke en forpliktelse.

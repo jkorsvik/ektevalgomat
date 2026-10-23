@@ -1,0 +1,30 @@
+id: ev-2026-04-28-mdg-kombit-for
+statement_id: utsagn-22
+party_id: mdg
+actor: "Miljøpartiet De Grønne (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  MDG stemte for KOMBIT-forslaget, men partiets egen, omfattende
+  merknad i saken dreier seg om åpen kildekode, GDPR og internasjonal
+  finansiering av åpen kildekode — ikke spesifikt om felleskommunalt
+  KI-innkjøp.
+claim_action: "Votering_id 27486, MDG 5 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27486"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1, ikke +2: MDG er komitémedlem med en rekke egne, dokumenterte
+  forslag i denne saken (se evidence-klyngen for utsagn-24), men ingen
+  av disse omhandler kommunalt felleskjøp av KI spesifikt. Partiets
+  generelle linje om interoperabilitet, åpne standarder og
+  leverandøruavhengighet (delt med SV+Rødt, forslag 12/16) er
+  tematisk nærliggende, men ikke en direkte begrunnelse for DETTE
+  forslaget — derav svakt_dokumentert snarere enn dokumentert
+  begrunnelse.
+retrieved_at: "2026-09-24"

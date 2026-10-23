@@ -1,0 +1,37 @@
+id: ev-2026-partiprogram-krf-eos-handlefrihet
+statement_id: utsagn-45
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2025 (landsmøtevedtatt stortingsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "KrF foretrekker dagens EØS-tilknytning fremfor EU-medlemskap nettopp for å bevare nasjonal handlefrihet og selvbestemmelse."
+claim_action: >
+  KrFs stortingsprogram 2025–2029 (kapittel «Samarbeid i Europa og våre
+  nærområder») begrunner eksplisitt hvorfor dagens tilknytningsform til
+  EU er bedre enn fullt medlemskap: den bevarer norsk handlefrihet.
+verbatim_excerpt: >
+  Samtidig slipper vi å miste nasjonal handlefrihet på en del områder
+  som ville omfattes av medlemskap i EU. KrF mener at våre nåværende
+  tilknytningsformer er den beste løsningen på Norges forhold til EU.
+  [...] Beholde dagens tilknytningsform til EU, og gjennom EØS-avtalen
+  sikre et tett samarbeid med Europa [...] og politisk og økonomisk
+  selvbestemmelsesrett på områder som er særlig viktige for Norge.
+status: programfestet
+position: 1
+source_tier: C
+source_name: "KrFs stortingsprogram 2025–2029"
+source_url: "https://krf.no/content/uploads/2025/05/Partiprogram-2025-2029.pdf"
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet +1, ikke +2: teksten er generell (om EU-tilknytning bredt, ikke
+  forsvar/beredskap spesifikt), men understreker eksplisitt at det å
+  IKKE bli EU-medlem bevarer «nasjonal handlefrihet» og
+  «selvbestemmelsesrett» — samme underliggende bekymring som utsagnet,
+  bare ikke sektorspesifikk. Tier C, ikke tier A. Ingen
+  consistency_flag satt: KrFs stemme i Innst. 464 S svarer på et annet
+  spørsmålsnivå (den konstitusjonelle terskelmekanismen for
+  myndighetsoverføring) enn denne substansielle preferansen for dagens
+  tilknytningsform — de to er ikke direkte sammenlignbare uten å
+  overtolke.
+retrieved_at: "2026-09-26"

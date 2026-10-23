@@ -1,0 +1,31 @@
+id: ev-2026-04-28-sv-digitale-avhengigheter-tilraading
+statement_id: utsagn-59
+party_id: "sv"
+actor: "Sosialistisk Venstreparti (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV var med på forslaget om kartlegging og rapport i komiteen.
+claim_action: >
+  Flertallsforslag fra FrP, H og SV i Innst. 225 S, senere komiteens
+  tilråding. Forslaget kom fra Høyre, ikke fra SVs eget
+  representantforslag. Votering 27496: SV 5 mot, 0 for.
+verbatim_excerpt: >
+  Stortinget ber regjeringen ta initiativ til å kontinuerlig kartlegge
+  Norges digitale avhengigheter til andre land og jurisdiksjoner som
+  tiltak for å sikre tilstrekkelig nasjonal kontroll med den digitale
+  grunnmuren som understøtter kritiske samfunnsfunksjoner. Den første
+  rapporten leveres til Stortinget innen utgangen av 2026.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026), flertallsforslag FrP/H/SV; votering 27496"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+consistency_flag: changed_position
+context_note: >
+  Kodet +1, ikke +2: SV signerte forslaget, men det var Høyres, og SV
+  stemte mot i salen (fil 737). Ingrid Fiskaa (SV) sa til Altinget at
+  forslaget ikke var viktig for partiet (fil 738).
+retrieved_at: "2026-10-03"

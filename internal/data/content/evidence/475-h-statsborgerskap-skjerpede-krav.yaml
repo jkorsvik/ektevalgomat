@@ -1,0 +1,32 @@
+id: ev-2026-04-30-h-statsborgerskap-skjerpede-krav
+statement_id: utsagn-48
+party_id: h
+actor: "Høyre"
+date: "2026-04-30"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre foreslo å vurdere strengere språkkrav (B2 muntlig) og færre fritak fra statsborgerprøven — falt 14-84."
+claim_action: >
+  Høyre fremmet forslag nr. 5 i Innst. 232 S: evaluere en heving av det
+  muntlige språkkravet fra B1 til B2-nivå, redusere antallet
+  fritaksgrunner fra testene i samfunnskunnskap og statsborgerprøven,
+  innføre krav om ingen offentlig gjeld, og la brudd på en
+  integrerings-/borgerkontrakt kunne få konsekvenser for muligheten til
+  å bli statsborger. Votering 27522 (30.04.2026): falt 14 mot 84, kun
+  Høyre for.
+verbatim_excerpt: >
+  «Stortinget ber regjeringen legge frem lovforslag om skjerpede krav
+  for erverv av norsk statsborgerskap, herunder evaluere språkkravet om
+  B1-nivå muntlig og vurdere å øke språkkravet til B2-nivå muntlig
+  redusere antallet fritaksgrunner fra å ta testen i norsk
+  samfunnskunnskap og statsborgerprøven»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 232 S (2025–2026), forslag 5; votering_id 27522 (30.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eget forslag, egen begrunnelse, eneste parti for. Bekreftet
+  [OK] i votes.py: 14 for (kun H) / 84 mot.
+retrieved_at: "2026-09-27"

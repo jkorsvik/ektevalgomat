@@ -1,0 +1,34 @@
+id: ev-2023-03-14-sp-informasjonspaavirkning-allerede-ivaretatt
+statement_id: utsagn-04
+party_id: sp
+actor: "Senterpartiet (Ivar B. Prestbakmo, Else Marie Rødby, justiskomiteen)"
+date: "2023-03-14"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp (sammen med Ap) mener innholdet i representantforslagets punkter,
+  inkludert kartleggingsforslaget, allerede i det alt vesentlige er
+  ivaretatt gjennom regjeringens pågående arbeid — samme redundans-
+  begrunnelse som Ap, ikke en avvisning av målet.
+claim_action: >
+  Votering_id 20371 (Forslag nr. 6 på vegne av H og V): Sp 17 mot, 0 for
+  (11 ikke til stede) — kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat. Forslaget falt i plenum.
+verbatim_excerpt: >
+  Disse medlemmer oppfatter på samme måte som statsråden at
+  representantenes forslag er saker med et innhold som regjeringen
+  vektlegger, og der det allerede er iverksatt sentrale prosesser. Disse
+  medlemmer mener derfor med bakgrunn i statsrådens svarbrev at innholdet
+  i forslagene i det alt vesentlige er ivaretatt.
+status: forslag_avvist_av_flertallet
+position: 1
+source_tier: A
+source_name: "Innst. 231 S (2022–2023); votering_id 20371"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2022-2023/inns-202223-231s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: samme felles merknad med Ap — redundans-begrunnelse
+  ("allerede ivaretatt"), som nå er nøyaktig det det snudde utsagnet
+  spør om. Se evidence/58-ap-informasjonspaavirkning-allerede-ivaretatt.yaml
+  for identisk resonnement. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

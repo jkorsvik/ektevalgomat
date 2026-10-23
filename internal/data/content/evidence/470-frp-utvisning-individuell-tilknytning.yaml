@@ -1,0 +1,32 @@
+id: ev-2026-04-14-frp-utvisning-individuell-tilknytning
+statement_id: utsagn-47
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2026-04-14"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP mener tilknytning til Norge ikke skal veie tyngre enn hensynet til trygghet ved alvorlig kriminalitet."
+claim_action: >
+  I samme sak (Innst. 205 S) skriver FrP eksplisitt at hensynet til
+  trygghet i samfunnet må veie tyngre enn hensynet til den kriminelles
+  tilknytning til Norge, og fremmer forslag nr. 2 om utvisning
+  uavhengig av tilknytning (se utsagn-46). Direkte motsatt av tanken om
+  at tilknytning fortsatt bør styre den konkrete vurderingen.
+verbatim_excerpt: >
+  «Disse medlemmer mener utvisning skal være hovedregelen ved alvorlig
+  kriminalitet, også for personer med opphold på humanitært grunnlag,
+  flyktningstatus eller lang botid. Hensynet til trygghet i samfunnet
+  må veie tyngre enn hensynet til den kriminelles tilknytning til
+  Norge.»
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 205 S (2025–2026); votering 27441 (14.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Speilbildet av utsagn-46s FrP-evidens: samme sak og samme merknad,
+  men kodet mot dette utsagnets motsatte påstand (at tilknytning
+  fortsatt bør telle). FrPs egen tekst avviser eksplisitt at
+  tilknytning skal veie tyngre enn trygghetshensynet, derfor -2.
+retrieved_at: "2026-09-27"

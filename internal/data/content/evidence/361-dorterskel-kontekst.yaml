@@ -1,0 +1,34 @@
+id: ev-2026-dorterskel-kontekst
+statement_id: utsagn-29
+party_id: ""
+actor: "Næringskomiteen / Stortinget i plenum"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 280 S (2025-2026), om Rødts (Remi Sølvberg og Marie Sneve
+  Martinussen) Dok. 8:229 S om en god posttjeneste for framtiden.
+  Sp og Rødt fremmet et forslag om å utrede en landsdekkende
+  dørterskeltjeneste for ikke-digitale innbyggere.
+claim_action: >
+  Forslag 1 (Sp og Rødt): "Stortinget ber regjeringen utrede innføring
+  av dørterskeltjenesten som en landsdekkende tjeneste og komme
+  tilbake til Stortinget med saken i forbindelse med statsbudsjettet
+  for 2027." Votering_id 27675 (sakid 200183): 23 for (KrF 3, MDG 5,
+  Rødt 5, SV 5, Sp 5), 77 mot (Ap 32, FrP 29, Høyre 14, KrF 1, Venstre
+  1).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); data.stortinget.no sakid=200183, votering_id 27675"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  KrF splitter internt: 3 av 4 fremmøtte stemte for, 1 mot — den
+  første dokumenterte interne KrF-splitten i dette datasettet (KrF
+  har inntil nå alltid stemt enstemmig, uansett retning). Fra Sp/Rødts
+  merknad: "reduksjoner i postombæring vil ramme sårbare grupper og
+  distriktene særlig hardt" — direkte relevant for dimensjonens
+  "uansett bosted og inntekt"-spørsmål.
+retrieved_at: "2026-09-24"

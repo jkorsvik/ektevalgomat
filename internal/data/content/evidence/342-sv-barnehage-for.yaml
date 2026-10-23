@@ -1,0 +1,33 @@
+id: ev-2026-sv-barnehage-for
+statement_id: utsagn-33
+party_id: sv
+actor: "Sosialistisk Venstreparti (familie- og kulturkomiteen)"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV er medforslagsstiller sammen med MDG og KrF. Alle 5 fremmøtte
+  stemte for.
+claim_action: >
+  Votering_id 26946, SV 5 for, 0 mot. Fra SVs merknad: SV "har mange
+  tiltak for å gjøre det bedre for barn i fattige familier, som å
+  gjøre barnehage og SFO billigere, sikre alle mulighet til å delta
+  på fritidsaktiviteter og sørge for at foreldre får nødvendig hjelp
+  til å få jobb og hjelp med økonomien."
+verbatim_excerpt: >
+  Sosialistisk Venstreparti har mange tiltak for å gjøre det bedre
+  for barn i fattige familier, som å gjøre barnehage og SFO
+  billigere, sikre alle mulighet til å delta på fritidsaktiviteter og
+  sørge for at foreldre får nødvendig hjelp til å få jobb og hjelp
+  med økonomien.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26946"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: SV medforslagsstiller med en direkte relevant begrunnelse
+  om barn i fattige familier, kjernen i denne dimensjonens spørsmål.
+retrieved_at: "2026-09-24"

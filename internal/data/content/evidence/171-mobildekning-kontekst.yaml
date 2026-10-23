@@ -1,0 +1,51 @@
+id: ev-2026-05-19-mobildekning-kontekst
+statement_id: utsagn-26
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet et representantforslag fra Sp om å sikre
+  mobildekning på alle offentlige veier innen 2030. Komiteen selv
+  omtaler mobildekning som "en viktig del av samfunnets grunnleggende
+  infrastruktur" — en direkte formulering av denne dimensjonens
+  spørsmål. Andre utsagn i Dimensjon 6 (Universell grunnmur, 25-30) —
+  utsagn-25 (tannhelsereform) var allerede bygget; dette er nummer 26.
+claim_action: >
+  Dokument 8:194 S (2025-2026), Innst. 239 S (2025-2026). Fremmet av
+  Geir Inge Lien, Bent-Joacim Bentzen og Erling Sande (Sp). Votering_id
+  27610 (alternativ votering mot komiteens tilråding): forslag 1 fra
+  Sp, "Stortinget ber regjeringen sørge for at alle offentlige veier i
+  Norge har mobildekning innen 2030", fikk 9 for (Sp 5, KrF 4) mot 90
+  mot (Ap 31, FrP 28, H 14, MDG 5, R 5, SV 5, V 2). Komiteens tilråding
+  (representantforslaget "vedtas ikke") ble dermed vedtatt 90-9
+  (votering_id 27609, samme alternativ votering, motsatt telling).
+  Bakgrunn: statsråden uttalte i brev til komiteen at full dekning
+  langs alle offentlige veistrekninger innen 2030 "ikke er realistisk"
+  med kjente virkemidler, og at kostnadene "vil være altfor store."
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27609/27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Institusjonell kontekst. Saken kobler dimensjonens spørsmål direkte
+  til et konkret, bindende årstall: alle ni partier er dokumentert med
+  et vedtak, men fordelingen er svært skjev (9 mot 90) — den mest
+  ensidige voteringen i datasettet så langt. Fremskrittspartiet har den
+  klart mest omfattende, sympatiske merknadsteksten om selve
+  problembeskrivelsen (trafikksikkerhet, beredskap, distriktene,
+  responstid for nødetater) av samtlige partier i saken, men stemte
+  likevel mot Sps konkrete 2030-forslag uten at innstillingen
+  dokumenterer noen egen grunn til akkurat det bruddet — se
+  evidence/174. Høyre er det ENESTE partiet med en fullstendig,
+  navngitt begrunnelse for mot-stemmen (statsrådens kostnads- og
+  realismevurdering, ønske om å avvente Nkoms 2025-analyse) — se
+  evidence/175. Ap, SV, Rødt og MDG er alle med i den delte
+  6-partitilrådingen uten egen forslagsspesifikk tekst — se evidence
+  176-179. KrF og Venstre har ikke sete i komiteen; KrF stemte likevel
+  for, Venstre mot, begge udokumentert — se evidence/173 og 180.
+retrieved_at: "2026-09-24"

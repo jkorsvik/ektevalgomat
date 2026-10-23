@@ -1,0 +1,45 @@
+id: ev-2026-04-28-kombit-kontekst
+statement_id: utsagn-22
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Samme sak som utsagn-19, 20 og 24 (Dokument 8:119 S, Innst. 225 S,
+  digital suverenitet). Høyre fremmet i komitébehandlingen et
+  forslag om felleskommunale innkjøpsordninger for avanserte digitale
+  teknologier som KI, etter modell av den danske KOMBIT-selskapet.
+  Forslaget ble avvist 23 mot 77 (én Høyre-representant brøt ut av
+  partiets egen bloc og stemte mot sitt eget parti-fremmede forslag).
+claim_action: >
+  Forslag 10 (Høyre alene): "Stortinget ber regjeringen utrede
+  felleskommunale innkjøpsordninger for avanserte digitale teknologier
+  som kunstig intelligens, etter modell av Danmarks KOMBIT." Votering_id
+  27486 (sakid 200036): 23 for (Høyre 12, KrF 4, MDG 5, Venstre 2), 77
+  mot (Ap 32, FrP 29, Rødt 5, SV 5, Sp 5, Høyre 1).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); data.stortinget.no sakid=200036, votering_id 27486"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Andre statement fra Innovasjon/omstillingsevne-dimensjonen (21-23,
+  nå 2/3 real) og fjerde forskjellige forslag hentet fra samme
+  Innst. 225 S som utsagn-19/20/24 — se docs/roadmap.md for hvordan
+  votering_id-formelen (27496 − forslagsnummer) ble utledet og
+  bekreftet. Statementets kjerne ("bygge felles offentlig kapasitet
+  vs. hver enkelt kjøper separat") passer godt til dimensjonens
+  spørsmål, i motsetning til forslag 8 (Palantir-forbud) og forslag
+  11 (statlig sky), som handler om KONTROLL over infrastruktur og
+  derfor ble kodet under Teknologisk kapasitet i stedet. Interessant
+  detalj: dette er det ENESTE forslaget i hele Innst. 225 S-saken der
+  en representant stemmer på tvers av sitt eget partis blokk — én av
+  13 fremmøtte Høyre-representanter stemte MOT et forslag sitt eget
+  parti hadde fremmet, mens de resterende 12 stemte for. Ingen
+  skriftlig forklaring på avviket er funnet i innstillingen (kan være
+  en feilregistrering eller en reell individuell disens; begge er like
+  interessante for videre datainnsamling).
+retrieved_at: "2026-09-24"

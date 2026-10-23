@@ -1,0 +1,31 @@
+id: ev-2026-05-19-krf-mobildekning-for
+statement_id: utsagn-26
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF stemte for Sps forslag. KrF har ikke sete i kommunal- og
+  forvaltningskomiteen og har ingen skriftlig merknad noe sted i
+  denne innstillingen.
+claim_action: >
+  Votering_id 27610, KrF 4 for, 0 mot. Ingen KrF-merknad funnet i
+  innstillingens fulltekst; komiteens medlemsliste (Ap, FrP, H, SV,
+  Sp, R, MDG) bekrefter KrF ikke har plass i denne komiteen denne
+  perioden.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +2 fra stemmetallet alene, samme styrke som Sp siden det er en
+  binær for/mot-votering uten mellomposisjon dokumentert for KrF, men
+  attribution_confidence satt til ukjent fordi ingen tekstlig grunn er
+  tilgjengelig. Eneste parti i datasettet så langt som stemmer FOR et
+  forslag det verken har sete i komiteen for, er medforslagsstiller
+  på, eller har noen synlig merknad om.
+retrieved_at: "2026-09-24"

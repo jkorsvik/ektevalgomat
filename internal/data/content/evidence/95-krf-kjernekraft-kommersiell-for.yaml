@@ -1,0 +1,32 @@
+id: ev-2026-05-26-krf-kjernekraft-kommersiell-for
+statement_id: utsagn-13
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-05-26"
+evidence_type: voteringsresultat
+evidence_class: fakta
+scan_summary: >
+  KrF stemte for lovendring nå (forslag 1 og 2). KrF har ikke sete i
+  energi- og miljøkomiteen i denne perioden og har derfor ingen egen
+  skriftlig merknad i innstillingen — posisjonen er dokumentert kun
+  gjennom stemmegivningen i plenum.
+claim_action: >
+  Votering_id 27722 (forslag 1 og 2, på vegne av FrP, H og V): KrF 4
+  for, 3 ikke til stede. KrF stemte samtidig mot komiteens tilråding
+  om en stortingsmelding (votering_id 27723) sammen med FrP — KrF var
+  ikke blant de 7 partiene som stod bak tilrådingen.
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Votering 27722, 27723 — data.stortinget.no"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27722"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1, ikke +2: stemmegivningen er utvetydig for, men KrF har
+  ingen egen skriftlig begrunnelse i denne innstillingen (partiet har
+  ikke sete i komiteen), så vi vet ikke om KrF deler FrPs mest
+  vidtgående tiltak eller H/Vs strengere markedsvilkår. Lavere
+  attribution_confidence enn de andre partiene av denne grunn — se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml.
+retrieved_at: "2026-09-24"

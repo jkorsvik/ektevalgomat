@@ -1,0 +1,39 @@
+id: ev-2026-05-26-mdg-kjernekraft-kommersiell-mot
+statement_id: utsagn-13
+party_id: mdg
+actor: "Miljøpartiet De Grønne (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG stemte mot lovendring nå, og understreker sammen med Ap og
+  Senterpartiet at Norges kraftbehov på kort og mellomlang sikt må
+  løses med fornybar kraft — kjernekraft kan tidligst bidra fra
+  2040-tallet, og debatten om det må ikke forsinke tiltak som gir
+  kraft nå.
+claim_action: >
+  Votering_id 27722, MDG 0 for, 5 mot. Del av syvpartiflertallet bak
+  tilrådingen (votering_id 27723).
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Arbeiderpartiet, Senterpartiet og
+  Miljøpartiet De Grønne understreker at Norges kraftbehov på kort og
+  mellomlang sikt må løses gjennom økt utbygging av fornybar kraft
+  [...]. Selv i de mest optimistiske scenarioene vil kjernekraft
+  tidligst kunne bidra i energisystemet fra 2040-tallet. [...] er disse
+  medlemmer opptatt av at den politiske debatten om kjernekraft
+  ikke forsinker tiltak som gir mer kraft på kort sikt."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27722, 27723"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1: MDGs innvending (i felles merknad med Ap og Sp) er
+  primært om tidsprioritering — fornybar kraft nå, ikke kjernekraft-
+  debatt som forsinker det — og om uklar ansvarsfordeling ved
+  kommersiell drift (felles merknad med Ap, Sp, Rødt). Ingen egen,
+  separat MDG-merknad ble funnet i denne innstillingen utover de
+  felles avsnittene. Se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml.
+retrieved_at: "2026-09-24"

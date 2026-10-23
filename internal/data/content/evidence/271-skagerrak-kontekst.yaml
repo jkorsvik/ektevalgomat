@@ -1,0 +1,38 @@
+id: ev-2026-05-26-skagerrak-kontekst
+statement_id: utsagn-09
+party_id: ""
+actor: "Energi- og miljøkomiteen / Stortinget i plenum"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Fjerde forslag i samme sak som utsagn-08 (Innst. 374 S), men denne
+  gangen fra bare FrP, Senterpartiet og Rødt — SV er IKKE
+  medforslagsstiller og stemte mot, til forskjell fra forslag 1-3.
+claim_action: >
+  Forslag 4 (FrP, Sp og Rødt): "Stortinget ber regjeringen instruere
+  NVE om å avslutte utredningsprogrammet for mulig reinvestering av
+  Skagerrak 1 og 2." Bakgrunn: Ap gikk til valg på å ikke fornye SK1
+  og SK2, men NVE utreder likevel en ny forbindelse. Votering_id
+  28136 (sakid 200210): 38 for (FrP 28, Sp 5, Rødt 5), 61 mot (Ap 32,
+  Høyre 12, KrF 4, MDG 5, SV 5, Venstre 2), 1 FrP-representant mot.
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); data.stortinget.no sakid=200210, votering_id 28136"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  SVs skifte fra FOR (utsagn-08, forslag 1-3) til MOT (dette
+  forslaget) er den mest interessante detaljen: SV støtter
+  eksportbegrensning og kabel-reforhandling generelt, men ikke det
+  spesifikke, konkrete tiltaket å stoppe en pågående NVE-utredning om
+  Skagerrak-reinvestering. Innstillingen gir ingen egen SV-merknad om
+  akkurat dette forslaget, så begrunnelsen for skiftet er ikke
+  dokumentert — kun stemmen selv. Interessant tilleggsdetalj: FrP
+  gikk til valg på (ifølge Sp/Rødts merknad) at "Arbeiderpartiet gikk
+  til valg på at de ikke ville fornye" SK1/SK2, likevel utreder NVE
+  en ny forbindelse — et løftebrudd-argument fra Sp/Rødt rettet mot
+  Ap, ikke mot regjeringspartiene selv.
+retrieved_at: "2026-09-24"

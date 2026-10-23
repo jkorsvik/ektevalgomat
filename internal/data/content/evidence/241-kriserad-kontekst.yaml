@@ -1,0 +1,51 @@
+id: ev-2026-04-28-kriserad-kontekst
+statement_id: utsagn-41
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Sjette forslag hentet fra Innst. 225 S (digital suverenitet), samme
+  sak som utsagn-19, 20, 22, 23 og 24. MDG fremmet alene et forslag om
+  et uavhengig nasjonalt digitalt kriseråd. Forslaget ble avvist 8 mot
+  91 — med interne partisplitter i BÅDE Rødt og SV.
+claim_action: >
+  Forslag 21 (MDG alene): "Stortinget ber regjeringen utrede
+  etablering av et uavhengig nasjonalt digitalt kriseråd med ansvar
+  for strategiske råd knyttet til digital sikkerhet, suverenitet og
+  personvern." MDGs egen merknad: "Dette medlem viser til at den
+  geopolitiske situasjonen har gjort det tydelig at digital
+  infrastruktur kan brukes som pressmiddel mot stater og
+  institusjoner. [...] Dette medlem mener det er behov for et
+  uavhengig nasjonalt organ som kan gi strategiske råd om digital
+  sikkerhet, suverenitet og personvern på tvers av sektorer og
+  forvaltningsnivåer." Votering_id 27475 (sakid 200036): 8 for (MDG 5,
+  Rødt 1, SV 2), 91 mot (Ap 32, FrP 29, Høyre 13, KrF 4, Sp 5, Rødt 4,
+  SV 2, Venstre 2).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); data.stortinget.no sakid=200036, votering_id 27475"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Første statement i Robusthet/adaptabilitet-dimensjonen (38, 39, 41,
+  42, nå 3/4 real) og sjette forskjellige forslag hentet fra denne
+  ene saken — se docs/roadmap.md Phase 2t/2u/2v for votering_id-
+  formelen (27496 − forslagsnummer). Dette er den TREDJE og klart mest
+  dramatiske intra-parti-splitten funnet i saken: Rødt, som ellers har
+  stemt i lockstep med MDG på hvert eneste digital-suverenitet-forslag
+  i denne innstillingen (se evidence-klyngene for utsagn-19/20/22/23/24),
+  stemte her 4 MOT og bare 1 FOR MDGs forslag — nesten motsatt av det
+  vanlige mønsteret. SV splittet nøyaktig på midten (2 for, 2 mot, 5
+  ikke til stede). Én mulig tolkning: Rødt og deler av SV foretrekker
+  kanskje sine EGNE, mer konkrete forslag (som nasjonal skytjeneste,
+  forslag 11, eller Palantir-forbudet, forslag 8) fremfor et nytt,
+  uavhengig rådgivende organ — men dette er ikke dokumentert direkte
+  og er verdt å undersøke videre. To tidligere splitter i samme sak
+  (Høyre på KOMBIT-forslaget, MDG på åpen kildekode-forslaget) var
+  begge 80%+ enighet med kun 1 avviker; denne er den første med en
+  ekte, nær 50/50 (SV) eller motsatt (Rødt) fordeling.
+retrieved_at: "2026-09-24"

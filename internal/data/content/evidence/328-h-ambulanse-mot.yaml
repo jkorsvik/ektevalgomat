@@ -1,0 +1,32 @@
+id: ev-2026-h-ambulanse-mot
+statement_id: utsagn-27
+party_id: h
+actor: "Høyre (helse- og omsorgskomiteen)"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre er medforfatter av flertallsmerknaden om at
+  ambulansekapasitet må sikres, men stemte likevel MOT det konkrete,
+  bindende forslaget om at regjeringen skal komme tilbake med en
+  konkret plan.
+claim_action: >
+  Votering_id 27581, Høyre 14 mot, 0 for. Fra flertallsmerknaden
+  (FrP, Høyre, SV, Sp), delt med SV (evidence/325): "Man må sikre
+  måloppnåelse på responstider for utrykning av ambulanse ved å
+  bygge tilstrekkelig kapasitet."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: sterkt_dokumentert
+context_note: >
+  Kodet -1: et klart "ja i prinsippet, nei til denne bindende
+  teksten"-tilfelle. Høyre er medforfatter av den generelle
+  ambulansemerknaden, men stemte mot den KONKRETE, tidsbundne
+  handlingsplikten forslag 1 legger på regjeringen — samme mønster
+  som Høyre viste på flere andre saker i dette datasettet (se
+  evidence/281 for havbunnsmineraler-parallellen).
+retrieved_at: "2026-09-24"

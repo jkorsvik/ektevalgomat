@@ -1,0 +1,32 @@
+id: ev-2024-06-12-v-skatt-store-arv-merknad
+statement_id: utsagn-57
+party_id: "v"
+actor: "Venstre (finanskomiteen, fellesmerknad med Høyre og FrP)"
+date: "2024-06-12"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre mener, sammen med H og FrP, at arv ikke skal skattlegges ved
+  overføringen, bare når arvingen selger.
+claim_action: >
+  Fellesmerknad fra H, FrP, V og KrF i Innst. 410 S (2023–2024) til SVs
+  forslag om å utrede skatt på gevinster ved arv og gave. De viser til
+  at arveavgiften ble fjernet i 2014.
+verbatim_excerpt: >
+  Disse medlemmer mener det er riktig å videreføre dette prinsippet og
+  at skattlegging skjer ved endelig realisasjon.
+status: uttalt
+position: -1
+source_tier: A
+evidensstyrke_cap: moderat
+source_name: "Innst. 410 S (2023–2024), fellesmerknad H/FrP/V/KrF"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-410s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: merknaden handler om skatt på gevinst ved arv, ikke
+  om en arveavgift. Den sier likevel at arv ikke skal skattlegges ved
+  overføringen. «Disse medlemmer» er «Komiteens medlemmer fra Høyre,
+  Fremskrittspartiet, Venstre og Kristelig Folkeparti» i samme avsnitt.
+  Venstres program 2025–2029 nevner ikke arveavgift. Forrige
+  stortingsperiode.
+retrieved_at: "2026-10-02"

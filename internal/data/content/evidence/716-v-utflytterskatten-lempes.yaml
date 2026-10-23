@@ -1,0 +1,24 @@
+id: ev-2025-partiprogram-v-utflytterskatten-lempes
+statement_id: utsagn-58
+party_id: "v"
+actor: "Venstre"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre vil fjerne de nye reglene for utflytterskatt.
+claim_action: >
+  Venstres program 2025–2029 sier dette med egne ord. Partiprogram, ikke
+  en Storting-avstemning.
+verbatim_excerpt: >
+  Fjerne de nye EXIT-skattereglene.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "Venstres program 2025–2029"
+source_url: "https://www.venstre.no/politikk/partiprogram/program-2025-2029/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt. Se også fil 717 (eget forslag i Stortinget,
+  desember 2025).
+retrieved_at: "2026-10-02"

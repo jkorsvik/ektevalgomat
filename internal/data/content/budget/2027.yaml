@@ -1,0 +1,169 @@
+id: budsjett-2027
+year: 2027
+title: "Statsbudsjettet 2027"
+presented: "2026-10-07"
+source_name: "Prop. 1 S (2026–2027), Meld. St. 1 (2026–2027) og Prop. 1 LS, samlet for alle departementer"
+source_url: "https://www.regjeringen.no/no/statsbudsjett/2027/id3172975/"
+retrieved_at: "2026-10-12"
+summary: >
+  Regjeringen la fram forslaget til statsbudsjett for 2027 den 7. oktober
+  2026: 20 dokumenter, 4 640 sider, og et maskinlesbart datagrunnlag (Gul
+  bok) med hver kapittel og post. Dette er den samlede oversikten over
+  forslaget. Statens tall er hentet fra 2027-filen (én beløpskolonne, ingen
+  årskolonne) og sammenlignet med 2026-filen ved siden av, slik at hver post
+  får en endring. Sammenligningen gjelder altså regjeringens to forslag.
+  Stortinget har ikke vedtatt 2027-budsjettet ennå, og for poster som
+  Stortinget endret i 2026, viser endringen mer enn forskjellen mellom
+  vedtatt 2026 og foreslått 2027.
+
+key_figures:
+  - label: "Strukturelt oljekorrigert underskudd"
+    value: "608,4 mrd"
+    note: "12,6 % av trend-BNP; budsjettindikatoren er 0,02 pst.poeng mer enn 2026 — et nøytralt budsjett, ikke en utvidelse (Meld. St. 1, tabell 3.1)"
+  - label: "Sum av utgiftskapitlene"
+    value: "2 550 mrd"
+    note: "+4,8 % fra 2026. Alle kapitler 1–2999, ekskl. kap. 2800 (overføring til Statens pensjonsfond utland). Bredt begrep: inkluderer låneordninger og fonds"
+  - label: "Sum av inntektskapitlene"
+    value: "2 463 mrd"
+    note: "Skatter og avgifter mv., alle kapitler 3000–5999, ekskl. kap. 5800 (overføring fra fondet)"
+  - label: "Overføring til Statens pensjonsfond utland"
+    value: "568 mrd"
+    note: "Kap. 2800, post 50 — holdt utenfor de to summene over"
+
+departments:
+  - name: "Arbeids- og inkluderingsdepartementet"
+    amount: 779424
+    change_pct: 5.5
+  - name: "Kommunal- og distriktsdepartementet"
+    amount: 330402
+    change_pct: 4.9
+  - name: "Helse- og omsorgsdepartementet"
+    amount: 319562
+    change_pct: 4.7
+  - name: "Forsvarsdepartementet"
+    amount: 191681
+    change_pct: 6.6
+  - name: "Kunnskapsdepartementet"
+    amount: 162746
+    change_pct: 6.2
+  - name: "Finansdepartementet"
+    amount: 150923
+    change_pct: 1.9
+  - name: "Nærings- og fiskeridepartementet"
+    amount: 133788
+    change_pct: -6.8
+  - name: "Samferdselsdepartementet"
+    amount: 104978
+    change_pct: 2.8
+  - name: "Barne- og familiedepartementet"
+    amount: 88802
+    change_pct: 8.2
+  - name: "Justis- og beredskapsdepartementet"
+    amount: 65111
+    change_pct: 7.4
+  - name: "Utenriksdepartementet"
+    amount: 63015
+    change_pct: 6.5
+  - name: "Landbruks- og matdepartementet"
+    amount: 38496
+    change_pct: 10.5
+  - name: "Digitaliserings- og forvaltningsdepartementet"
+    amount: 37213
+    change_pct: 22.0
+  - name: "Kultur- og likestillingsdepartementet"
+    amount: 28059
+    change_pct: 3.8
+  - name: "Klima- og miljødepartementet"
+    amount: 25364
+    change_pct: -6.1
+  - name: "Energidepartementet"
+    amount: 24160
+    change_pct: 18.1
+
+findings:
+  - topic: "Nødnett: nytt nett, nytt departement"
+    statement_id: "utsagn-60"
+    quote: "Digitaliserings- og forvaltningsdepartementet tok hausten 2025 over ansvaret for prosjektet for nytt nødnett."
+    note: >
+      Prosjektet for nytt nødnett flyttet fra Justis- og
+      beredskapsdepartementet til Digitaliserings- og
+      forvaltningsdepartementet høsten 2025, og skal bygges på 5G og
+      skivedeling. Bevilgningen er kap. 1543, post 22 «Nytt nødnett» = 324
+      mill. kroner, opp 224 mill. fra 2026.
+    source_url: "https://www.regjeringen.no/contentassets/df4dc3a3497342129b6d1681ad6d4c9e/nn-no/pdfs/prp202620270001dfddddpdfs.pdf"
+  - topic: "Nødnett: kommunene skjermes"
+    statement_id: "utsagn-60"
+    quote: "Regjeringa foreslår å løyve 85 mill. kroner til å skjerme dei kommunale og frivillige brukarane for høgare brukarbetaling og tilretteleggje for fortsatt bruk av Nødnett."
+    note: >
+      Dette gjelder dagens nødnett, ikke nytt nødnett. Statens kontrakt om
+      drift av dagens nett løper til og med 2031, med opsjon på to års
+      forlengelse. De 85 mill. kronene skal skjerme kommunale og frivillige
+      brukere mot høyere brukerbetaling for dette eksisterende nettet. Nytt
+      nødnett er en annen post med en annen tidshorisont (kap. 1543, post 22,
+      eget funn over), og ingen av de to postene beviser alene at staten
+      dekker alle framtidige investerings- og driftskostnader.
+    source_url: "https://www.regjeringen.no/contentassets/b17d3233f9a34c6cb7591257db3cd415/nn-no/pdfs/prp202620270001_jddddpdfs.pdf"
+  - topic: "Bredbånd: ingen ny bevilgning i forslaget"
+    statement_id: "utsagn-61"
+    quote: "99,3 pst. av husstandane og 98,9 pst. av verksemdene hadde tilbod om høghastigheits breiband med minst 100 Mbit/s nedlastingshastigheit ved utgangen av 2025."
+    observed:
+      - fiscal_year: 2026
+        stage: forslag
+        amount: 34110000
+      - fiscal_year: 2026
+        stage: saldert
+        amount: 159110000
+      - fiscal_year: 2027
+        stage: forslag
+        amount: 0
+    note: >
+      Kap. 1541, post 60 «Bredbåndsutbygging» finnes ikke i 2027-forslaget
+      (0 kroner). Regjeringen begrunner det med nesten full dekning: resten
+      dekkes av allerede bevilgede midler, lavbanesatellitt og ordningen for
+      funksjonell internettilgang. Sammenligningsgrunnlaget må oppgis, for
+      det er nettopp her det er lett å lese feil. Regjeringens opprinnelige
+      forslag for 2026 var 34,1 mill. kroner, men Stortinget økte posten med
+      125 mill. kroner i budsjettforliket, til 159,11 mill. kroner saldert
+      2026. Endringen fra vedtatt 2026 er derfor 159,11 → 0, ikke 34,1 → 0.
+      Begge tallene er hentet fra fagproposisjonen, som viser regnskap 2025,
+      saldert budsjett 2026 og forslag 2027 side om side: der står post 60
+      som 415 632, 159 110 og blank (tusen kroner). Dette er en endring i
+      regjeringens forslag. Det er ikke et vedtak om å stanse all
+      bredbåndsutbygging, og det er ikke i seg selv et løftebrudd.
+    source_url: "https://www.regjeringen.no/contentassets/df4dc3a3497342129b6d1681ad6d4c9e/nn-no/pdfs/prp202620270001dfddddpdfs.pdf"
+  - topic: "Norgespris økes kraftig"
+    statement_id: "utsagn-12"
+    quote: "Noregspris gir hushalda moglegheit til å velje ein fast pris per kWh som eit alternativ til straum stønadsordninga."
+    note: >
+      Energidepartementet foreslår 16 750 mill. kroner til stønads- og
+      overføringsordninger på energiområdet, hvorav 12 760 mill. til
+      Noregspris for strøm og fjernvarme og 3 600 mill. til strømstønad.
+      På postnivå: kap. 1820, post 77 «Norgespris for strøm» = 12 000 mill.
+      kroner, opp 2 900 mill. fra 2026. Staten bruker støtteordningen
+      Norgespris, ikke en lovbestemt makspris. (Proposisjonen skriver
+      «Noregspris»; postnavnet i Gul bok er «Norgespris for strøm».)
+    source_url: "https://www.regjeringen.no/contentassets/54db15f0f46f48dbb8312c562cec7b72/nn-no/pdfs/prp202620270001_eddddpdfs.pdf"
+  - topic: "Enova: overføringen til Klima- og energifondet kuttes"
+    statement_id: ""
+    quote: ""
+    note: >
+      Overføringen til Klima- og energifondet (kap. 1428, post 50) faller fra
+      5 905 til 3 002 mill. kroner i forslaget, et kutt på 2 903 mill.
+      «Enova halveres» ville være feil: dette er én overføring til fondet,
+      ikke halvparten av all Enova-aktivitet. Fondet har en beholdning og
+      andre inntekter, og Enova har flere oppgaver enn denne posten dekker.
+      Regjeringen sier samtidig at satsingen på målrettede energitiltak i
+      bygg gjennom Enova videreføres. Begge er sanne samtidig. Ingen utsagn
+      dekker Enova direkte.
+    source_url: "https://www.regjeringen.no/contentassets/e8b0bc2d43c24d02a28366b3b38aab17/no/pdfs/prp202620270001klddddpdfs.pdf"
+  - topic: "Brann og beredskap"
+    statement_id: "utsagn-45"
+    quote: ""
+    note: >
+      Ingen egen bevilgning til brann. Strukturelt: 110-sentralene til
+      brann- og redningsvesenet er samlokalisert med politiets 112 og
+      helsetjenestens 113 i flere politidistrikt, og et stortingsvedtak ber
+      regjeringen utrede en felles beredskapssatsing i Kirkenes for blant
+      annet brann og redning, DSB og politiet. Ingen 2027-dokument bruker
+      ordet «beredskapspakke».
+    source_url: "https://www.regjeringen.no/contentassets/b17d3233f9a34c6cb7591257db3cd415/nn-no/pdfs/prp202620270001_jddddpdfs.pdf"

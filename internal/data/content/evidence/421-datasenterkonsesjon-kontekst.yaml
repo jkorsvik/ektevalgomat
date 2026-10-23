@@ -1,0 +1,36 @@
+id: ev-2026-datasenterkonsesjon-kontekst
+statement_id: utsagn-11
+party_id: ""
+actor: "Energi- og miljøkomiteen / Stortinget i plenum"
+date: "2026-03-01"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 140 S (2025-2026), om SVs (Kirsti Bergstø m.fl.) Dok. 8:60 S
+  om en konsesjonsordning for etablering av datasentre. Forslag 1
+  fikk en bred, uvanlig koalisjon (Høyre, SV, Sp, Rødt og MDG) —
+  krysser hele den vanlige venstre-høyre-aksen.
+claim_action: >
+  Forslag 1 (Høyre, SV, Sp, Rødt og MDG): "Stortinget ber regjeringen
+  utrede hvordan den sterke økningen i etterspørsel etter kraft til
+  datasentre skal håndteres, herunder utrede innføring av et
+  nasjonalt konsesjonssystem, og komme tilbake til Stortinget senest
+  innen utgangen av 2026." Votering_id 27047 (sakid 105697): 40 for
+  (Høyre 14, KrF 4, MDG 5, Rødt 5, SV 5, Sp 6, Venstre 1), 62 mot (Ap
+  33, FrP 28, Venstre 1).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 140 S (2025–2026); data.stortinget.no sakid=105697, votering_id 27047"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-140s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  En sjelden, bred koalisjon på tvers av blokk: Høyre og Senterpartiet
+  deler en merknad om "nasjonal, strategisk tenkning om dataindustri",
+  mens SV/Sp/Rødt/MDG har en mer eksplisitt eierskaps- og
+  kontrollbegrunnelse. Venstre splitter internt (1 for, 1 mot). Ap og
+  FrP, normalt på hver sin side av mange saker i dette datasettet, står
+  her SAMMEN mot forslaget — begge regjeringspartier/opposisjonsparti
+  uten en egen konsesjonsordning-agenda.
+retrieved_at: "2026-09-24"

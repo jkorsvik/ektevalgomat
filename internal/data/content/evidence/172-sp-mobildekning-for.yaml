@@ -1,0 +1,38 @@
+id: ev-2026-05-19-sp-mobildekning-for
+statement_id: utsagn-26
+party_id: sp
+actor: "Senterpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp fremmet forslaget alene og stemte for, med en egen, navngitt
+  begrunnelse som kobler mobildekning til trafikksikkerhet, nullvisjon
+  for drepte og hardt skadde, og bosetning og næringsliv i hele landet.
+claim_action: >
+  Votering_id 27610, Sp 5 for, 0 mot. Fra Sps egen merknad: "Komiteens
+  medlem fra Senterpartiet er bekymret for trafikksikkerheten langs
+  norske veier når 2G-nettet slukkes. [...] Dette medlem mener at for å
+  bidra til beredskapen, nullvisjonen for hardt skadde og drepte i
+  veitrafikken og bosetning og næringsliv i hele landet må man sørge
+  for at det er reell mobildekning langs alle offentlige veier i
+  Norge."
+verbatim_excerpt: >
+  Dette medlem fremmer derfor følgende forslag: «Stortinget ber
+  regjeringen sørge for at alle offentlige veier i Norge har
+  mobildekning innen 2030.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt for): Sp er den ENESTE forslagsstilleren og eneste
+  partiet med en fullt navngitt, forslagsspesifikk begrunnelse på
+  "for"-siden — samme mønster som Sps rolle i utsagn-21 (Innovasjon
+  Norge) og utsagn-38 (matberedskap), hvor Sp konsekvent er villig til
+  å stå alene på et konkret, distriktsorientert forslag uten
+  medforslagsstillere.
+retrieved_at: "2026-09-24"

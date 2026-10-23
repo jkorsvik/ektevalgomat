@@ -1,0 +1,45 @@
+id: ev-2026-05-26-rodt-kjernekraft-kommersiell-mot
+statement_id: utsagn-13
+party_id: rodt
+actor: "Rødt (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt stemte mot lovendring for KOMMERSIELL kjernekraft, men er
+  positiv til kjernekraft som teknologi og klimatiltak i seg selv —
+  motstanden gjelder spesifikt privat/kommersielt eierskap, ikke
+  kjernekraft som sådan. Konsistent med Rødts eget standpunkt i
+  utsagn-06.
+claim_action: >
+  Votering_id 27722, Rødt 0 for, 5 mot. Rødt fremmet eget alternativt
+  forslag (forslag 30-31, votering_id 27715, avvist) om at eventuell
+  kjernekraft i Norge skal skje under fullt statlig eierskap og
+  hjemfallsrett.
+verbatim_excerpt: >
+  "Dette medlem viser til at kjernekraft utgjør en del av
+  løsningen på klimakrisen [...]. Dette medlem er positivt til
+  kjernekraft fordi dette er en arealeffektiv og relativt
+  klimavennlig energikilde. [...] Dette medlem mener at en
+  grunnleggende forutsetning for utvikling og eventuell etablering av
+  kjernekraft i Norge må være under full statlig kontroll og styring.
+  [...] det dermed ikke er forenlig med fellesskapets interesser å
+  overlate slike oppgaver til private eller kommersielle aktører med
+  profitt som overordnet formål."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27715, 27722"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: Rødts egen merknad er uvanlig eksplisitt om at de
+  IKKE er prinsipielt mot kjernekraft — de er mot at forslag 1-2
+  navngir "kommersiell" produksjon, altså privat/profittbasert
+  eierskap. Dette er samme prinsipp som ligger til grunn for Rødts
+  +2-posisjon i utsagn-06 (statlig eierskap over kjernekraft): dette
+  er et Konsistens-funn, ikke bare et enkeltstående saksmatch — Rødt
+  holder samme linje over to uavhengige saker, ett år og en annen
+  komitésammensetning fra hverandre. Se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,32 @@
+id: ev-2026-04-16-frp-ungdomskriminalitet-lukket-institusjon
+statement_id: utsagn-51
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2026-04-16"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP mener korte, tidsbegrensede opphold er utilstrekkelige og vil ha klare hjemler for langvarig skjerming når kriminalitetsbildet krever det."
+claim_action: >
+  FrP og Høyre fremmet sammen forslag nr. 1 i Innst. 173 S om at
+  ungdom med kriminell atferd skal kunne holdes i lukket institusjon så
+  lenge det er behov for det. FrP understreker i egen tekst at
+  kortvarige plasseringer uten mulighet for forlengelse er
+  utilstrekkelige. Votering 27111 (16.04.2026): falt 43 mot 58, for fra
+  FrP og Høyre.
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Fremskrittspartiet understreker videre at
+  institusjonene må ha klare hjemler for langvarig skjerming når
+  kriminalitetsbildet tilsier det. Kortvarige plasseringer uten
+  mulighet for forlengelse har vist seg utilstrekkelige for å beskytte
+  ofre og samfunn mot gjentatt kriminalitet fra unge gjengangere samt
+  for å gi reell behandlingsmessig effekt.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 173 S (2025–2026), forslag 1; votering 27111 (16.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-173s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eget (delt med Høyre) forslag, egen begrunnelse. Bekreftet
+  [OK] i votes.py: 43 for (FrP 29, H 14) / 58 mot.
+retrieved_at: "2026-09-27"

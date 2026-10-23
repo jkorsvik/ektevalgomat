@@ -1,0 +1,61 @@
+id: ev-2026-partiprogram-rodt-nasjonal-kontroll-forsvar
+statement_id: utsagn-45
+party_id: rodt
+actor: "Rødt"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt vil ha et nasjonalt forsvar som er uavhengig av stormaktsinteresser og
+  som selv setter premissene på norsk territorium, og vil erstatte EØS-avtalen
+  med en handelsavtale som sikrer nasjonal kontroll.
+claim_action: >
+  Rødts arbeidsprogram 2025–2029 sier i kapittelet «Militær og sivil
+  beredskap» at det forsvarspolitiske målet er et defensivt, sterkt nasjonalt
+  forsvar, uavhengig av stormaktsinteresser, og at et sterkere nasjonalt
+  forsvar skal gjøre Norge til premissleverandør for militær aktivitet på eget
+  territorium. I kapittelet «Internasjonale handels- og investeringsavtaler»
+  beskriver Rødt EØS-avtalen som en ensidig avtale som tvinger Norge til å
+  innføre direktiv på direktiv som EU vedtar, og vil erstatte den med en
+  handelsavtale som sikrer nasjonal kontroll.
+verbatim_excerpt: >
+  Rødts mål forsvarspolitisk er et defensivt, sterkt nasjonalt forsvar,
+  uavhengig av stormaktsinteresser. [...] Med et sterkere nasjonalt forsvar kan
+  vi sørge for at Norge er premissleverandør for militær aktivitet på vårt eget
+  territorium. [...] Det er en ensidig avtale som tvinger Norge til å innføre
+  direktiv på direktiv som EU vedtar, selv om Norge ved folkeavstemninger har
+  sagt nei til EU-medlemskap. [...] Erstatte EØS-avtalen med en balansert
+  handelsavtale som sikrer nasjonal kontroll.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "Rødts arbeidsprogram 2025–2029"
+source_url: "https://roedt.no/fil/7393ab981e025ec77c5c78797892dfc9f020fc17.pdf?dl="
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet +2, og koblingen mellom de to kapitlene er koders, ikke partiets:
+  programmet sier IKKE i én setning at forsvars- og beredskapslovgivning skal
+  stå uavhengig av EØS eller EU-mandater. Det som er dokumentert er begge
+  halvdelene hver for seg, og de peker samme vei. Forsvar: «et defensivt,
+  sterkt nasjonalt forsvar, uavhengig av stormaktsinteresser», «premissleverandør
+  for militær aktivitet på vårt eget territorium», «Sikre norsk jurisdiksjon på
+  norsk jord». EØS: «tvinger Norge til å innføre direktiv på direktiv som EU
+  vedtar», og «Erstatte EØS-avtalen med en balansert handelsavtale som sikrer
+  nasjonal kontroll». Rødt er også selv forslagsstiller til Grunnlovsforslag 9
+  om terskelen for suverenitetsavståelse (se ev-2026-464s-rodt-suverenitetsterskel,
+  tier A, posisjon null), og programmets eget punkt «Motarbeide
+  suverenitetsavståelse og kreve at suverenitet kun kan avstås med 3/4 flertall
+  på Stortinget, i tråd med Grunnloven» trekker samme vei.
+  Kalibrering mot de andre partiene på dette utsagnet: H -2 og V -2 (vil binde
+  Norge tettere til EUs forsvars- og industrisamarbeid), Ap -1 og MDG -1, FrP 0,
+  KrF +1 (beholde dagens EØS-tilknytning nettopp fordi den bevarer «nasjonal
+  handlefrihet», kodet +1 og ikke +2 fordi den teksten er generell og ikke
+  sektorspesifikk), SV +2 (eksplisitt mot EUs «forsvarsunion»). Rødt kodet +2:
+  de har både en forsvarsspesifikk formulering om nasjonal uavhengighet og et
+  eksplisitt krav om å erstatte EØS for å sikre nasjonal kontroll, altså mer enn
+  KrFs generelle +1 og på linje med SVs +2. Tier C, ikke tier A: et program er
+  en intensjon, ikke en handling.
+  Ingen consistency_flag satt: Rødts stemme i Innst. 464 S gjelder den
+  konstitusjonelle terskelmekanismen for myndighetsoverføring, et annet
+  spørsmålsnivå enn denne substansielle preferansen.
+retrieved_at: "2026-10-13"

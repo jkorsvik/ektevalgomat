@@ -1,0 +1,45 @@
+id: ev-2026-05-07-frp-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: frp
+actor: "Fremskrittspartiet (Erlend Wiborg, Bjørn Larsen, Rune Midtun, Helge André Njåstad)"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP stemte mot GDPR/jurisdiksjons-forslaget, men fremmet selv et enda mer konkret forslag om nasjonal skytjeneste i samme sak."
+claim_action: >
+  FrP var ikke medforslagsstiller til forslag 4 (SV/Rødt, i innstillingen også MDG) om
+  GDPR-oppfølging og jurisdiksjonskrav, og stemte mot det 07.05.2026
+  (votering 18). FrP fremmet imidlertid selv, sammen med SV og Rødt,
+  forslag 1 om å utrede en nasjonal, offentlig eid skytjeneste — et
+  konkret skritt i samme retning som utsagnet, og viste i sin merknad til
+  at NSM har anbefalt en nasjonal skylagringstjeneste siden 2023.
+verbatim_excerpt: >
+  Komiteens medlemmer fra Fremskrittspartiet og Rødt er enige i at
+  Norge trenger en nasjonal skytjeneste, og viser til at Nasjonal
+  sikkerhetsmyndighet, NSM, har anbefalt en nasjonal
+  skylagringstjeneste i Norge siden 2023. [...] Stortinget ber
+  regjeringen utrede og komme tilbake til Stortinget innen
+  statsbudsjett for 2027 med en modell for offentlig skytjeneste.
+  [...] Skyen skal eies og driftes av det offentlige for bearbeiding,
+  lagring og flytting av data.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026), forslag 1 og 4; votering_id 27492 og 27495 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke +1 eller uklart, selv om FrP stemte mot forslag 4 (som
+  isolert sett er i tråd med det snudde utsagnet) — dette er den samme
+  fellen forskningsnotatene advarer mot: en ren voteringstall-lesning
+  ville gitt feil konklusjon. FrPs egen tekst går lenger enn forslag 4 i
+  suverenitetsretning (en offentlig eid, norskdriftet skytjeneste, ikke
+  bare en redegjørelse for jurisdiksjon under GDPR/EU-dialog), så
+  mot-stemmen på forslag 4 Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. fra +1 til -1.
+  reflekterer sannsynligvis at FrP foretrakk sitt eget, konkrete forslag
+  1 (som FrP stemte for). Satt til +1 fremfor +2 fordi FrP selv ikke var
+  medforslagsstiller til den spesifikke jurisdiksjonsteksten utsagnet
+  speiler nærmest, og fordi et samlet bilde av begge forslagene ikke gir
+  et like eksplisitt "norsk/nordisk jurisdiksjon"-krav som SV/Rødts
+  tekst.
+retrieved_at: "2026-09-26"

@@ -1,0 +1,37 @@
+id: ev-2026-04-14-h-utvisning-individuell-tilknytning
+statement_id: utsagn-47
+party_id: h
+actor: "Høyre"
+date: "2026-04-14"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre og Sp advarte mot et regelverk som avskjærer all individuell behandling, og fremmet i stedet en gjennomgang innenfor folkerettslige rammer."
+claim_action: >
+  Høyre og Senterpartiet fremmet sammen forslag nr. 3 i Innst. 205 S:
+  en helhetlig gjennomgang av utvisningsregelverket med sikte på at
+  flere lovbrudd skal føre til utvisning, men innenfor rammene av
+  Norges folkerettslige forpliktelser — til forskjell fra FrPs forslag
+  nr. 2, som ikke har et slikt forbehold. Votering 27440 (14.04.2026):
+  falt 22 mot 78, for fra H og Sp.
+verbatim_excerpt: >
+  «Et regelverk som fullstendig avskjærer enhver individuell behandling
+  ved utvisning, risikerer å stride mot Norges folkerettslige
+  forpliktelser og vil kunne settes til side av domstolene. Disse
+  medlemmer mener en reform som skal virke i praksis, må utformes
+  innenfor de rammer som menneskerettslige forpliktelser setter.»
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026), forslag 3; votering 27440 (14.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: Høyre og Sp ønsker fortsatt en innstramming (flere
+  lovbrudd skal føre til utvisning), men insisterer eksplisitt på at
+  reformen må holde seg innenfor menneskerettslige rammer — det vil i
+  praksis si at en form for individuell/proporsjonalitetsvurdering må
+  bestå. Dette er en reell mellomposisjon, ikke et fullt forsvar av
+  dagens strafferamme-baserte skjønn slik statusquo-forsvarerne
+  argumenterer. Bekreftet [OK] i votes.py: 22 for (H 13, Sp 5, KrF 4)
+  / 78 mot.
+retrieved_at: "2026-09-27"

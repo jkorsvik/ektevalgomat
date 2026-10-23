@@ -1,0 +1,22 @@
+id: ev-2026-v-ambulanse-for
+statement_id: utsagn-27
+party_id: v
+actor: "Venstre"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre sitter ikke i helse- og omsorgskomiteen og er ikke
+  medforslagsstiller, men begge fremmøtte stemte for.
+claim_action: "Votering_id 27581, Venstre 2 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1: stemmen er dokumentert, ingen egen Venstre-merknad
+  finnes i innstillingen.
+retrieved_at: "2026-09-24"

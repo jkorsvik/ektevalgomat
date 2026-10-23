@@ -1,0 +1,16 @@
+id: utsagn-31
+number: 31
+dimension: "Barns muligheter"
+primary_question: "I hvilken grad kompenserer samfunnet for forhold barn ikke har valgt?"
+case_tag: barnetrygd_prisjustering_lovfestet
+short_name: "Barnetrygden fastsettes i budsjettet"
+text: >
+  Barnetrygden bør fortsatt fastsettes i de årlige statsbudsjettene,
+  ikke lovfestes med en automatisk årlig prisjustering.
+practical_stakes:
+  enig: >
+    Barnetrygden fastsettes fortsatt i de årlige statsbudsjettene. Den
+    lovfestes ikke med en automatisk årlig prisjustering.
+  uenig: >
+    Barnetrygden lovfestes med en automatisk årlig prisjustering, uavhengig
+    av de årlige budsjettforhandlingene.

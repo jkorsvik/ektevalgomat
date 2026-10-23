@@ -1,0 +1,49 @@
+id: ev-2026-05-26-mdg-europeisk-erfaring
+statement_id: utsagn-06
+party_id: mdg
+actor: "Miljøpartiet De Grønne (Frøya Skjold Sjursæther, energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG (med Ap, Sp, Rødt) pekte på at kjernekraft i Europa i hovedsak er bygget ut med vesentlig statlig involvering."
+claim_action: >
+  MDG, Ap, Sp og Rødt skriver i fellesmerknad at forslag om privat og
+  kommersielt lønnsom kjernekraft ikke klargjør hvilke kostnader og
+  ansvar staten faktisk vil bli sittende med, og viser til at kjernekraft
+  i Europa i hovedsak er bygget ut med statlig involvering. MDG står
+  også bak to andre fellesmerknader (med Ap+Rødt om kostnadskrevende
+  myndighetsoppskalering, og med Ap+Sp om at fornybar må løse
+  kraftbehovet før 2040-tallet).
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Arbeiderpartiet, Senterpartiet, Rødt og
+  Miljøpartiet De Grønne merker seg at forslag om privat og kommersielt
+  lønnsom kjernekraft ikke avklarer hvilke kostnader og ansvar staten i
+  realiteten vil sitte igjen med. Disse medlemmer vil påpeke at en slik
+  kjernekraftmodell står i sterk kontrast til den europeiske erfaringen,
+  hvor kjernekraft i all hovedsak er bygget ut med vesentlig statlig
+  involvering, statlige garantier eller offentlig eierskap."
+status: uttalt
+position: 1
+source_tier: A
+# Fellesmerknad, ingen egen votering på denne spesifikke innvendingen —
+# se context_note. Se Evidence.EvidensstyrkeCap.
+evidensstyrke_cap: moderat
+source_name: "Innst. 278 S (2025–2026), fellesmerknad Ap/Sp/Rødt/MDG"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, samme grunn som Ap og Sp (se de filenes context_note): en
+  reell, gjentatt skepsis til den private/kommersielle modellen (MDG er
+  medforfatter av tre separate merknader som alle trekker i denne
+  retningen), men ikke et eksplisitt krav om statlig eierskap slik Rødts
+  egne forslag 30-31 er. MDGs andre to fellesmerknader (kostnadskrevende
+  myndighetsoppskalering; fornybar må løse kraftbehovet før kjernekraft
+  kan bidra fra 2040-tallet) er ikke sitert her fordi de argumenterer om
+  TIDSPUNKT og KOSTNAD, ikke om eierskapsform — de er relevante for en
+  fremtidig egen "bør Norge satse på kjernekraft nå"-utsagn, ikke for
+  dette utsagnets eierskapsspørsmål spesifikt.
+  Merk: MDG stemte mot Rødts forslag 30-32 i samme sak, som ble
+  votert samlet (fil 703). Forslag 30 er nesten ordrett dette utsagnet.
+  Posisjonen her er kodet fra merknaden, ikke fra voteringen. Se fil
+  703 for hvorfor voteringen alene ikke er kodet.
+retrieved_at: "2026-09-23"

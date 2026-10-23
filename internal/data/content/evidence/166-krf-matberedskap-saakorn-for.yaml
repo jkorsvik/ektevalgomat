@@ -1,0 +1,29 @@
+id: ev-2026-06-05-krf-matberedskap-saakorn-for
+statement_id: utsagn-38
+party_id: krf
+actor: "Kristelig Folkeparti (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF stemte for, som medforslagsstiller sammen med FrP, SV, Rødt og
+  MDG, og deler FrPs egen, smalere begrunnelse om den finske modellen
+  (se evidence/162 for full sitattekst).
+claim_action: >
+  Votering_id 28068, KrF 4 for, 0 mot. Medforfatter av FrPs delte
+  merknad om den finske modellen for fysiske beredskapslagre.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt for): KrF er den ENESTE partiet i datasettet så
+  langt som er medforfatter av BÅDE FrP+KrFs smalere Finland-modell-
+  begrunnelse OG er navngitt i den bredere SV/Sp/Rødt/MDG-koalisjonen
+  for tilstøtende forslag (2, 3) i samme innstilling — en brobyggende
+  posisjon mellom to argumentasjonslinjer som normalt ikke overlapper
+  i dette datasettet.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voteringsforslag_oversikt xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://data.stortinget.no">
+  <respons_dato_tid>2026-09-23T20:19:13.9281873+02:00</respons_dato_tid>
+  <versjon>1.6</versjon>
+  <votering_id>27260</votering_id>
+  <voteringsforslag_liste>
+    <voteringsforslag>
+      <respons_dato_tid>2026-09-23T20:19:13.9281873+02:00</respons_dato_tid>
+      <versjon>1.6</versjon>
+      <forslag_betegnelse>Forslag nr. 1 fra Sofie Marhaug på vegne av Rødt</forslag_betegnelse>
+      <forslag_betegnelse_kort>nr. 1 på vegne av R</forslag_betegnelse_kort>
+      <forslag_id>40085040</forslag_id>
+      <forslag_levert_av_parti_liste />
+      <forslag_levert_av_representant>
+        <respons_dato_tid>2026-09-23T19:35:36.4683808+02:00</respons_dato_tid>
+        <versjon>1.6</versjon>
+        <doedsdato i:nil="true" />
+        <etternavn>Marhaug</etternavn>
+        <foedselsdato>1990-05-24T00:00:00</foedselsdato>
+        <fornavn>Sofie</fornavn>
+        <id>SOFMAR</id>
+        <kjoenn>kvinne</kjoenn>
+        <fylke>
+          <respons_dato_tid>2026-09-23T18:59:52.5114497+02:00</respons_dato_tid>
+          <versjon>1.6</versjon>
+          <historisk_fylke>false</historisk_fylke>
+          <id>Ho</id>
+          <navn>Hordaland</navn>
+        </fylke>
+        <parti>
+          <respons_dato_tid>2026-09-23T01:00:18.6971287+02:00</respons_dato_tid>
+          <versjon>1.6</versjon>
+          <id>R</id>
+          <navn>Rødt</navn>
+          <representert_parti>true</representert_parti>
+        </parti>
+        <vara_representant>false</vara_representant>
+      </forslag_levert_av_representant>
+      <forslag_paa_vegne_av_tekst>Rødt:</forslag_paa_vegne_av_tekst>
+      <forslag_sorteringsnummer>0</forslag_sorteringsnummer>
+      <forslag_tekst>&lt;div class='strtngt_forslag' data-strtngt-forslag-nr='1'&gt;
+  &lt;p class='strtngt_a type_uinnrykk'&gt;
+    Stortinget ber regjeringen nedsette et utvalg med mandat til å utrede hvordan et lobbyistregister hjemlet i åpenhetsloven eller annen egnet lov kan innføres, og på bakgrunn av utvalgets arbeid komme tilbake til Stortinget med lovforslag om innføring av et slikt register. Forslaget må inneholde registrerings- og innrapporteringsplikt for lobbyister som bedriver påvirkningsarbeid overfor stortingsrepresentanter, Statsministerens kontor eller den politiske ledelsen i departementene, samt åpne for at forvaltningen har adgang til å ilegge sanksjoner ved brudd på reglementet.
+  &lt;/p&gt;
+&lt;/div&gt;</forslag_tekst>
+      <forslag_type>loest_forslag</forslag_type>
+    </voteringsforslag>
+  </voteringsforslag_liste>
+</voteringsforslag_oversikt>

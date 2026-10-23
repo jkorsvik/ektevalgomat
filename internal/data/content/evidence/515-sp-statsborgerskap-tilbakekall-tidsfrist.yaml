@@ -1,0 +1,24 @@
+id: ev-2026-04-30-sp-statsborgerskap-tilbakekall-tidsfrist
+statement_id: utsagn-49
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-04-30"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Sp stemte mot forslaget om en foreldelsesfrist for tilbakekall av statsborgerskap, uten egen merknad om nettopp dette forslaget."
+claim_action: >
+  Sp har ikke egen tekst i Innst. 232 S om forslag nr. 4 (foreldelsesfrist
+  for tilbakekall) spesifikt. Stemte mot forslag nr. 4 (votering 27523).
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 232 S (2025–2026); votering 27523 (30.04.2026)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27523&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1 ut fra stemmegivning alene: Sp er medlem av komiteen, men
+  har ingen egen tekst om nettopp foreldelsesfrist-forslaget (forslag
+  4 er SV/Rødt/MDGs eget forslag). evidensstyrke_cap moderat. Bekreftet
+  [OK] i votes.py: Sp 0 for / 5 mot.
+retrieved_at: "2026-09-27"

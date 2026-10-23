@@ -1,0 +1,53 @@
+id: ev-2026-05-26-sp-europeisk-erfaring
+statement_id: utsagn-06
+party_id: sp
+actor: "Senterpartiet (Ole Herman Sveian, energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp (med Ap, Rødt, MDG) pekte på at kjernekraft i Europa i hovedsak er bygget ut med vesentlig statlig involvering."
+claim_action: >
+  Sp, Ap, Rødt og MDG skriver i fellesmerknad at forslag om privat og
+  kommersielt lønnsom kjernekraft ikke klargjør hvilke kostnader og
+  ansvar staten faktisk vil bli sittende med, og viser til at kjernekraft
+  i Europa i hovedsak er bygget ut med statlig involvering. Sp har
+  dessuten en egen, separat merknad om hva en fremtidig
+  stortingsmelding om kjernekraft bør dekke, inkludert ansvarsfordeling
+  mellom stat og privat.
+verbatim_excerpt: >
+  Komiteens medlemmer fra Arbeiderpartiet, Senterpartiet, Rødt og
+  Miljøpartiet De Grønne merker seg at forslag om privat og kommersielt
+  lønnsom kjernekraft ikke avklarer hvilke kostnader og ansvar staten i
+  realiteten vil sitte igjen med. Disse medlemmer vil påpeke at en slik
+  kjernekraftmodell står i sterk kontrast til den europeiske erfaringen,
+  hvor kjernekraft i all hovedsak er bygget ut med vesentlig statlig
+  involvering, statlige garantier eller offentlig eierskap. […] Komiteens
+  medlem fra Senterpartiet mener en ny stortingsmelding om kjernekraft
+  blant annet må dekke følgende tematikk: Kostnader og finansiering,
+  herunder ansvarsfordeling mellom stat og privat, og tidslinjer for
+  gjennomføring. Kartlegging av behovet for statlig forvaltningskostnad og
+  subsidier, og potensialet for kommersiell drift.
+status: uttalt
+position: 1
+source_tier: A
+# Fellesmerknad + Sps egen utredende merknad, ingen egen votering på
+# eierskapsspørsmålet — se context_note. Se Evidence.EvidensstyrkeCap.
+evidensstyrke_cap: moderat
+source_name: "Innst. 278 S (2025–2026), fellesmerknad Ap/Sp/Rødt/MDG og Sps egen merknad"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, samme grunn som Ap (se den filens context_note): peker på
+  behovet for å klargjøre stat/privat-ansvarsfordeling og på den
+  europeiske normen for statlig involvering, men fremmer ikke selv et
+  konkret krav om fullt statlig eierskap slik Rødt gjør. Sps egen
+  separate merknad er praktisk/utredende i tonen (hva en stortingsmelding
+  bør dekke), ikke en eksplisitt stillingtagen for eller mot statlig
+  eierskap — den trekker kodingen verken opp eller ned, men bekrefter at
+  Sp ønsker spørsmålet om ansvarsfordeling reelt utredet, ikke avklart på
+  forhånd i noen retning.
+  Merk: Sp stemte mot Rødts forslag 30-32 i samme sak, som ble
+  votert samlet (fil 702). Forslag 30 er nesten ordrett dette utsagnet.
+  Posisjonen her er kodet fra merknaden, ikke fra voteringen. Se fil
+  702 for hvorfor voteringen alene ikke er kodet.
+retrieved_at: "2026-09-23"

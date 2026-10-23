@@ -1,0 +1,47 @@
+id: ev-2026-05-26-frp-kommersiell-modell
+statement_id: utsagn-06
+party_id: frp
+actor: "Fremskrittspartiet (Tor Mikkel Wara, Morten Stordalen, Kristoffer Sivertsen, Erlend Wiborg, Bjørn Larsen, Rikard Spets)"
+date: "2026-05-26"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP fremmet Dokument 8:191 S for å legge til rette for kommersiell, ikke statlig, kjernekraft."
+claim_action: >
+  FrP fremmet selv Dokument 8:191 S (2025–2026) med 13 forslag om å
+  tilrettelegge for kjernekraft i Norge. Forslag 2 og 5 ber eksplisitt om
+  regelverk og konsesjonslettelser for KOMMERSIELL kjernekraftproduksjon
+  og private aktørers direkte forsyning av kraftkrevende industri — det
+  motsatte av statlig eierskap. FrP stemte mot komiteens endelige
+  tilråding (kun "legg frem en stortingsmelding") fordi den var langt
+  svakere enn FrPs egne 13 forslag, som alle falt — se metoden for hvorfor
+  "stemte mot tilrådingen" her betyr "ville lenger", ikke "er mot
+  kjernekraft".
+verbatim_excerpt: >
+  Stortinget ber regjeringen fremme forslag til nødvendige endringer i
+  atomenergiloven, energiloven og strålevernloven, slik at regelverket
+  legger til rette for etablering og drift av kommersiell
+  kjernekraftproduksjon i Norge. […] Stortinget ber regjeringen avvikle
+  konsesjonsplikt og tilknytningsplikt for kjernekraft til kraftnettet,
+  slik at kjernekraftverk kan forsyne kraftkrevende industri, som for
+  eksempel datasentre og industriklynger, direkte med langsiktige
+  kontrakter.
+status: forkastet
+position: -2
+source_tier: A
+source_name: "Dokument 8:191 S (2025–2026), forslag 2 og 5; Innst. 278 S, voteringsresultat votering_id 27723"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2025-2026/dok8-202526-191s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2, ikke uklart eller positivt, selv om FrP stemte MOT komiteens
+  endelige tilråding — dette er nøyaktig den fellen forskningsnotatene
+  advarer mot (se docs/research-notes/dimension-2-3-leads.md): en ren
+  voteringstall-lesning ville sett "FrP stemte mot" og trukket feil
+  konklusjon. Den faktiske grunnen FrP stemte mot: tilrådingen ("legg
+  frem en stortingsmelding") var svakere enn FrPs egne 13 forslag, som
+  alle falt. FrPs EGEN tekst (forslag 2, 5) ber uttrykkelig om
+  "kommersiell kjernekraftproduksjon" og at private aktører skal forsyne
+  industri direkte — et eksplisitt kommersielt/privat rammeverk, som er
+  det nøyaktige motstykket til utsagnets "fullt statlig eierskap og
+  kontroll". Kodingen bygger på FrPs egen forslagstekst, ikke på
+  voteringen mot tilrådingen.
+retrieved_at: "2026-09-23"

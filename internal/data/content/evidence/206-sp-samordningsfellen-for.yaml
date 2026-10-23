@@ -1,0 +1,29 @@
+id: ev-2025-12-16-sp-samordningsfellen-for
+statement_id: utsagn-40
+party_id: sp
+actor: "Senterpartiet"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Sp stemte for forslag 2 (det vedtatte), men har ingen egen merknad
+  i innstillingen — et av de to avgjørende partiene (sammen med
+  Venstre) som ga forslag 2 flertallet det trengte i den knivskarpe
+  51-50-voteringen.
+claim_action: >
+  Votering_id 26604, Sp 5 for, 0 mot. Ingen Sp-merknad om
+  samordningsfellen funnet i innstillingens fulltekst.
+status: forslag_vedtatt_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26604"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-054l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 fra stemmetallet alene. Sps stemme er strukturelt viktig:
+  forslag 2 vant 51-50, og uten Sps 5 stemmer (eller uten Venstres 2)
+  ville forslaget falt — men uten en egen begrunnelse er det ikke
+  mulig å si om Sp har en prinsipiell posisjon om pensjonsreformens
+  langsiktige virkninger, eller om dette var en enkeltsaks-avgjørelse.
+retrieved_at: "2026-09-24"

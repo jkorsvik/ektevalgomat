@@ -1,0 +1,35 @@
+id: ev-2024-mdg-etterprovbarhet-for
+statement_id: utsagn-05
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2024-01-01"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG fremmet forslag 3 som eget mindretallsforslag i
+  komitébehandlingen, opprinnelig fra Rødts Dok. 8:1 S. Alle 2
+  fremmøtte stemte for.
+claim_action: >
+  Votering_id 22102, MDG 2 for, 0 mot. Fra bakgrunnen forslaget
+  bygger på: "Kontroll- og konstitusjonskomiteens undersøkelser
+  raskt avdekket manglende felles praksis for departementene når det
+  kommer til habilitetsregelverket [...] og manglende samlet oversikt
+  over departementenes praksis."
+verbatim_excerpt: >
+  Kontroll- og konstitusjonskomiteens undersøkelser raskt avdekket
+  manglende felles praksis for departementene når det kommer til
+  habilitetsregelverket, enkelttilfeller av at departementenes
+  rutiner ikke ble fulgt opp, og manglende samlet oversikt over
+  departementenes praksis.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 140 S (2023–2024); votering_id 22102"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2023-2024/dok8-202324-001s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: MDG fremmet dette som eget forslag i komiteen, med en
+  direkte etterprøvbarhets-begrunnelse (mangel på ekstern kontroll
+  over departementenes egne habilitetsvurderinger).
+retrieved_at: "2026-09-24"

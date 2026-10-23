@@ -1,0 +1,29 @@
+id: ev-2026-partiprogram-sv-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "SV vil ha lavere skatt på vanlige og lave arbeidsinntekter, og økt skatt på større formuer, arv, utbytte og eiendom."
+claim_action: >
+  SVs arbeidsprogram 2025–2029 sier eksplisitt at skattebyrden bør
+  flyttes: lavere skatt på vanlige og lave inntekter, høyere skatt på
+  store formuer, arv, utbytte og eiendom.
+verbatim_excerpt: >
+  lavere skatt på vanlige og lave arbeidsinntekter og økt skatt på
+  større formuer, arv, utbytte, og eiendom.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "SVs arbeidsprogram 2025–2029 (vedtatt, 26. ordinære landsmøte 2025)"
+source_url: "https://www.sv.no/wp-content/uploads/2025/10/arbeidsprogram-2025-interaktiv-bokmal.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt, ordrett formulering direkte på utsagnets
+  premiss — de med mer (formue, arv, utbytte, eiendom) skal betale
+  mer, de med vanlig/lav inntekt skal betale mindre. Samme kildetekst
+  som utsagn-52s SV-evidens, men her direkte på topic i motsatt
+  retning (konsistent, ikke motstridende: samme underliggende politikk
+  forklarer begge posisjonene). Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

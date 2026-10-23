@@ -1,0 +1,21 @@
+id: utsagn-47
+number: 47
+dimension: "Tilgang, integrering og rettsstat"
+primary_question: "Hvem får tilgang til fellesgodene, på hvilke vilkår, og hvordan håndhever samfunnet loven?"
+case_tag: utvisning_individuell_tilknytningsvurdering
+short_name: "Individuell tilknytningsvurdering ved utvisning"
+text: >
+  Utvisning av utlendinger som har begått kriminalitet, bør fortsatt
+  avgjøres ut fra en konkret vurdering av tilknytningen personen har
+  til Norge.
+practical_stakes:
+  enig: >
+    Når myndighetene vurderer om en utlending som har begått
+    kriminalitet skal utvises, veier de fortsatt inn hvor sterk
+    tilknytning personen har til Norge (for eksempel botid, familie
+    eller oppholdsgrunnlag) i den enkelte saken, ikke bare
+    lovbruddets alvorlighetsgrad.
+  uenig: >
+    Tilknytningen til Norge veier ikke lenger inn i den enkelte
+    utvisningssaken. Om personen skal utvises, avgjøres av
+    lovbruddets alvorlighetsgrad alene.

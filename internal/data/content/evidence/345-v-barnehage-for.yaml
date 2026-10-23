@@ -1,0 +1,24 @@
+id: ev-2026-v-barnehage-for
+statement_id: utsagn-33
+party_id: v
+actor: "Venstre (opprinnelig forslagsstiller til hele saken)"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre er den opprinnelige forslagsstilleren til hele Dok. 8:11 S
+  (Abid Raja, Guri Melby, Grunde Almeland), og stemte for SV/MDG/KrFs
+  forslag om barnehagebemanning. Begge fremmøtte stemte for.
+claim_action: "Votering_id 26946, Venstre 2 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26946"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Venstre er avsender av hele den underliggende saken (en
+  helhetlig tiltakspakke mot sosiale forskjeller), og stemte
+  konsekvent for SV/MDG/KrFs konkretiseringer av denne pakken.
+retrieved_at: "2026-09-24"

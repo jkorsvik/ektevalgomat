@@ -1,0 +1,38 @@
+id: ev-2026-ambulanse-kontekst
+statement_id: utsagn-27
+party_id: ""
+actor: "Helse- og omsorgskomiteen / Stortinget i plenum"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 252 S (2025-2026), om Dok. 8:133 S (MDG) om mindre sjukehus,
+  desentralisering og kortere reisevei for helsehjelp. FrP, Sp og
+  Rødt fremmet et konkret forslag om at regjeringen skal komme
+  tilbake med hvordan responstidsmålene for ambulanse kan nås i ALLE
+  kommuner — avvist, men med bred prinsipiell tilslutning fra flere
+  partier som ikke støttet den bindende formen.
+claim_action: >
+  Forslag 1 (FrP, Sp og Rødt): "Stortinget ber regjeringa komme
+  tilbake til Stortinget med forslag til korleis responstidsmåla for
+  ambulanse kan nåast i alle kommunar i landet." Votering_id 27581
+  (sakid 200056): 45 for (FrP 28, Rødt 5, SV 5, Sp 5, Venstre 2), 54
+  mot (Ap 31, Høyre 14, KrF 4, MDG 5).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); data.stortinget.no sakid=200056, votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Komiteens flertall (FrP, Høyre, SV og Sp) skriver en FELLES
+  merknad om at ambulansekapasitet i distriktene må sikres — men
+  Høyre stemte likevel MOT den konkrete forslaget. "Ja i prinsippet,
+  nei til denne bindende teksten"-mønsteret, samme som gjentar seg i
+  flere andre saker i dette datasettet. MDG (opprinnelig
+  forslagsstiller til HELE saken) stemte MOT dette spesifikke
+  forslaget, fordi FrP/SV/Sp/Rødt kritiserer MDGs EGNE forslag i
+  saken (møteordninger, hjemmevakt) som "i realiteten ei svekking av
+  dagens ambulanseteneste" — se evidence for MDGs stemme.
+retrieved_at: "2026-09-24"

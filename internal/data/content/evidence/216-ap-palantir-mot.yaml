@@ -1,0 +1,40 @@
+id: ev-2026-04-28-ap-palantir-mot
+statement_id: utsagn-24
+party_id: ap
+actor: "Arbeiderpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot forbudsforslaget. Ap deler en generell merknad med
+  Høyre om at Stortinget ikke bør legge detaljerte føringer på
+  kompliserte tekniske/juridiske beslutninger uten grundigere
+  utredning — men merknaden nevner ikke Palantir spesifikt.
+claim_action: >
+  Votering_id 27488, Ap 32 mot, 0 for. Fra Aps (og Høyres) felles
+  merknad: "Disse medlemmer støtter intensjonen i representantforslaget,
+  men mener det ikke er forsvarlig av Stortinget å legge såpass
+  detaljerte føringer for viktige beslutninger om meget kompliserte
+  saker [...] uten grundigere utredninger."
+verbatim_excerpt: >
+  Disse medlemmer støtter intensjonen i representantforslaget, men
+  mener det ikke er forsvarlig av Stortinget å legge såpass detaljerte
+  føringer for viktige beslutninger om meget kompliserte saker [...]
+  uten grundigere utredninger.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1 (ikke +2): dette er Aps egen argumentasjon fra saken, gjengitt
+  som det snudde utsagnet nå bygger på — sitatet er en generell
+  begrunnelse om representantforslaget som helhet (rettet mot
+  skytjeneste- og konsesjonsforslagene spesifikt i den delen av
+  merknaden), ikke en direkte imøtegåelse av Palantir-forbudet
+  spesifikt. Svakt_dokumentert fordi koblingen til akkurat dette
+  forslaget må utledes, ikke leses direkte — samme mønster som Høyres
+  presedens-henvisning i samordningsfellen-saken (evidence/209). Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

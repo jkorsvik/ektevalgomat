@@ -1,0 +1,45 @@
+/* ektevalgomat — /om and /metode only (2026-10-12 klarspråk pass).
+   Those two pages now lead with a plain-language answer to their one
+   question, and keep the method behind <details>. style.css is shared
+   by every page, so this small page-specific layer lives on its own and
+   is linked only from om.html.tmpl and metode.html.tmpl. No inline
+   styles anywhere: the CSP sets style-src 'self'. */
+
+/* The answer itself: full body size at full ink contrast, not the
+   muted .lede treatment style.css gives to supporting text. A reader
+   who stops after these lines must leave correctly informed. */
+.prose-lede {
+  font-size: var(--fs-xl);
+  color: var(--ink);
+  max-width: 46rem;
+}
+.prose-lede + .prose-lede { margin-top: var(--sp-5); }
+
+/* The depth tiers that carry the method. The card look comes from
+   .metode-disclosure in style.css; this only sets the rhythm of the
+   first tier below the opening answer. */
+main > .metode-disclosure:first-of-type { margin-top: var(--sp-7); }
+
+/* Rettelsesloggen (/om). A dated list, not prose: someone scanning for
+   "when did they get something wrong" needs the date and the entry, not
+   a paragraph to parse. The kind label is text, never colour alone. */
+.corrections { list-style: none; margin: var(--sp-6) 0 0; padding: 0; }
+.correction { padding: var(--sp-6) 0; border-top: 1px solid var(--line); }
+.correction:first-child { border-top: 0; padding-top: var(--sp-3); }
+.correction-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  align-items: baseline;
+  margin: 0 0 var(--sp-2);
+}
+.correction-head time { font-variant-numeric: tabular-nums; color: var(--muted); }
+.correction-kind {
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-strong);
+}
+.correction h3 { font-size: var(--fs-lg); margin: 0 0 var(--sp-3); }
+.correction-where { color: var(--muted); margin: 0 0 var(--sp-3); }
+.correction-note { margin-top: var(--sp-6); color: var(--muted); }

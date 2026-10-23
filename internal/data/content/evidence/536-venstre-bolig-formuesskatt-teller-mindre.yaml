@@ -1,0 +1,29 @@
+id: ev-2026-innst188s-venstre-bolig-formuesskatt-teller-mindre
+statement_id: utsagn-54
+party_id: v
+actor: "Venstre"
+date: "2026-03-24"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Venstre fremmet Dokument 8:97 S om å gjeninnføre 2025-modellen for boligverdsetting, og kaller regjeringens varslede justering et skritt i riktig retning."
+claim_action: >
+  Venstre fremmet forslag 6: legge den samme modellen for
+  formuesverdi på bolig i 2026 til grunn som gjaldt i 2025, og be
+  regjeringen legge frem en ny, utredet modell fra 2027. Partiet
+  kaller regjeringens varslede heving av innslagspunktet (10 til 14
+  mill.) "et skritt i riktig retning". Stemte for eget forslag
+  (votering 27359, 2 for/100 mot) og for forslag 1 (votering 27362).
+verbatim_excerpt: >
+  «Stortinget ber regjeringen legge til grunn den samme modellen for
+  beregning av formuesverdi på bolig i skatteåret 2026 som gjaldt for
+  skatteåret 2025»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 188 S (2025–2026), forslag 6; votering 27359 (24.03.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eget forslag, egen begrunnelse, direkte på topic. Bekreftet
+  [OK] i votes.py: V 2 for / 0 mot (votering 27359).
+retrieved_at: "2026-09-27"

@@ -1,0 +1,54 @@
+# ektevalgomat — a "small public Go server, read-only, scratch image":
+# one container, no database, all content embedded in the binary.
+#
+# Public at https://ektevalgomat.no through a Cloudflare Tunnel. The
+# tunnel container joins the `cloudflare-tunnel` network and reaches this
+# service by name; nothing is published on a LAN port.
+#
+# `build: .` — poll-deploy.sh builds the image on the host itself, so
+# there is no registry to push to and no cross-compilation to get wrong.
+#
+# The content (statement/party/evidence YAML under
+# internal/data/content/) is fully go:embed'd at compile time, so it
+# needs no writable volume and read_only:true still holds. Editing
+# evidence means: change the YAML, open a pull request, and poll-deploy
+# rebuilds within a few minutes — see README.md.
+
+services:
+  ektevalgomat:
+    build: .
+    container_name: ektevalgomat
+    restart: unless-stopped
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    healthcheck:
+      # scratch has no wget/curl — the binary checks itself, see
+      # cmd/server/main.go's `healthcheck` subcommand.
+      test: ["CMD", "/server", "healthcheck"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks:
+      - proxy
+      - cloudflare-tunnel
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.ektevalgomat.rule=Host(`ektevalgomat.${PUBLIC_DOMAIN}`)
+      - traefik.http.routers.ektevalgomat.entrypoints=web
+      - traefik.http.services.ektevalgomat.loadbalancer.server.port=8080
+
+networks:
+  proxy:
+    name: proxy
+    external: true
+  # Create once on the host, before the first `docker compose up`:
+  #   docker network create cloudflare-tunnel
+  # The tunnel container joins this network so cloudflared can reach the
+  # service by name, without Traefik or a published LAN port.
+  cloudflare-tunnel:
+    name: cloudflare-tunnel
+    external: true

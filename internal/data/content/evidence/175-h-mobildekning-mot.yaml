@@ -1,0 +1,43 @@
+id: ev-2026-05-19-h-mobildekning-mot
+statement_id: utsagn-26
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot, med den eneste fullstendige, forslagsspesifikke
+  begrunnelsen for "mot"-siden i saken: statsrådens kostnads- og
+  realismevurdering, kombinert med et ønske om å avvente Nkoms egen
+  2025-analyse før eventuelle nye tiltak.
+claim_action: >
+  Votering_id 27610, H 0 for, 14 mot. Fra Høyres egen merknad: "Disse
+  medlemmer viser til statsrådens svar, der hun skriver at det ikke er
+  realistisk å etablere full mobildekning langs alle offentlige
+  veistrekninger innen 2030 med kjente virkemidler som dekningskrav,
+  utbyggingstilskudd mv. Kostnadene vil være altfor store. Disse
+  medlemmer støtter denne vurderingen."
+verbatim_excerpt: >
+  Disse medlemmer støtter forslagsstillernes intensjon. [...] Disse
+  medlemmer mener det uansett vil være naturlig å avvente Nkoms
+  analyse for 2025, som legges frem senere i år, og støtter ikke det
+  fremlagte representantforslaget.
+status: forslag_avvist_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt mot): Høyre er det eneste partiet i saken med en
+  navngitt, forslagsspesifikk begrunnelse for mot-stemmen — direkte
+  kontrast til FrP (evidence/174), som deler nesten hele
+  problembeskrivelsen tekstlig men ikke forklarer sin egen mot-stemme.
+  Høyre støtter uttrykkelig "forslagsstillernes intensjon" men avviser
+  selve mekanismen (et bindende 2030-årstall) med en konkret,
+  navngitt kilde (statsrådens brev) og et alternativ (avvente Nkoms
+  2025-analyse) — samme type "støtter intensjonen, ikke mekanismen"-
+  argumentasjon som Høyre har brukt tidligere i datasettet (f.eks.
+  evidence/135, Microsoft 365-exit).
+retrieved_at: "2026-09-24"

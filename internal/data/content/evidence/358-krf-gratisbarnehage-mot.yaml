@@ -1,0 +1,29 @@
+id: ev-2026-krf-gratisbarnehage-mot
+statement_id: utsagn-34
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF flipper fra FOR (utsagn-33) til MOT dette forslaget — partiet
+  er ikke medforslagsstiller her, og har en egen preferert mekanisme
+  (høyere barnetrygd) i stedet for gratis barnehageplass.
+claim_action: >
+  Votering_id 26943, KrF 4 mot, 0 for. KrFs egen linje (evidence/344):
+  prioriterer en økning av barnetrygden til 2 250 kroner per måned,
+  ikke gratis barnehageplass.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26943"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -1: KrFs skifte fra for (utsagn-33) til mot (dette forslaget)
+  er forklarbart ved at partiet foretrekker kontantoverføring
+  (barnetrygd) over gratis offentlig tjeneste (barnehage) som
+  virkemiddel — samme mål (mindre familiefattigdom), forskjellig
+  virkemiddel.
+retrieved_at: "2026-09-24"

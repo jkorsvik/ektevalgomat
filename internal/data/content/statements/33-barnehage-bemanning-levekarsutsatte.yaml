@@ -1,0 +1,16 @@
+id: utsagn-33
+number: 33
+dimension: "Barns muligheter"
+primary_question: "I hvilken grad kompenserer samfunnet for forhold barn ikke har valgt?"
+case_tag: barnehage_bemanning_levekarsutsatte
+short_name: "Økt barnehagebemanning i levekårsutsatte områder"
+text: >
+  Regjeringen bør legge til rette for økt grunnbemanning i barnehager i
+  levekårsutsatte områder.
+practical_stakes:
+  enig: >
+    Regjeringen legger til rette for økt grunnbemanning i barnehager i
+    levekårsutsatte områder.
+  uenig: >
+    Regjeringen legger ikke til rette for økt grunnbemanning i barnehager i
+    levekårsutsatte områder utover dagens nivå.

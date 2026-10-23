@@ -1,0 +1,33 @@
+id: ev-2025-04-10-acer-fjerde-energimarkedspakke-kontekst
+statement_id: utsagn-07
+party_id: ""
+actor: "Energi- og miljøkomiteen / Stortinget i plenum"
+date: "2025-04-10"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: "To representantforslag (Sp, Rødt) om å avvise EUs fjerde energimarkedspakke og trekke Norge ut av ACER ble avvist av flertallet, med fire separate voteringer."
+claim_action: >
+  Dokument 8:58 S (2024–2025, Sp: Marit Arnstad, Gro-Anita Mykjåland,
+  Aleksander Øren Heen) og Dokument 8:75 S (2024–2025, Rødt: Sofie
+  Marhaug, Bjørnar Moxnes, Marie Sneve Martinussen) foreslo at Norge
+  skal avvise EUs fjerde energimarkedspakke ("Ren energi-pakken") og
+  starte arbeidet med å melde Norge ut av EUs energibyrå ACER, blant
+  annet med henvisning til at ACER siden 2018 (Innst. 178 S 2017–2018)
+  har fått myndighet til å fatte vedtak om krafthandel over
+  landegrensene. Energi- og miljøkomiteen behandlet begge forslagene i
+  én innstilling (Innst. 196 S, 2024–2025) og avga fire separate
+  voteringer 2025-04-01 før forslagene ble avvist.
+status: avvist_av_flertallet
+position: null
+source_tier: A
+source_name: "Innst. 196 S (2024–2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst, ikke en partiposisjon i seg selv. Fire
+  voteringer på sak_id 101890 (votering_id 24383, 24384, 24385, 24386)
+  kryssjekket individuelt mot data.stortinget.no/eksport/voteringsresultat
+  — se partienes egne evidensfiler for hvilken votering hvert parti
+  stemte hvordan i. Full innstillingstekst (634 linjer PDF) lest før
+  koding av noen partiposisjon.
+retrieved_at: "2026-09-23"

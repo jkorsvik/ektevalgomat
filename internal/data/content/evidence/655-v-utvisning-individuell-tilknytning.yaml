@@ -1,0 +1,34 @@
+id: ev-2026-04-14-v-utvisning-individuell-tilknytning
+statement_id: utsagn-47
+party_id: v
+actor: "Venstre"
+date: "2026-04-14"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Venstre stemte mot FrPs forslag om å fjerne tilknytning som vilkår ved utvisning; partiet har ikke sete i komiteen og ingen egen merknad."
+claim_action: >
+  Venstre har ikke sete i kommunal- og forvaltningskomiteen for denne
+  saken og har derfor ingen egen merknad. Stemte mot forslag nr. 2
+  (votering 27441), som ville utvist «uavhengig av tilknytning til
+  landet».
+verbatim_excerpt: >
+  «Stortinget ber regjeringen ta initiativ til et samarbeid med Danmark
+  om en utvisningsreform som sikrer at innvandrere som begår alvorlig
+  kriminalitet i Norge, skal utvises, uavhengig av tilknytning til
+  landet, herunder også asylsøkere og flyktninger.»
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026), forslag 2; votering 27441 (14.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet +1 ut fra stemmegivning alene: ingen komitésete, ingen egen
+  tekst. Venstre stemte mot å fjerne tilknytning som vilkår, som
+  støtter dette utsagnets påstand, men uten begrunnelse — derfor +1 og
+  evidensstyrke_cap moderat. Speilbilde av utsagn-46s Venstre-evidens
+  (samme votering, motsatt påstand, kodet -1 der). Bekreftet i
+  data.stortinget.no voteringsresultat for votering 27441: Venstre 0
+  for / 2 mot.
+retrieved_at: "2026-09-27"

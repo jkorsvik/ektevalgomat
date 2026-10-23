@@ -1,0 +1,22 @@
+id: ev-2024-krf-mineralselskap-mot
+statement_id: utsagn-17
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2024-05-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF sitter ikke i næringskomiteen og er ikke medforslagsstiller,
+  men begge fremmøtte stemte mot statlig eierskap.
+claim_action: "Votering_id 22966, KrF 2 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 388 S (2023–2024); votering_id 22966"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-388s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: stemmen er dokumentert, ingen egen KrF-merknad om
+  mineralselskapet finnes i innstillingen.
+retrieved_at: "2026-09-24"

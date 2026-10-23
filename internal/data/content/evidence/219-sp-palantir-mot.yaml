@@ -1,0 +1,38 @@
+id: ev-2026-04-28-sp-palantir-mot
+statement_id: utsagn-24
+party_id: sp
+actor: "Senterpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte mot det konkrete Palantir-forbudet, selv om partiet deler
+  en generell merknad med FrP og Rødt om at "det må tas grep for å
+  sikre større digital suverenitet."
+claim_action: >
+  Votering_id 27488, Sp 5 mot, 0 for. Fra Sps (med FrP og Rødts)
+  felles merknad: "Komiteens medlemmer fra Fremskrittspartiet,
+  Senterpartiet og Rødt er enige i at det må tas grep for å sikre
+  større digital suverenitet, og at dagens sikkerhetspolitiske
+  situasjon tilsier en dreining mot større egenevne og fokus på
+  beredskap."
+verbatim_excerpt: >
+  Komiteens medlemmer fra Fremskrittspartiet, Senterpartiet og Rødt er
+  enige i at det må tas grep for å sikre større digital suverenitet,
+  og at dagens sikkerhetspolitiske situasjon tilsier en dreining mot
+  større egenevne og fokus på beredskap.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1: samme retorikk/handling-spenning som FrP (evidence/218) —
+  Sp deler den generelle "digital suverenitet"-bekymringen med
+  FrP+Rødt, men stemte mot det konkrete, navngitte forbudet, i tråd med
+  det snudde utsagnets premiss. Sp er komitémedlem (Bengt Fasteraune) i
+  motsetning til Venstre og KrF, som begge er utenfor komiteen i denne
+  saken. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

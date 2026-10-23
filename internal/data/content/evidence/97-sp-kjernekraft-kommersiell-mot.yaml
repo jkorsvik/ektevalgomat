@@ -1,0 +1,36 @@
+id: ev-2026-05-26-sp-kjernekraft-kommersiell-mot
+statement_id: utsagn-13
+party_id: sp
+actor: "Senterpartiet (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte mot å lovendre nå, og la i tillegg fram en detaljert
+  liste over hva en framtidig stortingsmelding om kjernekraft bør
+  dekke — et prosessorientert, ikke prinsipielt avvisende, standpunkt.
+claim_action: >
+  Votering_id 27722, Sp 0 for, 5 mot. Del av syvpartiflertallet bak
+  tilrådingen om en stortingsmelding (votering_id 27723).
+verbatim_excerpt: >
+  "Komiteens medlem fra Senterpartiet mener en ny stortingsmelding om
+  kjernekraft blant annet må dekke følgende tematikk: Kostnader og
+  finansiering, herunder ansvarsfordeling mellom stat og privat [...]
+  Kartlegging av behovet for statlig forvaltningskostnad og
+  subsidier, og potensialet for kommersiell drift. [...] Potensialet
+  for styrket samarbeid innenfor kjernekraft i Norden."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27722, 27723"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1: Sps egen, detaljerte punktliste for hva en
+  stortingsmelding bør dekke (inkl. "potensialet for kommersiell
+  drift") viser et parti som er åpent for kjernekraft på sikt, men
+  vil ha en skikkelig prosess og klarhet om kostnader/ansvar før
+  Stortinget lovendrer — samme grunnholdning som Ap, ikke en
+  prinsipiell avvisning. Se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml.
+retrieved_at: "2026-09-24"

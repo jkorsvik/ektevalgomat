@@ -1,0 +1,23 @@
+id: ev-2025-valget-tiktok-koordinering
+statement_id: utsagn-04
+party_id: ""
+actor: "7 anonyme TikTok-profiler"
+date: "2025 (valgåret)"
+evidence_type: nettverksanalyse
+evidence_class: analyse
+scan_summary: "FFI fant koordinert TikTok-aktivitet rettet mot Ap, SV og Rødt."
+claim_action: >
+  Koordinert uautentisk aktivitet rettet mot Ap, SV og Rødt med
+  innvandrings-/islaminnhold.
+status: koordinering_dokumentert
+position: null
+attribution_confidence: indikasjon_pa_koordinering
+source_tier: B
+source_name: "FFI: Økende, komplekst og uoversiktlig (2026)"
+source_url: "https://www.ffi.no/publikasjoner/arkiv/okende-komplekst-og-uoversiktlig-kartlegging-av-utenlandsk-pavirkning-i-forbindelse-med-stortingsvalget-2025"
+claim_confidence: dokumentert
+context_note: >
+  Retter seg mot Ap, SV og Rødt — dette gjør dem til MÅL for operasjonen,
+  ikke til aktører bak den. Vises ikke som en partiposisjon eller score
+  for de tre partiene av den grunn.
+retrieved_at: "2026-09-23"

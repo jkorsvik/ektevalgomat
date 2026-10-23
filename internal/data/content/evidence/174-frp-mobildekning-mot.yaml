@@ -1,0 +1,44 @@
+id: ev-2026-05-19-frp-mobildekning-mot
+statement_id: utsagn-26
+party_id: frp
+actor: "Fremskrittspartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte mot, selv om FrP har den klart mest omfattende og
+  sympatiske merknadsteksten om selve problembeskrivelsen
+  (trafikksikkerhet, beredskap, distriktene, responstid for nødetater)
+  av samtlige partier i saken. Innstillingen dokumenterer ingen egen
+  grunn til å avvise nettopp Sps 2030-forslag.
+claim_action: >
+  Votering_id 27610, FrP 0 for, 28 mot. Fra FrPs egen merknad: "Disse
+  medlemmer viser til at manglende mobildekning langs deler av
+  veinettet svekker både trafikksikkerhet, beredskap og muligheten til
+  å tilkalle hjelp ved ulykker. Dette gjelder særlig i distriktene,
+  hvor avstandene er store og responstiden for nødetater kan være
+  avgjørende." FrP viser videre til at regjeringens satellitt-løsninger
+  "foreløpig ikke fullt ut kan erstatte behovet for robust,
+  bakkebasert mobildekning langs veinettet."
+verbatim_excerpt: >
+  Disse medlemmer legger til grunn at teknologisk utvikling ikke må
+  medføre svekket trafikksikkerhet eller beredskap.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1, ikke -2: dette er det klareste eksempelet så langt i
+  datasettet på "deler diagnosen fullt ut, ingen dokumentert grunn for
+  selve mot-stemmen" — FrPs egen tekst er lengre og mer detaljert enn
+  noe annet partis i denne saken, inkludert Sps eget forslag, men
+  teksten inneholder ingen setning som forklarer hvorfor et forslag
+  FrP tekstlig støtter fullt ut i sak likevel blir stemt ned. Mulig,
+  ikke bekreftet lesning: FrP kan ha foretrukket et "innen 2030"-krav
+  uten et konkret, bindende årstall koblet direkte til Stortinget,
+  eller ønsket en annen mekanisme enn nettopp Sps forslagstekst — men
+  dette er en tolkning, ikke en dokumentert begrunnelse.
+retrieved_at: "2026-09-24"

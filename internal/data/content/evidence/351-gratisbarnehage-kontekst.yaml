@@ -1,0 +1,34 @@
+id: ev-2026-gratisbarnehage-kontekst
+statement_id: utsagn-34
+party_id: ""
+actor: "Familie- og kulturkomiteen / Stortinget i plenum"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Samme sak som utsagn-33 (Innst. 126 S), forslag 5, 6 og 8 (SV og
+  MDG, votert samlet): gratis barnehageplass for lavinntektsfamilier,
+  høyere sosialhjelpssatser, og utvidet startlånsramme for enslige
+  forsørgere.
+claim_action: >
+  Forslag 5 (SV og MDG): "Stortinget ber regjeringen fremme forslag
+  om å tilby barn i lavinntektsfamilier som per i dag har rett til
+  gratis kjernetid i barnehagen, gratis barnehageplass." Votert
+  samlet med forslag 6 (høyere sosialhjelpssatser) og forslag 8
+  (startlån for enslige forsørgere). Votering_id 26943 (sakid
+  104872): 12 for (MDG 5, SV 5, Venstre 2), 89 mot (Ap 32, FrP 29,
+  Høyre 14, KrF 4, Rødt 5, Sp 5).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); data.stortinget.no sakid=104872, votering_id 26943"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  KrF flipper fra FOR (utsagn-33) til MOT (dette forslaget) — KrF er
+  ikke medforslagsstiller her (kun SV og MDG), og partiets egen linje
+  er en høyere barnetrygd, ikke gratis barnehage i sin helhet. Samme
+  mønster som gjentar seg gjennom hele datasettet: koalisjoner er
+  bundet til det spesifikke forslaget, ikke til saken som helhet.
+retrieved_at: "2026-09-24"

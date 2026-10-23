@@ -1,0 +1,23 @@
+id: ev-2026-rodt-ambulanse-for
+statement_id: utsagn-27
+party_id: rodt
+actor: "Rødt (helse- og omsorgskomiteen)"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er medforslagsstiller sammen med FrP og Sp. Alle 5 fremmøtte
+  stemte for.
+claim_action: >
+  Votering_id 27581, Rødt 5 for, 0 mot. Samme delte FrP/SV/Sp/Rødt-
+  merknad som evidence/322-323.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Rødt medforslagsstiller, samme delte merknad.
+retrieved_at: "2026-09-24"

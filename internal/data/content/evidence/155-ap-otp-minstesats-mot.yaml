@@ -1,0 +1,49 @@
+id: ev-2026-05-28-ap-otp-minstesats-mot
+statement_id: utsagn-37
+party_id: ap
+actor: "Arbeiderpartiet (finanskomiteen)"
+date: "2026-05-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot, som del av komiteens flertall (Ap, Høyre, Sp, KrF,
+  V): deler intensjonen, men vil ha en gradvis opptrapping etter
+  grundig utredning og dialog med partene i arbeidslivet.
+claim_action: >
+  Votering_id 27876, Ap 0 for, 32 mot. Fra Flertallets merknad:
+  "Flertallet har forståelse for intensjonen bak forslaget om å øke
+  minstesatsen i obligatorisk tjenestepensjon til 4 pst., men vil
+  understreke at en slik økning vil innebære økte kostnader for
+  arbeidsgivere og vil kunne slå ulikt ut mellom virksomheter. [...]
+  På denne bakgrunn mener flertallet at eventuelle endringer i
+  minstesatsen [...] bør utredes grundig i tråd med
+  utredningsinstruksen, skje i dialog med partene i arbeidslivet og
+  ses i sammenheng med budsjettprosessen. Flertallet mener videre at
+  en eventuell opptrapping bør skje gradvis."
+verbatim_excerpt: >
+  Endringer i minstekravene også kan føre til omfordeling internt i
+  virksomheter, samt at økte kostnader over tid kan bli overført til
+  arbeidstakerne gjennom lavere lønnsvekst. Videre kan økte
+  pensjonsutgifter være krevende for mange bedrifter og påvirke
+  statens skatteinngang.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 263 S (2025–2026); votering_id 27876"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-263s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +1 (enig, ikke sterkt enig): dette er nøyaktig Flertallets
+  (medforfattet av Ap) egen argumentasjon, gjengitt som det snudde
+  utsagnet nå bygger på — Flertallet deler eksplisitt intensjonen
+  ("forståelse for intensjonen") og nevner finansministerens eget
+  svarbrev (17. april 2026: 4 pst. tilsvarer om lag gjennomsnittssatsen
+  i eksisterende ordninger), men vil ha en gradvis, utredet prosess i
+  dialog med partene i arbeidslivet fremfor et Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  bindende Storting-vedtak nå. Samme "deler målet, avviser bindende
+  hastighet/mekanisme"-mønster sett gjennomgående i datasettet, her i
+  en ny variant: uenigheten er om TEMPO og PROSESS
+  (utredning+gradvis+dialog), ikke om binding versus frivillighet som
+  i tidligere saker.
+retrieved_at: "2026-09-24"

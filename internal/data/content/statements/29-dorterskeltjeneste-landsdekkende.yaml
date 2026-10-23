@@ -1,0 +1,18 @@
+id: utsagn-29
+number: 29
+dimension: "Universell grunnmur"
+primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
+case_tag: dorterskeltjeneste_landsdekkende
+short_name: "Landsdekkende dørterskeltjeneste for post"
+text: >
+  Regjeringen bør utrede innføring av dørterskeltjenesten (levering
+  til dør for ikke-digitale og sårbare mottakere) som en
+  landsdekkende posttjeneste.
+practical_stakes:
+  enig: >
+    Regjeringen utreder å innføre dørterskeltjeneste, levering av post til
+    døren for ikke-digitale og sårbare mottakere, som en landsdekkende
+    tjeneste.
+  uenig: >
+    Ingen slik utredning gjennomføres. Dørterskeltjeneste innføres ikke som
+    en landsdekkende posttjeneste.

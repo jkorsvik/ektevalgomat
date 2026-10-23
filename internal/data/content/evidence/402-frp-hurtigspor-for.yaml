@@ -1,0 +1,34 @@
+id: ev-2026-frp-hurtigspor-for
+statement_id: utsagn-10
+party_id: frp
+actor: "Fremskrittspartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-05-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP er opprinnelig forslagsstiller (Tom Staahle m.fl.) og
+  medforslagsstiller på forslag 1 sammen med Høyre. 27 av 28
+  fremmøtte stemte for forslag 1 (mot innstillingens avvisning); 1
+  stemte for innstillingen/avvisning.
+claim_action: >
+  Alternativ votering 27597, FrP 27 mot innstillingen/for forslag 1,
+  1 for innstillingen. Fra FrPs merknad: "Etter disse medlemmers syn
+  må hensynet til nasjonal sikkerhet og beredskap i en alvorlig tid
+  veie tungt, og lovverket må innrettes slik at det støtter opp under
+  Stortingets forsvarsambisjoner, ikke forsinker dem."
+verbatim_excerpt: >
+  Etter disse medlemmers syn må hensynet til nasjonal sikkerhet og
+  beredskap i en alvorlig tid veie tungt, og lovverket må innrettes
+  slik at det støtter opp under Stortingets forsvarsambisjoner, ikke
+  forsinker dem.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 266 S (2025–2026); votering_id 27597"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-266s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: FrP er sakens opprinnelige forslagsstiller. Ett avvikende
+  FrP-medlem (1 av 28 fremmøtte) er ikke navngitt i innstillingen.
+retrieved_at: "2026-09-24"

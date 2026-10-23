@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/statement.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+{{/* Sticky mini-header: stays visible once the hero has scrolled past,
+     so a user five party-cards deep never loses track of which
+     statement they're reading (2026-09-23 design review). The left link
+     is real navigation back to this statement's card on the quiz index
+     (not just a same-page scroll-to-top) — quiz.js reads the #utsagn-N
+     fragment on load and scrolls/highlights that exact card, so
+     "pressing back" actually returns you to where you were instead of
+     dropping you at the top of a fresh page (2026-09-24 navigation fix).
+     CSS-only positioning — no JavaScript required for the link itself,
+     so it still works with script disabled; it just lands on the plain
+     index page instead of the JS quiz in that case. */}}
+<div class="sticky-context">
+  <a href="/#utsagn-{{.Statement.Number}}"><span aria-hidden="true">←</span> Til oversikten (utsagn {{.Statement.Number}})</a>
+  <span>{{.Statement.Dimension}}</span>
+</div>
+
+<main>
+  {{/* HERO: the statement text is the page's one unambiguous subject.
+       Everything else (dimension, number, snapshot date) is wayfinding
+       metadata and must visually recede behind it, not compete with it. */}}
+  <section class="hero" id="hero">
+    <div class="hero-meta">
+      <span class="hero-dimension">{{.Statement.Dimension}}</span>
+      <span class="hero-number">Utsagn {{.Statement.Number}}</span>
+    </div>
+    <p class="statement-text">{{.Statement.Text}}</p>
+    {{if .Statement.PrimaryQuestion}}
+    <p class="hero-question"><strong>Hva handler dette om?</strong> {{.Statement.PrimaryQuestion}}</p>
+    {{end}}
+    <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+  </section>
+
+  {{/* The evidence chain (2026-10-13): which steps of claim-to-outcome
+       this statement has a source for. Every step is shown, including the
+       empty ones, because a step with no source is a finding about the
+       record, not a gap to hide. It reports presence, not causation: a
+       proposal here and a vote here are both real, but nothing claims the
+       vote was on that proposal. It used to sit inside the institutional
+       evidence card, so a statement with no institutional source hid the
+       whole chain; it now stands on its own (2026-10-13). */}}
+  {{if .ChainAny}}
+  <section class="chain" aria-label="Kjeden fra løfte til utfall">
+    <h2 class="chain-title">Kjeden for dette utsagnet</h2>
+    <p class="chain-lede">Fem trinn fra det et parti sier, til det som faktisk skjer. Trinn uten kilde står tomme med vilje. Kjeden viser hva vi har funnet, ikke at trinnene henger sammen.</p>
+    <ol class="chain-steps">
+      {{range .Chain}}
+      <li class="chain-step{{if eq .Count 0}} is-empty{{end}}">
+        <span class="chain-step-name">{{.Label}}</span>
+        {{if eq .Count 0}}<span class="chain-step-none">Ingen kilde på dette trinnet</span>
+        {{else}}<span class="chain-step-count">{{.Count}} kilde{{if ne .Count 1}}r{{end}}</span>
+        {{if .Parties}}<span class="chain-step-parties">{{range .Parties}}<span class="chain-chip">{{.}}</span>{{end}}</span>{{end}}{{end}}
+        <span class="chain-step-meaning">{{.Meaning}}</span>
+      </li>
+      {{end}}
+    </ol>
+    {{if gt .ChainAbsent 0}}<p class="chain-note">{{if eq .ChainAbsent 1}}Ett trinn mangler kilde.{{else}}{{.ChainAbsent}} av fem trinn mangler kilde.{{end}}</p>{{end}}
+  </section>
+  {{end}}
+
+  {{/* The theme block (2026-10-13). A point that names this exact
+       statement is shown open — it is the only thing here that may claim
+       the party promised something about this question. The rest of the
+       party's points in the same theme are real, but thematic, and sit
+       behind a disclosure so the page leads with the specific. */}}
+  {{if .Bearing}}
+  <section class="theme" aria-label="Programpunkter som gjelder dette utsagnet">
+    <h2 class="theme-title">Partiene om dette utsagnet</h2>
+    <p class="theme-lede">Programpunkter som navngir dette utsagnet, ikke bare temaet. {{len .Bearing}} av {{.Statement.Dimension}}s programpunkter gjør det.</p>
+    {{range .Bearing}}
+    <section class="theme-party">
+      <h3 class="theme-party-name">{{.Party.Name}}</h3>
+      <ul class="theme-points">
+        <li class="theme-point is-bearing">
+          <span class="theme-point-topic">{{.Topic}}</span>
+          <span class="theme-point-quote">{{.Quote}}</span>
+          <span class="theme-point-where">{{.Where}}</span>
+        </li>
+      </ul>
+    </section>
+    {{end}}
+  </section>
+  {{end}}
+
+  {{if .Theme}}
+  <details class="disclosure theme-disclosure">
+    <summary>Hva partiene sier i dette temaet ({{.ThemeCount}} programpunkter i {{.Statement.Dimension}})</summary>
+    <p class="theme-lede">Punkter i samme tema som utsagnet, uten å navngi det konkrete spørsmålet. De sier hva partiet mener om feltet, ikke om dette utsagnet.</p>
+    {{range .Theme}}
+    <section class="theme-party">
+      <h3 class="theme-party-name">{{.Party.Name}}</h3>
+      <ul class="theme-points">
+        {{range .Points}}
+        <li class="theme-point">
+          <span class="theme-point-topic">{{.Topic}}</span>
+          <span class="theme-point-quote">{{.Quote}}</span>
+          <span class="theme-point-where">{{.Where}}</span>
+        </li>
+        {{end}}
+      </ul>
+    </section>
+    {{end}}
+  </details>
+  {{end}}
+
+  {{if .InstitutionalEvidence}}
+  <section class="card">
+    <h2>Hva har faktisk skjedd?</h2>
+    <h3 class="section-sublabel">Vedtak og handlinger</h3>
+    <p class="lede">Dette har Stortinget, regjeringen eller andre institusjoner gjort. Det er ikke ett partis syn, men bakgrunnen du bør lese resten av kildene mot.</p>
+    <div class="timeline">
+      {{range .InstitutionalEvidence}}
+      <div class="timeline-item">
+        {{template "evidence-item" .}}
+      </div>
+      {{end}}
+    </div>
+  </section>
+  {{end}}
+
+  <section class="card">
+    <h2>Partienes dokumenterte posisjoner</h2>
+    {{if .AnyPartyDocumented}}
+      <p class="lede">{{.CodedCount}} av {{.TotalParties}} partier har en posisjon med kilde.{{if .SourcedOnlyCount}} {{.SourcedOnlyCount}} til har kilder, men ingen posisjon på akkurat dette utsagnet.{{end}}</p>
+      <table class="party-overview">
+        {{range .DocumentedRows}}
+        <tr>
+          <td class="po-party">{{.Party.Short}}</td>
+          <td class="po-word po-word-{{positionWord .Cell.PartyPosition}}">{{positionWord .Cell.PartyPosition}}</td>
+          <td class="po-value">{{positionLabel .Cell.PartyPosition}}</td>
+          <td class="po-link"><a href="#party-{{.Party.ID}}">Grunnlag <span aria-hidden="true">↓</span></a></td>
+        </tr>
+        {{end}}
+      </table>
+      {{if .UndocumentedRows}}
+      <details class="disclosure undocumented-toggle">
+        <summary>{{len .UndocumentedRows}} {{if eq (len .UndocumentedRows) 1}}parti{{else}}partier{{end}} er ikke vurdert ennå</summary>
+        <table class="party-overview party-overview-empty">
+          {{range .UndocumentedRows}}
+          <tr>
+            <td class="po-party">{{.Party.Short}}</td>
+            <td class="po-word">Ikke vurdert ennå</td>
+            <td colspan="2"></td>
+          </tr>
+          {{end}}
+        </table>
+      </details>
+      {{end}}
+    {{else}}
+      {{/* 0 av N partier: one compact card says everything the full
+           9-row × 3-column table used to say, in about four seconds
+           instead of forcing a read of every row to discover they all
+           say the same thing (2026-09-23 design review). */}}
+      <div class="empty-state">
+        <p class="empty-state-count">0 av {{.TotalParties}} partier dokumentert</p>
+        <p>Vi har ennå ikke nok kilder til å sammenligne partiene på dette utsagnet.</p>
+        <p><strong>Utsagnet påvirker derfor ikke resultatet ditt.</strong></p>
+        <p class="lede"><a href="/metode">Se metoden</a></p>
+      </div>
+    {{end}}
+  </section>
+
+  {{range .DocumentedRows}}
+  <div class="card party-card" id="party-{{.Party.ID}}">
+    {{/* A party position whose own sources pull in opposite directions
+         must say so here, before the calm verdict word, not one level
+         down. The code below walks the party's own evidence items: two
+         coded positions that differ set $split. Only existing fields
+         (Position) are read; nothing is invented. Divergence can only
+         happen when two or more items are coded, and a coded cell is
+         never the "ikke vurdert" cell, so this never fires on the
+         uncoded cards the strength test watches. */}}
+    {{$first := ""}}{{$split := false}}
+    {{range .Evidence}}{{if .Position}}{{$lab := positionLabel .Position}}{{if eq $first ""}}{{$first = $lab}}{{else if ne $lab $first}}{{$split = true}}{{end}}{{end}}{{end}}
+
+    <div class="party-card-head">
+      <h3>{{.Party.Name}} ({{.Party.Short}})</h3>
+      <div class="party-verdict">
+        <span class="party-word">{{positionWord .Cell.PartyPosition}}</span>
+        {{if .Cell.PartyPosition}}<span class="party-value">{{positionLabel .Cell.PartyPosition}}</span>{{end}}
+      </div>
+    </div>
+
+    {{if $split}}
+    <p class="pc-split">
+      <strong>Kildene peker ikke samme vei.</strong>
+      Partiets egne kilder på dette utsagnet gir ulike svar:
+      {{range .Evidence}}{{if .Position}}<span class="sc-pos">{{positionLabel .Position}}</span>{{end}}{{end}}
+    </p>
+    {{end}}
+
+    <div class="party-signals">
+      <div>
+        <p class="signal-label">Dokumentasjon</p>
+        {{if .Cell.PartyPosition}}
+        <p><span class="dots" aria-hidden="true">{{evidensstyrkeDots .Cell.Evidensstyrke}}</span> {{.Cell.Evidensstyrke}} ({{.Cell.EvidensstyrkeCount}} {{if eq .Cell.EvidensstyrkeCount 1}}kilde{{else}}kilder{{end}}{{if lt .Cell.EvidensstyrkeBasis .Cell.EvidensstyrkeCount}}, styrken bygger på {{.Cell.EvidensstyrkeBasis}} med posisjon{{end}})</p>
+        {{else}}
+        {{/* Sources, but no coded position: there is nothing to rate, so
+             no dots and no Svak/Moderat/Sterk (utsagn-57 Ap, utsagn-45
+             R and Sp). */}}
+        <p>{{.Cell.Evidensstyrke}} ({{.Cell.EvidensstyrkeCount}} {{if eq .Cell.EvidensstyrkeCount 1}}kilde{{else}}kilder{{end}}, vist som kontekst)</p>
+        {{end}}
+      </div>
+      <div>
+        <p class="signal-label">Historikk</p>
+        <p>{{.Cell.Konsistens}}</p>
+      </div>
+    </div>
+
+    {{/* The party's one source card: the first item that codes a
+         position (that item's ScanSummary is the reason the position is
+         what it is). Every other item, with its own source card, moves
+         one level down into "Hele beviskjeden". When nothing is coded (a
+         party can list sources without a coded stance) the first item is
+         the representative. */}}
+    {{$lead := -1}}
+    {{range $i, $e := .Evidence}}{{if and (eq $lead -1) $e.Position}}{{$lead = $i}}{{end}}{{end}}
+    {{if and (eq $lead -1) .Evidence}}{{$lead = 0}}{{end}}
+    {{if ge $lead 0}}{{template "evidence-item" (index .Evidence $lead)}}{{end}}
+
+    {{if gt (len .Evidence) 1}}
+    <details class="disclosure evidence-chain">
+      <summary>Alle kildene ({{len .Evidence}})</summary>
+      {{range $i, $e := .Evidence}}{{if ne $i $lead}}{{template "evidence-item" $e}}{{end}}{{end}}
+    </details>
+    {{end}}
+  </div>
+  {{end}}
+</main>
+
+<footer class="site">
+  <p>Kildeklasser: A = primær/autoritativ, B = primær institusjonell analyse, C = aktørens egen publisering, D = verifisert sekundærkilde, E = OSINT-lead (ennå ikke verifisert). Se <a href="/metode">metoden</a> for full forklaring. <a href="/personvern">Personvern <span aria-hidden="true">→</span></a></p>
+  <p>
+    Lisensiert under
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL-3.0</a>.
+    Kildekoden er åpen:
+    <a href="https://github.com/jkorsvik/ektevalgomat">github.com/jkorsvik/ektevalgomat</a>.
+  </p>
+</footer>
+
+</body>
+</html>
+
+{{/*
+evidence-item is the one source card, shared by institutional and
+per-party evidence. Rebuilt (2026-10-13) as the four questions a reader
+actually asks of a single documented position, in order:
+
+  1. Hva er dokumentert?  the document, its type and date, its source
+     class (A-E) and its evidence class. Wayfinding, but never hidden.
+  2. Hva skjedde?         one sober sentence (ScanSummary).
+  3. Hvordan er dette tolket?  the coding rationale (ContextNote) and,
+     always, what the source does NOT establish. This half is the point:
+     it is where the honesty lives, so it is never behind a disclosure.
+  4. Originalkilde og kodebegrunnelse  the verbatim quote, the mechanical
+     claim and the link that opens the original document. One click.
+
+Native <details>/<summary>, no JavaScript — this page must stay readable
+with JS disabled, same as the rest of the site. Question labels are h4:
+under a party card's h3, or under the institutional section's h3
+sub-label, so the heading order stays h1 > h2 > h3 > h4.
+*/}}
+{{define "evidence-item"}}
+<article class="source-card">
+  <h4 class="sc-q">Hva er dokumentert?</h4>
+  {{if .SourceName}}<p class="sc-doc">{{.SourceName}}</p>{{end}}
+  <p class="sc-meta">
+    <span class="badge badge-{{.EvidenceClass}}">{{evidenceClassBadge .EvidenceClass}}</span>
+    <span class="grade g-{{.SourceTier}}" title="Kildegrad {{.SourceTierLabel}}"><b>{{.SourceTier}}</b>{{sourceTierShort .SourceTier}}</span>
+    <span class="sc-type">{{.EvidenceType}}</span>
+    <span class="sc-when">{{.Date}}{{if .Actor}} · {{.Actor}}{{end}}</span>
+    {{if .Position}}<span class="sc-pos">{{positionLabel .Position}}</span>{{end}}
+  </p>
+
+  <h4 class="sc-q">Hva skjedde?</h4>
+  <p class="sc-what">{{.ScanSummary}}</p>
+
+  <h4 class="sc-q">Hvordan er dette tolket?</h4>
+  {{if .ContextNote}}<p class="sc-interp">{{.ContextNote}}</p>{{end}}
+  <p class="sc-limit"><span class="sc-limit-label">Hva dette ikke sier</span>
+    {{if .Position}}ett dokument på én dato. Det sier ikke om standpunktet står seg over tid.{{else if eq .EvidenceClass "analyse"}}dette er en vurdering, ikke en handling noen har utført.{{else}}kilden koder ingen posisjon på selve utsagnet.{{end}}</p>
+
+  <details class="disclosure">
+    <summary>Originalkilden og begrunnelsen</summary>
+    {{if .VerbatimExcerpt}}
+    <blockquote class="verbatim">{{.VerbatimExcerpt}}</blockquote>
+    {{end}}
+    <p class="claim">{{.ClaimAction}}</p>
+    <p class="sc-facts">Status {{.Status}} · Tillit {{.ClaimConfidence}}{{if .AttributionConfidence}} · Tilskriving {{.AttributionConfidence}}{{end}}</p>
+    {{if .SourceURL}}<p class="source-doc-meta">{{.SourceName}} · <a href="{{.SourceURL}}" target="_blank" rel="noopener">↗ Åpne originalkilden</a></p>{{else}}<p class="source-doc-meta">{{.SourceName}}</p>{{end}}
+  </details>
+</article>
+{{end}}

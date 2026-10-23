@@ -1,0 +1,32 @@
+id: ev-2026-innst188s-frp-bolig-formuesskatt-teller-mindre
+statement_id: utsagn-54
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2026-03-24"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP fremmet tre egne forslag for å redusere eller reversere den nye boligverdsettingsmodellen i formuesskatten, deriblant at alle primærboliger skal verdsettes til 25 % av markedsverdi."
+claim_action: >
+  FrP fremmet forslag 2 (midlertidig suspensjon av 2026-modellen),
+  forslag 3 (hurtigarbeidende ekspertutvalg) og forslag 4 (alle
+  primærboliger verdsettes til 25 % av markedsverdi) i Innst. 188 S.
+  Partiet mener boligen først og fremst er et hjem, ikke et finansielt
+  objekt, og at skatten bør stå i rimelig forhold til betalingsevne.
+  Stemte for egne forslag (votering 27361, 29 for/72 mot) og for
+  forslag 1 (FrP+H+V, votering 27362, 45 for/57 mot).
+verbatim_excerpt: >
+  «Stortinget ber regjeringen i forbindelse med revidert
+  nasjonalbudsjett for 2026 legge til rette for at alle primærboliger
+  verdsettes til 25 prosent av markedsverdi ved beregning av
+  formuesskatt.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 188 S (2025–2026), forslag 2-4; votering 27361 (24.03.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: egne forslag, egen begrunnelse, direkte på topic. Bekreftet
+  [OK] i votes.py: FrP 29 for / 0 mot (votering 27361), samt for på
+  forslag 1 (votering 27362).
+retrieved_at: "2026-09-27"

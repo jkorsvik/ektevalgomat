@@ -1,0 +1,35 @@
+id: ev-2025-04-10-sv-acer-begrensning
+statement_id: utsagn-07
+party_id: sv
+actor: "Sosialistisk Venstreparti (Lars Haltbrekken, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "SV stemte FOR alle fire forslag som ville begrenset ACER/avvist EUs fjerde energimarkedspakke, og delte Sp/Rødts merknad om at ACER-tilknytning svekker nasjonal kontroll."
+claim_action: >
+  SV stemte FOR på alle fire voteringer i saken (votering_id 24383,
+  24384, 24385: 7 for hver; votering_id 24386: 7 mot flertallets
+  avvisning). Individuell votering kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat.
+verbatim_excerpt: >
+  Komiteens medlemmer fra Senterpartiet, Sosialistisk Venstreparti og
+  Rødt vil påpeke at det ikke er tilstrekkelig å se på hva som står i de
+  enkelte direktivene, men at man må vurdere konsekvensene av å
+  innlemme stadig flere områder i EØS-avtalen [...] Disse medlemmer
+  viser til at ACER, gjennom ESA og Reguleringsmyndigheten for energi
+  (RME), blant annet kan treffe vedtak om kostnadsfordeling og
+  strømflyten i mellomlandsforbindelsene.
+status: forslag_avvist_av_flertallet
+position: -2
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at EØS-tilknytningen ikke svekker
+  kraftkontrollen): SV stemte konsekvent for alle fire forslag om å
+  begrense ACER/avvise fjerde energimarkedspakke, og medundertegnet en
+  merknad som eksplisitt beskriver ACERs vedtaksmyndighet over
+  kostnadsfordeling og strømflyt som problematisk for norsk kontroll —
+  det motsatte av det snudde utsagnets premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-23"

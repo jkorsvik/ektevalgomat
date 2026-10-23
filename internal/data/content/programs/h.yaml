@@ -1,0 +1,123 @@
+id: h
+source_name: "Høyres stortingsvalgprogram 2025-2029"
+source_url: "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf"
+retrieved_at: "2026-10-12"
+points:
+  - dimension: Demokratisk åpenhet
+    topic: Valgvern mot utenlandsk påvirkning
+    quote: "sikre valg i Norge mot utenlandsk påvirkning ved å forsterke valgprosessene, samt styrke myndighetenes arbeid med å forebygge og avdekke mulige påvirkningsoperasjoner"
+    where: "«Valg og demokrati», s. 98"
+    statements: ["utsagn-04"]
+    # begrunnelse: vil forsterke valgvernet mot utenlandsk påvirkning
+  - dimension: Demokratisk åpenhet
+    topic: KI-risiko i valg og demokratisk debatt
+    quote: "etablere mekanismer for å håndtere risikoen kunstig intelligens medfører for gjennomføring av valg og demokratisk diskusjon"
+    where: "«Valg og demokrati», s. 98"
+
+  - dimension: Norsk handlefrihet
+    topic: Kontroll med utenlandske direkteinvesteringer
+    quote: "kontrollere utenlandske direkteinvesteringer, slik at ikke aktører som kan utgjøre en sikkerhetspolitisk risiko for Norge, gjennom investeringer kan utøve politisk press eller gjøre strategiske oppkjøp til skade for norsk sikkerhet"
+    where: "«Utenriks, handel og samarbeid», s. 7"
+  - dimension: Norsk handlefrihet
+    topic: Meldeplikt for utenlandsk eierskap
+    quote: "at meldeplikt for utenlandsk eierskap skal følge like strenge regler som i EU"
+    where: "«Utenriks, handel og samarbeid», s. 7"
+  - dimension: Norsk handlefrihet
+    topic: Nasjonalt eierskap og kontroll
+    quote: "Nasjonalt eierskap og kontroll over patenter, kunnskap og ressurser har en viktig beredskapsmessig betydning."
+    where: "«Verdiskapende næringsliv», s. 37"
+
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Billig strøm som konkurransefortrinn
+    quote: "Høyres mål er at billig strøm skal være et konkurransefortrinn for industri og næringsliv i Norge og et gode for husholdningene."
+    where: "«Energi for fremtiden», s. 45"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Olje og gass med null utslipp
+    quote: "En forutsetning for å fortsette å utvinne olje og gass fra norsk sokkel er at produksjonen over tid skjer med null eller nær null utslipp."
+    where: "«Energi for fremtiden», s. 46"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Vannkraften forblir i statens eie
+    quote: "vurdere organiseringen av Statkraft, der eierskapet til den norske vannkraften forblir i statens eie, mens både risikoinvesteringer i utlandet og investeringer i andre energiformer i Norge gjøres i samarbeid med private aktører"
+    where: "«Trygg økonomisk styring», s. 35"
+
+  - dimension: Teknologisk kapasitet
+    topic: Felles rammeverk for data og analyse
+    quote: "etablere felles rammeverk og felles løsninger for datafangst, datadeling og analyse i statlig og kommunal sektor"
+    where: "«Digitalisering», s. 91"
+  - dimension: Teknologisk kapasitet
+    topic: Cybersikkerhet for samfunn og næringsliv
+    quote: "ha et godt, moderne og koordinert cybersikkerhetssystem for å beskytte samfunnsinstitusjoner, bedrifter og borgere mot hacking og annen datakriminalitet"
+    where: "«Forberedt når krisen kommer», s. 21"
+  - dimension: Teknologisk kapasitet
+    topic: Digital kompetanse i og utenfor arbeidslivet
+    quote: "tilrettelegge for at den digitale kompetansen styrkes både for dem som allerede er i arbeidslivet, og for dem som står utenfor og vil bli en del av det"
+    where: "«Digitalisering», s. 91"
+
+  - dimension: Innovasjon / omstillingsevne
+    topic: Offentlige innkjøp som innovasjonsmotor
+    quote: "Det offentlige kan som innkjøper av varer og tjenester legge grunnlag for økt verdiskaping, innovasjon, eksportmuligheter og næringsutvikling i det private."
+    where: "«Verdiskapende næringsliv», s. 37"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Nasjonal strategi for kvanteteknologi
+    quote: "lage en nasjonal strategi for kvanteteknologi for å posisjonere Norge for det neste spranget i teknologiutviklingen"
+    where: "«Data- og teknologidrevet næringsliv», s. 39"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Samfunnsoppdrag etter finsk modell
+    quote: "videreutvikle virkemidler som gir en helhetlig tilnærming til å løse samfunnsoppdrag, etter modell fra Finland"
+    where: "«Forskning og utvikling», s. 31"
+
+  - dimension: Universell grunnmur
+    topic: Likeverdig velferdstilbud i hele landet
+    quote: "Det viktigste for Høyre er at innbyggerne i hele landet skal få et velferdstilbud av høy kvalitet."
+    where: "«Levende lokalsamfunn i hele landet», s. 92"
+  - dimension: Universell grunnmur
+    topic: Høyhastighetsbredbånd til alle husstander
+    quote: "at alle husstander skal ha tilgang på enten fast, mobilt eller satellittbasert høyhastighets bredbånd, og åpne fibernettet for konkurranse, på lik linje med det vi har for strøm og telefon i dag"
+    where: "«Digitalisering», s. 91"
+    statements: ["utsagn-61"]
+    # begrunnelse: vil gi alle husstander høyhastighetsbredbånd
+  - dimension: Universell grunnmur
+    topic: Bekjempe digitalt utenforskap
+    quote: "bekjempe digitalt utenforskap gjennom å tilby hjelp og alternativer og ha godt designede løsninger"
+    where: "«Digitalisering», s. 91"
+
+  - dimension: Barns muligheter
+    topic: Barnevern for de mest sårbare
+    quote: "Barnevernet skal sikre at barn og unge som lever under forhold som kan skade deres helse og utvikling, får riktig hjelp og omsorg til rett tid."
+    where: "«Barnevern», s. 74"
+  - dimension: Barns muligheter
+    topic: Skole uavhengig av bakgrunn
+    quote: "Høyre vil ha en kunnskapsskole som gir muligheter for alle, uavhengig av bakgrunn, kjønn og hvem foreldrene er."
+    where: "«Grunnskole», s. 24"
+  - dimension: Barns muligheter
+    topic: Utjevne sosiale forskjeller i skolen
+    quote: "styrke forskningen på tiltak som utjevner sosiale forskjeller i skolen, ved å etablere nasjonale forløpsregistre om barn i barnehager og skoler, innenfor strenge regler for personvern"
+    where: "«Grunnskole», s. 25"
+
+  - dimension: Robusthet / adaptabilitet
+    topic: Langtidsplan for sivil beredskap
+    quote: "utarbeide en langtidsplan for sivil beredskap og motstandskraft"
+    where: "«Forberedt når krisen kommer», s. 21"
+  - dimension: Robusthet / adaptabilitet
+    topic: Kraft- og energiinfrastruktur mot sabotasje
+    quote: "sikre kraft- og energiinfrastruktur bedre mot sabotasje og angrep"
+    where: "«Forberedt når krisen kommer», s. 21"
+  - dimension: Robusthet / adaptabilitet
+    topic: Matberedskap og forsyningsplan for Norden
+    quote: "sikre stabil norsk matproduksjon, i samarbeid med produsenter og distributører, og ta initiativ til at det utarbeides en samlet matberedskaps- og forsyningsplan for Norden som inkluderer både fiskeri, havbruk og landbruk"
+    where: "«Forberedt når krisen kommer», s. 21"
+    statements: ["utsagn-39"]
+    # begrunnelse: vil sikre matproduksjon og en samlet matberedskapsplan
+
+  - dimension: Generasjonsansvar
+    topic: Bærekraftig velferd for kommende generasjoner
+    quote: "Vi har et stort ansvar for å sikre et bærekraftig velferdssamfunn og miljø for kommende generasjoner og sørge for at de arver både en trygg offentlig sektor og et livskraftig norsk næringsliv."
+    where: "«Trygg økonomisk styring», s. 34"
+  - dimension: Generasjonsansvar
+    topic: Pensjonsfondet for fremtidige generasjoner
+    quote: "Fondet skal ikke brukes som et politisk verktøy, men investeres ansvarlig for å gi dagens og fremtidige generasjoner best mulig avkastning innenfor etiske rammer."
+    where: "«Trygg økonomisk styring», s. 34"
+  - dimension: Generasjonsansvar
+    topic: Forvalte natur for neste generasjon
+    quote: "Det er viktig å forvalte naturressursene på en slik måte at vi bevarer naturens evne til å bidra til økonomisk vekst og velferd også for neste generasjon."
+    where: "«På lag med naturen», s. 51"

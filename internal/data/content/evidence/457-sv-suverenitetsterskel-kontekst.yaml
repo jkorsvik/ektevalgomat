@@ -1,0 +1,40 @@
+id: ev-2026-464s-sv-suverenitetsterskel
+statement_id: utsagn-45
+party_id: sv
+actor: "Sosialistisk Venstreparti (kontroll- og konstitusjonskomiteen)"
+date: "2026 (sesjon)"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "SV støtter forslag om å klargjøre Grunnlovens terskel for suverenitetsavståelse, av bekymring for gradvis myndighetsoverføring."
+claim_action: >
+  SV, sammen med Sp og Rødt, støttet i komitémindretallet
+  Grunnlovsforslag 9 (2023–2024, Moxnes/Sneve Martinussen/Marhaug) om å
+  klargjøre terskelen for suverenitetsavståelse (Grunnloven §§ 115 og
+  26). Innst. 464 S (2025–2026). Mindretallet viser til jusprofessorers
+  kritikk av Høyesteretts godkjenning av at Stortinget har brukt
+  Grunnloven § 26 andre ledd (simpelt flertall) til å samtykke i EUs
+  fjerde jernbanepakke og tredje energimarkedspakke.
+verbatim_excerpt: >
+  «Medlemene i komiteen frå Sosialistisk Venstreparti, Senterpartiet og
+  Raudt støttar forslagsstillarane sitt ønske om å klårgjera Grunnlova
+  når det gjeld overføring av mynde [...] Med Høgsterett si godkjenning av
+  denne praksisen vil over tid eit simpelt fleirtal på Stortinget kunna
+  votera for etter kvart inngripande avståing av mynde.»
+status: forkastet
+position: null
+source_tier: A
+source_name: "Innst. 464 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-464s/"
+claim_confidence: dokumentert
+context_note: >
+  IKKE en kodet posisjon på utsagn-45 (position: null med vilje) — dette
+  er den generelle grunnlovsmekanismen for suverenitetsavgivelse (kritisert
+  presedens gjelder jernbane og energi, ikke forsvar/beredskap
+  spesifikt), ikke et forsvarsspesifikt standpunkt. Lagt til som sterk,
+  relevant kontekst: SV ønsker en strengere grunnlovssperre mot at et
+  simpelt flertall gradvis kan avstå myndighet til EU-organer — samme
+  underliggende bekymring som utsagn-45 spør om, bare på et generelt
+  konstitusjonelt nivå. Se utsagn-45s partiprogram-evidens for SVs
+  faktiske, forsvarsspesifikke posisjon — sammenlign de to for
+  konsistens.
+retrieved_at: "2026-09-26"

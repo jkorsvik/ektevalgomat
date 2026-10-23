@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+</head>
+<body>
+
+{{template "header"}}
+
+{{/* One party's 2025-2029 programme points: what the party says it will do,
+     in its own words. Tier C — a promise, shown as a promise. The statement
+     pages carry the tier-A answer (what the party actually voted). Never
+     present a programme quote as a coded position; the two live on
+     different pages for exactly that reason (2026-10-03). */}}
+<div class="sticky-context">
+  <a href="/partier"><span aria-hidden="true">←</span> Alle partiprogrammer</a>
+  <span>{{.Party.Name}}</span>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="hero-meta">
+      <span class="hero-dimension">Partiprogram 2025–2029</span>
+      <span class="hero-number">{{.Party.Short}}</span>
+    </div>
+    <p class="statement-text">{{.Party.Name}}</p>
+    {{if .HasPoints}}
+    <p class="hero-question">Dette er hva {{.Party.Name}} sier at de vil gjøre, med partiets egne ord. Et løfte, ikke en stemme. Om de faktisk gjorde det står på <a href="/">utsagnssidene</a>.</p>
+    {{else}}
+    <p class="hero-question">Programmet er ikke lest inn ennå. Vi fyller inn parti for parti (se <a href="/metode">metoden</a>). Til da står det tomt med vilje, ikke som «partiet sier ingenting».</p>
+    {{end}}
+  </section>
+
+  {{if .HasPoints}}
+  <div class="party-program">
+    <p class="program-source">
+      Kilde: <a href="{{.Program.SourceURL}}" rel="noopener">{{.Program.SourceName}}</a>
+      {{if .Program.RetrievedAt}}· hentet {{.Program.RetrievedAt}}{{end}}
+    </p>
+    {{range .Groups}}
+    <section class="program-group">
+      <h2>{{.Dimension}}</h2>
+      <ul class="program-points">
+        {{range .Points}}
+        <li class="program-point">
+          {{$p := .}}{{if $p.Statements}}<span class="program-topic">{{$p.Topic}}{{range $p.Statements}} <a class="program-utsagn" href="/utsagn/{{trimPrefix . "utsagn-"}}" aria-label="utsagn {{trimPrefix . "utsagn-"}}"><span aria-hidden="true">→</span></a>{{end}}</span>{{else}}<span class="program-topic">{{$p.Topic}}</span>{{end}}
+          <blockquote class="program-quote">«{{.Quote}}»</blockquote>
+          {{if .Where}}<span class="program-where">{{.Where}}</span>{{end}}
+        </li>
+        {{end}}
+      </ul>
+    </section>
+    {{end}}
+  </div>
+  {{end}}
+</main>
+
+<footer class="wrap"><p>Ekte valgomat viser hva partiene sier og hva de gjorde, hver for seg, med kilder. Se <a href="/metode">metoden</a>.</p></footer>
+</body>
+</html>

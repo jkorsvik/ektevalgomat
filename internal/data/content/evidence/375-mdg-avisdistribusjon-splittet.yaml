@@ -1,0 +1,27 @@
+id: ev-2026-mdg-avisdistribusjon-splittet
+statement_id: utsagn-30
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  MDG splittet internt: 1 av 5 fremmøtte stemte for, 4 stemte mot —
+  motsatt majoritet av utsagn-29 (samme sak), der MDG stemte
+  enstemmig for.
+claim_action: "Votering_id 27674, MDG 1 for, 4 mot."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27674"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 (majoritetsstemme: 4 mot, 1 for), ikke -2: dette er en
+  ekte, dokumentert intern MDG-splitt, og partiets nettoposisjon på
+  dette forslaget er motsatt av utsagn-29 (samme sak, enstemmig for).
+  Mulig forklaring (ikke dokumentert i innstillingen): en lovfestet
+  plikt om avisdistribusjon kan oppfattes som mer rigid/kostbar enn
+  en utredning om dørterskeltjeneste — men dette er spekulasjon.
+retrieved_at: "2026-09-24"

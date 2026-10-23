@@ -1,0 +1,18 @@
+id: utsagn-49
+number: 49
+dimension: "Tilgang, integrering og rettsstat"
+primary_question: "Hvem får tilgang til fellesgodene, på hvilke vilkår, og hvordan håndhever samfunnet loven?"
+case_tag: statsborgerskap_tilbakekall_tidsfrist
+short_name: "Tidsfrist for tilbakekall av statsborgerskap"
+text: >
+  Det bør innføres en tidsfrist for hvor lenge staten kan vente med
+  å tilbakekalle et statsborgerskap som allerede er innvilget.
+practical_stakes:
+  enig: >
+    Staten får en tidsfrist for å tilbakekalle et statsborgerskap
+    etter at det er gitt, for eksempel fordi søkeren har oppgitt
+    uriktige opplysninger. Etter at fristen har gått ut, kan
+    statsborgerskapet ikke lenger tilbakekalles.
+  uenig: >
+    Ingen tidsfrist innføres. Staten kan fortsatt tilbakekalle et
+    statsborgerskap uansett hvor lenge det er siden det ble innvilget.

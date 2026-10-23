@@ -1,0 +1,33 @@
+id: ev-2026-06-19-h-digitale-avhengigheter-dok8-321
+statement_id: utsagn-59
+party_id: "h"
+actor: "Høyre (Kari Sofie Bjørnsen m.fl.)"
+date: "2026-06-19"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Seks Høyre-representanter tok kartleggingen opp igjen i et nytt
+  forslag om datasentre.
+claim_action: >
+  Dokument 8:321 S (2025–2026), forslag om en nasjonal strategi for
+  datasenterindustrien. Alle seks forslagsstillere er fra Høyre
+  (data.stortinget.no, sak 200381). Kartleggingen står i begrunnelsen,
+  ikke i selve forslagene. Saken er ikke ferdigbehandlet.
+verbatim_excerpt: >
+  Forslagsstillerne mener regjeringen som del av en stortingsmelding om
+  utvikling av datasenterindustrien i Norge bør kartlegge Norges
+  digitale avhengigheter til andre land og jurisdiksjoner, og foreslå
+  tiltak som bidrar til forsterket nasjonal kontroll med den digitale
+  grunnmuren som understøtter kritiske samfunnsfunksjoner.
+status: fremmet
+position: 2
+source_tier: A
+source_name: "Dokument 8:321 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2025-2026/dok8-202526-321s/?all=true"
+claim_confidence: dokumentert
+consistency_flag: consistent
+context_note: >
+  Kodet +2: Høyre gjentar samme krav seks uker etter at tilrådingen
+  falt, med nesten samme ordlyd. Til behandling i næringskomiteen, ingen
+  votering ennå.
+retrieved_at: "2026-10-03"

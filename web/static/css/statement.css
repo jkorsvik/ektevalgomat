@@ -1,0 +1,236 @@
+/* Page-specific styles for /utsagn/{number} (statement.html.tmpl).
+   Linked from the template itself, never appended to style.css.
+
+   Scope: the source card (the "evidence-item" define) and the party-card
+   frame around it. The shared classes (.badge, .grade, .dots, .disclosure,
+   .verbatim, .claim, .source-doc-meta, .card, .party-signals) live in
+   style.css and are reused as-is. No inline styles, no element.style — the
+   CSP has no 'unsafe-inline' for style-src (see middleware.go), so any
+   inline style write is silently dropped by the browser.
+
+   Design note (2026-10-13): one source card carries four questions, and
+   the card is NOT a card-inside-card. The party card is the only box; the
+   source card is type and open space, anchored by a single hairline rule.
+   The interpretation and its "what this does not say" line are always at
+   the top level — never behind the one disclosure, which holds only the
+   verbatim quote and the mechanical coding record. */
+
+/* The institutional-context sub-label became an <h3> (was a <p>) so the
+   source card's h4 questions stay in order under it (h1 > h2 > h3 > h4).
+   An h3 is bold by default; keep the quiet label look it had as a <p>. */
+.section-sublabel { font-weight: 400; }
+
+/* ---- The source card ------------------------------------------------ */
+.source-card {
+  padding-left: var(--sp-6);
+  border-left: 2px solid var(--line);
+  margin: var(--sp-6) 0;
+}
+/* Inside the institutional timeline the connecting line already runs
+   down the left; a second rule would double it. */
+.timeline .source-card { border-left: none; padding-left: 0; }
+
+.source-card .sc-q {
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: var(--sp-6) 0 var(--sp-1);
+}
+.source-card .sc-q:first-child { margin-top: 0; }
+
+/* Question 1: the document itself, in the site's serif, so the source's
+   own name reads as the thing being cited, not as app chrome. */
+.sc-doc {
+  font-family: var(--serif);
+  font-size: var(--fs-lg);
+  line-height: 1.45;
+  margin: 0 0 var(--sp-2);
+}
+.sc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2) var(--sp-4);
+  font-size: var(--fs-2xs);
+  color: var(--muted);
+  margin: 0;
+}
+.sc-type { text-transform: uppercase; letter-spacing: 0.04em; }
+/* A coded stance, shown next to the source it was coded from; the same
+   tag appears in the party card's divergence line, so a reader can match
+   them up. Never colour-only: it is the label text that carries it. */
+.sc-pos { font-weight: 700; color: var(--accent-strong); white-space: nowrap; }
+
+/* Question 2: the one sober sentence. Stronger than body, below a heading. */
+.sc-what {
+  font-weight: 600;
+  font-size: var(--fs-lg);
+  line-height: 1.5;
+  margin: 0 0 var(--sp-1);
+}
+
+/* Question 3: the interpretation, and the required honesty half. */
+.sc-interp {
+  font-size: var(--fs-md);
+  line-height: 1.55;
+  margin: 0 0 var(--sp-2);
+}
+.sc-limit {
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  color: var(--muted);
+  border-left: 2px solid var(--accent-soft);
+  padding-left: var(--sp-4);
+  margin: var(--sp-1) 0;
+}
+.sc-limit-label {
+  display: block;
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-strong);
+}
+
+/* Question 4: the one disclosure. Quote as a cited document, then the
+   mechanical coding record, then the link that opens the original. */
+.source-card .disclosure { margin-top: var(--sp-1); }
+.source-card .disclosure summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: var(--sp-4) 0;
+  display: inline-block;
+}
+.source-card .disclosure summary:hover { text-decoration: underline; }
+.source-card .disclosure[open] summary { margin-bottom: var(--sp-1); }
+
+.source-card .verbatim {
+  font-style: normal;
+  font-family: var(--serif);
+  font-size: var(--fs-lg);
+  line-height: 1.55;
+  color: var(--ink);
+  border-left: 3px solid var(--muted);
+  padding: var(--sp-1) 0 var(--sp-1) var(--sp-5);
+  margin: var(--sp-1) 0 var(--sp-3);
+}
+.source-card .claim { font-size: var(--fs-md); line-height: 1.5; margin: var(--sp-1) 0; }
+.source-card a { color: var(--accent); }
+.sc-facts { font-size: var(--fs-xs); color: var(--muted); margin: var(--sp-1) 0; }
+
+/* ---- Party card: the divergence line -------------------------------- */
+/* When a party's own sources code different positions, this says so at
+   the top of the card, above the calm verdict word. Not a card: a tinted
+   callout, so it reads as a correction to the headline rather than as one
+   more box. */
+.pc-split {
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: var(--sp-4) var(--sp-5);
+  margin: 0 0 var(--sp-5);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+}
+.pc-split .sc-pos + .sc-pos::before {
+  content: " · ";
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* ---- "Hele beviskjeden": the depth tier ----------------------------- */
+.evidence-chain {
+  margin-top: var(--sp-5);
+  border-top: 1px solid var(--line);
+  padding-top: var(--sp-2);
+}
+.evidence-chain > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: var(--sp-4) 0;
+  display: inline-block;
+}
+.evidence-chain > summary:hover { text-decoration: underline; }
+.evidence-chain[open] > summary { margin-bottom: var(--sp-1); }
+
+/* The evidence chain (2026-10-13). Five steps, claim to outcome, laid out
+   as a horizontal rail on wide screens and a list on narrow ones. An empty
+   step is dimmed, never removed: the gap is the finding. All type and space
+   from the scales in style.css, no raw values. */
+.chain { margin: var(--sp-8) 0; }
+.chain-title { margin: 0 0 var(--sp-2); }
+.chain-lede { color: var(--muted); margin: 0 0 var(--sp-6); }
+.chain-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--sp-3);
+  margin: 0;
+  padding: 0;
+  counter-reset: chain;
+}
+.chain-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  padding: var(--sp-4) var(--sp-4) var(--sp-5);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  background: var(--card);
+}
+.chain-step.is-empty { border-top-color: var(--seg-empty); background: var(--surface); }
+.chain-step-name { font-weight: 700; font-size: var(--fs-md); }
+.chain-step.is-empty .chain-step-name { color: var(--muted); }
+.chain-step-count { font-size: var(--fs-sm); color: var(--accent-strong); font-variant-numeric: tabular-nums; }
+.chain-step-none { font-size: var(--fs-sm); color: var(--muted); font-style: italic; }
+.chain-step-parties { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
+.chain-chip {
+  font-size: var(--fs-2xs);
+  padding: 0 var(--sp-1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+}
+.chain-step-meaning { font-size: var(--fs-2xs); color: var(--muted); line-height: 1.35; }
+.chain-note { margin: var(--sp-4) 0 0; font-size: var(--fs-sm); color: var(--muted); }
+@media (max-width: 520px) {
+  .chain-steps { grid-template-columns: 1fr; }
+}
+
+/* The theme block (2026-10-13). The chain's promise step only counts
+   points that name this exact statement, so the theme is where the rest
+   of a party's programme in the statement's dimension is shown, labelled
+   as the theme. A point that does name the statement is marked, and only
+   that point makes a promise claim about it. */
+.theme { margin: var(--sp-8) 0; }
+.theme-disclosure { margin: var(--sp-8) 0; }
+.theme-title { font-size: var(--fs-2xl); margin-bottom: var(--sp-3); }
+.theme-lede { font-size: var(--fs-md); color: var(--muted); margin-bottom: var(--sp-6); }
+.theme-party { margin-bottom: var(--sp-6); }
+.theme-party-name { font-size: var(--fs-lg); margin-bottom: var(--sp-2); }
+.theme-points { list-style: none; padding: 0; margin: 0; }
+.theme-point {
+  border-left: 3px solid var(--line);
+  padding: var(--sp-2) var(--sp-5);
+  margin-bottom: var(--sp-2);
+}
+.theme-point.is-bearing { border-left-color: var(--accent); }
+.theme-bearing {
+  display: inline-block;
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: var(--sp-1);
+}
+.theme-point-topic { display: block; font-weight: 600; font-size: var(--fs-md); }
+.theme-point-quote { display: block; font-size: var(--fs-md); }
+.theme-point-where { display: block; font-size: var(--fs-xs); color: var(--muted); }

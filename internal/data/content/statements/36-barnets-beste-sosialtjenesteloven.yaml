@@ -1,0 +1,17 @@
+id: utsagn-36
+number: 36
+dimension: "Barns muligheter"
+primary_question: "I hvilken grad kompenserer samfunnet for forhold barn ikke har valgt?"
+case_tag: barnets_beste_sosialtjenesteloven
+short_name: "Lovfeste barnets beste i sosialtjenesteloven"
+text: >
+  Regjeringen bør komme tilbake til Stortinget med forslag om å
+  lovfeste barnets beste som et grunnleggende hensyn i
+  sosialtjenesteloven.
+practical_stakes:
+  enig: >
+    Regjeringen fremmer forslag om å lovfeste barnets beste som et
+    grunnleggende hensyn i sosialtjenesteloven.
+  uenig: >
+    Regjeringen fremmer ikke et slikt forslag. Barnets beste er ikke et eget
+    lovfestet hensyn i sosialtjenesteloven.

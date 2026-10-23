@@ -1,0 +1,18 @@
+id: utsagn-40
+number: 40
+dimension: "Generasjonsansvar"
+primary_question: "Synliggjøres konsekvensene 10–30 år frem?"
+case_tag: samordningsfellen_avvikling
+short_name: "Utrede opphevelse av samordningsfellen for pensjonsreform-kullene 1944–1962"
+text: >
+  Regjeringen bør utrede tiltak som sikrer at offentlig ansatte født fra
+  og med 1944 ikke taper tjenestepensjon ved å stå lenger i arbeid enn 67
+  år.
+practical_stakes:
+  enig: >
+    Regjeringen utreder tiltak som gjør at offentlig ansatte født fra og med
+    1944 ikke lenger taper tjenestepensjon ved å stå lenger i arbeid enn 67
+    år.
+  uenig: >
+    Regjeringen utreder ikke slike tiltak. Denne gruppen taper fortsatt
+    tjenestepensjon ved å stå lenger i arbeid enn 67 år, som i dag.

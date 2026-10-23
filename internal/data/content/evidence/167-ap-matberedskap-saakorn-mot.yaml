@@ -1,0 +1,42 @@
+id: ev-2026-06-05-ap-matberedskap-saakorn-mot
+statement_id: utsagn-38
+party_id: ap
+actor: "Arbeiderpartiet (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot, med en generell begrunnelse om at kontinuerlig norsk
+  matproduksjon og velfungerende handelssystemer er de sentrale
+  søylene i matsikkerheten, og at spørsmål om beredskapslagring bør
+  håndteres gjennom jordbruksforhandlingene, ikke ved Storting-vedtak.
+claim_action: >
+  Votering_id 28068, Ap 0 for, 32 mot. Fra Aps generelle merknad i
+  saken: "Komiteens medlemmer fra Arbeiderpartiet mener at
+  kontinuerlig produksjon, ivaretakelse av produksjonsgrunnlaget og
+  velfungerende handelssystemer er grunnpilarene for matsikkerheten i
+  Norge. [...] Disse medlemmer viser imidlertid til at dette er et
+  tema som vil bli drøftet under årets jordbruksforhandlinger, og
+  mener at partene i jordbruket er best egnet til å finne frem til
+  løsninger og helhetlige prioriteringer."
+verbatim_excerpt: >
+  Disse medlemmer viser til at matsikkerhet er en av
+  hovedbegrunnelsene for den betydelige satsingen på norsk jordbruk
+  siden 2021.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1 (mot, ikke sterkt mot): Aps begrunnelse i innstillingen er
+  generell for hele saken (kontinuerlig produksjon,
+  jordbruksforhandlinger som riktig arena), ikke spesifikt skrevet om
+  forslag 1s desentraliserte gårds-modell alene — samme
+  "prosess/arena"-innvending sett i utsagn-37s Flertallet
+  (evidence/155), her fra Ap alene siden Ap ikke er del av noen delt
+  merknad i denne saken. Lavere attribution_confidence enn "for"-siden
+  av denne grunn.
+retrieved_at: "2026-09-24"

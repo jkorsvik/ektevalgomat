@@ -1,0 +1,33 @@
+id: ev-2026-04-28-sv-nasjonal-skytjeneste-for
+statement_id: utsagn-19
+party_id: sv
+actor: "Sosialistisk Venstreparti (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV er selv forslagsstiller til hele saken og fremmet forslag 11
+  sammen med Rødt om å etablere en statlig eid og driftet
+  skytjeneste. SV mener det finnes nok IT-kompetanse i Norge og at
+  dette er en forutsetning for nasjonal kontroll over data.
+claim_action: >
+  Forslag 11 (med Rødt), votering_id 27485: SV 5 for, 0 mot.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Sosialistisk Venstreparti og Rødt viser til
+  at en rekke land nå er i ferd med å utvikle egne, nasjonale
+  skytjenester [...] Disse medlemmer mener det finnes nok
+  IT-kompetanse i Norge til å få til offentlige skytjenester laget og
+  drevet i Norge, og at dette er en forutsetning for nasjonal
+  kontroll."
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27485"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at smart suverenitet er godt nok): SV er
+  forslagsstiller til hele Dokument 8:119 S og medforslagsstiller til
+  forslag 11 spesifikt (statlig eid skytjeneste), med egen utfyllende
+  begrunnelse — det motsatte av det snudde utsagnets premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2. Se evidence/121-nasjonal-skytjeneste-kontekst.yaml.
+retrieved_at: "2026-09-24"

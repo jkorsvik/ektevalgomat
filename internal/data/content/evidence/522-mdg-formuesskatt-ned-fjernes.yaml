@@ -1,0 +1,29 @@
+id: ev-2026-partiprogram-mdg-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG vil kraftig øke bunnfradraget i formuesskatten, men samtidig øke skattesatsen for de aller største formuene — den motsatte retningen av utsagnet for de rikeste."
+claim_action: >
+  MDGs arbeidsprogram 2025–2029 sier partiet vil øke bunnfradraget i
+  formuesskatten kraftig (letter for mindre formuer) og samtidig øke
+  skattesatsen for de aller største formuene.
+verbatim_excerpt: >
+  «Øke bunnfradraget i formuesskatten kraftig og øke skattesatsen for
+  de aller største formuene.»
+status: programfestet
+position: -2
+source_tier: C
+source_name: "MDGs arbeidsprogram 2025–2029"
+source_url: "https://mdg.no/_service/505809/download/id/1506077/name/MDGs+arbeidsprogram+2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: eksplisitt, ordrett formulering direkte mot utsagnets
+  premiss. MDG viderefører formuesskatten og vil ha en HØYERE sats for
+  de største formuene, det motsatte av "trappes ned og på sikt
+  fjernes" — riktignok kombinert med et løft av bunnfradraget som
+  letter for mindre formuer, men det er en omfordeling INNENFOR
+  skatten, ikke en nedtrapping av den. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

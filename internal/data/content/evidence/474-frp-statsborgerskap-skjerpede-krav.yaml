@@ -1,0 +1,37 @@
+id: ev-2026-04-30-frp-statsborgerskap-skjerpede-krav
+statement_id: utsagn-48
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2026-04-30"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP foreslo ti års botid, språkprøve på B2-nivå, verdiprøve, troskapsed og krav om selvforsørgelse — falt 29-72."
+claim_action: >
+  FrP fremmet forslag nr. 1–3 i Innst. 232 S (2025–2026), behandlet
+  samlet i én votering: minimum ti års botid, bestått språkprøve på
+  B2-nivå, bestått prøve om grunnleggende norske verdier, troskapsed
+  etter dansk mønster, karensregler ved ubetinget straff, samt krav om
+  selvforsørgelse (lønnsinntekt på 3,2 G) de siste fem år før
+  statsborgerskap innvilges. Votering 27524 (30.04.2026): falt 29 mot
+  72, kun FrP for.
+verbatim_excerpt: >
+  «Stortinget ber regjeringen legge frem lovforslag med følgende
+  kriterier for norsk statsborgerskap som skal gjelde for alle: minimum
+  ti års botid bestå språkprøve på minimum B2-nivå bestå prøve om
+  grunnleggende norske verdier avlegge en troskapsed etter mønster av
+  ordningen i Danmark»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 232 S (2025–2026), forslag 2; votering_id 27524 (30.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: egne forslag, egen tekst, eneste parti for. Voteringen
+  (27524) er en samlet votering over forslag 1–3 fra FrP (barns
+  statsborgerskap, botid/språk/troskapsed, selvforsørgelse) — kun
+  forslag 2 og 3 gjelder direkte dette utsagnets generelle
+  innstrammings-påstand; forslag 1 (barn født i utlandet) er et
+  beslektet, men eget spørsmål og ikke brukt her. Bekreftet [OK] i
+  votes.py: 29 for (kun FrP) / 72 mot.
+retrieved_at: "2026-09-27"

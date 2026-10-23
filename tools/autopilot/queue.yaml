@@ -1,0 +1,108 @@
+items:
+- id: program-ap
+  kind: program
+  party: ap
+  method: method/program.md
+  status: passed
+- id: program-frp
+  kind: program
+  party: frp
+  method: method/program.md
+  status: passed
+- id: program-h
+  kind: program
+  party: h
+  method: method/program.md
+  status: passed
+- id: program-sv
+  kind: program
+  party: sv
+  method: method/program.md
+  status: passed
+- id: program-sp
+  kind: program
+  party: sp
+  method: method/program.md
+  status: passed
+- id: program-rodt
+  kind: program
+  party: rodt
+  method: method/program.md
+  status: passed
+  note: 'Done 2026-10-13: 31 points, gate PASS. The Vercel concern was wrong for this
+    URL. roedt.no answered 429 to a fetch while this was written, but the four known
+    Rødt evidence items already cite a URL that hashes to the repo''s own source
+    cache, so the gate verifies against the file and never needs the live site.'
+- id: program-mdg
+  kind: program
+  party: mdg
+  method: method/program.md
+  status: passed
+- id: program-krf
+  kind: program
+  party: krf
+  method: method/program.md
+  status: passed
+- id: program-v
+  kind: program
+  party: v
+  method: method/program.md
+  status: passed
+- id: budget-nodnett-brann
+  kind: budget
+  statement: ''
+  keywords:
+  - Nødnett
+  - DSB
+  - brann og redning
+  - beredskapspakke
+  method: method/budget.md
+  status: pending
+  note: 'Lead: Nye Nødnett +200 MNOK (324,5 MNOK total) for testing toward 2031; does it cover kommunene''s
+    cost, and can brann take part (vikar)? Open Prop. 1 S (Justis- og beredskapsdepartementet, DSB post)
+    and the beredskapspakke, quote the post and the year-on-year change.
+
+    '
+- id: budget-enova-norgespris
+  kind: budget
+  statement: utsagn-12
+  keywords:
+  - Enova
+  - energieffektivisering
+  - Norgespris
+  - OED
+  method: method/budget.md
+  status: pending
+  note: 'Lead: Enova is cut while the government calls energy efficiency a main argument for Norgespris.
+    Open Prop. 1 S (OED, Enova post), quote the change against a named earlier year.
+
+    '
+- id: budget-bredband
+  kind: budget
+  statement: utsagn-26
+  keywords:
+  - bredbånd
+  - høyhastighetsinternett
+  - dekning
+  method: method/budget.md
+  status: pending
+  note: 'Lead: the bredbåndssubsidy is proposed wound down from 2027 while the government still wants
+    100 % high-speed coverage. Open the relevant Prop. 1 (Digitaliseringsdepartementet / KDD), quote the
+    post.
+
+    '
+- id: budget-vindkraft-kommune
+  kind: budget
+  statement: ''
+  keywords:
+  - vindkraft
+  - produksjonsavgift
+  - grunnrenteskatt
+  - NVE
+  - RME
+  method: method/budget.md
+  status: pending
+  note: 'Lead: kommuner get vindkraft income and the production fee is pre-paid; is it enough to trigger
+    build-out? Open Prop. 1 S (OED), quote the posts.
+
+    '

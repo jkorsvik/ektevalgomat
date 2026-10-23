@@ -1,0 +1,32 @@
+id: ev-2025-06-13-v-partiloven-anonyme-bidrag
+statement_id: utsagn-03
+party_id: v
+actor: "Venstre"
+date: "2025-06-13"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Venstre hadde ikke plass i komiteen, men stemte for forbudet i den avgjørende voteringen i plenum."
+claim_action: >
+  Venstre har ikke medlem i kommunal- og forvaltningskomiteen for denne
+  saken og har derfor ingen egen merknad i innstillingen. I den
+  avgjørende plenumsvoteringen over selve forbudsparagrafen (§ 17 a,
+  votering_id 26057) stemte 4 av Venstres tilstedeværende representanter
+  for, 0 mot.
+verbatim_excerpt: >
+  Politiske partier og partiledd kan ikke motta bidrag fra a . givere som
+  er ukjente for partiet (anonyme bidrag) b . juridiske personer som har
+  som formål eller vesentlig del av sin virksomhet å støtte politiske
+  partier eller partiledd økonomisk c. privatpersoner som har mottatt
+  bidrag fra andre for å gi disse til politiske partier eller partiledd.
+status: vedtatt
+position: 1
+source_tier: A
+source_name: "Individuell votering, votering_id 26057"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=103531&dnid=1&vt=26057"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, samme grunn som MDG (se den filens context_note): ingen egen
+  merknad, men et klart, utvetydig ja-stemme på selve forbudsparagrafens
+  konkrete tekst. Individuell representantstemme hentet direkte fra
+  data.stortinget.no for votering_id 26057.
+retrieved_at: "2026-09-23"

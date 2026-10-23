@@ -1,0 +1,18 @@
+id: utsagn-41
+number: 41
+dimension: "Robusthet / adaptabilitet"
+primary_question: "Tåler systemet bortfall, sjokk og feilantakelser?"
+case_tag: digitalt_kriserad_uavhengig
+short_name: "Uavhengig nasjonalt digitalt kriseråd"
+text: >
+  Regjeringen bør utrede etablering av et uavhengig nasjonalt digitalt
+  kriseråd med ansvar for strategiske råd om digital sikkerhet,
+  suverenitet og personvern.
+practical_stakes:
+  enig: >
+    Regjeringen utreder å opprette et uavhengig nasjonalt digitalt kriseråd
+    som skal gi strategiske råd om digital sikkerhet, suverenitet og
+    personvern.
+  uenig: >
+    Regjeringen utreder ikke et slikt kriseråd. Det finnes ikke et eget,
+    uavhengig organ for denne typen strategiske råd på tvers av sektorer.

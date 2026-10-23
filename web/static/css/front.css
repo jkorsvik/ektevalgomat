@@ -1,0 +1,51 @@
+/* Front page only (linked from index.html.tmpl, after the shared head).
+   Scoped to the first-screen intro and the demoted dimension disclosure,
+   so nothing here reaches another page. Same custom properties as
+   style.css, and no inline styles (CSP style-src has no 'unsafe-inline'). */
+
+/* Intro: the page's one task, answered in a few lines. */
+.front-intro h2 { margin-top: 0; }
+.front-lede { margin-top: var(--sp-2); }
+.front-start { margin: var(--sp-6) 0 var(--sp-5); }
+
+/* The one clear action that begins the quiz. Anchors to #quiz-frame (the
+   storage note and #quiz-root together, where quiz.js renders the first
+   question); no quiz logic here. */
+.start-link {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--fs-lg);
+  padding: var(--sp-5) var(--sp-7);
+  border-radius: 999px;
+}
+.start-link:hover { background: var(--accent-strong); color: var(--accent-ink); }
+
+/* Secondary path to the opted-into depth (/om, /metode). */
+.front-more {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+}
+
+/* No JS: the quiz cannot start, so the start action is removed and the
+   noscript statement list becomes the visible next step instead. */
+.no-js .front-start { display: none; }
+
+/* Demoted dimension overview: one click, not the wall in front of the
+   task. Native <details>/<summary>, keyboard-operable by default. */
+.front-dimensions { padding: var(--sp-2) var(--sp-6) var(--sp-6); }
+.front-dimensions-sum {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: var(--fs-lg);
+  padding: var(--sp-5) 0;
+  list-style-position: inside;
+}
+.front-dimensions-sum:hover { text-decoration: underline; }
+.front-dimensions[open] .front-dimensions-sum { margin-bottom: var(--sp-1); }
+.front-dimensions h3 { font-size: var(--fs-lg); margin: var(--sp-3) 0 var(--sp-2); }
+.front-dimensions-sum::-webkit-details-marker { color: var(--accent); }

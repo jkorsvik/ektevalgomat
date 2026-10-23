@@ -1,0 +1,151 @@
+# Senterpartiets stortingsvalgprogram 2025-2029 — programpunkter (tier C).
+# Hvert quote er en ordrett delstreng av PDF-teksten, ett sitat/ett kulepunkt.
+# Leseren skal kunne åpne PDF-en og søke opp hvert sitat.
+id: sp
+source_name: "Senterpartiets stortingsvalgprogram 2025-2029"
+source_url: "https://www.senterpartiet.no/politikk/_/attachment/inline/ea7e4063-1374-47bf-8b10-839bf68904c0:3c54bc9ec99b5e017f069f2312b3962bd934c78a/Senterpartiets%20stortingsvalgprogram%202025-2029%20bokm%C3%A5l%20i%20PDF.pdf"
+retrieved_at: "2026-10-12"
+points:
+  # Dimensjon 1: Demokratisk åpenhet
+  - dimension: Demokratisk åpenhet
+    topic: Åpenhet i offentlige prosesser
+    quote: "Sikre at offentlige prosesser er åpne og gir rom for innsyn."
+    where: "s. 10, kapitlet «Tillit til folk og lokalsamfunn», underkapittel «Avbyråkratisering og tillitsbasert styring»"
+  - dimension: Demokratisk åpenhet
+    topic: Åpenhet i handelsforhandlinger
+    quote: "Etterstrebe større åpenhet i handelsforhandlinger og bidra til at forhandlingsdokumenter i større grad offentliggjøres, for å legge til rette for en offentlig og demokratisk debatt."
+    where: "s. 134, kapitlet «Utenriks- og sikkerhetspolitikk», underkapittel «Internasjonal handel»"
+  - dimension: Demokratisk åpenhet
+    topic: Offentlig ordskifte og sosiale medier
+    quote: "Sosiale mediers rolle utfordrer en opplyst samfunnsdebatt. Senterpartiet vil ha en offentlig utredning som ser på hvordan vi kan få et bedre offentlig ordskifte."
+    where: "s. 90, kapitlet «Kultur, idrett og frivillighet», underkapittel «Medier og ytringsfrihet»"
+
+  # Dimensjon 2: Norsk handlefrihet
+  - dimension: Norsk handlefrihet
+    topic: Suverenitet overfor EU
+    quote: "Senterpartiet mener Norge ikke må avgi suverenitet til EU."
+    where: "s. 136, kapitlet «Utenriks- og sikkerhetspolitikk», underkapittel «EU/EØS»"
+  - dimension: Norsk handlefrihet
+    topic: Nei til EUs fjerde energimarkedspakke
+    quote: "For å hindre ytterligere avgivelse av norsk suverenitet over norsk energipolitikk, sier Senterpartiet nei til EU sin fjerde energimarkedspakke."
+    where: "s. 40, kapitlet «Energi: Nasjonal kontroll over krafta vår», underkapittel «Nei til EU sin fjerde energimarkedspakke»"
+  - dimension: Norsk handlefrihet
+    topic: Erstatte EØS-avtalen
+    quote: "Erstatte EØS-avtalen med handels- og samarbeidsavtaler med EU, etter reforhandlinger."
+    where: "s. 136, kapitlet «Utenriks- og sikkerhetspolitikk», underkapittel «EU/EØS»"
+  - dimension: Norsk handlefrihet
+    topic: Melde Norge ut av ACER
+    quote: "Starte arbeidet med å melde Norge ut av EUs energibyrå ACER."
+    where: "s. 41, kapitlet «Energi: Nasjonal kontroll over krafta vår», underkapittel «Nei til EU sin fjerde energimarkedspakke»"
+
+  # Dimensjon 3: Forvaltning av fellesskapets ressurser / energi
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Nasjonalt eierskap til naturressursene
+    quote: "Senterpartiet vil at vi skal bruke lærdommen fra egen historie, og styrke det nasjonale eierskapet og kontrollen over egne naturressurser."
+    where: "s. 5, kapitlet «Trygg fremtid i hele Norge»"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Nasjonal kontroll over energipolitikken
+    quote: "Ha nasjonal kontroll over norsk energipolitikk og energiproduksjon"
+    where: "s. 41, kapitlet «Energi: Nasjonal kontroll over krafta vår», underkapittel «Nei til EU sin fjerde energimarkedspakke»"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Offentlig ansvar for nasjonalt eierskap
+    quote: "Det er et offentlig ansvar å sikre nasjonalt eierskap til naturressurser, kritisk infrastruktur og selskap som er viktige for norsk sikkerhet."
+    where: "s. 96, kapitlet «Næring og industri: Verdiskaping i hele Norge»"
+
+  # Dimensjon 4: Teknologisk kapasitet
+  - dimension: Teknologisk kapasitet
+    topic: Forsvar av digital infrastruktur
+    quote: "Styrke Etterretningstjenesten og Cyberforsvaret slik at Norge kan møte trusler mot digital infrastruktur og digitale løsninger fra militære og sivile aktører, ved å investere i personell og materiell."
+    where: "s. 118, kapitlet «Samferdsel: Hele Norge må bindes tettere sammen», underkapittel «Digitalisering»"
+  - dimension: Teknologisk kapasitet
+    topic: Grunnleggende digital infrastruktur under sikkerhetsloven
+    quote: "Sikre at grunnleggende digital infrastruktur blir lagt inn under sikkerhetsloven, inkludert underleverandører."
+    where: "s. 118, kapitlet «Samferdsel: Hele Norge må bindes tettere sammen», underkapittel «Digitalisering»"
+  - dimension: Teknologisk kapasitet
+    topic: Redundans i IKT og kraft
+    quote: "Sikre redundans i IKT og kraftforsyningen som del av en beredskapspakke for samfunnskritisk infrastruktur."
+    where: "s. 12, kapitlet «Beredskap: Styrket nasjonalt totalforsvar»"
+
+  # Dimensjon 5: Innovasjon / omstillingsevne
+  - dimension: Innovasjon / omstillingsevne
+    topic: Omstilling for konkurransekraft
+    quote: "Gjennom omstilling skal vi sikre Norges globale konkurransekraft."
+    where: "s. 17, kapitlet «Klima, miljø og natur: Grønn omstilling tar hele Norge i bruk», underkapittel «Rettferdig omstilling»"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Lange norske verdikjeder
+    quote: "Senterpartiet vil ha lange norske verdikjeder fra råvare til produkt."
+    where: "s. 96, kapitlet «Næring og industri: Verdiskaping i hele Norge»"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Hente hjem produksjon med ny teknologi
+    quote: "Et stabilt demokrati, kombinert med ny teknologi og automatisering, gir muligheter for å hente hjem produksjon til Norge."
+    where: "s. 98, kapitlet «Næring og industri: Verdiskaping i hele Norge», underkapittel «Industri og energi»"
+
+  # Dimensjon 6: Universell grunnmur
+  - dimension: Universell grunnmur
+    topic: Universelle velferdsgoder uavhengig av bosted
+    quote: "Alle skal ha tilgang til universelle velferdsgoder og tjenester uavhengig av ressurser og bosted."
+    where: "s. 7, kapitlet «Tillit til folk og lokalsamfunn»"
+  - dimension: Universell grunnmur
+    topic: Universelle velferdsordninger
+    quote: "Senterpartiet mener at velferdsordningene skal være universelle."
+    where: "s. 26, kapitlet «Arbeid, velferd og bolig: Gjør din plikt, krev din rett», underkapittel «Velferd»"
+  - dimension: Universell grunnmur
+    topic: Gratis offentlig skole
+    quote: "Senterpartiet vil ha en sterk og gratis offentlig skole."
+    where: "s. 120, kapitlet «Utdanning og forskning: Skolegang som gir jobb, gode liv og verdiskaping»"
+  - dimension: Universell grunnmur
+    topic: Desentraliserte helsetjenester og lokalsykehus
+    quote: "Senterpartiet vil opprettholde desentraliserte strukturer innenfor helse, og beholde og videreutvikle sykehus som grunnmuren i helseberedskapen."
+    where: "s. 13, kapitlet «Beredskap: Styrket nasjonalt totalforsvar», underkapittel «Nødetatene»"
+    statements: ["utsagn-28"]
+    # begrunnelse: vil beholde og videreutvikle sykehus som grunnmuren i helseberedskapen
+
+  # Dimensjon 7: Barns muligheter
+  - dimension: Barns muligheter
+    topic: Familiepolitikk for sosial utjevning
+    quote: "Familiepolitikk skal bidra til å utjevne sosiale forskjeller, skape god livskvalitet og gi alle barn en trygg og god oppvekst."
+    where: "s. 30, kapitlet «Barn, familie og mangfold: Ulike liv - like muligheter»"
+  - dimension: Barns muligheter
+    topic: Redusere barnefattigdom
+    quote: "Senterpartiet vil iverksette målrettede tiltak for å redusere fattigdom og hjelpe barn i utsatte familier."
+    where: "s. 30, kapitlet «Barn, familie og mangfold: Ulike liv - like muligheter»"
+  - dimension: Barns muligheter
+    topic: Gratis SFO for lavinntektsfamilier
+    quote: "Innføre gratis heldagsplass på SFO for lavinntektsfamilier og barn på 1.- 4. trinn i kommuner i sentralitetsklasse 5 og 6."
+    where: "s. 33, kapitlet «Barn, familie og mangfold: Ulike liv - like muligheter», underkapittel «Skolefritidsordning»"
+    statements: ["utsagn-32"]
+    # begrunnelse: vil innføre gratis heldagsplass på SFO
+
+  # Dimensjon 8: Robusthet / adaptabilitet
+  - dimension: Robusthet / adaptabilitet
+    topic: Fornyet samhandling mot nytt trusselbilde
+    quote: "Det nye trusselbildet krever fornyet samhandling på tvers av sektorene for å sikre befolkningen tilgang på det aller nødvendigste i kriser og krig."
+    where: "s. 11, kapitlet «Beredskap: Styrket nasjonalt totalforsvar»"
+  - dimension: Robusthet / adaptabilitet
+    topic: Beredskapslagring av mat
+    quote: "Styrke og beskytt norsk matproduksjon og foredling i hele landet for å sikre vår kapasitet til å produsere og beredskapslagre mat."
+    where: "s. 12, kapitlet «Beredskap: Styrket nasjonalt totalforsvar»"
+    statements: ["utsagn-38", "utsagn-39"]
+    # begrunnelse: vil beredskapslagre mat og sikre matproduksjon i hele landet
+  - dimension: Robusthet / adaptabilitet
+    topic: Bosetting og spredt infrastruktur som beredskap
+    quote: "Den beste beredskap og forsvar er bosetting, god infrastruktur, matproduksjon og annen næringsvirksomhet spredt over hele Norge."
+    where: "s. 11, kapitlet «Beredskap: Styrket nasjonalt totalforsvar»"
+
+  # Dimensjon 9: Generasjonsansvar
+  - dimension: Generasjonsansvar
+    topic: Overlevere Norge i bedre stand
+    quote: "Derfor må Norge overlates i bedre stand enn vi overtok det i."
+    where: "s. 6, kapitlet «Trygg fremtid i hele Norge»"
+  - dimension: Generasjonsansvar
+    topic: Forvaltertankegang over tid
+    quote: "Vår forpliktelse er å overlevere samfunnet i bedre stand til neste generasjon."
+    where: "s. 105, kapitlet «Økonomi og skatt: Verdiskaping og fordeling»"
+  - dimension: Generasjonsansvar
+    topic: Naturens produksjonsevne for fremtiden
+    quote: "Menneskets fremtid er betinget av at naturens produksjonsevne og mangfold opprettholdes."
+    where: "s. 17, kapitlet «Klima, miljø og natur: Grønn omstilling tar hele Norge i bruk»"
+  - dimension: Generasjonsansvar
+    topic: Oppfylle Parisavtalen
+    quote: "Norge må oppfylle våre forpliktelser etter Parisavtalen."
+    where: "s. 17, kapitlet «Klima, miljø og natur: Grønn omstilling tar hele Norge i bruk», underkapittel «Rettferdig omstilling»"

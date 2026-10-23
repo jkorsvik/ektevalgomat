@@ -1,0 +1,32 @@
+id: ev-2026-05-26-sp-kjernekraft-statlig-eierskap-votering
+statement_id: utsagn-06
+party_id: sp
+actor: "Senterpartiet (stortingsgruppen)"
+date: "2026-05-26"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Sp stemte mot Rødts forslag om at kjernekraft i Norge skal skje under fullt statlig eierskap, kontroll og styring."
+claim_action: >
+  Rødts forslag 30, 31 og 32 i Innst. 278 S (2025–2026) ble votert
+  samlet (votering_id 27715). Alle 5 representanter fra Sp som
+  stemte, stemte mot. Bare Rødt stemte for.
+verbatim_excerpt: >
+  «Stortinget ber regjeringen sikre at utvikling og eventuell etablering
+  av kjernekraft i Norge skjer under fullt statlig eierskap, kontroll og
+  styring, av hensyn til nasjonal sikkerhet, beredskap og den langsiktige
+  forvaltningen av kritisk infrastruktur og radioaktivt materiale.»
+status: forslag_avvist_stemte_mot
+position: null
+source_tier: A
+source_name: "Innst. 278 S (2025–2026), forslag 30–32; votering_id 27715"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Ikke kodet (position: null med vilje). Forslag 30 er nesten ordrett
+  utsagnet, men voteringen gjaldt forslag 30, 31 (hjemfallsrett) og 32
+  (IAEA) samlet. Utsagnet er også betinget («eventuell utbygging»). En
+  stemme mot kan derfor bety mot statlig eierskap, mot ett av de andre
+  forslagene, eller mot kjernekraft i det hele tatt. Vist her så den som
+  leser posisjonen fra merknaden (fil 30), også ser hvordan partiet
+  stemte. Funnet i revisjonen 2026-10-02.
+retrieved_at: "2026-10-02"

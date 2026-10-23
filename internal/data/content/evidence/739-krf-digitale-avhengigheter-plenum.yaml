@@ -1,0 +1,28 @@
+id: ev-2026-05-05-krf-digitale-avhengigheter-plenum
+statement_id: utsagn-59
+party_id: "krf"
+actor: "Kristelig Folkeparti (Jonas Andersen Sayed)"
+date: "2026-05-05"
+evidence_type: plenumsinnlegg
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF sa i salen at partiet støtter kartleggingen, og stemte for.
+claim_action: >
+  Innlegg i debatten om Innst. 225 S, 5. mai 2026. KrF sitter ikke i
+  komiteen. Votering 27496: KrF 4 for, 0 mot.
+verbatim_excerpt: >
+  Samtidig støtter KrF å få mer kunnskap og bevissthet om dette, og vi
+  vil derfor stemme for komiteens tilråding, der man ber regjeringen om
+  kontinuerlig å kartlegge Norges digitale avhengigheter til andre land
+  og jurisdiksjoner
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Stortingsreferat 05.05.2026 (Innst. 225 S); votering 27496"
+source_url: "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: egen begrunnelse i salen, og partiet stemte samlet for. I
+  samme innlegg sier KrF at mange andre forslag i saken er for dyre og
+  lite utredet.
+retrieved_at: "2026-10-03"

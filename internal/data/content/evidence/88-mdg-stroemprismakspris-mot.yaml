@@ -1,0 +1,45 @@
+id: ev-2025-06-05-mdg-stroemprismakspris-mot
+statement_id: utsagn-12
+party_id: mdg
+actor: "Miljøpartiet De Grønne (utenriks- og energikomiteen)"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG stemte mot Rødts pristak-forslag på et fordelingspolitisk
+  grunnlag: enhver ordning knyttet til forbruk (makspris, Norgespris
+  eller dagens strømstøtte) begunstiger husholdninger med høyt
+  forbruk og god økonomi. MDG vil heller ha en flat utbetaling
+  uavhengig av forbruk.
+claim_action: >
+  MDG fremmet eget forslag om en flat energitiltaksbevilgning
+  (votering_id 26115, 2 for, 100 mot) og var medforslagsstiller med
+  FrP om å sende Norgespris-loven tilbake til regjeringen for
+  grundigere bearbeiding (votering_id 26113/26122). I votering_id
+  26116 stemte MDG mot Rødts pristak-blokk (0 for, 1 mot av de
+  tilstedeværende, 2 fraværende).
+verbatim_excerpt: >
+  "Komiteens medlem fra Miljøpartiet De Grønne registrerer videre at
+  fordelingseffekten av Norgespris er svært problematisk. Enhver
+  strømstøtte som følger forbruk, enten det er makspris, Norgespris
+  eller dagens strømstøtte, vil favorisere folk med god økonomi, siden
+  strømforbruk korrelerer sterkt med inntekt."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26115, 26116"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: MDGs innvending er distinkt fra Høyre/Venstres
+  markedsargument og fra Ap/Sps mekanisme-preferanse — MDG avviser
+  makspris OG Norgespris (og dagens strømstøtte) fordi ALLE
+  forbruksbaserte ordninger begunstiger storforbrukere, ikke fordi de er
+  mot statlig omfordeling. MDG er dermed enig i at en lovbestemt makspris
+  ikke er veien, men ikke nødvendigvis i at Norgespris spesifikt er det
+  beste alternativet — derfor +1 ikke +2. MDG vil ha MER omfordeling,
+  bare via en Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  flat sum uavhengig av forbruk. Rødts egen merknad bekrefter at MDG
+  (sammen med Høyre) foreslår flate utbetalingsmodeller, se
+  evidence/81-stroemprisreform-kontekst.yaml.
+retrieved_at: "2026-09-24"

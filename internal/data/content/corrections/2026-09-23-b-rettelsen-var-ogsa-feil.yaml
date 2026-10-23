@@ -1,0 +1,26 @@
+id: 2026-09-23-b-rettelsen-var-ogsa-feil
+date: "2026-09-23"
+kind: rettelse
+title: "Rettelsen over var også feil: navnet var ekte, erstatningen var oppfunnet"
+statements: ["06", "07", "08", "43", "44", "45"]
+what: >
+  Rettelsen over sa at «Norsk handlefrihet» ikke fantes i
+  forskningsnotatet. Det var feil. Navnet er notatets dimensjon 2, med
+  utsagn 6 til 11 og spørsmålet «Beholder Norge reell beslutnings- og
+  operasjonsevne?». Samtidig ble navnet «Energi og klimapolitikk»
+  introdusert. Det navnet finnes ikke i notatet. Det gjør heller ikke de
+  fem undertemaene som ble skrevet inn for utsagn 6 til 10: kjernekraft,
+  utfasing av oljeutvinning, havvind, strømpris og klimamål.
+reason: >
+  Notatet navngir dimensjoner, nummerområdene deres og ett primært
+  spørsmål per dimensjon. Det lister ikke temaene til alle de 42
+  utsagnene. Da rettelsen ble skrevet, ble det lest som om en slik liste
+  fantes, og detaljer som ikke fantes ble fylt inn.
+effect: >
+  Rettelsen inneholdt to feil, ikke én: først et oppfunnet
+  dimensjonsnavn, så en fornektelse av et ekte navn med et oppfunnet navn
+  og fem oppfunne undertemaer i stedet. Saksgjennomgangen som var gjort
+  mot de oppfunne temaene, var likevel faktisk riktig: ekte saksnumre og
+  ekte stemmetall, kontrollert på nytt mot kilden. Det var plasseringen
+  under oppfunne temaer som var galt. Den kontrollerte dimensjonstabellen
+  er nå fasiten for hvilke dimensjoner som finnes.

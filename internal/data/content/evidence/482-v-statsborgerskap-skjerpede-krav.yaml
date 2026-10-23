@@ -1,0 +1,22 @@
+id: ev-2026-04-30-v-statsborgerskap-skjerpede-krav
+statement_id: utsagn-48
+party_id: v
+actor: "Venstre"
+date: "2026-04-30"
+evidence_type: voteringsspor
+evidence_class: uklart
+scan_summary: "Venstre stemte mot både FrPs og Høyres innstrammingsforslag; partiet har ikke sete i komiteen for denne saken."
+claim_action: >
+  Venstre har ikke sete i kommunal- og forvaltningskomiteen for denne
+  saken, og har derfor ingen egen merknad. Stemte mot begge konkrete
+  forslag: votering 27524 (FrP) og votering 27522 (Høyre).
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Voteringene 27522 og 27524 (30.04.2026), sak 200050"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27524&format=json"
+claim_confidence: dokumentert
+context_note: >
+  Kun stemmegivning, ingen komitésete og ingen egen tekst — kodet -1.
+  Bekreftet [OK] i votes.py: Venstre 0 for / 2 mot på begge voteringer.
+retrieved_at: "2026-09-27"

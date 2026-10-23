@@ -1,0 +1,28 @@
+id: ev-2026-partiprogram-hoy-inntekt-formue-storre-andel-kontekst
+statement_id: utsagn-53
+party_id: ""
+actor: "Faktakontekst"
+date: "2025-2029 (partiprogramperiode)"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: "Utsagnet speiler utsagn-52 i motsatt retning: skal personer med høy inntekt og stor formue betale en større andel av skatten enn i dag?"
+claim_action: >
+  Kontekstfil for utsagn-53. Kildene under er de ni partienes egne
+  program for 2025-2029 (tier C). Rødt er kodet fra sin egen
+  hovedmerknad i Innst. 2 S (tier A, fil 602); Rødts program (lastet
+  ned i nettleser 28.09.2026, se fil 603) peker samme vei.
+status: kontekst
+position: null
+source_tier: C
+source_name: "Partiprogrammer 2025–2029 (flere partier), se enkeltfiler"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Merk asymmetrien i kildestyrke: SV, MDG og KrF navngir eksplisitt
+  hvilke grupper som skal betale mer (store formuer/høyeste inntekter),
+  mens Ap og Sp har mer generelle formuleringer om rettferdig/
+  progressiv beskatning uten et like presist "mer enn i dag"-løfte, og
+  er derfor kodet mildere (+1, sannsynliggjort). FrP, Høyre og Venstre
+  er kodet fra sine egne formuesskatt-reduksjonstekster (samme kilder
+  som utsagn-52), som peker motsatt vei av dette utsagnet.
+retrieved_at: "2026-09-27"

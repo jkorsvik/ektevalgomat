@@ -1,0 +1,46 @@
+id: ev-2026-05-26-hoyre-privat-finansiering
+statement_id: utsagn-06
+party_id: h
+actor: "Høyre (Kari Sofie Bjørnsen, Aleksander Stokkebø, energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre (med Venstre) vil åpne for kjernekraft kun privatfinansiert, og avviser eksplisitt statlig eierskap."
+claim_action: >
+  Høyre fremmer eget forslag (nr. 27) om å legge til rette for
+  kjernekraftutbygging BETINGET av at private aktører selv finansierer
+  utbygging, drift og dekommisjonering. I fellesmerknad med Venstre setter
+  partiet tre uttrykkelige vilkår for kjernekraft, hvorav ett direkte
+  avviser statlig eierskap.
+verbatim_excerpt: >
+  disse medlemmer på sikt ønsker å tilrettelegge for at private kan
+  finansiere og bygge ut kjernekraft i Norge, med tre tydelige forbehold:
+  Muligheten for kjernekraft i fremtiden må ikke bli en sovepute mot å
+  bygge ut mer fornybar kraft og nett i dag, hvor tempoet må betydelig
+  opp. Det er ikke aktuelt med statlige subsidier eller eierskap. Det
+  skal ikke kompromisses på sikkerhet. […] Stortinget ber regjeringen
+  legge til rette for utbygging av kjernekraft i Norge, dersom private
+  aktører selv finansierer utbygging, drift og dekommisjonering.
+status: forkastet
+position: -2
+source_tier: A
+# Kodingen bygger utelukkende på fellesmerknadens egne ord (se
+# context_note: Høyre stemte for komiteens tilråding, som ikke tar
+# stilling til eierskapsform) — ingen votering løser dette spesifikke
+# spørsmålet. Se Evidence.EvidensstyrkeCap for regelen.
+evidensstyrke_cap: moderat
+source_name: "Innst. 278 S (2025–2026), forslag 27 og Høyre/Venstres fellesmerknad"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: Høyres eget forslag krever privat finansiering
+  ("dersom private aktører selv finansierer"), og fellesmerknaden med
+  Venstre sier eksplisitt "det er ikke aktuelt med ... eierskap" — en
+  direkte, ordrett avvisning av utsagnets "fullt statlig eierskap og
+  kontroll", ikke en analytisk tolkning. Høyre er for kjernekraft i seg
+  selv (positivt, betinget), men eksplisitt MOT statlig eierskapsmodellen
+  utsagnet spør om — to atskilte spørsmål, se /metode for hvorfor disse
+  ikke slås sammen. Høyre stemte for komiteens tilråding (kun "legg frem
+  en stortingsmelding"), som ikke tar stilling til eierskapsform og derfor
+  ikke motsier denne kodingen.
+retrieved_at: "2026-09-23"

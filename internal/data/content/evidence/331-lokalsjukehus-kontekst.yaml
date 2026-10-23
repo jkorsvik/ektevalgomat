@@ -1,0 +1,33 @@
+id: ev-2026-lokalsjukehus-kontekst
+statement_id: utsagn-28
+party_id: ""
+actor: "Helse- og omsorgskomiteen / Stortinget i plenum"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Samme sak som utsagn-27 (Innst. 252 S), forslag 3: SV, Sp og Rødt
+  ba regjeringen bruke lokalsykehus aktivt for å kutte ventelister —
+  en annen koalisjon enn forslag 1 (der FrP også var med).
+claim_action: >
+  Forslag 3 (SV, Sp og Rødt): "Stortinget ber regjeringa sikre at
+  lokalsjukehus blir nytta aktivt i arbeidet for å få ned
+  ventelistene i spesialisthelsetenesta, jf. ventetidsløftet, og
+  informere Stortinget på eigna måte." Votering_id 27579 (sakid
+  200056): 22 for (MDG 5, Rødt 5, SV 5, Sp 5, Venstre 2), 77 mot (Ap
+  31, FrP 28, Høyre 14, KrF 4).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); data.stortinget.no sakid=200056, votering_id 27579"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  FrP flipper fra FOR (utsagn-27) til MOT (dette forslaget) — og MDG
+  flipper motsatt vei, fra MOT (utsagn-27) til FOR. Samme sak, samme
+  ni partier, to forskjellige forslag, to helt forskjellige
+  koalisjoner: dette er den klareste dokumentasjonen i hele datasettet
+  på at "en sak, en koalisjon" er en for enkel modell — koalisjoner er
+  forslagsspesifikke, ikke saksspesifikke.
+retrieved_at: "2026-09-24"

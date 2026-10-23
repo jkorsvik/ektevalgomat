@@ -1,0 +1,20 @@
+id: utsagn-59
+number: 59
+dimension: "Norsk handlefrihet"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne?"
+case_tag: digitale_avhengigheter_rapport
+short_name: "Fast rapport om digitale avhengigheter"
+text: >
+  Regjeringen bør jevnlig rapportere til Stortinget om hvilke digitale
+  avhengigheter Norge har til andre land.
+practical_stakes:
+  enig: >
+    Regjeringen kartlegger løpende hvilke digitale tjenester og systemer
+    Norge er avhengig av fra andre land, og legger fram en egen rapport
+    for Stortinget med jevne mellomrom. Forslaget i 2026 ba om første
+    rapport innen utgangen av 2026.
+  uenig: >
+    Det kommer ingen egen fast rapport til Stortinget. Regjeringen
+    vurderer digitale avhengigheter som i dag, gjennom blant annet
+    Nasjonal sikkerhetsmyndighet, Nasjonal kommunikasjonsmyndighet og
+    egne utvalg.

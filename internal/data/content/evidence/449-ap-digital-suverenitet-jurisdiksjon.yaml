@@ -1,0 +1,39 @@
+id: ev-2026-05-07-ap-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: ap
+actor: "Arbeiderpartiet (Konstanse Marie Alvær, Isak Veierud Busch, Sigurd Kvammen Rafaelsen, Solveig Vestenfor)"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap stemte mot jurisdiksjonskravet, med Høyre, fordi de mener detaljerte føringer krever grundigere utredning først — ikke en avvisning av målet."
+claim_action: >
+  Ap stemte mot forslag 4 i Innst. 225 S (2025–2026) (votering 18,
+  07.05.2026). I delt merknad med Høyre skriver Ap at de støtter
+  intensjonen i representantforslaget, men mener det ikke er forsvarlig
+  å legge detaljerte føringer for kompliserte spørsmål uten grundigere
+  utredning først.
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Arbeiderpartiet og Høyre er opptatt av at det
+  føres en politikk som gir trygghet for landet og innbyggerne. Disse
+  medlemmer støtter intensjonen i representantforslaget, men mener det
+  ikke er forsvarlig av Stortinget å legge såpass detaljerte føringer for
+  viktige beslutninger om meget kompliserte saker [...] uten grundigere
+  utredninger.»
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27492 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: Aps delte merknad med Høyre uttrykker eksplisitt
+  støtte til «intensjonen» (redusere sårbar avhengighet), men vil ikke
+  vedta detaljerte føringer uten grundigere utredning — i tråd med det
+  snudde utsagnets premiss. Dette er nærmere en prosedyremessig/timing-
+  innvending enn Høyres mer substansielle «vi vil ikke ha et
+  jurisdiksjonskrav utover GDPR i det hele tatt»-posisjon (kodet +1 der
+  også, se evidence/448) — men Ap har ingen egen tekst som spesifikt tar
+  stilling til selve jurisdiksjonsspørsmålet, så +1 reflekterer at
+  for-stemmen (mot det opprinnelige forslaget) er reell, men usikkerheten
+  om hvorfor er også reell. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. fra -1 til +1.
+retrieved_at: "2026-09-26"

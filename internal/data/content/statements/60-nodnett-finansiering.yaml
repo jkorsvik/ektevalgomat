@@ -1,0 +1,16 @@
+id: utsagn-60
+number: 60
+dimension: "Robusthet / adaptabilitet"
+primary_question: "Tåler systemet bortfall, sjokk og feilantakelser?"
+case_tag: nodnett_finansiering
+short_name: "Staten fullfinansierer nytt Nødnett"
+text: >
+  Staten bør fullfinansiere utbygging og drift av nytt nødnett, slik at
+  kommunale og frivillige beredskapsaktører ikke må bære kostnaden.
+practical_stakes:
+  enig: >
+    Staten dekker kostnaden ved å bygge ut og drifte nytt nødnett, og
+    kommunale og frivillige brukere skjermes mot økte brukerbetalinger.
+  uenig: >
+    Kostnaden ved nytt nødnett legges helt eller delvis på kommunale og
+    frivillige brukere gjennom høyere brukerbetaling.

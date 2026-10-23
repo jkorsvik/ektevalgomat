@@ -1,0 +1,25 @@
+id: ev-2026-mdg-lokalsjukehus-for
+statement_id: utsagn-28
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  MDG stemte for dette forslaget, i motsetning til utsagn-27 (samme
+  sak) der partiet stemte mot FrP/Sp/Rødts ambulanseforslag.
+claim_action: "Votering_id 27579, MDG 5 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27579"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 (ikke +2): MDG støtter dette forslaget om lokalsykehus,
+  men er ikke medforslagsstiller, og ingen egen MDG-merknad om dette
+  spesifikke forslaget finnes. MDGs skifte fra mot (utsagn-27) til
+  for (dette forslaget) er konsistent med at forslag 3 ikke kritiserer
+  MDGs egne alternative ambulanseløsninger, i motsetning til forslag 1.
+retrieved_at: "2026-09-24"

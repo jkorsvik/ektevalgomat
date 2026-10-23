@@ -1,0 +1,42 @@
+id: ev-2026-05-26-venstre-privat-finansiering
+statement_id: utsagn-06
+party_id: v
+actor: "Venstre (Grunde Almeland, energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Venstre (med Høyre) vil åpne for kjernekraft kun privatfinansiert, og avviser eksplisitt statlig eierskap."
+claim_action: >
+  Venstre står bak samme fellesmerknad med Høyre og de samme tre
+  vilkårene for kjernekraft (ikke en sovepute for fornybar utbygging,
+  ingen statlige subsidier eller eierskap, ingen kompromiss på sikkerhet),
+  samt felles forslag 17–19 om regelverksendringer og organisering, alle
+  betinget av privat finansiering.
+verbatim_excerpt: >
+  disse medlemmer på sikt ønsker å tilrettelegge for at private kan
+  finansiere og bygge ut kjernekraft i Norge, med tre tydelige forbehold:
+  Muligheten for kjernekraft i fremtiden må ikke bli en sovepute mot å
+  bygge ut mer fornybar kraft og nett i dag, hvor tempoet må betydelig
+  opp. Det er ikke aktuelt med statlige subsidier eller eierskap. Det
+  skal ikke kompromisses på sikkerhet. […] Stortinget ber regjeringen
+  fremme forslag til nødvendige endringer i relevant lovverk, som
+  atomenergiloven, energiloven, strålevernloven og aktuelle forskrifter,
+  slik at regelverket legger til rette for etablering og drift av
+  kommersiell kjernekraftproduksjon i Norge.
+status: forkastet
+position: -2
+source_tier: A
+# Samme grunn som Høyre (delt fellesmerknad, se context_note): ingen
+# votering løser eierskapsspørsmålet spesifikt. Se Evidence.EvidensstyrkeCap.
+evidensstyrke_cap: moderat
+source_name: "Innst. 278 S (2025–2026), forslag 17 og Høyre/Venstres fellesmerknad"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 av samme grunn som Høyre (se den filens context_note):
+  fellesmerknaden er delt, og forslag 17 bruker samme "kommersiell
+  kjernekraftproduksjon"-ordlyd som FrPs eget forslag 2. Venstre stemte
+  for komiteens tilråding (kun "legg frem en stortingsmelding"), som ikke
+  motsier denne kodingen fordi tilrådingen ikke tar stilling til
+  eierskapsform.
+retrieved_at: "2026-09-23"

@@ -1,0 +1,31 @@
+id: ev-2025-12-09-ap-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2025-12-09"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap viser til at ETS2 allerede er innført i norsk rett, og vil bruke unntak og kompensasjonsordninger for å dempe konsekvensene i stedet for å stanse gjennomføringen."
+claim_action: >
+  Ap viser til at EUs forsterkede klimakvotedirektiv ble innlemmet i
+  EØS-avtalen i 2023 og gjennomført i norsk rett før sommeren 2025.
+  Partiet vil bruke midlertidige unntak og kompensasjon gjennom andre
+  avgifter for å unngå plutselige prisøkninger, i stedet for å stanse
+  ETS2. Stemte for komiteens tilråding (votering 26747, som innebar å
+  IKKE stanse gjennomføringen).
+verbatim_excerpt: >
+  «Derfor ønsker disse medlemmer å understreke at Norge kan søke om
+  midlertidig unntak, og kan kompensere gjennom andre avgifter eller
+  andre ordninger om det skulle bli nødvendig.»
+status: vedtatt
+position: -2
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); votering 26747 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: egen, eksplisitt begrunnelse for å videreføre
+  gjennomføringen (bruke unntak/kompensasjon i stedet for å stanse),
+  direkte mot utsagnets premiss. Bekreftet [OK] i votes.py: Ap 53 for
+  / 0 mot (votering 26747).
+retrieved_at: "2026-09-27"

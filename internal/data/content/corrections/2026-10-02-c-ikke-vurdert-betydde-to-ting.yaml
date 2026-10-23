@@ -1,0 +1,22 @@
+id: 2026-10-02-c-ikke-vurdert-betydde-to-ting
+date: "2026-10-02"
+kind: rettelse
+title: "«Ikke vurdert» betydde to forskjellige ting"
+statements: ["45", "57"]
+what: >
+  Tre celler har en kilde, men med vilje ingen kodet posisjon: Ap på 57, Sp
+  og Rødt på 45. Styrkeetiketten falt tilbake på å vurdere den ukodede
+  kilden, så kortet viste «Ikke vurdert» rett ved «Sterk». I tillegg sto
+  det på resultatsiden at «Ikke vurdert» betyr at det ikke er hentet inn
+  evidens. Det var usant for disse tre cellene.
+reason: >
+  Etiketten skilte ikke mellom å vurdere en kodet posisjon og å vurdere en
+  kilde som bare er kontekst. Definisjonen på resultatsiden beskrev bare
+  den tomme saken.
+effect: >
+  Etiketten vurderer nå bare kodet evidens. Uten kodet posisjon står det
+  «Ingen kodet posisjon (1 kilde, vist som kontekst)», uten styrkemåler og
+  uten et andre «Ikke vurdert». Resultatsiden sier nå at ingen innhentet
+  kilde viser partiets stilling til utsagnet. Ingen partiposisjon er
+  endret. Nye tester sjekker hver celle og hver utsagnsside, og de feiler
+  hvis endringen blir reversert.

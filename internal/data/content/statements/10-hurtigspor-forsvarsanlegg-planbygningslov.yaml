@@ -1,0 +1,16 @@
+id: utsagn-10
+number: 10
+dimension: "Norsk handlefrihet"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne?"
+case_tag: hurtigspor_forsvarsanlegg_planbygningslov
+short_name: "Særskilt lovhjemmel for hurtig forsvarsbygging"
+text: >
+  Regjeringen bør fremme en egen lovhjemmel for hurtig behandling av
+  forsvarsanlegg, uavhengig av plan- og bygningsloven.
+practical_stakes:
+  enig: >
+    Regjeringen fremmer en egen lov som lar større forsvarsanlegg bygges
+    raskere, uten å måtte følge den ordinære plan- og bygningsloven.
+  uenig: >
+    Ingen slik egen lovhjemmel innføres. Forsvarsanlegg behandles fortsatt
+    etter den ordinære plan- og bygningsloven.

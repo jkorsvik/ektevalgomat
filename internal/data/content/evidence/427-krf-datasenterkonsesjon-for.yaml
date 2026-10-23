@@ -1,0 +1,22 @@
+id: ev-2026-krf-datasenterkonsesjon-for
+statement_id: utsagn-11
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-03-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF sitter ikke i energi- og miljøkomiteen og er ikke
+  medforslagsstiller, men alle 4 fremmøtte stemte for.
+claim_action: "Votering_id 27047, KrF 4 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 140 S (2025–2026); votering_id 27047"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-140s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1: KrF stemte for uten å være medforslagsstiller eller ha en
+  egen dokumentert merknad om dette forslaget.
+retrieved_at: "2026-09-24"

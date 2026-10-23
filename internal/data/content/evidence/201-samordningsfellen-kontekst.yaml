@@ -1,0 +1,59 @@
+id: ev-2025-12-16-samordningsfellen-kontekst
+statement_id: utsagn-40
+party_id: ""
+actor: "Arbeids- og sosialkomiteen / Stortinget i plenum"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Dokument 8:19 L (2025–2026), Innst. 54 L (2025–2026): FrPs
+  representantforslag om å avvikle "samordningsfellen" — en effekt av
+  pensjonsreformen fra 2011 der offentlig tjenestepensjon avkortes
+  mer og mer for hvert år man står i arbeid etter 67 år, for
+  årskullene født 1944–1962. Komiteens tilråding avviste FrPs
+  opprinnelige lovforslag (vedtatt 71 mot 29), men en løsere
+  gulvamendment fremmet av MDG under debatten vant en knivskarp
+  votering 51 mot 50 og ble det faktiske vedtaket i saken.
+claim_action: >
+  Tre forslag ble fremmet under debatten 16.12.2025: Forslag 1 (FrP,
+  full lovendring, avvist 29 for/73 mot, votering_id 26602), Forslag 3
+  (FrP, SV og Rødt, avvist 40 for/60 mot, votering_id 26603), og
+  Forslag 2 (MDG, vedtatt 51 for/50 mot, votering_id 26604) — som ble
+  Vedtak 164: "Stortinget ber regjeringen utrede tiltak for at ingen
+  offentlig ansatte taper offentlig tjenestepensjon ved å stå, eller
+  ha stått, lengre i jobb enn 67 års alder [...], at dette skal gjelde
+  fra kullene født fra og med 1944, samt hva budsjettkonsekvenser og
+  samfunnsøkonomiske effekter vil være om dette innføres fra
+  1.1.2027."
+status: forslag_vedtatt
+position: null
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26602-26604; Vedtak 164"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-054l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Komplettering av Generasjonsansvar (37, 40 — "Synliggjøres
+  konsekvensene 10–30 år frem?" — nå 2/2 real). Saken tester dette
+  direkte: en regelmekanisme fra en reform vedtatt i 2011 fortsetter å
+  ramme et navngitt, avgrenset sett av årskull (1944–1962) 14 år
+  senere, og spørsmålet er om Stortinget vil synliggjøre og rette opp
+  denne langsiktige, utilsiktede konsekvensen eller la den fortsette.
+  Uvanlig koalisjonsmønster på den vinnende voteringen: FrP, MDG, Rødt,
+  SV, Sp og Venstre for, mot Ap, Høyre og KrF — verken et rent
+  venstre-høyre-skille eller et rent regjering-vs-opposisjon-skille.
+  Ap viser i sin egen merknad til at saken er behandlet "ni ganger
+  tidligere" og peker på at FrP "kun har fremmet forslag av denne
+  typen når de har vært i opposisjon [...], mens partiet unnlot å
+  gjennomføre slike endringer da de selv var med i en
+  flertallskonstellasjon på Stortinget fra 2013 til 2021" — et konkret
+  konsistens-argument mot FrP selv, ikke en direkte imøtegåelse av
+  forslag 2s spesifikke utrede-bestilling. Komiteens tilråding
+  ("Dokument 8:19 L [...] vedtas ikke", votering_id 26605, vedtatt 71
+  mot 29) fremmes av Ap, Høyre, SV OG Rødt sammen — SV og Rødt avviser
+  altså FrPs opprinnelige, konkrete lovtekst formelt, samtidig som de
+  stemmer for et alternativt, mildere utrede-vedtak (forslag 2) og et
+  eget forslag 3 — samme "avvis dette spesifikke forslaget, støtt et
+  annet mekanisme for samme mål"-mønster sett flere ganger tidligere i
+  datasettet (strømpris/Norgespris-saken, matberedskap-saken).
+retrieved_at: "2026-09-24"

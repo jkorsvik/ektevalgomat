@@ -1,0 +1,32 @@
+id: ev-2025-12-09-sp-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: sp
+actor: "Senterpartiet"
+date: "2025-12-09"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp fremmet selv forslaget om å stanse den nasjonale gjennomføringen av ETS2, med FrP som eneste subsidiære støttespiller."
+claim_action: >
+  Sp fremmet forslag 2 i Innst. 58 S: stanse den nasjonale
+  gjennomføringen av EUs nye klimakvotesystem (ETS2). Sammen med FrP
+  viser Sp til at avgiftsnivået på bilister og transportsektoren
+  allerede er for høyt, og at en samtidig nasjonal CO2-avgift og
+  kvoteplikt under ETS2 er dobbel virkemiddelbruk som øker
+  kostnadsbyrden uten global utslippseffekt. Stemte for eget forslag
+  (votering 26746, 55 for/110 mot) og mot komiteens tilråding
+  (votering 26747, som innebar å IKKE stanse ETS2).
+verbatim_excerpt: >
+  «Stortinget ber regjeringen stanse den nasjonale gjennomføringen av
+  EUs nye klimakvotesystem (ETS2).» [...] «Disse medlemmer vil videre
+  påpeke at en samtidig anvendelse av en nasjonal CO₂-avgift og
+  kvoteplikt under EUs kvotesystem innebærer dobbel virkemiddelbruk.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 58 S (2025–2026), forslag 2; votering 26746 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eget forslag, egen begrunnelse, direkte på topic. Bekreftet
+  [OK] i votes.py: Sp 9 for / 0 mot (votering 26746).
+retrieved_at: "2026-09-27"

@@ -1,0 +1,16 @@
+id: utsagn-32
+number: 32
+dimension: "Barns muligheter"
+primary_question: "I hvilken grad kompenserer samfunnet for forhold barn ikke har valgt?"
+case_tag: sfo_12_timer_lovfesting
+short_name: "Lovfestet ubetinget rett til 12 timer gratis SFO"
+text: >
+  Retten til 12 timer gratis skolefritidsordning (SFO) per uke for elever
+  fra 1. til 3. trinn bør lovfestes.
+practical_stakes:
+  enig: >
+    Retten til 12 timer gratis SFO per uke for elever fra 1. til 3. trinn
+    blir lovfestet.
+  uenig: >
+    Denne retten lovfestes ikke. Omfanget av gratis SFO for disse elevene
+    avgjøres fortsatt uten en egen lovfestet rett.

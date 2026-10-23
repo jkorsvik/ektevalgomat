@@ -1,0 +1,31 @@
+id: ev-2026-05-05-ap-digitale-avhengigheter-plenum
+statement_id: utsagn-59
+party_id: "ap"
+actor: "Arbeiderpartiet (statsråd Karianne O. Tung)"
+date: "2026-05-05"
+evidence_type: plenumsinnlegg
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot. Statsråden sa at regjeringen allerede kartlegger
+  avhengighetene.
+claim_action: >
+  Digitaliseringsminister Tung (Ap) i debatten om Innst. 225 S, 5. mai
+  2026. Hun viste til de tre Lysne-utvalgene, analyser fra Nasjonal
+  kommunikasjonsmyndighet, NSM og DFØ. Votering 27496: Ap 32 mot, 0 for.
+verbatim_excerpt: >
+  Regjeringen har gjennom flere rapporter kartlagt Norges digitale
+  avhengigheter og risikoer knyttet til dette [...] Ja, lista er lang,
+  og arbeidet pågår.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Stortingsreferat 05.05.2026 (Innst. 225 S); votering 27496"
+source_url: "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: Ap er ikke mot kartlegging. Ap mener regjeringen
+  alt gjør dette, og stemte mot en egen fast rapport til Stortinget. Det
+  er nettopp det utsagnet spør om. Aps program nevner ikke digitale
+  avhengigheter. Ap-medlemmenes merknad i innstillingen (sammen med H)
+  gjelder skytjeneste og konsesjon, ikke kartleggingen.
+retrieved_at: "2026-10-03"

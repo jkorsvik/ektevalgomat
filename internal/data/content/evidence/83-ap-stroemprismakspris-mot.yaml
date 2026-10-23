@@ -1,0 +1,40 @@
+id: ev-2025-06-05-ap-stroemprismakspris-mot
+statement_id: utsagn-12
+party_id: ap
+actor: "Arbeiderpartiet (utenriks- og energikomiteen)"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot Rødts pristak-forslag og forsvarer i stedet regjeringens
+  egen Norgespris-lov — en statlig referanseprisordning, ikke en
+  lovbestemt makspris på selskapenes utsalgspris.
+claim_action: >
+  Ap er medforslagsstiller til Norgespris-loven (Prop. 148 L) og en av
+  flertallspartiene bak innstillingens tilråding (votering_id 26128,
+  59 for). I votering_id 26116 stemte Ap mot Rødts pristak-forslag
+  (0 for, 29 mot av de tilstedeværende). Ap+Rødt viser sammen til LOs
+  høringssvar om at strømprisen med nettleie og avgifter uansett vil
+  ligge rundt 127 øre under regjeringens forslag — en kritikk av
+  detaljene, ikke et forsvar for Rødts alternative mekanisme.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Arbeiderpartiet og Rødt viser til LOs
+  høringssvar, som påpeker at strømprisen med nettleie og avgifter vil
+  bli rundt 127 øre med regjeringens forslag."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26116, 26128"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: Ap avviser DENNE spesifikke mekanismen (en
+  lovbestemt makspris på selskapenes utsalgspris) til fordel for
+  Norgespris, en referanseprisordning Ap selv er medforslagsstiller til
+  — nøyaktig det snudde utsagnet hevder. +1 ikke +2 fordi Ap ikke
+  argumenterer prinsipielt MOT prisregulering som sådan (bare for en
+  annen mekanisme), en svakere form for enighet enn Høyre/Venstres
+  markedsprinsipielle avvisning. Se
+  evidence/81-stroemprisreform-kontekst.yaml for hvorfor bare denne ene
+  voteringen (av 17) er kodet her. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

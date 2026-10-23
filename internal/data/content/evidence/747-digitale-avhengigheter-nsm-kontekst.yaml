@@ -1,0 +1,29 @@
+id: ev-2026-digitale-avhengigheter-nsm-kontekst
+statement_id: utsagn-59
+party_id: ""
+actor: "Faktakontekst (Nasjonal sikkerhetsmyndighet)"
+date: "2026"
+evidence_type: kontekst
+evidence_class: analyse
+scan_summary: >
+  NSM skriver at Norge blir stadig mer avhengig av teknologi fra noen få
+  aktører.
+claim_action: >
+  NSMs årlige risikovurdering Risiko 2026. NSM peker også på
+  konsentrasjonsrisiko når virksomheter bruker én leverandør eller
+  leverandører fra samme land.
+verbatim_excerpt: >
+  Norge blir stadig mer avhengig av teknologi fra noen få dominerende
+  aktører – enten det er i nasjonale romprogram, fornybar energi eller
+  skytjenester.
+status: kontekst
+position: null
+source_tier: B
+source_name: "NSM: Risiko 2026"
+source_url: "https://nsm.no/getfile.php/1314962-1770630853/NSM/Filer/Dokumenter/Rapporter/Risiko%202026.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Ingen partiposisjon. Viser hva rapporten skulle handle om. NSM er en
+  av etatene statsråden viste til som allerede vurderer slike
+  avhengigheter (fil 742).
+retrieved_at: "2026-10-03"

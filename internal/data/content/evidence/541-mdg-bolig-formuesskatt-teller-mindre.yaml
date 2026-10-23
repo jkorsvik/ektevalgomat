@@ -1,0 +1,35 @@
+id: ev-2026-innst188s-mdg-bolig-formuesskatt-teller-mindre
+statement_id: utsagn-54
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-03-24"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG mener verken mindretallsforslagene eller regjeringens justerte modell løser de grunnleggende skjevhetene i boligbeskatningen, og vil ha en helhetlig gjennomgang i stedet."
+claim_action: >
+  MDG er del av "Komiteens flertall" (samme delte merknad som Ap, se
+  Aps evidensfil), men har i tillegg en egen, separat merknad: verken
+  mindretallsforslagene eller regjeringens justerte verdsettingsmodell
+  løser de grunnleggende skjevhetene i boligbeskatningen, og
+  utfordringene bør løses gjennom en helhetlig gjennomgang av bolig-
+  og formuesskatten. Stemte mot alle fire mindretallsforslag
+  (voteringene 27359-27362).
+verbatim_excerpt: >
+  «hverken representantforslagene eller regjeringens justerte
+  verdsettingsmodell løser de grunnleggende skjevhetene i
+  boligbeskatningen.» [...] «Disse utfordringene må løses gjennom en
+  helhetlig gjennomgang av bolig- og formuesskatten, ikke gjennom
+  enkeltstående justeringer»
+status: forslag_avvist_stemte_mot
+position: 0
+source_tier: A
+source_name: "Innst. 188 S (2025–2026); voteringene 27359-27362 (24.03.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet 0 (nøytral/delt): MDGs egen, separate tekst avviser BÅDE
+  mindretallsforslagene OG regjeringens egen løsning som utilstrekkelige,
+  og etterlyser en helhetlig gjennomgang i stedet — verken et klart ja
+  eller nei til at boligen bør telle mindre akkurat nå. Bekreftet [OK]
+  i votes.py: MDG 0 for / 5 mot på alle fire voteringer.
+retrieved_at: "2026-09-27"

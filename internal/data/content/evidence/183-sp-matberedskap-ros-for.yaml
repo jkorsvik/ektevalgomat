@@ -1,0 +1,38 @@
+id: ev-2026-06-05-sp-matberedskap-ros-for
+statement_id: utsagn-39
+party_id: sp
+actor: "Senterpartiet (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte for, som medforslagsstiller sammen med SV, Rødt, MDG og
+  KrF, med samme delte begrunnelse som SV (evidence/182). Sp er den
+  opprinnelige forslagsstilleren for hele saken (Dokument 8:266 S) og
+  stemmer her i tråd med sitt eget utgangspunkt — i motsetning til
+  forslag 1 (utsagn-38), der Sp stemte mot sitt eget gårds-modell-
+  forslag.
+claim_action: >
+  Votering_id 28067, Sp 5 for, 0 mot. Samme delte merknad som SV:
+  "Riksrevisjonen og Totalberedskapskommisjonen har peika på mangel
+  på heilskaplege scenario- og sårbarheitsanalysar for matsikkerheit.
+  Regjeringa har varsla ei nasjonal risiko- og sårbarheitsanalyse
+  (ROS) for mat og matforsyning, men eit slikt arbeid har så langt
+  ikkje materialisert seg."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2. Merk kontrasten til utsagn-38: Sp fremmet hele saken
+  (Dokument 8:266 S) og stemte mot forslag 1 (evidence/169, den
+  desentraliserte gårdsmodellen) uten dokumentert egen grunn, men
+  stemmer for forslag 2 (kartlegging/ROS) som medforslagsstiller med
+  fullt dokumentert delt begrunnelse. Antyder at Sps opprinnelige sak
+  handlet mer om å FÅ en risikoanalyse enn om den spesifikke
+  gårds-lagrings-mekanismen — forslag 2 ligger nærmere kjernen i
+  Sps egen sak enn forslag 1 gjør.
+retrieved_at: "2026-09-24"

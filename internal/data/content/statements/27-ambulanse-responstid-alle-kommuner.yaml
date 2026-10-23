@@ -1,0 +1,17 @@
+id: utsagn-27
+number: 27
+dimension: "Universell grunnmur"
+primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
+case_tag: ambulanse_responstid_alle_kommuner
+short_name: "Responstidsmål for ambulanse i alle kommuner"
+text: >
+  Regjeringen bør komme tilbake til Stortinget med et konkret
+  forslag til hvordan responstidsmålene for ambulanse kan nås i alle
+  kommuner i landet.
+practical_stakes:
+  enig: >
+    Regjeringen legger fram et konkret forslag for Stortinget om hvordan
+    responstidsmålene for ambulanse kan nås i alle landets kommuner.
+  uenig: >
+    Regjeringen legger ikke fram et slikt forslag. Hvordan responstidsmålene
+    skal nås i alle kommuner, forblir uavklart.

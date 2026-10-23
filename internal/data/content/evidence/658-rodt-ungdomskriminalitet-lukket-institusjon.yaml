@@ -1,0 +1,31 @@
+id: ev-2026-04-16-rodt-ungdomskriminalitet-lukket-institusjon
+statement_id: utsagn-51
+party_id: rodt
+actor: "Rødt"
+date: "2026-04-16"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Rødt stemte mot FrP/Høyres forslag om ubegrenset varighet på lukket institusjonsopphold; ikke medlem av justiskomiteen, ingen egen merknad."
+claim_action: >
+  Rødt har ikke sete i justiskomiteen for denne saken og har derfor
+  ingen egen merknad. Stemte mot forslag nr. 1 (votering 27111), som
+  ville gitt hjemmel til å holde ungdom i lukket institusjon «så lenge
+  det er behov for det».
+verbatim_excerpt: >
+  «Stortinget ber regjeringen legge frem lovforslag som gir mulighet
+  til å holde ungdom med kriminell adferd i lukkede institusjoner så
+  lenge det er behov for det.»
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 173 S (2025–2026), forslag 1; votering 27111 (16.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-173s/?all=true"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1 ut fra stemmegivning alene: ingen komitésete, ingen egen
+  tekst om varighetsspørsmålet. Stemte mot den ubegrensede varigheten
+  forslag 1 ber om, derfor -1 og evidensstyrke_cap moderat. Bekreftet i
+  data.stortinget.no voteringsresultat for votering 27111: Rødt 0 for /
+  5 mot.
+retrieved_at: "2026-09-27"

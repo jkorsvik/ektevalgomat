@@ -1,0 +1,30 @@
+id: ev-2026-06-05-rodt-matberedskap-saakorn-for
+statement_id: utsagn-38
+party_id: rodt
+actor: "Rødt (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt stemte for, som medforslagsstiller sammen med FrP, SV, MDG og
+  KrF, med samme bredere begrunnelse om sentraliseringens sårbarhet
+  som SV (se evidence/163).
+claim_action: >
+  Votering_id 28068, R 5 for, 0 mot. Medforfatter av samme delte
+  merknad som SV.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt for), samme grunnlag som SV. Rødt er dermed på
+  "for"-siden i en sponsorgruppe (FrP, SV, Rødt, MDG, KrF) som krysser
+  venstre-høyre-aksen på en måte som ikke er sett i noen tidligere sak
+  i dette datasettet — verdt å følge som mønster: matberedskap synes å
+  være et av få politikkområder der Rødt og FrP faktisk stemmer
+  sammen, av helt forskjellige grunner (se evidence/162 for FrPs
+  Finland-modell-argument versus Rødts markedskritikk her).
+retrieved_at: "2026-09-24"

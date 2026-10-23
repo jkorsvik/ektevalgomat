@@ -1,0 +1,21 @@
+id: ev-2024-mdg-skolemat-for
+statement_id: utsagn-35
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2024-11-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  MDG stemte for skolemat-vedtaket. Alle 2 fremmøtte stemte for.
+claim_action: "Votering_id 23652, MDG 2 for, 0 mot."
+status: forslag_vedtatt_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 55 S (2024–2025); votering_id 23652"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-055s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1: MDG stemte for, uten en egen dokumentert merknad om
+  skolemat spesifikt.
+retrieved_at: "2026-09-24"

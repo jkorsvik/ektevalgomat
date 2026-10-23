@@ -1,0 +1,24 @@
+id: ev-2026-04-21-stortinget-vedtak
+statement_id: utsagn-01
+secondary_statement_ids:
+  - utsagn-05
+party_id: ""
+actor: "Stortinget (plenumsvedtak)"
+date: "2026-04-21"
+evidence_type: vedtak
+evidence_class: fakta
+scan_summary: "Stortinget vedtok å be om utredning av et lobbyregister."
+claim_action: >
+  Vedtok å be presidentskapet sørge for utredning av behovet for og mulig
+  utforming av et lobbyregister.
+status: vedtatt
+position: null
+source_tier: A
+source_name: "Voteringsoversikt 21.04.2026"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/?dnid=1&p=105664"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonelt vedtak, ikke en partiposisjon. Tagget sekundært på
+  utsagn-05 (etterprøvbarhet) fordi vedtaket selv er et eksempel på at
+  systemet forplikter seg til å undersøke seg selv.
+retrieved_at: "2026-09-23"

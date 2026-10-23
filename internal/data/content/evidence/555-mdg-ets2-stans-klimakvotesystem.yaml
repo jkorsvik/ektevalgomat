@@ -1,0 +1,29 @@
+id: ev-2025-12-09-mdg-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025-12-09"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG er del av samme merknad som Høyre og Venstre om EØS-avtalens betydning og vil ikke stanse gjennomføringen av ETS2."
+claim_action: >
+  MDG er medforfatter (med Høyre og Venstre) av merknaden om EØS-
+  avtalens betydning og at gjennomføring av ETS2 sikrer like
+  konkurransevilkår for norske bedrifter (se Høyres evidensfil for
+  full tekst). Stemte for komiteens tilråding (votering 26747).
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Høyre, Miljøpartiet De Grønne og Venstre
+  understreker igjen EØS-avtalens avgjørende betydning for norsk
+  økonomi og næringsliv [...] Å følge opp gjennomføring av EUs
+  klimakvotesystem, herunder det nye ETS2-regelverket, sikrer at
+  norske bedrifter konkurrerer på like vilkår med selskaper i EU.»
+status: vedtatt
+position: -2
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); votering 26747 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: delt, eksplisitt begrunnelse direkte mot utsagnets premiss.
+  Bekreftet [OK] i votes.py: MDG 7 for / 0 mot (votering 26747).
+retrieved_at: "2026-09-27"

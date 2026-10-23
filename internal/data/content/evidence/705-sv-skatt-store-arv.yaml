@@ -1,0 +1,26 @@
+id: ev-2025-partiprogram-sv-skatt-store-arv
+statement_id: utsagn-57
+party_id: "sv"
+actor: "Sosialistisk Venstreparti"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV vil innføre skatt på arv med høyt bunnfradrag, kalt
+  generasjonsskatt.
+claim_action: >
+  SVs arbeidsprogram 2025–2029 sier dette med egne ord. Partiprogram,
+  ikke en Storting-avstemning.
+verbatim_excerpt: >
+  innføre skatt på arv med et høyt bunnfradrag og høyere trinn for
+  ekstra stor arv
+status: programfestet
+position: 2
+source_tier: C
+source_name: "SVs arbeidsprogram 2025–2029"
+source_url: "https://www.sv.no/wp-content/uploads/2025/10/arbeidsprogram-2025-interaktiv-bokmal.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt. Programmet nevner også en «generasjonsskatt» med
+  bunnfradrag på 10 millioner kroner per arving, samme tiltak.
+retrieved_at: "2026-10-02"

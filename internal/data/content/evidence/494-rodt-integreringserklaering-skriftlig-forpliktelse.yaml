@@ -1,0 +1,33 @@
+id: ev-2026-05-19-rodt-integreringserklaering-skriftlig-forpliktelse
+statement_id: utsagn-50
+party_id: rodt
+actor: "Rødt"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt støtter ikke forslaget — mener en ensidig signeringsplikt kan svekke tillit og dialog i dagens introduksjonsprogram."
+claim_action: >
+  Rødt mener det er rett og rimelig å stille krav og forventninger til
+  nyankomne, men mener samtidig at en ensidig signeringsplikt kan
+  svekke tilliten, dialogen og gjensidigheten som i dag ivaretas
+  gjennom introduksjonsprogrammets integreringsplan og -kontrakt.
+  Rødt mener forslaget er dårlig utredet. Stemte mot (votering 27779:
+  54 for, 44 mot).
+verbatim_excerpt: >
+  «Dette medlem deler synet til en rekke av høringsinstansene om at en
+  ensidig signeringsplikt kan svekke tilliten, dialogen og
+  gjensidigheten som er godt ivaretatt med dagens
+  introduksjonsprogram.»
+status: vedtatt_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 309 L (2025–2026); votering_id 27779 (19.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: egen, spesifikk avvisning av nettopp den skriftlige,
+  ensidige signeringsmekanismen utsagnet spør om — selv om Rødt i
+  samme merknad sier det er rimelig å stille krav til nyankomne
+  generelt (en nyanse notert her, ikke glattet over). Bekreftet [OK] i
+  votes.py: Rødt 0 for / 5 mot.
+retrieved_at: "2026-09-27"

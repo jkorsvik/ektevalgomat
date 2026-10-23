@@ -1,0 +1,30 @@
+id: ev-2026-partiprogram-sv-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "SVs program vil ha lavere skatt på lave og vanlige arbeidsinntekter, og økt skatt på større formuer — den motsatte retningen av utsagnet."
+claim_action: >
+  SVs arbeidsprogram 2025–2029 sier partiet vil ha lavere skatt på
+  vanlige og lave arbeidsinntekter, og økt skatt på større formuer,
+  arv, utbytte og eiendom.
+verbatim_excerpt: >
+  lavere skatt på vanlige og lave arbeidsinntekter og økt skatt på
+  større formuer, arv, utbytte, og eiendom.
+status: programfestet
+position: -2
+source_tier: C
+source_name: "SVs arbeidsprogram 2025–2029 (vedtatt, 26. ordinære landsmøte 2025)"
+source_url: "https://www.sv.no/wp-content/uploads/2025/10/arbeidsprogram-2025-interaktiv-bokmal.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: eksplisitt, ordrett mot utsagnets premiss. Teksten bruker
+  ikke selve ordet "formuesskatt" her (SVs eneste bruk av det ordet i
+  programmet gjelder en global formuesskatt for dollarmilliardærer,
+  ikke den norske skatten), men er en direkte, entydig uttalelse om at
+  større norske formuer skal skattlegges MER, ikke mindre — samme
+  politikkområde, motsatt retning av "trappes ned og fjernes". Tier
+  C, ikke tier A.
+retrieved_at: "2026-09-27"

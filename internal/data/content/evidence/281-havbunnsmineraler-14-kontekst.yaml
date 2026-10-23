@@ -1,0 +1,39 @@
+id: ev-2025-06-havbunnsmineraler-14-kontekst
+statement_id: utsagn-14
+party_id: ""
+actor: "Energi- og miljøkomiteen / Stortinget i plenum"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 354 S (2024-2025), om Dok. 8:206 S fra FrP (Terje Halleland
+  m.fl.) om havbunnsmineraler. Fire mindretallsforslag pluss en
+  vedtatt hovedtilråding (romertall I/II) med en gradvis, føre-var-
+  linje. Dette forslaget (forslag 1, H og FrP) ba om en konkret
+  tidsplan for konsesjonsrunden — avvist, men med en klar
+  Ap+FrP+Høyre+Sp-koalisjon på den vedtatte hovedlinjen (se
+  evidence for utsagn-15 for motsatt koalisjon).
+claim_action: >
+  Forslag 1 (Høyre og Fremskrittspartiet): "Stortinget ber regjeringen
+  igangsette arbeidet med 1. konsesjonsrunde for havbunnsmineraler
+  med sikte på en mulig utlysning av runden tidlig i 2026." Votering_id
+  25349 (sakid 103035): 35 for (FrP 12, Høyre 23), 70 mot (Ap 30, KrF
+  2, MDG 2, Rødt 5, SV 8, Sp 17, Venstre 5).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); data.stortinget.no sakid=103035, votering_id 25349"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Første av to statements fra denne saken (se utsagn-15 for
+  moratorium-forslaget). Selv om Høyre stemte mot en KONKRET
+  tidsplan her, ble en mer generell, gradvis versjon av samme idé
+  (romertall I i tilrådingen: "sikre at konsesjonsprosessen [...]
+  legger til rette for en balansert utvikling") vedtatt 82-23 med
+  Ap+FrP+Høyre+Sp for. Det tyder på at Høyre og Sp støtter
+  havbunnsmineralutvinning i prinsippet, men ikke ønsket å binde seg
+  til FrPs konkrete 2026-frist. Dette er en nyanse verdt å lese
+  sammen med selve stemmen, ikke i stedet for den.
+retrieved_at: "2026-09-24"

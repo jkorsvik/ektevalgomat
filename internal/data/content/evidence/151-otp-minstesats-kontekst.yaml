@@ -1,0 +1,55 @@
+id: ev-2026-05-28-otp-minstesats-kontekst
+statement_id: utsagn-37
+party_id: ""
+actor: "Finanskomiteen / Stortinget i plenum"
+date: "2026-05-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet et representantforslag fra SV om å øke
+  minstesatsen i obligatorisk tjenestepensjon (OTP) fra 2 til minimum
+  4 prosent. Forslaget ble avvist 15 mot 86. Første utsagn i
+  Dimensjon 9 (Generasjonsansvar, 37/40), som til nå har vært helt
+  tom.
+claim_action: >
+  Dokument 8:206 S (2025-2026), Innst. 263 S (2025-2026). Fremmet av
+  Marian Hussein og Ingrid Fiskaa (SV). Votering_id 27876, forslag
+  nr. 1 fra SV, Rødt og MDG: "Stortinget ber regjeringen på egnet
+  måte legge fram en sak om å øke pensjonsinnskuddssatsen i
+  obligatorisk tjenestepensjon til minimum 4 pst." Avvist 15 for / 86
+  mot, fordelt SV 5, R 5, MDG 5 for; Ap, FrP, H, KrF, Sp, V mot (full
+  fordeling i partikortene). Finansminister Jens Stoltenberg svarte
+  komiteen skriftlig 17. april 2026: 4 pst. tilsvarer om lag
+  gjennomsnittlig innskuddssats i eksisterende ordninger, men mange
+  bedrifter har lavere satser i praksis.
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 263 S (2025–2026); votering_id 27876"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-263s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Institusjonell kontekst, ikke én enkelt partis posisjon. Saken
+  tester dimensjonens spørsmål direkte: dagens OTP-minstesats (2 pst.,
+  uendret siden 2006, sist bare utvidet i dekning ikke sats i 2022)
+  er en typisk konsekvens-usynlig politikk — virkningen for den
+  enkeltes pensjon materialiserer seg først etter et helt
+  yrkesliv, 10-30+ år fram i tid, mens kostnaden (økte
+  arbeidsgiverutgifter) er umiddelbar og synlig nå. Fire reelt
+  distinkte posisjoner er dokumentert: (1) Flertallet (Ap, H, Sp, KrF,
+  V) deler målet men vil ha en gradvis opptrapping etter grundig
+  utredning i dialog med partene i arbeidslivet, se evidence/155-159;
+  (2) FrP erkjenner den samme sosiale ulikheten i pensjon som SV/R/MDG
+  peker på, men har ingen egen dokumentert løsning og stemte mot uten
+  Flertallets gradvis-utrede-begrunnelse, se evidence/160 — en fjerde,
+  distinkt variant av "deler diagnosen, ikke medisinen"-mønstret,
+  forskjellig fra Flertallets "vent og utred"; (3) SV/Rødt (sterkest
+  dokumentert) og (4) MDG (medforslagsstiller på selve forslaget, men
+  ikke på SV/Rødts videre argumentasjon om LO-krav og
+  pensjonsreformens historikk) — se evidence/152-154. Forslag 2 og 3 i
+  samme innstilling (overtidsbetaling som pensjonsgivende inntekt;
+  obligatorisk uførepensjon) er nært beslektede kandidater for utsagn
+  40 (Generasjonsansvars andre og siste plass) uten å måtte åpne en ny
+  kilde.
+retrieved_at: "2026-09-24"

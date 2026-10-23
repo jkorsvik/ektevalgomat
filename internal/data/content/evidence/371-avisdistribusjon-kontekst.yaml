@@ -1,0 +1,32 @@
+id: ev-2026-avisdistribusjon-kontekst
+statement_id: utsagn-30
+party_id: ""
+actor: "Næringskomiteen / Stortinget i plenum"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Samme sak som utsagn-29 (Innst. 280 S), forslag 2: Sp og Rødt ba om
+  lovfesting av avisdistribusjon i distrikt uten kommersielle
+  avisbudnett.
+claim_action: >
+  Forslag 2 (Sp og Rødt): "Stortinget ber regjeringen fremme forslag
+  om å lovfeste at staten skal sikre avisdistribusjon i områder uten
+  kommersielle avisbudnett alle hverdager og lørdager." Votering_id
+  27674 (sakid 200183): 16 for (MDG 1, Rødt 5, SV 5, Sp 5), 84 mot
+  (Ap 32, FrP 29, Høyre 14, KrF 4, MDG 4, Venstre 1).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); data.stortinget.no sakid=200183, votering_id 27674"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  MDG splitter internt 1 for / 4 mot — nok en dokumentert intern
+  splitt, denne gangen i MDG, i tillegg til KrFs splitt på utsagn-29
+  (samme sak). To interne splitter i samme innstilling er uvanlig i
+  dette datasettet og verdt å fremheve: denne konkrete saken
+  (posttjeneste/avisdistribusjon) later til å skjære tvers gjennom
+  flere partiers interne linjer, ikke bare de vanlige koalisjonene.
+retrieved_at: "2026-09-24"

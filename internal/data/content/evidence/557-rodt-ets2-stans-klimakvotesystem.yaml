@@ -1,0 +1,40 @@
+id: ev-2025-12-09-rodt-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: rodt
+actor: "Rødt"
+date: "2025-12-09"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt er kritisk til at ETS2 svekker nasjonal demokratisk kontroll, men ba ikke om å stanse gjennomføringen nå og stemte for komiteens tilråding."
+claim_action: >
+  Rødt peker på at ETS2 innebærer en betydelig overføring av kontroll
+  fra Stortinget til EU og erstatter politisk styring med
+  markedsbaserte mekanismer, noe partiet mener svekker nasjonal
+  demokratisk kontroll. Rødt fremmet likevel ikke noe eget forslag om
+  å stanse gjennomføringen, og viser i stedet til at EUs utsettelse til
+  2028 gir rom for en bredere politisk debatt "uten å rive opp
+  klimakvotedirektivet". Stemte for komiteens tilråding (votering
+  26747, som innebar å IKKE stanse ETS2).
+verbatim_excerpt: >
+  «erstatter direkte politisk styring med markedsbaserte mekanismer.
+  Dette svekker nasjonal demokratisk kontroll» [...] «Utsettelsen gir
+  Stortinget mulighet til en bredere politisk diskusjon og vurdering
+  av hvordan Norge kan sikre demokratisk kontroll og sosial
+  rettferdighet, uten å rive opp klimakvotedirektivet.»
+status: vedtatt
+position: -1
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); votering 26747 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+consistency_flag: tension
+context_note: >
+  Kodet -1, ikke -2: Rødts egen tekst er reelt kritisk til ETS2s
+  demokratiske konsekvenser, men konkluderer eksplisitt med at
+  utsettelsen bør brukes til debatt, IKKE til å rive opp
+  klimakvotedirektivet — og partiet stemte for tilrådingen som lot
+  gjennomføringen fortsette. consistency_flag=tension: teksten
+  signaliserer prinsipiell skepsis, men handlingen (stemmegivningen)
+  følger flertallet, ikke Sp/FrPs stopp-linje. Bekreftet [OK] i
+  votes.py: Rødt 9 for / 0 mot (votering 26747).
+retrieved_at: "2026-09-27"

@@ -1,0 +1,34 @@
+id: ev-2026-04-30-statsborgerskap-kontekst
+statement_id: utsagn-48
+secondary_statement_ids: ["utsagn-49"]
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen"
+date: "2026-04-30"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: "Komiteen behandlet FrPs forslag om innstramming av statsborgerskapsreglene; Høyre og SV/R/MDG fremmet egne, ulike alternativer."
+claim_action: >
+  Innst. 232 S (2025–2026), sak 200050, behandling av Dokument 8:128 S
+  (2025–2026) fra Erlend Wiborg, Sylvi Listhaug, Helge André Njåstad,
+  Bjørn Larsen og Rune Midtun om innstramminger for nye statsborgerskap.
+  Komiteen (Ap, FrP, H, SV, Sp, R, MDG har sete; KrF og V har ikke)
+  behandlet fem mindretallsforslag 30. april 2026, i tillegg til
+  tilrådingen om å avvise representantforslaget i sin helhet.
+verbatim_excerpt: >
+  «Komiteen viser til at representantforslaget langt på vei tilsvarer
+  Representantforslag 159 S (2024–2025), som ble fremmet 1. april 2025,
+  og at statsråden i sitt svar til komiteen skriver at hun holder fast
+  ved de svarene som ble gitt i den forbindelse.»
+status: forkastet
+position: null
+source_tier: A
+source_name: "Innst. 232 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst for utsagn-48 (skjerpede krav generelt) og
+  utsagn-49 (tidsfrist for tilbakekall), samme sak, to ulike
+  voteringer. KrF og Venstre har ikke sete i kommunal- og
+  forvaltningskomiteen for denne saken og har derfor ingen egen
+  merknad — deres posisjoner under er kodet fra stemmegivning alene.
+retrieved_at: "2026-09-27"

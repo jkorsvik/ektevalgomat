@@ -1,0 +1,25 @@
+id: ev-2026-05-26-krf-krafteksport-for
+statement_id: utsagn-08
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF sitter ikke i energi- og miljøkomiteen og er ikke
+  medforslagsstiller, men alle 4 fremmøtte representanter stemte for.
+claim_action: "Votering_id 28137, KrF 4 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: -1
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28137"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 (ikke -2): KrF stemte for det opprinnelige forslaget uten
+  egen skriftlig begrunnelse i innstillingen — eneste parti utenfor
+  komiteen som støttet det, og dermed uenig i det snudde utsagnets
+  premiss om at dagens styring er god nok, men uten en egen tekst som
+  forklarer hvor sterkt. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +1 til -1.
+retrieved_at: "2026-09-24"

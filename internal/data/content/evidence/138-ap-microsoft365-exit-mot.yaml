@@ -1,0 +1,38 @@
+id: ev-2026-04-28-ap-microsoft365-exit-mot
+statement_id: utsagn-20
+party_id: ap
+actor: "Arbeiderpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot. Ap har ingen egen skriftlig merknad i denne
+  innstillingen om verken dette forslaget eller saken generelt —
+  innstillingen inneholder ingen "Flertallet"-merknad, og den
+  komitémajoriteten som stemte mot (Ap, FrP, H, KrF, Sp, V)
+  begrunner ikke tilrådingen om avvisning i fellesskap noe sted i
+  teksten utover Høyre/Sps egne, delvis delte avsnitt.
+claim_action: >
+  Votering_id 27490, Ap 0 for, 32 mot — den klart største
+  mot-blokken numerisk. Ingen egen Ap-merknad funnet i innstillingens
+  fulltekst for dette eller andre forslag i saken.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27490"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1 fra stemmetallet alene (32 mot forslaget om rask exit, 0
+  for), i tråd med det snudde utsagnets premiss — ingen skriftlig
+  Ap-begrunnelse i denne innstillingen for noe forslag, verken for
+  dette eller for utsagn-19s forslag 11. Norsk innstillingspraksis: en
+  komitémajoritet som støtter tilrådingen (avvisning) uten videre
+  kommentar er ikke uvanlig og betyr ikke fravær av standpunkt — bare
+  fravær av skriftlig begrunnelse utover selve stemmen. Lavere
+  attribution_confidence enn Høyre/Sp av denne grunn, samme mønster som
+  i utsagn-19 (evidence/126-ap-nasjonal-skytjeneste-mot.yaml, der Ap
+  derimot HADDE en egen merknad som siterte regjeringens KVU — verdt å
+  merke at Ap altså skriver merknader selektivt, ikke aldri). Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

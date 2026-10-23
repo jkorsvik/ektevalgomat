@@ -1,0 +1,24 @@
+id: ev-2026-sv-gratisbarnehage-for
+statement_id: utsagn-34
+party_id: sv
+actor: "Sosialistisk Venstreparti (familie- og kulturkomiteen)"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV er medforslagsstiller sammen med MDG. Alle 5 fremmøtte stemte
+  for.
+claim_action: >
+  Votering_id 26943, SV 5 for, 0 mot. Fra SVs merknad: SV vil "gjøre
+  barnehage og SFO billigere" for barn i fattige familier.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26943"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: SV medforslagsstiller, samme begrunnelse som evidence/342
+  (utsagn-33) — konsistent linje over begge forslagene i saken.
+retrieved_at: "2026-09-24"

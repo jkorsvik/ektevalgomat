@@ -1,0 +1,35 @@
+id: ev-2026-06-05-v-matberedskap-ros-for
+statement_id: utsagn-39
+party_id: v
+actor: "Venstre (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre stemte for. Venstre har ikke sete i næringskomiteen og har
+  ingen skriftlig merknad noe sted i denne innstillingen — samme funn
+  som i utsagn-38 (evidence/170), men her lander Venstre på MOTSATT
+  side av stemmegivningen.
+claim_action: >
+  Votering_id 28067, V 2 for, 0 mot. Ingen V-merknad funnet i
+  innstillingens fulltekst; komiteens medlemsliste (Ap, FrP, H, SV,
+  Sp, R, MDG, KrF) bekrefter Venstre ikke har plass i næringskomiteen
+  denne perioden.
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 fra stemmetallet alene (svakere enn +2 fordi ingen egen
+  begrunnelse finnes). Interessant kontrast til utsagn-38 (evidence/170):
+  samme udokumenterte parti, samme sak, samme komité-fravær — men
+  Venstre stemmer MOT forslag 1 (gårdslagring) og FOR forslag 2
+  (risikoanalyse) i den samme innstillingen. Uten en egen merknad er
+  det ikke mulig å si om dette reflekterer en bevisst linje (støtter
+  kartlegging, skeptisk til en konkret ny lagringsmekanisme) eller
+  bare enkeltrepresentanters uavhengige stemmer — flagget som
+  tolkning, ikke fakta.
+retrieved_at: "2026-09-24"

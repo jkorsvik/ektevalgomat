@@ -1,0 +1,40 @@
+id: ev-2026-06-05-frp-matberedskap-saakorn-for
+statement_id: utsagn-38
+party_id: frp
+actor: "Fremskrittspartiet (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte for, som medforslagsstiller sammen med SV, Rødt, MDG og
+  KrF, med en egen, smalere begrunnelse (delt kun med KrF) om den
+  finske modellen for fysiske beredskapslagre.
+claim_action: >
+  Votering_id 28068, FrP 29 for, 0 mot. Fra FrP+KrFs delte merknad:
+  "Komiteens medlemmer fra Fremskrittspartiet og Kristelig Folkeparti
+  mener at staten burde sikre fysiske beredskapslagre, etter modell
+  fra Finland, som Fremskrittspartiet lenge har trukket frem som
+  forbilledlig. En desentralisert lagringsstruktur for såkorn,
+  matkorn og dagligvarer gir mer robust beredskap enn prosentkrav til
+  innkjøp og store sentraliserte lager."
+verbatim_excerpt: >
+  Disse medlemmer understreker at statens ansvar for totalberedskap
+  ikke erstatter den enkeltes ansvar for egenberedskap, og forventer
+  at DSB kontinuerlig informerer befolkningen om dette.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt for): FrP har en egen, navngitt begrunnelse (den
+  finske modellen, som FrP "lenge har trukket frem som forbilledlig")
+  utover det å bare være medforslagsstiller — samme
+  fakta-/erfaringsforankrede argumentasjonsstil som FrPs 1,6 mrd.
+  kr-tallfesting i Innovasjon Norge-saken (evidence/147), her brukt
+  til motsatt konklusjon (for, ikke mot). FrP kobler også dette
+  eksplisitt til prinsippet om individuelt ansvar for egenberedskap
+  (DSB-informasjon) — ikke bare statlig lagring.
+retrieved_at: "2026-09-24"

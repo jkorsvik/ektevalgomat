@@ -1,0 +1,38 @@
+id: ev-2026-04-28-sv-palantir-for
+statement_id: utsagn-24
+party_id: sv
+actor: "Sosialistisk Venstreparti (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV er en av tre medforslagsstillere til det konkrete Palantir-forbudet,
+  med en egen, navngitt sikkerhetspolitisk begrunnelse i innstillingen.
+claim_action: >
+  Votering_id 27488, SV 5 for, 0 mot. Fra SVs (sammen med Rødt og MDGs)
+  felles merknad: "Tolletaten benytter systemer fra Palantir
+  Technologies. Selskapet har tette bånd til amerikansk etterretning
+  og det amerikanske krigsdepartementet. Bruken av slike systemer i
+  norsk offentlig sektor er uforenlig med ambisjonene om digital
+  suverenitet. Den reiser grunnleggende spørsmål om jurisdiksjon,
+  tillit og kontroll over sensitive data."
+verbatim_excerpt: >
+  Tolletaten benytter systemer fra Palantir Technologies. Selskapet
+  har tette bånd til amerikansk etterretning og det amerikanske
+  krigsdepartementet. Bruken av slike systemer i norsk offentlig
+  sektor er uforenlig med ambisjonene om digital suverenitet.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at mangfold og konkurranse er godt nok): SV
+  er medforslagsstiller med en konkret, navngitt begrunnelse (Palantirs
+  bånd til amerikansk etterretning/forsvar) for et navngitt forbud, det
+  motsatte av det snudde utsagnets premiss. Samme SV+Rødt+MDG-koalisjon
+  som på flere andre forslag i denne saken (utsagn-20s
+  Microsoft365-exit). Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-24"

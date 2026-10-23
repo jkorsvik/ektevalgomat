@@ -1,0 +1,48 @@
+id: ev-2025-06-05-stroemprisreform-kontekst
+statement_id: utsagn-12
+party_id: ""
+actor: "Energi- og miljøkomiteen / Stortinget i plenum"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet regjeringens Norgespris-lov sammen med tre
+  opposisjonsforslag i én innstilling. Rødts forslag om en lovbestemt
+  nasjonal makspris på 35 øre/kWt ble avvist 96 mot 5 stemmer; loven om
+  Norgespris ble vedtatt 59 mot 43.
+claim_action: >
+  Prop. 148 L (2024–2025, lov om Norgespris og strømstønad),
+  Dokument 8:82 S, Dokument 8:136 S og Rødts Dokument 8:166 S
+  (2024–2025, Sofie Marhaug, Seher Aydar, Mímir Kristjánsson, Tobias
+  Drevland Lund) ble behandlet samlet i Innst. 535 L (2024–2025,
+  3554-linjers PDF lest i fulltekst). Rødts Dokument 8:166 S inneholdt
+  forslag 1 (senere nummerert forslag 14 i innstillingen): "Stortinget
+  ber regjeringen legge fram forslag om en nasjonal makspris for hva
+  kraftselskapene kan selge strømmen for innenlands. Nivået bør være
+  på 35 øre/kWt i 2025." Dette forslaget ble votert som del av en
+  samlet R-blokk (forslag 12-23, votering_id 26116, sak_id 102973):
+  5 for (kun Rødt), 96 mot. Norgespris-loven selv (Innstillingens
+  tilråding, votering_id 26128) ble vedtatt 59 mot 43, støttet av Ap
+  og Rødt sammen i komiteen, men Rødts EGET makspris-alternativ ble
+  avvist av alle de andre åtte partigruppene samlet.
+status: avvist_av_flertallet_lov_vedtatt
+position: null
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26116, 26128"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst, ikke en partiposisjon i seg selv. Sak_id
+  102973 kryssjekket mot data.stortinget.no/eksport/sak (status
+  behandlet, henvisning Dokument 8:166 S, Innst. 535 L, Lovvedtak 135,
+  alle 2024-2025). 17 separate voteringer eksisterer på denne saken
+  (votering_id 26113-26129); denne evidensfilen og partienes egne
+  filer dekker kun votering_id 26116 (Rødts egen makspris-blokk), den
+  ene voteringen som direkte tester DETTE utsagnets konkrete krav —
+  ikke Norgespris-lovens vedtakelse for øvrig, ikke de andre 15
+  voteringene om moms, nettleiemodell, forbrukstak eller flat
+  utbetaling, som hver tester andre, distinkte spørsmål og ikke bør
+  slås sammen til én enkelt partiposisjon. Se docs/research-notes/
+  dimension-2-3-leads.md for hvorfor denne saken tidligere ikke ble
+  kodet direkte (fire distinkte politikkspørsmål i én lov).
+retrieved_at: "2026-09-24"

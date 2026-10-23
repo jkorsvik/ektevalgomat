@@ -1,0 +1,92 @@
+id: ev-2026-partiprogram-sp-nasjonal-sjolraaderett-forsvar
+statement_id: utsagn-45
+party_id: sp
+actor: "Senterpartiet"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Senterpartiet vil ha et folkeforsvar i hele landet og et styrket nasjonalt
+  totalforsvar, og sier at EØS-avtalen er for inngripende og begrenser norsk
+  sjølråderett på mange viktige politikkområder. Partiet vil erstatte avtalen.
+claim_action: >
+  Senterpartiets stortingsvalgprogram 2025–2029 sier i forsvars- og
+  beredskapskapitlet at partiet er tilhenger av et folkeforsvar til stede i
+  hele landet, og at Forsvarets hovedoppgave er å trygge norsk territorium.
+  I kapittelet «EU/EØS» sier partiet at den politiske og økonomiske
+  integrasjonen i EU undergraver folkestyret og fratar medlemslandene
+  handlefrihet, at dagens EØS-avtale er for inngripende og begrenser norsk
+  sjølråderett på mange viktige politikkområder, og at Norge ikke må avgi
+  suverenitet til EU. Partiet vil erstatte EØS-avtalen med handels- og
+  samarbeidsavtaler med EU etter reforhandlinger.
+verbatim_excerpt: >
+  Senterpartiet er tilhenger av et folkeforsvar som er til stede i hele
+  landet. [...] Hovedoppgaven til Forsvaret er å trygge norsk territorium
+  [...] Den politiske og økonomiske integrasjonen i EU undergraver
+  folkestyret og fratar medlemslandene økonomisk og politisk handlefrihet.
+  [...] Senterpartiet mener dagens EØS-avtale er for inngripende og begrenser
+  norsk sjølråderett på mange viktige politikkområder. [...] Senterpartiet
+  mener Norge ikke må avgi suverenitet til EU. [...] Erstatte EØS-avtalen med
+  handels- og samarbeidsavtaler med EU, etter reforhandlinger.
+status: programfestet
+position: 1
+source_tier: C
+source_name: "Senterpartiets stortingsvalgprogram 2025–2029"
+source_url: "https://www.senterpartiet.no/politikk/_/attachment/inline/ea7e4063-1374-47bf-8b10-839bf68904c0:3c54bc9ec99b5e017f069f2312b3962bd934c78a/Senterpartiets%20stortingsvalgprogram%202025-2029%20bokm%C3%A5l%20i%20PDF.pdf"
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet +1, ikke +2. Samme resonnement som for Rødt på dette utsagnet, men
+  ett trinn lavere, og grunnen ligger i kilden: Senterpartiet mangler den
+  forsvarsspesifikke uavhengigheten Rødt har. Programmets forsvarskapittel
+  sier tvert imot at «NATO er sikkerhetsgarantien vår og utgjør rammeverket
+  for forsvaret av Norge». Partiet søker altså ikke et forsvar uavhengig av
+  eksterne rammeverk. Da står vi igjen med en generell EØS-holdning ved
+  siden av et forsvar som skal styrkes nasjonalt, ikke med et
+  sektorspesifikt uavhengighetsstandpunkt. Det er samme form som KrF, som
+  dette prosjektet koder +1 nettopp fordi teksten er generell, men sterkere
+  enn KrF, fordi KrF vil beholde dagens tilknytning mens Senterpartiet vil
+  erstatte den.
+  Samme forbehold som for Rødt: programmet sier IKKE i én setning at
+  forsvars- og beredskapslovgivning skal stå uavhengig av EØS eller
+  EU-mandater. Det som er dokumentert er begge halvdeler. Forsvar: «Senterpartiet er tilhenger av
+  et folkeforsvar som er til stede i hele landet», «Hovedoppgaven til
+  Forsvaret er å trygge norsk territorium», kapitteltittelen «Beredskap:
+  Styrket nasjonalt totalforsvar». EØS: «Den politiske og økonomiske
+  integrasjonen i EU undergraver folkestyret og fratar medlemslandene
+  økonomisk og politisk handlefrihet», «dagens EØS-avtale er for inngripende
+  og begrenser norsk sjølråderett på mange viktige politikkområder», «Norge
+  ikke må avgi suverenitet til EU», og kravet «Erstatte EØS-avtalen med
+  handels- og samarbeidsavtaler med EU, etter reforhandlinger». Partiet vil
+  også «Avvise å inkludere regelverk i EØS-avtalen som ikke er EØS-relevant
+  eller som er i strid med Grunnloven», og «Bruke reservasjonsretten når
+  direktiver og forordninger utfordrer grunnleggende norske interesser».
+  I tillegg: «Endre utredningsinstruksen slik at man synliggjør alternative
+  og bedre løsninger dersom man ikke var bundet av EØS-forpliktelser».
+  Merknad som trekker motsatt vei, og som leseren bør se: Senterpartiet er
+  ikke forsvarspolitisk uavhengig av eksterne rammeverk. Programmet sier
+  tvert imot at «NATO er sikkerhetsgarantien vår og utgjør rammeverket for
+  forsvaret av Norge». Det gjelder NATO, ikke EØS eller EU, og utsagnet
+  handler om EØS-koordinering og EU-mandater, ikke om NATO. Derfor trekker
+  det ikke kodingen ned, men det skal stå her.
+  Kalibrering mot de andre partiene på dette utsagnet: H -2 og V -2, Ap -1
+  og MDG -1, FrP 0, KrF +1 (beholde dagens EØS-tilknytning nettopp fordi
+  den bevarer «nasjonal handlefrihet», kodet +1 fordi den teksten er generell
+  og ikke sektorspesifikk), SV +2 (mot EUs «forsvarsunion»), Rødt +2
+  (nasjonalt forsvar uavhengig av stormaktsinteresser, og EØS erstattet for
+  å sikre nasjonal kontroll). Senterpartiet +1: sterkere enn KrF, siden
+  partiet vil erstatte avtalen og eksplisitt sier at den «begrenser norsk
+  sjølråderett» — nesten ordrett utsagnets egen bekymring om begrenset
+  handlingsrom — men uten Rødts forsvarsspesifikke uavhengighet, og derfor
+  ikke +2.
+  Kontroll mot balansetesten: å kode Senterpartiet +2 her dytter
+  aftergivelsesspredningen fra 12 til 13 prosentpoeng, altså over ratchet-en
+  i TestAcquiescenceSpreadDoesNotGrow, og Senterpartiet blir partiet som
+  tjener mest på å svare «sterkt enig» på alt. Den testen skal ikke heves.
+  At +2 bryter den, er et uavhengig tegn på at +2 overdriver grunnlaget, og
+  den observasjonen er grunnen til at grensen mellom +1 og +2 ble prøvd mot
+  kilden på nytt. Tier C, ikke tier A: et program er en intensjon, ikke en
+  handling.
+  Ingen consistency_flag satt: partiets stemme i Innst. 464 S gjelder den
+  konstitusjonelle terskelmekanismen for myndighetsoverføring, et annet
+  spørsmålsnivå enn denne substansielle preferansen.
+retrieved_at: "2026-10-13"

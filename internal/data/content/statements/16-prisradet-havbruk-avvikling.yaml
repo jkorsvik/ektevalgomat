@@ -1,0 +1,13 @@
+id: utsagn-16
+number: 16
+dimension: "Forvaltning av fellesskapets ressurser / energi"
+primary_question: "Hvem kontrollerer ressursene, risikoen og verdiskapingen?"
+case_tag: prisradet_havbruk_avvikling
+short_name: "Avvikle Prisrådet for havbruk"
+text: >
+  Regjeringen bør avvikle ordningen med normpris og Prisrådet for havbruk.
+practical_stakes:
+  enig: >
+    Ordningen med normpris og Prisrådet for havbruk avvikles.
+  uenig: >
+    Ordningen med normpris og Prisrådet for havbruk videreføres som i dag.

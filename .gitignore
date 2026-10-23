@@ -1,0 +1,15 @@
+# Built binary and compose leftovers — never source.
+/server
+*.test
+*.out
+
+# Deploy log written by cron.
+*.log
+
+# macOS.
+.DS_Store
+
+# The nested tool directories carry their own ignore files
+# (tools/harvester/.gitignore, tools/autopilot/.gitignore) because their
+# rules only make sense next to the tool.
+.env

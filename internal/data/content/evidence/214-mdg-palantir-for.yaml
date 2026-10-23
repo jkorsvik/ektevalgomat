@@ -1,0 +1,37 @@
+id: ev-2026-04-28-mdg-palantir-for
+statement_id: utsagn-24
+party_id: mdg
+actor: "Miljøpartiet De Grønne (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG er medforslagsstiller til Palantir-forbudet, sammen med SV og
+  Rødt, med samme delte sikkerhetspolitiske begrunnelse.
+claim_action: >
+  Votering_id 27488, MDG 5 for, 0 mot. Deler SV og Rødts merknad om
+  Palantirs bånd til amerikansk etterretning og forsvarsdepartement.
+verbatim_excerpt: >
+  Tolletaten benytter systemer fra Palantir Technologies. Selskapet
+  har tette bånd til amerikansk etterretning og det amerikanske
+  krigsdepartementet. Bruken av slike systemer i norsk offentlig
+  sektor er uforenlig med ambisjonene om digital suverenitet.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at mangfold og konkurranse er godt nok): MDG
+  er medforslagsstiller med en direkte, delt begrunnelse (samme sitat
+  som SV og Rødt, se evidence/212-213), det motsatte av det snudde
+  utsagnets premiss. MDG er samtidig det partiet i denne saken med
+  desidert flest EGNE, individuelle tilleggsforslag (7 stk. alene, jf.
+  evidence/211s kontekstnotat og docs/roadmap.md) — konsistent med MDGs
+  rolle som pådriver-parti på digitalpolitikk-siden av "Norsk
+  handlefrihet"/"Teknologisk Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+  kapasitet" i dette datasettet (se også utsagn-40, der MDG var eneste
+  forslagsstiller på det faktisk vedtatte forslaget).
+retrieved_at: "2026-09-24"

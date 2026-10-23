@@ -1,0 +1,29 @@
+id: ev-2026-06-05-v-matberedskap-saakorn-mot
+statement_id: utsagn-38
+party_id: v
+actor: "Venstre (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre stemte mot. Venstre har ikke sete i næringskomiteen og har
+  ingen skriftlig merknad noe sted i denne innstillingen.
+claim_action: >
+  Votering_id 28068, V 0 for, 2 mot. Ingen V-merknad funnet i
+  innstillingens fulltekst; komiteens medlemsliste (Ap, FrP, H, SV,
+  Sp, R, MDG, KrF) bekrefter Venstre ikke har plass i næringskomiteen
+  denne perioden — samme funn som i utsagn-21 (Innst. 424 S), samme
+  komité.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene. Andre gang Venstre går udokumentert
+  i næringskomiteen spesifikt (etter utsagn-21), tredje/fjerde gang
+  totalt i datasettet — konsistent med at Venstre mangler plass i
+  denne komitéen for hele perioden, ikke en engangshendelse.
+retrieved_at: "2026-09-24"

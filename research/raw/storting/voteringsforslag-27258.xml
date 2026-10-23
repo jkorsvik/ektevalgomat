@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voteringsforslag_oversikt xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://data.stortinget.no">
+  <respons_dato_tid>2026-09-23T20:19:12.6156311+02:00</respons_dato_tid>
+  <versjon>1.6</versjon>
+  <votering_id>27258</votering_id>
+  <voteringsforslag_liste>
+    <voteringsforslag>
+      <respons_dato_tid>2026-09-23T20:19:12.6156311+02:00</respons_dato_tid>
+      <versjon>1.6</versjon>
+      <forslag_betegnelse>Forslag nr. 3 fra Julie E. Stuestøl på vegne av Miljøpartiet De Grønne</forslag_betegnelse>
+      <forslag_betegnelse_kort>nr. 3 på vegne av MDG</forslag_betegnelse_kort>
+      <forslag_id>40085050</forslag_id>
+      <forslag_levert_av_parti_liste />
+      <forslag_levert_av_representant>
+        <respons_dato_tid>2026-09-23T20:19:12.0374807+02:00</respons_dato_tid>
+        <versjon>1.6</versjon>
+        <doedsdato i:nil="true" />
+        <etternavn>Stuestøl</etternavn>
+        <foedselsdato>1983-09-14T00:00:00</foedselsdato>
+        <fornavn>Julie E.</fornavn>
+        <id>JULSTU</id>
+        <kjoenn>kvinne</kjoenn>
+        <fylke>
+          <respons_dato_tid>2026-09-23T18:59:52.5114497+02:00</respons_dato_tid>
+          <versjon>1.6</versjon>
+          <historisk_fylke>false</historisk_fylke>
+          <id>Ve</id>
+          <navn>Vestfold</navn>
+        </fylke>
+        <parti>
+          <respons_dato_tid>2026-09-23T01:00:18.6971287+02:00</respons_dato_tid>
+          <versjon>1.6</versjon>
+          <id>MDG</id>
+          <navn>Miljøpartiet De Grønne</navn>
+          <representert_parti>true</representert_parti>
+        </parti>
+        <vara_representant>false</vara_representant>
+      </forslag_levert_av_representant>
+      <forslag_paa_vegne_av_tekst>Miljøpartiet De Grønne:</forslag_paa_vegne_av_tekst>
+      <forslag_sorteringsnummer>0</forslag_sorteringsnummer>
+      <forslag_tekst>&lt;div class='strtngt_forslag' data-strtngt-forslag-nr='3'&gt;
+  &lt;p class='strtngt_a type_uinnrykk'&gt;
+    Stortinget ber Stortingets presidentskap om å utrede mulige modeller for en registreringsordning for dem som oppsøker Stortinget og Stortingets representanter, på vegne av seg selv eller andre, for å påvirke Stortinget i saker som er til behandling. Modellene må ivareta personvernet til de besøkende og sørge for at privatpersoner kan unntas registrering.
+  &lt;/p&gt;
+&lt;/div&gt;</forslag_tekst>
+      <forslag_type>loest_forslag</forslag_type>
+    </voteringsforslag>
+  </voteringsforslag_liste>
+</voteringsforslag_oversikt>

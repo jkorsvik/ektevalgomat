@@ -1,0 +1,49 @@
+id: ev-2026-02-10-barnetrygd-prisjustering-kontekst
+statement_id: utsagn-31
+party_id: ""
+actor: "Familie- og kulturkomiteen / Stortinget i plenum"
+date: "2026-02-10"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet et bredt Venstre-forslag om 17 tiltak mot
+  sosiale forskjeller for barnefamilier. SV og MDG fremmet i
+  komitébehandlingen et eget forslag (nr. 4) om å lovfeste årlig
+  prisjustering av barnetrygden i barnetrygdloven § 10 -- et tillegg
+  Venstres eget opprinnelige dokument ikke inneholdt. Forslaget ble
+  avvist 10 mot 91.
+claim_action: >
+  Dokument 8:11 S (2025–2026), representantforslag fra Abid Raja, Guri
+  Melby og Grunde Almeland (alle Venstre) om "en helhetlig og
+  forpliktende tiltakspakke for å utjevne og bekjempe sosiale
+  forskjeller". Behandlet i Innst. 126 S (2025–2026, familie- og
+  kulturkomiteen, 24 sider lest i fulltekst). Forslag 4 (fremmet av SV
+  og MDG i komitébehandlingen, IKKE en del av Venstres opprinnelige
+  17-punktsliste): "Stortinget ber regjeringen fremme forslag om å
+  endre barnetrygdloven § 10 og sikre at barnetrygden prisjusteres
+  årlig." Votering_id 26942 (3.3.2026): 10 for (SV 5, MDG 5), 91 mot
+  (Ap 32, FrP 29, H 14, R 5, Sp 5, KrF 4, V 2). Komiteens tilråding
+  (votering_id 26948, vedtatt av Ap, FrP og H-flertallet): hele
+  representantforslaget vedtas ikke.
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 126 S (2025-2026); data.stortinget.no sakid=104872, votering_id 26942"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst. Saken har 15 voteringer totalt (sakid
+  104872); denne evidensfilen og partienes egne filer dekker kun
+  votering_id 26942, den ene som direkte tester dette utsagnets
+  konkrete krav (en lovfestet, automatisk indekseringsmekanisme) --
+  ikke de andre 14 (kontantstøtte/ventestøtte, gratis barnehage for
+  lavinntekt, sosialhjelpssatser, boligpolitikk for enslige
+  forsørgere, osv.), som hver tester en annen, egen akse og bør
+  eventuelt kodes som separate utsagn senere. Metodisk funn verdt å
+  videreføre: en AI-mellomtjener (web_fetch) ga først en feilaktig
+  oppsummering av denne innstillingens vedtak/tilrådingstekst (blandet
+  sammen med et annet dokument) -- fanget opp og forkastet FØR noe ble
+  skrevet til en evidensfil, ved å hente og lese rå HTML direkte i
+  stedet for å stole på mellomtjenerens oppsummering. Se
+  docs/roadmap.md "Phase 2i" for detaljer.
+retrieved_at: "2026-09-24"

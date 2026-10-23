@@ -1,0 +1,29 @@
+id: ev-2026-partiprogram-krf-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2025 (landsmøtevedtatt stortingsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "KrF vil holde det samlede skatte- og avgiftsnivået om lag på dagens nivå, men øke bruttobeskatningen av de høyeste inntektene, og ha økt formueskatt på de dyreste primærboligene."
+claim_action: >
+  KrFs stortingsprogram 2025–2029 sier partiet vil holde skatte- og
+  avgiftsnivået om lag som i dag, men øke bruttobeskatningen av de
+  høyeste inntektene — og i et annet punkt at partiet vil ha økt
+  formueskatt på de dyreste primærboligene.
+verbatim_excerpt: >
+  Holde skatte- og avgiftsnivået om lag på dagens nivå, men øke
+  bruttobeskatningen av de høyeste inntektene. [...] Ha økt formueskatt
+  på de dyreste primærboligene.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "KrFs stortingsprogram 2025–2029"
+source_url: "https://krf.no/content/uploads/2025/05/Partiprogram-2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: to eksplisitte, ordrette punkter som begge peker samme
+  vei på nettopp dette utsagnets to komponenter (høy inntekt OG stor
+  formue/eiendom) — ikke en generell rettferdighets-frase. Tier C,
+  ikke tier A.
+retrieved_at: "2026-09-27"

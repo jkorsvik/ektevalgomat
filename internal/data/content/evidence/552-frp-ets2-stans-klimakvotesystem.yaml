@@ -1,0 +1,31 @@
+id: ev-2025-12-09-frp-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2025-12-09"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP fremmet et eget, snevrere forslag (fjerne CO2-avgiften i ETS2-området) men skriver eksplisitt at partiet subsidiært støtter Sps forslag om å stanse hele gjennomføringen."
+claim_action: >
+  FrP fremmet forslag 1: fjerne CO2-avgiften på de områder som dekkes
+  av ETS2 fra samme dato som det innføres. Partiet skriver eksplisitt
+  at det subsidiært støtter Senterpartiets forslag om å stanse den
+  nasjonale gjennomføringen av ETS2, og stemte for det (votering
+  26746, 46 av 47 for) i tillegg til eget forslag (votering 26745, 47
+  for/119 mot).
+verbatim_excerpt: >
+  «Disse medlemmer vil subsidiært støtte Senterpartiets forslag om å
+  stanse den nasjonale gjennomføringen av ETS2.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 58 S (2025–2026), forslag 1 og 2; voteringene 26745-26746 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: FrPs primære forslag er snevrere (fjerne CO2-avgiften
+  spesifikt, ikke stanse hele ETS2-gjennomføringen), men partiets egen
+  tekst uttrykker eksplisitt, ordrett støtte til nettopp det forslaget
+  utsagnet bygger på (Sps forslag 2), bekreftet av stemmegivningen (46
+  av 47 for). Bekreftet [OK] i votes.py.
+retrieved_at: "2026-09-27"

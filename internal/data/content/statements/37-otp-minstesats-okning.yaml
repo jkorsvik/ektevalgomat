@@ -1,0 +1,17 @@
+id: utsagn-37
+number: 37
+dimension: "Generasjonsansvar"
+primary_question: "Synliggjøres konsekvensene 10–30 år frem?"
+case_tag: otp_minstesats_okning
+short_name: "Gradvis og utredet økning av OTP"
+text: >
+  En eventuell økning av minstesatsen i obligatorisk tjenestepensjon (OTP)
+  bør utredes og skje gradvis, ikke vedtas nå som en økning fra 2 til 4
+  prosent.
+practical_stakes:
+  enig: >
+    En eventuell økning av OTP-minstesatsen utredes først og innføres
+    gradvis. Satsen heves ikke direkte fra 2 til 4 prosent nå.
+  uenig: >
+    Minstesatsen i obligatorisk tjenestepensjon (OTP) heves nå direkte fra 2
+    til 4 prosent, uten en forutgående utredning eller en gradvis innføring.

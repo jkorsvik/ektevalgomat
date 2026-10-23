@@ -1,0 +1,38 @@
+id: ev-2026-sp-hurtigspor-mot
+statement_id: utsagn-10
+party_id: sp
+actor: "Senterpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-05-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp (regjeringsparti) stemte for innstillingens avvisning av
+  forslag 1, med en egen merknad som viser til at eksisterende
+  virkemidler allerede dekker behovet.
+claim_action: >
+  Alternativ votering 27597, Sp 5 for innstillingen/mot forslag 1.
+  Fra Sps merknad: "Dette medlem viser til statsrådens uttalelse,
+  hvor han peker på at muligheten for en statlig reguleringsplan og
+  muligheten for å innføre ytterligere unntak fra blant annet
+  byggetekniske krav, gjennom forskrift, dersom Forsvaret mener det
+  er behov for dette, svarer på den problemstillingen som tas opp i
+  representantforslaget."
+verbatim_excerpt: >
+  Muligheten for en statlig reguleringsplan og muligheten for å
+  innføre ytterligere unntak fra blant annet byggetekniske krav,
+  gjennom forskrift, dersom Forsvaret mener det er behov for dette,
+  svarer på den problemstillingen som tas opp i representantforslaget.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 266 S (2025–2026); votering_id 27597"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-266s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: sterkt_dokumentert
+context_note: >
+  Kodet -1 (ikke -2): Sp avviser ikke behovet for hurtig
+  forsvarsbygging, men mener det ALLEREDE finnes tilstrekkelige
+  virkemidler (statlig reguleringsplan, forskriftsunntak) — en
+  "løsningen finnes allerede"-innvending, ikke en prinsipiell
+  motstand mot rask forsvarsutbygging.
+retrieved_at: "2026-09-24"

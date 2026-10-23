@@ -1,0 +1,26 @@
+id: ev-2026-03-17-digitale-avhengigheter-nito-kontekst
+statement_id: utsagn-59
+party_id: ""
+actor: "Faktakontekst (NITO, høringsinnspill)"
+date: "2026 (høringsfrist 17.03.2026)"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: >
+  NITO ba i høringen om at teknologiske avhengigheter kartlegges
+  systematisk.
+claim_action: >
+  Skriftlig innspill fra NITO til komiteens høring om Dokument 8:119 S
+  (frist 17.03.2026). Høringen kom før tilrådingen ble skrevet, så ingen
+  innspill uttaler seg om selve tilrådingen.
+verbatim_excerpt: >
+  Teknologiske avhengigheter og sårbarheter må kartlegges systematisk.
+status: mottatt
+position: null
+source_tier: C
+source_name: "Høringsinnspill fra NITO til Dokument 8:119 S"
+source_url: "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Horing/visning-av-skriftlig-innspill/?dnid=78062&h=10005712"
+claim_confidence: dokumentert
+context_note: >
+  Ingen partiposisjon. Av 19 publiserte innspill er NITO det eneste som
+  ber om kartlegging. Ingen andre organisasjoner ba om det samme.
+retrieved_at: "2026-10-03"

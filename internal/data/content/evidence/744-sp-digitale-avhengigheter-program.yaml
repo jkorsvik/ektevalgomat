@@ -1,0 +1,29 @@
+id: ev-2025-partiprogram-sp-digitale-avhengigheter
+statement_id: utsagn-59
+party_id: "sp"
+actor: "Senterpartiet"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sps program vil pålegge eiere av kritisk digital infrastruktur å
+  kartlegge avhengigheter.
+claim_action: >
+  Senterpartiets stortingsvalgprogram 2025–2029 sier dette med egne ord.
+  Partiprogram, ikke en Storting-avstemning.
+verbatim_excerpt: >
+  Pålegge offentlige og private virksomheter som eier kritisk digital
+  infrastruktur å gjennomføre risikovurderinger for å identifisere
+  digitale sårbarheter og avhengigheter mellom infrastrukturer.
+status: programfestet
+position: null
+source_tier: C
+source_name: "Senterpartiets stortingsvalgprogram 2025–2029"
+source_url: "https://www.senterpartiet.no/politikk/_/attachment/inline/ea7e4063-1374-47bf-8b10-839bf68904c0:3c54bc9ec99b5e017f069f2312b3962bd934c78a/Senterpartiets%20stortingsvalgprogram%202025-2029%20bokm%C3%A5l%20i%20PDF.pdf"
+claim_confidence: dokumentert
+consistency_flag: not_comparable
+context_note: >
+  Ikke kodet: programmet gjelder risikovurderinger hos eierne av
+  infrastrukturen, ikke en rapport til Stortinget om avhengigheter til
+  andre land. Vises fordi det ligner, ikke fordi det motsier stemmen.
+retrieved_at: "2026-10-03"

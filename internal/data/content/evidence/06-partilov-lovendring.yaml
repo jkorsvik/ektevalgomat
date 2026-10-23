@@ -1,0 +1,24 @@
+id: ev-2025-07-01-partilov-lovendring
+statement_id: utsagn-03
+party_id: ""
+actor: "Norge (Stortinget/regjeringen)"
+date: "2025-07-01"
+evidence_type: lovendring
+evidence_class: fakta
+scan_summary: "Reglene om bakenforliggende givere til partier ble skjerpet."
+claim_action: >
+  Reglene om bakenforliggende givere til partier ble skjerpet; partier må
+  i definerte tilfeller kjenne og rapportere hvem som står bak støtte via
+  mellomledd.
+status: gjeldende
+position: null
+source_tier: A
+source_name: "Prop. 144 L (2024–2025)"
+source_url: "https://www.regjeringen.no/no/dokumenter/prop.-144-l-20242025/id3100459/?ch=3"
+claim_confidence: dokumentert
+context_note: >
+  Nasjonalt regelverk, ikke en enkeltpartis posisjon. Proposisjonen
+  presiserer samtidig at partiloven er bygget rundt bidrag til partier,
+  ikke organisasjoners egne politiske aktiviteter — derfor er
+  tredjepartskampanjer et eget, uferdig regulert spor (se ev-2025-12-19).
+retrieved_at: "2026-09-23"

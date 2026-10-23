@@ -1,0 +1,34 @@
+id: ev-2026-06-10-mdg-innovasjon-norge-mot
+statement_id: utsagn-21
+party_id: mdg
+actor: "Miljøpartiet De Grønne (næringskomiteen)"
+date: "2026-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG stemte mot, med samme effektivitets-baserte begrunnelse som Ap
+  (delt merknad, Ap+H+MDG innledningsvis, deretter Ap+MDG alene).
+claim_action: >
+  Votering_id 28197, MDG 0 for, 5 mot. MDG er navngitt
+  medforslagsstiller på begge lag av den delte merknaden (den
+  generelle Ap+H+MDG-innledningen og den mer spesifikke
+  Ap+MDG-oppfølgingen som siterer FIN og statsrådens redegjørelse —
+  se evidence/145 for full sitattekst).
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 424 S (2025–2026); votering_id 28197"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-424s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +1: samme grunnlag som Ap (se evidence/145 for full sitattekst
+  og resonnement) — MDG er fullt medforfatter av begge lag av merknaden,
+  ikke bare medstemmer, i tråd med det snudde utsagnets premiss. Merk
+  kontrasten til MDGs posisjon i digitalsuverenitet-saken (utsagn-19/20),
+  der MDG var på motsatt side sammen med SV og Rødt: MDG stemmer ikke
+  systematisk med venstre-blokken i denne typen saker, men vurderer hver
+  sak på egne Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  premisser (her: effektivitetsargumentet fra Ap trumfer den
+  regionalpolitiske bekymringen som ellers ofte samler SV/Sp/R/MDG).
+retrieved_at: "2026-09-24"

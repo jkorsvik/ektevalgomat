@@ -1,0 +1,38 @@
+id: ev-2025-04-10-ap-acer-forsvarer-integrering
+statement_id: utsagn-07
+party_id: ap
+actor: "Arbeiderpartiet (Mani Hussaini, Ingvild Kjerkol, Stein Erik Lauvås, Linda Monsen Merkesdal, Sigurd Kvammen Rafaelsen, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap avviste at ACER-tilknytning har svekket norsk kontroll, og stemte MOT alle fire forslag om å begrense ACER eller avvise fjerde energimarkedspakke."
+claim_action: >
+  Ap stemte MOT på alle fire voteringer i saken (votering_id 24383,
+  24384, 24385: 29 mot hver; votering_id 24386, komiteens tilråding om å
+  avvise begge representantforslag: 28 for). Individuell votering
+  kryssjekket mot data.stortinget.no/eksport/voteringsresultat for alle
+  fire votering_id-er.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Arbeiderpartiet og Venstre mener nasjonal
+  kontroll over energiressursene har vært avgjørende for utvikling og
+  vekst i alle deler av landet [...] Disse medlemmer understreker at
+  Norges samarbeid med EU gjennom EØS-avtalen ikke er til hinder for
+  dette, og at innlemmelsen av EUs tredje energimarkedspakke [...]
+  verken har innskrenket Norges mulighet til å styre kraftpolitikken til
+  beste for husholdninger og industri i Norge, eller har svekket den
+  nasjonale og den folkevalgte kontrollen over norsk kraftpolitikk."
+status: forslag_avvist_av_flertallet
+position: 1
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: dette er nøyaktig Aps egen argumentasjon, gjengitt
+  som det snudde utsagnet nå hevder — Ap forsvarer eksplisitt at dagens
+  EØS/ACER-tilknytning IKKE har svekket norsk kontroll, og stemte
+  konsekvent mot alle begrensningsforslag. +1 ikke +2 fordi Ap forsvarer
+  status quo uten selv å ta til orde for RASKERE eller DYPERE
+  integrering, i motsetning til V/MDGs +2. Utsagnet ble snudd 2026-09-27
+  til nøyaktig denne argumentasjonen slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-23"

@@ -1,0 +1,32 @@
+id: ev-2026-innst188s-hoyre-bolig-formuesskatt-teller-mindre
+statement_id: utsagn-54
+party_id: h
+actor: "Høyre"
+date: "2026-03-24"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre fremmet Dokument 8:94 S og et eget forslag om å heve grensen for 75 % verdsettelsesrabatt til 20 mill. kroner, og vil på sikt avskaffe formuesskatten på bolig helt."
+claim_action: >
+  Høyre fremmet forslag 5: primærbolig verdsettes til 25 % av
+  omsetningsverdi for verdi opp til 20 mill. kroner. Partiet mener den
+  nye modellen har gitt uforutsette og urimelige utslag for vanlige
+  boligeiere i pressområder, og vil i tillegg øke bunnfradraget i
+  formuesskatten. Stemte for eget forslag (votering 27360, 14 for/88
+  mot) og for forslag 1 (FrP+H+V, votering 27362).
+verbatim_excerpt: >
+  «Stortinget ber regjeringen i forbindelse med revidert
+  nasjonalbudsjett for 2026 legge til rette for at primærbolig i
+  formuesskatten verdsettes til 25 prosent av omsetningsverdi for
+  verdi opp til 20 mill. kroner, med virkning fra og med 2026.» [...]
+  «Formuesskatten bør deretter avskaffes i sin helhet.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 188 S (2025–2026), forslag 5; votering 27360 (24.03.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eget forslag, egen begrunnelse, direkte på topic, forsterket
+  av eksplisitt ambisjon om full avvikling på sikt. Bekreftet [OK] i
+  votes.py: H 14 for / 0 mot (votering 27360).
+retrieved_at: "2026-09-27"

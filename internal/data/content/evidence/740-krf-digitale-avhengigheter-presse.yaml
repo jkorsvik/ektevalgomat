@@ -1,0 +1,24 @@
+id: ev-2026-04-30-krf-digitale-avhengigheter-presse
+statement_id: utsagn-59
+party_id: "krf"
+actor: "Kristelig Folkeparti (Jonas Andersen Sayed), gjengitt i Altinget"
+date: "2026-04-30"
+evidence_type: presse
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrFs gruppe vedtok før debatten å støtte forslaget, ifølge Altinget.
+claim_action: >
+  Altinget 30. april 2026. KrFs stortingsgruppe ble enige om å støtte
+  forslaget på gruppemøtet.
+verbatim_excerpt: >
+  Men vi vil støtte et vedtak som gjør at det blir satt mer på agendaen
+  politisk, og at vi får mer kunnskap
+status: uttalt
+position: null
+source_tier: D
+source_name: "Altinget 30.04.2026: Flertall for å kreve at regjeringen kartlegger og rapporterer om digital avhengighet"
+source_url: "https://www.altinget.no/artikkel/flertall-for-aa-kreve-at-regjeringen-kartlegger-og-rapporterer-om-digital-avhengighet"
+claim_confidence: dokumentert
+context_note: >
+  Ikke kodet: bekrefter fil 739 fra før debatten.
+retrieved_at: "2026-10-03"

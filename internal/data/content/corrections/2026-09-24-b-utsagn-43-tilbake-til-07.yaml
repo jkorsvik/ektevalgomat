@@ -1,0 +1,21 @@
+id: 2026-09-24-b-utsagn-43-tilbake-til-07
+date: "2026-09-24"
+kind: rettelse
+title: "Utsagn 43 ble flyttet tilbake til utsagn 7"
+statements: ["07", "43", "44", "45"]
+what: >
+  Utsagnet om energimarkedssuverenitet og ACER, som var blitt nummer 43 i
+  tillegget, ble nummer 7 og flyttet inn i dimensjon 2 (Norsk
+  handlefrihet). Utsagn 44 og 45 ble liggende i tillegget.
+reason: >
+  Utsagnets eget primærspørsmål var allerede dimensjonens spørsmål, nesten
+  ordrett, og emnet hører hjemme der: kan Norge beholde reell kontroll
+  over strømprisen mot EUs og EØS' energimarked. Det trengtes ingen ny
+  research.
+effect: >
+  Utsagnet byttet adresse fra /utsagn/43 til /utsagn/07, med samme
+  innhold. ID-en ble oppdatert i 10 evidensfiler og i 6 filer som viste
+  til utsagnet fra en sammenligning. Antall utsagn og evidens var uendret,
+  fordi dette var en omdøping og ikke et tillegg. Ingen partiposisjon
+  endret seg: 9 av 9 partier er kodet, som før. Utsagn 44 og 45 står
+  fortsatt utenfor de 42.

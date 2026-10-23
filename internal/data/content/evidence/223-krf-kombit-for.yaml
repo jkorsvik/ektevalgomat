@@ -1,0 +1,25 @@
+id: ev-2026-04-28-krf-kombit-for
+statement_id: utsagn-22
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF stemte for KOMBIT-forslaget uten å være medforslagsstiller eller
+  medlem av kommunal- og forvaltningskomiteen — ingen egen merknad.
+claim_action: "Votering_id 27486, KrF 4 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27486"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 fra stemmetallet alene. KrF stemte for det samme Høyre-
+  forslaget som i forslag 9 (pilotprosjekter, se evidence-klyngen for
+  utsagn-19/20/24) — konsistent mønster av at KrF følger Høyre på
+  digitalpolitikk-forslag i denne saken, uten egen dokumentert
+  begrunnelse noe sted.
+retrieved_at: "2026-09-24"

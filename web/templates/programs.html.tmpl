@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+</head>
+<body>
+
+{{template "header"}}
+
+{{/* Every party's programme points on one page, each a verbatim quote from
+     that party's own 2025-2029 programme. This answers "hva sier de at de
+     vil gjøre" in one place; the utsagn pages answer "hva gjorde de". A
+     party the autopilot has not read yet says so, rather than showing an
+     empty section that reads like "the party promises nothing". */}}
+<main>
+  <section class="hero">
+    <div class="hero-meta">
+      <span class="hero-dimension">Kildebasen</span>
+      <span class="hero-number">Partiprogrammer</span>
+    </div>
+    <p class="statement-text">Hva partiene sier at de vil gjøre.</p>
+    <p class="hero-question">Hvert punkt under er et sitat fra partiets eget stortingsvalgprogram 2025–2029. Dette er løfter, ikke stemmer. Om løftet ble til handling står på <a href="/">utsagnssidene</a>, bygget fra voteringer og merknader.</p>
+    <p class="hero-question">Dette er et utvalg, ikke hele programmet. Vi tar med ett punkt per konkrete løfte som svarer på ett av de ni temaene siden bruker, og siterer partiets egne ord, ikke et sammendrag. Enkelte kapitler i et program faller utenfor temaene og står derfor ikke her. Sier programmet ingenting om et tema, står det tomt med vilje: Det er et funn, ikke et fravær av kilder.</p>
+  </section>
+
+  {{if .TemaMissed}}
+  <p class="program-empty">Fant ikke det temaet. Du ser hele listen i stedet.</p>
+  {{end}}
+
+  {{/* Navigation, added 2026-10-13. Nine per-party pages and nine themes were
+       reachable only by scrolling or by typing a URL. These links are plain
+       HTML, so they work with no JavaScript at all. */}}
+  {{if .Any}}
+  <nav class="program-nav" aria-label="Hopp til parti eller tema">
+    <div class="program-nav-row">
+      <span class="program-nav-label">Parti</span>
+      {{range .PartyLinks}}<a class="program-nav-link" href="#parti-{{.ID}}">{{.Short}} <span class="program-nav-count">{{.Count}}</span></a>{{end}}
+    </div>
+    <div class="program-nav-row">
+      <span class="program-nav-label">Tema</span>
+      {{if .Focused}}<a class="program-nav-link is-active" href="/partier">Alle temaer</a>{{end}}
+      {{range .Dimensions}}<a class="program-nav-link{{if eq .Slug $.Tema}} is-active{{end}}" href="/partier?tema={{.Slug}}">{{.Name}} <span class="program-nav-count">{{.Count}}</span></a>{{end}}
+    </div>
+    {{if .Focused}}
+    <p class="program-nav-note">Viser bare temaet <strong>{{.TemaName}}</strong>, for alle ni partiene, så de kan leses mot hverandre. <a href="/partier">Se alle temaene</a>.</p>
+    {{else}}
+    <p class="program-nav-note">Velg et tema for å se alle partiene på det feltet, side om side, i stedet for hele programmet.</p>
+    {{end}}
+  </nav>
+  {{end}}
+
+  {{if not .Any}}
+  <p class="program-empty">Ingen programmer er gjennomgått ennå. Det betyr ikke at et parti sier ingenting, bare at vi ikke har gått gjennom programmet. Ingen konklusjon er trukket.</p>
+  {{end}}
+
+  {{range .Parties}}
+  <section class="party-program" id="parti-{{.Party.ID}}">
+    <h2><a href="/parti/{{.Party.ID}}">{{.Party.Name}}</a> <span class="party-short">{{.Party.Short}}</span></h2>
+    {{if .HasPoints}}
+    <p class="program-source">
+      <a href="{{.Program.SourceURL}}" rel="noopener">{{.Program.SourceName}}</a>
+      {{if .Program.RetrievedAt}}· hentet {{.Program.RetrievedAt}}{{end}}
+      · {{len .Program.Points}} utvalgte programutsagn
+    </p>
+    {{range .Groups}}
+    <details class="program-group">
+      <summary class="program-group-sum"><span class="program-group-name">{{.Dimension}}</span><span class="program-group-count">{{len .Points}}</span></summary>
+      <ul class="program-points">
+        {{range .Points}}
+        <li class="program-point">
+          {{$p := .}}{{if $p.Statements}}<span class="program-topic">{{$p.Topic}}{{range $p.Statements}} <a class="program-utsagn" href="/utsagn/{{trimPrefix . "utsagn-"}}" aria-label="utsagn {{trimPrefix . "utsagn-"}}"><span aria-hidden="true">→</span></a>{{end}}</span>{{else}}<span class="program-topic">{{$p.Topic}}</span>{{end}}
+          <blockquote class="program-quote">«{{.Quote}}»</blockquote>
+          {{if .Where}}<span class="program-where">{{.Where}}</span>{{end}}
+        </li>
+        {{end}}
+      </ul>
+    </details>
+    {{end}}
+    {{else}}
+    <p class="program-empty">Programmet er ennå ikke gjennomgått. Det er ikke en konklusjon om partiet, og ingen vurdering er gjort.</p>
+    {{end}}
+  </section>
+  {{end}}
+</main>
+
+<footer class="wrap"><p>Ekte valgomat viser hva partiene sier og hva de gjorde, hver for seg, med kilder. Se <a href="/metode">metoden</a>.</p></footer>
+</body>
+</html>

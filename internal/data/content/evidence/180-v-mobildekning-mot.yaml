@@ -1,0 +1,30 @@
+id: ev-2026-05-19-v-mobildekning-mot
+statement_id: utsagn-26
+party_id: v
+actor: "Venstre"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre stemte mot. Venstre har ikke sete i kommunal- og
+  forvaltningskomiteen og har ingen skriftlig merknad noe sted i
+  denne innstillingen.
+claim_action: >
+  Votering_id 27610, V 0 for, 2 mot. Ingen V-merknad funnet i
+  innstillingens fulltekst; komiteens medlemsliste (Ap, FrP, H, SV,
+  Sp, R, MDG) bekrefter Venstre ikke har plass i denne komiteen denne
+  perioden.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene. Speiler KrF (evidence/173): begge
+  partiene mangler komitésete i denne saken, men landet på MOTSATT
+  side av voteringen (KrF for, Venstre mot) — det eneste tilfellet i
+  datasettet så langt der to partier uten dokumentert grunnlag går
+  hver sin vei i samme sak.
+retrieved_at: "2026-09-24"

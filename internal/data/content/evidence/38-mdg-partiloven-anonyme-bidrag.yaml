@@ -1,0 +1,37 @@
+id: ev-2025-06-13-mdg-partiloven-anonyme-bidrag
+statement_id: utsagn-03
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025-06-13"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "MDG hadde ikke plass i komiteen, men stemte for forbudet i den avgjørende voteringen i plenum."
+claim_action: >
+  MDG har ikke medlem i kommunal- og forvaltningskomiteen for denne
+  saken og har derfor ingen egen merknad i innstillingen. I den
+  avgjørende plenumsvoteringen over selve forbudsparagrafen (§ 17 a,
+  votering_id 26057) stemte 2 av MDGs tilstedeværende representanter for,
+  0 mot.
+verbatim_excerpt: >
+  Politiske partier og partiledd kan ikke motta bidrag fra a . givere som
+  er ukjente for partiet (anonyme bidrag) b . juridiske personer som har
+  som formål eller vesentlig del av sin virksomhet å støtte politiske
+  partier eller partiledd økonomisk c. privatpersoner som har mottatt
+  bidrag fra andre for å gi disse til politiske partier eller partiledd.
+status: vedtatt
+position: 1
+source_tier: A
+source_name: "Individuell votering, votering_id 26057"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=103531&dnid=1&vt=26057"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2, fordi MDG ikke har egen merknad å sitere ordlyd fra
+  — kun en individuell plenumsstemme (2 for, 0 mot, resten fraværende).
+  Dette er svakere enn de komitépartiene som skrev egen merknad
+  (Ap/H/Sp/SV/Rødt, kodet +2), men er samtidig et klart, utvetydig
+  ja-stemme på selve forbudsparagrafens konkrete tekst — ikke den
+  vage typen flertallsvedtak ("legg frem en stortingsmelding") som
+  utsagn-06s FrP-fil advarer mot å overtolke. Individuell
+  representantstemme hentet direkte fra data.stortinget.no for votering_id
+  26057.
+retrieved_at: "2026-09-23"

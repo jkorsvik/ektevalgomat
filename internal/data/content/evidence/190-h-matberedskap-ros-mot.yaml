@@ -1,0 +1,32 @@
+id: ev-2026-06-05-h-matberedskap-ros-mot
+statement_id: utsagn-39
+party_id: h
+actor: "Høyre (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Høyre stemte mot, uten en egen, distinkt merknad om ROS-analysen.
+  Høyres eneste merknader i saken er delte tekster sammen med andre
+  partier om andre spørsmål (se evidence/168, utsagn-38), ingen av
+  dem omtaler en risiko- og sårbarhetsanalyse for matforsyning.
+claim_action: >
+  Votering_id 28067, H 0 for, 14 mot. Ingen egen H-merknad om
+  ROS-analysen funnet i innstillingens fulltekst.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene. Sammen med Ap og FrP utgjør Høyre
+  den mot-siden av det bredeste for/mot-gapet i denne saken (6 partier
+  for, 3 mot) uten at noen av de tre har en dokumentert, forslags-
+  spesifikk grunn for nettopp å avvise en risikokartlegging — en
+  strukturell observasjon om denne saken, ikke et enkeltfunn: de tre
+  partiene med regjeringserfaring/-ansvar (Ap, H) eller nær regjerings-
+  posisjon (FrP) er nettopp de som ikke skriftlig forklarer hvorfor de
+  ikke vil pålegge regjeringen å kartlegge risikoen.
+retrieved_at: "2026-09-24"

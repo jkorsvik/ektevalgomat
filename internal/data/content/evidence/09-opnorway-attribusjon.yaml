@@ -1,0 +1,19 @@
+id: ev-2025-valget-opnorway-attribusjon
+statement_id: utsagn-04
+party_id: ""
+actor: "#OpNorway / pro-russisk hackergruppe"
+date: "2025 (valgåret)"
+evidence_type: ffi_attribusjon
+evidence_class: analyse
+scan_summary: "FFI knyttet #OpNorway til en operasjon mot valget 2025."
+claim_action: >
+  FFI fant en operasjon eksplisitt knyttet til det norske valget, med
+  Telegram/X-aktivitet og cyberaktivitet.
+status: fremmed_paavirkningsforsok_dokumentert
+position: null
+attribution_confidence: aktorkobling
+source_tier: B
+source_name: "FFI: Økende, komplekst og uoversiktlig (2026)"
+source_url: "https://www.ffi.no/publikasjoner/arkiv/okende-komplekst-og-uoversiktlig-kartlegging-av-utenlandsk-pavirkning-i-forbindelse-med-stortingsvalget-2025"
+claim_confidence: dokumentert
+retrieved_at: "2026-09-23"

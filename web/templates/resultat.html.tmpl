@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/analyse.css"}}">
+</head>
+<body class="no-js" data-page="resultat">
+<script>document.body.classList.remove('no-js')</script>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* Own page, not an in-page tab (2026-09-26): a result you can link
+       to, bookmark, or find again via the nav, not something buried
+       behind a click inside the quiz. Still purely client-side —
+       nothing here ever reaches the server; quiz.js reads the same
+       answers from localStorage that the quiz itself writes. */}}
+  <p class="lede">
+    Resultatet ditt, regnet ut fra svarene du har gitt i
+    <a href="/">valgomaten</a>. Det oppdateres etter hvert svar, og lever
+    bare i denne nettleseren.
+  </p>
+
+  <noscript>
+    <div class="card no-js-notice">
+      <p>
+        Resultatet krever JavaScript. Svarene dine lagres bare i
+        nettleseren din, ikke på en server, så det finnes ingenting å
+        regne ut her uten JavaScript. Du kan fortsatt
+        <a href="/">svare på utsagnene</a> eller lese kilden bak hvert
+        enkelt utsagn.
+      </p>
+    </div>
+  </noscript>
+
+  <div id="storage-note" class="js-only" role="status"></div>
+  <div id="quiz-root" class="js-only"></div>
+
+  {{/* "Hvorfor dette resultatet?" robustness panel (2026-10-12). Its own
+       container, mounted by analyse.js, NOT injected into #quiz-root —
+       quiz.js owns that element and re-renders it on every change.
+       Collapsed behind one native <details> (built in analyse.js) so a
+       first-time visitor still meets a clean result first. Hidden without
+       JS, where there is nothing to compute (see the <noscript> above). */}}
+  <section id="analyse-root" class="js-only" aria-label="Analyse av resultatet"></section>
+</main>
+
+<footer class="site">
+  <p>
+    Ingen svar fra brukere lagres eller sendes til en server. Bygget {{year}}.
+    <a href="/personvern">Personvern <span aria-hidden="true">→</span></a>
+  </p>
+  <p>
+    Lisensiert under
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL-3.0</a>.
+    Kildekoden er åpen:
+    <a href="https://github.com/jkorsvik/ektevalgomat">github.com/jkorsvik/ektevalgomat</a>.
+    Kjører du en endret versjon offentlig, skal koden din også være det.
+  </p>
+</footer>
+
+<script id="ektevalgomat-data" type="application/json">{{.PayloadJSON}}</script>
+<script src="{{asset "/static/js/scoring.js"}}"></script>
+<script src="{{asset "/static/js/store.js"}}"></script>
+<script src="{{asset "/static/js/avveining.js"}}"></script>
+<script src="{{asset "/static/js/quiz.js"}}"></script>
+{{/* analyse.js runs after quiz.js: quiz.js migrates stale stored answers
+     first, and analyse.js reads the same map from localStorage. */}}
+<script src="{{asset "/static/js/analyse.js"}}"></script>
+</body>
+</html>

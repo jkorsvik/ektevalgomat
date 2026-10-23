@@ -1,0 +1,39 @@
+id: ev-2026-04-28-rodt-nasjonal-skytjeneste-for
+statement_id: utsagn-19
+party_id: rodt
+actor: "Rødt (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt fremmet forslag 11 sammen med SV, og har egen omfattende
+  begrunnelse: viser til at Norge under covid-19 ikke fikk økt
+  skykapasitet fra Microsoft, som ifølge Rødt heller prioriterte mer
+  lønnsomme markeder -- en konkret sårbarhet Rødt mener taler for
+  egen, statlig skyinfrastruktur.
+claim_action: >
+  Forslag 11 (med SV), votering_id 27485: Rødt 5 for, 0 mot. Rødt
+  fremmet også, sammen med MDG (ikke SV), et alternativt forslag 14 om
+  eierskaps-agnostisk "suveren infrastruktur tilgjengelig for hele
+  offentlig sektor" -- Rødt er dermed den eneste partien som støtter
+  BÅDE den strenge (forslag 11) og den fleksible (forslag 14) versjonen.
+verbatim_excerpt: >
+  "Komiteens medlem fra Rødt viser til at Norge under
+  covid-19-pandemien ikke fikk økt sin kapasitet innen skytjenester,
+  til tross for økte behov og forespørsel om dette. Dette skyldes
+  ifølge Microsoft ikke mangel på kapasitet, men at de ønsket å satse
+  på mer lønnsomme forretningsområder. Dette medlem mener at lærdommen
+  av dette er at Norge, i en fremtidig krise, må være forberedt på å
+  bli bort- eller nedprioritert av eksterne leverandører."
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27485"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at smart suverenitet er godt nok): Rødt er
+  medforslagsstiller til forslag 11 med egen, konkret historisk
+  begrunnelse (covid-19/Microsoft-episoden), det motsatte av det snudde
+  utsagnets premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2. Se evidence/121-nasjonal-skytjeneste-kontekst.yaml.
+retrieved_at: "2026-09-24"

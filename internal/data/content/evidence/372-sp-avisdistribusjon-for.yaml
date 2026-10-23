@@ -1,0 +1,24 @@
+id: ev-2026-sp-avisdistribusjon-for
+statement_id: utsagn-30
+party_id: sp
+actor: "Senterpartiet (næringskomiteen)"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp er medforslagsstiller sammen med Rødt. Alle 5 fremmøtte stemte
+  for.
+claim_action: >
+  Votering_id 27674, Sp 5 for, 0 mot. Samme delte Sp/Rødt-merknad
+  som evidence/362-363 om distrikt og informasjonstilgang.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27674"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Sp medforslagsstiller, samme begrunnelse som utsagn-29 —
+  konsistent linje over begge forslagene i saken.
+retrieved_at: "2026-09-24"

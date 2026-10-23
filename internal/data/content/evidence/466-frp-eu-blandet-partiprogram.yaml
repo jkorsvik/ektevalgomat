@@ -1,0 +1,45 @@
+id: ev-2026-partiprogram-frp-eu-blandet
+statement_id: utsagn-45
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "FrPs program er i reell spenning med seg selv: vil ha reservasjonsrett og handlingsrom mot EU generelt, men eksplisitt godt samarbeid om sikkerhetspolitikk."
+claim_action: >
+  FrPs partiprogram 2025–2029 (kapittel «Norge og Europa») er imot norsk
+  EU-medlemskap og vil utnytte handlingsrommet/reservasjonsretten i EØS,
+  men lister samtidig sikkerhetspolitikk som et område der «godt
+  samarbeid med Europa» er ønskelig. Programmets forsvarskapittel nevner
+  ikke EU i det hele tatt (kun NATO og bilaterale allierte).
+verbatim_excerpt: >
+  Vi må i større grad utnytte handlingsrommet og benytte
+  reservasjonsretten for å sikre norske interesser. [...] Det er viktig
+  med et godt samarbeid med Europa for å søke gode løsninger når det
+  gjelder spørsmål om sikkerhetspolitikk, miljøpolitikk, kriminalpolitikk
+  og politiske områder som i sterk grad relaterer seg til frihandel,
+  felles konkurranseregler og menneskelig frihet.
+status: programfestet
+position: 0
+source_tier: C
+source_name: "Fremskrittspartiets partiprogram 2025–2029"
+source_url: "https://www.frp.no/files/Program/2025/FrP-Partiprogram-2025-2029.pdf"
+claim_confidence: dokumentert
+consistency_flag: tension
+context_note: >
+  Kodet 0 (nøytral/delt), ikke et fortegn: FrPs egen tekst peker to
+  veier på nøyaktig det spørsmålet utsagnet stiller. Den generelle
+  EU-linjen (reservasjonsrett, «utnytte handlingsrommet», nei til
+  medlemskap) trekker mot enighet med utsagnets premiss om uavhengighet.
+  Men programmet selv lister eksplisitt «sikkerhetspolitikk» som et
+  område der FrP ØNSKER godt samarbeid med Europa — det direkte motsatte
+  signalet. Forsvarskapittelet er dessuten helt taust om EU (bare
+  NATO/bilaterale allierte), så det gir ingen ekstra retning. Én
+  posisjon ville skjult denne reelle spenningen i partiets eget
+  program, ikke løst den. Tier C, ikke tier A.
+  consistency_flag=tension: FrP stemte MED flertallet i Innst. 464 S
+  (samme utsagn, egen fil) for at dagens grunnlovsterskel mot
+  myndighetsoverføring er god nok — et påfallende komfortabelt standpunkt
+  gitt partiets ellers gjennomgående EU-skeptiske linje andre steder i
+  programmet (se f.eks. handlingsrom-formuleringen over).
+retrieved_at: "2026-09-26"

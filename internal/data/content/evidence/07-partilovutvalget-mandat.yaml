@@ -1,0 +1,23 @@
+id: ev-2025-12-19-partilovutvalget-mandat
+statement_id: utsagn-03
+secondary_statement_ids:
+  - utsagn-02
+party_id: ""
+actor: "Partilovutvalget"
+date: "2025-12-19"
+evidence_type: mandat
+evidence_class: fakta
+scan_summary: "Partilovutvalget fikk mandat til å utrede tredjepartskampanjer."
+claim_action: >
+  Skal eksplisitt drøfte regulering av valgkamp fra tredjeparter og
+  anonyme aktører. NOU skal leveres innen 2027-06-01.
+status: pagaende
+position: null
+source_tier: A
+source_name: "Partilovutvalgets mandat"
+source_url: "https://www.regjeringen.no/no/dep/kdd/org/styrer-rad-og-utvalg/partilovutvalget/id3145428/"
+claim_confidence: dokumentert
+context_note: >
+  Levende kilde frem mot fristen 1. juni 2027 — bør sjekkes på nytt ved
+  hver ny innhøstingsrunde, ikke bare arkiveres som ferdig.
+retrieved_at: "2026-09-23"

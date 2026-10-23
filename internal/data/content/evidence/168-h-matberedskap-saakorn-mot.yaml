@@ -1,0 +1,39 @@
+id: ev-2026-06-05-h-matberedskap-saakorn-mot
+statement_id: utsagn-38
+party_id: h
+actor: "Høyre (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot. Høyre deler en generell skepsis til Sps
+  opprinnelige representantforslag sammen med FrP og KrF, men er ikke
+  medforfatter av FrP+KrFs mer spesifikke Finland-modell-konklusjon
+  som forslag 1 bygger på.
+claim_action: >
+  Votering_id 28068, H 0 for, 14 mot. Fra delt merknad (FrP, Høyre og
+  KrF): "Komiteens medlemmer fra Fremskrittspartiet, Høyre og
+  Kristelig Folkeparti deler bekymringen for norsk matberedskap, men
+  mener Senterpartiets forslag ikke treffer de viktigste
+  utfordringene. Kvoter og merkeordninger er ikke godt nok svar på
+  reell sårbarhet i forsyningskjedene for mat." Den påfølgende,
+  konkrete Finland-modell-konklusjonen er eksplisitt avgrenset til
+  "Komiteens medlemmer fra Fremskrittspartiet og Kristelig
+  Folkeparti" — uten Høyre.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: Høyre er medforfatter av en generell skepsis til Sps
+  opprinnelige forslag, men den setningen navngir ikke selve forslag
+  1s desentraliserte mekanisme spesifikt — Høyres presise grunn for å
+  stemme mot NETTOPP dette forslaget (i motsetning til de tre andre
+  forslagene i saken) er ikke separat dokumentert utover denne
+  generelle skepsisen. Samme "medforfatter av et lag, ikke det
+  spesifikke neste laget"-mønster som tidligere sett for Sp/Høyre i
+  Innst. 424 S (evidence/136) og MDG i Innst. 263 S (evidence/154).
+retrieved_at: "2026-09-24"

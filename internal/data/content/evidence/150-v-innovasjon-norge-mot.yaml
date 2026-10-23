@@ -1,0 +1,33 @@
+id: ev-2026-06-10-v-innovasjon-norge-mot
+statement_id: utsagn-21
+party_id: v
+actor: "Venstre (næringskomiteen)"
+date: "2026-06-10"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre stemte mot. Venstre har ikke sete i næringskomiteen og har
+  ingen skriftlig merknad noe sted i denne innstillingen.
+claim_action: >
+  Votering_id 28197, V 0 for, 2 mot, 1 ikke_tilstede. Ingen
+  V-merknad funnet i innstillingens fulltekst; komiteens
+  medlemsliste (Ap, FrP, H, SV, Sp, R, MDG, KrF) bekrefter Venstre
+  ikke har plass i næringskomiteen denne perioden.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 424 S (2025–2026); votering_id 28197"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-424s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 fra stemmetallet alene, i tråd med det snudde utsagnets
+  premiss. Venstre har ikke komitéplass i næringskomiteen — tredje sak
+  i datasettet (etter utsagn-19 og utsagn-20, begge kommunal- og
+  forvaltningskomiteen) der Venstre går udokumentert av samme grunn,
+  men i en helt annen komité denne gangen. Bekrefter enda en gang at
+  "hvilke partier går udokumentert" avhenger av komitésammensetning per
+  sak, ikke av et Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  fast mønster for hvilke saker Venstre generelt følger opp
+  skriftlig.
+retrieved_at: "2026-09-24"

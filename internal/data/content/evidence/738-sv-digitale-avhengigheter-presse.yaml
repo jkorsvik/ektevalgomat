@@ -1,0 +1,27 @@
+id: ev-2026-05-08-sv-digitale-avhengigheter-presse
+statement_id: utsagn-59
+party_id: "sv"
+actor: "Sosialistisk Venstreparti (Ingrid Fiskaa), gjengitt i Altinget"
+date: "2026-05-08"
+evidence_type: presse
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ingrid Fiskaa (SV) sa at forslaget ikke var SVs og ikke viktig for
+  partiet.
+claim_action: >
+  Altinget 8. mai 2026, etter voteringen. Fiskaa var første
+  forslagsstiller på Dokument 8:119 S.
+verbatim_excerpt: >
+  Dette var jo ikke vårt forslag i utgangspunktet. Da vi først støttet
+  det, tenkte vi vel at noe måtte vi få ut av denne saken da våre
+  forslag ikke fikk flertall, men dette forslaget er ikke viktig for oss
+status: uttalt
+position: null
+source_tier: D
+source_name: "Altinget 08.05.2026: Lå an til flertall. Nå snur SV"
+source_url: "https://www.altinget.no/artikkel/laa-an-til-flertall-naa-snur-sv-om-digital-suverenitet"
+claim_confidence: dokumentert
+context_note: >
+  Ikke kodet: forklarer filene 736 og 737, men en avisgjengivelse skal
+  ikke flytte posisjonen alene.
+retrieved_at: "2026-10-03"

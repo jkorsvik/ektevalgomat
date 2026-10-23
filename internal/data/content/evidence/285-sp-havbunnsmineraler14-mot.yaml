@@ -1,0 +1,42 @@
+id: ev-2025-06-sp-havbunnsmineraler14-mot
+statement_id: utsagn-14
+party_id: sp
+actor: "Senterpartiet (energi- og miljøkomiteen)"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte mot den konkrete tidsplanen, med en egen merknad om at
+  havbunnsmineraler ikke bør sammenlignes med petroleumsvirksomhet og
+  krever en mer varsom, kunnskapsbasert tilnærming.
+claim_action: >
+  Votering_id 25349, Sp 17 mot, 0 for. Fra Sps merknad: Sp mener det
+  er en lite treffende sammenligning å likestille arbeidet med 1.
+  konsesjonsrunde for havbunnsmineraler med petroleumsvirksomhet, da
+  havbunnsmineralvirksomhet er noe nytt med begrenset operasjonell
+  erfaring. Miljømessige, teknologiske og forvaltningsmessige hensyn
+  krever særskilt grundighet og en kunnskapsbasert, trinnvis
+  tilnærming.
+verbatim_excerpt: >
+  Det er en lite treffende sammenligning å likestille arbeidet med en
+  1. konsesjonsrunde for havbunnsmineraler med en 26. konsesjonsrunde
+  for petroleumsvirksomhet. [...] Disse medlemmer vil understreke at
+  havbunnsmineralvirksomhet representerer noe nytt, med begrenset
+  operasjonell erfaring både nasjonalt og internasjonalt. [...] de
+  miljømessige, teknologiske og forvaltningsmessige hensynene ved
+  havbunnsmineralutvinning krever særskilt grundighet, og at man må
+  legge til rette for en kunnskapsbasert og trinnvis tilnærming.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); votering_id 25349"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -1 (ikke -2): Sp har en spesifikk begrunnelse mot en FAST
+  tidsplan (for raskt, for umodent), men stemte likevel FOR den
+  vedtatte hovedtilrådingen (25350) som åpner for konsesjonsprosessen
+  uten en fast dato — samme "prinsipp ja, tidsplan nei"-mønster som
+  Ap.
+retrieved_at: "2026-09-24"

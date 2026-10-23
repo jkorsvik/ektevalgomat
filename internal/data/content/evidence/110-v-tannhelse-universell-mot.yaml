@@ -1,0 +1,29 @@
+id: ev-2025-06-04-v-tannhelse-universell-mot
+statement_id: utsagn-25
+party_id: v
+actor: "Venstre"
+date: "2025-06-04"
+evidence_type: voteringsresultat
+evidence_class: fakta
+scan_summary: >
+  Venstre stemte mot SVs universaliseringsforslag. Venstre har ingen
+  egen skriftlig merknad og ingen eget forslag om tannhelse i denne
+  innstillingen — posisjonen er dokumentert kun gjennom stemmegivningen
+  i plenum, uten noen synlig begrunnelse i denne saken.
+claim_action: >
+  Votering_id 25387, V 0 for, 5 mot. Venstre fremmet ingen eget
+  forslag og har ingen egen merknad noe sted i Innst. 458 L.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Votering 25387 — data.stortinget.no"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25387"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 utelukkende på stemmegivningen, i tråd med det snudde
+  utsagnets premiss: ingen skriftlig begrunnelse eller eget forslag fra
+  Venstre er funnet noe sted i denne innstillingen. attribution_confidence
+  satt til "ukjent" fordi vi ikke har noe grunnlag for å si HVORFOR
+  Venstre stemte mot den bindende fristen — bare AT de gjorde det. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Se evidence/101-tannhelsereform-kontekst.yaml.
+retrieved_at: "2026-09-24"

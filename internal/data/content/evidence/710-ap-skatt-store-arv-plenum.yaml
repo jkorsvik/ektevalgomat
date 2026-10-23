@@ -1,0 +1,31 @@
+id: ev-2024-06-12-ap-skatt-store-arv-plenum
+statement_id: utsagn-57
+party_id: "ap"
+actor: "Senterpartiet (finansminister Trygve Slagsvold Vedum), om Arbeiderpartiet"
+date: "2024-06-12"
+evidence_type: plenumsinnlegg
+evidence_class: fakta
+scan_summary: >
+  Finansminister Vedum (Sp) sa i Stortinget at også Ap har sagt nei til
+  å gjeninnføre arveskatt. Dette er ikke Aps egne ord, så Aps posisjon
+  er ikke kodet.
+claim_action: >
+  Samme innlegg som fil 709. Vedum var finansminister i regjeringen
+  Støre (Ap og Sp) og omtaler Arbeiderpartiets standpunkt. Aps egne
+  talere i samme debatt nevnte ikke arv.
+verbatim_excerpt: >
+  Blant annet er det et forslag om å gjeninnføre arveskatt.
+  Senterpartiet og Arbeiderpartiet har sagt at det ønsker vi ikke å
+  gjøre.
+status: uttalt
+position: null
+source_tier: A
+source_name: "Stortingsreferat 12.06.2024 (Innst. 410 S (2023–2024))"
+source_url: "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202324-06-12"
+claim_confidence: dokumentert
+context_note: >
+  Ikke kodet: en annen partis gjengivelse av Aps standpunkt setter ikke
+  Aps posisjon, samme regel som for Ap på utsagn-52. Aps program
+  2025–2029 nevner ikke arv, og Innst. 3 S og 4 L (2025–2026) har ingen
+  merknad om arveavgift. Vises som kontekst under Ap.
+retrieved_at: "2026-10-02"

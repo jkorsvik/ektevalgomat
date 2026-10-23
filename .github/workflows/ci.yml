@@ -1,0 +1,84 @@
+name: tests
+
+# The gate on every pull request, before merge. The deploy already runs
+# `go test` inside the Docker build, but that is after merge: a red build
+# there leaves the old container running and nobody sees it until they
+# look.
+#
+# Uses the exact Go image the Dockerfile builds with (read from the
+# Dockerfile, so there is one pin, not two). The excerpt and vote
+# verifiers in tools/verify fetch Stortinget and Lovdata sources, so they
+# stay a local step (see README); this job is the offline part.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: gofmt, go vet, go test in the Dockerfile's Go image
+        run: |
+          set -euo pipefail
+          image=$(sed -n 's/^FROM \(golang:[^ ]*\) AS builder$/\1/p' Dockerfile)
+          if [ -z "$image" ]; then
+            echo "::error::could not read the builder image from Dockerfile"
+            exit 1
+          fi
+          echo "Go image: $image"
+          docker run --rm -v "$PWD":/src -w /src "$image" sh -euc '
+            unformatted=$(gofmt -l .)
+            if [ -n "$unformatted" ]; then
+              echo "gofmt would change:"; echo "$unformatted"; exit 1
+            fi
+            go vet ./...
+            go test -count=1 -v ./... > /tmp/test.log 2>&1 || { cat /tmp/test.log; exit 1; }
+            grep -E "^(ok|FAIL|---)" /tmp/test.log | grep -v "^--- PASS" || true
+            passed=$(grep -c "^--- PASS" /tmp/test.log || true)
+            echo "tests passed: $passed"
+            # A green run that ran nothing is not a gate.
+            [ "$passed" -ge 40 ] || { echo "only $passed tests ran, expected at least 40"; exit 1; }
+          '
+
+      # The Go suite never touches the client-side arithmetic, yet the rule
+      # this project is most often judged on — that "vet ikke" is excluded
+      # from the match rather than counted as a neutral middle answer —
+      # lives only in web/static/js/scoring.js, and the robustness panel's
+      # leave-one-out arithmetic only in analyse.js. Plain node, no
+      # dependencies, no network. Without this step those two can regress
+      # with every Go test still green.
+      # tools/autopilot/queue.yaml names every unit of work, and nothing
+      # parsed it: an edit that left an orphaned quote sat undetected until
+      # the gate started reading the file. The gate itself is not run here
+      # (staging/ is gitignored, so a CI checkout would report an empty
+      # estate); these are the checks on the gate and the queue, offline.
+      - name: autopilot gate and queue checks (python)
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet --disable-pip-version-check pyyaml
+          python3 tools/autopilot/test_gate.py
+
+      - name: client-side scoring and robustness checks (node)
+        run: |
+          set -euo pipefail
+          # Discovered, not listed: a hand-kept list let tools/store.test.js
+          # sit unrun. The floor makes "found none" a failure, not a pass.
+          for f in web/static/js/*.js; do
+            node --check "$f"
+          done
+          suites=(tools/*.test.js)
+          if [ "${#suites[@]}" -lt 3 ]; then
+            echo "expected at least 3 node suites in tools/, found ${#suites[@]}"
+            exit 1
+          fi
+          for t in "${suites[@]}"; do
+            echo "--- $t"
+            node "$t"
+          done

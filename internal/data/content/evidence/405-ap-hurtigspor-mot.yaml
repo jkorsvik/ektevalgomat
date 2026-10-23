@@ -1,0 +1,25 @@
+id: ev-2026-ap-hurtigspor-mot
+statement_id: utsagn-10
+party_id: ap
+actor: "Arbeiderpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-05-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Ap (regjeringsparti) stemte for innstillingens avvisning av
+  forslag 1. Ingen egen, separat Ap-merknad om saken funnet — Sps
+  merknad (evidence/404) er den mest presise begrunnelsen tilgjengelig
+  for regjeringssiden.
+claim_action: "Alternativ votering 27597, Ap 30 for innstillingen/mot forslag 1."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 266 S (2025–2026); votering_id 27597"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-266s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: ingen egen Ap-merknad funnet i innstillingen, kun stemmen
+  selv. Ap er regjeringsparti sammen med Sp, som har den presise
+  begrunnelsen (eksisterende virkemidler dekker behovet).
+retrieved_at: "2026-09-24"

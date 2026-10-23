@@ -1,0 +1,23 @@
+id: ev-2026-08-21-eu-politisk-reklame-rettsstatus
+statement_id: utsagn-02
+party_id: ""
+actor: "EU/EØS/Norge"
+date: "2026-08-21"
+evidence_type: rettsstatus
+evidence_class: fakta
+scan_summary: "EUs regler om politisk reklame ennå ikke innlemmet i norsk rett."
+claim_action: >
+  EU-reglene om politisk reklame (forordning 2024/900) gjelder i EU siden
+  2025-10-10, men var ifølge Norges EØS-notat fortsatt til vurdering for
+  innlemmelse i EØS/norsk rett.
+status: ikke_ferdig_implementert
+position: null
+source_tier: A
+source_name: "Norsk EØS-notat om forordning (EU) 2024/900"
+source_url: "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2026/jan/forordning-om-apenhet-rundt-og-malretting-av-politisk-reklame/id3163709/"
+claim_confidence: dokumentert
+context_note: >
+  Prosjektet skal ikke late som Norge har et komplett offentlig
+  EU-politisk-annonseregister allerede — dette kobles inn når
+  norsk/EØS-rett faktisk dekker det.
+retrieved_at: "2026-09-23"

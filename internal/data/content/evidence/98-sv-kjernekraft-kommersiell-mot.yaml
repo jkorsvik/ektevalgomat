@@ -1,0 +1,35 @@
+id: ev-2026-05-26-sv-kjernekraft-kommersiell-mot
+statement_id: utsagn-13
+party_id: sv
+actor: "Sosialistisk Venstreparti (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV stemte mot i sterke ordelag, og kalte forslaget uansvarlig og
+  sløsing med skattebetalernes penger — den klart mest kompromissløse
+  motstanden av de ni partiene, uavhengig av eierskapsmodell.
+claim_action: >
+  Votering_id 27722, SV 0 for, 5 mot. Del av syvpartiflertallet bak
+  tilrådingen (votering_id 27723).
+verbatim_excerpt: >
+  "Komiteens medlem fra Sosialistisk Venstreparti er sjokkert over
+  hvor uansvarlige Høyre og Fremskrittspartiet er i denne saken.
+  Atomkraftverk er ikke en pølsebu. [...] Atomkraft er den dyreste
+  tilgjengelige kraftkilden og vil følgelig kreve betydelige
+  subsidier. Fremskrittspartiet og Høyre legger med disse forslagene
+  opp til betydelig sløsing med skattebetalernes penger."
+status: forslag_avvist_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27722, 27723"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2, den strengeste koden av de fem mot-partiene: SVs egen
+  merknad er markant mer kompromissløs i tonen enn Ap/Sp/Rødt/MDGs
+  fellesmerknad om prosess og ansvarsfordeling — SV avviser ikke bare
+  hastigheten, men selve premisset om at kjernekraft er en fornuftig
+  investering for Norge, uavhengig av eierskapsform. Se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,30 @@
+id: ev-2026-05-19-mdg-mobildekning-mot
+statement_id: utsagn-26
+party_id: mdg
+actor: "Miljøpartiet De Grønne (kommunal- og forvaltningskomiteen)"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  MDG stemte mot, som del av samme delte seks-partitilråding som Ap,
+  SV og Rødt (se evidence/176). Ingen MDG-spesifikk merknad er
+  skrevet noe sted i innstillingen.
+claim_action: >
+  Votering_id 27610, MDG 0 for, 5 mot. Navngitt i samme
+  tilrådingsavsnitt som Ap, Fremskrittspartiet, Høyre, SV og Rødt.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1, samme grunnlag og styrke som Ap (evidence/176), SV
+  (evidence/177) og Rødt (evidence/178). MDG stemte for i utsagn-19
+  (statlig eierandel skytjenester) og utsagn-20 (Microsoft 365-exit),
+  mot i utsagn-21 (Innovasjon Norge) og utsagn-37 (OTP-minstesats), for
+  igjen i utsagn-38 (matberedskap) — her igjen mot, uten dokumentert
+  MDG-spesifikk grunn. Stemmemønsteret fortsetter å bekrefte at MDG
+  avgjør sak for sak, ikke etter fast blokk.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,33 @@
+id: ev-2026-04-14-sp-utvisning-individuell-tilknytning
+statement_id: utsagn-47
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-04-14"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp co-fremmet med Høyre en reform innenfor folkerettslige rammer, ikke FrPs ubetingede modell."
+claim_action: >
+  Senterpartiet er medforslagsstiller på forslag nr. 3 sammen med
+  Høyre (se utsagn-47s Høyre-evidens for full tekst og merknad) —
+  en gjennomgang av utvisningsregelverket som eksplisitt skal holde
+  seg innenfor Norges folkerettslige forpliktelser, til forskjell fra
+  FrPs forslag nr. 2 uten et slikt forbehold. Sp stemte mot FrPs
+  forslag nr. 2 (votering 27441) og for sitt eget forslag nr. 3
+  (votering 27440).
+verbatim_excerpt: >
+  «Et regelverk som fullstendig avskjærer enhver individuell behandling
+  ved utvisning, risikerer å stride mot Norges folkerettslige
+  forpliktelser og vil kunne settes til side av domstolene.»
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026), forslag 3; votering 27440 (14.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1: merknaden er delt med Høyre (samme tekst), ikke en egen
+  Sp-formulering — men Sp er selv medforslagsstiller og stemte for
+  (5 for, bekreftet [OK] i votes.py). Samme mellomposisjon som Høyre:
+  ønsker innstramming, men innenfor rammer som i praksis beholder en
+  individuell vurdering.
+retrieved_at: "2026-09-27"

@@ -1,0 +1,44 @@
+id: ev-2026-01-13-frp-sfo-mot
+statement_id: utsagn-32
+party_id: frp
+actor: "Fremskrittspartiet (utdannings- og forskningskomiteen)"
+date: "2026-01-13"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte mot lovfestingen, men med en begrunnelse som er mer
+  "vent og evaluer" enn en prinsipiell avvisning av målet: partiet
+  ville ha en helhetlig evaluering av bemannings- og
+  finansieringsbehovet FØR loven ble vedtatt, ikke en avvisning av
+  gratis SFO som sådan.
+claim_action: >
+  Votering_id 26667, FrP 0 for, 29 mot. FrPs eget forslag nr. 2 (falt
+  30-71, votering_id 26665): "Stortinget ber regjeringen foreta en
+  helhetlig evaluering av ordningen med 12 timer gratis SFO, herunder
+  bemanningsbehov, kvalitetskrav og finansieringsmodell." Fra FrPs
+  merknad: "Disse medlemmer viser til at gratisordningen allerede har
+  ført til en markant økning i antall barn i SFO, samtidig som
+  kommunene melder om at bevilgningene ikke dekker de faktiske
+  kostnadene [...] det er etter disse medlemmers syn ikke forsvarlig
+  å lovfeste en ny individuell rettighet som vil forsterke dette
+  presset ytterligere."
+status: forslag_vedtatt_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 78 L (2025–2026); votering_id 26667, 26665"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-078l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -1 (mot, ikke sterkt mot): FrPs egen begrunnelse og eget
+  forslag ber om evaluering og forskriftsfesting av
+  bemannings-/kvalitetskrav FØRST, ikke en avvisning av gratis SFO
+  som velferdsordning i seg selv — en svakere mot-posisjon enn KrF og
+  Venstre (begge -2, se evidence/197-198), som begge har prinsipielle
+  innvendinger mot selve lovfestingen. FrPs egen tallfesting ("markant
+  økning i antall barn i SFO") er et konkret, etterprøvbart
+  faktapunkt, samme argumentasjonsstil som FrPs tidligere
+  tallfesting i Innovasjon Norge-saken (evidence/147) og
+  matberedskap-saken (evidence/162) — her brukt til å begrunne en
+  pause, ikke en avvisning.
+retrieved_at: "2026-09-24"

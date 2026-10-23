@@ -1,0 +1,30 @@
+id: ev-2026-05-26-ap-skagerrak-mot
+statement_id: utsagn-09
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Ap stemte mot forslaget om å stoppe NVEs Skagerrak-utredning, til
+  tross for Sp/Rødts påstand om at Ap "gikk til valg på" ikke å
+  fornye disse kablene. Ingen Ap-svar på denne konkrete anklagen
+  finnes i innstillingen.
+claim_action: "Votering_id 28136, Ap 32 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28136"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: stemmen er dokumentert, men Ap har IKKE besvart Rødts
+  konkrete løftebrudd-anklage (se evidence/274) i denne innstillingen.
+  Ap deler for øvrig flertallets generelle "kraftutveksling styrker
+  forsyningssikkerheten"-linje (evidence/267), som indirekte er svaret,
+  men ingen setning nevner Skagerrak eller valgløfter spesifikt. Dette
+  er en anklage som IKKE er imøtegått i den offentlige
+  saksbehandlingen — verdt å flagge som "ubesvart" heller enn
+  "avvist".
+retrieved_at: "2026-09-24"

@@ -1,0 +1,22 @@
+id: ev-2024-sp-mineralselskap-mot
+statement_id: utsagn-17
+party_id: sp
+actor: "Senterpartiet"
+date: "2024-05-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Sp stemte mot, del av samme Ap/Sp-flertallsmerknad (se evidence/314)
+  som viser til regjeringens egen mineralstrategi.
+claim_action: "Votering_id 22966, Sp 17 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 388 S (2023–2024); votering_id 22966"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-388s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: samme Ap/Sp-merknad som evidence/314 — "vil vurdere i det
+  videre arbeidet", ikke en direkte avvisning.
+retrieved_at: "2026-09-24"

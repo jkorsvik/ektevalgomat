@@ -1,0 +1,29 @@
+id: ev-2025-06-13-sp-partiloven-anonyme-bidrag
+statement_id: utsagn-03
+party_id: sp
+actor: "Senterpartiet (Heidi Greni, Kathrine Kleveland, kommunal- og forvaltningskomiteen)"
+date: "2025-06-13"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp (i flertallet med Ap/SV/Rødt) vedtok forbud mot anonyme bidrag og bidrag via skjulte mellomledd til partier."
+claim_action: >
+  Sp er del av komiteflertallet (med Ap, SV, Rødt) som fremmet og vedtok
+  § 17 a-forbudet mot anonyme bidrag og bidrag kanalisert via mellomledd.
+  Stemte FOR (individuell representantstemme, votering_id 26057: 17 for,
+  0 mot i egen gruppe).
+verbatim_excerpt: >
+  "Flertallet viser til at lovendringene skal bidra til større åpenhet om
+  finansieringen av politiske partier og dermed opprettholde tilliten
+  til partiene og de politiske institusjonene."
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 528 L (2024–2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: Sp er medforfatter av flertallsmerknaden (samme tekst som
+  Ap/SV/Rødt deler) og stemte FOR uten unntak (17 av 17 tilstedeværende
+  representanter). Individuell representantstemme hentet direkte fra
+  data.stortinget.no for votering_id 26057.
+retrieved_at: "2026-09-23"

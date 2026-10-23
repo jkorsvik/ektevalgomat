@@ -1,0 +1,36 @@
+id: ev-2026-05-26-frp-kjernekraft-kommersiell-for
+statement_id: utsagn-13
+party_id: frp
+actor: "Fremskrittspartiet (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP fremmet forslaget og stemte for å lovendre nå for kommersiell
+  kjernekraft, med den mest omfattende pakken av tiltak av alle
+  partiene (SMR-piloter, avviklet konsesjonsplikt, Euratom-medlemskap,
+  teknologineutralitet).
+claim_action: >
+  Dokument 8:191 S, forslag 1 og 2 (votering_id 27722, FrP 29 for).
+  FrP argumenterer med Statnetts kraftbehovsprognoser (180-260 TWt i
+  2050), internasjonal utvikling (Finland, Storbritannia, Sverige,
+  Polen), og at kjernekraft har lavt arealbehov og høy
+  kapasitetsfaktor (92-95 pst i USA) sammenlignet med sol/vind.
+verbatim_excerpt: >
+  "Stortinget ber regjeringen fremme forslag til nødvendige endringer
+  i atomenergiloven, energiloven og strålevernloven, slik at
+  regelverket legger til rette for etablering og drift av kommersiell
+  kjernekraftproduksjon i Norge."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27722"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: FrP er forslagsstiller og fremmer den mest omfattende
+  pakken av lovendringer og tiltak (11 egne underforslag utover
+  forslag 1-2), og stemte for i den avgjørende voteringen. Se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml for hvorfor bare
+  denne ene voteringen (av 11) er kodet.
+retrieved_at: "2026-09-24"

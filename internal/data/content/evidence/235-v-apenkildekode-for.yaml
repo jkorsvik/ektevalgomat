@@ -1,0 +1,26 @@
+id: ev-2026-04-28-v-apenkildekode-for
+statement_id: utsagn-23
+party_id: v
+actor: "Venstre"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre stemte for forslaget om åpen kildekode-program uten å være
+  medforslagsstiller eller medlem av kommunal- og forvaltningskomiteen
+  — ingen egen merknad.
+claim_action: "Votering_id 27489, Venstre 2 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27489"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 fra stemmetallet alene. Venstre stemte for BÅDE dette
+  forslaget og KOMBIT-forslaget (evidence/225 for utsagn-22) — det
+  eneste partiet i denne saken som konsekvent stemmer for begge
+  Innovasjon/omstillingsevne-testene, uten noen dokumentert begrunnelse
+  for noen av dem.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,35 @@
+id: ev-2026-partiprogram-h-eu-forsvarssamarbeid
+statement_id: utsagn-45
+party_id: h
+actor: "Høyre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre vil fordype sikkerhets- og forsvarssamarbeidet med EU og arbeide for norsk EU-medlemskap."
+claim_action: >
+  Høyres stortingsvalgprogram 2025–2029 sier eksplisitt at samarbeidet
+  med EU på forsvar/beredskap må forsterkes, og at Høyre arbeider for
+  fullt EU-medlemskap.
+verbatim_excerpt: >
+  Vårt samarbeid med EU må forsterkes, særlig innenfor beredskap. [...]
+  Høyre mener norsk velferd, sikkerhet og konkurransekraft blir bedre om
+  Norge blir fullverdig medlem av EU. [...] arbeide for norsk
+  EU-medlemskap, føre en effektiv europapolitikk, fordype sikkerhets- og
+  forsvarssamarbeidet med EU og forsvare EØS-avtalen
+status: programfestet
+position: -2
+source_tier: C
+source_name: "Høyres stortingsvalgprogram 2025–2029 (PDF)"
+source_url: "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf"
+claim_confidence: dokumentert
+consistency_flag: consistent
+context_note: >
+  Kodet -2: Høyre vil eksplisitt DYPERE forsvars-/beredskapsintegrasjon
+  med EU, det direkte motsatte av utsagnets premiss om at forsvars- og
+  beredskapslovgivning skal holdes uavhengig av EU-koordinering — ikke en
+  analytisk tolkning. Tier C (partiets eget program), ikke tier A.
+  consistency_flag=consistent: Høyres stemme i Innst. 464 S (samme
+  utsagn, egen fil — ingen behov for strengere grunnlovsterskel mot
+  myndighetsoverføring) peker samme vei som denne komfortable
+  EU-integrasjonsposisjonen.
+retrieved_at: "2026-09-26"

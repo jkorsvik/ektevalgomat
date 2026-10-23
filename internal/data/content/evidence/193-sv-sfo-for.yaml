@@ -1,0 +1,32 @@
+id: ev-2026-01-13-sv-sfo-for
+statement_id: utsagn-32
+party_id: sv
+actor: "Sosialistisk Venstreparti (utdannings- og forskningskomiteen)"
+date: "2026-01-13"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV stemte for, som medforslagsstiller sammen med Ap, Sp og Rødt,
+  med samme delte begrunnelse som Ap (evidence/192).
+claim_action: >
+  Votering_id 26667, SV 5 for, 0 mot. Samme delte merknad: "Disse
+  medlemmer viser til at Arbeiderpartiet sammen med Senterpartiet og
+  Sosialistisk Venstreparti har sikret 12 timer gratis SFO for 1.–3.
+  trinn. [...] En lovfesting vil styrke rettighetene til elevene og
+  foreldrene."
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 78 L (2025–2026); votering_id 26667"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-078l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2. Andre av de fire partiene bak den delte merknaden (Ap,
+  SV, Sp, Rødt) — identisk begrunnelse og identisk stemmegivning som
+  de andre tre, se evidence/192, 194-195. SV nevnes eksplisitt i
+  merknaden selv (sammen med Ap og Sp) som en av de tre partiene som
+  "har sikret" ordningen i budsjettet for 2025 — sterkere egenkobling
+  enn Rødt, som er medforslagsstiller men ikke navngitt i den samme
+  setningen.
+retrieved_at: "2026-09-24"

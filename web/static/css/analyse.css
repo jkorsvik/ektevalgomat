@@ -1,0 +1,76 @@
+/* analyse.css — the "Hvorfor dette resultatet?" robustness panel on
+   /resultat (see web/static/js/analyse.js). It reuses the site's own calm
+   card and bar treatment: the tracks and fills are style.css's
+   .bar-track/.bar-fill/.pct-N classes, unchanged. This file only adds the
+   panel's own layout. No inline styles anywhere — the CSP has no
+   'unsafe-inline' for style-src (see internal/server/middleware.go). */
+
+.analyse-panel {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  padding: var(--sp-1) var(--sp-6);
+  margin: var(--sp-6) 0;
+}
+.analyse-panel > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  padding: var(--sp-6) 0;
+  display: inline-block;
+}
+.analyse-panel > summary:hover { text-decoration: underline; }
+.analyse-panel[open] > summary { margin-bottom: var(--sp-1); }
+.analyse-body { padding-bottom: var(--sp-6); }
+.analyse-intro { margin-bottom: var(--sp-4); }
+
+.analyse-section {
+  margin: var(--sp-7) 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: var(--sp-6);
+}
+.analyse-section h3 { margin-top: 0; }
+.analyse-subhead {
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: var(--sp-6) 0 var(--sp-3);
+}
+
+/* One analysis line: label + the shared bar + a sample-size note. Mirrors
+   .bar-row in style.css without touching the shared chart itself. */
+.analyse-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-4);
+}
+.analyse-row:last-child { margin-bottom: 0; }
+.analyse-row-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  min-width: 0;
+}
+.analyse-row-name { font-weight: 600; font-size: var(--fs-md); overflow-wrap: anywhere; }
+.analyse-row-pct { font-size: var(--fs-xs); color: var(--muted); }
+.analyse-row-n {
+  font-size: var(--fs-2xs);
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.analyse-gap { margin: 0 0 var(--sp-6); }
+.analyse-gap-title { font-weight: 600; margin: 0 0 var(--sp-1); }
+.analyse-flag { font-size: var(--fs-sm); color: var(--muted); margin: var(--sp-1) 0 0; }
+
+@media (max-width: 520px) {
+  .analyse-row { grid-template-columns: 1fr 3.2rem; }
+  .analyse-row-label { grid-column: 1 / -1; margin-bottom: var(--sp-1); }
+  .analyse-row-name { font-size: var(--fs-sm); }
+}

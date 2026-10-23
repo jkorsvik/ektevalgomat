@@ -1,0 +1,27 @@
+id: ev-2026-rodt-barnehage-mot
+statement_id: utsagn-33
+party_id: rodt
+actor: "Rødt"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Rødt stemte mot forslaget, til tross for ideologisk nærhet til SV
+  på fattigdomsbekjempelse. Ingen egen Rødt-merknad om
+  barnehagebemanning finnes i innstillingen.
+claim_action: "Votering_id 26946, Rødt 5 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26946"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: overraskende MOT-stemme fra Rødt uten dokumentert
+  begrunnelse — partiet er normalt en pådriver for
+  fattigdomsbekjempelse, men var ikke medforslagsstiller her og
+  stemte mot. Kan skyldes at Rødt ønsket en annen, mer omfattende
+  mekanisme (staten, ikke kommunale barnehager), men dette er
+  spekulasjon uten kildedekning.
+retrieved_at: "2026-09-24"

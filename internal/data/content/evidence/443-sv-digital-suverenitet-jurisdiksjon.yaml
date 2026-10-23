@@ -1,0 +1,42 @@
+id: ev-2026-05-07-sv-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: sv
+actor: "Sosialistisk Venstreparti (Ingrid Fiskaa, Anne Lise Gjerstad Fredlund m.fl.)"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "SV medforslagsstiller til forslag om at sensitiv informasjon utelukkende skal behandles under norsk eller europeisk jurisdiksjon — forslaget falt."
+claim_action: >
+  SV fremmet, sammen med Rødt (og MDG ifølge innstillingen, se
+  context_note), forslag 4 i Innst. 225 S (2025–2026):
+  at regjeringen skal redegjøre for hvordan den bedre vil følge opp GDPR
+  og sikre at sensitiv og samfunnskritisk informasjon om innbyggere
+  utelukkende skal behandles i løsninger under norsk eller europeisk
+  jurisdiksjon. Forslaget ble votert over 07.05.2026 (votering 18) og
+  falt — SV stemte for.
+verbatim_excerpt: >
+  Med digital suverenitet mener ikke disse medlemmer norsk alenegang,
+  men at Norge som nasjon har kontroll med egen digital infrastruktur
+  og data, noe som mangler i dag. [...] «Stortinget ber regjeringen
+  redegjøre for hvordan den bedre vil følge opp GDPR og sikre at
+  sensitiv og samfunnskritisk informasjon om innbyggere utelukkende
+  skal behandles i løsninger som er under norsk eller europeisk
+  jurisdiksjon.»
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026), forslag 4; voteringsoversikt votering 18 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at GDPR og EU-dialog er nok): SV er
+  medforslagsstiller til nettopp det forslaget som ligger tettest opp mot
+  det opprinnelige jurisdiksjonskravet, og merknaden SV står bak utdyper
+  eksplisitt at «Norge som nasjon [skal ha] kontroll med egen digital
+  infrastruktur og data» — det motsatte av det snudde utsagnets premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. fra +2 til -2.
+  Kildene er uenige om forslagsstillerne: innstillingen fører opp
+  forslag 3-6 som «Forslag fra Sosialistisk Venstreparti, Rødt og
+  Miljøpartiet De Grønne», mens voteringsoversikten (votering_id 27492)
+  fører forslag 4 opp som «på vegne av SV og R». Begge er gjengitt her.
+  Stemmetall fra data.stortinget.no: for 15, mot 86, ikke til stede 68.
+retrieved_at: "2026-09-26"

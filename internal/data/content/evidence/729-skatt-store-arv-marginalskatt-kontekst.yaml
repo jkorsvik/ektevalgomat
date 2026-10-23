@@ -1,0 +1,32 @@
+id: ev-2026-skatt-store-arv-marginalskatt-kontekst
+statement_id: utsagn-57
+party_id: ""
+actor: "Faktakontekst (Skatteetaten)"
+date: "2026 (satser for inntektsåret)"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: >
+  Ved høyeste sats i 2026 er skatten på lønn 53,9 prosent medregnet
+  arbeidsgiveravgift, og på utbytte 51,5 prosent medregnet
+  selskapsskatt.
+claim_action: >
+  Skatteetatens tabell over høyeste effektive marginalskatt,
+  inntektsåret 2026. Lønnssatsen er målt per krone av samlet
+  lønnskostnad, med 14,1 prosent arbeidsgiveravgift. Utbyttesatsen tar
+  med 22 prosent selskapsskatt og oppjusteringsfaktoren 1,72. Moms (25
+  prosent, 15 prosent på mat) kommer i tillegg når pengene brukes,
+  uansett om de kommer fra lønn eller utbytte.
+verbatim_excerpt: >
+  Salary income including employer's national insurance contributions
+  53.9 % [...] Dividends and withdrawals 51.5 %
+status: kontekst
+position: null
+source_tier: A
+source_name: "Skatteetaten: høyeste effektive marginalskatt 2026"
+source_url: "https://www.skatteetaten.no/en/rates/maximum-effective-marginal-tax-rates/"
+claim_confidence: dokumentert
+context_note: >
+  Ingen partiposisjon. Satsene er nær hverandre i toppen. Forskjellen
+  SSB fant i hva de rikeste betaler (fil 713) kommer av at inntekt blir
+  liggende i selskapene, ikke av ulike satser.
+retrieved_at: "2026-10-02"

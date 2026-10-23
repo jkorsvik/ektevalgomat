@@ -1,0 +1,32 @@
+id: ev-2025-06-05-sp-stroemprismakspris-mot
+statement_id: utsagn-12
+party_id: sp
+actor: "Senterpartiet (utenriks- og energikomiteen)"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte mot Rødts pristak-forslag som regjeringspartner bak
+  Norgespris-loven, samme mekanisme-uenighet som Ap.
+claim_action: >
+  Sp er medforslagsstiller og forsvarer av Norgespris-loven (en av
+  flertallspartiene bak tilrådingen, votering_id 26128, 59 for). I
+  votering_id 26116 stemte Sp mot Rødts pristak-blokk (0 for, 17 mot
+  av de tilstedeværende). Sp har egne merknader om å utvide Norgespris
+  til næringsliv og organisasjonsliv (forslag 5, sammen med Rødt) —
+  en utvidelse av regjeringens EGEN ordning, ikke støtte til en
+  lovbestemt makspris.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26116, 26128"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1: samme resonnement som Ap — Sp avviser DENNE mekanismen
+  (lovbestemt pristak) til fordel for Norgespris, som Sp selv
+  medforfatter, nøyaktig det snudde utsagnet hevder. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Sp og Rødt samarbeider faktisk på et beslektet punkt (forslag 5, utvide Norgespris til næringslivet), men det er en utvidelse av referanseprisordningen, ikke det samme
+  som Rødts pristak-krav i dette utsagnet. Se
+  evidence/81-stroemprisreform-kontekst.yaml for hvorfor bare denne
+  ene voteringen er kodet.
+retrieved_at: "2026-09-24"

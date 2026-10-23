@@ -1,0 +1,30 @@
+id: ev-2026-02-10-mdg-barnetrygd-prisjustering-for
+statement_id: utsagn-31
+party_id: mdg
+actor: "Miljøpartiet De Grønne (familie- og kulturkomiteen)"
+date: "2026-02-10"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG fremmet forslag 4 sammen med SV om å lovfeste årlig
+  prisjustering av barnetrygden, og stemte for. MDG fremmet også et
+  eget, bredere forslag (15) om å kraftig øke og skattlegge
+  barnetrygden, som SV ikke støttet.
+claim_action: >
+  Forslag 4 (med SV), votering_id 26942: MDG 5 for, 0 mot. MDG fremmet
+  også, alene, forslag 15 (votering_id 26938, 5 for/96 mot) om å
+  kraftig øke og skattlegge barnetrygden -- et bredere krav enn
+  utsagn-31 tester.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26942, 26938"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at diskresjonære budsjettvedtak er godt
+  nok): MDG er medforslagsstiller til forslag 4 (lovfestet indeksering),
+  det motsatte av det snudde utsagnets premiss. MDGs eget forslag 15
+  (skattlegging) er en distinkt, snevrere akse og telles ikke med
+  her. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2. Se evidence/111-barnetrygd-prisjustering-kontekst.yaml.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,24 @@
+id: ev-2026-06-10-rodt-innovasjon-norge-for
+statement_id: utsagn-21
+party_id: rodt
+actor: "Rødt (næringskomiteen)"
+date: "2026-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt stemte for, som medforslagsstiller sammen med SV og Sp.
+claim_action: >
+  Votering_id 28197, R 5 for, 0 mot. Samme delte merknad som SV og
+  Sp (se evidence/142) — Rødt er navngitt medforslagsstiller på den
+  prinsipielle begrunnelsen om desentralisering.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 424 S (2025–2026); votering_id 28197"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-424s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at Innovasjon Norge selv bør velge
+  organisasjonsform), samme grunnlag som SV og Sp. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-24"

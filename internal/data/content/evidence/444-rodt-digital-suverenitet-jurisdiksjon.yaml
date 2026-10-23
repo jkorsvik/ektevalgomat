@@ -1,0 +1,44 @@
+id: ev-2026-05-07-rodt-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: rodt
+actor: "Rødt (Camilla Renate Mikkelsen m.fl.)"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt medforslagsstiller til forslag om at sensitiv informasjon utelukkende skal behandles under norsk eller europeisk jurisdiksjon — forslaget falt."
+claim_action: >
+  Rødt fremmet, sammen med SV (og MDG ifølge innstillingen, se
+  context_note), forslag 4 i Innst. 225 S
+  (2025–2026): at regjeringen skal redegjøre for hvordan den bedre vil
+  følge opp GDPR og sikre at sensitiv og samfunnskritisk informasjon om
+  innbyggere utelukkende skal behandles i løsninger under norsk eller
+  europeisk jurisdiksjon. Forslaget ble votert over 07.05.2026
+  (votering 18) og falt — Rødt stemte for.
+verbatim_excerpt: >
+  «Stortinget ber regjeringen redegjøre for hvordan den bedre vil følge
+  opp GDPR og sikre at sensitiv og samfunnskritisk informasjon om
+  innbyggere utelukkende skal behandles i løsninger som er under norsk
+  eller europeisk jurisdiksjon.» [...] Disse medlemmer er enige med
+  forslagsstillerne i behovet for at det offentlige har tilgang til
+  suveren infrastruktur for lagring og behandling av data. [...] slik
+  at virksomheter som håndterer sensitive eller samfunnskritiske data,
+  har et reelt alternativ under norsk eller europeisk kontroll.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026), forslag 4; voteringsoversikt votering 18 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at GDPR og EU-dialog er nok): Rødt er
+  medforslagsstiller til det forslaget som ligger tettest opp mot det
+  opprinnelige jurisdiksjonskravet, og har i tillegg fremmet en egen,
+  enda mer konkret formulering («suveren infrastruktur ... under norsk
+  eller europeisk kontroll») i samme innstilling — det motsatte av det
+  snudde utsagnets premiss. Kildene er uenige om forslagsstillerne:
+  innstillingen fører opp Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. fra +2 til -2.
+  forslag 3-6 som «Forslag fra Sosialistisk Venstreparti, Rødt og
+  Miljøpartiet De Grønne», mens voteringsoversikten (votering_id 27492)
+  fører forslag 4 opp som «på vegne av SV og R». Begge er gjengitt her.
+  Stemmetall fra data.stortinget.no: for 15, mot 86, ikke til stede 68.
+retrieved_at: "2026-09-26"

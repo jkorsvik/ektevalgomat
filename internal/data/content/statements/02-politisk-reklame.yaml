@@ -1,0 +1,16 @@
+id: utsagn-02
+number: 2
+dimension: "Demokratisk åpenhet"
+primary_question: "Kan offentligheten se hvem som påvirker hvem, for hvem og med hvilke penger?"
+case_tag: politisk_reklame
+short_name: "Regulere anonym finansiering av politisk reklame"
+text: >
+  Anonym finansiering av politisk reklame og markedsføring bør reguleres.
+practical_stakes:
+  enig: >
+    Regjeringen fremmer forslag som regulerer anonym finansiering av
+    politisk reklame og markedsføring, som del av den helhetlige
+    gjennomgangen av partiloven.
+  uenig: >
+    Ingen slik regulering fremmes nå. Anonym finansiering av politisk
+    reklame og markedsføring kan fortsette som i dag.

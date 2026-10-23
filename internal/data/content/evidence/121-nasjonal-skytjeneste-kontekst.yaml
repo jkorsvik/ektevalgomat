@@ -1,0 +1,57 @@
+id: ev-2026-04-28-nasjonal-skytjeneste-kontekst
+statement_id: utsagn-19
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet SVs representantforslag om digital suverenitet.
+  SV og Rødt fremmet i komitébehandlingen et konkret forslag om å
+  etablere en nasjonal skytjeneste eid og driftet av det offentlige.
+  Regjeringens egen konseptvalgutredning (KVU) hadde alt vurdert og
+  frarådet nettopp en lukket, statlig skytjeneste som den dyreste
+  løsningen. Forslaget ble avvist 10 mot 91.
+claim_action: >
+  Dokument 8:119 S (2025–2026), representantforslag fra Ingrid
+  Fiskaa, Marthe Hammer, Sunniva Holmås Eidsvoll, Mirell
+  Høyer-Berntsen, Kirsti Bergstø og Anne Lise Gjerstad Fredlund (alle
+  SV) om "digital suverenitet i en urolig tid". Behandlet i Innst. 225
+  S (2025–2026, kommunal- og forvaltningskomiteen, 17 sider lest i
+  fulltekst). Forslag 11 (SV og Rødt): "Stortinget ber regjeringen
+  sikre oppretting av en nasjonal skytjeneste som eies og driftes av
+  det offentlige, for lagring av data og som et offentlig
+  arbeidsverktøy." Votering_id 27485 (sakid 200036): 10 for (SV 5,
+  Rødt 5), 91 mot (Ap 32, FrP 29, H 14, Sp 5, MDG 5, KrF 4, V 2).
+  Statsrådens svarbrev viser til at en konseptvalgutredning (KVU) om
+  nasjonal skytjeneste allerede er gjennomført, der en lukket statlig
+  sky ble vurdert som den dyreste løsningen og ekstern kvalitetssikring
+  anbefalte å ikke gå videre med konseptet. Komiteens tilråding
+  (fremmet av FrP, H og SV; falt 47 mot 54 i votering_id 27496, se
+  utsagn-59): regjeringen skulle kartlegge Norges digitale avhengigheter
+  og levere første rapport til Stortinget innen utgangen av 2026 --
+  ingen forpliktelse til å etablere egen skytjeneste.
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 225 S (2025-2026); data.stortinget.no sakid=200036, votering_id 27485"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst. Saken har 22 voteringer totalt (sakid
+  200036); denne evidensfilen og partienes egne filer dekker kun
+  votering_id 27485 (forslag 11, SV+Rødt), den mest direkte testen av
+  dette utsagnets konkrete krav (offentlig EIERSKAP og DRIFT av
+  skyen) -- ikke de andre 21 (bl.a. forslag 1, FrP+SV+Rødts svakere
+  "utrede først innen 2027"-versjon av samme idé, og forslag 14,
+  Rødt+MDGs alternative "eierskapsmodell-agnostiske" versjon som
+  krever tilgjengelig suveren infrastruktur uten å kreve statlig
+  eierskap spesifikt). Disse to alternative forslagene er nevnt i
+  partienes egne evidensfiler der de er relevante for å forklare et
+  "mot"-stemme uten prinsipiell motstand mot digital suverenitet som
+  mål. Statement 44 (digital suverenitet, utenfor de 42) bruker samme
+  innstilling men et ANNET forslag (nr. 4, om norsk/europeisk
+  jurisdiksjon) og er separat, uavhengig kodet -- se docs/roadmap.md
+  "Explicitly NOT built yet" for hvorfor statement 44 fortsatt ikke er
+  bygget (skop-mismatch, "europeisk" testet mot "nordisk" spurt).
+retrieved_at: "2026-09-24"

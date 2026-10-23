@@ -1,0 +1,18 @@
+id: utsagn-04
+number: 4
+dimension: "Demokratisk åpenhet"
+primary_question: "Kan offentligheten se hvem som påvirker hvem, for hvem og med hvilke penger?"
+case_tag: utenlandsk_paavirkning
+short_name: "Dagens innsats mot utenlandsk valgpåvirkning er nok"
+text: >
+  Myndighetenes eksisterende arbeid mot utenlandsk påvirkning av norske
+  valg er tilstrekkelig, uten et eget oppdrag om å systematisk kartlegge
+  og informere om slik aktivitet.
+practical_stakes:
+  enig: >
+    Regjeringen får ikke et eget oppdrag om å systematisk kartlegge og
+    informere om utenlandsk valgpåvirkning. Dagens arbeid videreføres
+    uendret.
+  uenig: >
+    Regjeringen får et eget oppdrag om å systematisk kartlegge og informere
+    om utenlandsk påvirkning av norske valg, i tillegg til dagens arbeid.

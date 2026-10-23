@@ -1,0 +1,20 @@
+id: ev-2026-h-lokalsjukehus-mot
+statement_id: utsagn-28
+party_id: h
+actor: "Høyre"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Høyre stemte mot, konsistent med sin stemme på utsagn-27.
+claim_action: "Votering_id 27579, Høyre 14 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27579"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: Høyre stemte mot begge forslagene i denne saken.
+retrieved_at: "2026-09-24"

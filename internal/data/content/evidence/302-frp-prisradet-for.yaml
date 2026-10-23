@@ -1,0 +1,38 @@
+id: ev-2026-frp-prisradet-for
+statement_id: utsagn-16
+party_id: frp
+actor: "Fremskrittspartiet (finanskomiteen)"
+date: "2026-06-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP er en av forslagsstillerne til den vedtatte tilrådingen, med
+  den mest detaljerte begrunnelsen om skjev konkurranse mellom store
+  og små aktører.
+claim_action: >
+  Votering_id 28077, FrP 29 for, 0 mot. Fra FrPs merknad: "Dagens
+  modell åpner for tilpasninger som i praksis innebærer at større,
+  vertikalt integrerte selskaper kan flytte overskudd ut av den delen
+  av virksomheten som er gjenstand for grunnrenteskatt. Mindre,
+  uavhengige aktører har ikke tilsvarende muligheter, noe som bidrar
+  til en skjev konkurransesituasjon."
+verbatim_excerpt: >
+  Dagens modell åpner for tilpasninger som i praksis innebærer at
+  større, vertikalt integrerte selskaper kan flytte overskudd ut av
+  den delen av virksomheten som er gjenstand for grunnrenteskatt.
+  Mindre, uavhengige aktører har ikke tilsvarende muligheter, noe som
+  bidrar til en skjev konkurransesituasjon.
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 377 S (2025–2026); votering_id 28077"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-377s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: FrPs argument peker interessant nok i motsatt retning av
+  Ap/SV/Rødts argument (evidence/305) om AKKURAT samme mekanisme —
+  begge sider bruker "beskytter små aktører mot store"-logikk, men
+  trekker motsatte konklusjoner om hvilket system som faktisk gjør
+  det.
+retrieved_at: "2026-09-24"

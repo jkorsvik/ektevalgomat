@@ -1,0 +1,35 @@
+id: ev-2026-rodt-dorterskel-for
+statement_id: utsagn-29
+party_id: rodt
+actor: "Rødt"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er opprinnelig forslagsstiller til hele saken (Remi Sølvberg,
+  Marie Sneve Martinussen), og medforslagsstiller på forslag 1. Alle
+  5 fremmøtte stemte for.
+claim_action: >
+  Votering_id 27675, Rødt 5 for, 0 mot. Samme delte Sp/Rødt-merknad
+  som evidence/362, pluss beredskapsargumentet: "Postbudnettverket er
+  viktig i beredskapssammenheng. Posten Norge har landsdekkende
+  kapasitet til distribusjon av informasjon og nødvendighetsvarer, og
+  en nedbygging vil redusere denne kapasiteten."
+verbatim_excerpt: >
+  Postbudnettverket er viktig i beredskapssammenheng. Posten Norge
+  har landsdekkende kapasitet til distribusjon av informasjon og
+  nødvendighetsvarer, og en nedbygging vil redusere denne kapasiteten.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27675"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Rødt er sakens opprinnelige forslagsstiller, med et
+  tilleggsargument om beredskap (posttjenesten som informasjons- og
+  nødvendighetskanal) — samme "robusthet"-tema som gjentar seg i
+  Robusthet/adaptabilitet-dimensjonen, men her anvendt på universell
+  tjenestetilgang.
+retrieved_at: "2026-09-24"

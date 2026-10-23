@@ -1,0 +1,17 @@
+id: utsagn-39
+number: 39
+dimension: "Robusthet / adaptabilitet"
+primary_question: "Tåler systemet bortfall, sjokk og feilantakelser?"
+case_tag: matberedskap_ros_analyse
+short_name: "Nasjonal risiko- og sårbarhetsanalyse for matforsyning"
+text: >
+  Regjeringen bør gjennomføre en helhetlig nasjonal risiko- og
+  sårbarhetsanalyse (ROS) for matsikkerhet og matforsyning i Norge.
+practical_stakes:
+  enig: >
+    Regjeringen gjennomfører en helhetlig nasjonal risiko- og
+    sårbarhetsanalyse for matsikkerhet og matforsyning i Norge.
+  uenig: >
+    Regjeringen gjennomfører ikke en slik helhetlig analyse. Kartlegging av
+    matsikkerhet og matforsyning skjer fortsatt gjennom enkeltstående
+    initiativ.

@@ -1,0 +1,26 @@
+id: ev-2024-h-meterskillet-mot
+statement_id: utsagn-18
+party_id: h
+actor: "Høyre"
+date: "2024-05-23"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre er del av flertallet (med Ap, Sp, FrP, Venstre) bak den
+  alternative hjemmelslengde-avgrensningen.
+claim_action: >
+  Votering_id 22561, Høyre 21 mot, 0 for. Samme flertallsmerknad som
+  evidence/416 (hjemmelslengde, ikke 28-meter meterskille).
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 264 S (2023–2024); votering_id 22561"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-264s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +1: samme flertallslinje som Ap — en alternativ, mindre streng
+  avgrensning (hjemmelslengde), nøyaktig det snudde utsagnet hevder,
+  ikke en prinsipiell avvisning av avgrensning som sådan (derfor +1
+  ikke +2). Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

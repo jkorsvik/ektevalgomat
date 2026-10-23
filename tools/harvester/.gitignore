@@ -1,0 +1,16 @@
+# Local venv — recreate with `uv sync`.
+.venv/
+
+# Cached session JSON from data.stortinget.no — recreate with a real
+# harvest.py run. Not committed because it's a mirror of a public API's
+# current state, not source, and would go stale silently otherwise.
+.cache/
+
+# Harvest run output — leads and skeletons for one specific run.
+# Reviewed leads become real, hand-verified evidence YAML under
+# internal/data/content/evidence/; unreviewed leads are not source and
+# don't belong in git history taking up space indefinitely.
+reports/
+
+__pycache__/
+.pytest_cache/

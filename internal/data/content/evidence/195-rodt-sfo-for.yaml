@@ -1,0 +1,32 @@
+id: ev-2026-01-13-rodt-sfo-for
+statement_id: utsagn-32
+party_id: rodt
+actor: "Rødt (utdannings- og forskningskomiteen)"
+date: "2026-01-13"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt stemte for, som medforslagsstiller sammen med Ap, SV og Sp,
+  med samme delte begrunnelse (evidence/192-194). Rødt er
+  medforslagsstiller, men ikke ett av de tre partiene merknaden selv
+  navngir som ansvarlige for budsjettvedtaket i 2025 (det er Ap, Sp
+  og SV).
+claim_action: >
+  Votering_id 26667, Rødt 5 for, 0 mot. Samme delte merknad: "En
+  lovfesting vil styrke rettighetene til elevene og foreldrene, og
+  sikre at alle elever på 1.–3. trinn får 12 timer gratis SFO i uka
+  dersom det er noe de ønsker og har behov for."
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 78 L (2025–2026); votering_id 26667"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-078l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2. Fjerde og siste av de fire partiene bak den delte
+  merknaden, se evidence/192-194. Klar medforslagsstiller-status og
+  identisk stemmegivning holder confidence like høy som de tre
+  navngitte partiene, selv om Rødt selv ikke er nevnt i den spesifikke
+  "har sikret"-setningen.
+retrieved_at: "2026-09-24"

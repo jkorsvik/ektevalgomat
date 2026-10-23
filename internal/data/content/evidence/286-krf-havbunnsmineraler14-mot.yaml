@@ -1,0 +1,31 @@
+id: ev-2025-06-krf-havbunnsmineraler14-mot
+statement_id: utsagn-14
+party_id: krf
+actor: "Kristelig Folkeparti (energi- og miljøkomiteen)"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF stemte mot og er medforfatter av den delte SV/Rødt/Venstre/
+  MDG/KrF-merknaden som tar til orde for et internasjonalt moratorium
+  i stedet (se utsagn-15).
+claim_action: >
+  Votering_id 25349, KrF 2 mot, 0 for. Fra den delte merknaden: mangel
+  på kunnskap om konsekvenser for natur og klima, og at det er
+  risikabelt å åpne for store naturinngrep til havs på et svakt
+  kunnskapsgrunnlag.
+verbatim_excerpt: >
+  Det er risikabelt å åpne for enorme naturinngrep til havs på det
+  kunnskapsgrunnlaget man sitter med i dag.
+status: forslag_avvist_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); votering_id 25349"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2: KrF er medforslagsstiller på moratorium-forslaget
+  (utsagn-15) og stemte konsekvent mot alle utvinnings-fremmende
+  forslag i saken.
+retrieved_at: "2026-09-24"

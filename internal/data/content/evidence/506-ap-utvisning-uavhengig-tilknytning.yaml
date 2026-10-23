@@ -1,0 +1,28 @@
+id: ev-2026-04-14-a-utvisning-uavhengig-tilknytning
+statement_id: utsagn-46
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-04-14"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Ap stemte mot FrPs forslag om utvisning uavhengig av tilknytning. Partiets egen tekst i saken gjelder et annet, regjeringsstyrt reformspor, ikke en direkte imøtegåelse av forslag 2."
+claim_action: >
+  Ap har egen tekst i Innst. 205 S om regjeringens eget, pågående
+  arbeid med strengere utvisningsregler (høring om regelendringer,
+  instruks til UDI), men ingen tekst som direkte tar stilling til FrPs
+  forslag om å fjerne tilknytning som vilkår. Stemte mot forslag nr. 2
+  (votering 27441).
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026); votering 27441 (14.04.2026)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27441&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1 ut fra stemmegivning alene: Aps egen merknad i saken handler
+  om et annet, snevrere reformspor regjeringen selv har igangsatt, ikke
+  om forslag 2s konkrete «uavhengig av tilknytning»-formulering — derfor
+  ingen egen tekst brukt her, og evidensstyrke_cap moderat. Bekreftet
+  [OK] i votes.py: Ap 0 for / 29 mot.
+retrieved_at: "2026-09-27"

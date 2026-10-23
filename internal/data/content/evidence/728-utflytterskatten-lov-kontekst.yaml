@@ -1,0 +1,28 @@
+id: ev-skatteloven-10-70-utflytterskatten-kontekst
+statement_id: utsagn-58
+party_id: ""
+actor: "Faktakontekst (skatteloven § 10-70)"
+date: "2026 (gjeldende lovtekst)"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: >
+  I dag skattlegges samlet aksjegevinst over 3 millioner kroner ved
+  utflytting, og skatten kan utsettes i 12 år.
+claim_action: >
+  Skatteloven § 10-70, gjeldende tekst. Sjuende ledd gir 12 års
+  utsettelse med betaling.
+verbatim_excerpt: >
+  Skatteplikt ved utflytting etter første ledd første punktum er
+  begrenset til den delen av skattyters samlede gevinst som, fratrukket
+  fradragsberettigede tap, overstiger 3 millioner kroner.
+status: gjeldende
+position: null
+source_tier: A
+source_name: "Skatteloven § 10-70 (Lovdata)"
+source_url: "https://lovdata.no/lov/1999-03-26-14/%C2%A710-70"
+claim_confidence: dokumentert
+context_note: >
+  Ingen partiposisjon. Før endringen som gjelder fra 29. november 2022,
+  falt skatteplikten bort etter fem år som bosatt i utlandet (Innst. 4 L
+  (2022–2023), se filene 720, 721 og 726).
+retrieved_at: "2026-10-02"

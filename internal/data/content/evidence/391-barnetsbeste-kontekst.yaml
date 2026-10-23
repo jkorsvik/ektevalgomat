@@ -1,0 +1,40 @@
+id: ev-2026-barnetsbeste-kontekst
+statement_id: utsagn-36
+party_id: ""
+actor: "Familie- og kulturkomiteen / Stortinget i plenum"
+date: "2026-01-01"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 136 S (2025-2026), behandling av Meld. St. 28 (2024-2025)
+  "Tro på framtida – uansett bakgrunn". SV og KrF fremmet et forslag
+  om å lovfeste barnets beste som et grunnleggende hensyn i
+  sosialtjenesteloven — samme underliggende idé som et upublisert
+  forslag i den beslektede Innst. 126 S (samme meldingsgrunnlag,
+  behandlet av Venstres Dok. 8:11 S, se utsagn-33/34).
+claim_action: >
+  Forslag 4 (SV og Kristelig Folkeparti): "Stortinget ber regjeringen
+  komme tilbake til Stortinget med forslag om å lovfeste barnets
+  beste som et grunnleggende hensyn i sosialtjenesteloven."
+  Votering_id 26988 (sakid 103839): 21 for (KrF 4, Rødt 5, SV 5, Sp 5,
+  Venstre 2), 80 mot (Ap 32, FrP 29, Høyre 14, MDG 5).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 136 S (2025–2026); data.stortinget.no sakid=103839, votering_id 26988"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-136s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  MERK: denne saken hadde en dokumentert avviksadvarsel under
+  research — data.stortinget.nos voteringsliste for sakid=103839
+  viser to voteringer beskrevet som "Forslag nr. 10" og "Forslag nr.
+  11 på vegne av Sp", men den publiserte innstillingsteksten
+  inneholder KUN forslag 1-9 (sponsorer FrP+KrF, SV+KrF, SV, KrF —
+  ingen Sp-sponsede forslag i det hele tatt). Denne evidensen bruker
+  BARE forslag 4 (votering_id 26988), der sponsorlisten i
+  voteringsbeskrivelsen ("SV og KrF") er direkte bekreftet mot
+  innstillingens egen tekst, og stemmetallet (21) stemmer eksakt med
+  summen av per-parti-tallene. De to uverifiserbare Sp-voteringene
+  (26984/26985) er bevisst IKKE brukt i dette datasettet.
+retrieved_at: "2026-09-24"

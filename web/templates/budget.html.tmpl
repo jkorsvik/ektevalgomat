@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+</head>
+<body>
+
+{{template "header"}}
+
+{{/* The whole statsbudsjett as collected and analysed: the government's own
+     headline figures, the per-department totals, and the findings that bear
+     on the statements. This is the page that answers "hva foreslår
+     regjeringen", to sit beside the promises (/partier) and the votes (the
+     utsagn pages). A finding with no statement says so rather than being
+     forced into the nearest one.
+
+     This is a PROPOSAL page, not a result page. The budget presented
+     2026-10-07 is the government's forslag; Stortinget has not voted yet.
+     Nothing here may be phrased as something the budget "decided". */}}
+<main>
+  <section class="hero">
+    <div class="hero-meta">
+      <span class="hero-dimension">Statsbudsjettet</span>
+      <span class="hero-number">{{.Budget.Year}}</span>
+    </div>
+    <p class="statement-text">Statsbudsjettet 2027, samlet og analysert.</p>
+    <p class="budget-lede">{{.Budget.Summary}}</p>
+    <p class="hero-question">
+      <a href="{{.Budget.SourceURL}}" rel="noopener">{{.Budget.SourceName}}</a>
+      {{if .Budget.Presented}}· lagt fram {{.Budget.Presented}}{{end}}
+      {{if .Budget.RetrievedAt}}· hentet {{.Budget.RetrievedAt}}{{end}}
+    </p>
+    <p class="budget-status"><strong>Dette er et forslag, ikke et vedtak.</strong>
+      Regjeringen la fram forslaget 7. oktober 2026. Stortinget behandler det nå,
+      med finansinnstilling 30. november og rammevedtak 7. desember. Tallene på
+      denne siden er regjeringens forslag. Ingenting er vedtatt ennå, og et parti
+      kan derfor ikke få «brutt løfte» for et beløp som bare mangler i forslaget.</p>
+  </section>
+
+  <section class="budget-figures">
+    {{range .Budget.KeyFigures}}
+    <div class="budget-figure">
+      <span class="budget-figure-label">{{.Label}}</span>
+      <span class="budget-figure-value">{{.Value}}</span>
+      <span class="budget-figure-note">{{.Note}}</span>
+    </div>
+    {{end}}
+  </section>
+
+  <details class="budget-section" open>
+    <summary class="budget-section-sum"><h2>Utgifter per departement</h2></summary>
+    <p class="budget-lede">Alle utgiftskapitler (1–2999, utenom kap. 2800), lagt sammen per departement, i millioner kroner. Kilde: Gul bok-datagrunnlaget for 2027 (én kolonne, forslaget) og 2026-filen ved siden av.
+      Endringen sammenligner regjeringens to forslag, 2026 og 2027. Der Stortinget endret 2026-budsjettet etter at forslaget ble lagt fram, er den reelle forskjellen en annen. Bredbåndsposten under er et slikt tilfelle.</p>
+    <table class="budget-table">
+      <thead><tr><th>Departement</th><th class="num">Utgifter</th><th class="num">Endring</th></tr></thead>
+      <tbody>
+      {{range .Budget.Departments}}
+        <tr>
+          <td>{{.Name}}</td>
+          <td class="num">{{nok .Amount}}</td>
+          <td class="num change">{{pct .ChangePct}} %</td>
+        </tr>
+      {{end}}
+      </tbody>
+    </table>
+  </details>
+
+  <details class="budget-section" open>
+    <summary class="budget-section-sum"><h2>Hva regjeringen foreslår for 2027</h2></summary>
+    <p class="budget-lede">Funn i forslaget som berører utsagnene. Hvert funn viser til utsagnet det gjelder, eller sier at ingen utsagn dekker det ennå. Dette er forslag, ikke vedtak.</p>
+    {{range .Findings}}
+    <article class="budget-finding">
+      <h3>{{.Topic}}</h3>
+      {{if .Quote}}<blockquote class="budget-quote">«{{.Quote}}»</blockquote>{{end}}
+      {{if .Observations}}
+      <table class="budget-obs">
+        <thead><tr><th>Budsjettår</th><th>Hva tallet er</th><th class="num">Beløp</th></tr></thead>
+        <tbody>
+        {{range .Observations}}
+          <tr class="{{if .Latest}}obs-latest{{end}}">
+            <td>{{.Year}}</td><td>{{.Stage}}</td><td class="num">{{.Amount}}</td>
+          </tr>
+        {{end}}
+        </tbody>
+      </table>
+      {{end}}
+      <p>{{.Note}}</p>
+      <p class="budget-finding-links">
+        {{if .HasStatement}}<a href="/utsagn/{{.StatementNum}}">Utsagn {{.StatementNum}}: {{.StatementName}} <span aria-hidden="true">→</span></a>{{else}}<span class="budget-nostmt">Ingen utsagn dekker dette ennå</span>{{end}}
+        · <a href="{{.SourceURL}}" rel="noopener">Kilde</a>
+      </p>
+    </article>
+    {{end}}
+  </details>
+</main>
+
+<footer class="wrap"><p>Ekte valgomat viser hva partiene sier og hva de gjorde, hver for seg, med kilder. Se <a href="/metode">metoden</a>.</p></footer>
+</body>
+</html>

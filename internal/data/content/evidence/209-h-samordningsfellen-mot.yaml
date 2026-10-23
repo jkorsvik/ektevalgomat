@@ -1,0 +1,34 @@
+id: ev-2025-12-16-h-samordningsfellen-mot
+statement_id: utsagn-40
+party_id: h
+actor: "Høyre (arbeids- og sosialkomiteen)"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot alle tre forslag, med en kort egen merknad som
+  viser til at temaet er behandlet flere ganger tidligere (fem
+  navngitte innstillinger) og viderefører de tidligere merknadene
+  uten å gjenta dem.
+claim_action: >
+  Votering_id 26604, H 0 for, 14 mot. Fra Høyres egen merknad: "viser
+  til at dette temaet [...] har blitt behandlet av Stortinget flere
+  ganger tidligere" (Innst. 422 L, 232 L, 175 L, 71 L og 187 L), og
+  "henviser til merknader i de nevnte innstillingene" uten å gjengi
+  dem.
+status: forslag_vedtatt_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26602-26604"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-054l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -1: Høyre HAR en egen merknad (ikke udokumentert), men den er
+  en ren henvisning til fem tidligere innstillinger uten å gjengi det
+  faktiske innholdet i denne saken selv — svakere dokumentasjon enn
+  Aps mer utfyllende konsistens-argument (evidence/208), men fortsatt
+  et reelt sitat, ikke fravær av tekst. Samme mønster som flere andre
+  saker der Høyre henviser til presedens i stedet for å begrunne
+  posisjonen på nytt.
+retrieved_at: "2026-09-24"

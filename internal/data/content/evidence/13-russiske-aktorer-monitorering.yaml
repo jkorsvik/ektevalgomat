@@ -1,0 +1,23 @@
+id: ev-2024-25-russiske-aktorer-monitorering
+statement_id: utsagn-04
+party_id: ""
+actor: "Russlandstilknyttede aktører (FFIs egen betegnelse, uklassifisert her)"
+date: "2024–2025"
+evidence_type: ffi_monitorering
+evidence_class: fakta
+scan_summary: "FFI observerte økt russlandstilknyttet påvirkningsnarrativ 2024–2025."
+claim_action: >
+  Omtale av Norge økte; FFI observerte narrativer rettet mot støtte til
+  Ukraina, konflikt og mistillit.
+status: aktivitet_dokumentert
+position: null
+attribution_confidence: null
+source_tier: B
+source_name: "FFI: Økende, komplekst og uoversiktlig (2026)"
+source_url: "https://www.ffi.no/publikasjoner/arkiv/okende-komplekst-og-uoversiktlig-kartlegging-av-utenlandsk-pavirkning-i-forbindelse-med-stortingsvalget-2025"
+claim_confidence: dokumentert
+context_note: >
+  FFI hevder ikke koordinering eller statlig styring her, bare økt
+  narrativ aktivitet — attribution_confidence er derfor bevisst tom, ikke
+  glemt.
+retrieved_at: "2026-09-23"

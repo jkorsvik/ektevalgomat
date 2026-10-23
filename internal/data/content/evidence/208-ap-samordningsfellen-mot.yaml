@@ -1,0 +1,40 @@
+id: ev-2025-12-16-ap-samordningsfellen-mot
+statement_id: utsagn-40
+party_id: ap
+actor: "Arbeiderpartiet (arbeids- og sosialkomiteen)"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot alle tre forslag, med en egen merknad som peker på at
+  saken er behandlet ni ganger tidligere og at FrP kun fremmer slike
+  forslag i opposisjon — et konsistens-argument mot FrP selv, ikke en
+  direkte imøtegåelse av forslag 2s konkrete utrede-bestilling.
+claim_action: >
+  Votering_id 26604, Ap 0 for, 32 mot. Fra Aps egen merknad: saken har
+  blitt "behandlet ni ganger tidligere" i Stortinget, og FrP "kun har
+  fremmet forslag av denne typen når de har vært i opposisjon på
+  Stortinget, mens partiet unnlot å gjennomføre slike endringer da de
+  selv var med i en flertallskonstellasjon på Stortinget fra 2013 til
+  2021." Viser også til tidligere komitémerknader i Innst. 232 L
+  (2023–2024).
+status: forslag_vedtatt_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26602-26604"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-054l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -1 (mot, ikke sterkt mot): Aps begrunnelse er reell og
+  dokumentert, men er et konsistens-/motiv-argument mot FrP ("dere
+  hadde makten og gjorde ingenting"), ikke en direkte saklig
+  imøtegåelse av HVORFOR selve utrede-bestillingen i forslag 2 er
+  uønsket. Samme "prosess/motiv-innvending, ikke saksinnvending"-form
+  sett i flere tidligere saker i datasettet (f.eks. matberedskap,
+  evidence/167). At Ap likevel er blant partiene som fremmer
+  komiteens tilråding sammen med SV og Rødt (som selv stemte for
+  alternativene) viser at "vedtas ikke"-tilrådingen kun gjelder FrPs
+  spesifikke, opprinnelige lovtekst — ikke et generelt standpunkt delt
+  av alle undertegnere.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,49 @@
+id: ev-2026-05-26-ap-europeisk-erfaring
+statement_id: utsagn-06
+party_id: ap
+actor: "Arbeiderpartiet (Anne Hagenborg, Mani Hussaini, Linda Monsen Merkesdal, Torbjørn Vereide, Solveig Vik, energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap (med Sp, Rødt, MDG) pekte på at kjernekraft i Europa i hovedsak er bygget ut med vesentlig statlig involvering."
+claim_action: >
+  Ap, Sp, Rødt og MDG skriver i fellesmerknad at forslag om privat og
+  kommersielt lønnsom kjernekraft ikke klargjør hvilke kostnader og
+  ansvar staten faktisk vil bli sittende med, og viser til at kjernekraft
+  i Europa i hovedsak er bygget ut med statlig involvering, statlige
+  garantier eller offentlig eierskap.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Arbeiderpartiet, Senterpartiet, Rødt og
+  Miljøpartiet De Grønne merker seg at forslag om privat og kommersielt
+  lønnsom kjernekraft ikke avklarer hvilke kostnader og ansvar staten i
+  realiteten vil sitte igjen med. Disse medlemmer vil påpeke at en slik
+  kjernekraftmodell står i sterk kontrast til den europeiske erfaringen,
+  hvor kjernekraft i all hovedsak er bygget ut med vesentlig statlig
+  involvering, statlige garantier eller offentlig eierskap. Det er
+  nødvendig å gå grundig inn i hvilken risiko og hvilke kostnader som
+  realistisk sett kan bæres av private, og hvilken kostnad staten sitter
+  igjen med."
+status: uttalt
+position: 1
+source_tier: A
+# Fellesmerknad, ingen egen votering på denne spesifikke innvendingen —
+# se context_note. Se Evidence.EvidensstyrkeCap.
+evidensstyrke_cap: moderat
+source_name: "Innst. 278 S (2025–2026), fellesmerknad Ap/Sp/Rødt/MDG"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2 som Rødt: denne merknaden peker på den europeiske
+  normen (statlig involvering er vanlig) som et bekymringspunkt mot den
+  private/kommersielle modellen — det er IKKE det samme som Rødts
+  eksplisitte, konkrete krav ("under fullt statlig eierskap, kontroll og
+  styring", forslag 30–31). Ap har ikke fremmet noe eget forslag som
+  krever statlig eierskap for Norge. Kodingen reflekterer en reell, men
+  svakere skepsis til den private modellen enn Rødts — styrken på
+  posisjonen skal reflektere forpliktelsesgraden i teksten, ikke bare
+  fortegnet, samme prinsipp som brukt for MDG/Rødt på utsagn-01.
+  Merk: Ap stemte mot Rødts forslag 30-32 i samme sak, som ble
+  votert samlet (fil 701). Forslag 30 er nesten ordrett dette utsagnet.
+  Posisjonen her er kodet fra merknaden, ikke fra voteringen. Se fil
+  701 for hvorfor voteringen alene ikke er kodet.
+retrieved_at: "2026-09-23"

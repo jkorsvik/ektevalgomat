@@ -1,0 +1,19 @@
+id: 2026-10-02-b-oppdiktede-sitater
+date: "2026-10-02"
+kind: nesten
+title: "15 av 16 sitater fantes ikke i kilden"
+statements: ["57", "58"]
+what: >
+  Research-arbeidere som skulle hente kilder til utsagn 57 og 58, leverte
+  15 sitater som ikke fantes, blant dem SSB-tall som ikke står på noen side.
+  To av tre arbeidstråder feilet på andre måter: gale Lovdata-adresser og et
+  skrivebeskyttet miljø.
+reason: >
+  Sitater ble skrevet uten at kilden ble hentet og lest i sin helhet. Et
+  tall eller en setning som «høres riktig ut» er ikke en kilde.
+effect: >
+  Ingenting av dette nådde nettstedet. Alt i den runden ble hentet på nytt
+  og sjekket som delstreng i kilden før det ble skrevet: 293 sitater
+  kontrollert med 0 feil, og 400 stemmer kontrollert med 0 avvik. Regelen
+  er at et sitat bare telles når det er en delstreng av tekst prosjektet
+  selv har hentet og lagret.

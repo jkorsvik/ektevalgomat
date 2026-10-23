@@ -1,0 +1,16 @@
+id: 2026-09-24-a-ai-sammendrag-feil-dokument
+date: "2026-09-24"
+kind: nesten
+title: "Et AI-sammendrag gjengav et helt annet dokument"
+statements: ["31"]
+what: >
+  Under arbeidet med utsagn 31 skulle et AI-verktøy lese innstillingen.
+  Første sammendrag gjenga i stedet innholdet i en annen sak: feil komité,
+  feil forslagsstillere, feil tema.
+reason: >
+  Sammendraget ble behandlet som om det var kilden. Det var det ikke.
+effect: >
+  Feilen ble oppdaget før noe ble skrevet til en evidensfil, så ingen
+  posisjon ble kodet på feil grunnlag. Regelen er nå at et AI-sammendrag av
+  et stortingsdokument alltid er et spor som skal kontrolleres, aldri en
+  kilde som kan siteres. Rådokumentet hentes og leses.

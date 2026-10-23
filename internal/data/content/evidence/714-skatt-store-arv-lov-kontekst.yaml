@@ -1,0 +1,28 @@
+id: ev-skatteloven-9-7-skatt-store-arv-kontekst
+statement_id: utsagn-57
+party_id: ""
+actor: "Faktakontekst (skatteloven § 9-7)"
+date: "2026 (gjeldende lovtekst)"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: >
+  Uten arveavgift tar arvingen over arvelaters kostpris, og gevinsten
+  skattlegges først når arvingen selger.
+claim_action: >
+  Skatteloven § 9-7 første ledd, gjeldende tekst. Arveavgiften ble
+  fjernet fra 2014.
+verbatim_excerpt: >
+  Dødsbo og enearving skal tre inn i arvelaters inngangsverdier,
+  skjermingsgrunnlag, negativ beregnet personinntekt og øvrige
+  skattemessige posisjoner (skattemessig kontinuitet).
+status: gjeldende
+position: null
+source_tier: A
+source_name: "Skatteloven § 9-7 (Lovdata)"
+source_url: "https://lovdata.no/lov/1999-03-26-14/%C2%A79-7"
+claim_confidence: dokumentert
+context_note: >
+  Ingen partiposisjon. Viser hva «ingen skatt på arv» betyr i dag:
+  skatten på gevinsten er utsatt, ikke fjernet, men den betales bare
+  hvis arvingen selger.
+retrieved_at: "2026-10-02"

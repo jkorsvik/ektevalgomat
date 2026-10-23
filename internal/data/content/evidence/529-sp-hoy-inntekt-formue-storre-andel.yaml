@@ -1,0 +1,33 @@
+id: ev-2026-partiprogram-sp-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: sp
+actor: "Senterpartiet"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp sier personer med store formuer må bidra til velferdsstaten etter evne, samtidig som formuesskatten reduseres for SMB-eiere spesifikt."
+claim_action: >
+  Senterpartiets stortingsvalgprogram 2025–2029 sier at personer med
+  store formuer må bidra til velferdsstaten etter evne, i samme
+  setning som partiet vil redusere formuesskatten for eiere av små og
+  mellomstore bedrifter.
+verbatim_excerpt: >
+  redusere formuesskatten for eiere av små og mellomstore bedrifter,
+  samtidig som at personer med store formuer må bidra til
+  velferdsstaten etter evne
+status: programfestet
+position: 1
+source_tier: C
+source_name: "Senterpartiets stortingsvalgprogram 2025–2029 (PDF)"
+source_url: "https://www.senterpartiet.no/politikk/_/attachment/inline/ea7e4063-1374-47bf-8b10-839bf68904c0:3c54bc9ec99b5e017f069f2312b3962bd934c78a/Senterpartiets%20stortingsvalgprogram%202025-2029%20bokm%C3%A5l%20i%20PDF.pdf"
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet +1, ikke +2: setningen er eksplisitt på topic (store formuer
+  skal bidra), men sier "etter evne", ikke uttrykkelig "en STØRRE
+  andel enn i dag" — kan også leses som en bekreftelse av dagens
+  bidrag, ikke nødvendigvis en økning. Samme kildetekst som utsagn-52s
+  Sp-evidens (kodet 0 der, siden den samtidig reduserer skatten for en
+  avgrenset gruppe); her telles bare "må bidra etter evne"-delen, som
+  er svakt, men reelt, på topic for AT rikeste skal bære en byrde.
+  Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

@@ -1,0 +1,16 @@
+id: utsagn-06
+number: 6
+dimension: "Norsk handlefrihet"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne?"
+case_tag: kjernekraft_statlig_kontroll
+short_name: "Statlig kontroll over kjernekraft"
+text: >
+  Eventuell kjernekraftutbygging i Norge bør skje under fullt statlig
+  eierskap og kontroll.
+practical_stakes:
+  enig: >
+    Eventuell kjernekraftutbygging i Norge skjer bare i statlig regi, med
+    fullt statlig eierskap og kontroll over anleggene.
+  uenig: >
+    Ingen slik eierskapsbegrensning innføres. Private eller kommersielle
+    aktører kan stå for eierskap og drift av eventuell kjernekraft i Norge.

@@ -1,0 +1,36 @@
+id: ev-2026-04-30-sp-statsborgerskap-skjerpede-krav
+statement_id: utsagn-48
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-04-30"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: "Sp vil ha strenge og tydelige krav, inkludert norskkunnskaper, men mener FrPs konkrete forslag ikke er godt nok utredet."
+claim_action: >
+  Sp skriver at statsborgerskap bør innebære strenge og tydelige krav,
+  blant annet et krav om å kunne snakke norsk på et nivå som gjør
+  deltakelse i arbeidsliv og samfunnsliv mulig — men mener samtidig at
+  forslagene i representantforslaget ikke er godt nok utredet, og
+  ønsker heller en bredere gjennomgang av vilkårene. Stemte mot både
+  FrPs (27524) og Høyres (27522) konkrete forslag.
+verbatim_excerpt: >
+  «Dette medlem mener at forslagene i representantforslaget ikke er
+  godt nok utredet, og svaret fra statsråden løfter problemstillinger
+  som må ses nærmere på. Dette medlem mener regjeringen bør ha en
+  større gjennomgang hvor man ser på vilkårene for statsborgerskap.»
+status: forslag_avvist_stemte_mot
+position: 0
+source_tier: A
+source_name: "Innst. 232 S (2025–2026); voteringene 27522 og 27524 (30.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet 0 (nøytral/delt), ikke -1 eller -2: Sp stemte mot begge de
+  konkrete forslagene, men egen tekst er ikke en substansiell avvisning
+  av innstramming som sådan — tvert imot ønsker Sp "strenge og tydelige
+  krav" og nevner selv norskkunnskaper som vilkår. Innvendingen er at
+  disse SPESIFIKKE forslagene ikke er godt nok utredet, ikke at
+  skjerpede krav er feil retning. Å kode dette som -2 ville tilskrevet
+  Sp en sterkere, mer avvisende posisjon enn teksten faktisk støtter.
+  Bekreftet [OK] i votes.py: Sp 0 for / 5 mot på begge voteringer.
+retrieved_at: "2026-09-27"

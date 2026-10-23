@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* 2026-10-12 klarspråk pass: the page leads with a plain answer to
+       "hvordan blir en partiposisjon avgjort, og hvordan sjekker jeg
+       den". The scoring model (the three goals), the statement-form
+       rules, the source hierarchy and the attribution caveat all moved
+       into <details> tiers below that answer — the machinery is one
+       click down, the answer is on screen. */}}
+  <h2>Slik blir en partiposisjon til</h2>
+  <p class="prose-lede">
+    Vi sammenligner ikke svaret ditt med partiprogrammenes egne ord. Vi
+    sammenligner det med en posisjon som har en kilde bak: et forslag som
+    ble fremmet, en stemme som ble avgitt, en lov som ble vedtatt. Finnes
+    ingen kilde, blir det ingen sammenligning.
+  </p>
+  <p class="prose-lede">
+    Hver posisjon viser kilde og dato. På utsagnets egen side ser du
+    hva partiet konkret gjorde eller stemte. Du ser alle kildene,
+    motbevis og usikkerhet inkludert, der de finnes. Du finner ingen
+    «hyklerscore» her, og ingen samlet «utenlandsk påvirket»-etikett
+    heller.
+  </p>
+
+  <details class="disclosure metode-disclosure">
+    <summary>Tre separate mål, aldri én score</summary>
+    <p class="lede">
+      Et parti kan være svært konsekvent i en politikk du er uenig i. Da
+      skal det gi høy konsistens og lav saksmatch, ikke ett tall som
+      sluker begge deler. Kilde, dato og hva partiet konkret gjorde eller
+      stemte, finner du alltid sammen med posisjonen på utsagnets egen
+      side.
+    </p>
+    <div class="goal-cards">
+      <div class="goal-card">
+        <div class="goal-head">
+          <span class="goal-name">Saksmatch</span>
+          <span class="goal-status goal-status-active">Aktiv</span>
+        </div>
+        <p>Hvor nært partiets dokumenterte posisjon ligger svaret ditt.
+        Gjelder bare der partiet har en posisjon med kilde.</p>
+      </div>
+      <div class="goal-card">
+        <div class="goal-head">
+          <span class="goal-name">Konsistens</span>
+          <span class="goal-status goal-status-pending">Venter på data</span>
+        </div>
+        <p>Stemmer prinsipp, stemmegivning og handling over tid? De
+        fleste cellene viser fortsatt «utilstrekkelig grunnlag». Datasettet
+        har bare ett øyeblikksbilde per sak ennå, ikke gjentatt handling å
+        sammenligne over tid.</p>
+      </div>
+      <div class="goal-card">
+        <div class="goal-head">
+          <span class="goal-name">Evidensstyrke</span>
+          <span class="goal-status goal-status-active">Aktiv</span>
+        </div>
+        <p>Hvor mye og hvor autoritativ kilden er (kildeklasse A til E),
+        ikke hvor sikker konklusjonen er.</p>
+      </div>
+    </div>
+  </details>
+
+  <details class="disclosure metode-disclosure">
+    <summary>Slik er utsagnene skrevet</summary>
+    <div id="utsagnsform">
+    <p>
+      Hvert utsagn inneholder én påstand. Er du enig i bare halve
+      utsagnet, kan du ikke svare ærlig. Derfor er ledd som «selv om» og
+      «fordi» tatt ut, og ingen utsagn er lengre enn 200 tegn. En
+      automatisk test stopper nye utsagn som bryter disse reglene.
+    </p>
+    <p>
+      Under hvert utsagn står det hva et svar betyr i praksis: hva som
+      skjer hvis du er sterkt enig, og hva som skjer hvis du er sterkt uenig.
+      Boksen beskriver den direkte følgen av forslaget, ikke hvilke
+      virkninger det kan få på sikt.
+    </p>
+    <p>
+      Mange svarer «enig» oftere enn de egentlig mener. Hvis alle
+      utsagnene pekte samme vei, ville noen partier fått et forsprang
+      uten grunn. 13 av utsagnene er derfor formulert
+      motsatt vei. Svarer du «sterkt enig» på alt, skiller det nå
+      {{acquiescenceSpread}} prosentpoeng mellom partiet som treffer
+      best og partiet som treffer dårligst. Før omskrivingen var det 41.
+      En test stopper endringer som gjør tallet større.
+    </p>
+    </div>
+  </details>
+  <details class="disclosure metode-disclosure">
+    <summary>Kilder, rangert fra A til E</summary>
+    <div id="kildehierarki">
+    <table class="results">
+      <tr><th><span class="grade g-A"><b>A</b></span></th><td>Primær og autoritativ: lov, offisielt voteringsresultat, budsjettvedtak, regnskap, registerdata.</td></tr>
+      <tr><th><span class="grade g-B"><b>B</b></span></th><td>Primær institusjonell analyse: SSB, FFI, NSM, PST, NVE, Riksrevisjonen.</td></tr>
+      <tr><th><span class="grade g-C"><b>C</b></span></th><td>Aktørens egen publisering: partiprogram, pressemelding.</td></tr>
+      <tr><th><span class="grade g-D"><b>D</b></span></th><td>Verifisert sekundærkilde: etablert presse/forskning som peker til dokumenter.</td></tr>
+      <tr><th><span class="grade g-E"><b>E</b></span></th><td>OSINT-lead: en konto, en anonym nettside eller en påstand som ingen har sjekket ennå.</td></tr>
+    </table>
+    </div>
+  </details>
+
+  <details class="disclosure metode-disclosure">
+    <summary>Påvirkning utenfra er ikke det samme som styring</summary>
+    <div id="attribusjon">
+    <p>
+      Politisk syn, utenlandsk nytte, utenlandsk forbindelse, finansiering,
+      koordinering og statlig styring er <strong>ikke</strong> det samme.
+      At et budskap ligner noe et fremmed land ønsker, beviser ikke
+      finansiering, koordinering eller utenlandsk kontroll. FFI
+      dokumenterer selv denne grensen i utsagn 4. Der er et koordinert
+      TikTok-nettverk beskrevet slik at opprinnelsen forblir ukjent, og
+      det blir ikke automatisk tilskrevet en fremmed stat.
+    </p>
+    </div>
+  </details>
+</main>
+
+<footer class="site">
+  <p>Ekte valgomat. Bygget {{year}}. <a href="/personvern">Personvern <span aria-hidden="true">→</span></a></p>
+  <p>
+    Lisensiert under
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL-3.0</a>.
+    Kildekoden er åpen:
+    <a href="https://github.com/jkorsvik/ektevalgomat">github.com/jkorsvik/ektevalgomat</a>.
+  </p>
+</footer>
+
+</body>
+</html>

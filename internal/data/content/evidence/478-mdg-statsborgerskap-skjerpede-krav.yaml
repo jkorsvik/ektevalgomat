@@ -1,0 +1,28 @@
+id: ev-2026-04-30-mdg-statsborgerskap-skjerpede-krav
+statement_id: utsagn-48
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-04-30"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG deler SVs avvisning av botidskrav på ti år, B2-språkkrav, troskapsed og absolutte inntektskrav."
+claim_action: >
+  Samme delte merknad med SV (se SVs evidensfil for full tekst): MDG
+  mener forslagene om ytterligere innstramming i statsborgerskaps-
+  regelverket vil kunne svekke integreringen og øke utenforskap. Stemte
+  mot FrPs (27524) og Høyres (27522) forslag.
+verbatim_excerpt: >
+  «Disse medlemmer mener samlet sett at forslagene om ytterligere
+  innstramminger i statsborgerskapsregelverket vil kunne svekke
+  integreringen og øke utenforskap.»
+status: forslag_avvist_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 232 S (2025–2026); voteringene 27522 og 27524 (30.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: delt, men egen, spesifikk merknad (med SV), ikke bare
+  stemmegivning. Bekreftet [OK] i votes.py: MDG 0 for / 5 mot på begge
+  voteringer.
+retrieved_at: "2026-09-27"

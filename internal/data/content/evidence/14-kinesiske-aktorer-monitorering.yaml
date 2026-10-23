@@ -1,0 +1,20 @@
+id: ev-2024-25-kinesiske-aktorer-monitorering
+statement_id: utsagn-04
+party_id: ""
+actor: "Kinesisktilknyttede aktører (FFIs egen betegnelse, uklassifisert her)"
+date: "2024–2025"
+evidence_type: ffi_monitorering
+evidence_class: fakta
+scan_summary: "FFI observerte økt kinesisktilknyttet innhold, ingen påvist valghensikt."
+claim_action: >
+  Stor vekst i norskspråklig materiale, inkludert profesjonelt innhold og
+  betalt annonsering, men FFI fant ikke belegg for et direkte kinesisk
+  forsøk på å påvirke stortingsvalget.
+status: aktivitet_dokumentert_valgintensjon_ikke_dokumentert
+position: null
+attribution_confidence: null
+source_tier: B
+source_name: "FFI: Økende, komplekst og uoversiktlig (2026)"
+source_url: "https://www.ffi.no/publikasjoner/arkiv/okende-komplekst-og-uoversiktlig-kartlegging-av-utenlandsk-pavirkning-i-forbindelse-med-stortingsvalget-2025"
+claim_confidence: dokumentert
+retrieved_at: "2026-09-23"

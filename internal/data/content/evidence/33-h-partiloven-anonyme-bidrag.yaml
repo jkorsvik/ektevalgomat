@@ -1,0 +1,38 @@
+id: ev-2025-06-13-h-partiloven-anonyme-bidrag
+statement_id: utsagn-03
+party_id: h
+actor: "Høyre (Mudassar Kapur, Anne Kristine Linnestad, kommunal- og forvaltningskomiteen)"
+date: "2025-06-13"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre stemte for forbudet mot anonyme bidrag, og fremmet egne forslag for enda bredere åpenhet."
+claim_action: >
+  Høyre stemte FOR § 17 a-forbudet (individuell representantstemme,
+  votering_id 26057: 22 for, 0 mot i egen gruppe). Høyre støtter mer
+  åpenhet om partifinansiering generelt, men mener regjeringens forslag
+  ikke går langt nok — sammen med FrP fremmet Høyre tre egne forslag om å
+  også innlemme indirekte bidrag med kjent bidragsyter og kandidatstøtte
+  i rapporteringsplikten. Disse tilleggsforslagene falt (40 mot 60, 42
+  mot 58), men det svekker ikke Høyres stemme FOR selve forbudet i § 17
+  a, som er det utsagnet spør om.
+verbatim_excerpt: >
+  Komiteens medlemmer fra Høyre mener det er viktig med mer åpenhet
+  rundt finansieringen av og støtte til politiske partier. Disse
+  medlemmer vil understreke partilovens formål, som blant annet er å
+  «sikre offentlighetens rett til innsyn og å motvirke korrupsjon». […]
+  Stortinget ber regjeringen komme tilbake til Stortinget med forslag til
+  endringer i partiloven slik at indirekte bidrag med kjent bidragsyter
+  skal innrapporteres på lik linje med direkte bidrag.
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 528 L (2024–2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2, ikke lavere: Høyre stemte FOR selve forbudet (§ 17 a) uten
+  unntak — deres egne tilleggsforslag (falt) ba om MER åpenhet, ikke
+  mindre, så de trekker ikke posisjonen ned. Individuell
+  representantstemme hentet direkte fra data.stortinget.no for votering_id
+  26057 (22 av Høyres representanter stemte for, 0 mot).
+retrieved_at: "2026-09-23"

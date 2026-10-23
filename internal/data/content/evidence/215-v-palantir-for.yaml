@@ -1,0 +1,33 @@
+id: ev-2026-04-28-v-palantir-for
+statement_id: utsagn-24
+party_id: v
+actor: "Venstre"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre stemte for Palantir-forbudet uten å være medforslagsstiller
+  eller medlem av kommunal- og forvaltningskomiteen — ingen egen
+  merknad i innstillingen.
+claim_action: >
+  Votering_id 27488, Venstre 2 for, 0 mot. Venstre er ikke blant
+  komiteens navngitte medlemmer (Ap, FrP, Høyre, SV, Sp, Rødt, MDG)
+  og har ingen egen tekst i saken.
+status: forslag_avvist_stemte_for
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene, motsatt det snudde utsagnets premiss.
+  Venstre er ikke komitémedlem i denne saken (samme mønster som
+  gjentatte ganger tidligere i datasettet — Sp/V i næringskomiteen for
+  strømpris-sakene, Sp/V i arbeids- og sosialkomiteen for
+  samordningsfellen-saken), men stemte likevel FOR det opprinnelige
+  forslaget ingen av deres komitémedlemmer fremmet. Uten en egen
+  begrunnelse er det ikke mulig å si om dette er Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +1 til -1.
+  et prinsipielt standpunkt om utenlandsk sikkerhetsteknologi i
+  offentlig sektor, eller en enkeltsaks-avgjørelse.
+retrieved_at: "2026-09-24"

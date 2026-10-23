@@ -1,0 +1,24 @@
+id: ev-2026-04-14-v-utvisning-uavhengig-tilknytning
+statement_id: utsagn-46
+party_id: v
+actor: "Venstre"
+date: "2026-04-14"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Venstre stemte mot FrPs forslag om utvisning uavhengig av tilknytning; partiet har ikke sete i komiteen og ingen egen merknad."
+claim_action: >
+  Venstre har ikke sete i kommunal- og forvaltningskomiteen for denne
+  saken og har derfor ingen egen merknad. Stemte mot forslag nr. 2
+  (votering 27441).
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026); votering 27441 (14.04.2026)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27441&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1 ut fra stemmegivning alene: ingen komitésete, ingen egen
+  tekst. evidensstyrke_cap moderat. Bekreftet [OK] i votes.py: Venstre
+  0 for / 2 mot (votering 27441).
+retrieved_at: "2026-09-27"

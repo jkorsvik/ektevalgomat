@@ -1,0 +1,42 @@
+id: ev-2026-04-28-h-palantir-mot
+statement_id: utsagn-24
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot forbudsforslaget. Høyre har den mest utviklede
+  egne merknaden i saken ("smart suverenitet": diversifisering og
+  strenge sikkerhetskrav i stedet for forbud/isolasjon), men nevner
+  ikke Palantir ved navn.
+claim_action: >
+  Votering_id 27488, Høyre 14 mot, 0 for. Fra Høyres egen merknad:
+  "Høyre mener Norges digitale handlefrihet best sikres gjennom det
+  disse medlemmer omtaler som smart suverenitet: bruk av beste
+  tilgjengelige teknologi kombinert med strenge sikkerhetskrav,
+  diversifisering av leverandører og sterk europeisk og nordisk
+  forankring. Svaret på avhengighet av internasjonale teknologigiganter
+  er mangfold og konkurranse – ikke statlige monopoler eller isolasjon
+  fra den teknologiske utviklingen."
+verbatim_excerpt: >
+  Svaret på avhengighet av internasjonale teknologigiganter er
+  mangfold og konkurranse – ikke statlige monopoler eller isolasjon
+  fra den teknologiske utviklingen.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1: dette er nøyaktig Høyres eget "mangfold/konkurranse, ikke
+  isolasjon"-prinsipp, gjengitt som det snudde utsagnet nå hevder, men
+  sitatet nevner ikke Palantir eller Tolletaten-bruken spesifikt —
+  derav +1 og svakt_dokumentert, ikke +2 og dokumentert. Interessant
+  motsetning til Høyres eget forslag 9 (pilotprosjekter for
+  diversifisering, evidence i utsagn-19/20- Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  klyngen) som VISER at partiet vil ha et alternativt, mykere
+  virkemiddel enn et direkte forbud.
+retrieved_at: "2026-09-24"

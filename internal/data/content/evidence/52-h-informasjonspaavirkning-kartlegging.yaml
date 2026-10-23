@@ -1,0 +1,42 @@
+id: ev-2023-03-14-h-informasjonspaavirkning-kartlegging
+statement_id: utsagn-04
+party_id: h
+actor: "Høyre (Sveinung Stensland, Ine Eriksen Søreide m.fl., justiskomiteen)"
+date: "2023-03-14"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre fremmet selv representantforslaget og sto bak forslag 6 (med
+  Venstre) om umiddelbar kartlegging av utenlandsk informasjonspåvirkning
+  mot valgene i 2023 og 2025 — direkte tekstlig samsvar med utsagn-04.
+  Stemte for.
+claim_action: >
+  Høyres syv stortingsrepresentanter (Stensland, Eriksen Søreide, Holm
+  Lønseth, Elvenes, Farahmand, Foss, Schou) fremmet Dokument 8:51 S med
+  kartleggingsforslaget som eget punkt. I komiteens endelige forslagsliste
+  sto Høyre (sammen med Venstre) bak forslag 6. Votering_id 20371: Høyre
+  20 for, 0 mot (16 ikke til stede) — kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat.
+verbatim_excerpt: >
+  Stortinget ber regjeringen umiddelbart igangsette en kartlegging av
+  uønsket informasjonspåvirkning fra utenlandske aktører i forbindelse
+  med kommune- og fylkestingsvalget i 2023 og stortingsvalget i 2025.
+  Kartleggingen skal blant annet fange opp forsøk på påvirkning av
+  nordmenns virkelighetsoppfatning, verdier og tillit over tid.
+status: forslag_avvist_av_flertallet
+position: -2
+source_tier: A
+source_name: "Innst. 231 S (2022–2023); votering_id 20371"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2022-2023/inns-202223-231s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at dagens innsats er god nok): Høyre er selv
+  opphavspartiet til det avviste kartleggingsforslaget og
+  medforslagsstiller på den endelige forslagsteksten — et parti som selv
+  fremmet et mer omfattende tiltak enn dagens praksis, kan vanskelig sies
+  å mene dagens innsats er tilstrekkelig. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2, men
+  det faktiske stemme- og forslagssporet i verbatim_excerpt/claim_action
+  er uendret. Se evidence/51-utenlandsk-paavirkning-kontekst.yaml for den
+  mindre presisjonsnyansen mot den opprinnelige "sosiale medier"-
+  formuleringen.
+retrieved_at: "2026-09-24"

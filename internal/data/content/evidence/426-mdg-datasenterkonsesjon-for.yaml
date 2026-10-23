@@ -1,0 +1,33 @@
+id: ev-2026-mdg-datasenterkonsesjon-for
+statement_id: utsagn-11
+party_id: mdg
+actor: "Miljøpartiet De Grønne (energi- og miljøkomiteen)"
+date: "2026-03-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG er medforslagsstiller sammen med SV/Sp/Rødt, med en egen,
+  ytterligere presisert merknad om eierskapskrav. Alle 5 fremmøtte
+  stemte for.
+claim_action: >
+  Votering_id 27047, MDG 5 for, 0 mot. Fra MDGs egen merknad: "Norge
+  må sikre tilstrekkelig grad av nasjonal og europeisk kontroll med
+  eierskap og datalagring. Det må sikres at datasentre som etableres
+  i Norge, har norsk eller europeisk eierskap, at kraftforsyningen
+  baseres på fornybar energi, og at overskuddsvarme skal utnyttes."
+verbatim_excerpt: >
+  Norge må sikre tilstrekkelig grad av nasjonal og europeisk kontroll
+  med eierskap og datalagring. Det må sikres at datasentre som
+  etableres i Norge, har norsk eller europeisk eierskap.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 140 S (2025–2026); votering_id 27047"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-140s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: MDG har den mest spesifikke eierskapsbegrunnelsen av alle
+  partiene (norsk/europeisk eierskap som et konkret krav, ikke bare
+  et generelt kontrollprinsipp).
+retrieved_at: "2026-09-24"

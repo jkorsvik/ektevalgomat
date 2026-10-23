@@ -1,0 +1,22 @@
+id: ev-2026-05-19-mdg-integreringserklaering-skriftlig-forpliktelse
+statement_id: utsagn-50
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-05-19"
+evidence_type: voteringsspor
+evidence_class: uklart
+scan_summary: "MDG stemte mot loven; partiet har ikke sete i komiteen for denne saken."
+claim_action: >
+  MDG har ikke sete i kommunal- og forvaltningskomiteen for denne
+  saken og har derfor ingen egen merknad. Stemte mot loven i votering
+  27779.
+status: vedtatt_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 309 L (2025–2026); votering 27779 (19.05.2026)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27779&format=json"
+claim_confidence: dokumentert
+context_note: >
+  Kun stemmegivning, ingen komitésete og ingen egen tekst — kodet -1.
+  Bekreftet [OK] i votes.py: MDG 0 for / 5 mot.
+retrieved_at: "2026-09-27"

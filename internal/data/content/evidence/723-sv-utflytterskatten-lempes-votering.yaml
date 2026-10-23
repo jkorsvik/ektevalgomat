@@ -1,0 +1,28 @@
+id: ev-2022-05-24-sv-utflytterskatten-lempes-votering
+statement_id: utsagn-58
+party_id: "sv"
+actor: "Sosialistisk Venstreparti"
+date: "2022-05-24"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sosialistisk Venstreparti stemte for å skattlegge latente
+  aksjegevinster straks ved flytting ut av landet.
+claim_action: >
+  Forslag nr. 2 fra SV, Rødt og MDG i Innst. 289 S (2021–2022), votering
+  18780: SV 8, R 4 og MDG 2 for, alle andre partier mot (14 mot 87).
+  Forslaget falt.
+verbatim_excerpt: >
+  Stortinget ber regjeringen sørge for at skatteplikt for latente
+  gevinster på aksjer og tilsvarende eiendeler påløper umiddelbart ved
+  flytting ut av landet.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 289 S (2021–2022), forslag 2; votering 18780"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2021-2022/inns-202122-289s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: partiet foreslo selv strengere regler, motsatt av utsagnet.
+  Forrige stortingsperiode.
+retrieved_at: "2026-10-02"

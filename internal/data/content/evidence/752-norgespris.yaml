@@ -1,0 +1,36 @@
+id: ev-2027-norgespris
+statement_id: utsagn-12
+party_id: ""
+actor: "Regjeringen (Prop. 1 S 2026–2027, Energidepartementet)"
+date: "2026-10-07"
+evidence_type: budsjettforslag
+evidence_class: fakta
+scan_summary: >
+  Energidepartementet foreslår 12 000 mill. kroner på kap. 1820, post 77
+  «Noregspris for straum» for 2027 (opp fra 9 100 mill. kroner i 2026, +2 900
+  mill.). Staten viderefører Norgespris som en valgfri støtteordning med fast
+  referansepris (45 øre per kWh i 2027), ikke en lovbestemt makspris på strøm.
+claim_action: >
+  Staten viderefører og øker Norgespris som en valgfri støtteordning med fast
+  referansepris, framfor å innføre en lovbestemt nasjonal makspris på strøm.
+verbatim_excerpt: >
+  Noregspris gir bustader og fritidsbustader høve til å velje ein fast og
+  føreseieleg pris på straum.
+  [...]
+  til ein Noregspris på 45 øre per kWh eksklusive avgifter i 2027
+  (referanseprisen), jf. boks 4.3.
+status: foreslått
+position: null
+source_tier: A
+source_name: "Prop. 1 S (2026–2027) Energidepartementet, kap. 1820, post 77 Noregspris for straum"
+source_url: "https://www.regjeringen.no/contentassets/54db15f0f46f48dbb8312c562cec7b72/nn-no/pdfs/prp202620270001_eddddpdfs.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Regjeringens eget forslag i budsjettet for 2027. Utsagn-12 spør om staten bør
+  bruke støtte- eller referanseprisordninger, som Norgespris, framfor en
+  lovbestemt nasjonal makspris på strøm. Retningen på utsagn-12 er +1: dette er
+  enig-/støtteordning-siden av utsagnet (Norgespris videreføres og økes, ingen
+  lovbestemt makspris innføres). Institusjonelt bevis, ikke en partiposisjon —
+  regjeringen er Ap-ledet. Merk: proposisjonen skriv «Noregspris» (nynorsk),
+  postnavnet i Gul bok er «Norgespris for strøm».
+retrieved_at: "2026-10-12"

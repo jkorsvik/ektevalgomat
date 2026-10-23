@@ -1,0 +1,34 @@
+id: ev-2026-partiprogram-frp-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP vil avvikle formuesskatten helt, som per definisjon betyr at eiere av stor formue betaler MINDRE, ikke mer, enn i dag."
+claim_action: >
+  FrPs partiprogram 2025–2029 lister "avvikle formuesskatten" som eget
+  punkt uten avgrensning. Formuesskatten er den delen av det norske
+  skattesystemet som er direkte rettet mot stor nettoformue, så en
+  full avvikling av den reduserer nødvendigvis skattebidraget fra
+  personer med stor formue.
+verbatim_excerpt: >
+  Fremskrittspartiet ønsker å avvikle formuesskatten. En stor andel
+  av formuesskatten betales av pensjonister og vanlige
+  lønnsmottakere.
+status: programfestet
+position: -1
+source_tier: C
+source_name: "Fremskrittspartiets partiprogram 2025–2029"
+source_url: "https://www.frp.no/files/Program/2025/FrP-Partiprogram-2025-2029.pdf"
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet -1, ikke -2: samme kildesetning som utsagn-52 (der kodet +2 på
+  formuesskattens eget nedtrappingsspørsmål), men dette utsagnet
+  dekker BÅDE høy inntekt OG stor formue, og FrPs program har ingen
+  tilsvarende eksplisitt setning om inntektsskatt for høytlønnede
+  spesifikt — bare en generell "redusere skatt på lønnsinntekt for å
+  øke arbeidsdeltakelsen"-formulering som ikke er avgrenset til
+  høyinntektsgrupper. Derfor sannsynliggjort og -1, ikke dokumentert
+  og -2. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

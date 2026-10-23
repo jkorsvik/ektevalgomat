@@ -1,0 +1,45 @@
+id: ev-2025-06-13-ap-partiloven-anonyme-bidrag
+statement_id: utsagn-03
+party_id: ap
+actor: "Arbeiderpartiet (Lise Christoffersen, Sverre Myrli, Siri Gåsemyr Staalesen, Terje Sørvik, kommunal- og forvaltningskomiteen)"
+date: "2025-06-13"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap-ledet flertall vedtok forbud mot anonyme bidrag og bidrag via skjulte mellomledd til partier."
+claim_action: >
+  Komiteens flertall (Ap, H, Sp, SV, Rødt) fremmet og vedtok et konkret
+  forbud: partier kan ikke ta imot bidrag fra givere som er ukjente for
+  partiet, fra juridiske personer som i hovedsak eksisterer for å støtte
+  partier økonomisk, eller fra privatpersoner som har mottatt bidrag fra
+  andre for å gi videre til partier — nettopp de skjulte
+  mellomledd-mekanismene utsagnet omhandler. Ap stemte FOR (individuell
+  representantstemme, votering_id 26057: 89 for, 12 mot, alle 12 mot-
+  stemmer fra FrP, se den filens votering).
+verbatim_excerpt: >
+  Flertallet viser til at lovendringene skal bidra til større åpenhet om
+  finansieringen av politiske partier og dermed opprettholde tilliten
+  til partiene og de politiske institusjonene. Flertallet viser til at
+  de foreslåtte endringene tetter et smutthull i loven, slik dette er
+  beskrevet av Partilovnemnda i brev til Kommunal- og
+  distriktsdepartementet 18. desember 2023. […] Politiske partier og
+  partiledd kan ikke motta bidrag fra a . givere som er ukjente for
+  partiet (anonyme bidrag) b . juridiske personer som har som formål eller
+  vesentlig del av sin virksomhet å støtte politiske partier eller
+  partiledd økonomisk c. privatpersoner som har mottatt bidrag fra andre
+  for å gi disse til politiske partier eller partiledd.
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 528 L (2024–2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: dette er ikke en tolkning av stemmegivning, men den vedtatte
+  lovteksten selv — § 17 a forbyr nøyaktig det utsagnet spør om (anonyme
+  bidrag og bidrag via mellomledd som skjuler den egentlige giveren).
+  Individuell representantstemme hentet direkte fra
+  data.stortinget.no/eksport/voteringsresultat for votering_id 26057 (169
+  representanter, kryssjekket mot offisielt for/mot-tall 89/12 — stemmer
+  eksakt). Full innstillingstekst (PDF, 603 linjer) lest før koding, ikke
+  bare voteringstallet.
+retrieved_at: "2026-09-23"

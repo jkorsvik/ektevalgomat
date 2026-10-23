@@ -1,0 +1,17 @@
+id: utsagn-12
+number: 12
+dimension: "Forvaltning av fellesskapets ressurser / energi"
+primary_question: "Hvem kontrollerer ressursene, risikoen og verdiskapingen?"
+case_tag: stroempris_makspris
+short_name: "Referanseprisordning fremfor lovbestemt makspris"
+text: >
+  Staten bør bruke støtte- eller referanseprisordninger, som Norgespris,
+  fremfor en lovbestemt nasjonal makspris på strøm.
+practical_stakes:
+  enig: >
+    Staten fortsetter å bruke støtte- eller referanseprisordninger som
+    Norgespris. Det innføres ingen lovbestemt makspris på hva kraftselskaper
+    kan ta for strøm.
+  uenig: >
+    Staten innfører en lovbestemt nasjonal makspris på strøm, i stedet for å
+    bruke støtte- eller referanseprisordninger.

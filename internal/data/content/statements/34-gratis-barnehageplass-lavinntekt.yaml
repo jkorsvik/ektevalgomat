@@ -1,0 +1,17 @@
+id: utsagn-34
+number: 34
+dimension: "Barns muligheter"
+primary_question: "I hvilken grad kompenserer samfunnet for forhold barn ikke har valgt?"
+case_tag: gratis_barnehageplass_lavinntekt
+short_name: "Gratis barnehageplass for lavinntektsfamilier"
+text: >
+  Regjeringen bør fremme forslag om å tilby barn i lavinntektsfamilier,
+  som i dag har rett til gratis kjernetid i barnehagen, gratis
+  barnehageplass i sin helhet.
+practical_stakes:
+  enig: >
+    Barn i lavinntektsfamilier, som i dag har rett til gratis kjernetid, får
+    i tillegg gratis barnehageplass i sin helhet.
+  uenig: >
+    Ingen slikt forslag fremmes. Barn i lavinntektsfamilier beholder retten
+    til gratis kjernetid, men ikke gratis barnehageplass i sin helhet.

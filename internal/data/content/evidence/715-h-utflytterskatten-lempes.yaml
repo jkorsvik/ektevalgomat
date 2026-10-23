@@ -1,0 +1,23 @@
+id: ev-2025-partiprogram-h-utflytterskatten-lempes
+statement_id: utsagn-58
+party_id: "h"
+actor: "Høyre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre vil fjerne innstrammingene i utflyttingsskatten.
+claim_action: >
+  Høyres stortingsvalgprogram 2025–2029 sier dette med egne ord.
+  Partiprogram, ikke en Storting-avstemning.
+verbatim_excerpt: >
+  fjerne innstrammingene i utflyttingsskatten (exit-skatten) fra 2024.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "Høyres stortingsvalgprogram 2025–2029"
+source_url: "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt krav om å gjøre reglene mildere.
+retrieved_at: "2026-10-02"

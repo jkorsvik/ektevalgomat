@@ -1,0 +1,31 @@
+id: ev-2026-04-16-h-ungdomskriminalitet-lukket-institusjon
+statement_id: utsagn-51
+party_id: h
+actor: "Høyre"
+date: "2026-04-16"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre medforslagsstiller (med FrP) til ubegrenset varighet ved lukket institusjon, men med krav om rettssikkerhetsgarantier og oppfølging."
+claim_action: >
+  Høyre er medforslagsstiller på forslag nr. 1 sammen med FrP. Høyre
+  understreker samtidig at det må foreligge gode
+  rettssikkerhetsgarantier og at varigheten må gi rom for god
+  oppfølging av barnet, og viser til at Høyre gjentatte ganger har
+  fremmet forslag om nasjonale institusjonstilbud. Stemte for i
+  votering 27111.
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Høyre mener at det må foreligge gode
+  rettssikkerhetsgarantier for ungdommer som skal ha opphold på en
+  institusjon, og at varighet på oppholdet må kunne være langt nok til
+  å gi god oppfølging av barnet.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 173 S (2025–2026), forslag 1; votering 27111 (16.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-173s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: medforslagsstiller på nøyaktig den ordlyden ("så lenge det
+  er behov for det") utsagnet tester, med egen tilleggsbegrunnelse om
+  rettssikkerhet. Bekreftet [OK] i votes.py: H 14 for / 0 mot.
+retrieved_at: "2026-09-27"

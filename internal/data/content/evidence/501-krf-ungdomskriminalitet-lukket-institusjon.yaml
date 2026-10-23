@@ -1,0 +1,63 @@
+id: ev-2026-04-16-krf-ungdomskriminalitet-lukket-institusjon
+statement_id: utsagn-51
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-04-16"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "KrF mener lukkede institusjoner kan være nødvendige i enkelte alvorlige tilfeller, men avviser eksplisitt en ordlyd uten avgrensning eller rettssikkerhetsgarantier."
+claim_action: >
+  KrF skriver at lukkede institusjoner kan være nødvendige i enkelte
+  alvorlige tilfeller, men avviser eksplisitt å støtte en ordlyd som
+  åpner for å holde ungdom i lukket institusjon "så lenge det er behov
+  for det" uten nærmere avgrensninger og rettssikkerhetsgarantier.
+  Stemte mot forslag nr. 1 (FrP og Høyre) i votering 27111. KrF er del
+  av komiteens tilråding (fremmet sammen med FrP og Høyre) om et bredere
+  nettverk av institusjonsplasser, både åpne og lukkede — en egen,
+  separat anmodning uten den ubegrensede varigheten forslag 1 og dette
+  utsagnet spør om.
+verbatim_excerpt: >
+  «Lukkede institusjoner kan etter dette medlems syn være nødvendige i
+  enkelte alvorlige tilfeller, både av hensyn til barnet selv, til
+  ansatte og til samfunnets sikkerhet. Samtidig må slike tiltak være
+  strengt regulert, målrettede og underlagt tydelig kontroll, og ikke
+  utvikle seg til en hovedregel.»
+
+  […]
+
+  «så lenge det er behov for det»
+
+  […]
+
+  «Komiteens tilråding fremmes av medlemmene i komiteen fra
+  Fremskrittspartiet, Høyre og Kristelig Folkeparti.»
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 173 S (2025–2026), forslag 1 og komiteens tilråding; votering 27111 (16.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-173s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2 (korrigert 2026-09-27): KrFs egen tekst er
+  betinget, ikke en prinsipiell avvisning — lukkede institusjoner "kan
+  ... være nødvendige i enkelte alvorlige tilfeller". Det KrF avviser
+  eksplisitt er nettopp DENNE ordlyden, "så lenge det er behov for
+  det" — ikke lukket institusjon som sådan. «så lenge det er behov for
+  det» er den nøyaktige ordlyden kildeteksten selv setter i
+  anførselstegn.
+
+  Presisering (korrigert 2026-09-27): en tidligere versjon av denne
+  filen hevdet at KrF var "medforslagsstiller (med FrP og Høyre)" på
+  et bredere institusjonsnettverk-forslag. Det finnes ingen slik felles
+  "forslag" — Innst. 173 S sitt "Forslag 3" er fremmet av Høyre og
+  Kristelig Folkeparti ALENE (uten FrP), og gjelder et helt annet tema
+  (utredning av en ungdomskriminalitetsnemnd for 10-14-åringer etter
+  dansk modell), ikke lukket institusjon. Det FrP+H+KrF faktisk står
+  sammen om er komiteens tilråding (vedtak I), sitert direkte over: en
+  anmodning om et nettverk av institusjonsplasser, både åpne og
+  lukkede — uten den ubegrensede varigheten forslag 1 ber om. Denne
+  tilrådingen falt i Stortinget (votering 27114), separat fra forslag
+  1 (votering 27111) som er kilden til dette utsagnet.
+
+  Bekreftet [OK] i votes.py: KrF 0 for / 4 mot (votering 27111).
+retrieved_at: "2026-09-27"

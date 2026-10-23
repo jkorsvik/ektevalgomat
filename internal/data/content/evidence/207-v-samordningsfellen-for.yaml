@@ -1,0 +1,31 @@
+id: ev-2025-12-16-v-samordningsfellen-for
+statement_id: utsagn-40
+party_id: v
+actor: "Venstre"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre stemte for forslag 2 (det vedtatte), men har ingen egen
+  merknad i innstillingen — sammen med Sp det andre av de to
+  avgjørende partiene i den knivskarpe 51-50-voteringen.
+claim_action: >
+  Votering_id 26604, V 2 for, 0 mot. Ingen Venstre-merknad om
+  samordningsfellen funnet i innstillingens fulltekst — i motsetning
+  til SFO-saken (utsagn-32, evidence/198), der Venstre HADDE en egen
+  merknad i samme type sak (arbeids- og sosialkomiteen har ikke
+  Venstre-representant med skriftlig merknad her).
+status: forslag_vedtatt_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26604"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-054l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 fra stemmetallet alene. Sammen med Sp (evidence/206) er
+  Venstre det andre partiet hvis stemmer var avgjørende for at
+  forslag 2 vant 51-50 — begge udokumenterte, men begge strukturelt
+  utslagsgivende, en påminnelse om at "udokumentert" ikke betyr
+  "uviktig" i denne datasettets stemmegivningslogikk.
+retrieved_at: "2026-09-24"

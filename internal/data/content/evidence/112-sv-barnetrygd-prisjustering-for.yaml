@@ -1,0 +1,38 @@
+id: ev-2026-02-10-sv-barnetrygd-prisjustering-for
+statement_id: utsagn-31
+party_id: sv
+actor: "Sosialistisk Venstreparti (familie- og kulturkomiteen)"
+date: "2026-02-10"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV fremmet forslag 4 sammen med MDG om å lovfeste årlig
+  prisjustering av barnetrygden, og stemte for. SV skriver at
+  barnetrygden må forbli universell (ikke skattlegges) og at økt
+  barnetrygd er den mest effektive måten å hjelpe barn i fattige
+  familier.
+claim_action: >
+  Forslag 4 (med MDG), votering_id 26942: SV 5 for, 0 mot.
+verbatim_excerpt: >
+  "Den mest effektive måten å hjelpe barn i fattige familier på, er
+  gjennom å øke barnetrygden. [...] Komiteens medlemmer fra
+  Arbeiderpartiet og Sosialistisk Venstreparti mener det er feil å
+  skattlegge barnetrygden, men at barnetrygden må forbli en universell
+  ordning."
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26942"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at diskresjonære budsjettvedtak er godt
+  nok): SV er medforslagsstiller til forslag 4 (lovfestet
+  indeksering) og har egen utfyllende merknad om barnetrygdens
+  universelle karakter og fordelingseffekt — det motsatte av det
+  snudde utsagnets premiss. Merk at SV eksplisitt IKKE støtter å
+  skattlegge barnetrygden (til forskjell fra MDGs eget, separate
+  forslag 15) — et reelt, dokumentert skille internt i
+  SV/MDG-samarbeidet som ikke bør glattes over. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2. Se
+  evidence/111-barnetrygd-prisjustering-kontekst.yaml.
+retrieved_at: "2026-09-24"

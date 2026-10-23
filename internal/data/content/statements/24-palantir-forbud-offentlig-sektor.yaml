@@ -1,0 +1,16 @@
+id: utsagn-24
+number: 24
+dimension: "Teknologisk kapasitet"
+primary_question: "Kan kritiske digitale funksjoner og kompetanse opprettholdes under press?"
+case_tag: palantir_forbud_offentlig_sektor
+short_name: "Utrede Palantir før et eventuelt forbud"
+text: >
+  Bruken av Palantirs systemer i offentlig sektor bør utredes nærmere,
+  i stedet for at Stortinget vedtar et forbud nå.
+practical_stakes:
+  enig: >
+    Bruken av Palantirs systemer i offentlig sektor utredes nærmere, og
+    Stortinget vedtar ikke et forbud nå.
+  uenig: >
+    Stortinget vedtar nå et forbud mot bruk av Palantirs systemer i
+    offentlig sektor, uten en nærmere utredning først.

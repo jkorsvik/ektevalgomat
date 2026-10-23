@@ -1,0 +1,17 @@
+id: utsagn-54
+number: 54
+dimension: "Finansiering av fellesskapet"
+primary_question: "Hvordan betaler vi for fellesgodene, og hvem bærer kostnaden nå og om 30 år?"
+case_tag: bolig_formuesskatt_teller_mindre
+short_name: "Boligen teller mindre i formuesskatten"
+text: >
+  Boligen man bor i bør telle mindre i formuesskatten enn den gjør i
+  dag.
+practical_stakes:
+  enig: >
+    Verdien av egen bolig (primærbolig) settes lavere i
+    formuesskatteberegningen enn i dag, slik at mindre av boligverdien
+    regnes med i skattegrunnlaget.
+  uenig: >
+    Boligens verdi telles med i formuesskatten på samme måte som i dag;
+    ingen endring i hvor stor andel av boligverdien som regnes med.

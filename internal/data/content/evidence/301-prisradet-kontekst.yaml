@@ -1,0 +1,35 @@
+id: ev-2026-prisradet-kontekst
+statement_id: utsagn-16
+party_id: ""
+actor: "Finanskomiteen / Stortinget i plenum"
+date: "2026-06-01"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 377 S (2025-2026), om Dok. 8:185 S fra Høyre (Bård Ludvig
+  Thorheim m.fl.) om å avvikle Prisrådet for havbruk (normprisrådet)
+  som beregner grunnlaget for havbruksskatten. Vedtatt 54-47 med en
+  FrP+Høyre+Sp+KrF+Venstre-koalisjon mot Ap+SV+Rødt+MDG.
+claim_action: >
+  Komiteens tilråding (vedtatt): "Stortinget ber regjeringen legge
+  frem forslag om å avvikle ordningen med normpris og Prisrådet for
+  havbruk (normprisrådet) med virkning fra og med inntektsåret 2027."
+  Votering_id 28077 (sakid 200117): 54 for (FrP 29, Høyre 14, KrF 4,
+  Sp 5, Venstre 2), 47 mot (Ap 32, MDG 5, Rødt 5, SV 5).
+status: forslag_vedtatt
+position: null
+source_tier: A
+source_name: "Innst. 377 S (2025–2026); data.stortinget.no sakid=200117, votering_id 28077"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-377s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Dette er et VEDTATT forslag (ikke avvist) — regjeringen er nå bedt
+  om å fremme et konkret lovforslag om avviklingen innen
+  statsbudsjettet for 2027. En klassisk skattepolitisk kontrollstrid:
+  tilhengerne (FrP/Høyre/Sp) argumenterer med skatterettslige
+  prinsipper (faktiske priser, ikke teoretiske), motstanderne (Ap/SV/
+  Rødt/MDG) argumenterer med at nettopp normprisen hindrer store,
+  vertikalt integrerte selskaper i å flytte overskudd ut av
+  skattegrunnlaget via internprising til egne datterselskaper.
+retrieved_at: "2026-09-24"

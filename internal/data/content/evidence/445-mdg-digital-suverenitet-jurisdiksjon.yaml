@@ -1,0 +1,45 @@
+id: ev-2026-05-07-mdg-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: mdg
+actor: "Miljøpartiet De Grønne (Marius Langballe Dalin)"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG medforslagsstiller til forslag om at sensitiv informasjon utelukkende skal behandles under norsk eller europeisk jurisdiksjon — forslaget falt."
+claim_action: >
+  MDG fremmet, sammen med SV og Rødt, forslag 4 i Innst. 225 S
+  (2025–2026): at regjeringen skal redegjøre for hvordan den bedre vil
+  følge opp GDPR og sikre at sensitiv og samfunnskritisk informasjon om
+  innbyggere utelukkende skal behandles i løsninger under norsk eller
+  europeisk jurisdiksjon. Forslaget ble votert over 07.05.2026
+  (votering 18) og falt — MDG stemte for.
+verbatim_excerpt: >
+  «Stortinget ber regjeringen redegjøre for hvordan den bedre vil følge
+  opp GDPR og sikre at sensitiv og samfunnskritisk informasjon om
+  innbyggere utelukkende skal behandles i løsninger som er under norsk
+  eller europeisk jurisdiksjon.» [...] Dette medlem fremmer på denne
+  bakgrunn følgende forslag: [...] sørge for at forordningen om
+  digitale tjenester (DSA) og KI-forordningen implementeres i norsk
+  lov slik de er vedtatt i EU, samt at Norge deltar aktivt i
+  EU-initiativ for skytjenestekapasitet og regnekraft der det er
+  relevant.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026), forslag 4; voteringsoversikt votering 18 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at GDPR og EU-dialog er nok): MDG er
+  medforslagsstiller til forslaget som ligger tettest opp mot det
+  opprinnelige jurisdiksjonskravet, og understreker i egen merknad at
+  digital suverenitet for Norge må bygges gjennom europeisk/nordisk
+  samarbeid — det motsatte av det snudde utsagnets premiss om at dagens
+  GDPR-forpliktelse og EU-dialog er tilstrekkelig. Kildene er uenige om
+  forslagsstillerne: innstillingen fører opp Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. fra +2 til -2.
+  forslag 3-6 som «Forslag fra Sosialistisk Venstreparti, Rødt og
+  Miljøpartiet De Grønne», mens voteringsoversikten (votering_id 27492)
+  fører forslag 4 opp som «på vegne av SV og R». MDG stemte for uansett
+  (5 for, 3 ikke til stede). Kodingen hviler på stemmen og MDGs egen
+  tekst, ikke på forslagsstillerstatus.
+retrieved_at: "2026-09-26"

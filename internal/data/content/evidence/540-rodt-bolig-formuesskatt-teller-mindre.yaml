@@ -1,0 +1,31 @@
+id: ev-2026-innst188s-rodt-bolig-formuesskatt-teller-mindre
+statement_id: utsagn-54
+party_id: rodt
+actor: "Rødt"
+date: "2026-03-24"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt er del av komiteflertallet som viser til regjeringens egen, varslede justering og velger å behandle realiteten når revidert nasjonalbudsjett kommer."
+claim_action: >
+  Rødt er del av "Komiteens flertall" (med Ap, SV, Sp, MDG) — se Aps
+  evidensfil for delt merknadstekst. Stemte mot alle fire
+  mindretallsforslag (voteringene 27359-27362).
+verbatim_excerpt: >
+  «Disse medlemmer viser til at dette vil bli behandlet i forbindelse
+  med revidert nasjonalbudsjett. Disse medlemmer vil derfor behandle
+  realitetene i forslaget i forbindelse med Stortingets behandling av
+  revidert nasjonalbudsjett.»
+status: forslag_avvist_stemte_mot
+position: 0
+source_tier: A
+source_name: "Innst. 188 S (2025–2026); voteringene 27359-27362 (24.03.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet 0, samme delte merknad og samme resonnement som Ap (se Aps
+  evidensfil). Dette er en reell tier-A-kilde til Rødts posisjon i
+  dimensjon 10, til tross for at Rødts eget partiprogram for
+  2025–2029 ikke var tilgjengelig (se kontekstfilen for utsagn-52).
+  Bekreftet [OK] i votes.py: Rødt 0 for / 5 mot på alle fire
+  voteringer.
+retrieved_at: "2026-09-27"

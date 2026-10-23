@@ -1,0 +1,38 @@
+id: ev-2025-12-16-frp-samordningsfellen-for
+statement_id: utsagn-40
+party_id: frp
+actor: "Fremskrittspartiet (arbeids- og sosialkomiteen)"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte for på alle tre forslag, som opprinnelig forslagsstiller
+  til hele saken (Dokument 8:19 L) og eneste part med en full,
+  konkret lovendringstekst (forslag 1). Egen merknad peker på
+  motsetningen mellom å heve aldersgrensen til 72 år og samtidig ha
+  samordningsregler som straffer nettopp det å stå lenger i arbeid.
+claim_action: >
+  Votering_id 26604 (forslag 2, MDG), FrP 29 for, 0 mot. Fra FrPs egen
+  merknad: partiet fremmer forslag om opphevelse av samordningsfellen
+  med ikrafttredelse "fra den tiden Kongen bestemmer" (ikke straks),
+  og argumenterer for at dette adresserer motsetningen mellom å heve
+  aldersgrensen til 72 år og å ha samordningsregler som reduserer
+  pensjonen for å stå lenger i arbeid.
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26602, 26604"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-054l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt for): FrP er opprinnelig forslagsstiller med en
+  fullt utformet, konkret lovtekst (forslag 1, evidence/201s
+  kontekst), og har en egen, saks-spesifikk begrunnelse om
+  motsetningen mellom hevet aldersgrense og samordningsreglenes
+  effekt — ikke bare en generell velvilje-uttalelse. FrPs forslag 1
+  falt (29 mot 73), men partiet stemte konsekvent for de svakere
+  alternativene (forslag 2 og 3) også, i motsetning til f.eks. Sp i
+  matberedskap-saken (utsagn-38) som stemte mot sitt eget opprinnelige
+  forslag.
+retrieved_at: "2026-09-24"

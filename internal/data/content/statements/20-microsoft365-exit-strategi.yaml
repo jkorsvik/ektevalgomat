@@ -1,0 +1,18 @@
+id: utsagn-20
+number: 20
+dimension: "Teknologisk kapasitet"
+primary_question: "Kan kritiske digitale funksjoner og kompetanse opprettholdes under press?"
+case_tag: microsoft365_exit_strategi
+short_name: "Flere leverandører fremfor rask exit"
+text: >
+  Staten bør redusere avhengigheten av store IT-plattformer gjennom flere
+  leverandører, ikke en rask, tidfestet exit-strategi fra plattformer som
+  Microsoft 365.
+practical_stakes:
+  enig: >
+    Staten reduserer avhengigheten av store IT-plattformer ved å bruke flere
+    leverandører. Det innføres ingen tidfestet plan for å fase ut
+    plattformer som Microsoft 365.
+  uenig: >
+    Staten innfører en rask, tidfestet plan for å fase ut plattformer som
+    Microsoft 365 fra offentlig sektor.

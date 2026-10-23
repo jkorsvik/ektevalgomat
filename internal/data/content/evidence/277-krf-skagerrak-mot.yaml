@@ -1,0 +1,24 @@
+id: ev-2026-05-26-krf-skagerrak-mot
+statement_id: utsagn-09
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF stemte mot dette forslaget, i motsetning til utsagn-08 (forslag
+  1-3) der partiet stemte for. Ingen egen merknad.
+claim_action: "Votering_id 28136, KrF 4 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28136"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: KrF bryter sitt eget for-mønster fra utsagn-08 (samme
+  sak, forslag 1-3) her — samme mønster som SV, men i motsatt
+  retning av partiets normale linje i denne saken. Ingen dokumentert
+  begrunnelse for skiftet.
+retrieved_at: "2026-09-24"

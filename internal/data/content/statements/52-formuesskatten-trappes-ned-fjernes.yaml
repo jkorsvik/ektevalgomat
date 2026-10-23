@@ -1,0 +1,16 @@
+id: utsagn-52
+number: 52
+dimension: "Finansiering av fellesskapet"
+primary_question: "Hvordan betaler vi for fellesgodene, og hvem bærer kostnaden nå og om 30 år?"
+case_tag: formuesskatten_trappes_ned_fjernes
+short_name: "Formuesskatten trappes ned og fjernes"
+text: >
+  Formuesskatten bør trappes ned og på sikt fjernes.
+practical_stakes:
+  enig: >
+    Formuesskatten reduseres gradvis og fjernes til slutt. Ingen betaler
+    lenger skatt på nettoformue (verdien av bolig, aksjer, bankinnskudd
+    med mer, minus gjeld).
+  uenig: >
+    Formuesskatten videreføres. Personer med nettoformue over
+    bunnfradraget fortsetter å betale skatt på formuen sin, som i dag.

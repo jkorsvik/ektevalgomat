@@ -1,0 +1,36 @@
+id: ev-2026-partiprogram-mdg-europeisk-samarbeid
+statement_id: utsagn-45
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG vil ha mer europeisk samarbeid og forhandlinger om EU-medlemskap, og kaller EU Norges viktigste strategiske partner for klima og energi og et sentralt fredssamarbeid."
+claim_action: >
+  MDGs arbeidsprogram 2025–2029 (kapittel «Sterkere sammen i Norden og
+  Europa») går inn for mer europeisk samarbeid og EU-medlemskapsforhandlinger,
+  og kaller EU Norges viktigste strategiske partner «for å styrke
+  miljø- og klimapolitikken og energiomstillingen» og «et sentralt
+  fredssamarbeid». Programmet kaller ikke EU en sikkerhetspartner.
+verbatim_excerpt: >
+  «De Grønne vil ha mer europeisk samarbeid, og at Norge skal starte
+  forhandlinger med EU om medlemskap. EU er Norges viktigste strategiske
+  partner for å styrke miljø- og klimapolitikken og energiomstillingen,
+  og et sentralt fredssamarbeid.»
+status: programfestet
+position: -1
+source_tier: C
+source_name: "MDGs arbeidsprogram 2025–2029"
+source_url: "https://mdg.no/_service/505809/download/id/1506077/name/MDGs+arbeidsprogram+2025-2029.pdf"
+claim_confidence: sannsynliggjort
+consistency_flag: consistent
+context_note: >
+  Kodet -1: MDGs kapittel har ingen setning som eksplisitt kobler EU til
+  forsvar/beredskap på samme presise måte som SV, Høyre eller Venstre —
+  koblingen her er sluttet fra deres generelle «mer europeisk
+  samarbeid»/EU-medlemskaps-linje, ikke et direkte forsvarsspesifikt
+  sitat. Derfor claim_confidence «sannsynliggjort», ikke «dokumentert»,
+  og -1 (moderat), ikke -2. Tier C, ikke tier A.
+  consistency_flag=consistent: MDGs stemme i Innst. 464 S (samme utsagn,
+  egen fil — ingen behov for strengere grunnlovsterskel) peker samme vei.
+retrieved_at: "2026-09-26"

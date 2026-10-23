@@ -1,0 +1,55 @@
+id: ev-2026-06-05-matberedskap-saakorn-kontekst
+statement_id: utsagn-38
+party_id: ""
+actor: "Næringskomiteen / Stortinget i plenum"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet et representantforslag fra Sp om styrking av
+  Norges matberedskap. Blant seks konkrete forslag ble et forslag om
+  desentraliserte beredskapslagre for såkorn og matkorn på gårdene
+  avvist 48 mot 53 — den jevneste voteringen i saken. Første utsagn i
+  Dimensjon 8 (Robusthet / adaptabilitet, 38/39/41/42), som til nå har
+  vært helt tom — den siste dimensjonen i datasettet uten noe innhold.
+claim_action: >
+  Dokument 8:266 S (2025-2026), Innst. 392 S (2025-2026). Fremmet av
+  Geir Pollestad, Siv Sætran og Ole Herman Sveian (Sp). Votering_id
+  28068, forslag nr. 1 fra FrP, SV, Rødt, MDG og KrF: "Stortinget ber
+  regjeringen sikre beredskapslagre for såkorn og matkorn i en
+  desentralisert modell på gårdene rundt om i landet." Avvist 48 for
+  / 53 mot, fordelt FrP 29, SV 5, R 5, MDG 5, KrF 4 for; Ap 32, H 14,
+  Sp 5, V 2 mot (full fordeling i partikortene). To andre forslag i
+  samme sak (romertall I og II, om en utredning av finsk-modell
+  beredskapslagre og avtaler med dagligvarekjeder) ble derimot VEDTATT
+  57 mot 43 (votering_id 28069) — saken er blant få i datasettet der
+  Stortinget faktisk vedtok noe av det som ble fremmet, ikke bare
+  avviste det.
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068, 28069"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Institusjonell kontekst, ikke én enkelt partis posisjon. Saken
+  tester dimensjonens spørsmål direkte: dagens system overlater
+  lagring av kritiske innsatsfaktorer til matproduksjon (såkorn,
+  såfrø) i stor grad til markedet, og forslaget spør konkret om
+  systemet tåler avlingssvikt, importstans og andre sjokk uten en
+  dedikert beredskapsmekanisme. Uvanlig koalisjonsmønster: forslag 1s
+  sponsorgruppe (FrP, SV, Rødt, MDG, KrF) krysser venstre-høyre-aksen
+  på en måte som ikke er sett i noen tidligere sak i datasettet — FrP
+  og KrF har sin EGEN, smalere begrunnelse (finsk modell, "statens
+  ansvar for totalberedskap erstatter ikke den enkeltes ansvar for
+  egenberedskap") innenfor samme sponsorgruppe som SV/Rødt/MDGs bredere
+  sentralisering/sårbarhet-begrunnelse — se evidence/162-166. Sp, som
+  er den OPPRINNELIGE forslagsstilleren for hele saken og
+  medforslagsstiller på de tre andre konkrete forslagene (2, 3, 4) i
+  samme innstilling, stemte likevel MOT nettopp dette forslaget — ingen
+  Sp-spesifikk begrunnelse er dokumentert for dette spesifikke valget,
+  se evidence/169. Høyre deler generell skepsis til Sps opprinnelige
+  forslag sammen med FrP og KrF, men går ikke så langt som FrP/KrF i å
+  støtte den desentraliserte løsningen — se evidence/168.
+retrieved_at: "2026-09-24"

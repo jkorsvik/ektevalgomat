@@ -1,0 +1,27 @@
+id: ev-2024-rodt-etterprovbarhet-for
+statement_id: utsagn-05
+party_id: rodt
+actor: "Rødt (Marie Sneve Martinussen, Seher Aydar)"
+date: "2024-01-01"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er den opprinnelige forslagsstilleren til hele Dok. 8:1 S
+  (2023-2024). Alle 4 fremmøtte stemte for forslag 3 i
+  komitébehandlingen.
+claim_action: >
+  Votering_id 22102, Rødt 4 for, 0 mot. Rødts eget Dok. 8:1 S er
+  opprinnelsen til forslag 3 om å sanksjonere habilitetsbrudd og
+  overprøve statsråders egne habilitetsvurderinger.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 140 S (2023–2024); votering_id 22102"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2023-2024/dok8-202324-001s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Rødt er sakens opprinnelige, eneste forslagsstiller til
+  hele Dok. 8:1 S — den mest direkte forbindelsen til utsagnets
+  etterprøvbarhets-krav av alle partiene.
+retrieved_at: "2026-09-24"

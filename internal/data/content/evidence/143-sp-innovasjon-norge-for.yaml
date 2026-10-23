@@ -1,0 +1,31 @@
+id: ev-2026-06-10-sp-innovasjon-norge-for
+statement_id: utsagn-21
+party_id: sp
+actor: "Senterpartiet (næringskomiteen)"
+date: "2026-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte for, som forslagets opprinnelige forslagsstiller
+  (representantforslaget er fremmet av tre Sp-representanter) og
+  medforslagsstiller på selve komitéforslaget sammen med SV og Rødt.
+claim_action: >
+  Votering_id 28197, Sp 5 for, 0 mot. Representantforslaget (Dokument
+  8:267 S) er fremmet av Geir Pollestad, Erling Sande og Bent-Joacim
+  Bentzen, alle Sp. Samme delte merknad som SV (se evidence/142) —
+  desentralisering som "grunnleggende prinsipp" i et "langstrakt
+  land".
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 424 S (2025–2026); votering_id 28197"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-424s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at Innovasjon Norge selv bør velge
+  organisasjonsform): Sp er både opphavlig forslagsstiller på selve
+  representantforslaget og medforslagsstiller på komitéforslaget —
+  sterkeste mulige dokumentasjon av eierskap til den motsatte
+  posisjonen blant de ni partiene i denne saken. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-24"

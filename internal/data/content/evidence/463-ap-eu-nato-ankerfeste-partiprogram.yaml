@@ -1,0 +1,32 @@
+id: ev-2026-partiprogram-ap-eu-nato-ankerfeste
+statement_id: utsagn-45
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap mener EU-samarbeidet utfyller NATO-samarbeidet på forsvar og sikkerhet, ikke begrenser det."
+claim_action: >
+  Aps partiprogram 2025–2029 (kapittel «Europa og Norden») beskriver
+  EU-samarbeidet på utenriks-, sikkerhets- og forsvarspolitikk som et
+  supplement til NATO, ikke en konkurrerende begrensning.
+verbatim_excerpt: >
+  Samarbeidet med EU utfyller NATO-samarbeidet, vårt forsvars- og
+  sikkerhetspolitiske ankerfeste.
+status: programfestet
+position: -1
+source_tier: C
+source_name: "Arbeiderpartiets partiprogram 2025–2029 (PDF)"
+source_url: "https://res.cloudinary.com/arbeiderpartiet/image/upload/fl_attachment:partiprogram-2025-2029/v1/ievv_filestore/130322a45ccf45889bfc6fa4116c5b480cadc1e93e51491f8199451dd231c7c5"
+claim_confidence: dokumentert
+consistency_flag: consistent
+context_note: >
+  Kodet -1, ikke -2: Ap beskriver EU-forsvarssamarbeidet som utfyllende
+  («utfyller NATO-samarbeidet»), en reell, men mindre eksplisitt
+  pådriver-holdning enn Høyre eller Venstres tekst — ingen tilsvarende
+  «vil fordype»/«full deltakelse»-formulering. Fortsatt en klar,
+  ordrett indikasjon på at Ap IKKE deler bekymringen utsagnet bygger på.
+  Tier C, ikke tier A. consistency_flag=consistent: Aps stemme i
+  Innst. 464 S (samme utsagn, egen fil — ingen behov for strengere
+  grunnlovsterskel) peker samme vei.
+retrieved_at: "2026-09-26"

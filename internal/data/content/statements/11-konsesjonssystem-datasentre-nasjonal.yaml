@@ -1,0 +1,16 @@
+id: utsagn-11
+number: 11
+dimension: "Norsk handlefrihet"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne?"
+case_tag: konsesjonssystem_datasentre_nasjonal
+short_name: "Nasjonalt konsesjonssystem for datasentre"
+text: >
+  Regjeringen bør utrede innføring av et nasjonalt konsesjonssystem for
+  datasentre.
+practical_stakes:
+  enig: >
+    Regjeringen setter i gang en utredning av et nasjonalt konsesjonssystem
+    for datasentre.
+  uenig: >
+    Ingen slik utredning settes i gang. Datasentre etableres videre uten et
+    nasjonalt konsesjonssystem.

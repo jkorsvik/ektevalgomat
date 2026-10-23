@@ -1,0 +1,18 @@
+id: utsagn-42
+number: 42
+dimension: "Robusthet / adaptabilitet"
+primary_question: "Tåler systemet bortfall, sjokk og feilantakelser?"
+case_tag: nordisk_europeisk_digital_beredskap
+short_name: "Nordisk/europeisk samarbeid om digital beredskap"
+text: >
+  Regjeringen bør samarbeide tettere med nordiske og europeiske land om
+  felles digitale løsninger og beredskap, der åpne kildekoder og digital
+  suverenitet er førende.
+practical_stakes:
+  enig: >
+    Regjeringen samarbeider tettere med nordiske og europeiske land om
+    felles digitale løsninger og beredskap, med åpne kildekoder og digital
+    suverenitet som ledende prinsipper.
+  uenig: >
+    Samarbeidet med nordiske og europeiske land om felles digitale
+    løsninger og beredskap blir ikke tettere enn i dag.

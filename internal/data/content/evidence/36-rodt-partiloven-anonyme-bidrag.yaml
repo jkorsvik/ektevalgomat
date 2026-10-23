@@ -1,0 +1,37 @@
+id: ev-2025-06-13-rodt-partiloven-anonyme-bidrag
+statement_id: utsagn-03
+party_id: rodt
+actor: "Rødt (Tobias Drevland Lund, kommunal- og forvaltningskomiteen)"
+date: "2025-06-13"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt stemte for forbudet og fremmet to egne tilleggsforslag om enda strengere meldeplikt og rapportering."
+claim_action: >
+  Rødt er del av komiteflertallet som fremmet og vedtok § 17 a-forbudet.
+  Stemte FOR (individuell representantstemme, votering_id 26057: 5 for,
+  0 mot i egen gruppe). Rødts eget medlem fremmet i tillegg to egne
+  forslag (5 og 6) om rapporteringsplikt for bidrag direkte til
+  enkeltkandidater og forbud mot å bruke gaver før de er innrapportert —
+  begge falt (10 mot 91), men går lenger i samme retning som utsagnet.
+verbatim_excerpt: >
+  Komiteens medlem fra Rødt viser til at det i dag ikke er
+  rapporteringsplikt for bidrag til enkeltkandidater, altså bidrag holdt
+  utenom de ordinære partiapparatene. […] Stortinget ber regjeringen
+  særskilt vurdere behovet for å innføre rapporteringsplikt for alle
+  typer bidrag direkte til enkeltkandidater [...] og komme tilbake til
+  Stortinget på egnet måte. […] Stortinget ber regjeringen særskilt
+  vurdere behovet for å innføre et forbud mot å bruke gaver før de er
+  innrapportert [...] og komme tilbake til Stortinget på egnet måte.
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 528 L (2024–2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: Rødt stemte FOR forbudet uten unntak, og fremmet selv de mest
+  vidtgående tilleggsforslagene i saken (falt) — det tydeligste "lenger
+  enn statusquo, samme retning" tilfellet av alle ni partier her.
+  Individuell representantstemme hentet direkte fra data.stortinget.no
+  for votering_id 26057.
+retrieved_at: "2026-09-23"

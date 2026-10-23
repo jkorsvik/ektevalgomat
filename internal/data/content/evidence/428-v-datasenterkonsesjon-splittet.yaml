@@ -1,0 +1,24 @@
+id: ev-2026-v-datasenterkonsesjon-splittet
+statement_id: utsagn-11
+party_id: v
+actor: "Venstre"
+date: "2026-03-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Venstre splittet nøyaktig: 1 av 2 fremmøtte stemte for, 1 stemte
+  mot — en av flere dokumenterte interne splitter i dette datasettet.
+claim_action: "Votering_id 27047, Venstre 1 for, 1 mot."
+status: forslag_avvist_stemte_for
+position: 0
+source_tier: A
+source_name: "Innst. 140 S (2025–2026); votering_id 27047"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-140s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet 0 (nøytral/delt), ikke +1/-1: nøyaktig 1-1-splitt blant
+  Venstres 2 fremmøtte representanter, uten en dokumentert
+  partilinje. Samme mønster som SV viste på utsagn-41 (digitalt
+  kriseråd) — en ekte, uavgjort intern splitt.
+retrieved_at: "2026-09-24"

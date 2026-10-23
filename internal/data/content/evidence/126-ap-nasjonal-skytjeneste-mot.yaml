@@ -1,0 +1,43 @@
+id: ev-2026-04-28-ap-nasjonal-skytjeneste-mot
+statement_id: utsagn-19
+party_id: ap
+actor: "Arbeiderpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot, sammen med Høyre. Ap viser til at det ikke er
+  forsvarlig av Stortinget å legge så detaljerte føringer på en
+  komplisert sak, og til statsrådens vurdering: en konseptvalgutredning
+  (KVU) om nasjonal skytjeneste er allerede gjennomført, og en lukket
+  statlig sky ble vurdert som den DYREST løsningen -- ekstern
+  kvalitetssikring anbefalte å ikke gå videre med konseptet.
+claim_action: >
+  Votering_id 27485, Ap 0 for, 32 mot.
+verbatim_excerpt: >
+  "Disse medlemmer støtter intensjonen i representantforslaget, men
+  mener det ikke er forsvarlig av Stortinget å legge såpass detaljerte
+  føringer for viktige beslutninger om meget kompliserte saker som
+  opprettelse og konkret utforming av en nasjonal skytjeneste [...]
+  uten grundigere utredninger. [...] Når det gjelder forslaget om en
+  nasjonal skytjeneste, påpeker statsråden at det allerede er
+  gjennomført en konseptvalgutredning (KVU) [...] en lukket, statlig
+  skytjeneste vurdert å være den dyreste løsningen [...] en av de
+  viktigste anbefalingene var å ikke gå videre med konseptet."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27485"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1: dette er nøyaktig Aps egen argumentasjon, gjengitt som det
+  snudde utsagnet nå hevder — Ap deler eksplisitt "intensjonen" (digital
+  suverenitet), men avviser forslag 11 med henvisning til regjeringens
+  EGEN konseptvalgutredning, som fant at nettopp DENNE modellen (lukket
+  statlig sky) er den dyreste løsningen og ble frarådet av ekstern
+  kvalitetssikring — en faktabasert, ikke bare prinsipiell, innvending.
+  +1 ikke +2 fordi Ap deler intensjonen bak en statlig løsning, bare
+  ikke akkurat denne modellens kostnad. Se
+  evidence/121-nasjonal-skytjeneste-kontekst.yaml. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

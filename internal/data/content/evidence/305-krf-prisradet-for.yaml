@@ -1,0 +1,23 @@
+id: ev-2026-krf-prisradet-for
+statement_id: utsagn-16
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-06-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF stemte for avvikling, uten en egen substansiell merknad utover
+  en henvisning til budsjettforslag.
+claim_action: "Votering_id 28077, KrF 4 for, 0 mot."
+status: forslag_vedtatt_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 377 S (2025–2026); votering_id 28077"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-377s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1: stemmen er dokumentert, men ingen substansiell KrF-
+  begrunnelse utover en henvisning til partiets eget budsjettforslag
+  finnes i innstillingen.
+retrieved_at: "2026-09-24"

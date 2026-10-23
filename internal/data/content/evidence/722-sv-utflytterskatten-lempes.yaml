@@ -1,0 +1,25 @@
+id: ev-2025-partiprogram-sv-utflytterskatten-lempes
+statement_id: utsagn-58
+party_id: "sv"
+actor: "Sosialistisk Venstreparti"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV vil gjøre det vanskeligere å slippe unna skatt ved å flytte til
+  utlandet.
+claim_action: >
+  SVs arbeidsprogram 2025–2029 sier dette med egne ord. Partiprogram,
+  ikke en Storting-avstemning.
+verbatim_excerpt: >
+  tette skattehull og gjøre det vanskeligere å slippe unna
+  skatteregningen ved flytting til utlandet
+status: programfestet
+position: -2
+source_tier: C
+source_name: "SVs arbeidsprogram 2025–2029"
+source_url: "https://www.sv.no/wp-content/uploads/2025/10/arbeidsprogram-2025-interaktiv-bokmal.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: motsatt retning av utsagnet. Se også fil 723.
+retrieved_at: "2026-10-02"

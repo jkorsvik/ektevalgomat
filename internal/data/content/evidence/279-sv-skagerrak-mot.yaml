@@ -1,0 +1,30 @@
+id: ev-2026-05-26-sv-skagerrak-mot
+statement_id: utsagn-09
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  SV stemte MOT dette forslaget, til forskjell fra utsagn-08 (forslag
+  1-3, samme sak) der SV var medforslagsstiller og stemte for. SV er
+  ikke medforslagsstiller på nettopp dette forslaget (kun FrP, Sp og
+  Rødt), og ingen egen SV-merknad om Skagerrak finnes.
+claim_action: "Votering_id 28136, SV 5 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28136"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1, IKKE -2: dette er den mest presise dokumentasjonen av at
+  SVs støtte til "kontroll over krafteksporten" (utsagn-08) ikke er
+  ubetinget — partiet trekker en linje ved å stoppe en pågående,
+  konkret NVE-utredning om en navngitt kabelforbindelse, selv om det
+  generelle prinsippet (eksportbegrensning, kabel-reforhandling)
+  fortsatt støttes. Uten en egen SV-merknad er den presise
+  begrunnelsen for denne nyansen ikke dokumentert fra partiet selv —
+  bare stemmeutfallet.
+retrieved_at: "2026-09-24"

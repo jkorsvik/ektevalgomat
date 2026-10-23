@@ -1,0 +1,32 @@
+id: ev-2026-partiprogram-hoyre-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: h
+actor: "Høyre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre vil fjerne formuesskatten på arbeidende kapital, øke bunnfradraget på all formuesskatt, og på sikt avskaffe den helt — som per definisjon reduserer skattebidraget fra eiere av stor formue."
+claim_action: >
+  Høyres program vil fjerne formuesskatten på arbeidende kapital og
+  øke bunnfradraget på all formuesskatt; partiets egen merknad i
+  Innst. 188 S (se utsagn-52) sier formuesskatten "bør deretter
+  avskaffes i sin helhet".
+verbatim_excerpt: >
+  fjerne formuesskatten på arbeidende kapital [...] øke bunnfradraget
+  på all formuesskatt
+status: programfestet
+position: -1
+source_tier: C
+source_name: "Høyres stortingsvalgprogram 2025–2029 (PDF)"
+source_url: "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf"
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet -1, ikke -2: dette utsagnet dekker BÅDE inntekt og formue, og
+  Høyres program er tydeligst på formue (formuesskatt-reduksjon), men
+  har ingen tilsvarende eksplisitt "høyinntektsgrupper skal betale
+  mindre"-formulering — kun en generell konkurransedyktighets-
+  argumentasjon om skattenivå for bedrifter. Kombinert med det
+  generelle målet om å redusere skatt som andel av fastlandsøkonomien
+  (se utsagn-55) peker helheten klart i motsatt retning av utsagnet,
+  men ikke presist nok for -2. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

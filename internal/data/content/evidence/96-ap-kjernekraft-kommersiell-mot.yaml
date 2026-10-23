@@ -1,0 +1,39 @@
+id: ev-2026-05-26-ap-kjernekraft-kommersiell-mot
+statement_id: utsagn-13
+party_id: ap
+actor: "Arbeiderpartiet (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot å lovendre nå for kommersiell kjernekraft. Ikke
+  fundamentalt mot kjernekraft, men vil ha en helhetlig
+  stortingsmelding først som klargjør kostnads- og ansvarsfordeling
+  mellom stat og private, og vil ikke la kjernekraftdebatten forsinke
+  fornybarutbygging på kort sikt.
+claim_action: >
+  Votering_id 27722, Ap 0 for, 31 mot. Ap er del av
+  syvpartiflertallet (med H, SV, Sp, R, MDG, V) bak den svakere
+  tilrådingen (votering_id 27723, vedtatt): kun en stortingsmelding,
+  ingen lovendring nå.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Arbeiderpartiet, Senterpartiet, Rødt og
+  Miljøpartiet De Grønne merker seg at forslag om privat og
+  kommersielt lønnsom kjernekraft ikke avklarer hvilke kostnader og
+  ansvar staten i realiteten vil sitte igjen med. [...] En uavklart
+  ansvarsfordeling mellom stat og private aktører kan ikke vedtas
+  gjennom enkeltforslag i Stortinget, men må utredes grundig."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27722, 27723"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: Ap avviser Å LOVENDRE NÅ for en uklar
+  privat/kommersiell modell, ikke kjernekraft som teknologi. Ap
+  ønsker en grundig prosess (stortingsmelding) før noe vedtas, og
+  prioriterer fornybarutbygging på kort sikt — men er ikke part av
+  noen uttalt prinsipiell motstand mot kjernekraft i seg selv. Se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml.
+retrieved_at: "2026-09-24"

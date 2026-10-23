@@ -1,0 +1,35 @@
+id: ev-2026-05-19-h-integreringserklaering-skriftlig-forpliktelse
+statement_id: utsagn-50
+party_id: h
+actor: "Høyre"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre støtter plikten til å signere, men ønsket en bredere målgruppe og tydeligere konsekvenser ved brudd."
+claim_action: >
+  Høyre er del av komiteflertallet (med Ap og Sp) som fremmet loven, og
+  støtter signeringsplikten som sådan (delt merknad med Ap, se Aps
+  evidensfil). Høyre fremmet i tillegg egne tilleggsforslag om bredere
+  målgruppe (etter dansk modell) og tydeligere sanksjoner ved brudd,
+  som ble vedtatt som anmodningsvedtak (romertall B, votering 27780).
+  Stemte for hovedloven (votering 27779: 54 for, 44 mot).
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Arbeiderpartiet og Høyre støtter forslaget
+  om å innføre en plikt til å signere en integreringserklæring for
+  deltakere i introduksjonsprogrammet. En slik erklæring vil etter
+  disse medlemmers syn bidra til å tydeliggjøre forventninger om
+  selvforsørgelse, respekt for grunnleggende rettigheter og
+  likestilling»
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 309 L (2025–2026); voteringene 27779 og 27780 (19.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: egen (delt) begrunnelse for signeringsplikten, pluss egne
+  tilleggsforslag som ønsker den enda strengere (bredere målgruppe,
+  klarere sanksjoner) — ikke en reservasjon mot selve utsagnet, men et
+  ønske om mer. Bekreftet [OK] i votes.py: H 14 for / 0 mot på
+  hovedloven.
+retrieved_at: "2026-09-27"

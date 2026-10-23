@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/quiz-flow.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/front.css"}}">
+</head>
+<body class="no-js" data-page="quiz">
+<script>document.body.classList.remove('no-js')</script>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* Front page: one task first, everything else one level down.
+       (2026-10-12, after feedback that the eleven-dimension overview,
+       every element reasonable on its own, was the first thing a
+       visitor met before being given any task.) The first screen now
+       answers "what do I do here" in a short intro plus one start
+       action; the dimension overview keeps all its content but moves
+       below the quiz, inside a collapsed <details>. Why this exists
+       and how it is built stay on /om and /metode, the opted-into
+       depth. */}}
+  <section class="card front-intro">
+    <h2>Slik bruker du valgomaten</h2>
+    <p class="lede front-lede">
+      Du tar stilling til {{.Statements}} utsagn og ser hvilke partier
+      som står nærmest deg. Hver partiposisjon bygger på en kilde.
+      Svarene dine blir i nettleseren din, og du kan svare på så mange du
+      vil.
+    </p>
+    <p class="front-start">
+      <a class="start-link" href="#quiz-frame">Start valgomaten <span aria-hidden="true">↓</span></a>
+    </p>
+    <p class="front-more">
+      Les mer om <a href="/om">bakgrunnen</a> og
+      <a href="/metode">metoden</a>.
+    </p>
+  </section>
+
+  <noscript>
+    <div class="card no-js-notice">
+      <p>Uten JavaScript kan ikke valgomat-quizen kjøre lokalt i
+      nettleseren din. Du kan fortsatt lese alle kildene direkte:</p>
+      <ul id="noscript-links">
+        {{range .StatementList}}
+        <li><a href="/utsagn/{{.Number}}">{{.Number}}. {{.Text}}</a></li>
+        {{end}}
+      </ul>
+    </div>
+  </noscript>
+
+  {{/* The note and the quiz share one frame so "Start valgomaten" can scroll
+       to both. Pointed at #quiz-root alone, the jump put the quiz at the top
+       of the screen and the "your browser cannot save" note just above it,
+       out of sight, on the path most visitors take. */}}
+  <div id="quiz-frame">
+    <div id="storage-note" class="js-only" role="status"></div>
+    <div id="quiz-root" class="js-only"></div>
+  </div>
+
+  {{/* Demoted depth tier (2026-10-12): the whole eleven-dimension
+       vision, still all eleven, but one click away instead of the wall
+       in front of the task. Server-rendered rows, so the structure
+       still works with JS disabled; the count and bar default to the
+       visitor's own honest "0 av N besvart" and are filled in by
+       quiz.js's updateDimensionOverview() as they answer. The count
+       and bar are NOT the old "Built/Total utsagn bygget"
+       dev-completeness metric: they say how many you have answered,
+       nothing about the author's work. */}}
+  <details class="card front-dimensions">
+    <summary class="front-dimensions-sum">Se temaene du blir spurt om ({{len .AllDimensionRows}})</summary>
+    <h3>Kjerneverdiene (dimensjonene)</h3>
+    <p class="lede">
+      Forskningsnotatet deler «god samfunnsutvikling» inn i ni
+      verdidimensjoner, hver med sitt eget hovedspørsmål. To dimensjoner
+      til er lagt til etter tilbakemelding fra brukere. Hvert utsagn i
+      quizen hører til én av disse elleve{{if .AddendumCount}}, unntatt {{.AddendumCount}} utsagn utenfor dimensjonene, se
+      <a href="/metode">metoden</a>{{end}}. Tallet under er ditt eget. Det
+      viser hvor mange av utsagnene på hver dimensjon du har svart på så
+      langt, ikke hvor mye av prosjektet som er bygget.
+    </p>
+    <div class="dim-list">
+      {{range .AllDimensionRows}}
+      <div class="dim-row" id="dim-row-{{dimSlug .}}">
+        <div class="dim-head">
+          {{if gt .Built 0}}<a class="dim-name" href="/#dim-{{dimSlug .}}">{{.Name}}</a>{{else}}<span class="dim-name">{{.Name}}</span>{{end}}
+          <span class="dim-count">0 av {{.Total}} besvart</span>
+        </div>
+        {{if dimQuestion .}}<p class="dim-question">{{dimQuestion .}}</p>{{end}}
+        <div class="bar-track"><div class="bar-fill pct-0"></div></div>
+      </div>
+      {{end}}
+    </div>
+    <p class="lede dim-feedback">
+      Har du et innspill til en av dimensjonene, eller et utsagn du
+      mener bør testes? Kanskje noe et parti har lovet eller stemt, som du
+      mener hører hjemme her. Send det til
+      <a href="mailto:jkorsvik@outlook.com?subject=Ekte%20valgomat%20-%20tilbakemelding">jkorsvik@outlook.com</a>.
+      Kildene bak prosjektet bygges ut jevnlig. Innspillet ditt kan bli
+      neste utsagn.
+    </p>
+  </details>
+
+  {{/* "Meld interesse" deliberately last: a feedback channel for a
+       specific dimension/statement above, a separate ask to actually
+       join the work down here — the user's own ordering (2026-09-24). */}}
+  <section class="card cta-card">
+    <h2>Vil du bidra?</h2>
+    <p>
+      De ni dimensjonene fra forskningsnotatet og de to som er lagt til
+      etter tilbakemelding ({{coreStatementBuilt}} utsagn i alt) er
+      bygget. Partidekningen varierer fra utsagn til utsagn, og datasettet
+      vokser videre. Vil du hjelpe med å hente inn og sjekke kilder, kode
+      partiposisjoner eller bygge videre på siden? Ta kontakt.
+    </p>
+    <a class="cta-link" href="mailto:jkorsvik@outlook.com?subject=Ekte%20valgomat%20-%20jeg%20vil%20bidra">Meld interesse <span aria-hidden="true">→</span></a>
+  </section>
+</main>
+
+<footer class="site">
+  <p>
+    Kildefilene bak hver partiposisjon bygges ut jevnlig. Hver endring er
+    en tilføyelse med historikk, ikke en overskrevet rad. Ingen svar fra
+    brukere lagres eller sendes til en server. Bygget {{year}}.
+    <a href="/personvern">Personvern <span aria-hidden="true">→</span></a>
+  </p>
+  <p>
+    Lisensiert under
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL-3.0</a>.
+    Kildekoden er åpen:
+    <a href="https://github.com/jkorsvik/ektevalgomat">github.com/jkorsvik/ektevalgomat</a>.
+    Kjører du en endret versjon offentlig, skal koden din også være det.
+  </p>
+</footer>
+
+<script id="ektevalgomat-data" type="application/json">{{.PayloadJSON}}</script>
+<script src="{{asset "/static/js/scoring.js"}}"></script>
+<script src="{{asset "/static/js/store.js"}}"></script>
+<script src="{{asset "/static/js/avveining.js"}}"></script>
+<script src="{{asset "/static/js/quiz.js"}}"></script>
+</body>
+</html>

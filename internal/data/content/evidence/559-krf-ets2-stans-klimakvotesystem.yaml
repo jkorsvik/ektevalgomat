@@ -1,0 +1,24 @@
+id: ev-2025-12-09-krf-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2025-12-09"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "KrF har ikke sete i energi- og miljøkomiteen og ingen egen merknad. Stemte for komiteens tilråding, som lot ETS2-gjennomføringen fortsette."
+claim_action: >
+  KrF har ikke sete i energi- og miljøkomiteen for denne saken og har
+  derfor ingen egen merknad. Stemte for komiteens tilråding (votering
+  26747, som innebar å IKKE stanse ETS2-gjennomføringen).
+status: vedtatt
+position: -1
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); votering 26747 (09.12.2025)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26747&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1 ut fra stemmegivning alene: ingen komitésete, ingen egen
+  tekst. evidensstyrke_cap moderat. Bekreftet [OK] i votes.py: KrF 6
+  for / 0 mot (votering 26747).
+retrieved_at: "2026-09-27"

@@ -1,0 +1,47 @@
+id: ev-2026-04-28-nordisk-samarbeid-kontekst
+statement_id: utsagn-42
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Syvende og siste forslag hentet fra Innst. 225 S (digital
+  suverenitet). SV, Rødt og MDG fremmet et forslag om tettere nordisk
+  og europeisk samarbeid om digitale løsninger og beredskap. Forslaget
+  ble avvist 21 mot 80, men fikk støtte fra KrF og Venstre i tillegg
+  til sponsorpartiene — mens Høyre stemte mot, til tross for en egen
+  skriftlig merknad som eksplisitt sier partiet "støtter" nettopp
+  denne formuleringen.
+claim_action: >
+  Forslag 3 (SV, Rødt og MDG): "Stortinget ber regjeringen ta
+  nødvendige grep for å samarbeide tettere med nordiske og europeiske
+  land om felles digitale løsninger og beredskap, hvor åpne
+  kildekoder og digital suverenitet over digital infrastruktur er
+  førende for samarbeidet." Votering_id 27493 (sakid 200036): 21 for
+  (SV 5, Rødt 5, MDG 5, KrF 4, Venstre 2), 80 mot (Ap 32, FrP 29,
+  Høyre 14, Sp 5).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); data.stortinget.no sakid=200036, votering_id 27493"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Sjuende og siste statement mined fra denne saken; fullfører
+  Robusthet/adaptabilitet-dimensjonen (38, 39, 41, 42 — nå 4/4). Det
+  mest oppsiktsvekkende funnet: Høyres EGEN skriftlige merknad i denne
+  innstillingen sier ordrett "Disse medlemmer støtter forslaget om å
+  samarbeide tettere med nordiske og europeiske land om felles
+  digitale løsninger og beredskap, og mener dette er den mest
+  virkningsfulle tilnærmingen for å sikre reell digital suverenitet
+  over tid" — likevel stemte samtlige 14 fremmøtte Høyre-representanter
+  MOT det eksakte forslaget som ordlegger nettopp dette (forslag 3).
+  Se evidence/259 for full sitering og analyse av dette gapet mellom
+  ord og handling. FrP og Sp, som begge har skrevet støttende merknader
+  om nordisk/europeisk samarbeid tidligere i saken, stemte også mot —
+  et gjennomgående mønster i denne saken der komitépartienes
+  skriftlige "vi støtter i prinsippet"-merknader ikke omsettes til
+  stemmer når et konkret forslag faktisk kommer til votering.
+retrieved_at: "2026-09-24"

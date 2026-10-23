@@ -1,0 +1,31 @@
+id: ev-2020-09-24-skatt-store-arv-ssb-kontekst
+statement_id: utsagn-57
+party_id: ""
+actor: "Faktakontekst (SSB)"
+date: "2020-09-24"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: >
+  SSB fant at de 1 prosent rikeste betalte mindre skatt per tjent krone
+  enn de neste 9 prosentene, fordi mye av inntekten blir liggende i
+  selskapene.
+claim_action: >
+  SSB analyse 2020/13 (Aaberge, Modalsli og Vestad), data 2004–2018.
+  Gjelder inntektsskatt, ikke arv, men viser hvorfor arv av aksjer i
+  selskaper betyr mye for skatten de rikeste betaler.
+verbatim_excerpt: >
+  I perioden 2004 – 2018 har de 1 prosent rikeste i gjennomsnitt betalt
+  rundt 220 kroner i skatt per 1 000 kroner i inntekt, mens de 9
+  prosentene som er blant de 90 til 99 prosent rikeste, i gjennomsnitt
+  betalte 330 kroner i skatt per 1 000 kroner i inntekt.
+status: kontekst
+position: null
+source_tier: B
+source_name: "SSB analyse 2020/13: Ulikheten – betydelig større enn statistikken viser"
+source_url: "https://www.ssb.no/inntekt-og-forbruk/artikler-og-publikasjoner/ulikheten-betydelig-storre-enn-statistikken-viser"
+claim_confidence: dokumentert
+context_note: >
+  Ingen partiposisjon. Tallene er fra 2004–2018. Ved høyeste sats er
+  skatten på lønn og på utbytte nær hverandre (se fil 729), så
+  forskjellen kommer av at inntekt holdes tilbake i selskapene.
+retrieved_at: "2026-10-02"

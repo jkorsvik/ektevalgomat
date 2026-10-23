@@ -1,0 +1,38 @@
+id: ev-2026-04-21-mdg-votering
+statement_id: utsagn-01
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-04-21"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG fremmet tre forslag om å utrede et lobbyregister — alle falt."
+claim_action: >
+  Fremmet tre egne forslag (Julie E. Stuestøl), nr. 2–4, som alle ber om
+  utredning av en registreringsordning for lobbyvirksomhet — nr. 2 mot
+  Stortinget og regjeringsapparatet generelt, nr. 3 avgrenset til
+  Stortinget med personvernunntak for privatpersoner, nr. 4 avgrenset til
+  departementene/Statsministerens kontor med samme personvernunntak.
+  Alle tre ble votert over og falt.
+verbatim_excerpt: >
+  Stortinget ber Stortingets presidentskap om å sørge for å utrede, med
+  sikte på å innføre, mulig utforming av et register for lobbyisters
+  kontakt med politikere og eventuelt andre i regjeringsapparatet og på
+  Stortinget.
+status: forkastet
+position: 1
+source_tier: A
+source_name: "Voteringsdetaljer, forslag nr. 2–4, 21.04.2026"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=105664&dnid=1&vt=27259"
+claim_confidence: dokumentert
+context_note: >
+  Posisjon oppdatert 2026-09-23 etter at eksakt forslagstekst ble hentet
+  og lest fra Stortingets voteringsdetaljer for alle tre forslag
+  (tidligere: ukodet, se rettelsesloggen på /om og docs/roadmap.md). Kodet til +1
+  («for»), ikke +2 («sterkt for») som Rødt: alle tre forslag ber om å
+  UTREDE en registreringsordning («utrede, med sikte på å innføre» / 
+  «utrede mulige modeller»), uten Rødts konkrete krav om
+  registreringsplikt og sanksjonshjemmel. MDG argumenterer FOR prinsippet
+  om et lobbyregister, men forslagene forplikter mindre enn Rødts — det
+  skal reflekteres i styrken på posisjonen, ikke bare i at begge er
+  positive. Andre forslag-URL-er: vt=27258 (nr. 3), vt=27257 (nr. 4).
+retrieved_at: "2026-09-23"

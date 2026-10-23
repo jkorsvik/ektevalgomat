@@ -1,0 +1,30 @@
+id: ev-2026-rodt-avisdistribusjon-for
+statement_id: utsagn-30
+party_id: rodt
+actor: "Rødt"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er medforslagsstiller sammen med Sp, og opprinnelig
+  forslagsstiller til hele saken. Alle 5 fremmøtte stemte for.
+claim_action: >
+  Votering_id 27674, Rødt 5 for, 0 mot. Fra Oslo Economics-rapporten
+  sitert i Sp/Rødts merknad: "Redusert distribusjon kan svekke
+  enkelte gruppers tilgang til informasjon og deltakelse i den
+  offentlige samtalen."
+verbatim_excerpt: >
+  Redusert distribusjon kan svekke enkelte gruppers tilgang til
+  informasjon og deltakelse i den offentlige samtalen.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27674"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Rødt siterer en ekstern rapport (Oslo Economics) for å
+  koble avisdistribusjon direkte til demokratisk deltakelse, ikke
+  bare praktisk bekvemmelighet.
+retrieved_at: "2026-09-24"

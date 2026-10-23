@@ -1,0 +1,23 @@
+id: ev-2026-05-07-rodt-digitale-avhengigheter-votering
+statement_id: utsagn-59
+party_id: "rodt"
+actor: "Rødt"
+date: "2026-05-07"
+evidence_type: voteringsresultat
+evidence_class: fakta
+scan_summary: >
+  Rødt stemte mot kartleggingen og rapporten, uten å begrunne det.
+claim_action: >
+  Votering 27496: R 5 mot, 0 for. Rødt hadde ikke innlegg i debatten og
+  ingen merknad om kartleggingen i innstillingen.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Votering 27496 (data.stortinget.no)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27496"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1 fra stemmen alene. Rødts program sier at digital suverenitet
+  er et mål, men nevner ikke kartlegging eller rapport. Det er derfor
+  ikke brukt som evidens her.
+retrieved_at: "2026-10-03"

@@ -1,0 +1,30 @@
+id: ev-2026-04-28-sv-kriserad-uklart
+statement_id: utsagn-41
+party_id: sv
+actor: "Sosialistisk Venstreparti (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  SV splittet nøyaktig på midten av de fremmøtte representantene: 2
+  for, 2 mot, 5 ikke til stede. Ingen entydig partilinje kan utledes
+  fra stemmetallet alene.
+claim_action: "Votering_id 27475, SV 2 for, 2 mot, 5 ikke til stede."
+status: forslag_avvist
+position: 0
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27475"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet 0 (nøytral/uavklart), ikke +1 eller -1: SVs fremmøtte
+  representanter delte seg eksakt 2-2, og med 5 av 9 representanter
+  ikke til stede er det ikke mulig å si hva "partiets" posisjon ville
+  vært med full oppmøte. Ingen skriftlig SV-merknad om kriserådet
+  finnes. Dette er datasettets første eksempel på en ekte intern
+  uavgjort-splitt (i motsetning til Høyre 12-1 og MDG 4-1 andre
+  steder i samme sak, der et klart flertall likevel fantes) — verdt å
+  fremheve som et eget tilfelle for en fremtidig
+  "partienighet"-indikator.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,31 @@
+id: ev-2026-05-07-krf-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "KrF stemte mot jurisdiksjonskravet og mot digital suverenitet som overordnet mål, men har ikke sete i komiteen og ingen egen skriftlig begrunnelse."
+claim_action: >
+  KrF er ikke medlem av kommunal- og forvaltningskomiteen og har ingen
+  egen merknad i Innst. 225 S (2025–2026). KrFs representanter stemte
+  mot forslag 4 (GDPR/jurisdiksjonskrav, votering_id 27492: 4 mot, 3 ikke
+  til stede) og mot forslag 2 (digital suverenitet som overordnet mål,
+  votering_id 27494: 4 mot, 3 ikke til stede), 07.05.2026.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27492 og 27494 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/?p=200036&dnid=1"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet +1 utelukkende ut fra stemmegivningen, i tråd med det snudde
+  utsagnets premiss: KrF har ikke sete i kommunal- og
+  forvaltningskomiteen og har derfor ingen egen skriftlig begrunnelse i
+  denne saken. evidensstyrke_cap satt til moderat: dette er et ekte,
+  offisielt stemmeresultat (tier A), men uten tekst som forklarer
+  HVORFOR KrF stemte som de gjorde. Korrigert 2026-09-26: en tidligere
+  versjon oppga «3 mot, 4 fraværende», fordi JSON-kodene fra Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. fra -1 til +1.
+  data.stortinget.no ble lest feil (1 = ikke til stede, 2 = for, 3 = mot).
+retrieved_at: "2026-09-26"

@@ -1,0 +1,25 @@
+id: ev-2026-partiprogram-hoyre-skatte-avgiftsniva-senkes
+statement_id: utsagn-55
+party_id: h
+actor: "Høyre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre vil redusere skatt som andel av fastlandsøkonomien — en eksplisitt totalnivå-målsetting."
+claim_action: >
+  Høyres stortingsvalgprogram 2025–2029 sier partiet "vil ha som mål å
+  redusere skatt som andel av fastlandsøkonomien" — en helhetlig
+  målsetting for det samlede skattenivået, ikke en enkeltskatt.
+verbatim_excerpt: >
+  Høyre vil ha som mål å redusere skatt som andel av
+  fastlandsøkonomien.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "Høyres stortingsvalgprogram 2025–2029 (PDF)"
+source_url: "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt, ordrett målsetting for det TOTALE skattenivået
+  målt mot fastlandsøkonomien. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

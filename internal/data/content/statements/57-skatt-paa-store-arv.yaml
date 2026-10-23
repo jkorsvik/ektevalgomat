@@ -1,0 +1,17 @@
+id: utsagn-57
+number: 57
+dimension: "Finansiering av fellesskapet"
+primary_question: "Hvordan betaler vi for fellesgodene, og hvem bærer kostnaden nå og om 30 år?"
+case_tag: skatt_paa_store_arv
+short_name: "Skatt på store arv"
+text: >
+  Det bør innføres skatt på store arv.
+practical_stakes:
+  enig: >
+    Det innføres en skatt når noen arver store verdier, med et
+    bunnfradrag slik at vanlige arv ikke rammes. I dag har Norge ingen
+    arveavgift. Den ble fjernet fra 2014.
+  uenig: >
+    Det innføres ingen skatt på arv. Som i dag overtar arvingen den
+    opprinnelige kostprisen, og gevinsten skattlegges først den dagen
+    arvingen selger.

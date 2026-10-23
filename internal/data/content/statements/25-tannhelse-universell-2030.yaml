@@ -1,0 +1,18 @@
+id: utsagn-25
+number: 25
+dimension: "Universell grunnmur"
+primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
+case_tag: tannhelse_universell_2030
+short_name: "Gradvis og målrettet tannhelsereform"
+text: >
+  Regjeringen bør utvide det offentlige tannhelsetilbudet gradvis og
+  målrettet mot dem som trenger det mest, ikke forplikte seg til en
+  universell rett innen 2030.
+practical_stakes:
+  enig: >
+    Det offentlige tannhelsetilbudet utvides gradvis og målrettet mot dem
+    som trenger det mest. Ingen universell rett til tannbehandling innføres
+    innen 2030.
+  uenig: >
+    Regjeringen forplikter seg til at hele befolkningen skal ha en
+    universell rett til tannbehandling i det offentlige innen 2030.

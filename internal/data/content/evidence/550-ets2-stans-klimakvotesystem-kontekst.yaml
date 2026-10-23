@@ -1,0 +1,37 @@
+id: ev-2026-innst058s-ets2-kontekst
+statement_id: utsagn-56
+party_id: ""
+actor: "Faktakontekst"
+date: "2025-12-09"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: "Innst. 58 S behandlet et representantforslag om å stanse EUs nye klimakvotesystem (ETS2), som gir en EU-styrt CO2-pris på blant annet drivstoff og bygg. Forslaget om å stanse det ble ikke vedtatt."
+claim_action: >
+  Innst. 58 S (2025–2026), sak 104877, energi- og miljøkomiteen,
+  behandlet Dokument 8:8 S om å stanse innføringen av ny EU-avgift på
+  drivstoff i Norge (EUs klimakvotesystem ETS2, som gjelder utslipp
+  fra veitransport, bygg og andre sektorer fra 2028). Sp fremmet
+  forslag 2 om å stanse den nasjonale gjennomføringen; FrP fremmet
+  forslag 1 om å fjerne CO2-avgiften på de samme områdene i stedet.
+  Begge falt. Komiteens tilråding — å IKKE vedta representantforslaget
+  om å stanse ETS2 — ble vedtatt 9. desember 2025 (votering 26747:
+  109 for, 57 mot).
+status: kontekst
+position: null
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); voteringene 26745-26747 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Utsagnet er formulert som Sps eget forslag 2 ("stanse den nasjonale
+  gjennomføringen av EUs nye klimakvotesystem (ETS2)"), som er det
+  bredeste og mest direkte forslaget i saken. FrPs forslag 1 er et
+  beslektet, men snevrere virkemiddel (fjerne CO2-avgiften på de
+  samme områdene i stedet for å stanse hele gjennomføringen) — FrP
+  skriver selv at de subsidiært støtter Sps forslag, og stemte for det
+  (votering 26746, 46 av 47 for). Alle tre voteringer bekreftet [OK] i
+  votes.py mot data.stortinget.nos egne totaler; merk at
+  stemmetallene i denne saken er vesentlig høyere enn i
+  dimensjon-11-sakene (rundt 166 avgitte stemmer mot rundt 99-102) —
+  et reelt utslag av høyere fremmøte i denne saken, ikke en feil.
+retrieved_at: "2026-09-27"

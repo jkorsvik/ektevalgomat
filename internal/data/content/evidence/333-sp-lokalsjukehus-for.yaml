@@ -1,0 +1,23 @@
+id: ev-2026-sp-lokalsjukehus-for
+statement_id: utsagn-28
+party_id: sp
+actor: "Senterpartiet (helse- og omsorgskomiteen, komitéleder)"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp er medforslagsstiller sammen med SV og Rødt. Alle 5 fremmøtte
+  stemte for.
+claim_action: "Votering_id 27579, Sp 5 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27579"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Sp medforslagsstiller på begge forslagene i denne saken
+  (utsagn-27 og 28) — den eneste partiet, sammen med SV og Rødt, med
+  konsistent støtte over begge.
+retrieved_at: "2026-09-24"

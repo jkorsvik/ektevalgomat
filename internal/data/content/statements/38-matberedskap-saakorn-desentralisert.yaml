@@ -1,0 +1,16 @@
+id: utsagn-38
+number: 38
+dimension: "Robusthet / adaptabilitet"
+primary_question: "Tåler systemet bortfall, sjokk og feilantakelser?"
+case_tag: matberedskap_saakorn_desentralisert
+short_name: "Beredskapslagre for såkorn i desentralisert modell"
+text: >
+  Regjeringen bør sikre beredskapslagre for såkorn og matkorn i en
+  desentralisert modell på gårdene rundt om i landet.
+practical_stakes:
+  enig: >
+    Regjeringen sikrer beredskapslagre for såkorn og matkorn i en
+    desentralisert modell på gårder rundt om i landet.
+  uenig: >
+    Regjeringen sikrer ikke slike beredskapslagre. Lagringen av såkorn og
+    matkorn overlates til markedet alene.

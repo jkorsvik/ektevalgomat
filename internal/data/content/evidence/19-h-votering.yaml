@@ -1,0 +1,32 @@
+id: ev-2026-04-21-h-votering
+statement_id: utsagn-01
+party_id: h
+actor: "Høyre"
+date: "2026-04-21"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Høyre stemte mot alle fire skjerpingsforslag om lobbyregister."
+claim_action: >
+  Stemte mot samtlige fire løse forslag som gikk lenger enn
+  presidentskapets tilråding: MDGs forslag 2 (utrede "med sikte på å
+  innføre"), MDGs forslag 3 og 4 (utrede konkrete registreringsmodeller
+  for hhv. Stortinget og departementene) og Rødts forslag 1 (lovhjemlet
+  register med registrerings-/innrapporteringsplikt og sanksjonsadgang).
+  Stemte deretter for selve tilrådingen, som ble enstemmig vedtatt uten
+  registrert dissens (votering_id 27261, personlig votering ikke ført
+  ved enstemmig vedtak).
+status: forkastet
+position: -1
+source_tier: A
+source_name: "Voteringsdetaljer, forslag nr. 1–4, 21.04.2026"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/?dnid=1&p=105664"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2, av samme grunn som for Ap/FrP: Høyre stemte for at
+  behovet utredes (den enstemmige tilrådingen), men mot alle fire forslag
+  som ville forpliktet Stortinget til noe mer konkret enn ren utredning
+  av behovet. Individuelle representantstemmer hentet fra
+  data.stortinget.no/eksport/voteringsresultat for votering_id
+  27257–27260 (H mot på alle fire, 14 mot/10 ikke_tilstede per votering).
+  Analytisk posisjonstolkning — bør dobbeltsjekkes i human merge-QA.
+retrieved_at: "2026-09-23"

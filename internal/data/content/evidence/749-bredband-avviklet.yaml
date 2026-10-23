@@ -1,0 +1,42 @@
+id: ev-2027-bredband-avviklet
+statement_id: utsagn-61
+party_id: ""
+actor: "Regjeringen (Prop. 1 S 2026–2027, Digitaliserings- og forvaltningsdepartementet)"
+date: "2026-10-07"
+evidence_type: budsjettforslag
+evidence_class: fakta
+scan_summary: >
+  Regjeringen foreslår å avvikle bredbåndsstøtteordningen (kap. 1541, post 60
+  Breibandutbygging) fra 2027. Posten finnes i 2026-budsjettet, men er borte fra
+  2027-forslaget. Begrunnelsen er at 99,3 pst. av husstandene og 98,9 pst. av
+  virksomhetene hadde tilbud om minst 100 Mbit/s ved utgangen av 2025, og at
+  resten dekkes av kommersiell utbygging, allerede bevilgede midler,
+  lavbanesatellitt og ordningen for funksjonell internettilgang.
+claim_action: >
+  Staten avvikler bredbåndsstøtteordningen fra 2027 og flytter midlene mot
+  sikkerhet og beredskap i ekomnettene, i stedet for å videreføre støtten til
+  de siste husstandene og virksomhetene.
+verbatim_excerpt: >
+  Dekningsgraden for breiband i Noreg er svært god. Dei siste offisielle
+  dekningstala frå Nasjonal kommunikasjonsmyndigheit viser at 99,3 pst. av
+  husstandane og 98,9 pst. av verksemdene hadde tilbod om høghastigheits
+  breiband med minst 100 Mbit/s nedlastingshastigheit ved utgangen av 2025.
+  [...]
+  På denne bakgrunn blir det foreslått å avvikle breibandstøtteordninga frå
+  2027.
+status: foreslått
+position: null
+source_tier: A
+source_name: "Prop. 1 S (2026–2027) Digitaliserings- og forvaltningsdepartementet, kap. 1541, post 60 Breibandutbygging"
+source_url: "https://www.regjeringen.no/contentassets/df4dc3a3497342129b6d1681ad6d4c9e/nn-no/pdfs/prp202620270001dfddddpdfs.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Regjeringens eget forslag i budsjettet for 2027. Utsagn-61 spør om staten bør
+  videreføre bredbåndsstøtten til hele landet har høyhastighetsbredbånd, framfor
+  å avvikle den fordi dekningen er nesten full. Dette beviset er
+  avviklingssiden av svaret: regjeringen foreslår å avvikle ordningen fra 2027.
+  Post 60 Breibandutbygging finnes i 2026-budsjettet, men har ingen post i
+  2027-forslaget (bekreftet mot Gul bok-indeksen for 2027, der kap. 1541 ikke
+  lenger har post 60). Institusjonelt bevis, ikke en partiposisjon — regjeringen
+  er Ap-ledet.
+retrieved_at: "2026-10-12"

@@ -1,0 +1,34 @@
+id: ev-2026-02-10-v-barnetrygd-prisjustering-mot
+statement_id: utsagn-31
+party_id: v
+actor: "Venstre"
+date: "2026-02-10"
+evidence_type: voteringsresultat
+evidence_class: fakta
+scan_summary: >
+  Venstre stemte mot forslag 4, selv om de er opprinnelig forslagsstiller
+  til hele saken (Dokument 8:11 S, ved Abid Raja, Guri Melby og Grunde
+  Almeland). Forslag 4 er imidlertid IKKE en del av Venstres
+  opprinnelige 17-punktsliste -- det ble lagt til av SV og MDG under
+  komitébehandlingen -- så dette er ikke et tilfelle av at et parti
+  stemmer mot sitt eget forslag.
+claim_action: >
+  Votering_id 26942, Venstre 0 for, 2 mot. Venstres opprinnelige
+  dokument inneholder ingen egen setning om lovfestet prisjustering av
+  barnetrygden (jf. innledningens 17-punktsliste, Innst. 126 S).
+  Ingen egen merknad fra Venstre funnet i innstillingen.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26942"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26942"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 utelukkende på stemmegivningen, i tråd med det snudde
+  utsagnets premiss. Presisering for å unngå en feilslutning tilsvarende
+  Phase 2g-funnet (parti stemmer "mot sitt eget forslag"): forslag 4 ble
+  lagt TIL av SV/MDG under komitébehandlingen og var ikke en del av
+  Venstres opprinnelige 17-punktsliste -- verifisert direkte mot
+  dokumentets innledning. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Se evidence/111-barnetrygd-prisjustering-kontekst.yaml.
+retrieved_at: "2026-09-24"

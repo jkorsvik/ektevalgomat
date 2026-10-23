@@ -1,0 +1,46 @@
+id: ev-2026-04-28-h-nordisk-mot
+statement_id: utsagn-42
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyres egen skriftlige merknad sier ordrett at partiet "støtter"
+  nettopp dette forslaget om nordisk/europeisk samarbeid om digitale
+  løsninger og beredskap — men samtlige 14 fremmøtte
+  Høyre-representanter stemte likevel MOT det når det kom til
+  votering. Det klareste ord-mot-handling-gapet i hele datasettet.
+claim_action: >
+  Votering_id 27493, Høyre 14 mot, 0 for. Fra Høyres egen merknad:
+  "Disse medlemmer støtter forslaget om å samarbeide tettere med
+  nordiske og europeiske land om felles digitale løsninger og
+  beredskap, og mener dette er den mest virkningsfulle tilnærmingen
+  for å sikre reell digital suverenitet over tid."
+verbatim_excerpt: >
+  Disse medlemmer støtter forslaget om å samarbeide tettere med
+  nordiske og europeiske land om felles digitale løsninger og
+  beredskap, og mener dette er den mest virkningsfulle tilnærmingen
+  for å sikre reell digital suverenitet over tid.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27493"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: sterkt_dokumentert
+context_note: >
+  Kodet -1 basert på den faktiske stemmen, IKKE på merknaden — og det
+  er nettopp gapet mellom de to som er poenget her. "Disse medlemmer
+  støtter forslaget" er ikke en vag velvilje-formulering; det er et
+  direkte, uforbeholdent samtykke til akkurat den teksten som deretter
+  ble satt til votering som forslag 3. Ingen prosedyremessig forklaring
+  (som at Høyre stemte for en alternativ, konkurrerende formulering i
+  stedet) fremgår av innstillingen — Høyres egen tilråding (komiteens
+  tilråding, som H står bak sammen med FrP og SV) inneholder ikke noe
+  om nordisk/europeisk samarbeid. Dette er datasettets klareste
+  eksempel på at en skriftlig merknad om "støtte til intensjonen" ikke
+  automatisk betyr en stemme for det konkrete forslaget — en advarsel
+  mot å score partier på merknadstekst alene uten å sjekke
+  voteringsresultatet.
+retrieved_at: "2026-09-24"

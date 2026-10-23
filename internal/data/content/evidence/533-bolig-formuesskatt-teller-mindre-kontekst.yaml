@@ -1,0 +1,37 @@
+id: ev-2026-innst188s-bolig-formuesskatt-kontekst
+statement_id: utsagn-54
+party_id: ""
+actor: "Faktakontekst"
+date: "2026-03-24"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: "Finanskomiteen behandlet to representantforslag om verdsetting av bolig i formuesskatten (Innst. 188 S). Fire alternative forslag om å redusere boligens vekt falt; regjeringen har samtidig varslet en egen, mindre justering via revidert nasjonalbudsjett."
+claim_action: >
+  Innst. 188 S (2025–2026), sak 200007, behandlet Dokument 8:94 S (H)
+  og Dokument 8:97 S (V) om verdsetting av primærbolig i
+  formuesskatten. Fra 2026 ble en ny verdsettingsmodell innført som økte
+  formuesskatten for mange boligeiere. Fire mindretallsforslag om å
+  redusere boligens vekt (forslag 1, FrP+H+V: bred utredning; forslag
+  2-4, FrP: suspendere modellen / ekspertutvalg / 25 % for alle
+  primærboliger; forslag 5, H: 25 % opp til 20 mill.; forslag 6, V:
+  gjeninnføre 2025-modellen) falt alle i Stortinget 24. mars 2026.
+  Finansministeren har samtidig varslet at regjeringen i revidert
+  nasjonalbudsjett 2026 vil foreslå å heve innslagspunktet for høy
+  verdsetting fra 10 til 14 mill. kroner — en mindre justering i samme
+  retning, via en annen kanal.
+status: kontekst
+position: null
+source_tier: A
+source_name: "Innst. 188 S (2025–2026); voteringene 27359-27362 (24.03.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Komiteens flertall (Ap, SV, Sp, MDG, Rødt) viser i sin merknad
+  eksplisitt til regjeringens varslede justering og velger å behandle
+  realitetene når revidert nasjonalbudsjett kommer, i stedet for å
+  støtte noen av mindretallsforslagene nå. Dette er en utsatt/
+  prosedyremessig posisjon, ikke en substansiell "nei" til at boligen
+  bør telle mindre — se enkeltpartienes evidensfiler, kodet 0
+  (nøytral/delt), ikke -1/-2. Alle fire voteringer bekreftet [OK] i
+  votes.py mot data.stortinget.nos egne totaler.
+retrieved_at: "2026-09-27"

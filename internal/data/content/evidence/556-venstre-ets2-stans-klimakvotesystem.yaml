@@ -1,0 +1,29 @@
+id: ev-2025-12-09-venstre-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: v
+actor: "Venstre"
+date: "2025-12-09"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Venstre er del av samme merknad som Høyre og MDG om EØS-avtalens betydning, og viser i tillegg til at partiet allerede stemte for å gjennomføre ETS2 i fjor og ikke har endret mening."
+claim_action: >
+  Venstre er medforfatter (med Høyre og MDG) av merknaden om EØS-
+  avtalens betydning (se Høyres evidensfil for full tekst), og viser i
+  tillegg sammen med Høyre til at partiene stemte for gjennomføringen
+  i Innst. 527 L (2024–2025) og ikke har endret mening siden våren
+  2025. Stemte for komiteens tilråding (votering 26747).
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Høyre og Venstre viser til Innst. 527 L
+  (2024–2025) [...] Høyre og Venstre har ikke endret mening i denne
+  saken siden behandlingen våren 2025.»
+status: vedtatt
+position: -2
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); votering 26747 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: delt merknad med Høyre/MDG, forsterket av en egen,
+  spesifikk tilleggsmerknad med Høyre om egen stemmehistorikk.
+  Bekreftet [OK] i votes.py: V 3 for / 0 mot (votering 26747).
+retrieved_at: "2026-09-27"

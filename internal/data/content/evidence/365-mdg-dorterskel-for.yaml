@@ -1,0 +1,23 @@
+id: ev-2026-mdg-dorterskel-for
+statement_id: utsagn-29
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  MDG er ikke offisiell medforslagsstiller til forslag 1, men alle 5
+  fremmøtte stemte for.
+claim_action: "Votering_id 27675, MDG 5 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27675"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1: MDG stemte for uten egen dokumentert merknad om denne
+  saken. MDG er selv medforslagsstiller på et annet forslag i samme
+  sak (forslag 3, med Rødt).
+retrieved_at: "2026-09-24"

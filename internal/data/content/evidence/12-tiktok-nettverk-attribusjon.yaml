@@ -1,0 +1,22 @@
+id: ev-2025-valget-tiktok-attribusjon
+statement_id: utsagn-04
+party_id: ""
+actor: "7 anonyme TikTok-profiler"
+date: "2025 (valgåret)"
+evidence_type: attribusjon
+evidence_class: uklart
+scan_summary: "FFI kunne ikke fastslå hvem som stod bak TikTok-kontoene."
+claim_action: >
+  FFI kunne ikke knytte kontoene til en fremmed stat og opplyser at
+  aktørene kan ha vært norske.
+status: opprinnelse_ukjent
+position: null
+attribution_confidence: ukjent
+source_tier: B
+source_name: "FFI: Økende, komplekst og uoversiktlig (2026)"
+source_url: "https://www.ffi.no/publikasjoner/arkiv/okende-komplekst-og-uoversiktlig-kartlegging-av-utenlandsk-pavirkning-i-forbindelse-med-stortingsvalget-2025"
+claim_confidence: usikkert
+context_note: >
+  Dette er nøyaktig grensen prosjektet skal beskytte: narrativ likhet
+  eller mål-mønster er ikke bevis på utenlandsk kontroll.
+retrieved_at: "2026-09-23"

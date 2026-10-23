@@ -1,0 +1,36 @@
+id: ev-2026-04-28-rodt-palantir-for
+statement_id: utsagn-24
+party_id: rodt
+actor: "Rødt (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er medforslagsstiller til Palantir-forbudet, sammen med SV og
+  MDG, med samme delte sikkerhetspolitiske begrunnelse.
+claim_action: >
+  Votering_id 27488, Rødt 5 for, 0 mot. Deler SV og MDGs merknad om
+  Palantirs bånd til amerikansk etterretning og forsvarsdepartement.
+  Rødt har også, sammen med MDG, en egen tilleggsmerknad i saken om at
+  "Norges digitale avhengighet av et fåtall globale teknologiselskaper
+  utgjør en alvorlig sårbarhet for samfunnssikkerhet, beredskap og
+  demokratisk kontroll" — en bredere ramme Palantir-forslaget er en
+  konkret utløper av.
+verbatim_excerpt: >
+  Norges digitale avhengighet av et fåtall globale teknologiselskaper
+  utgjør en alvorlig sårbarhet for samfunnssikkerhet, beredskap og
+  demokratisk kontroll.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at mangfold og konkurranse er godt nok): Rødt
+  er medforslagsstiller med en direkte, delt begrunnelse (samme sitat
+  som SV, se evidence/212), samt en egen bredere merknad med Rødt+MDG om
+  digital avhengighet som strukturell sårbarhet — det motsatte av det
+  snudde utsagnets premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-24"

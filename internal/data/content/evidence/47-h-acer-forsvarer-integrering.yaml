@@ -1,0 +1,37 @@
+id: ev-2025-04-10-h-acer-forsvarer-integrering
+statement_id: utsagn-07
+party_id: h
+actor: "Høyre (Jan Tore Sanner, Bård Ludvig Thorheim, Michael Tetzschner, Ove Trellevik, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "H sluttet seg til flertallets forsvar av ACER-tilknytningen og Høyesteretts vurdering av myndighetsoverføringen, og stemte MOT alle fire forslag om å begrense ACER."
+claim_action: >
+  H stemte MOT på alle fire voteringer i saken (votering_id 24383,
+  24384, 24385: 21 mot hver; votering_id 24386, komiteens tilråding om å
+  avvise begge representantforslag: 20 for). Individuell votering
+  kryssjekket mot data.stortinget.no/eksport/voteringsresultat for alle
+  fire votering_id-er.
+verbatim_excerpt: >
+  Dette flertallet påpeker videre at Høyesterett har gjort en grundig
+  vurdering av myndighetsoverføringen som fant sted i forbindelse med
+  innlemmelsen av tredje energimarkedspakke i EØS-avtalen, og fastslår
+  blant annet at ACER/ESA ikke kan bestemme om det skal bygges nye
+  utenlandskabler, eller forby restriksjoner på eksport av kraft.
+  Heller ikke strømpriser kan ACER/ESA fastsette.
+status: forslag_avvist_av_flertallet
+position: 1
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: H har ingen egen enkeltmerknad i saken, men er
+  medlem av begge flertallsmerknadene (med Ap/V/MDG/KrF, og med Ap/V/MDG)
+  som eksplisitt viser til Høyesteretts vurdering om at ACER IKKE svekker
+  norsk kontroll over kraftpriser — nøyaktig det snudde utsagnet hevder,
+  og selve kilden den nye teksten er hentet fra. +1 ikke +2 fordi H ikke
+  selv tar til orde for RASKERE eller DYPERE integrering (i motsetning
+  til V/MDGs +2) — bare forsvarer status quo og viser til rettslig
+  vurdering. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-23"

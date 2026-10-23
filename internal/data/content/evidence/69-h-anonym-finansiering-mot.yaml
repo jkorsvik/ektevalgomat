@@ -1,0 +1,32 @@
+id: ev-2025-10-14-h-anonym-finansiering-mot
+statement_id: utsagn-02
+party_id: h
+actor: "Høyre"
+date: "2025-10-14"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot Rødts forslag om å regulere anonym finansiering av
+  politisk reklame og markedsføring. Ingen egen begrunnende ytring om
+  denne saken funnet i trontaledebatt-referatet.
+claim_action: >
+  Votering_id 26361 (Forslag nr. 5 på vegne av Rødt): Høyre 14 mot, 0 for
+  (10 ikke til stede) — kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat. Forslaget ble likevel
+  vedtatt (54 mot 46 totalt).
+verbatim_excerpt: >
+  Stortinget ber regjeringen inkludere regulering av anonym finansiering
+  av politisk reklame og markedsføring i den helhetlige gjennomgangen av
+  partiloven, og komme tilbake til Stortinget med forslag som følger opp
+  dette.
+status: forslag_vedtatt
+position: -1
+source_tier: A
+source_name: "Trontaledebatten 2025-10-14; votering_id 26361"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=104588&dnid=1&vt=26361"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: signalet er stemmesporet alene — ingen egen
+  begrunnelse funnet i referatet som forklarer motstanden mot dette
+  spesifikke forslaget.
+retrieved_at: "2026-09-24"

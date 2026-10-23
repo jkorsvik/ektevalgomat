@@ -1,0 +1,18 @@
+id: utsagn-21
+number: 21
+dimension: "Innovasjon / omstillingsevne"
+primary_question: "Bygger staten og markedet ny kapasitet eller bare kjøper ferdige løsninger?"
+case_tag: innovasjon_norge_desentralisert_struktur
+short_name: "Innovasjon Norge velger selv organisasjonsform"
+text: >
+  Innovasjon Norge bør selv avgjøre sin organisasjonsform, uten en
+  bindende føring fra Stortinget om å beholde dagens desentraliserte
+  struktur.
+practical_stakes:
+  enig: >
+    Innovasjon Norge avgjør selv sin egen organisasjonsform. Stortinget
+    legger ingen bindende føring om å beholde dagens desentraliserte
+    struktur.
+  uenig: >
+    Stortinget legger en bindende føring om at Innovasjon Norge skal beholde
+    dagens desentraliserte struktur.

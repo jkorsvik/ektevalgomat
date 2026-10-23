@@ -1,0 +1,4 @@
+# Worker output. A draft here is not content until gate.py passes it and
+# promote.py moves it into internal/data/content/. Never committed.
+staging/
+__pycache__/

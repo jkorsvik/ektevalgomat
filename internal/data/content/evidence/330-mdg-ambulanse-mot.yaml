@@ -1,0 +1,36 @@
+id: ev-2026-mdg-ambulanse-mot
+statement_id: utsagn-27
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG er den opprinnelige forslagsstilleren til hele saken (Dok. 8:133
+  S), men stemte MOT dette spesifikke forslaget fra FrP/Sp/Rødt — som
+  til gjengjeld kritiserer MDGs EGNE forslag i saken (møteordninger,
+  hjemmevakt) som en skjult svekking av ambulansetjenesten.
+claim_action: >
+  Votering_id 27581, MDG 5 mot, 0 for. Fra FrP/SV/Sp/Rødts merknad,
+  rettet mot MDGs egne forslag: "Desse medlemene meiner at forslaga
+  frå Miljøpartiet Dei Grøne i realiteten er ei svekking av dagens
+  ambulanseteneste i distrikta, der ein opnar opp for møteordningar,
+  heimevakt og kombinasjon med kommunale tenester."
+verbatim_excerpt: >
+  Forslaga frå Miljøpartiet Dei Grøne i realiteten er ei svekking av
+  dagens ambulanseteneste i distrikta, der ein opnar opp for
+  møteordningar, heimevakt og kombinasjon med kommunale tenester.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -1: dette er saken der forslagsstilleren (MDG) selv stemmer
+  mot et forslag fra andre partier i SIN EGEN sak — fordi de andre
+  partiene bruker anledningen til å kritisere MDGs egne, alternative
+  ambulanseløsninger direkte i innstillingen. En sjelden, dokumentert
+  intra-sak-konflikt mellom forslagsstiller og velmenende allierte.
+retrieved_at: "2026-09-24"

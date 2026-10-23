@@ -1,0 +1,26 @@
+id: ev-2025-partiprogram-h-skatt-store-arv
+statement_id: utsagn-57
+party_id: "h"
+actor: "Høyre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre vil ikke gjeninnføre arveavgift.
+claim_action: >
+  Høyres stortingsvalgprogram 2025–2029 sier dette med egne ord.
+  Partiprogram, ikke en Storting-avstemning.
+verbatim_excerpt: >
+  ikke gjeninnføre arveavgift
+status: programfestet
+position: -2
+source_tier: C
+source_name: "Høyres stortingsvalgprogram 2025–2029"
+source_url: "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: eksplisitt avvisning. Samme standpunkt i Stortinget
+  12.06.2024, der Helge Orten (H) sa at finansministerens avvisning av
+  arveskatt er noe Høyre er «fullstendig enige om» (se fil 709 sin
+  kilde).
+retrieved_at: "2026-10-02"

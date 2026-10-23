@@ -1,0 +1,34 @@
+id: ev-2026-partiprogram-sv-eu-forsvarsunion
+statement_id: utsagn-45
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "SV vil at Norge ikke skal bli sterkere knyttet til EUs 'forsvarsunion' og oppbygging av en EU-hær."
+claim_action: >
+  SVs arbeidsprogram 2025–2029 (kapittel om utenriks-/forsvarspolitikk)
+  sier eksplisitt at Norge ikke skal bindes sterkere til EUs
+  forsvarsintegrasjon.
+verbatim_excerpt: >
+  SV vil: [...] arbeide for at Norge ikke blir enda sterkere knyttet til
+  EUs «forsvarsunion» og oppbygging av en EU-hær [...] ha en internasjonal
+  sikkerhetsarkitektur basert på prinsippet om delt sikkerhet
+status: programfestet
+position: 2
+source_tier: C
+source_name: "SVs arbeidsprogram 2025–2029 (vedtatt, 26. ordinære landsmøte 2025)"
+source_url: "https://www.sv.no/wp-content/uploads/2025/10/arbeidsprogram-2025-interaktiv-bokmal.pdf"
+claim_confidence: dokumentert
+consistency_flag: consistent
+context_note: >
+  Kodet +2: dette er en eksplisitt, ordrett formulering direkte mot
+  utsagnets eierskapsspørsmål om forsvar/beredskap uavhengig av
+  EU-koordinering, ikke en analytisk tolkning. Merk: tier C (partiets
+  eget program), ikke tier A — ingen Storting-sak har testet dette
+  spesifikke spørsmålet ennå (se utsagn-45s Innst. 464 S-kontekstevidens
+  for den nærmeste reelle saken). consistency_flag=consistent: SVs
+  generelle grunnlovssak om suverenitetsavgivelse (samme utsagn, egen
+  fil) peker samme vei — begge uttrykker skepsis til gradvis
+  myndighetsoverføring til EU-organer.
+retrieved_at: "2026-09-26"

@@ -1,0 +1,38 @@
+id: ev-2025-06-05-sv-stroemprismakspris-mot
+statement_id: utsagn-12
+party_id: sv
+actor: "Sosialistisk Venstreparti (utenriks- og energikomiteen)"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV stemte mot Rødts pristak-forslag, men foretrekker et enda mer
+  vidtgående alternativ: et statlig foretak som overtar kjøp og salg
+  av strøm.
+claim_action: >
+  SV fremmet eget forslag (forslag 11, votering_id 26119, 7 for, 95
+  mot): "Stortinget ber regjeringen opprette et statlig foretak for
+  kjøp og salg av strøm." I votering_id 26116 stemte SV mot Rødts
+  pristak-blokk (0 for, 8 mot av de tilstedeværende).
+verbatim_excerpt: >
+  "Komiteens medlem fra Sosialistisk Venstreparti mener målet er å ta
+  krafta tilbake til demokratisk kontroll. [...] Staten må ta mye
+  større kontroll over strømmarkedet. [...] Det bør derfor opprettes
+  et statlig foretak for kjøp og salg av strøm."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26116, 26119"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: SV stemte konkret MOT Rødts spesifikke
+  pristak-mekanisme, altså for det snudde utsagnets premiss om at
+  referanseprisordninger er å foretrekke. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Men konteksten er viktig og ærlig å vise: SVs egen retorikk om
+  "demokratisk kontroll" over krafta er om noe MER radikal enn Rødts —
+  de vil ha statlig eierskap av selve handelen, ikke bare et lovbestemt
+  pristak på private selskaper. Dette er et tilfelle der en lav
+  saksmatch-score IKKE betyr at partiet er markedsliberalt; det betyr
+  at partiet foretrakk en annen, sterkere intervensjonsform. Se
+  evidence/81-stroemprisreform-kontekst.yaml.
+retrieved_at: "2026-09-24"

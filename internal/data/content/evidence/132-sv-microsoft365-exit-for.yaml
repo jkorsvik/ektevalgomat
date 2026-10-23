@@ -1,0 +1,40 @@
+id: ev-2026-04-28-sv-microsoft365-exit-for
+statement_id: utsagn-20
+party_id: sv
+actor: "Sosialistisk Venstreparti (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV stemte for, som medforslagsstiller sammen med Rødt og MDG.
+claim_action: >
+  Votering_id 27490, SV 5 for, 0 mot. Fra komitémerknaden (SV, Rødt
+  og MDG samlet): "Disse medlemmer viser til at svært mange av
+  høringsinstansene peker på at Norge i altfor stor grad i dag er
+  avhengig av store internasjonale teknologiaktører i Kina og USA.
+  [...] Disse medlemmer viser til at Redd Barna i sitt høringsinnspill
+  peker på at det er særlig problematisk at skolen i så stor grad er
+  avhengig av noen få store teknologigiganter. De viser blant annet
+  til at Personvernkommisjonens utredning pekte på at en ikke har god
+  nok demokratisk kontroll over hvordan skolesektoren lager, deler og
+  selger barns personopplysninger."
+verbatim_excerpt: >
+  Svært mange av høringsinstansene peker på at Norge i altfor stor
+  grad i dag er avhengig av store internasjonale teknologiaktører i
+  Kina og USA. Dette er aktører som på sin side igjen har et eget
+  avhengighetsforhold til egne myndigheter, og som gjør tjenestene
+  ytterlige sårbare.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27490"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at mangfold og konkurranse er godt nok): SV
+  er medforslagsstiller med egen, detaljert skriftlig begrunnelse
+  (høringsinnspill fra Redd Barna og Personvernkommisjonens utredning
+  navngitt konkret) for en rask exit-strategi, det motsatte av det
+  snudde utsagnets premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-24"

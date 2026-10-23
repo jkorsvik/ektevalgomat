@@ -1,0 +1,37 @@
+id: ev-2025-06-05-krf-stroemprismakspris-mot
+statement_id: utsagn-12
+party_id: krf
+actor: "Kristelig Folkeparti (utenriks- og energikomiteen)"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF stemte mot Rødts pristak-forslag og fremmet i stedet sitt eget
+  forslag om en 100 prosent strømstøtte over 50 øre/kWt — en
+  kompensasjonsordning, ikke et lovbestemt pristak.
+claim_action: >
+  KrF fremmet eget forslag (forslag 30, votering_id 26114, 2 for, 99
+  mot): "Stortinget ber regjeringen legge frem et forslag om en
+  nasjonal strømstøtteordning der husholdninger og fritidsboliger
+  kompenseres fullt ut for strømpriser over 50 øre per kWt." I
+  votering_id 26116 stemte KrF mot Rødts pristak-blokk (0 for, 2 mot
+  av de tilstedeværende).
+verbatim_excerpt: >
+  "Dette medlem mener en slik modell vil være mer hensiktsmessig og
+  treffsikker enn den foreslåtte Norgesprisen. En slik
+  strømstøttemodell vil fortsatt gi insentiv til å flytte forbruk."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26114, 26116"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1: KrF avviser DENNE mekanismen (lovbestemt pristak) og
+  foreslår selv en fullstendig statlig kompensasjon over en terskelpris
+  — en støtteordning (staten betaler differansen), nøyaktig den typen
+  ordning det snudde utsagnet foretrekker. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Samme mekanisme-familie som
+  FrPs forslag (100 pst. kompensasjon over en grense), ikke det samme
+  som Rødts eller Norgesprisens design. Se
+  evidence/81-stroemprisreform-kontekst.yaml.
+retrieved_at: "2026-09-24"

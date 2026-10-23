@@ -1,0 +1,16 @@
+id: utsagn-28
+number: 28
+dimension: "Universell grunnmur"
+primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
+case_tag: lokalsjukehus_ventetidsloftet
+short_name: "Bruke lokalsykehus aktivt for å kutte ventelister"
+text: >
+  Regjeringen bør sikre at lokalsykehus blir brukt aktivt i arbeidet for å
+  få ned ventelistene i spesialisthelsetjenesten.
+practical_stakes:
+  enig: >
+    Regjeringen sikrer at lokalsykehus blir brukt aktivt i arbeidet for å få
+    ned ventelistene i spesialisthelsetjenesten.
+  uenig: >
+    Regjeringen sikrer ikke en slik aktiv bruk av lokalsykehus i arbeidet
+    med ventelistene.

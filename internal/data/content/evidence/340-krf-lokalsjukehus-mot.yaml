@@ -1,0 +1,20 @@
+id: ev-2026-krf-lokalsjukehus-mot
+statement_id: utsagn-28
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF stemte mot, konsistent med sin stemme på utsagn-27.
+claim_action: "Votering_id 27579, KrF 4 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27579"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: KrF stemte mot begge forslagene i denne saken.
+retrieved_at: "2026-09-24"

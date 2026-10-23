@@ -1,0 +1,34 @@
+id: ev-2026-frp-ambulanse-for
+statement_id: utsagn-27
+party_id: frp
+actor: "Fremskrittspartiet (helse- og omsorgskomiteen)"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP er medforslagsstiller sammen med Sp og Rødt. Alle 28 fremmøtte
+  stemte for.
+claim_action: >
+  Votering_id 27581, FrP 28 for, 0 mot. Fra FrP/SV/Sp/Rødts delte
+  merknad: "Medlemene i komiteen frå Framstegsspartiet, Sosialistisk
+  Venstreparti, Senterpartiet og Raudt er bekymra for at
+  ambulansetenesta stadig blir utsett for sparetiltak i
+  helseføretaka som fører til at responstidene blir lengre."
+verbatim_excerpt: >
+  Ambulansetenesta stadig blir utsett for sparetiltak i
+  helseføretaka som fører til at responstidene blir lengre. Desse
+  medlemene meiner det er ein viktig del av akuttberedskapen at
+  ambulansetilbodet blir styrkt slik at dei fagleg tilrådde
+  responstidsmåla kan bli nådde i heile landet.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: FrP medforslagsstiller med en delt merknad (med SV, Sp,
+  Rødt) som direkte adresserer dimensjonens spørsmål om grunnleggende
+  tjenester uansett bosted.
+retrieved_at: "2026-09-24"

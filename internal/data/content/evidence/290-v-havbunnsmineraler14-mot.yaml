@@ -1,0 +1,26 @@
+id: ev-2025-06-v-havbunnsmineraler14-mot
+statement_id: utsagn-14
+party_id: v
+actor: "Venstre"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre stemte mot og er medforfatter av den delte moratorium-
+  merknaden (se evidence/286-289 og utsagn-15).
+claim_action: "Votering_id 25349, Venstre 5 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); votering_id 25349"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2: Venstre medforfatter av samme delte merknad som KrF/MDG/
+  Rødt/SV (evidence/286-289). Legg merke til at Venstre her stemmer
+  MOT havbunnsmineralutvinning sammen med SV/Rødt/MDG — motsatt av
+  partiets vanlige linje i digitalsuverenitet-sakene (Innst. 225 S),
+  der Venstre ofte stemte MED de samme partiene FOR statlig
+  intervensjon. Saksfelt avgjør koalisjon, ikke en fast blokk.
+retrieved_at: "2026-09-24"

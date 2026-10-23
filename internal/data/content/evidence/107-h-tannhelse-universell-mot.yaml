@@ -1,0 +1,41 @@
+id: ev-2025-06-04-h-tannhelse-universell-mot
+statement_id: utsagn-25
+party_id: h
+actor: "Høyre (helse- og omsorgskomiteen)"
+date: "2025-06-04"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot SVs universaliseringsforslag, og går lenger enn de
+  andre mot-partiene: de støtter ikke engang regjeringens egen, langt
+  mer beskjedne lovfesting av tannhelserett for 25-28-åringer, og
+  omprioriterte midlene bort fra tannhelse i sitt alternative budsjett.
+claim_action: >
+  Votering_id 25387, H 0 for, 22 mot. Høyre er ikke del av
+  fireparti-flertallet bak tilrådingen (Ap, Sp, SV, Rødt).
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Høyre støtter ikke en lovfesting av rett
+  til tannhelsetjenester for unge voksne i alderen 25 til 28 år.
+  Disse medlemmer vil føre en tannhelsepolitikk for de som trenger
+  det mest [...]. Disse medlemmer mener tannhelsetjenesten i Norge
+  fungerer godt. Tall fra Statistisk sentralbyrå (SSB) viser at
+  nesten 80 pst. av den norske befolkningen har god tannhelse."
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 458 L (2024–2025); votering_id 25387"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-458l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2, det klareste "enig"-signalet av de syv (nå snudde)
+  mot-partiene: dette er nøyaktig Høyres egen argumentasjon, gjengitt
+  som det snudde utsagnet nå hevder — Høyre avviser ikke bare SVs
+  bindende 2030-mål, men også regjeringens egen, langt mer beskjedne
+  lovfesting for 25-28-åringer, og omprioriterte i sitt alternative
+  statsbudsjett for 2025 420 mill. kroner bort fra rabatterte
+  tannhelsetilbud til unge voksne (21-24 år) og over til sykehusøkonomi.
+  Dette er en substansielt annerledes posisjon enn Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2.
+  Ap/Sp/Rødt, som alle deler målet om likestilling med andre
+  helsetjenester, bare med et annet tempo. Se
+  evidence/101-tannhelsereform-kontekst.yaml.
+retrieved_at: "2026-09-24"

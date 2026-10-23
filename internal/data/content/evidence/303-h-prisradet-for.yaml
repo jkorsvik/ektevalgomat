@@ -1,0 +1,33 @@
+id: ev-2026-h-prisradet-for
+statement_id: utsagn-16
+party_id: h
+actor: "Høyre (finanskomiteen)"
+date: "2026-06-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre er den opprinnelige forslagsstilleren (Bård Ludvig Thorheim,
+  Ove Trellevik, Mari Holm Lønseth).
+claim_action: >
+  Votering_id 28077, Høyre 14 for, 0 mot. Fra Høyres merknad:
+  "Erfaringene viser at denne ordningen ikke fungerer etter hensikten.
+  Prisrådet har fått kritikk for rapporteringsbyrden og for å utmåle
+  feil og mer usikker skatt. Havbruksskatten bør utmåles på reelle
+  markedspriser, tilsvarende som i selskapsskatten."
+verbatim_excerpt: >
+  Etter disse medlemmers syn viser erfaringene at denne ordningen
+  ikke fungerer etter hensikten. Prisrådet har fått kritikk for
+  rapporteringsbyrden og for å utmåle feil og mer usikker skatt.
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 377 S (2025–2026); votering_id 28077"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-377s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Høyre er opprinnelig forslagsstiller til hele saken
+  (Dok. 8:185 S), med et praktisk "det fungerer ikke i praksis"-
+  argument snarere enn FrPs mer prinsipielle skatterettslige
+  argument.
+retrieved_at: "2026-09-24"

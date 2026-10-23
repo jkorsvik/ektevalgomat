@@ -1,0 +1,26 @@
+id: ev-2026-04-28-krf-nordisk-for
+statement_id: utsagn-42
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF er ikke medforslagsstiller og sitter ikke i komiteen, men alle
+  4 fremmøtte representanter stemte for forslaget likevel.
+claim_action: "Votering_id 27493, KrF 4 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27493"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 (ikke +2): KrF stemte for, men uten en egen skriftlig
+  begrunnelse i innstillingen — i motsetning til de tre
+  sponsorpartiene (SV, Rødt, MDG). Eneste forslag i hele denne saken
+  der KrF bryter sitt ellers konsekvente MOT-mønster på
+  SV/Rødt/MDG-initierte forslag (se evidence/220, /229, /240, /249) —
+  verdt å fremheve som et unntak.
+retrieved_at: "2026-09-24"

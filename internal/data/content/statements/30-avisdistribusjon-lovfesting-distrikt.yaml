@@ -1,0 +1,18 @@
+id: utsagn-30
+number: 30
+dimension: "Universell grunnmur"
+primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
+case_tag: avisdistribusjon_lovfesting_distrikt
+short_name: "Lovfeste avisdistribusjon i distrikt"
+text: >
+  Regjeringen bør fremme forslag om å lovfeste at staten skal sikre
+  avisdistribusjon i områder uten kommersielle avisbudnett, alle
+  hverdager og lørdager.
+practical_stakes:
+  enig: >
+    Regjeringen fremmer forslag om å lovfeste at staten skal sikre
+    avisdistribusjon alle hverdager og lørdager i områder uten kommersielle
+    avisbudnett.
+  uenig: >
+    Ingen slikt lovforslag fremmes. Avisdistribusjon i områder uten
+    kommersielle avisbudnett er ikke sikret ved lov.

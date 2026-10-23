@@ -1,0 +1,21 @@
+id: ev-2025-valget-opnorway-effekt
+statement_id: utsagn-04
+party_id: ""
+actor: "#OpNorway / pro-russisk hackergruppe"
+date: "2025 (valgåret)"
+evidence_type: effekt
+evidence_class: analyse
+scan_summary: "FFI fant ingen påvist effekt av #OpNorway på valgresultatet."
+claim_action: >
+  FFI fant ikke at operasjonen hadde effekt på valgresultatet.
+status: ingen_paavist_valgeffekt
+position: null
+attribution_confidence: null
+source_tier: B
+source_name: "FFI: Økende, komplekst og uoversiktlig (2026)"
+source_url: "https://www.ffi.no/publikasjoner/arkiv/okende-komplekst-og-uoversiktlig-kartlegging-av-utenlandsk-pavirkning-i-forbindelse-med-stortingsvalget-2025"
+claim_confidence: dokumentert
+context_note: >
+  Lagres bevisst som "ingen evidens for effekt funnet" — et legitimt
+  forskningsresultat, ikke et hull i datasettet.
+retrieved_at: "2026-09-23"

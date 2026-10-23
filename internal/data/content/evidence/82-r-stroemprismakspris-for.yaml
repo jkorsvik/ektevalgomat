@@ -1,0 +1,43 @@
+id: ev-2025-06-05-r-stroemprismakspris-for
+statement_id: utsagn-12
+party_id: rodt
+actor: "Rødt (Sofie Marhaug, Seher Aydar, Mímir Kristjánsson, Tobias Drevland Lund)"
+date: "2025-06-05"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt fremmet og stemte for sitt eget forslag om en lovbestemt
+  nasjonal makspris på strøm på 35 øre/kWt — den eneste partigruppen
+  som stemte for.
+claim_action: >
+  Dokument 8:166 S (2024–2025), forslag 1 (nummerert forslag 14 i
+  Innst. 535 L): "Stortinget ber regjeringen legge fram forslag om en
+  nasjonal makspris for hva kraftselskapene kan selge strømmen for
+  innenlands. Nivået bør være på 35 øre/kWt i 2025." Rødt har fremmet
+  varianter av dette kravet gjentatte ganger siden Representantforslag
+  66 S (2021–2022) — samme 35-øre-nivå, samme prinsipp om en direkte
+  pristak på selskapenes utsalgspris, ikke en støtte- eller
+  referanseprisordning. Stemte for i votering_id 26116 (5 for, kun
+  Rødt).
+verbatim_excerpt: >
+  "Kraftselskapenes skyhøye inntjening på å selge kraft som er rimelig
+  å produsere til norske husholdninger og bedrifter, har de brukt til
+  imperiebygging. [...] Dette medlem mener at det er denne utviklingen
+  som velsignes ved å kun innføre «strømstøtte» som beskytter
+  kraftselskapenes høye priser."
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); Dokument 8:166 S; votering_id 26116"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at referanseprisordninger er bedre enn en
+  lovbestemt makspris): Rødt er forslagsstiller for nettopp den
+  lovbestemte prisen, forsvarer forslaget i egne merknader over flere
+  sider av innstillingen, og stemte for det i den faktiske voteringen —
+  det motsatte av det snudde utsagnets premiss. Konsistens-signal: samme
+  35-øre-krav har vært fremmet av Rødt siden 2021-2022
+  (Representantforslag 66 S) — et prinsipp holdt over tid, ikke en
+  engangsposisjon. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-24"

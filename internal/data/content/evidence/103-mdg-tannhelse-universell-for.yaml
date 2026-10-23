@@ -1,0 +1,29 @@
+id: ev-2025-06-04-mdg-tannhelse-universell-for
+statement_id: utsagn-25
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025-06-04"
+evidence_type: voteringsresultat
+evidence_class: fakta
+scan_summary: >
+  MDG stemte for SVs forslag om en forpliktende plan for universell
+  tannhelse innen 2030. MDG har ikke sete i helse- og
+  omsorgskomiteen og har derfor ingen egen skriftlig merknad i denne
+  innstillingen — posisjonen er dokumentert kun gjennom
+  stemmegivningen i plenum.
+claim_action: >
+  Votering_id 25387 (forslag 19, på vegne av SV): MDG 2 for, 1 ikke
+  til stede.
+status: forslag_avvist_stemte_for
+position: -1
+source_tier: A
+source_name: "Votering 25387 — data.stortinget.no"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25387"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1, ikke -2: stemmegivningen er utvetydig for den bindende
+  2030-fristen (mot det snudde utsagnets premiss), men MDG har ingen
+  egen skriftlig begrunnelse i denne innstillingen. Lavere
+  attribution_confidence av denne grunn. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +1 til -1. Se evidence/101-tannhelsereform-kontekst.yaml.
+retrieved_at: "2026-09-24"

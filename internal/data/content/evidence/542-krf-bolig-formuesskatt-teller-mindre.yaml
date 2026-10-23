@@ -1,0 +1,26 @@
+id: ev-2026-innst188s-krf-bolig-formuesskatt-teller-mindre
+statement_id: utsagn-54
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-03-24"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "KrF stemte mot alle fire mindretallsforslag om å redusere boligens vekt i formuesskatten, uten egen merknad om hvorfor."
+claim_action: >
+  KrF er ikke del av "Komiteens flertall" og har ingen egen merknad i
+  saken. Stemte mot alle fire mindretallsforslag (voteringene
+  27359-27362).
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 188 S (2025–2026); voteringene 27359-27362 (24.03.2026)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27362&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1 ut fra stemmegivning alene: KrF er verken del av
+  komiteflertallet (som i det minste har en prosedyremessig
+  begrunnelse) eller blant mindretallsforslagsstillerne, og har ingen
+  egen tekst om denne saken. evidensstyrke_cap moderat. Bekreftet [OK]
+  i votes.py: KrF 0 for / 4 mot på alle fire voteringer.
+retrieved_at: "2026-09-27"

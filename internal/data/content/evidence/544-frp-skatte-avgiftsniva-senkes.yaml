@@ -1,0 +1,23 @@
+id: ev-2026-partiprogram-frp-skatte-avgiftsniva-senkes
+statement_id: utsagn-55
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "FrPs program lister 'redusere skatte- og avgiftsnivået' som eget punkt, direkte på utsagnets premiss."
+claim_action: >
+  FrPs partiprogram 2025–2029 lister "redusere skatte- og
+  avgiftsnivået" som eget, ubetinget punkt i sitt avgiftskapittel.
+verbatim_excerpt: >
+  «redusere skatte- og avgiftsnivået»
+status: programfestet
+position: 2
+source_tier: C
+source_name: "Fremskrittspartiets partiprogram 2025–2029"
+source_url: "https://www.frp.no/files/Program/2025/FrP-Partiprogram-2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt, ordrett punkt direkte på utsagnets premiss —
+  det TOTALE nivået, ikke en enkeltskatt. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

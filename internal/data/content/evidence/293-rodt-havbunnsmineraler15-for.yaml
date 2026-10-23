@@ -1,0 +1,25 @@
+id: ev-2025-06-rodt-havbunnsmineraler15-for
+statement_id: utsagn-15
+party_id: rodt
+actor: "Rødt"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er medforslagsstiller på moratorium-forslaget. Alle 5 fremmøtte
+  stemte for.
+claim_action: >
+  Votering_id 25348, Rødt 5 for, 0 mot. Fra den delte merknaden:
+  sannsynligvis er det Kina som vil ha mest å gagne på en
+  internasjonal åpning for havbunnsmineralutvinning.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); votering_id 25348"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Rødt medforslagsstiller, delt begrunnelse med SV/Venstre/
+  MDG/KrF.
+retrieved_at: "2026-09-24"

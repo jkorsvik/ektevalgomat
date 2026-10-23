@@ -1,0 +1,21 @@
+id: ev-2026-mdg-prisradet-mot
+statement_id: utsagn-16
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-06-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG er medforfatter av SV/MDG/Rødt-merknaden om å styrke
+  normprisrådet (se evidence/308-309).
+claim_action: "Votering_id 28077, MDG 5 mot, 0 for."
+status: forslag_vedtatt_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 377 S (2025–2026); votering_id 28077"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-377s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2: samme SV/MDG/Rødt-merknad som evidence/308-309.
+retrieved_at: "2026-09-24"

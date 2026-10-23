@@ -1,0 +1,39 @@
+id: ev-2026-04-28-h-nasjonal-skytjeneste-mot
+statement_id: utsagn-19
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot, og går lenger enn Aps kostnadsargument: Høyre
+  fremmer sin egen doktrine ("smart suverenitet") der mangfold og
+  konkurranse mellom leverandører, ikke statlig eierskap, er svaret på
+  avhengighet av teknologigiganter.
+claim_action: >
+  Votering_id 27485, H 0 for, 14 mot.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Høyre mener Norges digitale handlefrihet
+  best sikres gjennom det disse medlemmer omtaler som smart
+  suverenitet: bruk av beste tilgjengelige teknologi kombinert med
+  strenge sikkerhetskrav, diversifisering av leverandører og sterk
+  europeisk og nordisk forankring. Svaret på avhengighet av
+  internasjonale teknologigiganter er mangfold og konkurranse – ikke
+  statlige monopoler eller isolasjon fra den teknologiske
+  utviklingen."
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27485"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: dette er nøyaktig Høyres egen "smart suverenitet"-doktrine,
+  gjengitt som det snudde utsagnet nå hevder — Høyres begrunnelse er den
+  mest prinsipielle av alle mot-partiene mot en statlig skytjeneste; de
+  bruker ordet "statlige monopoler" som en negativ motsats til sin egen
+  doktrine, ikke bare et kostnads- eller utredningsargument som Ap.
+  Samme mønster som Høyres rolle som klareste motstander i
+  tannhelsesaken (evidence/107). Se
+  evidence/121-nasjonal-skytjeneste-kontekst.yaml. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2.
+retrieved_at: "2026-09-24"

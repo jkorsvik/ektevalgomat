@@ -1,0 +1,39 @@
+id: ev-2025-06-05-v-stroemprismakspris-mot
+statement_id: utsagn-12
+party_id: v
+actor: "Venstre (utenriks- og energikomiteen)"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre stemte mot Rødts pristak-forslag, i samme markedsbaserte
+  koalisjon som Høyre, og støtter selv et "folkeutbytte" utbetalt flatt
+  til privatkunder uavhengig av forbruk i stedet for et lovbestemt tak.
+claim_action: >
+  Venstre (sammen med Høyre) fremmet forslag om fastprisavtaler på
+  markedsmessige vilkår og et "folkeutbytte" (votering_id 26123, 27
+  for, 75 mot); Venstre alene støtter i tillegg en flat
+  folkeutbytte-utbetaling uavhengig av forbruk. I votering_id 26116
+  stemte Venstre mot Rødts pristak-blokk (0 for, 5 mot av de
+  tilstedeværende).
+verbatim_excerpt: >
+  "Komiteens medlem fra Venstre støtter en ordning med folkeutbytte,
+  og understreker at utbetalingen til privatkunder bør være uavhengig
+  av strømforbruk og utbetales som en flat sum."
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26116, 26123"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2, samme koalisjon som Høyre på selve markedsargumentet (H+V
+  delt merknad om at "kraftmarkedet fungerer godt og effektivt"), enig
+  i det snudde utsagnets avvisning av en lovbestemt makspris. Merk
+  nyansen: Venstres EGEN flate folkeutbetaling ligner MDGs
+  fordelingsargument mer enn Høyres rene markedsargument — Venstre er
+  ikke prinsipielt mot at staten tilbakefører ekstrainntekter, bare mot
+  at det gjøres via en pris-mekanisme (tak eller referansepris) snarere
+  enn en flat sum, så +2 er kodet fra hovedmerknaden med Høyre, ikke fra
+  en aktiv tilslutning til referanseprisordninger spesifikt. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2. Se evidence/81-stroemprisreform-kontekst.yaml.
+retrieved_at: "2026-09-24"

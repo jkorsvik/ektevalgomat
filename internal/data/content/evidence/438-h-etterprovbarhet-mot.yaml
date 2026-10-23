@@ -1,0 +1,21 @@
+id: ev-2024-h-etterprovbarhet-mot
+statement_id: utsagn-05
+party_id: h
+actor: "Høyre"
+date: "2024-01-01"
+evidence_type: representantforslag
+evidence_class: uklart
+scan_summary: >
+  Høyre stemte mot forslag 3, uten en egen dokumentert merknad om
+  dette spesifikt.
+claim_action: "Votering_id 22102, Høyre 21 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 140 S (2023–2024); votering_id 22102"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2023-2024/dok8-202324-001s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: ingen egen Høyre-merknad om dette forslaget finnes.
+retrieved_at: "2026-09-24"

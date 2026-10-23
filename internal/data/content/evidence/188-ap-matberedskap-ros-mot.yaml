@@ -1,0 +1,37 @@
+id: ev-2026-06-05-ap-matberedskap-ros-mot
+statement_id: utsagn-39
+party_id: ap
+actor: "Arbeiderpartiet (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot. Ingen merknad spesifikt om ROS-analysen er funnet;
+  Aps eneste dokumenterte generelle begrunnelse i saken (kontinuerlig
+  produksjon og handelssystemer som grunnpilarer) er skrevet i
+  sammenheng med lagrings- og produksjonsspørsmål, ikke direkte om
+  behovet for en risikokartlegging.
+claim_action: >
+  Votering_id 28067, Ap 0 for, 31 mot. Aps generelle merknad i saken
+  (samme sitat som i evidence/167, utsagn-38): "Komiteens medlemmer
+  fra Arbeiderpartiet mener at kontinuerlig produksjon, ivaretakelse
+  av produksjonsgrunnlaget og velfungerende handelssystemer er
+  grunnpilarene for matsikkerheten i Norge." Ingen egen omtale av
+  ROS-analysen eller regjeringens varslede, men uteblitte, arbeid med
+  den er funnet i Aps merknad.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: Aps generelle produksjonsfokuserte merknad er dokumentert,
+  men den svarer ikke direkte på spørsmålet forslag 2 stiller (skal
+  det gjennomføres en formell risikoanalyse), og nevner ikke
+  regjeringens eget varslede, uteblitte ROS-arbeid som minoriteten
+  peker på. Samme svakhet som Aps begrunnelse i utsagn-38 (evidence/167):
+  begrunnelsen er reell, men generell for hele saken, ikke skrevet mot
+  dette spesifikke forslaget.
+retrieved_at: "2026-09-24"

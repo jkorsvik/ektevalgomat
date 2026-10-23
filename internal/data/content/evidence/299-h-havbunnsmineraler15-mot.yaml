@@ -1,0 +1,27 @@
+id: ev-2025-06-h-havbunnsmineraler15-mot
+statement_id: utsagn-15
+party_id: h
+actor: "Høyre"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot moratoriet, konsistent med sin støtte til en
+  gradvis konsesjonsprosess (se evidence/283).
+claim_action: >
+  Votering_id 25348, Høyre 23 mot, 0 for. Høyres egen linje (evidence/283)
+  er en skrittvis åpning med høyere miljøstandarder — ikke et
+  moratorium, men en betinget fremgang.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); votering_id 25348"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1 (ikke -2): Høyre skriver ikke en direkte imøtegåelse av
+  moratorium-argumentet, men partiets "skrittvis tilnærming
+  med høyere miljøstandarder"-linje (evidence/283) er logisk
+  uforenlig med et fullt moratorium.
+retrieved_at: "2026-09-24"

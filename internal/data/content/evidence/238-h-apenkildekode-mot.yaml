@@ -1,0 +1,35 @@
+id: ev-2026-04-28-h-apenkildekode-mot
+statement_id: utsagn-23
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot. Partiets egen merknad i saken favoriserer
+  "mangfold og konkurranse" mellom leverandører fremfor statlig
+  bevilgning til én bestemt teknologisk tilnærming (åpen kildekode),
+  selv om Høyre ikke nevner åpen kildekode ved navn i denne konteksten.
+claim_action: >
+  Votering_id 27489, Høyre 14 mot, 0 for. Fra Høyres egen merknad om
+  saken generelt: "Svaret på avhengighet av internasjonale
+  teknologigiganter er mangfold og konkurranse – ikke statlige
+  monopoler eller isolasjon fra den teknologiske utviklingen."
+verbatim_excerpt: >
+  Svaret på avhengighet av internasjonale teknologigiganter er
+  mangfold og konkurranse – ikke statlige monopoler eller isolasjon
+  fra den teknologiske utviklingen.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27489"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: samme generelle merknad brukt for Høyres MOT-stemme på
+  Palantir-forbudet (evidence/217 for utsagn-24) — relevant prinsipp,
+  men ikke en direkte imøtegåelse av et statlig FINANSIERT åpen
+  kildekode-program spesifikt (som i prinsippet kunne støtte
+  "mangfold" like godt som proprietære løsninger).
+retrieved_at: "2026-09-24"

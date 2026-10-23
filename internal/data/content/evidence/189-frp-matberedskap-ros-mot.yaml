@@ -1,0 +1,36 @@
+id: ev-2026-06-05-frp-matberedskap-ros-mot
+statement_id: utsagn-39
+party_id: frp
+actor: "Fremskrittspartiet (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  FrP stemte mot, uten dokumentert egen begrunnelse for denne
+  spesifikke stemmen — i motsetning til forslag 1 (utsagn-38), der
+  FrP hadde en navngitt, egen begrunnelse (finsk modell) for å stemme
+  FOR.
+claim_action: >
+  Votering_id 28067, FrP 0 for, 29 mot. Ingen FrP-merknad om
+  ROS-analysen spesifikt er funnet i innstillingens fulltekst; FrPs
+  eneste merknader i saken er den delte FrP+KrF-teksten om fysiske
+  beredskapslagre etter finsk modell (evidence/162), som ikke omtaler
+  en risiko- og sårbarhetsanalyse.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene. Den mest interessante enkeltfunnet
+  i utsagn-39: FrP stemte FOR en konkret ny lagringsmekanisme
+  (forslag 1, +2, med navngitt finsk modell) men MOT en formell
+  kartlegging av risikoen den samme mekanismen skal svare på — uten
+  noen dokumentert grunn til å avvise akkurat kartleggingen. En
+  plausibel, men udokumentert, tolkning er at FrP anser svaret
+  (fysiske lagre) som allerede kjent og ikke ønsker å vente på en
+  analyse før tiltak — men dette er ikke skrevet noe sted i FrPs egne
+  merknader, og skal derfor ikke presenteres som fakta.
+retrieved_at: "2026-09-24"

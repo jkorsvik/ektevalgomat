@@ -1,0 +1,44 @@
+id: ev-2026-04-28-microsoft365-exit-kontekst
+statement_id: utsagn-20
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet samme representantforslag om digital
+  suverenitet som utsagn-19 (Innst. 225 S). SV, Rødt og MDG fremmet i
+  komitébehandlingen et konkret forslag om en nasjonal exit-strategi
+  fra store internasjonale IT-plattformer som Microsoft 365.
+  Forslaget ble avvist 15 mot 86.
+claim_action: >
+  Votering_id 27490, forslag nr. 6 (registrert "på vegne av SV og
+  R", men merknadsteksten identifiserer forslagsstillerne som
+  komiteens medlemmer fra SV, Rødt og MDG samlet): "Stortinget ber
+  regjeringen utarbeide en nasjonal exit-strategi for utfasing av
+  store internasjonale kommersielle IT-plattformer, slik som
+  Microsoft 365, i statsforvaltningen og i virksomheter med kritiske
+  samfunnsfunksjoner, slik blant annet danske myndigheter gjør, med
+  sikte på rask overgang til nye systemer." Avvist 15 for / 86 mot,
+  fordelt SV 5, R 5, MDG 5 for; Ap, FrP, H, KrF, Sp, V mot (full
+  fordeling i partikortene).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27490"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Institusjonell kontekst, ikke én enkelt partis posisjon — se
+  evidence/121-nasjonal-skytjeneste-kontekst.yaml for samme sak,
+  annet forslag (11 om offentlig eid sky, ikke leverandøruavhengighet
+  som her). To forslag fra samme innstilling, testet som separate
+  utsagn (19 og 20) fordi de tester ulike mekanismer under samme
+  dimensjon: eierskap av infrastruktur (19) versus uavhengighet fra
+  en navngitt leverandør (20). Samme innstilling har ytterligere 19
+  voteringer (forslag 1-5, 7-10, 12-21) som ikke er bygget som egne
+  utsagn — se docs/roadmap.md Phase 2j for kandidatlisten
+  (leverandørlåsing/åpen kildekode-innkjøp, Palantir-forbud,
+  Datatilsynets ressurser, uavhengig digitalt kriseråd, m.fl.).
+retrieved_at: "2026-09-24"

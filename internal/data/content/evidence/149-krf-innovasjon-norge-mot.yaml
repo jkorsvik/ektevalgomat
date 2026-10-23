@@ -1,0 +1,34 @@
+id: ev-2026-06-10-krf-innovasjon-norge-mot
+statement_id: utsagn-21
+party_id: krf
+actor: "Kristelig Folkeparti (næringskomiteen)"
+date: "2026-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF stemte mot, med to lag av delt merknad: markedsmekanisme-
+  bekymring sammen med FrP og Høyre, og "la Innovasjon Norge selv
+  velge organisasjonsform" sammen med Høyre.
+claim_action: >
+  Votering_id 28197, KrF 0 for, 4 mot. Delt merknad med FrP og Høyre
+  ("redusert statlig innblanding [...] beste forutsetningene for
+  vekst og innovasjon"), og med Høyre alene ("Innovasjon Norge bør
+  ha en desentralisert struktur, men de bør selv finne den
+  organisasjonsformen de finner mest hensiktsmessig" — se
+  evidence/148 for full sitattekst).
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 424 S (2025–2026); votering_id 28197"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-424s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +1: KrF deler Høyres "la agenturet selv velge"-posisjon i sin
+  helhet (medforfatter av samme setning), nøyaktig det snudde utsagnets
+  premiss, samt FrP/Høyres generelle markedsmekanisme-bekymring — men
+  har ingen egen, KrF-spesifikk begrunnelse utover disse to delte
+  lagene, i motsetning til FrP som har et eget tallfestet
+  budsjettforslag. Samme +/- 1 styrke som Ap, MDG og Høyre; klart
+  svakere dokumentert enn FrP. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

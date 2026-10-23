@@ -1,0 +1,205 @@
+id: ap
+source_name: "Arbeiderpartiets partiprogram 2025-2029"
+source_url: "https://res.cloudinary.com/arbeiderpartiet/image/upload/fl_attachment:partiprogram-2025-2029/v1/ievv_filestore/130322a45ccf45889bfc6fa4116c5b480cadc1e93e51491f8199451dd231c7c5"
+retrieved_at: "2026-10-12"
+points:
+  - dimension: Demokratisk åpenhet
+    topic: Åpenhet om partifinansiering
+    quote: "endre lovverket for å sikre større åpenhet om hvem som finansierer ulike partier"
+    where: "Et sterkt demokrati (s. 11)"
+    statements: ["utsagn-03"]
+    # begrunnelse: vil ha åpenhet om hvem som finansierer partiene
+  - dimension: Demokratisk åpenhet
+    topic: Kartlegge valgpåvirkning og digitale angrep
+    quote: "styrke evnen både nasjonalt og lokalt til å oppdage forsøk på valgpåvirkning og forebygge digitale angrep før, under og etter valg"
+    where: "Et sterkt demokrati (s. 11)"
+    statements: ["utsagn-04"]
+    # begrunnelse: vil oppdage og forebygge valgpåvirkning og digitale angrep
+  - dimension: Demokratisk åpenhet
+    topic: Makt- og demokratiutredning
+    quote: "gjennomføre en makt- og demokratiutredning"
+    where: "Et sterkt demokrati (s. 11)"
+  - dimension: Demokratisk åpenhet
+    topic: Åpenhet om skatt og eierforhold
+    quote: "ha mer åpenhet om skatt, selskapsstrukturer og eierforhold"
+    where: "Økonomi – folk skal få bedre råd (s. 13)"
+  - dimension: Demokratisk åpenhet
+    topic: Offentlig register over reelle eiere
+    quote: "jobbe for å innføre et offentlig globalt register med informasjon om rettmessige eiere av selskaper, eiendommer og verdipapirer"
+    where: "Økonomisk åpenhet for rettferdig fordeling (s. 173)"
+    statements: ["utsagn-05"]
+    # begrunnelse: vil ha offentlig register over reelle eiere
+  - dimension: Demokratisk åpenhet
+    topic: Offentlighetsloven og meroffentlighet
+    quote: "at offentlighetsloven og prinsippet om meroffentlighet skal praktiseres i alle offentlige virksomheter"
+    where: "Medier: grunnmuren for ytringsfrihet og demokrati (s. 141)"
+  - dimension: Norsk handlefrihet
+    topic: Forsvar sikrer handlefrihet
+    quote: "Et sterkt forsvar skal ivareta Norges sikkerhet, trygghet og handlefrihet, våre interesser og våre verdier"
+    where: "Et sterkere forsvar gjør Norge tryggere (s. 176)"
+  - dimension: Norsk handlefrihet
+    topic: Utenlandskabler som suveren beslutning
+    quote: "Beslutninger om eventuelle nye utenlandskabler skal fortsatt være en suveren beslutning fattet av norske myndigheter"
+    where: "Et norsk kraftsystem (s. 116)"
+    statements: ["utsagn-08", "utsagn-09"]
+    # begrunnelse: nye utenlandskabler skal være en suveren norsk beslutning
+  - dimension: Norsk handlefrihet
+    topic: Full nasjonal råderett over kraftressursene
+    quote: "Det er avgjørende å sikre fortsatt full nasjonal råderett over kraftressursene og at disse kommer hele landet til gode"
+    where: "Et norsk kraftsystem: Mer kraft (s. 117)"
+  - dimension: Norsk handlefrihet
+    topic: Skjult utenlandsk eierskap som sikkerhetsrisiko
+    quote: "Skjult utenlandsk eierskap øker forskjellene i verden og kan utgjøre en alvorlig sikkerhetsrisiko"
+    where: "Økonomisk åpenhet for rettferdig fordeling (s. 173)"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Norgespris på strøm
+    quote: "innføre ordningen med Norgespris for å gi strømkunder forutsigbar strømpris"
+    where: "Et norsk kraftsystem (s. 114)"
+    statements: ["utsagn-12"]
+    # begrunnelse: vil innføre Norgespris på strøm
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Statens inntekter tilbake til husholdningene
+    quote: "Mer av statens inntekter må gå tilbake til norske husholdninger"
+    where: "Et norsk kraftsystem (s. 114)"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Offentlig eierskap i kraft
+    quote: "bruke og styrke det offentlige eierskapet, blant annet for å øke kraftproduksjonen"
+    where: "Et norsk kraftsystem (s. 116)"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Vertskommunenes andel av verdiskapingen
+    quote: "sikre at lokalsamfunn og vertskommuner som stiller sine naturressurser til disposisjon for utbygging, får mer igjen for det og sikres en rettmessig del av verdiskapingen"
+    where: "Et norsk kraftsystem: Mer kraft (s. 117)"
+  - dimension: Forvaltning av fellesskapets ressurser / energi
+    topic: Utredning av kjernekraft
+    quote: "utrede fremtidig produksjon av kjernekraft i Norge"
+    where: "Et norsk kraftsystem: Mer kraft (s. 117)"
+    statements: ["utsagn-13"]
+    # begrunnelse: vil utrede fremtidig kjernekraftproduksjon
+  - dimension: Teknologisk kapasitet
+    topic: Sikker digital infrastruktur i hele landet
+    quote: "sørge for en sikker og fremtidsrettet digital infrastruktur i hele landet"
+    where: "Digitalisering for alle (s. 145)"
+  - dimension: Teknologisk kapasitet
+    topic: Sikkerhet og beredskap i all digitalisering
+    quote: "legge hensynet til sikkerhet og beredskap i bunn for all digitalisering"
+    where: "Digitalisering for alle (s. 145)"
+  - dimension: Teknologisk kapasitet
+    topic: Langtidsplan for digital grunnmur og ekom
+    quote: "styrke sikkerheten innen ekom, ved å utvikle en egen langtidsplan for utbygging av den digitale grunnmuren"
+    where: "Cyberkriminalitet: nye utfordringer krever nye løsninger (s. 106)"
+  - dimension: Teknologisk kapasitet
+    topic: Nasjonal styring av datasentre
+    quote: "ivareta norske sikkerhetsinteresser ved utbygging av datasentre, ved å sørge for tydeligere nasjonal styring"
+    where: "Digitalisering for alle: Digital infrastruktur (s. 147)"
+    statements: ["utsagn-11"]
+    # begrunnelse: vil ha tydeligere nasjonal styring av datasentre
+  - dimension: Teknologisk kapasitet
+    topic: Høyhastighetsbredbånd til alle husstander
+    quote: "ha som mål at alle husstander der det bor fastboende, skal ha tilgang til høyhastighetsbredbånd på 1GB"
+    where: "Digitalisering for alle: Digital infrastruktur (s. 147)"
+    statements: ["utsagn-61"]
+    # begrunnelse: vil gi alle husstander høyhastighetsbredbånd
+  - dimension: Innovasjon / omstillingsevne
+    topic: Grønne og sirkulære produksjonsmodeller
+    quote: "videreutvikle og legge til rette for nye, grønne og sirkulære produksjonsmodeller i industrien"
+    where: "Næring: Grønn omstilling (s. 35)"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Privat kapital leder an i omstillingen
+    quote: "sikre at privat kapital leder an i omstillingen til grønne næringer"
+    where: "Næring: Grønn omstilling (s. 35)"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Eksportmål utenom olje og gass
+    quote: "øke norsk eksport utenom olje og gass med 50 prosent innen 2030"
+    where: "Næring: Industri (s. 33)"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Nasjonalt rom- og jordobservasjonssenter
+    quote: "etablere et nasjonalt senter for jordobservasjon og et nasjonalt innovasjonssenter for rombasert virksomhet"
+    where: "Næring: Industri (s. 33)"
+  - dimension: Innovasjon / omstillingsevne
+    topic: Forsterke det aktive statlige eierskapet
+    quote: "utvikle og forsterke det aktive statlige eierskapet"
+    where: "Næring: Mer aktivt statlig eierskap (s. 36)"
+  - dimension: Universell grunnmur
+    topic: Universelle ordninger fremfor behovsprøvde
+    quote: "prioritere universelle ordninger fremfor behovsprøvde ytelser"
+    where: "Pensjon, trygd og ytelser (s. 25)"
+  - dimension: Universell grunnmur
+    topic: Universell tannhelsehjelp
+    quote: "ha som mål å sikre universell tannhelsehjelp for alle"
+    where: "Én felles helsetjeneste: Tannhelse (s. 86)"
+    statements: ["utsagn-25"]
+    # begrunnelse: vil sikre universell tannhelsehjelp for alle
+  - dimension: Universell grunnmur
+    topic: Holde barnehageprisen lav
+    quote: "holde barnehageprisen lav"
+    where: "En skole der alle kan lykkes og lik rett til utdanning (s. 51)"
+    statements: ["utsagn-34"]
+    # begrunnelse: vil holde barnehageprisen lav
+  - dimension: Universell grunnmur
+    topic: Mobildekning langs hovedferdselsårene
+    quote: "sikre mobildekning langs hovedferdselsårene både på land og sjø"
+    where: "Digitalisering for alle: Digital infrastruktur (s. 147)"
+    statements: ["utsagn-26"]
+    # begrunnelse: vil sikre mobildekning langs hovedferdselsårene
+  - dimension: Barns muligheter
+    topic: Fattigdom skal ikke gå i arv
+    quote: "Fattigdom skal ikke gå i arv. Barn fortjener like muligheter uavhengig av foreldrenes livssituasjon"
+    where: "Familiepolitikk: ulike familier, universell velferd (s. 142)"
+  - dimension: Barns muligheter
+    topic: Tiltak mot barn i vedvarende lavinntekt
+    quote: "rette særskilte tiltak mot barn og unge som vokser opp i familier med vedvarende lavinntekt, spesielt i levekårsutsatte områder"
+    where: "Gode oppvekstmiljø for alle (s. 143)"
+    statements: ["utsagn-33"]
+    # begrunnelse: vil målrette tiltak mot barn i levekårsutsatte områder
+  - dimension: Barns muligheter
+    topic: Gratis kjernetid i SFO
+    quote: "satse på gratis kjernetid i områder med integrerings-, språk- og levekårsutfordringer"
+    where: "En skole der alle kan lykkes og lik rett til utdanning (s. 51)"
+    statements: ["utsagn-32"]
+    # begrunnelse: vil satse på gratis kjernetid i SFO
+  - dimension: Barns muligheter
+    topic: Barnevern med barnets beste som prinsipp
+    quote: "utvikle og styrke et barnevern med høy tillit, og med barns beste som det førende prinsippet"
+    where: "Barnevern: trygg og god omsorg for alle barn (s. 95)"
+    statements: ["utsagn-36"]
+    # begrunnelse: vil ha barns beste som førende prinsipp i barnevernet
+  - dimension: Robusthet / adaptabilitet
+    topic: Langtidsplan for sivil beredskap
+    quote: "starte arbeidet med en langtidsplan for den sivile beredskapen"
+    where: "Justis og beredskap: Samfunnssikkerhet og beredskap (s. 109)"
+  - dimension: Robusthet / adaptabilitet
+    topic: Mål om 50 prosent selvforsyning
+    quote: "viktig at vi når målet om 50 % selvforsyning innen 2030"
+    where: "Justis og beredskap: Samfunnssikkerhet og beredskap (s. 108)"
+  - dimension: Robusthet / adaptabilitet
+    topic: Lagre av matkorn og kritiske innsatsfaktorer
+    quote: "sikre nødvendige lagre av matkorn og andre kritiske innsatsfaktorer til matproduksjon"
+    where: "Justis og beredskap: Samfunnssikkerhet og beredskap (s. 109)"
+    statements: ["utsagn-38"]
+    # begrunnelse: vil sikre lagre av matkorn og kritiske innsatsfaktorer
+  - dimension: Robusthet / adaptabilitet
+    topic: Følge opp Totalberedskapsmeldingen
+    quote: "følge opp Totalberedskapsmeldingen"
+    where: "Justis og beredskap: Samfunnssikkerhet og beredskap (s. 109)"
+  - dimension: Robusthet / adaptabilitet
+    topic: Styrke samfunnets motstandskraft
+    quote: "øke hele samfunnets motstandskraft mot blant annet cyberangrep, spionasje og påvirkningsoperasjoner"
+    where: "Et sterkere forsvar gjør Norge tryggere (s. 176)"
+  - dimension: Generasjonsansvar
+    topic: Kontrakten med kommende generasjoner
+    quote: "oppfylle vår del av kontrakten med kommende generasjoner"
+    where: "Klima og natur skal være rammen rundt all politikk (s. 120)"
+  - dimension: Generasjonsansvar
+    topic: Pensjonsforliket 2024
+    quote: "Arbeiderpartiet støtter opp om pensjonsforliket som ble inngått i 2024"
+    where: "Pensjon, trygd og ytelser: Pensjon (s. 25)"
+    statements: ["utsagn-37"]
+    # begrunnelse: støtter pensjonsforliket 2024, rammen for endringer i tjenestepensjonen
+  - dimension: Generasjonsansvar
+    topic: Handlingsregelen for oljepenger
+    quote: "følge handlingsregelen for en forsvarlig innfasing av oljepenger i norsk økonomi over tid"
+    where: "Økonomi – folk skal få bedre råd (s. 13)"
+  - dimension: Generasjonsansvar
+    topic: Klimamål for 2035
+    quote: "foreslå at Norges nye klimamål for 2035 er å redusere utslippene med minst 70-75 prosent sammenlignet med utslippsnivået i 1990"
+    where: "Klima og natur skal være rammen rundt all politikk (s. 121)"

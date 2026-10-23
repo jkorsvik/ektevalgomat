@@ -1,0 +1,39 @@
+id: ev-2025-12-16-mdg-samordningsfellen-for
+statement_id: utsagn-40
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG fremmet, alene, det eneste forslaget i saken som faktisk ble
+  vedtatt (forslag 2 — en muntlig fremsatt gulvamendment under
+  debatten 16.12.2025, ikke en del av den trykte innstillingen). MDG
+  har ingen skriftlig merknad i innstillingen selv, men er eneste
+  forslagsstiller på den konkrete, vedtatte teksten.
+claim_action: >
+  Votering_id 26604, MDG 5 for, 0 mot. Forslagets fulle, vedtatte
+  tekst (Vedtak 164): "Stortinget ber regjeringen utrede tiltak for
+  at ingen offentlig ansatte taper offentlig tjenestepensjon ved å
+  stå, eller ha stått, lengre i jobb enn 67 års alder (etter oppnådd
+  alder hvor levealdersjustering er fullt ut kompensert for), at dette
+  skal gjelde fra kullene født fra og med 1944, samt hva
+  budsjettkonsekvenser og samfunnsøkonomiske effekter vil være om
+  dette innføres fra 1.1.2027."
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26604; Vedtak 164"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Vedtak/Vedtak/Sak/?p=105069"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: selv uten en prosa-merknad har MDG den sterkeste mulige
+  dokumentasjonen — eneste forslagsstiller på den ORDLYD som faktisk
+  ble vedtatt, med en presis, forhandlet formulering (utrede, ikke
+  lovendre direkte; navngir 1944-kullet; setter en konkret
+  rapporteringsfrist mot 1.1.2027). At forslaget kom som en
+  gulvamendment under debatten og ikke i den trykte innstillingen,
+  forklarer hvorfor det ikke finnes en skriftlig MDG-merknad å sitere
+  fra — teksten i seg selv ER dokumentasjonen.
+retrieved_at: "2026-09-24"

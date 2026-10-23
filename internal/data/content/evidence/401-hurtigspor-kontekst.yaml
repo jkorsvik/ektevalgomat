@@ -1,0 +1,40 @@
+id: ev-2026-hurtigspor-kontekst
+statement_id: utsagn-10
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-05-01"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 266 S (2025-2026), om FrPs (Tom Staahle, Erlend Wiborg, Jon
+  Engen-Helgheim, Himanshu Gulati) Dok. 8:162 S om en plan- og
+  bygningslov for krig og krise. Forslaget viser til at Danmark har
+  vedtatt en egen hurtigsporlov (nr. 1097 av 15. september 2025) for
+  forsvarsbygging, og ber Norge gjøre det samme.
+claim_action: >
+  Forslag 1 (FrP og Høyre): "Stortinget ber regjeringen legge frem
+  forslag til en særskilt lovhjemmel for hurtig behandling av større
+  forsvarsanlegg og kritisk forsvarsrelatert infrastruktur, som ikke
+  begrenses av den til enhver tid gjeldende plan- og bygningslov."
+  Alternativ votering mellom innstillingen (avvisning) og forslag 1,
+  votering_id 27597 (sakid 200087): 57 for innstillingen/avvisning
+  (Ap 30, KrF 4, MDG 5, Rødt 5, SV 5, Sp 5, Venstre 2, FrP 1), 41 for
+  forslag 1 (FrP 27, Høyre 14).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 266 S (2025–2026); data.stortinget.no sakid=200087, votering_id 27597"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-266s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Dette er en "alternativ votering" — en avstemning mellom to
+  gjensidig utelukkende alternativer (innstillingens avvisning vs.
+  forslag 1), ikke en vanlig for/mot-votering på ett forslag. Sp
+  (regjeringsparti) viser til statsrådens svar: eksisterende
+  virkemidler (statlig reguleringsplan + forskriftsbaserte unntak
+  fra byggetekniske krav) allerede dekker behovet — altså "vi har
+  allerede verktøyet" mot FrP/Høyres "vi trenger en ny, bredere
+  hjemmel". Direkte relevant for dimensjonens spørsmål om reell
+  operasjonsevne i krise.
+retrieved_at: "2026-09-24"

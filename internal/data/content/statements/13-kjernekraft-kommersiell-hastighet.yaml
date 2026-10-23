@@ -1,0 +1,16 @@
+id: utsagn-13
+number: 13
+dimension: "Forvaltning av fellesskapets ressurser / energi"
+primary_question: "Hvem kontrollerer ressursene, risikoen og verdiskapingen?"
+case_tag: kjernekraft_kommersiell_hastighet
+short_name: "Kommersiell kjernekraft nå, ikke senere"
+text: >
+  Stortinget bør nå vedta lovendringer for privat finansiert, kommersiell
+  kjernekraftproduksjon i Norge, ikke vente på en stortingsmelding.
+practical_stakes:
+  enig: >
+    Stortinget vedtar nå lovendringer som åpner for privat finansiert,
+    kommersiell kjernekraftproduksjon i Norge.
+  uenig: >
+    Stortinget vedtar ingen slike lovendringer nå. Spørsmålet utredes videre
+    gjennom en stortingsmelding først.

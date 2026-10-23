@@ -1,0 +1,26 @@
+id: ev-2026-02-10-sp-barnetrygd-prisjustering-mot
+statement_id: utsagn-31
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-02-10"
+evidence_type: voteringsresultat
+evidence_class: fakta
+scan_summary: >
+  Senterpartiet stemte mot. Sp har ikke sete i familie- og
+  kulturkomiteen og har ingen egen merknad i denne innstillingen --
+  posisjonen er dokumentert kun gjennom stemmegivningen i plenum.
+claim_action: >
+  Votering_id 26942, Sp 0 for, 5 mot. Ingen egen merknad eller forslag
+  fra Sp funnet i Innst. 126 S.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26942"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26942"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 utelukkende på stemmegivningen, i tråd med det snudde
+  utsagnets premiss: ingen skriftlig begrunnelse fra Sp er funnet i
+  denne innstillingen. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Se evidence/111-barnetrygd-prisjustering-kontekst.yaml.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,28 @@
+id: ev-2026-04-16-mdg-ungdomskriminalitet-lukket-institusjon
+statement_id: utsagn-51
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-04-16"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG mener FrPs ønske allerede er ivaretatt gjennom et vedtak fra trontaledebatten, og vil avvente regjeringens oppfølging."
+claim_action: >
+  MDG er medforfatter av samme merknad med Sp (se Sps evidensfil for
+  full tekst): stortingsflertallet har allerede vedtatt å be
+  regjeringen komme tilbake med lovhjemler, og forslaget oppfattes som
+  ivaretatt. Stemte mot forslag nr. 1 (votering 27111).
+verbatim_excerpt: >
+  «Disse medlemmer oppfatter derfor at forslagene fra
+  Fremskrittspartiet allerede er ivaretatt, og avventer derfor
+  regjeringens oppfølging av dette i det varslede lovarbeidet.»
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 173 S (2025–2026); votering 27111 (16.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-173s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1: delt merknad med Sp, samme "allerede ivaretatt"-innvending,
+  ikke en substansiell avvisning av ubegrenset varighet som prinsipp.
+  Bekreftet [OK] i votes.py: MDG 0 for / 5 mot.
+retrieved_at: "2026-09-27"

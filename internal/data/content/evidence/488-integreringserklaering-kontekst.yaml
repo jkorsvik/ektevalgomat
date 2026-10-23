@@ -1,0 +1,35 @@
+id: ev-2026-05-19-integreringserklaering-kontekst
+statement_id: utsagn-50
+party_id: ""
+actor: "Regjeringen / kommunal- og forvaltningskomiteen"
+date: "2026-05-19"
+evidence_type: lovendring
+evidence_class: fakta
+scan_summary: "Stortinget vedtok å erstatte integreringskontrakten med en signeringspliktig integreringserklæring."
+claim_action: >
+  Innst. 309 L (2025–2026), sak 200258, behandling av Prop. 70 L
+  (2025–2026) om endringer i integreringsloven § 16. Loven innfører en
+  plikt for deltakere i introduksjonsprogrammet til å signere en
+  integreringserklæring som skal erstatte dagens integreringskontrakt.
+  Vedtatt 19. mai 2026 (votering 27779: 54 mot 44).
+verbatim_excerpt: >
+  «Formålet med å innføre en integreringserklæring er å tydeliggjøre
+  hva norske myndigheter forventer av deltakere i introduksjonsprogrammet,
+  og hvilke forpliktelser deltakerne har til å ta del i arbeids- og
+  samfunnslivet og bli selvforsørget. [...] Integreringserklæringen
+  skal også løfte frem hvilket ansvar som følger med det å være
+  forelder i Norge, og at brudd på norske lover kan medføre
+  straffansvar.»
+status: vedtatt
+position: null
+source_tier: A
+source_name: "Prop. 70 L (2025–2026); Innst. 309 L (2025–2026); votering 27779 (19.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst: dette er regjeringens (Prop. 70 L) eget
+  formål med loven, ikke ett parti sin begrunnelse. Egne
+  partiposisjoner er kodet i de partivise evidensfilene under.
+  Komiteen for denne saken har kun sete for Ap, FrP, H, SV, Sp og Rødt
+  — MDG, KrF og Venstre er kodet fra stemmegivning alene.
+retrieved_at: "2026-09-27"

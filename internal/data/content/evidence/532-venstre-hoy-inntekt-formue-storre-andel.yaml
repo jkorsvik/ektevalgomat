@@ -1,0 +1,27 @@
+id: ev-2026-partiprogram-venstre-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: v
+actor: "Venstre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Venstre vil fjerne formuesskatten på arbeidende kapital og redusere det samlede skatte- og avgiftstrykket, som peker mot at eiere av stor formue/kapital skal betale mindre, ikke mer."
+claim_action: >
+  Venstres program vil fjerne formuesskatten på arbeidende kapital,
+  delvis kompensert av økt selskapsskatt, og ønsker generelt å
+  redusere det samlede skatte- og avgiftstrykket.
+verbatim_excerpt: >
+  «fjerne formuesskatten på arbeidende kapital, og delvis kompensere
+  inntektsbortfallet gjennom en moderat økning av selskapsskatten»
+status: programfestet
+position: -1
+source_tier: C
+source_name: "Venstres stortingsvalgprogram 2025–2029"
+source_url: "https://www.venstre.no/politikk/partiprogram/program-2025-2029/"
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet -1, ikke -2: samme resonnement som Høyre og FrP — eksplisitt
+  om formue (business-eiere spesifikt), ingen tilsvarende eksplisitt
+  setning om høyinntektsgrupper. Sannsynliggjort, ikke dokumentert.
+  Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

@@ -1,0 +1,20 @@
+id: ev-2026-ap-avisdistribusjon-mot
+statement_id: utsagn-30
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Ap stemte mot, konsistent med sin stemme på utsagn-29 i samme sak.
+claim_action: "Votering_id 27674, Ap 32 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27674"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: Ap stemte mot begge forslagene i denne saken.
+retrieved_at: "2026-09-24"

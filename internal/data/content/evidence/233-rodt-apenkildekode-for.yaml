@@ -1,0 +1,31 @@
+id: ev-2026-04-28-rodt-apenkildekode-for
+statement_id: utsagn-23
+party_id: rodt
+actor: "Rødt (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er medforslagsstiller sammen med SV og MDG, og har (sammen med
+  MDG) en egen, mer utfyllende merknad enn de andre om åpen
+  kildekode som verktøy.
+claim_action: >
+  Votering_id 27489, Rødt 5 for, 0 mot. Fra Rødt og MDGs felles
+  merknad: "Komiteens medlemmer fra Rødt og Miljøpartiet De Grønne
+  mener at åpen kildekode er et av de viktigste verktøyene for å
+  redusere avhengighet og styrke digital suverenitet."
+verbatim_excerpt: >
+  Åpen kildekode er et av de viktigste verktøyene for å redusere
+  avhengighet og styrke digital suverenitet.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27489"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Rødt har den mest prinsipielle formuleringen av
+  begrunnelsen ("et av de viktigste verktøyene"), delt med MDG, pluss
+  medforslagsstillerskap.
+retrieved_at: "2026-09-24"

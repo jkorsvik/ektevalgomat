@@ -1,0 +1,35 @@
+id: ev-2026-partiprogram-ap-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap fremhever et progressivt skattesystem som viktig, og sier store selskaper og formuende må betale sin rettmessige andel — men uten et eksplisitt 'mer enn i dag'-løfte."
+claim_action: >
+  Aps partiprogram 2025–2029 sier et progressivt skattesystem er
+  viktig for vekst og fordeling, og at det er nødvendig å sikre at
+  store selskaper og formuende betaler sin rettmessige andel til
+  fellesskapet.
+verbatim_excerpt: >
+  Et progressivt skattesystem er viktig for økonomisk vekst og
+  fordeling [...] sikre at store selskaper og formuende betaler sin
+  rettmessige andel til fellesskapet
+status: programfestet
+position: 1
+source_tier: C
+source_name: "Arbeiderpartiets partiprogram 2025–2029 (PDF)"
+source_url: "https://res.cloudinary.com/arbeiderpartiet/image/upload/fl_attachment:partiprogram-2025-2029/v1/ievv_filestore/130322a45ccf45889bfc6fa4116c5b480cadc1e93e51491f8199451dd231c7c5"
+claim_confidence: sannsynliggjort
+context_note: >
+  Kodet +1, ikke +2: teksten er på topic (progressiv skatt, formuende
+  skal betale sin andel), men den andre setningen handler primært om
+  internasjonalt skattesamarbeid mot skatteomgåelse, og ingen av
+  setningene sier eksplisitt at andelen skal være STØRRE ENN I DAG —
+  bare at den skal være "rettmessig". Samtidig har Ap ellers i
+  programmet (se utsagn-55) et eksplisitt løfte om å holde det
+  SAMLEDE skatte- og avgiftsnivået uendret, som i praksis begrenser
+  hvor mye mer de aller rikeste kan betale uten at andre får mindre.
+  claim_confidence sannsynliggjort, ikke dokumentert. Tier C, ikke
+  tier A.
+retrieved_at: "2026-09-27"

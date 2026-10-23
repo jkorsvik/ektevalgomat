@@ -1,0 +1,32 @@
+id: ev-2026-05-07-v-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: v
+actor: "Venstre"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Venstre stemte for digital suverenitet som overordnet mål, men mot det konkrete jurisdiksjonskravet. Ingen egen skriftlig begrunnelse i saken."
+claim_action: >
+  Venstre er ikke medlem av kommunal- og forvaltningskomiteen og har
+  ingen egen merknad i Innst. 225 S (2025–2026). Venstres representanter
+  stemte for forslag 2 (digital suverenitet som overordnet mål i
+  digitaliseringsstrategien, votering_id 27494: 2 for, 1 ikke til stede)
+  og mot forslag 4 (GDPR/jurisdiksjonskrav, votering_id 27492: 2 mot, 1
+  ikke til stede), 07.05.2026.
+status: forslag_avvist_stemte_mot
+position: 0
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27494 og 27492 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/?p=200036&dnid=1"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet 0 (delt), uendret av snuingen: mot målet i den opprinnelige teksten
+  (forslag 2), for å avvise det konkrete jurisdiksjonskravet (forslag 4)
+  — netto fortsatt 0. Senterpartiet har nøyaktig samme stemmemønster og
+  er kodet likt (se evidence/447). Venstre har ikke sete i komiteen og
+  ingen egen tekst som forklarer stemmene, derfor evidensstyrke_cap
+  moderat. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. Korrigert 2026-09-26: en tidligere versjon oppga «1 mot, 2 fraværende», utelot for-stemmen på forslag 2 og var
+  kodet -1. Årsak: JSON-kodene fra data.stortinget.no ble lest feil (1 =
+  ikke til stede, 2 = for, 3 = mot).
+retrieved_at: "2026-09-26"

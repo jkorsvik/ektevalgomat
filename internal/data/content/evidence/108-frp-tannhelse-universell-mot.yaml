@@ -1,0 +1,37 @@
+id: ev-2025-06-04-frp-tannhelse-universell-mot
+statement_id: utsagn-25
+party_id: frp
+actor: "Fremskrittspartiet (helse- og omsorgskomiteen)"
+date: "2025-06-04"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte mot SVs universaliseringsforslag. FrP har ingen egen
+  skriftlig merknad om universell tannhelse i denne innstillingen,
+  men fremmet i stedet et eget, målrettet forslag om en
+  opptrappingsplan for rabatterte (ikke gratis/universelle)
+  tannhelsetjenester for eldre og personer med tannsykdommer.
+claim_action: >
+  Votering_id 25387, FrP 0 for, 12 mot. FrP fremmet eget forslag
+  (forslag 18, votering_id 25388, avvist): "Stortinget ber
+  regjeringen legge frem en opptrappingsplan som sikrer rabatterte
+  tannhelsetjenester til eldre og personer med tannsykdommer som
+  krever omfattende behandling."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 458 L (2024–2025); votering_id 25387, 25388"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-458l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1: FrP har ingen skriftlig begrunnelse spesifikt om
+  universaliseringsspørsmålet i denne innstillingen, men deres eget
+  forslag (rabattert, ikke gratis; avgrenset til eldre og personer med
+  tannsykdommer, ikke hele befolkningen) peker mot en målrettet
+  (behovsbasert) tilnærming, nøyaktig det snudde utsagnets premiss — lik
+  logikk som Høyres "de som trenger det mest", men uten Høyres Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  eksplisitte avvisning av regjeringens egen, mer beskjedne lovfesting.
+  Lavere attribution_confidence enn Ap/Sp/H/Rødt/SV av denne grunn.
+  Se evidence/101-tannhelsereform-kontekst.yaml.
+retrieved_at: "2026-09-24"

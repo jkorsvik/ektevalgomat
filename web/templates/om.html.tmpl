@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* Split out of /metode (2026-09-25): "hvorfor" and "hva er bygget"
+       are project status/motivation, a different question than
+       /metode's "hvordan virker scoringen". Three separate pages now,
+       each answering one question, instead of one long page answering
+       all of them (feedback: "still information overload").
+
+       2026-10-12 klarspråk pass: the page leads with a plain answer to
+       "hvorfor finnes dette, og hvorfor kan jeg stole på det". The
+       method vocabulary (transparens/konsekvens), the build status, the
+       addendum caveat and the correction log all moved into <details>
+       tiers below that answer — depth one click down, not the entrance. */}}
+  <h2>Hvorfor dette finnes</h2>
+  <p class="prose-lede">
+    Mediene skriver mest om sakene som er store denne uken. Det er ikke
+    alltid de samme sakene som avgjør hvor mye handlefrihet, åpenhet
+    eller trygghet Norge har om ti år. Denne valgomaten spør også om hva
+    partiene <strong>faktisk har stemt</strong>.
+  </p>
+  <p class="prose-lede">
+    Du trenger ikke stole på oss. Du kan sjekke selv om det et parti
+    sier, stemmer med det partiet har stemt for eller foreslått. Kilden
+    står ved siden av hver posisjon, og du kan åpne den selv. Finnes
+    ingen kilde, blir det ingen sammenligning.
+  </p>
+
+  <details class="disclosure metode-disclosure">
+    <summary>De to ordene som bærer resten</summary>
+    <p>
+      <strong>Transparens</strong> betyr at du kan spore hver
+      partiposisjon til en primærkilde. Ikke til partiets egen
+      beskrivelse av seg selv. <strong>Konsekvens</strong> betyr at et
+      løfte som aldri blir handling, er synlig. Det samme er en handling
+      som motsier et tidligere løfte. Hvordan dette måles står i
+      <a href="/metode">metoden</a>.
+    </p>
+  </details>
+
+  <details class="disclosure metode-disclosure">
+    <summary>Hva som faktisk er bygget</summary>
+    <p>
+      Alle ni dimensjonene fra forskningsnotatet er bygget. I tillegg
+      kommer to dimensjoner lagt til etter tilbakemelding, «Finansiering
+      av fellesskapet» (skatt og avgifter) og «Tilgang, integrering og
+      rettsstat» (innvandring og rettsstat). Det er
+      {{.CoreCount}} utsagn{{if .AddendumCount}}, pluss {{.AddendumCount}}
+      som ligger utenfor dimensjonene (mer om dem under){{end}}, fordelt
+      på ni stortingspartier. Notatet planla {{plannedMemoTotal}} utsagn.
+      Datasettet har vokst forbi den planen. Forsiden viser hvor mange av
+      utsagnene på hver dimensjon du selv har svart på.
+    </p>
+    <p>
+      At noe er «bygget» betyr bare at utsagnet har minst én
+      partiposisjon med en kilde. Det betyr ikke at alle ni partiene er
+      dokumentert for hvert utsagn. De fleste utsagnene har en posisjon
+      for alle ni. Noen har færre. Du ser hvor mye som er dekket øverst på
+      hver utsagn-side. Rettelsene som er gjort underveis står i
+      <a href="#rettelseslogg">rettelsesloggen</a> nederst på denne siden.
+    </p>
+  </details>
+
+  {{if .AddendumCount}}
+  <details class="disclosure metode-disclosure">
+    <summary>Om de {{.AddendumCount}} utsagnene utenfor de 42</summary>
+    <p>
+      Utsagn 44 og 45 ligger utenfor nummereringen fra 1 til 42. Et
+      tredje utsagn fra samme gruppe ble senere flyttet til dimensjonen
+      det hører hjemme i (Norsk handlefrihet) og fikk plassen som utsagn
+      7. Begge rettelsene står i
+      <a href="#rettelseslogg">rettelsesloggen</a> nederst på siden.
+    </p>
+    <p>
+      Utsagn 44 har posisjon for alle ni partiene, fra voteringen over
+      Innst. 225 S (2025–2026) om digital suverenitet. Utsagn 45 har
+      Innst. 464 S (2025–2026) som institusjonell kilde. Den sier ikke hva
+      partiene mener om dette utsagnet, så posisjonene der kommer fra
+      partiprogrammene (kildeklasse C) for sju av ni partier. Rødt og Sp
+      mangler fortsatt.
+    </p>
+  </details>
+  {{end}}
+
+  <details class="disclosure metode-disclosure" id="rettelseslogg">
+    <summary>Rettelseslogg ({{len .Corrections}})</summary>
+    <p>
+      Her står feilene dette prosjektet har gjort, med dato, hva som var
+      galt, hvorfor det skjedde, og hva det betydde for resultatet.
+      En <strong>rettelse</strong> er noe du kunne se her som var galt og
+      ble endret. En <strong>nesten</strong> er en feil som ble stoppet før
+      den nådde nettstedet. Begge står her: en logg som bare tok med feilene
+      som slapp ut, ville vært en kuratert liste, ikke en logg.
+    </p>
+    <ol class="corrections">
+    {{range .Corrections}}
+      <li class="correction correction-{{.Kind}}">
+        <p class="correction-head">
+          <time datetime="{{.Date}}">{{dateNO .Date}}</time>
+          <span class="correction-kind">{{if eq .Kind "rettelse"}}Rettelse{{else}}Nesten{{end}}</span>
+        </p>
+        <h3>{{.Title}}</h3>
+        {{if .Statements}}
+        <p class="correction-where">
+          Gjelder utsagn {{range $i, $n := .Statements}}{{if $i}}, {{end}}{{$n}}{{end}}.
+        </p>
+        {{end}}
+        <p><strong>Hva var galt.</strong> {{.What}}</p>
+        <p><strong>Hvorfor det skjedde.</strong> {{.Reason}}</p>
+        <p><strong>Hva det betydde.</strong> {{.Effect}}</p>
+      </li>
+    {{end}}
+    </ol>
+    <p class="correction-note">
+      Hver kilde har datoen den ble hentet, og hvert utsagn har sine kilder
+      oppført. Denne listen er skrevet for deg som leser: de feilene som
+      endret noe du kunne se, og de som ble stoppet på veien. Fant du en feil
+      som ikke står her, er det en feil i loggen.
+    </p>
+  </details>
+</main>
+
+<footer class="site">
+  <p>Ekte valgomat. Bygget {{year}}. <a href="/personvern">Personvern <span aria-hidden="true">→</span></a></p>
+  <p>
+    Lisensiert under
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL-3.0</a>.
+    Kildekoden er åpen:
+    <a href="https://github.com/jkorsvik/ektevalgomat">github.com/jkorsvik/ektevalgomat</a>.
+  </p>
+</footer>
+
+</body>
+</html>

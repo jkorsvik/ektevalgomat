@@ -1,0 +1,33 @@
+id: ev-2025-04-10-krf-acer-flertallsstemme
+statement_id: utsagn-07
+party_id: krf
+actor: "Kristelig Folkeparti (Kjell Ingolf Ropstad, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "KrF stemte MOT alle fire forslag om å begrense ACER, som del av flertallet, men har ingen egen skriftlig merknad i saken."
+claim_action: >
+  KrF stemte MOT på alle fire voteringer i saken (votering_id 24383,
+  24384, 24385: 2 mot hver; votering_id 24386, komiteens tilråding om å
+  avvise begge representantforslag: 2 for). Individuell votering
+  kryssjekket mot data.stortinget.no/eksport/voteringsresultat for alle
+  fire votering_id-er.
+verbatim_excerpt: >
+  "Komiteens tilråding fremmes av medlemmene i komiteen fra
+  Arbeiderpartiet, Høyre, Fremskrittspartiet, Venstre, Miljøpartiet De
+  Grønne og Kristelig Folkeparti."
+status: forslag_avvist_av_flertallet
+position: 1
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1 utelukkende fra stemmegivning, ikke fra en egen skriftlig
+  merknad — komiteinnstillingen har ingen KrF-spesifikk tekst i denne
+  saken utover å være listet som medundertegner av den generelle
+  flertallsmerknaden og komiteens tilråding om å avvise begge
+  representantforslag, den samme tilrådingen det snudde utsagnet nå
+  bygger på. Kodet svakere enn +2 for å reflektere at signalet er
+  stemmesporet alene, ikke en egen begrunnet posisjon. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-23"

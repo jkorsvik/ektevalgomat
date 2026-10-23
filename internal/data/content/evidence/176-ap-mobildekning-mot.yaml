@@ -1,0 +1,34 @@
+id: ev-2026-05-19-ap-mobildekning-mot
+statement_id: utsagn-26
+party_id: ap
+actor: "Arbeiderpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Ap stemte mot, som del av en delt seks-partitilråding (med FrP, H,
+  SV, Rødt og MDG) om å avvise hele representantforslaget. Ingen
+  Ap-spesifikk merknad er skrevet noe sted i innstillingen utover den
+  felles komitétekst alle sju komitémedlemmer står bak.
+claim_action: >
+  Votering_id 27610, Ap 0 for, 31 mot. Fra tilrådingsavsnittet:
+  "Komiteens tilråding fremmes av medlemmene i komiteen fra
+  Arbeiderpartiet, Fremskrittspartiet, Høyre, Sosialistisk
+  Venstreparti, Rødt og Miljøpartiet De Grønne. Komiteen har for
+  øvrig ingen merknader, viser til dokumentet og rår Stortinget til å
+  [...] vedtas ikke."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: Ap er navngitt i tilrådingen, men innstillingen har ingen
+  egen Ap-merknad forklarer hvorfor Ap konkret avviser forslaget — bare
+  den felles setningen "Komiteen har for øvrig ingen merknader."
+  Lavere attribution_confidence enn Høyre (evidence/175) av denne
+  grunn, samme nivå som SV/Rødt/MDG (evidence/177-179) som deler samme
+  status.
+retrieved_at: "2026-09-24"

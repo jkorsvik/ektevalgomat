@@ -1,0 +1,38 @@
+id: ev-2026-barnehage-kontekst
+statement_id: utsagn-33
+party_id: ""
+actor: "Familie- og kulturkomiteen / Stortinget i plenum"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 126 S (2025-2026), om Venstres (Abid Raja, Guri Melby, Grunde
+  Almeland) Dok. 8:11 S om en helhetlig tiltakspakke mot sosiale
+  forskjeller. 22 mindretallsforslag i alt; dette er forslag 1 og 2
+  (SV, MDG og KrF), votert samlet.
+claim_action: >
+  Forslag 1 (SV, MDG, KrF): "Stortinget ber regjeringen legge til
+  rette for økt grunnbemanning i barnehager i levekårsutsatte
+  områder." Forslag 2 (samme partier): "Stortinget ber regjeringen
+  legge frem en plan for å gradvis øke tilskuddspotten for
+  Utdanningsdirektoratets øremerkede tilskuddsordning til tiltak for
+  å styrke den språklige utviklingen for minoritetsspråklige barn i
+  barnehage." Votert samlet, votering_id 26946 (sakid 104872): 16 for
+  (KrF 4, MDG 5, SV 5, Venstre 2), 85 mot (Ap 32, FrP 29, Høyre 14,
+  Rødt 5, Sp 5).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); data.stortinget.no sakid=104872, votering_id 26946"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Venstre stemmer for sitt EGET forslag (den opprinnelige Dok. 8:11 S
+  er en Venstre-sak), selv om SV/MDG/KrF er de formelle
+  forslagsstillerne til akkurat denne teksten. Rødt stemmer MOT, til
+  tross for ideologisk nærhet til SV på fattigdomsbekjempelse — et
+  eksempel på at nærhet i retorikk ikke garanterer samme stemme.
+  Tilrådingen (votering 26948) ble vedtatt 80-20, men med et helt
+  annet, mer generelt innhold enn dette konkrete forslaget.
+retrieved_at: "2026-09-24"

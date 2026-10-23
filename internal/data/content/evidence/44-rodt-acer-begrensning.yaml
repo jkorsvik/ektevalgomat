@@ -1,0 +1,37 @@
+id: ev-2025-04-10-rodt-acer-begrensning
+statement_id: utsagn-07
+party_id: rodt
+actor: "Rødt (Sofie Marhaug, Bjørnar Moxnes, Marie Sneve Martinussen, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt fremmet Dokument 8:75 S om å legge ned veto mot EUs fjerde energimarkedspakke og stemte FOR alle fire forslagene i saken."
+claim_action: >
+  Rødt var forslagsstiller til Dokument 8:75 S (2024–2025) om å legge
+  ned veto mot EUs fjerde energimarkedspakke. Rødt stemte FOR på alle
+  fire voteringer (votering_id 24383, 24384, 24385: 5 for hver;
+  votering_id 24386: 5 mot flertallets avvisning). Individuell votering
+  kryssjekket mot data.stortinget.no/eksport/voteringsresultat.
+verbatim_excerpt: >
+  "Suverenitetsavståelsen som ble vedtatt i 2018, gjorde Norge langt på
+  vei til en del av EUs energiunion, hvor målet er fri flyt av strøm og
+  likest mulig strømpriser. [...] Disse medlemmer mener at avståelsen av
+  politisk handlefrihet i kraftpolitikken er et demokratisk problem som
+  må reverseres. [...] ACER får utvidet myndighet, blant annet knyttet
+  til godkjenning av vilkår og metoder og håndheving av
+  elektrisitetsforordningen."
+status: forslag_avvist_av_flertallet
+position: -2
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at EØS-tilknytningen ikke svekker
+  kraftkontrollen): Rødt var selv forslagsstiller for det mest
+  vidtgående forslaget i saken (formelt veto mot innlemmelse) og stemte
+  konsekvent for samtlige fire forslag om å begrense ACER, med egen
+  merknad som eksplisitt kaller suverenitetsavståelsen "et demokratisk
+  problem som må reverseres" — det motsatte av det snudde utsagnets
+  premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2."
+retrieved_at: "2026-09-23"

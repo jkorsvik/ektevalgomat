@@ -1,0 +1,35 @@
+id: ev-2025-06-04-sv-tannhelse-universell-for
+statement_id: utsagn-25
+party_id: sv
+actor: "Sosialistisk Venstreparti (helse- og omsorgskomiteen)"
+date: "2025-06-04"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV fremmet og stemte for sitt eget forslag om en forpliktende plan
+  for universell tannhelse for hele befolkningen innen 2030 — den
+  eneste partigruppen, sammen med MDG, som stemte for.
+claim_action: >
+  Dokument 8:96 S (2024–2025), forslag 1 (nummerert forslag 19 i
+  innstillingen). Stemte for i votering_id 25387 (SV 7 for).
+verbatim_excerpt: >
+  "Tennene er en del av kroppen vår og må også behandles som det.
+  [...] Tennene er ikke isolerte fra resten av kroppen, og tannhelse
+  må derfor likestilles med andre helsetjenester. [...] Disse
+  medlemmer mener at en tannhelsereform skal gjelde hele
+  befolkningen."
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 458 L (2024–2025); votering_id 25387"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-458l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at gradvis, målrettet innsats er nok): SV er
+  forslagsstiller for nettopp den bindende 2030-fristen, forsvarer
+  forslaget i egen (delt med Rødt og Pasientfokus) merknad med
+  henvisning til Tannhelseutvalgets tall om sosiale helseforskjeller
+  (35 pst. dårlig tannhelse blant lavinntektsgrupper mot under 7 pst.
+  blant høyinntektsgrupper), og stemte for — det motsatte av det snudde
+  utsagnets premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2. Se evidence/101-tannhelsereform-kontekst.yaml.
+retrieved_at: "2026-09-24"

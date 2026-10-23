@@ -1,0 +1,24 @@
+id: ev-2026-04-28-sp-kombit-mot
+statement_id: utsagn-22
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Sp stemte mot KOMBIT-forslaget. Ingen spesifikk merknad om
+  kommunalt KI-innkjøp funnet fra partiet i denne saken.
+claim_action: "Votering_id 27486, Sp 5 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27486"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene. Ingen dokumentert begrunnelse for
+  denne spesifikke voteringen, i motsetning til Sps delte merknad med
+  FrP og Rødt om generell digital suverenitet (evidence/219 for
+  utsagn-24), som ikke omhandler kommunalt innkjøp.
+retrieved_at: "2026-09-24"

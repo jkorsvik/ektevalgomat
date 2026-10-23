@@ -1,0 +1,35 @@
+id: ev-2024-meterskillet-kontekst
+statement_id: utsagn-18
+party_id: ""
+actor: "Næringskomiteen / Stortinget i plenum"
+date: "2024-05-23"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Innst. 264 S (2023-2024), behandling av kvotemeldingen "Folk, fisk
+  og fellesskap". SV og Rødt fremmet et forslag om å gjeninnføre en
+  faktisk lengdegrense (28 meter) mellom kyst- og havfiskeflåten, mot
+  flertallets forslag om å gjeninnføre hjemmelslengde (en annen,
+  mindre streng avgrensning) som gruppeinndeling.
+claim_action: >
+  Forslag 15 (SV og Rødt): "Stortinget ber regjeringen gjeninnføre
+  meterskillet mellom kyst- og havfiskeflåte hvor faktisk lengde på
+  28 meter er utgangspunktet, og komme tilbake til Stortinget med
+  konkretisering av konsekvenser for blant annet kvoterettigheter og
+  havdeling." Votering_id 22561 (sakid 97159): 14 for (Rødt 4, SV 8,
+  Sp 1), 87 mot (Ap 29, FrP 13, Høyre 21, KrF 2, MDG 2, Sp 16,
+  Venstre 4).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 264 S (2023–2024); data.stortinget.no sakid=97159, votering_id 22561"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-264s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Sp splitter internt: 1 av 17 fremmøtte stemte for, 16 mot. Sp er
+  del av flertallet (Ap, Høyre, Sp, FrP, Venstre) som i stedet
+  fremmet en alternativ, mindre streng avgrensning basert på
+  "hjemmelslengde" — en gruppeinndeling flertallet selv mener bedre
+  balanserer fartøyutforming og bærekraft.
+retrieved_at: "2026-09-24"

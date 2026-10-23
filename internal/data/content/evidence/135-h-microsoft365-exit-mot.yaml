@@ -1,0 +1,49 @@
+id: ev-2026-04-28-h-microsoft365-exit-mot
+statement_id: utsagn-20
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot, med en detaljert skriftlig begrunnelse som
+  konkret navngir Microsoft 365-eksemplet og avviser tempoet i
+  forslaget som operasjonelt uforsvarlig.
+claim_action: >
+  Votering_id 27490, H 0 for, 14 mot. Fra Høyres egen merknad (delt
+  innledning med Sp om "smart suverenitet", deretter Høyre alene):
+  "Et illustrerende eksempel er forslaget om å fase ut Microsoft 365
+  fra hele statsforvaltningen 'fortløpende i løpet av 2026'. Disse
+  medlemmer vil påpeke at det danske eksempelet forslagsstillerne
+  viser til, er et langsiktig pilotprosjekt – ikke en nasjonal
+  exit-plan med en tidshorisont på få måneder. Det å gjennomføre en
+  slik utfasing i den skalaen og det tempoet forslaget beskriver,
+  ville medføre operasjonelt kaos og betydelige kostnader, uten at
+  det finnes modne og skalerbare alternativer som kan erstatte
+  eksisterende løsninger på en forsvarlig måte."
+verbatim_excerpt: >
+  Svaret på avhengighet av internasjonale teknologigiganter er
+  mangfold og konkurranse – ikke statlige monopoler eller isolasjon
+  fra den teknologiske utviklingen. [...] Disse medlemmer merker seg
+  at flere høringsinnspill og fageksperter støtter intensjonen bak
+  forslaget, men er skeptiske til de konkrete tiltakene som fremmes.
+  Disse medlemmer deler denne vurderingen.
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27490"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt enig): dette er nøyaktig Høyres egen argumentasjon,
+  gjengitt som det snudde utsagnet nå hevder — Høyre er den eneste
+  partiet i denne saken med en detaljert, saksspesifikk operasjonell
+  begrunnelse (peker konkret på at det danske forbildet er et
+  pilotprosjekt, ikke en hurtig nasjonal exit, og at ingen modne
+  alternativer finnes) — samme rolle Høyre spilte i tannhelsesaken
+  (Phase 2h, evidence/107-h-tannhelse-universell-mot.yaml) og i
+  utsagn-19 for samme innstilling: Høyres egen skriftlige merknad er
+  gjennomgående den mest eksplisitte og substansielt begrunnede
+  posisjonen i denne innstillingen. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2.
+retrieved_at: "2026-09-24"

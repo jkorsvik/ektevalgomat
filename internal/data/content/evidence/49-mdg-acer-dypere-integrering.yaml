@@ -1,0 +1,38 @@
+id: ev-2025-04-10-mdg-acer-dypere-integrering
+statement_id: utsagn-07
+party_id: mdg
+actor: "Miljøpartiet De Grønne (Une Bastholm, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG delte Vs merknad om at hele fjerde energimarkedspakke bør innlemmes så raskt som mulig, og stemte MOT alle fire forslag om å begrense ACER."
+claim_action: >
+  MDG stemte MOT på alle fire voteringer i saken (votering_id 24383,
+  24384, 24385: 2 mot hver; votering_id 24386, komiteens tilråding om å
+  avvise begge representantforslag: 2 for). Individuell votering
+  kryssjekket mot data.stortinget.no/eksport/voteringsresultat for alle
+  fire votering_id-er.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Venstre og Miljøpartiet De Grønne viser til
+  at det er avgjørende for Norges klima- og energipolitikk at hele «Ren
+  energi-pakken» fra 2018/2019, inkludert de reviderte versjonene av
+  rettsaktene, innlemmes i EØS-avtalen og implementeres så raskt som
+  mulig. [...] Disse medlemmer er av den klare oppfatning at det både i
+  et miljøpolitisk, energipolitisk og sikkerhetspolitisk perspektiv vil
+  være en fordel for Norge å knytte seg tettere til det europeiske
+  energisystemet. Å nedlegge veto mot EUs «Ren energi-pakke», og å melde
+  Norge ut av ACER, er det diametralt motsatte av den energi- og
+  klimapolitikken Norge og Europa trenger nå."
+status: forslag_avvist_av_flertallet
+position: 2
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: MDG medundertegner samme merknad som V og går enda lenger i
+  ordvalg — å melde Norge ut av ACER er "diametralt motsatte" av det MDG
+  mener Norge trenger — det klarest mulige +2-signalet i saken for det
+  snudde utsagnets premiss om at EØS-tilknytningen ikke svekker
+  kraftkontrollen. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2.
+retrieved_at: "2026-09-23"

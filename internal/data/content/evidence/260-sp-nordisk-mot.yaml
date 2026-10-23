@@ -1,0 +1,25 @@
+id: ev-2026-04-28-sp-nordisk-mot
+statement_id: utsagn-42
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Sp stemte mot forslaget om nordisk/europeisk samarbeid om digital
+  beredskap. Ingen forslagsspesifikk merknad funnet fra partiet.
+claim_action: "Votering_id 27493, Sp 5 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27493"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene. Sp stemte mot samtlige syv
+  SV/Rødt/MDG-initierte forslag testet i denne saken (se evidence/219,
+  /230, /239, /248, nå /260), til tross for en tidlig, generell
+  merknad om at "det må tas grep for å sikre større digital
+  suverenitet" delt med FrP og Rødt.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,27 @@
+id: ev-2026-05-05-h-digitale-avhengigheter-plenum
+statement_id: utsagn-59
+party_id: "h"
+actor: "Høyre (Tage Pettersen)"
+date: "2026-05-05"
+evidence_type: plenumsinnlegg
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Tage Pettersen (H) sa at kartleggingen er et naturlig tiltak for
+  nasjonal kontroll.
+claim_action: >
+  Innlegg i debatten om Innst. 225 S, 5. mai 2026. Pettersen sa også at
+  han hadde håpet på flertall for innstillingen.
+verbatim_excerpt: >
+  for Høyre er det naturlig å kartlegge Norges digitale avhengigheter
+  til andre land og jurisdiksjoner som tiltak for å sikre tilstrekkelig
+  nasjonal kontroll.
+status: uttalt
+position: 2
+source_tier: A
+evidensstyrke_cap: moderat
+source_name: "Stortingsreferat 05.05.2026 (Innst. 225 S)"
+source_url: "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: partiets talsperson begrunner forslaget med egne ord.
+retrieved_at: "2026-10-03"

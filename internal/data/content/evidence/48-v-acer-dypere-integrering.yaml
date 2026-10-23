@@ -1,0 +1,38 @@
+id: ev-2025-04-10-v-acer-dypere-integrering
+statement_id: utsagn-07
+party_id: v
+actor: "Venstre (Ola Elvestuen, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "V tok til orde for RASKERE og FULL innlemmelse av EUs energiregelverk, og stemte MOT alle fire forslag om å begrense ACER."
+claim_action: >
+  V stemte MOT på alle fire voteringer i saken (votering_id 24383,
+  24384, 24385: 5 mot hver; votering_id 24386, komiteens tilråding om å
+  avvise begge representantforslag: 5 for). Individuell votering
+  kryssjekket mot data.stortinget.no/eksport/voteringsresultat for alle
+  fire votering_id-er.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Venstre og Miljøpartiet De Grønne viser til
+  at det er avgjørende for Norges klima- og energipolitikk at hele «Ren
+  energi-pakken» fra 2018/2019, inkludert de reviderte versjonene av
+  rettsaktene, innlemmes i EØS-avtalen og implementeres så raskt som
+  mulig. Disse medlemmer viser til at en fortsatt trenering av
+  implementeringen vil medføre at Norge går glipp av viktige
+  støtteordninger, forutsigbare rammevilkår for næringslivet og
+  styrkede forbrukerrettigheter."
+status: forslag_avvist_av_flertallet
+position: 2
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: V går lenger enn å forsvare status quo (Ap/H) — V tar
+  eksplisitt til orde for at hele "Ren energi-pakken" bør innlemmes "så
+  raskt som mulig," et enda klarere ja til det snudde utsagnets premiss
+  enn Ap/H sin mildere status quo-forsvar. Merknaden er felles for
+  komiteens medlemmer fra Venstre og Miljøpartiet De Grønne (Ola
+  Elvestuen og Une Bastholm) — se evidens 49 for MDGs identiske merknad
+  og stemmegivning. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2.
+retrieved_at: "2026-09-23"

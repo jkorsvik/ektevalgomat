@@ -1,0 +1,27 @@
+id: ev-2025-12-09-sv-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2025-12-09"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "SV har ikke egen merknad i saken. Partiets stemmegivning var delt: 7 av 8 stemte for å la ETS2-gjennomføringen fortsette, én stemte for å stanse den."
+claim_action: >
+  SV har ingen egen merknad i Innst. 58 S. Ved votering over komiteens
+  tilråding (26747) stemte 7 av SVs representanter for tilrådingen
+  (som lot ETS2-gjennomføringen fortsette), mens 1 stemte mot (dvs.
+  ønsket å stanse den, i tråd med Sp/FrPs linje).
+status: vedtatt
+position: -1
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); votering 26747 (09.12.2025)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26747&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet -1, ikke -2: SV har ingen egen tekst om saken, og
+  stemmegivningen var IKKE enstemmig (7 for tilrådingen, 1 mot) — et
+  reelt internt skille som gjør et sterkere fortegn urimelig.
+  evidensstyrke_cap moderat. Bekreftet [OK] i votes.py: SV 7 for / 1
+  mot (votering 26747).
+retrieved_at: "2026-09-27"

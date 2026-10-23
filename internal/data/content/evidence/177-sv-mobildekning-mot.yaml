@@ -1,0 +1,26 @@
+id: ev-2026-05-19-sv-mobildekning-mot
+statement_id: utsagn-26
+party_id: sv
+actor: "Sosialistisk Venstreparti (kommunal- og forvaltningskomiteen)"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  SV stemte mot, som del av samme delte seks-partitilråding som Ap
+  (se evidence/176). Ingen SV-spesifikk merknad er skrevet noe sted i
+  innstillingen.
+claim_action: >
+  Votering_id 27610, SV 0 for, 5 mot. Navngitt i samme
+  tilrådingsavsnitt som Ap, Fremskrittspartiet, Høyre, Rødt og MDG.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 239 S (2025–2026); votering_id 27610"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1, samme grunnlag og styrke som Ap (evidence/176), Rødt
+  (evidence/178) og MDG (evidence/179) — alle fire deler den samme
+  udifferensierte "ingen merknader"-statusen i denne saken.
+retrieved_at: "2026-09-24"

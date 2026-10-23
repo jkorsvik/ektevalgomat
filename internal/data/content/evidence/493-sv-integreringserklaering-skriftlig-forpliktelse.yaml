@@ -1,0 +1,30 @@
+id: ev-2026-05-19-sv-integreringserklaering-skriftlig-forpliktelse
+statement_id: utsagn-50
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "SV kan ikke støtte forslaget — mener integrering ikke skapes gjennom underskrifter, men gjennom reelle tiltak."
+claim_action: >
+  SV mener integrering ikke skapes gjennom underskrifter eller formelle
+  erklæringer, men gjennom konkrete tiltak som gir reelle muligheter
+  til deltakelse. SV mener forslaget innebærer et prinsipielt skifte
+  fra en gjensidig kontrakt til en ensidig erklæring rettet mot
+  individet, og stemte mot (votering 27779: 54 for, 44 mot).
+verbatim_excerpt: >
+  «Dette medlem vil understreke at integrering ikke skapes gjennom
+  underskrifter eller formelle erklæringer, men gjennom konkrete tiltak
+  som gir mennesker reelle muligheter til deltakelse i arbeid,
+  utdanning og samfunnsliv.»
+status: vedtatt_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 309 L (2025–2026); votering_id 27779 (19.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: egen, prinsipiell avvisning av selve den skriftlige
+  erklæringsmekanismen, ikke bare av gjennomføringsdetaljer. Bekreftet
+  [OK] i votes.py: SV 0 for / 5 mot.
+retrieved_at: "2026-09-27"

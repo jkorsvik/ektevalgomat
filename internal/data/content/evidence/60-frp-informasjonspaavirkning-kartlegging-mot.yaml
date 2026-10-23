@@ -1,0 +1,44 @@
+id: ev-2023-03-14-frp-informasjonspaavirkning-kartlegging-mot
+statement_id: utsagn-04
+party_id: frp
+actor: "Fremskrittspartiet (justiskomiteen)"
+date: "2023-03-14"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte mot forslag 6 (Høyre/Venstre) om kartlegging av utenlandsk
+  informasjonspåvirkning mot valgene i 2023 og 2025. FrPs egen merknad i
+  saken dekker andre punkter i representantforslaget (støtte til
+  kriminalisering av samarbeid med fremmed etterretning) og adresserer
+  ikke kartleggingsforslaget spesifikt.
+claim_action: >
+  Votering_id 20371 (Forslag nr. 6 fra Høyre, Venstre): FrP 13 mot, 0
+  for (8 ikke til stede) — kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat. Forslaget falt i plenum.
+verbatim_excerpt: >
+  Forslag nr. 6 fra Høyre, Venstre Stortinget ber regjeringen umiddelbart
+  igangsette en kartlegging av uønsket informasjonspåvirkning fra
+  utenlandske aktører i forbindelse med kommune- og fylkestingsvalget i
+  2023 og stortingsvalget i 2025. Kartleggingen skal blant annet fange
+  opp forsøk på påvirkning av nordmenns virkelighetsoppfatning, verdier
+  og tillit over tid.
+status: forslag_avvist_av_flertallet
+position: 1
+source_tier: A
+source_name: "Votering 20371 (Innst. 231 S, 2022–2023)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=91706&dnid=1&vt=20371"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: signalet er stemmesporet alene — FrP stemte MOT det
+  avviste kartleggingsforslaget, men har ingen egen begrunnelse
+  spesifikt om hvorfor (partiets egen merknad i saken dekker et annet
+  punkt). Et mot-forslaget-stemme uten egen begrunnelse er et svakere
+  signal enn en skrevet merknad, derfor +1 ikke +2, samme svakere-signal-
+  konvensjon som brukt for KrF/MDG/Rødt sine -1-koder over, i motsatt
+  retning. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. FrPs egen
+  komitemerknad i innstillingen dekker et annet forslagspunkt
+  (kriminalisering av samarbeid med fremmed etterretningstjeneste), ikke
+  kartleggingsforslaget — source_url er derfor voteringsdetaljer-siden,
+  som gjengir selve forslagsteksten FrP stemte mot.
+retrieved_at: "2026-09-24"
+

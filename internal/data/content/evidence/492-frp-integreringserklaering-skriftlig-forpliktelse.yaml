@@ -1,0 +1,36 @@
+id: ev-2026-05-19-frp-integreringserklaering-skriftlig-forpliktelse
+statement_id: utsagn-50
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP mener regjeringens erklæring er symbolpolitikk uten reelle sanksjoner, og vil ha en langt strengere, bindende integreringskontrakt i stedet."
+claim_action: >
+  FrP mener det er positivt at regjeringen erkjenner behovet for
+  tydeligere forventninger til nyankomne, men mener forslaget i all
+  hovedsak er symbolpolitikk fordi det ikke knyttes reelle sanksjoner
+  til brudd. FrP viser til sitt eget, mer forpliktende forslag
+  (Dokument 8:275 S) om en integreringskontrakt med reelle sanksjoner,
+  og stemte mot loven (votering 27779: 54 for, 44 mot, FrP mot).
+verbatim_excerpt: >
+  «Disse medlemmer mener det er positivt at regjeringen snur og nå
+  erkjenner behovet for tydeligere forventninger til nyankomne
+  innvandrere, men disse medlemmer mener forslaget som fremmes, ikke
+  løser utfordringene eller svarer på de grunnleggende
+  integreringsutfordringene Norge står overfor.»
+status: vedtatt_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 309 L (2025–2026); votering_id 27779 (19.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke -1: FrPs egen tekst er ikke en avvisning av tanken om
+  en skriftlig forpliktelse til lover, verdier og foreldreansvar — den
+  er en avvisning av DENNE loven for å være for svak/symbolsk, mens FrP
+  selv ønsker en STRENGERE, mer bindende variant (egen
+  integreringskontrakt med reelle sanksjoner). Retningen er den samme
+  som utsagnet spør om, bare sterkere. Bekreftet [OK] i votes.py: FrP 0
+  for / 27 mot.
+retrieved_at: "2026-09-27"

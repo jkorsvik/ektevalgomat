@@ -1,0 +1,31 @@
+id: ev-2024-06-12-sp-skatt-store-arv-plenum
+statement_id: utsagn-57
+party_id: "sp"
+actor: "Senterpartiet (finansminister Trygve Slagsvold Vedum)"
+date: "2024-06-12"
+evidence_type: plenumsinnlegg
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Finansminister Vedum (Sp) sa i Stortinget at Sp og Ap ikke ønsker å
+  gjeninnføre arveskatt.
+claim_action: >
+  Innlegg i debatten om Dokument 8:130 S (2023–2024), SVs forslag om å
+  tette skattehull. Vedum svarer på forslaget om arveskatt på vegne av
+  Senterpartiet og regjeringen.
+verbatim_excerpt: >
+  Blant annet er det et forslag om å gjeninnføre arveskatt.
+  Senterpartiet og Arbeiderpartiet har sagt at det ønsker vi ikke å
+  gjøre.
+status: uttalt
+position: -2
+source_tier: A
+evidensstyrke_cap: moderat
+source_name: "Stortingsreferat 12.06.2024 (Innst. 410 S (2023–2024))"
+source_url: "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202324-06-12"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: Sps egen partileder sier med egne ord at partiet ikke ønsker
+  arveskatt. Begrenset til moderat styrke fordi dette er et innlegg,
+  ikke en votering om akkurat dette spørsmålet. Sps program 2025–2029
+  nevner ikke arv. Debatten er fra forrige stortingsperiode.
+retrieved_at: "2026-10-02"

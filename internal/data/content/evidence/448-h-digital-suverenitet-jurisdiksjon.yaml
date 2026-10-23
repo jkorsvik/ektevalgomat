@@ -1,0 +1,46 @@
+id: ev-2026-05-07-h-digital-suverenitet-jurisdiksjon
+statement_id: utsagn-44
+party_id: h
+actor: "Høyre (Mudassar Kapur, Tage Pettersen)"
+date: "2026-05-07"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre stemte mot jurisdiksjonskravet og skriver eksplisitt at de ikke vil ha en norsk/nordisk-only-regel utover GDPR."
+claim_action: >
+  Høyre stemte mot forslag 4 i Innst. 225 S (2025–2026) (votering 18,
+  07.05.2026) — kravet om at sensitiv og samfunnskritisk informasjon
+  utelukkende skal behandles under norsk eller europeisk jurisdiksjon.
+  I egen merknad skriver Høyre at Norges digitale handlefrihet best
+  sikres gjennom «smart suverenitet» (mangfold, konkurranse, strenge
+  sikkerhetskrav til alle leverandører) og eksplisitt fraråder
+  «ytterligere nasjonale særreguleringer» utover GDPR.
+verbatim_excerpt: >
+  Komiteens medlemmer fra Høyre mener Norges digitale handlefrihet
+  best sikres gjennom det disse medlemmer omtaler som smart
+  suverenitet: bruk av beste tilgjengelige teknologi kombinert med
+  strenge sikkerhetskrav, diversifisering av leverandører og sterk
+  europeisk og nordisk forankring. Svaret på avhengighet av
+  internasjonale teknologigiganter er mangfold og konkurranse – ikke
+  statlige monopoler eller isolasjon fra den teknologiske
+  utviklingen. [...] Norge er allerede forpliktet av EUs
+  personvernforordning (GDPR), og disse medlemmer mener ytterligere
+  nasjonale særreguleringer bør utvikles i nær dialog med EUs
+  regulatoriske rammeverk for å unngå rettslig uklarhet og unødige
+  handelsbarrierer.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27492 (07.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: dette er nøyaktig Høyres egen tekst, gjengitt som
+  det snudde utsagnet nå hevder — Høyre tar eksplisitt avstand fra
+  flere nasjonale særreguleringer/jurisdiksjonskrav utover GDPR og vil
+  heller ha «nær dialog med EUs regulatoriske rammeverk» enn et
+  norsk/nordisk-only-krav. Ikke +2 fordi Høyre samtidig sier de deler
+  «intensjonen» om å redusere sårbar avhengighet og støtter «strenge
+  sikkerhetskrav» og «europeisk og nordisk forankring» — bare ikke et
+  eksplisitt jurisdiksjonskrav, så enigheten med det snudde utsagnet er
+  ikke total. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt der fortegnet ikke er 0. fra -1 til +1.
+retrieved_at: "2026-09-26"

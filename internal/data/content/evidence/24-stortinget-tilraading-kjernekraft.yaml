@@ -1,0 +1,36 @@
+id: ev-2026-05-26-stortinget-tilraading-kjernekraft
+statement_id: utsagn-06
+party_id: ""
+actor: "Stortinget (energi- og miljøkomiteens tilråding, vedtatt i plenum)"
+date: "2026-05-26"
+evidence_type: vedtak
+evidence_class: fakta
+scan_summary: "Stortinget vedtok å be regjeringen legge frem en stortingsmelding om kjernekraft — ingen av de 32 mer konkrete forslagene ble vedtatt."
+claim_action: >
+  Komiteens tilråding — fremmet av medlemmene fra Arbeiderpartiet, Høyre,
+  Sosialistisk Venstreparti, Senterpartiet, Rødt, Miljøpartiet De Grønne
+  og Venstre — ble vedtatt. Samtlige 32 løse forslag om konkrete lov- og
+  regelverksendringer, statlig/privat ansvarsfordeling, kjernekraftfond,
+  eierskapsform mv. (fremmet av representantene selv, FrP, Høyre, Venstre,
+  SV, Rødt i ulike kombinasjoner) falt.
+verbatim_excerpt: >
+  "Komiteen har for øvrig ingen merknader, viser til dokumentet og rår
+  Stortinget til å gjøre følgende vedtak: Stortinget ber regjeringen
+  legge frem en stortingsmelding om kjernekraft."
+status: vedtatt
+position: null
+source_tier: A
+source_name: "Innst. 278 S (2025–2026), Komiteens tilråding"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst, ikke en partiposisjon — den vedtatte
+  tilrådingen ber bare om at regjeringen "legger frem en
+  stortingsmelding", ikke om noen konkret handling. Dette er en svakere,
+  mer avventende beslutning enn de 32 forslagene som falt — se hvert
+  partis egen posisjonsfil for hvorfor et parti kan ha stemt mot denne
+  tilrådingen selv om partiet ellers er positivt til kjernekraft (FrP), og
+  hvorfor et parti kan ha stemt for den uten at det betyr full støtte til
+  kommersiell kjernekraft (Ap/Sp/MDG/SV/Rødt, se hver fils context_note).
+  Full innstillingstekst lest i PDF (6 sider), ikke bare sammendrag.
+retrieved_at: "2026-09-23"

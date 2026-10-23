@@ -1,0 +1,25 @@
+id: ev-2026-krf-dorterskel-splittet
+statement_id: utsagn-29
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF splittet internt: 3 av 4 fremmøtte stemte for, 1 stemte mot —
+  første dokumenterte interne KrF-splitt i dette datasettet.
+claim_action: "Votering_id 27675, KrF 3 for, 1 mot."
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27675"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 (majoritetsstemme), ikke +2: KrF er ikke medforslagsstiller
+  og har ingen dokumentert merknad, og et av fire fremmøtte medlemmer
+  brøt ut fra partiflertallet — den første interne KrF-splitten
+  observert i denne datasettets evidensklynger (tidligere har KrF
+  alltid stemt enstemmig, uansett retning i den enkelte sak).
+retrieved_at: "2026-09-24"

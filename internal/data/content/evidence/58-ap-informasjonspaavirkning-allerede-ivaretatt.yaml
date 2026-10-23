@@ -1,0 +1,42 @@
+id: ev-2023-03-14-ap-informasjonspaavirkning-allerede-ivaretatt
+statement_id: utsagn-04
+party_id: ap
+actor: "Arbeiderpartiet (Kamzy Gunaratnam, Odd Harald Hovland, Maria Aasen-Svensrud, justiskomiteen)"
+date: "2023-03-14"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap (sammen med Sp) mener innholdet i representantforslagets punkter,
+  inkludert kartleggingsforslaget, allerede i det alt vesentlige er
+  ivaretatt gjennom regjeringens pågående arbeid (Meld. St. 9 2022–2023
+  om nasjonal kontroll og digital motstandskraft, NESS-etableringen,
+  styrkede bevilgninger til PST/politi/NSM) — en redundans-begrunnelse,
+  ikke en avvisning av målet.
+claim_action: >
+  Votering_id 20371 (Forslag nr. 6 på vegne av H og V): Ap 30 mot, 0 for
+  (18 ikke til stede) — kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat. Forslaget falt i plenum.
+verbatim_excerpt: >
+  Disse medlemmer oppfatter på samme måte som statsråden at
+  representantenes forslag er saker med et innhold som regjeringen
+  vektlegger, og der det allerede er iverksatt sentrale prosesser. Disse
+  medlemmer mener derfor med bakgrunn i statsrådens svarbrev at innholdet
+  i forslagene i det alt vesentlige er ivaretatt.
+status: forslag_avvist_av_flertallet
+position: 1
+source_tier: A
+source_name: "Innst. 231 S (2022–2023); votering_id 20371"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2022-2023/inns-202223-231s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: dette er nøyaktig Aps egen argumentasjon, gjengitt
+  som det utsagnet nå spør om — Ap mener målet allerede nås gjennom
+  eksisterende regjeringsarbeid (Meld. St. 9, NESS, økte PST/NSM-
+  bevilgninger), en "redundant, ikke nødvendig"-begrunnelse for å stemme
+  mot det konkrete kartleggingsforslaget. +1 ikke +2 fordi merknaden
+  forsvarer status quo uten selv å hevde at INGEN videre innsats trengs
+  noensinne — samme mønster som Ap/Høyre sin opprinnelige -1-kode på
+  utsagn-07 (forsvarer status quo, avviser ikke formålet). Utsagnet ble
+  snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og teksten nå er direkte hentet fra denne
+  merknadens egen framing; posisjonen her er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

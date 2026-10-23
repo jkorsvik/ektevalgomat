@@ -1,0 +1,23 @@
+id: ev-2026-krf-ambulanse-mot
+statement_id: utsagn-27
+party_id: krf
+actor: "Kristelig Folkeparti (helse- og omsorgskomiteen)"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF sitter i helse- og omsorgskomiteen (Ida Lindtveit Røse), men
+  stemte mot forslaget uten en egen dokumentert merknad om
+  ambulanse-responstider spesifikt.
+claim_action: "Votering_id 27581, KrF 4 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: KrF sitter i komiteen men skiller seg ikke ut med en egen
+  merknad her.
+retrieved_at: "2026-09-24"

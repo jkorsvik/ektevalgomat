@@ -1,0 +1,37 @@
+id: ev-2026-04-14-utvisning-kontekst
+statement_id: utsagn-46
+secondary_statement_ids: ["utsagn-47"]
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen"
+date: "2026-04-14"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: "FrPs forslag om utvisning uavhengig av tilknytning falt; Stortinget avviste hele representantforslaget 70-29."
+claim_action: >
+  Innst. 205 S (2025–2026), sak 106246, komiteens behandling av
+  Dokument 8:81 S (2025–2026) fra Sylvi Listhaug og Erlend Wiborg om
+  en utvisningsreform for kriminelle innvandrere. Komiteen (kommunal-
+  og forvaltningskomiteen) fremmet ingen egne forslag om innstramming,
+  men tre mindretallsforslag ble satt under votering 14. april 2026,
+  i tillegg til komiteens tilråding om å avvise representantforslaget
+  i sin helhet.
+verbatim_excerpt: >
+  «Flertallet merker seg at forslagsstillerne ønsker at Stortinget skal
+  vedta en utvisningsreform som vil innebære at utlendinger som dømmes
+  til mer enn ett års fengsel, skal utvises, uavhengig av
+  oppholdsgrunnlag samt at det skal etableres et samarbeid med danske
+  myndigheter om en slik reform.»
+status: forkastet
+position: null
+source_tier: A
+source_name: "Innst. 205 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst for utsagn-46 og utsagn-47 (samme sak, to
+  ulike voteringer). Komiteens flertall (A, H, SV, Sp, R, MDG) skriver
+  kun nøytralt om dagens regelverk og regjeringens varslede gjennomgang
+  — tar ikke stilling til tilknytningsspørsmålet i denne felles
+  merknaden. Egne partiposisjoner om selve tilknytningsspørsmålet er
+  kodet i de partivise evidensfilene på hvert av de to utsagnene.
+retrieved_at: "2026-09-27"

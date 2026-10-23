@@ -1,0 +1,25 @@
+id: ev-2026-frp-lokalsjukehus-mot
+statement_id: utsagn-28
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  FrP stemte mot dette forslaget, motsatt av sin egen medforslagsstiller-
+  rolle på utsagn-27 (samme sak).
+claim_action: "Votering_id 27579, FrP 28 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27579"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: FrPs skifte fra medforslagsstiller (utsagn-27) til
+  motstander (dette forslaget) er ikke dokumentert med en egen
+  merknad — bare stemmen selv. Kan skyldes at forslag 3 spesifikt
+  nevner "ventetidsløftet", en regjeringssatsing FrP kan ha
+  prinsipielle innvendinger mot uavhengig av lokalsykehus-spørsmålet.
+retrieved_at: "2026-09-24"

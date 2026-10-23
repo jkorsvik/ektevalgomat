@@ -1,0 +1,39 @@
+id: ev-2026-01-13-ap-sfo-for
+statement_id: utsagn-32
+party_id: ap
+actor: "Arbeiderpartiet (utdannings- og forskningskomiteen)"
+date: "2026-01-13"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte for, som medforslagsstiller sammen med SV, Sp og Rødt, med
+  en delt begrunnelse som eksplisitt kobler lovfestingen til
+  budsjettvedtaket for 2025 og fremhever betydningen av gratis SFO
+  for barns deltakelse i lek, læring og fellesskap.
+claim_action: >
+  Votering_id 26667, Ap 31 for, 1 mot (enkeltrepresentant). Fra
+  Ap+SV+Sp+Rødts delte merknad: "Disse medlemmer viser til at
+  Arbeiderpartiet sammen med Senterpartiet og Sosialistisk
+  Venstreparti har sikret 12 timer gratis SFO for 1.–3. trinn. [...]
+  En lovfesting vil styrke rettighetene til elevene og foreldrene, og
+  sikre at alle elever på 1.–3. trinn får 12 timer gratis SFO i uka
+  dersom det er noe de ønsker og har behov for."
+verbatim_excerpt: >
+  Disse medlemmer vil fremheve viktigheten gratis og lav pris på SFO
+  har for at flere barn skal få delta i lek, læring og fellesskap
+  etter skoletid.
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 78 L (2025–2026); votering_id 26667"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-078l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt for): Ap navngir konkret at ordningen allerede ble
+  "sikret" gjennom budsjettvedtaket for 2025, og at lovfesting nå gjør
+  den til en individuell rettighet foreldre kan kreve — et konkret,
+  etterprøvbart argument om hva lovfesting FAKTISK endrer (fra
+  budsjettbevilgning til rettighet), ikke bare en generell
+  velvilje-uttalelse. Delt merknad med SV, Sp, Rødt, se evidence/193-195.
+retrieved_at: "2026-09-24"

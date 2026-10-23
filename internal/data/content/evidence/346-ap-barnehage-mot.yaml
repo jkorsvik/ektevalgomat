@@ -1,0 +1,34 @@
+id: ev-2026-ap-barnehage-mot
+statement_id: utsagn-33
+party_id: ap
+actor: "Arbeiderpartiet (familie- og kulturkomiteen)"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap skriver en sympatiserende generell merknad om at alle barn skal
+  ha like muligheter, men stemte likevel mot dette konkrete forslaget
+  om barnehagebemanning.
+claim_action: >
+  Votering_id 26946, Ap 32 mot, 0 for. Fra Aps merknad: "Komiteens
+  medlemmer fra Arbeiderpartiet deler forslagsstillernes engasjement
+  for at alle barn skal ha de samme mulighetene til en trygg og god
+  oppvekst, uavhengig av familiens økonomiske situasjon."
+verbatim_excerpt: >
+  Komiteens medlemmer fra Arbeiderpartiet deler forslagsstillernes
+  engasjement for at alle barn skal ha de samme mulighetene til en
+  trygg og god oppvekst, uavhengig av familiens økonomiske situasjon.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26946"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: sterkt_dokumentert
+context_note: >
+  Kodet -1: et nytt "ja i prinsippet, nei til denne bindende
+  teksten"-tilfelle — Ap skriver en eksplisitt sympatiserende merknad
+  om delt engasjement, men stemte likevel mot den konkrete,
+  forpliktende teksten. Samme mønster som Høyre viste på
+  digitalsuverenitet-saken (evidence/259).
+retrieved_at: "2026-09-24"

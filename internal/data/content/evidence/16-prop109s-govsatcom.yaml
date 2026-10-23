@@ -1,0 +1,29 @@
+id: ev-2026-prop109s-govsatcom
+statement_id: utsagn-44
+secondary_statement_ids:
+  - utsagn-45
+party_id: ""
+actor: "Regjeringen"
+date: "2025-2026 (sesjon)"
+evidence_type: proposisjon
+evidence_class: fakta
+scan_summary: "Regjeringen fremmet EØS-innlemmelse av EUs sikker-konnektivitetsprogram."
+claim_action: >
+  Regjeringen fremmet Prop. 109 S (2025–2026) om samtykke til
+  godkjennelse av EØS-komiteens beslutning nr. 228/2026 om innlemmelse i
+  EØS-avtalen av forordning (EU) 2023/588 om EUs program for sikker
+  konnektivitet 2023–2027, inkludert GOVSATCOM-komponenten.
+status: mottatt
+position: null
+source_tier: A
+source_name: "Prop. 109 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200390"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell sak, ikke en partiposisjon — Stortinget har mottatt
+  proposisjonen, men ingen komitébehandling eller votering er
+  gjennomført per 2026-09-23. Relevant for både digital suverenitet
+  (satellittkonnektivitet er kritisk digital infrastruktur) og
+  forsvars-/beredskapssuverenitet (GOVSATCOM er et sikkerhetsprogram).
+  Partiposisjoner kan først kodes når saken faktisk voteres.
+retrieved_at: "2026-09-23"

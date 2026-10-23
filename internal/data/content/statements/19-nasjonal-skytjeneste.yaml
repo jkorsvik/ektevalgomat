@@ -1,0 +1,18 @@
+id: utsagn-19
+number: 19
+dimension: "Teknologisk kapasitet"
+primary_question: "Kan kritiske digitale funksjoner og kompetanse opprettholdes under press?"
+case_tag: nasjonal_skytjeneste_offentlig_eid
+short_name: "Kommersielle skytjenester med strenge krav"
+text: >
+  Offentlig sektor bør bruke kommersielle skytjenester med strenge
+  sikkerhetskrav og flere leverandører, i stedet for å bygge en nasjonal
+  skytjeneste eid og driftet av det offentlige.
+practical_stakes:
+  enig: >
+    Offentlig sektor fortsetter å bruke kommersielle skytjenester, med krav
+    om strenge sikkerhetskrav og flere leverandører. Det bygges ingen
+    nasjonal skytjeneste eid av det offentlige.
+  uenig: >
+    Det bygges en nasjonal skytjeneste som eies og driftes av det
+    offentlige, i stedet for å bruke kommersielle skytjenester.

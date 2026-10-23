@@ -1,0 +1,37 @@
+id: ev-2026-04-28-frp-microsoft365-exit-mot
+statement_id: utsagn-20
+party_id: frp
+actor: "Fremskrittspartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte mot dette forslaget, men er samtidig medforslagsstiller
+  på en annen, svakere variant (forslag 1, sammen med SV og Rødt) om
+  å utrede en offentlig skymodell innen statsbudsjettet for 2027 —
+  samme mønster som i utsagn-19.
+claim_action: >
+  Votering_id 27490, FrP 0 for, 29 mot. FrP har ingen egen skriftlig
+  merknad spesifikt om Microsoft 365-eksemplet i denne innstillingen.
+  FrPs eneste dokumenterte, saksrelaterte holdning er den generelle
+  merknaden om at de støtter nordisk/europeisk digitalt samarbeid
+  "i den grad det styrker beredskap, sikkerhet og effektivitet, uten
+  å begrense offentlige og private aktørers handlingsrom unødvendig"
+  — og medforslagsstillerskapet på forslag 1 (utrede-og-komme-tilbake
+  -modellen), ikke dette forslagets bindende exit-plan.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27490, 27495"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1: samme mekanisme-preferanse som i utsagn-19 (evidence/125) —
+  FrP deler bekymringen for leverandøravhengighet (derfor
+  medforslagsstiller på den svakere utrede-versjonen), men stemmer mot
+  den bindende, tidfestede exit-planen, i tråd med det snudde utsagnets
+  premiss — dog svakere enig enn Høyre siden FrP fortsatt deler MÅLET.
+  Ingen egen skriftlig begrunnelse spesifikt om dette forslaget; svakere
+  attribution_confidence enn Høyre/SV/Rødt/MDG av denne grunn. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

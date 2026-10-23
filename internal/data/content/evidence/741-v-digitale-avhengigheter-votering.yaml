@@ -1,0 +1,22 @@
+id: ev-2026-05-07-v-digitale-avhengigheter-votering
+statement_id: utsagn-59
+party_id: "v"
+actor: "Venstre"
+date: "2026-05-07"
+evidence_type: voteringsresultat
+evidence_class: fakta
+scan_summary: >
+  Venstre stemte for kartleggingen og rapporten, uten eget innlegg.
+claim_action: >
+  Votering 27496: V 2 for, 0 mot. Venstre sitter ikke i komiteen og
+  hadde ikke innlegg i debatten.
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Votering 27496 (data.stortinget.no)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27496"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1 fra stemmen alene. Venstres program nevner ikke digitale
+  avhengigheter.
+retrieved_at: "2026-10-03"

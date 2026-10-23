@@ -1,0 +1,24 @@
+id: ev-2026-mdg-barnetsbeste-mot
+statement_id: utsagn-36
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-01-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  MDG stemte mot forslaget, uten en egen dokumentert merknad om
+  dette spesifikt.
+claim_action: "Votering_id 26988, MDG 5 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 136 S (2025–2026); votering_id 26988"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-136s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: ingen egen MDG-merknad om dette forslaget funnet — det
+  eneste "vanskelige å forklare" MOT-tilfellet i denne evidensklyngen,
+  ettersom MDG generelt er positiv til barnets-beste-prinsipper i
+  andre saker (se evidence for utsagn-33/34).
+retrieved_at: "2026-09-24"

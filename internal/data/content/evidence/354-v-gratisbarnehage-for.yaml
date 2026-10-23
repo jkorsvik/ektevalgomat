@@ -1,0 +1,23 @@
+id: ev-2026-v-gratisbarnehage-for
+statement_id: utsagn-34
+party_id: v
+actor: "Venstre (opprinnelig forslagsstiller til hele saken)"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre er avsender av hele Dok. 8:11 S, og stemte for SV/MDGs
+  forslag om gratis barnehageplass. Begge fremmøtte stemte for.
+claim_action: "Votering_id 26943, Venstre 2 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26943"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Venstre stemte for på begge forslagene fra denne saken
+  (utsagn-33 og 34) — konsistent støtte til SV/MDGs konkretiseringer
+  av sin egen tiltakspakke.
+retrieved_at: "2026-09-24"

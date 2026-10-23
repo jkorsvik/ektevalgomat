@@ -1,0 +1,37 @@
+id: ev-2026-04-14-sp-utvisning-uavhengig-tilknytning
+statement_id: utsagn-46
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-04-14"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp advarte, sammen med Høyre, mot at et regelverk som fjerner all individuell behandling risikerer å stride mot folkeretten."
+claim_action: >
+  Senterpartiet er medforslagsstiller (med Høyre) på forslag nr. 3 i
+  Innst. 205 S, en helhetlig gjennomgang innenfor folkerettslige
+  rammer — til forskjell fra FrPs forslag nr. 2, som dette utsagnet
+  bygger på og som ikke har et slikt forbehold. Sp har ikke, i motsetning
+  til Høyre, noen egen tilleggstekst som sier partiet støtter FrPs
+  ambisjon; den eneste teksten Sp er medforfatter av advarer eksplisitt
+  mot en modell som fullstendig fjerner individuell behandling. Stemte
+  mot forslag nr. 2 (votering 27441).
+verbatim_excerpt: >
+  «Et regelverk som fullstendig avskjærer enhver individuell behandling
+  ved utvisning, risikerer å stride mot Norges folkerettslige
+  forpliktelser og vil kunne settes til side av domstolene.»
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026); votering_id 27441 (14.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: merknaden er en juridisk/praktisk advarsel (risiko
+  for folkerettsbrudd), ikke en prinsipiell avvisning av at alvorlig
+  kriminalitet bør føre til utvisning uansett tilknytning — Sp er
+  fortsatt medforslagsstiller på en innstramming (forslag 3), bare
+  innenfor andre rammer. Til forskjell fra Høyre har Sp ingen egen
+  tekst som sier partiet støtter FrPs ambisjon, så Sp kodes mer negativt
+  enn Høyre (+1, se egen fil) på nettopp dette utsagnet. Bekreftet [OK]
+  i votes.py: Sp 0 for / 5 mot (votering 27441).
+retrieved_at: "2026-09-27"

@@ -1,0 +1,30 @@
+id: ev-2025-10-14-v-anonym-finansiering-for
+statement_id: utsagn-02
+party_id: v
+actor: "Venstre"
+date: "2025-10-14"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre stemte for Rødts forslag om å regulere anonym finansiering av
+  politisk reklame og markedsføring, men har ingen egen begrunnende
+  ytring om denne saken i trontaledebatt-referatet.
+claim_action: >
+  Votering_id 26361 (Forslag nr. 5 på vegne av Rødt): Venstre 2 for, 0 mot
+  (1 ikke til stede) — kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat. Forslaget ble vedtatt.
+verbatim_excerpt: >
+  Stortinget ber regjeringen inkludere regulering av anonym finansiering
+  av politisk reklame og markedsføring i den helhetlige gjennomgangen av
+  partiloven, og komme tilbake til Stortinget med forslag som følger opp
+  dette.
+status: forslag_vedtatt
+position: 1
+source_tier: A
+source_name: "Trontaledebatten 2025-10-14; votering_id 26361"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=104588&dnid=1&vt=26361"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: signalet er stemmesporet alene, ikke en egen
+  begrunnelse.
+retrieved_at: "2026-09-24"

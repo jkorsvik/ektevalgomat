@@ -1,0 +1,16 @@
+id: utsagn-09
+number: 9
+dimension: "Norsk handlefrihet"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne?"
+case_tag: skagerrak_reinvestering_stopp
+short_name: "Stoppe utredning av nye Skagerrak-kabler"
+text: >
+  Regjeringen bør instruere NVE om å avslutte utredningsprogrammet for
+  mulig reinvestering av utenlandskablene Skagerrak 1 og 2 til Danmark.
+practical_stakes:
+  enig: >
+    NVE avslutter utredningsprogrammet, og en mulig reinvestering i
+    utenlandskablene Skagerrak 1 og 2 til Danmark blir ikke utredet videre.
+  uenig: >
+    NVEs utredningsprogram for en mulig reinvestering i Skagerrak 1 og 2
+    fortsetter som planlagt.

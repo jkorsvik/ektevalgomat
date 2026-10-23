@@ -1,0 +1,37 @@
+id: ev-2026-04-28-h-kombit-for
+statement_id: utsagn-22
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre er eneste forslagsstiller til KOMBIT-forslaget. 12 av 13
+  fremmøtte Høyre-representanter stemte for sitt eget forslag; én
+  stemte mot.
+claim_action: >
+  Votering_id 27486, Høyre 12 for, 1 mot. Forslaget er Høyres eget,
+  fremmet som en direkte oppfølging av partiets generelle
+  "smart suverenitet"-linje i saken (diversifisering og konkurranse
+  fremfor statlige monopoler, se evidence/217 for utsagn-24) — her
+  anvendt på kommunal KI-anskaffelse spesifikt, med en navngitt dansk
+  modell (KOMBIT) som referanse.
+verbatim_excerpt: >
+  Stortinget ber regjeringen utrede felleskommunale innkjøpsordninger
+  for avanserte digitale teknologier som kunstig intelligens, etter
+  modell av Danmarks KOMBIT.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27486"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Høyre er eneste forslagsstiller, og forslagsteksten selv
+  er den sterkeste mulige dokumentasjonen av partiets posisjon. Den
+  ene avvikende Høyre-stemmen (mot eget forslag) er notert i
+  evidence/221s kontekst, men endrer ikke kodingen av partiets
+  offisielle linje — komiteens medlemmer (som fremmet forslaget) er
+  den autoritative kilden, ikke enkeltrepresentanters avvik.
+retrieved_at: "2026-09-24"

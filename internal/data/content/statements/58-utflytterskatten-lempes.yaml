@@ -1,0 +1,21 @@
+id: utsagn-58
+number: 58
+dimension: "Finansiering av fellesskapet"
+primary_question: "Hvordan betaler vi for fellesgodene, og hvem bærer kostnaden nå og om 30 år?"
+case_tag: utflytterskatten_lempes
+short_name: "Utflytterskatten lempes"
+text: >
+  Utflytterskatten, skatten på urealiserte aksjegevinster når man
+  flytter fra Norge, bør lempes.
+practical_stakes:
+  enig: >
+    Reglene gjøres mildere, for eksempel ved at skatten faller bort
+    etter noen år i utlandet, slik den gjorde fram til 29. november
+    2022. Den som flytter fra Norge med store aksjegevinster, betaler da
+    mindre skatt til Norge av gevinsten.
+  uenig: >
+    Dagens regler videreføres eller strammes inn. I dag skattlegges
+    samlet gevinst over 3 millioner kroner som om aksjene ble solgt
+    dagen før utflyttingen, og skatten kan utsettes i inntil 12 år. Den
+    som flytter, betaler fortsatt skatt til Norge av gevinsten som er
+    opparbeidet her.

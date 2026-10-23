@@ -1,0 +1,39 @@
+id: ev-2025-06-04-ap-tannhelse-universell-mot
+statement_id: utsagn-25
+party_id: ap
+actor: "Arbeiderpartiet (helse- og omsorgskomiteen)"
+date: "2025-06-04"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot SVs bindende 2030-forslag, men skriver i egen (delt
+  med Senterpartiet) merknad at de vil ha gradvis utvidelse av
+  tannhelsetjenesten med mål om å likestille den med andre
+  helsetjenester — samme mål, ingen bindende frist.
+claim_action: >
+  Votering_id 25387, Ap 0 for, 29 mot. Ap er del av
+  fireparti-flertallet (med Sp, SV, Rødt) bak tilrådingens
+  stortingsmelding-forpliktelse (Vedtak B, romertall IV: "gradvis
+  utvide det offentlige ansvaret for tannhelsetjenester").
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Arbeiderpartiet og Senterpartiet ønsker en
+  gradvis utvidelse av den offentlige tannhelsetjenesten med mål om å
+  likestille den med andre helsetjenester. Dette er bl.a. fordi
+  sosiale helseforskjeller er særlig tydelig innen tann- og
+  munnhelse."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 458 L (2024–2025); votering_id 25387"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-458l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: dette er nøyaktig Aps egen argumentasjon, gjengitt
+  som det snudde utsagnet nå bygger på — Ap deler eksplisitt SVs MÅL
+  (likestille tannhelse med andre helsetjenester), og har i denne
+  stortingsperioden allerede sikret gratis/rabattert tannhelsehjelp for
+  19-24-åringer og nå 25-28-åringer i praksis (1,5 mrd. kroner styrking
+  totalt, ifølge egen merknad), men foretrekker et åpent "gradvis"-tempo
+  fremfor en bindende 2030-frist. +1 ikke +2 fordi Ap fortsatt deler
+  MÅLET om universell dekning, bare ikke fristbindingen. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Se evidence/101-tannhelsereform-kontekst.yaml.
+retrieved_at: "2026-09-24"

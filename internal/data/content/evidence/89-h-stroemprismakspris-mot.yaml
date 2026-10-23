@@ -1,0 +1,41 @@
+id: ev-2025-06-05-h-stroemprismakspris-mot
+statement_id: utsagn-12
+party_id: h
+actor: "Høyre (utenriks- og energikomiteen)"
+date: "2025-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot Rødts pristak-forslag og avviser statlig
+  prisfastsettelse i strømmarkedet generelt — foretrekker
+  markedsbaserte fastprisavtaler og et "folkeutbytte" som betaler
+  tilbake statens ekstrainntekter, ikke et lovbestemt tak på selskapenes
+  utsalgspris.
+claim_action: >
+  Høyre (sammen med Venstre) fremmet forslag om fastprisavtaler på
+  markedsmessige vilkår og et "folkeutbytte" (votering_id 26123, 27
+  for, 75 mot). I votering_id 26116 stemte Høyre mot Rødts
+  pristak-blokk (0 for, 22 mot av de tilstedeværende).
+verbatim_excerpt: >
+  "Disse medlemmer foretrekker velregulerte, men markedsbaserte
+  løsninger. Det gir oftest bedre tjenester og mer effektiv
+  ressursbruk for skattebetalerne og samfunnet som helhet. Disse
+  medlemmer mener overordnet at kraftmarkedet fungerer godt og
+  effektivt."
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 535 L (2024–2025); votering_id 26116, 26123"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2 (sterkt enig), til forskjell fra Ap/Sp/SV/KrF/FrP/MDGs +1:
+  Høyre er den eneste partigruppen som eksplisitt sier kraftmarkedet
+  "fungerer godt og effektivt" og foretrekker markedsbaserte løsninger
+  over ENHVER form for statlig prisfastsettelse — ikke bare uenig i
+  Rødts spesifikke 35-øre-mekanisme, men i selve premisset om at staten
+  bør sette en pris. Merk: Høyres egen idealposisjon er nærmere "minst
+  mulig statlig inngripen" enn en aktiv anbefaling av
+  referanseprisordninger spesifikt, men partiet avviser den lovbestemte
+  prisen sterkere enn noe annet parti. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2. Se evidence/81-stroemprisreform-kontekst.yaml for hvorfor bare denne voteringen er kodet av de 17.
+retrieved_at: "2026-09-24"

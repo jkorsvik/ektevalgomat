@@ -1,0 +1,16 @@
+id: utsagn-08
+number: 8
+dimension: "Norsk handlefrihet"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne?"
+case_tag: krafteksport_styringsmekanisme_statnett
+short_name: "Dagens styring av krafteksporten er nok"
+text: >
+  Statnett bør ikke få en ny fullmakt til å redusere
+  krafteksportkapasiteten når fyllingsgraden i vannmagasinene er lav.
+practical_stakes:
+  enig: >
+    Statnett får ikke en ny fullmakt til å redusere krafteksportkapasiteten
+    ved lav fyllingsgrad. Dagens eksportordning videreføres.
+  uenig: >
+    Statnett får en ny fullmakt til å redusere krafteksportkapasiteten når
+    fyllingsgraden i vannmagasinene er lav.

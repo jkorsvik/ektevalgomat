@@ -1,0 +1,24 @@
+id: ev-2025-partiprogram-mdg-skatt-store-arv
+statement_id: utsagn-57
+party_id: "mdg"
+actor: "Miljøpartiet De Grønne"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG vil innføre arveavgift med et høyt bunnfradrag.
+claim_action: >
+  MDGs arbeidsprogram 2025–2029 sier dette med egne ord. Partiprogram,
+  ikke en Storting-avstemning.
+verbatim_excerpt: >
+  Innføre arveavgift med et høyt bunnfradrag.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "MDGs arbeidsprogram 2025–2029"
+source_url: "https://mdg.no/_service/505809/download/id/1506077/name/MDGs+arbeidsprogram+2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt. Høyt bunnfradrag betyr at bare store arv rammes,
+  som i utsagnet.
+retrieved_at: "2026-10-02"

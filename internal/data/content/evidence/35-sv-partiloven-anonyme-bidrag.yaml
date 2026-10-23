@@ -1,0 +1,35 @@
+id: ev-2025-06-13-sv-partiloven-anonyme-bidrag
+statement_id: utsagn-03
+party_id: sv
+actor: "Sosialistisk Venstreparti (Birgit Oline Kjerstad, kommunal- og forvaltningskomiteen)"
+date: "2025-06-13"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "SV (med Rødt) vedtok forbudet og fremmet egen tilleggsforslag om selvstendig meldeplikt for givere."
+claim_action: >
+  SV er del av komiteflertallet som fremmet og vedtok § 17 a-forbudet.
+  Stemte FOR (individuell representantstemme, votering_id 26057: 8 for, 0
+  mot i egen gruppe). SV fremmet sammen med Rødt et eget tilleggsforslag
+  (nr. 4) om en selvstendig meldeplikt hos giveren selv, ikke bare hos
+  partiet — falt (18 mot 83), men går i samme retning som utsagnet, ikke
+  motsatt.
+verbatim_excerpt: >
+  Disse medlemmer viser til Sosialistisk Venstrepartis og Rødts
+  medlemmers øvrige merknader [...] men vil understreke behovet for en
+  helhetlig gjennomgang av hvilke ikke-monetære gaver som er
+  rapporteringspliktige. […] Stortinget ber regjeringen særskilt vurdere
+  behovet for å innføre rapporteringsplikt også hos giver, inkludert
+  tilfeller hvor bidrag kanaliseres gjennom flere ledd [...] og komme
+  tilbake til Stortinget på egnet måte.
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 528 L (2024–2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: SV stemte FOR forbudet uten unntak, og eget tilleggsforslag
+  (falt) ba om enda strengere meldeplikt — trekker ikke posisjonen ned.
+  Individuell representantstemme hentet direkte fra data.stortinget.no
+  for votering_id 26057.
+retrieved_at: "2026-09-23"

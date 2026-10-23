@@ -1,0 +1,32 @@
+id: ev-2026-05-26-sp-skagerrak-for
+statement_id: utsagn-09
+party_id: sp
+actor: "Senterpartiet (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp er medforslagsstiller sammen med FrP og Rødt, med en egen
+  merknad om at Skagerrak 4 opprinnelig ble bygget som ERSTATNING for
+  SK1/SK2 — ikke som tillegg.
+claim_action: >
+  Votering_id 28136, Sp 5 for, 0 mot. Fra Sp/Rødts merknad: "Skagerrak
+  4 med andre ord ble bygget for å erstatte de kablene som nå er i
+  ferd med å gå ut av drift. Å bygge flere danmarkskabler vil derfor
+  innebære å bygge nye kabler snarere enn å erstatte gamle."
+verbatim_excerpt: >
+  Skagerrak 4 med andre ord ble bygget for å erstatte de kablene som
+  nå er i ferd med å gå ut av drift. Å bygge flere danmarkskabler vil
+  derfor innebære å bygge nye kabler snarere enn å erstatte gamle.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28136"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Sp/Rødt siterer NVEs egen 2010-konklusjon om Skagerrak 4
+  for å argumentere at en ny kabel ikke er en "erstatning" men en
+  reell utvidelse — et presist, kildebelagt argument.
+retrieved_at: "2026-09-24"

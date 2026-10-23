@@ -1,0 +1,34 @@
+id: ev-2026-h-datasenterkonsesjon-for
+statement_id: utsagn-11
+party_id: h
+actor: "Høyre (energi- og miljøkomiteen)"
+date: "2026-03-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre er medforslagsstiller sammen med SV, Sp, Rødt og MDG — en
+  uvanlig koalisjon. Alle 14 fremmøtte stemte for.
+claim_action: >
+  Votering_id 27047, Høyre 14 for, 0 mot. Fra Høyre/Sps delte
+  merknad: "Disse medlemmer etterlyser en mer nasjonal, strategisk
+  tenkning om dataindustri i Norge – og noen rimelige, forutsigbare
+  krav som kan gjøre investeringer i datasentre til et positivt
+  bidrag både for lokalbefolkningen, regionen og landet."
+verbatim_excerpt: >
+  Disse medlemmer etterlyser en mer nasjonal, strategisk tenkning om
+  dataindustri i Norge – og noen rimelige, forutsigbare krav som kan
+  gjøre investeringer i datasentre til et positivt bidrag både for
+  lokalbefolkningen, regionen og landet.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 140 S (2025–2026); votering_id 27047"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-140s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Høyre medforslagsstiller sammen med SV/Sp/Rødt/MDG — en
+  av de bredeste koalisjonene i hele datasettet, og uvanlig ettersom
+  Høyre ellers ofte stemmer mot statlige kontrollmekanismer i
+  digitalsuverenitet-sakene (se Innst. 225 S-klyngen).
+retrieved_at: "2026-09-24"

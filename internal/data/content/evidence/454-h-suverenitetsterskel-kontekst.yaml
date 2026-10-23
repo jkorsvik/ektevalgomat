@@ -1,0 +1,33 @@
+id: ev-2026-464s-h-suverenitetsterskel
+statement_id: utsagn-45
+party_id: h
+actor: "Høyre (kontroll- og konstitusjonskomiteen)"
+date: "2026 (sesjon)"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre mener det ikke er behov for å endre Grunnlovens terskel for suverenitetsavståelse."
+claim_action: >
+  Høyre, sammen med Ap, FrP, MDG og KrF, avviste i komiteflertallet
+  Grunnlovsforslag 9 (2023–2024, Moxnes/Sneve Martinussen/Marhaug) om å
+  klargjøre terskelen for suverenitetsavståelse (Grunnloven §§ 115 og
+  26). Innst. 464 S (2025–2026).
+verbatim_excerpt: >
+  «Komiteens flertall, medlemmene fra Arbeiderpartiet, Fremskrittspartiet,
+  Høyre, Miljøpartiet De Grønne og Kristelig Folkeparti , viser til
+  Høyesteretts tolkninger og Stortingets praksis og mener at det ikke er
+  behov for å endre terskelen for hva som skal anses som
+  suverenitetsavståelse [...]»
+status: forkastet
+position: null
+source_tier: A
+source_name: "Innst. 464 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-464s/"
+claim_confidence: dokumentert
+context_note: >
+  IKKE en kodet posisjon på utsagn-45 (position: null med vilje) — dette
+  er den generelle grunnlovsmekanismen for suverenitetsavgivelse, ikke
+  spesifikt om forsvar/beredskap. Lagt til som kontekst: Høyre mener
+  dagens terskel og Høyesteretts praksis er god nok. Se utsagn-45s
+  partiprogram-evidens for Høyres faktiske, spesifikke posisjon om
+  forsvar/beredskap vs. EU/EØS-koordinering.
+retrieved_at: "2026-09-26"

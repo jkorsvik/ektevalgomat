@@ -1,0 +1,36 @@
+id: ev-2024-ap-meterskillet-mot
+statement_id: utsagn-18
+party_id: ap
+actor: "Arbeiderpartiet (næringskomiteen)"
+date: "2024-05-23"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap er del av flertallet (med Høyre, Sp, FrP, Venstre) som i stedet
+  fremmet en alternativ avgrensning basert på hjemmelslengde.
+claim_action: >
+  Votering_id 22561, Ap 29 mot, 0 for. Fra flertallets egen
+  forslagstekst: "Stortinget ber regjeringen gjeninnføre
+  hjemmelslengde som gruppeinndeling av kvotegrunnlaget i
+  kystfiskeflåten." Flertallet "gir sin tilslutning til å videreføre
+  gruppeinndelingen av kvotegrunnlaget i kystfiskeflåten basert på
+  hjemmelslengde" — en mindre streng avgrensning enn SV/Rødts
+  28-meter-forslag.
+verbatim_excerpt: >
+  Gir sin tilslutning til å videreføre gruppeinndelingen av
+  kvotegrunnlaget i kystfiskeflåten basert på hjemmelslengde.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 264 S (2023–2024); votering_id 22561"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-264s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +1 (ikke +2): dette er nøyaktig Aps egen posisjon, gjengitt som
+  det snudde utsagnet nå hevder — Ap fremmer sin egen versjon
+  (hjemmelslengde) fremfor SV/Rødts strengere 28-meter-grense. +1 ikke
+  +2 fordi Ap ikke avviser prinsippet om en gruppeinndeling som sådan,
+  bare den SPESIFIKKE, strengere grensen — en "vi vil ha en avgrensning,
+  bare en annen"-nyanse. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

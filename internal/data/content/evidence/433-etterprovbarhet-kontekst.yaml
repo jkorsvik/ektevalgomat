@@ -1,0 +1,43 @@
+id: ev-2024-etterprovbarhet-kontekst
+statement_id: utsagn-05
+party_id: ""
+actor: "Kontroll- og konstitusjonskomiteen / Stortinget i plenum"
+date: "2024-01-01"
+evidence_type: representantforslag
+evidence_class: fakta
+scan_summary: >
+  Innst. 140 S (2023-2024), om Rødts (Marie Sneve Martinussen, Seher
+  Aydar) Dok. 8:1 S om å styrke habilitetsreglene og gjenreise tillit
+  til demokratiet. Bakgrunnen: kontroll- og konstitusjonskomiteens
+  egne undersøkelser avdekket manglende felles praksis og manglende
+  samlet oversikt over departementenes habilitetspraksis. MDG tok opp
+  et av forslagene som egen mindretallsforslag i komitébehandlingen.
+claim_action: >
+  Forslag 3 (fremmet av MDG i komitébehandlingen): "Stortinget ber
+  regjeringen utrede og vurdere sine muligheter til å sanksjonere mot
+  brudd på habilitetsreglene og overprøve statsråders
+  habilitetsvurderinger." Dette er en direkte etterprøvbarhets-
+  mekanisme: i dag vurderer statsråder ofte sin egen habilitet, uten
+  ekstern overprøving. Votering_id 22102 (sakid 96869): 7 for (MDG 2,
+  Rødt 4, uavhengig 1), 93 mot (Ap 29, FrP 13, Høyre 21, KrF 1, SV 8,
+  Sp 17, Venstre 4).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 140 S (2023–2024); data.stortinget.no sakid=96869, votering_id 22102"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2023-2024/dok8-202324-001s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Denne saken fylte et tidligere HULL i evidensdatabasen: utsagn-05
+  hadde 0 av 9 partier dokumentert helt til nå. Forslaget adresserer
+  nøyaktig utsagnets kjerne — at offentligheten (her: Stortinget selv,
+  som representerer offentligheten) skal kunne ETTERPRØVE
+  (overprøve) hvordan en åpenhets-/integritetssak (statsråders egen
+  habilitetsvurdering) faktisk ble avgjort, i stedet for å basere seg
+  på statsrådens egen, uovervåkede vurdering. Merk: originalforslaget
+  kom fra Rødt (Dok. 8:1 S), men ble tatt opp som eget
+  mindretallsforslag av MDG i selve komitébehandlingen — en
+  vanlig prosedyre der komiteen "adopterer" enkeltpunkter fra et
+  Dok. 8-forslag som separate, avstemningsklare forslag.
+retrieved_at: "2026-09-24"

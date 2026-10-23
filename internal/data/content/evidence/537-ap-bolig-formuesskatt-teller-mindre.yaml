@@ -1,0 +1,36 @@
+id: ev-2026-innst188s-ap-bolig-formuesskatt-teller-mindre
+statement_id: utsagn-54
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-03-24"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap er del av komiteflertallet som viser til regjeringens egen, varslede justering av innslagspunktet og velger å behandle realiteten når revidert nasjonalbudsjett kommer, i stedet for å støtte mindretallsforslagene nå."
+claim_action: >
+  Ap er del av "Komiteens flertall" (med SV, Sp, MDG, Rødt) som viser
+  til at finansministeren har lagt fram forslag om å heve
+  innslagspunktet for høy verdsetting av primærbolig fra 10 til 14
+  mill. kroner, og at dette vil bli behandlet i forbindelse med
+  revidert nasjonalbudsjett. Stemte mot alle fire mindretallsforslag
+  (voteringene 27359-27362).
+verbatim_excerpt: >
+  «Disse medlemmer viser til at dette vil bli behandlet i forbindelse
+  med revidert nasjonalbudsjett. Disse medlemmer vil derfor behandle
+  realitetene i forslaget i forbindelse med Stortingets behandling av
+  revidert nasjonalbudsjett.»
+status: forslag_avvist_stemte_mot
+position: 0
+source_tier: A
+source_name: "Innst. 188 S (2025–2026); voteringene 27359-27362 (24.03.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet 0 (nøytral/delt), ikke -1/-2: Aps egen tekst er en utsatt/
+  prosedyremessig posisjon (vil behandle substansen senere, via
+  regjeringens egen, mindre justering), ikke en substansiell
+  avvisning av at boligen bør telle mindre. Regjeringens egen varslede
+  heving (10 til 14 mill.) peker faktisk i SAMME retning som utsagnet
+  (mindre vekt for høyt verdsatte boliger), bare via en annen og mer
+  forsiktig kanal enn mindretallsforslagene. Bekreftet [OK] i votes.py:
+  Ap 0 for / 33 mot på alle fire voteringer.
+retrieved_at: "2026-09-27"

@@ -1,0 +1,41 @@
+id: ev-2026-04-28-sp-microsoft365-exit-mot
+statement_id: utsagn-20
+party_id: sp
+actor: "Senterpartiet (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte mot. Sp deler et kort, generelt avsnitt med Høyre om at
+  de deler intensjonen bak forslaget uten å støtte de konkrete
+  tiltakene, men har ingen egen, saksspesifikk begrunnelse om
+  Microsoft 365-eksemplet spesifikt — Høyres etterfølgende, mer
+  detaljerte avsnitt er skrevet med "Komiteens medlemmer fra Høyre",
+  ikke "Høyre og Senterpartiet".
+claim_action: >
+  Votering_id 27490, Sp 0 for, 5 mot. Delt innledning med Høyre:
+  "Komiteens medlemmer fra Høyre og Senterpartiet deler intensjonen
+  bak representantforslaget om å styrke Norges digitale
+  handlefrihet og redusere sårbar avhengighet av enkeltleverandører.
+  Disse medlemmer vil likevel understreke at de konkrete forslagene
+  som fremmes, verken er realistiske, kostnadseffektive eller egnet
+  til å styrke Norges reelle digitale suverenitet i praksis."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27490"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1 (enig, ikke sterkt enig): Sp deler kun den generelle,
+  prinsipielle innledningen med Høyre ("deler intensjonen [...] men
+  konkrete forslag ikke realistiske"), i tråd med det snudde utsagnets
+  premiss, men ikke Høyres etterfølgende detaljerte operasjonelle
+  kritikk av Microsoft 365-eksemplet spesifikt — den delen av
+  merknaden er eksplisitt avgrenset til "Komiteens medlemmer fra
+  Høyre" alene. Lavere attribution_confidence enn Høyre av denne
+  grunn: stemmen er sikker, men den sak-spesifikke begrunnelsen for
+  nettopp dette forslaget er ikke Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  dokumentert for Sp utover den delte prinsipperklæringen.
+retrieved_at: "2026-09-24"

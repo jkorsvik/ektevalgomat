@@ -1,0 +1,46 @@
+id: ev-2025-04-10-frp-acer-moderat-begrensning
+statement_id: utsagn-07
+party_id: frp
+actor: "Fremskrittspartiet (Terje Halleland, Marius Arion Nilsen, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP støttet de mildere begrensningsforslagene og eget forslag, men stemte MOT det mest vidtgående forslaget om formelt veto og ACER-uttreden."
+claim_action: >
+  FrP delte Sp/SV/Rødts bekymring for EUs fjerde energimarkedspakke, men
+  stemte forskjellig på de fire voteringene: MOT forslag nr. 2/3/5
+  (votering_id 24383, det mest vidtgående — formelt veto og oppstart av
+  arbeid med å melde Norge ut av ACER: 10 mot, 1 for), men FOR forslag
+  nr. 1/4 (votering_id 24384, mildere formulering om ikke å innlemme
+  fjerde pakke og vurdere suverenitetsavståelsen: 11 for), FOR sitt eget
+  forslag nr. 6 (votering_id 24385: 11 for), og MOT komiteens tilråding
+  om å avvise begge representantforslag (votering_id 24386: 11 mot).
+  Individuell votering kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat for alle fire
+  votering_id-er.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Senterpartiet og Fremskrittspartiet deler
+  bekymringen til forslagsstillerne angående fjerde energimarkedspakke.
+  Den europeiske konkurransekraften har over lengre tid blitt svekket
+  som følge av EUs politikk. Disse medlemmer mener dette har en direkte
+  sammenheng med den stadig økende reguleringsgraden i EU."
+status: forslag_avvist_av_flertallet
+position: -1
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: FrPs stemmegivning viser en reell nyanse som ikke
+  bør glattes over. FrP stemte MOT det konkrete forslaget om formelt
+  veto og oppstart av ACER-uttreden (votering_id 24383) — samme
+  drastiske skritt Sp/SV/Rødt stemte for — men FOR de mildere
+  forslagene om å ikke innlemme fjerde pakke og vurdere
+  suverenitetsavståelsen, samt MOT å avvise representantforslagene helt.
+  FrPs eget forslag nr. 6 er ikke gjengitt i komiteinnstillingens
+  tekstdel (fremsatt under behandlingen i salen) og siteres derfor ikke
+  verbatim her — kun stemmetallet er dokumentert. Nettoresultatet er en
+  part som vil begrense ACERs videre myndighetsutvidelse, men ikke gå så
+  langt som formell uttreden/veto nå — derfor -1, ikke -2, uenig i at
+  EØS-tilknytningen ikke svekker kraftkontrollen. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +1 til -1.
+retrieved_at: "2026-09-23"

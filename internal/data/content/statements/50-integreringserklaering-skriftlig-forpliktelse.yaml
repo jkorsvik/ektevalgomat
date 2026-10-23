@@ -1,0 +1,20 @@
+id: utsagn-50
+number: 50
+dimension: "Tilgang, integrering og rettsstat"
+primary_question: "Hvem får tilgang til fellesgodene, på hvilke vilkår, og hvordan håndhever samfunnet loven?"
+case_tag: integreringserklaering_skriftlig_forpliktelse
+short_name: "Skriftlig integreringserklæring"
+text: >
+  Nyankomne bør forplikte seg skriftlig til norske lover, verdier og
+  foreldreansvar i en integreringserklæring.
+practical_stakes:
+  enig: >
+    Deltakere i introduksjonsprogrammet må signere en
+    integreringserklæring som tydeliggjør forventninger om blant
+    annet å følge norske lover, delta i arbeids- og samfunnsliv og
+    ivareta foreldreansvar. Erklæringen erstatter dagens
+    integreringskontrakt.
+  uenig: >
+    Ingen slik erklæring innføres. Deltakere i introduksjonsprogrammet
+    signerer ikke et eget dokument om lover, verdier og
+    foreldreansvar; dagens integreringskontrakt består uendret.

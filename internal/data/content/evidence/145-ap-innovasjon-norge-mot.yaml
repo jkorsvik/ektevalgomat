@@ -1,0 +1,49 @@
+id: ev-2026-06-10-ap-innovasjon-norge-mot
+statement_id: utsagn-21
+party_id: ap
+actor: "Arbeiderpartiet (næringskomiteen)"
+date: "2026-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot, med en effektivitets-basert begrunnelse: deler
+  bekymringen for nærhet til næringslivet, men mener organiseringen
+  må vurderes ut fra faktisk effekt, ikke lokalisering i seg selv.
+claim_action: >
+  Votering_id 28197, Ap 0 for, 32 mot. Fra delt merknad (Ap, Høyre og
+  MDG): "Disse medlemmer legger til grunn at nærhet til bedrifter og
+  regionale næringsmiljøer er viktig, men understreker samtidig at
+  organiseringen av Innovasjon Norge må vurderes ut fra hva som gir
+  størst effekt for verdiskaping og omstilling i hele landet." Videre,
+  Ap+MDG alene: "Disse medlemmer viser til statsrådens redegjørelse
+  og innspillene fra FIN – Foreningen for innovasjonsselskaper i
+  Norge – som peker på at lokal tilstedeværelse alene ikke er
+  tilstrekkelig dersom den ikke kombineres med tydelige oppdrag,
+  tilstrekkelige ressurser og god samordning i virkemiddelapparatet."
+verbatim_excerpt: >
+  Disse medlemmer deler vurderingen av at bedre rolleavklaring og
+  mindre overlapp mellom aktører kan gi et mer oversiktlig og
+  effektivt system for bedriftene. [...] målet er å videreutvikle en
+  regionalt forankret innsats innenfor en helhetlig nasjonal
+  struktur, med fleksibilitet til å tilpasse virkemidler der det gir
+  best effekt lokalt og regionalt.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 424 S (2025–2026); votering_id 28197"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-424s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +1 (enig, ikke sterkt enig): dette er nøyaktig Aps egen
+  argumentasjon, gjengitt som det snudde utsagnet nå hevder — Ap deler
+  eksplisitt bekymringen om nærhet til næringslivet ("nærhet [...] er
+  viktig"), men avviser en Storting-bestemt bindende struktur til fordel
+  for en effekt-/resultatbasert vurdering ("fleksibilitet til å tilpasse
+  virkemidler der det gir best effekt") — samme "deler målet, ikke
+  mekanismen"-mønster sett i tannhelse- (Phase 2h) og nasjonal
+  sky-sakene (utsagn-19), men her med en tredje variant: enigheten er
+  ikke om bindende versus frivillig styring, men om HVILKET kriterium
+  (geografisk nærhet versus dokumentert effekt) som bør styre
+  organiseringen. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

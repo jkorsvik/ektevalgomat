@@ -1,0 +1,32 @@
+id: ev-2026-partiprogram-sp-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: sp
+actor: "Senterpartiet"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp vil redusere formuesskatten for eiere av små og mellomstore bedrifter spesifikt, men understreker i samme setning at personer med store formuer generelt fortsatt må bidra."
+claim_action: >
+  Senterpartiets stortingsvalgprogram 2025–2029 sier partiet vil
+  redusere formuesskatten for eiere av små og mellomstore bedrifter,
+  samtidig som personer med store formuer generelt må bidra til
+  velferdsstaten etter evne.
+verbatim_excerpt: >
+  redusere formuesskatten for eiere av små og mellomstore bedrifter,
+  samtidig som at personer med store formuer må bidra til
+  velferdsstaten etter evne
+status: programfestet
+position: 0
+source_tier: C
+source_name: "Senterpartiets stortingsvalgprogram 2025–2029 (PDF)"
+source_url: "https://www.senterpartiet.no/politikk/_/attachment/inline/ea7e4063-1374-47bf-8b10-839bf68904c0:3c54bc9ec99b5e017f069f2312b3962bd934c78a/Senterpartiets%20stortingsvalgprogram%202025-2029%20bokm%C3%A5l%20i%20PDF.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet 0 (nøytral/delt), ikke et fortegn: Sps egen tekst peker to
+  veier i samme setning. Reduksjonen er eksplisitt avgrenset til en
+  bestemt gruppe (SMB-eiere), og kobles direkte til en motsatt,
+  eksplisitt understreket forventning om at formuende generelt
+  fortsatt skal bidra "etter evne" — ikke en generell nedtrapping som
+  utsagnet spør om. Én posisjon ville skjult denne reelle
+  todelingen, ikke løst den. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

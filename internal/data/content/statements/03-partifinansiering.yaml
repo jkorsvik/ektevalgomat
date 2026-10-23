@@ -1,0 +1,17 @@
+id: utsagn-03
+number: 3
+dimension: "Demokratisk åpenhet"
+primary_question: "Kan offentligheten se hvem som påvirker hvem, for hvem og med hvilke penger?"
+case_tag: politisk_reklame
+short_name: "Forby anonyme partibidrag"
+text: >
+  Politiske partier skal ikke kunne motta bidrag fra anonyme givere eller
+  via skjulte mellomledd.
+practical_stakes:
+  enig: >
+    Partiloven forbyr partier å ta imot bidrag fra givere partiet ikke
+    kjenner identiteten til, eller bidrag kanalisert gjennom mellomledd som
+    skjuler hvem den egentlige giveren er.
+  uenig: >
+    Ingen slikt forbud innføres. Partier kan fortsatt ta imot bidrag uten å
+    kunne identifisere den egentlige giveren.

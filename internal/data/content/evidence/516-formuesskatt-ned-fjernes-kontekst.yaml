@@ -1,0 +1,32 @@
+id: ev-2026-partiprogram-formuesskatt-ned-fjernes-kontekst
+statement_id: utsagn-52
+party_id: ""
+actor: "Faktakontekst"
+date: "2025-2029 (partiprogramperiode)"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: "Formuesskatten er en årlig skatt på nettoformue (verdien av bolig, aksjer, bankinnskudd med mer, minus gjeld) over et bunnfradrag. FrP (partiprogrammet) og Høyre (egen merknad i Innst. 188 S) vil fjerne den helt. De andre partiene som nevner den, vil redusere den bare for noen formuestyper, øke den for de største formuene, eller begge deler."
+claim_action: >
+  Kontekstfil for utsagn-52. Kildene under er de ni partienes egne
+  stortingsvalg-/arbeidsprogram for 2025-2029 (tier C — partiets eget
+  program, ikke en Storting-avstemning), unntatt Høyres evidens som
+  også bruker en direkte, sitert formulering fra en reell innstilling
+  (Innst. 188 S). Sp og Rødt: Sp har levert eget program (hentet
+  27.09.2026 fra senterpartiet.no). Rødt er kodet fra sin egen
+  hovedmerknad i Innst. 2 S (tier A, fil 601); Rødts program (lastet
+  ned i nettleser 28.09.2026, se fil 603) peker samme vei.
+status: kontekst
+position: null
+source_tier: C
+source_name: "Partiprogrammer 2025–2029 (flere partier), se enkeltfiler"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-188s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Ingen enkeltparti går inn for en generell, ubetinget avvikling av
+  formuesskatten uten forbehold bortsett fra FrP (program, fil 517) og
+  Høyre (egen merknad i Innst. 188 S, fil 518). De øvrige partiene
+  som nevner formuesskatten i sitt program, gjør det enten med en
+  avgrensning (kun "arbeidende kapital", kun SMB-eiere) eller med en
+  eksplisitt motsatt retning (økt sats for de største formuene). Se
+  enkeltfilene for hvert partis nøyaktige formulering.
+retrieved_at: "2026-09-27"

@@ -1,0 +1,26 @@
+id: ev-2026-04-30-mdg-statsborgerskap-tilbakekall-tidsfrist
+statement_id: utsagn-49
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-04-30"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG medforslagsstiller (med SV og Rødt) til en foreldelsesfrist for tilbakekall av statsborgerskap."
+claim_action: >
+  MDG er medforslagsstiller på forslag nr. 4 sammen med SV og Rødt (se
+  SVs evidensfil for full tekst). Stemte for i votering 27523.
+verbatim_excerpt: >
+  «Disse medlemmer viser blant annet til at Norge praktiserer
+  tilbakekall av statsborgerskap uten foreldelsesfrist. Disse medlemmer
+  viser til at denne praksisen ved flere anledninger har blitt
+  kritisert.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 232 S (2025–2026), forslag 4; votering_id 27523 (30.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: felles forslag og felles tekst med SV og Rødt. Bekreftet
+  [OK] i votes.py: MDG 5 for / 0 mot.
+retrieved_at: "2026-09-27"

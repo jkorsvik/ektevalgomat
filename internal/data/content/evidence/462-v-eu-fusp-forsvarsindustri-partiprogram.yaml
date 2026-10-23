@@ -1,0 +1,35 @@
+id: ev-2026-partiprogram-v-eu-fusp-forsvarsindustri
+statement_id: utsagn-45
+party_id: v
+actor: "Venstre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Venstre vil ha full deltakelse i EUs felles sikkerhets- og forsvarspolitikk og styrke forsvarsindustrielt samarbeid med EU."
+claim_action: >
+  Venstres stortingsvalgprogram 2025–2029 tar til orde for full norsk
+  deltakelse i EUs felles utenriks- og sikkerhetspolitikk (FUSP) og
+  tettere forsvarsindustrielt samarbeid med EU.
+verbatim_excerpt: >
+  Sikre Norge fullverdig deltakelse i EUs felles utenriks- og
+  sikkerhetspolitikk (FUSP) og i EUs romfarts- og satellittsamarbeid,
+  styrke det forsvarsindustrielle samarbeidet med EU, og bidra til
+  Europas mobilisering og styrking av forsvarsindustrien. [...] Bidra til
+  å styrke NATO som vår viktigste sikkerhetsgaranti og forsvarsallianse,
+  samtidig som vi jobber for å delta når NATO og EU utvikler felles
+  forsvars-, sikkerhets- og beredskapskapasiteter.
+status: programfestet
+position: -2
+source_tier: C
+source_name: "Venstres stortingsvalgprogram 2025–2029"
+source_url: "https://www.venstre.no/politikk/partiprogram/program-2025-2029/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: dette er blant de mest eksplisitte pro-EU-integrasjon-
+  formuleringene av alle 9 partier på nettopp forsvar/beredskap — direkte
+  motsatt av utsagnets premiss, ikke en analytisk tolkning. Tier C
+  (partiets eget program), ikke tier A. Ingen Innst. 464 S-kontekstevidens
+  finnes for Venstre (partiet har ikke sete i kontroll- og
+  konstitusjonskomiteen), så det er ingen sammenligning å sette
+  consistency_flag mot.
+retrieved_at: "2026-09-26"

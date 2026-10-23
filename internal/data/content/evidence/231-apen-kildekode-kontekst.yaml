@@ -1,0 +1,46 @@
+id: ev-2026-04-28-apen-kildekode-kontekst
+statement_id: utsagn-23
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Femte forslag hentet fra samme Innst. 225 S (digital suverenitet)
+  som utsagn-19, 20, 22 og 24. SV, Rødt og MDG fremmet et forslag om
+  et nasjonalt program for åpen kildekode i offentlig sektor med egne
+  bevilgninger. Forslaget ble avvist 16 mot 85.
+claim_action: >
+  Forslag 7 (SV, Rødt og MDG): "Stortinget ber regjeringen opprette et
+  nasjonalt program for åpen kildekode i offentlig sektor, med forslag
+  til bevilgninger til kompetanseheving og målrettet innføring der
+  åpne løsninger reduserer avhengighet av proprietære plattformer og
+  styrker gjenbruk." Merknad fra Rødt og MDG: "Flere land i Europa,
+  herunder Frankrike og Danmark, har etablert nasjonale programmer for
+  åpen kildekode i offentlig sektor. En Harvard-studie fra 2019,
+  Government Technology Policy, Social Value, and National
+  Competitiveness, har vist at dette har gitt lavere kostnader, mer
+  innovasjon og redusert leverandørlåsing." Votering_id 27489
+  (sakid 200036): 16 for (SV 5, Rødt 5, MDG 4, Venstre 2), 85 mot
+  (Ap 32, FrP 29, Høyre 14, KrF 4, Sp 5, MDG 1).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); data.stortinget.no sakid=200036, votering_id 27489"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Fullfører Innovasjon/omstillingsevne (21-23, nå 3/3 real) og er det
+  femte forskjellige forslaget hentet fra Innst. 225 S — se
+  docs/roadmap.md Phase 2t/2u for votering_id-formelen (27496 −
+  forslagsnummer). Statementets kjerne ("bygge kompetanse/åpen
+  infrastruktur vs. kjøpe proprietært") er den mest direkte testen av
+  dimensjonens spørsmål av alle fem utsagn hentet fra denne saken.
+  Andre intra-parti-avvik i samme sak: én av fem MDG-representanter
+  stemte MOT sitt eget partis medforslag (4 for, 1 mot) — det andre
+  funnet av denne typen i saken (det første var Høyre på KOMBIT-
+  forslaget, se evidence/221 for utsagn-22). To uavhengige eksempler
+  på partidisiplin-brudd i samme innstilling er egnet "kjøtt" for en
+  fremtidig funksjon som flagger interne partiavvik automatisk.
+retrieved_at: "2026-09-24"

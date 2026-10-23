@@ -1,0 +1,50 @@
+id: ev-2025-06-04-rodt-tannhelse-universell-mot
+statement_id: utsagn-25
+party_id: rodt
+actor: "Rødt (helse- og omsorgskomiteen)"
+date: "2025-06-04"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt stemte mot SVs spesifikke forslag om en 2030-frist, men skriver
+  i egen (delt med SV og Pasientfokus) merknad at "en tannhelsereform
+  skal gjelde hele befolkningen" — samme mål som SV. Rødt har sitt eget,
+  mer detaljerte forslag (Dokument 8:157 S: frikort-mekanisme, fasing,
+  gratis tannregulering for barn) i stedet for SVs bindende
+  årstallsforpliktelse.
+claim_action: >
+  Votering_id 25387 (forslag 19, på vegne av SV): Rødt 0 for, 5 mot.
+  Rødt fremmet i stedet egne forslag (forslag 11-15, delt med SV og
+  Pasientfokus, bl.a. om frikort-ordning og gratis tannregulering for
+  barn til 18 år) fra sitt eget Dokument 8:157 S.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Sosialistisk Venstreparti, Rødt og
+  Pasientfokus mener det er behov for en ordentlig tannhelsereform
+  som sikrer at det ikke koster mer å gå til tannlegen enn til
+  fastlegen. [...] Disse medlemmer mener at en tannhelsereform skal
+  gjelde hele befolkningen."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 458 L (2024–2025); votering_id 25387"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-458l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: Rødts egen skriftlige merknad (delt med SV) sier
+  eksplisitt at reformen "skal gjelde hele befolkningen" — samme
+  universalistiske mål som SVs forslag 19 uttrykker, så Rødt deler i
+  prinsippet IKKE det snudde utsagnets "gradvis, målrettet"-linje. Men
+  Rødt stemte likevel mot dette SPESIFIKKE forslaget (den bindende
+  2030-fristen), mest sannsynlig fordi de har sin egen konkurrerende
+  mekanisme (frikort, fasing, se Dokument 8:157 S) og foretrakk sin egen
+  operasjonalisering over SVs — den faktiske stemmen er derfor kodet +1
+  (svakt enig i å IKKE binde seg til akkurat denne fristen), ikke et
+  reelt +2 om innholdet. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+  2030-årstallsformulering, ikke fordi de er substansielt uenig i
+  målet. Dette er en reell, dokumentert spenning mellom skriftlig
+  merknad og avstemning som IKKE bør glattes over med en oppfunnet
+  forklaring — se evidence/101-tannhelsereform-kontekst.yaml for
+  hvorfor bare denne ene voteringen (av 20 på saken) er kodet, og
+  merk at Rødts egne forslag om frikort/fasing (forslag 11-15) tester
+  en litt annen akse (mekanisme) enn dette utsagnet (bindende frist).
+retrieved_at: "2026-09-24"

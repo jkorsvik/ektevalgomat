@@ -1,0 +1,51 @@
+id: ev-2026-05-26-kjernekraft-kommersiell-kontekst
+statement_id: utsagn-13
+party_id: ""
+actor: "Energi- og miljøkomiteen / Stortinget i plenum"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet FrPs representantforslag om å tilrettelegge for
+  kjernekraft i Norge. Forslag 1 og 2 (lovendringer for kommersiell
+  kjernekraftproduksjon nå) ble avvist 40 mot 45; komiteens tilråding
+  (en stortingsmelding om kjernekraft, ingen forpliktelse om lovendring)
+  ble vedtatt.
+claim_action: >
+  Dokument 8:191 S (2025-2026, FrP: Tor Mikkel Wara, Morten Stordalen,
+  Kristoffer Sivertsen, Erlend Wiborg, Bjørn Larsen, Rikard Spets)
+  behandlet i Innst. 278 S (2025-2026, 1352-linjers HTML-tekst lest i
+  fulltekst). Forslag 1: "Stortinget ber regjeringen legge frem en
+  helhetlig sak om hvordan kjernekraft kan etableres..." Forslag 2:
+  "Stortinget ber regjeringen fremme forslag til nødvendige endringer
+  i atomenergiloven, energiloven og strålevernloven, slik at
+  regelverket legger til rette for etablering og drift av kommersiell
+  kjernekraftproduksjon i Norge." Votering_id 27722 (forslag 1 og 2,
+  på vegne av FrP, H og V): 49 for (FrP 29, H 14, KrF 4, V 2), 46 mot
+  (Ap 31, MDG 5, R 5, SV 5, Sp 5), 11 andre voteringer på samme sak
+  falt eller ble til komiteens svakere tilråding (votering_id 27723,
+  vedtatt): "Stortinget ber regjeringen legge frem en stortingsmelding
+  om kjernekraft" — en langt svakere forpliktelse enn forslag 1 og 2,
+  støttet av 7 av 9 partier (Ap, H, SV, Sp, R, MDG, V; FrP og KrF
+  utenfor tilrådingen).
+status: forslag_avvist_svakere_tilraading_vedtatt
+position: null
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27722, 27723"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst, ikke en partiposisjon i seg selv. Sak_id
+  200121 kryssjekket mot data.stortinget.no/eksport/voteringer?sakid=
+  200121 (10 voteringer + tilrådingen). Denne evidensfilen og
+  partienes egne filer dekker kun votering_id 27722 (forslag 1 og 2),
+  fordi det er den ene voteringen som direkte tester dette utsagnets
+  konkrete krav: lovendring NÅ for kommersiell/privatfinansiert
+  kjernekraft, ikke bare enighet om å skrive en stortingsmelding.
+  Merk at H og Venstres egen forslagstekst (forslag 27-28 og en
+  identisk formulering senere i innstillingen) uttrykkelig utelukker
+  statlig subsidiering eller eierskap — motsatt av Rødts prinsipp i
+  utsagn-06 om statlig eierskap. Utsagn-06 (statlig kontroll) og dette
+  utsagnet (kommersiell hastighet) tester derfor to forskjellige akser
+  i samme sak, og bør ikke slås sammen.
+retrieved_at: "2026-09-24"

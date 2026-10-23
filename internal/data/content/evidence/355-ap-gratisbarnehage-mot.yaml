@@ -1,0 +1,22 @@
+id: ev-2026-ap-gratisbarnehage-mot
+statement_id: utsagn-34
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-02-01"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot, konsistent med sin egen "vi deler engasjementet,
+  men ikke denne bindende teksten"-merknad (se evidence/346).
+claim_action: "Votering_id 26943, Ap 32 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26943"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: sterkt_dokumentert
+context_note: >
+  Kodet -1: samme "ja i prinsippet, nei til bindende tekst"-merknad
+  som evidence/346 (utsagn-33) gjenbrukt her.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,33 @@
+id: ev-2026-04-28-h-kriserad-mot
+statement_id: utsagn-41
+party_id: h
+actor: "Høyre (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot. Partiets generelle "smart suverenitet"-linje
+  (diversifisering og sikkerhetskrav, ikke nye statlige organer) er
+  igjen den nærmeste tilgjengelige begrunnelsen, uten at kriserådet
+  nevnes ved navn.
+claim_action: >
+  Votering_id 27475, Høyre 13 mot, 0 for. Fra Høyres egen merknad om
+  saken generelt: "Svaret på avhengighet av internasjonale
+  teknologigiganter er mangfold og konkurranse – ikke statlige
+  monopoler eller isolasjon fra den teknologiske utviklingen."
+verbatim_excerpt: >
+  Svaret på avhengighet av internasjonale teknologigiganter er
+  mangfold og konkurranse – ikke statlige monopoler eller isolasjon
+  fra den teknologiske utviklingen.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27475"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: samme generelle merknad gjenbrukt fra evidence/217 og
+  /238 for Høyres MOT-stemmer i denne saken — relevant prinsipp, ikke
+  en direkte imøtegåelse av et rådgivende kriseråd spesifikt.
+retrieved_at: "2026-09-24"

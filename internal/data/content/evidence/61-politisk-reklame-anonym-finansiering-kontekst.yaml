@@ -1,0 +1,47 @@
+id: ev-2025-10-14-politisk-reklame-kontekst
+statement_id: utsagn-02
+party_id: ""
+actor: "Stortinget i plenum (trontaledebatten)"
+date: "2025-10-14"
+evidence_type: faktakontekst
+evidence_class: fakta
+scan_summary: >
+  Under trontaledebatten 2025-10-14 fremmet Rødt (Marie Sneve Martinussen)
+  et løst forslag om å regulere anonym finansiering av politisk reklame og
+  markedsføring som del av den kommende gjennomgangen av partiloven.
+  Forslaget (votering_id 26361) ble vedtatt 54 mot 46.
+claim_action: >
+  Forslag nr. 5 fra Marie Sneve Martinussen på vegne av Rødt: "Stortinget
+  ber regjeringen inkludere regulering av anonym finansiering av politisk
+  reklame og markedsføring i den helhetlige gjennomgangen av partiloven,
+  og komme tilbake til Stortinget med forslag som følger opp dette."
+  Votering_id 26361, 2025-10-14: 54 for (Ap 32, MDG 5, Rødt 5, SV 5,
+  Sp 5, V 2), 46 mot (FrP 28, H 14, KrF 4) — kryssjekket per parti mot
+  data.stortinget.no/eksport/voteringsresultat. Vedtatt.
+verbatim_excerpt: >
+  Stortinget ber regjeringen inkludere regulering av anonym finansiering
+  av politisk reklame og markedsføring i den helhetlige gjennomgangen av
+  partiloven, og komme tilbake til Stortinget med forslag som følger opp
+  dette.
+status: forslag_vedtatt
+position: 0
+source_tier: A
+source_name: "Trontaledebatten 2025-10-14; votering_id 26361; data.stortinget.no sak p=104588"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=104588&dnid=1&vt=26361"
+claim_confidence: dokumentert
+context_note: >
+  Faktakontekst uten partiposisjon (position: 0, ingen party_id) — se de
+  ni egne partifilene (62-70) for hvert partis stemme og eventuell egen
+  begrunnelse. Presisjonsnyanse mot utsagn-02s ordlyd: utsagn-02 har to
+  ledd forbundet med "og" — (1) selve reklamen bør VISE hvem som har
+  betalt (en EU DSA/TTPA-lignende merkingskrav på annonsen selv) og (2)
+  pengenes opprinnelse bør være offentlig kjent. Dette forslaget adresserer
+  utelukkende ledd (2): det ber om regulering av ANONYM FINANSIERING
+  gjennom partiloven, ikke et krav om merking på selve annonsen. Tett nok
+  til å kode partiposisjoner på ledd (2) — i motsetning til Innst. 275 L
+  (2024–2025), som gjaldt generell kandidatstøtte/naturalytelse-rapportering
+  og ikke spesifikt "politisk reklame og markedsføring" som dette
+  forslagets egen ordlyd nevner — men ikke et fullt tekstlig treff på hele
+  utsagnet. Samme "ikke tvinge et snevrere treff til å bety hele
+  påstanden"-disiplin som brukt for utsagn-04s "sosiale medier"-nyanse.
+retrieved_at: "2026-09-24"

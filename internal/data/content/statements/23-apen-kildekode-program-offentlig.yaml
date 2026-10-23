@@ -1,0 +1,18 @@
+id: utsagn-23
+number: 23
+dimension: "Innovasjon / omstillingsevne"
+primary_question: "Bygger staten og markedet ny kapasitet eller bare kjøper ferdige løsninger?"
+case_tag: apen_kildekode_program_offentlig
+short_name: "Nasjonalt program for åpen kildekode i offentlig sektor"
+text: >
+  Regjeringen bør opprette et nasjonalt program for åpen kildekode i
+  offentlig sektor, med bevilgninger til kompetanseheving og målrettet
+  innføring.
+practical_stakes:
+  enig: >
+    Regjeringen oppretter et nasjonalt program for åpen kildekode i
+    offentlig sektor, med egne bevilgninger til kompetanseheving og
+    innføring.
+  uenig: >
+    Ingen slikt program opprettes. Offentlig sektor fortsetter å kjøpe
+    proprietære, kommersielle løsninger som i dag.

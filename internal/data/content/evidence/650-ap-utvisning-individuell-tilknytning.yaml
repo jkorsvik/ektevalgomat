@@ -1,0 +1,37 @@
+id: ev-2026-04-14-ap-utvisning-individuell-tilknytning
+statement_id: utsagn-47
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-04-14"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Ap stemte mot FrPs forslag om å fjerne tilknytning som vilkår ved utvisning, uten egen tekst om nettopp dette forslaget."
+claim_action: >
+  Ap har egen tekst i Innst. 205 S om regjeringens eget, pågående
+  arbeid med strengere utvisningsregler, men ingen tekst som direkte
+  tar stilling til FrPs forslag nr. 2 om å utvise «uavhengig av
+  tilknytning til landet». Stemte mot forslag nr. 2 (votering 27441).
+verbatim_excerpt: >
+  «Stortinget ber regjeringen ta initiativ til et samarbeid med Danmark
+  om en utvisningsreform som sikrer at innvandrere som begår alvorlig
+  kriminalitet i Norge, skal utvises, uavhengig av tilknytning til
+  landet, herunder også asylsøkere og flyktninger.»
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 205 S (2025–2026), forslag 2; votering 27441 (14.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Kodet +1 ut fra stemmegivning alene: Ap stemte mot forslag 2, som
+  ville fjernet tilknytning til Norge som vilkår ved utvisning — det
+  motsatte av det Ap her stemte mot støtter nettopp dette utsagnets
+  påstand om at tilknytning fortsatt bør telle med. Aps egen merknad i
+  saken gjelder et annet spor (regjeringens instruks til UDI), ikke
+  denne konkrete formuleringen, derfor +1 og ikke +2, og
+  evidensstyrke_cap moderat. Speilbilde av utsagn-46s Ap-evidens (samme
+  votering, motsatt påstand, kodet -1 der). Bekreftet i
+  data.stortinget.no voteringsresultat for votering 27441: Ap 0 for /
+  29 mot.
+retrieved_at: "2026-09-27"

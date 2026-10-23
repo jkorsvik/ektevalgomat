@@ -1,0 +1,27 @@
+id: ev-2025-partiprogram-rodt-skatt-store-arv
+statement_id: utsagn-57
+party_id: "rodt"
+actor: "Rødt"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt vil innføre arveskatt med høyt bunnfradrag og progressiv skatt på
+  svært store arv.
+claim_action: >
+  Rødts arbeidsprogram 2025–2029 sier dette med egne ord. Partiprogram,
+  ikke en Storting-avstemning.
+verbatim_excerpt: >
+  Innføre arveskatt som hindrer økende konsentrasjon av makt og rikdom
+  gjennom generasjoner, med høyt bunnfradrag, og med progressiv
+  skattlegging av dem som arver svært store beløp.
+status: programfestet
+position: 2
+source_tier: C
+source_name: "Rødts arbeidsprogram 2025–2029"
+source_url: "https://roedt.no/fil/7393ab981e025ec77c5c78797892dfc9f020fc17.pdf?dl="
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt og ubetinget, og avgrenset til store arv slik
+  utsagnet er.
+retrieved_at: "2026-10-02"

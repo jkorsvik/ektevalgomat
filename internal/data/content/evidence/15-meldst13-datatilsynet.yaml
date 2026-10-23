@@ -1,0 +1,25 @@
+id: ev-2026-meldst13-datatilsynet
+statement_id: utsagn-44
+party_id: ""
+actor: "Regjeringen"
+date: "2025-2026 (sesjon)"
+evidence_type: melding_til_stortinget
+evidence_class: fakta
+scan_summary: "Regjeringen fremmet Datatilsynets årsrapport til Stortinget."
+claim_action: >
+  Regjeringen fremmet Meld. St. 13 (2025–2026), Datatilsynets og
+  Personvernnemndas årsrapportar for 2025, til Stortinget.
+status: fremmet
+position: null
+source_tier: A
+source_name: "Meld. St. 13 (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200389"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell sak, ikke en partiposisjon — ingen partier har stemt
+  over eller fremmet forslag knyttet til denne meldingen ennå per
+  2026-09-23. Lagt til som kontekst for utsagn-44 (digital suverenitet)
+  fordi årsrapporten dekker personvern- og datakontrolltilsyn. Ingen
+  particeller er kodet på dette utsagnet ennå av samme grunn: saken er
+  ikke ferdigbehandlet.
+retrieved_at: "2026-09-23"

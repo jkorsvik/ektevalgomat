@@ -1,0 +1,17 @@
+id: utsagn-22
+number: 22
+dimension: "Innovasjon / omstillingsevne"
+primary_question: "Bygger staten og markedet ny kapasitet eller bare kjøper ferdige løsninger?"
+case_tag: kombit_ki_innkjop_kommuner
+short_name: "Felleskommunal innkjøpsordning for KI etter KOMBIT-modell"
+text: >
+  Regjeringen bør utrede felleskommunale innkjøpsordninger for kunstig
+  intelligens, etter modell av Danmarks KOMBIT.
+practical_stakes:
+  enig: >
+    Regjeringen setter i gang en utredning av felleskommunale
+    innkjøpsordninger for kunstig intelligens, etter modell av den danske
+    selskapsmodellen KOMBIT.
+  uenig: >
+    Ingen slik utredning settes i gang. Hver kommune fortsetter å forhandle
+    og kjøpe slike løsninger hver for seg.

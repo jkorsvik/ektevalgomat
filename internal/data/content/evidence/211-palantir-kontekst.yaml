@@ -1,0 +1,53 @@
+id: ev-2026-04-28-palantir-kontekst
+statement_id: utsagn-24
+party_id: ""
+actor: "Kommunal- og forvaltningskomiteen / Stortinget i plenum"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Samme sak som utsagn-19 og utsagn-20 (Dokument 8:119 S, Innst. 225
+  S, digital suverenitet). SV, Rødt og MDG fremmet i komitébehandlingen
+  et konkret forbudsforslag mot bruk av Palantirs systemer i norsk
+  offentlig sektor, med direkte henvisning til at Tolletaten allerede
+  benytter dem. Forslaget ble avvist 17 mot 84.
+claim_action: >
+  Forslag 8 (SV, Rødt og MDG): "Stortinget ber regjeringen sørge for
+  at Palantirs systemer ikke brukes i norsk offentlig sektor."
+  Merknadstekst fra SV+Rødt+MDG: "Tolletaten benytter systemer fra
+  Palantir Technologies. Selskapet har tette bånd til amerikansk
+  etterretning og det amerikanske krigsdepartementet. Bruken av slike
+  systemer i norsk offentlig sektor er uforenlig med ambisjonene om
+  digital suverenitet. Den reiser grunnleggende spørsmål om
+  jurisdiksjon, tillit og kontroll over sensitive data." Votering_id
+  27488 (sakid 200036): 17 for (SV 5, Rødt 5, MDG 5, Venstre 2), 84
+  mot (Ap 32, FrP 29, Høyre 14, KrF 4, Sp 5).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); data.stortinget.no sakid=200036, votering_id 27488"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Tredje og siste utsagn i dimensjonen Teknologisk kapasitet (19, 20,
+  24 — nå 3/3 real). Samme innstilling som utsagn-19 (forslag 11,
+  offentlig eid skytjeneste) og utsagn-20 (forslag 6, Microsoft 365
+  exit-strategi), men et tredje, distinkt forslag (nr. 8) fra samme
+  sak — testet som eget utsagn fordi det adresserer en annen
+  mekanisme (forbud mot en NAVNGITT leverandør med sikkerhetspolitisk
+  begrunnelse, ikke generell leverandøruavhengighet eller offentlig
+  eierskap). Votering_id funnet ved å reverse-engineere sekvensen:
+  Innst. 225 S har 21 mindretallsforslag pluss komiteens tilråding
+  (22 voteringer totalt for sakid 200036); formelen votering_id =
+  27496 − forslagsnummer stemmer eksakt med de to allerede kjente
+  punktene (forslag 11 → 27485, forslag 6 → 27490, komiteens tilråding
+  → 27496) og er bekreftet direkte mot data.stortinget.no sitt
+  voteringsresultat-endepunkt for forslag 8 (SV+Rødt+MDG-sponset
+  koalisjon på 17 stemmer, konsistent med samme partimønster som i
+  forslag 6 og 9). Venstre stemte for uten å være medforslagsstiller
+  eller komitémedlem — se evidence/220. Ap, FrP, Høyre og Senterpartiet
+  har ingen egen, Palantir-spesifikk merknad i innstillingen; deres
+  stemmegivning er dokumentert, men begrunnelsen må utledes av den
+  generelle komitémerknaden (se de respektive partifilene).
+retrieved_at: "2026-09-24"

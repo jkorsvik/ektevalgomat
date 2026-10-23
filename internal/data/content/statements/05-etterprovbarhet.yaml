@@ -1,0 +1,18 @@
+id: utsagn-05
+number: 5
+dimension: "Demokratisk åpenhet"
+primary_question: "Kan offentligheten se hvem som påvirker hvem, for hvem og med hvilke penger?"
+case_tag: generelt
+short_name: "Etterprøvbarhet i åpenhetssaker"
+text: >
+  Stortinget og partiene bør gjøre det mulig for offentligheten å
+  etterprøve hvordan hver enkelt sak om åpenhet og integritet ble
+  behandlet og avgjort.
+practical_stakes:
+  enig: >
+    Stortinget og partiene innfører rutiner som lar offentligheten følge og
+    etterprøve hvordan enkeltsaker om åpenhet og integritet ble behandlet og
+    avgjort.
+  uenig: >
+    Ingen slike rutiner innføres. Offentligheten har ikke en egen måte å
+    etterprøve behandlingen av slike enkeltsaker på.

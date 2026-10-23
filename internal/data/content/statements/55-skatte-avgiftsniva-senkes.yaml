@@ -1,0 +1,16 @@
+id: utsagn-55
+number: 55
+dimension: "Finansiering av fellesskapet"
+primary_question: "Hvordan betaler vi for fellesgodene, og hvem bærer kostnaden nå og om 30 år?"
+case_tag: skatte_avgiftsniva_senkes
+short_name: "Samlet skatte- og avgiftsnivå senkes"
+text: >
+  Det samlede skatte- og avgiftsnivået bør senkes.
+practical_stakes:
+  enig: >
+    Det totale beløpet staten henter inn gjennom skatter og avgifter
+    reduseres. Staten får mindre å bruke på fellesoppgaver og må
+    prioritere hardere mellom dem.
+  uenig: >
+    Det samlede skatte- og avgiftsnivået holdes som i dag eller økes.
+    Staten har like mye eller mer å bruke på fellesoppgaver.

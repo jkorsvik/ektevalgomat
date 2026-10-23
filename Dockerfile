@@ -1,0 +1,36 @@
+# ektevalgomat — two-stage build ending in FROM scratch: built directly
+# on the host (`build: .` in docker-compose.yml), no cross-compilation,
+# no registry push.
+#
+# Base image pinned by the same digest the other two public Go stacks
+# already use. Bump deliberately, in all three Dockerfiles together:
+# `docker pull golang:1.23-alpine && docker inspect --format
+# '{{index .RepoDigests 0}}' golang:1.23-alpine`.
+#
+# Everything — statement/party/evidence YAML, HTML templates, CSS, JS —
+# is go:embed'd into the binary at compile time (see internal/data/loader.go
+# and web/embed.go), so the final image has nothing on disk but the one
+# binary. No shell, no package manager, no libc, no "inside" to get a
+# shell in even with code execution. The one external dependency
+# (gopkg.in/yaml.v3, for parsing the evidence tree) is resolved from
+# go.sum in the builder stage only — never present in the final image.
+
+FROM golang:1.23-alpine@sha256:383395b794dffa5b53012a212365d40c8e37109a626ca30d6151c8348d380b5f AS builder
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY cmd ./cmd
+COPY internal ./internal
+COPY web ./web
+# Evidence YAML is parsed at package initialization — a malformed file is
+# a build-time bug. Run the focused test before producing an image so the
+# currently-running public site is never replaced by one that can't even
+# load its own dataset.
+RUN go test ./...
+RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /out/server ./cmd/server
+
+FROM scratch
+COPY --from=builder /out/server /server
+USER 65532:65532
+EXPOSE 8080
+ENTRYPOINT ["/server"]

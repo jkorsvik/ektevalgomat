@@ -1,0 +1,34 @@
+id: ev-2026-05-26-rodt-skagerrak-for
+statement_id: utsagn-09
+party_id: rodt
+actor: "Rødt (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt er medforslagsstiller sammen med FrP og Sp, med et
+  løftebrudd-argument rettet mot Ap.
+claim_action: >
+  Votering_id 28136, Rødt 5 for, 0 mot. Fra Sp/Rødts merknad:
+  "Arbeiderpartiet gikk til valg på at de ikke ville fornye de to
+  eldste utenlandskablene til Danmark, Skagerrak 1 og 2 (SK1 og SK2).
+  [...] Disse medlemmer mener at regjeringen må holde egne løfter og
+  avslutte konsesjonsbehandlingen."
+verbatim_excerpt: >
+  Arbeiderpartiet gikk til valg på at de ikke ville fornye de to
+  eldste utenlandskablene til Danmark, Skagerrak 1 og 2 (SK1 og SK2).
+  [...] Disse medlemmer mener at regjeringen må holde egne løfter og
+  avslutte konsesjonsbehandlingen.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28136"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Rødts skarpeste argument i saken er ikke mot
+  regjeringspartiene generelt, men et spesifikt løftebrudd-angrep på
+  Ap — verdt å koble til Aps egen stemme mot dette forslaget
+  (evidence/275) for en fullstendig "løfte vs. stemme"-lesning.
+retrieved_at: "2026-09-24"

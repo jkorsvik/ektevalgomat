@@ -1,0 +1,28 @@
+id: ev-2026-partiprogram-mdg-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025 (landsmøtevedtatt arbeidsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "MDG vil øke skattesatsen for de aller største formuene, samtidig som bunnfradraget for vanlige formuer heves kraftig."
+claim_action: >
+  MDGs arbeidsprogram 2025–2029 sier partiet vil øke bunnfradraget i
+  formuesskatten kraftig (letter for de fleste) og øke skattesatsen
+  for de aller største formuene spesifikt.
+verbatim_excerpt: >
+  «Øke bunnfradraget i formuesskatten kraftig og øke skattesatsen for
+  de aller største formuene.»
+status: programfestet
+position: 2
+source_tier: C
+source_name: "MDGs arbeidsprogram 2025–2029"
+source_url: "https://mdg.no/_service/505809/download/id/1506077/name/MDGs+arbeidsprogram+2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt, ordrett formulering på utsagnets premiss —
+  de aller største formuene skal skattlegges hardere, mens et hevet
+  bunnfradrag letter for de med mindre formue. Samme kildetekst som
+  utsagn-52s MDG-evidens, konsistent, motsatt utsagn. Tier C, ikke
+  tier A.
+retrieved_at: "2026-09-27"

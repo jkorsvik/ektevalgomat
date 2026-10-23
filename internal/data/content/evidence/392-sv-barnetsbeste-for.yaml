@@ -1,0 +1,23 @@
+id: ev-2026-sv-barnetsbeste-for
+statement_id: utsagn-36
+party_id: sv
+actor: "Sosialistisk Venstreparti (familie- og kulturkomiteen)"
+date: "2026-01-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  SV er medforslagsstiller sammen med KrF. Alle 5 fremmøtte stemte
+  for.
+claim_action: "Votering_id 26988, SV 5 for, 0 mot."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 136 S (2025–2026); votering_id 26988"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-136s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +2: SV medforslagsstiller. Ingen egen, separat SV-merknad om
+  akkurat dette forslaget funnet i den tilgjengelige innstillingsteksten,
+  utover medforslagsstiller-status.
+retrieved_at: "2026-09-24"

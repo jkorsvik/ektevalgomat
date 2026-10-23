@@ -1,0 +1,24 @@
+id: ev-2024-sv-skolemat-for
+statement_id: utsagn-35
+party_id: sv
+actor: "Sosialistisk Venstreparti (utdannings- og forskningskomiteen)"
+date: "2024-11-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  SV stemte for skolemat-vedtaket. Alle 8 fremmøtte stemte for.
+claim_action: "Votering_id 23652, SV 8 for, 0 mot."
+status: forslag_vedtatt_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 55 S (2024–2025); votering_id 23652"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-055s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +2 ut fra stemmegivningen. SV-talsperson Grete Wolds sitat om
+  vedtaket står ikke i Innst. 55 S eller i referatet fra 28.11.2024,
+  men i en NTB-sak samme dag. Det ligger derfor i en egen fil med
+  kildeklasse D (700-sv-skolemat-ntb-sitat.yaml), så voteringen
+  beholder kildeklasse A.
+retrieved_at: "2026-09-28"

@@ -1,0 +1,25 @@
+id: ev-2026-04-28-ap-apenkildekode-mot
+statement_id: utsagn-23
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Ap stemte mot forslaget om et nasjonalt åpen kildekode-program.
+  Ingen spesifikk merknad om åpen kildekode-bevilgninger funnet fra
+  partiet i denne saken.
+claim_action: "Votering_id 27489, Ap 32 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27489"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmetallet alene. Aps generelle "vent på
+  utredning"-merknad (delt med Høyre, se evidence/216 for utsagn-24)
+  er rettet mot sky- og konsesjonsforslagene, ikke åpen kildekode
+  spesifikt.
+retrieved_at: "2026-09-24"

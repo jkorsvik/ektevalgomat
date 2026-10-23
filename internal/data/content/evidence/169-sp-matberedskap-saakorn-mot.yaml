@@ -1,0 +1,45 @@
+id: ev-2026-06-05-sp-matberedskap-saakorn-mot
+statement_id: utsagn-38
+party_id: sp
+actor: "Senterpartiet (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Sp stemte mot forslag 1, selv om Sp er den opprinnelige
+  forslagsstilleren for hele representantforslaget og
+  medforslagsstiller på de tre andre konkrete forslagene (2, 3, 4) i
+  samme innstilling. Ingen Sp-spesifikk begrunnelse for å avvise
+  nettopp den desentraliserte gårds-modellen er dokumentert.
+claim_action: >
+  Votering_id 28068, Sp 0 for, 5 mot. Representantforslaget (Dokument
+  8:266 S) er fremmet av Geir Pollestad, Siv Sætran og Ole Herman
+  Sveian, alle Sp. Sp er medforslagsstiller på forslag 2, 3 og 4 (ROS-
+  analyse, nasjonalt lagringssystem for såkorn/såfrø, utrede
+  desentralisert lagringskapasitet i verdikjeden) og på flertallets
+  vedtatte forslag om å utrede en finsk-modell beredskapsordning
+  (votering_id 28069, vedtatt 57-43) — men ikke på forslag 1s
+  konkrete, umiddelbare gårds-baserte mekanisme.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28068"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1 fra stemmegivningen alene — dette er den mest overraskende
+  enkeltposisjonen i datasettet så langt: den opprinnelige
+  forslagsstilleren stemmer mot ett av seks konkrete forslag i sin
+  egen sak, uten at innstillingen dokumenterer hvorfor. Én mulig,
+  ikke bekreftet lesning: Sp har medforslagsstilt den vedtatte
+  "utrede en finsk modell"-varianten (romertall I/II) parallelt med
+  dette forslaget, og kan ha foretrukket en utredet, regjeringsstyrt
+  prosess over et umiddelbart, gårds-spesifikt Storting-vedtak — men
+  dette er en tolkning, ikke en dokumentert begrunnelse, og
+  presenteres derfor ikke som fakta. Attribution_confidence satt til
+  ukjent, ikke svakt_dokumentert, fordi det ikke finnes NOEN tekstlig
+  Sp-spesifikk sammenheng å vurdere styrken av — i motsetning til Ap
+  og Høyre i samme sak, som begge har generell, om ikke forslag-1-
+  spesifikk, dokumentert begrunnelse.
+retrieved_at: "2026-09-24"

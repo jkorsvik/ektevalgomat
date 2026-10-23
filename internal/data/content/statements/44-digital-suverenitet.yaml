@@ -1,0 +1,19 @@
+id: utsagn-44
+number: 44
+dimension: "Tillegg (utenfor de 42)"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne? (ikke en av memoens 9 dimensjoner — se docs/roadmap.md)"
+case_tag: digital_suverenitet
+short_name: "Fortsatt tillate skytjenester utenfor EØS"
+text: >
+  Offentlige virksomheter bør fortsatt kunne bruke
+  skytjenesteleverandører utenfor EØS for kritisk infrastruktur og
+  sensitive data, så lenge GDPR og norske sikkerhetskrav følges.
+practical_stakes:
+  enig: >
+    Offentlige virksomheter kan fortsatt bruke skytjenesteleverandører
+    utenfor EØS til kritisk infrastruktur og sensitive data, så lenge GDPR
+    og norske sikkerhetskrav følges.
+  uenig: >
+    Offentlige virksomheter kan ikke lenger bruke skytjenesteleverandører
+    utenfor EØS til kritisk infrastruktur og sensitive data, uansett
+    sikkerhetskrav.

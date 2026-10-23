@@ -1,0 +1,33 @@
+id: ev-2025-06-04-krf-tannhelse-universell-mot
+statement_id: utsagn-25
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2025-06-04"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF stemte mot SVs universaliseringsforslag. KrF har ingen egen
+  skriftlig merknad om universell tannhelse i denne innstillingen,
+  men fremmet (sammen med Pasientfokus) et eget, avgrenset forslag om
+  tannbehandling for spesifikke, særlig sårbare grupper (torturutsatte,
+  rusmiddelavhengige) — ikke for hele befolkningen.
+claim_action: >
+  Votering_id 25387, KrF 0 for, 2 mot. KrF+Pasientfokus fremmet
+  forslag 16-17 (votering_id 25389, avvist): styrket tannbehandling
+  for personer med sterk angst for tannbehandling (inkl. torturutsatte)
+  og gratis oppfølging for rusmiddelavhengige.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 458 L (2024–2025); votering_id 25387, 25389"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-458l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1: KrF har ingen skriftlig begrunnelse spesifikt om
+  universaliseringsspørsmålet i denne innstillingen. Deres eget forslag
+  er avgrenset til navngitte sårbare grupper, ikke en universell
+  rettighet for hele befolkningen — samme målrettede logikk som FrPs
+  forslag, i tråd med det snudde utsagnets premiss. Lavere
+  attribution_confidence av denne grunn. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Se evidence/101-tannhelsereform-kontekst.yaml.
+retrieved_at: "2026-09-24"

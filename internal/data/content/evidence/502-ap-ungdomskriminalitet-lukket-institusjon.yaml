@@ -1,0 +1,35 @@
+id: ev-2026-04-16-ap-ungdomskriminalitet-lukket-institusjon
+statement_id: utsagn-51
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-04-16"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: "Ap deler bekymringen for barn som faller mellom flere stoler, men har ingen egen tekst om akkurat FrP/Høyres forslag om ubegrenset varighet."
+claim_action: >
+  Ap, Sp og MDG skriver sammen at de er enige med forslagsstillerne i
+  at barn under kriminell lavalder som begår alvorlig kriminalitet ofte
+  faller mellom flere stoler, og viser til et pågående pilotforsøk med
+  et forsterket institusjonstilbud. Denne felles merknaden tar ikke
+  stilling til varighetsspørsmålet i forslag nr. 1 spesifikt. Ap stemte
+  mot forslag nr. 1 (votering 27111: 43 for, 58 mot).
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Arbeiderpartiet, Senterpartiet og
+  Miljøpartiet De Grønne er enige med forslagsstillerne i at det er en
+  utfordring at barn under den strafferettslige lavalderen som begår
+  alvorlig kriminalitet, ofte faller mellom flere stoler»
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 173 S (2025–2026); votering 27111 (16.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-173s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: Ap deler den underliggende diagnosen (barn faller
+  mellom flere stoler) og viser til at et pilotforsøk allerede pågår,
+  men har ingen egen tekst som tar direkte stilling til om lukket
+  institusjonsopphold bør kunne vare "så lenge det er behov for det".
+  Mot-stemmen er reell og dokumentert (via stemmegivning), men den
+  spesifikke begrunnelsen for akkurat denne varighetsutformingen er
+  det ikke. Bekreftet [OK] i votes.py: Ap 0 for / 32 mot.
+retrieved_at: "2026-09-27"

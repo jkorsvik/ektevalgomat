@@ -1,0 +1,65 @@
+id: ev-2023-03-14-utenlandsk-paavirkning-kontekst
+statement_id: utsagn-04
+party_id: ""
+actor: "Justiskomiteen (samlet innstilling)"
+date: "2023-03-14"
+evidence_type: faktakontekst
+evidence_class: fakta
+scan_summary: >
+  Innst. 231 S (2022–2023): Høyres representantforslag (Dokument 8:51 S)
+  om styrking av rikets sikkerhet og kontraetterretning inneholdt et
+  konkret forslag om at regjeringen umiddelbart skulle igangsette en
+  kartlegging av uønsket informasjonspåvirkning fra utenlandske aktører
+  i forbindelse med valgene i 2023 og 2025 — det avviste forslaget
+  utsagn-04 (i sin snudde form, se nedenfor) spør om Ap/Sps "allerede
+  ivaretatt"-innvending mot. Forslaget (endelig forslagsnummer 6, fremmet
+  av Høyre og Venstre) fikk 32 for og 69 mot, og falt.
+claim_action: >
+  Representantforslagets opprinnelige forslagspunkt 7 (Høyres syv
+  forslagsstillere, ledet av Sveinung Stensland og Ine Eriksen Søreide)
+  ba regjeringen "umiddelbart igangsette en kartlegging av uønsket
+  informasjonspåvirkning fra utenlandske aktører i forbindelse med
+  kommune- og fylkestingsvalget i 2023 og stortingsvalget i 2025.
+  Kartleggingen skal blant annet fange opp forsøk på påvirkning av
+  nordmenns virkelighetsoppfatning, verdier og tillit over tid." I
+  komiteens endelige, omnummererte forslagsliste ble dette forslag 6,
+  fremmet av Høyre og Venstre alene (de øvrige forslagsstillerne fra
+  dokumentet, alle Høyre, sto ikke bak den endelige forslagsteksten som
+  Venstre-medlem). Votering 2023-03-14, votering_id 20371: 32 for
+  (H 20, V 4, KrF 2, MDG 2, Rødt 4), 69 mot (Ap 30, FrP 13, SV 8, Sp 17,
+  Pasientfokus 1) — kryssjekket per parti mot
+  data.stortinget.no/eksport/voteringsresultat. Forslaget falt. Den
+  eneste delen av representantforslaget som faktisk ble vedtatt
+  (komiteens tilråding, samlet flertall H/FrP/SV/V, enstemmig) gjaldt
+  endringer i eksportkontrollforskriften — et annet tema, ikke kartlegging.
+verbatim_excerpt: >
+  Stortinget ber regjeringen umiddelbart igangsette en kartlegging av
+  uønsket informasjonspåvirkning fra utenlandske aktører i forbindelse
+  med kommune- og fylkestingsvalget i 2023 og stortingsvalget i 2025.
+  Kartleggingen skal blant annet fange opp forsøk på påvirkning av
+  nordmenns virkelighetsoppfatning, verdier og tillit over tid.
+status: forslag_falt
+position: 0
+source_tier: A
+source_name: "Innst. 231 S (2022–2023); votering_id 20371"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2022-2023/inns-202223-231s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Faktakontekst uten partiposisjon (position: 0, ingen part_id) — se de
+  ni egne partifilene (52–60) for hvert partis stemme og eventuelle egen
+  merknad. Utsagn-04 ble snudd 2026-09-27 til Ap/Sps egen "allerede
+  ivaretatt"-argumentasjon slik at ikke alle utsagn peker samme vei. Et parti som stemte FOR dette
+  kartleggingsforslaget nå er kodet UENIG i at dagens innsats er god
+  nok, og omvendt for Ap/Sp/SV/FrP som stemte mot. Merk
+  presisjonsnyansen mot den opprinnelige ordlyden: forslaget ber om
+  kartlegging av "informasjonspåvirkning" generelt (bakgrunnsteksten
+  viser til FFI-rapporter om desinformasjon i sosiale medier spesifikt,
+  men selve forslagsteksten nevner ikke "sosiale medier" som eget vilkår)
+  og sier ikke eksplisitt "informere offentligheten" — FFI-modellen
+  forslaget bygger på (FFI-rapport 21/02746) er riktignok selv en
+  offentlig rapport, så "informere offentligheten" er en rimelig
+  underforstått konsekvens, ikke en ordrett del av forslagsteksten. Tett
+  nok til å kode partiposisjoner på, i motsetning til Innst. 275 L
+  (utsagn-02) og Innst. 303 S (utsagn-04s tidligere avviste kandidat) som
+  begge testet en reelt annen problemstilling.
+retrieved_at: "2026-09-24"

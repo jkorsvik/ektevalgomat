@@ -1,0 +1,29 @@
+id: ev-2024-mdg-mineralselskap-mot
+statement_id: utsagn-17
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2024-05-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG er del av H/FrP/V/MDG-koalisjonen som ønsker en privat, grønn
+  industrimodell for mineralutvinning, ikke et statlig driftsselskap.
+claim_action: >
+  Votering_id 22966, MDG 2 mot, 0 for. Fra H/FrP/V/MDGs delte merknad:
+  gruvedrift i Norge kan utvikles som grønn industri med krav basert
+  på internasjonale standarder for bærekraftig mineralvirksomhet —
+  rettet mot rammevilkår for eksisterende (private) aktører.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 388 S (2023–2024); votering_id 22966"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-388s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -1 (ikke -2): MDG deler H/FrP/Vs generelle "grønn industri"-
+  linje, men uten en direkte imøtegåelse av SV/Rødts statlig-selskap-
+  argument spesifikt. Verdt å merke: MDG stemte MED SV/Rødt på flere
+  andre forslag i samme innstilling (statement 17 er ett av få der de
+  splittes).
+retrieved_at: "2026-09-24"

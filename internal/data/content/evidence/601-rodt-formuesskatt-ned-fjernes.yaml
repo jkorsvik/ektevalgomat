@@ -1,0 +1,40 @@
+id: ev-2026-innst2s-rodt-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: rodt
+actor: "Rødt (finanskomiteen)"
+date: "2025-12 (budsjettinnstilling)"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt vil gjøre formuesskatten mer progressiv, ikke trappe den ned — høyere bunnfradrag for vanlige folk, høyere satser og et nytt trinn for de største formuene."
+claim_action: >
+  Rødts hovedmerknad i Innst. 2 S (2025–2026, nasjonalbudsjettet 2026)
+  sier eksplisitt at målet ikke er at flest mulig skal betale
+  formuesskatt, og at Rødt derfor vil heve bunnfradraget — men samtidig
+  øke satsene for de største formuene og innføre et nytt, høyere trinn.
+verbatim_excerpt: >
+  Det er ikke et mål i seg selv at flest mulig skal betale
+  formuesskatt. For å vri formuesskatten mer mot toppen av
+  formuespyramiden foreslår Rødt å øke bunnfradraget til 2,2 mill.
+  kroner. [...] Til gjengjeld foreslår Rødt å øke skattesatsene for
+  større formuer og å innføre en tredje sats rettet mot de med over
+  100 mill. kroner i formue.
+status: fremmet
+position: -2
+source_tier: A
+source_name: "Innst. 2 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+consistency_flag: consistent
+context_note: >
+  Kodet -2: Rødt vil eksplisitt IKKE trappe ned eller fjerne
+  formuesskatten — de vil gjøre den mer progressiv (høyere bunnfradrag,
+  men høyere satser og et nytt, tredje trinn for de største formuene),
+  det direkte motsatte av utsagnets premiss. Tier A (finanskomiteens
+  innstilling, Rødts egen hovedmerknad om Rødts alternative
+  statsbudsjett). Rødts arbeidsprogram 2025–2029 (s. 5, se fil 603)
+  peker samme vei: «Øke skatten på store formuer i form av en
+  formuesskatt med økt bunnfradrag og flere innslagspunkter med
+  økende skattesats». consistency_flag=consistent: samme merknad inneholder også Rødts
+  "øke skattene for de med høyest inntekt og formue"-formulering (se
+  utsagn-53s Rødt-evidens), som peker samme vei.
+retrieved_at: "2026-09-28"

@@ -1,0 +1,26 @@
+id: ev-2025-partiprogram-krf-utflytterskatten-lempes
+statement_id: utsagn-58
+party_id: "krf"
+actor: "Kristelig Folkeparti"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF vil endre exit-skatten slik at den ikke hindrer nødvendig
+  mobilitet, men fortsatt motvirker skattemotivert utflytting.
+claim_action: >
+  KrFs partiprogram 2025–2029 sier dette med egne ord. Partiprogram,
+  ikke en Storting-avstemning.
+verbatim_excerpt: >
+  Endre exit-skatten slik at den motvirker skattemessig utﬂytting uten
+  at den samtidig hindrer nødvendig og ønskelig mobilitet.
+status: programfestet
+position: 1
+source_tier: C
+source_name: "KrFs partiprogram 2025–2029"
+source_url: "https://krf.no/content/uploads/2025/05/Partiprogram-2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: KrF vil endre reglene av hensyn til mobilitet, men
+  vil samtidig at skatten skal motvirke utflytting.
+retrieved_at: "2026-10-02"

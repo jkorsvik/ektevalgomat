@@ -1,0 +1,34 @@
+id: ev-2026-05-26-v-kjernekraft-kommersiell-for
+statement_id: utsagn-13
+party_id: v
+actor: "Venstre (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre stemte for lovendring nå, i samme merknad som Høyre: vil
+  tilrettelegge for privatfinansiert kjernekraft, uttrykkelig uten
+  statlig subsidiering eller eierskap, men vil ikke la det bremse
+  utbygging av fornybar energi.
+claim_action: >
+  Forslag 1 og 2, votering_id 27722, V 2 for. Delt merknad med Høyre:
+  "disse medlemmer mener man bør slippe alle kraftformer til og ha en
+  mest mulig teknologinøytral tilnærming."
+verbatim_excerpt: >
+  "Det vises videre til at disse medlemmer på sikt ønsker å
+  tilrettelegge for at private kan finansiere og bygge ut kjernekraft
+  i Norge, med tre tydelige forbehold: Muligheten for kjernekraft i
+  fremtiden må ikke bli en sovepute mot å bygge ut mer fornybar kraft
+  og nett i dag [...]. Det er ikke aktuelt med statlige subsidier
+  eller eierskap. Det skal ikke kompromisses på sikkerhet."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 278 S (2025-2026); votering_id 27722"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2, samme grunnlag som Høyre (delt merknad, identisk
+  resonnement og tre forbehold). Se
+  evidence/91-kjernekraft-kommersiell-kontekst.yaml.
+retrieved_at: "2026-09-24"

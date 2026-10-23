@@ -1,0 +1,17 @@
+id: utsagn-07
+number: 7
+dimension: "Norsk handlefrihet"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne?"
+case_tag: energimarked_suverenitet
+short_name: "Beholde dagens EØS-tilknytning i energimarkedet"
+text: >
+  Norge bør beholde dagens EØS-tilknytning til EUs
+  energimarkedsregelverk, inkludert ACERs rolle, uten nye nasjonale
+  begrensninger.
+practical_stakes:
+  enig: >
+    Norge beholder dagens EØS-tilknytning til EUs energimarkedsregelverk og
+    ACERs rolle uendret, uten nye nasjonale begrensninger på kraftmarkedet.
+  uenig: >
+    Norge innfører nye nasjonale begrensninger på energimarkedet, eller
+    endrer dagens EØS-tilknytning til EUs energiregelverk.

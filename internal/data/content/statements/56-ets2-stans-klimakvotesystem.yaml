@@ -1,0 +1,18 @@
+id: utsagn-56
+number: 56
+dimension: "Finansiering av fellesskapet"
+primary_question: "Hvordan betaler vi for fellesgodene, og hvem bærer kostnaden nå og om 30 år?"
+case_tag: ets2_stans_klimakvotesystem
+short_name: "Stans i EUs klimakvotesystem (ETS2)"
+text: >
+  Norge bør stanse den nasjonale gjennomføringen av EUs nye
+  klimakvotesystem (ETS2).
+practical_stakes:
+  enig: >
+    Norge stanser eller utsetter innføringen av ETS2, EUs
+    klimakvotesystem for utslipp fra blant annet veitransport og bygg,
+    som ellers vil gi en egen CO2-pris på drivstoff og brensel i
+    tillegg til dagens avgifter.
+  uenig: >
+    Norge fortsetter gjennomføringen av ETS2 som planlagt, og innretter
+    seg etter systemet slik det innføres i EU.

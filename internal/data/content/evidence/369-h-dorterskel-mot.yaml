@@ -1,0 +1,21 @@
+id: ev-2026-h-dorterskel-mot
+statement_id: utsagn-29
+party_id: h
+actor: "Høyre"
+date: "2026-05-10"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Høyre stemte mot forslaget, uten en egen dokumentert merknad om
+  dørterskeltjenesten spesifikt.
+claim_action: "Votering_id 27675, Høyre 14 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 280 S (2025–2026); votering_id 27675"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: ingen egen Høyre-merknad om dette forslaget finnes.
+retrieved_at: "2026-09-24"

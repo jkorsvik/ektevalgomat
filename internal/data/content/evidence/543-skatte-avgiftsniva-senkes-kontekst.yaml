@@ -1,0 +1,33 @@
+id: ev-2026-partiprogram-skatte-avgiftsniva-senkes-kontekst
+statement_id: utsagn-55
+party_id: ""
+actor: "Faktakontekst"
+date: "2025-2029 (partiprogramperiode)"
+evidence_type: kontekst
+evidence_class: fakta
+scan_summary: "Utsagnet spør om det SAMLEDE skatte- og avgiftsnivået (ikke enkeltskatter) bør senkes, selv om det krever strengere prioritering av statens utgifter."
+claim_action: >
+  Kontekstfil for utsagn-55. Kildene under er de ni partienes egne
+  program for 2025-2029 (tier C). Kun setninger som eksplisitt gjelder
+  det SAMLEDE/TOTALE skatte- og avgiftsnivået er brukt — en setning om
+  å redusere skatt for én bestemt gruppe (f.eks. lavtlønte) er ikke i
+  seg selv et svar på om det TOTALE nivået skal ned, siden det kan
+  finansieres ved å øke andre skatter. Sp og MDG har slike målrettede,
+  men ikke totalnivå-spesifikke, setninger og er derfor "Ikke vurdert"
+  her. Rødt: programmet (lastet ned i nettleser 28.09.2026) har en
+  eksplisitt setning om at mer skal finansieres i fellesskap via
+  skatter og avgifter (fil 603).
+status: kontekst
+position: null
+source_tier: C
+source_name: "Partiprogrammer 2025–2029 (flere partier), se enkeltfiler"
+source_url: "https://www.arbeiderpartiet.no/politikk/partiprogram/"
+claim_confidence: dokumentert
+context_note: >
+  Sju av ni partier har en eksplisitt, ordrett setning om det samlede
+  nivået (tre for å senke, tre for å holde det uendret, én for å øke
+  det). To partier
+  (Sp, MDG) har bare målrettede skatteendringer uten en klar
+  helhetspåstand, og er utelatt for å unngå å overtolke en
+  omfordelingssetning som en totalnivå-posisjon.
+retrieved_at: "2026-09-27"

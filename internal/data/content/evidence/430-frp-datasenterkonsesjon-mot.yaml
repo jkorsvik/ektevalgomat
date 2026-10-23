@@ -1,0 +1,25 @@
+id: ev-2026-frp-datasenterkonsesjon-mot
+statement_id: utsagn-11
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2026-03-01"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  FrP stemte mot, uten en egen dokumentert merknad om
+  konsesjonssystemet spesifikt.
+claim_action: "Votering_id 27047, FrP 28 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 140 S (2025–2026); votering_id 27047"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-140s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: ingen egen FrP-merknad om et nasjonalt konsesjonssystem
+  for datasentre finnes i innstillingen. FrP og Ap er de eneste to
+  partiene som stemmer sammen mot forslaget, mens de øvrige syv
+  partiene (helt eller delvis) støtter det — den bredeste
+  koalisjonen mot en enkelt for/mot-front i hele dette datasettet.
+retrieved_at: "2026-09-24"

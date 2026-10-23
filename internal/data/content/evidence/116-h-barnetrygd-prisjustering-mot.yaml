@@ -1,0 +1,35 @@
+id: ev-2026-02-10-h-barnetrygd-prisjustering-mot
+statement_id: utsagn-31
+party_id: h
+actor: "Høyre (familie- og kulturkomiteen)"
+date: "2026-02-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte mot. Til forskjell fra FrPs prinsipielle
+  arbeidslinje-argument, begrunner Høyre sin motstand med at slike
+  tiltak bør sikres gjennom kommunenes frie inntekter og den ordinære
+  budsjettbehandlingen, ikke gjennom en Storting-fastsatt automatisk
+  mekanisme.
+claim_action: >
+  Votering_id 26942, H 0 for, 14 mot.
+verbatim_excerpt: >
+  "Komiteens medlemmer fra Fremskrittspartiet og Høyre [...] mener at
+  dette sikres best ved å styrke kommunenes frie inntekter og ikke
+  gjennom ytterligere øremerking fra Stortinget. [...] Disse medlemmer
+  mener dette har budsjettmessige konsekvenser, og at slike tiltak må
+  ses i sammenheng med arbeidet med statsbudsjettet."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 126 S (2025–2026); votering_id 26942"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: Høyres egen begrunnelse er mer prosessuell
+  (kommunal frihet, budsjettbehandling) enn FrPs prinsipielle
+  arbeidslinje-argument, men peker samme vei som det snudde utsagnet —
+  en mildere, mer strukturell innvending mot denne SPESIFIKKE bindende
+  mekanismen, ikke en generell avvisning av offentlig omfordeling til
+  barnefamilier. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Se evidence/111-barnetrygd-prisjustering-kontekst.yaml.
+retrieved_at: "2026-09-24"

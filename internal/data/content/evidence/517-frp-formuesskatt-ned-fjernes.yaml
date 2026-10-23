@@ -1,0 +1,29 @@
+id: ev-2026-partiprogram-frp-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2025 (landsmøtevedtatt partiprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "FrPs program går eksplisitt inn for å avvikle formuesskatten, uten avgrensning til en bestemt type formue."
+claim_action: >
+  FrPs partiprogram 2025–2029 (kapittel om personbeskatning) lister
+  "avvikle formuesskatten" som et eget, ubetinget punkt, og begrunner
+  det separat med at en stor andel betales av pensjonister og vanlige
+  lønnsmottakere, ikke bare av de rikeste.
+verbatim_excerpt: >
+  Fremskrittspartiet ønsker å avvikle formuesskatten. En stor andel
+  av formuesskatten betales av pensjonister og vanlige lønnsmottakere.
+  [...] avvikle formuesskatten
+status: programfestet
+position: 2
+source_tier: C
+source_name: "Fremskrittspartiets partiprogram 2025–2029"
+source_url: "https://www.frp.no/files/Program/2025/FrP-Partiprogram-2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eksplisitt, ordrett, ubetinget programpunkt uten
+  avgrensning til en bestemt formuestype — matcher utsagnets fulle
+  påstand ("trappes ned og på sikt fjernes"), ikke bare en delvis
+  reduksjon. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

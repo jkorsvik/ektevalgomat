@@ -1,0 +1,32 @@
+id: ev-2026-04-30-sv-statsborgerskap-tilbakekall-tidsfrist
+statement_id: utsagn-49
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2026-04-30"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "SV, Rødt og MDG foreslo sammen en foreldelsesfrist for tilbakekall av statsborgerskap — falt 21-80."
+claim_action: >
+  SV, Rødt og MDG fremmet sammen forslag nr. 4 i Innst. 232 S: at
+  regjeringen skal utrede og fremme forslag til en foreldelsesfrist for
+  tilbakekall av statsborgerskap. Begrunnelsen viser til at Norge i dag
+  praktiserer tilbakekall uten noen foreldelsesfrist, og at praksisen
+  har blitt kritisert flere ganger. Votering 27523 (30.04.2026): falt
+  21 mot 80, for fra SV, Rødt, MDG, KrF og Venstre.
+verbatim_excerpt: >
+  «Disse medlemmer mener at Norge allerede har strenge regler for
+  erverv av norsk statsborgerskap. Disse medlemmer viser blant annet
+  til at Norge praktiserer tilbakekall av statsborgerskap uten
+  foreldelsesfrist. Disse medlemmer viser til at denne praksisen ved
+  flere anledninger har blitt kritisert.»
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 232 S (2025–2026), forslag 4; votering_id 27523 (30.04.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: eget, felles forslag med egen begrunnelse (delt med Rødt og
+  MDG). Bekreftet [OK] i votes.py: 21 for (SV 5, Rødt 5, MDG 5, KrF 4,
+  Venstre 2) / 80 mot.
+retrieved_at: "2026-09-27"

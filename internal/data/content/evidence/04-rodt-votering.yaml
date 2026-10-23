@@ -1,0 +1,38 @@
+id: ev-2026-04-21-rodt-votering
+statement_id: utsagn-01
+party_id: rodt
+actor: "Rødt"
+date: "2026-04-21"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt fremmet forslag om lobbyistregister med sanksjonshjemmel — falt."
+claim_action: >
+  Fremmet eget forslag nr. 1 (Sofie Marhaug) om at regjeringen skal
+  nedsette et utvalg for å utrede innføring av et lobbyistregister
+  hjemlet i åpenhetsloven, med registrerings- og innrapporteringsplikt og
+  adgang til sanksjoner ved brudd. Forslaget ble votert over og falt.
+verbatim_excerpt: >
+  "Stortinget ber regjeringen nedsette et utvalg med mandat til å utrede
+  hvordan et lobbyistregister hjemlet i åpenhetsloven eller annen egnet
+  lov kan innføres, og på bakgrunn av utvalgets arbeid komme tilbake til
+  Stortinget med lovforslag om innføring av et slikt register. Forslaget
+  må inneholde registrerings- og innrapporteringsplikt for lobbyister som
+  bedriver påvirkningsarbeid overfor stortingsrepresentanter,
+  Statsministerens kontor eller den politiske ledelsen i departementene,
+  samt åpne for at forvaltningen har adgang til å ilegge sanksjoner ved
+  brudd på reglementet."
+status: forkastet
+position: 2
+source_tier: A
+source_name: "Voteringsdetaljer, forslag nr. 1, 21.04.2026"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=105664&dnid=1&vt=27260"
+claim_confidence: dokumentert
+context_note: >
+  Posisjon oppdatert 2026-09-23 etter at eksakt forslagstekst ble hentet
+  og lest fra Stortingets voteringsdetaljer (tidligere: ukodet, se git-
+  historikk for denne filen). Forslaget argumenterer FOR et lobbyregister
+  i prinsippet — mer omfattende enn presidentskapets forslag (dekker
+  både Stortinget og regjeringsapparatet, med registreringsplikt og
+  sanksjonshjemmel), ikke imot. At forslaget falt betyr at Rødts konkrete
+  modell ikke fikk flertall, ikke at Rødt er mot et register.
+retrieved_at: "2026-09-23"

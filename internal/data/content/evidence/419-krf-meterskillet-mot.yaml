@@ -1,0 +1,23 @@
+id: ev-2024-krf-meterskillet-mot
+statement_id: utsagn-18
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2024-05-23"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  KrF stemte mot, uten en egen dokumentert merknad om dette
+  spesifikt.
+claim_action: "Votering_id 22561, KrF 2 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 264 S (2023–2024); votering_id 22561"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-264s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1: ingen egen KrF-merknad om dette forslaget finnes, kun
+  stemmen mot 28-meter-grensen, i tråd med det snudde utsagnets
+  premiss. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

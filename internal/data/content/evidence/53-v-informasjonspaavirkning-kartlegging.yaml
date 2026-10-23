@@ -1,0 +1,40 @@
+id: ev-2023-03-14-v-informasjonspaavirkning-kartlegging
+statement_id: utsagn-04
+party_id: v
+actor: "Venstre (Ingvild Wetrhus Thorsvik, justiskomiteen)"
+date: "2023-03-14"
+evidence_type: komitemerknad
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre var medforslagsstiller (med Høyre) på forslag 6 om umiddelbar
+  kartlegging av utenlandsk informasjonspåvirkning mot valgene i 2023 og
+  2025, og fremmet i tillegg et eget, ytterligere forslag (7) om klare
+  ansvarsforhold for håndtering av informasjonspåvirkning. Stemte for begge.
+claim_action: >
+  Forslag 6 (Høyre og Venstre), votering_id 20371: Venstre 4 for, 0 mot
+  (1 ikke til stede). Venstre fremmet også, alene, forslag 7 ("Stortinget
+  ber regjeringen sikre klare ansvarsforhold i spørsmål om håndtering av
+  informasjonspåvirkning i den offentlige debatten"), votering_id 20370:
+  Venstre 4 for — kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat. Begge forslag falt i
+  plenum.
+verbatim_excerpt: >
+  Stortinget ber regjeringen umiddelbart igangsette en kartlegging av
+  uønsket informasjonspåvirkning fra utenlandske aktører i forbindelse
+  med kommune- og fylkestingsvalget i 2023 og stortingsvalget i 2025.
+status: forslag_avvist_av_flertallet
+position: -2
+source_tier: A
+source_name: "Innst. 231 S (2022–2023); votering_id 20371, 20370"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2022-2023/inns-202223-231s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at dagens innsats er god nok): Venstre er
+  medforslagsstiller på hovedforslaget (6) og fremmet i tillegg et eget,
+  ytterligere ansvarsklargjøringsforslag (7) på samme tema — det sterkeste
+  signalet av alle ni partier sammen med Høyre, og det motsatte av å mene
+  dagens innsats er tilstrekkelig. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2, men det faktiske
+  forslagssporet i verbatim_excerpt/claim_action er uendret. Se
+  evidence/51-utenlandsk-paavirkning-kontekst.yaml for presisjonsnyansen
+  mot den opprinnelige ordlyden.
+retrieved_at: "2026-09-24"

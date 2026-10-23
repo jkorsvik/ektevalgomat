@@ -1,0 +1,44 @@
+id: ev-2026-05-26-frp-krafteksport-for
+statement_id: utsagn-08
+party_id: frp
+actor: "Fremskrittspartiet (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP er medforslagsstiller med sin egen, distinkte begrunnelse
+  (prissmitte fra utenlandskablene). 28 av 29 fremmøtte stemte for,
+  1 stemte mot.
+claim_action: >
+  Votering_id 28137, FrP 28 for, 1 mot. Fra FrPs egen merknad: "Etter
+  disse medlemmers syn er det en svakhet ved dagens modell at
+  eksportkapasiteten i liten grad justeres dynamisk i takt med den
+  faktiske forsyningssituasjonen. Disse medlemmer mener derfor det er
+  nødvendig å etablere en tydelig operativ styringsmekanisme hvor
+  Statnett pålegges å vurdere og gis fullmakt til å redusere
+  eksportkapasiteten når fyllingsgraden i sentrale vannmagasiner er
+  under historisk mediannivå."
+verbatim_excerpt: >
+  Etter disse medlemmers syn er det en svakhet ved dagens modell at
+  eksportkapasiteten i liten grad justeres dynamisk i takt med den
+  faktiske forsyningssituasjonen. Disse medlemmer mener derfor det er
+  nødvendig å etablere en tydelig operativ styringsmekanisme
+  hvor Statnett pålegges å vurdere og gis fullmakt til å redusere
+  eksportkapasiteten når fyllingsgraden i sentrale vannmagasiner er
+  under historisk mediannivå.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28137"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at dagens styring er god nok): FrP
+  medforslagsstiller med egen, detaljert begrunnelse om prissmitte fra
+  North Sea Link/NordLink, som direkte motsier det snudde utsagnets
+  premiss om at dagens ordning holder. Ett avvikende FrP-medlem (1 av
+  29 fremmøtte stemte mot) er ikke navngitt i innstillingen — verdt å
+  følge opp ved en senere referatgjennomgang. Utsagnet ble snudd
+  2026-09-27 til flertallets (Ap/H/MDG/V) forsvar av status quo, slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-24"

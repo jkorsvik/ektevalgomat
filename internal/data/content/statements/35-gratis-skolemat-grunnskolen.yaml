@@ -1,0 +1,16 @@
+id: utsagn-35
+number: 35
+dimension: "Barns muligheter"
+primary_question: "I hvilken grad kompenserer samfunnet for forhold barn ikke har valgt?"
+case_tag: gratis_skolemat_grunnskolen
+short_name: "Gratis skolemat for alle grunnskoleelever"
+text: >
+  Regjeringen bør legge fram en opptrappingsplan for et daglig, sunt og
+  enkelt skolemåltid for alle elever i grunnskolen.
+practical_stakes:
+  enig: >
+    Regjeringen legger fram en opptrappingsplan for et daglig, sunt og
+    enkelt skolemåltid for alle grunnskoleelever.
+  uenig: >
+    Ingen slik opptrappingsplan legges fram. Det innføres ikke et daglig
+    skolemåltid for alle grunnskoleelever.

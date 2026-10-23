@@ -1,0 +1,28 @@
+id: ev-2026-partiprogram-venstre-formuesskatt-ned-fjernes
+statement_id: utsagn-52
+party_id: v
+actor: "Venstre"
+date: "2025 (landsmøtevedtatt stortingsvalgprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "Venstres program går inn for å fjerne formuesskatten på arbeidende kapital, med delvis kompensasjon andre steder — en avgrenset, ikke fullstendig, reduksjon."
+claim_action: >
+  Venstres stortingsvalgprogram 2025–2029 sier partiet vil fjerne
+  formuesskatten på arbeidende kapital, og delvis kompensere
+  inntektsbortfallet gjennom en moderat økning av selskapsskatten.
+verbatim_excerpt: >
+  «fjerne formuesskatten på arbeidende kapital, og delvis kompensere
+  inntektsbortfallet gjennom en moderat økning av selskapsskatten»
+status: programfestet
+position: 1
+source_tier: C
+source_name: "Venstres stortingsvalgprogram 2025–2029"
+source_url: "https://www.venstre.no/politikk/partiprogram/program-2025-2029/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1, ikke +2: dette er en avgrenset reduksjon (kun "arbeidende
+  kapital", ikke hele formuesskatten) med en uttalt kompensasjon
+  andre steder — samme retning som utsagnet, men ikke den fulle
+  "på sikt fjernes"-påstanden Venstre ikke uttrykker eksplisitt for
+  formuesskatten som helhet. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

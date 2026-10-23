@@ -1,0 +1,28 @@
+id: ev-2025-12-18-v-utflytterskatten-lempes-forslag
+statement_id: utsagn-58
+party_id: "v"
+actor: "Venstre"
+date: "2025-12-18"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre foreslo i budsjettet for 2026 å endre utflytterskatten for å
+  sikre gründeres bevegelsesfrihet.
+claim_action: >
+  Forslag nr. 8 fra Venstre i Innst. 3 S (2025–2026), votert sammen med
+  Venstres forslag 1-15 i votering 26616: V 2 for, alle andre partier
+  mot (FrP 1 for, 28 mot). Forslaget falt.
+verbatim_excerpt: >
+  Stortinget ber regjeringen fremme forslag om endringer i
+  utflytterskatten som sikrer at bevegelsesfriheten til norske gründere
+  opprettholdes.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 3 S (2025–2026), forslag 8; votering 26616"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-003s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: Venstres eget forslag. De andre partienes stemme mot er ikke
+  kodet herfra, fordi 15 ulike forslag ble votert samlet.
+retrieved_at: "2026-10-02"

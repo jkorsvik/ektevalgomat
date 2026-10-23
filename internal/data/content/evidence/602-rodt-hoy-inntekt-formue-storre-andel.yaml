@@ -1,0 +1,36 @@
+id: ev-2026-innst2s-rodt-hoy-inntekt-formue-storre-andel
+statement_id: utsagn-53
+party_id: rodt
+actor: "Rødt (finanskomiteen)"
+date: "2025-12 (budsjettinnstilling)"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt vil kutte skattene for de under 800 000 kroner i inntekt, og til gjengjeld øke skattene for de med høyest inntekt og formue."
+claim_action: >
+  Rødts hovedmerknad i Innst. 2 S (2025–2026, nasjonalbudsjettet 2026)
+  sier eksplisitt at Rødt vil kutte skatten for de med under 800 000
+  kroner i årsinntekt, og til gjengjeld øke skattene for de med høyest
+  inntekt og formue.
+verbatim_excerpt: >
+  Til gjengjeld foreslår Rødt å øke skattene for de med høyest inntekt
+  og formue og å skjerpe skatteleggingen av selskapsoverskudd og
+  bankvirksomhet for å sikre finansiering av velferdstjenestene.
+status: fremmet
+position: 2
+source_tier: A
+source_name: "Innst. 2 S (2025–2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+consistency_flag: consistent
+context_note: >
+  Kodet +2: eksplisitt, ordrett formulering direkte på utsagnets
+  premiss — høy inntekt OG stor formue skal betale mer, finansiert ved
+  at de under 800 000 kroner i inntekt betaler mindre. Tier A
+  (finanskomiteens innstilling, Rødts egen hovedmerknad). Rødts
+  arbeidsprogram 2025–2029 (s. 5, se fil 603) peker samme vei: «Ha en
+  mer progressiv inntektsskatt, med økt skatt på høye inntekter» og
+  «Øke skatten på store formuer». consistency_flag=consistent:
+  samme merknad inneholder også Rødts mer detaljerte forslag om en mer
+  progressiv formuesskatt (se utsagn-52s Rødt-evidens), som peker
+  samme vei.
+retrieved_at: "2026-09-28"

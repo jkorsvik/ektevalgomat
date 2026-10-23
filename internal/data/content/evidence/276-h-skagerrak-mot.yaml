@@ -1,0 +1,24 @@
+id: ev-2026-05-26-h-skagerrak-mot
+statement_id: utsagn-09
+party_id: h
+actor: "Høyre"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Høyre stemte mot, i tråd med flertallets generelle linje om at
+  kraftutveksling styrker forsyningssikkerheten (se evidence/268).
+  Ingen Skagerrak-spesifikk merknad.
+claim_action: "Votering_id 28136, Høyre 12 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28136"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: samme generelle flertallslinje som på utsagn-08
+  (evidence/268), gjenbrukt her uten en Skagerrak-spesifikk
+  begrunnelse.
+retrieved_at: "2026-09-24"

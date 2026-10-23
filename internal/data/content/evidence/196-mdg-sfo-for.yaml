@@ -1,0 +1,29 @@
+id: ev-2026-01-13-mdg-sfo-for
+statement_id: utsagn-32
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2026-01-13"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  MDG stemte for, men har ingen egen eller delt merknad om denne
+  saken i innstillingens fulltekst — MDG er ikke medforslagsstiller
+  på forslag nr. 1, men stemmer likevel sammen med Ap, SV, Sp og
+  Rødt.
+claim_action: >
+  Votering_id 26667, MDG 5 for, 0 mot. Ingen MDG-merknad om SFO-loven
+  funnet i innstillingens fulltekst.
+status: forslag_vedtatt_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 78 L (2025–2026); votering_id 26667"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-078l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1 (svakere enn +2) fra stemmetallet alene: MDG stemmer med
+  Ap/SV/Sp/Rødt-blokken og er dermed en femte "for"-stemme utover de
+  fire navngitte medforslagsstillerne, men uten en egen skriftlig
+  begrunnelse er det ikke mulig å avgjøre om dette er en prinsipiell,
+  varig posisjon eller en enkeltsak-tilslutning.
+retrieved_at: "2026-09-24"

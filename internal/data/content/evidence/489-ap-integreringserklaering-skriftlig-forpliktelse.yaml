@@ -1,0 +1,33 @@
+id: ev-2026-05-19-ap-integreringserklaering-skriftlig-forpliktelse
+statement_id: utsagn-50
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Ap støtter plikten til å signere en integreringserklæring, som et rammesettende tillegg, ikke et kontrolltiltak."
+claim_action: >
+  Ap og Høyre skriver sammen at de støtter forslaget om å innføre en
+  plikt til å signere en integreringserklæring for deltakere i
+  introduksjonsprogrammet, som et tillegg tidlig i integreringsløpet —
+  ikke som erstatning for dialog, opplæring og eksisterende lovverk.
+  Ap er del av komiteflertallet som fremmet loven, og stemte for
+  (votering 27779: 54 for, 44 mot).
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Arbeiderpartiet og Høyre støtter forslaget
+  om å innføre en plikt til å signere en integreringserklæring for
+  deltakere i introduksjonsprogrammet. [...] Erklæringen er ment som et
+  rammesettende tillegg tidlig i integreringsløpet, ikke som et
+  kontrolltiltak eller erstatning for dialog, opplæring og eksisterende
+  lovverk.»
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 309 L (2025–2026); votering 27779 (19.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: egen (delt med Høyre) begrunnelse for å innføre nettopp den
+  skriftlige signeringsplikten utsagnet spør om. Bekreftet [OK] i
+  votes.py: Ap 31 for / 0 mot.
+retrieved_at: "2026-09-27"

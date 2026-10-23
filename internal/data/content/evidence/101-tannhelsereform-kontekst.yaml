@@ -1,0 +1,60 @@
+id: ev-2025-06-04-tannhelsereform-kontekst
+statement_id: utsagn-25
+party_id: ""
+actor: "Helse- og omsorgskomiteen / Stortinget i plenum"
+date: "2025-06-04"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget behandlet regjeringens forslag om lovfestet tannhelserett
+  for 25-28-åringer sammen med to opposisjonsforslag om å gå videre
+  mot en universell tannhelsetjeneste. SVs forslag om en forpliktende
+  plan for hele befolkningen innen 2030 ble avvist 9 mot 94; komiteens
+  faktiske vedtak var en vaguere, ikke-bindende stortingsmelding om
+  "gradvis" utvidelse.
+claim_action: >
+  Prop. 124 L (2024–2025, regjeringen: lovfestet rett til nødvendig
+  tannhelsehjelp for 25-28-åringer, 25 pst. egenbetaling), Dokument
+  8:96 S (2024–2025, SV: Marian Hussein, Kirsti Bergstø, Ingrid
+  Fiskaa, Grete Wold, "en videre utrulling av en tannhelsereform for
+  hele befolkningen") og Dokument 8:157 S (2024–2025, Rødt: Seher
+  Aydar, Marie Sneve Martinussen, "å gjennomføre en ordentlig
+  tannhelsereform") ble behandlet samlet i Innst. 458 L (2024–2025,
+  1669-linjers HTML-tekst lest i fulltekst). SVs forslag 1 (nummerert
+  forslag 19 i innstillingen): "Stortinget ber regjeringen fullføre
+  tannhelsereformen og legge frem en forpliktende plan som sikrer at
+  hele befolkningen er omfattet av en universell rett til
+  tannbehandling i det offentlige, på lik linje som med andre
+  helsetjenester, innen 2030." Votering_id 25387: 9 for (SV 7, MDG 2),
+  94 mot (Ap 29, Sp 18, H 22, FrP 12, R 5, V 5, KrF 2, PF 1). Komiteens
+  faktiske tilråding (votering_id 25398-25401, vedtatt, backet av Ap,
+  Sp, SV og Rødt) inneholder i stedet en langt svakere formulering
+  (Vedtak B, romertall IV): "legge frem en stortingsmelding om
+  oppfølging av anbefalingene i NOU 2024:18 [...] og gradvis utvide
+  det offentlige ansvaret for tannhelsetjenester" — ingen frist, ingen
+  bindende plan.
+status: forslag_avvist_svakere_tilraading_vedtatt
+position: null
+source_tier: A
+source_name: "Innst. 458 L (2024-2025); votering_id 25387, 25398-25401"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-458l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst, ikke en partiposisjon i seg selv. Sak_id
+  103123 kryssjekket mot data.stortinget.no/eksport/voteringer?sakid=
+  103123 (20 voteringer). Denne evidensfilen og partienes egne filer
+  dekker kun votering_id 25387 (SVs forslag 19), fordi det er den
+  ene voteringen som direkte og eksplisitt tester dette utsagnets
+  konkrete krav (bindende plan, hele befolkningen, 2030-frist) — ikke
+  Rødts egne, mer detaljerte forslag om frikort og fasing (Dokument
+  8:157 S, delvis nedstemt, delvis videreført som del av tilrådingen),
+  som tester en litt annen, mer operasjonell akse (mekanisme snarere
+  enn tidsfrist/forpliktelse) og bør kodes separat om det bygges en
+  egen statement for det. Merk: Ap og Sp stemte mot DETTE forslaget,
+  men skriver samtidig i egen merknad at de "ønsker en gradvis
+  utvidelse av den offentlige tannhelsetjenesten med mål om å
+  likestille den med andre helsetjenester" — samme mål som SVs
+  forslag, men uten bindende frist. Se partienes egne evidensfiler for
+  hvorfor dette IKKE kodes som prinsipiell motstand mot universell
+  tannhelse for disse to partiene.
+retrieved_at: "2026-09-24"

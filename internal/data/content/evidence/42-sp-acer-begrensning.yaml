@@ -1,0 +1,41 @@
+id: ev-2025-04-10-sp-acer-begrensning
+statement_id: utsagn-07
+party_id: sp
+actor: "Senterpartiet (Marit Arnstad, Lisa Marie Ness Klungland, Gro-Anita Mykjåland, energi- og miljøkomiteen)"
+date: "2025-04-10"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp fremmet Dokument 8:58 S om å avvise EUs fjerde energimarkedspakke og melde Norge ut av ACER, og stemte FOR alle fire forslagene i saken."
+claim_action: >
+  Sp var forslagsstiller til Dokument 8:58 S (2024–2025) og stemte FOR
+  på alle fire voteringer i saken: forslag nr. 2/3/5 (votering_id 24383,
+  legge ned veto og melde Norge ut av ACER: 17 for), forslag nr. 1/4
+  (votering_id 24384: 17 for), FrPs forslag nr. 6 (votering_id 24385: 17
+  for), og MOT komiteens tilråding om å avvise begge representantforslag
+  (votering_id 24386: 17 mot). Individuell votering kryssjekket mot
+  data.stortinget.no/eksport/voteringsresultat for alle fire
+  votering_id-er.
+verbatim_excerpt: >
+  "Disse medlemmer mener det er avgjørende å ivareta norsk politisk
+  styring i forvaltningen av våre naturressurser og tilhørende markeder.
+  [...] Gjennom EUs fjerde energimarkedspakke gis EUs energibyrå, ACER,
+  økt myndighet til å fatte vedtak om forhold som påvirker krafthandel
+  over landegrensene, noe som svekker den politiske styringen i
+  kraftpolitikken. På denne bakgrunn mener disse medlemmer at Norge må
+  si nei til EUs fjerde energimarkedspakke og EUs energibyrå, ACER."
+status: forslag_avvist_av_flertallet
+position: -2
+source_tier: A
+source_name: "Innst. 196 S (2024–2025); votering_id 24383-24386"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2 (sterkt uenig i at EØS-tilknytningen ikke svekker
+  kraftkontrollen): Sp var selv forslagsstiller og stemte konsekvent for
+  samtlige fire forslag som ville begrenset ACERs makt/trukket Norge ut
+  av ACER, og mot flertallets avvisning. Merknaden siterer direkte
+  bekymring for at ACER "svekker den politiske styringen i
+  kraftpolitikken" — det direkte motsatte av det snudde utsagnet
+  hevder. Utsagnet ble snudd 2026-09-27 til flertallets (Ap/H,
+  Høyesterett-baserte) forsvar av status quo, slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+retrieved_at: "2026-09-23"

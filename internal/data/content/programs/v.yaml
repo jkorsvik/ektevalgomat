@@ -1,0 +1,155 @@
+id: v
+source_name: Venstres stortingsvalgprogram 2025-2029
+source_url: https://www.venstre.no/politikk/partiprogram/program-2025-2029/
+retrieved_at: '2026-10-12'
+points:
+- dimension: Demokratisk åpenhet
+  topic: Lobbyregister
+  quote: Innføre et lobbyregister etter modell fra EU-institusjonene (EU Transparency Register), for å sikre åpenhet rundt politisk påvirkning.
+  where: Kapittel 9 Demokrati og teknologi
+  statements: ["utsagn-01"]
+  # begrunnelse: vil ha lobbyregister etter EU-modell
+- dimension: Demokratisk åpenhet
+  topic: Sanksjoner mot brudd på offentleglova
+  quote: Innføre sanksjonsmuligheter for brudd på offentleglova.
+  where: Kapittel 9 Demokrati og teknologi
+- dimension: Demokratisk åpenhet
+  topic: Desinformasjon og algoritmer
+  quote: Følge nøye med på spredning, og ta nødvendige tiltak både nasjonalt, sammen med EU, og internasjonalt for å motvirke storskala spredning av desinformasjon, spesielt gjennom algoritmer og sosiale medier.
+  where: Kapittel 9 Demokrati og teknologi
+- dimension: Norsk handlefrihet
+  topic: Redusere avhengighet av autoritære regimer
+  quote: Samarbeide med EU for å redusere avhengigheten av Kina, Russland og andre autoritære regimer innen kritiske råvarer og strategisk infrastruktur.
+  where: Kapittel 10 Utenriks og forsvar
+  statements: ["utsagn-59"]
+  # begrunnelse: vil redusere avhengigheten av autoritære regimer
+- dimension: Norsk handlefrihet
+  topic: Norsk EU-medlemskap
+  quote: At Norge skal melde seg inn i EU, og at vi derfor raskest mulig må starte forberedende arbeid inn mot en folkeavstemning.
+  where: Kapittel 10 Utenriks og forsvar
+- dimension: Norsk handlefrihet
+  topic: Ingen bilateral handelsavtale med Kina
+  quote: At Norge ikke skal inngå en bilateral handelsavtale med Kina, skrote normaliseringsavtalen og samarbeide tettere med Taiwan.
+  where: Kapittel 10 Utenriks og forsvar
+- dimension: Norsk handlefrihet
+  topic: Nasjonalt handlingsrom for nøkkelteknologier
+  quote: Gjennomgå regelverk og byråkrati for å fjerne unødvendige barrierer for forskning og bruk av nøkkelteknologier til samfunnsnyttige formål innenfor nasjonalt handlingsrom.
+  where: Kapittel 9 Demokrati og teknologi
+- dimension: Forvaltning av fellesskapets ressurser / energi
+  topic: Sluttfasen for norsk petroleumsindustri
+  quote: Ikke tildele nye lisenser på norsk sokkel og utvikle en plan for sluttfasen av norsk petroleumsindustri.
+  where: Kapittel 1 Klima og natur / Energi
+- dimension: Forvaltning av fellesskapets ressurser / energi
+  topic: Krafttilgang og strømnett
+  quote: Jevne ut prisforskjellene mellom prissonene og bidra til økt krafttilgang ved å bedre overføringskapasiteten i strømnettet.
+  where: Kapittel 1 Klima og natur / Energi
+- dimension: Forvaltning av fellesskapets ressurser / energi
+  topic: Kjernekraft
+  quote: Starte arbeidet med å fornye det regulatoriske rammeverket for atomsikkerhet og kjernekraft i Norge, med sikte på å åpne for etablering og kommersiell drift av kjernekraft.
+  where: Kapittel 1 Klima og natur / Energi
+  statements: ["utsagn-13"]
+  # begrunnelse: vil åpne for etablering av kjernekraft i Norge
+- dimension: Forvaltning av fellesskapets ressurser / energi
+  topic: Enovas virkemiddelapparat
+  quote: At Enovas virkemiddelapparat innrettes for å sikre størst mulig reduksjon i energiforbruk og kutt i klimagassutslipp.
+  where: Kapittel 1 Klima og natur / Energi
+- dimension: Forvaltning av fellesskapets ressurser / energi
+  topic: Krafttilgang for industri
+  quote: Sikre langsiktig krafttilgang for energikrevende industri.
+  where: Kapittel 5 Næring og skatt
+- dimension: Teknologisk kapasitet
+  topic: Langtidsplan for digital infrastruktur
+  quote: Utarbeide en langtidsplan for den digitale infrastrukturen.
+  where: Kapittel 9 Demokrati og teknologi
+- dimension: Teknologisk kapasitet
+  topic: KI i offentlig sektor
+  quote: Styrke gjennomføringskraft og samordning av bruk av kunstig intelligens i offentlig sektor.
+  where: Kapittel 9 Demokrati og teknologi
+- dimension: Teknologisk kapasitet
+  topic: Forsvarets cyberkapasiteter
+  quote: Styrke Forsvarets cyberkapasiteter og forsvarssektorens IKT.
+  where: Kapittel 10 Utenriks og forsvar
+- dimension: Teknologisk kapasitet
+  topic: Utdanning innen framvoksende teknologi
+  quote: Oppskalere utdanningstilbudet innenfor de nye framvoksende teknologiområdene.
+  where: Kapittel 9 Demokrati og teknologi
+- dimension: Innovasjon / omstillingsevne
+  topic: Næringsrettet forskning
+  quote: Øke bevilgningene til næringsrettet forskning i sektordepartementene betydelig.
+  where: Kapittel 2 Kunnskap / Forskning
+- dimension: Innovasjon / omstillingsevne
+  topic: Kommersialisering av forskning
+  quote: Bidra til at mer forskning kommersialiseres til nye bedrifter som skaper jobber og verdier.
+  where: Kapittel 2 Kunnskap / Forskning
+- dimension: Innovasjon / omstillingsevne
+  topic: Testinfrastruktur for grønn omstilling
+  quote: Styrke satsingen på Norsk katapult og testinfrastruktur for grønn omstilling av norsk industri innen områder som grønn skipsfart og helseteknologi.
+  where: Kapittel 5 Næring og skatt
+- dimension: Innovasjon / omstillingsevne
+  topic: Nøkkelteknologier etter Grønn plattform
+  quote: Etablere en ordning etter modell fra Grønn plattform for å stimulere utvikling og bruk av nøkkelteknologier.
+  where: Kapittel 9 Demokrati og teknologi
+- dimension: Universell grunnmur
+  topic: Kollektivtransport for barn og unge
+  quote: At barn og unge skal kunne reise gratis eller til redusert pris med kollektivtrafikk i hele landet, slik at det blir enklere for familier å reise miljøvennlig.
+  where: Kapittel 1 Klima og natur / Samferdsel
+- dimension: Universell grunnmur
+  topic: Fastlegeordningen
+  quote: Ha en god finansiering av fastlegeordningen.
+  where: Kapittel 4 Helse og omsorg
+- dimension: Universell grunnmur
+  topic: Studielån for helsepersonell i distriktene
+  quote: Ettergi deler av studielånet til helsepersonell som tar arbeid i distriktskommuner.
+  where: Kapittel 4 Helse og omsorg
+- dimension: Universell grunnmur
+  topic: Flere fastleger
+  quote: Utvide ALIS-ordningen (Allmennleger i spesialisering) slik at det blir lettere å starte som fastlege.
+  where: Kapittel 4 Helse og omsorg
+- dimension: Barns muligheter
+  topic: Barnetrygd
+  quote: Kraftig øke barnetrygden og skattlegge den.
+  where: Kapittel 8 Barn, familie og likestilling
+  statements: ["utsagn-31"]
+  # begrunnelse: vil kraftig øke barnetrygden
+- dimension: Barns muligheter
+  topic: Barnehageplass fra ett år
+  quote: Innføre løpende barnehageopptak for å sikre alle familier barnehageplass fra barnet fyller ett år.
+  where: Kapittel 2 Kunnskap / Barnehage
+- dimension: Barns muligheter
+  topic: Helsehjelp til barn i institusjon
+  quote: Gi barn og unge i institusjon nødvendig helsehjelp i institusjonen.
+  where: Kapittel 8 Barn, familie og likestilling
+- dimension: Barns muligheter
+  topic: Enslige mindreårige asylsøkere
+  quote: At enslige mindreårige asylsøkere skal være under barnevernstjenestens ansvar frem til fylte 18 år, med medfølgende etterverntilbud til fylte 25 år.
+  where: Kapittel 3 Arbeid og velferd
+- dimension: Robusthet / adaptabilitet
+  topic: Totalforsvar
+  quote: Sikre et totalforsvar som er forberedt på krise og krig, tydeliggjøre sivile myndigheters, næringslivets, industriens og frivillighetens roller, og sikre at vi benytter samfunnets samlede kompetanse best mulig.
+  where: Kapittel 6 Justis og beredskap
+- dimension: Robusthet / adaptabilitet
+  topic: Beredskap i kritisk infrastruktur og teknologi
+  quote: Styrke beredskap innen kritisk infrastruktur og teknologi, både nasjonalt og i samarbeid med EU.
+  where: Kapittel 6 Justis og beredskap
+  statements: ["utsagn-41", "utsagn-42"]
+  # begrunnelse: vil styrke beredskap i kritisk infrastruktur og teknologi, også med EU
+- dimension: Robusthet / adaptabilitet
+  topic: Kommunal beredskap
+  quote: Sørge for at kommunene forbedrer sine beredskapsplaner, blant annet med flere tilfluktsrom.
+  where: Kapittel 6 Justis og beredskap
+- dimension: Generasjonsansvar
+  topic: Grense for SPU-uttak
+  quote: At det settes en øvre grense på 25 prosent for hvor stor del av statens utgifter (unntatt petroleumsvirksomhet) som kan finansieres ved uttak fra SPU.
+  where: Kapittel 5 Næring og skatt
+- dimension: Generasjonsansvar
+  topic: SPU-indekser for klima og natur
+  quote: Utvikler nye referanseindekser for SPU, som sikrer en forvaltning i tråd med klima- og naturmålene.
+  where: Kapittel 5 Næring og skatt
+- dimension: Generasjonsansvar
+  topic: Bruk av SPU-avkastningen
+  quote: Innføre en regel om at avkastningen fra SPU i statsbudsjettet i all hovedsak skal brukes på vekstfremmende skattelettelser og investeringer i infrastruktur, forskning og innovasjon.
+  where: Kapittel 5 Næring og skatt
+- dimension: Generasjonsansvar
+  topic: Etiske krav til SPU
+  quote: At Statens pensjonsfond utland (SPU) ikke skal være investert i selskaper som direkte eller indirekte bidrar til alvorlige brudd på folkeretten, menneskerettighetene eller til å opprettholde ulovlig okkupasjon.
+  where: Kapittel 10 Utenriks og forsvar

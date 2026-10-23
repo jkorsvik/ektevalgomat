@@ -1,0 +1,30 @@
+id: ev-2024-sv-skolemat-ntb-sitat
+statement_id: utsagn-35
+party_id: sv
+actor: "Sosialistisk Venstreparti (utdanningspolitisk talsperson Grete Wold)"
+date: "2024-11-28"
+evidence_type: presseuttalelse
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SVs talsperson ønsket vedtaket velkommen og ba om fortgang.
+claim_action: >
+  Grete Wold (SV) til NTB etter vedtaket, gjengitt likelydende av
+  flere aviser.
+verbatim_excerpt: >
+  Endelig er skolemat på vei! [...] Nå håper jeg at
+  utdanningsministeren kjenner sin besøkelsestid og får fortgang i
+  dette, så vi omsider kan følge de aller, aller fleste andre
+  vestlige land og sørge for at barn får mat.
+status: uttalt
+position: 2
+source_tier: D
+source_name: "NTB, sitert i Nationen, 28.11.2024"
+source_url: "https://www.nationen.no/elever-skal-fa-gratis-skolemat-fra-2026/s/5-148-646691"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kildeklasse D: etablert presse som gjengir et direkte sitat. Funnet
+  2026-09-28 da sitatet ikke lot seg finne i Innst. 55 S eller i
+  Stortingets referat fra møtet (refs-202425-11-28), der det tidligere
+  var kildeført. Voteringen står i 382-sv-skolemat-for.yaml.
+retrieved_at: "2026-09-28"

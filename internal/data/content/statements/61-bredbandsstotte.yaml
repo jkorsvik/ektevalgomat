@@ -1,0 +1,16 @@
+id: utsagn-61
+number: 61
+dimension: "Universell grunnmur"
+primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
+case_tag: bredbandsstotte
+short_name: "Videreføre bredbåndsstøtten"
+text: >
+  Staten bør videreføre bredbåndsstøtten til hele landet har
+  høyhastighetsbredbånd.
+practical_stakes:
+  enig: >
+    Bredbåndsstøtteordningen videreføres, slik at også de siste
+    husstandene og virksomhetene uten god nok dekning kan kobles til.
+  uenig: >
+    Bredbåndsstøtteordningen avvikles, fordi markedet og allerede bevilgede
+    midler antas å dekke de gjenstående områdene.

@@ -1,0 +1,36 @@
+id: ev-2025-12-16-rodt-samordningsfellen-for
+statement_id: utsagn-40
+party_id: rodt
+actor: "Rødt (arbeids- og sosialkomiteen)"
+date: "2025-12-16"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Rødt stemte for på forslag 2 og 3 (medforslagsstiller på forslag 3
+  med FrP og SV), men har ingen egen, individuelt identifiserbar
+  merknad i innstillingen — nevnt som del av flertallet som fremmer
+  komiteens tilråding (avvisning av Dokument 8:19 L som opprinnelig
+  fremmet), sammen med Ap, Høyre og SV.
+claim_action: >
+  Votering_id 26604, Rødt 5 for, 0 mot. Medforslagsstiller på forslag
+  3 (falt 40 mot 60) sammen med FrP og SV; ingen egen Rødt-tekst funnet
+  utover sponsorlisten.
+status: forslag_vedtatt_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 54 L (2025–2026); votering_id 26603, 26604"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-054l/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1 (svakere enn SVs +2): Rødt er medforslagsstiller på
+  forslag 3, som er en klar handling, men uten en egen skriftlig
+  begrunnelse er det umulig å skille Rødts spesifikke argumentasjon
+  fra SVs — de deler formelt sponsorskap, men bare SV har en egen,
+  sitérbar merknad (se evidence/203). Interessant institusjonell
+  detalj: Rødt er samtidig blant partiene som fremmer komiteens
+  tilråding (avvisning av FrPs opprinnelige lovtekst), mens de stemmer
+  for de to alternative mekanismene (forslag 2, 3) — konsistent med at
+  Rødt vil ha SAKEN løst, men ikke nødvendigvis via nettopp FrPs
+  konkrete lovtekst.
+retrieved_at: "2026-09-24"

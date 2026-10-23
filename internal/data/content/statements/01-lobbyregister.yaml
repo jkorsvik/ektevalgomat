@@ -1,0 +1,19 @@
+id: utsagn-01
+number: 1
+dimension: "Demokratisk åpenhet"
+primary_question: "Kan offentligheten se hvem som påvirker hvem, for hvem og med hvilke penger?"
+case_tag: lobbyregister
+short_name: "Lobbyregister"
+text: >
+  Alle som driver profesjonell påvirkning mot Stortinget eller regjeringen
+  bør være registrert i et offentlig lobbyregister.
+practical_stakes:
+  enig: >
+    Alle som driver profesjonell lobbyvirksomhet mot Stortinget eller
+    regjeringen må registrere seg åpent: navn, oppdragsgiver og hvilken
+    sak det gjelder. Alle kan se hvem som forsøker å påvirke hvilken
+    politiker, om hva, og på hvis oppdrag.
+  uenig: >
+    Ingen slik registreringsplikt finnes. Lobbyvirksomhet mot politikere
+    kan skje uten at noen utenfor møtet vet at det skjedde, hvem som var
+    der, eller hvem de representerte.

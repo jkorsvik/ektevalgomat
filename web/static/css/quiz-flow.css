@@ -1,0 +1,148 @@
+/* quiz-flow.css — the one-question-at-a-time quiz experience (2026-10-12).
+   Linked from index.html.tmpl right after the shared head, so the base
+   tokens in style.css are already defined. This file only adds layout for
+   the new wrappers; the cards, scale and statement text keep their
+   style.css look. No inline styles anywhere: style-src here has no
+   'unsafe-inline' (see internal/server/middleware.go), so style="" or an
+   el.style write would be silently dropped by the browser. */
+
+/* Progress header: a small position indicator and a discreet line, not a
+   dashboard. */
+.quiz-progressbar { margin: var(--sp-1) 0 var(--sp-5); }
+.quiz-progress-text { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); color: var(--muted); }
+.quiz-progress-track {
+  height: 4px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .quiz-progress-fill { transition: width 0.3s ease; }
+}
+
+/* Settings: two plain, visible choices, deliberately quiet next to the
+   question. */
+.quiz-settings { margin-bottom: var(--sp-6); }
+.quiz-settings-fieldset {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: var(--sp-3) var(--sp-6) var(--sp-5);
+  margin: 0;
+}
+.quiz-settings-legend {
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  padding: 0 var(--sp-2);
+}
+.quiz-settings-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  padding: var(--sp-1) 0;
+  font-size: var(--fs-md);
+}
+.quiz-settings-item input { flex: none; }
+.quiz-settings-label { font-weight: 600; }
+.quiz-settings-help { margin: var(--sp-2) 0 0; font-size: var(--fs-xs); color: var(--muted); }
+
+/* The focused question. No thematic heading sits above it, ever. A calm
+   fade between steps, guarded behind prefers-reduced-motion so nothing
+   moves for someone who asked for that. */
+.quiz-region { min-height: 8rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .quiz-region > * { animation: quiz-fade 0.18s ease-out; }
+  @keyframes quiz-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+.question-number {
+  margin: 0 0 var(--sp-1);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.question-card .statement-text { font-size: var(--fs-2xl); }
+
+/* Forrige / Neste, and the plain link to the full result. */
+.quiz-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-4);
+  margin: var(--sp-2) 0 var(--sp-6);
+}
+.quiz-btn {
+  font: inherit;
+  font-size: var(--fs-md);
+  font-weight: 600;
+  padding: var(--sp-4) var(--sp-6);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.quiz-prev, .quiz-back {
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.quiz-prev:hover, .quiz-back:hover { border-color: var(--accent); background: var(--accent-soft); }
+.quiz-next {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border: 1px solid var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.quiz-next:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--accent-ink); }
+.quiz-btn:disabled { opacity: 0.45; cursor: default; }
+.quiz-to-result { font-size: var(--fs-md); margin-left: auto; }
+
+/* The "se over svarene dine" step: one compact line per statement. */
+.review-card h2 { margin-top: 0; }
+.review-list { list-style: none; margin: var(--sp-5) 0 0; padding: 0; }
+.review-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-5);
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid var(--line);
+}
+.review-item:last-child { border-bottom: none; }
+.review-stmt {
+  flex: none;
+  width: 6.5rem;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.review-answer { flex: 1 1 auto; font-weight: 600; }
+.review-answer-empty { color: var(--muted); font-weight: 400; font-style: italic; }
+.review-edit {
+  flex: none;
+  font: inherit;
+  font-size: var(--fs-sm);
+  padding: var(--sp-1) var(--sp-5);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--accent);
+  cursor: pointer;
+}
+.review-edit:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+.quiz-ephemeral-note { margin-top: var(--sp-5); }
+
+@media (max-width: 480px) {
+  .review-stmt { width: 5rem; }
+  .quiz-to-result { margin-left: 0; }
+}

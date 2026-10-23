@@ -1,0 +1,34 @@
+id: ev-2025-12-09-hoyre-ets2-stans-klimakvotesystem
+statement_id: utsagn-56
+party_id: h
+actor: "Høyre"
+date: "2025-12-09"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Høyre understreker EØS-avtalens betydning og at gjennomføring av ETS2 sikrer at norske bedrifter konkurrerer på like vilkår med EU — vil ikke stanse gjennomføringen."
+claim_action: >
+  Høyre, sammen med MDG og Venstre, understreker EØS-avtalens
+  avgjørende betydning for norsk økonomi og næringsliv, og at det å
+  følge opp EUs klimakvotesystem sikrer at norske bedrifter
+  konkurrerer på like vilkår med selskaper i EU. Høyre og Venstre
+  viser i tillegg til at de allerede stemte for å gjennomføre ETS2 i
+  Innst. 527 L (2024–2025) og ikke har endret mening. Stemte for
+  komiteens tilråding (votering 26747).
+verbatim_excerpt: >
+  «Komiteens medlemmer fra Høyre, Miljøpartiet De Grønne og Venstre
+  understreker igjen EØS-avtalens avgjørende betydning for norsk
+  økonomi og næringsliv [...] Å følge opp gjennomføring av EUs
+  klimakvotesystem, herunder det nye ETS2-regelverket, sikrer at
+  norske bedrifter konkurrerer på like vilkår med selskaper i EU.»
+status: vedtatt
+position: -2
+source_tier: A
+source_name: "Innst. 58 S (2025–2026); votering 26747 (09.12.2025)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-058s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: delt, men eksplisitt begrunnelse direkte mot utsagnets
+  premiss, forsterket av Høyres egen historikk (stemte for
+  gjennomføringen i Innst. 527 L). Bekreftet [OK] i votes.py: H 24 for
+  / 0 mot (votering 26747).
+retrieved_at: "2026-09-27"

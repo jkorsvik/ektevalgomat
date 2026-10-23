@@ -1,0 +1,25 @@
+id: ev-2026-partiprogram-krf-skatte-avgiftsniva-senkes
+statement_id: utsagn-55
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2025 (landsmøtevedtatt stortingsprogram)"
+evidence_type: partiprogram
+evidence_class: partiets_begrunnelse
+scan_summary: "KrF vil holde skatte- og avgiftsnivået om lag på dagens nivå, men øke bruttobeskatningen av de høyeste inntektene."
+claim_action: >
+  KrFs stortingsprogram 2025–2029 lister som eget punkt: "Holde
+  skatte- og avgiftsnivået om lag på dagens nivå, men øke
+  bruttobeskatningen av de høyeste inntektene."
+verbatim_excerpt: >
+  «Holde skatte- og avgiftsnivået om lag på dagens nivå, men øke
+  bruttobeskatningen av de høyeste inntektene.»
+status: programfestet
+position: -2
+source_tier: C
+source_name: "KrFs stortingsprogram 2025–2029"
+source_url: "https://krf.no/content/uploads/2025/05/Partiprogram-2025-2029.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -2: eksplisitt, ordrett punkt om det TOTALE nivået, direkte
+  mot utsagnets premiss. Tier C, ikke tier A.
+retrieved_at: "2026-09-27"

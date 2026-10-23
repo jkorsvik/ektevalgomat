@@ -1,0 +1,39 @@
+id: ev-2026-04-28-rodt-microsoft365-exit-for
+statement_id: utsagn-20
+party_id: rodt
+actor: "Rødt (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt stemte for, som medforslagsstiller sammen med SV og MDG.
+claim_action: >
+  Votering_id 27490, R 5 for, 0 mot. Samme delte merknad som SV (se
+  evidence/132) — Rødt er medforslagsstiller, ikke bare medstemmer,
+  og deler den samme skriftlige begrunnelsen om avhengighet av
+  kinesisk- og amerikanskeide teknologiaktører og skolesektorens
+  personvernsårbarhet.
+verbatim_excerpt: >
+  Det er allerede flere eksempler på at land og institusjoner,
+  inkludert i Norge, har satt begrensninger for kinesiskeide aktører.
+  I Europa ser en nå en rekke land som setter begrensninger for
+  amerikanskeide selskaper, og som er godt i gang med å etablere
+  egne exit-strategier.
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27490"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2 (sterkt uenig i at mangfold og konkurranse er godt nok),
+  samme grunnlag som SV, det motsatte av det snudde utsagnets premiss.
+  Rødt er dessuten den eneste partiet som i denne saken (Innst. 225 S)
+  har stemt for både det statlig-eide-sky-forslaget (utsagn-19, forslag
+  11) og dette leverandøruavhengighet-forslaget (forslag 6) —
+  konsistent linje på tvers av begge mekanismene dimensjonen tester
+  (eierskap og uavhengighet), i motsetning til f.eks. MDG som skiller
+  mellom dem Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra +2 til -2.
+  (se evidence/124 for MDGs alternative eierskapsmodell i utsagn-19).
+retrieved_at: "2026-09-24"

@@ -1,0 +1,41 @@
+id: ev-2026-06-05-sv-matberedskap-ros-for
+statement_id: utsagn-39
+party_id: sv
+actor: "Sosialistisk Venstreparti (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SV stemte for, som medforslagsstiller sammen med Sp, Rødt, MDG og
+  KrF, med en delt begrunnelse som viser til at Riksrevisjonen og
+  Totalberedskapskommisjonen har påpekt mangelen på en helhetlig
+  analyse, og at regjeringens eget varslede ROS-arbeid ikke har
+  materialisert seg.
+claim_action: >
+  Votering_id 28067, SV 5 for, 0 mot. Fra SV+Sp+R+MDG+KrFs delte
+  merknad: "Riksrevisjonen og Totalberedskapskommisjonen har peika på
+  mangel på heilskaplege scenario- og sårbarheitsanalysar for
+  matsikkerheit. Regjeringa har varsla ei nasjonal risiko- og
+  sårbarheitsanalyse (ROS) for mat og matforsyning, men eit slikt
+  arbeid har så langt ikkje materialisert seg."
+verbatim_excerpt: >
+  Medlemene i komiteen frå Sosialistisk Venstreparti, Senterpartiet,
+  Raudt, Miljøpartiet Dei Grøne og Kristeleg Folkeparti meiner at den
+  beste matberedskapen er lokal lagring, fleire bønder med kunnskap,
+  jord i drift med god jordhelse og korte forsyningslinjer over heile
+  landet.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2 (sterkt for): navngir to konkrete institusjonelle kilder
+  (Riksrevisjonen, Totalberedskapskommisjonen) som allerede har
+  påpekt mangelen, og dokumenterer at regjeringens eget varslede
+  ROS-arbeid ikke har materialisert seg — et konkret, etterprøvbart
+  faktapunkt, ikke bare en generell bekymring. Delt merknad, identisk
+  begrunnelse for SV, Sp, Rødt, MDG og KrF (se evidence/183-186).
+retrieved_at: "2026-09-24"

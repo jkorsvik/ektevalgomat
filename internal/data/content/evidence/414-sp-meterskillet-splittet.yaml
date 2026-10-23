@@ -1,0 +1,27 @@
+id: ev-2024-sp-meterskillet-splittet
+statement_id: utsagn-18
+party_id: sp
+actor: "Senterpartiet (næringskomiteen)"
+date: "2024-05-23"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Sp splittet internt: 1 av 17 fremmøtte stemte for, 16 stemte mot.
+  Sp er del av flertallet som i stedet fremmet en alternativ,
+  hjemmelslengde-basert avgrensning.
+claim_action: "Votering_id 22561, Sp 1 for, 16 mot."
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 264 S (2023–2024); votering_id 22561"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2023-2024/inns-202324-264s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +1 (majoritetsstemme: 16 mot forslaget om 28-meter-grense, 1
+  for), ikke +2: dette er en ekte, dokumentert intern Sp-splitt.
+  Partiets flertall er med i komiteens flertallsforslag
+  (hjemmelslengde-basert avgrensning), nøyaktig det snudde utsagnet
+  hevder — men ett medlem gikk lenger og støttet SV/Rødts strengere
+  28-meter-grense i stedet. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1.
+retrieved_at: "2026-09-24"

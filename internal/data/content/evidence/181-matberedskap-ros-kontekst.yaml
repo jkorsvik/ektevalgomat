@@ -1,0 +1,47 @@
+id: ev-2026-06-05-matberedskap-ros-kontekst
+statement_id: utsagn-39
+party_id: ""
+actor: "Næringskomiteen / Stortinget i plenum"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Samme sak som utsagn-38 (Dokument 8:266 S, Innst. 392 S), et annet
+  av de seks konkrete forslagene: en pålagt, helhetlig nasjonal
+  risiko- og sårbarhetsanalyse (ROS) for matsikkerhet og
+  matforsyning. Avvist 26 mot 74 — men med et helt annet
+  koalisjonsmønster enn forslag 1: her stemte SEKS partier for og
+  bare tre mot, det bredeste "for"-flertallet av noe forslag i denne
+  saken.
+claim_action: >
+  Votering_id 28067, forslag nr. 2 fra SV, Sp, Rødt, MDG og KrF:
+  "Stortinget ber regjeringa gjennomføra ein heilskapleg nasjonal
+  risiko- og sårbarheitsanalyse (ROS) for matsikkerheit og
+  matforsyning i Noreg." Avvist 26 for / 74 mot, fordelt SV 5, Sp 5,
+  R 5, MDG 5, KrF 4, V 2 for; Ap 31, FrP 29, H 14 mot (full fordeling
+  i partikortene).
+status: forslag_avvist
+position: null
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Institusjonell kontekst. Sammenlignet med utsagn-38 (samme sak,
+  forslag 1, 48-53) er dette forslaget mer polarisert i partitall (26
+  mot 74) men mindre polarisert i koalisjonsbredde: seks partier
+  (SV, Sp, R, MDG, KrF, V) på samme side, mot bare tre (Ap, FrP, H).
+  Særlig interessant vending: FrP stemte FOR desentraliserte
+  beredskapslagre i forslag 1 (evidence/162, +2, egen begrunnelse om
+  finsk modell), men MOT en formell risikokartlegging her — uten
+  dokumentert grunn, se evidence/189. Sp stemte MOT sitt eget forslag
+  1 (evidence/169) men FOR dette forslaget som medforslagsstiller
+  (evidence/183) — konsistent med at forslag 2 ligger nærmere Sps
+  opprinnelige Dokument 8:266 S-tekst enn forslag 1s spesifikke
+  gårdsmodell. Minoritetens merknad viser til at regjeringen selv har
+  "varsla" en slik ROS-analyse, men at "eit slikt arbeid har så langt
+  ikkje materialisert seg" — saken tester dermed ikke bare om Stortinget
+  vil pålegge kartlegging, men om regjeringens eget varslede initiativ
+  faktisk er reelt eller bare en intensjon uten frist.
+retrieved_at: "2026-09-24"

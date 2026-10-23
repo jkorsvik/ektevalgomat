@@ -1,0 +1,34 @@
+id: ev-2026-05-19-sp-integreringserklaering-skriftlig-forpliktelse
+statement_id: utsagn-50
+party_id: sp
+actor: "Senterpartiet"
+date: "2026-05-19"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: "Sp støtter erklæringen betinget av at den ikke gir mer byråkrati og at merkostnader for kommunene kompenseres fullt ut."
+claim_action: >
+  Sp mener det er rett og rimelig å stille krav og forventninger til
+  nyankomne, og forventer at ordningen evalueres etter en tid. Sp
+  knytter sin støtte til at regjeringen tar bekymringene fra
+  høringsinstansene om økt byråkrati og kostnader (blant annet
+  tolkeutgifter) på alvor, og at eventuelle merkostnader kompenseres
+  fullt ut av staten. Del av komiteflertallet, stemte for (votering
+  27779: 54 for, 44 mot).
+verbatim_excerpt: >
+  «Dette medlem mener regjeringen må merke seg høringsinstansene som
+  frykter at innføringen av denne erklæringen vil føre til mer
+  byråkrati. [...] Med disse forutsetningene vil dette medlem støtte
+  proposisjonen.»
+status: vedtatt
+position: 2
+source_tier: A
+source_name: "Innst. 309 L (2025–2026); votering 27779 (19.05.2026)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: Sp ender opp med å støtte loven fullt ut, men betinget —
+  merknaden er en betinget, ikke en forbeholden, tilslutning ("med
+  disse forutsetningene vil dette medlem støtte proposisjonen").
+  Betingelsene gjelder gjennomføring, ikke selve signeringsplikten.
+  Bekreftet [OK] i votes.py: Sp 5 for / 0 mot.
+retrieved_at: "2026-09-27"

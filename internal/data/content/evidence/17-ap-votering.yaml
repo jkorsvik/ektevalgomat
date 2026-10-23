@@ -1,0 +1,38 @@
+id: ev-2026-04-21-ap-votering
+statement_id: utsagn-01
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-04-21"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Ap stemte mot alle fire skjerpingsforslag om lobbyregister."
+claim_action: >
+  Stemte mot samtlige fire løse forslag som gikk lenger enn
+  presidentskapets tilråding: MDGs forslag 2 (utrede "med sikte på å
+  innføre"), MDGs forslag 3 og 4 (utrede konkrete registreringsmodeller
+  for hhv. Stortinget og departementene) og Rødts forslag 1 (lovhjemlet
+  register med registrerings-/innrapporteringsplikt og sanksjonsadgang).
+  Stemte deretter for selve tilrådingen, som ble enstemmig vedtatt uten
+  registrert dissens (votering_id 27261, personlig votering ikke ført
+  ved enstemmig vedtak).
+status: forkastet
+position: -1
+source_tier: A
+source_name: "Voteringsdetaljer, forslag nr. 1–4, 21.04.2026"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/?dnid=1&p=105664"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1, ikke -2: Ap stemte ikke mot at behovet for et lobbyregister
+  utredes i det hele tatt (den enstemmige tilrådingen dekker nettopp
+  det), men stemte mot alle fire forslag som ville forpliktet Stortinget
+  til noe mer konkret enn å utrede "behovet for" et register — inkludert
+  den svakeste skjerpingen (MDGs forslag 3/4, som bare ber om å utrede
+  "mulige modeller", uten forpliktelse om innføring). Dette er en reell,
+  gjentatt skepsis til et konkret registreringskrav, ikke bare motstand
+  mot ett bestemt forslags utforming. Individuelle representantstemmer
+  hentet fra data.stortinget.no/eksport/voteringsresultat for
+  votering_id 27257–27260 (parti-tally: A mot på alle fire, 32 mot/21
+  ikke_tilstede per votering). Denne posisjonsvurderingen er en
+  analytisk tolkning av stemmemønsteret, ikke Aps egne ord — bør
+  dobbeltsjekkes i human merge-QA før den brukes til scoring.
+retrieved_at: "2026-09-23"

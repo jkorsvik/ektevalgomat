@@ -1,0 +1,36 @@
+id: ev-2026-05-26-h-krafteksport-mot
+statement_id: utsagn-08
+party_id: h
+actor: "Høyre (energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre er del av flertallet som avviste forslaget, med et eksplisitt
+  argument om at Norge allerede HAR nasjonal kontroll gjennom
+  eksisterende lovverk — direkte relevant for dimensjonens
+  primærspørsmål.
+claim_action: >
+  Votering_id 28137, Høyre 14 mot, 0 for. Fra flertallets merknad:
+  "Flertallet understreker også at Norge har kontroll over
+  kraftpolitikken. Alle beslutninger om avtaleverk, tilknytning eller
+  utbygging er tillagt demokratisk kontroll, også gjennom energiloven
+  og plan- og bygningsloven."
+verbatim_excerpt: >
+  Norge har kontroll over kraftpolitikken. Alle beslutninger om
+  avtaleverk, tilknytning eller utbygging er tillagt demokratisk
+  kontroll, også gjennom energiloven og plan- og bygningsloven.
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 374 S (2025–2026); votering_id 28137"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2: Høyre bruker et eksplisitt "vi har allerede kontroll"-
+  argument som direkte adresserer dimensjonens spørsmål (beholder Norge
+  reell beslutningsevne?) — partiets svar er "ja, allerede, via
+  eksisterende lovverk", nøyaktig det snudde utsagnet hevder. Utsagnet
+  ble snudd 2026-09-27 til denne argumentasjonen slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2.
+retrieved_at: "2026-09-24"

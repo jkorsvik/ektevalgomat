@@ -1,0 +1,35 @@
+id: ev-2026-06-05-krf-matberedskap-ros-for
+statement_id: utsagn-39
+party_id: krf
+actor: "Kristelig Folkeparti (næringskomiteen)"
+date: "2026-06-05"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF stemte for, som medforslagsstiller sammen med SV, Sp, Rødt og
+  MDG, med samme delte begrunnelse (evidence/182-185). KrF er også
+  medforslagsstiller på forslag 1 (utsagn-38), der partiet hadde en
+  smalere, egen begrunnelse delt kun med FrP (finsk modell,
+  egenberedskap).
+claim_action: >
+  Votering_id 28067, KrF 4 for, 0 mot. Samme delte merknad: "Riksrevisjonen
+  og Totalberedskapskommisjonen har peika på mangel på heilskaplege
+  scenario- og sårbarheitsanalysar for matsikkerheit. Regjeringa har
+  varsla ei nasjonal risiko- og sårbarheitsanalyse (ROS) for mat og
+  matforsyning, men eit slikt arbeid har så langt ikkje materialisert
+  seg."
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 392 S (2025–2026); votering_id 28067"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet +2. Femte og siste av de fem partiene bak den delte merknaden
+  i denne saken, se evidence/182-185. Merk at KrF her deler merknad
+  med et helt annet sett av partier (SV/Sp/Rødt/MDG) enn i forslag 1
+  (der KrF delte merknad med FrP alene) — samme parti kan altså sitte
+  i to forskjellige koalisjoner innenfor samme innstilling, avhengig
+  av hvilket konkret forslag som behandles.
+retrieved_at: "2026-09-24"

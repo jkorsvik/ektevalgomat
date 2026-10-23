@@ -1,0 +1,44 @@
+id: ev-2026-05-26-rodt-statlig-eierskap
+statement_id: utsagn-06
+party_id: rodt
+actor: "Rødt (Ole Herman Sveian, energi- og miljøkomiteen)"
+date: "2026-05-26"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: "Rødt fremmet forslag om fullt statlig eierskap og hjemfallsrett som forutsetning for kjernekraft."
+claim_action: >
+  Rødts eget komitémedlem er positivt til kjernekraft i prinsippet (som
+  arealeffektiv, relativt klimavennlig energikilde), men fremmer to egne
+  forslag (nr. 30 og 31) som gjør fullt statlig eierskap og hjemfallsrett
+  til en absolutt forutsetning for enhver etablering.
+verbatim_excerpt: >
+  Dette medlem er positivt til kjernekraft fordi dette er en
+  arealeffektiv og relativt klimavennlig energikilde sammenlignet med
+  mange alternativer. Dette medlem mener at en grunnleggende forutsetning
+  for utvikling og eventuell etablering av kjernekraft i Norge må være
+  under full statlig kontroll og styring. […] Stortinget ber regjeringen
+  sikre at utvikling og eventuell etablering av kjernekraft i Norge skjer
+  under fullt statlig eierskap, kontroll og styring, av hensyn til
+  nasjonal sikkerhet, beredskap og den langsiktige forvaltningen av
+  kritisk infrastruktur og radioaktivt materiale. Forslag 31 Stortinget
+  ber regjeringen sikre at eventuell utvikling og etablering av
+  kjernekraft i Norge skjer i tråd med prinsippet om hjemfallsrett, slik
+  at eierskap over kjernekraftanlegg og tilhørende infrastruktur forblir
+  under fellesskapets kontroll.
+status: forkastet
+position: 2
+source_tier: A
+source_name: "Innst. 278 S (2025–2026), forslag 30–31"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +2: dette er den eksplisitte, konkrete formuleringen "fullt
+  statlig eierskap, kontroll og styring" — direkte match til utsagnets
+  ordlyd, ikke en analytisk tolkning. Begge forslag falt (mindretall);
+  komiteens vedtatte tilråding (se institusjonell kontekst) ba bare om en
+  stortingsmelding, uten å ta stilling til eierskapsform. Full
+  innstillingstekst lest i PDF før kodingen — ikke bare voteringstall,
+  som ville skjult at Rødt både er positiv til kjernekraft og krever
+  statlig eierskap, to atskilte standpunkt som en votering alene ikke
+  kunne avdekket.
+retrieved_at: "2026-09-23"

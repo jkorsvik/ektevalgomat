@@ -1,0 +1,16 @@
+[project]
+name = "ektevalgomat-harvester"
+version = "0.1.0"
+description = "Offline lead-finder against data.stortinget.no for ektevalgomat statement evidence. Never writes into internal/data/content/ directly — proposes leads for human review only."
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["."]

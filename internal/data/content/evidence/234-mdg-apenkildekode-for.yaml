@@ -1,0 +1,38 @@
+id: ev-2026-04-28-mdg-apenkildekode-for
+statement_id: utsagn-23
+party_id: mdg
+actor: "Miljøpartiet De Grønne (kommunal- og forvaltningskomiteen)"
+date: "2026-04-28"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDG er medforslagsstiller sammen med SV og Rødt. 4 av 5 fremmøtte
+  MDG-representanter stemte for; én stemte mot sitt eget partis
+  medforslag.
+claim_action: >
+  Votering_id 27489, MDG 4 for, 1 mot. Deler SV og Rødts merknad om
+  åpen kildekode som verktøy for å redusere avhengighet og styrke
+  digital suverenitet, med henvisning til Frankrike, Danmark og en
+  Harvard-studie fra 2019.
+verbatim_excerpt: >
+  Åpen kildekode er et av de viktigste verktøyene for å redusere
+  avhengighet og styrke digital suverenitet.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Innst. 225 S (2025–2026); votering_id 27489"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet +2 på partiets offisielle linje (komiteens MDG-medlem er
+  medforslagsstiller med en egen, sitérbar begrunnelse), men merk at
+  1 av 5 fremmøtte MDG-representanter stemte MOT sitt eget partis
+  forslag — det andre eksempelet på intern partidisiplin-brudd i
+  denne saken (det første var Høyre på KOMBIT-forslaget, evidence/222
+  for utsagn-22). Ingen skriftlig forklaring på avviket er funnet.
+  Attribution_confidence satt til svakt_dokumentert fordi den
+  offisielle merknaden er sterk, men stemmetallet viser at "MDGs
+  posisjon" ikke var enstemmig blant representantene som var
+  til stede.
+retrieved_at: "2026-09-24"

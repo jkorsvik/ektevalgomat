@@ -1,0 +1,27 @@
+id: ev-2025-06-frp-havbunnsmineraler15-mot
+statement_id: utsagn-15
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2025-06-10"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrP stemte mot moratoriet, motsatt av sin egen pådriverrolle for
+  rask utvinning (se evidence/282).
+claim_action: >
+  Votering_id 25348, FrP 12 mot, 0 for. FrPs egen begrunnelse (fra
+  evidence/282) er speilbildet av moratorium-argumentet: Norge har en
+  unik mulighet til å posisjonere seg som en ansvarlig leverandør av
+  kritiske mineraler — et moratorium ville stanse nettopp dette.
+status: forslag_avvist_stemte_mot
+position: -2
+source_tier: A
+source_name: "Innst. 354 S (2024–2025); votering_id 25348"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Kodet -2: FrPs motstand mot moratoriet er en direkte konsekvens av
+  partiets eget forslag om rask konsesjonsrunde (utsagn-14) — samme
+  begrunnelse, motsatt konklusjon.
+retrieved_at: "2026-09-24"

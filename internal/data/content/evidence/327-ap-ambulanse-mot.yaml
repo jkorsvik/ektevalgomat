@@ -1,0 +1,22 @@
+id: ev-2026-ap-ambulanse-mot
+statement_id: utsagn-27
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2026-04-15"
+evidence_type: innstilling
+evidence_class: uklart
+scan_summary: >
+  Ap stemte mot forslaget, uten en egen dokumentert forslagsspesifikk
+  merknad om ambulanse-responstider.
+claim_action: "Votering_id 27581, Ap 31 mot, 0 for."
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 252 S (2025–2026); votering_id 27581"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-252s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: svakt_dokumentert
+context_note: >
+  Kodet -1: ingen egen Ap-merknad om ambulanse-responstider spesifikt
+  finnes i innstillingen — stemmen er den klareste dokumentasjonen.
+retrieved_at: "2026-09-24"

@@ -1,0 +1,19 @@
+id: utsagn-53
+number: 53
+dimension: "Finansiering av fellesskapet"
+primary_question: "Hvordan betaler vi for fellesgodene, og hvem bærer kostnaden nå og om 30 år?"
+case_tag: hoy_inntekt_formue_storre_andel_skatt
+short_name: "Høy inntekt og formue betaler mer skatt"
+text: >
+  Personer med høy inntekt og stor formue bør betale en større andel
+  av skatten enn i dag.
+practical_stakes:
+  enig: >
+    Skattesatsene eller reglene endres slik at personer med høy inntekt
+    og/eller stor formue betaler en større andel av den samlede
+    skatteregningen enn de gjør i dag. Andre grupper betaler da en
+    mindre andel.
+  uenig: >
+    Fordelingen av skattebyrden mellom inntekts- og formuesgrupper
+    holdes som i dag. Personer med høy inntekt og stor formue betaler
+    ikke en større andel enn nå.

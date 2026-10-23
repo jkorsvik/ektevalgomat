@@ -1,0 +1,102 @@
+# Search topics for tools/harvester/harvest.py.
+#
+# One entry per statement that HAS a real statement.yaml under
+# internal/data/content/statements/ but is missing some or all party
+# positions. Do not add a topic for a statement number that doesn't
+# exist yet — the memo's dimension names are real (see
+# docs/roadmap.md's "Correction 2"), but inventing a sub-topic ahead of
+# drafting the actual statement text is the exact mistake that
+# "Correction" section documents fixing once already.
+#
+# keywords: matched case-insensitively (Norwegian folding: æøå kept
+# literal, not normalized) against each case's tittel, korttittel, and
+# emne_liste[].navn. A single match on any keyword is enough to surface
+# the case as a lead — harvest.py does not rank or filter further. A
+# human (or an agent doing the same primary-source read this project's
+# other statements went through) must still open the actual case and
+# read it before anything becomes evidence YAML.
+#
+# note: why this statement doesn't have full party coverage yet, so a
+# harvest run's silence on a topic doesn't get mistaken for "nobody
+# tried."
+
+utsagn-02:
+  text: >
+    Politisk reklame og valgkampbudskap på nett bør vise hvem som har
+    betalt for dem, og pengenes opprinnelse bør være offentlig kjent.
+  note: >
+    RESOLVED 2026-09-24, full 9/9 party coverage — see
+    internal/data/content/evidence/61 through 70 and
+    docs/roadmap.md's utsagn-02 entry. The case that worked, votering_id
+    26361 (Rødt's Marie Sneve Martinussen, plenary "løst forslag" during
+    the 2025-10-14 trontaledebatt), is not a Dokument 8/Innst. case at
+    all — it's a plenary floor motion, a case type this tool's
+    tittel/emne matching against data.stortinget.no's `saker` endpoint
+    never queries. The earlier 2026-09-23/24 null results (kept below for
+    the method record) were real for what they checked: no Dokument 8
+    bill anywhere addresses this specific claim. The lesson from
+    utsagn-04's resolution (a plain web search, not a keyword sweep, ipso
+    facto true statement of the phrase) applied again here and found it
+    on the second try. Coded with one honest nuance: the forslag only
+    tests HALF of utsagn-02's compound claim (money's origin must be
+    public, via anonymous-funding regulation) — not the other half (the
+    ad itself must show who paid, an on-ad EU DSA/TTPA-style label) — see
+    evidence/61's context_note.
+  keywords:
+    - politisk reklame
+    - valgkampbudskap
+    - målrettet politisk reklame
+    - reklame på nett
+    - digital markedsføring valg
+    - åpenhet politisk reklame
+    - transparency political advertising
+    - annonsører politisk annonsering
+
+utsagn-04:
+  text: >
+    Norske myndigheter bør systematisk kartlegge, dokumentere og
+    informere offentligheten om utenlandsk påvirkningsaktivitet i
+    sosiale medier rettet mot norske valg.
+  note: >
+    RESOLVED 2026-09-24, full 9/9 party coverage — see
+    internal/data/content/evidence/51 through 60 and
+    docs/roadmap.md's utsagn-04 entry. Two earlier passes (this note's
+    prior text, kept below for the method lesson) found nothing: the
+    harvester's keyword sweep across every session 2013-2026 returned 0
+    leads, and a manual read found only Innst. 303 S (2021-2022,
+    Høyre's fake-news bill) — real but the wrong specificity ("combat
+    disinformation generally," not "map foreign election influence").
+    The case that actually matched, Innst. 231 S (2022-2023, Høyre's
+    Dokument 8:51 S on rikets sikkerhet/kontraetterretning), surfaced
+    only from a broad, non-keyword web search for the Norwegian phrase
+    itself ("kartlegge utenlandsk påvirkning valg") — its case title
+    ("styrking av rikets sikkerhet og kontraetterretning") has neither
+    "utenlandsk påvirkning" nor any of the keywords below in it, so this
+    tool's title/emne-only ceiling (documented in docs/roadmap.md's
+    "Next candidate work" #1) would never have found it even with a
+    perfect keyword list. The forslag itself, buried inside a much
+    broader bill about drones/PST/export control, asked the government
+    to "umiddelbart igangsette en kartlegging av uønsket
+    informasjonspåvirkning fra utenlandske aktører i forbindelse med
+    ... stortingsvalget i 2025" — an almost verbatim match. Lesson for
+    the next null-result statement (02, 05, 44, 45): before accepting a
+    harvester 0-leads result as final, also try a plain web search for
+    the statement's own key phrase, not just Storting-side keywords —
+    the real case may be filed under a completely different-sounding
+    bill title.
+  keywords:
+    - utenlandsk påvirkning
+    - informasjonspåvirkning
+    - desinformasjon valg
+    - hybridtrusler
+    - falske nyheter valg
+    - sosiale medier påvirkning
+    - fremmed etterretning påvirkning
+    - influence operations
+
+# utsagn-05 (etterprøvbarhet i åpenhetssaker) has NO topic entry on
+# purpose: it's a meta-statement about the process of handling openness
+# cases itself, not about a specific policy area with its own case to
+# search for. Adding a topic for it here would search for the word
+# "etterprøvbarhet" and turn up nothing meaningful — see the statement's
+# own text before assuming this is an oversight.

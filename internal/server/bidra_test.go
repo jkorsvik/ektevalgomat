@@ -152,12 +152,21 @@ func TestBidraTierCountsComeFromTheDataset(t *testing.T) {
 }
 
 // The challenge route must be reachable from the pages a reader actually
-// visits, or the page exists for nobody.
+// visits, or the page exists for nobody. Every page, not two of them: the
+// first version linked it from /data and /om only, so eight of ten pages hid
+// the only route into it.
 func TestBidraIsReachable(t *testing.T) {
 	h := New(slog.New(slog.NewTextHandler(os.Stderr, nil)))
-	for _, from := range []string{"/data", "/om"} {
+	everyPage := []string{
+		"/", "/partier", "/budsjett", "/metode", "/data", "/bidra", "/om",
+		"/personvern", "/resultat", "/utsagn/1", "/parti/ap",
+	}
+	for _, from := range everyPage {
 		w := httptest.NewRecorder()
 		h.ServeHTTP(w, httptest.NewRequest("GET", from, nil))
+		if w.Code != 200 {
+			t.Fatalf("%s: status %d", from, w.Code)
+		}
 		if !strings.Contains(w.Body.String(), `href="/bidra"`) {
 			t.Errorf("%s does not link to /bidra", from)
 		}

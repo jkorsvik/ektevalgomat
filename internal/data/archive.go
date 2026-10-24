@@ -6,6 +6,7 @@ import (
 	"embed"
 	"encoding/json"
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -60,6 +61,18 @@ func SourceWindowFor(evidenceID string) (SourceWindow, bool) {
 
 // SourceWindowCount is how many windows are embedded.
 func SourceWindowCount() int { return len(sourceWindows) }
+
+// SourceWindows returns every stored window, sorted by evidence id. Sorted
+// and not map order: this feeds a file people download and diff, and a map
+// would give it a new shape on every request.
+func SourceWindows() []SourceWindow {
+	out := make([]SourceWindow, 0, len(sourceWindows))
+	for _, w := range sourceWindows {
+		out = append(out, w)
+	}
+	sort.Slice(out, func(i, j int) bool { return out[i].EvidenceID < out[j].EvidenceID })
+	return out
+}
 
 func mustLoadWindows() map[string]SourceWindow {
 	windows := make(map[string]SourceWindow)

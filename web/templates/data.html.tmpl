@@ -44,7 +44,22 @@
       <td>Samme påstander, én rad per påstand</td>
       <td>CSV, UTF-8</td>
     </tr>
+    <tr>
+      <td><a href="/data/kildetekst.json">kildetekst.json</a></td>
+      <td>{{.ArchiveCount}} tekstiutdrag rundt sitatene, med dato, kilde og dokumentets SHA-256</td>
+      <td>JSON</td>
+    </tr>
   </table>
+
+  <p>
+    De tre første filene er prosjektets eget arbeid og står under AGPL-3.0.
+    <code>kildetekst.json</code> er ikke det: der ligger sitater fra
+    Stortinget, partiene og pressen, og ordene tilhører dem som skrev dem.
+    Filen har derfor en annen <code>licence</code>-verdi. Den ligger her fordi
+    en død lenke ellers sletter det påstanden hviler på, ikke fordi prosjektet
+    kan viderelisensiere tekst den ikke eier. Vil du ha et utdrag fjernet, står
+    fremgangsmåten under.
+  </p>
 
   <p>
     Hver fil har <code>schema_version</code> og <code>snapshot_date</code> i

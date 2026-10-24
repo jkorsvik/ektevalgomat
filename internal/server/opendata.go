@@ -265,3 +265,52 @@ func serveEvidenceCSV(w http.ResponseWriter, ds *data.Dataset) {
 	}
 	cw.Flush()
 }
+
+// windowLicenceNote is deliberately not licenceNote. The statements, parties
+// and claims are this project's own and carry AGPL-3.0. The source excerpts
+// do not: they are quotations from Stortinget, the parties and the press,
+// stored so a dead link cannot erase what a claim rests on. Reusing
+// "AGPL-3.0" here would tell a reader they may relicense someone else's words.
+const windowLicenceNote = "utdragene tilhører kildene sine; se source_url"
+
+// sourceWindowExport is one archived window as a file, with the provenance
+// that lets a reader check the quotation without trusting this site.
+type sourceWindowExport struct {
+	EvidenceID     string `json:"evidence_id"`
+	SourceURL      string `json:"source_url"`
+	FetchedURL     string `json:"fetched_url"`
+	FetchedAt      string `json:"fetched_at"`
+	DocumentSHA256 string `json:"document_sha256"`
+	DocumentBytes  int    `json:"document_bytes"`
+	WindowChars    int    `json:"window_chars"`
+	ExcerptChars   int    `json:"excerpt_chars"`
+	Fragments      int    `json:"fragments"`
+	Text           string `json:"text"`
+}
+
+func serveWindowsJSON(w http.ResponseWriter) {
+	windows := data.SourceWindows()
+	items := make([]sourceWindowExport, 0, len(windows))
+	for _, sw := range windows {
+		items = append(items, sourceWindowExport{
+			EvidenceID:     sw.EvidenceID,
+			SourceURL:      sw.SourceURL,
+			FetchedURL:     sw.FetchedURL,
+			FetchedAt:      sw.FetchedAt,
+			DocumentSHA256: sw.DocumentSHA256,
+			DocumentBytes:  sw.DocumentBytes,
+			WindowChars:    sw.WindowChars,
+			ExcerptChars:   sw.ExcerptChars,
+			Fragments:      sw.Fragments,
+			Text:           sw.Text,
+		})
+	}
+	writeJSON(w, envelope[sourceWindowExport]{
+		SchemaVersion: openDataSchemaVersion,
+		SnapshotDate:  SnapshotDate,
+		Dataset:       "kildetekst",
+		Licence:       windowLicenceNote,
+		Count:         len(items),
+		Items:         items,
+	})
+}

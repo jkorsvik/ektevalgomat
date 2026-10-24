@@ -698,6 +698,10 @@ func New(logger *slog.Logger) http.Handler {
 		serveEvidenceCSV(w, ds)
 	})
 
+	mux.HandleFunc("GET /data/kildetekst.json", func(w http.ResponseWriter, r *http.Request) {
+		serveWindowsJSON(w)
+	})
+
 	mux.HandleFunc("GET /om", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		vm := struct {

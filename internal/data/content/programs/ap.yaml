@@ -2,6 +2,10 @@ id: ap
 source_name: "Arbeiderpartiets partiprogram 2025-2029"
 source_url: "https://res.cloudinary.com/arbeiderpartiet/image/upload/fl_attachment:partiprogram-2025-2029/v1/ievv_filestore/130322a45ccf45889bfc6fa4116c5b480cadc1e93e51491f8199451dd231c7c5"
 retrieved_at: "2026-10-12"
+document_file: "research/raw/programs/ap-2025-2029.pdf"
+document_sha256: "92c80583d5eb8d2ceccb8a19b1898b77eef0b51977d94122962fbcadfadc7175"
+document_bytes: 3687858
+fetched_at: "2026-10-25T15:33:37+00:00"
 points:
   - dimension: Demokratisk åpenhet
     topic: Åpenhet om partifinansiering

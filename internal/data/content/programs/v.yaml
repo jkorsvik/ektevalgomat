@@ -2,6 +2,11 @@ id: v
 source_name: Venstres stortingsvalgprogram 2025-2029
 source_url: https://www.venstre.no/politikk/partiprogram/program-2025-2029/
 retrieved_at: '2026-10-12'
+document_file: "research/raw/programs/v-2025-2029.html"
+document_sha256: "c8d7f45431a71cccbd190a2377c47b0adfed08247b10bf1754726d01a29a65e7"
+document_bytes: 484477
+fetched_at: "2026-10-25T15:33:41+00:00"
+fetch_note: "Venstre publiserer programmet som nettside, ikke som PDF. Arkivert som HTML fra samme URL som kilden i programs/v.yaml."
 points:
 - dimension: Demokratisk åpenhet
   topic: Lobbyregister

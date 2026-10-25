@@ -2,6 +2,10 @@ id: frp
 source_name: "Fremskrittspartiets partiprogram 2025-2029"
 source_url: "https://www.frp.no/files/Program/2025/FrP-Partiprogram-2025-2029.pdf"
 retrieved_at: "2026-10-12"
+document_file: "research/raw/programs/frp-2025-2029.pdf"
+document_sha256: "a63d399b4b4abdadc6e102a03c06537a40d49a500961bed9e10f33319e616b69"
+document_bytes: 1784306
+fetched_at: "2026-10-25T15:33:38+00:00"
 points:
   - dimension: "Demokratisk åpenhet"
     topic: "Innsyn og meroffentlighet"

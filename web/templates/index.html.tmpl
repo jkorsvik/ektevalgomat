@@ -32,6 +32,15 @@
       Svarene dine blir i nettleseren din, og du kan svare på så mange du
       vil.
     </p>
+    {{if .NoPosition}}
+    <p class="front-caveat">
+      {{len .NoPosition}} av dem har foreløpig ingen dokumentert
+      partiposisjon
+      ({{range $i, $s := .NoPosition}}{{if $i}}, {{end}}<a href="/utsagn/{{$s.Number}}">utsagn {{$s.Number}}</a>{{end}}).
+      Du kan svare på dem, men de teller ikke i resultatet før kildene er
+      kodet. Resultatsiden sier det samme etter at du har svart.
+    </p>
+    {{end}}
     <p class="front-start">
       <a class="start-link" href="#quiz-frame">Start valgomaten <span aria-hidden="true">↓</span></a>
     </p>

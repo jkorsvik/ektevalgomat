@@ -14,6 +14,7 @@ import (
 	"log/slog"
 	"net/http"
 	"net/url"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -223,6 +224,102 @@ func dimensionSummary(ds *data.Dataset) []dimensionCoverage {
 		rows = append(rows, dimensionCoverage{Name: name, Built: counts[name], Total: counts[name]})
 	}
 	return rows
+}
+
+// statementCoverage reports how many parties have a coded position on the
+// statement with this number, out of all parties, and the source tiers those
+// positions rest on ("A", "A/C", ...).
+//
+// /om prints these figures instead of a sentence typed once. The sentence it
+// replaces said the positions on utsagn 45 came from programmes "for sju av
+// ni partier. Rødt og Sp mangler fortsatt" — both were coded on 2026-10-13,
+// and the page kept saying they were missing for twelve days. A number the
+// page derives from the dataset cannot survive that way.
+func statementCoverage(ds *data.Dataset, number int) (coded, total int, tiers string) {
+	total = len(ds.Parties)
+	var st *data.Statement
+	for i := range ds.Statements {
+		if ds.Statements[i].Number == number {
+			st = &ds.Statements[i]
+			break
+		}
+	}
+	if st == nil {
+		return 0, total, ""
+	}
+	seen := map[string]bool{}
+	for _, p := range ds.Parties {
+		if scoring.ComputeCell(ds, st.ID, p.ID).PartyPosition == nil {
+			continue
+		}
+		coded++
+		for _, e := range ds.EvidenceForCell(st.ID, p.ID) {
+			if e.Position != nil && e.SourceTier != "" {
+				seen[e.SourceTier] = true
+			}
+		}
+	}
+	keys := make([]string, 0, len(seen))
+	for k := range seen {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	return coded, total, strings.Join(keys, "/")
+}
+
+// programmeOnlyCells counts the statement×party cells that carry a coded
+// position but rest on no A- or B-class source: the party's own programme
+// (C) or a secondary account of it (D) is all there is. That is the one
+// place where the site's headline — "vi sammenligner ikke svaret ditt med
+// partiprogrammenes egne ord" — does not hold, so /metode states the number
+// instead of leaving a reader to discover it. Derived, never typed.
+func programmeOnlyCells(ds *data.Dataset) (cells, coded int) {
+	for _, s := range ds.Statements {
+		for _, p := range ds.Parties {
+			if scoring.ComputeCell(ds, s.ID, p.ID).PartyPosition == nil {
+				continue
+			}
+			coded++
+			strong := false
+			for _, e := range ds.EvidenceForCell(s.ID, p.ID) {
+				if e.Position == nil {
+					continue
+				}
+				if e.SourceTier == "A" || e.SourceTier == "B" {
+					strong = true
+					break
+				}
+			}
+			if !strong {
+				cells++
+			}
+		}
+	}
+	return cells, coded
+}
+
+// uncomparableStatements returns the statements no party has a coded
+// position on, so the quiz can say so before the reader answers instead of
+// after. Two statements (60, 61) are in the quiz with 0 av 9 dokumentert:
+// the reader answers them, no party is compared, and the answer changes
+// nothing. The result panel already names such statements after the fact
+// (analyse.js, "telte ikke i noens resultat"), but a question that cannot
+// count is worth one line before the reader spends an answer on it.
+func uncomparableStatements(ds *data.Dataset) []data.Statement {
+	var out []data.Statement
+	for _, s := range ds.Statements {
+		coded := false
+		for _, p := range ds.Parties {
+			if scoring.ComputeCell(ds, s.ID, p.ID).PartyPosition != nil {
+				coded = true
+				break
+			}
+		}
+		if !coded {
+			out = append(out, s)
+		}
+	}
+	return out
 }
 
 // addendumCount returns how many loaded statements sit outside the
@@ -523,6 +620,7 @@ func New(logger *slog.Logger) http.Handler {
 			DimensionRows    []dimensionCoverage
 			AllDimensionRows []dimensionCoverage
 			AddendumCount    int
+			NoPosition       []data.Statement
 		}{
 			Meta: meta("Ekte valgomat · hvert svar har en kilde",
 				"En valgomat der hvert partistandpunkt har en kilde. Hva partiene har lovet, foreslått og stemt, med lenke til dokumentet det står i.",
@@ -535,6 +633,7 @@ func New(logger *slog.Logger) http.Handler {
 			DimensionRows:    dimensionSummary(ds),
 			AllDimensionRows: allDimensionsSummary(ds),
 			AddendumCount:    addendumCount(ds),
+			NoPosition:       uncomparableStatements(ds),
 		}
 		if err := indexTmpl.Execute(w, data); err != nil {
 			logger.Error("render index", "err", err)
@@ -624,12 +723,15 @@ func New(logger *slog.Logger) http.Handler {
 	mux.HandleFunc("GET /metode", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		evidenceTotal, evidenceWithQuote := quoteCounts(ds)
+		po, cc := programmeOnlyCells(ds)
 		vm := struct {
 			Meta                 pageMeta
 			SnapshotDate         string
 			EvidenceTotal        int
 			EvidenceWithQuote    int
 			EvidenceWithoutQuote int
+			ProgrammeOnly        int
+			CodedCells           int
 		}{
 			Meta: meta("Metode · Ekte valgomat",
 				"Slik blir en partiposisjon til: hva som er kilde, hva som er tolkning, og hvorfor tre separate mål aldri slås sammen til én score.",
@@ -638,6 +740,8 @@ func New(logger *slog.Logger) http.Handler {
 			EvidenceTotal:        evidenceTotal,
 			EvidenceWithQuote:    evidenceWithQuote,
 			EvidenceWithoutQuote: evidenceTotal - evidenceWithQuote,
+			ProgrammeOnly:        po,
+			CodedCells:           cc,
 		}
 		if err := metodeTmpl.Execute(w, vm); err != nil {
 			logger.Error("render metode", "err", err)
@@ -704,12 +808,21 @@ func New(logger *slog.Logger) http.Handler {
 
 	mux.HandleFunc("GET /om", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		c44, t44, tier44 := statementCoverage(ds, 44)
+		c45, t45, tier45 := statementCoverage(ds, 45)
 		vm := struct {
 			Meta          pageMeta
 			SnapshotDate  string
 			AddendumCount int
 			CoreCount     int
 			Corrections   []data.Correction
+			Coded44       int
+			Total44       int
+			Tier44        string
+			Coded45       int
+			Total45       int
+			Tier45        string
+			NoPosition    []data.Statement
 		}{
 			Meta: meta("Om · Ekte valgomat",
 				"Hvorfor Ekte valgomat finnes, hva som er bygget, og hva som ennå ikke er gjennomgått.",
@@ -718,6 +831,13 @@ func New(logger *slog.Logger) http.Handler {
 			AddendumCount: addendumCount(ds),
 			CoreCount:     coreStatementBuilt(ds),
 			Corrections:   ds.Corrections,
+			Coded44:       c44,
+			Total44:       t44,
+			Tier44:        tier44,
+			Coded45:       c45,
+			Total45:       t45,
+			Tier45:        tier45,
+			NoPosition:    uncomparableStatements(ds),
 		}
 		if err := omTmpl.Execute(w, vm); err != nil {
 			logger.Error("render om", "err", err)

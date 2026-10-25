@@ -1,0 +1,23 @@
+id: 2026-10-25-a-om-sa-at-rodt-og-sp-manglet
+date: "2026-10-25"
+kind: rettelse
+title: "/om sa at Rødt og Sp manglet en posisjon som var kodet tolv dager før"
+statements: ["45"]
+what: >
+  Siden /om sa at posisjonene på utsagn 45 kom fra partiprogrammene
+  (kildeklasse C) «for sju av ni partier. Rødt og Sp mangler fortsatt.» Begge
+  partiene fikk en kodet posisjon 2026-10-13, med partiprogrammet som kilde:
+  Rødt sterkt for (+2), Sp for (+1). Fra da av hadde utsagnet 9 av 9 partier
+  dekket, mens /om fortsatt sa at to manglet.
+reason: >
+  Setningen var skrevet for hånd og ble ikke utledet fra datasettet.
+  Endringen som kodet de to partiene tok ikke med seg prosaen som beskrev
+  dem, og ingenting på siden sammenlignet teksten med dataene. Feilen var
+  ikke at et tall var skrevet feil, men at tallet var skrevet i det hele tatt
+  når det fantes i datasettet.
+effect: >
+  Tallene på /om regnes nå ut fra datasettet hver gang siden vises, og en
+  test feiler hvis siden og dataene er uenige. Ingen partiposisjon er endret;
+  det som endret seg er at siden nå sier 9 av 9, som den skal. Samme rettelse
+  gjaldt utsagn 44, som også er flyttet fra en håndskrevet tekst til et
+  utregnet tall.

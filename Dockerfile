@@ -41,6 +41,14 @@ COPY CONTRIBUTING.md ./
 # to stop repeating.
 COPY README.md ./
 COPY docs ./docs
+# And the trap a third time, from the other direction: the programmes the
+# site quotes from are kept as files, and TestArchivedProgrammesMatchYAML
+# reads them to prove the hash published on /partier still matches the
+# document the quotes came from. Without this line that test fails inside
+# the image while passing in CI, which would have turned every deploy red
+# after merge. ~23 MB in the builder stage only; the final image is FROM
+# scratch and carries the one binary, so nothing here ships.
+COPY research/raw/programs ./research/raw/programs
 # Evidence YAML is parsed at package initialization — a malformed file is
 # a build-time bug. Run the focused test before producing an image so the
 # currently-running public site is never replaced by one that can't even

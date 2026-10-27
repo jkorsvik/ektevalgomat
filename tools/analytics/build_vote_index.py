@@ -25,6 +25,31 @@ proposal text as the Stortinget API states it, the date, whether it carried, and
 each party's side computed from the official per-representative rows. Reading
 those as a position stays a human act with a citation attached.
 
+Exhaustive mode: by default this walks only the voterings the content cites, so the
+index is exactly as wide as the evidence. `--sessions` widens it: for each session it
+lists every sak, asks for that sak's voterings, and adds them all. Two facts cost
+real time to find and are recorded here so nobody rediscovers them: the API has no
+session-level votering listing (voteringer?sesjonid= answers 400, "missing SakId"),
+and the per-sak payload names its list `sak_votering_liste` with the id under
+`votering_id`. Reading `voteringer_liste` returns an empty list on every sak and
+looks like absence of data, which is how this was first misdiagnosed.
+
+Which of those claims are re-checked, and which are inherited (2026-10-27):
+
+  verified against cached payloads
+    saker?sesjonid=2025-2026 -> `saker_liste`, 663 saker; `sak_votering_liste`
+    present in 543 cached per-sak payloads, `voteringer_liste` in none.
+  inherited, not re-checked
+    the 400 from voteringer?sesjonid=. No cached error body exists to check it
+    against. Treat it as the prior session's finding until one does.
+
+A walk resumes from the fetch cache, so a run killed by a network loss costs only
+the saker it had not reached. Set `session` on a vote only when the walk found it:
+an empty `session` means "reached through a citation, session unknown", never "this
+vote belongs to no session". Nothing reads `session` yet -- the Go `Vote` type does
+not carry it, so it is stored, not shown. Add the field there only when a page
+needs it; an empty column is worse than a missing one.
+
 Codes, as verified in tools/verify/verify_votes.py against vote 26387's official
 totals: 2 = for, 3 = mot, 1 = ikke tilstede.
 """
@@ -55,6 +80,7 @@ BASE = "https://data.stortinget.no/eksport"
 FORSLAG = BASE + "/voteringsforslag?voteringid={}&format=json"
 RESULTAT = BASE + "/voteringsresultat?voteringid={}&format=json"
 VOTERINGER = BASE + "/voteringer?sakid={}&format=json"
+SAKER = BASE + "/saker?sesjonid={}&format=json"
 
 CODE = {2: "for", 3: "mot", 1: "ikke_tilstede"}
 API_TO_ID = {v: k for k, v in vv.PARTY.items()}  # "A" -> "ap"
@@ -122,6 +148,32 @@ def side(rows: list[dict]) -> dict[str, str]:
     return out
 
 
+def session_votes(sessions: list[str]) -> dict[int, str]:
+    """votering id -> session, from every sak in every named session."""
+    out: dict[int, str] = {}
+    for ses in sessions:
+        sak_list = fetch(SAKER.format(ses)).get("saker_liste") or []
+        got = 0
+        for sak in sak_list:
+            sid = sak.get("id")
+            if not sid:
+                continue
+            try:
+                body = fetch(VOTERINGER.format(sid))
+            except Exception as e:  # noqa: BLE001 - report, never hide
+                print(f"  sak {sid} ({ses}): fetch failed: {e}", file=sys.stderr)
+                continue
+            for v in body.get("sak_votering_liste") or []:
+                vid = v.get("votering_id")
+                if not vid or vid < 0:
+                    continue
+                out[int(vid)] = ses
+                got += 1
+            time.sleep(0.34)  # the API answers 429 to a fast scan; stay under it
+        print(f"  {ses}: {len(sak_list)} saker, {got} voterings", file=sys.stderr)
+    return out
+
+
 def cited_votes() -> dict[str, dict]:
     """votering id -> {evidence_ids, party_ids}, from what the content cites."""
     cites: dict[str, dict] = {}
@@ -141,6 +193,8 @@ def cited_votes() -> dict[str, dict]:
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--sessions", default="",
+                    help="comma-separated sessions to walk exhaustively, e.g. 2025-2026,2024-2025")
     args = ap.parse_args(argv)
 
     cites = cited_votes()
@@ -149,8 +203,16 @@ def main(argv: list[str]) -> int:
         return 2
     print(f"content cites {len(cites)} distinct voterings", file=sys.stderr)
 
+    wide: dict[int, str] = {}
+    sessions = [x.strip() for x in args.sessions.split(",") if x.strip()]
+    if sessions:
+        wide = session_votes(sessions)
+        print(f"{len(wide)} voterings found by walking {len(sessions)} session(s)", file=sys.stderr)
+
+    allvids = sorted({int(v) for v in cites} | set(wide))
     votes, failed = [], 0
-    for vid in sorted(cites, key=lambda v: int(v)):
+    for vid in allvids:
+        vid = str(vid)
         try:
             rows = fetch(RESULTAT.format(vid)).get("voteringsresultat_liste") or []
         except Exception as e:  # noqa: BLE001 - report, never hide
@@ -177,8 +239,9 @@ def main(argv: list[str]) -> int:
             "unanimous": not rows,
             "forslag": forslag[:600],
             "parties": side(rows),
-            "cited_by": cites[vid]["evidence_ids"],
-            "coded_parties": cites[vid]["parties"],
+            "cited_by": (cites.get(vid) or {}).get("evidence_ids") or [],
+            "coded_parties": (cites.get(vid) or {}).get("parties") or [],
+            "session": wide.get(int(vid), ""),
         })
 
     if not votes:

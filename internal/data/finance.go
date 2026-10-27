@@ -73,14 +73,60 @@ type financeSource struct {
 	Note        string `json:"note"`
 }
 
+// RegisterYear is one year's contribution figure in kroner.
+type RegisterYear struct {
+	Year   string `json:"year"`
+	Amount int64  `json:"amount"`
+}
+
+// RegisterParty is one party's contributions per year, as reported under
+// Partiloven. PartyID is empty for a party the dataset does not score; that is
+// kept rather than dropped, because the register's total must still reconcile
+// against the sum of every party it lists.
+type RegisterParty struct {
+	Name     string         `json:"name"`
+	ListCode string         `json:"list_code"`
+	PartyID  string         `json:"party_id"`
+	ByYear   []RegisterYear `json:"by_year"`
+}
+
+type registerSource struct {
+	Name        string `json:"name"`
+	API         string `json:"api"`
+	HumanURL    string `json:"human_url"`
+	RetrievedAt string `json:"retrieved_at"`
+	Unit        string `json:"unit"`
+	Note        string `json:"note"`
+}
+
+type registerMismatch struct {
+	Year         string `json:"year"`
+	Published    int64  `json:"published"`
+	SumOfParties int64  `json:"sum_of_parties"`
+}
+
+// registerBlock is the second money source. It is a separate block from the SSB
+// rows on purpose: SSB reports the parties' annual accounts, the register reports
+// individual contributions above the statutory threshold. Same kroner, two
+// definitions. Adding them, or treating one as a subset of the other, would be
+// wrong, so nothing in this package does.
+type registerBlock struct {
+	Source               registerSource     `json:"source"`
+	TotalsByYear         []RegisterYear     `json:"totals_by_year"`
+	Parties              []RegisterParty    `json:"parties"`
+	MismatchedYears      []registerMismatch `json:"mismatched_years"`
+	MissingScoredParties []string           `json:"missing_scored_parties"`
+}
+
 type financeIndexFile struct {
 	Source  financeSource     `json:"source"`
 	Posts   map[string]string `json:"posts"`
 	Parties map[string]struct {
 		SSBCode string `json:"ssb_code"`
 	} `json:"parties"`
-	Years []string       `json:"years"`
-	Rows  []PartyFinance `json:"rows"`
+	Years    []string       `json:"years"`
+	Rows     []PartyFinance `json:"rows"`
+	Register registerBlock  `json:"register"`
 }
 
 var financeIndexDoc = mustLoadFinance()
@@ -97,6 +143,14 @@ func mustLoadFinance() financeIndexFile {
 	}
 	if idx.Source.RetrievedAt == "" || idx.Source.API == "" {
 		panic("internal/data/finance/index.json has no provenance; a number without a source is not usable")
+	}
+	if len(idx.Register.TotalsByYear) == 0 {
+		panic("internal/data/finance/index.json has no register block; run tools/analytics/build_finance_index.py")
+	}
+	if len(idx.Register.MismatchedYears) > 0 {
+		// A register that does not reconcile is stored so the defect is visible,
+		// but it must not load silently into a page that prints shares.
+		panic(fmt.Sprintf("register does not reconcile in %d year(s); fix the fetch before building", len(idx.Register.MismatchedYears)))
 	}
 	return idx
 }
@@ -124,4 +178,32 @@ func FinanceFor(partyID, year string) (PartyFinance, bool) {
 		}
 	}
 	return PartyFinance{}, false
+}
+
+// RegisterTotals returns the published contribution total per year, oldest first.
+func RegisterTotals() []RegisterYear { return financeIndexDoc.Register.TotalsByYear }
+
+// RegisterParties returns every party the register lists, with its per-year
+// contributions.
+func RegisterParties() []RegisterParty { return financeIndexDoc.Register.Parties }
+
+// RegisterSourceInfo returns the register's provenance.
+func RegisterSourceInfo() (name, api, humanURL, retrievedAt, note string) {
+	s := financeIndexDoc.Register.Source
+	return s.Name, s.API, s.HumanURL, s.RetrievedAt, s.Note
+}
+
+// RegisterFor returns one party's registered contributions for one year.
+func RegisterFor(partyID, year string) (int64, bool) {
+	for _, p := range financeIndexDoc.Register.Parties {
+		if p.PartyID != partyID || p.PartyID == "" {
+			continue
+		}
+		for _, r := range p.ByYear {
+			if r.Year == year {
+				return r.Amount, true
+			}
+		}
+	}
+	return 0, false
 }

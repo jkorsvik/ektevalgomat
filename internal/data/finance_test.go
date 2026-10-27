@@ -2,6 +2,7 @@ package data
 
 import (
 	"strconv"
+	"strings"
 	"testing"
 )
 
@@ -159,5 +160,98 @@ func TestFinanceForFindsAndMisses(t *testing.T) {
 	}
 	if f.Income == nil || *f.Income == 0 {
 		t.Errorf("ap %s has no income: the row exists but carries nothing", last)
+	}
+}
+
+// The register publishes a per-party breakdown and a yearly total. The builder
+// checks they agree; this re-checks it from the stored artefact, so a hand-edited
+// or half-regenerated index cannot pass on the generator's word alone.
+func TestRegisterReconcilesAgainstItsOwnTotals(t *testing.T) {
+	totals := RegisterTotals()
+	parties := RegisterParties()
+	if len(totals) < 10 || len(parties) < 10 {
+		t.Fatalf("register block is thin: %d years, %d parties", len(totals), len(parties))
+	}
+	sums := map[string]int64{}
+	for _, p := range parties {
+		for _, r := range p.ByYear {
+			sums[r.Year] += r.Amount
+		}
+	}
+	for _, tot := range totals {
+		if got := sums[tot.Year]; got != tot.Amount {
+			t.Errorf("year %s: parties sum to %d, published total %d", tot.Year, got, tot.Amount)
+		}
+	}
+	t.Logf("%d years, %d parties, all reconciled", len(totals), len(parties))
+}
+
+// Every scored party must be reachable in the register, or a page comparing
+// donations per party would silently omit one.
+func TestRegisterCoversEveryScoredParty(t *testing.T) {
+	for _, p := range Store.Parties {
+		found := false
+		for _, rp := range RegisterParties() {
+			if rp.PartyID == p.ID && len(rp.ByYear) > 0 {
+				found = true
+				break
+			}
+		}
+		if !found {
+			t.Errorf("party %s is absent from the register block", p.ID)
+		}
+	}
+}
+
+// The register and SSB measure different things. This asserts the distinction
+// stays visible in the data rather than only in a comment: if a later change ever
+// folds one into the other, the two figures would converge and this fails.
+func TestRegisterIsNotTheSSBContributionFigure(t *testing.T) {
+	latest := FinanceYears()[len(FinanceYears())-1]
+	totals := RegisterTotals()
+	var registerTotal int64
+	for _, r := range totals {
+		if r.Year == latest {
+			registerTotal = r.Amount
+		}
+	}
+	if registerTotal == 0 {
+		t.Fatalf("no register total for %s", latest)
+	}
+	var ssbTotal int64
+	for _, r := range PartyFinances() {
+		if r.Year == latest && r.Contributions != nil {
+			ssbTotal += *r.Contributions
+		}
+	}
+	if ssbTotal == 0 {
+		t.Fatalf("no SSB contribution figure for %s", latest)
+	}
+	if registerTotal == ssbTotal {
+		t.Errorf("%s: register total and SSB contributions are identical (%d); they are different measures and must not be conflated",
+			latest, registerTotal)
+	}
+	t.Logf("%s: register %d kroner, SSB contributions %d kroner", latest, registerTotal, ssbTotal)
+}
+
+func TestRegisterCarriesProvenance(t *testing.T) {
+	name, api, human, retrieved, note := RegisterSourceInfo()
+	if name == "" || api == "" || human == "" || retrieved == "" {
+		t.Errorf("incomplete register provenance: name=%q api=%q human=%q retrieved=%q", name, api, human, retrieved)
+	}
+	if !strings.Contains(note, "never added") {
+		t.Errorf("register note does not say the two measures are not added: %q", note)
+	}
+}
+
+func TestRegisterForFindsAndMisses(t *testing.T) {
+	if _, ok := RegisterFor("finnes-ikke", "2025"); ok {
+		t.Error("RegisterFor found a party that does not exist")
+	}
+	if _, ok := RegisterFor("", "2025"); ok {
+		t.Error("RegisterFor matched an empty party id: unlisted parties must not answer for one")
+	}
+	if v, ok := RegisterFor("ap", "2025"); !ok || v == 0 {
+		t.Errorf("ap 2025 = %d, %v; want a positive figure", v, ok)
 	}
 }

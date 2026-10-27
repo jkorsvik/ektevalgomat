@@ -12,6 +12,11 @@ import (
 	"github.com/jkorsvik/ektevalgomat/internal/data"
 )
 
+// squash collapses whitespace so a phrase assertion is about the text, not about
+// where the template happened to wrap. A line break inside a sentence is not a
+// change of meaning, and asserting on raw HTML made this test fail on a wrap.
+func squash(s string) string { return strings.Join(strings.Fields(s), " ") }
+
 func getPenger(t *testing.T) string {
 	t.Helper()
 	h := New(slog.New(slog.NewTextHandler(os.Stderr, nil)))
@@ -146,5 +151,58 @@ func TestPengerMatrixCoversEveryYear(t *testing.T) {
 		if !strings.Contains(body, fmt.Sprintf("<th>%s</th>", y)) {
 			t.Errorf("year %s is missing from the matrix", y)
 		}
+	}
+}
+
+// The register is a second source with a different definition. The page must show
+// it, and must not present it as the same measure as the accounts above.
+func TestPengerShowsTheRegisterSeparately(t *testing.T) {
+	body := squash(getPenger(t))
+	for _, want := range []string{
+		"Bidrag registrert etter partiloven",
+		"legges aldri sammen",
+		"ikke et delsett",
+	} {
+		if !strings.Contains(body, want) {
+			t.Errorf("page does not state %q: the two money sources would read as one", want)
+		}
+	}
+	// Every published year total must be on the page, derived from the index.
+	for _, r := range data.RegisterTotals() {
+		if !strings.Contains(body, r.Year) {
+			t.Errorf("register year %s is missing", r.Year)
+		}
+		amount := r.Amount
+		if !strings.Contains(body, kronerMill(&amount)) {
+			t.Errorf("register total for %s (%s mill) is missing", r.Year, kronerMill(&amount))
+		}
+	}
+	// And the refusal is stated, so a reader does not think the donor list was
+	// overlooked.
+	if !strings.Contains(body, "500") {
+		t.Error("page does not state why the donor-level list is absent")
+	}
+}
+
+// The per-party register figures must be the ones the register published, not a
+// figure derived from the accounts table above.
+func TestPengerRegisterPartyFiguresComeFromTheRegister(t *testing.T) {
+	body := getPenger(t)
+	years := data.RegisterTotals()
+	latest := years[len(years)-1].Year
+	checked := 0
+	for _, p := range data.Store.Parties {
+		amount, ok := data.RegisterFor(p.ID, latest)
+		if !ok {
+			continue
+		}
+		v := amount
+		if !strings.Contains(body, kronerMill(&v)) {
+			t.Errorf("party %s: register figure %s mill for %s is missing", p.ID, kronerMill(&v), latest)
+		}
+		checked++
+	}
+	if checked < 8 {
+		t.Fatalf("only %d parties checked", checked)
 	}
 }

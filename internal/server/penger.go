@@ -48,6 +48,19 @@ type pengerLatest struct {
 	Uncategorised string
 }
 
+// RegisterRows is the register's published total per year, and RegisterLatest the
+// per-party figure for the newest year it covers.
+type pengerRegisterTotal struct {
+	Year     string
+	Millions string
+}
+
+type pengerRegisterParty struct {
+	Short    string
+	Name     string
+	Millions string
+}
+
 type pengerView struct {
 	Meta            pageMeta
 	SnapshotDate    string
@@ -62,6 +75,16 @@ type pengerView struct {
 	HumanURL        string
 	RetrievedAt     string
 	Unit            string
+
+	// The register block. Kept apart from the SSB figures above on the page as
+	// well as in the data, because the two measure different things.
+	RegisterTotals    []pengerRegisterTotal
+	RegisterLatest    []pengerRegisterParty
+	RegisterYear      string
+	RegisterName      string
+	RegisterURL       string
+	RegisterRetrieved string
+	RegisterNote      string
 }
 
 // kronerMill formats kroner as millions with a Norwegian decimal comma, or "" for
@@ -146,6 +169,25 @@ func buildPengerView(ds *data.Dataset, snapshotDate string) pengerView {
 		})
 	}
 
+	var regTotals []pengerRegisterTotal
+	for _, r := range data.RegisterTotals() {
+		amount := r.Amount
+		regTotals = append(regTotals, pengerRegisterTotal{Year: r.Year, Millions: kronerMill(&amount)})
+	}
+	regYears := data.RegisterTotals()
+	regYear := ""
+	if len(regYears) > 0 {
+		regYear = regYears[len(regYears)-1].Year
+	}
+	var regLatest []pengerRegisterParty
+	for _, p := range parties {
+		if amount, ok := data.RegisterFor(p.ID, regYear); ok {
+			v := amount
+			regLatest = append(regLatest, pengerRegisterParty{Short: p.Short, Name: p.Name, Millions: kronerMill(&v)})
+		}
+	}
+	regName, _, regURL, regRetrieved, regNote := data.RegisterSourceInfo()
+
 	table, api, human, retrieved, unit := data.FinanceSource()
 	firstYear := ""
 	if len(years) > 0 {
@@ -167,5 +209,13 @@ func buildPengerView(ds *data.Dataset, snapshotDate string) pengerView {
 		HumanURL:        human,
 		RetrievedAt:     retrieved,
 		Unit:            unit,
+
+		RegisterTotals:    regTotals,
+		RegisterLatest:    regLatest,
+		RegisterYear:      regYear,
+		RegisterName:      regName,
+		RegisterURL:       regURL,
+		RegisterRetrieved: regRetrieved,
+		RegisterNote:      regNote,
 	}
 }

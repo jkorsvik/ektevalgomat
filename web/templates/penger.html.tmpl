@@ -79,6 +79,41 @@
     </tbody>
   </table>
 
+  <h3>Bidrag registrert etter partiloven</h3>
+  <p class="prose-lede">
+    Den andre pengekilden: {{.RegisterName}}, hentet {{.RegisterRetrieved}}.
+    Dette er enkeltbidrag over lovens grense slik partiene har rapportert dem,
+    ikke partienes regnskap. Samme krone, to definisjoner: tallene her legges
+    aldri sammen med regnskapstallene over, og de er ikke et delsett av dem.
+  </p>
+  <table class="data-table">
+    <thead>
+      <tr><th>År</th><th>Registrerte bidrag i alt</th></tr>
+    </thead>
+    <tbody>
+      {{range .RegisterTotals}}
+      <tr><th>{{.Year}}</th><td>{{.Millions}}</td></tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <p class="prose-lede">Per parti, {{.RegisterYear}}, millioner kroner:</p>
+  <table class="data-table">
+    <thead><tr><th>Parti</th><th>Registrerte bidrag</th></tr></thead>
+    <tbody>
+      {{range .RegisterLatest}}
+      <tr><th title="{{.Name}}">{{.Short}}</th><td>{{.Millions}}</td></tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <p class="prose-lede">
+    Giverlisten per bidrag er ikke med. Registerets paginerte endepunkt svarer
+    500 for hver parameterkombinasjon som er prøvd, så nettstedets egen tabell
+    kunne ikke gjenskapes. Det som står her, er de publiserte sumtallene, som
+    stemmer med summen av partiene for alle årene.
+  </p>
+
   <h3>Hva kilden ikke sier</h3>
   <p class="prose-lede">
     SSB-tabellen har ingen opplysning om anonyme bidrag. Den nærmeste er

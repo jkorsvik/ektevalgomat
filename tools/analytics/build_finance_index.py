@@ -66,6 +66,28 @@ POSTS = {
 
 OUT = pathlib.Path("internal/data/finance/index.json")
 
+# The second source: Statsforvalteren's register of contributions reported under
+# Partiloven, served behind partifinansiering.no. It answers a different question
+# from SSB 11233 and must not be added to it: SSB reports the parties' accounts,
+# the register reports individual contributions above the statutory threshold.
+# Same kroner, two definitions, so they are stored as two blocks and never summed.
+REGISTER = "https://partistatistikkclient.statsforvalteren.no/financing"
+REGISTER_HUMAN = "https://www.partifinansiering.no/nb/arlige-bidrag/"
+
+# The register names parties; the dataset names ids. An unmapped scored party is a
+# failure, not a silent omission.
+REGISTER_PARTIES = {
+    "Arbeiderpartiet": "ap",
+    "Høyre": "h",
+    "Fremskrittspartiet": "frp",
+    "Sosialistisk Venstreparti": "sv",
+    "Rødt": "rodt",
+    "Venstre": "v",
+    "Senterpartiet": "sp",
+    "Miljøpartiet De Grønne": "mdg",
+    "Kristelig Folkeparti": "krf",
+}
+
 
 def fetch(query: dict) -> dict:
     req = urllib.request.Request(
@@ -90,6 +112,76 @@ def flatten(js: dict) -> list[dict]:
     for i, combo in enumerate(itertools.product(*cats)):
         rows.append({"cells": dict(zip(dim_ids, combo)), "value": js["value"][i]})
     return rows
+
+
+def get_json(url: str) -> object:
+    with urllib.request.urlopen(url, timeout=60) as r:
+        return json.loads(r.read().decode())
+
+
+def fetch_register() -> dict:
+    """Per-party and total contributions per year, cross-checked against each other.
+
+    The register publishes both a per-party breakdown and a yearly total. They must
+    agree; a difference means one of the two endpoints is filtered differently, and
+    storing the disagreement would make every derived share wrong without saying so.
+    """
+    totals = get_json(f"{REGISTER}/AnnualContributionsTotalPerYear")
+    per_party = get_json(f"{REGISTER}/AnnualContributionsTotalPerYearForParties")
+    if not totals or not per_party:
+        raise RuntimeError("register returned no rows")
+
+    by_year = {int(r["Year"]): int(r["Amount"]) for r in totals}
+    parties, sums = [], {}
+    for p in per_party:
+        rows = [
+            {"year": str(r["Year"]), "amount": int(r["Amount"])}
+            for r in p.get("AnnualPartyContributions") or []
+            if r.get("Amount") is not None
+        ]
+        for r in rows:
+            sums[int(r["year"])] = sums.get(int(r["year"]), 0) + r["amount"]
+        parties.append(
+            {
+                "name": p["PartyName"],
+                "list_code": p.get("ListCode"),
+                "party_id": REGISTER_PARTIES.get(p["PartyName"], ""),
+                "by_year": sorted(rows, key=lambda r: r["year"]),
+            }
+        )
+
+    mismatched = [
+        {"year": str(y), "published": by_year[y], "sum_of_parties": sums.get(y, 0)}
+        for y in sorted(by_year)
+        if sums.get(y, 0) != by_year[y]
+    ]
+    if mismatched:
+        print(f"register does not reconcile: {mismatched[:3]}", file=sys.stderr)
+
+    missing = sorted(set(REGISTER_PARTIES.values()) - {p["party_id"] for p in parties})
+    if missing:
+        print(f"scored parties absent from the register: {missing}", file=sys.stderr)
+
+    return {
+        "source": {
+            "name": "Statsforvalteren, register over bidrag etter partiloven",
+            "api": REGISTER,
+            "human_url": REGISTER_HUMAN,
+            "retrieved_at": datetime.date.today().isoformat(),
+            "unit": "kroner",
+            "note": (
+                "Contributions above the statutory threshold, as reported by the parties. "
+                "Not the same measure as SSB 11233 A.3 and never added to it. "
+                "Donor-level rows are not included: the register's paginated endpoint "
+                "answers 500 for every parameter shape tried, so the site's own table "
+                "could not be reproduced; this block holds the published aggregates."
+            ),
+        },
+        "totals_by_year": [{"year": str(y), "amount": by_year[y]} for y in sorted(by_year)],
+        "parties": sorted(parties, key=lambda p: p["name"]),
+        "mismatched_years": mismatched,
+        "missing_scored_parties": missing,
+    }
 
 
 def main() -> int:
@@ -181,6 +273,8 @@ def main() -> int:
         "years": years,
         "rows": out_rows,
     }
+    doc["register"] = fetch_register()
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
 
@@ -198,7 +292,14 @@ def main() -> int:
         r = next((x for x in out_rows if x["party"] == pid and x["year"] == latest), None)
         if r and r["state_support"] is not None:
             print(f"  {pid:5s} {latest}: income {r['income']:>12,}  state {r['state_support']:>11,}")
-    return 0
+    reg = doc["register"]
+    print(
+        f"register: {len(reg['parties'])} parties, "
+        f"{len(reg['totals_by_year'])} years, "
+        f"{len(reg['mismatched_years'])} unreconciled years, "
+        f"{len(reg['missing_scored_parties'])} scored parties missing"
+    )
+    return 1 if reg["mismatched_years"] or reg["missing_scored_parties"] else 0
 
 
 if __name__ == "__main__":

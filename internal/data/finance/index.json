@@ -2608,5 +2608,1279 @@
    "from_other_orgs": 2692277,
    "from_uncategorised": 5850
   }
- ]
+ ],
+ "register": {
+  "source": {
+   "name": "Statsforvalteren, register over bidrag etter partiloven",
+   "api": "https://partistatistikkclient.statsforvalteren.no/financing",
+   "human_url": "https://www.partifinansiering.no/nb/arlige-bidrag/",
+   "retrieved_at": "2026-10-27",
+   "unit": "kroner",
+   "note": "Contributions above the statutory threshold, as reported by the parties. Not the same measure as SSB 11233 A.3 and never added to it. Donor-level rows are not included: the register's paginated endpoint answers 500 for every parameter shape tried, so the site's own table could not be reproduced; this block holds the published aggregates."
+  },
+  "totals_by_year": [
+   {
+    "year": "2014",
+    "amount": 21554830
+   },
+   {
+    "year": "2015",
+    "amount": 66907000
+   },
+   {
+    "year": "2016",
+    "amount": 32859590
+   },
+   {
+    "year": "2017",
+    "amount": 71747525
+   },
+   {
+    "year": "2018",
+    "amount": 25706199
+   },
+   {
+    "year": "2019",
+    "amount": 66271915
+   },
+   {
+    "year": "2020",
+    "amount": 38070789
+   },
+   {
+    "year": "2021",
+    "amount": 109875765
+   },
+   {
+    "year": "2022",
+    "amount": 43463144
+   },
+   {
+    "year": "2023",
+    "amount": 107415719
+   },
+   {
+    "year": "2024",
+    "amount": 104973442
+   },
+   {
+    "year": "2025",
+    "amount": 176775593
+   }
+  ],
+  "parties": [
+   {
+    "name": "Arbeiderpartiet",
+    "list_code": "A",
+    "party_id": "ap",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 14457037
+     },
+     {
+      "year": "2015",
+      "amount": 43400527
+     },
+     {
+      "year": "2016",
+      "amount": 13194416
+     },
+     {
+      "year": "2017",
+      "amount": 31821219
+     },
+     {
+      "year": "2018",
+      "amount": 11900450
+     },
+     {
+      "year": "2019",
+      "amount": 26693448
+     },
+     {
+      "year": "2020",
+      "amount": 15727838
+     },
+     {
+      "year": "2021",
+      "amount": 41793354
+     },
+     {
+      "year": "2022",
+      "amount": 20412057
+     },
+     {
+      "year": "2023",
+      "amount": 32017888
+     },
+     {
+      "year": "2024",
+      "amount": 18715124
+     },
+     {
+      "year": "2025",
+      "amount": 56268512
+     }
+    ]
+   },
+   {
+    "name": "Ensomhetspartiet",
+    "list_code": "EP",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 0
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 659996
+     }
+    ]
+   },
+   {
+    "name": "Fred og rettferdighet (FOR)",
+    "list_code": "FOR",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 0
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 2340000
+     }
+    ]
+   },
+   {
+    "name": "Fremskrittspartiet",
+    "list_code": "FRP",
+    "party_id": "frp",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 20000
+     },
+     {
+      "year": "2015",
+      "amount": 2509432
+     },
+     {
+      "year": "2016",
+      "amount": 3328971
+     },
+     {
+      "year": "2017",
+      "amount": 4437950
+     },
+     {
+      "year": "2018",
+      "amount": 800000
+     },
+     {
+      "year": "2019",
+      "amount": 4992614
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 5563750
+     },
+     {
+      "year": "2022",
+      "amount": 1830364
+     },
+     {
+      "year": "2023",
+      "amount": 16779217
+     },
+     {
+      "year": "2024",
+      "amount": 23882207
+     },
+     {
+      "year": "2025",
+      "amount": 24712734
+     }
+    ]
+   },
+   {
+    "name": "Generasjonspartiet",
+    "list_code": "GP",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 0
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 507945
+     }
+    ]
+   },
+   {
+    "name": "Høyre",
+    "list_code": "H",
+    "party_id": "h",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 2738658
+     },
+     {
+      "year": "2015",
+      "amount": 11465572
+     },
+     {
+      "year": "2016",
+      "amount": 8137500
+     },
+     {
+      "year": "2017",
+      "amount": 16271822
+     },
+     {
+      "year": "2018",
+      "amount": 4386424
+     },
+     {
+      "year": "2019",
+      "amount": 15271063
+     },
+     {
+      "year": "2020",
+      "amount": 3742817
+     },
+     {
+      "year": "2021",
+      "amount": 20209131
+     },
+     {
+      "year": "2022",
+      "amount": 5107126
+     },
+     {
+      "year": "2023",
+      "amount": 21752508
+     },
+     {
+      "year": "2024",
+      "amount": 30241546
+     },
+     {
+      "year": "2025",
+      "amount": 21609854
+     }
+    ]
+   },
+   {
+    "name": "Industri- og næringspartiet",
+    "list_code": "INP",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 108440
+     },
+     {
+      "year": "2024",
+      "amount": 207133
+     },
+     {
+      "year": "2025",
+      "amount": 613368
+     }
+    ]
+   },
+   {
+    "name": "Konservativt",
+    "list_code": "KRISTNE",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 350000
+     },
+     {
+      "year": "2016",
+      "amount": 100000
+     },
+     {
+      "year": "2017",
+      "amount": 345000
+     },
+     {
+      "year": "2018",
+      "amount": 271019
+     },
+     {
+      "year": "2019",
+      "amount": 350000
+     },
+     {
+      "year": "2020",
+      "amount": 13000
+     },
+     {
+      "year": "2021",
+      "amount": 643400
+     },
+     {
+      "year": "2022",
+      "amount": 200000
+     },
+     {
+      "year": "2023",
+      "amount": 112924
+     },
+     {
+      "year": "2024",
+      "amount": 125000
+     },
+     {
+      "year": "2025",
+      "amount": 180000
+     }
+    ]
+   },
+   {
+    "name": "Kristelig Folkeparti",
+    "list_code": "KRF",
+    "party_id": "krf",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 35000
+     },
+     {
+      "year": "2015",
+      "amount": 192000
+     },
+     {
+      "year": "2016",
+      "amount": 174086
+     },
+     {
+      "year": "2017",
+      "amount": 322323
+     },
+     {
+      "year": "2018",
+      "amount": 112517
+     },
+     {
+      "year": "2019",
+      "amount": 2096156
+     },
+     {
+      "year": "2020",
+      "amount": 370521
+     },
+     {
+      "year": "2021",
+      "amount": 4561500
+     },
+     {
+      "year": "2022",
+      "amount": 527557
+     },
+     {
+      "year": "2023",
+      "amount": 2112390
+     },
+     {
+      "year": "2024",
+      "amount": 3844547
+     },
+     {
+      "year": "2025",
+      "amount": 11791336
+     }
+    ]
+   },
+   {
+    "name": "Kystpartiet",
+    "list_code": "KYST",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 26088
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 0
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 0
+     }
+    ]
+   },
+   {
+    "name": "Liberalistene",
+    "list_code": "LIBS",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 290000
+     },
+     {
+      "year": "2018",
+      "amount": 120000
+     },
+     {
+      "year": "2019",
+      "amount": 140000
+     },
+     {
+      "year": "2020",
+      "amount": 120000
+     },
+     {
+      "year": "2021",
+      "amount": 1180000
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 320000
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 0
+     }
+    ]
+   },
+   {
+    "name": "Miljøpartiet De Grønne",
+    "list_code": "MDG",
+    "party_id": "mdg",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 92000
+     },
+     {
+      "year": "2015",
+      "amount": 497916
+     },
+     {
+      "year": "2016",
+      "amount": 1022201
+     },
+     {
+      "year": "2017",
+      "amount": 1688793
+     },
+     {
+      "year": "2018",
+      "amount": 876703
+     },
+     {
+      "year": "2019",
+      "amount": 1924475
+     },
+     {
+      "year": "2020",
+      "amount": 2701052
+     },
+     {
+      "year": "2021",
+      "amount": 4963551
+     },
+     {
+      "year": "2022",
+      "amount": 2420094
+     },
+     {
+      "year": "2023",
+      "amount": 6109043
+     },
+     {
+      "year": "2024",
+      "amount": 2029360
+     },
+     {
+      "year": "2025",
+      "amount": 7195666
+     }
+    ]
+   },
+   {
+    "name": "Norges Kommunistiske Parti",
+    "list_code": "NKP",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 13200
+     },
+     {
+      "year": "2018",
+      "amount": 19500
+     },
+     {
+      "year": "2019",
+      "amount": 18000
+     },
+     {
+      "year": "2020",
+      "amount": 18000
+     },
+     {
+      "year": "2021",
+      "amount": 18000
+     },
+     {
+      "year": "2022",
+      "amount": 12000
+     },
+     {
+      "year": "2023",
+      "amount": 48000
+     },
+     {
+      "year": "2024",
+      "amount": 18000
+     },
+     {
+      "year": "2025",
+      "amount": 118200
+     }
+    ]
+   },
+   {
+    "name": "Norgesdemokratene",
+    "list_code": "DEMN",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 50000
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 131960
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 150000
+     }
+    ]
+   },
+   {
+    "name": "Partiet DNI",
+    "list_code": "DNI",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 0
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 100000
+     }
+    ]
+   },
+   {
+    "name": "Partiet Sentrum",
+    "list_code": "PS",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 35000
+     },
+     {
+      "year": "2022",
+      "amount": 163000
+     },
+     {
+      "year": "2023",
+      "amount": 311038
+     },
+     {
+      "year": "2024",
+      "amount": 15000
+     },
+     {
+      "year": "2025",
+      "amount": 0
+     }
+    ]
+   },
+   {
+    "name": "Pensjonistpartiet",
+    "list_code": "PP",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 38150
+     },
+     {
+      "year": "2015",
+      "amount": 25000
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 0
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 56000
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 80000
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 0
+     }
+    ]
+   },
+   {
+    "name": "Rødt",
+    "list_code": "RØDT",
+    "party_id": "rodt",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 465257
+     },
+     {
+      "year": "2015",
+      "amount": 750062
+     },
+     {
+      "year": "2016",
+      "amount": 838808
+     },
+     {
+      "year": "2017",
+      "amount": 1094402
+     },
+     {
+      "year": "2018",
+      "amount": 2583085
+     },
+     {
+      "year": "2019",
+      "amount": 1156978
+     },
+     {
+      "year": "2020",
+      "amount": 6030602
+     },
+     {
+      "year": "2021",
+      "amount": 4994795
+     },
+     {
+      "year": "2022",
+      "amount": 3438411
+     },
+     {
+      "year": "2023",
+      "amount": 9091788
+     },
+     {
+      "year": "2024",
+      "amount": 8881192
+     },
+     {
+      "year": "2025",
+      "amount": 7999263
+     }
+    ]
+   },
+   {
+    "name": "Senterpartiet",
+    "list_code": "SP",
+    "party_id": "sp",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 1724031
+     },
+     {
+      "year": "2015",
+      "amount": 2645375
+     },
+     {
+      "year": "2016",
+      "amount": 1404323
+     },
+     {
+      "year": "2017",
+      "amount": 4405313
+     },
+     {
+      "year": "2018",
+      "amount": 1294207
+     },
+     {
+      "year": "2019",
+      "amount": 3717214
+     },
+     {
+      "year": "2020",
+      "amount": 1562753
+     },
+     {
+      "year": "2021",
+      "amount": 7307334
+     },
+     {
+      "year": "2022",
+      "amount": 2051591
+     },
+     {
+      "year": "2023",
+      "amount": 5700860
+     },
+     {
+      "year": "2024",
+      "amount": 2957010
+     },
+     {
+      "year": "2025",
+      "amount": 8358441
+     }
+    ]
+   },
+   {
+    "name": "Sosialistisk Venstreparti",
+    "list_code": "SV",
+    "party_id": "sv",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 1901843
+     },
+     {
+      "year": "2015",
+      "amount": 3397373
+     },
+     {
+      "year": "2016",
+      "amount": 2722446
+     },
+     {
+      "year": "2017",
+      "amount": 6631457
+     },
+     {
+      "year": "2018",
+      "amount": 3275014
+     },
+     {
+      "year": "2019",
+      "amount": 6320001
+     },
+     {
+      "year": "2020",
+      "amount": 5540879
+     },
+     {
+      "year": "2021",
+      "amount": 13330369
+     },
+     {
+      "year": "2022",
+      "amount": 5986446
+     },
+     {
+      "year": "2023",
+      "amount": 9434967
+     },
+     {
+      "year": "2024",
+      "amount": 7599271
+     },
+     {
+      "year": "2025",
+      "amount": 16494465
+     }
+    ]
+   },
+   {
+    "name": "Velferd og Innovasjonspartiet",
+    "list_code": "VI",
+    "party_id": "",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 0
+     },
+     {
+      "year": "2015",
+      "amount": 0
+     },
+     {
+      "year": "2016",
+      "amount": 0
+     },
+     {
+      "year": "2017",
+      "amount": 615500
+     },
+     {
+      "year": "2018",
+      "amount": 0
+     },
+     {
+      "year": "2019",
+      "amount": 0
+     },
+     {
+      "year": "2020",
+      "amount": 0
+     },
+     {
+      "year": "2021",
+      "amount": 0
+     },
+     {
+      "year": "2022",
+      "amount": 0
+     },
+     {
+      "year": "2023",
+      "amount": 0
+     },
+     {
+      "year": "2024",
+      "amount": 0
+     },
+     {
+      "year": "2025",
+      "amount": 280000
+     }
+    ]
+   },
+   {
+    "name": "Venstre",
+    "list_code": "V",
+    "party_id": "v",
+    "by_year": [
+     {
+      "year": "2014",
+      "amount": 82854
+     },
+     {
+      "year": "2015",
+      "amount": 1673743
+     },
+     {
+      "year": "2016",
+      "amount": 1936839
+     },
+     {
+      "year": "2017",
+      "amount": 3810546
+     },
+     {
+      "year": "2018",
+      "amount": 67280
+     },
+     {
+      "year": "2019",
+      "amount": 3485966
+     },
+     {
+      "year": "2020",
+      "amount": 2243327
+     },
+     {
+      "year": "2021",
+      "amount": 5249493
+     },
+     {
+      "year": "2022",
+      "amount": 1314498
+     },
+     {
+      "year": "2023",
+      "amount": 3304696
+     },
+     {
+      "year": "2024",
+      "amount": 6458052
+     },
+     {
+      "year": "2025",
+      "amount": 17395813
+     }
+    ]
+   }
+  ],
+  "mismatched_years": [],
+  "missing_scored_parties": []
+ }
 }

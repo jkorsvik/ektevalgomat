@@ -122,7 +122,7 @@ items:
   kind: excerpt
   statement: ''
   method: method/excerpt.md
-  status: running
+  status: passed
   note: '299 evidence files carry no verbatim_excerpt, but 281 of them are votes where the claim IS the
     action (status forslag_avvist_stemte_mot and siblings) and a quote would be decoration. The tail that
     can be quoted is the ~18 non-vote rows: kontekst (5), ffi_monitorering (2), and one each of vedtak,
@@ -131,11 +131,15 @@ items:
     document actually contains a sentence that carries the claim, and say so plainly where it does not.
 
     '
+  result: >-
+    12 excerpts found and applied through apply_excerpts.py, which verifies each
+    against its source and rolls back on failure. Quoted rows went from 316 to 331
+    at the time; verify_excerpts reports 0 failed.
 - id: mixed-voteringer-review
   kind: verify
   statement: ''
   method: method/mixed.md
-  status: running
+  status: passed
   note: '23 evidence files are MIXED in verify_votes.py: the party voted differently on two related voterings
     cited by the same file. Not a failure (exit 0), but the coded direction may rest on the wrong vote.
     Concentrations: stroemprismakspris-mot (8 files, 83-90), kjernekraft-kommersiell (5, 95-99), digital
@@ -143,13 +147,18 @@ items:
     voterings and state whether the coded position still follows, or which vote it should cite instead.
 
     '
-
+  result: >-
+    Reviewed all 23 MIXED rows: 16 KEEP, 6 RE-CITE, 1 RE-CODE, 0 SPLIT. The nine
+    kjernekraft re-citations were verified against the API in the driving session
+    (27721 nr. 4 carries the law change; V voted 0 for there and 2 for on its own
+    27718) and applied; the vote index was rebuilt. MIXED remains for six of them
+    because they also cite the tilradding, which is the correct reading of MIXED.
 - id: gov-composition
   kind: reference
   role: scout-then-harvester
   statement: ''
   method: method/reference.md
-  status: pending
+  status: passed
   note: 'Who governed when: cabinet, party composition, minister per post, from and to
     date, for every government that overlaps the evidence range (2009-2026). One small
     authoritative table from regjeringen.no and Stortinget. Why it matters more than it
@@ -159,12 +168,25 @@ items:
     errors, and nothing in the dataset can check it today.
 
     '
+  result: >-
+    Ingested as content/government/{periods,ministers}.yaml: 7 periods of constant
+    cabinet composition, 245 minister postings, each with its page and read date.
+    Tests assert continuity with a shared change date, coverage from 2009-01-01 to
+    the newest evidence date, and that every minister's party sits in the cabinet
+    governing on the day the posting started (all 245 pass).
 - id: party-finance
   kind: reference
   role: harvester
   statement: utsagn-03
   method: method/reference.md
-  status: pending
+  status: passed
+  result: >-
+    Ingested both halves. SSB 11233 (181 party-years, 2005-2025) via
+    tools/analytics/build_finance_index.py, and Statsforvalteren's Partiloven
+    register (22 parties, 12 years). /penger renders both, kept apart on purpose:
+    they measure different things. Donor-level rows REFUSED: the register's
+    paginated endpoint answers 500 for every parameter shape tried, so the site's
+    own table could not be reproduced; the published aggregates are what is stored.
   note: 'The money behind the parties: SSB party-finance statistics, the Partiloven register
     of party income, and the parties own annual accounts. Annual, small, tier A. Closes the
     anonym-financing dimension with numbers instead of documents, and gives utsagn-02 and

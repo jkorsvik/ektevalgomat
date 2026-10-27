@@ -25,10 +25,13 @@ proposal text as the Stortinget API states it, the date, whether it carried, and
 each party's side computed from the official per-representative rows. Reading
 those as a position stays a human act with a citation attached.
 
-Exhaustive mode: by default this walks only the voterings the content cites, so the
-index is exactly as wide as the evidence. `--sessions` widens it: for each session it
-lists every sak, asks for that sak's voterings, and adds them all. Two facts cost
-real time to find and are recorded here so nobody rediscovers them: the API has no
+Exhaustive mode: `--sessions` widens the index beyond the content. For each session
+it lists every sak, asks for that sak's voterings, and adds them all. Without it the
+run is as wide as the evidence, so a fresh index is exactly the cited voterings --
+but an existing index keeps the sessions it already records, because the bare
+invocation is the easiest one to reach by accident and it used to rewrite 6848
+votes as the 104 the content cites. `--replace` is the deliberate rebuild. Two facts
+cost real time to find and are recorded here so nobody rediscovers them: the API has no
 session-level votering listing (voteringer?sesjonid= answers 400, "missing SakId"),
 and the per-sak payload names its list `sak_votering_liste` with the id under
 `votering_id`. Reading `voteringer_liste` returns an empty list on every sak and
@@ -62,6 +65,7 @@ import os
 import pathlib
 import re
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -86,19 +90,44 @@ CODE = {2: "for", 3: "mot", 1: "ikke_tilstede"}
 API_TO_ID = {v: k for k, v in vv.PARTY.items()}  # "A" -> "ap"
 
 
-def fetch(url: str, tries: int = 8) -> dict:
-    """GET + JSON, cached by URL under CACHE; 429-backed-off so a burst is safe."""
+# One politeness gate for the whole process. The API answers 429 to a fast scan,
+# so the workers share a minimum interval between requests instead of each running
+# at its own speed. Threads make this file roughly four times faster; the gate is
+# what keeps that from turning into a ban.
+GATE = threading.Lock()
+NEXT_SLOT = [0.0]
+MIN_INTERVAL = 0.34  # the interval the serial walk used against 429; keep it, now process-wide
+
+
+def wait_for_slot() -> None:
+    with GATE:
+        now = time.monotonic()
+        slot = max(now, NEXT_SLOT[0])
+        NEXT_SLOT[0] = slot + MIN_INTERVAL
+    delay = slot - time.monotonic()
+    if delay > 0:
+        time.sleep(delay)
+
+
+def fetch(url: str, tries: int = 12) -> dict:
+    """GET + JSON, cached by URL under CACHE; 429-backed-off so a burst is safe.
+
+    Safe to call from several threads: the cache file is written to a temp name that
+    includes the thread id, then moved into place, so two workers meeting the same
+    URL cannot leave a half-written entry.
+    """
     CACHE.mkdir(parents=True, exist_ok=True)
     f = CACHE / hashlib.sha256(url.encode()).hexdigest()
     if f.exists() and f.stat().st_size > 0:
         return json.loads(f.read_bytes())
-    backoff = 2.0
+    backoff = 3.0
     for _ in range(tries):
         try:
+            wait_for_slot()
             req = urllib.request.Request(url, headers={"User-Agent": "ektevalgomat vote index"})
             with urllib.request.urlopen(req, timeout=60) as r:
                 body = r.read()
-            tmp = f.with_suffix(f".{os.getpid()}.tmp")
+            tmp = f.with_suffix(f".{os.getpid()}.{threading.get_ident()}.tmp")
             tmp.write_bytes(body)
             os.replace(tmp, f)
             return json.loads(body)
@@ -149,8 +178,19 @@ def side(rows: list[dict]) -> dict[str, str]:
 
 
 def session_votes(sessions: list[str]) -> dict[int, str]:
-    """votering id -> session, from every sak in every named session."""
-    out: dict[int, str] = {}
+    """votering id -> session, from every sak in every named session.
+
+    A case that spans two sessions is listed by both, and each listing returns the
+    case's whole `sak_votering_liste`, so a votering cited by a carried-over case is
+    claimed by more than one session (measured 2026-10-27: 511 of 6838). The API has
+    no vote-to-date endpoint, so which session a vote was actually taken in cannot be
+    derived from the listing. Assigning the last session that named it made the field
+    a function of iteration order: the same inputs wrote 2023-2024 or 2024-2025
+    depending on the order the sessions were passed. Those votes are recorded as
+    unknown ("") instead, which is what the artefact already means by an empty
+    session, rather than asserting one of the candidates.
+    """
+    claims: dict[int, set[str]] = {}
     for ses in sessions:
         sak_list = fetch(SAKER.format(ses)).get("saker_liste") or []
         got = 0
@@ -167,10 +207,20 @@ def session_votes(sessions: list[str]) -> dict[int, str]:
                 vid = v.get("votering_id")
                 if not vid or vid < 0:
                     continue
-                out[int(vid)] = ses
+                claims.setdefault(int(vid), set()).add(ses)
                 got += 1
-            time.sleep(0.34)  # the API answers 429 to a fast scan; stay under it
         print(f"  {ses}: {len(sak_list)} saker, {got} voterings", file=sys.stderr)
+    out: dict[int, str] = {}
+    ambiguous = 0
+    for vid, ses_set in claims.items():
+        if len(ses_set) == 1:
+            out[vid] = next(iter(ses_set))
+        else:
+            out[vid] = ""
+            ambiguous += 1
+    if ambiguous:
+        print(f"  {ambiguous} votering(s) are named by more than one session: session left "
+              f"empty, since the listing cannot say when the vote was taken", file=sys.stderr)
     return out
 
 
@@ -193,6 +243,8 @@ def cited_votes() -> dict[str, dict]:
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--workers", type=int, default=3,
+                    help="parallel fetchers; the shared gate keeps the request rate polite")
     ap.add_argument("--replace", action="store_true",
                     help="replace the index instead of merging with its existing sessions")
     ap.add_argument("--sessions", default="",
@@ -212,7 +264,12 @@ def main(argv: list[str]) -> int:
     # on its own used to DELETE every other session's votes: 2075 became 0 while the
     # run reported success and wrote a smaller file. A partial run may only grow
     # the corpus. --replace is there for a deliberate rebuild.
-    if sessions and not args.replace and (OUT / "index.json").exists():
+    #
+    # This applies to the bare invocation too, which is the one in the usage block
+    # above and the easiest to reach by accident: with no --sessions it names no
+    # session at all, so 6848 votes were rewritten as the 104 the content cites.
+    # Measured with --dry-run before the guard was widened, 2026-10-27.
+    if not args.replace and (OUT / "index.json").exists():
         try:
             prev = json.loads((OUT / "index.json").read_text()).get("votes") or []
         except Exception:  # noqa: BLE001 - a broken index is rebuilt, not trusted
@@ -228,27 +285,31 @@ def main(argv: list[str]) -> int:
         print(f"{len(wide)} voterings found by walking {len(sessions)} session(s)", file=sys.stderr)
 
     allvids = sorted({int(v) for v in cites} | set(wide))
-    votes, failed = [], 0
-    for vid in allvids:
-        vid = str(vid)
+
+    def build(vid: int):
+        """One vote record, or None when its tally could not be fetched."""
+        key = str(vid)
         try:
-            rows = fetch(RESULTAT.format(vid)).get("voteringsresultat_liste") or []
+            rows = fetch(RESULTAT.format(key)).get("voteringsresultat_liste") or []
         except Exception as e:  # noqa: BLE001 - report, never hide
-            print(f"  votering {vid}: fetch failed: {type(e).__name__}: {e}", file=sys.stderr)
-            failed += 1
-            continue
+            print(f"  votering {key}: fetch failed: {type(e).__name__}: {e}", file=sys.stderr)
+            return None
         if not rows:
-            print(f"  votering {vid}: no per-representative rows (unanimous or not a vote)",
+            print(f"  votering {key}: no per-representative rows (unanimous or not a vote)",
                   file=sys.stderr)
-        fl = fetch(FORSLAG.format(vid)).get("voteringsforslag_liste") or []
+        try:
+            fl = fetch(FORSLAG.format(key)).get("voteringsforslag_liste") or []
+        except Exception as e:  # noqa: BLE001 - one unreadable proposal must not end the run
+            print(f"  votering {key}: forslag fetch failed: {type(e).__name__}: {e}", file=sys.stderr)
+            return None
         forslag = " | ".join(x for x in (strip_html(y.get("forslag_tekst")) for y in fl) if x)
         # No date. voteringsresultat carries no sak_id and there is no
         # votering->sak endpoint (eksport/votering returns 404), so a date could
         # only be had by scanning every case's voterings across 18 sessions. A
         # mostly-empty date column reads as missing data; the year axis belongs to
         # the position view, which has real evidence dates, not to this one.
-        votes.append({
-            "votering_id": int(vid),
+        return {
+            "votering_id": int(key),
             # A vote with no per-representative rows was taken unanimously (the
             # API returns resultat_type 5 and no party tally). It compares nothing,
             # so it is marked rather than dropped: the coverage test requires the
@@ -257,10 +318,24 @@ def main(argv: list[str]) -> int:
             "unanimous": not rows,
             "forslag": forslag[:600],
             "parties": side(rows),
-            "cited_by": (cites.get(vid) or {}).get("evidence_ids") or [],
-            "coded_parties": (cites.get(vid) or {}).get("parties") or [],
-            "session": wide.get(int(vid), ""),
-        })
+            "cited_by": (cites.get(key) or {}).get("evidence_ids") or [],
+            "coded_parties": (cites.get(key) or {}).get("parties") or [],
+            "session": wide.get(int(key), ""),
+        }
+
+    votes, failed = [], 0
+    if args.workers > 1:
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            results = list(pool.map(build, allvids))
+    else:
+        results = [build(v) for v in allvids]
+    for r in results:
+        if r is None:
+            failed += 1
+        else:
+            votes.append(r)
+    votes.sort(key=lambda v: v["votering_id"])
 
     if not votes:
         print("fetched no votes at all: treat as failure", file=sys.stderr)

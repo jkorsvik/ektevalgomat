@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* Derived, never hand-written: every cell is computed from the dataset at
+       request time. 2026-10-27. */}}
+  <h2>Parti, sakområde og år</h2>
+  <p class="prose-lede">
+    Samme kart som <a href="/kart">Kartet</a>, men med årene bevart.
+    En celle viser gjennomsnittet på skalaen −2 til +2 for posisjonene partiet
+    hadde i det året, og tallet i parentes er hvor mange posisjoner tallet er
+    regnet ut fra. Årene er de samme i hver tabell, slik at et tomt felt kan
+    sammenlignes på tvers av sakområder.
+  </p>
+  <p class="prose-lede">
+    Et tomt felt betyr at ingen kilde er samlet for det året. Det betyr ikke at
+    partiet var uten mening. {{.Dated}} av {{.TotalCoded}} kodede posisjoner har
+    en årstall vi kan feste til, {{.Undated}} har det ikke, og kildene strekker
+    seg fra {{.Oldest}} til {{.Newest}}.
+  </p>
+
+  {{range .Blocks}}
+  <h3>{{.Dimension}}</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Parti</th>
+        {{range $.Years}}<th>{{.}}</th>{{end}}
+        <th title="Kodede posisjoner uten årstall">Uten år</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Rows}}
+      <tr>
+        <th title="{{.Name}}">{{.Short}}</th>
+        {{range .Cells}}
+          {{if .Has}}<td class="{{.Tone}}">{{.Label}}</td>
+          {{else}}<td class="muted">·</td>{{end}}
+        {{end}}
+        <td class="muted">{{if .Undated}}{{.Undated}}{{else}}·{{end}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+  {{end}}
+
+  <h3>Hva som ikke står her</h3>
+  <p class="prose-lede">
+    Ingen posisjon er ført videre fra et år til det neste. Har partiet en
+    posisjon fra 2021 og en fra 2024, står det i begge årene, og årene imellom er
+    tomme. Det er ikke en mangel vi skjuler: en periode uten innsamlet kilde er
+    nettopp det feltet viser. <a href="/metode">Metoden</a> beskriver hvordan en
+    posisjon kodes, og <a href="/data">Åpne data</a> har filene.
+  </p>
+</main>
+
+{{template "footerlinks"}}
+</body>
+</html>

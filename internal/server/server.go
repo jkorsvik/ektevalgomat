@@ -614,6 +614,7 @@ func New(logger *slog.Logger) http.Handler {
 	pengerTmpl := page("penger.html.tmpl")
 	eierskapTmpl := page("eierskap.html.tmpl")
 	maktTmpl := page("makt.html.tmpl")
+	tidslinjeTmpl := page("tidslinje.html.tmpl")
 	personvernTmpl := page("personvern.html.tmpl")
 	resultatTmpl := page("resultat.html.tmpl")
 	programTmpl := page("program.html.tmpl")
@@ -778,6 +779,16 @@ func New(logger *slog.Logger) http.Handler {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := eierskapTmpl.Execute(w, buildEierskapView(SnapshotDate)); err != nil {
 			logger.Error("render eierskap", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
+	// Derived from the dataset at request time: the same cells as /kart, with the
+	// years kept instead of averaged away.
+	mux.HandleFunc("GET /tidslinje", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := tidslinjeTmpl.Execute(w, buildYearView(SnapshotDate)); err != nil {
+			logger.Error("render tidslinje", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}
 	})

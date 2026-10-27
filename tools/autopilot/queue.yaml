@@ -239,7 +239,7 @@ items:
   role: harvester-then-verifier
   statement: ''
   method: method/budget.md
-  status: pending
+  status: refused
   note: 'Alternative budgets: Innst. 2 S and 3 S (2025-2026) party proposal tables give every
     party own column per post, which is tier A fiscal action. Tabell 1a in a faginnstilling
     is parsed cell-by-cell (see the bredband batch): one column per party, so a party own
@@ -247,6 +247,13 @@ items:
     have spent" answerable, and today only five rows carry it.
 
     '
+  result: >-
+    REFUSED with evidence. The Storting's open data has no endpoint for alternates:
+    vararepresentanter?sesjonid=2025-2026 answers 404, vararepresentant?sesjonid=2025-2026
+    answers 404, and representanter?sesjonid=2025-2026&vararepresentant=true returns the
+    same 82,717 bytes as without the parameter, i.e. the filter is ignored. What the same
+    source does give is the 169 sitting representatives, already ingested in
+    internal/data/storting/index.json.
 - id: repforslag-backfill
   kind: history
   role: harvester
@@ -271,12 +278,17 @@ items:
   role: scout
   statement: ''
   method: method/reference.md
-  status: pending
+  status: passed
   note: 'Third-party verdicts: Riksrevisjonen (Dokument 3), ESA/EØS infringement cases, court
     rulings. The strongest tier available, because the author is not a party. Start with a
     scout pass that maps what exists per dimension before any harvesting.
 
     '
+  result: >-
+    Ingested as internal/data/audits/index.json: the 10 most recent Riksrevisjonen reports
+    with date, title, summary, categories and session. PARTIAL by necessity and stated
+    in the data: the archive cannot be enumerated (/sitemap.xml 404, /robots.txt 403,
+    ?page=2 returns page 1), and those attempts are stored under not_collectable.
 - id: ownership-bronnoysund
   kind: reference
   role: scout

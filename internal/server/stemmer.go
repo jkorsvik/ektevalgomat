@@ -61,6 +61,12 @@ type stemmerView struct {
 	HasRanking    bool
 	Votes         []stemmerVote
 	Unanimous     int
+	// Coverage: which storting sessions the index was built from. A matrix that
+	// silently covers three of eighteen sessions reads as if it covers the record,
+	// and the reader has no way to tell.
+	Sessions        []data.VoteSession
+	SessionCount    int
+	VotesInSessions int
 }
 
 func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
@@ -127,13 +133,16 @@ func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
 		Meta: meta("Stemmemønster · hvem stemmer med hvem",
 			"Hvor ofte to partier stemte likt på de samme voteringene, regnet ut fra Stortingets voteringsresultat, med nevneren synlig i hver celle.",
 			"/stemmer"),
-		SnapshotDate:  snapshotDate,
-		GeneratedAt:   data.VotesGeneratedAt(),
-		VoteTotal:     len(votes),
-		VoteringsCite: len(votes),
-		Parties:       parties,
-		Matrix:        matrix,
-		Ranked:        ranked,
+		SnapshotDate:    snapshotDate,
+		GeneratedAt:     data.VotesGeneratedAt(),
+		VoteTotal:       len(votes),
+		Sessions:        data.VoteSessions(),
+		SessionCount:    len(data.VoteSessions()),
+		VotesInSessions: data.VotesWithSession(),
+		VoteringsCite:   len(votes),
+		Parties:         parties,
+		Matrix:          matrix,
+		Ranked:          ranked,
 	}
 	if len(ranked) > 0 {
 		view.Most, view.Least, view.HasRanking = ranked[0], ranked[len(ranked)-1], true

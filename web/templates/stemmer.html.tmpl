@@ -23,6 +23,13 @@
     hvor mange voteringer den er regnet ut fra. Et tall uten nevner er ikke et
     funn: 3 av 3 er ikke sterkere enn 40 av 50.
   </p>
+  <p class="prose-lede">
+    Dekningen er ikke hele Stortingets historie. Indeksen er bygget fra
+    {{.SessionCount}} sesjoner ({{range $i, $s := .Sessions}}{{if $i}}, {{end}}{{$s.Session}}{{end}}),
+    i alt {{.VotesInSessions}} av {{.VoteTotal}} voteringspor. Resten er voteringspor
+    som bare er med fordi en kilde viser til dem, uten at sesjonen er registrert.
+    Voteringer fra sesjoner utenfor dette utvalget er ikke med i tallene over.
+  </p>
 
   {{if .HasRanking}}
   <p class="prose-lede">

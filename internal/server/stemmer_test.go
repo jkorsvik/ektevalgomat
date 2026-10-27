@@ -5,6 +5,7 @@ import (
 	"log/slog"
 	"net/http/httptest"
 	"os"
+	"strconv"
 	"strings"
 	"testing"
 
@@ -93,4 +94,49 @@ func partyIDs(ds *data.Dataset) []string {
 		ids = append(ids, p.ID)
 	}
 	return ids
+}
+
+// The alignment page must say which sessions it covers. A matrix built from three
+// of the eighteen sessions the API serves reads as if it covers the record, and the
+// reader has no other way to find out. The sessions are derived from the index, so
+// widening the corpus without updating the page fails here.
+func TestStemmerPageStatesItsSessionCoverage(t *testing.T) {
+	h := New(slog.New(slog.NewTextHandler(os.Stderr, nil)))
+	w := httptest.NewRecorder()
+	h.ServeHTTP(w, httptest.NewRequest("GET", "/stemmer", nil))
+	if w.Code != 200 {
+		t.Fatalf("/stemmer answered %d, want 200", w.Code)
+	}
+	body := w.Body.String()
+
+	// Derived from the raw votes, not from data.VoteSessions(): a test that asks the
+	// same helper the page asks cannot notice the helper losing a session. This was
+	// found by mutation — truncating VoteSessions() to one session passed, because
+	// page and test both counted one and agreed.
+	want := map[string]bool{}
+	withSession := 0
+	for _, v := range data.Votes() {
+		if v.Session != "" {
+			want[v.Session] = true
+			withSession++
+		}
+	}
+	if len(want) == 0 {
+		t.Fatal("no vote records a session: the coverage claim cannot be checked")
+	}
+	for ses := range want {
+		if !strings.Contains(body, ses) {
+			t.Errorf("the page does not name session %s, which the index was built from", ses)
+		}
+	}
+	if !strings.Contains(body, strconv.Itoa(len(want))+" sesjoner") {
+		t.Errorf("the page does not state that the index covers %d sessions", len(want))
+	}
+	if withSession == 0 || withSession > data.VoteCount() {
+		t.Fatalf("VotesWithSession() = %d, want between 1 and %d", withSession, data.VoteCount())
+	}
+	if !strings.Contains(body, strconv.Itoa(withSession)+" av "+strconv.Itoa(data.VoteCount())) {
+		t.Errorf("the page does not state %d of %d votes have a recorded session", withSession, data.VoteCount())
+	}
+	t.Logf("%d sessions, %d of %d votes with a session", len(want), withSession, data.VoteCount())
 }

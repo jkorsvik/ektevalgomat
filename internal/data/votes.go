@@ -4,6 +4,7 @@ import (
 	_ "embed"
 	"encoding/json"
 	"fmt"
+	"sort"
 )
 
 // The vote index is generated data, not source: tools/analytics/build_vote_index.py
@@ -40,6 +41,10 @@ type Vote struct {
 	// this vote. Empty means the vote is cited as context, or by an institutional
 	// row that codes nobody.
 	CodedParties []string `json:"coded_parties"`
+	// Session is the storting session the vote was taken in, when the generator
+	// walked that session rather than meeting the vote through a citation. Empty
+	// means only the citation route found it, so its session is unknown here.
+	Session string `json:"session"`
 }
 
 type voteIndexFile struct {
@@ -75,3 +80,42 @@ func VoteCount() int { return len(voteIndexDoc.Votes) }
 // VotesGeneratedAt is the date the index was built, so a page can say how fresh
 // it is instead of implying it is live.
 func VotesGeneratedAt() string { return voteIndexDoc.GeneratedAt }
+
+// VoteSession is one storting session the index covers, with how many votes came
+// from walking it.
+type VoteSession struct {
+	Session string
+	Votes   int
+}
+
+// VoteSessions reports which sessions the index was built from, oldest first.
+//
+// It exists so a page can say what it covers instead of implying it covers
+// everything: the index holds three sessions out of the eighteen the API serves, and
+// a reader looking at an alignment matrix has no other way to know that.
+func VoteSessions() []VoteSession {
+	counts := map[string]int{}
+	for _, v := range voteIndexDoc.Votes {
+		if v.Session == "" {
+			continue // cited-only: the session is not recorded, so it is not claimed
+		}
+		counts[v.Session]++
+	}
+	out := make([]VoteSession, 0, len(counts))
+	for s, n := range counts {
+		out = append(out, VoteSession{Session: s, Votes: n})
+	}
+	sort.Slice(out, func(i, j int) bool { return out[i].Session < out[j].Session })
+	return out
+}
+
+// VotesWithSession counts the votes whose session is recorded.
+func VotesWithSession() int {
+	n := 0
+	for _, v := range voteIndexDoc.Votes {
+		if v.Session != "" {
+			n++
+		}
+	}
+	return n
+}

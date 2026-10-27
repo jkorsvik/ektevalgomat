@@ -93,3 +93,43 @@ func TestKartCellsCarryTheirDenominator(t *testing.T) {
 		t.Fatal("no coded cell to check: the assertion would pass on nothing")
 	}
 }
+
+// The † marker claims a cell holds a dated second observation. The count is
+// recomputed here from the dataset, so a marker that appears without the evidence
+// (or a cell that has the evidence and no marker) fails.
+func TestKartMarksExactlyTheDatedCells(t *testing.T) {
+	body := getKart(t)
+	ds := data.Store
+
+	// Independent derivation: for each party and dimension, does any statement in
+	// that dimension carry two distinct dates for that party?
+	want := 0
+	for _, id := range analysis.PartyIDs(ds) {
+		multi := analysis.MultiDateStatements(ds, id)
+		byDim := map[string]bool{}
+		for _, st := range ds.Statements {
+			if multi[st.ID] {
+				byDim[st.Dimension] = true
+			}
+		}
+		want += len(byDim)
+	}
+	if want == 0 {
+		t.Fatal("no dated cell in the dataset: the marker assertion would pass on nothing")
+	}
+	if got := strings.Count(body, "dated-mark"); got != want {
+		t.Errorf("%d dated markers rendered, %d cells have a multi-dated statement", got, want)
+	}
+	t.Logf("%d dated cells marked", want)
+}
+
+func getKart(t *testing.T) string {
+	t.Helper()
+	h := New(slog.New(slog.NewTextHandler(os.Stderr, nil)))
+	w := httptest.NewRecorder()
+	h.ServeHTTP(w, httptest.NewRequest("GET", "/kart", nil))
+	if w.Code != 200 {
+		t.Fatalf("/kart answered %d, want 200", w.Code)
+	}
+	return w.Body.String()
+}

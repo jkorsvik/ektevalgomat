@@ -192,3 +192,35 @@ func PartyIDs(ds *data.Dataset) []string {
 	}
 	return out
 }
+
+// MultiDateStatements returns the statement ids where one party has more than one
+// distinct evidence date. It is the per-cell version of DimensionRow.MultiDate, and
+// it exists so a view can mark the cells that carry a dated second observation
+// instead of only reporting a count per party.
+//
+// Distinct dates, not rows: two evidence items from the same day are one
+// observation, and counting them as two would manufacture a trend where there is a
+// duplicate.
+func MultiDateStatements(ds *data.Dataset, party string) map[string]bool {
+	dates := map[string]map[string]bool{}
+	for _, e := range ds.Evidence {
+		if e.PartyID != party || e.Position == nil {
+			continue
+		}
+		d := strings.TrimSpace(e.Date)
+		if d == "" {
+			continue
+		}
+		if dates[e.StatementID] == nil {
+			dates[e.StatementID] = map[string]bool{}
+		}
+		dates[e.StatementID][d] = true
+	}
+	out := map[string]bool{}
+	for id, set := range dates {
+		if len(set) > 1 {
+			out[id] = true
+		}
+	}
+	return out
+}

@@ -37,13 +37,18 @@
       <tr>
         <th>{{.Dimension}}</th>
         {{range .Cells}}
-          {{if .HasData}}<td>{{.Mean}}<span class="muted"> ({{.Coded}}/{{.Statements}})</span></td>
+          {{if .HasData}}<td>{{.Mean}}<span class="muted"> ({{.Coded}}/{{.Statements}})</span>{{if .Dated}}<span class="dated-mark" title="Minst ett utsagn i denne cellen har to daterte observasjoner">†</span>{{end}}</td>
           {{else}}<td class="muted">–</td>{{end}}
         {{end}}
       </tr>
       {{end}}
     </tbody>
   </table>
+
+  <p class="prose-lede">
+    † markerer en celle der minst ett av utsagnene har to daterte observasjoner,
+    altså der en endring over tid faktisk kan påvises. Resten er én observasjon.
+  </p>
 
   <h3>Hvor langt tilbake rekker kildene</h3>
   <p class="prose-lede">

@@ -143,3 +143,48 @@ func TestDimensionProfileAgreesWithTheDataset(t *testing.T) {
 	}
 	t.Logf("%d parties, %d statements each across all dimensions", len(parties), totalStatements)
 }
+
+// The per-cell marker answers "can this cell say anything about a year", so the
+// rule that decides it is tested on its own: two distinct dates yes, two rows from
+// the same day no, and another party's evidence never.
+func TestMultiDateStatementsCountsDistinctDatesOnly(t *testing.T) {
+	ds := &data.Dataset{
+		Evidence: []data.Evidence{
+			// Two different dates: a real second observation.
+			{StatementID: "s1", PartyID: "ap", Date: "2020-05-01", Position: pos(2)},
+			{StatementID: "s1", PartyID: "ap", Date: "2026-01-01", Position: pos(2)},
+			// Same day twice: one observation, not a trend.
+			{StatementID: "s2", PartyID: "ap", Date: "2025-06-05", Position: pos(1)},
+			{StatementID: "s2", PartyID: "ap", Date: "2025-06-05", Position: pos(1)},
+			// Undated rows cannot make a cell dated.
+			{StatementID: "s3", PartyID: "ap", Date: "", Position: pos(1)},
+			{StatementID: "s3", PartyID: "ap", Date: "ukjent", Position: pos(1)},
+			// No coded position: not an observation of anything.
+			{StatementID: "s4", PartyID: "ap", Date: "2020-01-01"},
+			{StatementID: "s4", PartyID: "ap", Date: "2026-01-01"},
+			// Another party must not mark this party's cells.
+			{StatementID: "s2", PartyID: "h", Date: "1999-01-01", Position: pos(-2)},
+			{StatementID: "s2", PartyID: "h", Date: "2024-01-01", Position: pos(-2)},
+		},
+	}
+	got := MultiDateStatements(ds, "ap")
+	if !got["s1"] {
+		t.Error("s1 has two distinct dates and must be marked")
+	}
+	if got["s2"] {
+		t.Error("s2 has one distinct date twice and must not be marked")
+	}
+	if got["s3"] {
+		t.Error("s3 has no parseable date and must not be marked")
+	}
+	if got["s4"] {
+		t.Error("s4 has no coded position and must not be marked")
+	}
+	if len(got) != 1 {
+		t.Errorf("marked %d statements, want exactly 1: %v", len(got), got)
+	}
+	// And the other party sees its own answer, not ap's.
+	if h := MultiDateStatements(ds, "h"); !h["s2"] {
+		t.Error("h has two dates on s2 and must be marked for h")
+	}
+}

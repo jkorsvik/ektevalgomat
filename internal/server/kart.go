@@ -22,6 +22,10 @@ type kartCell struct {
 	Statements int
 	HasData    bool
 	MultiDate  int
+	// Dated marks a cell that holds at least one statement with two distinct
+	// evidence dates. It is the per-cell answer to "can this cell say anything
+	// about a year", and it is derived, never stored.
+	Dated bool
 }
 
 type kartRow struct {
@@ -95,6 +99,17 @@ func buildKartView(ds *data.Dataset, snapshotDate string) kartView {
 		view.TotalMulti += multi
 	}
 
+	// Per-party, per-statement multi-date facts, and the statements in each
+	// dimension, so a cell can be marked rather than only counted.
+	multiByParty := map[string]map[string]bool{}
+	for _, id := range ids {
+		multiByParty[id] = analysis.MultiDateStatements(ds, id)
+	}
+	stmtsByDim := map[string][]string{}
+	for _, st := range ds.Statements {
+		stmtsByDim[st.Dimension] = append(stmtsByDim[st.Dimension], st.ID)
+	}
+
 	for _, dim := range dims {
 		row := kartRow{Dimension: dim}
 		for _, id := range ids {
@@ -104,6 +119,11 @@ func buildKartView(ds *data.Dataset, snapshotDate string) kartView {
 					continue
 				}
 				cell.Coded, cell.Statements, cell.MultiDate = r.Coded, r.Statements, r.MultiDate
+				for _, stmtID := range stmtsByDim[dim] {
+					if multiByParty[id][stmtID] {
+						cell.Dated = true
+					}
+				}
 				if label, ok := r.MeanLabel(); ok {
 					cell.Mean, cell.HasData = label, true
 				}

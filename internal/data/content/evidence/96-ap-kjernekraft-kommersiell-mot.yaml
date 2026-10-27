@@ -12,7 +12,7 @@ scan_summary: >
   mellom stat og private, og vil ikke la kjernekraftdebatten forsinke
   fornybarutbygging på kort sikt.
 claim_action: >
-  Votering_id 27722, Ap 0 for, 31 mot. Ap er del av
+  Votering_id 27721 (forslag 3-5, nr. 4), Ap 0 for, 31 mot. Ap er del av
   syvpartiflertallet (med H, SV, Sp, R, MDG, V) bak den svakere
   tilrådingen (votering_id 27723, vedtatt): kun en stortingsmelding,
   ingen lovendring nå.
@@ -26,7 +26,7 @@ verbatim_excerpt: >
 status: forslag_avvist_stemte_mot
 position: -1
 source_tier: A
-source_name: "Innst. 278 S (2025-2026); votering_id 27722, 27723"
+source_name: "Innst. 278 S (2025-2026); votering_id 27721, 27723"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
 claim_confidence: dokumentert
 context_note: >

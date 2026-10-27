@@ -11,7 +11,7 @@ scan_summary: >
   statlig subsidiering eller eierskap, men vil ikke la det bremse
   utbygging av fornybar energi.
 claim_action: >
-  Forslag 1 og 2, votering_id 27722, V 2 for. Delt merknad med Høyre:
+  Forslag 17-26, nr. 17, votering_id 27718, V 2 for. Delt merknad med Høyre:
   "disse medlemmer mener man bør slippe alle kraftformer til og ha en
   mest mulig teknologinøytral tilnærming."
 verbatim_excerpt: >
@@ -24,11 +24,14 @@ verbatim_excerpt: >
 status: forslag_avvist_stemte_for
 position: 2
 source_tier: A
-source_name: "Innst. 278 S (2025-2026); votering_id 27722"
+source_name: "Innst. 278 S (2025-2026); votering_id 27718"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
 claim_confidence: dokumentert
 context_note: >
   Kodet +2, samme grunnlag som Høyre (delt merknad, identisk
-  resonnement og tre forbehold). Se
+  resonnement og tre forbehold). Merk at V stemte mot FrP og H sitt
+  forslag 3-5 (votering_id 27721, V 0 for, 2 mot); grunnlaget for +2 er
+  Venstres eget forslag 17 (votering_id 27718, V 2 for, 0 mot), som har
+  samme formulering om kommersiell kjernekraftproduksjon. Se
   evidence/91-kjernekraft-kommersiell-kontekst.yaml.
 retrieved_at: "2026-09-24"

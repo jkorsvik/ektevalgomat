@@ -12,7 +12,7 @@ scan_summary: >
   kjernekraft som sådan. Konsistent med Rødts eget standpunkt i
   utsagn-06.
 claim_action: >
-  Votering_id 27722, Rødt 0 for, 5 mot. Rødt fremmet eget alternativt
+  Votering_id 27721 (forslag 3-5, nr. 4), Rødt 0 for, 5 mot. Rødt fremmet eget alternativt
   forslag (forslag 30-31, votering_id 27715, avvist) om at eventuell
   kjernekraft i Norge skal skje under fullt statlig eierskap og
   hjemfallsrett.
@@ -29,12 +29,12 @@ verbatim_excerpt: >
 status: forslag_avvist_stemte_mot
 position: -1
 source_tier: A
-source_name: "Innst. 278 S (2025-2026); votering_id 27715, 27722"
+source_name: "Innst. 278 S (2025-2026); votering_id 27715, 27721"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-278s/?all=true"
 claim_confidence: dokumentert
 context_note: >
   Kodet -1, ikke -2: Rødts egen merknad er uvanlig eksplisitt om at de
-  IKKE er prinsipielt mot kjernekraft — de er mot at forslag 1-2
+  IKKE er prinsipielt mot kjernekraft — de er mot at forslag 3-5, nr. 4
   navngir "kommersiell" produksjon, altså privat/profittbasert
   eierskap. Dette er samme prinsipp som ligger til grunn for Rødts
   +2-posisjon i utsagn-06 (statlig eierskap over kjernekraft): dette

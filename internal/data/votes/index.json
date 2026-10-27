@@ -2672,12 +2672,12 @@
    ]
   },
   {
-   "votering_id": 27722,
+   "votering_id": 27718,
    "unanimous": false,
-   "forslag": "Stortinget ber regjeringen gå i dialog med nordiske naboland om et mulig tettere samarbeid innen kjernekraft, herunder for forskning, kompetansebygging, virkemidler og rammeverk. | Stortinget ber regjeringen i lys av Kjernekraftutvalgets anbefaling etablere et nasjonalt kompetanseprosjekt for kjernekraft som blant annet vurderer hvordan IAEAs anbefalinger for et nytt kjernekraftland kan tilpasses norske forhold.",
+   "forslag": "Stortinget ber regjeringen fremme forslag til nødvendige endringer i relevant lovverk, som atomenergiloven, energiloven, strålevernloven og aktuelle forskrifter, slik at regelverket legger til rette for etablering og drift av kommersiell kjernekraftproduksjon i Norge. | Stortinget ber regjeringen klargjøre hvordan ansvaret for kjernekraft skal organiseres i offentlig forvaltning, herunder om det bør etableres en egen nasjonal kjernekraftmyndighet eller om det best løses ved å påse at NVE og DSA har nødvendig kompetanse og ressurser for utbygging av kjernekraft i Norge, og komme tilbake til Sto",
    "parties": {
     "ap": "mot",
-    "frp": "for",
+    "frp": "mot",
     "v": "for",
     "h": "for",
     "krf": "for",
@@ -2687,8 +2687,29 @@
     "sv": "mot"
    },
    "cited_by": [
+    "ev-2026-05-26-v-kjernekraft-kommersiell-for"
+   ],
+   "coded_parties": [
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27721,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem en helhetlig sak om hvordan kjernekraft kan etableres som en del av det norske kraftsystemet, herunder teknologiske, sikkerhetsmessige, regulatoriske og økonomiske rammebetingelser. | Stortinget ber regjeringen fremme forslag til nødvendige endringer i atomenergiloven, energiloven og strålevernloven, slik at regelverket legger til rette for etablering og drift av kommersiell kjernekraftproduksjon i Norge. | Stortinget ber regjeringen fastsette konsekvensutredningsprogram og starte arbeidet med å utrede og tilrettelegge for flere av de privat initierte kjer",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
     "ev-2026-05-26-mdg-kjernekraft-kommersiell-mot",
-    "ev-2026-05-26-kjernekraft-kommersiell-kontekst",
     "ev-2026-05-26-frp-kjernekraft-kommersiell-for",
     "ev-2026-05-26-h-kjernekraft-kommersiell-for",
     "ev-2026-05-26-v-kjernekraft-kommersiell-for",
@@ -2709,6 +2730,26 @@
     "sv",
     "rodt"
    ]
+  },
+  {
+   "votering_id": 27722,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen gå i dialog med nordiske naboland om et mulig tettere samarbeid innen kjernekraft, herunder for forskning, kompetansebygging, virkemidler og rammeverk. | Stortinget ber regjeringen i lys av Kjernekraftutvalgets anbefaling etablere et nasjonalt kompetanseprosjekt for kjernekraft som blant annet vurderer hvordan IAEAs anbefalinger for et nytt kjernekraftland kan tilpasses norske forhold.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-26-kjernekraft-kommersiell-kontekst"
+   ],
+   "coded_parties": []
   },
   {
    "votering_id": 27723,

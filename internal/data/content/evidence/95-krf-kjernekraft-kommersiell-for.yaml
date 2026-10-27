@@ -6,20 +6,20 @@ date: "2026-05-26"
 evidence_type: voteringsresultat
 evidence_class: fakta
 scan_summary: >
-  KrF stemte for lovendring nå (forslag 1 og 2). KrF har ikke sete i
+  KrF stemte for lovendring nå (forslag 3-5, nr. 4). KrF har ikke sete i
   energi- og miljøkomiteen i denne perioden og har derfor ingen egen
   skriftlig merknad i innstillingen — posisjonen er dokumentert kun
   gjennom stemmegivningen i plenum.
 claim_action: >
-  Votering_id 27722 (forslag 1 og 2, på vegne av FrP, H og V): KrF 4
+  Votering_id 27721 (forslag 3-5, på vegne av FrP og H): KrF 4
   for, 3 ikke til stede. KrF stemte samtidig mot komiteens tilråding
   om en stortingsmelding (votering_id 27723) sammen med FrP — KrF var
   ikke blant de 7 partiene som stod bak tilrådingen.
 status: forslag_avvist_stemte_for
 position: 1
 source_tier: A
-source_name: "Votering 27722, 27723 — data.stortinget.no"
-source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27722"
+source_name: "Votering 27721, 27723 — data.stortinget.no"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27721"
 claim_confidence: dokumentert
 attribution_confidence: svakt_dokumentert
 context_note: >

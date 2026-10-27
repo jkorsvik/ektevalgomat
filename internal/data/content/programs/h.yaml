@@ -2,6 +2,10 @@ id: h
 source_name: "Høyres stortingsvalgprogram 2025-2029"
 source_url: "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf"
 retrieved_at: "2026-10-12"
+document_file: "research/raw/programs/h-2025-2029.pdf"
+document_sha256: "40b8e7578dcda9820b348e06a7be1a66670ab8a60c5334a2799da5d600442e09"
+document_bytes: 6226511
+fetched_at: "2026-10-25T15:33:38+00:00"
 points:
   - dimension: Demokratisk åpenhet
     topic: Valgvern mot utenlandsk påvirkning

@@ -2,6 +2,10 @@ id: "mdg"
 source_name: "MDGs arbeidsprogram 2025-2029"
 source_url: "https://mdg.no/_service/505809/download/id/1506077/name/MDGs+arbeidsprogram+2025-2029.pdf"
 retrieved_at: "2026-10-12"
+document_file: "research/raw/programs/mdg-2025-2029.pdf"
+document_sha256: "8016e77b8191c2171029b1414309c2ebdc999beefc925b5380cdf6cf93db1dec"
+document_bytes: 1754836
+fetched_at: "2026-10-25T15:33:39+00:00"
 points:
   # 1. Demokratisk åpenhet
   - dimension: "Demokratisk åpenhet"

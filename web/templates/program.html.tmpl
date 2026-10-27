@@ -39,6 +39,15 @@
       Kilde: <a href="{{.Program.SourceURL}}" rel="noopener">{{.Program.SourceName}}</a>
       {{if .Program.RetrievedAt}}· hentet {{.Program.RetrievedAt}}{{end}}
     </p>
+    {{if .Program.DocumentSHA256}}
+    <details class="program-doc">
+      <summary>Dokumentbevis</summary>
+      <p>Arkivert kopi: <code>{{.Program.DocumentFile}}</code> · {{.Program.DocumentBytes}} bytes{{if .Program.FetchedAt}} · hentet {{.Program.FetchedAt}}{{end}}</p>
+      <p>SHA-256: <code class="doc-hash">{{.Program.DocumentSHA256}}</code></p>
+      {{if .Program.FetchNote}}<p>{{.Program.FetchNote}}</p>{{end}}
+      <p>Regn ut sha256 av din egen kopi av dokumentet. Er hashen lik, leste vi samme fil som deg.</p>
+    </details>
+    {{end}}
     {{range .Groups}}
     <section class="program-group">
       <h2>{{.Dimension}}</h2>

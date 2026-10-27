@@ -5,6 +5,10 @@ id: sp
 source_name: "Senterpartiets stortingsvalgprogram 2025-2029"
 source_url: "https://www.senterpartiet.no/politikk/_/attachment/inline/ea7e4063-1374-47bf-8b10-839bf68904c0:3c54bc9ec99b5e017f069f2312b3962bd934c78a/Senterpartiets%20stortingsvalgprogram%202025-2029%20bokm%C3%A5l%20i%20PDF.pdf"
 retrieved_at: "2026-10-12"
+document_file: "research/raw/programs/sp-2025-2029.pdf"
+document_sha256: "fd3b73e962899bc2bd2acb1f3bc89ce9b52866becf20c108574827b87b4edf33"
+document_bytes: 3692554
+fetched_at: "2026-10-25T15:33:40+00:00"
 points:
   # Dimensjon 1: Demokratisk åpenhet
   - dimension: Demokratisk åpenhet

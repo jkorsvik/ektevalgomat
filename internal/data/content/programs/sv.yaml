@@ -2,6 +2,10 @@ id: sv
 source_name: "SVs arbeidsprogram 2025–2029 (vedtatt av SVs landsmøte 16.3.2025)"
 source_url: "https://www.sv.no/wp-content/uploads/2025/10/arbeidsprogram-2025-interaktiv-bokmal.pdf"
 retrieved_at: "2026-10-12"
+document_file: "research/raw/programs/sv-2025-2029.pdf"
+document_sha256: "473f00217f84ba3cbe99b10d39e36c64c491509d2b141c2ad53b36745eb8c548"
+document_bytes: 1149104
+fetched_at: "2026-10-25T15:33:41+00:00"
 points:
   # --- 1. Demokratisk åpenhet ---
   - dimension: "Demokratisk åpenhet"

@@ -1,0 +1,98 @@
+{
+  "note": "Arkiverte kopier av partiprogrammene ektevalgomat siterer. Hver fil har sha256 av bytes som ble hentet, og tidspunktet for hentingen. /partier viser samme hash, slik at en leser kan bekrefte at egen kopi er identisk med den siden leste.",
+  "documents": {
+    "ap": {
+      "file": "ap-2025-2029.pdf",
+      "source_url": "https://res.cloudinary.com/arbeiderpartiet/image/upload/fl_attachment:partiprogram-2025-2029/v1/ievv_filestore/130322a45ccf45889bfc6fa4116c5b480cadc1e93e51491f8199451dd231c7c5",
+      "http_status": "200",
+      "content_type": "application/pdf",
+      "bytes": 3687858,
+      "sha256": "92c80583d5eb8d2ceccb8a19b1898b77eef0b51977d94122962fbcadfadc7175",
+      "fetched_at": "2026-10-25T15:33:37+00:00",
+      "magic": "%PDF-"
+    },
+    "frp": {
+      "file": "frp-2025-2029.pdf",
+      "source_url": "https://www.frp.no/files/Program/2025/FrP-Partiprogram-2025-2029.pdf",
+      "http_status": "200",
+      "content_type": "application/pdf",
+      "bytes": 1784306,
+      "sha256": "a63d399b4b4abdadc6e102a03c06537a40d49a500961bed9e10f33319e616b69",
+      "fetched_at": "2026-10-25T15:33:38+00:00",
+      "magic": "%PDF-"
+    },
+    "h": {
+      "file": "h-2025-2029.pdf",
+      "source_url": "https://res.cloudinary.com/hoyre/image/upload/v1748846537/H%C3%B8yres_stortingsvalgprogram_bokmal_ensidig.pdf",
+      "http_status": "200",
+      "content_type": "application/pdf",
+      "bytes": 6226511,
+      "sha256": "40b8e7578dcda9820b348e06a7be1a66670ab8a60c5334a2799da5d600442e09",
+      "fetched_at": "2026-10-25T15:33:38+00:00",
+      "magic": "%PDF-"
+    },
+    "krf": {
+      "file": "krf-2025-2029.pdf",
+      "source_url": "https://krf.no/content/uploads/2025/05/Partiprogram-2025-2029.pdf",
+      "http_status": "200",
+      "content_type": "application/pdf",
+      "bytes": 3205611,
+      "sha256": "d9b652789b7fceb4d8213fc8101fb6234aa5982ea1b317d0bfa724ffb7601a46",
+      "fetched_at": "2026-10-25T15:33:39+00:00",
+      "magic": "%PDF-"
+    },
+    "mdg": {
+      "file": "mdg-2025-2029.pdf",
+      "source_url": "https://mdg.no/_service/505809/download/id/1506077/name/MDGs+arbeidsprogram+2025-2029.pdf",
+      "http_status": "200",
+      "content_type": "application/pdf",
+      "bytes": 1754836,
+      "sha256": "8016e77b8191c2171029b1414309c2ebdc999beefc925b5380cdf6cf93db1dec",
+      "fetched_at": "2026-10-25T15:33:39+00:00",
+      "magic": "%PDF-"
+    },
+    "rodt": {
+      "file": "rodt-2025-2029.pdf",
+      "source_url": "https://roedt.no/fil/7393ab981e025ec77c5c78797892dfc9f020fc17.pdf?dl=",
+      "http_status": "403/429",
+      "content_type": "application/pdf",
+      "bytes": 1280981,
+      "sha256": "b3aa1058ba0451d3708cd6731c3b13c58e0f86b09f4bd7fc5af141a4d64cafd0",
+      "fetched_at": "2026-10-25T15:33:42+00:00",
+      "retrieved_by": "operatør, 2026-10-13",
+      "magic": "%PDF-",
+      "fetch_note": "roedt.no svarer 403/429 på all automatisert henting (AWS WAF, verifisert 2026-10-25). Filen er arkivert fra operatørens egen nedlasting 2026-10-13. Hashen gjelder den filen."
+    },
+    "sp": {
+      "file": "sp-2025-2029.pdf",
+      "source_url": "https://www.senterpartiet.no/politikk/_/attachment/inline/ea7e4063-1374-47bf-8b10-839bf68904c0:3c54bc9ec99b5e017f069f2312b3962bd934c78a/Senterpartiets%20stortingsvalgprogram%202025-2029%20bokm%C3%A5l%20i%20PDF.pdf",
+      "http_status": "200",
+      "content_type": "application/pdf",
+      "bytes": 3692554,
+      "sha256": "fd3b73e962899bc2bd2acb1f3bc89ce9b52866becf20c108574827b87b4edf33",
+      "fetched_at": "2026-10-25T15:33:40+00:00",
+      "magic": "%PDF-"
+    },
+    "sv": {
+      "file": "sv-2025-2029.pdf",
+      "source_url": "https://www.sv.no/wp-content/uploads/2025/10/arbeidsprogram-2025-interaktiv-bokmal.pdf",
+      "http_status": "200",
+      "content_type": "application/pdf",
+      "bytes": 1149104,
+      "sha256": "473f00217f84ba3cbe99b10d39e36c64c491509d2b141c2ad53b36745eb8c548",
+      "fetched_at": "2026-10-25T15:33:41+00:00",
+      "magic": "%PDF-"
+    },
+    "v": {
+      "file": "v-2025-2029.html",
+      "source_url": "https://www.venstre.no/politikk/partiprogram/program-2025-2029/",
+      "http_status": "200",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 484477,
+      "sha256": "c8d7f45431a71cccbd190a2377c47b0adfed08247b10bf1754726d01a29a65e7",
+      "fetched_at": "2026-10-25T15:33:41+00:00",
+      "magic": "<!DOC",
+      "fetch_note": "Venstre publiserer programmet som nettside, ikke som PDF. Arkivert som HTML fra samme URL som kilden i programs/v.yaml."
+    }
+  }
+}

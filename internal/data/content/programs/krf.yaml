@@ -2,6 +2,10 @@ id: krf
 source_name: "KrFs stortingsprogram 2025–2029"
 source_url: "https://krf.no/content/uploads/2025/05/Partiprogram-2025-2029.pdf"
 retrieved_at: "2026-10-12"
+document_file: "research/raw/programs/krf-2025-2029.pdf"
+document_sha256: "d9b652789b7fceb4d8213fc8101fb6234aa5982ea1b317d0bfa724ffb7601a46"
+document_bytes: 3205611
+fetched_at: "2026-10-25T15:33:39+00:00"
 points:
   - dimension: "Demokratisk åpenhet"
     topic: "Åpenhet om maktutøvelse"

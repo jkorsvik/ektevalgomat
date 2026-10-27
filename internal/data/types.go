@@ -160,11 +160,28 @@ func (e Evidence) IsPartyEvidence() bool {
 // vote or a merknad. Added 2026-10-03 with the autopilot, which is what
 // fills it.
 type Program struct {
-	ID          string         `yaml:"id"` // party_id
-	SourceName  string         `yaml:"source_name"`
-	SourceURL   string         `yaml:"source_url"`
-	RetrievedAt string         `yaml:"retrieved_at"`
-	Points      []ProgramPoint `yaml:"points"`
+	ID          string `yaml:"id"` // party_id
+	SourceName  string `yaml:"source_name"`
+	SourceURL   string `yaml:"source_url"`
+	RetrievedAt string `yaml:"retrieved_at"`
+	// DocumentFile and DocumentSHA256 are the archived copy of the
+	// programme document itself, and the hash of the bytes the quotes
+	// were read from. A party can move a URL or start refusing bots:
+	// Rødt answered 403/429 to every automated request on 2026-10-25,
+	// and Venstre publishes its programme as a web page rather than a
+	// PDF. Without a kept copy the quote stops being checkable, and
+	// without a published hash nobody can tell whether the copy we kept
+	// is the document the party still serves. Both are shown on
+	// /partier, so a reader who downloads the same file can compare.
+	// TestArchivedProgrammesMatchYAML holds these fields to the files.
+	DocumentFile   string `yaml:"document_file,omitempty"`
+	DocumentSHA256 string `yaml:"document_sha256,omitempty"`
+	DocumentBytes  int64  `yaml:"document_bytes,omitempty"`
+	FetchedAt      string `yaml:"fetched_at,omitempty"`
+	// FetchNote records how the copy was obtained when that is not a
+	// plain fetch of SourceURL.
+	FetchNote string         `yaml:"fetch_note,omitempty"`
+	Points    []ProgramPoint `yaml:"points"`
 }
 
 // ProgramPoint is one verbatim promise from a programme, with where in the

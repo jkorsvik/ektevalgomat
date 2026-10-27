@@ -14,6 +14,7 @@ import (
 	"log/slog"
 	"net/http"
 	"net/url"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -223,6 +224,129 @@ func dimensionSummary(ds *data.Dataset) []dimensionCoverage {
 		rows = append(rows, dimensionCoverage{Name: name, Built: counts[name], Total: counts[name]})
 	}
 	return rows
+}
+
+// cellCoverage is what one statement's cells add up to: how many of the
+// parties have a coded position, out of how many, which source tiers those
+// positions rest on ("A", "A/C", ...), and whether every one of them is
+// programme-only.
+type cellCoverage struct {
+	Coded, Total  int
+	Tiers         string
+	ProgrammeOnly bool
+}
+
+// hasStrongTier reports whether any evidence item that carries a coded
+// position rests on an A or B source. An item with no position is context or
+// an uncoded vote: it is listed on the page but it does not decide anything,
+// so it must not make a programme-only cell look stronger (see
+// scoring.strengthBasis, which draws the same line).
+func hasStrongTier(items []data.Evidence) bool {
+	for _, e := range items {
+		if e.Position == nil {
+			continue
+		}
+		if e.SourceTier == "A" || e.SourceTier == "B" {
+			return true
+		}
+	}
+	return false
+}
+
+// statementCoverage reports how the parties' positions on one statement are
+// documented.
+//
+// /om prints these figures instead of a sentence typed once. The sentence it
+// replaces said the positions on utsagn 45 came from programmes "for sju av
+// ni partier. Rødt og Sp mangler fortsatt" — both were coded on 2026-10-13,
+// and the page kept saying they were missing for twelve days. A number the
+// page derives from the dataset cannot survive that way. ProgrammeOnly is
+// here for the other half of the same problem: the sentence also said the
+// positions "kommer fra partiprogrammene", which stops being true the day
+// someone codes a vote on that statement, so the template picks its wording
+// from this flag rather than asserting it.
+func statementCoverage(ds *data.Dataset, number int) cellCoverage {
+	cov := cellCoverage{Total: len(ds.Parties), ProgrammeOnly: true}
+	var st *data.Statement
+	for i := range ds.Statements {
+		if ds.Statements[i].Number == number {
+			st = &ds.Statements[i]
+			break
+		}
+	}
+	if st == nil {
+		return cov
+	}
+	seen := map[string]bool{}
+	for _, p := range ds.Parties {
+		if scoring.ComputeCell(ds, st.ID, p.ID).PartyPosition == nil {
+			continue
+		}
+		items := ds.EvidenceForCell(st.ID, p.ID)
+		cov.Coded++
+		if hasStrongTier(items) {
+			cov.ProgrammeOnly = false
+		}
+		for _, e := range items {
+			if e.Position != nil && e.SourceTier != "" {
+				seen[e.SourceTier] = true
+			}
+		}
+	}
+	keys := make([]string, 0, len(seen))
+	for k := range seen {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	cov.Tiers = strings.Join(keys, "/")
+	// With no coded position there is nothing to call programme-only.
+	cov.ProgrammeOnly = cov.ProgrammeOnly && cov.Coded > 0
+	return cov
+}
+
+// programmeOnlyCells counts the statement×party cells that carry a coded
+// position but rest on no A- or B-class source: the party's own programme
+// (C) or a secondary account of it (D) is all there is. That is the one
+// place where the site's headline — "vi sammenligner ikke svaret ditt med
+// partiprogrammenes egne ord" — does not hold, so /metode states the number
+// instead of leaving a reader to discover it. Derived, never typed.
+func programmeOnlyCells(ds *data.Dataset) (cells, coded int) {
+	for _, s := range ds.Statements {
+		for _, p := range ds.Parties {
+			if scoring.ComputeCell(ds, s.ID, p.ID).PartyPosition == nil {
+				continue
+			}
+			coded++
+			if !hasStrongTier(ds.EvidenceForCell(s.ID, p.ID)) {
+				cells++
+			}
+		}
+	}
+	return cells, coded
+}
+
+// uncomparableStatements returns the statements no party has a coded
+// position on, so the quiz can say so before the reader answers instead of
+// after. Two statements (60, 61) are in the quiz with 0 av 9 dokumentert:
+// the reader answers them, no party is compared, and the answer changes
+// nothing. The result panel already names such statements after the fact
+// (analyse.js, "telte ikke i noens resultat"), but a question that cannot
+// count is worth one line before the reader spends an answer on it.
+func uncomparableStatements(ds *data.Dataset) []data.Statement {
+	var out []data.Statement
+	for _, s := range ds.Statements {
+		coded := false
+		for _, p := range ds.Parties {
+			if scoring.ComputeCell(ds, s.ID, p.ID).PartyPosition != nil {
+				coded = true
+				break
+			}
+		}
+		if !coded {
+			out = append(out, s)
+		}
+	}
+	return out
 }
 
 // addendumCount returns how many loaded statements sit outside the
@@ -523,6 +647,7 @@ func New(logger *slog.Logger) http.Handler {
 			DimensionRows    []dimensionCoverage
 			AllDimensionRows []dimensionCoverage
 			AddendumCount    int
+			NoPosition       []data.Statement
 		}{
 			Meta: meta("Ekte valgomat · hvert svar har en kilde",
 				"En valgomat der hvert partistandpunkt har en kilde. Hva partiene har lovet, foreslått og stemt, med lenke til dokumentet det står i.",
@@ -535,6 +660,7 @@ func New(logger *slog.Logger) http.Handler {
 			DimensionRows:    dimensionSummary(ds),
 			AllDimensionRows: allDimensionsSummary(ds),
 			AddendumCount:    addendumCount(ds),
+			NoPosition:       uncomparableStatements(ds),
 		}
 		if err := indexTmpl.Execute(w, data); err != nil {
 			logger.Error("render index", "err", err)
@@ -624,12 +750,15 @@ func New(logger *slog.Logger) http.Handler {
 	mux.HandleFunc("GET /metode", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		evidenceTotal, evidenceWithQuote := quoteCounts(ds)
+		po, cc := programmeOnlyCells(ds)
 		vm := struct {
 			Meta                 pageMeta
 			SnapshotDate         string
 			EvidenceTotal        int
 			EvidenceWithQuote    int
 			EvidenceWithoutQuote int
+			ProgrammeOnly        int
+			CodedCells           int
 		}{
 			Meta: meta("Metode · Ekte valgomat",
 				"Slik blir en partiposisjon til: hva som er kilde, hva som er tolkning, og hvorfor tre separate mål aldri slås sammen til én score.",
@@ -638,6 +767,8 @@ func New(logger *slog.Logger) http.Handler {
 			EvidenceTotal:        evidenceTotal,
 			EvidenceWithQuote:    evidenceWithQuote,
 			EvidenceWithoutQuote: evidenceTotal - evidenceWithQuote,
+			ProgrammeOnly:        po,
+			CodedCells:           cc,
 		}
 		if err := metodeTmpl.Execute(w, vm); err != nil {
 			logger.Error("render metode", "err", err)
@@ -704,12 +835,17 @@ func New(logger *slog.Logger) http.Handler {
 
 	mux.HandleFunc("GET /om", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		c44 := statementCoverage(ds, 44)
+		c45 := statementCoverage(ds, 45)
 		vm := struct {
 			Meta          pageMeta
 			SnapshotDate  string
 			AddendumCount int
 			CoreCount     int
 			Corrections   []data.Correction
+			C44           cellCoverage
+			C45           cellCoverage
+			NoPosition    []data.Statement
 		}{
 			Meta: meta("Om · Ekte valgomat",
 				"Hvorfor Ekte valgomat finnes, hva som er bygget, og hva som ennå ikke er gjennomgått.",
@@ -718,6 +854,9 @@ func New(logger *slog.Logger) http.Handler {
 			AddendumCount: addendumCount(ds),
 			CoreCount:     coreStatementBuilt(ds),
 			Corrections:   ds.Corrections,
+			C44:           c44,
+			C45:           c45,
+			NoPosition:    uncomparableStatements(ds),
 		}
 		if err := omTmpl.Execute(w, vm); err != nil {
 			logger.Error("render om", "err", err)

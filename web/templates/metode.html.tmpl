@@ -109,6 +109,19 @@
       <tr><th><span class="grade g-D"><b>D</b></span></th><td>Verifisert sekundærkilde: etablert presse/forskning som peker til dokumenter.</td></tr>
       <tr><th><span class="grade g-E"><b>E</b></span></th><td>OSINT-lead: en konto, en anonym nettside eller en påstand som ingen har sjekket ennå.</td></tr>
     </table>
+    <p class="prose-lede">
+      {{if gt .ProgrammeOnly 0}}
+      Vakthunden mot å sammenligne med et partiprogram holder ikke overalt.
+      {{.ProgrammeOnly}} av {{.CodedCells}} celler med en kodet posisjon
+      hviler bare på en C- eller D-kilde, altså partiets eget program eller
+      en sekundær gjengivelse av det. Der er svaret ditt sammenlignet med
+      nettopp det siden sier den ikke sammenligner med. Cellene merkes
+      «Svak», og de teller i resultatet. Vil du se dem, sjekk kildeklassen
+      på hver posisjon på utsagnssiden.
+      {{else}}
+      Ingen celle med en kodet posisjon hviler bare på en C- eller D-kilde.
+      {{end}}
+    </p>
     </div>
   </details>
 

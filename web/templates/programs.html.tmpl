@@ -64,6 +64,18 @@
       {{if .Program.RetrievedAt}}· hentet {{.Program.RetrievedAt}}{{end}}
       · {{len .Program.Points}} utvalgte programutsagn
     </p>
+    {{/* Document proof (2026-10-25): a party can move a URL or start
+         refusing bots, and then the quote is no longer checkable. The kept
+         copy and its hash make the quote checkable without the party's site. */}}
+    {{if .Program.DocumentSHA256}}
+    <details class="program-doc">
+      <summary>Dokumentbevis</summary>
+      <p>Arkivert kopi: <code>{{.Program.DocumentFile}}</code> · {{.Program.DocumentBytes}} bytes{{if .Program.FetchedAt}} · hentet {{.Program.FetchedAt}}{{end}}</p>
+      <p>SHA-256: <code class="doc-hash">{{.Program.DocumentSHA256}}</code></p>
+      {{if .Program.FetchNote}}<p>{{.Program.FetchNote}}</p>{{end}}
+      <p>Regn ut sha256 av din egen kopi av dokumentet. Er hashen lik, leste vi samme fil som deg.</p>
+    </details>
+    {{end}}
     {{range .Groups}}
     <details class="program-group">
       <summary class="program-group-sum"><span class="program-group-name">{{.Dimension}}</span><span class="program-group-count">{{len .Points}}</span></summary>

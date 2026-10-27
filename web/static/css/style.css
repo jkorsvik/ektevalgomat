@@ -1361,3 +1361,14 @@ details[open] > .budget-section-sum h2 { color: var(--ink); }
     --seg-empty: #423c52;
   }
 }
+
+/* Document proof for a programme (2026-10-25): the kept file and its hash,
+   so a quote stays checkable after a party moves or blocks its URL. */
+.program-doc { margin: 0 0 var(--sp-6); font-size: var(--fs-sm); color: var(--muted); }
+.program-doc summary { cursor: pointer; }
+.program-doc p { margin: var(--sp-2) 0 0; }
+.doc-hash { word-break: break-all; font-size: var(--fs-xs); }
+
+/* Front-page caveat for statements with no documented party position
+   (2026-10-25): a question that cannot count says so before the answer. */
+.front-caveat { font-size: var(--fs-sm); color: var(--muted); margin: var(--sp-4) 0 0; max-width: 62ch; }

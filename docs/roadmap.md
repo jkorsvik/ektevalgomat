@@ -68,6 +68,46 @@ written, not today.
   `internal/data/corrections_test.go` and `TestOmPublishesEveryCorrection`
   are the gate.
 
+## Bias baseline (2026-10-27) — what the content does unevenly
+
+A measurement of the content itself, not of the site. Every figure below was
+recomputed in the driving session from `internal/data/content/evidence/*.yaml`;
+the worker's report and its script are in `tools/autopilot/staging/bias-baseline/`,
+which is not versioned, so the numbers live here.
+
+**Coverage is symmetric.** All nine parties cover 56-58 of 60 statements, and 54
+of 60 statements are coded for all nine. No party is systematically thinner than
+another. The asymmetry is elsewhere.
+
+**Quote coverage is not symmetric, and this is the strongest finding.** Rows that
+carry a verbatim excerpt, per party:
+
+| SV | H | FrP | Ap | Rødt | MDG | Sp | V | KrF |
+|---|---|---|---|---|---|---|---|---|
+| 71.0 % | 68.9 % | 63.3 % | 58.3 % | 56.7 % | 56.7 % | 53.3 % | 33.9 % | 33.9 % |
+
+SV's record rests on a quote twice as often as Venstre's and KrF's. This is a
+collection bias, not a collection gap: the evidence exists, the sentence in the
+source was not found for those parties. Closing it is excerpt-tail work with a
+party filter (V and KrF), not new research.
+
+**Direction is uneven by party.** Ap has 29 of 57 coded positions at −1 and only 5
+at +2; SV, H and Rødt each have 22 at +2. Whether that is the parties or the
+statements is not answerable from the data, but a reader comparing parties should
+know the shape before reading the means.
+
+**One open coding question.** Two `faktakontekst` rows carry a coded position
+(0) with no party: `ev-2025-10-14-politisk-reklame-kontekst` (utsagn-02, Stortinget
+i plenum) and `ev-2023-03-14-utenlandsk-paavirkning-kontekst` (utsagn-04,
+Justiskomiteen). A body-of-the-Storting context row codes nobody, so either the
+position field should be empty or every view must keep excluding it. The coded-cell
+count is 518 or 516 depending on the answer, and the two figures appear in different
+places today. This needs an owner decision, not a silent fix.
+
+**The acquiescence spread stays at 12** (always-agree and always-disagree both 12
+points), confirmed by the Go test. Leave-one-out points at utsagn-16, utsagn-39 and
+utsagn-11 as the largest contributors to it.
+
 ## Phase 1 — Demokratisk åpenhet (built and live)
 
 

@@ -23,7 +23,12 @@ def test_queue_parses_and_every_item_is_whole():
     assert q and q.get("items"), "queue.yaml has no items"
     for it in q["items"]:
         assert it.get("id"), f"queue item without an id: {it}"
-        assert it.get("status") in {"pending", "passed", "failed", "blocked"}, \
+        # "running" belongs here: the ektevalgomat-autopilot skill's loop step 2
+        # sets an item running while its worker writes, so a set without it
+        # rejects the state the documented workflow creates. Same shape as the
+        # gate's CONFIDENCE set rejecting a value the corpus already used: the
+        # check was calibrated against one author's idea, not the artefacts.
+        assert it.get("status") in {"pending", "running", "passed", "failed", "blocked"}, \
             f"{it['id']}: unexpected status {it.get('status')!r}"
 
 

@@ -2,3 +2,6 @@
 # promote.py moves it into internal/data/content/. Never committed.
 staging/
 __pycache__/
+
+# Run output from history.py: leads, never source.
+reports/

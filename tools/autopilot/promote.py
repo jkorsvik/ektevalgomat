@@ -19,11 +19,13 @@ Writes the new status back into tools/autopilot/queue.yaml (passed / failed)
 so the loop knows what is done.
 """
 
+import datetime
 import pathlib
 import re
 import shutil
 import subprocess
 import sys
+import tempfile
 
 import yaml
 
@@ -32,6 +34,8 @@ CONTENT = ROOT / "internal/data/content"
 EVIDENCE = CONTENT / "evidence"
 PROGRAMS = CONTENT / "programs"
 TESTS = ROOT / "internal/data/loader_test.go"
+ARCHIVE = ROOT / "internal/data/archive"
+ARCHIVE_TOOL = ROOT / "tools/archive/build_archive.py"
 QUEUE = pathlib.Path(__file__).resolve().parent / "queue.yaml"
 
 
@@ -41,8 +45,77 @@ def next_number() -> int:
     return max(nums, default=0) + 1
 
 
-def real_counts() -> tuple[int, int]:
-    return len(list(CONTENT.glob("statements/*.yaml"))), len(list(EVIDENCE.glob("*.yaml")))
+def real_counts() -> dict[str, int]:
+    """Everything the documents state, derived from the dataset.
+
+    TestDocsStateTheRealCounts (internal/scoring/docs_claims_test.go) pins the
+    README and the roadmap to these numbers. Promotion used to bump only
+    internal/data/loader_test.go, so every evidence promotion since that test
+    landed failed go test and rolled back: the tool that moves content could
+    not move any. The counts are computed here the same way the Go test
+    computes them, from the dataset, never from a stored copy.
+    """
+    statements = [p for p in CONTENT.glob("statements/*.yaml")]
+    evidence = [p for p in EVIDENCE.glob("*.yaml")]
+    parties = {yaml.safe_load(p.read_text())["id"] for p in (CONTENT / "parties").glob("*.yaml")}
+    coded: dict[str, set[str]] = {}
+    quoted = 0
+    for f in evidence:
+        d = yaml.safe_load(f.read_text()) or {}
+        if (d.get("verbatim_excerpt") or "").strip():
+            quoted += 1
+        if d.get("position") is not None and d.get("party_id") and d.get("statement_id"):
+            coded.setdefault(d["statement_id"], set()).add(d["party_id"])
+    full = sum(1 for s in statements
+               if len(coded.get(yaml.safe_load(s.read_text())["id"], set()) & parties) == len(parties))
+    return {"statements": len(statements), "evidence": len(evidence),
+            "quoted": quoted, "full": full}
+
+
+# The claims the documents make, with the same patterns docs_claims_test.go
+# uses, so the two cannot drift silently. test_promote.py fails if the Go test
+# grows a claim this table does not carry.
+DOC_CLAIMS: list[tuple[str, str, tuple[str, ...]]] = [
+    ("README.md", r"Current state \(\d{4}-\d{2}-\d{2}\): (\d+) statements, (\d+) evidence\s+files",
+     ("statements", "evidence")),
+    ("README.md", r"(\d+) of (\d+) statements have a coded position", ("full", "statements")),
+    ("README.md", r"(\d+) of\s+the (\d+) evidence rows carry such an excerpt", ("quoted", "evidence")),
+    ("docs/roadmap.md", r"\*\*(\d+) statements, (\d+) evidence files\.\*\*", ("statements", "evidence")),
+    ("docs/roadmap.md", r"\*\*(\d+) of (\d+) statements have a coded position", ("full", "statements")),
+]
+
+# "Current state (<date>)" is a date as well as a number: the state changed, so
+# the date it is stated as is no longer true.
+DOC_DATES = [
+    ("README.md", r"Current state \(\d{4}-\d{2}-\d{2}\)", "Current state ({today})"),
+    ("docs/roadmap.md", r"## Current state \(\d{4}-\d{2}-\d{2}\)", "## Current state ({today})"),
+]
+
+
+def bump_docs(counts: dict[str, int], today: str) -> dict[str, str]:
+    """Return path -> new text, with every documented number set to the data."""
+    out: dict[str, str] = {}
+    for rel, pattern, keys in DOC_CLAIMS:
+        path = ROOT / rel
+        text = out.get(rel) or path.read_text()
+        m = re.search(pattern, text)
+        if not m:
+            continue  # the Go test already fails loudly on a vanished claim
+        # Replace by position, never by string search: two captured numbers can
+        # share digits (60 and 615), and replace() would hit the wrong one.
+        pieces, prev = [], 0
+        for i, key in enumerate(keys, start=1):
+            a, b = m.span(i)
+            pieces.append(m.group(0)[prev:a - m.start()])
+            pieces.append(str(counts[key]))
+            prev = b - m.start()
+        pieces.append(m.group(0)[prev:])
+        out[rel] = text[:m.start()] + "".join(pieces) + text[m.end():]
+    for rel, pattern, replacement in DOC_DATES:
+        path = ROOT / rel
+        text = out.get(rel) or path.read_text()
+        out[rel] = re.sub(pattern, replacement.format(today=today), text, count=1)
+    return out
 
 
 def bump_tests(stmts: int, ev: int) -> str:
@@ -52,6 +125,35 @@ def bump_tests(stmts: int, ev: int) -> str:
     s = re.sub(r"(if got := len\(Store\.Evidence\); got != )\d+", rf"\g<1>{ev}", s)
     s = re.sub(r'("Evidence = %d, want )\d+', rf"\g<1>{ev}", s)
     return s
+
+
+def quoted_claim_added(paths: list[pathlib.Path]) -> bool:
+    """True when a promoted file carries an excerpt, so the archive must grow.
+
+    TestArchiveCoversEveryQuotedClaim (internal/data/archive_test.go) requires
+    one stored window per quoted claim, keyed by the evidence `id`. Promotion
+    that skips the rebuild therefore fails go test on any new quote; this is
+    the third reader of the promotion contract that promote.py did not know
+    about, after loader_test.go and the documented counts.
+    """
+    for p in paths:
+        try:
+            d = yaml.safe_load(p.read_text()) or {}
+        except Exception:  # noqa: BLE001 - a broken file fails the gate, not here
+            return True
+        if (d.get("verbatim_excerpt") or "").strip():
+            return True
+    return False
+
+
+def rebuild_archive() -> tuple[bool, str]:
+    p = subprocess.run(["uv", "run", str(ARCHIVE_TOOL), "--out", str(ARCHIVE), "--quiet"],
+                       cwd=ROOT, capture_output=True, text=True,
+                       env={**__import__("os").environ,
+                            "PATH": "/opt/homebrew/bin:" + __import__("os").environ["PATH"]})
+    if p.returncode != 0:
+        return False, (p.stdout + p.stderr).strip()[-500:]
+    return True, ""
 
 
 def set_status(item_id: str, status: str, error: str = "") -> None:
@@ -106,16 +208,37 @@ def promote(item: pathlib.Path, dry: bool) -> tuple[bool, str]:
     if dry:
         return True, "would move " + ", ".join(d.name for _, d in moved)
 
+    # The archive is generated from the dataset, so it is restored, not merged:
+    # a half-rebuilt archive would look complete to the coverage test's count.
+    archive_backup = None
+    if quoted_claim_added([d for _, d in moved]):
+        archive_backup = pathlib.Path(tempfile.mkdtemp()) / "archive"
+        shutil.copytree(ARCHIVE, archive_backup)
+        ok, msg = rebuild_archive()
+        if not ok:
+            for src, dest in moved:
+                shutil.move(str(dest), str(src))
+            return False, f"archive rebuild failed: {msg}"
+
     tests_before = TESTS.read_text()
-    stmts, ev = real_counts()
-    TESTS.write_text(bump_tests(stmts, ev))
+    counts = real_counts()
+    docs = bump_docs(counts, datetime.date.today().isoformat())
+    docs_before = {rel: (ROOT / rel).read_text() for rel in docs}
+    TESTS.write_text(bump_tests(counts["statements"], counts["evidence"]))
+    for rel, text in docs.items():
+        (ROOT / rel).write_text(text)
     ok, msg = run_tests()
     if not ok:
         for src, dest in moved:
             shutil.move(str(dest), str(src))
         TESTS.write_text(tests_before)
+        for rel, text in docs_before.items():
+            (ROOT / rel).write_text(text)
+        if archive_backup is not None:
+            shutil.rmtree(ARCHIVE)
+            shutil.copytree(archive_backup, ARCHIVE)
         return False, msg
-    return True, f"promoted {len(moved)} files ({ev} evidence now)"
+    return True, f"promoted {len(moved)} files ({counts['evidence']} evidence now)"
 
 
 def run_tests() -> tuple[bool, str]:

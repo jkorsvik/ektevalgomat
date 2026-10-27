@@ -29,10 +29,10 @@ items:
   party: rodt
   method: method/program.md
   status: passed
-  note: 'Done 2026-10-13: 31 points, gate PASS. The Vercel concern was wrong for this
-    URL. roedt.no answered 429 to a fetch while this was written, but the four known
-    Rødt evidence items already cite a URL that hashes to the repo''s own source
-    cache, so the gate verifies against the file and never needs the live site.'
+  note: 'Done 2026-10-13: 31 points, gate PASS. The Vercel concern was wrong for this URL. roedt.no answered
+    429 to a fetch while this was written, but the four known Rødt evidence items already cite a URL that
+    hashes to the repo''s own source cache, so the gate verifies against the file and never needs the
+    live site.'
 - id: program-mdg
   kind: program
   party: mdg
@@ -50,14 +50,14 @@ items:
   status: passed
 - id: budget-nodnett-brann
   kind: budget
-  statement: ''
+  statement: utsagn-60
   keywords:
   - Nødnett
   - DSB
   - brann og redning
   - beredskapspakke
   method: method/budget.md
-  status: pending
+  status: running
   note: 'Lead: Nye Nødnett +200 MNOK (324,5 MNOK total) for testing toward 2031; does it cover kommunene''s
     cost, and can brann take part (vikar)? Open Prop. 1 S (Justis- og beredskapsdepartementet, DSB post)
     and the beredskapspakke, quote the post and the year-on-year change.
@@ -72,20 +72,20 @@ items:
   - Norgespris
   - OED
   method: method/budget.md
-  status: pending
+  status: running
   note: 'Lead: Enova is cut while the government calls energy efficiency a main argument for Norgespris.
     Open Prop. 1 S (OED, Enova post), quote the change against a named earlier year.
 
     '
 - id: budget-bredband
   kind: budget
-  statement: utsagn-26
+  statement: utsagn-61
   keywords:
   - bredbånd
   - høyhastighetsinternett
   - dekning
   method: method/budget.md
-  status: pending
+  status: running
   note: 'Lead: the bredbåndssubsidy is proposed wound down from 2027 while the government still wants
     100 % high-speed coverage. Open the relevant Prop. 1 (Digitaliseringsdepartementet / KDD), quote the
     post.
@@ -101,8 +101,37 @@ items:
   - NVE
   - RME
   method: method/budget.md
-  status: pending
+  status: blocked
+  blocked_on: No statement covers vindkraft-kommuneinntekter. The gate rejects an unknown statement_id,
+    so this item cannot produce promotable evidence until the owner either names an existing statement
+    it bears on or approves a new statement. The statement list has no energy-income or municipal-vindkraft
+    statement; utsagn-08 and 09 are about krafteksport and Skagerrak cables, not local revenue.
   note: 'Lead: kommuner get vindkraft income and the production fee is pre-paid; is it enough to trigger
     build-out? Open Prop. 1 S (OED), quote the posts.
+
+    '
+- id: excerpt-tail-nonvote
+  kind: excerpt
+  statement: ''
+  method: method/excerpt.md
+  status: running
+  note: '299 evidence files carry no verbatim_excerpt, but 281 of them are votes where the claim IS the
+    action (status forslag_avvist_stemte_mot and siblings) and a quote would be decoration. The tail that
+    can be quoted is the ~18 non-vote rows: kontekst (5), ffi_monitorering (2), and one each of vedtak,
+    lovendring, mandat, rettsstatus, ffi_attribusjon, effekt, nettverksanalyse, attribusjon, melding_til_stortinget,
+    innstilling/innstilt, representantforslag/fremmet. Job: add a verbatim excerpt only where the source
+    document actually contains a sentence that carries the claim, and say so plainly where it does not.
+
+    '
+- id: mixed-voteringer-review
+  kind: verify
+  statement: ''
+  method: method/mixed.md
+  status: running
+  note: '23 evidence files are MIXED in verify_votes.py: the party voted differently on two related voterings
+    cited by the same file. Not a failure (exit 0), but the coded direction may rest on the wrong vote.
+    Concentrations: stroemprismakspris-mot (8 files, 83-90), kjernekraft-kommersiell (5, 95-99), digital
+    suverenitet (3, 446/447/451), plus tannhelse, SFO, nasjonal, microsoft365. Job: for each, read both
+    voterings and state whether the coded position still follows, or which vote it should cite instead.
 
     '

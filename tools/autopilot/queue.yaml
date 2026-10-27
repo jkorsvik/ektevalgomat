@@ -198,13 +198,24 @@ items:
   role: harvester
   statement: ''
   method: method/reference.md
-  status: pending
+  status: refused
   note: 'Election results per constituency 2009-2025, plus the representative-to-constituency
     map per period. Buys the power map a reader can place themselves in: seats, margins,
     overhang. Valgdirektoratet publishes it as open data. No statement codes this; it is
     reference data the pages can show next to a party position.
 
     '
+  result: >-
+    REFUSED with evidence, 2026-10-27. valgresultat.no answers 200 but every
+    /api/* path returns the same 11,833-byte app shell (tried /api/2025/st,
+    /api/2025, /api/2025/st/0, /api/2021/st, /api/valg/2025), so no machine-readable
+    endpoint is discoverable. SSB's search for 'stortingsvalg' surfaces 16 Storting
+    tables, all of them eligible voters, turnout or candidate lists (05223, 07362,
+    05303, 09443, 07342, 07338, 11604, 07340, 07341, 07344, 07369, 07364, 07361,
+    14526, 09866, 09839); none carries party vote shares per constituency. What DOES
+    cover the power outcome: seat counts per party in internal/data/storting/index.json,
+    cross-checked against the per-party totals on votering 27721. The missing part is
+    the per-constituency detail, not who won.
 - id: committee-membership
   kind: reference
   role: harvester

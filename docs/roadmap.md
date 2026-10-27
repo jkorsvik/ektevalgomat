@@ -510,6 +510,24 @@ can't quietly become "we assumed this was done."
   `~/.cache/ektevalgomat-sources/` under the sha256 of its
   `source_url`. Filling one means real primary-source evidence per
   party, or leaving the cell honestly empty. Never a guessed position.
+  **2026-10-27, the historical-vote search.** `tools/autopilot/history.py`
+  walked every gap cell back through earlier sessions (evidence →
+  Innst. reference → `henvisning` → sak → emne → earlier saker with
+  votes) and settled none of them. What it found, and why each is
+  still empty: **utsagn-06** (krf, sv) — the closest case, sak 92789
+  (Dokument 8:129 S, 2022-2023, "mer kunnskap om behovet for
+  kjernekraft"), is the wrong question: KrF voted for and SV against
+  *researching* nuclear power, and the statement is about *state
+  ownership and control*, which those voterings never touch.
+  Sak 83905 (Innst. 504 S, 2020-2021, national ownership of strategic
+  resources) was carried unanimously, so it codes nobody.
+  **utsagn-52** (ap) — zero candidate cases in any earlier session.
+  **utsagn-57** (ap) — one candidate, a 2010-2011 oversendelsesforslag
+  with no voteringer at all. **utsagn-55** (mdg, sp) — no earlier
+  session has a case on total tax and fee level. The walk matches on
+  emne id plus title words, and only 27 distinct emner are populated
+  in the export, so this is a weak net rather than a proof of absence.
+
 - **PostgreSQL / any mutable database.** Deliberate substitution: git +
   embedded YAML instead. Revisit only if evidence volume or an actual
   need for a live-editing UI (not just "it would be more standard")

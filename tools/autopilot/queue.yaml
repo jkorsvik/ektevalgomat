@@ -77,19 +77,15 @@ items:
     Open Prop. 1 S (OED, Enova post), quote the change against a named earlier year.
 
     '
-  result: >-
-    2026-10-27: status was 'running' with no directory under
-    tools/autopilot/staging/, so it claimed work in flight that produced nothing.
-    Reset to pending. The lead itself is still good: Enova's post is cut while the
-    government names energy efficiency as a main argument for Norgespris, and the
-    quote has to come from Prop. 1 S (OED) against a named earlier year.
-  blocked_on: >-
-    No statement covers energy-efficiency funding. The verified fact (kap. 1825 post
-    50: 1 377 mill. settled for 2025, 1 300 mill. proposed for 2026, a 77 mill. cut)
-    does not bear on utsagn-12, which asks about support and reference-price schemes
-    against a statutory maximum price. Half the lead was also wrong: neither budget
-    proposition links Norgespris to energy efficiency (searched 202 and 204 pages, zero
-    matches). Recorded in docs/roadmap.md; needs a statement, which is the owner's call.
+  result: '2026-10-27: status was ''running'' with no directory under tools/autopilot/staging/, so it
+    claimed work in flight that produced nothing. Reset to pending. The lead itself is still good: Enova''s
+    post is cut while the government names energy efficiency as a main argument for Norgespris, and the
+    quote has to come from Prop. 1 S (OED) against a named earlier year.'
+  blocked_on: 'No statement covers energy-efficiency funding. The verified fact (kap. 1825 post 50: 1
+    377 mill. settled for 2025, 1 300 mill. proposed for 2026, a 77 mill. cut) does not bear on utsagn-12,
+    which asks about support and reference-price schemes against a statutory maximum price. Half the lead
+    was also wrong: neither budget proposition links Norgespris to energy efficiency (searched 202 and
+    204 pages, zero matches). Recorded in docs/roadmap.md; needs a statement, which is the owner''s call.'
 - id: budget-bredband
   kind: budget
   statement: utsagn-61
@@ -144,10 +140,9 @@ items:
     document actually contains a sentence that carries the claim, and say so plainly where it does not.
 
     '
-  result: >-
-    12 excerpts found and applied through apply_excerpts.py, which verifies each
-    against its source and rolls back on failure. Quoted rows went from 316 to 331
-    at the time; verify_excerpts reports 0 failed.
+  result: 12 excerpts found and applied through apply_excerpts.py, which verifies each against its source
+    and rolls back on failure. Quoted rows went from 316 to 331 at the time; verify_excerpts reports 0
+    failed.
 - id: mixed-voteringer-review
   kind: verify
   statement: ''
@@ -160,50 +155,43 @@ items:
     voterings and state whether the coded position still follows, or which vote it should cite instead.
 
     '
-  result: >-
-    Reviewed all 23 MIXED rows: 16 KEEP, 6 RE-CITE, 1 RE-CODE, 0 SPLIT. The nine
-    kjernekraft re-citations were verified against the API in the driving session
-    (27721 nr. 4 carries the law change; V voted 0 for there and 2 for on its own
-    27718) and applied; the vote index was rebuilt. MIXED remains for six of them
-    because they also cite the tilradding, which is the correct reading of MIXED.
+  result: 'Reviewed all 23 MIXED rows: 16 KEEP, 6 RE-CITE, 1 RE-CODE, 0 SPLIT. The nine kjernekraft re-citations
+    were verified against the API in the driving session (27721 nr. 4 carries the law change; V voted
+    0 for there and 2 for on its own 27718) and applied; the vote index was rebuilt. MIXED remains for
+    six of them because they also cite the tilradding, which is the correct reading of MIXED.'
 - id: gov-composition
   kind: reference
   role: scout-then-harvester
   statement: ''
   method: method/reference.md
   status: passed
-  note: 'Who governed when: cabinet, party composition, minister per post, from and to
-    date, for every government that overlaps the evidence range (2009-2026). One small
-    authoritative table from regjeringen.no and Stortinget. Why it matters more than it
-    looks: every government attribution today rests on prose in method/budget.md ("Sp left
-    2025-02-04"). Without the table, a 2026 proposition can be filed as Ap/Sp and a
-    minister can be attributed to the wrong party. Cheap, tier A, prevents a whole class of
+  note: 'Who governed when: cabinet, party composition, minister per post, from and to date, for every
+    government that overlaps the evidence range (2009-2026). One small authoritative table from regjeringen.no
+    and Stortinget. Why it matters more than it looks: every government attribution today rests on prose
+    in method/budget.md ("Sp left 2025-02-04"). Without the table, a 2026 proposition can be filed as
+    Ap/Sp and a minister can be attributed to the wrong party. Cheap, tier A, prevents a whole class of
     errors, and nothing in the dataset can check it today.
 
     '
-  result: >-
-    Ingested as content/government/{periods,ministers}.yaml: 7 periods of constant
-    cabinet composition, 245 minister postings, each with its page and read date.
-    Tests assert continuity with a shared change date, coverage from 2009-01-01 to
-    the newest evidence date, and that every minister's party sits in the cabinet
-    governing on the day the posting started (all 245 pass).
+  result: 'Ingested as content/government/{periods,ministers}.yaml: 7 periods of constant cabinet composition,
+    245 minister postings, each with its page and read date. Tests assert continuity with a shared change
+    date, coverage from 2009-01-01 to the newest evidence date, and that every minister''s party sits
+    in the cabinet governing on the day the posting started (all 245 pass).'
 - id: party-finance
   kind: reference
   role: harvester
   statement: utsagn-03
   method: method/reference.md
   status: passed
-  result: >-
-    Ingested both halves. SSB 11233 (181 party-years, 2005-2025) via
-    tools/analytics/build_finance_index.py, and Statsforvalteren's Partiloven
-    register (22 parties, 12 years). /penger renders both, kept apart on purpose:
-    they measure different things. Donor-level rows REFUSED: the register's
-    paginated endpoint answers 500 for every parameter shape tried, so the site's
-    own table could not be reproduced; the published aggregates are what is stored.
-  note: 'The money behind the parties: SSB party-finance statistics, the Partiloven register
-    of party income, and the parties own annual accounts. Annual, small, tier A. Closes the
-    anonym-financing dimension with numbers instead of documents, and gives utsagn-02 and
-    utsagn-03 a second, non-legislative source type.
+  result: 'Ingested both halves. SSB 11233 (181 party-years, 2005-2025) via tools/analytics/build_finance_index.py,
+    and Statsforvalteren''s Partiloven register (22 parties, 12 years). /penger renders both, kept apart
+    on purpose: they measure different things. Donor-level rows REFUSED: the register''s paginated endpoint
+    answers 500 for every parameter shape tried, so the site''s own table could not be reproduced; the
+    published aggregates are what is stored.'
+  note: 'The money behind the parties: SSB party-finance statistics, the Partiloven register of party
+    income, and the parties own annual accounts. Annual, small, tier A. Closes the anonym-financing dimension
+    with numbers instead of documents, and gives utsagn-02 and utsagn-03 a second, non-legislative source
+    type.
 
     '
 - id: election-results-krets
@@ -212,111 +200,98 @@ items:
   statement: ''
   method: method/reference.md
   status: refused
-  note: 'Election results per constituency 2009-2025, plus the representative-to-constituency
-    map per period. Buys the power map a reader can place themselves in: seats, margins,
-    overhang. Valgdirektoratet publishes it as open data. No statement codes this; it is
-    reference data the pages can show next to a party position.
+  note: 'Election results per constituency 2009-2025, plus the representative-to-constituency map per
+    period. Buys the power map a reader can place themselves in: seats, margins, overhang. Valgdirektoratet
+    publishes it as open data. No statement codes this; it is reference data the pages can show next to
+    a party position.
 
     '
-  result: >-
-    REFUSED with evidence, 2026-10-27. valgresultat.no answers 200 but every
-    /api/* path returns the same 11,833-byte app shell (tried /api/2025/st,
-    /api/2025, /api/2025/st/0, /api/2021/st, /api/valg/2025), so no machine-readable
-    endpoint is discoverable. SSB's search for 'stortingsvalg' surfaces 16 Storting
-    tables, all of them eligible voters, turnout or candidate lists (05223, 07362,
-    05303, 09443, 07342, 07338, 11604, 07340, 07341, 07344, 07369, 07364, 07361,
-    14526, 09866, 09839); none carries party vote shares per constituency. What DOES
-    cover the power outcome: seat counts per party in internal/data/storting/index.json,
-    cross-checked against the per-party totals on votering 27721. The missing part is
-    the per-constituency detail, not who won.
+  result: 'REFUSED with evidence, 2026-10-27. valgresultat.no answers 200 but every /api/* path returns
+    the same 11,833-byte app shell (tried /api/2025/st, /api/2025, /api/2025/st/0, /api/2021/st, /api/valg/2025),
+    so no machine-readable endpoint is discoverable. SSB''s search for ''stortingsvalg'' surfaces 16 Storting
+    tables, all of them eligible voters, turnout or candidate lists (05223, 07362, 05303, 09443, 07342,
+    07338, 11604, 07340, 07341, 07344, 07369, 07364, 07361, 14526, 09866, 09839); none carries party vote
+    shares per constituency. What DOES cover the power outcome: seat counts per party in internal/data/storting/index.json,
+    cross-checked against the per-party totals on votering 27721. The missing part is the per-constituency
+    detail, not who won.'
 - id: committee-membership
   kind: reference
   role: harvester
   statement: ''
   method: method/reference.md
   status: refused
-  note: 'Committee membership over time. A merknad is signed by named members, so without
-    membership you cannot attribute one, and you cannot explain why a party voted as it did
-    on a committee case. From Stortinget organisation data per session.
+  note: 'Committee membership over time. A merknad is signed by named members, so without membership you
+    cannot attribute one, and you cannot explain why a party voted as it did on a committee case. From
+    Stortinget organisation data per session.
 
     '
-  result: >-
-    REFUSED with evidence. The Storting's open data has no endpoint for committee
-    membership: six candidate names answer 404 and the singular form answers 400
-    (unknown parameter). Eight attempts are recorded in
-    internal/data/storting/index.json under refused.committee_membership, and
-    TestCommitteeMembershipIsRefusedWithEvidence holds them. What IS ingested from
-    the same source: 169 representatives with party and county, and 16 committees.
+  result: 'REFUSED with evidence. The Storting''s open data has no endpoint for committee membership:
+    six candidate names answer 404 and the singular form answers 400 (unknown parameter). Eight attempts
+    are recorded in internal/data/storting/index.json under refused.committee_membership, and TestCommitteeMembershipIsRefusedWithEvidence
+    holds them. What IS ingested from the same source: 169 representatives with party and county, and
+    16 committees.'
 - id: alternates-2026
   kind: budget
   role: harvester-then-verifier
   statement: ''
   method: method/budget.md
   status: refused
-  note: 'Alternative budgets: Innst. 2 S and 3 S (2025-2026) party proposal tables give every
-    party own column per post, which is tier A fiscal action. Tabell 1a in a faginnstilling
-    is parsed cell-by-cell (see the bredband batch): one column per party, so a party own
-    priority is readable without a merknad. This is the stream that makes "what they would
-    have spent" answerable, and today only five rows carry it.
+  note: 'Alternative budgets: Innst. 2 S and 3 S (2025-2026) party proposal tables give every party own
+    column per post, which is tier A fiscal action. Tabell 1a in a faginnstilling is parsed cell-by-cell
+    (see the bredband batch): one column per party, so a party own priority is readable without a merknad.
+    This is the stream that makes "what they would have spent" answerable, and today only five rows carry
+    it.
 
     '
-  result: >-
-    REFUSED with evidence. The Storting's open data has no endpoint for alternates:
-    vararepresentanter?sesjonid=2025-2026 answers 404, vararepresentant?sesjonid=2025-2026
-    answers 404, and representanter?sesjonid=2025-2026&vararepresentant=true returns the
-    same 82,717 bytes as without the parameter, i.e. the filter is ignored. What the same
-    source does give is the 169 sitting representatives, already ingested in
-    internal/data/storting/index.json.
+  result: 'REFUSED with evidence. The Storting''s open data has no endpoint for alternates: vararepresentanter?sesjonid=2025-2026
+    answers 404, vararepresentant?sesjonid=2025-2026 answers 404, and representanter?sesjonid=2025-2026&vararepresentant=true
+    returns the same 82,717 bytes as without the parameter, i.e. the filter is ignored. What the same
+    source does give is the 169 sitting representatives, already ingested in internal/data/storting/index.json.'
 - id: repforslag-backfill
   kind: history
   role: harvester
   statement: ''
   method: method/program.md
   status: passed
-  note: 'Representantforslag (Dokument 8) backfill: positions on questions that were never
-    enacted, so no vote exists to cite. data.stortinget.no lists them all with forslagsstiller;
-    the forslag text is the position. This is the latent-position layer.
+  note: 'Representantforslag (Dokument 8) backfill: positions on questions that were never enacted, so
+    no vote exists to cite. data.stortinget.no lists them all with forslagsstiller; the forslag text is
+    the position. This is the latent-position layer.
 
     '
-  result: >-
-    Ingested as internal/data/proposals/index.json: 362 records in session 2025-2026
-    that carry named proposers, from data.stortinget.no saker?dokumenttypeid=8.
-    Attribution is to every proposer's party (457 attributions for 362 proposals), so
-    per-party counts are frp 93, sp 75, h 70, sv 52, mdg 43, v 39, krf 33, rodt 33,
-    ap 19. Pasientfokus is kept with an empty party id and reported. Status codes are
-    the source's own (1, 2, 5) and not interpreted. 301 records without proposers are
-    excluded and counted.
+  result: 'Ingested as internal/data/proposals/index.json: 362 records in session 2025-2026 that carry
+    named proposers, from data.stortinget.no saker?dokumenttypeid=8. Attribution is to every proposer''s
+    party (457 attributions for 362 proposals), so per-party counts are frp 93, sp 75, h 70, sv 52, mdg
+    43, v 39, krf 33, rodt 33, ap 19. Pasientfokus is kept with an empty party id and reported. Status
+    codes are the source''s own (1, 2, 5) and not interpreted. 301 records without proposers are excluded
+    and counted.'
 - id: independent-audits
   kind: reference
   role: scout
   statement: ''
   method: method/reference.md
   status: passed
-  note: 'Third-party verdicts: Riksrevisjonen (Dokument 3), ESA/EØS infringement cases, court
-    rulings. The strongest tier available, because the author is not a party. Start with a
-    scout pass that maps what exists per dimension before any harvesting.
+  note: 'Third-party verdicts: Riksrevisjonen (Dokument 3), ESA/EØS infringement cases, court rulings.
+    The strongest tier available, because the author is not a party. Start with a scout pass that maps
+    what exists per dimension before any harvesting.
 
     '
-  result: >-
-    Ingested as internal/data/audits/index.json: the 10 most recent Riksrevisjonen reports
-    with date, title, summary, categories and session. PARTIAL by necessity and stated
-    in the data: the archive cannot be enumerated (/sitemap.xml 404, /robots.txt 403,
-    ?page=2 returns page 1), and those attempts are stored under not_collectable.
+  result: 'Ingested as internal/data/audits/index.json: the 10 most recent Riksrevisjonen reports with
+    date, title, summary, categories and session. PARTIAL by necessity and stated in the data: the archive
+    cannot be enumerated (/sitemap.xml 404, /robots.txt 403, ?page=2 returns page 1), and those attempts
+    are stored under not_collectable.'
 - id: ownership-bronnoysund
   kind: reference
   role: scout
   statement: ''
   method: method/reference.md
   status: passed
-  note: 'The actor layer: Brønnøysund Enhetsregister and Rollup, ownership edges and financial
-    flows. The largest new build, and docs/roadmap.md names it as explicitly unbuilt. Scout
-    first: what the open API exposes, at what rate, and whether a bounded subset answers a
-    real question (who owns the companies behind a subsidy) before building a graph.
+  note: 'The actor layer: Brønnøysund Enhetsregister and Rollup, ownership edges and financial flows.
+    The largest new build, and docs/roadmap.md names it as explicitly unbuilt. Scout first: what the open
+    API exposes, at what rate, and whether a bounded subset answers a real question (who owns the companies
+    behind a subsidy) before building a graph.
 
     '
-  result: >-
-    Ingested as content/ownership/index.json from regjeringen.no's 'Hva staten eier'
-    (69 companies, share and category) enriched from Brønnøysund by exact name match
-    (orgnr, legal form, employees, industry). /eierskap renders it. Matching is exact
-    by rule: a trailing parenthetical is stripped and one alias is recorded with the
-    orgnr it resolves to; an unmatched name is stored without an orgnr and reported.
+  result: 'Ingested as content/ownership/index.json from regjeringen.no''s ''Hva staten eier'' (69 companies,
+    share and category) enriched from Brønnøysund by exact name match (orgnr, legal form, employees, industry).
+    /eierskap renders it. Matching is exact by rule: a trailing parenthetical is stripped and one alias
+    is recorded with the orgnr it resolves to; an unmatched name is stored without an orgnr and reported.'

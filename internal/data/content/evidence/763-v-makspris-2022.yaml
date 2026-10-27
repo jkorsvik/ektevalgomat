@@ -1,0 +1,43 @@
+id: ev-2022-01-21-v-makspris-mot
+statement_id: utsagn-12
+party_id: v
+actor: "Venstre (energi- og miljøkomiteen)"
+date: "2022-01-21"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Venstre stemte for å avvise begge maksprisforslagene og kalte
+  prismekanismen den mest effektive måten å utnytte kraften på.
+claim_action: >
+  Venstre stemte mot Rødts forslag nr. 6 og 7 om en makspris på 35 øre/kWt
+  (votering_id 18082: V 0 for, 3 mot av de tilstedeværende), mot
+  SV/MDGs forslag nr. 3 om å utrede en maksimalpris (votering_id 18084:
+  0 for, 3 mot) og mot FrPs forslag nr. 4 og 5 om 0,50 kr/kWt
+  (votering_id 18085: 0 for, 3 mot). Stemte for komiteens tilråding om
+  at Dokument 8:65 S og 8:66 S ikke vedtas (votering_id 18088 og 18089:
+  V 3 for, 0 mot i begge), altså substansielt mot begge forslagene.
+  Venstre fremmet ingen eget maksprisforslag.
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 122 S (2021–2022); votering_id 18082, 18084, 18085, 18088, 18089"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2021-2022/inns-202122-122s/?all=true"
+verbatim_excerpt: >
+  Komiteens medlemmer fra Høyre og Venstre vil påpeke at kraftmarkedet er
+  dominert av offentlige aktører regulert av myndighetene, men at
+  prismekanismen er den mest effektive mekanismen vi har for å utnytte
+  kraften best mulig og skape størst mulig verdi for samfunnet som helhet.
+claim_confidence: dokumentert
+context_note: >
+  Historisk motstykke til ev-2025-06-05-v-stroemprismakspris-mot: to
+  datede observasjoner, samme retning og samme styrke (+2). Sitatet er
+  Høyre og Venstres felles merknad, ikke en egen Venstre-merknad; Venstre
+  står også bak avsnittet lenger opp om at en statlig regulert makspris
+  kan utvikle seg til en minimumspris. Merk at Venstre også er med i
+  «komiteens flertall» som forsvarer strømstønadsordningen, og at partiet
+  i 2025-filen er kodet +2 på samme grunnlag: markedsbasert fastpris og
+  folkeutbytte fremfor et lovbestemt tak. Votering 18088/18089 er
+  tilrådinger om at dokumentene «vedtas ikke», så «for» betyr stemme MOT
+  forslaget; status beskriver den substansielle siden. Tallene er små
+  (3 av Venstres 8 representanter var til stede), men ensidige: 0 mot.
+retrieved_at: "2026-10-27"

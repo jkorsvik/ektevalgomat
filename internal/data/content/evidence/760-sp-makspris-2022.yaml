@@ -1,0 +1,45 @@
+id: ev-2022-01-21-sp-makspris-mot
+statement_id: utsagn-12
+party_id: sp
+actor: "Senterpartiet (energi- og miljøkomiteen)"
+date: "2022-01-21"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Sp stemte for å avvise begge maksprisforslagene og forsvarte
+  strømstønadsordningen som fleksibel og ubyråkratisk.
+claim_action: >
+  Sp stemte mot Rødts forslag nr. 6 og 7 om en makspris på 35 øre/kWt
+  (votering_id 18082: 4 for, 95 mot; Sp 0 for, 17 mot av de
+  tilstedeværende), mot SV/MDGs forslag nr. 3 om å utrede en maksimalpris
+  (votering_id 18084: 0 for, 17 mot) og mot FrPs forslag nr. 4 og 5 om en
+  makspris på 0,50 kr/kWt (votering_id 18085: 0 for, 17 mot). Deretter
+  stemte Sp for komiteens tilråding om at Dokument 8:65 S og 8:66 S ikke
+  vedtas (votering_id 18088: Sp 17 for, 0 mot; votering_id 18089: Sp 17
+  for, 0 mot). Etter innstillingens egen lesning betyr det at Sp stemte
+  mot selve forslagene om makspris og toprissystem.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 122 S (2021–2022); votering_id 18082, 18084, 18085, 18088, 18089"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2021-2022/inns-202122-122s/?all=true"
+verbatim_excerpt: >
+  Komiteens flertall, medlemmene fra Arbeiderpartiet, Høyre, Senterpartiet,
+  Fremskrittspartiet, Sosialistisk Venstreparti og Venstre
+  , viser til at selve stønadsordningen er fleksibel og ubyråkratisk og
+  ikke virker direkte inn på energisystemet.
+claim_confidence: dokumentert
+context_note: >
+  Historisk motstykke til ev-2025-06-05-sp-stroemprismakspris-mot: to
+  datede observasjoner, samme retning. Senterpartiet er ett av seks partier
+  i komitéflertallet som her forsvarer stønadsordningen fremfor en direkte
+  prisregulering, og det er den eneste Sp-attribuerbare begrunnelsen i
+  innstillingen: Sp har ingen egen merknad om makspris i Innst. 122 S.
+  Sitatet er derfor komitéflertallets ord, ikke Sps egne, og det er en
+  svakere tilskrivning enn for de partiene som har egen merknad. Sp satt i
+  regjering fra 2021-10-14, så stemmen er en regjeringsstemme.
+  Votering 18088 og 18089 er tilrådinger om at dokumentene «vedtas ikke»:
+  «for» betyr dermed stemme MOT forslaget, og status beskriver den
+  substansielle siden, ikke tallsiden. Partitallene er hentet fra
+  data.stortinget.no/eksport/voteringsresultat for hver votering.
+retrieved_at: "2026-10-27"

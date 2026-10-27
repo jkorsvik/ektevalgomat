@@ -1,0 +1,46 @@
+id: ev-2022-01-21-h-makspris-mot
+statement_id: utsagn-12
+party_id: h
+actor: "Høyre (energi- og miljøkomiteen)"
+date: "2022-01-21"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyre stemte for å avvise begge maksprisforslagene og kalte
+  prismekanismen den mest effektive måten å utnytte kraften på.
+claim_action: >
+  Høyre stemte mot Rødts forslag nr. 6 og 7 om en makspris på 35 øre/kWt
+  (votering_id 18082: H 0 for, 21 mot av de tilstedeværende), mot
+  SV/MDGs forslag nr. 3 om å utrede en maksimalpris (votering_id 18084:
+  0 for, 21 mot) og mot FrPs forslag nr. 4 og 5 om 0,50 kr/kWt
+  (votering_id 18085: 0 for, 21 mot). Stemte for komiteens tilråding om
+  at Dokument 8:65 S og 8:66 S ikke vedtas (votering_id 18088: H 20 for,
+  0 mot; votering_id 18089: H 21 for, 0 mot), altså substansielt mot
+  begge forslagene. Høyre fremmet ingen eget maksprisforslag.
+status: forslag_avvist_stemte_mot
+position: 2
+source_tier: A
+source_name: "Innst. 122 S (2021–2022); votering_id 18082, 18084, 18085, 18088, 18089"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2021-2022/inns-202122-122s/?all=true"
+verbatim_excerpt: >
+  Komiteens medlemmer fra Høyre og Venstre vil påpeke at kraftmarkedet er
+  dominert av offentlige aktører regulert av myndighetene, men at
+  prismekanismen er den mest effektive mekanismen vi har for å utnytte
+  kraften best mulig og skape størst mulig verdi for samfunnet som helhet.
+claim_confidence: dokumentert
+context_note: >
+  Historisk motstykke til ev-2025-06-05-h-stroemprismakspris-mot: to
+  datede observasjoner, samme retning og samme styrke (+2). Høyres egen
+  merknad, sammen med Venstre, sier at prismekanismen er «den mest
+  effektive mekanismen vi har» — det er en prinsipiell avvisning av statlig
+  prisfastsettelse, ikke bare uenighet i Rødts 35-øre-nivå. Høyres merknad
+  lenger opp i innstillingen regner opp hvorfor en makspris i praksis kan
+  bli en minimumspris og svekke insentivene til magasindisponering og
+  utbygging; det er samme resonnement som i 2025-filen.
+  Merk en enkeltavvik: i votering 18086 om toprissystem stemte 1 av
+  Høyres 21 tilstedeværende representanter for. verify_votes.py leser
+  det som partilinje «mot» (1 av 21 er under splitt-terskelen), og det
+  endrer ikke noe her siden 18086 ikke er en av de påberopte voteringene.
+  Votering 18088/18089 er tilrådinger om at dokumentene «vedtas ikke», så
+  «for» betyr stemme MOT forslaget; status beskriver den substansielle siden.
+retrieved_at: "2026-10-27"

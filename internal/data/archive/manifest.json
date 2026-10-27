@@ -1,5 +1,5 @@
 {
   "note": "Bounded windows around each verified quote. The text is the source's own, kept so a claim stays checkable after the link dies. Built by tools/archive/build_archive.py.",
   "pad_chars": 400,
-  "entries": 331
+  "entries": 337
 }

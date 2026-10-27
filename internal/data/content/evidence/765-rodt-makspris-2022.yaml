@@ -1,0 +1,51 @@
+id: ev-2022-01-21-rodt-makspris-for
+statement_id: utsagn-12
+party_id: rodt
+actor: "Rødt (Sofie Marhaug, energi- og miljøkomiteen)"
+date: "2022-01-21"
+evidence_type: representantforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt fremmet og stemte for en lovbestemt makspris på 35 øre/kWt, som
+  eksplisitt alternativ til stønadsordningen.
+claim_action: >
+  Rødt fremmet Dokument 8:66 S (2021–2022), forslag 1 og 2, votert som
+  forslag nr. 6 og 7 (votering_id 18082: 4 for, 95 mot; Rødt 4 for, 0 mot
+  av de tilstedeværende). Forslag 6: «Stortinget ber regjeringen innføre
+  en makspris på strøm på 35 øre/kWt, som skal pålegges omsetningen av
+  kraft fra norske kraftprodusenter til kunder i Norge (husholdninger,
+  næring m.m.), i henhold til lov om pristiltak.» Forslag 7 kombinerer
+  maksprisen med et toprissystem. Rødt stemte mot tilrådingen om at eget
+  Dokument 8:66 S ikke vedtas (votering_id 18089: Rødt 0 for, 4 mot), og
+  for tilrådingen om at FrPs konkurrerende Dokument 8:65 S ikke vedtas
+  (votering_id 18088: Rødt 2 for, 0 mot av 2 tilstedeværende).
+status: forslag_avvist_stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 122 S (2021–2022); votering_id 18082, 18089"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2021-2022/inns-202122-122s/?all=true"
+verbatim_excerpt: >
+  En engangsutbetaling til alle husstander, slik dette medlem har foreslått
+  tidligere, eller en makspris på strøm, slik dette medlem foreslår her,
+  ville gjort at vi slapp å være avhengige av at nettselskapene klarer å
+  betale ut støtten.
+claim_confidence: dokumentert
+context_note: >
+  Historisk motstykke til ev-2025-06-05-r-stroemprismakspris-for: to
+  datede observasjoner, samme retning og samme styrke (-2). Sitatet viser
+  at Rødt stilte maksprisen opp som alternativ til stønadsordningen, ikke
+  som et tillegg til den, og Rødts merknad i innstillingen går lenger:
+  «Viljen til demokratisk kontroll og politisk regulering har vært svært
+  begrenset.» Utsagnet er snudd, og -2 er den sterkt uenige siden: Rødt
+  er forslagsstiller til nettopp den lovbestemte prisen.
+
+  To ting leseren bør se. (1) Rødt stemte FOR tilrådingen om at FrPs
+  Dokument 8:65 S ikke vedtas (18088: 2 for, 0 mot, 6 av 8 fraværende) —
+  det er et nei til en konkurrerende makspris på 0,50 kr, ikke et nei til
+  makspris, og det endrer ikke kodingen. (2) Siden 2021–2022 har Rødt
+  fremmet samme 35-øre-krav gjentatte ganger, senest som Dokument 8:166 S
+  (2024–2025), jf. 2025-filen. Forslaget falt med 4 mot 95 i 18082.
+  Votering 18089 er en tilråding om at dokumentet «vedtas ikke», så «mot»
+  betyr substansielt FOR forslaget; status beskriver den substansielle
+  siden.
+retrieved_at: "2026-10-27"

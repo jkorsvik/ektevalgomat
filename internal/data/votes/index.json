@@ -35,10 +35,104 @@
     "krf": "mot"
    },
    "cited_by": [
-    "ev-2022-01-21-ap-makspris-mot"
+    "ev-2022-01-21-ap-makspris-mot",
+    "ev-2022-01-21-sp-makspris-mot",
+    "ev-2022-01-21-krf-makspris-mot",
+    "ev-2022-01-21-h-makspris-mot",
+    "ev-2022-01-21-v-makspris-mot",
+    "ev-2022-01-21-frp-makspris-for",
+    "ev-2022-01-21-rodt-makspris-for"
    ],
    "coded_parties": [
-    "ap"
+    "ap",
+    "sp",
+    "krf",
+    "h",
+    "v",
+    "frp",
+    "rodt"
+   ]
+  },
+  {
+   "votering_id": 18084,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede å innføre en maksimal pris på strøm for husholdninger og næringsliv. Utredningen må blant annet se på effekten på prisen til husholdningene over tid, fordelingseffektene, insentiver til energieffektivisering og avgrensning på forbruk.",
+   "parties": {
+    "v": "mot",
+    "frp": "for",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2022-01-21-sp-makspris-mot",
+    "ev-2022-01-21-krf-makspris-mot",
+    "ev-2022-01-21-h-makspris-mot",
+    "ev-2022-01-21-v-makspris-mot",
+    "ev-2022-01-21-frp-makspris-for"
+   ],
+   "coded_parties": [
+    "sp",
+    "krf",
+    "h",
+    "v",
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 18085,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre en makspris for strøm på 0,50 kr pr. kWt ekskl. mva. Dette gjøres gjeldende for alle, både husholdninger og næringsliv. | Stortinget ber regjeringen fremme en sak for Stortinget med forslag om de nødvendige tiltak for å sikre norske forbrukere og bedrifter stabil tilgang på strøm til de priser som har vært vanlige i Norge, altså langt lavere enn de som har vært vanlige i mange andre europeiske land.",
+   "parties": {
+    "v": "mot",
+    "frp": "for",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2022-01-21-sp-makspris-mot",
+    "ev-2022-01-21-krf-makspris-mot",
+    "ev-2022-01-21-h-makspris-mot",
+    "ev-2022-01-21-v-makspris-mot",
+    "ev-2022-01-21-frp-makspris-for"
+   ],
+   "coded_parties": [
+    "sp",
+    "krf",
+    "h",
+    "v",
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 18086,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede å innføre et toprissystem hvor det settes en lavere strømpris og gis lavere avgifter for forbruk opp til et visst nivå og normale priser over dette nivået. Det må ses på fordelingseffektene og effekten på energieffektivisering.",
+   "parties": {
+    "v": "mot",
+    "frp": "mot",
+    "sp": "mot",
+    "h": "split",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2022-01-21-h-makspris-mot"
+   ],
+   "coded_parties": [
+    "h"
    ]
   },
   {
@@ -57,10 +151,22 @@
     "krf": "for"
    },
    "cited_by": [
-    "ev-2022-01-21-ap-makspris-mot"
+    "ev-2022-01-21-ap-makspris-mot",
+    "ev-2022-01-21-sp-makspris-mot",
+    "ev-2022-01-21-krf-makspris-mot",
+    "ev-2022-01-21-h-makspris-mot",
+    "ev-2022-01-21-v-makspris-mot",
+    "ev-2022-01-21-frp-makspris-for",
+    "ev-2022-01-21-rodt-makspris-for"
    ],
    "coded_parties": [
-    "ap"
+    "ap",
+    "sp",
+    "krf",
+    "h",
+    "v",
+    "frp",
+    "rodt"
    ]
   },
   {
@@ -79,10 +185,22 @@
     "krf": "for"
    },
    "cited_by": [
-    "ev-2022-01-21-ap-makspris-mot"
+    "ev-2022-01-21-ap-makspris-mot",
+    "ev-2022-01-21-sp-makspris-mot",
+    "ev-2022-01-21-krf-makspris-mot",
+    "ev-2022-01-21-h-makspris-mot",
+    "ev-2022-01-21-v-makspris-mot",
+    "ev-2022-01-21-frp-makspris-for",
+    "ev-2022-01-21-rodt-makspris-for"
    ],
    "coded_parties": [
-    "ap"
+    "ap",
+    "sp",
+    "krf",
+    "h",
+    "v",
+    "frp",
+    "rodt"
    ]
   },
   {

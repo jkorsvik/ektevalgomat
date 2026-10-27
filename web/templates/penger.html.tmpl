@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Kilde: SSB tabell {{.Table}}, hentet {{.RetrievedAt}}</span>
+
+  {{/* Derived, never hand-written: every figure is computed from the finance
+       index at request time. 2026-10-27. */}}
+  <h2>Penger</h2>
+  <p class="prose-lede">
+    Hvem betaler for partiene. Tallene er partienes egne årsregnskap slik de
+    rapporteres til SSB, i kroner, fra {{.FirstYear}} til {{.LatestYear}}.
+    {{.TotalPartyYears}} parti-år er med.
+  </p>
+
+  <h3>Statlig støtte per parti og år</h3>
+  <p class="prose-lede">
+    Millioner kroner. En tom rute betyr at partiet ikke hadde rapporterte tall
+    det året, ikke at støtten var null.
+  </p>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>År</th>
+        {{range .Parties}}<th>{{.Short}}</th>{{end}}
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Rows}}
+      <tr>
+        <th>{{.Year}}</th>
+        {{range .Cells}}
+          {{if .Has}}<td>{{.Millions}}</td>{{else}}<td class="muted">–</td>{{end}}
+        {{end}}
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <h3>Sammensetningen av inntekten, {{.LatestYear}}</h3>
+  <p class="prose-lede">
+    Millioner kroner, og andelen av partiets samlede inntekt. Andelen står ved
+    siden av tallet den er regnet fra: 133 millioner er en annen sak for et parti
+    med 270 millioner i inntekt enn for et med 60.
+  </p>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Parti</th>
+        <th>Inntekt i alt</th>
+        <th>Statlig støtte</th>
+        <th>Andel statlig</th>
+        <th>Bidrag i alt</th>
+        <th>Andel bidrag</th>
+        <th>Ukategoriserte givere</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Latest}}
+      <tr>
+        <th title="{{.Name}}">{{.Short}}</th>
+        <td>{{.Income}}</td>
+        <td>{{.StateSupport}}</td>
+        <td>{{.StateShare}} %</td>
+        <td>{{.Contrib}}</td>
+        <td>{{.ContribShare}} %</td>
+        <td>{{if .Uncategorised}}{{.Uncategorised}}{{else}}<span class="muted">–</span>{{end}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <h3>Hva kilden ikke sier</h3>
+  <p class="prose-lede">
+    SSB-tabellen har ingen opplysning om anonyme bidrag. Den nærmeste er
+    «bidrag fra andre, ikke kategoriserte givere», som er en restpost for givere
+    utenfor de navngitte kategoriene, ikke en telling av anonyme givere. Den
+    kolonnen står derfor til høyre uten å bli kalt anonymitet. Spørsmålet om
+    anonyme bidrag hører til Partiloven og registeret over bidrag, ikke til
+    regnskapstallene.
+  </p>
+
+  <p class="prose-lede">
+    Kilden er åpen: <a href="{{.HumanURL}}">tabell {{.Table}} hos SSB</a>.
+    Indeksen bygges på nytt med <code>tools/analytics/build_finance_index.py</code>,
+    og hver rad må stemme med summen av postene sine før den lagres.
+    Se også <a href="/kart">kartet</a> og <a href="/stemmer">stemmemønsteret</a>.
+  </p>
+</main>
+
+{{template "footerlinks"}}
+</body>
+</html>

@@ -611,6 +611,7 @@ func New(logger *slog.Logger) http.Handler {
 	omTmpl := page("om.html.tmpl")
 	stemmerTmpl := page("stemmer.html.tmpl")
 	kartTmpl := page("kart.html.tmpl")
+	pengerTmpl := page("penger.html.tmpl")
 	personvernTmpl := page("personvern.html.tmpl")
 	resultatTmpl := page("resultat.html.tmpl")
 	programTmpl := page("program.html.tmpl")
@@ -755,6 +756,16 @@ func New(logger *slog.Logger) http.Handler {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := kartTmpl.Execute(w, buildKartView(ds, SnapshotDate)); err != nil {
 			logger.Error("render kart", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
+	// Derived from the party-finance index at request time; the index is generated
+	// by tools/analytics/build_finance_index.py and carries its own provenance.
+	mux.HandleFunc("GET /penger", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := pengerTmpl.Execute(w, buildPengerView(ds, SnapshotDate)); err != nil {
+			logger.Error("render penger", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}
 	})

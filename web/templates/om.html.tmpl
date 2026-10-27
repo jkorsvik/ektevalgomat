@@ -93,12 +93,12 @@
       <a href="#rettelseslogg">rettelsesloggen</a> nederst på siden.
     </p>
     <p>
-      Utsagn 44 har posisjon for {{.Coded44}} av {{.Total44}} partier, fra
+      Utsagn 44 har posisjon for {{.C44.Coded}} av {{.C44.Total}} partier, fra
       voteringen over Innst. 225 S (2025–2026) om digital suverenitet.
       Utsagn 45 har Innst. 464 S (2025–2026) som institusjonell kilde. Den
       sier ikke hva partiene mener om dette utsagnet, så posisjonene der
-      kommer fra partiprogrammene (kildeklasse {{.Tier45}}) og dekker
-      {{.Coded45}} av {{.Total45}} partier.
+      {{if .C45.ProgrammeOnly}}kommer fra partiprogrammene (kildeklasse {{.C45.Tiers}}){{else}}kommer fra kilder i klasse {{.C45.Tiers}}, ikke bare partiprogrammene,{{end}}
+      og dekker {{.C45.Coded}} av {{.C45.Total}} partier.
     </p>
   </details>
   {{end}}

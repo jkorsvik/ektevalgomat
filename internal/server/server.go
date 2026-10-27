@@ -226,17 +226,47 @@ func dimensionSummary(ds *data.Dataset) []dimensionCoverage {
 	return rows
 }
 
-// statementCoverage reports how many parties have a coded position on the
-// statement with this number, out of all parties, and the source tiers those
-// positions rest on ("A", "A/C", ...).
+// cellCoverage is what one statement's cells add up to: how many of the
+// parties have a coded position, out of how many, which source tiers those
+// positions rest on ("A", "A/C", ...), and whether every one of them is
+// programme-only.
+type cellCoverage struct {
+	Coded, Total  int
+	Tiers         string
+	ProgrammeOnly bool
+}
+
+// hasStrongTier reports whether any evidence item that carries a coded
+// position rests on an A or B source. An item with no position is context or
+// an uncoded vote: it is listed on the page but it does not decide anything,
+// so it must not make a programme-only cell look stronger (see
+// scoring.strengthBasis, which draws the same line).
+func hasStrongTier(items []data.Evidence) bool {
+	for _, e := range items {
+		if e.Position == nil {
+			continue
+		}
+		if e.SourceTier == "A" || e.SourceTier == "B" {
+			return true
+		}
+	}
+	return false
+}
+
+// statementCoverage reports how the parties' positions on one statement are
+// documented.
 //
 // /om prints these figures instead of a sentence typed once. The sentence it
 // replaces said the positions on utsagn 45 came from programmes "for sju av
 // ni partier. Rødt og Sp mangler fortsatt" — both were coded on 2026-10-13,
 // and the page kept saying they were missing for twelve days. A number the
-// page derives from the dataset cannot survive that way.
-func statementCoverage(ds *data.Dataset, number int) (coded, total int, tiers string) {
-	total = len(ds.Parties)
+// page derives from the dataset cannot survive that way. ProgrammeOnly is
+// here for the other half of the same problem: the sentence also said the
+// positions "kommer fra partiprogrammene", which stops being true the day
+// someone codes a vote on that statement, so the template picks its wording
+// from this flag rather than asserting it.
+func statementCoverage(ds *data.Dataset, number int) cellCoverage {
+	cov := cellCoverage{Total: len(ds.Parties), ProgrammeOnly: true}
 	var st *data.Statement
 	for i := range ds.Statements {
 		if ds.Statements[i].Number == number {
@@ -245,15 +275,19 @@ func statementCoverage(ds *data.Dataset, number int) (coded, total int, tiers st
 		}
 	}
 	if st == nil {
-		return 0, total, ""
+		return cov
 	}
 	seen := map[string]bool{}
 	for _, p := range ds.Parties {
 		if scoring.ComputeCell(ds, st.ID, p.ID).PartyPosition == nil {
 			continue
 		}
-		coded++
-		for _, e := range ds.EvidenceForCell(st.ID, p.ID) {
+		items := ds.EvidenceForCell(st.ID, p.ID)
+		cov.Coded++
+		if hasStrongTier(items) {
+			cov.ProgrammeOnly = false
+		}
+		for _, e := range items {
 			if e.Position != nil && e.SourceTier != "" {
 				seen[e.SourceTier] = true
 			}
@@ -264,7 +298,10 @@ func statementCoverage(ds *data.Dataset, number int) (coded, total int, tiers st
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
-	return coded, total, strings.Join(keys, "/")
+	cov.Tiers = strings.Join(keys, "/")
+	// With no coded position there is nothing to call programme-only.
+	cov.ProgrammeOnly = cov.ProgrammeOnly && cov.Coded > 0
+	return cov
 }
 
 // programmeOnlyCells counts the statement×party cells that carry a coded
@@ -280,17 +317,7 @@ func programmeOnlyCells(ds *data.Dataset) (cells, coded int) {
 				continue
 			}
 			coded++
-			strong := false
-			for _, e := range ds.EvidenceForCell(s.ID, p.ID) {
-				if e.Position == nil {
-					continue
-				}
-				if e.SourceTier == "A" || e.SourceTier == "B" {
-					strong = true
-					break
-				}
-			}
-			if !strong {
+			if !hasStrongTier(ds.EvidenceForCell(s.ID, p.ID)) {
 				cells++
 			}
 		}
@@ -808,20 +835,16 @@ func New(logger *slog.Logger) http.Handler {
 
 	mux.HandleFunc("GET /om", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		c44, t44, tier44 := statementCoverage(ds, 44)
-		c45, t45, tier45 := statementCoverage(ds, 45)
+		c44 := statementCoverage(ds, 44)
+		c45 := statementCoverage(ds, 45)
 		vm := struct {
 			Meta          pageMeta
 			SnapshotDate  string
 			AddendumCount int
 			CoreCount     int
 			Corrections   []data.Correction
-			Coded44       int
-			Total44       int
-			Tier44        string
-			Coded45       int
-			Total45       int
-			Tier45        string
+			C44           cellCoverage
+			C45           cellCoverage
 			NoPosition    []data.Statement
 		}{
 			Meta: meta("Om · Ekte valgomat",
@@ -831,12 +854,8 @@ func New(logger *slog.Logger) http.Handler {
 			AddendumCount: addendumCount(ds),
 			CoreCount:     coreStatementBuilt(ds),
 			Corrections:   ds.Corrections,
-			Coded44:       c44,
-			Total44:       t44,
-			Tier44:        tier44,
-			Coded45:       c45,
-			Total45:       t45,
-			Tier45:        tier45,
+			C44:           c44,
+			C45:           c45,
 			NoPosition:    uncomparableStatements(ds),
 		}
 		if err := omTmpl.Execute(w, vm); err != nil {

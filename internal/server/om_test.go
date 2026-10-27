@@ -30,27 +30,41 @@ func TestOMQuotesTheDatasetOnAddendumCoverage(t *testing.T) {
 
 	checked := 0
 	for _, n := range []int{44, 45} {
-		coded, total, tiers := statementCoverage(data.Store, n)
-		if total == 0 {
+		cov := statementCoverage(data.Store, n)
+		if cov.Total == 0 {
 			t.Fatalf("statement %d: no parties loaded", n)
 		}
-		if coded == 0 {
+		if cov.Coded == 0 {
 			t.Fatalf("statement %d: no coded party positions; the check would be vacuous", n)
 		}
-		want := fmt.Sprintf("%d av %d partier", coded, total)
+		want := fmt.Sprintf("%d av %d partier", cov.Coded, cov.Total)
 		if !strings.Contains(body, want) {
 			t.Errorf("utsagn %d: /om does not say %q, so it disagrees with the dataset", n, want)
 		}
-		if n == 45 && !strings.Contains(body, "kildeklasse "+tiers) {
-			t.Errorf("utsagn 45: /om does not name the source tiers behind the positions (%s)", tiers)
+		if n == 45 && !strings.Contains(body, "kildeklasse "+cov.Tiers) {
+			t.Errorf("utsagn 45: /om does not name the source tiers behind the positions (%s)", cov.Tiers)
 		}
 		checked++
+	}
+
+	// The half of the same sentence that a derived number cannot protect:
+	// "kommer fra partiprogrammene" is only true while every coded position
+	// on utsagn 45 is programme-only. Hold the wording to that flag, so
+	// coding one vote on the statement flips the sentence rather than
+	// leaving a false claim behind.
+	c45 := statementCoverage(data.Store, 45)
+	claim, _, _ := strings.Cut(body, "Rettelseslogg")
+	saysProgramme := strings.Contains(claim, "kommer fra partiprogrammene")
+	if c45.ProgrammeOnly && !saysProgramme {
+		t.Error("every coded position on utsagn 45 is programme-only, and /om does not say so")
+	}
+	if !c45.ProgrammeOnly && saysProgramme {
+		t.Errorf("utsagn 45 has an A or B source among its positions (tiers %s), but /om still says they come from the programmes alone", c45.Tiers)
 	}
 	// The exact sentence that was wrong must not come back to the text a
 	// reader acts on. The correction log below it quotes the sentence, and
 	// must be allowed to: that is what a correction log is for. So the check
 	// stops where the log begins.
-	claim, _, _ := strings.Cut(body, "Rettelseslogg")
 	for _, gone := range []string{"Rødt og Sp mangler", "sju av ni"} {
 		if strings.Contains(claim, gone) {
 			t.Errorf("/om still makes the hand-written claim %q", gone)

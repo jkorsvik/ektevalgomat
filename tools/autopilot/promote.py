@@ -293,8 +293,19 @@ def promote(item: pathlib.Path, dry: bool) -> tuple[bool, str]:
 def run_tests() -> tuple[bool, str]:
     p = subprocess.run(["go", "test", "./..."], cwd=ROOT, capture_output=True, text=True,
                        env={**__import__("os").environ, "PATH": "/opt/homebrew/bin:" + __import__("os").environ["PATH"]})
-    tail = "\n".join(p.stdout.strip().splitlines()[-4:] + p.stderr.strip().splitlines()[-4:])
-    return p.returncode == 0, tail
+    lines = p.stdout.strip().splitlines() + p.stderr.strip().splitlines()
+    if p.returncode == 0:
+        return True, "\n".join(lines[-4:])
+    # A failing promotion used to return the last four lines, which for a package
+    # failure is "ok ... / ok ... / FAIL": the name of the test that failed was
+    # thrown away, and the driver had to rebuild the promotion by hand to read it.
+    # Keep the lines that name a failure, bounded, and fall back to the tail.
+    interesting = [ln for ln in lines
+                   if ln.startswith(("--- FAIL", "FAIL", "panic:", "# "))
+                   or ".go:" in ln or "Error" in ln or "error:" in ln]
+    if interesting:
+        return False, "\n".join(interesting[:40])
+    return False, "\n".join(lines[-10:])
 
 
 def main(argv: list[str]) -> int:

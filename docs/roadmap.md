@@ -14,7 +14,7 @@ Read this section first. The phase entries below are the build log, in
 order, and their "FINAL STATE" lines were true on the day they were
 written, not today.
 
-- **60 statements, 625 evidence files.** Memo statements 1-42, two
+- **60 statements, 626 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk
@@ -2341,3 +2341,79 @@ escape hatch the note offered ("the institutional rows can ship alone") was
 itself half wrong, so acting on it unasked would have put a duplicate in the
 content. The party codings themselves are the adversarial verifier's conclusion
 in `staging/budget-bredband/VERIFIER.md`, quoted here, not re-derived.
+
+## The vote corpus: wider than the evidence, session by session (2026-10-27)
+
+The alignment map is only as good as the votes behind it. Built from citations alone
+it held 104, enough to rank a pair on about a hundred shared votes, which is a
+curiosity. It now walks whole storting sessions instead.
+
+Two decisions make that work, both paid for:
+
+- An index that is a pure function of its input once replaced its own content.
+  `--sessions 2024-2025` took the corpus from 2109 to 3051 and silently deleted the
+  2075 votes from 2025-2026; the run reported success and every test passed. A partial
+  run now unions with the sessions the index already records, and `--replace` is the
+  deliberate escape.
+- One session costs roughly 25-40 minutes serial, because each vote needs its tally
+  and its proposal text. The fetches now run across workers behind one shared gate
+  that keeps a minimum interval between requests, so the API's rate limit is respected
+  by the process rather than discovered by it.
+
+Three more ways the same file could have destroyed its own content, all found by
+reading it against its own docstring rather than against a test (2026-10-27):
+
+- **The bare invocation was the dangerous one.** The union above only ran when
+  `--sessions` was named, and the usage block at the top of the file documents the
+  bare call as the ordinary way to write the index. Measured with `--dry-run`: it
+  would have written 104 votes over the 6848 on disk. The guard now covers the bare
+  call too, so a partial run can only grow the corpus.
+- **A refactor changed a key type and took the provenance with it.** `cited_by` and
+  `coded_parties` were looked up with an `int` where the map is keyed by `str`, so
+  every one of the 104 cited votes would have been written with an empty `cited_by`,
+  and nothing would have failed: the field is a list, and an empty list is valid JSON.
+  Counted rather than eyeballed, 104 str-key hits against 0 int-key hits.
+- **`session` was a function of argument order.** A case that spans two sessions is
+  listed by both and each listing returns the case's whole vote list, so 511 of 6838
+  votes are claimed by two or three sessions and the field recorded whichever came
+  last. The API has no vote-to-date endpoint, so none of the candidates is derivable.
+  Those votes now carry an empty `session`, which is what the artefact already means
+  by unknown. Two consecutive builds are byte-identical.
+
+The politeness sleep that made one session cost 25-40 minutes also ran on cache hits,
+one sleep per case, so a rerun against a warm cache took eleven minutes to do nothing.
+It lives in the fetch path now, where it belongs.
+
+Also fixed: the page never said which sessions it covered, and it holds three of the
+eighteen the API serves. It names them now, with the vote counts, because a reader
+looking at an agreement matrix has no other way to know how much of the record is in
+front of them.
+
+How to add a session: `uv run tools/analytics/build_vote_index.py --sessions <id>`.
+The session ids are the storting years, `2009-2010` through `2026-2027`; all of them
+answer. The gap that remains is sessions, not mechanism.
+
+## A table row is not quotable, and that decided one row's evidence (2026-10-27)
+
+The Prisråd row (utsagn-16, Høyre, `766-prisradet-post23-null.yaml`) is the first piece
+of faginnstilling evidence from the alternative-budget tables rather than from a merknad.
+Høyre's own column puts 0 on kap. 917 post 23 «Prisråd for havbruk» against the
+government's 17 900, and every other party leaves the post alone; the party's merknad in
+the same document says «Disse medlemmer mener normprisrådet bør avvikles».
+
+The row was first staged with the table itself as the `verbatim_excerpt`. gate.py PASSed
+it. Promotion did not: `TestWindowsStayBounded` reported a 22 669-character window. The
+cause is not the excerpt's length but the document's: `build_archive.locate` maps a
+normalised offset back to the source, and the table cells carry so much whitespace that
+100 normalised characters cover more than 13 000 characters of the source. Measured with
+the builder's own `locate`: the post-23 row alone is 13 572 characters, the row plus its
+header 22 665, and the bound is 6 000. **No quote from that table can be archived**, in
+any excerpt that names the figure.
+
+So the excerpt is the merknad sentence, which archives at 899 characters, and the table
+figures are quoted in `claim_action`. That is LOOP.md's own rule — «quote the fragment
+that carries the claim and state the other figure in `claim_action`» — reached from the
+opposite direction: the fragment that carries the claim turned out to be the prose, and
+the figure is the part that cannot be stored. The adversarial verifier had asked for the
+sentence to be *added* to the table excerpt; it would have been added to a window that
+already breaks the bound, and it is now the excerpt instead.

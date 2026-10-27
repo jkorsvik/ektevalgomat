@@ -282,8 +282,8 @@ func TestStoreLoadsExpectedCounts(t *testing.T) {
 	// 2026-10-03 (digital dependencies): +19 evidence files, 730-748,
 	// for utsagn-59 (13 coded party items, 6 with position: null: 3
 	// kontekst files, 2 press items (tier D) and Sp's programme).
-	if got := len(Store.Evidence); got != 625 {
-		t.Errorf("Evidence = %d, want 625", got)
+	if got := len(Store.Evidence); got != 626 {
+		t.Errorf("Evidence = %d, want 626", got)
 	}
 }
 

@@ -1,0 +1,62 @@
+id: ev-2025-h-prisradet-post23-null
+statement_id: utsagn-16
+party_id: h
+actor: "Høyre (næringskomiteen, Høyres alternative budsjett)"
+date: "2025-12-12"
+evidence_type: budsjettforslag
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  I Høyres alternative budsjett for 2026 er hele bevilgningen til kap. 917
+  post 23 Prisråd for havbruk satt til 0, mot regjeringens 17 900 tusen
+  kroner: en full fjerning av posten, ikke en reduksjon. Hver eneste andre
+  partikolonne i samme tabell beholder 17 900.
+claim_action: >
+  Høyre foreslo å fjerne hele bevilgningen på kap. 917 post 23 «Prisråd for
+  havbruk»: regjeringen 17 900 tusen kroner, Høyre 0, dvs. -17 900. Kolonnen
+  er Høyre-kolonnen i tabellen i punkt 3.3.9, hvis hode lest ordrett er
+  «Kap. | Post | Formål | Prop. 1 S(2025–2026) | A, SV, Sp, R og MDG | FrP |
+  H | SV | R | MDG | KrF» — «H» er altså kolonnen rett etter FrP, og det er
+  den som står med 0(-17 900) på post 23. Kontrollregnestykke: H-kolonnen har
+  avvik på bare to poster i rammeområde 10, post 23 (-17 900) og post 73
+  (-140 000), og sumlinjen i samme kolonne er «2 798 587(-157 900)». Samme
+  dokument sier i Høyres merknad (punkt 3.3.3): «Disse medlemmer mener
+  normprisrådet bør avvikles.» Forslaget ble ikke en del av komiteens
+  tilråding: i tilrådingen (bokstav b, rammeområde 10) står post 23 fortsatt
+  med 17 900 000 kroner, og tilrådingen fremmes av Ap, SV, Sp, R og MDG.
+verbatim_excerpt: >
+  Disse medlemmer peker videre på at det fremdeles er uavklarte sider ved den
+  vedtatte grunnrenteskatten, f.eks. spørsmålet om normpris, noe som i seg selv
+  er svært uheldig. Disse medlemmer mener normprisrådet bør avvikles.
+status: foreslått
+position: 2
+source_tier: A
+source_name: "Innst. 8 S (2025–2026), næringskomiteen, punkt 3.3.9, kap. 917 post 23 Prisråd for havbruk"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-008s/?all=true"
+claim_confidence: dokumentert
+attribution_confidence: null
+context_note: >
+  Andre og tidligere daterte bevis for Høyre på utsagn-16, fra en annen
+  dokumenttype enn merknaden i Innst. 377 S (2025–2026): her er kilden Høyres
+  eget tall i den alternative budsjett-tabellen i budsjettinnstillingen.
+  Kodet +2 fordi posten settes til 0 — hele bevilgningen forsvinner, ikke en
+  delvis kutt — og fordi Høyre i samme innstilling skriver at
+  «normprisrådet bør avvikles». Utsagn-16 sier at ordningen med normpris og
+  Prisrådet for havbruk bør avvikles; en null på posten er avviklingssiden av
+  utsagnet, ikke videreførings- eller reform-siden. Forbehold: tabellen viser
+  bare bevilgningen, ikke om Høyre ville finansiere et prisråd på en annen
+  post, og den begrunner ikke nullen — den eneste uttalelsen Høyre har om
+  Prisrådet i dokumentet står i merknaden i punkt 3.3.3, ikke i tabellen.
+  Sitatet er derfor den setningen, ikke tabellinjen: et tabellsitat fra dette
+  dokumentet sprenger arkivvinduet. Målt 2026-10-27 med build_archive.locate:
+  post 23-linjen alene gir et vindu på 13 572 tegn og linjen pluss tabellhodet
+  22 665, mot en grense på 6 000, fordi tabellcellene har så mye luft at 100
+  normaliserte tegn tilsvarer over 13 000 tegn i kilden. Merknadssetningen gir
+  899 tegn. Tabelltallene står derfor ordrett i claim_action i stedet, som
+  LOOP.md foreskriver: sitér fragmentet som bærer påstanden, og oppgi det
+  andre tallet i claim_action. Post 1 og post 22, som ellipsen i en
+  tabellinje ville ha skjult, har ingen av enkeltpartikolonnene endret (bare
+  forlikskolonnen har et avvik der: post 1, -1 000).
+  Endringen er ikke vedtatt: komiteens tilråding beholder 17 900 000 kroner.
+  Tabellen er i tusen kroner, så 17 900 = 17,9 mill. kroner. Dokumentet er
+  datert «Oslo, i næringskomiteen, den 12. desember 2025».
+retrieved_at: "2026-10-27"

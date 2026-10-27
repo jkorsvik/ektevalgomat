@@ -98,18 +98,17 @@ items:
   blocked_on: 'Measured 2026-10-27 in the driving session, in a scratch copy of the repo with the files
     added and go test ./internal/scoring -run Acquiescence: the tree as committed is 12/12 PASS; the three
     staged party rows as coded (H -2, Sp +2, Ap -2) make it 14/14 and the test FAILS. gate.py PASSes all
-    5 files and ekv-verifier SUPPORTED those codings; SV/Rodt/MDG at +1 were WRONG and sit in
-    staging/budget-bredband/not-promoted/ with a REASON.md. Both repairs pass at 11/11: Option A, keep
-    utsagn-61 and add a counter statement 62 with the same three documents coded the other way (61
-    statements); Option B, rephrase utsagn-61 to the avvikle pole and code the same documents H +2, Sp -2,
-    Ap +2 (60 statements). Full numbers in docs/roadmap.md, section «The bredbånd ratchet, measured (2026-10-27)». The
-    ratchet is not lowered, so what is left is the owner''s polarity decision, not a mechanical wall.
-    Correction to this item''s earlier note: there are two institutional rows, not three, and staging 01
-    is not a new row - content already holds that claim from the same document as 749-bredband-avviklet
-    (same statement, same URL, same date, same null position, same claim_action). The only genuinely new
-    institutional row is 02, the post-60 table figures. Promoting 02 alone leaves the spread at 12/12 and
-    is safe whenever the owner wants it; 01 should be merged into 749 as one figure, not shipped as a
-    second row.'
+    5 files and ekv-verifier SUPPORTED those codings; SV/Rodt/MDG at +1 were WRONG and sit in staging/budget-bredband/not-promoted/
+    with a REASON.md. Both repairs pass at 11/11: Option A, keep utsagn-61 and add a counter statement
+    62 with the same three documents coded the other way (61 statements); Option B, rephrase utsagn-61
+    to the avvikle pole and code the same documents H +2, Sp -2, Ap +2 (60 statements). Full numbers in
+    docs/roadmap.md, section «The bredbånd ratchet, measured (2026-10-27)». The ratchet is not lowered,
+    so what is left is the owner''s polarity decision, not a mechanical wall. Correction to this item''s
+    earlier note: there are two institutional rows, not three, and staging 01 is not a new row - content
+    already holds that claim from the same document as 749-bredband-avviklet (same statement, same URL,
+    same date, same null position, same claim_action). The only genuinely new institutional row is 02,
+    the post-60 table figures. Promoting 02 alone leaves the spread at 12/12 and is safe whenever the
+    owner wants it; 01 should be merged into 749 as one figure, not shipped as a second row.'
   note: 'Lead: the bredbåndssubsidy is proposed wound down from 2027 while the government still wants
     100 % high-speed coverage. Open the relevant Prop. 1 (Digitaliseringsdepartementet / KDD), quote the
     post.
@@ -348,3 +347,54 @@ items:
     the 18 sessions the API serves. emne_liste is empty on most cases, so the subject route returns nothing;
     the title-overlap fallback produces false positives even after gating on the vote text (6 of 6 dropped
     for utsagn-59). See docs/roadmap.md, ''The year axis: searched, and mechanically unreachable''.'
+- id: budget-prisradet-h-2026
+  kind: budget
+  statement: utsagn-16
+  party: h
+  keywords:
+  - Prisråd
+  - havbruk
+  - normpris
+  - Innst. 8 S
+  method: method/budget.md
+  status: passed
+  result: 'Promoted 2026-10-27 as 766-prisradet-post23-null.yaml: Høyre''s own column in
+    Innst. 8 S (2025-2026) punkt 3.3.9 sets kap. 917 post 23 «Prisråd for havbruk» to 0 against
+    the government''s 17 900, and every other party leaves it. Coded +2, agreeing with the
+    existing Høyre row 303-h-prisradet-for.yaml (a merknad plus votering 28077), so the cell
+    now holds two dates, 2025-12-12 and 2026-06-01. gate.py PASS; ekv-verifier SUPPORTED after
+    rebuilding the column mapping and reconciling every column''s deviations to its own sum
+    line. Two traps worth keeping: the table header string occurs three times in the document
+    (rammeområde 9, 10 and 11), so a header-only fragment resolves to the wrong table unless
+    it carries the «Utgifter rammeområde 10» anchor; and NO quote from this table can be
+    archived, because 100 normalised characters cover 13 572 characters of source whitespace
+    and the window bound is 6 000. The excerpt is therefore the merknad sentence that carries
+    the claim, with the table figures in claim_action. Measured, in docs/roadmap.md.'
+- id: scout-alternative-budgets
+  kind: scout
+  statement: ''
+  method: method/budget.md
+  status: passed
+  result: 'Scout pass 2026-10-27, leads only, nothing coded: staging/scout-alternative-budgets/LEADS.md,
+    9 leads ranked. The finding that changes the cost of this stream: the cache holds every
+    faginnstilling for statsbudsjettet 2026 (Innst. 2 S through 16 S, plus 17-23 S), each with a
+    per-post per-party comparison table parsed cell-by-cell with html.parser, so the mechanism the
+    bredbånd batch proved is not tied to Innst. 16 S. Also recorded: Innst. 8 S states the tables
+    only list posts where a party deviates, so a missing post is a positive finding; sign
+    conventions differ between Innst. 2 S and 3 S; and the forlik column is labelled «A, SV, Sp,
+    R og MDG» here but «A, Sp og R» in Innst. 2 S with the same values. Lead 1 is shipped as
+    budget-prisradet-h-2026 and I re-checked its table row verbatim myself. Leads 2-9 are the
+    scout''s and have NOT been independently re-read by the driver: treat each as a lead, not a
+    fact, until its own gate run.'
+- id: budget-lead-2-skatt-niva
+  kind: budget
+  statement: utsagn-55
+  method: method/budget.md
+  status: pending
+  note: 'Next from staging/scout-alternative-budgets/LEADS.md, lead 2: each party''s own total tax
+    level in Innst. 2 S (2025-2026), the finance committee''s comparison table, one column per party.
+    Tier A fiscal action with a statement that exists and a document already in the fetch cache.
+    Read the scout''s table and the statement together first: the item is a position only if a
+    party''s own total differs from the government''s in a direction the statement asks about, and
+    a total tax level is not automatically a position on how the burden is distributed. Leads 3-8
+    in the same file still need their own queue entries when this one is done.'

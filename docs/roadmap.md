@@ -108,6 +108,47 @@ places today. This needs an owner decision, not a silent fix.
 points), confirmed by the Go test. Leave-one-out points at utsagn-16, utsagn-39 and
 utsagn-11 as the largest contributors to it.
 
+## Budget lead closed with a negative result (2026-10-27) — Enova
+
+The queue carried a lead: "Enova is cut while the government calls energy
+efficiency a main argument for Norgespris." Half of it holds and half of it does
+not, and the half that does not is the reason there is no evidence row.
+
+**Verified.** Prop. 1 S (2025–2026) Energidepartementet, page 96, kap. 1825 post 50
+Klima- og energifondet, in the proposition's own three columns:
+
+| Rekneskap 2024 | Saldert budsjett 2025 | Forslag 2026 |
+|---|---|---|
+| 1 130 000 | 1 377 000 | 1 300 000 |
+
+Thousands of kroner, so 1 130 / 1 377 / 1 300 mill. The proposed 2026 transfer is
+**77 mill. kroner lower than the settled 2025 budget, a cut of 5.6 %**, and the
+fund is administered by Enova SF under a steering agreement with the ministry. The
+proposition's own sentence:
+
+> Post 50 Klima- og energifondet
+> Departementet foreslår ei samla løyving til Klima- og energifondet på 1 300
+> millionar kroner, inkludert inntekter frå påslaget på nettariffen på anslagsvis
+> 690 millionar kroner […]. Midlane skal forvaltast i samsvar med måla og føringane
+> i styringsavtalen mellom Enova SF og Klima- og miljødepartementet.
+
+**Not verified.** That the government presents energy efficiency as a main argument
+for Norgespris. Neither budget proposition contains a sentence linking the two:
+searched Prop. 1 S (2025–2026), 202 pages, and Prop. 1 S (2026–2027), 204 pages, for
+a sentence containing both "Noregspris" and "energieffektivisering" — zero matches
+in each. The lead asserted a connection the source does not make. It is recorded
+here as wrong rather than argued back to true.
+
+**Why there is no evidence row.** The verified fact is about energy-efficiency
+funding. Utsagn-12 asks whether the state should use support and reference-price
+schemes rather than a statutory maximum price, and a cut to the efficiency fund does
+not bear on that claim. No statement in the dataset mentions energy-efficiency
+funding at all (searched the 60 statements for "energieffektivisering": none), so
+the finding has no home. Filing it under utsagn-12 would have padded a statement
+with a fact it does not speak to, which is the failure mode this project exists to
+avoid. It needs a statement, and that is the owner's decision — the same shape as
+`budget-vindkraft-kommune`.
+
 ## Phase 1 — Demokratisk åpenhet (built and live)
 
 

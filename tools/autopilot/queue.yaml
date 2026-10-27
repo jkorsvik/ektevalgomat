@@ -72,7 +72,7 @@ items:
   - Norgespris
   - OED
   method: method/budget.md
-  status: pending
+  status: blocked
   note: 'Lead: Enova is cut while the government calls energy efficiency a main argument for Norgespris.
     Open Prop. 1 S (OED, Enova post), quote the change against a named earlier year.
 
@@ -83,6 +83,13 @@ items:
     Reset to pending. The lead itself is still good: Enova's post is cut while the
     government names energy efficiency as a main argument for Norgespris, and the
     quote has to come from Prop. 1 S (OED) against a named earlier year.
+  blocked_on: >-
+    No statement covers energy-efficiency funding. The verified fact (kap. 1825 post
+    50: 1 377 mill. settled for 2025, 1 300 mill. proposed for 2026, a 77 mill. cut)
+    does not bear on utsagn-12, which asks about support and reference-price schemes
+    against a statutory maximum price. Half the lead was also wrong: neither budget
+    proposition links Norgespris to energy efficiency (searched 202 and 204 pages, zero
+    matches). Recorded in docs/roadmap.md; needs a statement, which is the owner's call.
 - id: budget-bredband
   kind: budget
   statement: utsagn-61

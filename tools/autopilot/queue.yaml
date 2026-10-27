@@ -57,7 +57,7 @@ items:
   - brann og redning
   - beredskapspakke
   method: method/budget.md
-  status: running
+  status: passed
   note: 'Lead: Nye Nødnett +200 MNOK (324,5 MNOK total) for testing toward 2031; does it cover kommunene''s
     cost, and can brann take part (vikar)? Open Prop. 1 S (Justis- og beredskapsdepartementet, DSB post)
     and the beredskapspakke, quote the post and the year-on-year change.
@@ -85,12 +85,20 @@ items:
   - høyhastighetsinternett
   - dekning
   method: method/budget.md
-  status: running
+  status: blocked
+  blocked_on: 'Coding utsagn-61 pushes the acquiescence spread from 12 to 14, over the ratchet of 12 in
+    internal/scoring/acquiescence_test.go: best Sp, worst Ap. gate.py PASSes all 5 files and ekv-verifier
+    SUPPORTED the codings (Ap -2, H -2, Sp +2; SV/Rodt/MDG were WRONG and are set aside in staging/budget-bredband/not-promoted/).
+    The batch cannot be promoted until the statement balance is restored, and the fix is a statement phrased
+    in the opposite direction, which is the owner''s decision: never lower the ratchet. Three institutional
+    rows (01, 02) could ship alone, since they code no party, if the owner prefers to land those first.'
   note: 'Lead: the bredbåndssubsidy is proposed wound down from 2027 while the government still wants
     100 % high-speed coverage. Open the relevant Prop. 1 (Digitaliseringsdepartementet / KDD), quote the
     post.
 
     '
+  last_error: "FAIL\tgithub.com/jkorsvik/ektevalgomat/internal/scoring\t0.243s\nok  \tgithub.com/jkorsvik/ektevalgomat/internal/server\t\
+    0.863s\nok  \tgithub.com/jkorsvik/ektevalgomat/web\t(cached)\nFAIL"
 - id: budget-vindkraft-kommune
   kind: budget
   statement: ''
@@ -133,5 +141,103 @@ items:
     Concentrations: stroemprismakspris-mot (8 files, 83-90), kjernekraft-kommersiell (5, 95-99), digital
     suverenitet (3, 446/447/451), plus tannhelse, SFO, nasjonal, microsoft365. Job: for each, read both
     voterings and state whether the coded position still follows, or which vote it should cite instead.
+
+    '
+
+- id: gov-composition
+  kind: reference
+  role: scout-then-harvester
+  statement: ''
+  method: method/reference.md
+  status: pending
+  note: 'Who governed when: cabinet, party composition, minister per post, from and to
+    date, for every government that overlaps the evidence range (2009-2026). One small
+    authoritative table from regjeringen.no and Stortinget. Why it matters more than it
+    looks: every government attribution today rests on prose in method/budget.md ("Sp left
+    2025-02-04"). Without the table, a 2026 proposition can be filed as Ap/Sp and a
+    minister can be attributed to the wrong party. Cheap, tier A, prevents a whole class of
+    errors, and nothing in the dataset can check it today.
+
+    '
+- id: party-finance
+  kind: reference
+  role: harvester
+  statement: utsagn-03
+  method: method/reference.md
+  status: pending
+  note: 'The money behind the parties: SSB party-finance statistics, the Partiloven register
+    of party income, and the parties own annual accounts. Annual, small, tier A. Closes the
+    anonym-financing dimension with numbers instead of documents, and gives utsagn-02 and
+    utsagn-03 a second, non-legislative source type.
+
+    '
+- id: election-results-krets
+  kind: reference
+  role: harvester
+  statement: ''
+  method: method/reference.md
+  status: pending
+  note: 'Election results per constituency 2009-2025, plus the representative-to-constituency
+    map per period. Buys the power map a reader can place themselves in: seats, margins,
+    overhang. Valgdirektoratet publishes it as open data. No statement codes this; it is
+    reference data the pages can show next to a party position.
+
+    '
+- id: committee-membership
+  kind: reference
+  role: harvester
+  statement: ''
+  method: method/reference.md
+  status: pending
+  note: 'Committee membership over time. A merknad is signed by named members, so without
+    membership you cannot attribute one, and you cannot explain why a party voted as it did
+    on a committee case. From Stortinget organisation data per session.
+
+    '
+- id: alternates-2026
+  kind: budget
+  role: harvester-then-verifier
+  statement: ''
+  method: method/budget.md
+  status: pending
+  note: 'Alternative budgets: Innst. 2 S and 3 S (2025-2026) party proposal tables give every
+    party own column per post, which is tier A fiscal action. Tabell 1a in a faginnstilling
+    is parsed cell-by-cell (see the bredband batch): one column per party, so a party own
+    priority is readable without a merknad. This is the stream that makes "what they would
+    have spent" answerable, and today only five rows carry it.
+
+    '
+- id: repforslag-backfill
+  kind: history
+  role: harvester
+  statement: ''
+  method: method/program.md
+  status: pending
+  note: 'Representantforslag (Dokument 8) backfill: positions on questions that were never
+    enacted, so no vote exists to cite. data.stortinget.no lists them all with forslagsstiller;
+    the forslag text is the position. This is the latent-position layer.
+
+    '
+- id: independent-audits
+  kind: reference
+  role: scout
+  statement: ''
+  method: method/reference.md
+  status: pending
+  note: 'Third-party verdicts: Riksrevisjonen (Dokument 3), ESA/EØS infringement cases, court
+    rulings. The strongest tier available, because the author is not a party. Start with a
+    scout pass that maps what exists per dimension before any harvesting.
+
+    '
+- id: ownership-bronnoysund
+  kind: reference
+  role: scout
+  statement: ''
+  method: method/reference.md
+  status: pending
+  note: 'The actor layer: Brønnøysund Enhetsregister and Rollup, ownership edges and financial
+    flows. The largest new build, and docs/roadmap.md names it as explicitly unbuilt. Scout
+    first: what the open API exposes, at what rate, and whether a bounded subset answers a
+    real question (who owns the companies behind a subsidy) before building a graph.
 
     '

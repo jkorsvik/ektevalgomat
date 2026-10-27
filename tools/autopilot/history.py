@@ -61,6 +61,12 @@ INNST = re.compile(r"Innst\.\s*(\d+)\s*([A-Za-z])\s*\((\d{4})\s*[–\-]\s*(\d{4}
 
 MAX_VOTES = 12  # per candidate case; a 58-vote case is not worth the fetch budget
 
+# The API speaks its own party codes (A, KrF, SV); the dataset speaks ids
+# (ap, krf, sv). A report a human reads must use the project's own vocabulary,
+# or every tally has to be translated in the reader's head.
+API_TO_ID = {"A": "ap", "FrP": "frp", "H": "h", "SV": "sv", "Sp": "sp",
+             "R": "rodt", "MDG": "mdg", "KrF": "krf", "V": "v"}
+
 STOP = set("""
 og i til av for med på som er det en et den de har skal bør kan må ikke om fra
 seg sin sitt sine blir ble vært være mot ved når hvor hva hvem hvilken denne
@@ -268,8 +274,9 @@ def main(argv: list[str]) -> int:
                     continue
                 t = v.get("tally") or {}
                 summ = ", ".join(
-                    f"{p}:{d['for']}f/{d['mot']}m" for p, d in sorted(t.items()) if d["for"] or d["mot"]
-                ) or "no per-party rows"
+                    f"{API_TO_ID.get(p, p)}:{d['for']}f/{d['mot']}m"
+                    for p, d in sorted(t.items()) if d["for"] or d["mot"]
+                ) or "no per-party rows (unanimous or no vote taken)"
                 lines.append(f"  - votering {v['votering_id']} vedtatt={v.get('vedtatt')} — {v['forslag'][:200]}")
                 lines.append(f"    - {summ}")
         lines.append("")

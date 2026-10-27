@@ -1,0 +1,44 @@
+id: ev-2027-nodnett-post22-325
+statement_id: utsagn-60
+party_id: ""
+actor: "Regjeringen (Prop. 1 S 2026–2027, Digitaliserings- og forvaltningsdepartementet)"
+date: "2026-10-07"
+evidence_type: budsjettforslag
+evidence_class: fakta
+scan_summary: >
+  For budsjettåret 2027 foreslår regjeringen 324,5 mill. kroner på kap. 1543,
+  post 22 Nytt nødnett, mot 100 mill. kroner saldert for 2026 og 15 mill.
+  kroner i regnskapet for 2025. Økningen er begrunnet i behov for
+  risikoreduserende tiltak (utvidet testing, utvikling og pilotering) før
+  investeringsbeslutning. Prosjektet ligger nå under Digitaliserings- og
+  forvaltningsdepartementet og NKOM, med 5G og skivedeling som teknologisk
+  utgangspunkt.
+claim_action: >
+  Staten foreslår selv å finansiere prosjektet for nytt nødnett over
+  statsbudsjettet: 324,5 mill. kroner i 2027, opp fra 100 mill. kroner i
+  saldert budsjett for 2026 og 15 mill. kroner i regnskapet for 2025. Dette er
+  bevilgningen til å utrede, teste og forberede utbygging — ikke en
+  finansieringsmodell for drift av det nye nettet, og ikke en forpliktelse til
+  å holde kommunale og frivillige brukere skadesløse.
+verbatim_excerpt: >
+  22 nytt nødnett, kan overførast 15 000 100 000 324 500 [...] med bakgrunn i
+  det ovanståande blir det foreslått å auke løyvinga med 200 mill. kroner
+  [...] samla blir det foreslått å løyve 324,5 mill. kroner.
+status: foreslått
+position: null
+source_tier: A
+source_name: "Prop. 1 S (2026–2027) Digitaliserings- og forvaltningsdepartementet, kap. 1543 Nasjonal kommunikasjonsmyndighet, post 22 Nytt nødnett"
+source_url: "https://www.regjeringen.no/contentassets/df4dc3a3497342129b6d1681ad6d4c9e/nn-no/pdfs/prp202620270001dfddddpdfs.pdf"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonelt bevis, ingen partiposisjon: dette er regjeringens forslag
+  (Ap-ledet regjering høsten 2026, etter at Senterpartiet gikk ut 4. februar
+  2025). Tabellen i kilden viser tre år på rad for samme post — regnskap 2025:
+  15 000, saldert budsjett 2026: 100 000, forslag 2027: 324 500 (tusen kroner)
+  — så endringsretningen er dokumentert mot to navngitte tidligere år, ikke
+  bare mot fjoråret. Utsagn-60 handler om fullfinansiering av utbygging og
+  drift av nytt nødnett slik at kommunale og frivillige aktører ikke må bære
+  kostnaden; denne posten viser statens egen finansiering av prosjektfasen.
+  Driftsfinansieringen og brukerbetalingen ligger i Justis- og
+  beredskapsdepartementets kapitler (eget bevis i denne mappen).
+retrieved_at: "2026-10-12"

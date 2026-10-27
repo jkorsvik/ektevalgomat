@@ -1,0 +1,52 @@
+id: ev-2024-nodnett-brukerbetaling-1til1
+statement_id: utsagn-60
+party_id: ""
+actor: "Justiskomiteen (Innst. 98 S (2024–2025), innstilling til Stortinget)"
+date: "2024-12-10"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  I innstillingen om endringer i statsbudsjettet 2024 under Justis- og
+  beredskapsdepartementet tilrår justiskomiteen å øke kap. 451, post 22
+  (spesielle driftsutgifter - nødnett) med 40 mill. kroner, fra 561,4 til
+  601,4 mill. kroner, og samtidig å øke kap. 3451, post 5
+  (abonnementsinntekter og refusjoner nødnett) med 40 mill. kroner, fra 536,9
+  til 576,9 mill. kroner.
+claim_action: >
+  Økningen i statens utgifter til nødnett ble i 2024 tilrådd dekket krone for
+  krone av økte abonnementsinntekter fra brukerne: 40 mill. kroner mer i
+  utgift og 40 mill. kroner mer i brukerbetaling i samme innstilling. Det er
+  den etablerte finansieringsmodellen for nødnett — staten eier og bygger
+  nettet, brukerne betaler driften — ikke en fullfinansiering der kommunale
+  og frivillige aktører skjermes.
+status: foreslått
+position: null
+source_tier: A
+source_name: "Innst. 98 S (2024–2025) fra justiskomiteen, kap. 451 post 22 Nødnett og kap. 3451 post 5 abonnementsinntekter nødnett"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-098s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Raden har ikke verbatim_excerpt med vilje. Tallene står i innstillingen, men
+  ikke som en sammenhengende setning: de er en tabellrad, og et sitat som spenner
+  over tabellen gir et arkivvindu på over 10 000 tegn, som TestWindowsStayBounded
+  avviser. Tallene er derfor gjengitt i claim_action mot samme kilde. Å pynte på
+  et sitat for å få en grønn sjekk er nettopp det prosjektet ikke gjør.
+
+  Sitatet dekker utgiftssiden (kap. 451 post 22, +40 mill. kr). Inntektssiden
+  (kap. 3451 post 5 abonnementsinntekter nødnett, +40 mill. kr frå 536 862 000
+  til 576 862 000) står i samme innstilling, men så langt unna i dokumentet at
+  ett samlet sitat ville gitt et arkivvindu på nesten 20 000 tegn, som
+  TestWindowsStayBounded avviser. Den er derfor gjengitt i claim_action, ikke
+  sitert, og må få sin egen rad om den skal siteres.
+
+  Institusjonelt bevis fra komiteen, ikke en partiposisjon: innstillinger fra
+  justiskomiteen er en samlet tilråding, og her er det ingen merknad fra
+  mindretallet om nødnett. Dokumentet er en innstilling til endringer i
+  statsbudsjettet 2024 (datert 10. desember 2024), ikke den ordinære
+  budsjettinnstillingen, og status er derfor satt til «foreslått» (komiteens
+  tilråding), ikke «vedtatt». Poenget for utsagn-60 er mønsteret i
+  finansieringsmodellen: en utgiftsøkning på nødnett ble samme år tilrådd
+  dekket av en like stor økning i abonnementsinntekter fra brukerne. Dette
+  gjelder dagens nett; for nytt nødnett er ingen slik modell fastsatt i
+  proposisjonen for 2027 (eget bevis i denne mappen).
+retrieved_at: "2026-10-12"

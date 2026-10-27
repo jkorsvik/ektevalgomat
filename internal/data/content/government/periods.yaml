@@ -1,0 +1,62 @@
+# Who governed Norway, one row per period of constant cabinet party composition.
+# Range covered: 2009-01-01..2026-10-27 (the first row starts earlier, in 2005-10-17,
+# because that cabinet took office then and its composition did not change in 2009).
+# Boundary convention: a change date is the last day of the outgoing composition and the
+# first day of the incoming one, so adjacent rows share that date.
+
+- period: "2005-10-17..2013-10-16"
+  cabinet: "Jens Stoltenbergs andre regjering"
+  parties: [ap, sp, sv]
+  source_name: "regjeringen.no, Jens Stoltenbergs andre regjering"
+  source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jens-stoltenbergs-andre-regjering/id449424/"
+  retrieved_at: "2026-10-27"
+  evidence_url_for_quote: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jens-stoltenbergs-andre-regjering/id449424/"
+  verbatim_quote: "Jens Stoltenbergs andre regjering ble utnevnt av kong Harald V i statsråd 17. oktober 2005, med virkning fra kl. 13.00 samme dag."
+- period: "2013-10-16..2018-01-17"
+  cabinet: "Erna Solbergs regjering"
+  parties: [h, frp]
+  source_name: "regjeringen.no, Erna Solbergs regjering"
+  source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  retrieved_at: "2026-10-27"
+  evidence_url_for_quote: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  verbatim_quote: "Erna Solbergs regjering ble utnevnt i statsråd 16. oktober 2013, med virkning fra kl. 12.00 samme dag."
+- period: "2018-01-17..2019-01-22"
+  cabinet: "Erna Solbergs regjering"
+  parties: [h, frp, v]
+  source_name: "regjeringen.no, Erna Solbergs regjering"
+  source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  retrieved_at: "2026-10-27"
+  evidence_url_for_quote: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  verbatim_quote: "17. januar 2018 ble Solbergs regjering utvidet fra å representere Høyre og Fremskrittspartiet, til også å representere Venstre."
+- period: "2019-01-22..2020-01-24"
+  cabinet: "Erna Solbergs regjering"
+  parties: [h, frp, krf, v]
+  source_name: "regjeringen.no, Erna Solbergs regjering"
+  source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  retrieved_at: "2026-10-27"
+  evidence_url_for_quote: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  verbatim_quote: "22. januar 2019 ble Solbergs regjering utvidet til også representere Kristelig Folkeparti. Den ble da en flertallsregjering."
+- period: "2020-01-24..2021-10-14"
+  cabinet: "Erna Solbergs regjering"
+  parties: [h, krf, v]
+  source_name: "regjeringen.no, Erna Solbergs regjering"
+  source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  retrieved_at: "2026-10-27"
+  evidence_url_for_quote: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
+  verbatim_quote: "24. januar 2020 forlot Fremskrittspartiet Erna Solbergs regjering. Den ble da en mindretallsregjering."
+- period: "2021-10-14..2025-02-04"
+  cabinet: "Jonas Gahr Støres regjering"
+  parties: [ap, sp]
+  source_name: "regjeringen.no, Jonas Gahr Støres regjering"
+  source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/"
+  retrieved_at: "2026-10-27"
+  evidence_url_for_quote: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/"
+  verbatim_quote: "Jonas Gahr Støres regjering ble utnevnt i statsråd 14. oktober 2021, med virkning fra kl. 12.00 samme dag."
+- period: "2025-02-04..open"
+  cabinet: "Jonas Gahr Støres regjering"
+  parties: [ap]
+  source_name: "regjeringen.no, Jonas Gahr Støres regjering"
+  source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/"
+  retrieved_at: "2026-10-27"
+  evidence_url_for_quote: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/"
+  verbatim_quote: "4. februar 2025 forlot Senterpartiet Jonas Gahr Støres regjering."

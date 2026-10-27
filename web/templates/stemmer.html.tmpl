@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* Generated, never hand-written: every cell below is computed from the votes
+       the evidence cites, at request time. 2026-10-27. */}}
+  <h2>Hvem stemmer med hvem</h2>
+  <p class="prose-lede">
+    Tabellen viser hvor ofte to partier stemte likt på de samme voteringene.
+    Den bygger på {{.VoteTotal}} voteringsspor hentet fra Stortingets eget
+    voteringsresultat (indeksen er bygget {{.GeneratedAt}}), og hver celle viser
+    hvor mange voteringer den er regnet ut fra. Et tall uten nevner er ikke et
+    funn: 3 av 3 er ikke sterkere enn 40 av 50.
+  </p>
+
+  {{if .HasRanking}}
+  <p class="prose-lede">
+    Mest enige: <strong>{{.Most.AShort}}</strong> og <strong>{{.Most.BShort}}</strong>
+    på {{.Most.Pct}} % ({{.Most.Agree}} av {{.Most.Compared}}).
+    Minst enige: <strong>{{.Least.AShort}}</strong> og <strong>{{.Least.BShort}}</strong>
+    på {{.Least.Pct}} % ({{.Least.Agree}} av {{.Least.Compared}}).
+    Bare par som er sammenlignet på minst 10 voteringer er rangert.
+  </p>
+  {{else}}
+  <p class="prose-lede">Ingen par er sammenlignet på nok voteringer til å rangeres ennå.</p>
+  {{end}}
+
+  <h3>Hele matrisen</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Parti</th>
+        {{range .Parties}}<th>{{.Short}}</th>{{end}}
+      </tr>
+    </thead>
+    <tbody>
+      {{range $i, $row := .Matrix}}
+      <tr>
+        <th>{{(index $.Parties $i).Short}}</th>
+        {{range $j, $cell := $row}}
+          {{if eq $i $j}}<td class="muted">–</td>
+          {{else if $cell.HasData}}<td>{{$cell.Pct}}<span class="muted"> ({{$cell.Compared}})</span></td>
+          {{else}}<td class="muted">–</td>{{end}}
+        {{end}}
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <h3>Hvor mange voteringer hvert parti faktisk tok stilling i</h3>
+  <table class="data-table">
+    <thead><tr><th>Parti</th><th>Voteringer med stemme</th></tr></thead>
+    <tbody>
+      {{range .Parties}}<tr><th>{{.Short}}</th><td>{{.Votes}}</td></tr>{{end}}
+    </tbody>
+  </table>
+
+  <h3>Voteringene bak tallene</h3>
+  <p class="prose-lede">
+    Hver rad er én votering med forslaget slik Stortinget skrev det, og hvilken
+    side hvert parti tok. {{.Unanimous}} av dem ble vedtatt enstemmig og teller
+    derfor ikke i en sammenligning.
+  </p>
+  <table class="data-table">
+    <thead><tr><th>Votering</th><th>Forslag</th><th>Stemmer</th></tr></thead>
+    <tbody>
+      {{range .Votes}}
+      <tr>
+        <td class="mono">{{.ID}}</td>
+        <td>{{if .Forslag}}{{.Forslag}}{{else}}<span class="muted">forslagsteksten er ikke publisert i eksporten</span>{{end}}</td>
+        <td>{{range .Sides}}<span class="vote-side">{{.Party}}: {{.Side}}</span> {{end}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+</main>
+
+{{template "footerlinks"}}
+</body>
+</html>

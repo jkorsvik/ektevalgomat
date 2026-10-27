@@ -1,0 +1,3124 @@
+{
+ "generated_at": "2026-10-27",
+ "votes": [
+  {
+   "votering_id": 2023,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen vurdere om det skal innføres andre begrensninger i vederlagsforskriften med hensyn til vederlagsgrunnlaget for eksempel gjennom innføring av et maksimumsbeløp. | Stortinget ber regjeringen legge frem forslag om endring i lov om helsetjenesten i kommunene slik at det innføres tilbud om gjennomføring av forebyggende hjemmebesøk hos personer som er over 75 år som ønsker et slikt tiltak. | Stortinget ber regjeringen fremme forslag om egne omstillingsmidler for norske kommuner som implementerer strategien som ligger i prosjektet «Længst muligt i eget liv» som en kjenner d",
+   "parties": {
+    "frp": "for",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "v": "for",
+    "sp": "mot"
+   },
+   "cited_by": [
+    "ev-2023-03-14-utenlandsk-paavirkning-kontekst"
+   ],
+   "coded_parties": []
+  },
+  {
+   "votering_id": 18082,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre en makspris på strøm på 35 øre/kWt, som skal pålegges omsetningen av kraft fra norske kraftprodusenter til kunder i Norge (husholdninger, næring m.m.), i henhold til lov om pristiltak. | Stortinget ber regjeringen komme tilbake til Stortinget med en sak som kombinerer makspris på strøm med et toprissystem for husholdninger gjennom enten momsen eller elavgiften, der maksprisen gjelder for forbruk inntil en viss grense, mens prisen for luksusforbruk settes høyere.",
+   "parties": {
+    "v": "mot",
+    "frp": "mot",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2022-01-21-ap-makspris-mot"
+   ],
+   "coded_parties": [
+    "ap"
+   ]
+  },
+  {
+   "votering_id": 18088,
+   "unanimous": false,
+   "forslag": "Dokument 8:65 S (2021–2022) – Representantforslag fra stortingsrepresentantene Marius Arion Nilsen og Frank Edvard Sve om å innføre makspris på strøm for norske forbrukere – vedtas ikke.",
+   "parties": {
+    "v": "for",
+    "frp": "mot",
+    "sp": "for",
+    "h": "for",
+    "ap": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "for"
+   },
+   "cited_by": [
+    "ev-2022-01-21-ap-makspris-mot"
+   ],
+   "coded_parties": [
+    "ap"
+   ]
+  },
+  {
+   "votering_id": 18089,
+   "unanimous": false,
+   "forslag": "Dokument 8:66 S (2021–2022) – Representantforslag fra stortingsrepresentantene Bjørnar Moxnes og Sofie Marhaug om å innføre makspris på og toprissystem for strøm – vedtas ikke.",
+   "parties": {
+    "v": "for",
+    "frp": "for",
+    "sp": "for",
+    "h": "for",
+    "ap": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "for"
+   },
+   "cited_by": [
+    "ev-2022-01-21-ap-makspris-mot"
+   ],
+   "coded_parties": [
+    "ap"
+   ]
+  },
+  {
+   "votering_id": 18780,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sørge for at skatteplikt for latente gevinster på aksjer og tilsvarende eiendeler påløper umiddelbart ved flytting ut av landet.",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2022-05-24-sv-utflytterskatten-lempes-votering",
+    "ev-2022-05-24-rodt-utflytterskatten-lempes-votering",
+    "ev-2022-05-24-mdg-utflytterskatten-lempes-votering"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 20370,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre klare ansvarsforhold i spørsmål om håndtering av informasjonspåvirkning i den offentlige debatten.",
+   "parties": {
+    "v": "for",
+    "frp": "split",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2023-03-14-v-informasjonspaavirkning-kartlegging"
+   ],
+   "coded_parties": [
+    "v"
+   ]
+  },
+  {
+   "votering_id": 20371,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen umiddelbart igangsette en kartlegging av uønsket informasjonspåvirkning fra utenlandske aktører i forbindelse med kommune- og fylkestingsvalget i 2023 og stortingsvalget i 2025. Kartleggingen skal blant annet fange opp forsøk på påvirkning av nordmenns virkelighetsoppfatning, verdier og tillit over tid.",
+   "parties": {
+    "v": "for",
+    "frp": "mot",
+    "sp": "mot",
+    "h": "for",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "mot",
+    "krf": "for"
+   },
+   "cited_by": [
+    "ev-2023-03-14-utenlandsk-paavirkning-kontekst",
+    "ev-2023-03-14-h-informasjonspaavirkning-kartlegging",
+    "ev-2023-03-14-v-informasjonspaavirkning-kartlegging",
+    "ev-2023-03-14-krf-informasjonspaavirkning-kartlegging",
+    "ev-2023-03-14-mdg-informasjonspaavirkning-kartlegging",
+    "ev-2023-03-14-rodt-informasjonspaavirkning-kartlegging",
+    "ev-2023-03-14-sv-informasjonspaavirkning-overvaakningsbekymring",
+    "ev-2023-03-14-ap-informasjonspaavirkning-allerede-ivaretatt",
+    "ev-2023-03-14-sp-informasjonspaavirkning-allerede-ivaretatt",
+    "ev-2023-03-14-frp-informasjonspaavirkning-kartlegging-mot"
+   ],
+   "coded_parties": [
+    "h",
+    "v",
+    "krf",
+    "mdg",
+    "rodt",
+    "sv",
+    "ap",
+    "sp",
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 22102,
+   "unanimous": false,
+   "forslag": "Stortinget ber presidentskapet komme med forslag til nødvendige bestemmelser i reglementet om registreringsplikt som gjelder representantenes nærstående.",
+   "parties": {
+    "v": "mot",
+    "frp": "mot",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2024-etterprovbarhet-kontekst",
+    "ev-2024-mdg-etterprovbarhet-for",
+    "ev-2024-rodt-etterprovbarhet-for",
+    "ev-2024-ap-etterprovbarhet-mot",
+    "ev-2024-frp-etterprovbarhet-mot",
+    "ev-2024-h-etterprovbarhet-mot",
+    "ev-2024-krf-etterprovbarhet-mot",
+    "ev-2024-sv-etterprovbarhet-mot",
+    "ev-2024-sp-etterprovbarhet-mot",
+    "ev-2024-v-etterprovbarhet-mot"
+   ],
+   "coded_parties": [
+    "mdg",
+    "rodt",
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "sv",
+    "sp",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 22561,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen gjeninnføre meterskillet mellom kyst- og havfiskeflåte hvor faktisk lengde på 28 meter er utgangspunktet, og komme tilbake til Stortinget med konkretisering av konsekvenser for blant annet kvoterettigheter og havdeling.",
+   "parties": {
+    "v": "mot",
+    "frp": "mot",
+    "sp": "split",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "for",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2024-meterskillet-kontekst",
+    "ev-2024-sv-meterskillet-for",
+    "ev-2024-rodt-meterskillet-for",
+    "ev-2024-sp-meterskillet-splittet",
+    "ev-2024-frp-meterskillet-mot",
+    "ev-2024-ap-meterskillet-mot",
+    "ev-2024-h-meterskillet-mot",
+    "ev-2024-v-meterskillet-mot",
+    "ev-2024-krf-meterskillet-mot",
+    "ev-2024-mdg-meterskillet-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "sp",
+    "frp",
+    "ap",
+    "h",
+    "v",
+    "krf",
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 22966,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen opprette et statlig mineralselskap som kan drive letevirksomhet og utvinne strategisk viktige mineralforekomster på en økologisk bærekraftig måte, som sikrer minst mulig tap av matjord og natur, og som sikrer fellesskapet inntekter og verdiskaping lokalt i kommunene og i regionen.",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "for",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2024-mineralselskap-kontekst",
+    "ev-2024-sv-mineralselskap-for",
+    "ev-2024-rodt-mineralselskap-for",
+    "ev-2024-ap-mineralselskap-mot",
+    "ev-2024-frp-mineralselskap-mot",
+    "ev-2024-h-mineralselskap-mot",
+    "ev-2024-sp-mineralselskap-mot",
+    "ev-2024-krf-mineralselskap-mot",
+    "ev-2024-mdg-mineralselskap-mot",
+    "ev-2024-v-mineralselskap-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "ap",
+    "frp",
+    "h",
+    "sp",
+    "krf",
+    "mdg",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 23652,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem en opptrappingsplan for innføring av et daglig sunt og enkelt skolemåltid for alle elever i grunnskolen, og komme tilbake i statsbudsjettet for 2026 med en plan for hvordan dette skal innføres.",
+   "parties": {
+    "sp": "for",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "for"
+   },
+   "cited_by": [
+    "ev-2024-skolemat-kontekst",
+    "ev-2024-sv-skolemat-for",
+    "ev-2024-ap-skolemat-for",
+    "ev-2024-sp-skolemat-for",
+    "ev-2024-rodt-skolemat-for",
+    "ev-2024-mdg-skolemat-for",
+    "ev-2024-krf-skolemat-for",
+    "ev-2024-frp-skolemat-mot",
+    "ev-2024-h-skolemat-mot",
+    "ev-2024-v-skolemat-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "ap",
+    "sp",
+    "rodt",
+    "mdg",
+    "krf",
+    "frp",
+    "h",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 24383,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen starte arbeidet med å melde Norge ut av EUs energibyrå ACER. | Stortinget ber regjeringen legge ned veto mot at EUs fjerde energimarkedspakke (Ren energi-pakken) innlemmes i EØS-avtalen, og meddele dette i EØS-komiteen i tråd med EØS-avtalen artikkel 102. | Stortinget ber regjeringen sette i gang arbeidet med å reversere endringene i intern lovgivning som følge av vedtaket om å innlemme rettsaktene i EUs tredje energimarkedspakke samt medfølgende kommisjonsforordninger i EØS-avtalen og å trekke Norge ut av EUs energibyrå (ACER).",
+   "parties": {
+    "frp": "split",
+    "sp": "for",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "for",
+    "v": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-04-10-acer-fjerde-energimarkedspakke-kontekst",
+    "ev-2025-04-10-sp-acer-begrensning",
+    "ev-2025-04-10-sv-acer-begrensning",
+    "ev-2025-04-10-rodt-acer-begrensning",
+    "ev-2025-04-10-frp-acer-moderat-begrensning",
+    "ev-2025-04-10-ap-acer-forsvarer-integrering",
+    "ev-2025-04-10-h-acer-forsvarer-integrering",
+    "ev-2025-04-10-v-acer-dypere-integrering",
+    "ev-2025-04-10-mdg-acer-dypere-integrering",
+    "ev-2025-04-10-krf-acer-flertallsstemme"
+   ],
+   "coded_parties": [
+    "sp",
+    "sv",
+    "rodt",
+    "frp",
+    "ap",
+    "h",
+    "v",
+    "mdg",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 24384,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge til grunn at rettsaktene i EUs fjerde energimarkedspakke ikke skal innlemmes i norsk rett. | Stortinget ber regjeringen vurdere direktivene og forordningene i EUs fjerde energimarkedspakke (Ren energi-pakken) samlet og vurdere suverenitetsavståelsen i lys av den samlede integreringen i EUs energipolitikk.",
+   "parties": {
+    "frp": "for",
+    "sp": "for",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "for",
+    "v": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-04-10-acer-fjerde-energimarkedspakke-kontekst",
+    "ev-2025-04-10-sp-acer-begrensning",
+    "ev-2025-04-10-sv-acer-begrensning",
+    "ev-2025-04-10-rodt-acer-begrensning",
+    "ev-2025-04-10-frp-acer-moderat-begrensning",
+    "ev-2025-04-10-ap-acer-forsvarer-integrering",
+    "ev-2025-04-10-h-acer-forsvarer-integrering",
+    "ev-2025-04-10-v-acer-dypere-integrering",
+    "ev-2025-04-10-mdg-acer-dypere-integrering",
+    "ev-2025-04-10-krf-acer-flertallsstemme"
+   ],
+   "coded_parties": [
+    "sp",
+    "sv",
+    "rodt",
+    "frp",
+    "ap",
+    "h",
+    "v",
+    "mdg",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 24385,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede konsekvensene av å melde seg ut av 3. energimarkedspakke.",
+   "parties": {
+    "frp": "for",
+    "sp": "for",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "for",
+    "v": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-04-10-acer-fjerde-energimarkedspakke-kontekst",
+    "ev-2025-04-10-sp-acer-begrensning",
+    "ev-2025-04-10-sv-acer-begrensning",
+    "ev-2025-04-10-rodt-acer-begrensning",
+    "ev-2025-04-10-frp-acer-moderat-begrensning",
+    "ev-2025-04-10-ap-acer-forsvarer-integrering",
+    "ev-2025-04-10-h-acer-forsvarer-integrering",
+    "ev-2025-04-10-v-acer-dypere-integrering",
+    "ev-2025-04-10-mdg-acer-dypere-integrering",
+    "ev-2025-04-10-krf-acer-flertallsstemme"
+   ],
+   "coded_parties": [
+    "sp",
+    "sv",
+    "rodt",
+    "frp",
+    "ap",
+    "h",
+    "v",
+    "mdg",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 24386,
+   "unanimous": false,
+   "forslag": "Dokument 8:58 S (2024–2025) – Representantforslag fra stortingsrepresentantene Marit Arnstad, Gro-Anita Mykjåland og Aleksander Øren Heen om nei til EUs fjerde energimarkedspakke – vedtas ikke | Dokument 8:75 S (2024–2025) – Representantforslag fra stortingsrepresentantene Sofie Marhaug, Bjørnar Moxnes og Marie Sneve Martinussen om å legge ned veto mot EUs fjerde energimarkedspakke – vedtas ikke",
+   "parties": {
+    "frp": "mot",
+    "sp": "mot",
+    "h": "for",
+    "ap": "for",
+    "rodt": "mot",
+    "mdg": "for",
+    "sv": "mot",
+    "v": "for",
+    "krf": "for"
+   },
+   "cited_by": [
+    "ev-2025-04-10-acer-fjerde-energimarkedspakke-kontekst",
+    "ev-2025-04-10-sp-acer-begrensning",
+    "ev-2025-04-10-sv-acer-begrensning",
+    "ev-2025-04-10-rodt-acer-begrensning",
+    "ev-2025-04-10-frp-acer-moderat-begrensning",
+    "ev-2025-04-10-ap-acer-forsvarer-integrering",
+    "ev-2025-04-10-h-acer-forsvarer-integrering",
+    "ev-2025-04-10-v-acer-dypere-integrering",
+    "ev-2025-04-10-mdg-acer-dypere-integrering",
+    "ev-2025-04-10-krf-acer-flertallsstemme"
+   ],
+   "coded_parties": [
+    "sp",
+    "sv",
+    "rodt",
+    "frp",
+    "ap",
+    "h",
+    "v",
+    "mdg",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 25348,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen jobbe aktivt internasjonalt, særlig i Den internasjonale havbunnsmyndigheten (ISA), for et moratorium på mineralutvinning på havbunnen fram til det er bevist at slik virksomhet kan skje uten tap av naturmangfold, viktige leveområder og naturens egne funksjoner.",
+   "parties": {
+    "frp": "mot",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "for",
+    "v": "for"
+   },
+   "cited_by": [
+    "ev-2025-06-havbunnsmineraler-15-kontekst",
+    "ev-2025-06-sv-havbunnsmineraler15-for",
+    "ev-2025-06-rodt-havbunnsmineraler15-for",
+    "ev-2025-06-v-havbunnsmineraler15-for",
+    "ev-2025-06-mdg-havbunnsmineraler15-for",
+    "ev-2025-06-krf-havbunnsmineraler15-for",
+    "ev-2025-06-ap-havbunnsmineraler15-mot",
+    "ev-2025-06-frp-havbunnsmineraler15-mot",
+    "ev-2025-06-h-havbunnsmineraler15-mot",
+    "ev-2025-06-sp-havbunnsmineraler15-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "v",
+    "mdg",
+    "krf",
+    "ap",
+    "frp",
+    "h",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 25349,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen igangsette arbeidet med 1. konsesjonsrunde for havbunnsmineraler med sikte på en mulig utlysning av runden tidlig i 2026.",
+   "parties": {
+    "frp": "for",
+    "sp": "mot",
+    "h": "for",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "mot",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-havbunnsmineraler-14-kontekst",
+    "ev-2025-06-frp-havbunnsmineraler14-for",
+    "ev-2025-06-h-havbunnsmineraler14-for",
+    "ev-2025-06-ap-havbunnsmineraler14-mot",
+    "ev-2025-06-sp-havbunnsmineraler14-mot",
+    "ev-2025-06-krf-havbunnsmineraler14-mot",
+    "ev-2025-06-mdg-havbunnsmineraler14-mot",
+    "ev-2025-06-r-havbunnsmineraler14-mot",
+    "ev-2025-06-sv-havbunnsmineraler14-mot",
+    "ev-2025-06-v-havbunnsmineraler14-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "ap",
+    "sp",
+    "krf",
+    "mdg",
+    "rodt",
+    "sv",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 25350,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre at konsesjonsprosessen for leting etter og eventuell utvinning av havbunnsmineraler på norsk kontinentalsokkel legger til rette for en balansert utvikling av næringen, hvor det stilles tilstrekkelige krav til bærekraft, miljøhensyn og teknologisk innovasjon. | Stortinget ber regjeringen vurdere behovet for ytterligere regulering og tilsynsordninger for å sikre at utvinning av havbunnsmineraler skjer i tråd med internasjonale miljøstandarder og Norges forpliktelser til bærekraftig havforvaltning.",
+   "parties": {
+    "frp": "for",
+    "sp": "for",
+    "h": "for",
+    "ap": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "mot",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-ap-havbunnsmineraler14-mot"
+   ],
+   "coded_parties": [
+    "ap"
+   ]
+  },
+  {
+   "votering_id": 25387,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fullføre tannhelsereformen og legge frem en forpliktende plan som sikrer at hele befolkningen er omfattet av en universell rett til tannbehandling i det offentlige, på lik linje som med andre helsetjenester, innen 2030. Planen må følge tannhelseutvalgets anbefaling i NOU 2024:18 for rekkefølge for utvidelse av rettigheter og oppgradering av den offentlige tannhelsetjenesten.",
+   "parties": {
+    "frp": "mot",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "mot",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-04-tannhelsereform-kontekst",
+    "ev-2025-06-04-sv-tannhelse-universell-for",
+    "ev-2025-06-04-mdg-tannhelse-universell-for",
+    "ev-2025-06-04-rodt-tannhelse-universell-mot",
+    "ev-2025-06-04-ap-tannhelse-universell-mot",
+    "ev-2025-06-04-sp-tannhelse-universell-mot",
+    "ev-2025-06-04-h-tannhelse-universell-mot",
+    "ev-2025-06-04-frp-tannhelse-universell-mot",
+    "ev-2025-06-04-krf-tannhelse-universell-mot",
+    "ev-2025-06-04-v-tannhelse-universell-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "mdg",
+    "rodt",
+    "ap",
+    "sp",
+    "h",
+    "frp",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 25388,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem en opptrappingsplan som sikrer rabatterte tannhelsetjenester til eldre og personer med tannsykdommer som krever omfattende behandling.",
+   "parties": {
+    "frp": "for",
+    "sp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sv": "mot",
+    "krf": "mot",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-04-frp-tannhelse-universell-mot"
+   ],
+   "coded_parties": [
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 25389,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen styrke tilbudet med tannbehandling til personer med sterk angst for tannbehandling, herunder ofre for seksuelle overgrep og tortur. | Stortinget ber regjeringen sikre at personer med rusmiddelavhengighet får gratis tilgang til oppfølging av tannlege.",
+   "parties": {
+    "frp": "mot",
+    "sp": "split",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "mot",
+    "krf": "for",
+    "v": "for"
+   },
+   "cited_by": [
+    "ev-2025-06-04-krf-tannhelse-universell-mot"
+   ],
+   "coded_parties": [
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 25398,
+   "unanimous": false,
+   "forslag": "A. om endringer i tannhelsetjenesteloven mv. (rett til nødvendig tannhelsehjelp for personer fra 25 til og med 28 år) I I lov 3. juni 1983 nr. 54 om tannhelsetjenesten gjøres følgende endringer: § 1-3 første ledd andre punktum bokstav d skal lyde: d. Unge voksne fra året de fyller 19 til og med året de fyller 28 år. § 2-1 a første ledd skal lyde: Personer nevnt i § 1-3 første ledd bokstav d som har midlertidig oppholdstillatelse i riket, skal ha fem års botid i riket for å ha rett til nødvendig tannhelsehjelp etter § 2-1. II I lov 17. juni 2016 nr. 46 om endring av juridisk kjønn gjøres følgen",
+   "parties": {
+    "frp": "mot",
+    "sp": "for",
+    "h": "split",
+    "ap": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "mot",
+    "v": "for"
+   },
+   "cited_by": [
+    "ev-2025-06-04-tannhelsereform-kontekst"
+   ],
+   "coded_parties": []
+  },
+  {
+   "votering_id": 26057,
+   "unanimous": false,
+   "forslag": "om endringer i partiloven (innberetning og offentliggjøring av bidrag fra bakenforliggende givere) I I lov 17. juni 2005 nr. 102 om visse forhold vedrørende de politiske partiene gjøres følgende endringer: § 17 a første og andre ledd skal lyde: (1) Politiske partier og partiledd kan ikke motta bidrag fra a . givere som er ukjente for partiet (anonyme bidrag) b . juridiske personer som har som formål eller vesentlig del av sin virksomhet å støtte politiske partier eller partiledd økonomisk c. privatpersoner som har mottatt bidrag fra andre for å gi disse til politiske partier eller partiledd. B",
+   "parties": {
+    "frp": "mot",
+    "sp": "for",
+    "h": "for",
+    "ap": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "krf": "for",
+    "v": "for"
+   },
+   "cited_by": [
+    "ev-2025-06-13-ap-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-h-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-sp-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-sv-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-rodt-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-frp-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-mdg-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-v-partiloven-anonyme-bidrag",
+    "ev-2025-06-13-krf-partiloven-anonyme-bidrag"
+   ],
+   "coded_parties": [
+    "ap",
+    "h",
+    "sp",
+    "sv",
+    "rodt",
+    "frp",
+    "mdg",
+    "v",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 26113,
+   "unanimous": false,
+   "forslag": "Prop. 148 L (2024–2025) sendes tilbake til regjeringen for grundigere bearbeidelse.",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "for",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-05-stroemprisreform-kontekst",
+    "ev-2025-06-05-mdg-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 26114,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem et forslag om en nasjonal strømstøtteordning der husholdninger og fritidsboliger kompenseres fullt ut for strømpriser over 50 øre per kWt.",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "for"
+   },
+   "cited_by": [
+    "ev-2025-06-05-krf-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 26115,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om årlig å bevilge minimum like mye midler til energitiltak som fremmer energieffektivisering og lokal energiproduksjon i husholdninger, som de samlede midlene som avsettes til Norgespris og strømstøtte. | Stortinget ber regjeringen sette forbrukstaket i Norgespris til 1 300 kWh per måned. | Stortinget ber regjeringen legge til grunn at fritidsboliger ikke skal omfattes av Norgespris. | Stortinget ber regjeringen fremme forslag om en strømstøtteordning utformet som en flat utbetaling til alle husstander i prisområdene NO1, NO2 og NO5, som erstatning fo",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-05-mdg-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 26116,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre gjennom forskrift at strømkunder kan bestille Norgespris hele året fram til referanseprisen løper ut. | Stortinget ber regjeringen sikre gjennom forskrift at leietakere har lik rett som andre til å bestille Norgespris uten å måtte avtale med eller være erstatningspliktige overfor utleier. | Stortinget ber regjeringen legge fram forslag om en nasjonal makspris for hva kraftselskapene kan selge strømmen for innenlands. Nivået bør være på 35 øre/kWt i 2025. Regjeringen bes komme tilbake til Stortinget med detaljene om hvordan dette kan se ut, i forbindelse med sta",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-05-stroemprisreform-kontekst",
+    "ev-2025-06-05-r-stroemprismakspris-for",
+    "ev-2025-06-05-ap-stroemprismakspris-mot",
+    "ev-2025-06-05-sp-stroemprismakspris-mot",
+    "ev-2025-06-05-sv-stroemprismakspris-mot",
+    "ev-2025-06-05-krf-stroemprismakspris-mot",
+    "ev-2025-06-05-frp-stroemprismakspris-mot",
+    "ev-2025-06-05-mdg-stroemprismakspris-mot",
+    "ev-2025-06-05-h-stroemprismakspris-mot",
+    "ev-2025-06-05-v-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "rodt",
+    "ap",
+    "sp",
+    "sv",
+    "krf",
+    "frp",
+    "mdg",
+    "h",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 26119,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen opprette et statlig foretak for kjøp og salg av strøm.",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "split",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-05-sv-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "sv"
+   ]
+  },
+  {
+   "votering_id": 26120,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å innføre en strømstøtte på 100 pst. over 50 øre/kWh inkl. mva. for husholdninger og fritidsboliger med en begrensning på 5 000 kWh i måneden totalt. | Stortinget ber regjeringen fremme forslag om å inkludere fjernvarmeselskapene i tilsvarende ordning som strømstøtten, med en støtte på 100 pst. over 50 øre/kWh inkl. mva. for husholdninger og fritidsboliger med et totalt tak på 5 000 kWh i måneden.",
+   "parties": {
+    "sp": "mot",
+    "v": "mot",
+    "frp": "for",
+    "h": "mot",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-05-frp-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 26123,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem forslag om en ordning kalt folkeutbytte, hvor statlige merinntekter fra høye strømpriser benyttes til å gi utbetaling til privatkunder basert på kriterier som er uavhengige av løpende strømforbruk. | Stortinget ber regjeringen legge frem forslag om en ordning kalt tryggpris, som gjør det lettere å tilby gode fastprisavtaler på strøm til privatkunder og mindre bedrifter, herunder ved å la kraftprodusenter skatte basert på markedsmessig fastpris og gjøre nødvendige endringer i annen regulering. | Stortinget ber regjeringen legge frem forslag om en ordning ka",
+   "parties": {
+    "sp": "mot",
+    "v": "for",
+    "frp": "mot",
+    "h": "for",
+    "ap": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-05-h-stroemprismakspris-mot",
+    "ev-2025-06-05-v-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "h",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 26128,
+   "unanimous": false,
+   "forslag": "om Norgespris og strømstønad til husholdninger Kapittel 1 Innledende bestemmelser § 1 Lovens formål Formålet med loven er å etablere ordninger for økonomisk stønad og forutsigbare strøm- og fjernvarmepriser til husholdnings- og fritidsboligforbruk. Loven viderefører strømstønad for husholdningskunder og etablerer strømstønad for husholdningskunder som bruker fjernvarme, samt ordning for sikring av strøm- og fjernvarmepris for husholdnings- og fritidsboligkunder. § 2 Virkeområde Loven gjelder på norsk landterritorium. § 3 Forvaltning av ordningene – strøm Reguleringsmyndigheten for energi skal ",
+   "parties": {
+    "sp": "for",
+    "v": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "ap": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "for",
+    "krf": "mot"
+   },
+   "cited_by": [
+    "ev-2025-06-05-stroemprisreform-kontekst",
+    "ev-2025-06-05-ap-stroemprismakspris-mot",
+    "ev-2025-06-05-sp-stroemprismakspris-mot"
+   ],
+   "coded_parties": [
+    "ap",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 26361,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen inkludere regulering av anonym finansiering av politisk reklame og markedsføring i den helhetlige gjennomgangen av partiloven, og komme tilbake til Stortinget med forslag som følger opp dette.",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2025-10-14-politisk-reklame-kontekst",
+    "ev-2025-10-14-rodt-anonym-finansiering-eget-forslag",
+    "ev-2025-10-14-ap-anonym-finansiering-for",
+    "ev-2025-10-14-sv-anonym-finansiering-for",
+    "ev-2025-10-14-sp-anonym-finansiering-for",
+    "ev-2025-10-14-mdg-anonym-finansiering-for",
+    "ev-2025-10-14-v-anonym-finansiering-for",
+    "ev-2025-10-14-frp-anonym-finansiering-mot",
+    "ev-2025-10-14-h-anonym-finansiering-mot",
+    "ev-2025-10-14-krf-anonym-finansiering-mot"
+   ],
+   "coded_parties": [
+    "rodt",
+    "ap",
+    "sv",
+    "sp",
+    "mdg",
+    "v",
+    "frp",
+    "h",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 26602,
+   "unanimous": false,
+   "forslag": "Vedtak til lov om endringer i samordningsloven (opphevelse av den såkalte samordningsfellen) I I lov 6. juli 1957 nr. 26 om samordning av pensjons- og trygdeytelser gjøres følgende endringer: § 24 nr. 1 tredje ledd skal lyde: Dersom tjenestepensjonen tas ut etter fylte 67 år, benyttes forholdstallet på uttakstidspunktet. Dette gjelder også dersom det er tatt ut hel eller delvis alderspensjon fra folketrygden på et tidligere tidspunkt. Det skal likevel ikke benyttes et lavere forholdstall enn 1 000 ved beregning av samordningsfradragene. § 24 a. nr. 3 skal lyde: 3. Samordningsfradraget fastsett",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2025-12-16-samordningsfellen-kontekst",
+    "ev-2025-12-16-frp-samordningsfellen-for",
+    "ev-2025-12-16-ap-samordningsfellen-mot",
+    "ev-2025-12-16-h-samordningsfellen-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "ap",
+    "h"
+   ]
+  },
+  {
+   "votering_id": 26603,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om at ingen offentlig ansatte får lavere offentlig tjenestepensjon ved å stå, eller ha stått, lengre i jobb enn 67 års alder (etter oppnådd alder hvor levealdersjustering er fullt ut kompensert for), og at dette skal gjelde fra kullene født fra og med 1944, og loven skal tre i kraft fra 1.1.2027 uten tilbakevirkende kraft.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sv": "for",
+    "sp": "mot",
+    "v": "split"
+   },
+   "cited_by": [
+    "ev-2025-12-16-samordningsfellen-kontekst",
+    "ev-2025-12-16-sv-samordningsfellen-for",
+    "ev-2025-12-16-rodt-samordningsfellen-for"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt"
+   ]
+  },
+  {
+   "votering_id": 26604,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede tiltak for at ingen offentlig ansatte taper offentlig tjenestepensjon ved å stå, eller ha stått, lengre i jobb enn 67 års alder (etter oppnådd alder hvor levealdersjustering er fullt ut kompensert for), at dette skal gjelde fra kullene født fra og med 1944, samt hva budsjettkonsekvenser og samfunnsøkonomiske effekter vil være om dette innføres fra 1.1.2027.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [
+    "ev-2025-12-16-samordningsfellen-kontekst",
+    "ev-2025-12-16-frp-samordningsfellen-for",
+    "ev-2025-12-16-sv-samordningsfellen-for",
+    "ev-2025-12-16-mdg-samordningsfellen-for",
+    "ev-2025-12-16-rodt-samordningsfellen-for",
+    "ev-2025-12-16-sp-samordningsfellen-for",
+    "ev-2025-12-16-v-samordningsfellen-for",
+    "ev-2025-12-16-krf-samordningsfellen-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "sv",
+    "mdg",
+    "rodt",
+    "sp",
+    "v",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 26605,
+   "unanimous": false,
+   "forslag": "Dokument 8:19 L (2025–2026) Representantforslag fra stortingsrepresentantene Alf Erik Andersen, Bård Hoksrud, Erlend Wiborg, Dagfinn Henrik Olsen, Morten Wold, Bjørn-Kristian Svendsrud, Bjørnar Laabak og Kristoffer Sivertsen om avvikling av samordningsfellen – vedtas ikke.",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "for",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [
+    "ev-2025-12-16-samordningsfellen-kontekst"
+   ],
+   "coded_parties": []
+  },
+  {
+   "votering_id": 26616,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede hvordan en natur- og arealavgift, som priser inn de reelle samfunnsøkonomiske kostnadene ved nye naturinngrep med formål om å motvirke forringelse av naturens evne til å produsere økosystemtjenester og styrke arbeidet med å bevare naturmangfoldet, kan innføres i Norge. | Stortinget ber regjeringen utrede en modell for en ultrafastfashion-avgift og fremme nødvendige forslag i forbindelse med behandlingen av revidert nasjonalbudsjett for 2026. | Stortinget ber regjeringen på egnet måte fremme forslag som medfører at merverdiavgiftsfritaket for nyhets- og aktuali",
+   "parties": {
+    "ap": "mot",
+    "frp": "split",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [
+    "ev-2025-12-18-v-utflytterskatten-lempes-forslag"
+   ],
+   "coded_parties": [
+    "v"
+   ]
+  },
+  {
+   "votering_id": 26665,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen foreta en helhetlig evaluering av ordningen med 12 timer gratis SFO, herunder bemanningsbehov, kvalitetskrav og finansieringsmodell, og komme tilbake til Stortinget med en redegjørelse for hvordan krav til kvalitet, bemanning og finansiering kan tydeliggjøres og forskriftsfestes.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "split",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2026-01-13-frp-sfo-mot"
+   ],
+   "coded_parties": [
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 26667,
+   "unanimous": false,
+   "forslag": "I I lov 9. juni 2023 nr. 30 om grunnskoleopplæringa og den vidaregåande opplæringa gjøres følgende endringer: § 4-5 andre ledd skal lyde: Elevar på 1. til 3. trinn har rett til 12 timar gratis skolefritidsordning per veke. Nåværende andre til femte ledd blir tredje til sjette ledd. Nåværende sjette ledd blir nytt syvende ledd og skal lyde: Departementet kan gi forskrift om retten til skolefritidsordning , gratis skolefritidsordning, moderasjonsordningar og innhald i og oppgåver for skolefritidsordninga. II Loven gjelder fra den tiden Kongen fastsetter.",
+   "parties": {
+    "ap": "split",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2026-01-13-sfo-kontekst",
+    "ev-2026-01-13-ap-sfo-for",
+    "ev-2026-01-13-sv-sfo-for",
+    "ev-2026-01-13-sp-sfo-for",
+    "ev-2026-01-13-rodt-sfo-for",
+    "ev-2026-01-13-mdg-sfo-for",
+    "ev-2026-01-13-krf-sfo-mot",
+    "ev-2026-01-13-v-sfo-mot",
+    "ev-2026-01-13-frp-sfo-mot",
+    "ev-2026-01-13-h-sfo-mot"
+   ],
+   "coded_parties": [
+    "ap",
+    "sv",
+    "sp",
+    "rodt",
+    "mdg",
+    "krf",
+    "v",
+    "frp",
+    "h"
+   ]
+  },
+  {
+   "votering_id": 26668,
+   "unanimous": false,
+   "forslag": "",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [
+    "ev-2026-01-13-sfo-kontekst"
+   ],
+   "coded_parties": []
+  },
+  {
+   "votering_id": 26745,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fjerne CO 2 -avgiften på de områder som dekkes av EUs nye klimakvotesystem (ETS2) fra samme dato som det innføres.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "sp": "mot"
+   },
+   "cited_by": [
+    "ev-2026-innst058s-ets2-kontekst",
+    "ev-2025-12-09-frp-ets2-stans-klimakvotesystem"
+   ],
+   "coded_parties": [
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 26746,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen stanse den nasjonale gjennomføringen av EUs nye klimakvotesystem (ETS2).",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sv": "mot",
+    "sp": "for"
+   },
+   "cited_by": [
+    "ev-2026-innst058s-ets2-kontekst",
+    "ev-2025-12-09-sp-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-frp-ets2-stans-klimakvotesystem"
+   ],
+   "coded_parties": [
+    "sp",
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 26747,
+   "unanimous": false,
+   "forslag": "Dokument 8:8 S (2025–2026) – Representantforslag fra stortingsrepresentantene Maren Grøthe og Trygve Slagsvold Vedum om å stanse innføringen av ny EU-avgift på drivstoff i Norge – vedtas ikke",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "v": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sv": "split",
+    "sp": "mot"
+   },
+   "cited_by": [
+    "ev-2026-innst058s-ets2-kontekst",
+    "ev-2025-12-09-sp-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-ap-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-hoyre-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-mdg-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-venstre-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-rodt-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-sv-ets2-stans-klimakvotesystem",
+    "ev-2025-12-09-krf-ets2-stans-klimakvotesystem"
+   ],
+   "coded_parties": [
+    "sp",
+    "ap",
+    "h",
+    "mdg",
+    "v",
+    "rodt",
+    "sv",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 26938,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen, med utgangspunkt i anbefalingene fra Ekspertgruppen om barn i fattige familier, komme tilbake til Stortinget med forslag til modeller for å kraftig øke og skattlegge barnetrygden.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-02-10-mdg-barnetrygd-prisjustering-for"
+   ],
+   "coded_parties": [
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 26942,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å endre barnetrygdloven § 10 og sikre at barnetrygden prisjusteres årlig.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-02-10-barnetrygd-prisjustering-kontekst",
+    "ev-2026-02-10-sv-barnetrygd-prisjustering-for",
+    "ev-2026-02-10-mdg-barnetrygd-prisjustering-for",
+    "ev-2026-02-10-ap-barnetrygd-prisjustering-mot",
+    "ev-2026-02-10-frp-barnetrygd-prisjustering-mot",
+    "ev-2026-02-10-h-barnetrygd-prisjustering-mot",
+    "ev-2026-02-10-krf-barnetrygd-prisjustering-mot",
+    "ev-2026-02-10-r-barnetrygd-prisjustering-mot",
+    "ev-2026-02-10-sp-barnetrygd-prisjustering-mot",
+    "ev-2026-02-10-v-barnetrygd-prisjustering-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "mdg",
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "rodt",
+    "sp",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 26943,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å tilby barn i lavinntektsfamilier som per i dag har rett til gratis kjernetid i barnehagen, gratis barnehageplass. | Stortinget ber regjeringen fremme forslag om å øke de veiledende satsene for økonomisk sosialhjelp, hvor målet er at alle satsene kommer opp på et nivå tilsvarende SIFOs referansebudsjett. | Stortinget ber regjeringen fremme forslag om utvidet ramme for Husbankens startlånsordning og øremerke økningen til søkere som er enslige forsørgere.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-gratisbarnehage-kontekst",
+    "ev-2026-sv-gratisbarnehage-for",
+    "ev-2026-mdg-gratisbarnehage-for",
+    "ev-2026-v-gratisbarnehage-for",
+    "ev-2026-ap-gratisbarnehage-mot",
+    "ev-2026-frp-gratisbarnehage-mot",
+    "ev-2026-h-gratisbarnehage-mot",
+    "ev-2026-krf-gratisbarnehage-mot",
+    "ev-2026-rodt-gratisbarnehage-mot",
+    "ev-2026-sp-gratisbarnehage-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "mdg",
+    "v",
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "rodt",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 26946,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge til rette for økt grunnbemanning i barnehager i levekårsutsatte områder. | Stortinget ber regjeringen legge frem en plan for å gradvis øke tilskuddspotten for Utdanningsdirektoratets øremerkede tilskuddsordning til tiltak for å styrke den språklige utviklingen for minoritetsspråklige barn i barnehage.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-barnehage-kontekst",
+    "ev-2026-sv-barnehage-for",
+    "ev-2026-mdg-barnehage-for",
+    "ev-2026-krf-barnehage-for",
+    "ev-2026-v-barnehage-for",
+    "ev-2026-ap-barnehage-mot",
+    "ev-2026-frp-barnehage-mot",
+    "ev-2026-h-barnehage-mot",
+    "ev-2026-rodt-barnehage-mot",
+    "ev-2026-sp-barnehage-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "mdg",
+    "krf",
+    "v",
+    "ap",
+    "frp",
+    "h",
+    "rodt",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 26948,
+   "unanimous": false,
+   "forslag": "Dokument 8:11 S (2025–2026) – Representantforslag fra stortingsrepresentantene Abid Raja, Guri Melby og Grunde Almeland om en helhetlig og forpliktende tiltakspakke for å utjevne og bekjempe sosiale forskjeller – vedtas ikke.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "v": "mot",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-02-10-barnetrygd-prisjustering-kontekst",
+    "ev-2026-barnehage-kontekst"
+   ],
+   "coded_parties": []
+  },
+  {
+   "votering_id": 26988,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen komme tilbake til Stortinget med forslag om å lovfeste barnets beste som et grunnleggende hensyn i sosialtjenesteloven.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-barnetsbeste-kontekst",
+    "ev-2026-sv-barnetsbeste-for",
+    "ev-2026-krf-barnetsbeste-for",
+    "ev-2026-rodt-barnetsbeste-for",
+    "ev-2026-sp-barnetsbeste-for",
+    "ev-2026-v-barnetsbeste-for",
+    "ev-2026-ap-barnetsbeste-mot",
+    "ev-2026-frp-barnetsbeste-mot",
+    "ev-2026-h-barnetsbeste-mot",
+    "ev-2026-mdg-barnetsbeste-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "krf",
+    "rodt",
+    "sp",
+    "v",
+    "ap",
+    "frp",
+    "h",
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 27047,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede hvordan den sterke økningen i etterspørsel etter kraft til datasentre skal håndteres, herunder utrede innføring av et nasjonalt konsesjonssystem, og komme tilbake til Stortinget senest innen utgangen av 2026.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "split",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-datasenterkonsesjon-kontekst",
+    "ev-2026-h-datasenterkonsesjon-for",
+    "ev-2026-sv-datasenterkonsesjon-for",
+    "ev-2026-sp-datasenterkonsesjon-for",
+    "ev-2026-rodt-datasenterkonsesjon-for",
+    "ev-2026-mdg-datasenterkonsesjon-for",
+    "ev-2026-krf-datasenterkonsesjon-for",
+    "ev-2026-v-datasenterkonsesjon-splittet",
+    "ev-2026-ap-datasenterkonsesjon-mot",
+    "ev-2026-frp-datasenterkonsesjon-mot"
+   ],
+   "coded_parties": [
+    "h",
+    "sv",
+    "sp",
+    "rodt",
+    "mdg",
+    "krf",
+    "v",
+    "ap",
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 27111,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem lovforslag som gir mulighet til å holde ungdom med kriminell adferd i lukkede institusjoner så lenge det er behov for det.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-16-frp-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-h-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-krf-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-ap-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-sp-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-mdg-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-sv-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-v-ungdomskriminalitet-lukket-institusjon",
+    "ev-2026-04-16-rodt-ungdomskriminalitet-lukket-institusjon"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "krf",
+    "ap",
+    "sp",
+    "mdg",
+    "sv",
+    "v",
+    "rodt"
+   ]
+  },
+  {
+   "votering_id": 27114,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem forslag om oppbygging av et nettverk med institusjonsplasser for ungdom, både åpne og lukkede, som inneholder bred faglig kompetanse innen behandling og rehabilitering av ungdom. | Stortinget ber regjeringen legge frem lovforslag som sikrer vurdering av hensynet til samfunnet og ofrenes beste når oppfølging av og tiltak mot barn under den kriminelle lavalder skal vurderes.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "split",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-16-krf-ungdomskriminalitet-lukket-institusjon"
+   ],
+   "coded_parties": [
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 27257,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utarbeide mulige modeller for en registreringsordning for dem som oppsøker den politiske ledelsen i departementene eller på Statsministerens kontor, på vegne av seg selv eller andre, for å påvirke regjeringen i saker som er til behandling. Modellene må ivareta personvernet til de besøkende og sørge at privatpersoner kan unntas registrering.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-21-ap-votering",
+    "ev-2026-04-21-frp-votering",
+    "ev-2026-04-21-h-votering",
+    "ev-2026-04-21-krf-votering",
+    "ev-2026-04-21-sp-votering",
+    "ev-2026-04-21-sv-votering"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "sp",
+    "sv"
+   ]
+  },
+  {
+   "votering_id": 27259,
+   "unanimous": false,
+   "forslag": "Stortinget ber Stortingets presidentskap om å sørge for å utrede, med sikte på å innføre, mulig utforming av et register for lobbyisters kontakt med politikere og eventuelt andre i regjeringsapparatet og på Stortinget.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-21-mdg-votering"
+   ],
+   "coded_parties": [
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 27260,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen nedsette et utvalg med mandat til å utrede hvordan et lobbyistregister hjemlet i åpenhetsloven eller annen egnet lov kan innføres, og på bakgrunn av utvalgets arbeid komme tilbake til Stortinget med lovforslag om innføring av et slikt register. Forslaget må inneholde registrerings- og innrapporteringsplikt for lobbyister som bedriver påvirkningsarbeid overfor stortingsrepresentanter, Statsministerens kontor eller den politiske ledelsen i departementene, samt åpne for at forvaltningen har adgang til å ilegge sanksjoner ved brudd på reglementet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-21-rodt-votering"
+   ],
+   "coded_parties": [
+    "rodt"
+   ]
+  },
+  {
+   "votering_id": 27261,
+   "unanimous": true,
+   "forslag": "Stortinget ber Stortingets presidentskap om å sørge for utredning av behovet for og mulig utforming av et register for lobbyisters kontakt med politikere og eventuelt andre i regjeringsapparatet og på Stortinget.",
+   "parties": {},
+   "cited_by": [
+    "ev-2026-04-21-ap-votering",
+    "ev-2026-04-21-frp-votering",
+    "ev-2026-04-21-h-votering",
+    "ev-2026-04-21-krf-votering",
+    "ev-2026-04-21-sp-votering"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 27359,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge til grunn den samme modellen for beregning av formuesverdi på bolig i skatteåret 2026 som gjaldt for skatteåret 2025, og fremme forslag om dette i forbindelse med framleggingen av revidert nasjonalbudsjett for 2026.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-innst188s-bolig-formuesskatt-kontekst",
+    "ev-2026-innst188s-venstre-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-ap-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-sv-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-sp-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-rodt-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-mdg-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-krf-bolig-formuesskatt-teller-mindre"
+   ],
+   "coded_parties": [
+    "v",
+    "ap",
+    "sv",
+    "sp",
+    "rodt",
+    "mdg",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 27360,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen i forbindelse med revidert nasjonalbudsjett for 2026 legge til rette for at primærbolig i formuesskatten verdsettes til 25 prosent av omsetningsverdi for verdi opp til 20 mill. kroner, med virkning fra og med 2026.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-innst188s-hoyre-bolig-formuesskatt-teller-mindre"
+   ],
+   "coded_parties": [
+    "h"
+   ]
+  },
+  {
+   "votering_id": 27361,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen midlertidig suspendere den nye modellen for verdsetting av boliger i formuesskatten som ble innført fra 2026, og komme tilbake til Stortinget med bevilgningsendringsforslag som følge av dette. | Stortinget ber regjeringen nedsette et hurtigarbeidende ekspertutvalg som skal gjennomgå den nye modellen for verdsetting av boliger i formuesskatten sin metode, datagrunnlag, tekniske begrensninger og virkninger for skattytere og statens inntekter. Ekspertutvalgets vurderinger bør sendes på åpen høring før det konkluderes med en permanent løsning som legges frem for Storting",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-innst188s-frp-bolig-formuesskatt-teller-mindre"
+   ],
+   "coded_parties": [
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 27362,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen foreta en helhetlig utredning av konsekvensene av de nye verdsettingsreglene for bolig i tråd med innspill fra bl.a. Huseierne, herunder fordelingsvirkninger, geografiske effekter og de samlede konsekvensene for boligeiere, og sende utredningen på alminnelig høring, for deretter å komme tilbake til Stortinget på egnet måte med forslag til en justert modell, senest i forbindelse med statsbudsjettet for 2027.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-innst188s-frp-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-hoyre-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-venstre-bolig-formuesskatt-teller-mindre",
+    "ev-2026-innst188s-krf-bolig-formuesskatt-teller-mindre"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "v",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 27440,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen i sitt arbeid med reglene om bortvising og utvisning foreta en helhetlig gjennomgang av utvisningsregelverket i utlendingsloven med sikte på at flere straffbare handlinger skal kunne føre til utvisning. Herunder vurdere den danske modellens overførbarhet til norske folkerettslige forpliktelser, og fremme nødvendige lovforslag for Stortinget innen utgangen av 2026.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-14-h-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-h-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-sp-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-krf-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-krf-utvisning-individuell-tilknytning"
+   ],
+   "coded_parties": [
+    "h",
+    "sp",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 27441,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen ta initiativ til et samarbeid med Danmark om en utvisningsreform som sikrer at innvandrere som begår alvorlig kriminalitet i Norge, skal utvises, uavhengig av tilknytning til landet, herunder også asylsøkere og flyktninger. Dersom personer ikke kan returneres til sitt hjemland, skal de likevel uttransporteres til et trygt tredjeland som Norge inngår avtale med. Regjeringen bes komme tilbake til Stortinget med nødvendige lovendringsforslag i vårsesjonen 2026, slik at Stortinget kan behandle og vedta saken før sommeren 2026.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-14-frp-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-h-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-frp-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-sp-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-sp-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-a-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-sv-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-rodt-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-mdg-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-krf-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-v-utvisning-uavhengig-tilknytning",
+    "ev-2026-04-14-ap-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-krf-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-mdg-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-rodt-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-sv-utvisning-individuell-tilknytning",
+    "ev-2026-04-14-v-utvisning-individuell-tilknytning"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "sp",
+    "ap",
+    "sv",
+    "rodt",
+    "mdg",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27475,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede etablering av et uavhengig nasjonalt digitalt kriseråd med ansvar for strategiske råd knyttet til digital sikkerhet, suverenitet og personvern.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "split",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "split"
+   },
+   "cited_by": [
+    "ev-2026-04-28-kriserad-kontekst",
+    "ev-2026-04-28-mdg-kriserad-for",
+    "ev-2026-04-28-rodt-kriserad-mot",
+    "ev-2026-04-28-sv-kriserad-uklart",
+    "ev-2026-04-28-ap-kriserad-mot",
+    "ev-2026-04-28-frp-kriserad-mot",
+    "ev-2026-04-28-h-kriserad-mot",
+    "ev-2026-04-28-sp-kriserad-mot",
+    "ev-2026-04-28-krf-kriserad-mot",
+    "ev-2026-04-28-v-kriserad-mot"
+   ],
+   "coded_parties": [
+    "mdg",
+    "rodt",
+    "sv",
+    "ap",
+    "frp",
+    "h",
+    "sp",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27482,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre at suveren infrastruktur for lagring og prosessering av data i sky er tilgjengelig for hele offentlig sektor.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-28-mdg-nasjonal-skytjeneste-mot"
+   ],
+   "coded_parties": [
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 27485,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre oppretting av en nasjonal skytjeneste som eies og driftes av det offentlige, for lagring av data og som et offentlig arbeidsverktøy.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-28-nasjonal-skytjeneste-kontekst",
+    "ev-2026-04-28-sv-nasjonal-skytjeneste-for",
+    "ev-2026-04-28-rodt-nasjonal-skytjeneste-for",
+    "ev-2026-04-28-mdg-nasjonal-skytjeneste-mot",
+    "ev-2026-04-28-frp-nasjonal-skytjeneste-mot",
+    "ev-2026-04-28-ap-nasjonal-skytjeneste-mot",
+    "ev-2026-04-28-h-nasjonal-skytjeneste-mot",
+    "ev-2026-04-28-sp-nasjonal-skytjeneste-mot",
+    "ev-2026-04-28-krf-nasjonal-skytjeneste-mot",
+    "ev-2026-04-28-v-nasjonal-skytjeneste-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "frp",
+    "ap",
+    "h",
+    "sp",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27486,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede felleskommunale innkjøpsordninger for avanserte digitale teknologier som kunstig intelligens, etter modell av Danmarks KOMBIT.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "split",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-28-kombit-kontekst",
+    "ev-2026-04-28-h-kombit-for",
+    "ev-2026-04-28-krf-kombit-for",
+    "ev-2026-04-28-mdg-kombit-for",
+    "ev-2026-04-28-v-kombit-for",
+    "ev-2026-04-28-ap-kombit-mot",
+    "ev-2026-04-28-frp-kombit-mot",
+    "ev-2026-04-28-rodt-kombit-mot",
+    "ev-2026-04-28-sv-kombit-mot",
+    "ev-2026-04-28-sp-kombit-mot"
+   ],
+   "coded_parties": [
+    "h",
+    "krf",
+    "mdg",
+    "v",
+    "ap",
+    "frp",
+    "rodt",
+    "sv",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 27488,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sørge for at Palantirs systemer ikke brukes i norsk offentlig sektor.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-28-palantir-kontekst",
+    "ev-2026-04-28-sv-palantir-for",
+    "ev-2026-04-28-rodt-palantir-for",
+    "ev-2026-04-28-mdg-palantir-for",
+    "ev-2026-04-28-v-palantir-for",
+    "ev-2026-04-28-ap-palantir-mot",
+    "ev-2026-04-28-h-palantir-mot",
+    "ev-2026-04-28-frp-palantir-mot",
+    "ev-2026-04-28-sp-palantir-mot",
+    "ev-2026-04-28-krf-palantir-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "v",
+    "ap",
+    "h",
+    "frp",
+    "sp",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 27489,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen opprette et nasjonalt program for åpen kildekode i offentlig sektor, med forslag til bevilgninger til kompetanseheving og målrettet innføring der åpne løsninger reduserer avhengighet av proprietære plattformer og styrker gjenbruk.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "split",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-28-apen-kildekode-kontekst",
+    "ev-2026-04-28-sv-apenkildekode-for",
+    "ev-2026-04-28-rodt-apenkildekode-for",
+    "ev-2026-04-28-mdg-apenkildekode-for",
+    "ev-2026-04-28-v-apenkildekode-for",
+    "ev-2026-04-28-ap-apenkildekode-mot",
+    "ev-2026-04-28-frp-apenkildekode-mot",
+    "ev-2026-04-28-h-apenkildekode-mot",
+    "ev-2026-04-28-sp-apenkildekode-mot",
+    "ev-2026-04-28-krf-apenkildekode-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "v",
+    "ap",
+    "frp",
+    "h",
+    "sp",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 27490,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utarbeide en nasjonal exit-strategi for utfasing av store internasjonale kommersielle IT-plattformer, slik som Microsoft 365, i statsforvaltningen og i virksomheter med kritiske samfunnsfunksjoner, slik blant annet danske myndigheter gjør, med sikte på rask overgang til nye systemer.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-28-microsoft365-exit-kontekst",
+    "ev-2026-04-28-sv-microsoft365-exit-for",
+    "ev-2026-04-28-rodt-microsoft365-exit-for",
+    "ev-2026-04-28-mdg-microsoft365-exit-for",
+    "ev-2026-04-28-h-microsoft365-exit-mot",
+    "ev-2026-04-28-sp-microsoft365-exit-mot",
+    "ev-2026-04-28-frp-microsoft365-exit-mot",
+    "ev-2026-04-28-ap-microsoft365-exit-mot",
+    "ev-2026-04-28-krf-microsoft365-exit-mot",
+    "ev-2026-04-28-v-microsoft365-exit-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "h",
+    "sp",
+    "frp",
+    "ap",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27492,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen redegjøre for hvordan den bedre vil følge opp GDPR og sikre at sensitiv og samfunnskritisk informasjon om innbyggere utelukkende skal behandles i løsninger som er under norsk eller europeisk jurisdiksjon.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-05-07-sv-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-rodt-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-mdg-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-frp-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-sp-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-h-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-ap-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-krf-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-v-digital-suverenitet-jurisdiksjon"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "frp",
+    "sp",
+    "h",
+    "ap",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27493,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen ta nødvendige grep for å samarbeide tettere med nordiske og europeiske land om felles digitale løsninger og beredskap, hvor åpne kildekoder og digital suverenitet over digital infrastruktur er førende for samarbeidet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-28-nordisk-samarbeid-kontekst",
+    "ev-2026-04-28-sv-nordisk-for",
+    "ev-2026-04-28-rodt-nordisk-for",
+    "ev-2026-04-28-mdg-nordisk-for",
+    "ev-2026-04-28-krf-nordisk-for",
+    "ev-2026-04-28-v-nordisk-for",
+    "ev-2026-04-28-ap-nordisk-mot",
+    "ev-2026-04-28-frp-nordisk-mot",
+    "ev-2026-04-28-h-nordisk-mot",
+    "ev-2026-04-28-sp-nordisk-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "krf",
+    "v",
+    "ap",
+    "frp",
+    "h",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 27494,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fastsette digital suverenitet som et overordnet mål i Norges digitaliseringsstrategi.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-05-07-sp-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-krf-digital-suverenitet-jurisdiksjon",
+    "ev-2026-05-07-v-digital-suverenitet-jurisdiksjon"
+   ],
+   "coded_parties": [
+    "sp",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27495,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede og komme tilbake til Stortinget innen statsbudsjett for 2027 med en modell for offentlig skytjeneste. Utredningen må inneholde en vurdering av modell av konseptet Offentlig SkySamdrift (OSS), hvor nøkkelaktører med vellykket erfaring med dette, som for eksempel Sintef og OSS, Helsenett, Universitetet i Oslo og Forsvaret, er involvert. Skyen skal eies og driftes av det offentlige for bearbeiding, lagring og flytting av data, og som et offentlig arbeidsverktøy, og fortrinnsvis bruke åpen kildekode.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-28-frp-nasjonal-skytjeneste-mot",
+    "ev-2026-04-28-frp-microsoft365-exit-mot",
+    "ev-2026-05-07-frp-digital-suverenitet-jurisdiksjon"
+   ],
+   "coded_parties": [
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 27496,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen ta initiativ til å kontinuerlig kartlegge Norges digitale avhengigheter til andre land og jurisdiksjoner som tiltak for å sikre tilstrekkelig nasjonal kontroll med den digitale grunnmuren som understøtter kritiske samfunnsfunksjoner. Den første rapporten leveres til Stortinget innen utgangen av 2026.",
+   "parties": {
+    "ap": "mot",
+    "frp": "split",
+    "v": "for",
+    "h": "split",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-28-nasjonal-skytjeneste-kontekst",
+    "ev-2026-04-28-palantir-kontekst",
+    "ev-2026-05-07-digitale-avhengigheter-kontekst",
+    "ev-2026-04-28-h-digitale-avhengigheter-tilraading",
+    "ev-2026-04-28-frp-digitale-avhengigheter-tilraading",
+    "ev-2026-04-28-sv-digitale-avhengigheter-tilraading",
+    "ev-2026-05-05-sv-digitale-avhengigheter-plenum",
+    "ev-2026-05-05-krf-digitale-avhengigheter-plenum",
+    "ev-2026-05-07-v-digitale-avhengigheter-votering",
+    "ev-2026-05-05-ap-digitale-avhengigheter-plenum",
+    "ev-2026-05-07-sp-digitale-avhengigheter-votering",
+    "ev-2026-05-07-rodt-digitale-avhengigheter-votering",
+    "ev-2026-05-05-mdg-digitale-avhengigheter-plenum"
+   ],
+   "coded_parties": [
+    "h",
+    "frp",
+    "sv",
+    "krf",
+    "v",
+    "ap",
+    "sp",
+    "rodt",
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 27522,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem lovforslag om skjerpede krav for erverv av norsk statsborgerskap, herunder evaluere språkkravet om B1-nivå muntlig og vurdere å øke språkkravet til B2-nivå muntlig redusere antallet fritaksgrunner fra å ta testen i norsk samfunnskunnskap og statsborgerprøven krav om at søkeren ikke har gjeld til det offentlige, herunder manglende skattebetalinger eller pålagte tilbakebetalingskrav for offentlige ytelser at brudd på forpliktelsene i en integreringserklæring/integreringskontrakt/borgerkontrakt i alvorlige tilfeller kan få konsekvenser for muligheten til å er",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-30-h-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-ap-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-sv-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-mdg-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-sp-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-rodt-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-krf-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-v-statsborgerskap-skjerpede-krav"
+   ],
+   "coded_parties": [
+    "h",
+    "ap",
+    "sv",
+    "mdg",
+    "sp",
+    "rodt",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27523,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede og fremme forslag til en foreldelsesfrist for tilbakekall av statsborgerskap og komme tilbake til Stortinget innen rimelig tid.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-04-30-sv-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-rodt-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-mdg-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-krf-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-v-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-ap-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-frp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-h-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2026-04-30-sp-statsborgerskap-tilbakekall-tidsfrist"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "krf",
+    "v",
+    "ap",
+    "frp",
+    "h",
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 27524,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem lovforslag om å stille krav om at barn som er født i utlandet med en norsk mor eller far, må ha en fast tilknytning til og samvær med den biologiske forelderen som innehar det norske statsborgerskapet, for selv å ha rett på norsk statsborgerskap. | Stortinget ber regjeringen legge frem lovforslag med følgende kriterier for norsk statsborgerskap som skal gjelde for alle: minimum ti års botid bestå språkprøve på minimum B2-nivå bestå prøve om grunnleggende norske verdier avlegge en troskapsed etter mønster av ordningen i Danmark En søker kan aldri få norsk s",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-04-30-frp-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-ap-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-sv-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-mdg-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-sp-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-rodt-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-krf-statsborgerskap-skjerpede-krav",
+    "ev-2026-04-30-v-statsborgerskap-skjerpede-krav"
+   ],
+   "coded_parties": [
+    "frp",
+    "ap",
+    "sv",
+    "mdg",
+    "sp",
+    "rodt",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27579,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringa sikre at lokalsjukehus blir nytta aktivt i arbeidet for å få ned ventelistene i spesialisthelsetenesta, jf. ventetidsløftet, og informere Stortinget på eigna måte.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-lokalsjukehus-kontekst",
+    "ev-2026-sv-lokalsjukehus-for",
+    "ev-2026-sp-lokalsjukehus-for",
+    "ev-2026-rodt-lokalsjukehus-for",
+    "ev-2026-mdg-lokalsjukehus-for",
+    "ev-2026-v-lokalsjukehus-for",
+    "ev-2026-ap-lokalsjukehus-mot",
+    "ev-2026-frp-lokalsjukehus-mot",
+    "ev-2026-h-lokalsjukehus-mot",
+    "ev-2026-krf-lokalsjukehus-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "sp",
+    "rodt",
+    "mdg",
+    "v",
+    "ap",
+    "frp",
+    "h",
+    "krf"
+   ]
+  },
+  {
+   "votering_id": 27581,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringa komme tilbake til Stortinget med forslag til korleis responstidsmåla for ambulanse kan nåast i alle kommunar i landet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-ambulanse-kontekst",
+    "ev-2026-frp-ambulanse-for",
+    "ev-2026-sp-ambulanse-for",
+    "ev-2026-rodt-ambulanse-for",
+    "ev-2026-sv-ambulanse-for",
+    "ev-2026-v-ambulanse-for",
+    "ev-2026-ap-ambulanse-mot",
+    "ev-2026-h-ambulanse-mot",
+    "ev-2026-krf-ambulanse-mot",
+    "ev-2026-mdg-ambulanse-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "sp",
+    "rodt",
+    "sv",
+    "v",
+    "ap",
+    "h",
+    "krf",
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 27597,
+   "unanimous": false,
+   "forslag": "Dokument 8:162 S (2025–2026) – Representantforslag fra stortingsrepresentantene Tom Staahle, Erlend Wiborg, Jon Engen-Helgheim og Himanshu Gulati om en plan- og bygningslov for krig og krise – vedtas ikke.",
+   "parties": {
+    "ap": "for",
+    "frp": "split",
+    "v": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-hurtigspor-kontekst",
+    "ev-2026-frp-hurtigspor-for",
+    "ev-2026-h-hurtigspor-for",
+    "ev-2026-sp-hurtigspor-mot",
+    "ev-2026-ap-hurtigspor-mot",
+    "ev-2026-krf-hurtigspor-mot",
+    "ev-2026-mdg-hurtigspor-mot",
+    "ev-2026-rodt-hurtigspor-mot",
+    "ev-2026-sv-hurtigspor-mot",
+    "ev-2026-v-hurtigspor-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "sp",
+    "ap",
+    "krf",
+    "mdg",
+    "rodt",
+    "sv",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27609,
+   "unanimous": false,
+   "forslag": "Dokument 8:194 S (2025–2026) – Representantforslag fra stortingsrepresentantene Geir Inge Lien, Bent-Joacim Bentzen og Erling Sande om å sikre mobildekning på alle offentlige veier – vedtas ikke.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "v": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-05-19-mobildekning-kontekst"
+   ],
+   "coded_parties": []
+  },
+  {
+   "votering_id": 27610,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sørge for at alle offentlige veier i Norge har mobildekning innen 2030.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-19-sp-mobildekning-for",
+    "ev-2026-05-19-krf-mobildekning-for",
+    "ev-2026-05-19-frp-mobildekning-mot",
+    "ev-2026-05-19-h-mobildekning-mot",
+    "ev-2026-05-19-ap-mobildekning-mot",
+    "ev-2026-05-19-sv-mobildekning-mot",
+    "ev-2026-05-19-rodt-mobildekning-mot",
+    "ev-2026-05-19-mdg-mobildekning-mot",
+    "ev-2026-05-19-v-mobildekning-mot"
+   ],
+   "coded_parties": [
+    "sp",
+    "krf",
+    "frp",
+    "h",
+    "ap",
+    "sv",
+    "rodt",
+    "mdg",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27674,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å lovfeste at staten skal sikre avisdistribusjon i områder uten kommersielle avisbudnett alle hverdager og lørdager.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "split",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-avisdistribusjon-kontekst",
+    "ev-2026-sp-avisdistribusjon-for",
+    "ev-2026-rodt-avisdistribusjon-for",
+    "ev-2026-sv-avisdistribusjon-for",
+    "ev-2026-mdg-avisdistribusjon-splittet",
+    "ev-2026-ap-avisdistribusjon-mot",
+    "ev-2026-frp-avisdistribusjon-mot",
+    "ev-2026-h-avisdistribusjon-mot",
+    "ev-2026-krf-avisdistribusjon-mot",
+    "ev-2026-v-avisdistribusjon-mot"
+   ],
+   "coded_parties": [
+    "sp",
+    "rodt",
+    "sv",
+    "mdg",
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27675,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede innføring av dørterskeltjenesten som en landsdekkende tjeneste og komme tilbake til Stortinget med saken i forbindelse med statsbudsjettet for 2027.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "split",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-dorterskel-kontekst",
+    "ev-2026-sp-dorterskel-for",
+    "ev-2026-rodt-dorterskel-for",
+    "ev-2026-sv-dorterskel-for",
+    "ev-2026-mdg-dorterskel-for",
+    "ev-2026-krf-dorterskel-splittet",
+    "ev-2026-ap-dorterskel-mot",
+    "ev-2026-frp-dorterskel-mot",
+    "ev-2026-h-dorterskel-mot",
+    "ev-2026-v-dorterskel-mot"
+   ],
+   "coded_parties": [
+    "sp",
+    "rodt",
+    "sv",
+    "mdg",
+    "krf",
+    "ap",
+    "frp",
+    "h",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27715,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre at utvikling og eventuell etablering av kjernekraft i Norge skjer under fullt statlig eierskap, kontroll og styring, av hensyn til nasjonal sikkerhet, beredskap og den langsiktige forvaltningen av kritisk infrastruktur og radioaktivt materiale. | Stortinget ber regjeringen sikre at eventuell utvikling og etablering av kjernekraft i Norge skjer i tråd med prinsippet om hjemfallsrett, slik at eierskap over kjernekraftanlegg og tilhørende infrastruktur forblir under fellesskapets kontroll. | Stortinget ber regjeringen sikre at utvikling og eventuell utbygging av k",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-26-ap-kjernekraft-statlig-eierskap-votering",
+    "ev-2026-05-26-sp-kjernekraft-statlig-eierskap-votering",
+    "ev-2026-05-26-mdg-kjernekraft-statlig-eierskap-votering",
+    "ev-2026-05-26-rodt-kjernekraft-kommersiell-mot"
+   ],
+   "coded_parties": [
+    "ap",
+    "sp",
+    "mdg",
+    "rodt"
+   ]
+  },
+  {
+   "votering_id": 27717,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge til rette for utbygging av kjernekraft i Norge, dersom private aktører selv finansierer utbygging, drift og dekommisjonering. | Stortinget ber regjeringen utarbeide en helhetlig stortingsmelding eller tilsvarende sak for Stortinget med en nasjonal plan for tilrettelegging for kjernekraft i Norge.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "split",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-26-h-kjernekraft-kommersiell-for"
+   ],
+   "coded_parties": [
+    "h"
+   ]
+  },
+  {
+   "votering_id": 27722,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen gå i dialog med nordiske naboland om et mulig tettere samarbeid innen kjernekraft, herunder for forskning, kompetansebygging, virkemidler og rammeverk. | Stortinget ber regjeringen i lys av Kjernekraftutvalgets anbefaling etablere et nasjonalt kompetanseprosjekt for kjernekraft som blant annet vurderer hvordan IAEAs anbefalinger for et nytt kjernekraftland kan tilpasses norske forhold.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-26-mdg-kjernekraft-kommersiell-mot",
+    "ev-2026-05-26-kjernekraft-kommersiell-kontekst",
+    "ev-2026-05-26-frp-kjernekraft-kommersiell-for",
+    "ev-2026-05-26-h-kjernekraft-kommersiell-for",
+    "ev-2026-05-26-v-kjernekraft-kommersiell-for",
+    "ev-2026-05-26-krf-kjernekraft-kommersiell-for",
+    "ev-2026-05-26-ap-kjernekraft-kommersiell-mot",
+    "ev-2026-05-26-sp-kjernekraft-kommersiell-mot",
+    "ev-2026-05-26-sv-kjernekraft-kommersiell-mot",
+    "ev-2026-05-26-rodt-kjernekraft-kommersiell-mot"
+   ],
+   "coded_parties": [
+    "mdg",
+    "frp",
+    "h",
+    "v",
+    "krf",
+    "ap",
+    "sp",
+    "sv",
+    "rodt"
+   ]
+  },
+  {
+   "votering_id": 27723,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem en stortingsmelding om kjernekraft.",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "v": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-05-26-mdg-kjernekraft-kommersiell-mot",
+    "ev-2026-05-26-frp-kommersiell-modell",
+    "ev-2026-05-26-kjernekraft-kommersiell-kontekst",
+    "ev-2026-05-26-krf-kjernekraft-kommersiell-for",
+    "ev-2026-05-26-ap-kjernekraft-kommersiell-mot",
+    "ev-2026-05-26-sp-kjernekraft-kommersiell-mot",
+    "ev-2026-05-26-sv-kjernekraft-kommersiell-mot"
+   ],
+   "coded_parties": [
+    "mdg",
+    "frp",
+    "krf",
+    "ap",
+    "sp",
+    "sv"
+   ]
+  },
+  {
+   "votering_id": 27779,
+   "unanimous": false,
+   "forslag": "A. om endringer i integreringsloven (integreringserklæring) I I lov 6. november 2020 nr. 127 om integrering gjennom opplæring, utdanning og arbeid skal § 16 lyde: § 16 Integreringserklæring Deltageren skal signere en integreringserklæring i forbindelse med at det utarbeides en integreringsplan etter § 15. Integreringserklæringen skal angi deltagerens forpliktelser som deltager i introduksjonsprogrammet, og sentrale plikter og rettigheter som gjelder for personer som bor i Norge. Departementet kan gi forskrift om innholdet i integreringserklæringen. II Loven gjelder fra den tiden Kongen bestemm",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "v": "mot",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-19-integreringserklaering-kontekst",
+    "ev-2026-05-19-ap-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-h-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-sp-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-frp-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-sv-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-rodt-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-mdg-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-krf-integreringserklaering-skriftlig-forpliktelse",
+    "ev-2026-05-19-v-integreringserklaering-skriftlig-forpliktelse"
+   ],
+   "coded_parties": [
+    "ap",
+    "h",
+    "sp",
+    "frp",
+    "sv",
+    "rodt",
+    "mdg",
+    "krf",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 27780,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen komme tilbake til Stortinget med en vurdering av å inkludere en bredere målgruppe enn den som er foreslått i integreringserklæringen, jf. Prop. 70 L (2025–2026), etter modell av den danske oppholds- og selvforsørgelseserklæring. | Stortinget ber regjeringen komme tilbake til Stortinget med en vurdering av ulike sanksjoner ved brudd på integreringserklæringen, og hvordan dette eventuelt kan sees i sammenheng med rettigheter knyttet til permanent oppholdstillatelse og statsborgerskap. | Stortinget ber regjeringen komme tilbake til Stortinget med en vurdering av konsekv",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "v": "mot",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-19-h-integreringserklaering-skriftlig-forpliktelse"
+   ],
+   "coded_parties": [
+    "h"
+   ]
+  },
+  {
+   "votering_id": 27876,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen på egnet måte legge fram en sak om å øke pensjonsinnskuddssatsen i obligatorisk tjenestepensjon til minimum 4 pst.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-05-28-otp-minstesats-kontekst",
+    "ev-2026-05-28-sv-otp-minstesats-for",
+    "ev-2026-05-28-rodt-otp-minstesats-for",
+    "ev-2026-05-28-mdg-otp-minstesats-for",
+    "ev-2026-05-28-ap-otp-minstesats-mot",
+    "ev-2026-05-28-h-otp-minstesats-mot",
+    "ev-2026-05-28-sp-otp-minstesats-mot",
+    "ev-2026-05-28-krf-otp-minstesats-mot",
+    "ev-2026-05-28-v-otp-minstesats-mot",
+    "ev-2026-05-28-frp-otp-minstesats-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "rodt",
+    "mdg",
+    "ap",
+    "h",
+    "sp",
+    "krf",
+    "v",
+    "frp"
+   ]
+  },
+  {
+   "votering_id": 28067,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringa gjennomføra ein heilskapleg nasjonal risiko- og sårbarheitsanalyse (ROS) for matsikkerheit og matforsyning i Noreg.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-06-05-matberedskap-ros-kontekst",
+    "ev-2026-06-05-sv-matberedskap-ros-for",
+    "ev-2026-06-05-sp-matberedskap-ros-for",
+    "ev-2026-06-05-rodt-matberedskap-ros-for",
+    "ev-2026-06-05-mdg-matberedskap-ros-for",
+    "ev-2026-06-05-krf-matberedskap-ros-for",
+    "ev-2026-06-05-v-matberedskap-ros-for",
+    "ev-2026-06-05-ap-matberedskap-ros-mot",
+    "ev-2026-06-05-frp-matberedskap-ros-mot",
+    "ev-2026-06-05-h-matberedskap-ros-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "sp",
+    "rodt",
+    "mdg",
+    "krf",
+    "v",
+    "ap",
+    "frp",
+    "h"
+   ]
+  },
+  {
+   "votering_id": 28068,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre beredskapslagre for såkorn og matkorn i en desentralisert modell på gårdene rundt om i landet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-06-05-matberedskap-saakorn-kontekst",
+    "ev-2026-06-05-frp-matberedskap-saakorn-for",
+    "ev-2026-06-05-sv-matberedskap-saakorn-for",
+    "ev-2026-06-05-rodt-matberedskap-saakorn-for",
+    "ev-2026-06-05-mdg-matberedskap-saakorn-for",
+    "ev-2026-06-05-krf-matberedskap-saakorn-for",
+    "ev-2026-06-05-ap-matberedskap-saakorn-mot",
+    "ev-2026-06-05-h-matberedskap-saakorn-mot",
+    "ev-2026-06-05-sp-matberedskap-saakorn-mot",
+    "ev-2026-06-05-v-matberedskap-saakorn-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "sv",
+    "rodt",
+    "mdg",
+    "krf",
+    "ap",
+    "h",
+    "sp",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 28069,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen komme tilbake til Stortinget med forslag om hvordan det kan etableres beredskapslagre med kritiske innsatsfaktorer til matproduksjon etter den finske modellen i Norge. | Stortinget ber regjeringen utarbeide avtaler med dagligvarekjedene, kommunene og Forsvaret om hvordan man kan etablere beredskapslagre for mat i hele Norge.",
+   "parties": {
+    "ap": "split",
+    "frp": "for",
+    "v": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-06-05-matberedskap-saakorn-kontekst",
+    "ev-2026-06-05-sp-matberedskap-saakorn-mot"
+   ],
+   "coded_parties": [
+    "sp"
+   ]
+  },
+  {
+   "votering_id": 28077,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem forslag om å avvikle ordningen med normpris og Prisrådet for havbruk (normprisrådet) med virkning fra og med inntektsåret 2027.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "v": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-prisradet-kontekst",
+    "ev-2026-frp-prisradet-for",
+    "ev-2026-h-prisradet-for",
+    "ev-2026-sp-prisradet-for",
+    "ev-2026-krf-prisradet-for",
+    "ev-2026-v-prisradet-for",
+    "ev-2026-ap-prisradet-mot",
+    "ev-2026-sv-prisradet-mot",
+    "ev-2026-rodt-prisradet-mot",
+    "ev-2026-mdg-prisradet-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "sp",
+    "krf",
+    "v",
+    "ap",
+    "sv",
+    "rodt",
+    "mdg"
+   ]
+  },
+  {
+   "votering_id": 28136,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen instruere NVE om å avslutte utredningsprogrammet for mulig reinvestering av Skagerrak 1 og 2.",
+   "parties": {
+    "ap": "mot",
+    "frp": "split",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-26-skagerrak-kontekst",
+    "ev-2026-05-26-frp-skagerrak-for",
+    "ev-2026-05-26-sp-skagerrak-for",
+    "ev-2026-05-26-rodt-skagerrak-for",
+    "ev-2026-05-26-ap-skagerrak-mot",
+    "ev-2026-05-26-h-skagerrak-mot",
+    "ev-2026-05-26-krf-skagerrak-mot",
+    "ev-2026-05-26-mdg-skagerrak-mot",
+    "ev-2026-05-26-sv-skagerrak-mot",
+    "ev-2026-05-26-v-skagerrak-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "sp",
+    "rodt",
+    "ap",
+    "h",
+    "krf",
+    "mdg",
+    "sv",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 28137,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre en styringsmekanisme hvor Statnett må vurdere og har fullmakt til å redusere kapasiteten for krafteksport når fyllingsgraden er under mediannivå i de viktigste vannmagasinene i Norge. Regjeringen bes komme tilbake til Stortinget med eventuelle forslag til lovendringer som trengs for å innføre ordningen i løpet av 2026. | Stortinget ber regjeringen starte reforhandling av avtalene om kraftkabler til Tyskland og Storbritannia for å regulere kraftflyten og redusere prissmitten. | Stortinget ber regjeringen sørge for at hybridkabler ikke tillates ved utbygging av",
+   "parties": {
+    "ap": "mot",
+    "frp": "split",
+    "v": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-05-26-krafteksport-kontekst",
+    "ev-2026-05-26-frp-krafteksport-for",
+    "ev-2026-05-26-sv-krafteksport-for",
+    "ev-2026-05-26-sp-krafteksport-for",
+    "ev-2026-05-26-rodt-krafteksport-for",
+    "ev-2026-05-26-krf-krafteksport-for",
+    "ev-2026-05-26-ap-krafteksport-mot",
+    "ev-2026-05-26-h-krafteksport-mot",
+    "ev-2026-05-26-mdg-krafteksport-mot",
+    "ev-2026-05-26-v-krafteksport-mot"
+   ],
+   "coded_parties": [
+    "frp",
+    "sv",
+    "sp",
+    "rodt",
+    "krf",
+    "ap",
+    "h",
+    "mdg",
+    "v"
+   ]
+  },
+  {
+   "votering_id": 28138,
+   "unanimous": false,
+   "forslag": "Dokument 8:235 S (2025–2026) – Representantforslag fra stortingsrepresentantene Sofie Marhaug, Bjørnar Moxnes, Geir Jørgensen og Mímir Kristjánsson om kontroll over krafteksporten og styrking av forsyningssikkerheten – vedtas ikke.",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "v": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "mot"
+   },
+   "cited_by": [
+    "ev-2026-05-26-krafteksport-kontekst"
+   ],
+   "coded_parties": []
+  },
+  {
+   "votering_id": 28197,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre at Innovasjon Norge opprettholder en desentralisert struktur, og at nødvendige innsparinger ikke gjennomføres gjennom nedleggelse eller svekkelse av regionkontor eller regionale fagmiljø. | Stortinget ber regjeringen opprettholde Innovasjon Norges landsdekkende funksjoner som er lokalisert utenfor Oslo. Dette inkluderer en videreføring av Vekst- og gründersenteret i Førde som en nasjonal funksjon for entreprenørskap og oppstartsbedrifter, samt en opprettholdelse av reiselivkontoret i Bodø på dagens nivå.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "v": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for"
+   },
+   "cited_by": [
+    "ev-2026-06-10-innovasjon-norge-kontekst",
+    "ev-2026-06-10-sv-innovasjon-norge-for",
+    "ev-2026-06-10-sp-innovasjon-norge-for",
+    "ev-2026-06-10-rodt-innovasjon-norge-for",
+    "ev-2026-06-10-ap-innovasjon-norge-mot",
+    "ev-2026-06-10-mdg-innovasjon-norge-mot",
+    "ev-2026-06-10-frp-innovasjon-norge-mot",
+    "ev-2026-06-10-h-innovasjon-norge-mot",
+    "ev-2026-06-10-krf-innovasjon-norge-mot",
+    "ev-2026-06-10-v-innovasjon-norge-mot"
+   ],
+   "coded_parties": [
+    "sv",
+    "sp",
+    "rodt",
+    "ap",
+    "mdg",
+    "frp",
+    "h",
+    "krf",
+    "v"
+   ]
+  }
+ ]
+}

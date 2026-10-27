@@ -609,6 +609,7 @@ func New(logger *slog.Logger) http.Handler {
 	metodeTmpl := page("metode.html.tmpl")
 	dataTmpl := page("data.html.tmpl")
 	omTmpl := page("om.html.tmpl")
+	stemmerTmpl := page("stemmer.html.tmpl")
 	personvernTmpl := page("personvern.html.tmpl")
 	resultatTmpl := page("resultat.html.tmpl")
 	programTmpl := page("program.html.tmpl")
@@ -734,6 +735,18 @@ func New(logger *slog.Logger) http.Handler {
 	// we collected and analysed it. A missing budget file is a 404, not an
 	// empty page — the difference between "not collected" and "collected
 	// and empty" matters here as much as it does for programmes.
+	// The vote-alignment map: who votes with whom, computed from the vote index.
+	// Every number on it is derived at request time (internal/analysis), and the
+	// votes it rests on are listed with their proposal text so a reader can check
+	// a cell instead of trusting it.
+	mux.HandleFunc("GET /stemmer", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := stemmerTmpl.Execute(w, buildStemmerView(ds, SnapshotDate)); err != nil {
+			logger.Error("render stemmer", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
 	mux.HandleFunc("GET /budsjett", func(w http.ResponseWriter, r *http.Request) {
 		view, ok := buildBudgetView(ds, "budsjett-2027")
 		if !ok {

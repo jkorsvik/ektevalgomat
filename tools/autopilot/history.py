@@ -214,7 +214,7 @@ def main(argv: list[str]) -> int:
         # it lets a later reader believe it was never searched. It is appended
         # with an empty list, and the report says so in words.
 
-        rows = []
+        rows, dropped = [], 0
         for score, ses, sak in cands:
             try:
                 vo = V.fetch(V.VOTERINGER.format(sak["id"])).get("sak_votering_liste") or []
@@ -240,13 +240,25 @@ def main(argv: list[str]) -> int:
                 vrows.append({"votering_id": vid, "vedtatt": v.get("vedtatt"),
                               "resultat_type": v.get("votering_resultat_type_tekst"),
                               "forslag": forslag[:400], "tally": V.tally(resultat)})
+            # The title score alone produced candidates that share two words and
+            # nothing else: a statement about foreign election influence matched a
+            # case about teaching material on Norwegian war sailors. The vote text is
+            # what decides whether the case is about the same question, so a case
+            # whose votes never mention the statement's subject is dropped here
+            # rather than handed to a reader as a lead.
+            votetext = " ".join(str(v.get("forslag") or "") for v in vrows)
+            overlap = len(want & tokens(votetext))
+            if overlap == 0:
+                dropped += 1
+                continue
             rows.append({"score": score, "session": ses, "sak_id": sak["id"],
                          "title": sak.get("korttittel"), "henvisning": sak.get("henvisning"),
-                         "votes": vrows})
+                         "overlap": overlap, "votes": vrows})
         out.append({"statement": sid, "number": st.get("number"), "text": st.get("text"),
                     "cutoff_session": cutoff, "candidates": rows})
         flush()
-        print(f"[{len(out)}/{len(topics)}] {sid}: {len(rows)} candidate cases", file=sys.stderr, flush=True)
+        print(f"[{len(out)}/{len(topics)}] {sid}: {len(rows)} candidate cases "
+              f"({dropped} dropped: vote text never mentions the subject)", file=sys.stderr, flush=True)
 
     flush()
 

@@ -297,35 +297,45 @@ items:
   kind: history
   statement: utsagn-54
   method: method/history.md
-  status: pending
-  note: 'Lead: the cell "Boligen teller mindre i formuesskatten" holds one date (2026-03-24)
-    and ten vote-based rows. Formuesskatt is voted on in every skatteinnstilling, so an earlier
-    session almost certainly carries a vote on boligverdsettelse. Why this one first: annual
-    recurrence gives it the highest hit probability of any cell, and a second date makes the
-    konsistens score say something instead of "utilstrekkelig grunnlag". Walk it with
-    history.py --statement utsagn-54, then votes.py on the candidate sak ids.
+  status: refused
+  note: 'Lead: the cell "Boligen teller mindre i formuesskatten" holds one date (2026-03-24) and ten vote-based
+    rows. Formuesskatt is voted on in every skatteinnstilling, so an earlier session almost certainly
+    carries a vote on boligverdsettelse. Why this one first: annual recurrence gives it the highest hit
+    probability of any cell, and a second date makes the konsistens score say something instead of "utilstrekkelig
+    grunnlag". Walk it with history.py --statement utsagn-54, then votes.py on the candidate sak ids.
 
     '
+  result: 'REFUSED 2026-10-27: no reliable earlier observation found. Searched all 11,174 cases across
+    the 18 sessions the API serves. emne_liste is empty on most cases, so the subject route returns nothing;
+    the title-overlap fallback produces false positives even after gating on the vote text (6 of 6 dropped
+    for utsagn-59). See docs/roadmap.md, ''The year axis: searched, and mechanically unreachable''.'
 - id: history-utsagn-32-sfo
   kind: history
   statement: utsagn-32
   method: method/history.md
-  status: pending
-  note: 'Lead: "Lovfestet ubetinget rett til 12 timer gratis SFO" holds one date (2026-01-13)
-    over ten vote-based rows. SFO has come back in budgets and in representantforslag across
-    several sessions; the question is whether an earlier session voted on the same obligation
-    or only on the financing. Read the forslag text before treating two votes as one question.
+  status: refused
+  note: 'Lead: "Lovfestet ubetinget rett til 12 timer gratis SFO" holds one date (2026-01-13) over ten
+    vote-based rows. SFO has come back in budgets and in representantforslag across several sessions;
+    the question is whether an earlier session voted on the same obligation or only on the financing.
+    Read the forslag text before treating two votes as one question.
 
     '
+  result: 'REFUSED 2026-10-27: no reliable earlier observation found. Searched all 11,174 cases across
+    the 18 sessions the API serves. emne_liste is empty on most cases, so the subject route returns nothing;
+    the title-overlap fallback produces false positives even after gating on the vote text (6 of 6 dropped
+    for utsagn-59). See docs/roadmap.md, ''The year axis: searched, and mechanically unreachable''.'
 - id: history-utsagn-56-ets2
   kind: history
   statement: utsagn-56
   method: method/history.md
-  status: pending
-  note: 'Lead: "Stans i EUs klimakvotesystem (ETS2)" holds one date (2025-12-09). ETS2 was
-    debated and voted in 2022-2024 sessions before the 2025 stans proposal, which is exactly
-    the shape a second date needs: same question, earlier answer. Verify the party-side match
-    with verify_votes before coding; a vote on the ETS2 directive is not automatically a vote
-    on stopping it.
+  status: refused
+  note: 'Lead: "Stans i EUs klimakvotesystem (ETS2)" holds one date (2025-12-09). ETS2 was debated and
+    voted in 2022-2024 sessions before the 2025 stans proposal, which is exactly the shape a second date
+    needs: same question, earlier answer. Verify the party-side match with verify_votes before coding;
+    a vote on the ETS2 directive is not automatically a vote on stopping it.
 
     '
+  result: 'REFUSED 2026-10-27: no reliable earlier observation found. Searched all 11,174 cases across
+    the 18 sessions the API serves. emne_liste is empty on most cases, so the subject route returns nothing;
+    the title-overlap fallback produces false positives even after gating on the vote text (6 of 6 dropped
+    for utsagn-59). See docs/roadmap.md, ''The year axis: searched, and mechanically unreachable''.'

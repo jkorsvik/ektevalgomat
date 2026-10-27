@@ -2252,3 +2252,45 @@ pointer — each one turns a test red.
 Not done, by design: the log still does not estimate how many readers saw
 each wrong claim, because that number was never measured.
 
+
+## The year axis: searched, and mechanically unreachable (2026-10-27)
+
+`/kart` and `/tidslinje` can only claim a second date for a cell if the dataset
+holds two dated observations of it. It holds nine statement-party pairs that do.
+The other 507 do not, and this is the result of looking for them rather than a
+conclusion drawn from the gap.
+
+`tools/autopilot/history.py` was written for exactly this: find the earlier vote on
+the same question. It indexes every sak in all 18 sessions the API serves (11,174
+cases) and walks evidence -> source_name -> henvisning -> sak -> emne -> earlier
+sessions. Two things break that chain, both measured:
+
+1. `emne_liste` is empty on most cases. The subject-id route therefore finds
+   almost nothing, and a statement like utsagn-54 came back with zero candidates
+   from 11,174 cases.
+2. The fallback is title-word overlap, and it produced candidates that share two
+   words and nothing else. A statement about foreign influence on Norwegian
+   elections was offered a case about teaching material on Norwegian war sailors.
+   Read as leads, those are worse than nothing: they cost a reader's trust in the
+   tool.
+
+The fallback is now gated on the vote text, which is the only field that says what
+a case was actually about: a candidate whose votes never mention the statement's
+subject is dropped and counted. That removed 6 of 6 candidates for utsagn-59 and 1
+of 1 for utsagn-57. Mutation-checked both ways: gate off returns all 6, gate on
+returns none.
+
+Gating is not enough. The candidates that survive for utsagn-53 (higher tax on high
+incomes and wealth) are a wind-power revenue-sharing case, a Nordic double-taxation
+protocol and an uføre reform. They survive on generic words — "skatt", "formue",
+"større andel" — and none of them is a second observation of that question.
+
+And for utsagn-54 there is nothing to find: of 10 cases across 18 sessions that
+mention both housing and tax or valuation, the only two that concern housing value
+in the wealth tax are the two that produced the row we already have.
+
+What would move the axis: a curated map from statement to the *recurring* case that
+votes the same question each year (the annual tax settlement for the tax
+statements), written by someone who knows the field. Matching on titles or subject
+ids cannot produce it. Until then the honest number is nine pairs with two dates,
+and the views say so per cell instead of averaging the gap away.

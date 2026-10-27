@@ -1,0 +1,45 @@
+id: ev-2022-01-21-ap-makspris-mot
+statement_id: utsagn-12
+party_id: ap
+actor: "Arbeiderpartiet (energi- og miljøkomiteen)"
+date: "2022-01-21"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Ap stemte mot Rødts forslag om en lovbestemt makspris på strøm i 2022, og
+  sluttet seg til komitéflertallet som avviste makspris som «en direkte
+  prisregulerende mekanisme» fordi ordningen ikke var utredet.
+claim_action: >
+  Stemte mot Rødts forslag nr. 6 og 7 om en makspris på strøm på 35 øre/kWt
+  (votering_id 18082: 4 for, 95 mot; Ap 0 for, 29 mot av de tilstedeværende).
+  Stemte deretter for komiteens tilråding om at Dokument 8:65 S og 8:66 S ikke
+  vedtas (votering_id 18088: 82 for, 12 mot, Ap 27 for, 0 mot; votering_id
+  18089: 83 for, 15 mot). Etter innstillingens egen lesning betyr det at Ap
+  stemte mot selve forslagene om makspris og toprissystem.
+status: forslag_avvist_stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 122 S (2021–2022); votering_id 18082, 18088, 18089"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2021-2022/inns-202122-122s/?all=true"
+verbatim_excerpt: >
+  Et annet flertall , alle unntatt medlemmene fra Rødt og Kristelig
+  Folkeparti, viser til at det i representantforslagene fremmes forslag blant
+  annet om å innføre en makspris som en direkte prisregulerende mekanisme.
+claim_confidence: dokumentert
+context_note: >
+  Historisk motstykke til ev-2025-06-05-ap-stroemprismakspris-mot, som koder
+  samme celle fra Norgespris-saken i 2025. To datede observasjoner, samme
+  retning: Ap avviser den lovbestemte maksprisen som mekanisme og holder seg
+  til en stønadsordning. Utsagnet er snudd (FLIPPED_2026_09_27), og posisjonen
+  er +1 av samme grunn som i 2025-filen: Ap argumenterer for en annen
+  mekanisme, ikke prinsipielt mot prisregulering som sådan.
+
+  Tre presiseringer som leseren trenger. (1) Sitatet er komitéflertallets
+  begrunnelse, ikke en egen Ap-merknad: Ap er ett av seks partier i dette
+  flertallet («alle unntatt Rødt og Kristelig Folkeparti»), og innstillingen
+  har ingen egen Ap-merknad om makspris. (2) Ap satt i regjering fra
+  2021-10-14, så stemmen er en regjeringsstemme; den sier hva Ap gjorde ved
+  makten, ikke hva Ap lovet i opposisjon. (3) Votering 18082 gjelder Rødts
+  forslag nr. 6 og 7, ikke bare ett forslag, og partitallet er hentet fra
+  data.stortinget.no/eksport/voteringsresultat for hver votering.
+retrieved_at: "2026-10-27"

@@ -9,6 +9,11 @@ scan_summary: "FFI knyttet #OpNorway til en operasjon mot valget 2025."
 claim_action: >
   FFI fant en operasjon eksplisitt knyttet til det norske valget, med
   Telegram/X-aktivitet og cyberaktivitet.
+verbatim_excerpt: >
+  For første gang finner vi et utenlandsk påvirkningsforsøk direkte knyttet
+  til selve valget. En prorussisk hackergruppe gjennomførte en kampanje
+  (#OpNorway) på Telegram og X i kombinasjon med sannsynlige og påståtte
+  tjenestenektangrep mot Høyres og andre norske nettsider.
 status: fremmed_paavirkningsforsok_dokumentert
 position: null
 attribution_confidence: aktorkobling

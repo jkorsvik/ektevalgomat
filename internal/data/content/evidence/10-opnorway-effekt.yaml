@@ -8,6 +8,8 @@ evidence_class: analyse
 scan_summary: "FFI fant ingen påvist effekt av #OpNorway på valgresultatet."
 claim_action: >
   FFI fant ikke at operasjonen hadde effekt på valgresultatet.
+verbatim_excerpt: >
+  Vår vurdering er at dette ikke hadde noen effekt på valget.
 status: ingen_paavist_valgeffekt
 position: null
 attribution_confidence: null

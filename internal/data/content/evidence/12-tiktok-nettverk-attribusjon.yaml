@@ -9,6 +9,8 @@ scan_summary: "FFI kunne ikke fastslå hvem som stod bak TikTok-kontoene."
 claim_action: >
   FFI kunne ikke knytte kontoene til en fremmed stat og opplyser at
   aktørene kan ha vært norske.
+verbatim_excerpt: >
+  I begge tilfeller vurderer vi det som mulig at aktørene bak er norske.
 status: opprinnelse_ukjent
 position: null
 attribution_confidence: ukjent

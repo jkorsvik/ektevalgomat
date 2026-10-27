@@ -11,6 +11,10 @@ scan_summary: "Stortinget vedtok å be om utredning av et lobbyregister."
 claim_action: >
   Vedtok å be presidentskapet sørge for utredning av behovet for og mulig
   utforming av et lobbyregister.
+verbatim_excerpt: >
+  Stortinget vedtok å be Stortingets presidentskap om å sørge for utredning av
+  behovet for og mulig utforming av et register for lobbyisters kontakt med
+  politikere og eventuelt andre i regjeringsapparatet og på Stortinget.
 status: vedtatt
 position: null
 source_tier: A

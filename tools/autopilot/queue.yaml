@@ -252,12 +252,20 @@ items:
   role: harvester
   statement: ''
   method: method/program.md
-  status: pending
+  status: passed
   note: 'Representantforslag (Dokument 8) backfill: positions on questions that were never
     enacted, so no vote exists to cite. data.stortinget.no lists them all with forslagsstiller;
     the forslag text is the position. This is the latent-position layer.
 
     '
+  result: >-
+    Ingested as internal/data/proposals/index.json: 362 records in session 2025-2026
+    that carry named proposers, from data.stortinget.no saker?dokumenttypeid=8.
+    Attribution is to every proposer's party (457 attributions for 362 proposals), so
+    per-party counts are frp 93, sp 75, h 70, sv 52, mdg 43, v 39, krf 33, rodt 33,
+    ap 19. Pasientfokus is kept with an empty party id and reported. Status codes are
+    the source's own (1, 2, 5) and not interpreted. 301 records without proposers are
+    excluded and counted.
 - id: independent-audits
   kind: reference
   role: scout

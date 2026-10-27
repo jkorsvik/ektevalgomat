@@ -72,11 +72,17 @@ items:
   - Norgespris
   - OED
   method: method/budget.md
-  status: running
+  status: pending
   note: 'Lead: Enova is cut while the government calls energy efficiency a main argument for Norgespris.
     Open Prop. 1 S (OED, Enova post), quote the change against a named earlier year.
 
     '
+  result: >-
+    2026-10-27: status was 'running' with no directory under
+    tools/autopilot/staging/, so it claimed work in flight that produced nothing.
+    Reset to pending. The lead itself is still good: Enova's post is cut while the
+    government names energy efficiency as a main argument for Norgespris, and the
+    quote has to come from Prop. 1 S (OED) against a named earlier year.
 - id: budget-bredband
   kind: budget
   statement: utsagn-61

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Kilde: {{.SourceName}}, hentet {{.RetrievedAt}}</span>
+
+  {{/* Derived, never hand-written: every figure is computed from the ownership
+       index at request time. 2026-10-27. */}}
+  <h2>Statens eierskap</h2>
+  <p class="prose-lede">
+    Hva staten eier, hvor stor andel den eier, og hvilken eierkategori selskapet
+    styres etter. {{.Companies}} selskaper, hvorav {{.WhollyOwned}} er heleid og
+    {{.Majority}} er flertallseid. Selskapene Brønnøysund oppgir ansatte for
+    sysselsetter til sammen {{.Employees}} personer
+    ({{.WithEmployees}} av {{.Companies}} selskaper har et oppgitt tall).
+    {{.SpecialLaw}} er særlovselskap.
+  </p>
+
+  <h3>Selskapene</h3>
+  <p class="prose-lede">
+    Sortert etter eierandel. Organisasjonsnummeret lenker til Brønnøysund, så hver
+    rad kan kontrolleres i ett klikk. En tom ansattcelle betyr at registeret ikke
+    oppgir noe tall, ikke at selskapet er tomt.
+  </p>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Selskap</th>
+        <th>Eierandel</th>
+        <th>Kategori</th>
+        <th>Organisasjonsform</th>
+        <th>Ansatte</th>
+        <th>Næring</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Rows}}
+      <tr>
+        <th>
+          {{if .Orgnr}}<a href="{{.BrregURL}}">{{.Company}}</a>{{else}}{{.Company}}{{end}}
+          {{if .SpecialLaw}}<span class="muted"> (særlov)</span>{{end}}
+        </th>
+        <td>{{.Share}} %</td>
+        <td title="{{.CategoryWhy}}">{{.Category}}</td>
+        <td>{{.LegalForm}}</td>
+        <td>{{if .Employees}}{{.Employees}}{{else}}<span class="muted">–</span>{{end}}</td>
+        <td>{{if .Industry}}{{.Industry}}{{else}}<span class="muted">–</span>{{end}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <h3>Kategoriene</h3>
+  <p class="prose-lede">
+    Kategorien styrer hva staten kan kreve av selskapet som eier. 1 er
+    kommersielle mål, 2 er kommersielle mål og sektorpolitiske mål, 3 er
+    sektorpolitiske mål, 4 er andre mål, og «-» betyr at rapporten ikke
+    kategoriserer selskapet.
+  </p>
+
+  <p class="prose-lede">
+    Kilden er åpen: <a href="{{.SourceURL}}">{{.SourceName}}</a>. Indeksen bygges
+    på nytt med <code>tools/analytics/build_ownership_index.py</code>, som bare
+    godtar eksakte navnetreff i Brønnøysund; et selskap uten treff lagres uten
+    organisasjonsnummer i stedet for å gjettes på.
+    Se også <a href="/penger">penger</a>, <a href="/kart">kartet</a> og
+    <a href="/stemmer">stemmemønsteret</a>.
+  </p>
+</main>
+
+{{template "footerlinks"}}
+</body>
+</html>

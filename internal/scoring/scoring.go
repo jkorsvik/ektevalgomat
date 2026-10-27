@@ -7,7 +7,13 @@
 // acted on them.
 package scoring
 
-import "github.com/jkorsvik/ektevalgomat/internal/data"
+import (
+	"sort"
+	"strconv"
+	"strings"
+
+	"github.com/jkorsvik/ektevalgomat/internal/data"
+)
 
 // Cell is the fully computed result for one statement×party pair, ready
 // to render or serialize to the quiz's client-side JSON.
@@ -20,6 +26,19 @@ type Cell struct {
 	// (0), which would manufacture agreement or disagreement nobody has
 	// actually documented.
 	PartyPosition *int `json:"party_position"`
+
+	// PositionMin and PositionMax bound the coded positions behind
+	// PartyPosition. When they straddle zero the cell holds observations on both
+	// sides, and PartyPosition (the mean) must not be shown as "0 (nøytral/delt)":
+	// +2 and -2 average to 0, and 0 on this scale reads as a neutral stance that
+	// nobody documented. Templates show PositionText instead of the bare number.
+	PositionMin int `json:"position_min"`
+	PositionMax int `json:"position_max"`
+
+	// PositionYears holds the distinct years the coded positions are dated to,
+	// ascending. A cell with two of them can say something about change over
+	// time, which is what the consistency label needs and never used to read.
+	PositionYears []int `json:"position_years"`
 
 	Evidensstyrke      string `json:"evidensstyrke"`       // Ingen evidens / Ingen kodet posisjon / Svak / Moderat / Sterk
 	EvidensstyrkeCount int    `json:"evidensstyrke_count"` // how many evidence items are listed for this cell
@@ -78,17 +97,35 @@ func ComputeCell(ds *data.Dataset, statementID, partyID string) Cell {
 
 	if len(codedPositions) > 0 {
 		sum := 0
+		lo, hi := codedPositions[0], codedPositions[0]
 		for _, p := range codedPositions {
 			sum += p
+			if p < lo {
+				lo = p
+			}
+			if p > hi {
+				hi = p
+			}
 		}
 		avg := sum / len(codedPositions)
 		cell.PartyPosition = &avg
+		cell.PositionMin, cell.PositionMax = lo, hi
 	}
+
+	// Distinct years only, ascending: a repeated date is one observation.
+	yearSeen := map[int]bool{}
+	for _, e := range basis {
+		if y, ok := data.YearOf(e.Date); ok && !yearSeen[y] {
+			yearSeen[y] = true
+			cell.PositionYears = append(cell.PositionYears, y)
+		}
+	}
+	sort.Ints(cell.PositionYears)
 
 	cell.EvidensstyrkeCount = len(items)
 	cell.EvidensstyrkeBasis = len(basis)
 	cell.Evidensstyrke = evidensstyrkeLabel(len(items), basis)
-	cell.Konsistens = konsistensLabel(items)
+	cell.Konsistens = konsistensLabel(items, cell.PositionYears, cell.PositionDisagrees())
 
 	return cell
 }
@@ -202,10 +239,12 @@ func clampToCap(label, cap string) string {
 // design review: don't repeat "ingen evidens innhentet ennå" three times
 // on one row) — templates decide whether to show this field at all;
 // see Cell.HasEvidence.
-func konsistensLabel(items []data.Evidence) string {
+func konsistensLabel(items []data.Evidence, years []int, disagrees bool) string {
 	if len(items) == 0 {
 		return "Ingen evidens innhentet ennå"
 	}
+	// An author-set flag outranks the dates: it records a judgement about the
+	// sources that arithmetic cannot make.
 	flags := map[string]bool{}
 	for _, e := range items {
 		if e.ConsistencyFlag != "" {
@@ -217,7 +256,56 @@ func konsistensLabel(items []data.Evidence) string {
 			return humanConsistencyFlag(f)
 		}
 	}
+	// Two dated observations of the same cell can answer the question the flag
+	// used to stand in for. This is the case the label used to miss: it read no
+	// dates at all, so a cell with a documented change of position still said
+	// "ikke nok data".
+	if len(years) >= 2 {
+		span := strconv.Itoa(years[0]) + " og " + strconv.Itoa(years[len(years)-1])
+		if disagrees {
+			return "Endret posisjon mellom " + span
+		}
+		return "Samme posisjon i " + span
+	}
 	return "Ikke nok data til å vurdere utvikling over tid"
+}
+
+// PositionText renders this cell's position the way a reader must see it.
+//
+// It exists because PartyPosition alone can lie about a cell that holds
+// observations on both sides: +2 and -2 average to 0, and 0 on this scale means
+// "nøytral/delt", which is false about both. When the spread straddles zero this
+// returns the two ends and the year span they come from, so the reader sees a
+// change of position instead of a fabricated neutrality.
+func (c Cell) PositionText() string {
+	if c.PartyPosition == nil {
+		return PositionLabel(nil)
+	}
+	if c.PositionMin < 0 && c.PositionMax > 0 {
+		return PositionLabel(&c.PositionMax) + " til " + PositionLabel(&c.PositionMin) +
+			c.yearSpanSuffix()
+	}
+	return PositionLabel(c.PartyPosition)
+}
+
+// PositionDisagrees reports whether the cell holds coded positions on both sides
+// of zero. A mean over such a cell is not a summary of a stance, it is an
+// artefact of arithmetic.
+func (c Cell) PositionDisagrees() bool {
+	return c.PartyPosition != nil && c.PositionMin < 0 && c.PositionMax > 0
+}
+
+// yearSpanSuffix renders " (2022 og 2025)" when the cell is dated to more than one
+// year, and nothing when it is not. It never guesses a span from a single year.
+func (c Cell) yearSpanSuffix() string {
+	if len(c.PositionYears) < 2 {
+		return ""
+	}
+	parts := make([]string, 0, len(c.PositionYears))
+	for _, y := range c.PositionYears {
+		parts = append(parts, strconv.Itoa(y))
+	}
+	return " (" + strings.Join(parts, " og ") + ")"
 }
 
 // PositionLabel renders a coded -2..+2 position (or nil) as Norwegian text

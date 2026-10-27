@@ -210,3 +210,34 @@ func TestTidslinjeShowsTheSpreadWherePositionsDisagree(t *testing.T) {
 		}
 	}
 }
+
+// The statement page is where a reader meets one party's position on one
+// question. FrP voted for a statutory max price in 2022 and against one in 2025,
+// and on utsagn-12 that is a documented reversal. The page must show the two ends
+// and name the change, not print "0 (nøytral/delt)" and "ikke nok data": those are
+// the two strings the averaging bug produced, and they are false about both dates.
+func TestStatementPageShowsADocumentedChangeOfPosition(t *testing.T) {
+	h := New(slog.New(slog.NewTextHandler(os.Stderr, nil)))
+	w := httptest.NewRecorder()
+	h.ServeHTTP(w, httptest.NewRequest("GET", "/utsagn/12", nil))
+	if w.Code != 200 {
+		t.Fatalf("/utsagn/12 answered %d, want 200", w.Code)
+	}
+	body := w.Body.String()
+
+	if !strings.Contains(body, "Endret posisjon mellom 2022 og 2025") {
+		t.Error("the page does not name FrP's change of position between 2022 and 2025")
+	}
+	// html/template escapes "+" as &#43;, so the spread is asserted on the parts
+	// that survive escaping, and the split marker separately.
+	for _, want := range []string{"po-word-delt", "1 (for) til −1 (mot)", "(2022 og 2025)"} {
+		if !strings.Contains(body, want) {
+			t.Errorf("the page does not show %q", want)
+		}
+	}
+	// The stable parties must keep the plain label, so the range does not spread to
+	// cells that do not need it.
+	if !strings.Contains(body, "Samme posisjon i 2022 og 2025") {
+		t.Error("the page does not report the parties whose position held across both years")
+	}
+}

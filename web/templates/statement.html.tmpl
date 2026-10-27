@@ -144,8 +144,10 @@
         {{range .DocumentedRows}}
         <tr>
           <td class="po-party">{{.Party.Short}}</td>
-          <td class="po-word po-word-{{positionWord .Cell.PartyPosition}}">{{positionWord .Cell.PartyPosition}}</td>
-          <td class="po-value">{{positionLabel .Cell.PartyPosition}}</td>
+          {{if positionDisagrees .Cell}}<td class="po-word po-word-delt">delt</td>
+          <td class="po-value">{{positionText .Cell}}</td>
+          {{else}}<td class="po-word po-word-{{positionWord .Cell.PartyPosition}}">{{positionWord .Cell.PartyPosition}}</td>
+          <td class="po-value">{{positionLabel .Cell.PartyPosition}}</td>{{end}}
           <td class="po-link"><a href="#party-{{.Party.ID}}">Grunnlag <span aria-hidden="true">↓</span></a></td>
         </tr>
         {{end}}
@@ -195,7 +197,7 @@
       <h3>{{.Party.Name}} ({{.Party.Short}})</h3>
       <div class="party-verdict">
         <span class="party-word">{{positionWord .Cell.PartyPosition}}</span>
-        {{if .Cell.PartyPosition}}<span class="party-value">{{positionLabel .Cell.PartyPosition}}</span>{{end}}
+        {{if .Cell.PartyPosition}}<span class="party-value">{{positionText .Cell}}</span>{{end}}
       </div>
     </div>
 

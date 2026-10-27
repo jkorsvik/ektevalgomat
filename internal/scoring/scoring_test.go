@@ -1,6 +1,7 @@
 package scoring
 
 import (
+	"strings"
 	"testing"
 
 	"github.com/jkorsvik/ektevalgomat/internal/data"
@@ -266,3 +267,69 @@ func TestUncodedVoteKeepsTheMerknadCapOnUtsagn06(t *testing.T) {
 		}
 	}
 }
+
+// A cell that holds positions on both sides of zero must not be presented as its
+// mean. +2 and -2 average to 0, and 0 on this scale reads as "nøytral/delt",
+// which is false about both observations. This is the defect a harvester found in
+// the utsagn-12 FrP cell: a documented change of position displayed as neutrality.
+func TestPositionTextShowsTheSpreadInsteadOfAMeanThatLies(t *testing.T) {
+	zero := 0
+	split := Cell{PartyPosition: &zero, PositionMin: -2, PositionMax: 2, PositionYears: []int{2022, 2025}}
+	got := split.PositionText()
+	if !strings.Contains(got, "til") {
+		t.Errorf("PositionText() = %q, want the two ends of the spread", got)
+	}
+	for _, want := range []string{"-2", "+2", "2022", "2025"} {
+		if !strings.Contains(got, strings.Replace(want, "-", "−", 1)) {
+			t.Errorf("PositionText() = %q, missing %q", got, want)
+		}
+	}
+	if !split.PositionDisagrees() {
+		t.Error("PositionDisagrees() = false for a cell holding -2 and +2")
+	}
+
+	// A cell whose positions agree keeps the plain label: a mean is a fair summary
+	// there, and replacing it with a range would overstate a single stance.
+	two := 2
+	agree := Cell{PartyPosition: &two, PositionMin: 2, PositionMax: 2, PositionYears: []int{2025}}
+	if agree.PositionDisagrees() {
+		t.Error("PositionDisagrees() = true for a cell holding only +2")
+	}
+	if got := agree.PositionText(); strings.Contains(got, "til") {
+		t.Errorf("PositionText() = %q, want a single label for an agreeing cell", got)
+	}
+
+	// No position at all must never read as neutral.
+	if got := (Cell{}).PositionText(); got != "Ikke vurdert" {
+		t.Errorf("PositionText() on an empty cell = %q, want %q", got, "Ikke vurdert")
+	}
+}
+
+// The consistency label used to read only consistency_flag and never a date, so a
+// cell with two dated observations was labelled "ikke nok data" even when it
+// documented a reversal. Each branch is asserted separately.
+func TestKonsistensLabelReadsTheDates(t *testing.T) {
+	items := []data.Evidence{{Position: ptr(1), Date: "2025-06-05"}}
+
+	if got := konsistensLabel(items, []int{2022, 2025}, true); !strings.Contains(got, "Endret posisjon") ||
+		!strings.Contains(got, "2022") || !strings.Contains(got, "2025") {
+		t.Errorf("konsistensLabel(two years, disagreeing) = %q, want a change naming both years", got)
+	}
+	if got := konsistensLabel(items, []int{2022, 2025}, false); !strings.Contains(got, "Samme posisjon") {
+		t.Errorf("konsistensLabel(two years, agreeing) = %q, want the same-position label", got)
+	}
+	if got := konsistensLabel(items, []int{2025}, false); !strings.Contains(got, "Ikke nok data") {
+		t.Errorf("konsistensLabel(one year) = %q, want the honest not-enough-data label", got)
+	}
+	if got := konsistensLabel(nil, nil, false); got != "Ingen evidens innhentet ennå" {
+		t.Errorf("konsistensLabel(no items) = %q", got)
+	}
+
+	// An author-set flag outranks the dates: it is a judgement, not arithmetic.
+	flagged := []data.Evidence{{Position: ptr(1), Date: "2025-06-05", ConsistencyFlag: "consistent"}}
+	if got := konsistensLabel(flagged, []int{2022, 2025}, true); strings.Contains(got, "Endret") {
+		t.Errorf("konsistensLabel(flagg satt) = %q, want the author's flag to win", got)
+	}
+}
+
+func ptr(n int) *int { return &n }

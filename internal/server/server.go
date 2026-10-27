@@ -580,6 +580,8 @@ func New(logger *slog.Logger) http.Handler {
 		"asset":              withVersion,
 		"positionLabel":      scoring.PositionLabel,
 		"positionWord":       scoring.PositionWord,
+		"positionText":       func(c scoring.Cell) string { return c.PositionText() },
+		"positionDisagrees":  func(c scoring.Cell) bool { return c.PositionDisagrees() },
 		"join":               joinStrings,
 		"trimPrefix":         strings.TrimPrefix,
 		"dimLabel":           dimLabel,

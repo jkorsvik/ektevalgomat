@@ -13,6 +13,11 @@
 // real evidence item needs it.
 package data
 
+import (
+	"strconv"
+	"strings"
+)
+
 // Statement is one of the value statements the valgomat quiz asks about.
 // Phase 1 only populates statements 1-5 (dimension: Demokratisk åpenhet);
 // the other 37 from the source memo's 9-dimension model do not exist yet.
@@ -330,3 +335,21 @@ var validBudgetStages = map[string]bool{
 
 // ValidBudgetStage reports whether stage is one the loader accepts.
 func ValidBudgetStage(stage string) bool { return validBudgetStages[stage] }
+
+// YearOf pulls the year out of an evidence date.
+//
+// Evidence dates are ISO in practice, but a few free-form ones exist in the corpus
+// ("2025 (partiprogram)"), so the parse is deliberately partial and a failure is
+// reported rather than hidden: a caller counts the failures instead of inventing a
+// year. One implementation, shared by every view that slices the record by year.
+func YearOf(date string) (int, bool) {
+	date = strings.TrimSpace(date)
+	if len(date) < 4 {
+		return 0, false
+	}
+	y, err := strconv.Atoi(date[:4])
+	if err != nil || y < 1900 || y > 2100 {
+		return 0, false
+	}
+	return y, true
+}

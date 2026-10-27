@@ -106,8 +106,6 @@ items:
     post.
 
     '
-  last_error: "FAIL\tgithub.com/jkorsvik/ektevalgomat/internal/scoring\t0.243s\nok  \tgithub.com/jkorsvik/ektevalgomat/internal/server\t\
-    0.863s\nok  \tgithub.com/jkorsvik/ektevalgomat/web\t(cached)\nFAIL"
 - id: budget-vindkraft-kommune
   kind: budget
   statement: ''

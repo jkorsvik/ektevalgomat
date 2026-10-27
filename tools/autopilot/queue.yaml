@@ -210,12 +210,19 @@ items:
   role: harvester
   statement: ''
   method: method/reference.md
-  status: pending
+  status: refused
   note: 'Committee membership over time. A merknad is signed by named members, so without
     membership you cannot attribute one, and you cannot explain why a party voted as it did
     on a committee case. From Stortinget organisation data per session.
 
     '
+  result: >-
+    REFUSED with evidence. The Storting's open data has no endpoint for committee
+    membership: six candidate names answer 404 and the singular form answers 400
+    (unknown parameter). Eight attempts are recorded in
+    internal/data/storting/index.json under refused.committee_membership, and
+    TestCommitteeMembershipIsRefusedWithEvidence holds them. What IS ingested from
+    the same source: 169 representatives with party and county, and 16 committees.
 - id: alternates-2026
   kind: budget
   role: harvester-then-verifier

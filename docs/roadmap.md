@@ -2294,3 +2294,50 @@ votes the same question each year (the annual tax settlement for the tax
 statements), written by someone who knows the field. Matching on titles or subject
 ids cannot produce it. Until then the honest number is nine pairs with two dates,
 and the views say so per cell instead of averaging the gap away.
+
+## The bredbånd ratchet, measured (2026-10-27)
+
+The queue said coding utsagn-61 would push the acquiescence spread from 12 to 14
+and that "three institutional rows (01, 02) could ship alone". Both statements
+turned out to need checking against the repo. This is the result of checking, in
+a scratch copy with the staged files added to `internal/data/content/evidence/`:
+
+| what was added | spread (+2 / −2) | `TestAcquiescenceSpreadDoesNotGrow` |
+|---|---|---|
+| nothing (the tree as committed) | 12 / 12 | PASS |
+| H −2, Sp +2, Ap −2 as staged | **14 / 14** | **FAIL** |
+| the institutional row only | 12 / 12 | PASS |
+| a counter statement 62 carrying the same three documents the other way | **11 / 11** | PASS |
+| utsagn-61 rephrased to the avvikle pole, same three documents H +2, Sp −2, Ap +2 | **11 / 11** | PASS |
+
+So the wall is a polarity decision, not a mechanical one: both repairs leave two
+points of headroom under `maxAcquiescenceSpread = 12`, and neither lowers it. A
+modelling pass that predicted 12/12 with 0.04 points of float headroom for the
+counter-statement option was wrong; the Go test is the authority and says 11.
+
+Why three rows move it so much: utsagn-61 has no party codings, so each row
+makes a cell and raises that party's n by one. The rows are each the maximum
+100-point gap on a −2..+2 scale, and they land on the two parties already at the
+extremes, Sp 56.58 (best always-agree) and Ap 44.20 (worst). The statement lifts
+the top and drops the bottom at once, which is why a repair has to mirror the
+codings rather than add an unrelated statement.
+
+Two corrections to the queue's own note, both checked:
+
+1. There are two institutional rows, not three.
+2. Staging `01` is not a new row. Content already holds that claim from the same
+   document as `749-bredband-avviklet`: same statement, same source URL, same
+   date 2026-10-07, same `position: null`, and a `claim_action` that says the
+   same thing in the same words. Only the id and the excerpt fragments differ,
+   and staging 01 adds one figure (over 2 mrd. kroner since 2022).
+
+   The defect the verifier named for SV/Rødt/MDG applies here too: two rows
+   making one claim from one document are not two pieces of evidence. That
+   figure belongs merged into 749, not shipped as a second row. Staging `02`,
+   the post-60 table row (415 632 / 159 110 / no 2027 figure), is genuinely new.
+
+Nothing was promoted. Which pole the quiz asks is the owner's decision, and the
+escape hatch the note offered ("the institutional rows can ship alone") was
+itself half wrong, so acting on it unasked would have put a duplicate in the
+content. The party codings themselves are the adversarial verifier's conclusion
+in `staging/budget-bredband/VERIFIER.md`, quoted here, not re-derived.

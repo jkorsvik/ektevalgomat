@@ -95,12 +95,21 @@ items:
   - dekning
   method: method/budget.md
   status: blocked
-  blocked_on: 'Coding utsagn-61 pushes the acquiescence spread from 12 to 14, over the ratchet of 12 in
-    internal/scoring/acquiescence_test.go: best Sp, worst Ap. gate.py PASSes all 5 files and ekv-verifier
-    SUPPORTED the codings (Ap -2, H -2, Sp +2; SV/Rodt/MDG were WRONG and are set aside in staging/budget-bredband/not-promoted/).
-    The batch cannot be promoted until the statement balance is restored, and the fix is a statement phrased
-    in the opposite direction, which is the owner''s decision: never lower the ratchet. Three institutional
-    rows (01, 02) could ship alone, since they code no party, if the owner prefers to land those first.'
+  blocked_on: 'Measured 2026-10-27 in the driving session, in a scratch copy of the repo with the files
+    added and go test ./internal/scoring -run Acquiescence: the tree as committed is 12/12 PASS; the three
+    staged party rows as coded (H -2, Sp +2, Ap -2) make it 14/14 and the test FAILS. gate.py PASSes all
+    5 files and ekv-verifier SUPPORTED those codings; SV/Rodt/MDG at +1 were WRONG and sit in
+    staging/budget-bredband/not-promoted/ with a REASON.md. Both repairs pass at 11/11: Option A, keep
+    utsagn-61 and add a counter statement 62 with the same three documents coded the other way (61
+    statements); Option B, rephrase utsagn-61 to the avvikle pole and code the same documents H +2, Sp -2,
+    Ap +2 (60 statements). Full numbers in docs/roadmap.md, section «The bredbånd ratchet, measured (2026-10-27)». The
+    ratchet is not lowered, so what is left is the owner''s polarity decision, not a mechanical wall.
+    Correction to this item''s earlier note: there are two institutional rows, not three, and staging 01
+    is not a new row - content already holds that claim from the same document as 749-bredband-avviklet
+    (same statement, same URL, same date, same null position, same claim_action). The only genuinely new
+    institutional row is 02, the post-60 table figures. Promoting 02 alone leaves the spread at 12/12 and
+    is safe whenever the owner wants it; 01 should be merged into 749 as one figure, not shipped as a
+    second row.'
   note: 'Lead: the bredbåndssubsidy is proposed wound down from 2027 while the government still wants
     100 % high-speed coverage. Open the relevant Prop. 1 (Digitaliseringsdepartementet / KDD), quote the
     post.

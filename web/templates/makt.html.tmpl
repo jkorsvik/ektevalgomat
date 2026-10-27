@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Stortingssesjonen {{.Session}}</span>
+
+  {{/* Derived, never hand-written: every figure is computed from the storting,
+       proposals and audits indexes at request time. 2026-10-27. */}}
+  <h2>Makt</h2>
+  <p class="prose-lede">
+    Setene er ressursen et parti fikk, forslagene er hva det gjorde med den.
+    {{.SeatTotal}} representanter og {{.ProposalTotal}} saker med navngitte
+    forslagstillere i sesjonen. Tallene står sammen fordi ingen av dem betyr noe
+    alene: et parti med mange seter og få forslag bruker mandatet sitt annerledes
+    enn et parti med få seter og mange forslag.
+  </p>
+
+  <h3>Seter og forslag per parti</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Parti</th>
+        <th>Seter</th>
+        <th>Andel av setene</th>
+        <th>Saker med forslag</th>
+        <th>Forslag per sete (indeks)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Rows}}
+      <tr>
+        <th title="{{.Name}}">{{.Short}}</th>
+        <td>{{.Seats}}</td>
+        <td>{{.SeatShare}} %</td>
+        <td>{{.Proposals}}</td>
+        <td>{{.PerSeat}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+  <p class="prose-lede">
+    En sak kan ha forslagsstillere fra flere partier, så summen av kolonnen er
+    høyere enn antall saker. Indeksen er antall saker per sete ganger 100, ikke en
+    prosent: den gjør partier med ulik størrelse sammenlignbare.
+  </p>
+
+  <h3>Riksrevisjonen</h3>
+  <p class="prose-lede">
+    {{.AuditCount}} siste rapporter fra statens revisor, nyeste først. Dette er
+    kontrollen med makten de andre tallene beskriver.
+  </p>
+  <table class="data-table">
+    <thead><tr><th>Publisert</th><th>Rapport</th><th>Kategori</th></tr></thead>
+    <tbody>
+      {{range .Audits}}
+      <tr>
+        <td>{{.Published}}</td>
+        <th><a href="{{.URL}}">{{.Title}}</a></th>
+        <td>{{if .Categories}}{{.Categories}}{{else}}<span class="muted">–</span>{{end}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <h3>Kanten av kartet</h3>
+  <p class="prose-lede">
+    To ting står ikke her, og det er kildens grense, ikke en forglemmelse.
+  </p>
+  <p class="prose-lede">
+    <strong>Komitéplasser:</strong> {{.CommitteeRefusal}}
+  </p>
+  <p class="prose-lede">
+    <strong>Revisjonsarkivet:</strong> {{.ArchiveRefusal}}
+  </p>
+
+  <p class="prose-lede">
+    Se også <a href="/stemmer">stemmemønsteret</a>, <a href="/kart">kartet</a>,
+    <a href="/penger">penger</a> og <a href="/eierskap">statens eierskap</a>.
+  </p>
+</main>
+
+{{template "footerlinks"}}
+</body>
+</html>

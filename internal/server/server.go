@@ -613,6 +613,7 @@ func New(logger *slog.Logger) http.Handler {
 	kartTmpl := page("kart.html.tmpl")
 	pengerTmpl := page("penger.html.tmpl")
 	eierskapTmpl := page("eierskap.html.tmpl")
+	maktTmpl := page("makt.html.tmpl")
 	personvernTmpl := page("personvern.html.tmpl")
 	resultatTmpl := page("resultat.html.tmpl")
 	programTmpl := page("program.html.tmpl")
@@ -777,6 +778,15 @@ func New(logger *slog.Logger) http.Handler {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := eierskapTmpl.Execute(w, buildEierskapView(SnapshotDate)); err != nil {
 			logger.Error("render eierskap", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
+	// Derived from the storting, proposals and audits indexes at request time.
+	mux.HandleFunc("GET /makt", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := maktTmpl.Execute(w, buildMaktView(SnapshotDate)); err != nil {
+			logger.Error("render makt", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}
 	})

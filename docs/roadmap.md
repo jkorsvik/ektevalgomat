@@ -51,7 +51,7 @@ written, not today.
   `internal/server/consistency_test.go` fails if its text drifts from
   the code.
 - **Snapshot.** The badge reads "Øyeblikksbilde: hendelser til og med
-  2026-09-23". Sources can be retrieved later (most were), but no
+  2026-10-12". Sources can be retrieved later (most were), but no
   evidence event may be dated after the cutoff. `TestNoEvidenceAfterSnapshotDate`
   enforces it.
 - **Statement page headline** counts coded positions ("Kodet posisjon

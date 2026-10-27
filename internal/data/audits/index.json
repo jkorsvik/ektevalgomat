@@ -1,0 +1,131 @@
+{
+ "source": {
+  "name": "Riksrevisjonen, rapporter",
+  "url": "https://www.riksrevisjonen.no/rapporter/",
+  "retrieved_at": "2026-10-27",
+  "note": "The listing page's most recent reports. This is not the whole archive: the site exposes no sitemap and no working pagination, so older reports cannot be enumerated. Ten recent reports are collected; the limit is recorded under not_collectable rather than left for a reader to discover."
+ },
+ "reports": [
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2026-2027/myndighetenes-arbeid-med-energieffektivisering/",
+   "session": "no-2026-2027",
+   "published": "2026-10-20",
+   "title": "Myndighetenes arbeid med energieffektivisering",
+   "summary": "Norge har store muligheter for energieffektivisering og Stortinget har satt klare mål. Om vi ikke når målene, kan det bidra til at strømprisene blir høyere og at det blir bygget ut mer kraftproduksjon...",
+   "categories": [
+    "Energi",
+    "klima",
+    "miljø"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/bane-nors-eiendomsvirksomhet/",
+   "session": "no-2025-2026",
+   "published": "2026-06-25",
+   "title": "Bane NORs eiendomsvirksomhet",
+   "summary": "Bane NOR-konsernet utvikler boliger, hoteller og næringsbygg i stort omfang. Men mye av dette skjer utenfor normal gangavstand til togstasjonene, og bidrar i liten grad til å understøtte jernbanen.",
+   "categories": [
+    "Samferdsel ·"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/program-felles-ikt-tjenester-for-departementsfellesskapet/",
+   "session": "no-2025-2026",
+   "published": "2026-06-23",
+   "title": "Program Felles IKT-tjenester for departementsfellesskapet",
+   "summary": "Riksrevisjonen retter kritikk mot arbeidet med IKT-sikkerhet i Program Felles IKT-tjenester for departementsfellesskapet. Et hovedmål med å opprette programmet i 2021 var å styrke IKT-sikkerheten.",
+   "categories": [
+    "Digitalisering",
+    "ikt ·"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/kunnskapsdepartementet-sitt-arbeid-for-a-styrkje-lese-skrive-og-rekneferdigheitene-hos-elevane/",
+   "session": "no-2025-2026",
+   "published": "2026-06-16",
+   "title": "Kunnskapsdepartementet sitt arbeid for å styrkje lese-, skrive- og rekneferdigheitene hos elevane",
+   "summary": "Trass i ei langvarig satsing og høg prioritet frå Stortinget, har svært mange elevar svake grunnleggjande ferdigheiter etter grunnskulen.",
+   "categories": [
+    "Utdanning",
+    "forskning"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/myndighetenes-arbeid-med-a-sikre-effektiv-ressursbruk-i-offentlig-sektor/",
+   "session": "no-2025-2026",
+   "published": "2026-06-10",
+   "title": "Myndighetenes arbeid med å sikre effektiv ressursbruk i offentlig sektor",
+   "summary": "Nesten to tredjedeler av statlige virksomheter oppgir at de i liten grad har insentiver til å fremme innsparings- og kuttforslag i budsjettprosessen.",
+   "categories": [
+    "Offentlig forvaltning"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/undersoking-av-kommunale-helse--og-omsorgstenester-til-eldre/",
+   "session": "no-2025-2026",
+   "published": "2026-06-09",
+   "title": "Kommunale helse- og omsorgstenester til eldre",
+   "summary": "Det er allereie mange fleire eldre i samfunnet, men enno er norske kommunar langt i frå førebudde, viser undersøkinga.",
+   "categories": [
+    "Helse ·"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/formalet-med-ukraina-stotten-oppfylt/",
+   "session": "no-2025-2026",
+   "published": "2026-05-19",
+   "title": "Formålet med Ukraina-støtten oppfylt",
+   "summary": "De overordnede formålene for støtten til Ukraina er oppfylt: Den har støttet landets behov og kommet raskt frem. Samtidig er det svakheter i forvaltningen og kontrollen av midlene.",
+   "categories": [
+    "Ukraina",
+    "Nansen"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/forsvarsdepartementets-forvaltning-av-tilskudd-til-militar-stotte-gjennom-nansen-programmet/",
+   "session": "no-2025-2026",
+   "published": "2026-05-19",
+   "title": "Forsvarsdepartementets forvaltning av tilskudd til militær støtte gjennom Nansen-programmet",
+   "summary": "Det ikke er tilfredsstillende at Forsvarsdepartementet etter flere år fremdeles ikke har ferdigstilt et system for internkontroll som sikrer tilstrekkelig oppfølging og kontroll av tilskuddsmidlene i ...",
+   "categories": [
+    "Forsvar",
+    "sikkerhet",
+    "beredskap ·"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/effektiviteten-i-forvaltningen-av-den-norske-militare-stotten-til-ukraina/",
+   "session": "no-2025-2026",
+   "published": "2026-05-19",
+   "title": "Effektiviteten i forvaltningen av den norske militære støtten til Ukraina",
+   "summary": "Forsvarsdepartementet og etatene i sektoren har lagt til rette for at den militære støtten har blitt gitt raskt, og at den har vært i tråd med Ukrainas behov.",
+   "categories": [
+    "Forsvar",
+    "sikkerhet",
+    "beredskap ·"
+   ]
+  },
+  {
+   "url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2025-2026/norsk-stotte-gjennom-den-sivile-delen-av-nansen-programmet/",
+   "session": "no-2025-2026",
+   "published": "2026-05-19",
+   "title": "Norsk støtte gjennom den sivile delen av Nansen-programmet",
+   "summary": "Det er ikke tilfredsstillende at bistandsforvaltningen i flere tilfeller ikke har vurdert risiko for - og/eller risikoreduserende tiltak mot - korrupsjon, og at Utenriksdepartementet ikke har etablert...",
+   "categories": [
+    "Bistand",
+    "utenriks ·"
+   ]
+  }
+ ],
+ "not_collectable": {
+  "archive": {
+   "reason": "Older Riksrevisjonen reports cannot be enumerated by URL from the public site: no sitemap, robots.txt refuses, and the page parameter is ignored.",
+   "attempts": [
+    "/sitemap.xml -> 404",
+    "/sitemap_index.xml -> 404",
+    "/robots.txt -> 403",
+    "/rapporter/?page=2 -> same 10 reports as page 1"
+   ]
+  }
+ }
+}

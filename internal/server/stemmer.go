@@ -144,8 +144,14 @@ func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
 		Matrix:          matrix,
 		Ranked:          ranked,
 	}
-	if len(ranked) > 0 {
-		view.Most, view.Least, view.HasRanking = ranked[0], ranked[len(ranked)-1], true
+	// One definition of the headline pair, in analysis.MostAligned, so the page and
+	// any independent recomputation cannot name different pairs. The previous sort
+	// here broke ties on the comparison count while MostAligned kept the first seen,
+	// and the two disagreed on the real data.
+	if most, least, ok := analysis.MostAligned(pairs); ok {
+		view.Most = lookup[most.A+"/"+most.B]
+		view.Least = lookup[least.A+"/"+least.B]
+		view.HasRanking = len(ranked) > 0
 	}
 
 	for _, v := range votes {

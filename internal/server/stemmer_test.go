@@ -5,6 +5,7 @@ import (
 	"log/slog"
 	"net/http/httptest"
 	"os"
+	"regexp"
 	"strconv"
 	"strings"
 	"testing"
@@ -41,9 +42,27 @@ func TestStemmerPageRendersAndDerivesItsNumbers(t *testing.T) {
 	if len(pairs) == 0 {
 		t.Skip("no pair is compared often enough to rank; nothing to assert")
 	}
-	most, least, ok := analysis.MostAligned(pairs)
-	if !ok {
-		t.Fatal("MostAligned returned ok=false with a non-empty list")
+	// The optimum is recomputed here with its own comparison rather than by calling
+	// analysis.MostAligned: a test that asks the same helper the page asks cannot
+	// notice the helper picking the wrong pair, which is exactly what happened when
+	// the two definitions of "most aligned" disagreed on ties.
+	most, least := pairs[0], pairs[0]
+	better := func(a, b analysis.Pair) bool {
+		if a.Pct() != b.Pct() {
+			return a.Pct() > b.Pct()
+		}
+		if a.Compared != b.Compared {
+			return a.Compared > b.Compared
+		}
+		return a.A < b.A
+	}
+	for _, p := range pairs[1:] {
+		if better(p, most) {
+			most = p
+		}
+		if better(least, p) {
+			least = p
+		}
 	}
 	for _, p := range []analysis.Pair{most, least} {
 		want := fmt.Sprintf("%d %%", int(p.Pct()+0.5))
@@ -57,8 +76,19 @@ func TestStemmerPageRendersAndDerivesItsNumbers(t *testing.T) {
 
 	// The denominator is the whole point of the page: a percentage with no
 	// comparison count reads as stronger evidence than it is.
-	if !strings.Contains(body, fmt.Sprintf("av %d", most.Compared)) {
-		t.Errorf("page does not state the denominator %d next to the most-aligned pair", most.Compared)
+	//
+	// Asserted inside the headline sentence, not across the whole document. The page
+	// is several megabytes of matrix, so any number appears somewhere in it, and a
+	// document-wide Contains let a swapped Most/Least pass.
+	headline := regexp.MustCompile(`(?s)Mest enige:.{0,600}?Minst enige:`).FindString(body)
+	if headline == "" {
+		t.Fatal("the page has no 'Mest enige ... Minst enige' sentence")
+	}
+	if !strings.Contains(headline, fmt.Sprintf("av %d", most.Compared)) {
+		t.Errorf("the headline does not state the denominator %d for the most-aligned pair", most.Compared)
+	}
+	if !strings.Contains(headline, short[most.A]) || !strings.Contains(headline, short[most.B]) {
+		t.Errorf("the headline does not name %s/%s, whose figure it prints", short[most.A], short[most.B])
 	}
 	t.Logf("rendered %d bytes; most aligned %s/%s %.0f%% of %d",
 		len(body), most.A, most.B, most.Pct(), most.Compared)

@@ -82,14 +82,38 @@ func MostAligned(pairs []Pair) (most Pair, least Pair, ok bool) {
 			most, least, ok = p, p, true
 			continue
 		}
-		if p.Pct() > most.Pct() {
+		if betterThan(p, most) {
 			most = p
 		}
-		if p.Pct() < least.Pct() {
+		if betterThan(least, p) {
 			least = p
 		}
 	}
 	return most, least, ok
+}
+
+// betterThan orders two pairs by how much they support the claim they make.
+//
+// The percentage comes first, but a tie must not be broken by whichever pair the
+// loop happened to see first. Among equals the pair compared on more votes wins,
+// because 77 % of 5878 is a stronger statement than 77 % of 12. Identifiers decide
+// the rest so the answer does not depend on map iteration order.
+//
+// This exists because the page and this function disagreed: the page sorted by
+// percentage then count, this one kept the first seen, and they named different
+// pairs as "most aligned". Two definitions of one headline is a defect whichever
+// one renders.
+func betterThan(a, b Pair) bool {
+	if a.Pct() != b.Pct() {
+		return a.Pct() > b.Pct()
+	}
+	if a.Compared != b.Compared {
+		return a.Compared > b.Compared
+	}
+	if a.A != b.A {
+		return a.A < b.A
+	}
+	return a.B < b.B
 }
 
 // VotesByParty counts, per party, how many indexed votes it took a side on. It

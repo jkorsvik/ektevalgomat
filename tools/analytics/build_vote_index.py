@@ -193,6 +193,8 @@ def cited_votes() -> dict[str, dict]:
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--replace", action="store_true",
+                    help="replace the index instead of merging with its existing sessions")
     ap.add_argument("--sessions", default="",
                     help="comma-separated sessions to walk exhaustively, e.g. 2025-2026,2024-2025")
     args = ap.parse_args(argv)
@@ -205,6 +207,22 @@ def main(argv: list[str]) -> int:
 
     wide: dict[int, str] = {}
     sessions = [x.strip() for x in args.sessions.split(",") if x.strip()]
+    # A union with the sessions the index already holds, not a replacement.
+    # The artefact is regenerated from the sessions named, so running one session
+    # on its own used to DELETE every other session's votes: 2075 became 0 while the
+    # run reported success and wrote a smaller file. A partial run may only grow
+    # the corpus. --replace is there for a deliberate rebuild.
+    if sessions and not args.replace and (OUT / "index.json").exists():
+        try:
+            prev = json.loads((OUT / "index.json").read_text()).get("votes") or []
+        except Exception:  # noqa: BLE001 - a broken index is rebuilt, not trusted
+            prev = []
+        keep = sorted({v.get("session") for v in prev if v.get("session")})
+        added = [x for x in keep if x not in sessions]
+        if added:
+            print(f"keeping {len(added)} session(s) already in the index: {', '.join(added)}",
+                  file=sys.stderr)
+            sessions = added + sessions
     if sessions:
         wide = session_votes(sessions)
         print(f"{len(wide)} voterings found by walking {len(sessions)} session(s)", file=sys.stderr)

@@ -610,6 +610,7 @@ func New(logger *slog.Logger) http.Handler {
 	dataTmpl := page("data.html.tmpl")
 	omTmpl := page("om.html.tmpl")
 	stemmerTmpl := page("stemmer.html.tmpl")
+	kartTmpl := page("kart.html.tmpl")
 	personvernTmpl := page("personvern.html.tmpl")
 	resultatTmpl := page("resultat.html.tmpl")
 	programTmpl := page("program.html.tmpl")
@@ -743,6 +744,17 @@ func New(logger *slog.Logger) http.Handler {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := stemmerTmpl.Execute(w, buildStemmerView(ds, SnapshotDate)); err != nil {
 			logger.Error("render stemmer", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
+	// The map: dimension by party, plus the time span behind each party's record.
+	// Derived from the dataset at request time; see internal/analysis/profile.go
+	// for why it draws no trend line.
+	mux.HandleFunc("GET /kart", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := kartTmpl.Execute(w, buildKartView(ds, SnapshotDate)); err != nil {
+			logger.Error("render kart", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}
 	})

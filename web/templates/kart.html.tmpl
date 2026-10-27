@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  {{/* Derived, never hand-written: every cell is computed from the dataset at
+       request time. 2026-10-27. */}}
+  <h2>Kartet</h2>
+  <p class="prose-lede">
+    Hvert partis kodede posisjon per sakområde, regnet ut fra datasettet.
+    Tallet i en celle er gjennomsnittet på skalaen −2 til +2, og tallet i
+    parentes er hvor mange utsagn i det sakområdet partiet faktisk har en kodet
+    posisjon på, av hvor mange utsagn området har. Et gjennomsnitt over 1 av 7
+    utsagn er ikke samme faktum som over 7 av 7.
+  </p>
+
+  <h3>Sakområde × parti</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Sakområde</th>
+        {{range .Parties}}<th>{{.Short}}</th>{{end}}
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Rows}}
+      <tr>
+        <th>{{.Dimension}}</th>
+        {{range .Cells}}
+          {{if .HasData}}<td>{{.Mean}}<span class="muted"> ({{.Coded}}/{{.Statements}})</span></td>
+          {{else}}<td class="muted">–</td>{{end}}
+        {{end}}
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <h3>Hvor langt tilbake rekker kildene</h3>
+  <p class="prose-lede">
+    En posisjon er et faktum på et tidspunkt. For å si noe om utvikling over tid
+    trengs to daterte observasjoner i samme celle. {{.TotalMulti}} av
+    {{.TotalCoded}} kodede posisjoner har det. Resten er enkeltobservasjoner, og
+    det er derfor denne siden ikke tegner noen utviklingskurve.
+  </p>
+  <table class="data-table">
+    <thead>
+      <tr><th>Parti</th><th>Kodede posisjoner</th><th>Med to datoer</th><th>Eldste år</th><th>Nyeste år</th></tr>
+    </thead>
+    <tbody>
+      {{range .Parties}}
+      <tr>
+        <th>{{.Short}}</th>
+        <td>{{.Coded}}</td>
+        <td>{{.MultiDate}}</td>
+        <td>{{if .Oldest}}{{.Oldest}}{{else}}<span class="muted">–</span>{{end}}</td>
+        <td>{{if .Newest}}{{.Newest}}{{else}}<span class="muted">–</span>{{end}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+
+  <p class="prose-lede">
+    Se også <a href="/stemmer">stemmemønsteret</a>: hvem som stemmer med hvem,
+    regnet ut fra de samme kildene.
+  </p>
+</main>
+
+{{template "footerlinks"}}
+</body>
+</html>

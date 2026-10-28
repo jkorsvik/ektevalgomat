@@ -1,0 +1,35 @@
+id: ev-2022-04-07-krf-statsborgerskap-tilbakekall-tidsfrist
+statement_id: utsagn-49
+party_id: krf
+actor: "Kristelig Folkeparti"
+date: "2022-04-07"
+evidence_type: voteringsspor
+evidence_class: uklart
+scan_summary: "KrF stemte for forslaget om en foreldelsesfrist, men også for tilrådingen om at dokumentet ikke skulle vedtas — partiet tok begge sider i samme sak."
+claim_action: >
+  KrF stemte for forslag nr. 1 i Dokument 8:75 S (2021–2022), som ba
+  regjeringen «utrede og fremme forslag om en foreldelsesfrist som etter
+  en gitt tid avskjærer anledningen til å tilbakekalle et statsborgerskap»
+  (votering 18486, KrF 2 for / 0 mot), og stemte deretter for
+  innstillingens tilråding om at «Dokument 8:75 S (2021–2022) … vedtas
+  ikke» (votering 18487, KrF 2 for / 0 mot). De to stemmene peker hver sin
+  vei i samme sak.
+status: forslag_avvist
+source_tier: A
+source_name: "Dokument 8:75 S (2021–2022); votering 18486 og 18487 (07.04.2022)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=18486&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: svak
+context_note: >
+  Ingen posisjon kodet, og det er et resultat, ikke en mangel på arbeid.
+  KrF stemte for det saklige forslaget om foreldelsesfrist (18486) og for
+  tilrådingen som forkastet hele dokumentet (18487). En stemme kan ikke
+  leses som retning når partiet selv gikk begge veier i samme sak, og
+  reglene i tools/autopilot/method/history.md sier at en deling eller en
+  selvmotsigende kilde ikke er en posisjon. Cellen har fra før en KrF-rad
+  datert 2026-04-30 kodet +1 (votering 27523, der KrF stemte for uten
+  motstemme); den står uendret. Denne raden gir cellen en andre dato for
+  *atferd*, men ikke en andre kodet posisjon, så konsistensscoren for
+  KrF er fortsatt utilstrekkelig grunnet. Les votering 18487 invertert:
+  «vedtas ikke» betyr at ja er nei til forslaget.
+retrieved_at: "2026-10-28"

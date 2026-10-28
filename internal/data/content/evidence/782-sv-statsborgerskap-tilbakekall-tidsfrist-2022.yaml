@@ -1,0 +1,32 @@
+id: ev-2022-04-07-sv-statsborgerskap-tilbakekall-tidsfrist
+statement_id: utsagn-49
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2022-04-07"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "SV foreslo sammen med Rødt en foreldelsesfrist for tilbakekall av statsborgerskap og stemte for sitt eget forslag — falt 21 mot 83."
+claim_action: >
+  SV sto bak forslag nr. 1 i Dokument 8:75 S (2021–2022), som ba
+  regjeringen «utrede og fremme forslag om en foreldelsesfrist som etter
+  en gitt tid avskjærer anledningen til å tilbakekalle et statsborgerskap
+  etter statsborgerloven § 26 annet ledd», med unntak for misbruk og for
+  dem som bruker flere identiteter ved alvorlig kriminalitet. Votering
+  18486 (07.04.2022) avgjorde forslag nr. 1, 2 og 3 i én avstemning; nr. 2
+  gjaldt en frist fra forhåndsvarsel til vedtak, nr. 3 et krav om dobbelt
+  statsborgerskap ved tilbakekall. SV 8 for / 0 mot. Forslaget falt 21 mot 83.
+status: forslag_avvist_stemte_for
+position: 2
+source_tier: A
+source_name: "Dokument 8:75 S (2021–2022), forslag nr. 1 (forslag_id 40067938); votering 18486 (07.04.2022)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=18486&format=json"
+claim_confidence: dokumentert
+context_note: >
+  Andre dato i cellen: den eksisterende SV-raden er datert 2026-04-30 og
+  koder +2 fra Innst. 232 S forslag 4, som SV fremmet sammen med Rødt og
+  MDG. Magnituden 2 bæres av at SV selv sto bak forslaget i begge sesjoner
+  (eget forslag, ikke en andres), ikke av avstemningen alene. Retningen er
+  den samme i 2022 og 2026, så cellen står uendret på +2. Saken ble
+  avgjort med votering 18487, tilrådingen om at dokumentet «vedtas ikke»,
+  vedtatt 88 mot 16 med SV på nei-siden.
+retrieved_at: "2026-10-28"

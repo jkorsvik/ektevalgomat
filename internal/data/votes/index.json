@@ -92262,8 +92262,28 @@
     "sv": "for",
     "krf": "for"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2022-04-07-ap-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-frp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-h-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-krf-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-mdg-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-rodt-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-sp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-sv-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-v-statsborgerskap-tilbakekall-tidsfrist"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sp",
+    "sv",
+    "v"
+   ],
    "session": "2021-2022",
    "date": "2022-04-07"
   },
@@ -92282,8 +92302,20 @@
     "sv": "mot",
     "krf": "for"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2022-04-07-ap-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-frp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-krf-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-sv-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-v-statsborgerskap-tilbakekall-tidsfrist"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "krf",
+    "sv",
+    "v"
+   ],
    "session": "2021-2022",
    "date": "2022-04-07"
   },
@@ -255262,7 +255294,13 @@
     "ev-2026-04-30-ap-statsborgerskap-tilbakekall-tidsfrist",
     "ev-2026-04-30-frp-statsborgerskap-tilbakekall-tidsfrist",
     "ev-2026-04-30-h-statsborgerskap-tilbakekall-tidsfrist",
-    "ev-2026-04-30-sp-statsborgerskap-tilbakekall-tidsfrist"
+    "ev-2026-04-30-sp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-ap-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-frp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-h-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-krf-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-sp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2022-04-07-v-statsborgerskap-tilbakekall-tidsfrist"
    ],
    "coded_parties": [
     "sv",
@@ -255301,7 +255339,8 @@
     "ev-2026-04-30-sp-statsborgerskap-skjerpede-krav",
     "ev-2026-04-30-rodt-statsborgerskap-skjerpede-krav",
     "ev-2026-04-30-krf-statsborgerskap-skjerpede-krav",
-    "ev-2026-04-30-v-statsborgerskap-skjerpede-krav"
+    "ev-2026-04-30-v-statsborgerskap-skjerpede-krav",
+    "ev-2022-04-07-rodt-statsborgerskap-tilbakekall-tidsfrist"
    ],
    "coded_parties": [
     "frp",

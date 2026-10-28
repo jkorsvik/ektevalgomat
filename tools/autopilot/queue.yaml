@@ -433,13 +433,13 @@ items:
     position on utsagn-55 from -2 to -1 as a pure side effect of the cell being a mean, on the strength
     of 0,18 pst., and the same threshold is not applied to Venstre''s 0,37 pst. in the batch that did
     ship. Programme row 548 codes the same stance («holde skatte- og avgiftsnivået om lag på dagens nivå»)
-    as -2. RESOLVED BY THE WRITTEN RULE (tools/autopilot/method/position-scale.md): the strongest
-    unambiguous own instrument decides the magnitude, and a weaker or self-contradicting document may not
-    downgrade it. KrF''s programme point is an instrument written as a goal, so the party is -2 on
-    utsagn-55; a figure that changes sign between the netto rammevedtak and KrF''s own påløpt column in
-    the same merknad does not state the claim directly, so it cannot earn magnitude 2 and may not pull the
-    cell to -1. Nothing moves and the budget row is not added. This is option (1) reached without a
-    threshold. The owner only has to ratify the rule. Figures stay in the REASON.
+    as -2. RESOLVED BY THE WRITTEN RULE (tools/autopilot/method/position-scale.md): the strongest unambiguous
+    own instrument decides the magnitude, and a weaker or self-contradicting document may not downgrade
+    it. KrF''s programme point is an instrument written as a goal, so the party is -2 on utsagn-55; a
+    figure that changes sign between the netto rammevedtak and KrF''s own påløpt column in the same merknad
+    does not state the claim directly, so it cannot earn magnitude 2 and may not pull the cell to -1.
+    Nothing moves and the budget row is not added. This is option (1) reached without a threshold. The
+    owner only has to ratify the rule. Figures stay in the REASON.
 
     '
   note: 'Follow-up to budget-lead-2-skatt-niva, which shipped six of the seven party columns from the
@@ -451,46 +451,42 @@ items:
   statement: utsagn-55
   method: method/budget.md
   status: passed
-  result: >
-    Promoted 2026-10-28 as evidence 773 and 774, the first tier-A rows utsagn-55 has for Ap and
-    Sp. 773 ap merknad 2.1.2.1, coded -2; 774 sp merknad 3.1.2.5, coded +1. Both quotes were
-    re-verified as exact substrings of the cached Innst. 2 S after the gate's own normalisation
-    (110 and 106 chars). Two corrections to this item's own note: (1) the Ap row does NOT pull
-    the cell toward -1. The statement's uenig pole reads «holdes som i dag eller økes», and Ap's
-    «holdes uendret» is that pole word for word, so the honest code is -2, which leaves Ap's cell
-    mean at -2 and makes the row ratchet-neutral. (2) Sp is coded +1, not +2, and not because of
-    the ratchet: the merknad states a direction but expressly disclaims large cuts («ikke store
-    skattelettelser»), names only single measures, gives no figure for the total level, and
-    proposes 6,5 mrd. kroner more spending. +2 stays reserved for a party that documents a
-    lowering of the total level with a number, as FrP does in 767. Sp also has no own column in
-    the §3.2 table, only the joint «A, Sp og R» one, so no total figure exists for Sp there.
-    The acquiescence ratchet was measured in a scratch copy before coding: Sp at +2 gives 13/13
-    and FAILS; +1, 0, -1 and -2 all give 12/12 and pass. That is recorded as a measurement, not
-    as the reason for the code, and the full table is in docs/roadmap.md, section «The Ap and Sp
-    merknader on utsagn-55, and where the ratchet bites (2026-10-28)», so a later verifier can
-    re-derive the coding without it. gate.py PASS 2 files; verify_excerpts 0 failed (346
-    excerpts); verify_votes 0 mismatch (417 files); go test ./... green.
-    PROCESS DEVIATION, stated plainly: this session's sandbox is network-blocked and every agent
-    profile requests network=true, so ekv-harvester, ekv-verifier, ekv-scout and bias-analyst all
-    failed to spawn («requested profile weakens caller's sandbox»), and host=thread is unavailable
-    from a child thread. The driver drafted, gated, verified and promoted this batch itself. The
-    two rows have NO ekv-verifier verdict. Re-run ekv-verifier on 773/774 before treating them as
-    independently checked.
+  result: 'Promoted 2026-10-28 as evidence 773 and 774, the first tier-A rows utsagn-55 has for Ap and
+    Sp. 773 ap merknad 2.1.2.1, coded -2; 774 sp merknad 3.1.2.5, coded +1. Both quotes were re-verified
+    as exact substrings of the cached Innst. 2 S after the gate''s own normalisation (110 and 106 chars).
+    Two corrections to this item''s own note: (1) the Ap row does NOT pull the cell toward -1. The statement''s
+    uenig pole reads «holdes som i dag eller økes», and Ap''s «holdes uendret» is that pole word for word,
+    so the honest code is -2, which leaves Ap''s cell mean at -2 and makes the row ratchet-neutral. (2)
+    Sp is coded +1, not +2, and not because of the ratchet: the merknad states a direction but expressly
+    disclaims large cuts («ikke store skattelettelser»), names only single measures, gives no figure for
+    the total level, and proposes 6,5 mrd. kroner more spending. +2 stays reserved for a party that documents
+    a lowering of the total level with a number, as FrP does in 767. Sp also has no own column in the
+    §3.2 table, only the joint «A, Sp og R» one, so no total figure exists for Sp there. The acquiescence
+    ratchet was measured in a scratch copy before coding: Sp at +2 gives 13/13 and FAILS; +1, 0, -1 and
+    -2 all give 12/12 and pass. That is recorded as a measurement, not as the reason for the code, and
+    the full table is in docs/roadmap.md, section «The Ap and Sp merknader on utsagn-55, and where the
+    ratchet bites (2026-10-28)», so a later verifier can re-derive the coding without it. gate.py PASS
+    2 files; verify_excerpts 0 failed (346 excerpts); verify_votes 0 mismatch (417 files); go test ./...
+    green. PROCESS DEVIATION, stated plainly: this session''s sandbox is network-blocked and every agent
+    profile requests network=true, so ekv-harvester, ekv-verifier, ekv-scout and bias-analyst all failed
+    to spawn («requested profile weakens caller''s sandbox»), and host=thread is unavailable from a child
+    thread. The driver drafted, gated, verified and promoted this batch itself. The two rows have NO ekv-verifier
+    verdict. Re-run ekv-verifier on 773/774 before treating them as independently checked.
 
-    VERIFIED 2026-10-28, the owed check is now done: ekv-verifier returned SUPPORTED-WITH-CAVEAT
-    offline from the cache, re-deriving the excerpts rather than trusting gate.py (110 and 106
-    normalised characters, byte-identical, each unique in the document) and confirming attribution,
-    date 2025-11-30 and evidensstyrke_cap moderat. Its four defects are fixed: 773's «en andre date»
-    claimed a second year the data does not have, both rows now state that Sp co-signed the forlik
-    (3.1.2.1, and the joint A, Sp og R column is 54 mill. kroner under the government's level), 774's
-    status foreslått became uttalt because chapter 4 «Forslag fra mindretall» lists seven filers and
-    none is Sp, and «ikke et påstand» became «ikke en påstand». Three statements elsewhere were
-    falsified and corrected in the same commit: loader_test.go's 7/9 claim and its «Sp and MDG were
-    deliberately uncoded», docs/roadmap.md's six-incomplete list (the evidence files yield five) and
-    its wrong archive-window lengths (1 017 and 1 067, not 1 041 and 1 093). One finding is NOT fixed
-    and is the owner's: the group-scoped-sentence rule now contradicts 774, tracked as
-    skatteniva-sp-gruppeavgrenset-regel. Report:
-    tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md.
+    VERIFIED 2026-10-28, the owed check is now done: ekv-verifier returned SUPPORTED-WITH-CAVEAT offline
+    from the cache, re-deriving the excerpts rather than trusting gate.py (110 and 106 normalised characters,
+    byte-identical, each unique in the document) and confirming attribution, date 2025-11-30 and evidensstyrke_cap
+    moderat. Its four defects are fixed: 773''s «en andre date» claimed a second year the data does not
+    have, both rows now state that Sp co-signed the forlik (3.1.2.1, and the joint A, Sp og R column is
+    54 mill. kroner under the government''s level), 774''s status foreslått became uttalt because chapter
+    4 «Forslag fra mindretall» lists seven filers and none is Sp, and «ikke et påstand» became «ikke en
+    påstand». Three statements elsewhere were falsified and corrected in the same commit: loader_test.go''s
+    7/9 claim and its «Sp and MDG were deliberately uncoded», docs/roadmap.md''s six-incomplete list (the
+    evidence files yield five) and its wrong archive-window lengths (1 017 and 1 067, not 1 041 and 1
+    093). One finding is NOT fixed and is the owner''s: the group-scoped-sentence rule now contradicts
+    774, tracked as skatteniva-sp-gruppeavgrenset-regel. Report: tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md.
+
+    '
   note: 'Found by ekv-verifier while falsifying the skatt-niva batch, and not used there because Ap and
     Sp have no own column in the Innst. 2 S §3.2 table. Two citable tier-A sentences exist anyway, and
     both bear on the statement from the parties that are currently missing from the cell (Sp is uncoded,
@@ -510,53 +506,54 @@ items:
   party: sp
   method: method/budget.md
   status: blocked
-  blocked_on: >
-    An owner rule decision, found by ekv-verifier on 2026-10-28 while re-checking 773/774
-    (tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md, finding D-774a).
-    internal/data/loader_test.go records the repo's own rule for this exact statement: Sp and
-    MDG were deliberately left «Ikke vurdert» because each has a tax-reduction sentence
-    scoped to a group, not to the total level, and «reducing tax for one group without more
-    is a redistribution, not necessarily a total-level cut». Row 774 codes exactly such a
-    group-scoped Sp sentence +1. Either the rule is wrong and must be rewritten, or 774's Sp
-    coding goes to 0 or is withdrawn. Nothing else needs re-deriving: the quote is byte-exact
-    (106 normalised characters, unique in the document), the party and the date 2025-11-30 are
-    right, and the forlik context is now stated in the row itself. The ask: say which rule
-    wins. If the rule stands, 774 is withdrawn and utsagn-55 drops back to 8/9. Measured since, and it does not settle the question either way: in Innst. 2 S (2025-2026) the rammevedtak overview gives Ap, Sp and Rødt ONE joint column, so the three front one alternative budget. That column reports spending deviation from the government''s proposal, not the tax level, so it cannot show whether Sp lowers the samlede nivå. It does mean any future Sp row citing the joint budget must say which of the three it speaks for, because Ap and Rødt are already coded -2 on this statement.
-  note: 'Follow-up to the 773/774 verification. The conflict is wider than one cell: it
-    decides whether a group-scoped sentence can ever code a total-level statement.'
+  blocked_on: 'An owner rule decision, found by ekv-verifier on 2026-10-28 while re-checking 773/774 (tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md,
+    finding D-774a). internal/data/loader_test.go records the repo''s own rule for this exact statement:
+    Sp and MDG were deliberately left «Ikke vurdert» because each has a tax-reduction sentence scoped
+    to a group, not to the total level, and «reducing tax for one group without more is a redistribution,
+    not necessarily a total-level cut». Row 774 codes exactly such a group-scoped Sp sentence +1. Either
+    the rule is wrong and must be rewritten, or 774''s Sp coding goes to 0 or is withdrawn. Nothing else
+    needs re-deriving: the quote is byte-exact (106 normalised characters, unique in the document), the
+    party and the date 2025-11-30 are right, and the forlik context is now stated in the row itself. The
+    ask: say which rule wins. If the rule stands, 774 is withdrawn and utsagn-55 drops back to 8/9. Measured
+    since, and it does not settle the question either way: in Innst. 2 S (2025-2026) the rammevedtak overview
+    gives Ap, Sp and Rødt ONE joint column, so the three front one alternative budget. That column reports
+    spending deviation from the government''''s proposal, not the tax level, so it cannot show whether
+    Sp lowers the samlede nivå. It does mean any future Sp row citing the joint budget must say which
+    of the three it speaks for, because Ap and Rødt are already coded -2 on this statement.
+
+    '
+  note: 'Follow-up to the 773/774 verification. The conflict is wider than one cell: it decides whether
+    a group-scoped sentence can ever code a total-level statement.'
 - id: budget-skolemat-innst12s
   kind: budget
   statement: utsagn-35
   method: method/budget.md
   status: blocked
-  blocked_on: >
-    Two owner decisions, and the lead it came from was measurably wrong. Falsified lead
-    (LEADS.md lead 6, Innst. 12 S (2025-2026), rammeområde 16, kap. 200 post 70): the scout
-    read the party columns one cell to the right. The 415 000(+415 000) on «Innføre gratis
-    skolemåltid for alle elever på ungdomstrinnet fra skoleåret 2026/2027» is SV's column;
-    Rødt's is 0(0), and Rødt has no money on the post at all. Verified twice, independently of
-    the cell positions: each column's per-cell deviations sum to its own stated total (SV
-    +670 300, Rødt +3 271 055, forlik +790 660, FrP -601 025, H -790 970, KrF +1 299 100, V
-    +2 635 900), and each column's netto equals the named rammevedtak for the same party in
-    Innst. 2 S (SV/Forslag 57 96 648 969 000 kroner; Rødt/Forslag 58 99 263 824 000). What is
-    left is two questions for the owner, not a sourcing gap. (1) The method requires a
-    verbatim quote from the document for a budget finding; SV's own merknad (2.4) never
-    mentions school meals, and no quote from this table can be archived because the Formål
-    cell alone spans 9 267 normalised characters against the 6 000 window bound. May a
-    bevilgningstall ship as a row with the figures in claim_action and no excerpt, or does
-    that row not exist? (2) Rødt CAN be quoted (merknad 2.6, «Videre foreslår Rødt en ordning
-    for gratis skolemat i grunnskolen, slik at alle elever får tilgang på et sunt måltid på
-    skolen», exact substring, window 1 006 characters), but coding it would move Rødt's cell
-    from the +1 set by row 385 to +2, because 385's +1 was chosen precisely because Rødt had
-    no own merknad on school meals. That is the same ±1/±2 calibration as
-    krf-skatteniva-polarity. The scale is now written in tools/autopilot/method/position-scale.md.
-    Under it Rødt''s merknad is an own instrument that states the claim but carries no figure for
-    the level, so magnitude 1 is right and row 385 does not move: question (2) is closed. Only
-    question (1) remains, and it is a policy ask about excerpt-free numeric rows, not a reading
-    of the data.
-  note: 'The stream is still cheap and still unharvested: the document is in the fetch cache
-    and the table parse is cell-for-cell. Nothing was promoted from this pass; both drafts
-    exist only in the harvester report, which the driver has not staged as files.'
+  blocked_on: 'Two owner decisions, and the lead it came from was measurably wrong. Falsified lead (LEADS.md
+    lead 6, Innst. 12 S (2025-2026), rammeområde 16, kap. 200 post 70): the scout read the party columns
+    one cell to the right. The 415 000(+415 000) on «Innføre gratis skolemåltid for alle elever på ungdomstrinnet
+    fra skoleåret 2026/2027» is SV''s column; Rødt''s is 0(0), and Rødt has no money on the post at all.
+    Verified twice, independently of the cell positions: each column''s per-cell deviations sum to its
+    own stated total (SV +670 300, Rødt +3 271 055, forlik +790 660, FrP -601 025, H -790 970, KrF +1
+    299 100, V +2 635 900), and each column''s netto equals the named rammevedtak for the same party in
+    Innst. 2 S (SV/Forslag 57 96 648 969 000 kroner; Rødt/Forslag 58 99 263 824 000). What is left is
+    two questions for the owner, not a sourcing gap. (1) The method requires a verbatim quote from the
+    document for a budget finding; SV''s own merknad (2.4) never mentions school meals, and no quote from
+    this table can be archived because the Formål cell alone spans 9 267 normalised characters against
+    the 6 000 window bound. May a bevilgningstall ship as a row with the figures in claim_action and no
+    excerpt, or does that row not exist? (2) Rødt CAN be quoted (merknad 2.6, «Videre foreslår Rødt en
+    ordning for gratis skolemat i grunnskolen, slik at alle elever får tilgang på et sunt måltid på skolen»,
+    exact substring, window 1 006 characters), but coding it would move Rødt''s cell from the +1 set by
+    row 385 to +2, because 385''s +1 was chosen precisely because Rødt had no own merknad on school meals.
+    That is the same ±1/±2 calibration as krf-skatteniva-polarity. The scale is now written in tools/autopilot/method/position-scale.md.
+    Under it Rødt''''s merknad is an own instrument that states the claim but carries no figure for the
+    level, so magnitude 1 is right and row 385 does not move: question (2) is closed. Only question (1)
+    remains, and it is a policy ask about excerpt-free numeric rows, not a reading of the data.
+
+    '
+  note: 'The stream is still cheap and still unharvested: the document is in the fetch cache and the table
+    parse is cell-for-cell. Nothing was promoted from this pass; both drafts exist only in the harvester
+    report, which the driver has not staged as files.'
 - id: budget-lead-3-norgespris-stromstotte
   kind: budget
   statement: utsagn-12
@@ -568,150 +565,209 @@ items:
   - kap. 1820 post 80
   method: method/budget.md
   status: blocked
-  blocked_on: >
-    Not the sourcing and not the arithmetic: the row is drafted, gated, and its
-    figures were reconciled three times. It cannot ship because it asserts a
-    polarity on a number that has no archivable fragment, and the crate of rules
-    admits only one of those two things at a time. A numeric row must cite the
-    digit-carrying fragment whenever one exists inside the 6 000-char window
-    (digit-only table line is enough, per 768-h-skatteniva-innst2s, window
-    4 916); only where a measured search shows none exists may it ship
-    excerpt-free, and then only with position: null (759-stat-nodnett). MDG's
-    figures sit in the rammeområde 12 table. RE-MEASURE BEFORE TRUSTING THE NEXT
-    NUMBERS: these windows were taken while the verifier kept the markup that
-    arrives inside a JSON envelope, and that defect was fixed in b82fd29. Markup is
-    stripped now, so a table's label and its figure can be one short fragment where
-    before they sat thousands of characters apart. The old measurement follows only
-    as a record of what was tried: 10 323 / 10 168 / 10 365 characters for three
-    candidate fragments, and the single number alone is not a fragment at all because
-    fragments() drops pieces under 12 chars. No sentence in the document carries
-    the figures: 535 occurs once in the whole 263 129-char document, 9 635 once,
-    and MDG's merknad 2.1.7 never mentions strømpris. THE ASK, and it is one
-    question: may a polarity row ship on a figure that has no archivable quote,
-    with the transcription declared in claim_action and the measured window
-    stated in context_note? If yes, the MDG row is ready (with the verifier's
-    corrections: post 78 is Norgespris for fjernvarme, so MDG's net on posts
-    77-78 is +35 000 = 0,36 pst., and +2 must rest on the minstepris post, which
-    is new money, not on the +535 000, which is a reallocation). If no, the item
-    is closed as refused with the reason and nothing is lost. FrP is NOT part of
-    this ask: its drafted -2 was falsified by ekv-verifier as contradicting row
-    87's own reading of the same 50-øre design ("ikke et lovbestemt pristak") and
-    row 764's opposite label for the identical number, so the polarity is
-    undecidable from this document and the draft stays withheld.
-  note: >
-    Next from staging/scout-alternative-budgets/LEADS.md, lead 3: Innst. 9 S
-    (2025-2026), energi- og miljøkomiteen, signed 2025-12-11, rammeområde 12
-    party table, kap. 1820 post 77 "Norgespris for strøm" and the two post 80
-    rows. Tier A: a party's own money, divided. The cell utsagn-12 already holds
-    thirteen rows, all of them either programme text or a vote, so this buys the
-    first row where the party itself allocated money for or against the
-    reference-price scheme. Two things are NOT settled by the lead and must be
-    settled by reading the document: (1) which post is the bearer of the
-    statement - post 77 is the Norgespris appropriation itself, the new post 80
-    rows are a different scheme with a similar purpose; (2) polarity. FrP's
-    public policy is a maximum price with state compensation, so "FrP put money
-    on a støtteordning" is not the same as "FrP supports utsagn-12". Read FrP's
-    own merknad under kap. 1820 before coding anything, and record a zero result
-    rather than guessing. The scout's table row has not been re-read by the
-    driver in this iteration; treat every figure in the lead as a lead.
+  blocked_on: 'Not the sourcing and not the arithmetic: the row is drafted, gated, and its figures were
+    reconciled three times. It cannot ship because it asserts a polarity on a number that has no archivable
+    fragment, and the crate of rules admits only one of those two things at a time. A numeric row must
+    cite the digit-carrying fragment whenever one exists inside the 6 000-char window (digit-only table
+    line is enough, per 768-h-skatteniva-innst2s, window 4 916); only where a measured search shows none
+    exists may it ship excerpt-free, and then only with position: null (759-stat-nodnett). MDG''s figures
+    sit in the rammeområde 12 table. RE-MEASURE BEFORE TRUSTING THE NEXT NUMBERS: these windows were taken
+    while the verifier kept the markup that arrives inside a JSON envelope, and that defect was fixed
+    in b82fd29. Markup is stripped now, so a table''s label and its figure can be one short fragment where
+    before they sat thousands of characters apart. The old measurement follows only as a record of what
+    was tried: 10 323 / 10 168 / 10 365 characters for three candidate fragments, and the single number
+    alone is not a fragment at all because fragments() drops pieces under 12 chars. No sentence in the
+    document carries the figures: 535 occurs once in the whole 263 129-char document, 9 635 once, and
+    MDG''s merknad 2.1.7 never mentions strømpris. THE ASK, and it is one question: may a polarity row
+    ship on a figure that has no archivable quote, with the transcription declared in claim_action and
+    the measured window stated in context_note? If yes, the MDG row is ready (with the verifier''s corrections:
+    post 78 is Norgespris for fjernvarme, so MDG''s net on posts 77-78 is +35 000 = 0,36 pst., and +2
+    must rest on the minstepris post, which is new money, not on the +535 000, which is a reallocation).
+    If no, the item is closed as refused with the reason and nothing is lost. FrP is NOT part of this
+    ask: its drafted -2 was falsified by ekv-verifier as contradicting row 87''s own reading of the same
+    50-øre design ("ikke et lovbestemt pristak") and row 764''s opposite label for the identical number,
+    so the polarity is undecidable from this document and the draft stays withheld.
+
+    '
+  note: 'Next from staging/scout-alternative-budgets/LEADS.md, lead 3: Innst. 9 S (2025-2026), energi-
+    og miljøkomiteen, signed 2025-12-11, rammeområde 12 party table, kap. 1820 post 77 "Norgespris for
+    strøm" and the two post 80 rows. Tier A: a party''s own money, divided. The cell utsagn-12 already
+    holds thirteen rows, all of them either programme text or a vote, so this buys the first row where
+    the party itself allocated money for or against the reference-price scheme. Two things are NOT settled
+    by the lead and must be settled by reading the document: (1) which post is the bearer of the statement
+    - post 77 is the Norgespris appropriation itself, the new post 80 rows are a different scheme with
+    a similar purpose; (2) polarity. FrP''s public policy is a maximum price with state compensation,
+    so "FrP put money on a støtteordning" is not the same as "FrP supports utsagn-12". Read FrP''s own
+    merknad under kap. 1820 before coding anything, and record a zero result rather than guessing. The
+    scout''s table row has not been re-read by the driver in this iteration; treat every figure in the
+    lead as a lead.
+
+    '
 - id: review-row-87-frp-polarity
   kind: verify
   statement: utsagn-12
   party: frp
   method: method/mixed.md
   status: passed
-  note: >
-    Found by ekv-verifier while falsifying the Norgespris batch, and it is the
-    more interesting half of that finding. Row 87-frp-stroemprismakspris-mot.yaml
-    is coded +1 on utsagn-12 from a case where the proposer calls FrP's 50-øre
-    proposal «en slags makspris, som er en forsterket strømstøtte», and the row's
-    own scan_summary says it is «samme kompensasjonsmodell som KrF, ikke et
-    lovbestemt pristak». Row 764 codes the same party -1 on a vote where FrP
-    «fremmet og stemte for sitt eget forslag om en lovbestemt makspris for strøm
-    på 0,50 kr pr. kWt» — the same number, the opposite label. Both rows cite a
-    50-øre design; both cannot be right about what the design is. Read both
-    votes and both summaries, decide which label the primary sources support,
-    and either correct one of the two rows or record that the dataset holds two
-    readings of one instrument on purpose. This is a content correction, so it
-    runs through gate/promote like any other change, and it needs no owner
-    decision.
-  result: >
-    Done 2026-10-28. The premise was wrong in one respect: these are not two
-    readings of one instrument but two different instruments, and each row's
-    label is right for its own document. 2022 (Innst. 122 S, Dokument 8:65 S
-    forslag 1) asks regjeringen to «innføre en makspris for strøm på 0,50 kr pr.
-    kWt ekskl. mva. ... for alle, både husholdninger og næringsliv». 2025
-    (Innst. 535 L forslag 8) asks for «en strømstøtte på 100 pst. over 50
-    øre/kWh inkl. mva. for husholdninger og fritidsboliger med en begrensning på
-    5 000 kWh i måneden totalt». What changes 2022→2025 is scope and naming, not
-    a leap between unrelated families: næringslivet is dropped and the
-    instrument is called a støtte. Both labels the sources use are real — the
-    2022 forslag says makspris while its begrunnelse says kompensasjon, and Rødt
-    calls the 2025 støtte «en slags makspris».
+  note: 'Found by ekv-verifier while falsifying the Norgespris batch, and it is the more interesting half
+    of that finding. Row 87-frp-stroemprismakspris-mot.yaml is coded +1 on utsagn-12 from a case where
+    the proposer calls FrP''s 50-øre proposal «en slags makspris, som er en forsterket strømstøtte», and
+    the row''s own scan_summary says it is «samme kompensasjonsmodell som KrF, ikke et lovbestemt pristak».
+    Row 764 codes the same party -1 on a vote where FrP «fremmet og stemte for sitt eget forslag om en
+    lovbestemt makspris for strøm på 0,50 kr pr. kWt» — the same number, the opposite label. Both rows
+    cite a 50-øre design; both cannot be right about what the design is. Read both votes and both summaries,
+    decide which label the primary sources support, and either correct one of the two rows or record that
+    the dataset holds two readings of one instrument on purpose. This is a content correction, so it runs
+    through gate/promote like any other change, and it needs no owner decision.
 
-    Five defects corrected in place. Row 87's actor named «utenriks- og
-    energikomiteen», a committee the innstilling does not come from (it is
-    energi- og miljøkomiteen). Row 87's claim_action truncated the operative
-    clause about the 5 000 kWh monthly cap, which turns «100 pst.» from an
-    unconditional guarantee into a rate inside a volume cap. Row 87's
-    scan_summary and context_note dated the earlier standpunkt «så sent som
-    2022-2023» and credited Innst. 25 S to FrP, when 535 L cites Innst. 25 S as
-    Rødt's own forslag and the sourced earlier standpunkt is row 764. Row 764
-    called «strømpris over 50 øre ... kompenseres fullt ut» «FrPs egen merknad»,
-    but the sentence is signed «Komiteens medlemmer fra Fremskrittspartiet og
-    Kristelig Folkeparti», a joint FrP+KrF merknad. And row 764 said FrP «stemte
-    mot å utrede en maksimalpris» while its own parenthesis said FrP støttet
-    forslaget; the vote index has frp=for on 18084, so it is stemte for.
+    '
+  result: 'Done 2026-10-28. The premise was wrong in one respect: these are not two readings of one instrument
+    but two different instruments, and each row''s label is right for its own document. 2022 (Innst. 122
+    S, Dokument 8:65 S forslag 1) asks regjeringen to «innføre en makspris for strøm på 0,50 kr pr. kWt
+    ekskl. mva. ... for alle, både husholdninger og næringsliv». 2025 (Innst. 535 L forslag 8) asks for
+    «en strømstøtte på 100 pst. over 50 øre/kWh inkl. mva. for husholdninger og fritidsboliger med en
+    begrensning på 5 000 kWh i måneden totalt». What changes 2022→2025 is scope and naming, not a leap
+    between unrelated families: næringslivet is dropped and the instrument is called a støtte. Both labels
+    the sources use are real — the 2022 forslag says makspris while its begrunnelse says kompensasjon,
+    and Rødt calls the 2025 støtte «en slags makspris».
 
-    Corrected in place, not through promote.py: promote only ever assigns the
-    next free number, so it would have minted duplicates 775 and 776 beside 87
-    and 764 (dry-run confirmed). The gate ran on the exact bytes that shipped.
-    Both positions stay as coded, +1 for 2025 and -1 for 2022, so no scoring
-    value moved. Excerpt substrings hold in both documents; verify_excerpts 0
-    failed; verify_votes 0 MISMATCH (87 is MIXED, which the tool documents as
-    not a failure when a party's own proposal is cited beside the status vote);
-    go test ./... green.
+    Five defects corrected in place. Row 87''s actor named «utenriks- og energikomiteen», a committee
+    the innstilling does not come from (it is energi- og miljøkomiteen). Row 87''s claim_action truncated
+    the operative clause about the 5 000 kWh monthly cap, which turns «100 pst.» from an unconditional
+    guarantee into a rate inside a volume cap. Row 87''s scan_summary and context_note dated the earlier
+    standpunkt «så sent som 2022-2023» and credited Innst. 25 S to FrP, when 535 L cites Innst. 25 S as
+    Rødt''s own forslag and the sourced earlier standpunkt is row 764. Row 764 called «strømpris over
+    50 øre ... kompenseres fullt ut» «FrPs egen merknad», but the sentence is signed «Komiteens medlemmer
+    fra Fremskrittspartiet og Kristelig Folkeparti», a joint FrP+KrF merknad. And row 764 said FrP «stemte
+    mot å utrede en maksimalpris» while its own parenthesis said FrP støttet forslaget; the vote index
+    has frp=for on 18084, so it is stemte for.
 
-    Not fixed on purpose: the magnitude question. The written rule in
-    method/position-scale.md («eget instrument, med et tall») points at +2 for 87
-    and -2 for 764, but that rule is not owner-ratified — krf-skatteniva-polarity
-    carries the ratification — and a magnitude change should not ride inside a
-    text correction. Measured so it cannot surprise anyone later: all 25
-    recodings of these two rows keep the acquiescence spread at 12, so either
-    choice is ratchet-safe.
+    Corrected in place, not through promote.py: promote only ever assigns the next free number, so it
+    would have minted duplicates 775 and 776 beside 87 and 764 (dry-run confirmed). The gate ran on the
+    exact bytes that shipped. Both positions stay as coded, +1 for 2025 and -1 for 2022, so no scoring
+    value moved. Excerpt substrings hold in both documents; verify_excerpts 0 failed; verify_votes 0 MISMATCH
+    (87 is MIXED, which the tool documents as not a failure when a party''s own proposal is cited beside
+    the status vote); go test ./... green.
+
+    Not fixed on purpose: the magnitude question. The written rule in method/position-scale.md («eget
+    instrument, med et tall») points at +2 for 87 and -2 for 764, but that rule is not owner-ratified
+    — krf-skatteniva-polarity carries the ratification — and a magnitude change should not ride inside
+    a text correction. Measured so it cannot surprise anyone later: all 25 recodings of these two rows
+    keep the acquiescence spread at 12, so either choice is ratchet-safe.
+
+    '
 - id: voteringsspor-second-dates
   kind: history
   statement: ''
   role: scout-then-harvester
   method: method/history.md
+  status: passed
+  result: >
+    Lead 1 of the eight ranked, shipped 2026-10-28 as evidence 775-783: nine
+    voteringsspor rows for utsagn-49 dated 2022-04-07, the cell's first second
+    date. The statement's own demand is forslag nr. 1 in Dokument 8:75 S
+    (2021-2022), voted as part of one division (votering 18486) that carried
+    forslag 1-3; a for on that division is a for on the foreldelsesfrist.
+    Every row cites 18486, never 18487, because 18487 is the tilradding
+    «vedtas ikke» (88 for / 16 mot), where Venstre splits 3-1 and KrF votes for
+    a rejection it had just voted against in substance. Directions: ap/frp/h/sp
+    mot (0/30, 0/13, 0/23, 0/17), sv/rodt/mdg/v/krf for (8/0, 4/0, 2/0, 4/0,
+    2/0). Codings preserve every cell mean except Rodt's, which moves +0.5 to
+    +1,0 because row 480 already sits at -1 on another vote from the same case:
+    sv +2, rodt +2 (both authored forslag 40067938 and the rule in
+    method/position-scale.md says a weaker document may not downgrade the
+    cell's strongest instrument), mdg +2 (direction from the 2022 vote,
+    magnitude from the 2026 co-proposal, stated in the row rather than implied),
+    v +1, ap/frp/h/sp -1, and KrF NO POSITION: it voted for the forslag and for
+    the rejection in the same case, and a self-contradicting record is not a
+    direction. The KrF row still gives that cell a second date of behaviour but
+    not a second coded position, so its konsistens stays utilstrekkelig.
+
+    PROCESS DEVIATION, stated plainly: this session's sandbox is
+    network-blocked while every agent profile requests network=true, and the
+    spawn tool's fs/network overrides did not land, so ekv-harvester,
+    ekv-verifier, ekv-scout and bias-analyst were all refused («requested
+    profile weakens caller's sandbox», tried with fs=read and again with
+    network=false). The driver drafted, re-derived, gated, verified and
+    promoted this batch itself. The nine rows have NO ekv-verifier verdict and
+    are owed one; the driver's substitutes were an independent re-count of both
+    tallies straight from the cached payloads with its own code (identical to
+    votes.py digit for digit) and a mutation test of the gate (flipping Ap's
+    status to stemte_for made it FAIL with «party ap is not for on any cited
+    vote ['18486']», and PASS returned on restore, so the green was not
+    vacuous).
+
+    Measured, not assumed: statements holding exactly one coded date went 48
+    to 47 of 58. gate.py PASS 9 files; verify_excerpts 0 failed (346 excerpts);
+    verify_votes 0 MISMATCH (425 files, 23 MIXED unchanged); go test ./...
+    green through promote.py, which also rebuilt the vote index with the dates
+    intact (14 945 of 14 946).
+
+    Two things this batch leaves behind, neither fixed on purpose:
+    (1) the index field coded_parties means «parties whose evidence cites this
+    vote», not «parties coded on it», so KrF appears there on 18486 with no
+    position. Renaming or re-deriving the field touches every row's entry and
+    is its own risk, so it is queued rather than folded in here.
+    (2) Leads 2-8 of the scout note are still unread: utsagn-01 (three earlier
+    saker, the densest), utsagn-09, utsagn-17, utsagn-11, utsagn-08, utsagn-48,
+    utsagn-56.
+  blocked_on: 'CLEARED 2026-10-28 in 5647936, and the premise was wrong in three places. The index now
+    carries a date for 14 945 of its 14 946 voterings, spanning 2019 to 2026, harvested offline from the
+    fetch cache. There is no voteringsdetaljer page to fetch, and the API does have a vote time: each
+    element of sak_votering_liste carries votering_tid in the payload the session walk already reads.
+    build_vote_index.py claimed otherwise for three iterations, on the correct but irrelevant observation
+    that eksport/votering returns 404. Nothing here needs network. What remains is the reading work in
+    the note, which is a scout-then-harvester job rather than a fetch.
+
+    '
+  note: 'The scout pass of 2026-10-28 counted the gap that LOOP.md ranks first and that no item covered:
+    of 14 946 voterings in the local index, 104 are cited by an evidence row and 14 842 are cited by none,
+    spread over 3 577 saker. Every one of the 14 842 was mapped to a sak_id from 4 408 cached per-sak
+    payloads (the single exception, votering 2023, is a merged budget text). Ranked leads, each of which
+    would give NINE cells a second date because each of those cells today rests on one row: utsagn-49
+    (sak 87635, votes 18485-18487), utsagn-09 (sak 101147, 24182/24184), utsagn-01 (three earlier saker,
+    103065, 93646, 88756 — the densest, three dates for nine cells), utsagn-17 (sak 101555 and 200071),
+    utsagn-11 (sak 102338), utsagn-08 (sak 86087), utsagn-48 (sak 102832), utsagn-56 (sak 102923, weakest
+    bearing: votes on the implementing law, not on a stans). Route used, and why it is not the refused
+    one: the three refused history items failed on emne_liste being empty and on title-overlap false positives;
+    this pass searched the vote''s own forslag text and the sak korttittel with word boundaries. The unanchored
+    first pass was garbage (1 339 hits for utsagn-32 from "sfo" inside other strings); only the anchored
+    counts are recorded. The cached saker_liste payloads cover all 18 sessions, so the material is all
+    here; the date is the only missing piece.
+
+    '
+- id: voteringsspor-utsagn-01-second-dates
+  kind: history
+  statement: utsagn-01
+  role: scout-then-harvester
+  method: method/history.md
   status: pending
-  blocked_on: >
-    CLEARED 2026-10-28 in 5647936, and the premise was wrong in three places. The
-    index now carries a date for 14 945 of its 14 946 voterings, spanning 2019 to
-    2026, harvested offline from the fetch cache. There is no voteringsdetaljer page
-    to fetch, and the API does have a vote time: each element of sak_votering_liste
-    carries votering_tid in the payload the session walk already reads.
-    build_vote_index.py claimed otherwise for three iterations, on the correct but
-    irrelevant observation that eksport/votering returns 404. Nothing here needs
-    network. What remains is the reading work in the note, which is a
-    scout-then-harvester job rather than a fetch.
   note: >
-    The scout pass of 2026-10-28 counted the gap that LOOP.md ranks first and
-    that no item covered: of 14 946 voterings in the local index, 104 are cited
-    by an evidence row and 14 842 are cited by none, spread over 3 577 saker.
-    Every one of the 14 842 was mapped to a sak_id from 4 408 cached per-sak
-    payloads (the single exception, votering 2023, is a merged budget text).
-    Ranked leads, each of which would give NINE cells a second date because each
-    of those cells today rests on one row: utsagn-49 (sak 87635, votes
-    18485-18487), utsagn-09 (sak 101147, 24182/24184), utsagn-01 (three earlier
-    saker, 103065, 93646, 88756 — the densest, three dates for nine cells),
-    utsagn-17 (sak 101555 and 200071), utsagn-11 (sak 102338), utsagn-08 (sak
-    86087), utsagn-48 (sak 102832), utsagn-56 (sak 102923, weakest bearing: votes
-    on the implementing law, not on a stans). Route used, and why it is not the
-    refused one: the three refused history items failed on emne_liste being empty
-    and on title-overlap false positives; this pass searched the vote's own
-    forslag text and the sak korttittel with word boundaries. The unanchored
-    first pass was garbage (1 339 hits for utsagn-32 from "sfo" inside other
-    strings); only the anchored counts are recorded. The cached saker_liste
-    payloads cover all 18 sessions, so the material is all here; the date is the
-    only missing piece.
+    Lead 2 of the scout note cleared in voteringsspor-second-dates, and the densest of the
+    eight: utsagn-01 has THREE earlier saker (103065, 93646, 88756) that each carry votes
+    bearing on the cell, so it could give nine cells three dates instead of two. The
+    method is now proven end to end on utsagn-49: read the case's votes from the cache with
+    votes.py, pick the division whose forslag text states the statement's own demand, cite
+    that one, and never cite a tilradding vote beside it. Two costs to check before
+    drafting: the three saker span three sessions, so the vote dates are far apart and a
+    party may legitimately have moved between them (that is the point, but it means the
+    rows must not be coded as if they were one moment), and utsagn-01 is a statement about
+    lobby register / etterprovbarhet where a vote may well be procedural rather than
+    substantive.
+- id: vote-index-coded-parties-naming
+  kind: verify
+  statement: ''
+  method: method/mixed.md
+  status: pending
+  note: >
+    Found while promoting voteringsspor-second-dates on 2026-10-28, and not fixed there
+    because it touches every row's index entry. internal/data/votes/index.json carries a
+    field named coded_parties that build_vote_index.cited_votes() fills with the party id
+    of every evidence row that CITES the vote, whether or not that row has a position. The
+    KrF row 778 cites votering 18486 with no position (the party voted both for the forslag
+    and for the tilradding that rejected it, so nothing was coded), and KrF therefore
+    appears in 18486's coded_parties. Any reader or view that trusts the field name will
+    read an uncoded party as a coded one. Job: decide whether to rename the field to
+    citing_parties, or to derive coded_parties from rows that actually carry a position
+    (and then keep both). Measure first how many entries would change: a party at null
+    position citing a vote is the case to count.

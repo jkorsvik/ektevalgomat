@@ -758,7 +758,15 @@ items:
   kind: verify
   statement: ''
   method: method/mixed.md
-  status: pending
+  status: passed
+  result: >
+    ANSWERED AND APPLIED 2026-10-28 in 81bb2d9. The field means "coded on", not
+    "cites", which is what its own comment already said. cited_votes() filled it from
+    any row that cited the vote, so a row resolving to position: null still put its
+    party in. It now requires a non-nil position. KrF leaves 18486's coded_parties and
+    stays in cited_by; across the corpus 106 votes are cited and 98 carry a coded
+    party, so eight votes were making a claim they do not support. Renaming was the
+    other option and was not needed.
   note: >
     Found while promoting voteringsspor-second-dates on 2026-10-28, and not fixed there
     because it touches every row's index entry. internal/data/votes/index.json carries a
@@ -771,3 +779,34 @@ items:
     citing_parties, or to derive coded_parties from rows that actually carry a position
     (and then keep both). Measure first how many entries would change: a party at null
     position citing a vote is the case to count.
+
+- id: statsborgerskap-2026-dato-og-pf-stemme
+  kind: history
+  statement: utsagn-49
+  party: ''
+  method: method/history.md
+  status: pending
+  keywords: ['votering 27523', 'Innst. 232 S', 'PF', 'partifri', 'dato']
+  note: >
+    Two measurements the ekv-verifier produced on 2026-10-28 that the nine
+    utsagn-49 rows do not settle, both cheap to close and both able to mislead a
+    reader who trusts them.
+
+    (1) A date that disagrees with itself. The five 2026 rows (473, 474, 483, 484,
+    485) carry date 2026-04-30 and name "votering_id 27523 (30.04.2026)" in
+    source_name. Votering 27523's own votering_tid, harvested into the index in
+    5647936, converts to 2026-05-12. One of the two is wrong and nothing in the repo
+    reconciles them. It does not move the year axis, since both fall in 2026, but an
+    evidence date that is twelve days off is a provenance defect in its own right.
+    The check that settles it: fetch the sak that owns 27523 (it was not in sak
+    101147 on the first attempt) and compare the innstilling's behandlingsdato with
+    the division's timestamp. If 30.04 is the debate and 12.05 the division, the rows
+    should say which one they mean.
+
+    (2) One for-vote with no party. Division 18486 fell 21 for against 83. The nine
+    rows' own per-party breakdown lists 20 of them: KrF 2, MDG 2, R 4, SV 8, V 4. The
+    21st is registered under parti id "PF", which appears in none of the nine parties
+    the API's partier export returns, and which nothing in the repo names. Either it
+    is a partifri representant, in which case the rows should say so, or the tally has
+    a party code the catalogue does not carry. Resolve before the breakdown is quoted
+    anywhere outside the row.

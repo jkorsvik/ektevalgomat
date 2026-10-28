@@ -577,9 +577,13 @@ items:
     (digit-only table line is enough, per 768-h-skatteniva-innst2s, window
     4 916); only where a measured search shows none exists may it ship
     excerpt-free, and then only with position: null (759-stat-nodnett). MDG's
-    figures sit in the rammeområde 12 table, where the markup is ~40x the text:
-    measured windows are 10 323 / 10 168 / 10 365 characters for three candidate
-    fragments, and the single number alone is not a fragment at all because
+    figures sit in the rammeområde 12 table. RE-MEASURE BEFORE TRUSTING THE NEXT
+    NUMBERS: these windows were taken while the verifier kept the markup that
+    arrives inside a JSON envelope, and that defect was fixed in b82fd29. Markup is
+    stripped now, so a table's label and its figure can be one short fragment where
+    before they sat thousands of characters apart. The old measurement follows only
+    as a record of what was tried: 10 323 / 10 168 / 10 365 characters for three
+    candidate fragments, and the single number alone is not a fragment at all because
     fragments() drops pieces under 12 chars. No sentence in the document carries
     the figures: 535 occurs once in the whole 263 129-char document, 9 635 once,
     and MDG's merknad 2.1.7 never mentions strømpris. THE ASK, and it is one

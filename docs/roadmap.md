@@ -2417,3 +2417,19 @@ opposite direction: the fragment that carries the claim turned out to be the pro
 the figure is the part that cannot be stored. The adversarial verifier had asked for the
 sentence to be *added* to the table excerpt; it would have been added to a window that
 already breaks the bound, and it is now the excerpt instead.
+
+### Where the vote corpus stands, measured
+
+The index is committed with 5 sessions: 2021-2022, 2022-2023, 2023-2024, 2024-2025, 2025-2026. Sessions still
+to walk, 13 of 18: 2009-2010, 2010-2011, 2011-2012, 2012-2013, 2013-2014, 2014-2015, 2015-2016, 2016-2017, 2017-2018, 2018-2019, 2019-2020, 2020-2021, 2026-2027.
+
+The cost is the API, not the code. Tally and proposal text are one request each, and
+the API sustains about 100 of them a minute from here before it starts answering 429.
+A session of 600-900 cases yields 2,400-4,800 voterings, so each costs 45 minutes to
+an hour and a half of fetching. The parallel three-worker pool behind the shared gate
+is what makes that viable; six workers earned the rate limit instead of staying under
+it and killed a run at 90 %.
+
+Progress survives a restart, because every response is cached by URL and the artefact
+is written once at the end: a killed run costs the walk, not the fetches. That is also
+why the artefact can never be half-built.

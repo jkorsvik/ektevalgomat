@@ -1,0 +1,59 @@
+id: ev-2026-innst2s-frp-skatteniva-total
+statement_id: utsagn-55
+party_id: frp
+actor: "Fremskrittspartiet (finanskomiteen, FrPs alternative budsjett)"
+date: "2025-11-30"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  FrPs eget budsjett tar inn 51,4 mrd. kroner mindre i skatter og avgifter enn
+  regjeringens: rad 21 «Skatter og avgifter» går fra -1 862 746 244 til
+  -1 811 310 244, avvik +51 436 000 (tusen kroner), 2,8 pst. av nivået. Det er
+  den klart største senkingen av det samlede nivået av alle partiene i tabellen.
+claim_action: >
+  Fremskrittspartiets eget budsjettforslag senker det samlede skatte- og
+  avgiftsnivået med 51,4 mrd. kroner mot regjeringens forslag. I tabellen i
+  punkt 3.2 står FrP-kolonnen i rad 21 med -1 811 310 244 mot regjeringens
+  -1 862 746 244, og avviket står i parentes som +51 436 000 (alle tall i
+  1 000 kroner). Raden er negativ fordi skatter og avgifter er en inntekt i
+  netto rammevedtak; et positivt avvik betyr derfor at det tas inn MINDRE enn
+  regjeringen foreslår, altså et lavere samlet nivå. FrPs egen merknad i punkt
+  3.1.2.2 sier det samme i ord og egen tallrekke: «samlede skatte- og
+  avgiftslettelser på 54 mrd. kroner», sammensatt av skattelette
+  35 720 000 000, avgiftskutt 16 016 000 000 og forbedret strømstøtte
+  2 000 000 000 (total 53 736 000 000). Strømstøtten er en utgiftspost og
+  inngår ikke i rad 21; de resterende 0,3 mrd. kroner mellom 51 736 og 51 436
+  er ikke forklart i dokumentet.
+verbatim_excerpt: >
+  Fremskrittspartiets alternative statsbudsjett inneholder samlede skatte- og
+  avgiftslettelser på 54 mrd. kroner, herunder skattelette på 36 mrd. kroner,
+  avgiftskutt på 16,0 mrd. kroner og forbedret strømstøtte på 2,0 mrd. kroner.
+status: foreslått
+position: 2
+source_tier: A
+source_name: >
+  Innst. 2 S (2025–2026), finanskomiteen, punkt 3.2 «Oversikt over partienes
+  forslag til rammevedtak», rad 21 «Skatter og avgifter», FrP-kolonnen;
+  sitatet er fra punkt 3.1.2.2 «Merknader fra Fremskrittspartiet»
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+evidensstyrke_cap: "moderat"
+context_note: >
+  Kolonneoverskriften i tabellen er ordrett «Komité | Nr. | (tomt felt) |
+  Prop. 1 S (2025–2026) Gul bok | A, Sp og R | FrP | H | SV | R | MDG | KrF |
+  V», så FrP er første partikolonne og det er den som står med
+  «-1 811 310 244 (+51 436 000)». To uavhengige kontroller i samme dokument:
+  (1) kapittel 4 «Forslag fra mindretall» fører FrPs eget rammevedtak nr. 21
+  med -1 811 310 244 000 kroner, altså nøyaktig samme beløp ganget med 1 000;
+  (2) FrPs merknad i 3.1.2.2 oppgir egne samlede lettelser på 54 mrd. kroner
+  (53,736 mrd. med strømstøtten inkludert). Kodet +2: 51,4 mrd. kroner er
+  2,8 pst. av det samlede nivået på 1 862,7 mrd. kroner, en substantiell
+  senking og ikke en avrundingsdifferanse. Forslaget er ikke vedtatt:
+  innledningen sier at forhandlingene ikke førte frem og at «det er derfor
+  ikke flertall for noe rammeforslag i denne innstillingen»; Ap, Sp og R
+  fremmet forliket sitt som komiteens tilråding. Sitatet er en setning i FrPs
+  merknad, ikke et tabellutsnitt, fordi et utsnitt som spenner over tabellraden
+  sprenger arkivvinduet (målt: rad 21s etikett pluss første kolonne gir alene
+  5 805 tegn mot grensen 6 000). Dokumentet er datert «Oslo, i finanskomiteen,
+  den 30. november 2025».
+retrieved_at: "2026-10-27"

@@ -1,0 +1,52 @@
+id: ev-2026-innst2s-mdg-skatteniva-total
+statement_id: utsagn-55
+party_id: mdg
+actor: "Miljøpartiet De Grønne (finanskomiteen, MDGs alternative budsjett)"
+date: "2025-11-30"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  MDGs eget budsjett tar inn 38,1 mrd. kroner MER i skatter og avgifter enn
+  regjeringens: rad 21 «Skatter og avgifter» går fra -1 862 746 244 til
+  -1 900 829 044, avvik -38 082 800 (tusen kroner), 2,04 pst. av nivået. Det
+  er den største hevingen av det samlede nivået i tabellen.
+claim_action: >
+  MDGs alternative budsjett hever det samlede skatte- og avgiftsnivået med
+  38,1 mrd. kroner mot regjeringens forslag, altså det motsatte av hva
+  utsagnet ber om. MDG-kolonnen i rad 21 i punkt 3.2 står med -1 900 829 044
+  mot regjeringens -1 862 746 244; avviket i parentes er -38 082 800 (alle
+  tall i 1 000 kroner). Raden er negativ fordi skatter og avgifter er en
+  inntekt i netto rammevedtak, så et negativt avvik betyr at det tas inn mer
+  enn regjeringen foreslår. Sitatet er MDGs egen celle i rad 21, ordrett
+  (-1 900 829 044 med avviket -38 082 800 i parentes), fordi MDGs merknader i
+  dette dokumentet ikke inneholder noen setning om det samlede skatte- og
+  avgiftsnivået og ingen egen skattetabell.
+verbatim_excerpt: >
+  -1 900 829 044 (-38 082 800)
+status: foreslått
+position: -2
+source_tier: A
+source_name: >
+  Innst. 2 S (2025–2026), finanskomiteen, punkt 3.2 «Oversikt over partienes
+  forslag til rammevedtak», rad 21 «Skatter og avgifter», MDG-kolonnen
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+evidensstyrke_cap: "moderat"
+context_note: >
+  Kolonneoverskriften er ordrett «Komité | Nr. | (tomt felt) | Prop. 1 S
+  (2025–2026) Gul bok | A, Sp og R | FrP | H | SV | R | MDG | KrF | V», så MDG
+  er kolonnen mellom R og KrF, og det er den som står med «-1 900 829 044
+  (-38 082 800)». Kontroll i samme dokument: kapittel 4 «Forslag fra
+  mindretall» fører MDGs eget rammevedtak nr. 21 med -1 900 829 044 000
+  kroner, samme beløp ganget med 1 000. MDGs to merknader (2.1.2.7 og 3.1.2.7)
+  er gjennomgått: de handler om oljeinvesteringer, naturregnskap, arbeidsliv og
+  kollektivtransport, nevner ikke det samlede skatte- og avgiftsnivået og har
+  ingen tall for MDGs skatteopplegg; 3.1.2.7 viser til 2.1.2.7 og fremmer i
+  tillegg en rekke enkeltforslag (flyseteavgift, VOEC, mva-fritak,
+  produksjonsavgift) uten samlet tall. Derfor er sitatet et tabellutsnitt uten løpende prosa, ikke en
+  setning. Kodet -2: 2,04 pst. av nivået er en klar heving. Forslaget er ikke
+  vedtatt: innledningen sier at «det er derfor ikke flertall for noe
+  rammeforslag i denne innstillingen». Vinduet for dette utsnittet er målt til
+  5 071 tegn, under grensen på 6 000 men med liten margin. Dokumentet er
+  datert «Oslo, i finanskomiteen, den 30. november 2025».
+retrieved_at: "2026-10-27"

@@ -1,0 +1,55 @@
+id: ev-2026-innst2s-rodt-skatteniva-total
+statement_id: utsagn-55
+party_id: rodt
+actor: "Rødt (finanskomiteen, Rødts alternative budsjett)"
+date: "2025-11-30"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødts eget budsjett tar inn 28,6 mrd. kroner MER i skatter og avgifter enn
+  regjeringens: rad 21 «Skatter og avgifter» går fra -1 862 746 244 til
+  -1 891 383 244, avvik -28 637 000 (tusen kroner), 1,54 pst. av nivået.
+claim_action: >
+  Rødts alternative budsjett hever det samlede skatte- og avgiftsnivået med
+  28,6 mrd. kroner mot regjeringens forslag, altså det motsatte av hva
+  utsagnet ber om. R-kolonnen i rad 21 i punkt 3.2 står med -1 891 383 244 mot
+  regjeringens -1 862 746 244; avviket i parentes er -28 637 000 (alle tall i
+  1 000 kroner). Raden er negativ fordi skatter og avgifter er en inntekt i
+  netto rammevedtak, så et negativt avvik betyr at det tas inn mer enn
+  regjeringen foreslår, altså et høyere samlet nivå. Rødt sier det samme i
+  ord i merknaden (punkt 3.1.2.6): Rødts skattemodell «øker de samlede
+  inntektene til fellesskapet» mens skatten kuttes for vanlige lønnsmottakere.
+verbatim_excerpt: >
+  Rødts skattemodell viser at det er mulig å både kutte skattene til vanlige
+  folk og øke de samlede inntektene til fellesskapet for å finansiere viktige
+  velferdsreformer.
+status: foreslått
+position: -2
+source_tier: A
+source_name: >
+  Innst. 2 S (2025–2026), finanskomiteen, punkt 3.2 «Oversikt over partienes
+  forslag til rammevedtak», rad 21 «Skatter og avgifter», R-kolonnen; sitatet
+  er fra punkt 3.1.2.6 «Merknader fra Rødt»
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+evidensstyrke_cap: "moderat"
+context_note: >
+  R har egen kolonne i tabellen («... | SV | R | MDG | KrF | V»), og den er
+  brukt; R sitter samtidig i forlikskolonnen «A, Sp og R», men det er Rødts
+  eget budsjett som kodes her. Kontroller i samme dokument: (1) kapittel 4
+  «Forslag fra mindretall» fører Rødts eget rammevedtak nr. 21 med
+  -1 891 383 244 000 kroner, samme beløp ganget med 1 000; (2) Rødts merknad
+  oppgir egne inntektsøkninger på «omtrent 13 mrd. kroner» på inntekt og
+  utbytte og «om lag 15 mrd. kroner» på formue; de to summene ligger nær de
+  28,6 mrd. kronene i rad 21, men merknaden øker også selskaps- og
+  finansskatt, så likheten er en avrunding og ikke en avstemming; (3) Rødts merknad
+  sier samtidig at Rødt foreslår «å kutte skatten til det store flertallet av
+  befolkningen» — det er omfordeling innenfor et høyere totalnivå, samme regel
+  som kontekstfil 543 bruker, og ikke en senking av nivået. Kodet -2: 1,54 pst.
+  av nivået er en klar, ikke marginal, heving. Forslaget er ikke vedtatt:
+  innledningen sier at «det er derfor ikke flertall for noe rammeforslag i
+  denne innstillingen». Sitatet er en løpende setning i Rødts merknad, ikke et
+  tabellutsnitt; et utsnitt over tabellraden ville sprenge arkivvinduet (målt:
+  rad 21s etikett pluss første kolonne gir 5 805 tegn mot grensen 6 000).
+  Dokumentet er datert «Oslo, i finanskomiteen, den 30. november 2025».
+retrieved_at: "2026-10-27"

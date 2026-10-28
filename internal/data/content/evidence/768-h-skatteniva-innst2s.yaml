@@ -1,0 +1,58 @@
+id: ev-2026-innst2s-h-skatteniva-total
+statement_id: utsagn-55
+party_id: h
+actor: "Høyre (finanskomiteen, Høyres alternative budsjett)"
+date: "2025-11-30"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Høyres eget budsjett tar inn 15,8 mrd. kroner mindre i skatter og avgifter
+  enn regjeringens: rad 21 «Skatter og avgifter» går fra -1 862 746 244 til
+  -1 846 992 244, avvik +15 754 000 (tusen kroner), 0,85 pst. av nivået.
+claim_action: >
+  Høyres alternative budsjett senker det samlede skatte- og avgiftsnivået med
+  15,8 mrd. kroner mot regjeringens forslag. H-kolonnen i rad 21 i punkt 3.2
+  står med -1 846 992 244 mot regjeringens -1 862 746 244; avviket i parentes
+  er +15 754 000 (alle tall i 1 000 kroner). Raden er negativ fordi skatter og
+  avgifter er en inntekt i netto rammevedtak, så et positivt avvik betyr at det
+  tas inn mindre enn regjeringen foreslår, altså et lavere samlet nivå. Høyres
+  egen tabell i merknaden (punkt 3.1.2.3) sier det samme med sine egne tall:
+  linjen «Netto reduksjon i skatte- og avgiftsnivået» viser -16 168 og -17 118
+  mill. kroner. Kolonneoverskriften i den tabellen er «Skatteendringer (tall i
+  mill. kroner) 2026 påløpt», så bare den første kolonnen er merket påløpt;
+  at den andre er bokført er en slutning fra tallrekkefølgen, ikke en etikett
+  i kilden. Utsagnet som er sitert er Høyres egen
+  tabellinje, ikke et utsnitt som spenner over tabellraden.
+verbatim_excerpt: >
+  Netto reduksjon i skatte- og avgiftsnivået -16 168 -17 118
+status: foreslått
+position: 2
+source_tier: A
+source_name: >
+  Innst. 2 S (2025–2026), finanskomiteen, punkt 3.2 «Oversikt over partienes
+  forslag til rammevedtak», rad 21 «Skatter og avgifter», H-kolonnen; sitatet
+  er fra Høyres egen skattetabell i punkt 3.1.2.3 «Merknader fra Høyre»
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+evidensstyrke_cap: "moderat"
+context_note: >
+  Kolonneoverskriften er ordrett «Komité | Nr. | (tomt felt) | Prop. 1 S
+  (2025–2026) Gul bok | A, Sp og R | FrP | H | SV | R | MDG | KrF | V», så H er
+  kolonnen rett etter FrP, og det er den som står med «-1 846 992 244
+  (+15 754 000)». To uavhengige kontroller i samme dokument: (1) kapittel 4
+  «Forslag fra mindretall» fører Høyres eget rammevedtak nr. 21 med
+  -1 846 992 244 000 kroner, altså samme beløp ganget med 1 000; (2) Høyres
+  egen tabell i 3.1.2.3 oppgir netto reduksjon i skatte- og avgiftsnivået på
+  16 168 (påløpt) / 17 118 (bokført) mill. kroner, og finansieringstabellen i
+  samme merknad fører linjen «Memo Skatt (se egen tabell) 16 178 000». Tre
+  H-tall på 15,8, 16,2 og 17,1 mrd. kroner er altså ikke en motsigelse, men
+  ulike målebasiser (rammevirkning i rad 21 mot påløpt og bokført i Høyres egen
+  tabell); rad 21-tallet er det som er kodet her. Kodet +2: 15,8 mrd. kroner er
+  0,85 pst. av nivået på 1 862,7 mrd. kroner og Høyre beskriver det selv som en
+  netto reduksjon av nivået, ikke som en omlegging. Forslaget er ikke vedtatt:
+  innledningen sier at «det er derfor ikke flertall for noe rammeforslag i
+  denne innstillingen». Sitatet er en tabellinje fordi Høyres merknad ikke har
+  en løpende setning om det samlede nivået; et utsnitt over hele tabellraden
+  ville sprenge arkivvinduet (målt: 4 916 tegn for denne linjen, mot grensen
+  6 000). Dokumentet er datert «Oslo, i finanskomiteen, den 30. november 2025».
+retrieved_at: "2026-10-27"

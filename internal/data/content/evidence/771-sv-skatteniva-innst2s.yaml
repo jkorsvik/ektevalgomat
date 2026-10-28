@@ -1,0 +1,53 @@
+id: ev-2026-innst2s-sv-skatteniva-total
+statement_id: utsagn-55
+party_id: sv
+actor: "Sosialistisk Venstreparti (finanskomiteen, SVs alternative budsjett)"
+date: "2025-11-30"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  SVs eget budsjett tar inn 32,3 mrd. kroner MER i skatter og avgifter enn
+  regjeringens: rad 21 «Skatter og avgifter» går fra -1 862 746 244 til
+  -1 895 045 244, avvik -32 299 000 (tusen kroner), 1,73 pst. av nivået.
+claim_action: >
+  SVs alternative budsjett hever det samlede skatte- og avgiftsnivået med
+  32,3 mrd. kroner mot regjeringens forslag, altså det motsatte av hva
+  utsagnet ber om. SV-kolonnen i rad 21 i punkt 3.2 står med -1 895 045 244 mot
+  regjeringens -1 862 746 244; avviket i parentes er -32 299 000 (alle tall i
+  1 000 kroner). Raden er negativ fordi skatter og avgifter er en inntekt i
+  netto rammevedtak, så et negativt avvik betyr at det tas inn mer enn
+  regjeringen foreslår. Sitatet er SVs egen celle i rad 21, ordrett
+  (-1 895 045 244 med avviket -32 299 000 i parentes), fordi SVs merknad i
+  dette dokumentet ikke har noen setning eller tabell som oppgir SVs samlede
+  skatte- og avgiftsnivå.
+verbatim_excerpt: >
+  -1 895 045 244 (-32 299 000)
+status: foreslått
+position: -2
+source_tier: A
+source_name: >
+  Innst. 2 S (2025–2026), finanskomiteen, punkt 3.2 «Oversikt over partienes
+  forslag til rammevedtak», rad 21 «Skatter og avgifter», SV-kolonnen
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+evidensstyrke_cap: "moderat"
+context_note: >
+  Kolonneoverskriften er ordrett «Komité | Nr. | (tomt felt) | Prop. 1 S
+  (2025–2026) Gul bok | A, Sp og R | FrP | H | SV | R | MDG | KrF | V», så SV
+  er tredje partikolonne, og det er den som står med «-1 895 045 244
+  (-32 299 000)». Kontroll i samme dokument: kapittel 4 «Forslag fra
+  mindretall» fører SVs eget rammevedtak nr. 21 med -1 895 045 244 000 kroner,
+  samme beløp ganget med 1 000; det er en selvstendig bekreftelse av at
+  kolonnen er SVs eget budsjett, siden SVs merknad selv ikke har noe samlet
+  tall. SVs merknad (3.1.2.4) argumenterer i samme retning uten tall for
+  totalen: «I en tid med altfor stor ulikhet og klimakrise må skattesystemet
+  omfordele mer ... gi inntekter til å opprettholde og bygge ut velferdsstaten»,
+  og SV foreslår å øke personfradraget i inntektsskatten med 24 mrd. kroner
+  samtidig som skattene på høye inntekter, formue og bankoverskudd økes.
+  Kodet -2: 1,73 pst. av nivået er en klar heving. Forslaget er ikke vedtatt:
+  innledningen sier at «det er derfor ikke flertall for noe rammeforslag i
+  denne innstillingen». Merk at sitatet er et tabellutsnitt uten løpende
+  prosa, jf. at SV ikke har noen samlet tallsetning i dokumentet; vinduet for
+  dette utsnittet er målt til 5 284 tegn, under grensen på 6 000 men med liten
+  margin. Dokumentet er datert «Oslo, i finanskomiteen, den 30. november 2025».
+retrieved_at: "2026-10-27"

@@ -170,3 +170,52 @@ func TestStemmerPageStatesItsSessionCoverage(t *testing.T) {
 	}
 	t.Logf("%d sessions, %d of %d votes with a session", len(want), withSession, data.VoteCount())
 }
+
+// The vote list exists so a reader can check a figure against the votes behind it,
+// but only a cited vote has an evidence row to check against. Listing every indexed
+// vote made the page 11 MB once the corpus passed 14 000, which is not a page anyone
+// can read. The list is bounded to cited votes and the page states the remainder,
+// derived here from the raw votes rather than from the view model.
+func TestStemmerListsOnlyCitedVotesAndSaysSo(t *testing.T) {
+	h := New(slog.New(slog.NewTextHandler(os.Stderr, nil)))
+	w := httptest.NewRecorder()
+	h.ServeHTTP(w, httptest.NewRequest("GET", "/stemmer", nil))
+	if w.Code != 200 {
+		t.Fatalf("/stemmer answered %d, want 200", w.Code)
+	}
+	body := w.Body.String()
+
+	cited, uncited := 0, 0
+	for _, v := range data.Votes() {
+		if len(v.CitedBy) > 0 {
+			cited++
+		} else {
+			uncited++
+		}
+	}
+	if cited == 0 || uncited == 0 {
+		t.Fatalf("cited=%d uncited=%d: the split cannot be checked", cited, uncited)
+	}
+
+	// Every cited vote is listed, by id.
+	for _, v := range data.Votes() {
+		if len(v.CitedBy) == 0 {
+			continue
+		}
+		if !strings.Contains(body, fmt.Sprintf(`<td class="mono">%d</td>`, v.VoteringID)) {
+			t.Errorf("cited votering %d is not listed", v.VoteringID)
+		}
+	}
+
+	// The remainder is stated, not silently dropped.
+	if !strings.Contains(body, strconv.Itoa(uncited)+" av") {
+		t.Errorf("the page does not state that %d votes are unlisted", uncited)
+	}
+
+	// And the page stays readable: a regression to listing everything would blow this
+	// budget long before anyone opened it.
+	if len(body) > 2_000_000 {
+		t.Errorf("the page is %d bytes; the vote list has grown back", len(body))
+	}
+	t.Logf("%d cited listed, %d unlisted, page %d bytes", cited, uncited, len(body))
+}

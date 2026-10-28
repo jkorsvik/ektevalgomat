@@ -67,6 +67,11 @@ type stemmerView struct {
 	Sessions        []data.VoteSession
 	SessionCount    int
 	VotesInSessions int
+	// VotesUnlisted counts indexed votes the page does not list. The list exists so a
+	// reader can check a figure against the votes behind it, and only a cited vote has
+	// an evidence row to check against. Listing every vote made the page 11 MB once
+	// the corpus passed 14 000.
+	VotesUnlisted int
 }
 
 func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
@@ -157,6 +162,10 @@ func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
 	for _, v := range votes {
 		if v.Unanimous {
 			view.Unanimous++
+		}
+		if len(v.CitedBy) == 0 {
+			view.VotesUnlisted++
+			continue
 		}
 		row := stemmerVote{ID: v.VoteringID, Forslag: v.Forslag}
 		for _, id := range ids {

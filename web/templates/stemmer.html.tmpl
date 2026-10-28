@@ -91,6 +91,13 @@
       {{end}}
     </tbody>
   </table>
+  <p class="prose-lede">
+    Listen viser de {{len .Votes}} voteringene som en kilde viser til, fordi det er
+    dem et tall kan etterprøves mot. {{.VotesUnlisted}} av
+    {{.VoteTotal}} voteringspor er ikke listet her: de inngår i tallene over, men ingen
+    kilde peker på dem, så det finnes ingen rad på siden å sjekke dem mot. De ligger i
+    <a href="/data">åpne data</a>.
+  </p>
 </main>
 
 {{template "footerlinks"}}

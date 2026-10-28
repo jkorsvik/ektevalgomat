@@ -686,15 +686,15 @@ items:
   method: method/history.md
   status: pending
   blocked_on: >
-    Not a reading problem: the leads exist and are counted, but no vote on disk
-    carries a date. internal/data/votes/index.json holds 14 946 voterings and no
-    date field (build_vote_index.py:306 says so and why), and the per-sak
-    payloads in the cache carry no date either. The roadmap already records that
-    the API has no vote-to-date endpoint. So each candidate row costs one live
-    fetch of its voteringsdetaljer page, and this session is offline. Unblock by
-    running it on a session with network, or by finding a date that is derivable
-    from a document already in the cache (the innstilling the vote belongs to is
-    the obvious candidate and has not been checked).
+    CLEARED 2026-10-28 in 5647936, and the premise was wrong in three places. The
+    index now carries a date for 14 945 of its 14 946 voterings, spanning 2019 to
+    2026, harvested offline from the fetch cache. There is no voteringsdetaljer page
+    to fetch, and the API does have a vote time: each element of sak_votering_liste
+    carries votering_tid in the payload the session walk already reads.
+    build_vote_index.py claimed otherwise for three iterations, on the correct but
+    irrelevant observation that eksport/votering returns 404. Nothing here needs
+    network. What remains is the reading work in the note, which is a
+    scout-then-harvester job rather than a fetch.
   note: >
     The scout pass of 2026-10-28 counted the gap that LOOP.md ranks first and
     that no item covered: of 14 946 voterings in the local index, 104 are cited

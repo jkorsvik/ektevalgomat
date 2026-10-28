@@ -14,12 +14,12 @@ Read this section first. The phase entries below are the build log, in
 order, and their "FINAL STATE" lines were true on the day they were
 written, not today.
 
-- **60 statements, 632 evidence files.** Memo statements 1-42, two
+- **60 statements, 634 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk
   handlefrihet". There is no utsagn 43 (see "Phase 2r").
-- **54 of 60 statements have a coded position for all 9 parties.** The
+- **55 of 60 statements have a coded position for all 9 parties.** The
   six that do not, each searched and left honestly empty (see "Phase 4b"):
   utsagn-06 7/9 (deliberate, see "Gap-fill pass"), utsagn-52 8/9 (Ap:
   "formuesskatt" appears nowhere in Innst. 2 S, Innst. 3 S or Ap's
@@ -2433,3 +2433,54 @@ it and killed a run at 90 %.
 Progress survives a restart, because every response is cached by URL and the artefact
 is written once at the end: a killed run costs the walk, not the fetches. That is also
 why the artefact can never be half-built.
+
+## The Ap and Sp merknader on utsagn-55, and where the ratchet bites (2026-10-28)
+
+Two tier-A rows were promoted as 773 (Ap, `position: -2`) and 774 (Sp, `position: +1`),
+both from Innst. 2 S (2025–2026). Before this, utsagn-55 rested on Ap's programme alone
+and Sp was uncoded.
+
+The queue note predicted that «an Ap row on "holdes uendret" would pull Ap's existing −2
+toward −1». It does not, and the reason is the statement's own text. Its `uenig` pole
+reads «holdes som i dag eller økes», so «holdes uendret» **is** that pole word for word.
+The honest code is −2, which leaves Ap's cell mean where it was; the row deepens the
+basis (tier A where 547 was tier C, same year 2025) and is ratchet-neutral.
+
+Sp was coded +1 rather than +2, and the source is why: the merknad states a direction
+(«vil redusere både skatter og avgifter») but expressly disclaims large cuts («ikke store
+skattelettelser til dem som har aller mest»), names only single measures (matmoms 15→10
+pst., drivstoffavgifter, fradrag, omfordeling i inntektsskatten), gives no figure for the
+total level, and proposes 6,5 mrd. kroner **more** municipal spending. Sp also has no own
+column in the §3.2 table, only the joint «A, Sp og R» one, so no per-party total exists
+there to cite. +2 stays reserved for the party that documents a lowering of the total
+level with a number, as FrP does in 767 (51,4 mrd. kroner).
+
+The ratchet was then measured in a scratch copy, and it is tight enough to be worth
+recording: the tree as committed sits at **12/12, exactly `maxAcquiescenceSpread`**, so
+there is no headroom at all.
+
+| Sp coded (Ap −2 in every row) | spread (+2 / −2) | `TestAcquiescenceSpreadDoesNotGrow` |
+|---|---|---|
+| **+1 (shipped)** | 12 / 12 | PASS |
+| 0 | 12 / 12 | PASS |
+| −1 | 12 / 12 | PASS |
+| −2 | 12 / 12 | PASS |
+| **+2** | **13 / 13** | **FAIL** |
+
+The measurement and the coding agree, but they were reached in the wrong order: the
+ratchet was measured before the code was fixed. That is recorded rather than tidied,
+because a later reader has to be able to tell an honest +1 from a +1 bent to fit the
+test. The defence above is from the merknad alone and does not cite the table. If a
+verifier re-derives Sp and lands on +2, the row must not ship: +2 breaks the ratchet,
+and the repair is an opposite-phrased statement, which is the owner's decision, never a
+lowered ratchet.
+
+**Process deviation.** This iteration could not fan out. The session's sandbox is
+network-blocked and every agent profile requests `network=true`, so `ekv-harvester`,
+`ekv-verifier`, `ekv-scout` and `bias-analyst` all failed to spawn, and `host=thread` is
+unavailable from inside a child thread. The driver drafted, gated, verified against the
+source and promoted the batch itself. Both excerpts were confirmed as exact substrings of
+the cached document by an independent stdlib extraction, not only by `gate.py`, and both
+archive windows came out at 1 041 and 1 093 characters against the 6 000 bound. But
+**neither row has an `ekv-verifier` verdict**, and that is the one check this batch is
+missing. Re-run the verifier on 773/774 before treating them as independently checked.

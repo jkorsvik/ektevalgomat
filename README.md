@@ -7,14 +7,14 @@ source. Built from the research memo in `docs/research-memo.md`
 (2026-09-23) — see `docs/roadmap.md` for the full build history and
 exactly what's deliberately not built yet (a `rettelseslogg` UI,
 `konsistens`/`beneficiaries` fields the memo describes but no evidence
-yet needs). Current state (2026-10-28): 60 statements, 632 evidence
+yet needs). Current state (2026-10-28): 60 statements, 634 evidence
 files. That is the memo's 42 (utsagn 1-42), 2 "Tillegg" extras (44, 45),
 two owner-approved dimensions added after user feedback,
 "Tilgang, integrering og rettsstat" (46-51) and "Finansiering av
 fellesskapet" (52-58), utsagn-59 in "Norsk handlefrihet", and the two
 statsbudsjett 2027 statements (60, 61) added 2026-10-12. There is
 no utsagn 43, see roadmap "Phase 2r".
-54 of 60 statements have a coded position for all 9 parties. The six
+55 of 60 statements have a coded position for all 9 parties. The six
 that do not are utsagn-06 (7 of 9), utsagn-52 (8 of 9), utsagn-55 (7 of 9)
 and utsagn-57 (8 of 9), each one searched and left honestly empty, plus
 utsagn-60 and 61, which carry institutional evidence only. roadmap.md's
@@ -23,8 +23,8 @@ claim with a "Hva betyr et svar i praksis?" box, and 13 are phrased in the
 opposite direction to hold the acquiescence spread at 12 points (was 41).
 Tests enforce both, see the roadmap. Every verbatim excerpt and every
 "stemte for/mot" is checked against its source by
-`tools/verify/verify_excerpts.py` and `tools/verify/verify_votes.py`; 344 of
-the 632 evidence rows carry such an excerpt, and the rest are votes and
+`tools/verify/verify_excerpts.py` and `tools/verify/verify_votes.py`; 346 of
+the 634 evidence rows carry such an excerpt, and the rest are votes and
 documents where the claim is the action itself, not a quotation.
 
 Live at **https://ektevalgomat.no**. A "small public Go server": Go

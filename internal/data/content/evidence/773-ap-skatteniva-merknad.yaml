@@ -1,0 +1,44 @@
+id: ev-2026-innst2s-ap-skatteniva-merknad
+statement_id: utsagn-55
+party_id: ap
+actor: "Arbeiderpartiet (finanskomiteen)"
+date: "2025-11-30"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Arbeiderpartiet forsvarer sitt eget budsjett med at «skatteløftet holdes ved at det
+  samlede skatte- og avgiftsnivået i 2026 holdes uendret med regjeringens forslag».
+  Nivået holdes altså uendret, ikke senket, og partiet presenterer det som en
+  oppfylt lovnad.
+claim_action: >
+  I merknad 2.1.2.1 i Innst. 2 S (2025–2026) skriver komiteens medlemmer fra
+  Arbeiderpartiet at skatteløftet holdes ved at det samlede skatte- og avgiftsnivået
+  i 2026 holdes uendret med regjeringens forslag. Ap er regjeringspartiet, så dette
+  er regjeringens eget budsjett som partiet forsvarer i innstillingen: nivået
+  videreføres uendret og senkes ikke.
+verbatim_excerpt: >
+  skatteløftet holdes ved at det samlede skatte- og avgiftsnivået i 2026 holdes
+  uendret med regjeringens forslag
+status: uttalt
+position: -2
+source_tier: A
+source_name: >
+  Innst. 2 S (2025–2026), finanskomiteen, punkt 2.1.2.1 «Merknader fra
+  Arbeiderpartiet»
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-002s/"
+claim_confidence: dokumentert
+evidensstyrke_cap: "moderat"
+context_note: >
+  Kodet -2. Utsagnet sier at det samlede skatte- og avgiftsnivået bør SENKES, og
+  uenig-polen i utsagnet er ordrett «holdes som i dag eller økes». Ap sier at
+  nivået «holdes uendret», altså nøyaktig uenig-polen, uten forbehold og uten en
+  eneste lempelse i det samlede nivået. Det er samme posisjon som partiets
+  programfesting i 547 ap skatte-avgiftsniva-senkes (-2, «holde de samlede skattene
+  og avgiftene … på samme nivå som i dag»), så cellen står stille på -2; raden gir
+  den en andre date og en tier-A-kilde i stedet for en programkilde. Hvem som
+  snakker: Ap er regjeringsparti og merknaden beskriver regjeringens eget
+  budsjettforslag. Det er ikke en opposisjonsmerknad, og det er ikke «Ap/Sp»:
+  Senterpartiet gikk ut av regjeringen 2025-02-04 og står bak en egen
+  opposisjonsmerknad i samme innstilling. Dokumentet er datert «Oslo, i
+  finanskomiteen, den 30. november 2025».
+retrieved_at: "2026-10-28"

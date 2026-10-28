@@ -619,7 +619,7 @@ items:
   statement: utsagn-12
   party: frp
   method: method/mixed.md
-  status: pending
+  status: passed
   note: >
     Found by ekv-verifier while falsifying the Norgespris batch, and it is the
     more interesting half of that finding. Row 87-frp-stroemprismakspris-mot.yaml
@@ -635,6 +635,50 @@ items:
     readings of one instrument on purpose. This is a content correction, so it
     runs through gate/promote like any other change, and it needs no owner
     decision.
+  result: >
+    Done 2026-10-28. The premise was wrong in one respect: these are not two
+    readings of one instrument but two different instruments, and each row's
+    label is right for its own document. 2022 (Innst. 122 S, Dokument 8:65 S
+    forslag 1) asks regjeringen to «innføre en makspris for strøm på 0,50 kr pr.
+    kWt ekskl. mva. ... for alle, både husholdninger og næringsliv». 2025
+    (Innst. 535 L forslag 8) asks for «en strømstøtte på 100 pst. over 50
+    øre/kWh inkl. mva. for husholdninger og fritidsboliger med en begrensning på
+    5 000 kWh i måneden totalt». What changes 2022→2025 is scope and naming, not
+    a leap between unrelated families: næringslivet is dropped and the
+    instrument is called a støtte. Both labels the sources use are real — the
+    2022 forslag says makspris while its begrunnelse says kompensasjon, and Rødt
+    calls the 2025 støtte «en slags makspris».
+
+    Five defects corrected in place. Row 87's actor named «utenriks- og
+    energikomiteen», a committee the innstilling does not come from (it is
+    energi- og miljøkomiteen). Row 87's claim_action truncated the operative
+    clause about the 5 000 kWh monthly cap, which turns «100 pst.» from an
+    unconditional guarantee into a rate inside a volume cap. Row 87's
+    scan_summary and context_note dated the earlier standpunkt «så sent som
+    2022-2023» and credited Innst. 25 S to FrP, when 535 L cites Innst. 25 S as
+    Rødt's own forslag and the sourced earlier standpunkt is row 764. Row 764
+    called «strømpris over 50 øre ... kompenseres fullt ut» «FrPs egen merknad»,
+    but the sentence is signed «Komiteens medlemmer fra Fremskrittspartiet og
+    Kristelig Folkeparti», a joint FrP+KrF merknad. And row 764 said FrP «stemte
+    mot å utrede en maksimalpris» while its own parenthesis said FrP støttet
+    forslaget; the vote index has frp=for on 18084, so it is stemte for.
+
+    Corrected in place, not through promote.py: promote only ever assigns the
+    next free number, so it would have minted duplicates 775 and 776 beside 87
+    and 764 (dry-run confirmed). The gate ran on the exact bytes that shipped.
+    Both positions stay as coded, +1 for 2025 and -1 for 2022, so no scoring
+    value moved. Excerpt substrings hold in both documents; verify_excerpts 0
+    failed; verify_votes 0 MISMATCH (87 is MIXED, which the tool documents as
+    not a failure when a party's own proposal is cited beside the status vote);
+    go test ./... green.
+
+    Not fixed on purpose: the magnitude question. The written rule in
+    method/position-scale.md («eget instrument, med et tall») points at +2 for 87
+    and -2 for 764, but that rule is not owner-ratified — krf-skatteniva-polarity
+    carries the ratification — and a magnitude change should not ride inside a
+    text correction. Measured so it cannot surprise anyone later: all 25
+    recodings of these two rows keep the acquiescence spread at 12, so either
+    choice is ratchet-safe.
 - id: voteringsspor-second-dates
   kind: history
   statement: ''

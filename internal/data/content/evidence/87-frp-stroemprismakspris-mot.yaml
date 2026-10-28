@@ -1,22 +1,26 @@
 id: ev-2025-06-05-frp-stroemprismakspris-mot
 statement_id: utsagn-12
 party_id: frp
-actor: "Fremskrittspartiet (utenriks- og energikomiteen)"
+actor: "Fremskrittspartiet (energi- og miljøkomiteen)"
 date: "2025-06-05"
 evidence_type: innstilling
 evidence_class: partiets_begrunnelse
 scan_summary: >
-  FrP stemte mot Rødts pristak-forslag og fremmet i stedet sitt eget
-  forslag om en 100 prosent strømstøtte over 50 øre/kWt — samme
-  kompensasjonsmodell som KrF, ikke et lovbestemt pristak. FrP støttet
-  selv en makspris-lignende mekanisme så sent som 2022-2023, men har
-  siden gått over til støttemodellen.
+  FrP stemte mot Rødts pristak-forslag og fremmet i stedet sitt eget forslag om en
+  100 prosent strømstøtte over 50 øre/kWh, med et volumtak på 5 000 kWh i måneden —
+  en kompensasjonsmodell for husholdninger og fritidsboliger, ikke et lovbestemt
+  pristak. I 2022 fremmet FrP selv et forslag om makspris på strøm på 0,50 kr/kWt
+  for alle, næringslivet inkludert (ev-2022-01-21-frp-makspris-for). Det som har
+  endret seg til 2025 er omfanget og navnet: næringslivet er ute av ordningen, og
+  forslaget kaller den en støtte, ikke en prisregulering.
 claim_action: >
-  FrP fremmet eget forslag (forslag 8/9, votering_id 26120, 12 for,
-  90 mot): "Stortinget ber regjeringen fremme forslag om å innføre en
-  strømstøtte på 100 pst. over 50 øre/kWh inkl. mva. for husholdninger
-  og fritidsboliger." I votering_id 26116 stemte FrP mot Rødts
-  pristak-blokk (0 for, 12 mot av de tilstedeværende).
+  FrP fremmet eget forslag (forslag 8, votering_id 26120, 12 for, 90 mot):
+  "Stortinget ber regjeringen fremme forslag om å innføre en strømstøtte på 100
+  pst. over 50 øre/kWh inkl. mva. for husholdninger og fritidsboliger med en
+  begrensning på 5 000 kWh i måneden totalt." Begrensningen er operativ og gjør
+  "100 pst." til en sats innenfor et volumtak, ikke en ubetinget garanti. I
+  votering_id 26116 stemte FrP mot Rødts pristak-blokk (FrP 0 for, 12 mot av de
+  tilstedeværende).
 verbatim_excerpt: >
   "Komiteens medlem fra Rødt viser til at både Fremskrittspartiet og
   Kristelig Folkeparti foreslår en slags makspris, som er en
@@ -31,14 +35,23 @@ source_name: "Innst. 535 L (2024–2025); votering_id 26116, 26120"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-535l/?all=true"
 claim_confidence: dokumentert
 context_note: >
-  Kodet +1: FrP avviser DENNE mekanismen på DETTE tidspunktet, i tråd
-  med det snudde utsagnets premiss — men Rødts egen merknad i
-  innstillingen (sitert ovenfor) dokumenterer at FrP tidligere (bl.a.
-  Innst. 25 S, 2022-2023) selv støttet en pristak-lignende mekanisme som
-  også skulle gjelde næringslivet, og siden har gått over til en
-  rendyrket støttemodell. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -1 til +1. Dette er nettopp
-  det slags Konsistens-spørsmål prosjektets tre-mål-modell (Saksmatch/
-  Konsistens/Evidensstyrke) finnes for å synliggjøre, ikke skjule bak
+  Kodet +1: FrP avviser DENNE mekanismen på DETTE tidspunktet, i tråd med det
+  snudde utsagnets premiss — men Rødts egen merknad i innstillingen (sitert
+  ovenfor) dokumenterer at FrP tidligere tok til orde for en makspris som også
+  skulle gjelde næringslivet, og at partiet tilsynelatende har gått vekk fra det.
+  Primærkilden for det tidligere standpunktet er FrPs eget forslag i 2022
+  (ev-2022-01-21-frp-makspris-for). Innst. 25 S (2022–2023), som tidligere ble
+  nevnt her, er ikke kilde til det: 535 L omtaler Innst. 25 S som Rødts eget
+  forslag, ikke som FrPs. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn
+  peker samme vei, og posisjonen er speilvendt fra -1 til +1. Dette er nettopp det
+  slags Konsistens-spørsmål prosjektets tre-mål-modell
+  (Saksmatch/Konsistens/Evidensstyrke) finnes for å synliggjøre, ikke skjule bak
   én saksmatch-tall for dagens votering alene. Se
-  evidence/81-stroemprisreform-kontekst.yaml.
+  evidence/81-stroemprisreform-kontekst.yaml. Status beskriver votering 26116
+  (FrP mot Rødts blokk); i 26120 stemte FrP for eget forslag, og det er den siden
+  som bærer +1. Etter position-scale-regelen («eget instrument, med et tall»)
+  kunne raden ha vært +2. Den står på +1 fordi den skrevne regelen i
+  method/position-scale.md ennå ikke er ratifisert av eieren — køoppgaven
+  krf-skatteniva-polarity er der ratifiseringen ligger — og en magnitudeendring
+  skal ikke avgjøres inne i en tekstkorreksjon.
 retrieved_at: "2026-09-24"

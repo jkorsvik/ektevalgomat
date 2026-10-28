@@ -6,21 +6,20 @@ date: "2022-01-21"
 evidence_type: voteringsspor
 evidence_class: partiets_begrunnelse
 scan_summary: >
-  FrP fremmet og stemte for sitt eget forslag om en lovbestemt makspris
-  på strøm på 0,50 kr/kWt for alle.
+  FrP fremmet og stemte for sitt eget forslag om en makspris på strøm på 0,50
+  kr/kWt for alle, husholdninger og næringsliv.
 claim_action: >
-  FrP fremmet Dokument 8:65 S (2021–2022), forslag 1: «Stortinget ber
-  regjeringen innføre en makspris for strøm på 0,50 kr pr. kWt ekskl.
-  mva. Dette gjøres gjeldende for alle, både husholdninger og næringsliv.»
-  Forslaget ble votert som forslag 4 og 5 (votering_id 18085: 15 for,
-  83 mot; FrP 11 for, 0 mot av de tilstedeværende). FrP stemte samtidig
-  mot Rødts forslag nr. 6 og 7 om 35 øre/kWt (votering_id 18082: 0 for,
-  12 mot) og mot å utrede en maksimalpris (votering_id 18084: 12 for,
-  0 mot — FrP støttet utredningsforslaget fra SV og MDG), og stemte for
-  komiteens tilråding om at Dokument 8:66 S ikke vedtas (votering_id
-  18089: FrP 12 for, 0 mot). FrP stemte mot tilrådingen om at eget
-  Dokument 8:65 S ikke vedtas (votering_id 18088: FrP 0 for, 12 mot),
-  altså substansielt FOR eget maksprisforslag.
+  FrP fremmet Dokument 8:65 S (2021–2022), forslag 1: «Stortinget ber regjeringen
+  innføre en makspris for strøm på 0,50 kr pr. kWt ekskl. mva. Dette gjøres
+  gjeldende for alle, både husholdninger og næringsliv.» Forslaget ble votert som
+  forslag 4 og 5 (votering_id 18085: 15 for, 83 mot; FrP 11 for, 0 mot av de
+  tilstedeværende). FrP stemte samtidig mot Rødts forslag nr. 6 og 7 om 35 øre/kWt
+  (votering_id 18082: FrP 0 for, 12 mot), og stemte for å utrede en maksimalpris
+  (votering_id 18084: FrP 12 for, 0 mot — FrP støttet utredningsforslaget fra SV og
+  MDG), og stemte for komiteens tilråding om at Dokument 8:66 S ikke vedtas
+  (votering_id 18089: FrP 12 for, 0 mot). FrP stemte mot tilrådingen om at eget
+  Dokument 8:65 S ikke vedtas (votering_id 18088: FrP 0 for, 12 mot), altså
+  substansielt FOR eget maksprisforslag.
 status: forslag_avvist_stemte_for
 position: -1
 source_tier: A
@@ -32,26 +31,34 @@ verbatim_excerpt: >
   næringsliv.
 claim_confidence: dokumentert
 context_note: >
-  Dette er den ene cellen der 2022 og 2025 peker hver sin vei, og raden
-  er skrevet for å vise det, ikke for å jevne det ut. I 2022 fremmet FrP
-  selv et lovbestemt pristak og stemte for det; i 2025 (ev-2025-06-05-
-  frp-stroemprismakspris-mot) stemte FrP mot Rødts pristak og fremmet i
-  stedet 100 pst. strømstøtte over 50 øre. Rødts merknad i Innst. 535 L
-  sier det samme fra motsatt side: FrP «har tilsynelatende gått vekk fra»
-  maksprisen.
+  Dette er den ene cellen der 2022 og 2025 peker hver sin vei, og raden er skrevet
+  for å vise det, ikke for å jevne det ut. I 2022 fremmet FrP selv et forslag om
+  makspris på 0,50 kr/kWt for alle, næringslivet inkludert, og stemte for det; i
+  2025 (ev-2025-06-05-frp-stroemprismakspris-mot) stemte FrP mot Rødts pristak og
+  fremmet i stedet 100 pst. strømstøtte over 50 øre for husholdninger og
+  fritidsboliger, med et volumtak på 5 000 kWh i måneden og uten næringslivet.
+  Rødts merknad i Innst. 535 L sier det samme fra motsatt side: FrP «har
+  tilsynelatende gått vekk fra» maksprisen.
 
-  Kodet -1 og ikke -2, og det er den svakeste koden i denne serien.
-  Grunnen: FrPs eget forslag er formelt en makspris, men FrPs egen merknad
-  begrunner den som kompensasjon — «at strømpris over 50 øre pr. kWt
-  kompenseres fullt ut» — altså i praksis staten betaler differansen over
-  et nivå, den samme familien partiet i 2025 rendyrker. Instrumentet er
-  derfor en hybrid mellom de to sidene utsagnet stiller opp. -2 ville
-  krevd at jeg kalte 50-øre-modellen en lovbestemt makspris også i
-  substans, og det motsier partiets egen begrunnelse. En leser som er
-  uenig i dette kan forsvare -2; tallene som gjør det mulig står over.
+  Kodet -1 og ikke -2, og det er den svakeste koden i denne serien. Grunnen:
+  FrPs eget forslag er formelt en makspris, men forslaget er begrunnet som
+  kompensasjon. Setningen om at strømpris over 50 øre pr. kWt «kompenseres fullt
+  ut» står i Innst. 122 S, men den er signert «Komiteens medlemmer fra
+  Fremskrittspartiet og Kristelig Folkeparti» — en felles FrP+KrF-merknad, ikke
+  FrPs egen. Det er altså ikke bare partiet som står bak kompensasjonslesningen.
+  FrPs egen merknad i samme innstilling kaller likevel forslaget «eget
+  representantforslag, som også omhandler å legge til rette for en
+  strømstøtteordning», så partiet har signert begge lesningene av ett og samme
+  instrument. Instrumentet er derfor en hybrid mellom de to sidene utsagnet
+  stiller opp. -2 ville krevd at jeg kalte 50-øre-modellen en lovbestemt makspris
+  også i substans, og det motsier partiets egen begrunnelse. En leser som er uenig
+  i dette kan forsvare -2, og position-scale-regelen («eget instrument, med et
+  tall») peker dit; tallene som gjør det mulig står over. Den skrevne regelen er
+  ennå ikke ratifisert av eieren (køoppgave krf-skatteniva-polarity), så valget
+  står urørt her.
 
-  Votering 18088 er en tilråding om at dokumentet «vedtas ikke», så «mot»
-  betyr substansielt FOR forslaget; status beskriver den substansielle
-  siden, ikke tallsiden. 18082 og 18084 er ordinære forslagsvoteringer
-  uten inversjon.
+  Votering 18088 er en tilråding om at dokumentet «vedtas ikke», så «mot» betyr
+  substansielt FOR forslaget; status beskriver den substansielle siden, ikke
+  tallsiden. 18082 og 18084 er ordinære forslagsvoteringer uten inversjon: på
+  18084 stemte FrP FOR å utrede en maksimalpris, ikke mot.
 retrieved_at: "2026-10-27"

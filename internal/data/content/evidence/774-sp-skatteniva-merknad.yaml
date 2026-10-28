@@ -17,11 +17,11 @@ claim_action: >
   og lavere drivstoffavgifter. Samtidig avgrenses retningen uttrykkelig til «ikke
   store skattelettelser til dem som har aller mest», og merknaden foreslår 6,5 mrd.
   kroner mer til kommunesektoren. Det er en retning mot lavere skatter og avgifter
-  for vanlige folk, ikke et påstand om at det samlede nivået senkes.
+  for vanlige folk, ikke en påstand om at det samlede nivået senkes.
 verbatim_excerpt: >
   Senterpartiet vil redusere både skatter og avgifter, slik at folk kan få mer igjen
   for egen arbeidsinnsats
-status: foreslått
+status: uttalt
 position: 1
 source_tier: A
 source_name: >
@@ -41,7 +41,23 @@ context_note: >
   +2 er forbeholdt de partiene som dokumenterer en senking av det samlede nivået med
   et tall, slik som FrP (51,4 mrd. kroner, rad 21 i tabellen i punkt 3.2). Hos Sp
   finnes ikke noe slikt tall, og da er +1 den ærlige koden: retning ja, omfang ikke
-  dokumentert. Sp er opposisjon her; merknaden er til partiets eget alternative
-  budsjett, ikke en regjeringsmerknad. Dokumentet er datert «Oslo, i finanskomiteen,
+  dokumentert. Sp er ikke regjeringsparti (Ap har styrt alene siden 2025-02-04), men
+  er heller ikke utenfor det budsjettet innstillingen behandler: 3.1.2.1 er signert av
+  arbeiderpartiet, senterpartiet og rødt, og der sier forlikspartnerne at «forliket
+  binder partene i det videre arbeidet med statsbudsjettet for 2026». I tabellen i
+  punkt 3.2, rad 21, står den felles A, Sp og R-kolonnen med -1 862 692 244 (+54 000),
+  altså 54 mill. kroner under regjeringens -1 862 746 244 og 0,003 pst. av nivået: det
+  forliket Sp har signert, holder det samlede nivået praktisk talt uendret. +1 her er
+  derfor Sps egen merknadstekst, ikke det Sp har bundet seg til i innstillingen.
+  Status er uttalt, ikke foreslått: kapittel 4 «Forslag fra mindretall» fører sju
+  forslagsstillere (FrP, H, SV, R, MDG, KrF, V) med sju rammevedtak og ingen fra
+  Senterpartiet, nettopp fordi Sp er forlikspartner i 3.1.2.1. Merknaden sier selv at
+  partiet har «lagt frem et helhetlig forslag», men det dokumentet er ikke denne
+  radens source_url. ÅPEN MOTSTRID, ikke avgjort her: internal/data/loader_test.go
+  fører opp regelen om at en gruppeavgrenset skattesetning ikke koder det samlede
+  nivået, og Sp ble holdt utenfor utsagn-55 på nettopp det grunnlaget. Denne radens
+  sitat er en slik gruppeavgrenset setning, så enten må regelen skrives om, eller så
+  må Sp-kodingen på utsagnet tas opp igjen. Eieren avgjør; se queue.yaml,
+  skatteniva-sp-gruppeavgrenset-regel. Dokumentet er datert «Oslo, i finanskomiteen,
   den 30. november 2025».
 retrieved_at: "2026-10-28"

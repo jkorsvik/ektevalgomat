@@ -474,6 +474,21 @@ items:
     from a child thread. The driver drafted, gated, verified and promoted this batch itself. The
     two rows have NO ekv-verifier verdict. Re-run ekv-verifier on 773/774 before treating them as
     independently checked.
+
+    VERIFIED 2026-10-28, the owed check is now done: ekv-verifier returned SUPPORTED-WITH-CAVEAT
+    offline from the cache, re-deriving the excerpts rather than trusting gate.py (110 and 106
+    normalised characters, byte-identical, each unique in the document) and confirming attribution,
+    date 2025-11-30 and evidensstyrke_cap moderat. Its four defects are fixed: 773's «en andre date»
+    claimed a second year the data does not have, both rows now state that Sp co-signed the forlik
+    (3.1.2.1, and the joint A, Sp og R column is 54 mill. kroner under the government's level), 774's
+    status foreslått became uttalt because chapter 4 «Forslag fra mindretall» lists seven filers and
+    none is Sp, and «ikke et påstand» became «ikke en påstand». Three statements elsewhere were
+    falsified and corrected in the same commit: loader_test.go's 7/9 claim and its «Sp and MDG were
+    deliberately uncoded», docs/roadmap.md's six-incomplete list (the evidence files yield five) and
+    its wrong archive-window lengths (1 017 and 1 067, not 1 041 and 1 093). One finding is NOT fixed
+    and is the owner's: the group-scoped-sentence rule now contradicts 774, tracked as
+    skatteniva-sp-gruppeavgrenset-regel. Report:
+    tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md.
   note: 'Found by ekv-verifier while falsifying the skatt-niva batch, and not used there because Ap and
     Sp have no own column in the Innst. 2 S §3.2 table. Two citable tier-A sentences exist anyway, and
     both bear on the statement from the parties that are currently missing from the cell (Sp is uncoded,
@@ -487,3 +502,54 @@ items:
     a neutral one.
 
     '
+- id: skatteniva-sp-gruppeavgrenset-regel
+  kind: budget
+  statement: utsagn-55
+  party: sp
+  method: method/budget.md
+  status: blocked
+  blocked_on: >
+    An owner rule decision, found by ekv-verifier on 2026-10-28 while re-checking 773/774
+    (tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md, finding D-774a).
+    internal/data/loader_test.go records the repo's own rule for this exact statement: Sp and
+    MDG were deliberately left «Ikke vurdert» because each has a tax-reduction sentence
+    scoped to a group, not to the total level, and «reducing tax for one group without more
+    is a redistribution, not necessarily a total-level cut». Row 774 codes exactly such a
+    group-scoped Sp sentence +1. Either the rule is wrong and must be rewritten, or 774's Sp
+    coding goes to 0 or is withdrawn. Nothing else needs re-deriving: the quote is byte-exact
+    (106 normalised characters, unique in the document), the party and the date 2025-11-30 are
+    right, and the forlik context is now stated in the row itself. The ask: say which rule
+    wins. If the rule stands, 774 is withdrawn and utsagn-55 drops back to 8/9.
+  note: 'Follow-up to the 773/774 verification. The conflict is wider than one cell: it
+    decides whether a group-scoped sentence can ever code a total-level statement.'
+- id: budget-skolemat-innst12s
+  kind: budget
+  statement: utsagn-35
+  method: method/budget.md
+  status: blocked
+  blocked_on: >
+    Two owner decisions, and the lead it came from was measurably wrong. Falsified lead
+    (LEADS.md lead 6, Innst. 12 S (2025-2026), rammeområde 16, kap. 200 post 70): the scout
+    read the party columns one cell to the right. The 415 000(+415 000) on «Innføre gratis
+    skolemåltid for alle elever på ungdomstrinnet fra skoleåret 2026/2027» is SV's column;
+    Rødt's is 0(0), and Rødt has no money on the post at all. Verified twice, independently of
+    the cell positions: each column's per-cell deviations sum to its own stated total (SV
+    +670 300, Rødt +3 271 055, forlik +790 660, FrP -601 025, H -790 970, KrF +1 299 100, V
+    +2 635 900), and each column's netto equals the named rammevedtak for the same party in
+    Innst. 2 S (SV/Forslag 57 96 648 969 000 kroner; Rødt/Forslag 58 99 263 824 000). What is
+    left is two questions for the owner, not a sourcing gap. (1) The method requires a
+    verbatim quote from the document for a budget finding; SV's own merknad (2.4) never
+    mentions school meals, and no quote from this table can be archived because the Formål
+    cell alone spans 9 267 normalised characters against the 6 000 window bound. May a
+    bevilgningstall ship as a row with the figures in claim_action and no excerpt, or does
+    that row not exist? (2) Rødt CAN be quoted (merknad 2.6, «Videre foreslår Rødt en ordning
+    for gratis skolemat i grunnskolen, slik at alle elever får tilgang på et sunt måltid på
+    skolen», exact substring, window 1 006 characters), but coding it would move Rødt's cell
+    from the +1 set by row 385 to +2, because 385's +1 was chosen precisely because Rødt had
+    no own merknad on school meals. That is the same ±1/±2 calibration as
+    krf-skatteniva-polarity, and no file in this repo defines the scale: not method/budget.md,
+    not method/program.md, not CONTEXT.md, not docs/. One written rule would unblock this
+    item, the KrF item, Sp 774 and every future magnitude question at once.
+  note: 'The stream is still cheap and still unharvested: the document is in the fetch cache
+    and the table parse is cell-for-cell. Nothing was promoted from this pass; both drafts
+    exist only in the harvester report, which the driver has not staged as files.'

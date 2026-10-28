@@ -20,14 +20,17 @@ written, not today.
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk
   handlefrihet". There is no utsagn 43 (see "Phase 2r").
 - **55 of 60 statements have a coded position for all 9 parties.** The
-  six that do not, each searched and left honestly empty (see "Phase 4b"):
+  five that do not, each searched and left honestly empty (see "Phase 4b"):
   utsagn-06 7/9 (deliberate, see "Gap-fill pass"), utsagn-52 8/9 (Ap:
   "formuesskatt" appears nowhere in Innst. 2 S, Innst. 3 S or Ap's
-  program), utsagn-55 7/9 (Sp and MDG have no total-level claim; R coded -2
-  from its program, file 603), utsagn-57 8/9 (Ap: only a Sp minister's
+  program), utsagn-57 8/9 (Ap: only a Sp minister's
   sentence about Ap, file 710, which does not set Ap's position), and
   utsagn-60 and 61, the two statsbudsjett statements, which carry
   institutional evidence only and no party positions by design.
+  utsagn-55 was on this list until 2026-10-28, when Ap (773), Sp (774) and
+  MDG (769) closed the last three gaps; Sp's +1 rests on a group-scoped
+  sentence and is flagged as an open owner decision in 774's own
+  context_note and in queue.yaml.
   utsagn-45 was 7/9 when this block was first written and has since been
   coded for R and Sp, so it is not on this list any more; the phase entries
   below still describe it as it stood on their own date.
@@ -2481,6 +2484,30 @@ network-blocked and every agent profile requests `network=true`, so `ekv-harvest
 unavailable from inside a child thread. The driver drafted, gated, verified against the
 source and promoted the batch itself. Both excerpts were confirmed as exact substrings of
 the cached document by an independent stdlib extraction, not only by `gate.py`, and both
-archive windows came out at 1 041 and 1 093 characters against the 6 000 bound. But
+archive windows came out at 1 017 and 1 067 characters against the 6 000 bound. But
 **neither row has an `ekv-verifier` verdict**, and that is the one check this batch is
 missing. Re-run the verifier on 773/774 before treating them as independently checked.
+
+**That check has now run, 2026-10-28: SUPPORTED-WITH-CAVEAT.** `ekv-verifier` worked
+offline from the cache (network is still blocked) and re-derived rather than trusted: both
+excerpts are byte-identical substrings of the same cached bytes the gate checked (110 and
+106 normalised characters, case-sensitive, each unique in the document), attribution and
+dates hold, and −2 for Ap stands on the statement's own `uenig` pole («holdes som i dag
+eller økes»). Four defects it did find are fixed in the rows: 773's «en andre date» claimed
+a second year the data does not have, and both rows read as if Sp stood outside the 2024
+budget, when 3.1.2.1 is signed by Ap, Sp and Rødt and says «forliket binder partene i det
+videre arbeidet med statsbudsjettet for 2026» (the joint `A, Sp og R` column is 54 mill.
+kroner under the government's level, 0,003 pst. of it). 774's `status: foreslått` was not
+supported: chapter 4 «Forslag fra mindretall» prints seven filers and none of them is Sp, so
+it is now `uttalt`, the status precedent for a committee merknad. The verdict also
+falsified three statements elsewhere in the repo, now corrected: `loader_test.go` claimed
+7/9 coverage and that Sp and MDG were deliberately uncoded, `docs/roadmap.md` repeated the
+7/9 and listed six incomplete statements where the evidence files yield five, and the window
+lengths above were wrong. One finding is deliberately **not** fixed here and is the owner's:
+`loader_test.go`'s rule that a group-scoped tax sentence is not a claim about the total
+level is contradicted by 774, whose Sp sentence is group-scoped by exactly that test. Either
+the rule or the Sp coding has to move, and lowering it is not the driver's call. Recorded in
+774's `context_note` and in queue.yaml as `skatteniva-sp-gruppeavgrenset-regel`. The full
+report is `tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md`, which is a
+local working file (`tools/autopilot/.gitignore` excludes `staging/`) and is therefore not
+in a clone; everything load-bearing is summarised in this paragraph and in the queue entry.

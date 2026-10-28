@@ -183,13 +183,18 @@ func TestStoreLoadsExpectedCounts(t *testing.T) {
 	// statement's direction; KrF has no committee seat and no text, so
 	// -1 cap moderat from the vote alone.
 	//
-	// utsagn-55 (samlet skatte-/avgiftsnivå senkes, tier C) has 7/9
-	// coverage (6/9 until Rødt's program was read, see below). Sp and MDG were deliberately left "Ikke vurdert": both
-	// have real, explicit tax-reduction sentences, but each is scoped
-	// to a specific group (lave/vanlige inntekter) or purpose, not the
-	// TOTAL/samlede level the statement asks about, and reducing tax
-	// for one group without more is a redistribution, not necessarily
-	// a total-level cut.
+	// utsagn-55 (samlet skatte-/avgiftsnivå senkes, tier C) is 9/9 as of
+	// 2026-10-28: Rødt at -2 (file 603, tier C), MDG at -2 (769) and Ap at
+	// -2 (773) from the Innst. 2 S tables and merknader, SV/Sp at +2/+1
+	// from their own merknader (771, 774). Sp and MDG were originally left
+	// "Ikke vurdert" on the rule that a tax-reduction sentence scoped to a
+	// group (lave/vanlige inntekter) is not a claim about the TOTAL/samlede
+	// level, and that reducing tax for one group is a redistribution, not
+	// necessarily a total-level cut. That rule is now in open conflict with
+	// 774: Sp's sentence is group-scoped in exactly that way, and the row
+	// codes it +1 anyway. The rule and the row cannot both stand; the owner
+	// decides which (queue.yaml, skatteniva-sp-gruppeavgrenset-regel). The
+	// conflict is stated in 774's own context_note rather than left implicit.
 	//
 	// utsagn-56 (Norge bør stanse ETS2, optional per TAX-HANDOFF.md,
 	// tier A, Innst. 58 S, sak 104877, voteringene 26745-26747) has

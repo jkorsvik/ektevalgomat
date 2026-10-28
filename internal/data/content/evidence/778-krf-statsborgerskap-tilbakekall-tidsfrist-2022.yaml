@@ -15,6 +15,7 @@ claim_action: >
   ikke» (votering 18487, KrF 2 for / 0 mot). De to stemmene peker hver sin
   vei i samme sak.
 status: forslag_avvist
+position: null
 source_tier: A
 source_name: "Dokument 8:75 S (2021–2022); votering 18486 og 18487 (07.04.2022)"
 source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=18486&format=json"
@@ -25,11 +26,19 @@ context_note: >
   KrF stemte for det saklige forslaget om foreldelsesfrist (18486) og for
   tilrådingen som forkastet hele dokumentet (18487). En stemme kan ikke
   leses som retning når partiet selv gikk begge veier i samme sak, og
-  reglene i tools/autopilot/method/history.md sier at en deling eller en
-  selvmotsigende kilde ikke er en posisjon. Cellen har fra før en KrF-rad
-  datert 2026-04-30 kodet +1 (votering 27523, der KrF stemte for uten
-  motstemme); den står uendret. Denne raden gir cellen en andre dato for
-  *atferd*, men ikke en andre kodet posisjon, så konsistensscoren for
-  KrF er fortsatt utilstrekkelig grunnet. Les votering 18487 invertert:
-  «vedtas ikke» betyr at ja er nei til forslaget.
+  Ingen posisjon kan utledes, og raden skriver derfor position: null eksplisitt.
+  history.md sier bare at en deling ikke er en posisjon, og KrF delte seg ikke:
+  partiet stemte 2 for / 0 mot i begge avstemningene. Det er ikke en deling, men
+  to stemmer i hver sin retning i samme sak, og det finnes ingen regel i
+  tools/autopilot/method/ som avgjør den. Den tidligere lyden av denne raden viste
+  til en regel om «selvmotsigende kilde» som ikke står i noen metodefil; den er
+  fjernet. Cellen har fra før en KrF-rad datert 2026-04-30 kodet +1 (votering
+  27523, KrF 2 for / 0 mot); den står uendret. Denne raden gir cellen en andre
+  dato for atferd, men ingen andre kodet posisjon.
+  Les votering 18487 invertert: «vedtas ikke» betyr at ja er nei til forslaget.
+  Sitatet i claim_action er forslagsteksten, ikke stemmetallene: den ligger i
+  https://data.stortinget.no/eksport/voteringsforslag?voteringid=18486 (samme
+  votering). source_url peker på voteringsresultat, som bare inneholder
+  representantenes stemmer og ikke ordet «foreldelsesfrist». Begge er nødvendige:
+  teksten bærer påstanden, tellingen bærer retningen.
 retrieved_at: "2026-10-28"

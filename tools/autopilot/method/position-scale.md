@@ -53,6 +53,20 @@ already follows the rule: magnitude 2 rests on the party's own reasoning, and
 magnitude 1 is where attribution is uncertain. The full spread is
 `2` 146, `1` 128, `0` 15, `-1` 165, `-2` 89.
 
+## A row's magnitude comes from the row's own evidence
+
+The rule above decides a *party's* position on a statement. It does not license a
+dated row to borrow its magnitude from a different year. An evidence row is a dated
+observation: its magnitude must rest on the documents it cites, read at the date it
+carries. Otherwise the row reports a 2022 vote at a strength only a 2026 document
+supports, and the date axis built from those rows compares strengths that were never
+observed together.
+
+Concretely: if the 2022 evidence is a division the party voted in, and the party's
+own name is not on the proposal, that row is magnitude `1` even when the party
+co-sponsored a stronger instrument four years later. The later instrument belongs to
+the later row, which already carries it.
+
 ## What this rule does not settle
 
 Magnitude and answerability are different questions, and this document only

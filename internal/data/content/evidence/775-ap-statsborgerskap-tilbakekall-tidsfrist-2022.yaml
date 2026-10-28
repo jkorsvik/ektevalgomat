@@ -29,4 +29,9 @@ context_note: >
   ble avgjort med votering 18487, der Ap stemte for tilrådingen om at
   dokumentet «vedtas ikke» — samme side som i 18486 når tilrådingen leses
   invertert (88 for / 16 mot).
+  Sitatet i claim_action er forslagsteksten, ikke stemmetallene: den ligger i
+  https://data.stortinget.no/eksport/voteringsforslag?voteringid=18486 (samme
+  votering). source_url peker på voteringsresultat, som bare inneholder
+  representantenes stemmer og ikke ordet «foreldelsesfrist». Begge er nødvendige:
+  teksten bærer påstanden, tellingen bærer retningen.
 retrieved_at: "2026-10-28"

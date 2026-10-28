@@ -15,22 +15,26 @@ claim_action: >
   et krav om dobbelt statsborgerskap ved tilbakekall. MDG 2 for / 0 mot.
   Forslaget falt 21 mot 83.
 status: forslag_avvist_stemte_for
-position: 2
+position: 1
 source_tier: A
 source_name: "Dokument 8:75 S (2021–2022); votering 18486 (07.04.2022)"
 source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=18486&format=json"
 claim_confidence: dokumentert
 evidensstyrke_cap: moderat
 context_note: >
-  Andre dato i cellen, og magnituden må leses nøye. I 2022 var MDG ikke
-  blant forslagsstillerne — forslaget var SV og Rødts — så retningen
-  kommer fra avstemningen alene, som er et svakere instrument enn et eget
-  forslag og isolert sett gir 1. Den eksisterende MDG-raden er datert
-  2026-04-30 og koder +2 fra Innst. 232 S forslag 4, som MDG fremmet
-  sammen med SV og Rødt. Etter regelen i tools/autopilot/method/
-  position-scale.md om at det sterkeste entydige egne instrumentet
-  bestemmer magnituden, og at et svakere dokument ikke kan trekke den ned,
-  kodes denne raden 2: retningen er 2022-stemmen, magnituden er
-  medforslagsstillerskapet i 2026. Cellen står dermed uendret på +2, og
-  ingen leser kan tro at 2022-stemmen alene ga 2.
+  MDG var ikke blant forslagsstillerne i 2022 — forslaget var SV og Rødts — så
+  grunnlaget i denne raden er avstemningen alene, og en avstemning uten eget
+  forslag eller egen tekst er magnituden 1 etter
+  tools/autopilot/method/position-scale.md. Den ble først kodet 2 med
+  2026-medforslagsstillerskapet som begrunnelse, men en datert rad kan ikke låne
+  styrke fra et annet år: da rapporterer 2022-stemmen en styrke bare et
+  2026-dokument støtter, og årssammenligningen blander styrker som aldri ble
+  observert samtidig. Den eksisterende MDG-raden datert 2026-04-30 bærer +2 fra
+  Innst. 232 S forslag 4, som MDG fremmet sammen med SV og Rødt, og den står
+  uendret. Cellen er dermed en middelverdi av 2 og 1, ikke 2 og 2.
+  Sitatet i claim_action er forslagsteksten, ikke stemmetallene: den ligger i
+  https://data.stortinget.no/eksport/voteringsforslag?voteringid=18486 (samme
+  votering). source_url peker på voteringsresultat, som bare inneholder
+  representantenes stemmer og ikke ordet «foreldelsesfrist». Begge er nødvendige:
+  teksten bærer påstanden, tellingen bærer retningen.
 retrieved_at: "2026-10-28"

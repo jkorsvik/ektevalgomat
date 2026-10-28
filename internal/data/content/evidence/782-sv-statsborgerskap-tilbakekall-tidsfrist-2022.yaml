@@ -29,4 +29,9 @@ context_note: >
   den samme i 2022 og 2026, så cellen står uendret på +2. Saken ble
   avgjort med votering 18487, tilrådingen om at dokumentet «vedtas ikke»,
   vedtatt 88 mot 16 med SV på nei-siden.
+  Sitatet i claim_action er forslagsteksten, ikke stemmetallene: den ligger i
+  https://data.stortinget.no/eksport/voteringsforslag?voteringid=18486 (samme
+  votering). source_url peker på voteringsresultat, som bare inneholder
+  representantenes stemmer og ikke ordet «foreldelsesfrist». Begge er nødvendige:
+  teksten bærer påstanden, tellingen bærer retningen.
 retrieved_at: "2026-10-28"

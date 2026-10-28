@@ -741,7 +741,40 @@ items:
   statement: utsagn-01
   role: scout-then-harvester
   method: method/history.md
-  status: pending
+  status: blocked
+  blocked_on: >
+    Three owner decisions and two pinned tests, not the sourcing. 27 rows are drafted,
+    gated and source-checked: gate.py PASS 27 files (mutation-tested — flipping Ap's
+    status on 18941 produced "party ap is not for on any cited vote ['18941']", PASS
+    returned on restore), every party tally and every result total in every row re-derived
+    by the driver from the cached per-representative payloads and agreeing 27/27, dates
+    agreeing with votes/index.json (18941 = 2022-06-02, 21354 = 2023-06-15, 26219 =
+    2025-06-19, all before the 2026-10-12 cutoff), and the acquiescence ratchet measured
+    in a scratch copy with all 27 rows added: spread 12 points both directions, unchanged.
+    Drafts sit in staging/voteringsspor-utsagn-01-second-dates/not-promoted/ with a
+    REASON.md. The three obstacles. (1) MECHANICAL: promoting breaks internal/data's
+    TestVenstreLobbyregisterPositionIsCoded and TestRodtAndMDGLobbyPositionsAreNowCoded,
+    which both t.Fatalf on "EvidenceForCell(utsagn-01, v|rodt) = 4 items, want 1"; the
+    second guard also requires a coded position in those cells to carry a verbatim_excerpt,
+    and these rows have none because the sentence carrying the claim lives in the
+    voteringsforslag payload, not the voteringsresultat payload they cite. Ask: do the
+    guards admit several rows per cell, and does the excerpt requirement follow the cell
+    or only its first row? (2) SCORING: the mean mechanism moves three published cells
+    down, sv 2 -> 1, rodt 2 -> 1, v 2 -> 1 (rows 2,1,1,1 and 2,1,1; mdg, ap, frp, h, krf,
+    sp unchanged). history.md says changing an existing cell's position is the owner's
+    call. The coding that would keep 2 — magnitude 2 for the pro-register parties — is the
+    one ekv-verifier falsified: row 05-mdg-votering codes MDG +1 on the 2026 forslag whose
+    text is word for word the same utredning text, so 2 on a 2022 utredning overstates it,
+    and uniform 1 is the only defensible code. Ask: does the honest 1 ship and downgrade
+    the three cells, or does the dated row carry 2 to keep the cell? (3) LABEL CONFLICT:
+    H split 1 for / 20 mot on 21354; votes/index.json labels it "split" while the row
+    codes -1 and verify_votes' 20 % threshold passed it. Ask which label wins, because
+    internal/analysis documents that "split IS a side" and the dataset should not carry a
+    -1 row beside a split index entry. ekv-verifier returned WRONG on all 27 files on
+    these grounds plus three draft defects that are cheap to fix on a re-run (REPORT.md's
+    histogram, the unnamed H defector, and the 2025 case's three vote records documenting
+    two decisions because 26218/26219 are a reciprocal alternative-votering pair). Nothing
+    needs the network: every payload is in the fetch cache.
   note: >
     Lead 2 of the scout note cleared in voteringsspor-second-dates, and the densest of the
     eight: utsagn-01 has THREE earlier saker (103065, 93646, 88756) that each carry votes

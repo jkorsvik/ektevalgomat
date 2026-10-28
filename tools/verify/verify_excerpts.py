@@ -74,13 +74,30 @@ def to_text(body: bytes) -> str:
         return re.sub(r"-\s*\n\s*", "", " ".join(p.get_text() for p in doc))
     s = body.decode("utf-8", "replace")
     if s.lstrip().startswith(("{", "[")):
+        # Stortinget serves most documents as a JSON envelope whose string values
+        # carry the HTML. Re-serialising kept the markup, so a table cell's figures
+        # sat thousands of characters apart: one post row measured 1 092 294
+        # characters with markup against 599 895 without, and no fragment short
+        # enough to archive could carry a table's number. Strip the values the same
+        # way as a plain HTML body, then flatten.
         try:
-            return json.dumps(json.loads(s), ensure_ascii=False)
+            return _strip(json.loads(s))
         except ValueError:
             pass
-    s = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", s)
-    s = re.sub(r"(?s)<[^>]+>", " ", s)
-    return html.unescape(s)
+    return _strip(s)
+
+
+def _strip(v) -> str:
+    """All text in a document, tags removed, entities decoded, in order."""
+    if isinstance(v, dict):
+        return " ".join(_strip(x) for x in v.values())
+    if isinstance(v, list):
+        return " ".join(_strip(x) for x in v)
+    if not isinstance(v, str):
+        return ""
+    v = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", v)
+    v = re.sub(r"(?s)<[^>]+>", " ", v)
+    return html.unescape(v)
 
 
 def norm(s: str) -> str:

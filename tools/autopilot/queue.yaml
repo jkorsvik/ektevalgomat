@@ -433,11 +433,13 @@ items:
     position on utsagn-55 from -2 to -1 as a pure side effect of the cell being a mean, on the strength
     of 0,18 pst., and the same threshold is not applied to Venstre''s 0,37 pst. in the batch that did
     ship. Programme row 548 codes the same stance («holde skatte- og avgiftsnivået om lag på dagens nivå»)
-    as -2. The ask: pick one of three and say so, (1) code the budget by the same rule as the programme,
-    i.e. -2; (2) treat under 0,5 pst. of the level as no position, leave the row out, and apply that rule
-    to Venstre too; (3) keep -1 as a distinct "essentially unchanged" code and define it in method/budget.md
-    so KrF and Venstre are coded by one rule. Figures are recorded in the REASON so nothing has to be
-    re-derived.
+    as -2. RESOLVED BY THE WRITTEN RULE (tools/autopilot/method/position-scale.md): the strongest
+    unambiguous own instrument decides the magnitude, and a weaker or self-contradicting document may not
+    downgrade it. KrF''s programme point is an instrument written as a goal, so the party is -2 on
+    utsagn-55; a figure that changes sign between the netto rammevedtak and KrF''s own påløpt column in
+    the same merknad does not state the claim directly, so it cannot earn magnitude 2 and may not pull the
+    cell to -1. Nothing moves and the budget row is not added. This is option (1) reached without a
+    threshold. The owner only has to ratify the rule. Figures stay in the REASON.
 
     '
   note: 'Follow-up to budget-lead-2-skatt-niva, which shipped six of the seven party columns from the
@@ -519,7 +521,7 @@ items:
     coding goes to 0 or is withdrawn. Nothing else needs re-deriving: the quote is byte-exact
     (106 normalised characters, unique in the document), the party and the date 2025-11-30 are
     right, and the forlik context is now stated in the row itself. The ask: say which rule
-    wins. If the rule stands, 774 is withdrawn and utsagn-55 drops back to 8/9.
+    wins. If the rule stands, 774 is withdrawn and utsagn-55 drops back to 8/9. Measured since, and it does not settle the question either way: in Innst. 2 S (2025-2026) the rammevedtak overview gives Ap, Sp and Rødt ONE joint column, so the three front one alternative budget. That column reports spending deviation from the government''s proposal, not the tax level, so it cannot show whether Sp lowers the samlede nivå. It does mean any future Sp row citing the joint budget must say which of the three it speaks for, because Ap and Rødt are already coded -2 on this statement.
   note: 'Follow-up to the 773/774 verification. The conflict is wider than one cell: it
     decides whether a group-scoped sentence can ever code a total-level statement.'
 - id: budget-skolemat-innst12s
@@ -547,9 +549,11 @@ items:
     skolen», exact substring, window 1 006 characters), but coding it would move Rødt's cell
     from the +1 set by row 385 to +2, because 385's +1 was chosen precisely because Rødt had
     no own merknad on school meals. That is the same ±1/±2 calibration as
-    krf-skatteniva-polarity, and no file in this repo defines the scale: not method/budget.md,
-    not method/program.md, not CONTEXT.md, not docs/. One written rule would unblock this
-    item, the KrF item, Sp 774 and every future magnitude question at once.
+    krf-skatteniva-polarity. The scale is now written in tools/autopilot/method/position-scale.md.
+    Under it Rødt''s merknad is an own instrument that states the claim but carries no figure for
+    the level, so magnitude 1 is right and row 385 does not move: question (2) is closed. Only
+    question (1) remains, and it is a policy ask about excerpt-free numeric rows, not a reading
+    of the data.
   note: 'The stream is still cheap and still unharvested: the document is in the fetch cache
     and the table parse is cell-for-cell. Nothing was promoted from this pass; both drafts
     exist only in the harvester report, which the driver has not staged as files.'

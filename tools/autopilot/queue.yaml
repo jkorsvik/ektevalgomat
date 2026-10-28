@@ -819,7 +819,20 @@ items:
   party: ''
   method: method/history.md
   status: pending
-  keywords: ['votering 27523', 'Innst. 232 S', 'PF', 'partifri', 'dato']
+  result: >
+    BOTH QUESTIONS ANSWERED 2026-10-28 from the API; what remains is a scoped data
+    correction, not an open question. (a) The date is wrong and 2026-05-12 is right:
+    votering 27523 sits in sak 200050, and all four divisions in that sak (27522,
+    27523, 27524, 27525) carry votering_tid converting to 2026-05-12. The rows were
+    not citing a different vote. The correction is wider than a date field: 20 evidence
+    files embed ev-2026-04-30 in their id, further rows cross-reference those ids, and
+    the archive windows and the vote index cited_by all key on the id, so the fix is a
+    rename plus an archive and index rebuild, not a sed. (b) PF is Pasientfokus, the
+    party object on the tally row itself: {"id":"PF","navn":"Pasientfokus",
+    "representert_parti":false}, one representative, Irene Ojala, voting for. It is a
+    real party outside the nine the partier export returns, so the rows' 20-of-21
+    breakdown is one short and should name her. Neither needs the owner.
+  keywords: ['votering 27523', 'Innst. 232 S', 'Pasientfokus', 'PF', 'dato']
   note: >
     Two measurements the ekv-verifier produced on 2026-10-28 that the nine
     utsagn-49 rows do not settle, both cheap to close and both able to mislead a

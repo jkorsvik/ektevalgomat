@@ -92277,7 +92277,6 @@
     "ap",
     "frp",
     "h",
-    "krf",
     "mdg",
     "rodt",
     "sp",
@@ -92312,7 +92311,6 @@
    "coded_parties": [
     "ap",
     "frp",
-    "krf",
     "sv",
     "v"
    ],
@@ -259194,9 +259192,6 @@
     "ev-2026-05-26-rodt-kjernekraft-kommersiell-mot"
    ],
    "coded_parties": [
-    "ap",
-    "sp",
-    "mdg",
     "rodt"
    ],
    "session": "2025-2026",

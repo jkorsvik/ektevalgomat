@@ -257,8 +257,14 @@ def cited_votes() -> dict[str, dict]:
         for vid in ids:
             e = cites.setdefault(vid, {"evidence_ids": [], "parties": []})
             e["evidence_ids"].append(d.get("id") or p.stem)
+            # Only a party with an actual coded position can have that position
+            # rest on this vote. A row that cites the vote but resolves to no
+            # position (position: null, e.g. a party that voted for a proposal and
+            # for its rejection) belongs in cited_by, not here: listing it made the
+            # artefact claim KrF was coded on votering 18486 when KrF has no KrF
+            # position on utsagn-49 at all.
             pid = (d.get("party_id") or "").strip()
-            if pid and pid not in e["parties"]:
+            if pid and d.get("position") is not None and pid not in e["parties"]:
                 e["parties"].append(pid)
     return cites
 

@@ -116,3 +116,55 @@ func TestVoteIndexIsFreshForTheSnapshot(t *testing.T) {
 	}
 	t.Logf("%d votes, generated %s", VoteCount(), gen)
 }
+
+// The vote's own date, harvested from votering_tid. It was recorded in the
+// generator as unavailable for three iterations, which wrote off a whole
+// second-date stream as needing a live scan it did not need. The assertions below
+// are derived from the artefact, so dropping the field or pointing it at the case's
+// maintenance stamp fails here.
+func TestEveryWalkedVoteCarriesItsOwnDate(t *testing.T) {
+	votes := Votes()
+	if len(votes) == 0 {
+		t.Fatal("no votes loaded")
+	}
+	dated, undated := 0, []int{}
+	years := map[int]int{}
+	for _, v := range votes {
+		if v.Date == "" {
+			undated = append(undated, v.VoteringID)
+			continue
+		}
+		d, err := time.Parse("2006-01-02", v.Date)
+		if err != nil {
+			t.Fatalf("votering %d: date %q is not YYYY-MM-DD: %v", v.VoteringID, v.Date, err)
+		}
+		dated++
+		years[d.Year()]++
+	}
+	// Every vote the session walk reached has one. A handful reached only through a
+	// citation may not, and that is recorded rather than hidden.
+	if dated < len(votes)*99/100 {
+		t.Errorf("only %d of %d votes carry a date", dated, len(votes))
+	}
+	if len(undated) > len(votes)/100 {
+		t.Errorf("%d votes have no date, more than the 1%% allowance: %v", len(undated), undated[:min(5, len(undated))])
+	}
+	// A maintenance stamp would cluster the whole corpus into the weeks it was last
+	// edited. A real vote date spreads across the years the sessions cover.
+	if len(years) < 5 {
+		t.Errorf("dates cover only %d distinct years (%v): that is an edit stamp, not a vote time", len(years), years)
+	}
+	for y, n := range years {
+		if y < 2009 || y > 2026 {
+			t.Errorf("%d votes dated %d, outside the period the corpus covers", n, y)
+		}
+	}
+	t.Logf("%d of %d votes dated across %d years", dated, len(votes), len(years))
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}

@@ -177,20 +177,38 @@ def side(rows: list[dict]) -> dict[str, str]:
     return out
 
 
-def session_votes(sessions: list[str]) -> dict[int, str]:
+def _iso_date(raw) -> str:
+    """A Stortinget /Date(ms+offset)/ as YYYY-MM-DD, in the offset it states.
+
+    The offset matters: a vote taken at 23:40 Oslo time is that day, not the next
+    one in UTC. Reading only the raw milliseconds would move a December vote into
+    January.
+    """
+    m = re.search(r"Date\((\d+)([+-]\d{4})?\)", str(raw or ""))
+    if not m:
+        return ""
+    ms, off = int(m.group(1)), m.group(2) or "+0000"
+    delta = datetime.timedelta(hours=int(off[1:3]), minutes=int(off[3:5])) * (
+        1 if off[0] == "+" else -1)
+    return datetime.datetime.fromtimestamp(ms / 1000, datetime.timezone(delta)).date().isoformat()
+
+
+def session_votes(sessions: list[str]) -> tuple[dict[int, str], dict[int, str]]:
     """votering id -> session, from every sak in every named session.
 
     A case that spans two sessions is listed by both, and each listing returns the
     case's whole `sak_votering_liste`, so a votering cited by a carried-over case is
     claimed by more than one session (measured 2026-10-27: 511 of 6838). The API has
-    no vote-to-date endpoint, so which session a vote was actually taken in cannot be
-    derived from the listing. Assigning the last session that named it made the field
+    no votering->sak endpoint (eksport/votering returns 404), so which session a vote
+    was actually taken in cannot be derived from the listing, and neither can its
+    date. Assigning the last session that named it made the field
     a function of iteration order: the same inputs wrote 2023-2024 or 2024-2025
     depending on the order the sessions were passed. Those votes are recorded as
     unknown ("") instead, which is what the artefact already means by an empty
     session, rather than asserting one of the candidates.
     """
     claims: dict[int, set[str]] = {}
+    dates: dict[int, str] = {}
     for ses in sessions:
         sak_list = fetch(SAKER.format(ses)).get("saker_liste") or []
         got = 0
@@ -208,6 +226,9 @@ def session_votes(sessions: list[str]) -> dict[int, str]:
                 if not vid or vid < 0:
                     continue
                 claims.setdefault(int(vid), set()).add(ses)
+                d = _iso_date(v.get("votering_tid"))
+                if d:
+                    dates.setdefault(int(vid), d)
                 got += 1
         print(f"  {ses}: {len(sak_list)} saker, {got} voterings", file=sys.stderr)
     out: dict[int, str] = {}
@@ -221,7 +242,9 @@ def session_votes(sessions: list[str]) -> dict[int, str]:
     if ambiguous:
         print(f"  {ambiguous} votering(s) are named by more than one session: session left "
               f"empty, since the listing cannot say when the vote was taken", file=sys.stderr)
-    return out
+    print(f"  {len(dates)} votering(s) carry their own date from votering_tid",
+          file=sys.stderr)
+    return out, dates
 
 
 def cited_votes() -> dict[str, dict]:
@@ -258,6 +281,7 @@ def main(argv: list[str]) -> int:
     print(f"content cites {len(cites)} distinct voterings", file=sys.stderr)
 
     wide: dict[int, str] = {}
+    dates: dict[int, str] = {}
     sessions = [x.strip() for x in args.sessions.split(",") if x.strip()]
     # A union with the sessions the index already holds, not a replacement.
     # The artefact is regenerated from the sessions named, so running one session
@@ -281,7 +305,7 @@ def main(argv: list[str]) -> int:
                   file=sys.stderr)
             sessions = added + sessions
     if sessions:
-        wide = session_votes(sessions)
+        wide, dates = session_votes(sessions)
         print(f"{len(wide)} voterings found by walking {len(sessions)} session(s)", file=sys.stderr)
 
     allvids = sorted({int(v) for v in cites} | set(wide))
@@ -303,11 +327,12 @@ def main(argv: list[str]) -> int:
             print(f"  votering {key}: forslag fetch failed: {type(e).__name__}: {e}", file=sys.stderr)
             return None
         forslag = " | ".join(x for x in (strip_html(y.get("forslag_tekst")) for y in fl) if x)
-        # No date. voteringsresultat carries no sak_id and there is no
-        # votering->sak endpoint (eksport/votering returns 404), so a date could
-        # only be had by scanning every case's voterings across 18 sessions. A
-        # mostly-empty date column reads as missing data; the year axis belongs to
-        # the position view, which has real evidence dates, not to this one.
+        # The date comes free with the walk: every element of sak_votering_liste
+        # carries votering_tid, and session_votes already reads that payload. It was
+        # recorded here as unavailable for three iterations, on the correct but
+        # irrelevant observation that eksport/votering returns 404 -- so a whole
+        # second-date stream was written off as needing a live scan. It needs none.
+        # Empty means the vote was reached through a citation, before any walk ran.
         return {
             "votering_id": int(key),
             # A vote with no per-representative rows was taken unanimously (the
@@ -321,6 +346,7 @@ def main(argv: list[str]) -> int:
             "cited_by": (cites.get(key) or {}).get("evidence_ids") or [],
             "coded_parties": (cites.get(key) or {}).get("parties") or [],
             "session": wide.get(int(key), ""),
+            "date": dates.get(int(key), ""),
         }
 
     votes, failed = [], 0

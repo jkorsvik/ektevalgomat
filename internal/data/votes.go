@@ -45,6 +45,13 @@ type Vote struct {
 	// walked that session rather than meeting the vote through a citation. Empty
 	// means only the citation route found it, so its session is unknown here.
 	Session string `json:"session"`
+	// Date is the day the vote was taken, YYYY-MM-DD, from the vote's own
+	// votering_tid. Empty means the vote was met through a citation before any
+	// session walk ran, so its date is unknown here rather than absent from the
+	// source: 14945 of 14946 carry it. It is a measured timestamp, not the
+	// siste_oppdatert_dato maintenance stamp on the case, which moves whenever a
+	// case is edited and would date every vote to the last bulk update.
+	Date string `json:"date"`
 }
 
 type voteIndexFile struct {

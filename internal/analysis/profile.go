@@ -11,8 +11,9 @@ import (
 // record actually covers.
 //
 // The year columns are the honest part. A "position over time" line needs two
-// dated observations in the same cell, and almost no cell has that: 510 of 518
-// coded cells rest on a single item. So this does not draw a trend. It reports
+// dated observations in the same cell, and almost no cell has that: 496 of 518
+// coded cells rest on a single item (measured 2026-10-28; it was 510 of 518
+// before the utsagn-55 batch deepened six cells, so re-measure, do not quote). So this does not draw a trend. It reports
 // how far back the party's evidence in the dimension reaches and how many cells
 // could support a trend at all, which is the difference between "we know what
 // they did in 2024" and "we know what they did, and when".

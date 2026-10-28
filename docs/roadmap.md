@@ -2511,3 +2511,141 @@ the rule or the Sp coding has to move, and lowering it is not the driver's call.
 report is `tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md`, which is a
 local working file (`tools/autopilot/.gitignore` excludes `staging/`) and is therefore not
 in a clone; everything load-bearing is summarised in this paragraph and in the queue entry.
+
+## Nothing in the Norgespris table is quotable, and that decided the row (2026-10-28)
+
+Innst. 9 S (2025-2026) divides the energy budget party by party, and its rammeområde 12
+table gave the first chance at a tier-A row on utsagn-12 that is neither a programme point
+nor a vote: MDG's own column raises kap. 1820 post 77 «Norgespris for strøm» by 535 000 and
+is the only column carrying money on the new post 80 «Garantert minstepris for egenprodusert
+overskuddsstrøm». The column map is certain, because the table reconciles: every one of its
+seven party columns sums its own deviations to its own sum line, exactly, to the krone.
+
+| column | Σ deviations | stated on the sum line |
+|---|---|---|
+| A, SV, Sp, R og MDG | -303 000 | -303 000 |
+| FrP | -875 000 | -875 000 |
+| H | -211 600 | -211 600 |
+| SV | +52 000 | +52 000 |
+| R | +355 300 | +355 300 |
+| MDG | -1 863 000 | -1 863 000 |
+| V | +71 676 | +71 676 |
+
+The row did not ship, and the reason is worth writing down because it is the first time the
+rule has bitten.
+
+**No fragment of that table can be archived, at any length.** The bound is 6 000 characters
+per stored window, and the cells in this document carry roughly forty times their text in
+markup, so 400 normalised characters of padding around a cell maps to thousands of source
+characters:
+
+| fragment | window |
+|---|---|
+| `9 635 000 (+535 000)` | 10 323 |
+| `100 000 (+100 000)` | 10 168 |
+| the whole post 77 line | 10 365 |
+| `9 635 000` alone | not a fragment: `fragments()` drops pieces under 12 chars |
+
+**And no sentence carries the numbers.** Counted, twice: `535` occurs once in the whole
+263 129-character document and that occurrence is the table row; `9 635` once; `garantert`
+once; `minstepris` twice, the other being SV's sentence about solar power. MDG's merknad
+2.1.7 is about havbunnsmineraler, havvind and naturkartlegging, and post 80 has no merknad at
+all. The only party merknad about a makspris anywhere in the document is Rødt's.
+
+The rule that decides it was already in `method/position-scale.md` and is now stated in one
+sentence, because two existing rows pull in different directions and turning them into a
+contradiction is a reading error:
+
+> A numeric row must cite the digit-carrying fragment whenever one exists inside the
+> 6 000-character window — a digit-only table line is enough, as in
+> `768-h-skatteniva-innst2s.yaml`, whose line measures 4 916. Only where a measured search
+> shows none exists may it ship excerpt-free, with the transcription in `claim_action` and
+> the measured window in `context_note` — and then only if it asserts no polarity, as
+> `759-stat-nodnett-brukerbetaling-1til1.yaml` does with `position: null`.
+
+The MDG row is the one case both halves exclude: it asserts +2, which needs 768's citable
+digit, on a figure that has no archivable fragment, which is 759's latitude and is available
+only to a row that codes no polarity. So it waits in
+`staging/budget-lead-3-norgespris-stromstotte/not-promoted/` with its `REASON.md` and its
+`VERIFIER.md`, and queue.yaml carries the one question it needs answered. Two corrections
+the verifier made to the draft would have mattered if it had shipped: post 78 is *Norgespris
+for fjernvarme*, not a generic fjernvarme post, so MDG's net on the Norgespris posts 77-78 is
++35 000 — 0,36 pst., the same order as Venstre's 0,37 pst. that the scale leaves open — and
+the +2 has to rest on the minstepris post, which is new money, not on the +535 000, which is
+a reallocation financed by zeroing post 75 Strømstønadsordning.
+
+**The FrP half of the same lead is undecidable from this document, and the draft that coded
+it -2 was wrong.** FrP removes the Norgespris post and funds a «strømløsning med makspris» at
+50 øre/kWh, which reads like the statement's uenig pole — but this dataset has already read
+that same 50-øre design as a support scheme: row 87 quotes the case filing it as «en slags
+makspris, som er en forsterket strømstøtte» and states that it is «ikke et lovbestemt
+pristak», while row 764 records FrP proposing it as «en lovbestemt makspris for strøm på 0,50
+kr pr. kWt». One number, both labels, same party. The absence of the word «lovbestemt» from
+Innst. 9 S cannot discriminate either: it occurs once in the document, about the 2035 climate
+target, and Rødt's makspris — coded -2 in row 82 — is never called lovbestemt there either.
+That leaves row 87 as the item worth reviewing, not the new draft, and it is in the queue.
+
+## The vote gap, counted: 104 of 14 946 (2026-10-28)
+
+LOOP.md ranks voteringsspor first and no queue item had ever covered it, so the gap was
+counted rather than estimated. `internal/data/votes/index.json` holds **14 946** voterings;
+**104** carry a non-empty `cited_by`, so **14 842 are cited by no evidence row**, spread over
+**3 577 saker**. All 14 842 were mapped to a `sak_id` out of 4 408 cached per-sak payloads;
+the single exception is votering 2023, a merged budget text.
+
+Two counts make the scan trustworthy rather than merely empty: a known-cited id is found by
+the same field, and an independent regex over all 634 evidence files returns the same
+citations for it. The unanchored version of the same search was garbage on the first pass —
+1 339 hits for utsagn-32 from «sfo» inside other strings — so only word-anchored passes are
+recorded here.
+
+Eight leads survived, each of which would give nine cells a second *date*, since each of those
+nine cells rests on a single row: utsagn-49, 09, 01 (three earlier saker, the densest), 17,
+11, 08, 48 and 56. What blocks them is one field. No vote on disk carries a date, and the API
+has no vote-to-date endpoint, so each candidate costs one live fetch of its own page. The one
+route not yet tried is a date derivable from a document already in the cache — the innstilling
+the vote belongs to — and that is what the queue item asks the next pass to check.
+
+Also corrected: the claim «510 of 518 coded cells hold exactly one item», in LOOP.md and in
+`internal/analysis/profile.go`, is stale. Measured on this tree, **496 of 518** party-attributed
+coded cells rest on a single item; 21 cells hold two or more dates, and one more holds two
+items sharing a date. The old number was true when it was written and stopped being true when
+the utsagn-55 batch deepened six cells.
+
+## Bias pass after the first tier-A budget rows (2026-10-28)
+
+A bias pass ran over the tree as committed, with a Go harness that imports the real
+`internal/data` and `internal/scoring` rather than modelling them, so the scores below are the
+shipped scorer's. It changed no content. Four of its numbers the driver re-derived
+independently before recording them: 634 evidence rows, 518 party-attributed coded cells, 496
+of those resting on a single item, and the ratchet at 12 of 12 in both directions. The rest
+are the pass's own measurements, from `staging/bias-2026-10-28/REPORT.md` and the harness
+beside it, and are recorded as measurements to re-run, not as settled facts.
+
+**The ratchet's 12 is a cancellation, not a small gap.** The eleven statements framed with an
+`ikke` score a 50-point all-enig spread on their own (H 77,5 against SV 27,5); the other 49
+score 16,2 and put H eighth. The whole-set 12,70 is the residue of two one-sided blocks
+pulling opposite ways. Two counterfactuals on scratch trees — coding Ap -1 on utsagn-52, and
+Sp +2 on utsagn-55 — each take the spread to 13 and fail the test, which is the same
+conclusion the utsagn-55 batch reached from the other side: headroom is a sixth of a point
+per cell, and a single cell moving one step can cross it.
+
+**Ap is the bottom of the scale on its own.** Its mean coded position is -0,232 where the
+other eight run +0,035 to +0,276 (corpus mean +0,127), it is the lower party in all six of
+the widest pairs (Sp-Ap 12,70 down to MDG-Ap 8,39), and its two uncoded cells — utsagn-52 and
+57 — sit exactly where the coded left is -2 and +2 at once. The ratchet survives in part
+because of where that gap is. That is worth knowing before anyone «fixes» Ap's coverage.
+
+**Six per cent of the dataset carries the quiz's ceiling.** 31 of 518 cells rest only on a
+tier-C or tier-D item, and 483 of 518 (93,2 pst.) rest on a single item. Re-scoring only the
+cells that are not `Svak` gives an all-enig spread of 14 and moves the leader from Sp to V;
+adding `Moderat` gives 16. So the weakest-coded 6 pst. is load-bearing for a result the page
+presents as a ranking. Weighting by evidence strength is the obvious fix and is not a driver's
+call, because it changes every published score at once.
+
+Two smaller ones, recorded because they are cheap to re-check: on utsagn-55 the cap clamp
+penalises the three cells that hold the newest and most direct evidence (Sp and MDG at
+`Moderat`, KrF at `Svak`), while the six with a capped row *plus* an old programme row read
+`Sterk`; and 23 of 60 statements (38,3 pst.) carry a premise marker, unevenly — the `ikke`
+block is coded +0,378 against +0,075 elsewhere. The three clearest cases of a premise inside
+the question are quoted in the report (`statements/15:8-10`, `04:6-8`, `08:8-10`).

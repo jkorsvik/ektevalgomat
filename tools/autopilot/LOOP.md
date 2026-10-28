@@ -99,7 +99,9 @@ Ranked by value per hour. `queue.yaml` carries the concrete items.
 
 1. **Voteringsspor, complete.** The spine. Every vote per representative, per
    session, joined to the statement it bears on. This is the only stream that
-   gives a cell a second date, and 510 of 518 coded cells hold exactly one item.
+   gives a cell a second date, and 496 of 518 coded cells hold exactly one item
+   (measured 2026-10-28; the number moves whenever a cell is deepened, so
+   re-measure it rather than trusting this line).
    `tools/autopilot/votes.py` fetches a case's votes; `tools/autopilot/history.py`
    finds the earlier cases worth fetching.
 2. **Government composition over time.** Who governed when, which minister, which

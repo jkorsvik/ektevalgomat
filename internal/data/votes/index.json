@@ -2,6 +2,70 @@
  "generated_at": "2026-10-29",
  "votes": [
   {
+   "votering_id": 1984,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:1 (2007–2008) – grunnlovsforslag fra Per-Kristian Foss, Inge Lønning, Marianne Aasen Agdestein og Svein Roald Hansen om endringer i Grunnloven § 93 med sikte på å åpne for at samtykke til suverenitetsoverføring kan gis med 2/3 flertall dersom det først er avholdt en rådgivende folkeavstemning – alternativ 1 – bifalles.",
+   "parties": {
+    "frp": "split",
+    "ap": "split",
+    "sv": "mot",
+    "h": "for",
+    "krf": "mot",
+    "v": "mot",
+    "sp": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-02-07"
+  },
+  {
+   "votering_id": 1985,
+   "unanimous": true,
+   "forslag": "Dokument nr. 12:1 (2007–2008) – grunnlovsforslag fra Per-Kristian Foss, Inge Lønning, Marianne Aasen Agdestein og Svein Roald Hansen om endringer i Grunnloven § 93 med sikte på å åpne for at samtykke til suverenitetsoverføring kan gis med 2/3 flertall dersom det først er avholdt en rådgivende folkeavstemning – alternativ 2 – bifalles ikke.",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-02-07"
+  },
+  {
+   "votering_id": 1986,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:24 (2007–2008) fra Rune J. Skjælaaen, Anna Ceselie Brustad Moe og Kari Mette Prestrud om endring av Grunnloven § 93 (rådgivende folkeavstemning) – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "for",
+    "h": "mot",
+    "krf": "mot",
+    "v": "mot",
+    "sp": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-02-07"
+  },
+  {
+   "votering_id": 1987,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:24 (2007–2008) – grunnlovsforslag fra Rune J. Skjælaaen, Anna Ceselie Brustad Moe og Kari Mette Prestrud om endring av Grunnloven § 93 (rådgivende folkeavstemning) – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "v": "for",
+    "sp": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-02-07"
+  },
+  {
    "votering_id": 2023,
    "unanimous": false,
    "forslag": "Stortinget ber regjeringen vurdere om det skal innføres andre begrensninger i vederlagsforskriften med hensyn til vederlagsgrunnlaget for eksempel gjennom innføring av et maksimumsbeløp. | Stortinget ber regjeringen legge frem forslag om endring i lov om helsetjenesten i kommunene slik at det innføres tilbud om gjennomføring av forebyggende hjemmebesøk hos personer som er over 75 år som ønsker et slikt tiltak. | Stortinget ber regjeringen fremme forslag om egne omstillingsmidler for norske kommuner som implementerer strategien som ligger i prosjektet «Længst muligt i eget liv» som en kjenner d",
@@ -20,6 +84,530 @@
    "coded_parties": [],
    "session": "",
    "date": ""
+  },
+  {
+   "votering_id": 2140,
+   "unanimous": true,
+   "forslag": "Dokument nr. 12:14 (2007–2008) – grunnlovsforslag fra Carl I. Hagen, Øystein Djupedal, Hill-Marta Solberg, Olav Akselsen, Berit Brørby, Lodve Solholm, Svein Roald Hansen og Ivar Skulstad med sikte på å innføre en ordning med oppløsningsrett og positiv parlamentarisme (investitur) – samtlige alternativer – bifalles ikke.",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-03-26"
+  },
+  {
+   "votering_id": 2280,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:2 (2007–2008) – grunnlovsforslag fra Øystein Djupedal, Ågot Valle og Hallgeir H. Langeland om endringer i Grunnloven §§ 2, 4, 12 og 16 med sikte på å avskaffe Grunnlovens bestemmelser om statskirkeordningen og grunnlovsfeste landets statsskikk og menneskerettighetsforpliktelser – § 2 alternativ 2, § 4, § 12 og § 16 alternativ 2 – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "for",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2281,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:2 (2007–2008) – grunnlovsforslag fra Øystein Djupedal, Ågot Valle og Hallgeir H. Langeland om endringer i Grunnloven §§ 2, 4, 12 og 16 med sikte på å avskaffe Grunnlovens bestemmelser om statskirkeordningen og grunnlovsfeste landets statsskikk og menneskerettighetsforpliktelser – samtlige alternativer – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2282,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:25 (2007–2008) – grunnlovsforslag fra Inger S. Enger, Trygve Slagsvold Vedum, Per Olaf Lundteigen, Anna Ceselie Brustad Moe og Kari Mette Prestrud om endringer i Grunnloven §§ 21, 22 og 27 med sikte på ny organisering av forholdet mellom staten og Den norske kirke – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2283,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:25 (2007–2008) – grunnlovsforslag fra Inger S. Enger, Trygve Slagsvold Vedum, Per Olaf Lundteigen, Anna Ceselie Brustad Moe og Kari Mette Prestrud om endringer i Grunnloven §§ 21, 22 og 27 med sikte på ny organisering av forholdet mellom staten og Den norske kirke – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2284,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:20 (2007–2008) – grunnlovsforslag fra Alvhild Hedstein og Gunvald Ludvigsen om endringer i Grunnloven §§ 4 og 16 (om forholdet stat/kirke) – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2285,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:20 (2007–2008) – grunnlovsforslag fra Alvhild Hedstein og Gunvald Ludvigsen om endringer i Grunnloven §§ 4 og 16 (om forholdet stat/kirke) – bilfalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2286,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:10 (2007–2008) – grunnlovsforslag fra Torfinn Opheim, Anders Anundsen, Ine Marie Eriksen Søreide, Rolf Reikvam, Dagrun Eriksen, Rune J. Skjælaaen og Odd Einar Dørum om endringer i Grunnloven §§ 2, 4, 12, 16, 21, 22 og 27 med sikte på ny organisering av forholdet mellom staten og Den norske kirke – bifalles.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "for",
+    "sp": "split",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2287,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:16 (2007–2008) Grunnlovsforslag fra Carl I. Hagen og Finn Erik Vinje, vedtatt til fremsettelse av Carl I. Hagen, om språklig fornyelse av Grunnloven – bifalles.",
+   "parties": {
+    "frp": "for",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "for",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2288,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:16 (2007–2008) Grunnlovsforslag fra Carl I. Hagen og Finn-Erik Vinje, vedtatt til fremsettelse av Carl I. Hagen, om språklig fornyelse av Grunnloven – bifalles ikke.",
+   "parties": {
+    "frp": "mot",
+    "ap": "for",
+    "sv": "for",
+    "h": "mot",
+    "krf": "for",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2289,
+   "unanimous": false,
+   "forslag": "Stortinget ber Presidentskapet bidra til å få utarbeidet oppdaterte språklige versjoner av Grunnloven på bokmål og nynorsk. I dette arbeidet skal det legges til grunn at de to versjonene skal være likestilte og at den språklige moderniseringen ikke skal endre realiteten i den gamle (någjeldende) Grunnloven. De nye versjonene må foreligge slik at de kan fremmes som grunnlovsforslag innen 28. september 2012. Stortinget bør tilstrebe å få vedtatt de to nye utgavene i jubileumsåret 2014.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "mot",
+    "sp": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-05-21"
+  },
+  {
+   "votering_id": 2391,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:13 (2007–2008) – grunnlovsforslag fra Svein Roald Hansen, Tore Hagebakken, Berit Brørby, Ivar Skulstad, Øystein Djupedal, Bent Høie, Per-Willy Amundsen, Åge Starheim, Ib Thomsen, Ola T. Lånke, Lars Sponheim og Trygve Slagsvold Vedum om tillegg i Grunnloven § 49 om grunnlovsfesting av lokaldemokratiet, alternativ 1 – bifalles.",
+   "parties": {
+    "frp": "split",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "for",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2392,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:13 (2007–2008) – grunnlovsforslag fra Svein Roald Hansen, Tore Hagebakken, Berit Brørby, Ivar Skulstad, Øystein Djupedal, Bent Høie, Per-Willy Amundsen, Åge Starheim, Ib Thomsen, Ola T. Lånke, Lars Sponheim og Trygve Slagsvold Vedum om tillegg i Grunnloven § 49 om grunnlovsfesting av lokaldemokratiet, alternativ 2 – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "sp": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2393,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:13 (2007–2008) – grunnlovsforslag fra Svein Roald Hansen, Tore Hagebakken, Berit Brørby, Ivar Skulstad, Øystein Djupedal, Bent Høie, Per-Willy Amundsen, Åge Starheim, Ib Thomsen, Ola T. Lånke, Lars Sponheim og Trygve Slagsvold Vedum om tillegg i Grunnloven § 49 om grunnlovsfesting av lokaldemokratiet, alternativ 1 og 2 – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2394,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:4 (2007–2008) – grunnlovsforslag fra Inga Marte Thorkildsen, Hallgeir H. Langeland og Karin Andersen om ny § 110 d alternativt ny § 110 e i Grunnloven (retten til bolig), forslag B alternativ 2 – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "for",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2395,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:4 (2007–2008) om grunnlovsforslag fra Inga Marte Thorkildsen, Hallgeir H. Langeland og Karin Andersen om ny § 110 d alternativt ny § 110 e i Grunnloven (retten til bolig), samtlige alternativer – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2396,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:5 (2007–2008) – grunnlovsforslag fra Karin Andersen, Hallgeir H. Langeland, May Hansen, Lars Peder Brekk og André N. Skjelstad om innføring av en egen grunnlovsbestemmelse om vern mot diskriminering på grunn av kjønn og diskriminering av minoriteter – alternativ 1 – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "for",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2397,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:5 (2007–2008) – grunnlovsforslag fra Karin Andersen, Hallgeir H. Langeland, May Hansen, Lars Peder Brekk og André N. Skjelstad om innføring av en egen grunnlovsbestemmelse om vern mot diskriminering på grunn av kjønn og diskriminering av minoriteter – alternativ 1 og alternativ 2 – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2398,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:12 (2007–2008) – grunnlovsforslag fra Odd Einar Dørum og Gunnar Kvassheim om endringer i Grunnloven § 100 (om ytringsfrihet og religion) – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2399,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:12 (2007–2008) om grunnlovsforslag fra Odd Einar Dørum og Gunnar Kvassheim om endringer i Grunnloven § 100 (om ytringsfrihet og religion) – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2400,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:17 (2007–2008) – grunnlovsforslag fra Alvhild Hedstein og Anne Margrethe Larsen om ny § 100 d i Grunnloven (om rett til asyl), alternativ 2 B – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "for",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2401,
+   "unanimous": false,
+   "forslag": "Dokument nr, 12:17 (2007–2008) – grunnlovsforslag fra Alvhild Hedstein og Anne Margrethe Larsen om ny § 100 d i Grunnloven (om rett til asyl), samtlige alternativer – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2402,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:18 (2007–2008) – grunnlovsforslag fra Vera Lysklætt og Odd Einar Dørum om ny § 100b og ny § 100c i Grunnloven (om privatlivets fred og personopplysninger), forslag I alternativ 1B og forslag II alternativ 1B – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2403,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:18 (2007–2008) – grunnlovsforslag fra Vera Lysklætt og Odd Einar Dørum om ny § 100b og ny § 100c i Grunnloven (om privatlivets fred og personopplysninger), samtlige alternativer – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2404,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:19 (2007–2008) om grunnlovsforslag fra Odd Einar Dørum og Gunvald Ludvigsen om ny § 100a i Grunnloven (om likhet for loven og om grunnleggende rettssikkerhetsgarantier), alternativ 2 – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "sp": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2405,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:19 (2007–2008) – grunnlovsforslag fra Odd Einar Dørum og Gunvald Ludvigsen om ny § 100a i Grunnloven (om likhet for loven og om grunnleggende rettssikkerhetsgarantier), alternativ 1 og 2 – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "for",
+    "sp": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2406,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:22 (2007–2008) – om grunnlovsforslag fra Åse Gunhild Woie Duesund, Laila Dåvøy, Line Henriette Holten Hjemdal og Dagfinn Høybråten om ny § 95 a i Grunnloven (Vern av liv) – bifalles.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "mot",
+    "krf": "for",
+    "sp": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2407,
+   "unanimous": false,
+   "forslag": "Dokument nr. 12:22 (2007–2008) om grunnlovsforslag fra Åse Gunhild Woie Duesund, Laila Dåvøy, Line Henriette Holten Hjemdal og Dagfinn Høybråten om ny § 95 a i Grunnloven (Vern av liv) – bifalles ikke.",
+   "parties": {
+    "frp": "for",
+    "ap": "for",
+    "sv": "for",
+    "h": "for",
+    "krf": "mot",
+    "sp": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-04"
+  },
+  {
+   "votering_id": 2640,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å innføre en ordning med kumulering ved stortingsvalg ved stortingsvalget i 2013. Stortinget ber om at reglene om kåring av kandidater endres, slik at et personlig stemmetall på minst åtte prosent av listens totale stemmetall kåres i rekkefølge etter antall mottatte personlige stemmer.",
+   "parties": {
+    "frp": "mot",
+    "ap": "mot",
+    "sv": "mot",
+    "h": "for",
+    "krf": "for",
+    "sp": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-14"
+  },
+  {
+   "votering_id": 2641,
+   "unanimous": true,
+   "forslag": "Stortinget ber regjeringen utrede endringer av valgordningen for stortingsvalg slik at velgerne gis mulighet til å påvirke rekkefølgen av partienes kandidater, samtidig som hensyn til partienes mulighet til å sikre innflytelse over hvilke kandidater som velges, sikres. Stortinget ber om at en slik reform for stortingsvalg utredes slik at den eventuelt nye valgordningen kan innføres ved stortingsvalget i 2017.",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2009-2010",
+   "date": "2012-06-14"
   },
   {
    "votering_id": 13075,

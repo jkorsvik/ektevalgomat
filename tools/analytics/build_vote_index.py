@@ -188,7 +188,15 @@ def _sides(rows: list[dict], keyfn) -> dict[str, str]:
     out = {}
     for pid, b in tally.items():
         if b["for"] and b["mot"]:
-            out[pid] = "split"
+            # The same rule verify_votes.py applies, so the artefact and the checker
+            # cannot disagree about what a party did. A party is split only when the
+            # minority is above 20 % of its votes; below that, one dissenter does not
+            # dissolve a party line. The old "any dissent is split" made Høyre "split"
+            # on a 1-for/20-against division while every row coding it said "mot".
+            if min(b["for"], b["mot"]) * 4 > max(b["for"], b["mot"]):
+                out[pid] = "split"
+            else:
+                out[pid] = "for" if b["for"] > b["mot"] else "mot"
         elif b["for"]:
             out[pid] = "for"
         elif b["mot"]:

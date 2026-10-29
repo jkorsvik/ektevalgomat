@@ -41,14 +41,16 @@ type Vote struct {
 	// this vote. Empty means the vote is cited as context, or by an institutional
 	// row that codes nobody.
 	CodedParties []string `json:"coded_parties"`
-	// Session is the storting session the vote was taken in, when the generator
-	// walked that session rather than meeting the vote through a citation. Empty
-	// means only the citation route found it, so its session is unknown here.
+	// Session is the storting session the vote was taken in. The generator takes it
+	// from the session walk when the walk named the vote, and otherwise from the
+	// vote's own date, since a session runs October to September. Every vote carries
+	// one (measured 2026-10-29: 25773 of 25773); a vote with neither a walk claim nor
+	// a date is the only case that would leave it empty.
 	Session string `json:"session"`
 	// Date is the day the vote was taken, YYYY-MM-DD, from the vote's own
-	// votering_tid. Empty means the vote was met through a citation before any
-	// session walk ran, so its date is unknown here rather than absent from the
-	// source: 14945 of 14946 carry it. It is a measured timestamp, not the
+	// votering_tid. Every vote in the index carries it (25773 of 25773): a vote met
+	// through a citation before any walk ran still had its date once the session was
+	// walked. It is a measured timestamp, not the
 	// siste_oppdatert_dato maintenance stamp on the case, which moves whenever a
 	// case is edited and would date every vote to the last bulk update.
 	Date string `json:"date"`

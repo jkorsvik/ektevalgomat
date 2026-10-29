@@ -2616,6 +2616,38 @@ coded cells rest on a single item; 21 cells hold two or more dates, and one more
 items sharing a date. The old number was true when it was written and stopped being true when
 the utsagn-55 batch deepened six cells.
 
+## The vote corpus after the full walk: 25 773 votes, 16 sessions (2026-10-29)
+
+The eleven sessions the index was missing are walked, and the two the walk reached first were
+walked again from a warm fetch cache. `internal/data/votes/index.json` now holds **25 773**
+voterings over **16** sessions — **all 25 773 dated** and **all 25 773 labelled** with the
+session they were taken in — spanning **2011-10-05** to **2026-10-22**. **109** carry a
+non-empty `cited_by`, so **25 664 are cited by no evidence row**, and **6 104** were taken
+without a division.
+
+The floor is the source's, not the walk's. `saker?sesjonid=2009-2010` returns 581 cases, 458
+of them treated in 2009-2010, and their `voteringer?sakid=` payloads carry **zero** divisions;
+the 59 divisions that session's walk did find are all dated 2012, because a case carried into
+a later session lists that session's divisions. No division exists to collect before October
+2011 through this API, so `2009-2010` and `2010-2011` are recorded as refused with that
+measurement instead of standing as silent gaps.
+
+Two repairs fell out of the walk, both at the layer that runs rather than in the artefact. **A
+vote's session now comes from its own `votering_tid` when no walk named it**: before that,
+4 179 of 25 773 votes carried no session at all, across fifteen sessions, because the
+generator's union of sessions is built from the session labels already in the index, so an
+unlabelled vote could never pull in the walk that would have labelled it. **A vote that two
+sessions both claim is now resolved by its date instead of being left blank**: 4 411 vote ids
+appear in more than one session's listings, and the date rule agrees with all 232 labels that
+already existed for those, and with 21 594 of 21 594 labelled votes overall.
+
+Measured, not assumed: the rebuilt index differs from HEAD in **4 179** records and in no
+other field, with **0** votes added or removed; `TestEveryVoteCarriesItsSession` passes on
+25 773 votes and fails when one session is blanked («1 of 25773 votes carry no session (first
+ids [28604])»), so the green is not vacuous; `verify_votes` OK 426, MIXED 23, MISMATCH 0,
+SPLIT 2 across 451 files; `verify_excerpts` 0 failed across 351 excerpts; `go test ./...
+-count=1` green in six packages.
+
 ## Bias pass after the first tier-A budget rows (2026-10-28)
 
 A bias pass ran over the tree as committed, with a Go harness that imports the real

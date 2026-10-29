@@ -287,3 +287,41 @@ func TestAPartyNeverCodesOneVoteringOppositeWaysInOneStatement(t *testing.T) {
 	t.Logf("%d citations checked across %d statement/party/votering keys, %d contradictory",
 		citations, len(bySign), bad)
 }
+
+// Every vote must say which session it was taken in, because a vote with no
+// session cannot be placed in time and the timeline cannot show it.
+//
+// Measured 2026-10-29: 4179 of 25773 votes carried no session, spread over
+// fifteen sessions. The cause was a closed loop in the generator, not a gap in
+// the source: the union of sessions it walks is derived from the session labels
+// already in the index, so an unlabelled vote could never pull in the walk that
+// would have labelled it. The generator now falls back to the vote's own
+// votering_tid, which agrees with every label that already existed (21594 of
+// 21594, including all 232 votes whose id two sessions both claim).
+func TestEveryVoteCarriesItsSession(t *testing.T) {
+	votes := Votes()
+	if len(votes) == 0 {
+		t.Fatal("no votes loaded: the check would pass on nothing")
+	}
+	var empty []int
+	for _, v := range votes {
+		if v.Session == "" {
+			empty = append(empty, v.VoteringID)
+		}
+	}
+	if len(empty) > 0 {
+		first := empty
+		if len(first) > 5 {
+			first = first[:5]
+		}
+		t.Errorf("%d of %d votes carry no session (first ids %v): the artefact cannot place "+
+			"them in time", len(empty), len(votes), first)
+	}
+	labelled := 0
+	for _, v := range votes {
+		if v.Session != "" {
+			labelled++
+		}
+	}
+	t.Logf("%d votes checked, %d carry a session", len(votes), labelled)
+}

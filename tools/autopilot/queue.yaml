@@ -1231,3 +1231,23 @@ items:
     143 S, so even a 2025 row could not be excerpt-sourced without the network. Ratchet, had it shipped:
     the cell''s ten rows are all dated 2026-05-26, so a 2025 row would become the earliest and would move
     no published position.'
+- id: votes-before-2011-no-divisions
+  kind: reference
+  method: method/reference.md
+  role: harvester
+  status: refused
+  note: 'The walk of the eleven missing sessions on 2026-10-29 asked whether the corpus can reach further
+    back than 2011. It cannot, and the limit is the source''s rather than the walk''s. `saker?sesjonid=2009-2010`
+    returns 581 saker, 458 of them with behandlet_sesjon_id 2009-2010, and their `voteringer?sakid=` payloads
+    carry zero divisions (measured on the first 12: 0 of 12 with any division). The 59 divisions that
+    session''s walk did find are all dated 2012, because a case carried into a later session lists that
+    session''s divisions, so a sesjonid walk returns carried-over divisions and not the session''s own.
+    `2010-2011` behaves the same way: 674 saker, 257 divisions dated 2011-2012. The earliest division
+    in the rebuilt index is 2011-10-05 and the latest 2026-10-22, with every one of the 25 773 votes dated
+    and session-labelled.'
+  result: 'REFUSED 2026-10-29 with the measurement above: no division record for a Storting case treated
+    before October 2011 is reachable through data.stortinget.no/eksport, so the two sessions `2009-2010`
+    and `2010-2011` contribute only the carried-over divisions that other sessions also list. This is
+    a source gap, not an uncollected one: nothing further is owed here, and the corpus floor stays 2011-10-05.
+    Do not re-open this by walking the same sessions again; the payloads are cached and they return the
+    same nothing.'

@@ -222,6 +222,20 @@ def _iso_date(raw) -> str:
     return datetime.datetime.fromtimestamp(ms / 1000, datetime.timezone(delta)).date().isoformat()
 
 
+def session_from_date(d: str) -> str:
+    """The Storting session a vote belongs to, from its own date.
+
+    A session opens in October and runs to September, so January 2026 is the
+    2025-2026 session. Returns "" for a vote with no date, which is the artefact's
+    existing meaning for "unknown" rather than a guess.
+    """
+    if not d:
+        return ""
+    y, m = int(d[:4]), int(d[5:7])
+    start = y - 1 if m < 10 else y
+    return f"{start}-{start + 1}"
+
+
 def session_votes(sessions: list[str]) -> tuple[dict[int, str], dict[int, str]]:
     """votering id -> session, from every sak in every named session.
 
@@ -262,15 +276,31 @@ def session_votes(sessions: list[str]) -> tuple[dict[int, str], dict[int, str]]:
         print(f"  {ses}: {len(sak_list)} saker, {got} voterings", file=sys.stderr)
     out: dict[int, str] = {}
     ambiguous = 0
+    resolved = 0
     for vid, ses_set in claims.items():
         if len(ses_set) == 1:
             out[vid] = next(iter(ses_set))
+            continue
+        # A carried-over case is listed by both sessions, so the listing names two
+        # candidates for one vote. The vote's own votering_tid decides it: a Storting
+        # year runs from October to September, so a vote dated January belongs to the
+        # session that opened the previous October. Measured 2026-10-29 against the
+        # labels already in the index: the rule agrees on all 232 of the votes whose
+        # id is claimed by more than one session, and on 21 594 of 21 594 labelled
+        # votes overall. Only a vote with no date of its own stays unknown.
+        match = [s for s in ses_set if s == session_from_date(dates.get(vid, ""))]
+        if len(match) == 1:
+            out[vid] = match[0]
+            resolved += 1
         else:
             out[vid] = ""
             ambiguous += 1
+    if resolved:
+        print(f"  {resolved} votering(s) named by more than one session resolved by votering_tid",
+              file=sys.stderr)
     if ambiguous:
-        print(f"  {ambiguous} votering(s) are named by more than one session: session left "
-              f"empty, since the listing cannot say when the vote was taken", file=sys.stderr)
+        print(f"  {ambiguous} votering(s) are named by more than one session and carry no "
+              f"date: session left empty rather than asserting a candidate", file=sys.stderr)
     print(f"  {len(dates)} votering(s) carry their own date from votering_tid",
           file=sys.stderr)
     return out, dates
@@ -368,6 +398,8 @@ def main(argv: list[str]) -> int:
         # irrelevant observation that eksport/votering returns 404 -- so a whole
         # second-date stream was written off as needing a live scan. It needs none.
         # Empty means the vote was reached through a citation, before any walk ran.
+        # The date is read before the session, because the session falls back to it.
+        date = dates.get(int(key), "")
         return {
             "votering_id": int(key),
             # A vote with no per-representative rows was taken unanimously (the
@@ -383,8 +415,14 @@ def main(argv: list[str]) -> int:
             **({"unmapped_parties": um} if (um := unmapped(rows)) else {}),
             "cited_by": (cites.get(key) or {}).get("evidence_ids") or [],
             "coded_parties": (cites.get(key) or {}).get("parties") or [],
-            "session": wide.get(int(key), ""),
-            "date": dates.get(int(key), ""),
+            # The session is the walk's answer when it has one. A vote reached
+            # through a citation before any walk ran had no session at all, and the
+            # session the index kept could not pull it in: the union of sessions is
+            # derived from the labels themselves, so an unlabelled vote was invisible
+            # to the very walk that would have labelled it (measured 2026-10-29: 4 179
+            # votes across 15 sessions). Its own date closes that loop.
+            "session": wide.get(int(key)) or session_from_date(date),
+            "date": date,
         }
 
     votes, failed = [], 0
@@ -406,6 +444,10 @@ def main(argv: list[str]) -> int:
         return 2
 
     doc = {"generated_at": datetime.date.today().isoformat(), "votes": votes}
+    unlabelled = sum(1 for v in votes if not v.get("session"))
+    distinct = len({v["session"] for v in votes if v.get("session")})
+    print(f"{len(votes)} votes over {distinct} session(s), {unlabelled} without a session "
+          f"(a vote with neither a listing claim nor a date)", file=sys.stderr)
     body = json.dumps(doc, ensure_ascii=False, indent=1) + "\n"
     if args.dry_run:
         print(f"would write {len(votes)} votes to {OUT}/index.json ({len(body)} bytes)")

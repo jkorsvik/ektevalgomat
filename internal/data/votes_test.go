@@ -21,7 +21,40 @@ import (
 // generator "did you do your job" answers itself. If the two ever disagree about
 // what counts as a citation, the fix is to widen this regex, not to weaken the
 // requirement.
-var citedVotering = regexp.MustCompile(`(?i)(?:votering[_ -]?id[\s:=]*|voteringid=|&vt=)(\d{4,6})`)
+// voteIDPatterns mirrors tools/verify/verify_votes.py ID_PATTERNS exactly. The
+// fourth pattern is the one a previous Go check did not have, and its absence let a
+// guard here report "0 contradictory" while two rows coded the same division the same
+// way in opposite directions: they wrote "Votering 27496", which none of the first
+// three patterns matches. A checker that cannot see its input passes vacuously.
+var voteIDPatterns = []*regexp.Regexp{
+	regexp.MustCompile(`voteringid=([0-9]{4,6})`),
+	regexp.MustCompile(`[?&]vt=([0-9]{4,6})`),
+	// Case matters, exactly as in the Python: only the last pattern accepts a
+	// capital V. Making the third one case-insensitive made it read
+	// "Votering_id 26361, 2025" as two citations and reported a votering 2025 that
+	// does not exist. A port that is not byte-for-byte the authority drifts.
+	regexp.MustCompile(`votering[_ -]?id[\s:=]*((?:[0-9]{4,6})(?:\s*(?:,|og)\s*[0-9]{4,6})*)`),
+	regexp.MustCompile(`[Vv]otering(?:en|ene)?\s+((?:[0-9]{4,6})(?:\s*(?:,|og)\s*[0-9]{4,6})*)`),
+}
+
+var digits = regexp.MustCompile(`[0-9]{4,6}`)
+
+// voteIDsIn returns every votering id the text cites, in first-seen order.
+func voteIDsIn(text string) []int {
+	var out []int
+	seen := map[int]bool{}
+	for _, re := range voteIDPatterns {
+		for _, m := range re.FindAllStringSubmatch(text, -1) {
+			for _, d := range digits.FindAllString(m[1], -1) {
+				if id, err := strconv.Atoi(d); err == nil && !seen[id] {
+					seen[id] = true
+					out = append(out, id)
+				}
+			}
+		}
+	}
+	return out
+}
 
 func citedVoteringIDs(t *testing.T) map[int]string {
 	t.Helper()
@@ -35,11 +68,7 @@ func citedVoteringIDs(t *testing.T) map[int]string {
 		if err != nil {
 			t.Fatalf("%s: %v", f, err)
 		}
-		for _, m := range citedVotering.FindAllStringSubmatch(string(b), -1) {
-			id, err := strconv.Atoi(m[1])
-			if err != nil {
-				continue
-			}
+		for _, id := range voteIDsIn(string(b)) {
 			cited[id] = filepath.Base(f)
 		}
 	}
@@ -206,4 +235,55 @@ func TestVotesKeepPartiesOutsideTheNine(t *testing.T) {
 		t.Skip("votering 18486 is not in this index")
 	}
 	t.Logf("%d of %d votes record a party outside the nine", withUnmapped, len(votes))
+}
+
+// One party cannot take both sides of one division in one statement. Two rows can
+// cite the same votering legitimately when they code it on DIFFERENT statements (the
+// same vote points opposite ways on two near-opposite questions), but inside one
+// statement a +1 and a -1 on one votering is not history, it is a contradiction, and
+// the newest-row rule would resolve it silently by date instead of surfacing it.
+//
+// Found in the wild: utsagn-59/sv coded votering 27496 as +1 from a co-sponsorship and
+// as -1 from the vote itself, while both rows quoted "SV 5 mot, 0 for".
+func TestAPartyNeverCodesOneVoteringOppositeWaysInOneStatement(t *testing.T) {
+	type key struct {
+		statement, party string
+		vote             int
+	}
+	bySign := map[key]map[int][]string{}
+	citations := 0
+	for _, e := range Store.Evidence {
+		if e.Position == nil {
+			continue
+		}
+		sign := 0
+		switch {
+		case *e.Position > 0:
+			sign = 1
+		case *e.Position < 0:
+			sign = -1
+		}
+		blob := e.SourceName + " " + e.SourceURL + " " + e.ContextNote + " " + e.ClaimAction
+		for _, id := range voteIDsIn(blob) {
+			citations++
+			k := key{e.StatementID, e.PartyID, id}
+			if bySign[k] == nil {
+				bySign[k] = map[int][]string{}
+			}
+			bySign[k][sign] = append(bySign[k][sign], e.ID)
+		}
+	}
+	if citations == 0 {
+		t.Fatal("no coded evidence cites a votering: the check would pass on nothing")
+	}
+	bad := 0
+	for k, signs := range bySign {
+		if len(signs[1]) > 0 && len(signs[-1]) > 0 {
+			bad++
+			t.Errorf("%s/%s codes votering %d both ways: +%v vs -%v",
+				k.statement, k.party, k.vote, signs[1], signs[-1])
+		}
+	}
+	t.Logf("%d citations checked across %d statement/party/votering keys, %d contradictory",
+		citations, len(bySign), bad)
 }

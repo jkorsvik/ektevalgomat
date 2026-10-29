@@ -484363,6 +484363,1176 @@
    "coded_parties": [],
    "session": "2025-2026",
    "date": "2026-09-30"
+  },
+  {
+   "votering_id": 28540,
+   "unanimous": true,
+   "forslag": "Justiskomiteen skal ha 12 medlemmer. Energi- og miljøkomiteen skal ha 17 medlemmer.",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28541,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen snarest mulig sørge for at antikke patronvåpen blir underlagt løyve- og registreringsplikt.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28542,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre midlertidig import- og omsetningsforbud på antikke patronvåpen i påvente av løyve- og registreringsplikt.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28543,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre midlertidig stans i etableringen av nye, ikke påbegynte datasentre i Norge inntil anmodningsvedtak 525 og 526 vedrørende Innstilling 140 S (2025-2026) foreligger Stortingets ferdige behandling.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28544,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å etablere en liste over terrororganisasjoner som forbyr organisasjoner som er involvert i, forbereder, promoterer eller glorifiserer terror, og gjør det til en kriminell handling å utøve virksomhet i en slik terrororganisasjon jf. vilkårene i straffeloven § 136 a. En slik liste bør blant annet definere Hamas, Hizbollah, Palestinian Islamic Jihad og Den iranske revolusjonsgarden som terrororganisasjoner.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28545,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen komme tilbake til Stortinget med lovforslag til forbud mot kjøp, salg og erverv av KI-briller i Norge, med egnede unntaksbestemmelser i tilfeller brillene klassifiseres som hjelpemiddel for brukeren.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28546,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre midlertidig salgsstopp av KI-briller i Norge, med egnede unntaksbestemmelser i tilfeller brillene klassifiseres som hjelpemiddel for brukeren.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28547,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen ta initiativ til et bredt skolepolitisk forlik som sikrer forutsigbarhet for ressurser og økonomi og gir ledere og lærere ro til å utforme innhold og arbeidsmåter.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28548,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen avvikle bruken av konkurranseutsetting og anbud i barnevernssektoren og sikre ideelle virksomheter langsiktige avtaler med det offentlige.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28549,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen iverksette tiltak for å begrense de store og systematiske prissvingningene i drivstoffmarkedet og motvirke uforholdsmessig høye marginer og påslag på bensin og diesel.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28550,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen stanse inngåelsen av nye avtaler med teknologiselskapet Palantir i offentlig sektor, kartlegge eksisterende bruk og legge fram en plan for utfasing av eksisterende avtaler.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28551,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen stanse etableringen av nye datasenter i påvente av ny regulering av næringen",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28552,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen avklare med grunneier hva kostnaden over en tiårsperiode vil være for en utvidelse av fengselskapasiteten med 10 plasser ved Vestoppland fengsel avdeling Valdres.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28553,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen gjennomgå og fremme forslag om å modernisere straffelovens bestemmelser om spionasje og fremme forslag om å senke terskelen for at samarbeid med fremmed etterretning kan straffes. Regjeringen bes innhente erfaringer fra Sverige, Danmark og Storbritannia.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28554,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen iverksette en full gjennomgang av medlemslistene til tros- og livssynssamfunn, for å sikre at medlemslistene er korrekte og at støtten til trossamfunn er i tråd med lovverkets intensjoner, samt kreve tilbakebetalt urettmessig tildelt trosstøtte fra trossamfunn.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28555,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede innføring av krav om verifisert innmelding til tros- og livssynssamfunn, for eksempel gjennom BankID eller tilsvarende løsning.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28556,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen åpne opp for at den offentlige tannhelsetjenesten kan gi ikke-møtt-gebyr for bestilte timer til unge voksne fra året de fyller 19 til og med året de fyller 28 år i henhold til tannhelsetjenesteloven.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28557,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre flere tiltak som raskere utrydder og beskytter mot HPV-relatert kreft og sykdom, og sikre innføring av en vaksine med bredere beskyttelse i barnevaksinasjonsprogrammet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28558,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen innføre en &quot;én inn - tre ut&quot;-regel som betyr at tre reguleringer må fjernes for hver ny regulering som innføres fra staten.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28559,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om nødvendige lov- og forskriftsendringer slik at kontrolletatene (Arbeidstilsynet, Skatteetaten m.fl.) uhindret av taushetsplikt kan dele relevant informasjon om brudd på allmenngjøringsloven og arbeidslivskriminalitet med kommunene, blant annet til bruk i bevillings- og anskaffelsessaker.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28560,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å utvide tillitsvalgtes innsynsrett etter allmenngjøringsloven, slik at tillitsvalgte hos hovedentreprenør/oppdragsgiver får direkte innsynsrett i lønns- og arbeidsvilkår i alle ledd av leverandørkjeden.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28561,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen i forskrift stille krav om dokumentert betalt allmenngjort tarifflønn fra virksomheten ved fornyelse av skjenkebevilling.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28562,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen ta initiativ til en revurdering av takstordningen for sykemelding slik at taksten ikke baseres på utfallet, uten å legge opp til øvrige endringer av avtalen med Den norske Legeforening.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28563,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringa sikre at Statens vegvesen ikkje går vidare med ny reguleringsplan, men legg den vedtatte reguleringsplanen til grunn i det vidare arbeidet med prosjektet E39 Storehaugen-Førde.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28564,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem forslag om at CO2-avgiften for fiskeflåten avvikles fra 1. januar 2027.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28565,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringa kartlegge omfanget av utbetalte provisjonar i reiselivet som har som mål å styre turistar mot særskilte butikkar, samt foreslå tiltak for hindre ulovleg praksis.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28566,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringa gjere ei kartlegging av arbeidsforholda for utanlandske turistguidar i Noreg, med omsyn til løn, arbeidskontrakt og i kva grad returprovisjonar frå sal i norske butikkar er del av løna.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28567,
+   "unanimous": false,
+   "forslag": "I stortingsvedtak om veibruksavgift på drivstoff for 2026 gjøres følgende endringer fra 1. november til 31. desember: § 1 første ledd skal lyde: Fra 1. november til 31. desember skal det i henhold til lov 19. mai 1933 nr. 11 om særavgifter betales veibruksavgift til statskassen for innførsel og innenlandsk produksjon av følgende drivstoff: a. bensin per liter: kr 0 b. mineralolje til fremdrift av motorvogn (autodiesel) per liter: kr 0 c. naturgass per Sm3: kr 0 d. LPG per kg: kr 0 e. bioetanol per liter: kr 0 f. biodiesel per liter: kr 0 Fra 1. november til 31. desember gjøres i stortingsvedta",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28568,
+   "unanimous": false,
+   "forslag": "I statsbudsjettet for 2026 gjøres følgende endringer: Kap. Post Formål Kroner Kroner 5538 Veibruksavgift på drivstoff. 70 Veibruksavgift på bensin, reduseres med ... 461 667 000 fra kr 1 615 833 000 til kr 1 154 166 000 Kap. Post Formål Kroner Kroner 5538 Veibruksavgift på drivstoff. 71 Veibruksavgift på autodiesel, reduseres med ... 870 000 000 fra kr 3 045 000 000 til kr 2 175 000 000 Kap. Post Formål Kroner Kroner 5538 Veibruksavgift på drivstoff. 72 Veibruksavgift på naturgass og LPG, reduseres med ... 500 000 fra kr 1 175 000 til kr 1 250 000 Kap. Post Formål Kroner Kroner 5543 Miljøavgif",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28569,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede hvordan avgiftsreduksjonen for CO2-avgift som ble gitt i tidsrommet mai-august 2026 kan utvides til gass, der hensikten er å ivareta interessene og konkurransekraften til skip som bruker ulike typer gass som drivstoff opp imot skip som bruker andre typer mineralolje.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28570,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sørge for at skoler, innenfor gjeldende regelverk, kan stille ledige rom til disposisjon for elevinitierte aktiviteter, herunder aktiviteter med tros- og livssynsmessig innhold. Kommunene og fylkeskommunene er eier av skoleanleggene og må ta vurderingen av hvordan skoleanleggene skal brukes. Skoleeiers praksis må være saklig og ikke-diskriminerende, men skolene bør ha høy terskel for å avslå henvendelser om bruk av ledige rom til elevinitierte og frivillige aktiviteter.",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28571,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen snarest gjennomgå Mattilsynets arbeid og prioriteringer med mål om å sikre økt kapasitet til tilsyn av alvorlige bekymringsmeldinger, og vurdere hvilke lovpålagte oppgaver som kan overlates til privatpraktiserende veterinærer for å frigjøre kapasitet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28572,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å forby kommersiell hvalfangst i Norge.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "split"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28573,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede opprettelse av faglig baserte jaktfrie områder i eksisterende nasjonalparker, der formålet er å etablere referanseområder for forskning og forvaltning, og gi allmennheten mulighet til å oppleve mest mulig urørt og opprinnelig dyreliv.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28574,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sørge for at Mattilsynet i sine årsrapporter også rapporterer om det totale antallet innkomne bekymringsmeldinger, deres alvorlighetsgrad og antall fysiske tilsyn som er gjennomført.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28575,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre at de nasjonale prøvene fortsatt gir offentlig tilgjengelig og sammenlignbar kunnskap om elevenes lese- og regneferdigheter på skolenivå og at utviklingen kan følges over tid. Resultatene skal verken bli taushetsbelagt eller unntatt offentligheten.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28576,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen øke antall realfagspoeng i videregående skole, i lys av de fallende søkertallene til de tyngste realfagene.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28577,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen så raskt som mulig legge frem et lovforslag om å innføre rett til barnehageplass innen utgangen av den måneden barnet fyller ett år for barn født i desember, med ikrafttredelse fra 1. juli 2027.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28578,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen i førstkommende partsforhandlinger med Den norske Legeforening ha mål om revurdering av takstordningen for sykmelding slik at denne ikke er basert på utfallet av legens vurdering.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28579,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sørge for at prosesser om å redusere tilbud, øke responstid og sentralisere ambulansetjenesten i alle helseforetak stilles i bero inntil Stortinget har behandlet sak om helhetlig ambulanseberedskap for hele landet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28580,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge frem den varslede maritime strategien som en stortingsmelding.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28581,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen kraftig redusere strømeksporten grunnet strømsituasjonen i Norge.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28582,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen inkludere mat som et prioritert område i langtidsplanen for sivil beredskap i tillegg til kraft, elektronisk kommunikasjon og transport.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28583,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen i revidert budsjett 2027 komme tilbake til Stortinget med et forslag om en ordning for kompensasjon av CO2-avgift for bedrifter som ikke har reell mulighet til å omstille seg bort fra bruk av fossile energibærere.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28584,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen stille i bero pågående strukturendringer i politiet, herunder forslag om nedlegging av polititjenestesteder, i påvente av Politirolleutvalgets utredning og behandlingen av Langtidsplanen for politiet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "for",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28585,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen syte for at kommunene det gjeld involverast i prosessar som kan gje endringar i ambulansetenesta og at eventuelle endringar vurderast opp mot responstida og lokal beredskap, samt at slike endringar er tilfredsstillande fagleg vurdert av helseforetaka og at omsynet til pasienttryggleik er ivaretatt. Stortinget ber regjeringen kome attende til Stortinget med ein gjennomgang av tenesta på egna måte senest i samband med helsereformen.",
+   "parties": {
+    "ap": "for",
+    "frp": "mot",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "for",
+    "sp": "mot",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28586,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen iverksette en nasjonal satsning på lese- og bokstart fra 1 år eller yngre, i samarbeid med helsestasjon, bibliotek og barnehager.",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28587,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen fremme forslag om å utvide røykeforbudet etter tobakksskadeloven § 25 til å også gjelde uteserveringer",
+   "parties": {
+    "ap": "mot",
+    "frp": "mot",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28588,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre at statsforvaltere og tros- og livssynssamfunn veiledes og følges opp i håndtering av urettmessige medlemskap i samfunnene og at tilskudd tilbakebetales der det har vært utbetalt for mye.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28589,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen utrede en hjemmel for å forsterke kravene til dokumentasjon for inn- og utmelding i tros- og livssynssamfunn.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "for",
+    "mdg": "for",
+    "sp": "for",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28590,
+   "unanimous": true,
+   "forslag": "Stortinget ber regjeringen så snart som mulig få etablert en løsning der medlemmer i tros- og livssynssamfunn får direkte melding om at vedkommende er registrert som medlem i et eller flere samfunn.",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28591,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen legge teknologinøytralitet til grunn ved krav om utslippsfrie bygge- og anleggsplasser, slik at flytende biodrivstoff kan inngå i oppfyllelse av minimumskravet, og slik at biogass likebehandles med elektriske løsninger ved oppfyllelse av minimumskravet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "for",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "for",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28592,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen i gjennomgangen av takstsystemet for fastlegene vurdere hvordan systemet kan forenkles og forbedres. I arbeidet skal det blant annet vektlegges god rekruttering til ordningen, særlig i distriktene, og til næringsdrift. Takstsystemet må også belønne tid til pasienten, gode medisinske vurderinger, forebygging av sykefravær og koordinering og arbeid med pasienter med sammensatt sykdomsbilde.",
+   "parties": {
+    "ap": "for",
+    "frp": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "for",
+    "v": "for"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28593,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen instruere Statnett om å ikke reservere nettkapasitet for nytt forbruk over 100 MW eller mer, før regjeringen har lagt frem sak om anmodningsvedtak 525 og 526 vedrørende Innstilling 140 S (2025-2026), Saken fremmes for Stortinget senest innen utgangen av 2026. Pausen omfatter ikke prosjekter som allerede har fått reservert kapasitet, eller som er viktig for nasjonal beredskap og sikkerhet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28594,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen iverksette en uavhengig granskning av statsstøtten til tros - og livssynssamfunn. Granskningen skal kartlegge omfanget av medlemsjuks over tid, hvor mye statsstøtte som er utbetalt på feil grunnlag, og eventuelle mangler ved myndighetenes kontroll. Resultatene skal legges frem for Stortinget innen rimelig tid.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28595,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen sikre at tilskudd som er utbetalt på feilaktig grunnlag kreves tilbakebetalt.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "for",
+    "rodt": "for",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28596,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen skjerpe regelverket og håndhevingen slik at tros- og livssynssamfunn som bevisst gir uriktige medlemsopplysninger for å oppnå statstilskudd, nektes statstilskudd i sin helhet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "mot",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28597,
+   "unanimous": false,
+   "forslag": "Stortinget ber regjeringen etablere en offentlig digital løsning, eksempelvis gjennom Altinn, der brukerne kan få oversikt over registrerte medlemskap i tros- og livssynssamfunn og melde seg ut uten selv å måtte kontakte det aktuelle samfunnet.",
+   "parties": {
+    "ap": "mot",
+    "frp": "for",
+    "h": "for",
+    "krf": "mot",
+    "rodt": "mot",
+    "mdg": "mot",
+    "sp": "mot",
+    "sv": "mot",
+    "v": "mot"
+   },
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28598,
+   "unanimous": true,
+   "forslag": "Hans Majestets Kongens tale til det 171. stortinget ved dets åpning og melding om Noregs rikes tilstand og styring - vedlegges protokollen.",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-06"
+  },
+  {
+   "votering_id": 28603,
+   "unanimous": true,
+   "forslag": "Som medlemmer og varamedlemmer til Nordisk råd velges for ett år: Medlemmer : Truls Vasvik Bente Estil Kristine Løfshus Solli Tom Einar Karlsen Jon-Ivar Nygård Kari Baadstrand Sandnes Helge André Njåstad Marius Arion Nilsen Tor André Johnsen Lill Harriet Sandaune Rune Midtun Liv Gustavsen Tage Pettersen Monica Molvær Kari Sofie Bjørnsen Mirell Høyer-Berntsen Geir Inge Lien Hege Bae Nyholt Oda Indgaard Hans Edvard Askjer Varamedlemmer : For nr. 1–6: 1. Konstanse Marie Alvær 2. Rune Støstad 3. Ragnhild Bergheim 4. Morten Sandanger 5. Hashim Abdi 6. Anniken Refseth For nr. 7–12: 7. Joakim Myklebo",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-20"
+  },
+  {
+   "votering_id": 28604,
+   "unanimous": true,
+   "forslag": "Utviklingsministerens redegjørelse om nordisk samarbeid (Redegjørelsen holdt i Stortingets møte 20. oktober 2026) - vedlegges protokollen.",
+   "parties": {},
+   "cited_by": [],
+   "coded_parties": [],
+   "session": "2026-2027",
+   "date": "2026-10-22"
   }
  ]
 }

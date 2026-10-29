@@ -548,29 +548,27 @@ items:
   kind: budget
   statement: utsagn-35
   method: method/budget.md
-  status: blocked
-  blocked_on: 'Two owner decisions, and the lead it came from was measurably wrong. Falsified lead (LEADS.md
-    lead 6, Innst. 12 S (2025-2026), rammeområde 16, kap. 200 post 70): the scout read the party columns
-    one cell to the right. The 415 000(+415 000) on «Innføre gratis skolemåltid for alle elever på ungdomstrinnet
-    fra skoleåret 2026/2027» is SV''s column; Rødt''s is 0(0), and Rødt has no money on the post at all.
-    Verified twice, independently of the cell positions: each column''s per-cell deviations sum to its
-    own stated total (SV +670 300, Rødt +3 271 055, forlik +790 660, FrP -601 025, H -790 970, KrF +1
-    299 100, V +2 635 900), and each column''s netto equals the named rammevedtak for the same party in
-    Innst. 2 S (SV/Forslag 57 96 648 969 000 kroner; Rødt/Forslag 58 99 263 824 000). What is left is
-    two questions for the owner, not a sourcing gap. (1) The method requires a verbatim quote from the
-    document for a budget finding; SV''s own merknad (2.4) never mentions school meals, and no quote from
-    this table can be archived because the Formål cell alone spans 9 267 normalised characters against
-    the 6 000 window bound. May a bevilgningstall ship as a row with the figures in claim_action and no
-    excerpt, or does that row not exist? (2) Rødt CAN be quoted (merknad 2.6, «Videre foreslår Rødt en
-    ordning for gratis skolemat i grunnskolen, slik at alle elever får tilgang på et sunt måltid på skolen»,
-    exact substring, window 1 006 characters), but coding it would move Rødt''s cell from the +1 set by
-    row 385 to +2, because 385''s +1 was chosen precisely because Rødt had no own merknad on school meals.
-    That is the same ±1/±2 calibration as krf-skatteniva-polarity. The scale is now written in tools/autopilot/method/position-scale.md.
-    Under it Rødt''''s merknad is an own instrument that states the claim but carries no figure for the
-    level, so magnitude 1 is right and row 385 does not move: question (2) is closed. Only question (1)
-    remains, and it is a policy ask about excerpt-free numeric rows, not a reading of the data.
-
-    '
+  status: pending
+  blocked_on: >
+    CLEARED 2026-10-29: BOTH owner questions are now moot, and neither needs an answer.
+    (1) "May a numeric row ship without an excerpt?" — the choice has disappeared, because
+    the excerpt exists. Re-measured after the extractor fix (b82fd29) in Innst. 12 S, now
+    68 857 characters of clean text instead of markup-laden soup: the Formål cell that
+    spanned 9 267 normalised characters is gone, and the label-to-figure distance in the
+    rammeområde 16 table is 87 characters. The row reads "70 innføre gratis skolemåltid for
+    alle elever på ungdomstrinnet fra skoleåret 2026/2027 0 0(0) 0(0) 0(0) 415 000(+415 000)
+    0(0) 0(0) 0(0)".
+    (2) "Does coding Rødt's merknad move its cell?" — only under the mean, and the mean is no
+    longer the rule: a cell reports its NEWEST row since c6b73ce, so adding an older row
+    cannot move a published position. The Rødt row can be added on its own merits.
+    
+    The attribution is confirmed from the header in the same document ("kap. post formål
+    prop. 1 s(2025-2026) a, sv, sp, r og mdg frp h sv r krf v"): the columns after the
+    government's proposal are the forlik, FrP, H, SV, R, KrF, V. The 415 000 is SV's; Rødt's
+    cell is 0(0), which is what the earlier pass found by two independent reconciliations.
+    So SV has the money and no sentence about school meals, while Rødt has the sentence
+    (merknad 2.6, 1 006-character window) and no money. Both are codeable; they are different
+    facts and the rows must not be merged.
   note: 'The stream is still cheap and still unharvested: the document is in the fetch cache and the table
     parse is cell-for-cell. Nothing was promoted from this pass; both drafts exist only in the harvester
     report, which the driver has not staged as files.'
@@ -584,31 +582,29 @@ items:
   - kap. 1820 post 77
   - kap. 1820 post 80
   method: method/budget.md
-  status: blocked
-  blocked_on: 'Not the sourcing and not the arithmetic: the row is drafted, gated, and its figures were
-    reconciled three times. It cannot ship because it asserts a polarity on a number that has no archivable
-    fragment, and the crate of rules admits only one of those two things at a time. A numeric row must
-    cite the digit-carrying fragment whenever one exists inside the 6 000-char window (digit-only table
-    line is enough, per 768-h-skatteniva-innst2s, window 4 916); only where a measured search shows none
-    exists may it ship excerpt-free, and then only with position: null (759-stat-nodnett). MDG''s figures
-    sit in the rammeområde 12 table. RE-MEASURE BEFORE TRUSTING THE NEXT NUMBERS: these windows were taken
-    while the verifier kept the markup that arrives inside a JSON envelope, and that defect was fixed
-    in b82fd29. Markup is stripped now, so a table''s label and its figure can be one short fragment where
-    before they sat thousands of characters apart. The old measurement follows only as a record of what
-    was tried: 10 323 / 10 168 / 10 365 characters for three candidate fragments, and the single number
-    alone is not a fragment at all because fragments() drops pieces under 12 chars. No sentence in the
-    document carries the figures: 535 occurs once in the whole 263 129-char document, 9 635 once, and
-    MDG''s merknad 2.1.7 never mentions strømpris. THE ASK, and it is one question: may a polarity row
-    ship on a figure that has no archivable quote, with the transcription declared in claim_action and
-    the measured window stated in context_note? If yes, the MDG row is ready (with the verifier''s corrections:
-    post 78 is Norgespris for fjernvarme, so MDG''s net on posts 77-78 is +35 000 = 0,36 pst., and +2
-    must rest on the minstepris post, which is new money, not on the +535 000, which is a reallocation).
-    If no, the item is closed as refused with the reason and nothing is lost. FrP is NOT part of this
-    ask: its drafted -2 was falsified by ekv-verifier as contradicting row 87''s own reading of the same
-    50-øre design ("ikke et lovbestemt pristak") and row 764''s opposite label for the identical number,
-    so the polarity is undecidable from this document and the draft stays withheld.
-
-    '
+  status: pending
+  blocked_on: >
+    CLEARED 2026-10-29: THE QUOTE EXISTS, so the exemption this item asked for is not
+    needed and must not be granted. The premise was that no fragment inside the 6 000-char
+    window carries the figure; that was measured against an extractor that kept the markup
+    from a JSON envelope (fixed in b82fd29). Re-measured after the fix, in the same document
+    (Innst. 9 S, 263 129 characters of clean text):
+    
+      "77 norgespris for strøm 9 100 000 9 100 000 (0) 0 (-9 100 000) 9 100 000 (0) 9 100 000
+       (0) 9 100 000 (0) 9 635 000 (+535 000) 9 100 000 (0)"
+    
+    That is a 150-character substring of the source. The column header for the same table
+    reads "kap. post formål prop. 1 s (2025-2026) a, sv, sp, r og mdg frp h sv r mdg v", so
+    the columns after the government's proposal are: the budget forlik (joint A/SV/Sp/R/MDG),
+    then FrP, H, SV, R, MDG, V. The sixth is MDG, which is why +535 000 is MDG's figure —
+    verified against the header, not guessed. MDG's row on post 78 (norgespris for
+    fjernvarme) is 0 (-500 000), so MDG's net on posts 77-78 is +35 000, about 0,36 pct.
+    
+    Two fragments (the header and the row) fit the archive with room to spare. The column map
+    must be stated in context_note, because the row alone does not tell a reader which column
+    is which, and the previous scout on the school-meal table read the columns one to the
+    right. FrP is still not part of this: its drafted -2 contradicts row 87's reading of the
+    same 50-øre design, and that stays withheld.
   note: 'Next from staging/scout-alternative-budgets/LEADS.md, lead 3: Innst. 9 S (2025-2026), energi-
     og miljøkomiteen, signed 2025-12-11, rammeområde 12 party table, kap. 1820 post 77 "Norgespris for
     strøm" and the two post 80 rows. Tier A: a party''s own money, divided. The cell utsagn-12 already

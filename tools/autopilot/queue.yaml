@@ -607,22 +607,25 @@ items:
   - kap. 1820 post 80
   method: method/budget.md
   status: pending
-  blocked_on: "CLEARED 2026-10-29: THE QUOTE EXISTS, so the exemption this item asked for is not needed\
-    \ and must not be granted. The premise was that no fragment inside the 6 000-char window carries the\
-    \ figure; that was measured against an extractor that kept the markup from a JSON envelope (fixed\
-    \ in b82fd29). Re-measured after the fix, in the same document (Innst. 9 S, 263 129 characters of\
-    \ clean text):\n\n  \"77 norgespris for strøm 9 100 000 9 100 000 (0) 0 (-9 100 000) 9 100 000 (0)\
-    \ 9 100 000\n   (0) 9 100 000 (0) 9 635 000 (+535 000) 9 100 000 (0)\"\n\nThat is a 150-character\
-    \ substring of the source. The column header for the same table reads \"kap. post formål prop. 1 s\
-    \ (2025-2026) a, sv, sp, r og mdg frp h sv r mdg v\", so the columns after the government's proposal\
-    \ are: the budget forlik (joint A/SV/Sp/R/MDG), then FrP, H, SV, R, MDG, V. The sixth is MDG, which\
-    \ is why +535 000 is MDG's figure — verified against the header, not guessed. MDG's row on post 78\
-    \ (norgespris for fjernvarme) is 0 (-500 000), so MDG's net on posts 77-78 is +35 000, about 0,36\
-    \ pct.\nTwo fragments (the header and the row) fit the archive with room to spare. The column map\
-    \ must be stated in context_note, because the row alone does not tell a reader which column is which,\
-    \ and the previous scout on the school-meal table read the columns one to the right. FrP is still\
-    \ not part of this: its drafted -2 contradicts row 87's reading of the same 50-øre design, and that\
-    \ stays withheld.\n"
+  blocked_on: >
+    CORRECTED AGAIN 2026-10-29: the note below claimed the row "fits with room to spare", and that
+    is wrong for the same reason the school-meal note was wrong. Measured now with the archive's own
+    locate() on Innst. 9 S (736 981 characters of text): the row
+    "77 norgespris for strøm 9 100 000 ... 9 635 000 (+535 000) 9 100 000 (0)" IS found, and its window
+    is 11 523 characters raw but 938 characters once the markup is stripped. The archive stores and
+    bounds the RAW text, so this row exceeds the 6 000 bound by nearly double, exactly like every other
+    party-column table. Both earlier measurements were real and measured different layers: 87 (school
+    meals) and "fits" (here) were normalised distances, while the bound reads raw characters.
+    
+    What remains TRUE from the note below, and is not affected: the column map comes from the table's
+    own header ("prop. 1 s (2025-2026) a, sv, sp, r og mdg frp h sv r mdg v"), the sixth column after
+    the government's proposal is MDG, the +535 000 is therefore MDG's, and MDG's post 78 row is
+    0 (-500 000) so its net on 77-78 is +35 000 on 9 600 000, about 0,36 pct.
+    
+    Do not spend a slot on this item until the owner answers the bound question that
+    budget-skolemat-innst12s now carries. If the bound is measured on the visible text, this row and
+    the school-meal row both become archivable, and every party-column table with them. If it is not,
+    this item hits the same wall and the same three options apply.
   note: 'Next from staging/scout-alternative-budgets/LEADS.md, lead 3: Innst. 9 S (2025-2026), energi-
     og miljøkomiteen, signed 2025-12-11, rammeområde 12 party table, kap. 1820 post 77 "Norgespris for
     strøm" and the two post 80 rows. Tier A: a party''s own money, divided. The cell utsagn-12 already

@@ -14,7 +14,7 @@ Read this section first. The phase entries below are the build log, in
 order, and their "FINAL STATE" lines were true on the day they were
 written, not today.
 
-- **60 statements, 673 evidence files.** Memo statements 1-42, two
+- **60 statements, 675 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk

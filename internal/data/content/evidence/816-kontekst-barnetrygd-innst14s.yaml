@@ -1,0 +1,61 @@
+id: ev-2025-12-08-barnetrygd-innst14s-kontekst
+statement_id: utsagn-31
+party_id: ""
+actor: "Familie- og kulturkomiteen / Stortinget"
+date: "2025-12-08"
+evidence_type: innstilling
+evidence_class: fakta
+scan_summary: >
+  Stortinget fastsetter barnetrygdsatsene for 2026 i det årlige
+  budsjettvedtaket, og satsen ble endret midt i budsjettåret ved
+  budsjettforliket: 1 968 kroner per måned i januar, 2 012 kroner per
+  måned fra 1. februar 2026.
+claim_action: >
+  Forslag til vedtak punkt V «Satser for barnetrygd», sitert fra
+  komiteens tilråding (punkt 8, tilråding a for rammeområde 2), som er
+  den operative ordlyden Stortinget blir bedt om å vedta. Teksten sier
+  at Arbeids- og velferdsdirektoratet «i medhold av» lov 8. mars 2002
+  nr. 4 om barnetrygd § 10 kan betale ut barnetrygd for 2026, og deler
+  satsen på måned: 1 968 kroner per måned fra 1. januar til og med
+  31. januar 2026 (23 616 kroner per år), og 2 012 kroner per måned fra
+  1. februar til 31. desember 2026 (24 144 kroner per år). Samme vedtak
+  fastsetter utvidet barnetrygd, småbarnstillegg for enslige forsørgere
+  med barn 0-3 år og et tillegg for Nord-Troms og Finnmark, også delt på
+  samme dato. Mekanismen utsagn-31 spør om, er dermed synlig i selve
+  vedtaket: satsene fastsettes for ett budsjettår om gangen, og
+  justeringen fra 1. februar 2026 kom fra budsjettforliket, ikke fra en
+  automatisk regel i loven. «Fullmaktshjemmel» er denne radens
+  karakteristikk, ikke dokumentets ord; dokumentet sier bare «i medhold
+  av ... § 10 for 2026».
+  Samme vedtak står to steder i dokumentet og ordlyden er ikke identisk:
+  punkt 3.1 gjengir regjeringens forslag fra Prop. 1 S (2025–2026) med
+  «i henhold til» og bare årssatser, mens punkt 8 har den operative
+  ordlyden med månedssatsene. Sitatet over er hentet fra punkt 8, fordi
+  det er vedtaket og fordi det viser justeringen midt i året.
+verbatim_excerpt: >
+  "Stortinget samtykker i at Arbeids- og velferdsdirektoratet i medhold
+  av lov 8. mars 2002 nr. 4 om barnetrygd § 10 for 2026 kan betale ut
+  barnetrygd til barn i alderen 0 år til og med måneden før fylte 18 år
+  med 1968 kroner per måned fra 1. januar til og med 31. januar 2026.
+  Dette svarer til 23 616 kroner per år. Fra 1. februar til 31. desember
+  2026 kan Arbeids- og velferdsdirektoratet betale ut barnetrygd til
+  barn i alderen 0 år til og med måneden før fylte 18 år med 2 012
+  kroner per måned. Dette svarer til 24 144 kroner per år."
+status: kontekst
+position: null
+source_tier: A
+source_name: "Innst. 14 S (2025–2026), forslag til vedtak punkt V «Satser for barnetrygd»"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-014s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Institusjonell kontekst, ikke en partiposisjon: raden sier hva slags
+  mekanisme Stortinget bruker for barnetrygden, ikke hva noe parti mener
+  om utsagnet. Derfor position: null og party_id: "". Raden koder ingen
+  partiposisjon og påstår ingen norm.
+  Nullfunn, målt i den maskinelt uttrukne teksten (931 377 tegn,
+  re-ekstrahert med tools/verify/verify_excerpts.to_text): «lovfest» 0
+  forekomster, «indeksregulering» 0 forekomster. Dokumentet uttaler seg
+  altså ikke om lovfesting av prisjusteringen. En innstilling inneholder
+  ingen avstemmingstall, og kap. 845 post 70 har ingen avstemming i dette
+  dokumentet; det er derfor ingen avstemming å sitere.
+retrieved_at: "2026-10-29"

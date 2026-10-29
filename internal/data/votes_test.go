@@ -168,3 +168,42 @@ func min(a, b int) int {
 	}
 	return b
 }
+
+// A division is not only its nine parties. Votering 18486 fell 21 for, the nine
+// account for 20, and the 21st is Irene Ojala of Pasientfokus (API id PF). The
+// generator dropped any party id outside the nine without a word, so an unknown
+// party and a party that did not vote were indistinguishable. This pins the real
+// division and the population, so re-dropping them fails.
+func TestVotesKeepPartiesOutsideTheNine(t *testing.T) {
+	votes := Votes()
+	if len(votes) == 0 {
+		t.Fatal("no votes loaded")
+	}
+	withUnmapped := 0
+	for _, v := range votes {
+		if len(v.UnmappedParties) > 0 {
+			withUnmapped++
+		}
+	}
+	if withUnmapped == 0 {
+		t.Fatal("no vote records a party outside the nine: the field is gone or never populated")
+	}
+	// The division that exposed this. 18486 must still show Pasientfokus for.
+	var found bool
+	for _, v := range votes {
+		if v.VoteringID != 18486 {
+			continue
+		}
+		found = true
+		if got := v.UnmappedParties["PF"]; got != "for" {
+			t.Errorf("votering 18486 unmapped[PF] = %q, want \"for\" (Pasientfokus voted for)", got)
+		}
+		if len(v.Parties) != 9 {
+			t.Errorf("votering 18486 has %d of the nine parties: the unmapped fix must not change Parties", len(v.Parties))
+		}
+	}
+	if !found {
+		t.Skip("votering 18486 is not in this index")
+	}
+	t.Logf("%d of %d votes record a party outside the nine", withUnmapped, len(votes))
+}

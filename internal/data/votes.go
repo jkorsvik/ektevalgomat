@@ -52,6 +52,18 @@ type Vote struct {
 	// siste_oppdatert_dato maintenance stamp on the case, which moves whenever a
 	// case is edited and would date every vote to the last bulk update.
 	Date string `json:"date"`
+	// UnmappedParties holds the members of a division who belong to a party
+	// outside the nine this dataset compares, keyed by their API id, with the
+	// same for/mot/split/absent vocabulary as Parties. Empty means the nine were
+	// the whole division.
+	//
+	// It exists because dropping them made the artefact state a tally the
+	// division did not have: votering 18486 fell 21 for, the nine account for 20,
+	// and the 21st is Pasientfokus. An unknown party id and a party that did not
+	// vote both produced no entry, so nothing could tell the two apart. 10 567 of
+	// the 14 946 votes carry at least one, almost all of them Pasientfokus or an
+	// independent, which is why this is not a rounding detail.
+	UnmappedParties map[string]string `json:"unmapped_parties,omitempty"`
 }
 
 type voteIndexFile struct {

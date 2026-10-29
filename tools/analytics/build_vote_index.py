@@ -148,16 +148,37 @@ def strip_html(s: str | None) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def side(rows: list[dict]) -> dict[str, str]:
-    """Per party id -> for | mot | split | absent.
+def _api_party(r: dict) -> str:
+    return ((r.get("representant") or {}).get("parti", {}) or {}).get("id") or ""
+
+
+def role(rows: list[dict]) -> dict[str, str]:
+    """Per party id -> for | mot | split | absent, for the nine parties.
 
     A split is not a side: 3 for and 3 against is a different fact from either,
     and collapsing it to a majority would silently invent a position.
     """
+    return _sides(rows, lambda r: API_TO_ID.get(_api_party(r) or ""))
+
+
+def unmapped(rows: list[dict]) -> dict[str, str]:
+    """Parties that voted but are not one of the nine, by their API id.
+
+    The Storting has carried parties outside the nine that matter to this dataset.
+    Votering 18486 fell 21 for; the nine account for 20 and the 21st is Irene Ojala
+    of Pasientfokus (API id PF). Dropping her made the artefact state a tally the
+    division did not have, and nothing noticed, because an unknown party id and a
+    party that did not vote both produced no entry. Recording them costs a field on
+    the handful of votes that have one.
+    """
+    return _sides(rows, lambda r: None if API_TO_ID.get(_api_party(r) or "")
+                  else (_api_party(r) or None))
+
+
+def _sides(rows: list[dict], keyfn) -> dict[str, str]:
     tally: dict[str, dict[str, int]] = {}
     for r in rows:
-        api = (r.get("representant") or {}).get("parti", {}).get("id")
-        pid = API_TO_ID.get(api or "")
+        pid = keyfn(r)
         if not pid:
             continue
         bucket = tally.setdefault(pid, {"for": 0, "mot": 0})
@@ -348,7 +369,10 @@ def main(argv: list[str]) -> int:
             # make that test pass while the map lost a vote it cites.
             "unanimous": not rows,
             "forslag": forslag[:600],
-            "parties": side(rows),
+            "parties": role(rows),
+            # Absent, not empty, on the votes where the nine are the whole tally:
+            # an empty map on all 14 946 votes is 300 KB that says nothing.
+            **({"unmapped_parties": um} if (um := unmapped(rows)) else {}),
             "cited_by": (cites.get(key) or {}).get("evidence_ids") or [],
             "coded_parties": (cites.get(key) or {}).get("parties") or [],
             "session": wide.get(int(key), ""),

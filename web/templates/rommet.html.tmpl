@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/rommet.css"}}">
+</head>
+<body>
+
+{{template "header"}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+
+  <h1>Rommet</h1>
+
+  <p class="prose-lede">
+    Tolv dimensjoner kan ikke vises som én linje, og de er ikke en linje heller.
+    Her er de projisert ned til tre akser, så hvert parti blir et volum i stedet
+    for et punkt. De tre aksene beholder <strong>{{.Explained}} prosent</strong>
+    av variasjonen. De siste <strong>{{.Rest}} prosent</strong> er ikke på skjermen,
+    og det står her fordi en projeksjon som skjuler tapet sitt lyver uten å si det.
+  </p>
+
+  <p class="prose-note">
+    Dimensjonene er standardisert før projeksjonen. Uten det ville første akse
+    blitt «Teknologisk kapasitet», rett og slett fordi den dimensjonen har tre
+    ganske ekstreme utsagn og dermed større spredning enn de andre. Da ville
+    bildet vist hvilken dimensjon som har mest ekstreme vedtak, ikke hvordan
+    partiene skiller seg.
+  </p>
+
+  {{if .Axes}}
+  <section class="rom-axes">
+    <h2>Hva aksene består av</h2>
+    <ol class="rom-axis-list">
+      {{range .Axes}}
+      <li class="rom-axis">
+        <h3>Akse {{.Number}} <span class="rom-axis-share">{{.Percent}} %</span></h3>
+        <p class="rom-axis-top">{{.TopText}}</p>
+        <p class="rom-axis-uneven">
+          Ingen enkeltdimensjon bærer aksen alene. Det er poenget: det finnes
+          ingen enkelt akse i norsk politikk som de andre bare er varianter av.
+        </p>
+        {{if .Rest}}
+        <details>
+          <summary>Alle tolv vektene på denne aksen</summary>
+          <ul class="rom-loads">
+            {{range .Rest}}<li>{{.Dimension}} <span class="rom-load">{{.Loading}}</span></li>{{end}}
+          </ul>
+        </details>
+        {{end}}
+      </li>
+      {{end}}
+    </ol>
+  </section>
+  {{end}}
+
+  <section class="rom-canvas-wrap">
+    <h2>Partiene som volum</h2>
+    <p class="prose-note">
+      Hver sky er partiets egne tolv dimensjonsbidrag, tegnet rundt der partiet
+      faktisk ligger. Formen viser hvilke dimensjoner som drar partiet hvor.
+      Størrelsen er målt spredning, ikke pynt: skyden er omtrent like stor for
+      alle partiene ({{.SpreadLo}} til {{.SpreadHi}}), så det er retningen som
+      betyr noe, ikke omfanget.
+    </p>
+    <canvas id="rommet-canvas" width="960" height="620" role="img"
+            aria-label="Tredimensjonal visning av partienes posisjoner. Tabellen under har de samme tallene.">
+      Nettleseren din viser ikke denne tegningen. Tabellen under har de samme tallene.
+    </canvas>
+    <p id="rommet-status" class="rom-status" aria-live="polite">
+      Tegningen trenger WebGL. Tallene under er de samme.
+    </p>
+    <p class="rom-hint">
+      Dra for å rotere. Partiene er bundet sammen av hvor ofte de stemte likt i
+      Stortinget: {{.Springs}} par, og det nærmeste paret ({{.ClosestPair}})
+      stemte likt i {{.Closest}} av sakene der begge tok stilling, over
+      {{.Busiest}} avstemninger. Det finnes ingen perfekte allierte.
+    </p>
+  </section>
+
+  <section class="rom-table-wrap">
+    <h2>Tallene bak tegningen</h2>
+    <table class="rom-table">
+      <caption>Partiets plassering på de tre aksene, spredningen i egne svar, og hvor mange utsagn som er kodet.</caption>
+      <thead>
+        <tr><th scope="col">Parti</th><th scope="col">Akse 1 · 2 · 3</th><th scope="col">Spredning</th><th scope="col">Kodede utsagn</th></tr>
+      </thead>
+      <tbody>
+        {{range .Parties}}
+        <tr>
+          <th scope="row"><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Name}}</th>
+          <td class="rom-num">{{.Centre}}</td>
+          <td class="rom-num">{{.Spread}}</td>
+          <td class="rom-num">{{.Answers}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </section>
+
+  {{if .Dimensions}}
+  <section class="rom-dims">
+    <h2>Dimensjonene og hvor godt de er dekket</h2>
+    <p class="prose-note">
+      Spredningen her er rå, altså før standardiseringen. Den viser hvorfor
+      standardiseringen er nødvendig, og hvor mange utsagn hver dimensjon
+      faktisk hviler på. En dimensjon med to utsagn er ikke like sikker som en
+      med sju.
+    </p>
+    <table class="rom-table">
+      <caption>Dimensjoner, antall utsagn, hvor mange partier som har en kodet posisjon, og rå spredning.</caption>
+      <thead>
+        <tr><th scope="col">Dimensjon</th><th scope="col">Utsagn</th><th scope="col">Partier kodet</th><th scope="col">Rå spredning</th></tr>
+      </thead>
+      <tbody>
+        {{range .Dimensions}}
+        <tr>
+          <th scope="row">{{.Name}}</th>
+          <td class="rom-num">{{.Statements}}</td>
+          <td class="rom-num">{{.Coded}}</td>
+          <td class="rom-num">{{.Variance}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </section>
+  {{end}}
+
+  <p class="prose-note">
+    Aksene er beregnet fra datasettet ved hver forespørsel, ikke skrevet for
+    hånd. Er en posisjon endret, endrer bildet seg med den, og en test krever at
+    tallene på denne siden stemmer med projeksjonen.
+  </p>
+</main>
+
+<script id="rommet-data" type="application/json">{{.PayloadJSON}}</script>
+<script src="{{asset "/static/js/rom.js"}}"></script>
+
+{{template "footerlinks"}}
+
+</body>
+</html>

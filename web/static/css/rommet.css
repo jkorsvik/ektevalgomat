@@ -1,0 +1,156 @@
+/* /rommet.
+   Party colour is data here, never chrome, and each party stays inside the hue
+   family style.css's :root already assigns: red for Ap, Rødt and SV, blue for H
+   and FrP, green for Sp and MDG, teal for V, yellow for KrF. The nine values below
+   are the same nine that static/js/rom.js paints on the canvas, and
+   web/palette_guard_test.go fails if the two drift apart: a dot in the table that
+   is a different colour from the cloud it labels is a quiet lie. */
+
+:root {
+  --parti-ap: #d7263d;
+  --parti-frp: #1f4b99;
+  --parti-h: #2f6fd0;
+  --parti-krf: #e3b505;
+  --parti-mdg: #2f7d32;
+  --parti-rodt: #8e1b23;
+  --parti-sp: #6b8e23;
+  --parti-sv: #c1462f;
+  --parti-v: #0f8f8a;
+
+  /* One neutral for the vote springs, so they read as structure and not as a
+     tenth party. */
+  --rom-spring: #8c8f99;
+}
+
+.rom-canvas-wrap {
+  margin: var(--sp-8) 0 var(--sp-9);
+}
+
+#rommet-canvas {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  aspect-ratio: 960 / 620;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  touch-action: none;
+  cursor: grab;
+}
+
+#rommet-canvas:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+#rommet-canvas:active {
+  cursor: grabbing;
+}
+
+.rom-status {
+  font-size: var(--fs-md);
+  color: var(--muted);
+  margin: var(--sp-4) 0 0;
+}
+
+.rom-hint {
+  font-size: var(--fs-md);
+  margin: var(--sp-4) 0 0;
+}
+
+.rom-axis-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-6);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.rom-axis {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: var(--sp-5) var(--sp-6);
+}
+
+.rom-axis h3 {
+  margin: 0 0 var(--sp-3);
+  font-size: var(--fs-lg);
+}
+
+.rom-axis-share {
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: var(--sp-2);
+}
+
+.rom-axis-top {
+  margin: 0 0 var(--sp-3);
+  line-height: 1.6;
+}
+
+.rom-dim {
+  font-size: var(--fs-md);
+}
+
+.rom-load {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.rom-axis-uneven {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  margin: 0 0 var(--sp-3);
+}
+
+.rom-loads {
+  margin: var(--sp-2) 0 0;
+  padding-left: var(--sp-6);
+  font-size: var(--fs-md);
+}
+
+.rom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-md);
+}
+
+.rom-table caption {
+  text-align: left;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  padding-bottom: var(--sp-3);
+}
+
+.rom-table th,
+.rom-table td {
+  border-bottom: 1px solid var(--line);
+  padding: var(--sp-2) var(--sp-3);
+  text-align: left;
+  vertical-align: top;
+}
+
+.rom-num {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.rom-dot {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  margin-right: var(--sp-2);
+  vertical-align: baseline;
+}
+
+.rom-dot-ap { background: var(--parti-ap); }
+.rom-dot-frp { background: var(--parti-frp); }
+.rom-dot-h { background: var(--parti-h); }
+.rom-dot-krf { background: var(--parti-krf); }
+.rom-dot-mdg { background: var(--parti-mdg); }
+.rom-dot-rodt { background: var(--parti-rodt); }
+.rom-dot-sp { background: var(--parti-sp); }
+.rom-dot-sv { background: var(--parti-sv); }
+.rom-dot-v { background: var(--parti-v); }

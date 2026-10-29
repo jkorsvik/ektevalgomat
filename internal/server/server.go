@@ -617,6 +617,7 @@ func New(logger *slog.Logger) http.Handler {
 	eierskapTmpl := page("eierskap.html.tmpl")
 	maktTmpl := page("makt.html.tmpl")
 	tidslinjeTmpl := page("tidslinje.html.tmpl")
+	rommetTmpl := page("rommet.html.tmpl")
 	personvernTmpl := page("personvern.html.tmpl")
 	resultatTmpl := page("resultat.html.tmpl")
 	programTmpl := page("program.html.tmpl")
@@ -791,6 +792,16 @@ func New(logger *slog.Logger) http.Handler {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := tidslinjeTmpl.Execute(w, buildYearView(SnapshotDate)); err != nil {
 			logger.Error("render tidslinje", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
+	// The twelve dimensions projected onto three axes, computed per request so the
+	// picture cannot drift from the data it claims to show.
+	mux.HandleFunc("GET /rommet", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := rommetTmpl.Execute(w, buildSpaceView(ds)); err != nil {
+			logger.Error("render rommet", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}
 	})

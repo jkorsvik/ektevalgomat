@@ -106,6 +106,27 @@ state the claim directly, so it cannot earn magnitude 2, and it may not pull the
 programme row's `-2` down to `-1`. Under this rule nothing moves: the programme
 row stands and the budget row is not added.
 
+## What a cell reports
+
+A statement-and-party cell holds one row per document, and those rows are not
+independent observations of one fact. The cell's number is therefore the **newest
+dated row's** position, not the mean of the rows, with ties on date broken by evidence
+id so the choice is deterministic and an undated row never outranks a dated one.
+
+The mean was wrong in two visible ways. A weaker document could drag a stronger one: a
++1 vote pulled a +2 own instrument down to "1 (for)". And a documented reversal
+averaged to "0 (nøytral/delt)", which is true of neither date — FrP voted for its own
+0,50 kr maximum price in 2022 and against one in 2025, and the cell called that neutral.
+
+The page shows the **range** whenever the rows differ at all, including on the same
+side, printed low to high, and only a sign flip is labelled a change of position:
+strength is not direction. Restricting the range to cells that straddle zero left the
+same-side case with no defence, so a +2 and a +1 printed the stronger value alone.
+
+Changing this rule moved exactly three published cells, and all three were being
+misreported. A worker who adds a row to a cell should expect the integer to stay put
+when the new row is older, which is what makes a second-date batch safe to promote.
+
 ## What still needs the owner
 
 This document settles magnitude and it settles which row wins inside one party.

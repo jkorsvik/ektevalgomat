@@ -287,8 +287,8 @@ func TestStoreLoadsExpectedCounts(t *testing.T) {
 	// 2026-10-03 (digital dependencies): +19 evidence files, 730-748,
 	// for utsagn-59 (13 coded party items, 6 with position: null: 3
 	// kontekst files, 2 press items (tier D) and Sp's programme).
-	if got := len(Store.Evidence); got != 642 {
-		t.Errorf("Evidence = %d, want 642", got)
+	if got := len(Store.Evidence); got != 669 {
+		t.Errorf("Evidence = %d, want 669", got)
 	}
 }
 
@@ -354,12 +354,29 @@ func TestVenstreLobbyregisterPositionIsCoded(t *testing.T) {
 	// position for: Venstre proposed the lobby register (Dok. 8:53 S),
 	// so its position on utsagn-01 must be +2, not nil and not defaulted
 	// to 0 — those would both misrepresent what the source documents.
+	// The cell may hold several rows now that a second date is a goal rather than an
+	// anomaly. The guard therefore asserts the position the cell REPORTS, which is its
+	// newest row, and that a quote backs it — not that exactly one row exists. Asserting
+	// a count made the guard forbid the very thing the collection loop is for.
 	cell := Store.EvidenceForCell("utsagn-01", "v")
-	if len(cell) != 1 {
-		t.Fatalf("EvidenceForCell(utsagn-01, v) = %d items, want 1", len(cell))
+	if len(cell) == 0 {
+		t.Fatal("EvidenceForCell(utsagn-01, v) is empty, want the Dok. 8:53 S row")
 	}
-	if cell[0].Position == nil || *cell[0].Position != 2 {
-		t.Errorf("Venstre utsagn-01 position = %v, want pointer to 2", cell[0].Position)
+	newest := cell[0]
+	quoted := false
+	for _, e := range cell {
+		if e.Date > newest.Date {
+			newest = e
+		}
+		if e.VerbatimExcerpt != "" && e.Position != nil {
+			quoted = true
+		}
+	}
+	if newest.Position == nil || *newest.Position != 2 {
+		t.Errorf("Venstre utsagn-01 newest position = %v, want pointer to 2", newest.Position)
+	}
+	if !quoted {
+		t.Error("Venstre utsagn-01 has a coded position but no verbatim_excerpt backing it")
 	}
 }
 
@@ -386,15 +403,28 @@ func TestRodtAndMDGLobbyPositionsAreNowCoded(t *testing.T) {
 	// context_note for the full reasoning.
 	wantPosition := map[string]int{"rodt": 2, "mdg": 1}
 	for partyID, want := range wantPosition {
+		// Several rows per cell are the point of the second-date work, so the guard
+		// asserts what the cell reports (its newest row) and that a quote backs it,
+		// rather than pinning a row count that forbids the stream.
 		cell := Store.EvidenceForCell("utsagn-01", partyID)
-		if len(cell) != 1 {
-			t.Fatalf("EvidenceForCell(utsagn-01, %s) = %d items, want 1", partyID, len(cell))
+		if len(cell) == 0 {
+			t.Fatalf("EvidenceForCell(utsagn-01, %s) is empty", partyID)
 		}
-		if cell[0].Position == nil || *cell[0].Position != want {
-			t.Errorf("%s utsagn-01 position = %v, want pointer to %d", partyID, cell[0].Position, want)
+		newest := cell[0]
+		quoted := false
+		for _, e := range cell {
+			if e.Date > newest.Date {
+				newest = e
+			}
+			if e.VerbatimExcerpt != "" && e.Position != nil {
+				quoted = true
+			}
 		}
-		if cell[0].VerbatimExcerpt == "" {
-			t.Errorf("%s utsagn-01 evidence has a coded position but no verbatim_excerpt backing it", partyID)
+		if newest.Position == nil || *newest.Position != want {
+			t.Errorf("%s utsagn-01 newest position = %v, want pointer to %d", partyID, newest.Position, want)
+		}
+		if !quoted {
+			t.Errorf("%s utsagn-01 has a coded position but no verbatim_excerpt backing it", partyID)
 		}
 	}
 }

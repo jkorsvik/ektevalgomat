@@ -1,0 +1,50 @@
+id: ev-2022-06-02-rodt-lobbyregister-forslag
+statement_id: utsagn-01
+party_id: rodt
+actor: "Rødt"
+date: "2022-06-02"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Rødt stemte for Fiskaa-forslaget om å utrede en registreringsordning for dem som oppsøker Stortinget — falt 15 mot 87."
+claim_action: >
+  Rødt stemte for forslag nr. 1 og 2 fra femte visepresident Ingrid Fiskaa
+  (SV), som ba Stortingets presidentskap og regjeringen «utrede mulige
+  modeller for en registreringsordning for dem som oppsøker Stortinget og
+  Stortingets representanter» og «den politiske ledelsen i departementene
+  eller på Statsministerens kontor» i Dokument 8:165 S (2021–2022). Votering
+  18941 (02.06.2022) avgjorde begge forslag i én avstemning. Rødt 4 for / 0
+  mot. Forslagene falt 15 for / 87 mot.
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Dokument 8:165 S (2021–2022); votering 18941 (02.06.2022)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=18941&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Tidligere dato i cellen: avstemningen er fra 2022-06-02, før den
+  eksisterende Rødt-raden datert 2026-04-21 som er kodet +2
+  (Voteringsdetaljer, forslag nr. 1, 21.04.2026). Retningen peker samme vei
+  som i den eksisterende raden, men denne raden er svakere kodet. Batchen gir
+  cellen tre tidligere datoer fra tre ulike sesjoner (2021–2022, 2022–2023,
+  2024–2025); denne raden koder bare det som ble stemt denne dagen og
+  forutsetter ingen kontinuitet mellom dem. Om radene skal slås sammen til én
+  celle, er det en eieravgjørelse; her rapporteres bare hva avstemningen
+  viser.
+
+  Magnituden er 1 og ikke 2: raden hviler på en avstemning partiet deltok i,
+  ikke på et eget dokument som uttrykker kravet med et tall. Forslaget ber om
+  at modeller for en registreringsordning utredes; det er ingen ferdig
+  registreringsordning og ingen sum, og avstemningen er derfor et
+  retningssignal og ikke et eget instrument.
+
+  Saken hadde tre avstemninger: Rødts forslag nr. 3 om adgangskort for
+  tidligere representanter (falt 15 mot 87), denne, og til slutt
+  innstillingens tilråding om at «Dokument 8:165 S (2021–2022) … vedtas ikke»,
+  som ble vedtatt 83 mot 19 (partiet 0 for / 4 mot). Les tilrådingen
+  invertert: ja til «vedtas ikke» er nei til forslaget.
+
+  Forslaget var SVs, ikke Rødts; dokumentet som lå til behandling var Venstres
+  (Dokument 8:165 S (2021–2022)). Sesjonen er 2021–2022, avstemningen er fra
+  en tidligere sesjon enn de eksisterende radene i cellen.
+retrieved_at: "2026-10-28"

@@ -1,0 +1,48 @@
+id: ev-2023-06-15-frp-lobbyregister-forslag
+statement_id: utsagn-01
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2023-06-15"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "FrP stemte mot Fiskaa-forslaget om å utrede en registreringsordning for dem som oppsøker Stortinget — falt 20 mot 81."
+claim_action: >
+  FrP stemte mot forslag nr. 1 og 2 fra femte visepresident Ingrid Fiskaa
+  (SV), som ba Stortingets presidentskap og regjeringen «utrede mulige
+  modeller for en registreringsordning for dem som oppsøker Stortinget og
+  Stortingets representanter» og «den politiske ledelsen i departementene
+  eller på Statsministerens kontor» i Dokument 8:223 S (2022–2023). Votering
+  21354 (15.06.2023) avgjorde begge forslag i én avstemning. FrP 0 for / 13
+  mot. Forslagene falt 20 for / 81 mot.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Dokument 8:223 S (2022–2023); votering 21354 (15.06.2023)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=21354&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Tidligere dato i cellen: avstemningen er fra 2023-06-15, før den
+  eksisterende FrP-raden datert 2026-04-21 som er kodet -1 (Voteringsdetaljer,
+  forslag nr. 1–4, 21.04.2026). Retningen er den samme i begge sesjoner.
+  Batchen gir cellen tre tidligere datoer fra tre ulike sesjoner (2021–2022,
+  2022–2023, 2024–2025); denne raden koder bare det som ble stemt denne dagen
+  og forutsetter ingen kontinuitet mellom dem. Om radene skal slås sammen til
+  én celle, er det en eieravgjørelse; her rapporteres bare hva avstemningen
+  viser.
+
+  Magnituden er 1 og ikke 2: raden hviler på en avstemning partiet deltok i,
+  ikke på et eget dokument som uttrykker kravet med et tall. Forslaget ber om
+  at modeller for en registreringsordning utredes; det er ingen ferdig
+  registreringsordning og ingen sum, og avstemningen er derfor et
+  retningssignal og ikke et eget instrument.
+
+  Saken hadde to avstemninger: denne, og innstillingens tilråding om at
+  «Dokument 8:223 S (2022–2023) … vedtas ikke», som ble vedtatt 82 mot 19
+  (partiet 13 for / 0 mot). Les tilrådingen invertert: ja til «vedtas ikke» er
+  nei til forslaget.
+
+  Forslaget var SVs, ikke FrPs; dokumentet som lå til behandling var Venstres
+  (Dokument 8:223 S (2022–2023)). Sesjonen er 2022–2023, avstemningen er fra
+  en tidligere sesjon enn de eksisterende radene i cellen.
+retrieved_at: "2026-10-28"

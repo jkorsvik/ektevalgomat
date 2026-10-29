@@ -7,7 +7,7 @@ source. Built from the research memo in `docs/research-memo.md`
 (2026-09-23) — see `docs/roadmap.md` for the full build history and
 exactly what's deliberately not built yet (a `rettelseslogg` UI,
 `konsistens`/`beneficiaries` fields the memo describes but no evidence
-yet needs). Current state (2026-10-29): 60 statements, 642 evidence
+yet needs). Current state (2026-10-29): 60 statements, 669 evidence
 files. That is the memo's 42 (utsagn 1-42), 2 "Tillegg" extras (44, 45),
 two owner-approved dimensions added after user feedback,
 "Tilgang, integrering og rettsstat" (46-51) and "Finansiering av
@@ -24,7 +24,7 @@ opposite direction to hold the acquiescence spread at 12 points (was 41).
 Tests enforce both, see the roadmap. Every verbatim excerpt and every
 "stemte for/mot" is checked against its source by
 `tools/verify/verify_excerpts.py` and `tools/verify/verify_votes.py`; 345 of
-the 642 evidence rows carry such an excerpt, and the rest are votes and
+the 669 evidence rows carry such an excerpt, and the rest are votes and
 documents where the claim is the action itself, not a quotation.
 
 Live at **https://ektevalgomat.no**. A "small public Go server": Go

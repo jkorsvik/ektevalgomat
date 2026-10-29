@@ -426,17 +426,17 @@ items:
   party: krf
   method: method/budget.md
   status: passed
-  result: >
-    CLOSED BY THE RATIFIED SCALE, 2026-10-29. With
-    tools/autopilot/method/position-scale.md ratified as written, the strongest unambiguous
-    own instrument decides and a weaker or self-contradicting document may not downgrade it.
-    KrF's programme lists "Holde skatte- og avgiftsnivået om lag på dagens nivå" as its own
-    point, which is an instrument written as a goal, so the party is -2 on utsagn-55. A
-    figure that changes sign between the netto rammevedtak and KrF's own påløpt column in
-    the same merknad does not state the claim directly, so it cannot earn magnitude 2 and
-    cannot pull the cell to -1. Nothing moved and the budget row was not added. This is the
-    owner's option (1), reached by rule rather than by threshold, so the 0,5 pst. bar is not
-    needed and does not have to be defended against Venstre's 0,37 pct.
+  result: 'CLOSED BY THE RATIFIED SCALE, 2026-10-29. With tools/autopilot/method/position-scale.md ratified
+    as written, the strongest unambiguous own instrument decides and a weaker or self-contradicting document
+    may not downgrade it. KrF''s programme lists "Holde skatte- og avgiftsnivået om lag på dagens nivå"
+    as its own point, which is an instrument written as a goal, so the party is -2 on utsagn-55. A figure
+    that changes sign between the netto rammevedtak and KrF''s own påløpt column in the same merknad does
+    not state the claim directly, so it cannot earn magnitude 2 and cannot pull the cell to -1. Nothing
+    moved and the budget row was not added. This is the owner''s option (1), reached by rule rather than
+    by threshold, so the 0,5 pst. bar is not needed and does not have to be defended against Venstre''s
+    0,37 pct.
+
+    '
   blocked_on: 'An owner coding decision, not a mechanical wall. The drafted row is staging/budget-lead-2-skatt-niva/not-promoted/krf-skatteniva-innst2s.yaml
     with its REASON.md. KrF''s own budget moves the total by 3,4 mrd. kroner more in revenue on the netto
     rammevedtak (0,18 pst. of the level), and by 1,8 mrd. LESS in KrF''s own påløpt column in the same
@@ -517,15 +517,15 @@ items:
   party: sp
   method: method/budget.md
   status: passed
-  result: >
-    RULED: THE RULE WINS, 2026-10-29. A group-scoped sentence cannot answer a statement
-    about the SAMLEDE level, so row 774 is withdrawn and utsagn-55 is 8/9. The mechanism is
-    in the commit that did it: the row deleted, loader_test's comment rewritten to record the
-    ruling rather than the open conflict, README and roadmap counts moved 643->642 evidence
-    files and 55->54 full-coverage statements, the archive rebuilt to 345 windows with the
-    orphaned window for 774's excerpt deleted, and the vote index untouched because no vote
-    cited the row. The rule now stands unchallenged and has removed three party positions
+  result: 'RULED: THE RULE WINS, 2026-10-29. A group-scoped sentence cannot answer a statement about the
+    SAMLEDE level, so row 774 is withdrawn and utsagn-55 is 8/9. The mechanism is in the commit that did
+    it: the row deleted, loader_test''s comment rewritten to record the ruling rather than the open conflict,
+    README and roadmap counts moved 643->642 evidence files and 55->54 full-coverage statements, the archive
+    rebuilt to 345 windows with the orphaned window for 774''s excerpt deleted, and the vote index untouched
+    because no vote cited the row. The rule now stands unchallenged and has removed three party positions
     from this cell: Sp and MDG originally, Sp again now.
+
+    '
   blocked_on: 'An owner rule decision, found by ekv-verifier on 2026-10-28 while re-checking 773/774 (tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md,
     finding D-774a). internal/data/loader_test.go records the repo''s own rule for this exact statement:
     Sp and MDG were deliberately left «Ikke vurdert» because each has a tax-reduction sentence scoped
@@ -549,26 +549,24 @@ items:
   statement: utsagn-35
   method: method/budget.md
   status: pending
-  blocked_on: >
-    CLEARED 2026-10-29: BOTH owner questions are now moot, and neither needs an answer.
-    (1) "May a numeric row ship without an excerpt?" — the choice has disappeared, because
-    the excerpt exists. Re-measured after the extractor fix (b82fd29) in Innst. 12 S, now
-    68 857 characters of clean text instead of markup-laden soup: the Formål cell that
-    spanned 9 267 normalised characters is gone, and the label-to-figure distance in the
-    rammeområde 16 table is 87 characters. The row reads "70 innføre gratis skolemåltid for
-    alle elever på ungdomstrinnet fra skoleåret 2026/2027 0 0(0) 0(0) 0(0) 415 000(+415 000)
-    0(0) 0(0) 0(0)".
-    (2) "Does coding Rødt's merknad move its cell?" — only under the mean, and the mean is no
-    longer the rule: a cell reports its NEWEST row since c6b73ce, so adding an older row
-    cannot move a published position. The Rødt row can be added on its own merits.
-    
-    The attribution is confirmed from the header in the same document ("kap. post formål
-    prop. 1 s(2025-2026) a, sv, sp, r og mdg frp h sv r krf v"): the columns after the
-    government's proposal are the forlik, FrP, H, SV, R, KrF, V. The 415 000 is SV's; Rødt's
-    cell is 0(0), which is what the earlier pass found by two independent reconciliations.
-    So SV has the money and no sentence about school meals, while Rødt has the sentence
-    (merknad 2.6, 1 006-character window) and no money. Both are codeable; they are different
-    facts and the rows must not be merged.
+  blocked_on: 'CLEARED 2026-10-29: BOTH owner questions are now moot, and neither needs an answer. (1)
+    "May a numeric row ship without an excerpt?" — the choice has disappeared, because the excerpt exists.
+    Re-measured after the extractor fix (b82fd29) in Innst. 12 S, now 68 857 characters of clean text
+    instead of markup-laden soup: the Formål cell that spanned 9 267 normalised characters is gone, and
+    the label-to-figure distance in the rammeområde 16 table is 87 characters. The row reads "70 innføre
+    gratis skolemåltid for alle elever på ungdomstrinnet fra skoleåret 2026/2027 0 0(0) 0(0) 0(0) 415
+    000(+415 000) 0(0) 0(0) 0(0)". (2) "Does coding Rødt''s merknad move its cell?" — only under the mean,
+    and the mean is no longer the rule: a cell reports its NEWEST row since c6b73ce, so adding an older
+    row cannot move a published position. The Rødt row can be added on its own merits.
+
+    The attribution is confirmed from the header in the same document ("kap. post formål prop. 1 s(2025-2026)
+    a, sv, sp, r og mdg frp h sv r krf v"): the columns after the government''s proposal are the forlik,
+    FrP, H, SV, R, KrF, V. The 415 000 is SV''s; Rødt''s cell is 0(0), which is what the earlier pass
+    found by two independent reconciliations. So SV has the money and no sentence about school meals,
+    while Rødt has the sentence (merknad 2.6, 1 006-character window) and no money. Both are codeable;
+    they are different facts and the rows must not be merged.
+
+    '
   note: 'The stream is still cheap and still unharvested: the document is in the fetch cache and the table
     parse is cell-for-cell. Nothing was promoted from this pass; both drafts exist only in the harvester
     report, which the driver has not staged as files.'
@@ -583,28 +581,22 @@ items:
   - kap. 1820 post 80
   method: method/budget.md
   status: pending
-  blocked_on: >
-    CLEARED 2026-10-29: THE QUOTE EXISTS, so the exemption this item asked for is not
-    needed and must not be granted. The premise was that no fragment inside the 6 000-char
-    window carries the figure; that was measured against an extractor that kept the markup
-    from a JSON envelope (fixed in b82fd29). Re-measured after the fix, in the same document
-    (Innst. 9 S, 263 129 characters of clean text):
-    
-      "77 norgespris for strøm 9 100 000 9 100 000 (0) 0 (-9 100 000) 9 100 000 (0) 9 100 000
-       (0) 9 100 000 (0) 9 635 000 (+535 000) 9 100 000 (0)"
-    
-    That is a 150-character substring of the source. The column header for the same table
-    reads "kap. post formål prop. 1 s (2025-2026) a, sv, sp, r og mdg frp h sv r mdg v", so
-    the columns after the government's proposal are: the budget forlik (joint A/SV/Sp/R/MDG),
-    then FrP, H, SV, R, MDG, V. The sixth is MDG, which is why +535 000 is MDG's figure —
-    verified against the header, not guessed. MDG's row on post 78 (norgespris for
-    fjernvarme) is 0 (-500 000), so MDG's net on posts 77-78 is +35 000, about 0,36 pct.
-    
-    Two fragments (the header and the row) fit the archive with room to spare. The column map
-    must be stated in context_note, because the row alone does not tell a reader which column
-    is which, and the previous scout on the school-meal table read the columns one to the
-    right. FrP is still not part of this: its drafted -2 contradicts row 87's reading of the
-    same 50-øre design, and that stays withheld.
+  blocked_on: "CLEARED 2026-10-29: THE QUOTE EXISTS, so the exemption this item asked for is not needed\
+    \ and must not be granted. The premise was that no fragment inside the 6 000-char window carries the\
+    \ figure; that was measured against an extractor that kept the markup from a JSON envelope (fixed\
+    \ in b82fd29). Re-measured after the fix, in the same document (Innst. 9 S, 263 129 characters of\
+    \ clean text):\n\n  \"77 norgespris for strøm 9 100 000 9 100 000 (0) 0 (-9 100 000) 9 100 000 (0)\
+    \ 9 100 000\n   (0) 9 100 000 (0) 9 635 000 (+535 000) 9 100 000 (0)\"\n\nThat is a 150-character\
+    \ substring of the source. The column header for the same table reads \"kap. post formål prop. 1 s\
+    \ (2025-2026) a, sv, sp, r og mdg frp h sv r mdg v\", so the columns after the government's proposal\
+    \ are: the budget forlik (joint A/SV/Sp/R/MDG), then FrP, H, SV, R, MDG, V. The sixth is MDG, which\
+    \ is why +535 000 is MDG's figure — verified against the header, not guessed. MDG's row on post 78\
+    \ (norgespris for fjernvarme) is 0 (-500 000), so MDG's net on posts 77-78 is +35 000, about 0,36\
+    \ pct.\nTwo fragments (the header and the row) fit the archive with room to spare. The column map\
+    \ must be stated in context_note, because the row alone does not tell a reader which column is which,\
+    \ and the previous scout on the school-meal table read the columns one to the right. FrP is still\
+    \ not part of this: its drafted -2 contradicts row 87's reading of the same 50-øre design, and that\
+    \ stays withheld.\n"
   note: 'Next from staging/scout-alternative-budgets/LEADS.md, lead 3: Innst. 9 S (2025-2026), energi-
     og miljøkomiteen, signed 2025-12-11, rammeområde 12 party table, kap. 1820 post 77 "Norgespris for
     strøm" and the two post 80 rows. Tier A: a party''s own money, divided. The cell utsagn-12 already
@@ -678,55 +670,43 @@ items:
   role: scout-then-harvester
   method: method/history.md
   status: passed
-  result: >
-    Lead 1 of the eight ranked, shipped 2026-10-28 as evidence 775-783: nine
-    voteringsspor rows for utsagn-49 dated 2022-04-07, the cell's first second
-    date. The statement's own demand is forslag nr. 1 in Dokument 8:75 S
-    (2021-2022), voted as part of one division (votering 18486) that carried
-    forslag 1-3; a for on that division is a for on the foreldelsesfrist.
-    Every row cites 18486, never 18487, because 18487 is the tilradding
-    «vedtas ikke» (88 for / 16 mot), where Venstre splits 3-1 and KrF votes for
-    a rejection it had just voted against in substance. Directions: ap/frp/h/sp
-    mot (0/30, 0/13, 0/23, 0/17), sv/rodt/mdg/v/krf for (8/0, 4/0, 2/0, 4/0,
-    2/0). Codings preserve every cell mean except Rodt's, which moves +0.5 to
-    +1,0 because row 480 already sits at -1 on another vote from the same case:
-    sv +2, rodt +2 (both authored forslag 40067938 and the rule in
-    method/position-scale.md says a weaker document may not downgrade the
-    cell's strongest instrument), mdg +2 (direction from the 2022 vote,
-    magnitude from the 2026 co-proposal, stated in the row rather than implied),
-    v +1, ap/frp/h/sp -1, and KrF NO POSITION: it voted for the forslag and for
-    the rejection in the same case, and a self-contradicting record is not a
-    direction. The KrF row still gives that cell a second date of behaviour but
-    not a second coded position, so its konsistens stays utilstrekkelig.
+  result: 'Lead 1 of the eight ranked, shipped 2026-10-28 as evidence 775-783: nine voteringsspor rows
+    for utsagn-49 dated 2022-04-07, the cell''s first second date. The statement''s own demand is forslag
+    nr. 1 in Dokument 8:75 S (2021-2022), voted as part of one division (votering 18486) that carried
+    forslag 1-3; a for on that division is a for on the foreldelsesfrist. Every row cites 18486, never
+    18487, because 18487 is the tilradding «vedtas ikke» (88 for / 16 mot), where Venstre splits 3-1 and
+    KrF votes for a rejection it had just voted against in substance. Directions: ap/frp/h/sp mot (0/30,
+    0/13, 0/23, 0/17), sv/rodt/mdg/v/krf for (8/0, 4/0, 2/0, 4/0, 2/0). Codings preserve every cell mean
+    except Rodt''s, which moves +0.5 to +1,0 because row 480 already sits at -1 on another vote from the
+    same case: sv +2, rodt +2 (both authored forslag 40067938 and the rule in method/position-scale.md
+    says a weaker document may not downgrade the cell''s strongest instrument), mdg +2 (direction from
+    the 2022 vote, magnitude from the 2026 co-proposal, stated in the row rather than implied), v +1,
+    ap/frp/h/sp -1, and KrF NO POSITION: it voted for the forslag and for the rejection in the same case,
+    and a self-contradicting record is not a direction. The KrF row still gives that cell a second date
+    of behaviour but not a second coded position, so its konsistens stays utilstrekkelig.
 
-    PROCESS DEVIATION, stated plainly: this session's sandbox is
-    network-blocked while every agent profile requests network=true, and the
-    spawn tool's fs/network overrides did not land, so ekv-harvester,
-    ekv-verifier, ekv-scout and bias-analyst were all refused («requested
-    profile weakens caller's sandbox», tried with fs=read and again with
-    network=false). The driver drafted, re-derived, gated, verified and
-    promoted this batch itself. The nine rows have NO ekv-verifier verdict and
-    are owed one; the driver's substitutes were an independent re-count of both
-    tallies straight from the cached payloads with its own code (identical to
-    votes.py digit for digit) and a mutation test of the gate (flipping Ap's
-    status to stemte_for made it FAIL with «party ap is not for on any cited
-    vote ['18486']», and PASS returned on restore, so the green was not
-    vacuous).
+    PROCESS DEVIATION, stated plainly: this session''s sandbox is network-blocked while every agent profile
+    requests network=true, and the spawn tool''s fs/network overrides did not land, so ekv-harvester,
+    ekv-verifier, ekv-scout and bias-analyst were all refused («requested profile weakens caller''s sandbox»,
+    tried with fs=read and again with network=false). The driver drafted, re-derived, gated, verified
+    and promoted this batch itself. The nine rows have NO ekv-verifier verdict and are owed one; the driver''s
+    substitutes were an independent re-count of both tallies straight from the cached payloads with its
+    own code (identical to votes.py digit for digit) and a mutation test of the gate (flipping Ap''s status
+    to stemte_for made it FAIL with «party ap is not for on any cited vote [''18486'']», and PASS returned
+    on restore, so the green was not vacuous).
 
-    Measured, not assumed: statements holding exactly one coded date went 48
-    to 47 of 58. gate.py PASS 9 files; verify_excerpts 0 failed (346 excerpts);
-    verify_votes 0 MISMATCH (425 files, 23 MIXED unchanged); go test ./...
-    green through promote.py, which also rebuilt the vote index with the dates
-    intact (14 945 of 14 946).
+    Measured, not assumed: statements holding exactly one coded date went 48 to 47 of 58. gate.py PASS
+    9 files; verify_excerpts 0 failed (346 excerpts); verify_votes 0 MISMATCH (425 files, 23 MIXED unchanged);
+    go test ./... green through promote.py, which also rebuilt the vote index with the dates intact (14
+    945 of 14 946).
 
-    Two things this batch leaves behind, neither fixed on purpose:
-    (1) the index field coded_parties means «parties whose evidence cites this
-    vote», not «parties coded on it», so KrF appears there on 18486 with no
-    position. Renaming or re-deriving the field touches every row's entry and
-    is its own risk, so it is queued rather than folded in here.
-    (2) Leads 2-8 of the scout note are still unread: utsagn-01 (three earlier
-    saker, the densest), utsagn-09, utsagn-17, utsagn-11, utsagn-08, utsagn-48,
-    utsagn-56.
+    Two things this batch leaves behind, neither fixed on purpose: (1) the index field coded_parties means
+    «parties whose evidence cites this vote», not «parties coded on it», so KrF appears there on 18486
+    with no position. Renaming or re-deriving the field touches every row''s entry and is its own risk,
+    so it is queued rather than folded in here. (2) Leads 2-8 of the scout note are still unread: utsagn-01
+    (three earlier saker, the densest), utsagn-09, utsagn-17, utsagn-11, utsagn-08, utsagn-48, utsagn-56.
+
+    '
   blocked_on: 'CLEARED 2026-10-28 in 5647936, and the premise was wrong in three places. The index now
     carries a date for 14 945 of its 14 946 voterings, spanning 2019 to 2026, harvested offline from the
     fetch cache. There is no voteringsdetaljer page to fetch, and the API does have a vote time: each
@@ -758,241 +738,220 @@ items:
   role: scout-then-harvester
   method: method/history.md
   status: blocked
-  blocked_on: >
-    Three owner decisions and two pinned tests, not the sourcing. 27 rows are drafted,
-    gated and source-checked: gate.py PASS 27 files (mutation-tested — flipping Ap's
-    status on 18941 produced "party ap is not for on any cited vote ['18941']", PASS
-    returned on restore), every party tally and every result total in every row re-derived
-    by the driver from the cached per-representative payloads and agreeing 27/27, dates
-    agreeing with votes/index.json (18941 = 2022-06-02, 21354 = 2023-06-15, 26219 =
-    2025-06-19, all before the 2026-10-12 cutoff), and the acquiescence ratchet measured
-    in a scratch copy with all 27 rows added: spread 12 points both directions, unchanged.
-    Drafts sit in staging/voteringsspor-utsagn-01-second-dates/not-promoted/ with a
-    REASON.md. The three obstacles. (1) MECHANICAL: promoting breaks internal/data's
-    TestVenstreLobbyregisterPositionIsCoded and TestRodtAndMDGLobbyPositionsAreNowCoded,
-    which both t.Fatalf on "EvidenceForCell(utsagn-01, v|rodt) = 4 items, want 1"; the
-    second guard also requires a coded position in those cells to carry a verbatim_excerpt,
-    and these rows have none because the sentence carrying the claim lives in the
-    voteringsforslag payload, not the voteringsresultat payload they cite. Ask: do the
-    guards admit several rows per cell, and does the excerpt requirement follow the cell
-    or only its first row? (2) SCORING: the mean mechanism moves three published cells
-    down, sv 2 -> 1, rodt 2 -> 1, v 2 -> 1 (rows 2,1,1,1 and 2,1,1; mdg, ap, frp, h, krf,
-    sp unchanged). history.md says changing an existing cell's position is the owner's
-    call. The coding that would keep 2 — magnitude 2 for the pro-register parties — is the
-    one ekv-verifier falsified: row 05-mdg-votering codes MDG +1 on the 2026 forslag whose
-    text is word for word the same utredning text, so 2 on a 2022 utredning overstates it,
-    and uniform 1 is the only defensible code. Ask: does the honest 1 ship and downgrade
-    the three cells, or does the dated row carry 2 to keep the cell? (3) LABEL CONFLICT:
-    H split 1 for / 20 mot on 21354; votes/index.json labels it "split" while the row
-    codes -1 and verify_votes' 20 % threshold passed it. Ask which label wins, because
-    internal/analysis documents that "split IS a side" and the dataset should not carry a
-    -1 row beside a split index entry. ekv-verifier returned WRONG on all 27 files on
-    these grounds plus three draft defects that are cheap to fix on a re-run (REPORT.md's
-    histogram, the unnamed H defector, and the 2025 case's three vote records documenting
-    two decisions because 26218/26219 are a reciprocal alternative-votering pair). Nothing
-    needs the network: every payload is in the fetch cache.
-  note: >
-    Lead 2 of the scout note cleared in voteringsspor-second-dates, and the densest of the
-    eight: utsagn-01 has THREE earlier saker (103065, 93646, 88756) that each carry votes
-    bearing on the cell, so it could give nine cells three dates instead of two. The
-    method is now proven end to end on utsagn-49: read the case's votes from the cache with
-    votes.py, pick the division whose forslag text states the statement's own demand, cite
-    that one, and never cite a tilradding vote beside it. Two costs to check before
-    drafting: the three saker span three sessions, so the vote dates are far apart and a
-    party may legitimately have moved between them (that is the point, but it means the
-    rows must not be coded as if they were one moment), and utsagn-01 is a statement about
-    lobby register / etterprovbarhet where a vote may well be procedural rather than
-    substantive.
+  blocked_on: 'Three owner decisions and two pinned tests, not the sourcing. 27 rows are drafted, gated
+    and source-checked: gate.py PASS 27 files (mutation-tested — flipping Ap''s status on 18941 produced
+    "party ap is not for on any cited vote [''18941'']", PASS returned on restore), every party tally
+    and every result total in every row re-derived by the driver from the cached per-representative payloads
+    and agreeing 27/27, dates agreeing with votes/index.json (18941 = 2022-06-02, 21354 = 2023-06-15,
+    26219 = 2025-06-19, all before the 2026-10-12 cutoff), and the acquiescence ratchet measured in a
+    scratch copy with all 27 rows added: spread 12 points both directions, unchanged. Drafts sit in staging/voteringsspor-utsagn-01-second-dates/not-promoted/
+    with a REASON.md. The three obstacles. (1) MECHANICAL: promoting breaks internal/data''s TestVenstreLobbyregisterPositionIsCoded
+    and TestRodtAndMDGLobbyPositionsAreNowCoded, which both t.Fatalf on "EvidenceForCell(utsagn-01, v|rodt)
+    = 4 items, want 1"; the second guard also requires a coded position in those cells to carry a verbatim_excerpt,
+    and these rows have none because the sentence carrying the claim lives in the voteringsforslag payload,
+    not the voteringsresultat payload they cite. Ask: do the guards admit several rows per cell, and does
+    the excerpt requirement follow the cell or only its first row? (2) SCORING: the mean mechanism moves
+    three published cells down, sv 2 -> 1, rodt 2 -> 1, v 2 -> 1 (rows 2,1,1,1 and 2,1,1; mdg, ap, frp,
+    h, krf, sp unchanged). history.md says changing an existing cell''s position is the owner''s call.
+    The coding that would keep 2 — magnitude 2 for the pro-register parties — is the one ekv-verifier
+    falsified: row 05-mdg-votering codes MDG +1 on the 2026 forslag whose text is word for word the same
+    utredning text, so 2 on a 2022 utredning overstates it, and uniform 1 is the only defensible code.
+    Ask: does the honest 1 ship and downgrade the three cells, or does the dated row carry 2 to keep the
+    cell? (3) LABEL CONFLICT: H split 1 for / 20 mot on 21354; votes/index.json labels it "split" while
+    the row codes -1 and verify_votes'' 20 % threshold passed it. Ask which label wins, because internal/analysis
+    documents that "split IS a side" and the dataset should not carry a -1 row beside a split index entry.
+    ekv-verifier returned WRONG on all 27 files on these grounds plus three draft defects that are cheap
+    to fix on a re-run (REPORT.md''s histogram, the unnamed H defector, and the 2025 case''s three vote
+    records documenting two decisions because 26218/26219 are a reciprocal alternative-votering pair).
+    Nothing needs the network: every payload is in the fetch cache.
+
+    '
+  note: 'Lead 2 of the scout note cleared in voteringsspor-second-dates, and the densest of the eight:
+    utsagn-01 has THREE earlier saker (103065, 93646, 88756) that each carry votes bearing on the cell,
+    so it could give nine cells three dates instead of two. The method is now proven end to end on utsagn-49:
+    read the case''s votes from the cache with votes.py, pick the division whose forslag text states the
+    statement''s own demand, cite that one, and never cite a tilradding vote beside it. Two costs to check
+    before drafting: the three saker span three sessions, so the vote dates are far apart and a party
+    may legitimately have moved between them (that is the point, but it means the rows must not be coded
+    as if they were one moment), and utsagn-01 is a statement about lobby register / etterprovbarhet where
+    a vote may well be procedural rather than substantive.
+
+    '
 - id: vote-index-coded-parties-naming
   kind: verify
   statement: ''
   method: method/mixed.md
   status: passed
-  result: >
-    ANSWERED AND APPLIED 2026-10-28 in 81bb2d9. The field means "coded on", not
-    "cites", which is what its own comment already said. cited_votes() filled it from
-    any row that cited the vote, so a row resolving to position: null still put its
-    party in. It now requires a non-nil position. KrF leaves 18486's coded_parties and
-    stays in cited_by; across the corpus 106 votes are cited and 98 carry a coded
-    party, so eight votes were making a claim they do not support. Renaming was the
-    other option and was not needed.
-  note: >
-    Found while promoting voteringsspor-second-dates on 2026-10-28, and not fixed there
-    because it touches every row's index entry. internal/data/votes/index.json carries a
-    field named coded_parties that build_vote_index.cited_votes() fills with the party id
-    of every evidence row that CITES the vote, whether or not that row has a position. The
-    KrF row 778 cites votering 18486 with no position (the party voted both for the forslag
-    and for the tilradding that rejected it, so nothing was coded), and KrF therefore
-    appears in 18486's coded_parties. Any reader or view that trusts the field name will
-    read an uncoded party as a coded one. Job: decide whether to rename the field to
-    citing_parties, or to derive coded_parties from rows that actually carry a position
-    (and then keep both). Measure first how many entries would change: a party at null
-    position citing a vote is the case to count.
+  result: 'ANSWERED AND APPLIED 2026-10-28 in 81bb2d9. The field means "coded on", not "cites", which
+    is what its own comment already said. cited_votes() filled it from any row that cited the vote, so
+    a row resolving to position: null still put its party in. It now requires a non-nil position. KrF
+    leaves 18486''s coded_parties and stays in cited_by; across the corpus 106 votes are cited and 98
+    carry a coded party, so eight votes were making a claim they do not support. Renaming was the other
+    option and was not needed.
 
+    '
+  note: 'Found while promoting voteringsspor-second-dates on 2026-10-28, and not fixed there because it
+    touches every row''s index entry. internal/data/votes/index.json carries a field named coded_parties
+    that build_vote_index.cited_votes() fills with the party id of every evidence row that CITES the vote,
+    whether or not that row has a position. The KrF row 778 cites votering 18486 with no position (the
+    party voted both for the forslag and for the tilradding that rejected it, so nothing was coded), and
+    KrF therefore appears in 18486''s coded_parties. Any reader or view that trusts the field name will
+    read an uncoded party as a coded one. Job: decide whether to rename the field to citing_parties, or
+    to derive coded_parties from rows that actually carry a position (and then keep both). Measure first
+    how many entries would change: a party at null position citing a vote is the case to count.
+
+    '
 - id: statsborgerskap-2026-dato-og-pf-stemme
   kind: history
   statement: utsagn-49
   party: ''
   method: method/history.md
   status: passed
-  result: >
-    APPLIED 2026-10-29 as one in-place provenance correction, 28 files plus a rebuilt
-    archive and a rebuilt vote index. Two things in this item's own plan were wrong and
-    were corrected while doing it: (1) the count is 18 ids, not 20. Nineteen evidence
-    files belong to the statsborgerskap case and 740 (ev-2026-04-30-krf-digitale-
-    avhengigheter-presse) merely shares the date string, being an Altinget article about
-    digital avhengighet dated 30.04.2026; touching it would have been a fabrication.
-    (2) A blanket rename would have been wrong for row 473. It is an innstilling row
-    (actor the committee, party_id "", position null, no votering cited) and the cached
-    document is signed «Oslo, i kommunal- og forvaltningskomiteen, den 30. april 2026»,
-    so 2026-04-30 is its own true date; it now says so and names the four divisions as
-    12 May. The 18 rows that cite a votering moved to date 2026-05-12 with id
-    ev-2026-05-12-*: 474-487 and 512-515. Each source_name now reads «(12.05.2026;
-    innstillingen signert 30.04.2026)», so the row states which date it means instead of
-    leaving two dates unreconciled. The vote date was re-derived twice from the cached
-    payload: voteringer?sakid=200050 carries votering_tid for 27522-27525 that converts
-    to 2026-05-12 15:06-15:07 Europe/Oslo, never to 30 April. On the PF half, the tally
-    was recounted per party from the cached 18486 payload: for = 21 (SV 8, V 4, R 4, MDG
-    2, KrF 2, PF 1, the last being Irene Ojala of Finnmark), mot = 83, absent = 65. The
-    eight 2022 rows that state «Forslaget falt 21 mot 83» now name the 21st for-vote, so
-    a reader adding up the parties reaches 21 instead of 20. 778 states no tally (position
-    null: KrF voted for the forslag and for the tilradding that rejected it) and got no
-    clause. The archive was rebuilt (346 windows, unchanged count; the nine orphaned
-    ev-2026-04-30 window files were deleted, since TestArchiveCoversEveryQuotedClaim fails
-    on an extra window), and the vote index was rebuilt and then diffed against HEAD with
-    the date segments normalised: 14 946 votes, 0 entries differ apart from the rename and
-    generated_at. gate.py PASS 28 files, and the gate was mutation-tested (flipping 514's
-    H status to stemte_for produced «party h is not for on any cited vote ['27523']»;
-    PASS returned on restore). ekv-verifier returned SUPPORTED-WITH-CAVEAT and proved no
-    defect, re-deriving the timestamps, the signature date and the 18486 tally itself; its
-    one admitted gap, that its extraction window cut off the year of the signature, is
-    closed here: the cached page reads «den 30. april\n2026». go test ./... green;
-    verify_excerpts 0 failed (346 excerpts); verify_votes 0 MISMATCH (425 files, MIXED 23
-    unchanged). Neither this pass nor the earlier one lowered a gate.
+  result: 'APPLIED 2026-10-29 as one in-place provenance correction, 28 files plus a rebuilt archive and
+    a rebuilt vote index. Two things in this item''s own plan were wrong and were corrected while doing
+    it: (1) the count is 18 ids, not 20. Nineteen evidence files belong to the statsborgerskap case and
+    740 (ev-2026-04-30-krf-digitale- avhengigheter-presse) merely shares the date string, being an Altinget
+    article about digital avhengighet dated 30.04.2026; touching it would have been a fabrication. (2)
+    A blanket rename would have been wrong for row 473. It is an innstilling row (actor the committee,
+    party_id "", position null, no votering cited) and the cached document is signed «Oslo, i kommunal-
+    og forvaltningskomiteen, den 30. april 2026», so 2026-04-30 is its own true date; it now says so and
+    names the four divisions as 12 May. The 18 rows that cite a votering moved to date 2026-05-12 with
+    id ev-2026-05-12-*: 474-487 and 512-515. Each source_name now reads «(12.05.2026; innstillingen signert
+    30.04.2026)», so the row states which date it means instead of leaving two dates unreconciled. The
+    vote date was re-derived twice from the cached payload: voteringer?sakid=200050 carries votering_tid
+    for 27522-27525 that converts to 2026-05-12 15:06-15:07 Europe/Oslo, never to 30 April. On the PF
+    half, the tally was recounted per party from the cached 18486 payload: for = 21 (SV 8, V 4, R 4, MDG
+    2, KrF 2, PF 1, the last being Irene Ojala of Finnmark), mot = 83, absent = 65. The eight 2022 rows
+    that state «Forslaget falt 21 mot 83» now name the 21st for-vote, so a reader adding up the parties
+    reaches 21 instead of 20. 778 states no tally (position null: KrF voted for the forslag and for the
+    tilradding that rejected it) and got no clause. The archive was rebuilt (346 windows, unchanged count;
+    the nine orphaned ev-2026-04-30 window files were deleted, since TestArchiveCoversEveryQuotedClaim
+    fails on an extra window), and the vote index was rebuilt and then diffed against HEAD with the date
+    segments normalised: 14 946 votes, 0 entries differ apart from the rename and generated_at. gate.py
+    PASS 28 files, and the gate was mutation-tested (flipping 514''s H status to stemte_for produced «party
+    h is not for on any cited vote [''27523'']»; PASS returned on restore). ekv-verifier returned SUPPORTED-WITH-CAVEAT
+    and proved no defect, re-deriving the timestamps, the signature date and the 18486 tally itself; its
+    one admitted gap, that its extraction window cut off the year of the signature, is closed here: the
+    cached page reads «den 30. april\n2026». go test ./... green; verify_excerpts 0 failed (346 excerpts);
+    verify_votes 0 MISMATCH (425 files, MIXED 23 unchanged). Neither this pass nor the earlier one lowered
+    a gate.
 
-    STILL OPEN, and it is a new item rather than a part of this one:
-    statsborgerskap-pf-mangler-i-indeksene. The correction makes the ROWS add up to 21;
-    the derived artefacts do not. votes/index.json maps a votering to the nine party ids
-    only, so 18486's own parties map still shows 20 of 21 for-votes, and
-    internal/data/storting/index.json's 169 representatives do not include the PF
-    representative. Anything that reads the tally from the index rather than from the row
-    is still one short.
+    STILL OPEN, and it is a new item rather than a part of this one: statsborgerskap-pf-mangler-i-indeksene.
+    The correction makes the ROWS add up to 21; the derived artefacts do not. votes/index.json maps a
+    votering to the nine party ids only, so 18486''s own parties map still shows 20 of 21 for-votes, and
+    internal/data/storting/index.json''s 169 representatives do not include the PF representative. Anything
+    that reads the tally from the index rather than from the row is still one short.
 
-    PRIOR FRAMING, kept as the record of what 2026-10-28 established: BOTH QUESTIONS
-    ANSWERED 2026-10-28 from the API; what remains is a scoped data
-    correction, not an open question. (a) The date is wrong and 2026-05-12 is right:
-    votering 27523 sits in sak 200050, and all four divisions in that sak (27522,
-    27523, 27524, 27525) carry votering_tid converting to 2026-05-12. The rows were
-    not citing a different vote. The correction is wider than a date field: 20 evidence
-    files embed ev-2026-04-30 in their id, further rows cross-reference those ids, and
-    the archive windows and the vote index cited_by all key on the id, so the fix is a
-    rename plus an archive and index rebuild, not a sed. (b) PF is Pasientfokus, the
-    party object on the tally row itself: {"id":"PF","navn":"Pasientfokus",
-    "representert_parti":false}, one representative, Irene Ojala, voting for. It is a
-    real party outside the nine the partier export returns, so the rows' 20-of-21
-    breakdown is one short and should name her. Neither needs the owner.
-  keywords: ['votering 27523', 'Innst. 232 S', 'Pasientfokus', 'PF', 'dato']
-  note: >
-    Two measurements the ekv-verifier produced on 2026-10-28 that the nine
-    utsagn-49 rows do not settle, both cheap to close and both able to mislead a
-    reader who trusts them.
+    PRIOR FRAMING, kept as the record of what 2026-10-28 established: BOTH QUESTIONS ANSWERED 2026-10-28
+    from the API; what remains is a scoped data correction, not an open question. (a) The date is wrong
+    and 2026-05-12 is right: votering 27523 sits in sak 200050, and all four divisions in that sak (27522,
+    27523, 27524, 27525) carry votering_tid converting to 2026-05-12. The rows were not citing a different
+    vote. The correction is wider than a date field: 20 evidence files embed ev-2026-04-30 in their id,
+    further rows cross-reference those ids, and the archive windows and the vote index cited_by all key
+    on the id, so the fix is a rename plus an archive and index rebuild, not a sed. (b) PF is Pasientfokus,
+    the party object on the tally row itself: {"id":"PF","navn":"Pasientfokus", "representert_parti":false},
+    one representative, Irene Ojala, voting for. It is a real party outside the nine the partier export
+    returns, so the rows'' 20-of-21 breakdown is one short and should name her. Neither needs the owner.
 
-    (1) A date that disagrees with itself. The five 2026 rows (473, 474, 483, 484,
-    485) carry date 2026-04-30 and name "votering_id 27523 (30.04.2026)" in
-    source_name. Votering 27523's own votering_tid, harvested into the index in
-    5647936, converts to 2026-05-12. One of the two is wrong and nothing in the repo
-    reconciles them. It does not move the year axis, since both fall in 2026, but an
-    evidence date that is twelve days off is a provenance defect in its own right.
-    The check that settles it: fetch the sak that owns 27523 (it was not in sak
-    101147 on the first attempt) and compare the innstilling's behandlingsdato with
-    the division's timestamp. If 30.04 is the debate and 12.05 the division, the rows
-    should say which one they mean.
+    '
+  keywords:
+  - votering 27523
+  - Innst. 232 S
+  - Pasientfokus
+  - PF
+  - dato
+  note: 'Two measurements the ekv-verifier produced on 2026-10-28 that the nine utsagn-49 rows do not
+    settle, both cheap to close and both able to mislead a reader who trusts them.
 
-    (2) One for-vote with no party. Division 18486 fell 21 for against 83. The nine
-    rows' own per-party breakdown lists 20 of them: KrF 2, MDG 2, R 4, SV 8, V 4. The
-    21st is registered under parti id "PF", which appears in none of the nine parties
-    the API's partier export returns, and which nothing in the repo names. Either it
-    is a partifri representant, in which case the rows should say so, or the tally has
-    a party code the catalogue does not carry. Resolve before the breakdown is quoted
-    anywhere outside the row.
+    (1) A date that disagrees with itself. The five 2026 rows (473, 474, 483, 484, 485) carry date 2026-04-30
+    and name "votering_id 27523 (30.04.2026)" in source_name. Votering 27523''s own votering_tid, harvested
+    into the index in 5647936, converts to 2026-05-12. One of the two is wrong and nothing in the repo
+    reconciles them. It does not move the year axis, since both fall in 2026, but an evidence date that
+    is twelve days off is a provenance defect in its own right. The check that settles it: fetch the sak
+    that owns 27523 (it was not in sak 101147 on the first attempt) and compare the innstilling''s behandlingsdato
+    with the division''s timestamp. If 30.04 is the debate and 12.05 the division, the rows should say
+    which one they mean.
+
+    (2) One for-vote with no party. Division 18486 fell 21 for against 83. The nine rows'' own per-party
+    breakdown lists 20 of them: KrF 2, MDG 2, R 4, SV 8, V 4. The 21st is registered under parti id "PF",
+    which appears in none of the nine parties the API''s partier export returns, and which nothing in
+    the repo names. Either it is a partifri representant, in which case the rows should say so, or the
+    tally has a party code the catalogue does not carry. Resolve before the breakdown is quoted anywhere
+    outside the row.
+
+    '
 - id: statsborgerskap-pf-mangler-i-indeksene
   kind: verify
   statement: utsagn-49
   party: ''
   method: method/mixed.md
   status: passed
-  result: >
-    DONE 2026-10-29 in 3a92476, and one of the two halves is NOT a defect. THE VOTE
-    INDEX WAS WRONG and is fixed: side() mapped a representative's party through the
-    nine-party table and skipped anything else in silence, so Pasientfokus and
-    independents left no trace and an unknown party id was indistinguishable from a
-    party that did not vote. They are now recorded per vote as unmapped_parties, absent
-    when empty. Not a one-vote detail: 10 567 of 14 946 votes carry at least one such
-    member, Pasientfokus on 7 095 and an independent on 5 897. Cost 32 KB on 10.6 MB.
-    THE REPRESENTATIVE REGISTER NEEDS NO CHANGE: storting/index.json is scoped to
-    session 2025-2026, Ojala sat 2021-2025 and is not a member in that session, so her
-    absence is correct rather than an omission. It reconciles on its own terms: 169
-    representatives listed, per-party vote totals on votering 27721 summing to 169, and
-    27721 carries no unmapped party, so the fix above does not disturb the cross-check.
-  note: >
-    Found 2026-10-29 by the driver while applying statsborgerskap-2026-dato-og-pf-stemme,
-    and deliberately not folded in there because it changes derived artefacts rather than
-    row text. Pasientfokus is a real party with one representative and it votes: on
-    votering 18486 it cast the 21st for-vote. Two derived artefacts cannot say so.
-    (1) internal/data/votes/index.json gives each votering a parties map keyed by the nine
-    dataset party ids, so 18486 shows 20 of 21 on the for side and any view that reads the
-    tally from the index is one short; the rows themselves now name her. (2)
-    internal/data/storting/index.json carries 169 representatives and Pasientfokus is not
-    among them, so the actor layer cannot resolve her either. Job: decide whether PF
-    becomes a first-class party id (a content/parties file plus the nine-to-ten change in
-    every consumer that assumes nine: the scoring input, the front page, the acquiescence
-    test), or whether the index records non-catalogue parties in a separate reported field
-    the way the proposals index already stores Pasientfokus with an empty party id and
-    reports it. Measure first: how many voterings carry a parti id outside the nine, and
-    how many evidence rows cite one. The first is cheap from the cache; the second is a
-    grep. Do not widen the parties map before that count exists.
+  result: 'DONE 2026-10-29 in 3a92476, and one of the two halves is NOT a defect. THE VOTE INDEX WAS WRONG
+    and is fixed: side() mapped a representative''s party through the nine-party table and skipped anything
+    else in silence, so Pasientfokus and independents left no trace and an unknown party id was indistinguishable
+    from a party that did not vote. They are now recorded per vote as unmapped_parties, absent when empty.
+    Not a one-vote detail: 10 567 of 14 946 votes carry at least one such member, Pasientfokus on 7 095
+    and an independent on 5 897. Cost 32 KB on 10.6 MB. THE REPRESENTATIVE REGISTER NEEDS NO CHANGE: storting/index.json
+    is scoped to session 2025-2026, Ojala sat 2021-2025 and is not a member in that session, so her absence
+    is correct rather than an omission. It reconciles on its own terms: 169 representatives listed, per-party
+    vote totals on votering 27721 summing to 169, and 27721 carries no unmapped party, so the fix above
+    does not disturb the cross-check.
+
+    '
+  note: 'Found 2026-10-29 by the driver while applying statsborgerskap-2026-dato-og-pf-stemme, and deliberately
+    not folded in there because it changes derived artefacts rather than row text. Pasientfokus is a real
+    party with one representative and it votes: on votering 18486 it cast the 21st for-vote. Two derived
+    artefacts cannot say so. (1) internal/data/votes/index.json gives each votering a parties map keyed
+    by the nine dataset party ids, so 18486 shows 20 of 21 on the for side and any view that reads the
+    tally from the index is one short; the rows themselves now name her. (2) internal/data/storting/index.json
+    carries 169 representatives and Pasientfokus is not among them, so the actor layer cannot resolve
+    her either. Job: decide whether PF becomes a first-class party id (a content/parties file plus the
+    nine-to-ten change in every consumer that assumes nine: the scoring input, the front page, the acquiescence
+    test), or whether the index records non-catalogue parties in a separate reported field the way the
+    proposals index already stores Pasientfokus with an empty party id and reports it. Measure first:
+    how many voterings carry a parti id outside the nine, and how many evidence rows cite one. The first
+    is cheap from the cache; the second is a grep. Do not widen the parties map before that count exists.
+
+    '
 - id: budget-lead-4-tannhelse-innst11s
   kind: budget
   statement: utsagn-25
   method: method/budget.md
   status: pending
   result: ''
-  note: >
-    Scout pass 2026-10-29, offline from the fetch cache, leads only and nothing coded. Rank 4
-    of staging/scout-alternative-budgets/LEADS.md, the first unread lead that had no queue
-    item: Innst. 11 S (2025-2026), helse- og omsorgskomiteen, signed 8. desember 2025,
-    «2.8 Oversikt over forslag til bevilgninger under rammeområde 15», table 9 of 15. Two
-    posts bear on utsagn-25: kap. 770 post 70 (Tilskudd) where the government proposes
-    453 447 and the forlik column carries 498 447 (+45 000), and kap. 2711 post 72
-    (Tannbehandling) where the government proposes 3 157 400, the forlik column 3 508 140
-    (+350 740), FrP and KrF 3 192 400 (+35 000) each, SV 3 192 400 (+35 000), and Rødt
-    6 890 100 (+3 732 700). The column mapping is not assumed: each column's per-cell
-    deviations sum exactly to that column's own stated total in «Sum utgifter rammeområde
-    15» (forlik +459 938, FrP +5 500 504, H +865 545, SV +1 255 000, R +6 698 700, KrF
-    +1 925 300), six of six. THE DRIVER HAS NOT RE-READ THIS TABLE. Treat every figure as
-    a lead until its own gate run.
+  note: 'Scout pass 2026-10-29, offline from the fetch cache, leads only and nothing coded. Rank 4 of
+    staging/scout-alternative-budgets/LEADS.md, the first unread lead that had no queue item: Innst. 11
+    S (2025-2026), helse- og omsorgskomiteen, signed 8. desember 2025, «2.8 Oversikt over forslag til
+    bevilgninger under rammeområde 15», table 9 of 15. Two posts bear on utsagn-25: kap. 770 post 70 (Tilskudd)
+    where the government proposes 453 447 and the forlik column carries 498 447 (+45 000), and kap. 2711
+    post 72 (Tannbehandling) where the government proposes 3 157 400, the forlik column 3 508 140 (+350
+    740), FrP and KrF 3 192 400 (+35 000) each, SV 3 192 400 (+35 000), and Rødt 6 890 100 (+3 732 700).
+    The column mapping is not assumed: each column''s per-cell deviations sum exactly to that column''s
+    own stated total in «Sum utgifter rammeområde 15» (forlik +459 938, FrP +5 500 504, H +865 545, SV
+    +1 255 000, R +6 698 700, KrF +1 925 300), six of six. THE DRIVER HAS NOT RE-READ THIS TABLE. Treat
+    every figure as a lead until its own gate run.
 
-    What decides the item, and neither is a sourcing gap. (1) NO TABLE ROW IS QUOTABLE: the
-    scout measured the archive builder's own locate() against the cache and the shortest
-    candidate fragments come out at 10 910, 11 283, 12 067, 13 174 and even 6 834 normalised
-    characters for the rammeområde label alone, all past the 6 000 window bound. Only
-    merknad prose is archivable: the joint FrP+H+KrF sentence «det burde vært en prioritet å
-    styrke tannhelsetjenesten til de som særlig trenger den – og ikke til hele befolkningen»
-    at 117 characters and a 1 034 window, and Rødt's «Målet er å likestille tannhelse med
-    andre helsetjenester, gjennom en utvidelse år for år» at roughly offset 84 500. So a row
-    must quote a merknad and carry the figures in claim_action, the 768-h-skatteniva
-    precedent, and may not attempt a table quote at all. (2) POLARITY, two questions: the
-    FrP/H/KrF sentence is a JOINT merknad that reads as the enig pole word for word but
-    states no figure for the level, so magnitude 1 unless a party column carries one, and a
-    row must name all three signatories; and KrF contradicts itself inside the document,
-    with its own merknad asking for «en frikortordning for tannbehandling» on sikt. A Rødt
-    row is also in tension with the existing +1 in 104-rodt-tannhelse-universell-mot.yaml.
+    What decides the item, and neither is a sourcing gap. (1) NO TABLE ROW IS QUOTABLE: the scout measured
+    the archive builder''s own locate() against the cache and the shortest candidate fragments come out
+    at 10 910, 11 283, 12 067, 13 174 and even 6 834 normalised characters for the rammeområde label alone,
+    all past the 6 000 window bound. Only merknad prose is archivable: the joint FrP+H+KrF sentence «det
+    burde vært en prioritet å styrke tannhelsetjenesten til de som særlig trenger den – og ikke til hele
+    befolkningen» at 117 characters and a 1 034 window, and Rødt''s «Målet er å likestille tannhelse med
+    andre helsetjenester, gjennom en utvidelse år for år» at roughly offset 84 500. So a row must quote
+    a merknad and carry the figures in claim_action, the 768-h-skatteniva precedent, and may not attempt
+    a table quote at all. (2) POLARITY, two questions: the FrP/H/KrF sentence is a JOINT merknad that
+    reads as the enig pole word for word but states no figure for the level, so magnitude 1 unless a party
+    column carries one, and a row must name all three signatories; and KrF contradicts itself inside the
+    document, with its own merknad asking for «en frikortordning for tannbehandling» on sikt. A Rødt row
+    is also in tension with the existing +1 in 104-rodt-tannhelse-universell-mot.yaml.
 
-    Ratchet: the rows this lead naturally produces (H, FrP, KrF, enig pole) all push toward
-    the always-agree side, and TestAcquiescenceSpreadDoesNotGrow is a ratchet sitting at its
-    ceiling of 12. Flagged, not measured.
+    Ratchet: the rows this lead naturally produces (H, FrP, KrF, enig pole) all push toward the always-agree
+    side, and TestAcquiescenceSpreadDoesNotGrow is a ratchet sitting at its ceiling of 12. Flagged, not
+    measured.
 
-    One scout claim is already wrong and is corrected here: it wrote that utsagn-25 rests on
-    «the three existing tannhelse evidence rows (101, 102, 104)». There are nine party rows
-    plus one null context row, all dated 2025-06-04 and all resting on Innst. 458 L, so the
-    cell is 9/9 covered and single-date, and this item would be its first second date.
+    One scout claim is already wrong and is corrected here: it wrote that utsagn-25 rests on «the three
+    existing tannhelse evidence rows (101, 102, 104)». There are nine party rows plus one null context
+    row, all dated 2025-06-04 and all resting on Innst. 458 L, so the cell is 9/9 covered and single-date,
+    and this item would be its first second date.
+
+    '

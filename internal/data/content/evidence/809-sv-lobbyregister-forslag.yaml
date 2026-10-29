@@ -1,0 +1,52 @@
+id: ev-2025-06-19-sv-lobbyregister-forslag
+statement_id: utsagn-01
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2025-06-19"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "SV stemte for Fiskaa-forslaget om å utrede en registreringsordning for dem som oppsøker Stortinget — falt 20 mot 82."
+claim_action: >
+  SV stemte for forslag nr. 1 og 2 fra femte visepresident Ingrid Fiskaa (SV):
+  nr. 1 ba presidentskapet «utrede og legge frem forslag til hvordan en
+  registreringsordning for lobbyister som oppsøker Stortinget … kan innføres
+  gjennom endringer i Stortingets forretningsorden», nr. 2 ba regjeringen
+  nedsette et utvalg om «et lobbyistregister hjemlet i åpenhetsloven eller
+  annen egnet lov» med registrerings- og innrapporteringsplikt og adgang til
+  sanksjoner i Dokument 8:241 S (2024–2025). Votering 26219 (19.06.2025)
+  avgjorde begge forslag i én avstemning. SV 8 for / 0 mot. Forslagene falt 20
+  for / 82 mot.
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Dokument 8:241 S (2024–2025); votering 26219 (19.06.2025)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26219&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Tidligere dato i cellen: avstemningen er fra 2025-06-19, før den
+  eksisterende SV-raden datert 2026-04-21 som er kodet +2 (Voteringsdetaljer,
+  forslag nr. 1–4, 21.04.2026). Retningen peker samme vei som i den
+  eksisterende raden, men denne raden er svakere kodet. Batchen gir cellen tre
+  tidligere datoer fra tre ulike sesjoner (2021–2022, 2022–2023, 2024–2025);
+  denne raden koder bare det som ble stemt denne dagen og forutsetter ingen
+  kontinuitet mellom dem. Om radene skal slås sammen til én celle, er det en
+  eieravgjørelse; her rapporteres bare hva avstemningen viser.
+
+  Magnituden er 1 og ikke 2: raden hviler på en avstemning partiet deltok i,
+  ikke på et eget dokument som uttrykker kravet med et tall. Forslaget ber om
+  at det utredes hvordan et lobbyistregister kan innføres, og om et lovforslag
+  på bakgrunn av utredningen; det er ingen ferdig registreringsordning og
+  ingen sum, og avstemningen er derfor et retningssignal og ikke et eget
+  instrument.
+
+  Saken hadde tre avstemninger: Rødts forslag nr. 3–5 (falt 15 mot 87), denne,
+  og den alternative avstemningen mellom innstillingen og Fiskaas forslag 1 og
+  2, der tilrådingen om at «Dokument 8:241 S (2024–2025) … vedtas ikke» ble
+  vedtatt 82 mot 20 (partiet 0 for / 8 mot). Les tilrådingen invertert.
+
+  Forslaget var SVs eget, fremmet av partiets femte visepresident Ingrid
+  Fiskaa; dokumentet som lå til behandling var Rødts (Dokument 8:241 S
+  (2024–2025)). Sesjonen er 2024–2025, avstemningen er fra en tidligere sesjon
+  enn de eksisterende radene i cellen.
+retrieved_at: "2026-10-28"

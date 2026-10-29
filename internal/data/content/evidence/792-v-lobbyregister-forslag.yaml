@@ -1,0 +1,50 @@
+id: ev-2022-06-02-v-lobbyregister-forslag
+statement_id: utsagn-01
+party_id: v
+actor: "Venstre"
+date: "2022-06-02"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Venstre stemte mot Fiskaa-forslaget om å utrede en registreringsordning og samtidig mot tilrådingen som ville avvise partiets eget lobbyregisterforslag — ingen posisjon kodet."
+claim_action: >
+  Venstre stemte mot forslag nr. 1 og 2 fra femte visepresident Ingrid Fiskaa
+  (SV), som ba Stortingets presidentskap og regjeringen «utrede mulige
+  modeller for en registreringsordning for dem som oppsøker Stortinget og
+  Stortingets representanter» og «den politiske ledelsen i departementene
+  eller på Statsministerens kontor» i Dokument 8:165 S (2021–2022), og stemte
+  deretter 0 for / 4 mot på innstillingens tilråding om at «Dokument 8:165 S
+  (2021–2022) … vedtas ikke». Begge avstemningene gikk mot, men de peker på
+  hver sin sak: nei til SVs utredningsforslag, og nei til å avvise Venstres
+  eget lobbyregisterforslag. Votering 18941 (02.06.2022): V 0 for / 4 mot,
+  forslagene falt 15 for / 87 mot.
+status: forkastet
+position: null
+source_tier: A
+source_name: "Dokument 8:165 S (2021–2022); votering 18941 (02.06.2022)"
+source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=18941&format=json"
+claim_confidence: dokumentert
+evidensstyrke_cap: moderat
+context_note: >
+  Ingen posisjon kodet, og det er et resultat, ikke en mangel på arbeid.
+  Venstre er partiet som fremmet Dokument 8:165 S (2021–2022), og partiet
+  stemte 0 for / 4 mot både på Fiskaa-forslaget og på tilrådingen om at
+  dokumentet «vedtas ikke». En -1 på denne raden ville melde at Venstre gikk
+  mot et lobbyregister, og det er feil: partiet gikk mot å drepe sitt eget
+  forslag og mot et konkurrerende utredningsforslag fra SV. De to stemmene
+  peker på hver sin sak, og ingen retning for utsagnet kan leses ut av dem
+  alene. Hvorfor Venstre stemte mot Fiskaa-forslaget er ikke dokumentert i
+  voteringsdataene, og det spekuleres ikke i her.
+
+  Cellen har fra før en V-rad datert 2025-11-25 kodet +2 (Dok. 8:53 S
+  (2025–2026), partiets eget representantforslag). Den raden står uendret.
+  Denne raden gir cellen en andre dato for atferd, men ingen kodet posisjon.
+
+  Saken hadde tre avstemninger: Rødts forslag nr. 3 om adgangskort for
+  tidligere representanter (falt 15 mot 87), denne, og til slutt
+  innstillingens tilråding om at «Dokument 8:165 S (2021–2022) … vedtas ikke»,
+  som ble vedtatt 83 mot 19 (partiet 0 for / 4 mot). Les tilrådingen
+  invertert: ja til «vedtas ikke» er nei til forslaget.
+
+  Sesjonen er 2021–2022, avstemningen er fra en tidligere sesjon enn de
+  eksisterende radene i cellen.
+retrieved_at: "2026-10-28"

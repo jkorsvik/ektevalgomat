@@ -228,9 +228,11 @@ func TestStatementPageShowsADocumentedChangeOfPosition(t *testing.T) {
 	if !strings.Contains(body, "Endret posisjon mellom 2022 og 2025") {
 		t.Error("the page does not name FrP's change of position between 2022 and 2025")
 	}
-	// html/template escapes "+" as &#43;, so the spread is asserted on the parts
-	// that survive escaping, and the split marker separately.
-	for _, want := range []string{"po-word-delt", "1 (for) til −1 (mot)", "(2022 og 2025)"} {
+	// html/template escapes "+" as &#43;, and the range now reads low-to-high, so
+	// the two ends are asserted separately rather than as one adjacent string: the
+	// plus-sign label sits mid-string now and does not survive escaping. The unit
+	// test on PositionText pins the join itself.
+	for _, want := range []string{"po-word-delt", "−1 (mot)", "1 (for)", "(2022 og 2025)"} {
 		if !strings.Contains(body, want) {
 			t.Errorf("the page does not show %q", want)
 		}

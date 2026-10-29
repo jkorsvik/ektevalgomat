@@ -21,17 +21,25 @@ type Cell struct {
 	StatementID string `json:"statement_id"`
 	PartyID     string `json:"party_id"`
 
-	// PartyPosition is nil when no evidence has coded a stance yet — the
-	// quiz must show "ikke vurdert", never silently treat this as neutral
-	// (0), which would manufacture agreement or disagreement nobody has
-	// actually documented.
+	// PartyPosition is the NEWEST coded row's position, not the mean of the
+	// rows. It is nil when no evidence has coded a stance yet — the quiz must
+	// show "ikke vurdert", never silently treat this as neutral (0), which would
+	// manufacture agreement or disagreement nobody has documented.
+	//
+	// Why newest and not the mean: a cell holds one row per document, and the
+	// rows are not independent observations of one fact. Averaging them let a
+	// weaker document drag a stronger one (a +1 vote pulled a +2 own instrument
+	// down to "1 (for)") and made a documented reversal print "0 (nøytral/delt)",
+	// which is true of neither date. The newest row answers the question a reader
+	// asks of a cell — where does the party stand now — and the older rows are
+	// the history, which PositionText shows.
 	PartyPosition *int `json:"party_position"`
 
 	// PositionMin and PositionMax bound the coded positions behind
-	// PartyPosition. When they straddle zero the cell holds observations on both
-	// sides, and PartyPosition (the mean) must not be shown as "0 (nøytral/delt)":
-	// +2 and -2 average to 0, and 0 on this scale reads as a neutral stance that
-	// nobody documented. Templates show PositionText instead of the bare number.
+	// PartyPosition, and PositionText shows them as a range whenever they
+	// differ. A same-side difference counts: +2 and +1 are both "for", but the
+	// cell resting on both must not silently print the stronger one alone. Ties
+	// on date are broken by evidence id, so the choice is deterministic.
 	PositionMin int `json:"position_min"`
 	PositionMax int `json:"position_max"`
 
@@ -96,10 +104,8 @@ func ComputeCell(ds *data.Dataset, statementID, partyID string) Cell {
 	}
 
 	if len(codedPositions) > 0 {
-		sum := 0
 		lo, hi := codedPositions[0], codedPositions[0]
 		for _, p := range codedPositions {
-			sum += p
 			if p < lo {
 				lo = p
 			}
@@ -107,9 +113,20 @@ func ComputeCell(ds *data.Dataset, statementID, partyID string) Cell {
 				hi = p
 			}
 		}
-		avg := sum / len(codedPositions)
-		cell.PartyPosition = &avg
 		cell.PositionMin, cell.PositionMax = lo, hi
+
+		// Newest dated row wins. An undated row sorts below every dated one, so a
+		// dated document always outranks a row whose date the source did not give;
+		// the id breaks a tie on date, which keeps the choice deterministic
+		// without inventing an order the data does not have.
+		newest := basis[0]
+		for _, e := range basis[1:] {
+			if e.Date > newest.Date || (e.Date == newest.Date && e.ID > newest.ID) {
+				newest = e
+			}
+		}
+		pos := *newest.Position
+		cell.PartyPosition = &pos
 	}
 
 	// Distinct years only, ascending: a repeated date is one observation.
@@ -281,8 +298,8 @@ func (c Cell) PositionText() string {
 	if c.PartyPosition == nil {
 		return PositionLabel(nil)
 	}
-	if c.PositionMin < 0 && c.PositionMax > 0 {
-		return PositionLabel(&c.PositionMax) + " til " + PositionLabel(&c.PositionMin) +
+	if c.PositionMin != c.PositionMax {
+		return PositionLabel(&c.PositionMin) + " til " + PositionLabel(&c.PositionMax) +
 			c.yearSpanSuffix()
 	}
 	return PositionLabel(c.PartyPosition)

@@ -333,3 +333,78 @@ func TestKonsistensLabelReadsTheDates(t *testing.T) {
 }
 
 func ptr(n int) *int { return &n }
+
+// The cell's integer is the newest row, not the mean of the rows. Averaging let a
+// weaker document drag a stronger one (a +1 vote pulled a +2 own instrument down to
+// "1 (for)") and made a documented reversal print "0 (nøytral/delt)", true of neither
+// date. The expectation is derived from the evidence here rather than hardcoded, so a
+// cell gaining or losing rows does not silently retire the test — and a vacuous pass
+// is impossible, because the test fails if no cell exercises the difference.
+func TestCellPositionIsTheNewestRowNotTheMean(t *testing.T) {
+	// Group the real coded rows the same way ComputeCell will see them.
+	type row struct {
+		date, id string
+		pos      int
+	}
+	cells := map[[2]string][]row{}
+	for _, e := range data.Store.Evidence {
+		if e.Position == nil {
+			continue
+		}
+		k := [2]string{e.StatementID, e.PartyID}
+		cells[k] = append(cells[k], row{e.Date, e.ID, *e.Position})
+	}
+
+	checked, differing := 0, 0
+	for k, rows := range cells {
+		if len(rows) < 2 {
+			continue
+		}
+		// Newest by (date, id), which is what ComputeCell does.
+		newest := rows[0]
+		sum := 0
+		lo, hi := rows[0].pos, rows[0].pos
+		for _, r := range rows {
+			sum += r.pos
+			if r.pos < lo {
+				lo = r.pos
+			}
+			if r.pos > hi {
+				hi = r.pos
+			}
+			if r.date > newest.date || (r.date == newest.date && r.id > newest.id) {
+				newest = r
+			}
+		}
+		mean := sum / len(rows)
+		cell := ComputeCell(data.Store, k[0], k[1])
+		if cell.PartyPosition == nil {
+			t.Fatalf("%s/%s: PartyPosition is nil though %d rows are coded", k[0], k[1], len(rows))
+		}
+		if *cell.PartyPosition != newest.pos {
+			t.Errorf("%s/%s: PartyPosition = %d, want %d (the newest row, not the mean %d)",
+				k[0], k[1], *cell.PartyPosition, newest.pos, mean)
+		}
+		checked++
+		if newest.pos != mean {
+			differing++
+		}
+		// A range must be shown whenever the rows differ at all, same side included.
+		if lo != hi && !strings.Contains(cell.PositionText(), "til") {
+			t.Errorf("%s/%s: PositionText() = %q, want a range for rows %d..%d",
+				k[0], k[1], cell.PositionText(), lo, hi)
+		}
+		// Only a sign flip is a change of position; a change of strength is not.
+		if (lo < 0 && hi > 0) != cell.PositionDisagrees() {
+			t.Errorf("%s/%s: PositionDisagrees() = %v for rows %d..%d",
+				k[0], k[1], cell.PositionDisagrees(), lo, hi)
+		}
+	}
+	if checked == 0 {
+		t.Fatal("no cell holds two coded rows: the assertion would pass on nothing")
+	}
+	if differing == 0 {
+		t.Fatal("no cell's newest row differs from its mean: the test cannot tell the two rules apart")
+	}
+	t.Logf("%d multi-row cells checked, %d where newest and mean disagree", checked, differing)
+}

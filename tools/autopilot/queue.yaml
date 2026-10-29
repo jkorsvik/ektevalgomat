@@ -904,8 +904,20 @@ items:
   statement: utsagn-49
   party: ''
   method: method/mixed.md
-  status: pending
-  result: ''
+  status: passed
+  result: >
+    DONE 2026-10-29 in 3a92476, and one of the two halves is NOT a defect. THE VOTE
+    INDEX WAS WRONG and is fixed: side() mapped a representative's party through the
+    nine-party table and skipped anything else in silence, so Pasientfokus and
+    independents left no trace and an unknown party id was indistinguishable from a
+    party that did not vote. They are now recorded per vote as unmapped_parties, absent
+    when empty. Not a one-vote detail: 10 567 of 14 946 votes carry at least one such
+    member, Pasientfokus on 7 095 and an independent on 5 897. Cost 32 KB on 10.6 MB.
+    THE REPRESENTATIVE REGISTER NEEDS NO CHANGE: storting/index.json is scoped to
+    session 2025-2026, Ojala sat 2021-2025 and is not a member in that session, so her
+    absence is correct rather than an omission. It reconciles on its own terms: 169
+    representatives listed, per-party vote totals on votering 27721 summing to 169, and
+    27721 carries no unmapped party, so the fix above does not disturb the cross-check.
   note: >
     Found 2026-10-29 by the driver while applying statsborgerskap-2026-dato-og-pf-stemme,
     and deliberately not folded in there because it changes derived artefacts rather than

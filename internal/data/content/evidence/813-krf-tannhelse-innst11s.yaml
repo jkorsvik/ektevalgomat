@@ -1,0 +1,81 @@
+id: ev-2025-12-08-krf-tannhelse-innst11s
+statement_id: utsagn-25
+party_id: krf
+actor: Kristelig Folkeparti (helse- og omsorgskomiteen, Ida Lindtveit Røse)
+date: "2025-12-08"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  KrF sier rett ut at det er «feil å prioritere utvidelser av tannhelsetjenester
+  til alle, all den tid de som trenger det mest, ikke får hjelpen de trenger,
+  når de trenger den», og legger ingen egne midler på tannhelse ut over de 35
+  mill. kronene som reverserer kuttet i stønadsordningen for personer med
+  nedsatt evne til egenomsorg.
+claim_action: >
+  I punkt 3.37 «Kap. 770 Tannhelsetjenester» skriver «Komiteens medlemmer fra
+  Høyre og Kristelig Folkeparti»: «Disse medlemmer mener det er feil å
+  prioritere utvidelser av tannhelsetjenester til alle, all den tid de som
+  trenger det mest, ikke får hjelpen de trenger, når de trenger den.» Det er
+  utsagnets enig-pol ordrett: utvid mot dem som trenger det mest, ikke til
+  alle. Tallene står i punkt 2.8 «Oversikt over forslag til bevilgninger under
+  rammeområde 15» (alle tall i tusen kroner): KrFs kolonne på rad 2711 post 72
+  Tannbehandling er 3 192 400 (+35 000) mot regjeringens 3 157 400, altså 1,1
+  pst. over regjeringens forslag, og kap. 770 post 70 Tilskudd står uendret på
+  453 447 (0). De 35 mill. kronene er nøyaktig det KrF fører opp i sin egen
+  tiltaksliste i punkt 2.7: «2711 72 Tannhelsestønad for personer med nedsatt
+  evne til egenomsorg, reversere kutt 35,0». Kolonneoverskriften i punkt 2.8 er
+  ordrett «Kap. Post Formål Prop. 1 S (2025-2026) A, SV, Sp, R og MDG FrP H SV
+  R KrF», så KrF er den siste kolonnen. Regjeringens 3 157 400 er hentet fra
+  punkt 1.1 «Oversikt over regjeringens budsjettforslag», kolonnen «Prop. 1 S
+  (2025-2026) Gul bok», der posten står med 3 157 400 000 kroner. Ingen
+  tabellrad er sitert: målt med build_archive.locate() krever selv det korte
+  utsnittet «72 Tannbehandling 3 157 400 3 508 140 (+350 740)» et arkivvindu
+  på 11 379 tegn, og hele raden 13 174, mot grensen på 6 000 i
+  TestWindowsStayBounded. Tallene er derfor gjengitt her og sitatet er
+  merknadsprosa — samme grep som i 768-h-skatteniva-innst2s.yaml.
+verbatim_excerpt: >
+  Disse medlemmer mener det er feil å prioritere utvidelser av
+  tannhelsetjenester til alle, all den tid de som trenger det mest, ikke får
+  hjelpen de trenger, når de trenger den.
+status: uttalt
+position: 1
+source_tier: A
+source_name: >
+  Innst. 11 S (2025–2026), helse- og omsorgskomiteen, punkt 3.37 «Kap. 770
+  Tannhelsetjenester» (sitatet, fellesmerknad fra Høyre og KrF) og punkt 2.7–2.8
+  (KrFs egen merknad og kolonne)
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-011s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Setningen er signert av Høyre og Kristelig Folkeparti i fellesskap
+  («Komiteens medlemmer fra Høyre og Kristelig Folkeparti»), ikke av KrF alene,
+  og sitatet må leses slik. Høyres navn står på samme setning, så raden kan
+  ikke brukes til å skille de to partiene fra hverandre, og den kan heller ikke
+  leses som en H-linje: Høyres posisjon på utsagn-25 er kodet særskilt i
+  ev-2025-06-04-h-tannhelse-universell-mot (+2) og berøres ikke her. Kodet +1,
+  ikke +2: en fellesmerknad som angir en retning er ikke et eget instrument i
+  position-scale.md sin forstand, og KrFs 35 000 i kolonnen er et tall for
+  posten — reverseringen av et kutt i en eksisterende stønadsordning — ikke et
+  tall som uttrykker hvor sterk den målrettede posisjonen er. KrFs EGEN merknad
+  i punkt 2.7 sier noe annet og skal ikke leses som det samme: «Intensjonen om
+  å gjøre tannhelse til en tilgjengelig og sosialt utjevnende del av
+  helsetjenesten er god, og dette medlem ønsker på sikt en frikortordning for
+  tannhelsebehandling. Likevel mener dette medlem at prioriteringen i dagens
+  situasjon er feil.» Her er innvendingen budsjettprioritering og ikke
+  universell rett mot målrettet: samme medlem begrunner den med at «når
+  sykehusene mangler midler til aktivitetsvekst, når eldreomsorgen knaker i
+  sammenføyningene, og når rusomsorgen i kommunene kuttes, er det ikke riktig å
+  bruke hundrevis av millioner på tannhelse før de mest grunnleggende
+  helsetjenestene er sikret». Det er derfor den andre setningen — H+KrF-
+  merknaden i punkt 3.37 — er det som bærer utsagnet, og ikke denne. Spenningen
+  står likevel ved lag og skal ikke glattes ut: KrF vil «på sikt» ha en
+  frikortordning for tannhelsebehandling, og en frikortordning er nettopp ett av
+  modellalternativene anmodningsvedtak nr. 67 (2025–2026) ber om («Minst én
+  modell skal ha en frikortordning/egenandelstak», sitert i punkt 3.37) — altså
+  en retning mot uenig-polen, men uttrykkelig «på sikt». Ingen egen votering om
+  tannhelse finnes i punkt 5 «Forslag fra mindretall»; tilrådingen er fremmet av
+  medlemmene fra Ap, SV, Sp og Rødt, og den vedtatte bevilgningen på kap. 2711
+  post 72 er 3 508 140 000 kroner (punkt 6), altså forlikskolonnen og ikke KrFs
+  tall. Dokumentet er datert «Oslo, i helse- og omsorgskomiteen, den 8. desember
+  2025».
+retrieved_at: "2026-10-29"

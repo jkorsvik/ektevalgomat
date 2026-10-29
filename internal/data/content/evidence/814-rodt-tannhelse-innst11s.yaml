@@ -1,0 +1,66 @@
+id: ev-2025-12-08-rodt-tannhelse-innst11s
+statement_id: utsagn-25
+party_id: rodt
+actor: Rødt (helse- og omsorgskomiteen, Seher Aydar)
+date: "2025-12-08"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt vil «likestille tannhelse med andre helsetjenester, gjennom en
+  utvidelse år for år» og mer enn dobler kap. 2711 post 72 i sitt alternative
+  budsjett, uten å binde seg til en universell rett innen 2030.
+claim_action: >
+  Rødts egen merknad (punkt 2.6 «Generelle merknader fra Rødt») sier: «Målet
+  er å likestille tannhelse med andre helsetjenester, gjennom en utvidelse år
+  for år», og viser til at Rødt «i sitt alternative budsjett starter
+  innfasingen av en ordentlig tannhelsereform med å ta regningen for folk med
+  de største utgiftene». Rødts kolonne i punkt 2.8 «Oversikt over forslag til
+  bevilgninger under rammeområde 15» (i tusen kroner) er 6 890 100 (+3 732
+  700) på rad 2711 post 72 Tannbehandling mot regjeringens 3 157 400 — 2,2
+  ganger regjeringens tall, altså mer enn en dobling — og 463 447 (+10 000) på
+  kap. 770 post 70 Tilskudd mot regjeringens 453 447. Kolonneoverskriften er
+  «Kap. Post Formål Prop. 1 S (2025-2026) A, SV, Sp, R og MDG FrP H SV R KrF»,
+  så Rødt er nest siste kolonne. Rødts egen tiltaksliste i punkt 2.6 summerer
+  seg til samme avvik: 3 000 (egenandelstak på 2 500 kroner og 40 pst.
+  refusjon over dette) + 382 (gratis tannregulering for alle opp til 18 år) +
+  316 (refusjonsordningene for tannlegebehandling opp 10 pst.) + 35 (reversere
+  kutt i stønadspunkt 14) = 3 733 mill. kroner, mot 3 732 700 i kolonnen;
+  differansen er avrunding til hele millioner i tiltakslisten. Kap. 770 post
+  70 svarer til tiltakslisten «770 70 Styrke TOO-ordningen ... 10».
+verbatim_excerpt: >
+  Målet er å likestille tannhelse med andre helsetjenester, gjennom en
+  utvidelse år for år
+status: uttalt
+position: 1
+source_tier: A
+source_name: Innst. 11 S (2025–2026), helse- og omsorgskomiteen, punkt 2.6 og 2.8
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-011s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Kodet +1. «År for år» er den bærende formuleringen: Rødt beskriver en
+  gradvis opptrapping, ikke en bindende universell rett innen 2030, og det er
+  mekanismen utsagnet spør om. Det er konsistent med Rødts egen stemme
+  2025-06-04 (rad ev-2025-06-04-rodt-tannhelse-universell-mot, +1, i voteringa
+  den raden siterer: Rødt 0 for og 5 mot SVs forslag om en bindende
+  2030-frist). Samtidig
+  viser samme merknad hvorfor kodingen ikke kan bli ren: Rødt skriver at
+  «[d]ette medlem peker på at det er nødvendig å sikre like helserettigheter
+  til alle» og at «[m]ålet for helsepolitikken må være å utjevne forskjellene
+  og sikre lik rett til helsehjelp for alle» — en universalistisk ambisjon som
+  ligger nærmere uenig-polen enn regjeringens linje i punkt 3.37 (høringsnotat
+  høsten 2026, oppstart 2027). Raden koder mekanismen (utvidelse år for år,
+  med et eget tall) og ikke den langsiktige målsetningen, som Rødt selv
+  beskriver som likestilling. At Rødt har et eget budsjettall på posten gir ikke
+  styrke 2: etter position-scale.md må tallet bære selve påstanden, og
+  +3 732 700 er en bevilgning til utvidelse av tannbehandling, ikke et tall som
+  uttrykker hvor sterk forpliktelsen mot en universell rett er. Det er samme
+  linje som avgjørelsen i krf-skatteniva-polarity: et tall som ikke uttrykker
+  påstanden direkte gir ikke styrke 2 og kan heller ikke flytte cellen. Radene
+  767–772 koder riktignok partikolonner i et budsjett til ±2, men der ER tallet
+  påstanden — skatte- og avgiftsnivået selv, sitert som radens egen tabellinje.
+  Her er posten et virkemiddel, ikke påstanden. Rødts merknad uttrykker
+  dessuten begge retninger, og en selvmotsigende kilde kan etter samme regel
+  ikke flytte cellen i noen retning. Punktet er flagget i NOTES.md, ikke
+  avgjort her.
+  Ingen egen votering om tannhelse finnes i punkt 5 «Forslag fra mindretall».
+retrieved_at: "2026-10-29"

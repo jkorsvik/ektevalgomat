@@ -425,7 +425,18 @@ items:
   statement: utsagn-55
   party: krf
   method: method/budget.md
-  status: blocked
+  status: passed
+  result: >
+    CLOSED BY THE RATIFIED SCALE, 2026-10-29. With
+    tools/autopilot/method/position-scale.md ratified as written, the strongest unambiguous
+    own instrument decides and a weaker or self-contradicting document may not downgrade it.
+    KrF's programme lists "Holde skatte- og avgiftsnivået om lag på dagens nivå" as its own
+    point, which is an instrument written as a goal, so the party is -2 on utsagn-55. A
+    figure that changes sign between the netto rammevedtak and KrF's own påløpt column in
+    the same merknad does not state the claim directly, so it cannot earn magnitude 2 and
+    cannot pull the cell to -1. Nothing moved and the budget row was not added. This is the
+    owner's option (1), reached by rule rather than by threshold, so the 0,5 pst. bar is not
+    needed and does not have to be defended against Venstre's 0,37 pct.
   blocked_on: 'An owner coding decision, not a mechanical wall. The drafted row is staging/budget-lead-2-skatt-niva/not-promoted/krf-skatteniva-innst2s.yaml
     with its REASON.md. KrF''s own budget moves the total by 3,4 mrd. kroner more in revenue on the netto
     rammevedtak (0,18 pst. of the level), and by 1,8 mrd. LESS in KrF''s own påløpt column in the same
@@ -505,7 +516,16 @@ items:
   statement: utsagn-55
   party: sp
   method: method/budget.md
-  status: blocked
+  status: passed
+  result: >
+    RULED: THE RULE WINS, 2026-10-29. A group-scoped sentence cannot answer a statement
+    about the SAMLEDE level, so row 774 is withdrawn and utsagn-55 is 8/9. The mechanism is
+    in the commit that did it: the row deleted, loader_test's comment rewritten to record the
+    ruling rather than the open conflict, README and roadmap counts moved 643->642 evidence
+    files and 55->54 full-coverage statements, the archive rebuilt to 345 windows with the
+    orphaned window for 774's excerpt deleted, and the vote index untouched because no vote
+    cited the row. The rule now stands unchallenged and has removed three party positions
+    from this cell: Sp and MDG originally, Sp again now.
   blocked_on: 'An owner rule decision, found by ekv-verifier on 2026-10-28 while re-checking 773/774 (tools/autopilot/staging/skatt-niva-ap-sp-merknader/VERIFIER.md,
     finding D-774a). internal/data/loader_test.go records the repo''s own rule for this exact statement:
     Sp and MDG were deliberately left «Ikke vurdert» because each has a tax-reduction sentence scoped

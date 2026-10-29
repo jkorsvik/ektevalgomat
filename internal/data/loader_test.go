@@ -183,18 +183,18 @@ func TestStoreLoadsExpectedCounts(t *testing.T) {
 	// statement's direction; KrF has no committee seat and no text, so
 	// -1 cap moderat from the vote alone.
 	//
-	// utsagn-55 (samlet skatte-/avgiftsnivå senkes, tier C) is 9/9 as of
-	// 2026-10-28: Rødt at -2 (file 603, tier C), MDG at -2 (769) and Ap at
-	// -2 (773) from the Innst. 2 S tables and merknader, SV/Sp at +2/+1
-	// from their own merknader (771, 774). Sp and MDG were originally left
-	// "Ikke vurdert" on the rule that a tax-reduction sentence scoped to a
-	// group (lave/vanlige inntekter) is not a claim about the TOTAL/samlede
-	// level, and that reducing tax for one group is a redistribution, not
-	// necessarily a total-level cut. That rule is now in open conflict with
-	// 774: Sp's sentence is group-scoped in exactly that way, and the row
-	// codes it +1 anyway. The rule and the row cannot both stand; the owner
-	// decides which (queue.yaml, skatteniva-sp-gruppeavgrenset-regel). The
-	// conflict is stated in 774's own context_note rather than left implicit.
+	// utsagn-55 (samlet skatte-/avgiftsnivå senkes, tier C) is 8/9 as of
+	// 2026-10-29: Rødt at -2 (file 603, tier C), MDG at -2 (769) and Ap at
+	// -2 (773) from the Innst. 2 S tables and merknader, SV at +2 (771), and
+	// Sp NOT coded. The rule below is the reason, and it is now the rule that
+	// wins: a tax-reduction sentence scoped to a group (lave/vanlige
+	// inntekter) is not a claim about the TOTAL/samlede level, because
+	// reducing tax for one group is a redistribution, not necessarily a
+	// total-level cut. Sp's row 774 coded exactly such a sentence +1 and was
+	// withdrawn on the owner's ruling; the conflict is resolved in the rule's
+	// favour rather than left open. Sp and MDG were originally left "Ikke
+	// vurdert" on this same rule, which is what makes it worth stating: it has
+	// now kept two parties out of this cell and removed a third.
 	//
 	// utsagn-56 (Norge bør stanse ETS2, optional per TAX-HANDOFF.md,
 	// tier A, Innst. 58 S, sak 104877, voteringene 26745-26747) has
@@ -287,8 +287,8 @@ func TestStoreLoadsExpectedCounts(t *testing.T) {
 	// 2026-10-03 (digital dependencies): +19 evidence files, 730-748,
 	// for utsagn-59 (13 coded party items, 6 with position: null: 3
 	// kontekst files, 2 press items (tier D) and Sp's programme).
-	if got := len(Store.Evidence); got != 643 {
-		t.Errorf("Evidence = %d, want 643", got)
+	if got := len(Store.Evidence); got != 642 {
+		t.Errorf("Evidence = %d, want 642", got)
 	}
 }
 

@@ -14,23 +14,27 @@ Read this section first. The phase entries below are the build log, in
 order, and their "FINAL STATE" lines were true on the day they were
 written, not today.
 
-- **60 statements, 643 evidence files.** Memo statements 1-42, two
+- **60 statements, 642 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk
   handlefrihet". There is no utsagn 43 (see "Phase 2r").
-- **55 of 60 statements have a coded position for all 9 parties.** The
-  five that do not, each searched and left honestly empty (see "Phase 4b"):
+- **54 of 60 statements have a coded position for all 9 parties.** The
+  six that do not, each searched and left honestly empty (see "Phase 4b"):
   utsagn-06 7/9 (deliberate, see "Gap-fill pass"), utsagn-52 8/9 (Ap:
   "formuesskatt" appears nowhere in Innst. 2 S, Innst. 3 S or Ap's
   program), utsagn-57 8/9 (Ap: only a Sp minister's
   sentence about Ap, file 710, which does not set Ap's position), and
   utsagn-60 and 61, the two statsbudsjett statements, which carry
   institutional evidence only and no party positions by design.
-  utsagn-55 was on this list until 2026-10-28, when Ap (773), Sp (774) and
-  MDG (769) closed the last three gaps; Sp's +1 rests on a group-scoped
-  sentence and is flagged as an open owner decision in 774's own
-  context_note and in queue.yaml.
+  utsagn-55 was on this list until 2026-10-28, when Ap (773) and MDG (769)
+  closed their gaps. It is back on it as of 2026-10-29, at 8/9: Sp's row 774
+  rested on a group-scoped sentence ("ikke store skattelettelser til dem som
+  har aller mest"), and the owner ruled that a group-scoped sentence cannot
+  answer a statement about the SAMLEDE level. The row was withdrawn and the
+  rule in loader_test stands. This is the same rule that kept Sp and MDG out
+  of the cell in the first place, so it has now removed three party positions
+  from it, and that consistency is the point.
   utsagn-45 was 7/9 when this block was first written and has since been
   coded for R and Sp, so it is not on this list any more; the phase entries
   below still describe it as it stood on their own date.

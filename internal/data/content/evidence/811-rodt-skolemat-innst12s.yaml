@@ -1,0 +1,77 @@
+id: ev-2025-innst12s-rodt-skolemat-merknad
+statement_id: utsagn-35
+party_id: rodt
+actor: "Rødt (utdannings- og forskningskomiteen, komiteens medlem fra Rødt, Hege Bae Nyholt)"
+date: "2025-12-11"
+evidence_type: innstilling
+evidence_class: partiets_begrunnelse
+scan_summary: >
+  Rødt foreslår i merknaden en gratis skolemat-ordning i grunnskolen, men
+  bevilger 0 på den eneste skolemat-posten i sitt eget budsjett i samme
+  dokument. Posten gjelder ungdomstrinnet mens merknaden gjelder hele
+  grunnskolen, så raden sier ikke at Rødt bevilger ingenting til skolemat.
+claim_action: >
+  I Innst. 12 S (2025–2026) punkt 2.6 «Generelle merknader fra Rødt» skriver
+  Rødt: «Videre foreslår Rødt en ordning for gratis skolemat i grunnskolen,
+  slik at alle elever får tilgang på et sunt måltid på skolen.» Merknaden
+  begrunner det med forsøkene rundt om i landet og viser til «Rødts
+  alternative statsbudsjett». Samtidig har Rødt egen kolonne i tabellen i
+  punkt 3, og der står posten «70 Innføre gratis skolemåltid for alle elever
+  på ungdomstrinnet fra skoleåret 2026/2027» under kap. 200 med 0(0) i Rødts
+  kolonne — ingen bevilgning og ingen avvik fra regjeringens 0. Merknaden er
+  altså en uttalt intensjon som ikke følges av et tall på den eneste
+  skolemat-posten i samme dokument. Rødts avvik i rammeområde 16 ligger på
+  helt andre poster, og de største er kap. 231 post 60 «Toppet bemanning i
+  barnehagene» +1 591 347, kap. 2410 post 50 «Avsetning til utdanningsstipend»
+  +1 346 400, kap. 2410 post 70 «Utdanningsstipend» +157 400 og kap. 270
+  post 75 «Tilskudd til bygging av studentboliger» +130 230 (i tusen kroner);
+  ingen av de 15 postene med avvik i Rødts kolonne er skolemat, og summen
+  deres er 3 271 055, som er dokumentets egen sum for kolonnen.
+verbatim_excerpt: >
+  Videre foreslår Rødt en ordning for gratis skolemat i grunnskolen, slik at
+  alle elever får tilgang på et sunt måltid på skolen.
+status: foreslått
+position: 1
+source_tier: A
+source_name: >
+  Innst. 12 S (2025–2026), utdannings- og forskningskomiteen, punkt 2.6
+  «Generelle merknader fra Rødt»
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-012s/?all=true"
+claim_confidence: dokumentert
+context_note: >
+  Hvem som står bak: merknaden er skrevet av «Komiteens medlem fra Rødt»
+  (avsnittet åpner «Komiteens medlem fra Rødt viser til Rødts alternative
+  statsbudsjett ...») under overskriften «2.6 Generelle merknader fra Rødt»,
+  og komiteens eneste Rødt-medlem er oppgitt i innstillingens innledning:
+  «fra Rødt, Hege Bae Nyholt». Sitatet er hentet fra merknaden og måler
+  127 tegn, både som skrevet og normalisert (126 som søkefragment), og gir et
+  arkivvindu på 1 006 tegn med build_archive.locate, altså godt under grensen
+  på 6 000; gate.py finner fragmentet som delstreng i kilden.
+  Kodet +1, ikke +2: merknaden angir en retning uten et eget instrument med
+  et tall. Det er nettopp forskjellen mellom denne raden og SV-kolonnen i
+  samme tabell, der posten bærer 415 000. Rødts egen tabellkolonne viser 0(0)
+  på posten, så det finnes ikke noe bevilgningstall å måle mot, og regelen om
+  at eget instrument med tall gir magnitude 2 er ikke oppfylt.
+  Forbehold som leseren må få: jeg kunne ikke avgjøre hvor — eller om — Rødt
+  finansierer ordningen. Innst. 12 S dekker bare rammeområde 16
+  (Kunnskapsdepartementet), så en finansiering lagt til kommunerammen ville
+  ikke synes i denne tabellen i det hele tatt, og Rødts samlede alternative
+  budsjett er ikke i kildematerialet jeg har tilgang til her. Merknaden lover
+  også «midler til å ansette flere i SFO» uten at Rødt har noe avvik på
+  SFO-posten (kap. 225 post 62 har 0 i Rødts kolonne, forliket +142 000), som
+  trekker i samme retning: merknaden varsler tiltak som ikke er synlige som
+  poster i rammeområde 16. Merknaden motsies derfor ikke av Rødts tall — det
+  står ingen tall der — men den bekreftes heller ikke. Skolemat står ikke i
+  komiteens tilråding (kapittel 15 bokstav a, fremmet av Ap, SV, Sp og R;
+  kap. 200 fører der ingen post 70), og kapittel 14 «Forslag fra mindretall»
+  inneholder bare åtte verbalforslag (FrP/H/V, FrP/KrF/V og V), ingen av dem
+  om skolemat.
+  At utsagnet er reelt og ikke retorisk viser samme innstilling punkt 13
+  «Oppfølging av anmodningsvedtak», tabell 3.1: anmodningsvedtak nr. 63 for
+  sesjonen 2024–2025 har stikkordet «opptrappingsplan for skulemåltid i
+  grunnskulen» og er ført opp som fulgt opp (ja). Det er nettopp den planen
+  utsagn-35 ber regjeringen legge fram.
+  Dokumentet er datert «Oslo, i utdannings- og forskningskomiteen, den
+  11. desember 2025»; raden er den nyeste i cellen og setter dermed Rødts
+  publiserte posisjon på utsagn-35 til +1, som er samme verdi som før.
+retrieved_at: "2026-10-27"

@@ -548,28 +548,54 @@ items:
   kind: budget
   statement: utsagn-35
   method: method/budget.md
-  status: pending
-  blocked_on: 'CLEARED 2026-10-29: BOTH owner questions are now moot, and neither needs an answer. (1)
-    "May a numeric row ship without an excerpt?" — the choice has disappeared, because the excerpt exists.
-    Re-measured after the extractor fix (b82fd29) in Innst. 12 S, now 68 857 characters of clean text
-    instead of markup-laden soup: the Formål cell that spanned 9 267 normalised characters is gone, and
-    the label-to-figure distance in the rammeområde 16 table is 87 characters. The row reads "70 innføre
-    gratis skolemåltid for alle elever på ungdomstrinnet fra skoleåret 2026/2027 0 0(0) 0(0) 0(0) 415
-    000(+415 000) 0(0) 0(0) 0(0)". (2) "Does coding Rødt''s merknad move its cell?" — only under the mean,
-    and the mean is no longer the rule: a cell reports its NEWEST row since c6b73ce, so adding an older
-    row cannot move a published position. The Rødt row can be added on its own merits.
-
-    The attribution is confirmed from the header in the same document ("kap. post formål prop. 1 s(2025-2026)
-    a, sv, sp, r og mdg frp h sv r krf v"): the columns after the government''s proposal are the forlik,
-    FrP, H, SV, R, KrF, V. The 415 000 is SV''s; Rødt''s cell is 0(0), which is what the earlier pass
-    found by two independent reconciliations. So SV has the money and no sentence about school meals,
-    while Rødt has the sentence (merknad 2.6, 1 006-character window) and no money. Both are codeable;
-    they are different facts and the rows must not be merged.
-
-    '
+  status: blocked
+  blocked_on: 'The owner question this item recorded as moot is BACK, and its stated reason was wrong.
+    The note said «the excerpt exists», citing a label-to-figure distance of 87 characters. That does
+    not reproduce. The draft SV row (staging/budget-skolemat-innst12s/not-promoted/sv-skolemat-innst12s.yaml,
+    with REASON.md) cites SV''s own column in the rammeområde 16 table: 415 000 tusen kroner on kap. 200
+    post 70 against the government''s 0, which would be SV''s first tier-A money row on this statement.
+    The figure itself is the most cross-checked number of the iteration, by three independent routes:
+    every party column''s cell deviations sum to the document''s own «Sum utgifter rammeområde 16» line,
+    all seven to the krone; SV''s netto +656 200 gives 96 648 969, exactly SV''s row 16 in the SEPARATE
+    document Innst. 2 S §3.2, and Rødt''s +3 271 055 gives 99 263 824, also exact; and §1.1''s fixed netto
+    ramme 96 783 429 000 minus 95 992 769 equals the forlik''s +790 660. What fails is quotability: the
+    word «skolemåltid» occurs exactly once in the whole document, in that table row, and there is no SV
+    prose carrying the figure anywhere in the innstilling. The table fragment cannot be archived either:
+    measured with build_archive.locate on the same normalised text (294 747 characters), the whole row
+    needs a 9 825-character window and the fragment «415 000(+415 000)» alone 9 569, against TestWindowsStayBounded''s
+    6 000. So the row can only ship on transcription trust, and gate.py would re-fetch nothing: its excerpt
+    check runs only when verbatim_excerpt is present. The 768-h-skatteniva precedent does not transfer,
+    because that row quotes a merknad sentence and merely carries the figures in claim_action; here no
+    such sentence exists. THE ASK, three ways out and the choice is the owner''s: (1) sanction a coded
+    row whose only source form is an appropriation table, figures in claim_action and no excerpt — the
+    row ships as drafted at +2; (2) raise the archive window bound for table rows, which is the only option
+    that makes the figure gate-checkable; (3) ship nothing and leave utsagn-35 single-date for the one
+    party that actually put money on the measure. Also unresolved and recorded in the same REASON.md:
+    the queue note''s claim of «68 857 characters of clean text» does not reproduce for this document,
+    which is served as plain HTML and normalises to 294 747.'
   note: 'The stream is still cheap and still unharvested: the document is in the fetch cache and the table
     parse is cell-for-cell. Nothing was promoted from this pass; both drafts exist only in the harvester
-    report, which the driver has not staged as files.'
+    report, which the driver has not staged as files. Iteration 2026-10-29: the Rødt half shipped as 811,
+    the SV half is held on an owner decision. FrP, H, KrF and V are recorded as a zero result and got
+    no row: their cell on kap. 200 post 70 is 0(0), which means no deviation from the government''s 0,
+    not opposition.'
+  result: 'PARTLY SHIPPED 2026-10-29 as evidence 811: rodt-skolemat-innst12s, Rødt on utsagn-35 dated
+    2025-12-11 from Innst. 12 S (2025-2026) punkt 2.6, coded +1, with a 127-character merknad quote whose
+    archive window measures 1 006. It is the cell''s first second date and it moves no published position:
+    a cell reports its newest row, and Rødt was already +1. gate.py PASS 1 file and the gate was mutation-tested
+    after the first attempt proved vacuous: my first mutation edited claim_action because the quoted sentence
+    occurs twice in the row, so the excerpt check passed on an unchanged quote; the second attempt edited
+    the excerpt itself and the gate returned FAIL «excerpt: EDITED score=98», with PASS restored on revert.
+    ekv-verifier returned SUPPORTED-WITH-CAVEAT and its four defects are fixed in the shipped file: the
+    scan_summary no longer claims Rødt «bevilger 0 på skolemat-posten» without saying the post is scoped
+    to ungdomstrinnet while the promise is grunnskolen, the SV reference now says «SV-kolonnen i samme
+    tabell» instead of naming SV''s 2024 vote row, the tilråding claim is narrowed to «kap. 200 fører
+    der ingen post 70», and the character count says 127 normalised and 126 as a search fragment. Its
+    optional finding was added as context and verified by the driver: Innst. 12 S punkt 13 «Oppfølging
+    av anmodningsvedtak» tabell 3.1 lists anmodningsvedtak nr. 63 for 2024-2025 with stikkord «opptrappingsplan
+    for skulemåltid i grunnskulen» marked followed up (ja). verify_excerpts 0 failed (346 excerpts, 324
+    files without), verify_votes 0 MISMATCH (23 MIXED unchanged), 670 evidence files. The SV row did NOT
+    ship; see blocked_on.'
 - id: budget-lead-3-norgespris-stromstotte
   kind: budget
   statement: utsagn-12
@@ -738,19 +764,18 @@ items:
   role: scout-then-harvester
   method: method/history.md
   status: passed
-  result: >
-    SHIPPED 2026-10-29 in 253094f, after the three objections were each retired. The
-    scoring objection dissolved rather than being overruled: a cell reports its newest row
-    since c6b73ce, and every staged row (2022-06-02, 2023-06-15, 2025-06-19) is older than
-    its cell's current newest row (2026-04-21, or 2025-11-25 for Venstre), so no
-    published position could move. Verified after promotion: each utsagn-01 cell holds
-    four rows and reports the same newest row it had before. The mechanical objection was
-    two loader guards asserting a row COUNT of 1; their own comments state the intent as
-    the position value, and the count was scaffolding that forbade the stream. The label
-    objection was real and is fixed at the source: the index called a party split on any
-    dissent while verify_votes.py requires a minority above 20 %, and the index now uses
-    the verifier's rule (04bddba). 27 files, gate PASS, 669 evidence files, 9 cells moved
-    from one date to four. The year axis went from 18 to 27 of 519 cells.
+  result: 'SHIPPED 2026-10-29 in 253094f, after the three objections were each retired. The scoring objection
+    dissolved rather than being overruled: a cell reports its newest row since c6b73ce, and every staged
+    row (2022-06-02, 2023-06-15, 2025-06-19) is older than its cell''s current newest row (2026-04-21,
+    or 2025-11-25 for Venstre), so no published position could move. Verified after promotion: each utsagn-01
+    cell holds four rows and reports the same newest row it had before. The mechanical objection was two
+    loader guards asserting a row COUNT of 1; their own comments state the intent as the position value,
+    and the count was scaffolding that forbade the stream. The label objection was real and is fixed at
+    the source: the index called a party split on any dissent while verify_votes.py requires a minority
+    above 20 %, and the index now uses the verifier''s rule (04bddba). 27 files, gate PASS, 669 evidence
+    files, 9 cells moved from one date to four. The year axis went from 18 to 27 of 519 cells.
+
+    '
   blocked_on: 'Three owner decisions and two pinned tests, not the sourcing. 27 rows are drafted, gated
     and source-checked: gate.py PASS 27 files (mutation-tested — flipping Ap''s status on 18941 produced
     "party ap is not for on any cited vote [''18941'']", PASS returned on restore), every party tally
@@ -968,3 +993,18 @@ items:
     and this item would be its first second date.
 
     '
+- id: budget-lead-5-barnetrygd-innst14s
+  kind: budget
+  statement: utsagn-31
+  method: method/budget.md
+  status: pending
+  note: 'Next from staging/scout-altbudsjett-leads5-9/LEADS2.md, which read leads 5-9 of the alternative-budget
+    scout. Rank 1 of that pass and the first lead with no queue item: Innst. 14 S (2025-2026), rammeområde
+    2, barnetrygd, where four parties state their own figure in prose (forlik +609 000, H +609 000, SV
+    +1 315 000, MDG +29 798 000, KrF +3 075 000, in thousands) plus vedtak V «Satser for barnetrygd».
+    The scout measured archive windows for each candidate and all are quotable (1 037 to 1 432), unlike
+    the table rows in this stream. The falsifying question before coding: the document never says «lovfest»
+    (zero hits), yet SV and MDG are already -2 for lovfesting while putting budget money on the post here,
+    so decide whether a party''s own annual rate allocation answers a statement about statutory entitlement,
+    or only about the rate. The driver has NOT re-read this table: treat every figure as a lead until
+    its own gate run. Leads 2-4 in the same file are ranked and equally unread.'

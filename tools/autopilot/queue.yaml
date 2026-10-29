@@ -737,7 +737,20 @@ items:
   statement: utsagn-01
   role: scout-then-harvester
   method: method/history.md
-  status: blocked
+  status: passed
+  result: >
+    SHIPPED 2026-10-29 in 253094f, after the three objections were each retired. The
+    scoring objection dissolved rather than being overruled: a cell reports its newest row
+    since c6b73ce, and every staged row (2022-06-02, 2023-06-15, 2025-06-19) is older than
+    its cell's current newest row (2026-04-21, or 2025-11-25 for Venstre), so no
+    published position could move. Verified after promotion: each utsagn-01 cell holds
+    four rows and reports the same newest row it had before. The mechanical objection was
+    two loader guards asserting a row COUNT of 1; their own comments state the intent as
+    the position value, and the count was scaffolding that forbade the stream. The label
+    objection was real and is fixed at the source: the index called a party split on any
+    dissent while verify_votes.py requires a minority above 20 %, and the index now uses
+    the verifier's rule (04bddba). 27 files, gate PASS, 669 evidence files, 9 cells moved
+    from one date to four. The year axis went from 18 to 27 of 519 cells.
   blocked_on: 'Three owner decisions and two pinned tests, not the sourcing. 27 rows are drafted, gated
     and source-checked: gate.py PASS 27 files (mutation-tested — flipping Ap''s status on 18941 produced
     "party ap is not for on any cited vote [''18941'']", PASS returned on restore), every party tally

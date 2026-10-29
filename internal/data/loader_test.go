@@ -901,3 +901,27 @@ func TestValidBudgetStageRejectsThePlausibleMistake(t *testing.T) {
 		}
 	}
 }
+
+// A position is a party's stance, so a row without a party cannot have one. Two
+// faktakontekst rows carried position: 0 with an empty party_id, which is not "no
+// stance" but "no party to hold a stance", and it manufactured a tenth party whose
+// two rows joined every corpus count. The loader excludes empty-party rows from
+// EvidenceForCell, so the page was right and only the counts were wrong — which is the
+// worse failure, because it was invisible.
+func TestAPositionBelongsToAParty(t *testing.T) {
+	withPos, withoutParty := 0, 0
+	for _, e := range Store.Evidence {
+		if e.Position != nil {
+			withPos++
+			if e.PartyID == "" {
+				withoutParty++
+				t.Errorf("%s has position %d but no party_id: a stance needs a party",
+					e.ID, *e.Position)
+			}
+		}
+	}
+	if withPos == 0 {
+		t.Fatal("no evidence carries a position: the check would pass on nothing")
+	}
+	t.Logf("%d coded rows checked, %d without a party", withPos, withoutParty)
+}

@@ -13,3 +13,4 @@
 # (tools/harvester/.gitignore, tools/autopilot/.gitignore) because their
 # rules only make sense next to the tool.
 .env
+.playwright-cli/

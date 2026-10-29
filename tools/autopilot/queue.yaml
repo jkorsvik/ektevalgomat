@@ -923,3 +923,48 @@ items:
     reports it. Measure first: how many voterings carry a parti id outside the nine, and
     how many evidence rows cite one. The first is cheap from the cache; the second is a
     grep. Do not widen the parties map before that count exists.
+- id: budget-lead-4-tannhelse-innst11s
+  kind: budget
+  statement: utsagn-25
+  method: method/budget.md
+  status: pending
+  result: ''
+  note: >
+    Scout pass 2026-10-29, offline from the fetch cache, leads only and nothing coded. Rank 4
+    of staging/scout-alternative-budgets/LEADS.md, the first unread lead that had no queue
+    item: Innst. 11 S (2025-2026), helse- og omsorgskomiteen, signed 8. desember 2025,
+    «2.8 Oversikt over forslag til bevilgninger under rammeområde 15», table 9 of 15. Two
+    posts bear on utsagn-25: kap. 770 post 70 (Tilskudd) where the government proposes
+    453 447 and the forlik column carries 498 447 (+45 000), and kap. 2711 post 72
+    (Tannbehandling) where the government proposes 3 157 400, the forlik column 3 508 140
+    (+350 740), FrP and KrF 3 192 400 (+35 000) each, SV 3 192 400 (+35 000), and Rødt
+    6 890 100 (+3 732 700). The column mapping is not assumed: each column's per-cell
+    deviations sum exactly to that column's own stated total in «Sum utgifter rammeområde
+    15» (forlik +459 938, FrP +5 500 504, H +865 545, SV +1 255 000, R +6 698 700, KrF
+    +1 925 300), six of six. THE DRIVER HAS NOT RE-READ THIS TABLE. Treat every figure as
+    a lead until its own gate run.
+
+    What decides the item, and neither is a sourcing gap. (1) NO TABLE ROW IS QUOTABLE: the
+    scout measured the archive builder's own locate() against the cache and the shortest
+    candidate fragments come out at 10 910, 11 283, 12 067, 13 174 and even 6 834 normalised
+    characters for the rammeområde label alone, all past the 6 000 window bound. Only
+    merknad prose is archivable: the joint FrP+H+KrF sentence «det burde vært en prioritet å
+    styrke tannhelsetjenesten til de som særlig trenger den – og ikke til hele befolkningen»
+    at 117 characters and a 1 034 window, and Rødt's «Målet er å likestille tannhelse med
+    andre helsetjenester, gjennom en utvidelse år for år» at roughly offset 84 500. So a row
+    must quote a merknad and carry the figures in claim_action, the 768-h-skatteniva
+    precedent, and may not attempt a table quote at all. (2) POLARITY, two questions: the
+    FrP/H/KrF sentence is a JOINT merknad that reads as the enig pole word for word but
+    states no figure for the level, so magnitude 1 unless a party column carries one, and a
+    row must name all three signatories; and KrF contradicts itself inside the document,
+    with its own merknad asking for «en frikortordning for tannbehandling» on sikt. A Rødt
+    row is also in tension with the existing +1 in 104-rodt-tannhelse-universell-mot.yaml.
+
+    Ratchet: the rows this lead naturally produces (H, FrP, KrF, enig pole) all push toward
+    the always-agree side, and TestAcquiescenceSpreadDoesNotGrow is a ratchet sitting at its
+    ceiling of 12. Flagged, not measured.
+
+    One scout claim is already wrong and is corrected here: it wrote that utsagn-25 rests on
+    «the three existing tannhelse evidence rows (101, 102, 104)». There are nine party rows
+    plus one null context row, all dated 2025-06-04 and all resting on Innst. 458 L, so the
+    cell is 9/9 covered and single-date, and this item would be its first second date.

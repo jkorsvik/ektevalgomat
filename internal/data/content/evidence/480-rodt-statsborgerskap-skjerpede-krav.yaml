@@ -1,8 +1,8 @@
-id: ev-2026-04-30-rodt-statsborgerskap-skjerpede-krav
+id: ev-2026-05-12-rodt-statsborgerskap-skjerpede-krav
 statement_id: utsagn-48
 party_id: rodt
 actor: "Rødt"
-date: "2026-04-30"
+date: "2026-05-12"
 evidence_type: voteringsspor
 evidence_class: uklart
 scan_summary: "Rødt stemte mot både FrPs og Høyres innstrammingsforslag, uten egen merknad spesifikt om disse forslagene."
@@ -14,7 +14,7 @@ claim_action: >
 status: forslag_avvist_stemte_mot
 position: -1
 source_tier: A
-source_name: "Voteringene 27522 og 27524 (30.04.2026), sak 200050"
+source_name: "Voteringene 27522 og 27524 (12.05.2026; innstillingen signert 30.04.2026), sak 200050"
 source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27524&format=json"
 claim_confidence: dokumentert
 context_note: >

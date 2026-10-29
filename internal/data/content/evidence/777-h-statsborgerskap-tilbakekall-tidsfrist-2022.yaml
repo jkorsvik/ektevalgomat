@@ -13,7 +13,8 @@ claim_action: >
   Votering 18486 (07.04.2022) avgjorde forslag nr. 1, 2 og 3 i én
   avstemning; nr. 2 gjaldt en frist fra forhåndsvarsel til vedtak og nr. 3
   et krav om dobbelt statsborgerskap ved tilbakekall. Høyre 0 for / 23 mot.
-  Forslaget falt 21 mot 83.
+  Forslaget falt 21 mot 83; den 21. for-stemmen var Pasientfokus (Irene Ojala), som ikke er blant
+  de ni partiene i partiet-eksporten.
 status: forslag_avvist_stemte_mot
 position: -1
 source_tier: A
@@ -22,7 +23,7 @@ source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=184
 claim_confidence: dokumentert
 evidensstyrke_cap: moderat
 context_note: >
-  Andre dato i cellen: den ene eksisterende Høyre-raden er datert 2026-04-30
+  Andre dato i cellen: den ene eksisterende Høyre-raden er datert 2026-05-12
   og koder -1 fra votering 27523. Retningen er den samme i begge sesjoner,
   så cellen står uendret på -1. Kun stemmegivning — forslaget var SV og
   Rødts eget. Høyre satt i regjering fra 2013 til 2021 og var i

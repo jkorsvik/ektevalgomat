@@ -2649,3 +2649,44 @@ penalises the three cells that hold the newest and most direct evidence (Sp and 
 `Sterk`; and 23 of 60 statements (38,3 pst.) carry a premise marker, unevenly — the `ikke`
 block is coded +0,378 against +0,075 elsewhere. The three clearest cases of a premise inside
 the question are quoted in the report (`statements/15:8-10`, `04:6-8`, `08:8-10`).
+
+## The statsborgerskap date, reconciled: 18 rows, not 20 (2026-10-29)
+
+An evidence row's `date` is the date of the act it records, and for a vote row that is the
+vote's date (`method/history.md`). Eighteen rows in the statsborgerskap case named a votering
+and dated it 30.04.2026. The API's own timestamp says otherwise, twice measured from the
+cached payload: `voteringer?sakid=200050` carries `votering_tid` for 27522, 27523, 27524 and
+27525 that converts to **2026-05-12**, 15:06-15:07 Europe/Oslo. They moved to `date:
+2026-05-12` with ids `ev-2026-05-12-*`; 474-487 and 512-515.
+
+Two of the queue item's own premises were wrong, and correcting them is the point of recording
+this. **The count is 18, not 20.** Nineteen evidence files belong to the case; the twentieth,
+740, matches only on the date string, being an Altinget article about digital avhengighet
+published 30.04.2026, and renaming it would have invented a defect. **A blanket rename would
+also have been wrong for row 473.** It is an innstilling row — actor the committee, `party_id
+""`, `position: null`, no votering cited — and the cached document is signed «Oslo, i kommunal-
+og forvaltningskomiteen, den 30. april 2026». Its own date is therefore right, and it now says
+which date is which: the innstilling 30 April, the four divisions in the sak 12 May.
+
+Each corrected row's `source_name` now reads «(12.05.2026; innstillingen signert 30.04.2026)».
+That phrase is the whole repair: the row states which date it means, so the two dates are
+reconciled inside the artefact rather than in a commit message.
+
+The second half of the same finding was arithmetic. Division 18486 fell **21 for / 83 mot / 65
+absent**, and counting the for side per party from the cached payload gives SV 8, V 4, R 4,
+MDG 2, KrF 2 and **PF 1** — Pasientfokus, Irene Ojala of Finnmark. The nine dataset parties
+therefore sum to 20, and the eight 2022 rows that state the tally now name the 21st voter. The
+rows add up now; two derived artefacts still do not, and they are queued rather than fixed
+here: `votes/index.json` keys each votering's `parties` map by the nine party ids, so 18486
+still shows 20 of 21 on the for side, and `storting/index.json`'s 169 representatives do not
+include her.
+
+Measured, not assumed: 346 archived windows before and after (the nine orphaned
+`ev-2026-04-30` window files were deleted, because an extra window fails
+`TestArchiveCoversEveryQuotedClaim`); 14 946 votes in the rebuilt index with **0** entries
+differing from HEAD once the date segment is normalised, `generated_at` aside; `gate.py` PASS
+28 files, mutation-tested by flipping 514's H status to `stemte_for`, which produced «party h
+is not for on any cited vote ['27523']» before PASS returned on restore; `verify_excerpts` 0
+failed, `verify_votes` 0 MISMATCH, MIXED unchanged at 23; `go test ./...` green. No cell's
+position, mean or date count moved: every 2026 row in the case moved to the same day, and the
+null row that stayed behind is attributed to no party.

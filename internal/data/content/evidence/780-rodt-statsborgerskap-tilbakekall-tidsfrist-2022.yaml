@@ -14,7 +14,8 @@ claim_action: >
   dem som bruker flere identiteter ved alvorlig kriminalitet. Votering
   18486 (07.04.2022) avgjorde forslag nr. 1, 2 og 3 i én avstemning; nr. 2
   gjaldt en frist fra forhåndsvarsel til vedtak, nr. 3 et krav om dobbelt
-  statsborgerskap ved tilbakekall. Rødt 4 for / 0 mot. Forslaget falt 21 mot 83.
+  statsborgerskap ved tilbakekall. Rødt 4 for / 0 mot. Forslaget falt 21 mot 83; den 21. for-stemmen var Pasientfokus (Irene Ojala), som ikke er blant
+  de ni partiene i partiet-eksporten.
 status: forslag_avvist_stemte_for
 position: 2
 source_tier: A
@@ -22,7 +23,7 @@ source_name: "Dokument 8:75 S (2021–2022), forslag nr. 1 (forslag_id 40067938)
 source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=18486&format=json"
 claim_confidence: dokumentert
 context_note: >
-  Andre dato i cellen: den eksisterende Rødt-raden 484 er datert 2026-04-30
+  Andre dato i cellen: den eksisterende Rødt-raden 484 er datert 2026-05-12
   og koder +2 fra Innst. 232 S forslag 4, som Rødt fremmet sammen med SV og
   MDG. Rødt har i tillegg raden 480, kodet -1, fra votering 27524 i samme
   sak, så cellen er allerede en mellomting; denne raden endrer ikke det

@@ -1,8 +1,8 @@
-id: ev-2026-04-30-v-statsborgerskap-tilbakekall-tidsfrist
+id: ev-2026-05-12-v-statsborgerskap-tilbakekall-tidsfrist
 statement_id: utsagn-49
 party_id: v
 actor: "Venstre"
-date: "2026-04-30"
+date: "2026-05-12"
 evidence_type: voteringsspor
 evidence_class: uklart
 scan_summary: "Venstre stemte for forslaget om en foreldelsesfrist, uten egen merknad; partiet har ikke sete i komiteen."
@@ -13,7 +13,7 @@ claim_action: >
 status: forslag_avvist_stemte_for
 position: 1
 source_tier: A
-source_name: "Innst. 232 S (2025–2026); votering 27523 (30.04.2026)"
+source_name: "Innst. 232 S (2025–2026); votering 27523 (12.05.2026; innstillingen signert 30.04.2026)"
 source_url: "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27523&format=json"
 claim_confidence: dokumentert
 context_note: >

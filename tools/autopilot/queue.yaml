@@ -818,9 +818,52 @@ items:
   statement: utsagn-49
   party: ''
   method: method/history.md
-  status: pending
+  status: passed
   result: >
-    BOTH QUESTIONS ANSWERED 2026-10-28 from the API; what remains is a scoped data
+    APPLIED 2026-10-29 as one in-place provenance correction, 28 files plus a rebuilt
+    archive and a rebuilt vote index. Two things in this item's own plan were wrong and
+    were corrected while doing it: (1) the count is 18 ids, not 20. Nineteen evidence
+    files belong to the statsborgerskap case and 740 (ev-2026-04-30-krf-digitale-
+    avhengigheter-presse) merely shares the date string, being an Altinget article about
+    digital avhengighet dated 30.04.2026; touching it would have been a fabrication.
+    (2) A blanket rename would have been wrong for row 473. It is an innstilling row
+    (actor the committee, party_id "", position null, no votering cited) and the cached
+    document is signed «Oslo, i kommunal- og forvaltningskomiteen, den 30. april 2026»,
+    so 2026-04-30 is its own true date; it now says so and names the four divisions as
+    12 May. The 18 rows that cite a votering moved to date 2026-05-12 with id
+    ev-2026-05-12-*: 474-487 and 512-515. Each source_name now reads «(12.05.2026;
+    innstillingen signert 30.04.2026)», so the row states which date it means instead of
+    leaving two dates unreconciled. The vote date was re-derived twice from the cached
+    payload: voteringer?sakid=200050 carries votering_tid for 27522-27525 that converts
+    to 2026-05-12 15:06-15:07 Europe/Oslo, never to 30 April. On the PF half, the tally
+    was recounted per party from the cached 18486 payload: for = 21 (SV 8, V 4, R 4, MDG
+    2, KrF 2, PF 1, the last being Irene Ojala of Finnmark), mot = 83, absent = 65. The
+    eight 2022 rows that state «Forslaget falt 21 mot 83» now name the 21st for-vote, so
+    a reader adding up the parties reaches 21 instead of 20. 778 states no tally (position
+    null: KrF voted for the forslag and for the tilradding that rejected it) and got no
+    clause. The archive was rebuilt (346 windows, unchanged count; the nine orphaned
+    ev-2026-04-30 window files were deleted, since TestArchiveCoversEveryQuotedClaim fails
+    on an extra window), and the vote index was rebuilt and then diffed against HEAD with
+    the date segments normalised: 14 946 votes, 0 entries differ apart from the rename and
+    generated_at. gate.py PASS 28 files, and the gate was mutation-tested (flipping 514's
+    H status to stemte_for produced «party h is not for on any cited vote ['27523']»;
+    PASS returned on restore). ekv-verifier returned SUPPORTED-WITH-CAVEAT and proved no
+    defect, re-deriving the timestamps, the signature date and the 18486 tally itself; its
+    one admitted gap, that its extraction window cut off the year of the signature, is
+    closed here: the cached page reads «den 30. april\n2026». go test ./... green;
+    verify_excerpts 0 failed (346 excerpts); verify_votes 0 MISMATCH (425 files, MIXED 23
+    unchanged). Neither this pass nor the earlier one lowered a gate.
+
+    STILL OPEN, and it is a new item rather than a part of this one:
+    statsborgerskap-pf-mangler-i-indeksene. The correction makes the ROWS add up to 21;
+    the derived artefacts do not. votes/index.json maps a votering to the nine party ids
+    only, so 18486's own parties map still shows 20 of 21 for-votes, and
+    internal/data/storting/index.json's 169 representatives do not include the PF
+    representative. Anything that reads the tally from the index rather than from the row
+    is still one short.
+
+    PRIOR FRAMING, kept as the record of what 2026-10-28 established: BOTH QUESTIONS
+    ANSWERED 2026-10-28 from the API; what remains is a scoped data
     correction, not an open question. (a) The date is wrong and 2026-05-12 is right:
     votering 27523 sits in sak 200050, and all four divisions in that sak (27522,
     27523, 27524, 27525) carry votering_tid converting to 2026-05-12. The rows were
@@ -856,3 +899,27 @@ items:
     is a partifri representant, in which case the rows should say so, or the tally has
     a party code the catalogue does not carry. Resolve before the breakdown is quoted
     anywhere outside the row.
+- id: statsborgerskap-pf-mangler-i-indeksene
+  kind: verify
+  statement: utsagn-49
+  party: ''
+  method: method/mixed.md
+  status: pending
+  result: ''
+  note: >
+    Found 2026-10-29 by the driver while applying statsborgerskap-2026-dato-og-pf-stemme,
+    and deliberately not folded in there because it changes derived artefacts rather than
+    row text. Pasientfokus is a real party with one representative and it votes: on
+    votering 18486 it cast the 21st for-vote. Two derived artefacts cannot say so.
+    (1) internal/data/votes/index.json gives each votering a parties map keyed by the nine
+    dataset party ids, so 18486 shows 20 of 21 on the for side and any view that reads the
+    tally from the index is one short; the rows themselves now name her. (2)
+    internal/data/storting/index.json carries 169 representatives and Pasientfokus is not
+    among them, so the actor layer cannot resolve her either. Job: decide whether PF
+    becomes a first-class party id (a content/parties file plus the nine-to-ten change in
+    every consumer that assumes nine: the scoring input, the front page, the acquiescence
+    test), or whether the index records non-catalogue parties in a separate reported field
+    the way the proposals index already stores Pasientfokus with an empty party id and
+    reports it. Measure first: how many voterings carry a parti id outside the nine, and
+    how many evidence rows cite one. The first is cheap from the cache; the second is a
+    grep. Do not widen the parties map before that count exists.

@@ -55,7 +55,12 @@ PARTY_NAME = {
     "krf": "krf", "kristelig folkeparti": "krf",
     "v": "v", "venstre": "v",
 }
-SECTION = re.compile(r"^(Utgifter|Inntekter)\s+rammeområde\s+(\d+)", re.I)
+# Some innstillinger head the section "Utgifter rammeområde 5 (i tusen kroner)"
+# and others only "Utgifter (i tusen kroner)", with the area printed in the
+# paragraph above the table. Requiring the area here dropped every row of the
+# eight tables that use the short form, which is how rammeområde 1, 4, 5, 6, 8
+# and 14 first looked empty.
+SECTION = re.compile(r"^(Utgifter|Inntekter)\b", re.I)
 TOTAL = re.compile(r"^Sum\s+(utgifter|inntekter|netto)\s+rammeområde\s+(\d+)", re.I)
 AMOUNT = re.compile(r"^(-?[\d][\d\s\u00a0]*)(?:\(([+-]?[\d\s\u00a0]*)\))?$")
 
@@ -109,17 +114,20 @@ class _TableParser(HTMLParser):
     which is what makes the column map from the header usable on every row.
     """
 
-    def __init__(self) -> None:
+    def __init__(self, line_starts: list[int]) -> None:
         super().__init__(convert_charrefs=True)
+        self.line_starts = line_starts
         self.stack: list[dict] = []
-        self.done: list[list[list[str]]] = []
+        self.done: list[tuple[int, list[list[str]]]] = []
         self.cell: list[str] | None = None
         self.row: list[str] | None = None
         self.span = 1
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str]]) -> None:
         if tag == "table":
-            self.stack.append({"rows": []})
+            line, col = self.getpos()
+            offset = self.line_starts[line - 1] + col if line - 1 < len(self.line_starts) else 0
+            self.stack.append({"rows": [], "offset": offset})
         elif tag == "tr" and self.stack:
             self.row = []
         elif tag in ("td", "th") and self.stack and self.row is not None:
@@ -147,15 +155,39 @@ class _TableParser(HTMLParser):
                 self.stack[-1]["rows"].append(self.row)
             self.row = None
         elif tag == "table" and self.stack:
-            self.done.append(self.stack.pop()["rows"])
+            top = self.stack.pop()
+            self.done.append((top["offset"], top["rows"]))
+
+
+def tables_with_offsets(doc: str) -> list[tuple[int, list[list[str]]]]:
+    """Every <table> with the byte offset where it starts, so a label printed above
+    a table can be attributed to it."""
+    starts, pos = [], 0
+    for line in doc.splitlines(keepends=True):
+        starts.append(pos)
+        pos += len(line)
+    p = _TableParser(starts)
+    p.feed(doc)
+    p.close()
+    return [t for t in p.done if t[1]]
 
 
 def tables(doc: str) -> list[list[list[str]]]:
     """Every <table> in the document as a list of rows of cell text."""
-    p = _TableParser()
-    p.feed(doc)
-    p.close()
-    return [t for t in p.done if t]
+    return [rows for _, rows in tables_with_offsets(doc)]
+
+
+def area_before(doc: str, offset: int) -> int | None:
+    """The rammeområde a table belongs to, from the nearest mention above it.
+
+    Innst. 6, 7, 10 and 16 S print the label in a paragraph before the table
+    instead of in a cell, so a table-only search took those four documents' party
+    tables for area-less and dropped them.
+    """
+    best = None
+    for m in re.finditer(r"[Rr]ammeområde\s+(\d+)", doc[:offset]):
+        best = int(m.group(1))
+    return best
 
 
 def party_of(label: str) -> list[str]:
@@ -177,6 +209,11 @@ def column_map(header: list[str]) -> dict | None:
     if len(header) < 6:
         return None
     if not any("Prop" in c for c in header):
+        return None
+    # A bevilgning table has a Kap. and a Post column. Innst. 2 S carries a
+    # per-committee summary headed "Komité | Nr." whose columns also name parties;
+    # reading it as a post table attributed a committee summary to rammeområde 21.
+    if not any(c.strip().lower().startswith("kap") for c in header):
         return None
     roles = {}
     parties = 0
@@ -297,7 +334,7 @@ def main(argv: list[str]) -> int:
     args = ap.parse_args(argv)
 
     numbers = [int(x) for x in args.numbers.split(",") if x.strip()]
-    records, failures, absent = [], [], []
+    records, failures, absent, no_area = [], [], [], []
     for n in numbers:
         url = innstilling_url(args.session, n)
         try:
@@ -308,18 +345,26 @@ def main(argv: list[str]) -> int:
         title = re.search(r"<title>([^<]*)</title>", doc)
         title = norm(title.group(1)) if title else f"inns-{n:03d}s"
         found = 0
-        for tbl in tables(doc):
+        for offset, tbl in tables_with_offsets(doc):
             roles = column_map(tbl[0])
             if not roles:
                 continue
             rec = extract(tbl[1:], roles)
+            # The rammeområde label can sit anywhere in the table, not only in its
+            # first rows: scanning just the top skipped four whole documents
+            # (Innst. 6, 7, 10 and 16 S) without counting them as either accepted or
+            # rejected, so rammeområde 1, 4, 5, 6, 8 and 14 looked absent from the
+            # source when they were simply never read.
             rm = None
-            for cells in tbl[:6]:
-                m = re.search(r"rammeområde\s+(\d+)", " ".join(cells), re.I)
-                if m:
-                    rm = int(m.group(1))
+            for cells in tbl:
+                mm = re.search(r"rammeområde\s+(\d+)", " ".join(cells), re.I)
+                if mm:
+                    rm = int(mm.group(1))
                     break
             if rm is None:
+                rm = area_before(doc, offset)
+            if rm is None:
+                no_area.append((title, " | ".join(tbl[0])[:90]))
                 continue
             bad = check(rec, roles)
             entry = {
@@ -345,6 +390,8 @@ def main(argv: list[str]) -> int:
           f"tables accepted: {len(records)}  rejected: {len(failures)}", file=sys.stderr)
     for a in absent:
         print(f"    absent {a[0]:3d}: {a[1]}", file=sys.stderr)
+    for title, hdr in no_area:
+        print(f"    NO RAMMEOMRÅDE in {title[:40]}: table header {hdr}", file=sys.stderr)
     for title, rm, bad in failures:
         print(f"    REJECTED {title} rammeområde {rm}: {bad[0]}", file=sys.stderr)
     if not records:

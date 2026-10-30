@@ -52,7 +52,583 @@
     }
    },
    "sums": {},
-   "posts": {},
+   "posts": {
+    "utgifter": [],
+    "inntekter": [
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Trinnskatt og formuesskatt mv.",
+      "amounts": {
+       "3": {
+        "kr": 157737000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -24370000000,
+        "change": 0
+       },
+       "6": {
+        "kr": -10625000000,
+        "change": 0
+       },
+       "9": {
+        "kr": -16761000000,
+        "change": 0
+       },
+       "10": {
+        "kr": -3335000000,
+        "change": 0
+       },
+       "11": {
+        "kr": -5460000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Fellesskatt mv. fra personlige skattytere",
+      "amounts": {
+       "3": {
+        "kr": 206452750000,
+        "change": 0
+       },
+       "4": {
+        "kr": -140000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -11350000000,
+        "change": 0
+       },
+       "6": {
+        "kr": -8508000000,
+        "change": 0
+       },
+       "10": {
+        "kr": -4800000000,
+        "change": 0
+       },
+       "11": {
+        "kr": -9933000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "74",
+      "formal": "Selskapsskatter mv. fra upersonlige skattytere utenom petroleum",
+      "amounts": {
+       "3": {
+        "kr": 129450000000,
+        "change": 0
+       },
+       "6": {
+        "kr": -50000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Ordinær skatt på formue og inntekt",
+      "amounts": {
+       "3": {
+        "kr": 93300000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Særskatt på oljeinntekter",
+      "amounts": {
+       "3": {
+        "kr": 198200000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "CO2-avgift i petroleumsvirksomheten på kontinentalsokkelen",
+      "amounts": {
+       "3": {
+        "kr": 9400000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Tollavgift",
+      "amounts": {
+       "3": {
+        "kr": 3300000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Merverdiavgift",
+      "amounts": {
+       "3": {
+        "kr": 420970000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -8000000000,
+        "change": 0
+       },
+       "7": {
+        "kr": -970000000,
+        "change": 0
+       },
+       "8": {
+        "kr": -2283000000,
+        "change": 0
+       },
+       "9": {
+        "kr": -2450000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Avgift på alkohol",
+      "amounts": {
+       "3": {
+        "kr": 16300000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Avgift på tobakksvarer mv.",
+      "amounts": {
+       "3": {
+        "kr": 7700000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -400000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Engangsavgift",
+      "amounts": {
+       "3": {
+        "kr": 7180000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -550000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Avgift på trafikkforsikring",
+      "amounts": {
+       "3": {
+        "kr": 9290000000,
+        "change": 0
+       },
+       "7": {
+        "kr": -190000000,
+        "change": 0
+       },
+       "11": {
+        "kr": -190000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Vektårsavgift",
+      "amounts": {
+       "3": {
+        "kr": 300000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Omregistreringsavgift",
+      "amounts": {
+       "3": {
+        "kr": 1900000000,
+        "change": 0
+       },
+       "7": {
+        "kr": -300000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Veibruksavgift på bensin",
+      "amounts": {
+       "3": {
+        "kr": 3000000000,
+        "change": 0
+       },
+       "4": {
+        "kr": -230000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -1215000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Veibruksavgift på autodiesel",
+      "amounts": {
+       "3": {
+        "kr": 6570000000,
+        "change": 0
+       },
+       "4": {
+        "kr": -1350000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -2810000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Veibruksavgift på naturgass og LPG",
+      "amounts": {
+       "3": {
+        "kr": 3000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -3000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Tilbakebetaling av inntekter fra flyseteavgiften",
+      "amounts": {
+       "9": {
+        "kr": -11100000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Tilbakebetaling av inntekter fra veibruksavgifter",
+      "amounts": {
+       "9": {
+        "kr": -900000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Avsetning til fond for utslippsfri næringstransport",
+      "amounts": {
+       "9": {
+        "kr": -2581500000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Avsetning til fond for utslippsfri luftfart",
+      "amounts": {
+       "9": {
+        "kr": -2581500000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Avgift på elektrisk kraft",
+      "amounts": {
+       "3": {
+        "kr": 4770000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "CO2-avgift",
+      "amounts": {
+       "3": {
+        "kr": 19538000000,
+        "change": 0
+       },
+       "4": {
+        "kr": -6000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -2588000000,
+        "change": 0
+       },
+       "6": {
+        "kr": -140000000,
+        "change": 0
+       },
+       "10": {
+        "kr": -971000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Svovelavgift",
+      "amounts": {
+       "3": {
+        "kr": 2000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Avgift på avfallsforbrenning",
+      "amounts": {
+       "3": {
+        "kr": 690000000,
+        "change": 0
+       },
+       "5": {
+        "kr": -150000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Avgift på hydrofluorkarboner HFK og perfluorkarboner PFK",
+      "amounts": {
+       "3": {
+        "kr": 540000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Avgift på NOX",
+      "amounts": {
+       "3": {
+        "kr": 45000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Miljøavgift på plast",
+      "amounts": {
+       "3": {
+        "kr": 50000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Flypassasjeravgift",
+      "amounts": {
+       "3": {
+        "kr": 1900000000,
+        "change": 0
+       },
+       "9": {
+        "kr": -1900000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Dokumentavgift",
+      "amounts": {
+       "3": {
+        "kr": 15500000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": -4860000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": -475000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Innføre en omsetningsavgift på private helseforsikringer på 25 prosent fra 1. juli",
+      "amounts": {
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Sektoravgift tobakk",
+      "amounts": {
+       "3": {
+        "kr": 18952000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Finanstilsynet, bidrag fra tilsynsenhetene",
+      "amounts": {
+       "3": {
+        "kr": 670980000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Sektoravgifter under Havindustritilsynet",
+      "amounts": {
+       "3": {
+        "kr": 145000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Trygdeavgift",
+      "amounts": {
+       "3": {
+        "kr": 231189440000,
+        "change": 0
+       },
+       "11": {
+        "kr": -1219000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Arbeidsgiveravgift",
+      "amounts": {
+       "3": {
+        "kr": 283011000000,
+        "change": 0
+       },
+       "11": {
+        "kr": -272200000,
+        "change": 0
+       }
+      }
+     }
+    ]
+   },
    "check_failures": []
   },
   {
@@ -2417,6 +2993,4628 @@
        "11": {
         "kr": 452224259000,
         "change": 3853000
+       }
+      }
+     }
+    ]
+   },
+   "check_failures": []
+  },
+  {
+   "document": "Innst. 6 S (2025-2026) - stortinget.no",
+   "number": 6,
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-006s/?all=true",
+   "rammeomrade": 5,
+   "unit": "tusen kroner",
+   "columns": {
+    "3": {
+     "kind": "government"
+    },
+    "4": {
+     "kind": "forlik",
+     "parties": [
+      "ap",
+      "sv",
+      "sp",
+      "r",
+      "mdg"
+     ]
+    },
+    "5": {
+     "kind": "party",
+     "party": "frp"
+    },
+    "6": {
+     "kind": "party",
+     "party": "h"
+    },
+    "7": {
+     "kind": "party",
+     "party": "mdg"
+    },
+    "8": {
+     "kind": "party",
+     "party": "krf"
+    }
+   },
+   "sums": {},
+   "posts": {
+    "utgifter": [
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 489069000,
+        "change": 0
+       },
+       "4": {
+        "kr": 488069000,
+        "change": -1000000
+       },
+       "5": {
+        "kr": 489069000,
+        "change": 0
+       },
+       "6": {
+        "kr": 489069000,
+        "change": 0
+       },
+       "7": {
+        "kr": 489069000,
+        "change": 0
+       },
+       "8": {
+        "kr": 493569000,
+        "change": 4500000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 3640453000,
+        "change": 0
+       },
+       "4": {
+        "kr": 3650053000,
+        "change": 9600000
+       },
+       "5": {
+        "kr": 3679353000,
+        "change": 38900000
+       },
+       "6": {
+        "kr": 3685453000,
+        "change": 45000000
+       },
+       "7": {
+        "kr": 3660453000,
+        "change": 20000000
+       },
+       "8": {
+        "kr": 3702353000,
+        "change": 61900000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 384219000,
+        "change": 0
+       },
+       "4": {
+        "kr": 384219000,
+        "change": 0
+       },
+       "5": {
+        "kr": 384219000,
+        "change": 0
+       },
+       "6": {
+        "kr": 384219000,
+        "change": 0
+       },
+       "7": {
+        "kr": 385719000,
+        "change": 1500000
+       },
+       "8": {
+        "kr": 384219000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 6524721000,
+        "change": 0
+       },
+       "4": {
+        "kr": 6529021000,
+        "change": 4300000
+       },
+       "5": {
+        "kr": 6594721000,
+        "change": 70000000
+       },
+       "6": {
+        "kr": 6490591000,
+        "change": -34130000
+       },
+       "7": {
+        "kr": 6634721000,
+        "change": 110000000
+       },
+       "8": {
+        "kr": 6678521000,
+        "change": 153800000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Tilskudd",
+      "amounts": {
+       "3": {
+        "kr": 44768000,
+        "change": 0
+       },
+       "4": {
+        "kr": 44768000,
+        "change": 0
+       },
+       "5": {
+        "kr": 44768000,
+        "change": 0
+       },
+       "6": {
+        "kr": 44768000,
+        "change": 0
+       },
+       "7": {
+        "kr": 54768000,
+        "change": 10000000
+       },
+       "8": {
+        "kr": 56768000,
+        "change": 12000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 335145000,
+        "change": 0
+       },
+       "4": {
+        "kr": 335145000,
+        "change": 0
+       },
+       "5": {
+        "kr": 335145000,
+        "change": 0
+       },
+       "6": {
+        "kr": 335145000,
+        "change": 0
+       },
+       "7": {
+        "kr": 370145000,
+        "change": 35000000
+       },
+       "8": {
+        "kr": 335145000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 210185000,
+        "change": 0
+       },
+       "4": {
+        "kr": 218315000,
+        "change": 8130000
+       },
+       "5": {
+        "kr": 210185000,
+        "change": 0
+       },
+       "6": {
+        "kr": 210185000,
+        "change": 0
+       },
+       "7": {
+        "kr": 210185000,
+        "change": 0
+       },
+       "8": {
+        "kr": 210185000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Tilskudd",
+      "amounts": {
+       "3": {
+        "kr": 60348000,
+        "change": 0
+       },
+       "4": {
+        "kr": 61348000,
+        "change": 1000000
+       },
+       "5": {
+        "kr": 60348000,
+        "change": 0
+       },
+       "6": {
+        "kr": 60348000,
+        "change": 0
+       },
+       "7": {
+        "kr": 60348000,
+        "change": 0
+       },
+       "8": {
+        "kr": 65348000,
+        "change": 5000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 25385552000,
+        "change": 0
+       },
+       "4": {
+        "kr": 25481752000,
+        "change": 96200000
+       },
+       "5": {
+        "kr": 27025552000,
+        "change": 1640000000
+       },
+       "6": {
+        "kr": 25697287000,
+        "change": 311735000
+       },
+       "7": {
+        "kr": 25414952000,
+        "change": 29400000
+       },
+       "8": {
+        "kr": 25714552000,
+        "change": 329000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "25",
+      "formal": "Variable utgifter ved ankomst, mottak og retur i politiets utlendingsforvaltning",
+      "amounts": {
+       "3": {
+        "kr": 202120000,
+        "change": 0
+       },
+       "4": {
+        "kr": 202120000,
+        "change": 0
+       },
+       "5": {
+        "kr": 202120000,
+        "change": 0
+       },
+       "6": {
+        "kr": 202120000,
+        "change": 0
+       },
+       "7": {
+        "kr": 213194000,
+        "change": 11074000
+       },
+       "8": {
+        "kr": 202120000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 746529000,
+        "change": 0
+       },
+       "4": {
+        "kr": 746529000,
+        "change": 0
+       },
+       "5": {
+        "kr": 783529000,
+        "change": 37000000
+       },
+       "6": {
+        "kr": 791529000,
+        "change": 45000000
+       },
+       "7": {
+        "kr": 746529000,
+        "change": 0
+       },
+       "8": {
+        "kr": 857229000,
+        "change": 110700000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 1738400000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1740400000,
+        "change": 2000000
+       },
+       "5": {
+        "kr": 1788400000,
+        "change": 50000000
+       },
+       "6": {
+        "kr": 1805900000,
+        "change": 67500000
+       },
+       "7": {
+        "kr": 1738400000,
+        "change": 0
+       },
+       "8": {
+        "kr": 1738400000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 1882354000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1882354000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1882354000,
+        "change": 0
+       },
+       "6": {
+        "kr": 1882354000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1883922000,
+        "change": 1568000
+       },
+       "8": {
+        "kr": 1882354000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 1633769000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1666769000,
+        "change": 33000000
+       },
+       "5": {
+        "kr": 1683769000,
+        "change": 50000000
+       },
+       "6": {
+        "kr": 1633769000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1633769000,
+        "change": 0
+       },
+       "8": {
+        "kr": 1633769000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 70673000,
+        "change": 0
+       },
+       "4": {
+        "kr": 70673000,
+        "change": 0
+       },
+       "5": {
+        "kr": 70673000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -70673000
+       },
+       "7": {
+        "kr": 70673000,
+        "change": 0
+       },
+       "8": {
+        "kr": 70673000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Tilskudd til frivillige organisasjoner i redningstjenesten",
+      "amounts": {
+       "3": {
+        "kr": 89547000,
+        "change": 0
+       },
+       "4": {
+        "kr": 106047000,
+        "change": 16500000
+       },
+       "5": {
+        "kr": 94547000,
+        "change": 5000000
+       },
+       "6": {
+        "kr": 89547000,
+        "change": 0
+       },
+       "7": {
+        "kr": 139547000,
+        "change": 50000000
+       },
+       "8": {
+        "kr": 89547000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Tilskudd til Redningsselskapet",
+      "amounts": {
+       "3": {
+        "kr": 150657000,
+        "change": 0
+       },
+       "4": {
+        "kr": 150657000,
+        "change": 0
+       },
+       "5": {
+        "kr": 155657000,
+        "change": 5000000
+       },
+       "6": {
+        "kr": 150657000,
+        "change": 0
+       },
+       "7": {
+        "kr": 150657000,
+        "change": 0
+       },
+       "8": {
+        "kr": 150657000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 56891000,
+        "change": 0
+       },
+       "4": {
+        "kr": 56891000,
+        "change": 0
+       },
+       "5": {
+        "kr": 56891000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -56891000
+       },
+       "7": {
+        "kr": 56891000,
+        "change": 0
+       },
+       "8": {
+        "kr": 56891000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Juridisk bistand",
+      "amounts": {
+       "3": {
+        "kr": 1828577000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1828677000,
+        "change": 100000
+       },
+       "5": {
+        "kr": 1828577000,
+        "change": 0
+       },
+       "6": {
+        "kr": 1828577000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1837677000,
+        "change": 9100000
+       },
+       "8": {
+        "kr": 1779077000,
+        "change": -49500000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Juridisk bistand",
+      "amounts": {
+       "3": {
+        "kr": 921175000,
+        "change": 0
+       },
+       "4": {
+        "kr": 921175000,
+        "change": 0
+       },
+       "5": {
+        "kr": 921175000,
+        "change": 0
+       },
+       "6": {
+        "kr": 921175000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1131175000,
+        "change": 210000000
+       },
+       "8": {
+        "kr": 921175000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Tilskudd til spesielle rettshjelptiltak",
+      "amounts": {
+       "3": {
+        "kr": 65988000,
+        "change": 0
+       },
+       "4": {
+        "kr": 95988000,
+        "change": 30000000
+       },
+       "5": {
+        "kr": 35988000,
+        "change": -30000000
+       },
+       "6": {
+        "kr": 65988000,
+        "change": 0
+       },
+       "7": {
+        "kr": 125988000,
+        "change": 60000000
+       },
+       "8": {
+        "kr": 98988000,
+        "change": 33000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 168174000,
+        "change": 0
+       },
+       "4": {
+        "kr": 168174000,
+        "change": 0
+       },
+       "5": {
+        "kr": 155674000,
+        "change": -12500000
+       },
+       "6": {
+        "kr": 168174000,
+        "change": 0
+       },
+       "7": {
+        "kr": 168174000,
+        "change": 0
+       },
+       "8": {
+        "kr": 168174000,
+        "change": 0
+       }
+      }
+     }
+    ],
+    "inntekter": [
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Rettsgebyr",
+      "amounts": {
+       "3": {
+        "kr": 211000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 211000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 211000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 281000000,
+        "change": 70000000
+       },
+       "7": {
+        "kr": 211000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 211000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Gebyr – pass og ID-kort",
+      "amounts": {
+       "3": {
+        "kr": 832662000,
+        "change": 0
+       },
+       "4": {
+        "kr": 832662000,
+        "change": 0
+       },
+       "5": {
+        "kr": 832662000,
+        "change": 0
+       },
+       "6": {
+        "kr": 832662000,
+        "change": 0
+       },
+       "7": {
+        "kr": 798662000,
+        "change": -34000000
+       },
+       "8": {
+        "kr": 832662000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "6",
+      "formal": "Gebyr – utlendingssaker",
+      "amounts": {
+       "3": {
+        "kr": 367389000,
+        "change": 0
+       },
+       "4": {
+        "kr": 367389000,
+        "change": 0
+       },
+       "5": {
+        "kr": 507789000,
+        "change": 140400000
+       },
+       "6": {
+        "kr": 507789000,
+        "change": 140400000
+       },
+       "7": {
+        "kr": 367389000,
+        "change": 0
+       },
+       "8": {
+        "kr": 367389000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Bidrag fra advokater og forvalterordning",
+      "amounts": {
+       "3": {
+        "kr": 57204000,
+        "change": 0
+       },
+       "4": {
+        "kr": 57204000,
+        "change": 0
+       },
+       "5": {
+        "kr": 57204000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -57204000
+       },
+       "7": {
+        "kr": 57204000,
+        "change": 0
+       },
+       "8": {
+        "kr": 57204000,
+        "change": 0
+       }
+      }
+     }
+    ]
+   },
+   "check_failures": []
+  },
+  {
+   "document": "Innst. 7 S (2025-2026) - stortinget.no",
+   "number": 7,
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-007s/?all=true",
+   "rammeomrade": 4,
+   "unit": "tusen kroner",
+   "columns": {
+    "3": {
+     "kind": "government"
+    },
+    "4": {
+     "kind": "forlik",
+     "parties": [
+      "ap",
+      "sv",
+      "sp",
+      "r",
+      "mdg"
+     ]
+    },
+    "5": {
+     "kind": "party",
+     "party": "h"
+    },
+    "6": {
+     "kind": "party",
+     "party": "frp"
+    },
+    "7": {
+     "kind": "party",
+     "party": "sv"
+    },
+    "8": {
+     "kind": "party",
+     "party": "r"
+    },
+    "9": {
+     "kind": "party",
+     "party": "mdg"
+    },
+    "10": {
+     "kind": "party",
+     "party": "krf"
+    },
+    "11": {
+     "kind": "party",
+     "party": "v"
+    }
+   },
+   "sums": {},
+   "posts": {
+    "utgifter": [
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 5035834000,
+        "change": 0
+       },
+       "4": {
+        "kr": 5030834000,
+        "change": -5000000
+       },
+       "5": {
+        "kr": 5035834000,
+        "change": 0
+       },
+       "6": {
+        "kr": 2517917000,
+        "change": -2517917000
+       },
+       "7": {
+        "kr": 5035834000,
+        "change": 0
+       },
+       "8": {
+        "kr": 5035834000,
+        "change": 0
+       },
+       "9": {
+        "kr": 4935834000,
+        "change": -100000000
+       },
+       "10": {
+        "kr": 5035834000,
+        "change": 0
+       },
+       "11": {
+        "kr": 5035834000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "4": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "5": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "6": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "7": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "8": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "9": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "10": {
+        "kr": 17410000,
+        "change": 0
+       },
+       "11": {
+        "kr": 22410000,
+        "change": 5000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "45",
+      "formal": "Større utstyrsanskaffelser og vedlikehold",
+      "amounts": {
+       "3": {
+        "kr": 113804000,
+        "change": 0
+       },
+       "4": {
+        "kr": 113804000,
+        "change": 0
+       },
+       "5": {
+        "kr": 113804000,
+        "change": 0
+       },
+       "6": {
+        "kr": 68282000,
+        "change": -45522000
+       },
+       "7": {
+        "kr": 113804000,
+        "change": 0
+       },
+       "8": {
+        "kr": 113804000,
+        "change": 0
+       },
+       "9": {
+        "kr": 113804000,
+        "change": 0
+       },
+       "10": {
+        "kr": 113804000,
+        "change": 0
+       },
+       "11": {
+        "kr": 113804000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 61354000,
+        "change": 0
+       },
+       "4": {
+        "kr": 61354000,
+        "change": 0
+       },
+       "5": {
+        "kr": 61354000,
+        "change": 0
+       },
+       "6": {
+        "kr": 41354000,
+        "change": -20000000
+       },
+       "7": {
+        "kr": 61354000,
+        "change": 0
+       },
+       "8": {
+        "kr": 61354000,
+        "change": 0
+       },
+       "9": {
+        "kr": 61354000,
+        "change": 0
+       },
+       "10": {
+        "kr": 61354000,
+        "change": 0
+       },
+       "11": {
+        "kr": 61354000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter – kulturfremme",
+      "amounts": {
+       "3": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "4": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "5": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "6": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "7": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "8": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "9": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "10": {
+        "kr": 10988000,
+        "change": 0
+       },
+       "11": {
+        "kr": 15988000,
+        "change": 5000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "22",
+      "formal": "Spesielle driftsutgifter – næringsfremme",
+      "amounts": {
+       "3": {
+        "kr": 15186000,
+        "change": 0
+       },
+       "4": {
+        "kr": 13186000,
+        "change": -2000000
+       },
+       "5": {
+        "kr": 15186000,
+        "change": 0
+       },
+       "6": {
+        "kr": 15186000,
+        "change": 0
+       },
+       "7": {
+        "kr": 15186000,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": -15186000
+       },
+       "9": {
+        "kr": 15186000,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": -15186000
+       },
+       "11": {
+        "kr": 20186000,
+        "change": 5000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Kultur- og informasjonsformål",
+      "amounts": {
+       "3": {
+        "kr": 32241000,
+        "change": 0
+       },
+       "4": {
+        "kr": 38241000,
+        "change": 6000000
+       },
+       "5": {
+        "kr": 32241000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -32241000
+       },
+       "7": {
+        "kr": 32241000,
+        "change": 0
+       },
+       "8": {
+        "kr": 32241000,
+        "change": 0
+       },
+       "9": {
+        "kr": 40000000,
+        "change": 7759000
+       },
+       "10": {
+        "kr": 0,
+        "change": -32241000
+       },
+       "11": {
+        "kr": 38541000,
+        "change": 6300000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Næringsfremme",
+      "amounts": {
+       "3": {
+        "kr": 15936000,
+        "change": 0
+       },
+       "4": {
+        "kr": 12936000,
+        "change": -3000000
+       },
+       "5": {
+        "kr": 15936000,
+        "change": 0
+       },
+       "6": {
+        "kr": 15936000,
+        "change": 0
+       },
+       "7": {
+        "kr": 15936000,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": -15936000
+       },
+       "9": {
+        "kr": 15936000,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": -15936000
+       },
+       "11": {
+        "kr": 15936000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Pliktige bidrag",
+      "amounts": {
+       "3": {
+        "kr": 1772894000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1772894000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1772894000,
+        "change": 0
+       },
+       "6": {
+        "kr": 1772894000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1772894000,
+        "change": 0
+       },
+       "8": {
+        "kr": 1802894000,
+        "change": 30000000
+       },
+       "9": {
+        "kr": 1772894000,
+        "change": 0
+       },
+       "10": {
+        "kr": 1772894000,
+        "change": 0
+       },
+       "11": {
+        "kr": 1772894000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "79",
+      "formal": "EØS-finansieringsordningen 2021–2028",
+      "amounts": {
+       "3": {
+        "kr": 819000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 819000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 819000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 719000000,
+        "change": -100000000
+       },
+       "7": {
+        "kr": 819000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 819000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 819000000,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": -819000000
+       },
+       "11": {
+        "kr": 819000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "80",
+      "formal": "Den norske finansieringsordningen 2021–2028",
+      "amounts": {
+       "3": {
+        "kr": 747000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 747000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 747000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 647000000,
+        "change": -100000000
+       },
+       "7": {
+        "kr": 747000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 747000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 747000000,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": -747000000
+       },
+       "11": {
+        "kr": 747000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 72776000,
+        "change": 0
+       },
+       "4": {
+        "kr": 72776000,
+        "change": 0
+       },
+       "5": {
+        "kr": 72776000,
+        "change": 0
+       },
+       "6": {
+        "kr": 43666000,
+        "change": -29110000
+       },
+       "7": {
+        "kr": 72776000,
+        "change": 0
+       },
+       "8": {
+        "kr": 72776000,
+        "change": 0
+       },
+       "9": {
+        "kr": 72776000,
+        "change": 0
+       },
+       "10": {
+        "kr": 72776000,
+        "change": 0
+       },
+       "11": {
+        "kr": 72776000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Kultur i nordområdesatsinga",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 6000000,
+        "change": 6000000
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Globale sikkerhetsspørsmål",
+      "amounts": {
+       "3": {
+        "kr": 6450000,
+        "change": 0
+       },
+       "4": {
+        "kr": 3450000,
+        "change": -3000000
+       },
+       "5": {
+        "kr": 6450000,
+        "change": 0
+       },
+       "6": {
+        "kr": 6450000,
+        "change": 0
+       },
+       "7": {
+        "kr": 6450000,
+        "change": 0
+       },
+       "8": {
+        "kr": 6450000,
+        "change": 0
+       },
+       "9": {
+        "kr": 10000000,
+        "change": 3550000
+       },
+       "10": {
+        "kr": 6450000,
+        "change": 0
+       },
+       "11": {
+        "kr": 6450000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Nedrustning, ikke-spredning og kjernefysisk sikkerhet mv.",
+      "amounts": {
+       "3": {
+        "kr": 22190000,
+        "change": 0
+       },
+       "4": {
+        "kr": 31190000,
+        "change": 9000000
+       },
+       "5": {
+        "kr": 18190000,
+        "change": -4000000
+       },
+       "6": {
+        "kr": 22190000,
+        "change": 0
+       },
+       "7": {
+        "kr": 28190000,
+        "change": 6000000
+       },
+       "8": {
+        "kr": 112190000,
+        "change": 90000000
+       },
+       "9": {
+        "kr": 44390000,
+        "change": 22200000
+       },
+       "10": {
+        "kr": 22190000,
+        "change": 0
+       },
+       "11": {
+        "kr": 22190000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Klima, miljøtiltak og hav mv.",
+      "amounts": {
+       "3": {
+        "kr": 11778000,
+        "change": 0
+       },
+       "4": {
+        "kr": 11778000,
+        "change": 0
+       },
+       "5": {
+        "kr": 11778000,
+        "change": 0
+       },
+       "6": {
+        "kr": 6778000,
+        "change": -5000000
+       },
+       "7": {
+        "kr": 11778000,
+        "change": 0
+       },
+       "8": {
+        "kr": 11778000,
+        "change": 0
+       },
+       "9": {
+        "kr": 18000000,
+        "change": 6222000
+       },
+       "10": {
+        "kr": 11778000,
+        "change": 0
+       },
+       "11": {
+        "kr": 11778000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "74",
+      "formal": "Forskning, dialog og menneskerettigheter mv.",
+      "amounts": {
+       "3": {
+        "kr": 24444000,
+        "change": 0
+       },
+       "4": {
+        "kr": 37444000,
+        "change": 13000000
+       },
+       "5": {
+        "kr": 24444000,
+        "change": 0
+       },
+       "6": {
+        "kr": 4892000,
+        "change": -19552000
+       },
+       "7": {
+        "kr": 28444000,
+        "change": 4000000
+       },
+       "8": {
+        "kr": 29511000,
+        "change": 5067000
+       },
+       "9": {
+        "kr": 28444000,
+        "change": 4000000
+       },
+       "10": {
+        "kr": 24444000,
+        "change": 0
+       },
+       "11": {
+        "kr": 24444000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Fredsorganisasjoner",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 10000000,
+        "change": 10000000
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Opplysningsarbeid for fred i Norge",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 0,
+        "change": 0
+       },
+       "8": {
+        "kr": 30000000,
+        "change": 30000000
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "76",
+      "formal": "Russland",
+      "amounts": {
+       "3": {
+        "kr": 39600000,
+        "change": 0
+       },
+       "4": {
+        "kr": 29600000,
+        "change": -10000000
+       },
+       "5": {
+        "kr": 39600000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -39600000
+       },
+       "7": {
+        "kr": 39600000,
+        "change": 0
+       },
+       "8": {
+        "kr": 49600000,
+        "change": 10000000
+       },
+       "9": {
+        "kr": 55000000,
+        "change": 15400000
+       },
+       "10": {
+        "kr": 42600000,
+        "change": 3000000
+       },
+       "11": {
+        "kr": 39600000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "77",
+      "formal": "Norges forskningsråd – utenriksområdet",
+      "amounts": {
+       "3": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 12000000,
+        "change": -48000000
+       },
+       "7": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "10": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "11": {
+        "kr": 60000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "78",
+      "formal": "Humanitært initiativ mot atomvåpen",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 15000000,
+        "change": 15000000
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 99506000,
+        "change": 0
+       },
+       "4": {
+        "kr": 99506000,
+        "change": 0
+       },
+       "5": {
+        "kr": 99506000,
+        "change": 0
+       },
+       "6": {
+        "kr": 9951000,
+        "change": -89555000
+       },
+       "7": {
+        "kr": 99506000,
+        "change": 0
+       },
+       "8": {
+        "kr": 99506000,
+        "change": 0
+       },
+       "9": {
+        "kr": 99506000,
+        "change": 0
+       },
+       "10": {
+        "kr": 99506000,
+        "change": 0
+       },
+       "11": {
+        "kr": 99506000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 442386000,
+        "change": 0
+       },
+       "4": {
+        "kr": 442386000,
+        "change": 0
+       },
+       "5": {
+        "kr": 442386000,
+        "change": 0
+       },
+       "6": {
+        "kr": 176954000,
+        "change": -265432000
+       },
+       "7": {
+        "kr": 442386000,
+        "change": 0
+       },
+       "8": {
+        "kr": 442386000,
+        "change": 0
+       },
+       "9": {
+        "kr": 542386000,
+        "change": 100000000
+       },
+       "10": {
+        "kr": 442386000,
+        "change": 0
+       },
+       "11": {
+        "kr": 442386000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 30541000,
+        "change": 0
+       },
+       "4": {
+        "kr": 30541000,
+        "change": 0
+       },
+       "5": {
+        "kr": 30541000,
+        "change": 0
+       },
+       "6": {
+        "kr": 30541000,
+        "change": 0
+       },
+       "7": {
+        "kr": 30541000,
+        "change": 0
+       },
+       "8": {
+        "kr": 30541000,
+        "change": 0
+       },
+       "9": {
+        "kr": 35000000,
+        "change": 4459000
+       },
+       "10": {
+        "kr": 30541000,
+        "change": 0
+       },
+       "11": {
+        "kr": 30541000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 79009000,
+        "change": 0
+       },
+       "4": {
+        "kr": 79009000,
+        "change": 0
+       },
+       "5": {
+        "kr": 79009000,
+        "change": 0
+       },
+       "6": {
+        "kr": 31604000,
+        "change": -47405000
+       },
+       "7": {
+        "kr": 79009000,
+        "change": 0
+       },
+       "8": {
+        "kr": 79009000,
+        "change": 0
+       },
+       "9": {
+        "kr": 79009000,
+        "change": 0
+       },
+       "10": {
+        "kr": 79009000,
+        "change": 0
+       },
+       "11": {
+        "kr": 79009000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Utvekslingsordninger",
+      "amounts": {
+       "3": {
+        "kr": 153477000,
+        "change": 0
+       },
+       "4": {
+        "kr": 153477000,
+        "change": 0
+       },
+       "5": {
+        "kr": 128477000,
+        "change": -25000000
+       },
+       "6": {
+        "kr": 53477000,
+        "change": -100000000
+       },
+       "7": {
+        "kr": 153477000,
+        "change": 0
+       },
+       "8": {
+        "kr": 153477000,
+        "change": 0
+       },
+       "9": {
+        "kr": 153477000,
+        "change": 0
+       },
+       "10": {
+        "kr": 153477000,
+        "change": 0
+       },
+       "11": {
+        "kr": 153477000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Rekruttering til internasjonale organisasjoner",
+      "amounts": {
+       "3": {
+        "kr": 75000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 70000000,
+        "change": -5000000
+       },
+       "5": {
+        "kr": 75000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -75000000
+       },
+       "7": {
+        "kr": 75000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 75000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 75000000,
+        "change": 0
+       },
+       "10": {
+        "kr": 75000000,
+        "change": 0
+       },
+       "11": {
+        "kr": 75000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Nødhjelp og humanitær bistand",
+      "amounts": {
+       "3": {
+        "kr": 4836481000,
+        "change": 0
+       },
+       "4": {
+        "kr": 4836481000,
+        "change": 0
+       },
+       "5": {
+        "kr": 4836481000,
+        "change": 0
+       },
+       "6": {
+        "kr": 7336481000,
+        "change": 2500000000
+       },
+       "7": {
+        "kr": 6036481000,
+        "change": 1200000000
+       },
+       "8": {
+        "kr": 5365481000,
+        "change": 529000000
+       },
+       "9": {
+        "kr": 8836481000,
+        "change": 4000000000
+       },
+       "10": {
+        "kr": 4836481000,
+        "change": 0
+       },
+       "11": {
+        "kr": 4836481000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Verdens matvareprogram (WFP)",
+      "amounts": {
+       "3": {
+        "kr": 430000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 430000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 430000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 430000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 430000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 430000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1000000000,
+        "change": 570000000
+       },
+       "10": {
+        "kr": 430000000,
+        "change": 0
+       },
+       "11": {
+        "kr": 430000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "FNs høykommissær for flyktninger (UNHCR)",
+      "amounts": {
+       "3": {
+        "kr": 630000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 630000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 630000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 630000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 630000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 630000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 800000000,
+        "change": 170000000
+       },
+       "10": {
+        "kr": 630000000,
+        "change": 0
+       },
+       "11": {
+        "kr": 630000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Fred og konfliktløsning",
+      "amounts": {
+       "3": {
+        "kr": 395260000,
+        "change": 0
+       },
+       "4": {
+        "kr": 395260000,
+        "change": 0
+       },
+       "5": {
+        "kr": 245260000,
+        "change": -150000000
+       },
+       "6": {
+        "kr": 59289000,
+        "change": -335971000
+       },
+       "7": {
+        "kr": 460260000,
+        "change": 65000000
+       },
+       "8": {
+        "kr": 495260000,
+        "change": 100000000
+       },
+       "9": {
+        "kr": 550000000,
+        "change": 154740000
+       },
+       "10": {
+        "kr": 395260000,
+        "change": 0
+       },
+       "11": {
+        "kr": 395260000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Globale sikkerhetsspørsmål og nedrustning",
+      "amounts": {
+       "3": {
+        "kr": 103420000,
+        "change": 0
+       },
+       "4": {
+        "kr": 103420000,
+        "change": 0
+       },
+       "5": {
+        "kr": 53420000,
+        "change": -50000000
+       },
+       "6": {
+        "kr": 103420000,
+        "change": 0
+       },
+       "7": {
+        "kr": 153420000,
+        "change": 50000000
+       },
+       "8": {
+        "kr": 213420000,
+        "change": 110000000
+       },
+       "9": {
+        "kr": 180000000,
+        "change": 76580000
+       },
+       "10": {
+        "kr": 103420000,
+        "change": 0
+       },
+       "11": {
+        "kr": 103420000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "FNs innsats for reform og fredsbygging",
+      "amounts": {
+       "3": {
+        "kr": 238138000,
+        "change": 0
+       },
+       "4": {
+        "kr": 238138000,
+        "change": 0
+       },
+       "5": {
+        "kr": 258138000,
+        "change": 20000000
+       },
+       "6": {
+        "kr": 47628000,
+        "change": -190510000
+       },
+       "7": {
+        "kr": 238138000,
+        "change": 0
+       },
+       "8": {
+        "kr": 302738000,
+        "change": 64600000
+       },
+       "9": {
+        "kr": 1400000000,
+        "change": 1161862000
+       },
+       "10": {
+        "kr": 238138000,
+        "change": 0
+       },
+       "11": {
+        "kr": 238138000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Menneskerettigheter",
+      "amounts": {
+       "3": {
+        "kr": 683993000,
+        "change": 0
+       },
+       "4": {
+        "kr": 683993000,
+        "change": 0
+       },
+       "5": {
+        "kr": 683993000,
+        "change": 0
+       },
+       "6": {
+        "kr": 136799000,
+        "change": -547194000
+       },
+       "7": {
+        "kr": 783993000,
+        "change": 100000000
+       },
+       "8": {
+        "kr": 683993000,
+        "change": 0
+       },
+       "9": {
+        "kr": 900000000,
+        "change": 216007000
+       },
+       "10": {
+        "kr": 683993000,
+        "change": 0
+       },
+       "11": {
+        "kr": 683993000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "FNs høykommissær for menneskerettigheter (OHCHR)",
+      "amounts": {
+       "3": {
+        "kr": 197000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 197000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 197000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 39400000,
+        "change": -157600000
+       },
+       "7": {
+        "kr": 317000000,
+        "change": 120000000
+       },
+       "8": {
+        "kr": 197000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 250000000,
+        "change": 53000000
+       },
+       "10": {
+        "kr": 197000000,
+        "change": 0
+       },
+       "11": {
+        "kr": 197000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Midtøsten og Nord-Afrika",
+      "amounts": {
+       "3": {
+        "kr": 1028815000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1038815000,
+        "change": 10000000
+       },
+       "5": {
+        "kr": 828815000,
+        "change": -200000000
+       },
+       "6": {
+        "kr": 102882000,
+        "change": -925933000
+       },
+       "7": {
+        "kr": 1228815000,
+        "change": 200000000
+       },
+       "8": {
+        "kr": 1528815000,
+        "change": 500000000
+       },
+       "9": {
+        "kr": 4781178000,
+        "change": 3752363000
+       },
+       "10": {
+        "kr": 1028815000,
+        "change": 0
+       },
+       "11": {
+        "kr": 1228815000,
+        "change": 200000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Europa og Sentral-Asia",
+      "amounts": {
+       "3": {
+        "kr": 343817000,
+        "change": 0
+       },
+       "4": {
+        "kr": 343817000,
+        "change": 0
+       },
+       "5": {
+        "kr": 343817000,
+        "change": 0
+       },
+       "6": {
+        "kr": 34382000,
+        "change": -309435000
+       },
+       "7": {
+        "kr": 343817000,
+        "change": 0
+       },
+       "8": {
+        "kr": 343817000,
+        "change": 0
+       },
+       "9": {
+        "kr": 500000000,
+        "change": 156183000
+       },
+       "10": {
+        "kr": 383817000,
+        "change": 40000000
+       },
+       "11": {
+        "kr": 343817000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Afghanistan",
+      "amounts": {
+       "3": {
+        "kr": 316241000,
+        "change": 0
+       },
+       "4": {
+        "kr": 316241000,
+        "change": 0
+       },
+       "5": {
+        "kr": 216241000,
+        "change": -100000000
+       },
+       "6": {
+        "kr": 15813000,
+        "change": -300428000
+       },
+       "7": {
+        "kr": 356241000,
+        "change": 40000000
+       },
+       "8": {
+        "kr": 316241000,
+        "change": 0
+       },
+       "9": {
+        "kr": 550000000,
+        "change": 233759000
+       },
+       "10": {
+        "kr": 316241000,
+        "change": 0
+       },
+       "11": {
+        "kr": 336241000,
+        "change": 20000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Ukraina og naboland",
+      "amounts": {
+       "3": {
+        "kr": 14413100000,
+        "change": 0
+       },
+       "4": {
+        "kr": 14413100000,
+        "change": 0
+       },
+       "5": {
+        "kr": 14413100000,
+        "change": 0
+       },
+       "6": {
+        "kr": 14413100000,
+        "change": 0
+       },
+       "7": {
+        "kr": 14413100000,
+        "change": 0
+       },
+       "8": {
+        "kr": 14413100000,
+        "change": 0
+       },
+       "9": {
+        "kr": 19000000000,
+        "change": 4586900000
+       },
+       "10": {
+        "kr": 14413100000,
+        "change": 0
+       },
+       "11": {
+        "kr": 14413100000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Afrika",
+      "amounts": {
+       "3": {
+        "kr": 1859022000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1859022000,
+        "change": 0
+       },
+       "5": {
+        "kr": 859022000,
+        "change": -1000000000
+       },
+       "6": {
+        "kr": 185903000,
+        "change": -1673119000
+       },
+       "7": {
+        "kr": 2359022000,
+        "change": 500000000
+       },
+       "8": {
+        "kr": 2214022000,
+        "change": 355000000
+       },
+       "9": {
+        "kr": 3000000000,
+        "change": 1140978000
+       },
+       "10": {
+        "kr": 2859022000,
+        "change": 1000000000
+       },
+       "11": {
+        "kr": 2259022000,
+        "change": 400000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "76",
+      "formal": "Asia",
+      "amounts": {
+       "3": {
+        "kr": 421503000,
+        "change": 0
+       },
+       "4": {
+        "kr": 421503000,
+        "change": 0
+       },
+       "5": {
+        "kr": 251503000,
+        "change": -170000000
+       },
+       "6": {
+        "kr": 42151000,
+        "change": -379352000
+       },
+       "7": {
+        "kr": 521503000,
+        "change": 100000000
+       },
+       "8": {
+        "kr": 421503000,
+        "change": 0
+       },
+       "9": {
+        "kr": 600000000,
+        "change": 178497000
+       },
+       "10": {
+        "kr": 421503000,
+        "change": 0
+       },
+       "11": {
+        "kr": 421503000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "77",
+      "formal": "Latin-Amerika og Karibia",
+      "amounts": {
+       "3": {
+        "kr": 143432000,
+        "change": 0
+       },
+       "4": {
+        "kr": 143432000,
+        "change": 0
+       },
+       "5": {
+        "kr": 43432000,
+        "change": -100000000
+       },
+       "6": {
+        "kr": 14344000,
+        "change": -129088000
+       },
+       "7": {
+        "kr": 243432000,
+        "change": 100000000
+       },
+       "8": {
+        "kr": 143432000,
+        "change": 0
+       },
+       "9": {
+        "kr": 200000000,
+        "change": 56568000
+       },
+       "10": {
+        "kr": 143432000,
+        "change": 0
+       },
+       "11": {
+        "kr": 143432000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Helse",
+      "amounts": {
+       "3": {
+        "kr": 3598381000,
+        "change": 0
+       },
+       "4": {
+        "kr": 3598381000,
+        "change": 0
+       },
+       "5": {
+        "kr": 3598381000,
+        "change": 0
+       },
+       "6": {
+        "kr": 3598381000,
+        "change": 0
+       },
+       "7": {
+        "kr": 3598381000,
+        "change": 0
+       },
+       "8": {
+        "kr": 3598381000,
+        "change": 0
+       },
+       "9": {
+        "kr": 5000000000,
+        "change": 1401619000
+       },
+       "10": {
+        "kr": 3598381000,
+        "change": 0
+       },
+       "11": {
+        "kr": 3648381000,
+        "change": 50000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Verdens helseorganisasjon (WHO)",
+      "amounts": {
+       "3": {
+        "kr": 255000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 255000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 255000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 216750000,
+        "change": -38250000
+       },
+       "7": {
+        "kr": 255000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 255000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 405000000,
+        "change": 150000000
+       },
+       "10": {
+        "kr": 255000000,
+        "change": 0
+       },
+       "11": {
+        "kr": 255000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Utdanning",
+      "amounts": {
+       "3": {
+        "kr": 646798000,
+        "change": 0
+       },
+       "4": {
+        "kr": 646798000,
+        "change": 0
+       },
+       "5": {
+        "kr": 971798000,
+        "change": 325000000
+       },
+       "6": {
+        "kr": 646798000,
+        "change": 0
+       },
+       "7": {
+        "kr": 646798000,
+        "change": 0
+       },
+       "8": {
+        "kr": 846798000,
+        "change": 200000000
+       },
+       "9": {
+        "kr": 1400000000,
+        "change": 753202000
+       },
+       "10": {
+        "kr": 1646798000,
+        "change": 1000000000
+       },
+       "11": {
+        "kr": 796798000,
+        "change": 150000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Forskning",
+      "amounts": {
+       "3": {
+        "kr": 67196000,
+        "change": 0
+       },
+       "4": {
+        "kr": 67196000,
+        "change": 0
+       },
+       "5": {
+        "kr": 20014000,
+        "change": -47182000
+       },
+       "6": {
+        "kr": 20196000,
+        "change": -47000000
+       },
+       "7": {
+        "kr": 67196000,
+        "change": 0
+       },
+       "8": {
+        "kr": 67196000,
+        "change": 0
+       },
+       "9": {
+        "kr": 100000000,
+        "change": 32804000
+       },
+       "10": {
+        "kr": 67196000,
+        "change": 0
+       },
+       "11": {
+        "kr": 67196000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Styresett og offentlige institusjoner",
+      "amounts": {
+       "3": {
+        "kr": 628363000,
+        "change": 0
+       },
+       "4": {
+        "kr": 628363000,
+        "change": 0
+       },
+       "5": {
+        "kr": 508363000,
+        "change": -120000000
+       },
+       "6": {
+        "kr": 125363000,
+        "change": -503000000
+       },
+       "7": {
+        "kr": 628363000,
+        "change": 0
+       },
+       "8": {
+        "kr": 628363000,
+        "change": 0
+       },
+       "9": {
+        "kr": 800000000,
+        "change": 171637000
+       },
+       "10": {
+        "kr": 628363000,
+        "change": 0
+       },
+       "11": {
+        "kr": 628363000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "74",
+      "formal": "Norges forskningsråd – utviklingsområdet",
+      "amounts": {
+       "3": {
+        "kr": 182300000,
+        "change": 0
+       },
+       "4": {
+        "kr": 182300000,
+        "change": 0
+       },
+       "5": {
+        "kr": 182300000,
+        "change": 0
+       },
+       "6": {
+        "kr": 73300000,
+        "change": -109000000
+       },
+       "7": {
+        "kr": 182300000,
+        "change": 0
+       },
+       "8": {
+        "kr": 182300000,
+        "change": 0
+       },
+       "9": {
+        "kr": 200000000,
+        "change": 17700000
+       },
+       "10": {
+        "kr": 182300000,
+        "change": 0
+       },
+       "11": {
+        "kr": 182300000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Bærekraftig jobbskaping, næringsutvikling og handel",
+      "amounts": {
+       "3": {
+        "kr": 124536000,
+        "change": 0
+       },
+       "4": {
+        "kr": 124536000,
+        "change": 0
+       },
+       "5": {
+        "kr": 64536000,
+        "change": -60000000
+       },
+       "6": {
+        "kr": 31134000,
+        "change": -93402000
+       },
+       "7": {
+        "kr": 124536000,
+        "change": 0
+       },
+       "8": {
+        "kr": 124536000,
+        "change": 0
+       },
+       "9": {
+        "kr": 150000000,
+        "change": 25464000
+       },
+       "10": {
+        "kr": 124536000,
+        "change": 0
+       },
+       "11": {
+        "kr": 124536000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Matsikkerhet, fisk og landbruk",
+      "amounts": {
+       "3": {
+        "kr": 1427966000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1427966000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1368583000,
+        "change": -59383000
+       },
+       "6": {
+        "kr": 1427966000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1427966000,
+        "change": 0
+       },
+       "8": {
+        "kr": 1427966000,
+        "change": 0
+       },
+       "9": {
+        "kr": 3000000000,
+        "change": 1572034000
+       },
+       "10": {
+        "kr": 1427966000,
+        "change": 0
+       },
+       "11": {
+        "kr": 927966000,
+        "change": -500000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Fornybar energi",
+      "amounts": {
+       "3": {
+        "kr": 1019358000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1019358000,
+        "change": 0
+       },
+       "5": {
+        "kr": 749358000,
+        "change": -270000000
+       },
+       "6": {
+        "kr": 101936000,
+        "change": -917422000
+       },
+       "7": {
+        "kr": 644358000,
+        "change": -375000000
+       },
+       "8": {
+        "kr": 1019358000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1019358000,
+        "change": 0
+       },
+       "10": {
+        "kr": 644358000,
+        "change": -375000000
+       },
+       "11": {
+        "kr": 644358000,
+        "change": -375000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "76",
+      "formal": "Tapsavsetning klimainvesteringsfondet",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": -250000000,
+        "change": -250000000
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "77",
+      "formal": "Sosiale sikkerhetsnett",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 0,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 1500000000,
+        "change": 1500000000
+       },
+       "10": {
+        "kr": 0,
+        "change": 0
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Miljø og klima",
+      "amounts": {
+       "3": {
+        "kr": 1543811000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1543811000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1543811000,
+        "change": 0
+       },
+       "6": {
+        "kr": 308763000,
+        "change": -1235048000
+       },
+       "7": {
+        "kr": 1543811000,
+        "change": 0
+       },
+       "8": {
+        "kr": 1843811000,
+        "change": 300000000
+       },
+       "9": {
+        "kr": 7000000000,
+        "change": 5456189000
+       },
+       "10": {
+        "kr": 1543811000,
+        "change": 0
+       },
+       "11": {
+        "kr": 1543811000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Bærekraftige hav og tiltak mot marin forsøpling",
+      "amounts": {
+       "3": {
+        "kr": 232100000,
+        "change": 0
+       },
+       "4": {
+        "kr": 232100000,
+        "change": 0
+       },
+       "5": {
+        "kr": 247100000,
+        "change": 15000000
+       },
+       "6": {
+        "kr": 232100000,
+        "change": 0
+       },
+       "7": {
+        "kr": 232100000,
+        "change": 0
+       },
+       "8": {
+        "kr": 232100000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1000000000,
+        "change": 767900000
+       },
+       "10": {
+        "kr": 232100000,
+        "change": 0
+       },
+       "11": {
+        "kr": 232100000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Likestilling",
+      "amounts": {
+       "3": {
+        "kr": 273319000,
+        "change": 0
+       },
+       "4": {
+        "kr": 273319000,
+        "change": 0
+       },
+       "5": {
+        "kr": 273319000,
+        "change": 0
+       },
+       "6": {
+        "kr": 27332000,
+        "change": -245987000
+       },
+       "7": {
+        "kr": 273319000,
+        "change": 0
+       },
+       "8": {
+        "kr": 273319000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1000000000,
+        "change": 726681000
+       },
+       "10": {
+        "kr": 273319000,
+        "change": 0
+       },
+       "11": {
+        "kr": 273319000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "FNs organisasjon for kvinners rettigheter og likestilling (UN Women)",
+      "amounts": {
+       "3": {
+        "kr": 140300000,
+        "change": 0
+       },
+       "4": {
+        "kr": 140300000,
+        "change": 0
+       },
+       "5": {
+        "kr": 140300000,
+        "change": 0
+       },
+       "6": {
+        "kr": 35075000,
+        "change": -105225000
+       },
+       "7": {
+        "kr": 140300000,
+        "change": 0
+       },
+       "8": {
+        "kr": 140300000,
+        "change": 0
+       },
+       "9": {
+        "kr": 200000000,
+        "change": 59700000
+       },
+       "10": {
+        "kr": 140300000,
+        "change": 0
+       },
+       "11": {
+        "kr": 140300000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "FNs befolkningsfond (UNFPA)",
+      "amounts": {
+       "3": {
+        "kr": 589600000,
+        "change": 0
+       },
+       "4": {
+        "kr": 589600000,
+        "change": 0
+       },
+       "5": {
+        "kr": 589600000,
+        "change": 0
+       },
+       "6": {
+        "kr": 117600000,
+        "change": -472000000
+       },
+       "7": {
+        "kr": 589600000,
+        "change": 0
+       },
+       "8": {
+        "kr": 589600000,
+        "change": 0
+       },
+       "9": {
+        "kr": 800000000,
+        "change": 210400000
+       },
+       "10": {
+        "kr": 589600000,
+        "change": 0
+       },
+       "11": {
+        "kr": 589600000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Sårbare grupper",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 0,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       },
+       "10": {
+        "kr": 200000000,
+        "change": 200000000
+       },
+       "11": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Risikokapital utviklingsmandatet",
+      "amounts": {
+       "3": {
+        "kr": 413288000,
+        "change": 0
+       },
+       "4": {
+        "kr": 413288000,
+        "change": 0
+       },
+       "5": {
+        "kr": 413288000,
+        "change": 0
+       },
+       "6": {
+        "kr": 413288000,
+        "change": 0
+       },
+       "7": {
+        "kr": 413288000,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": -413288000
+       },
+       "9": {
+        "kr": 826576000,
+        "change": 413288000
+       },
+       "10": {
+        "kr": 413288000,
+        "change": 0
+       },
+       "11": {
+        "kr": 413288000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Risikokapital Klimainvesteringsfondet",
+      "amounts": {
+       "3": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 555000000,
+        "change": 305000000
+       },
+       "6": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": -250000000
+       },
+       "9": {
+        "kr": 0,
+        "change": -250000000
+       },
+       "10": {
+        "kr": 1916700000,
+        "change": 1666700000
+       },
+       "11": {
+        "kr": 600000000,
+        "change": 350000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Risikokapital Ukraina-fondet",
+      "amounts": {
+       "3": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 250000000,
+        "change": 0
+       },
+       "10": {
+        "kr": 416700000,
+        "change": 166700000
+       },
+       "11": {
+        "kr": 250000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Sivilt samfunn",
+      "amounts": {
+       "3": {
+        "kr": 2570665000,
+        "change": 0
+       },
+       "4": {
+        "kr": 2570665000,
+        "change": 0
+       },
+       "5": {
+        "kr": 2530665000,
+        "change": -40000000
+       },
+       "6": {
+        "kr": 257067000,
+        "change": -2313598000
+       },
+       "7": {
+        "kr": 2970665000,
+        "change": 400000000
+       },
+       "8": {
+        "kr": 2570665000,
+        "change": 0
+       },
+       "9": {
+        "kr": 3570665000,
+        "change": 1000000000
+       },
+       "10": {
+        "kr": 2770665000,
+        "change": 200000000
+       },
+       "11": {
+        "kr": 2570665000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "FNs utviklingsprogram (UNDP)",
+      "amounts": {
+       "3": {
+        "kr": 354400000,
+        "change": 0
+       },
+       "4": {
+        "kr": 354400000,
+        "change": 0
+       },
+       "5": {
+        "kr": 354400000,
+        "change": 0
+       },
+       "6": {
+        "kr": 35440000,
+        "change": -318960000
+       },
+       "7": {
+        "kr": 554400000,
+        "change": 200000000
+       },
+       "8": {
+        "kr": 354400000,
+        "change": 0
+       },
+       "9": {
+        "kr": 554400000,
+        "change": 200000000
+       },
+       "10": {
+        "kr": 454400000,
+        "change": 100000000
+       },
+       "11": {
+        "kr": 454400000,
+        "change": 100000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "FNs barnefond (UNICEF)",
+      "amounts": {
+       "3": {
+        "kr": 380600000,
+        "change": 0
+       },
+       "4": {
+        "kr": 380600000,
+        "change": 0
+       },
+       "5": {
+        "kr": 380600000,
+        "change": 0
+       },
+       "6": {
+        "kr": 380600000,
+        "change": 0
+       },
+       "7": {
+        "kr": 580600000,
+        "change": 200000000
+       },
+       "8": {
+        "kr": 380600000,
+        "change": 0
+       },
+       "9": {
+        "kr": 580600000,
+        "change": 200000000
+       },
+       "10": {
+        "kr": 480600000,
+        "change": 100000000
+       },
+       "11": {
+        "kr": 480600000,
+        "change": 100000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "FN og multilateralt samarbeid",
+      "amounts": {
+       "3": {
+        "kr": 11200000,
+        "change": 0
+       },
+       "4": {
+        "kr": 11200000,
+        "change": 0
+       },
+       "5": {
+        "kr": 11200000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -11200000
+       },
+       "7": {
+        "kr": 11200000,
+        "change": 0
+       },
+       "8": {
+        "kr": 11200000,
+        "change": 0
+       },
+       "9": {
+        "kr": 12000000,
+        "change": 800000
+       },
+       "10": {
+        "kr": 11200000,
+        "change": 0
+       },
+       "11": {
+        "kr": 11200000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Verdensbanken",
+      "amounts": {
+       "3": {
+        "kr": 1271109000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1271109000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1271109000,
+        "change": 0
+       },
+       "6": {
+        "kr": 671109000,
+        "change": -600000000
+       },
+       "7": {
+        "kr": 771109000,
+        "change": -500000000
+       },
+       "8": {
+        "kr": 635554000,
+        "change": -635555000
+       },
+       "9": {
+        "kr": 2500000000,
+        "change": 1228891000
+       },
+       "10": {
+        "kr": 1271109000,
+        "change": 0
+       },
+       "11": {
+        "kr": 1471109000,
+        "change": 200000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Regionale banker og fond",
+      "amounts": {
+       "3": {
+        "kr": 1143100000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1143100000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1143100000,
+        "change": 0
+       },
+       "6": {
+        "kr": 571550000,
+        "change": -571550000
+       },
+       "7": {
+        "kr": 643100000,
+        "change": -500000000
+       },
+       "8": {
+        "kr": 571550000,
+        "change": -571550000
+       },
+       "9": {
+        "kr": 1750000000,
+        "change": 606900000
+       },
+       "10": {
+        "kr": 1143100000,
+        "change": 0
+       },
+       "11": {
+        "kr": 1143100000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Gjeldslette",
+      "amounts": {
+       "3": {
+        "kr": 482730000,
+        "change": 0
+       },
+       "4": {
+        "kr": 482730000,
+        "change": 0
+       },
+       "5": {
+        "kr": 482730000,
+        "change": 0
+       },
+       "6": {
+        "kr": 96546000,
+        "change": -386184000
+       },
+       "7": {
+        "kr": 482730000,
+        "change": 0
+       },
+       "8": {
+        "kr": 482730000,
+        "change": 0
+       },
+       "9": {
+        "kr": 482730000,
+        "change": 0
+       },
+       "10": {
+        "kr": 482730000,
+        "change": 0
+       },
+       "11": {
+        "kr": 482730000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 2703135000,
+        "change": 0
+       },
+       "4": {
+        "kr": 2703135000,
+        "change": 0
+       },
+       "5": {
+        "kr": 2703135000,
+        "change": 0
+       },
+       "6": {
+        "kr": 270314000,
+        "change": -2432821000
+       },
+       "7": {
+        "kr": 2703135000,
+        "change": 0
+       },
+       "8": {
+        "kr": 2703135000,
+        "change": 0
+       },
+       "9": {
+        "kr": 2703135000,
+        "change": 0
+       },
+       "10": {
+        "kr": 1921135000,
+        "change": -782000000
+       },
+       "11": {
+        "kr": 2703135000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "50",
+      "formal": "Tilskudd",
+      "amounts": {
+       "3": {
+        "kr": 569562000,
+        "change": 0
+       },
+       "4": {
+        "kr": 571062000,
+        "change": 1500000
+       },
+       "5": {
+        "kr": 569562000,
+        "change": 0
+       },
+       "6": {
+        "kr": 569562000,
+        "change": 0
+       },
+       "7": {
+        "kr": 571562000,
+        "change": 2000000
+       },
+       "8": {
+        "kr": 569562000,
+        "change": 0
+       },
+       "9": {
+        "kr": 569562000,
+        "change": 0
+       },
+       "10": {
+        "kr": 570962000,
+        "change": 1400000
+       },
+       "11": {
+        "kr": 574562000,
+        "change": 5000000
+       }
+      }
+     }
+    ],
+    "inntekter": []
+   },
+   "check_failures": []
+  },
+  {
+   "document": "Innst. 7 S (2025-2026) - stortinget.no",
+   "number": 7,
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-007s/?all=true",
+   "rammeomrade": 8,
+   "unit": "tusen kroner",
+   "columns": {
+    "3": {
+     "kind": "government"
+    },
+    "4": {
+     "kind": "forlik",
+     "parties": [
+      "ap",
+      "sv",
+      "sp",
+      "r",
+      "mdg"
+     ]
+    },
+    "5": {
+     "kind": "party",
+     "party": "h"
+    },
+    "6": {
+     "kind": "party",
+     "party": "frp"
+    },
+    "7": {
+     "kind": "party",
+     "party": "sv"
+    },
+    "8": {
+     "kind": "party",
+     "party": "r"
+    },
+    "9": {
+     "kind": "party",
+     "party": "mdg"
+    },
+    "10": {
+     "kind": "party",
+     "party": "krf"
+    },
+    "11": {
+     "kind": "party",
+     "party": "v"
+    }
+   },
+   "sums": {},
+   "posts": {
+    "utgifter": [
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 878157000,
+        "change": 0
+       },
+       "4": {
+        "kr": 875657000,
+        "change": -2500000
+       },
+       "5": {
+        "kr": 878157000,
+        "change": 0
+       },
+       "6": {
+        "kr": 878157000,
+        "change": 0
+       },
+       "7": {
+        "kr": 878157000,
+        "change": 0
+       },
+       "8": {
+        "kr": 914057000,
+        "change": 35900000
+       },
+       "9": {
+        "kr": 878157000,
+        "change": 0
+       },
+       "10": {
+        "kr": 878157000,
+        "change": 0
+       },
+       "11": {
+        "kr": 878157000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "53",
+      "formal": "Risikokapital, NATO innovasjonsfond",
+      "amounts": {
+       "3": {
+        "kr": 15092000,
+        "change": 0
+       },
+       "4": {
+        "kr": 15092000,
+        "change": 0
+       },
+       "5": {
+        "kr": 15092000,
+        "change": 0
+       },
+       "6": {
+        "kr": 15092000,
+        "change": 0
+       },
+       "7": {
+        "kr": 92000,
+        "change": -15000000
+       },
+       "8": {
+        "kr": 0,
+        "change": -15092000
+       },
+       "9": {
+        "kr": 15092000,
+        "change": 0
+       },
+       "10": {
+        "kr": 15092000,
+        "change": 0
+       },
+       "11": {
+        "kr": 15092000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Overføringer til andre",
+      "amounts": {
+       "3": {
+        "kr": 99195000,
+        "change": 0
+       },
+       "4": {
+        "kr": 101195000,
+        "change": 2000000
+       },
+       "5": {
+        "kr": 99195000,
+        "change": 0
+       },
+       "6": {
+        "kr": 99195000,
+        "change": 0
+       },
+       "7": {
+        "kr": 99195000,
+        "change": 0
+       },
+       "8": {
+        "kr": 162345000,
+        "change": 63150000
+       },
+       "9": {
+        "kr": 99195000,
+        "change": 0
+       },
+       "10": {
+        "kr": 99195000,
+        "change": 0
+       },
+       "11": {
+        "kr": 99195000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "78",
+      "formal": "Norges tilskudd til NATOs og internasjonale driftsbudsjetter",
+      "amounts": {
+       "3": {
+        "kr": 1780231000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1780231000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1780231000,
+        "change": 0
+       },
+       "6": {
+        "kr": 1780231000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1480231000,
+        "change": -300000000
+       },
+       "8": {
+        "kr": 672271000,
+        "change": -1107960000
+       },
+       "9": {
+        "kr": 1780231000,
+        "change": 0
+       },
+       "10": {
+        "kr": 1780231000,
+        "change": 0
+       },
+       "11": {
+        "kr": 1915231000,
+        "change": 135000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 8625617000,
+        "change": 0
+       },
+       "4": {
+        "kr": 8625617000,
+        "change": 0
+       },
+       "5": {
+        "kr": 8625617000,
+        "change": 0
+       },
+       "6": {
+        "kr": 8625617000,
+        "change": 0
+       },
+       "7": {
+        "kr": 8625617000,
+        "change": 0
+       },
+       "8": {
+        "kr": 8883617000,
+        "change": 258000000
+       },
+       "9": {
+        "kr": 8625617000,
+        "change": 0
+       },
+       "10": {
+        "kr": 8625617000,
+        "change": 0
+       },
+       "11": {
+        "kr": 8625617000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 49165997000,
+        "change": 0
+       },
+       "4": {
+        "kr": 49165997000,
+        "change": 0
+       },
+       "5": {
+        "kr": 50165997000,
+        "change": 1000000000
+       },
+       "6": {
+        "kr": 50165997000,
+        "change": 1000000000
+       },
+       "7": {
+        "kr": 50195997000,
+        "change": 1030000000
+       },
+       "8": {
+        "kr": 49698644000,
+        "change": 532647000
+       },
+       "9": {
+        "kr": 49165997000,
+        "change": 0
+       },
+       "10": {
+        "kr": 49165997000,
+        "change": 0
+       },
+       "11": {
+        "kr": 49335997000,
+        "change": 170000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Overføringer til andre",
+      "amounts": {
+       "3": {
+        "kr": 51282000,
+        "change": 0
+       },
+       "4": {
+        "kr": 51282000,
+        "change": 0
+       },
+       "5": {
+        "kr": 51282000,
+        "change": 0
+       },
+       "6": {
+        "kr": 51282000,
+        "change": 0
+       },
+       "7": {
+        "kr": 61282000,
+        "change": 10000000
+       },
+       "8": {
+        "kr": 51282000,
+        "change": 0
+       },
+       "9": {
+        "kr": 51282000,
+        "change": 0
+       },
+       "10": {
+        "kr": 51282000,
+        "change": 0
+       },
+       "11": {
+        "kr": 51282000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 185784000,
+        "change": 0
+       },
+       "4": {
+        "kr": 199784000,
+        "change": 14000000
+       },
+       "5": {
+        "kr": 185784000,
+        "change": 0
+       },
+       "6": {
+        "kr": 185784000,
+        "change": 0
+       },
+       "7": {
+        "kr": 185784000,
+        "change": 0
+       },
+       "8": {
+        "kr": 185784000,
+        "change": 0
+       },
+       "9": {
+        "kr": 185784000,
+        "change": 0
+       },
+       "10": {
+        "kr": 185784000,
+        "change": 0
+       },
+       "11": {
+        "kr": 185784000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Overføringer til andre",
+      "amounts": {
+       "3": {
+        "kr": 2668000,
+        "change": 0
+       },
+       "4": {
+        "kr": 5668000,
+        "change": 3000000
+       },
+       "5": {
+        "kr": 2668000,
+        "change": 0
+       },
+       "6": {
+        "kr": 2668000,
+        "change": 0
+       },
+       "7": {
+        "kr": 2668000,
+        "change": 0
+       },
+       "8": {
+        "kr": 2668000,
+        "change": 0
+       },
+       "9": {
+        "kr": 2668000,
+        "change": 0
+       },
+       "10": {
+        "kr": 2668000,
+        "change": 0
+       },
+       "11": {
+        "kr": 2668000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "44",
+      "formal": "Fellesfinansierte investeringer, nasjonalfinansiert andel",
+      "amounts": {
+       "3": {
+        "kr": 316133000,
+        "change": 0
+       },
+       "4": {
+        "kr": 316133000,
+        "change": 0
+       },
+       "5": {
+        "kr": 316133000,
+        "change": 0
+       },
+       "6": {
+        "kr": 316133000,
+        "change": 0
+       },
+       "7": {
+        "kr": 296133000,
+        "change": -20000000
+       },
+       "8": {
+        "kr": 316133000,
+        "change": 0
+       },
+       "9": {
+        "kr": 316133000,
+        "change": 0
+       },
+       "10": {
+        "kr": 316133000,
+        "change": 0
+       },
+       "11": {
+        "kr": 316133000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "45",
+      "formal": "Større utstyrsanskaffelser og vedlikehold",
+      "amounts": {
+       "3": {
+        "kr": 34295093000,
+        "change": 0
+       },
+       "4": {
+        "kr": 34295093000,
+        "change": 0
+       },
+       "5": {
+        "kr": 34395093000,
+        "change": 100000000
+       },
+       "6": {
+        "kr": 34295093000,
+        "change": 0
+       },
+       "7": {
+        "kr": 33590093000,
+        "change": -705000000
+       },
+       "8": {
+        "kr": 34979057000,
+        "change": 683964000
+       },
+       "9": {
+        "kr": 34295093000,
+        "change": 0
+       },
+       "10": {
+        "kr": 34295093000,
+        "change": 0
+       },
+       "11": {
+        "kr": 34000093000,
+        "change": -295000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Fellesfinansierte investeringer, Norges tilskudd til NATOs investeringsprogram for sikkerhet",
+      "amounts": {
+       "3": {
+        "kr": 450609000,
+        "change": 0
+       },
+       "4": {
+        "kr": 450609000,
+        "change": 0
+       },
+       "5": {
+        "kr": 450609000,
+        "change": 0
+       },
+       "6": {
+        "kr": 450609000,
+        "change": 0
+       },
+       "7": {
+        "kr": 450609000,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": -450609000
+       },
+       "9": {
+        "kr": 450609000,
+        "change": 0
+       },
+       "10": {
+        "kr": 450609000,
+        "change": 0
+       },
+       "11": {
+        "kr": 450609000,
+        "change": 0
+       }
+      }
+     }
+    ],
+    "inntekter": [
+     {
+      "kap": "",
+      "post": "45",
+      "formal": "Større utstyrsanskaffelser og vedlikehold, inntekter",
+      "amounts": {
+       "3": {
+        "kr": 1024844000,
+        "change": 0
+       },
+       "4": {
+        "kr": 4324844000,
+        "change": 3300000000
+       },
+       "5": {
+        "kr": 4324844000,
+        "change": 3300000000
+       },
+       "6": {
+        "kr": 4324844000,
+        "change": 3300000000
+       },
+       "7": {
+        "kr": 1024844000,
+        "change": 0
+       },
+       "8": {
+        "kr": 1024844000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1024844000,
+        "change": 0
+       },
+       "10": {
+        "kr": 1024844000,
+        "change": 0
+       },
+       "11": {
+        "kr": 4324844000,
+        "change": 3300000000
        }
       }
      }
@@ -9561,6 +14759,137 @@
       }
      }
     ]
+   },
+   "check_failures": []
+  },
+  {
+   "document": "Innst. 10 S (2025-2026) - stortinget.no",
+   "number": 10,
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-010s/?all=true",
+   "rammeomrade": 14,
+   "unit": "tusen kroner",
+   "columns": {
+    "3": {
+     "kind": "government"
+    },
+    "4": {
+     "kind": "forlik",
+     "parties": [
+      "ap",
+      "sv",
+      "sp",
+      "r",
+      "mdg"
+     ]
+    },
+    "5": {
+     "kind": "party",
+     "party": "frp"
+    },
+    "6": {
+     "kind": "party",
+     "party": "h"
+    },
+    "7": {
+     "kind": "party",
+     "party": "sv"
+    },
+    "8": {
+     "kind": "party",
+     "party": "r"
+    },
+    "9": {
+     "kind": "party",
+     "party": "mdg"
+    },
+    "10": {
+     "kind": "party",
+     "party": "krf"
+    }
+   },
+   "sums": {},
+   "posts": {
+    "utgifter": [
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 35793000,
+        "change": 0
+       },
+       "4": {
+        "kr": 35793000,
+        "change": 0
+       },
+       "5": {
+        "kr": 17793000,
+        "change": -18000000
+       },
+       "6": {
+        "kr": 31322000,
+        "change": -4471000
+       },
+       "7": {
+        "kr": 35793000,
+        "change": 0
+       },
+       "8": {
+        "kr": 35793000,
+        "change": 0
+       },
+       "9": {
+        "kr": 35793000,
+        "change": 0
+       },
+       "10": {
+        "kr": 35793000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 687801000,
+        "change": 0
+       },
+       "4": {
+        "kr": 679801000,
+        "change": -8000000
+       },
+       "5": {
+        "kr": 687801000,
+        "change": 0
+       },
+       "6": {
+        "kr": 667801000,
+        "change": -20000000
+       },
+       "7": {
+        "kr": 687801000,
+        "change": 0
+       },
+       "8": {
+        "kr": 687801000,
+        "change": 0
+       },
+       "9": {
+        "kr": 687801000,
+        "change": 0
+       },
+       "10": {
+        "kr": 687801000,
+        "change": 0
+       }
+      }
+     }
+    ],
+    "inntekter": []
    },
    "check_failures": []
   },
@@ -20840,6 +26169,2801 @@
        "8": {
         "kr": 29450000,
         "change": 0
+       }
+      }
+     }
+    ]
+   },
+   "check_failures": []
+  },
+  {
+   "document": "Innst. 16 S (2025-2026) - stortinget.no",
+   "number": 16,
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-016s/?all=true",
+   "rammeomrade": 1,
+   "unit": "tusen kroner",
+   "columns": {
+    "3": {
+     "kind": "government"
+    },
+    "4": {
+     "kind": "forlik",
+     "parties": [
+      "ap",
+      "sv",
+      "sp",
+      "r",
+      "mdg"
+     ]
+    },
+    "5": {
+     "kind": "party",
+     "party": "frp"
+    },
+    "6": {
+     "kind": "party",
+     "party": "h"
+    },
+    "7": {
+     "kind": "party",
+     "party": "sv"
+    },
+    "8": {
+     "kind": "party",
+     "party": "r"
+    },
+    "9": {
+     "kind": "party",
+     "party": "mdg"
+    }
+   },
+   "sums": {},
+   "posts": {
+    "utgifter": [
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Apanasje",
+      "amounts": {
+       "3": {
+        "kr": 16234000,
+        "change": 0
+       },
+       "4": {
+        "kr": 16234000,
+        "change": 0
+       },
+       "5": {
+        "kr": 16234000,
+        "change": 0
+       },
+       "6": {
+        "kr": 16234000,
+        "change": 0
+       },
+       "7": {
+        "kr": 11234000,
+        "change": -5000000
+       },
+       "8": {
+        "kr": 10834000,
+        "change": -5400000
+       },
+       "9": {
+        "kr": 16234000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "50",
+      "formal": "Det kongelige hoff",
+      "amounts": {
+       "3": {
+        "kr": 277963000,
+        "change": 0
+       },
+       "4": {
+        "kr": 277963000,
+        "change": 0
+       },
+       "5": {
+        "kr": 277963000,
+        "change": 0
+       },
+       "6": {
+        "kr": 277963000,
+        "change": 0
+       },
+       "7": {
+        "kr": 257963000,
+        "change": -20000000
+       },
+       "8": {
+        "kr": 250163000,
+        "change": -27800000
+       },
+       "9": {
+        "kr": 277963000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Apanasje",
+      "amounts": {
+       "3": {
+        "kr": 13513000,
+        "change": 0
+       },
+       "4": {
+        "kr": 13513000,
+        "change": 0
+       },
+       "5": {
+        "kr": 13513000,
+        "change": 0
+       },
+       "6": {
+        "kr": 13513000,
+        "change": 0
+       },
+       "7": {
+        "kr": 8513000,
+        "change": -5000000
+       },
+       "8": {
+        "kr": 9013000,
+        "change": -4500000
+       },
+       "9": {
+        "kr": 13513000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 119857000,
+        "change": 0
+       },
+       "4": {
+        "kr": 119657000,
+        "change": -200000
+       },
+       "5": {
+        "kr": 119857000,
+        "change": 0
+       },
+       "6": {
+        "kr": 119857000,
+        "change": 0
+       },
+       "7": {
+        "kr": 103857000,
+        "change": -16000000
+       },
+       "8": {
+        "kr": 119857000,
+        "change": 0
+       },
+       "9": {
+        "kr": 119857000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 185886000,
+        "change": 0
+       },
+       "4": {
+        "kr": 185886000,
+        "change": 0
+       },
+       "5": {
+        "kr": 185886000,
+        "change": 0
+       },
+       "6": {
+        "kr": 185886000,
+        "change": 0
+       },
+       "7": {
+        "kr": 170886000,
+        "change": -15000000
+       },
+       "8": {
+        "kr": 175386000,
+        "change": -10500000
+       },
+       "9": {
+        "kr": 185886000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Sentrale organisasjoner",
+      "amounts": {
+       "3": {
+        "kr": 403887000,
+        "change": 0
+       },
+       "4": {
+        "kr": 423887000,
+        "change": 20000000
+       },
+       "5": {
+        "kr": 403887000,
+        "change": 0
+       },
+       "6": {
+        "kr": 403887000,
+        "change": 0
+       },
+       "7": {
+        "kr": 403887000,
+        "change": 0
+       },
+       "8": {
+        "kr": 403887000,
+        "change": 0
+       },
+       "9": {
+        "kr": 403887000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 250149000,
+        "change": 0
+       },
+       "4": {
+        "kr": 249149000,
+        "change": -1000000
+       },
+       "5": {
+        "kr": 250149000,
+        "change": 0
+       },
+       "6": {
+        "kr": 250149000,
+        "change": 0
+       },
+       "7": {
+        "kr": 250149000,
+        "change": 0
+       },
+       "8": {
+        "kr": 250149000,
+        "change": 0
+       },
+       "9": {
+        "kr": 250149000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 774261000,
+        "change": 0
+       },
+       "4": {
+        "kr": 774261000,
+        "change": 0
+       },
+       "5": {
+        "kr": 774261000,
+        "change": 0
+       },
+       "6": {
+        "kr": 751061000,
+        "change": -23200000
+       },
+       "7": {
+        "kr": 774261000,
+        "change": 0
+       },
+       "8": {
+        "kr": 774261000,
+        "change": 0
+       },
+       "9": {
+        "kr": 774261000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "30",
+      "formal": "Ombygging av Ring 1",
+      "amounts": {
+       "3": {
+        "kr": 1045000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1045000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1045000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 1045000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 0,
+        "change": -1045000000
+       },
+       "8": {
+        "kr": 1045000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1045000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 466729000,
+        "change": 0
+       },
+       "4": {
+        "kr": 466729000,
+        "change": 0
+       },
+       "5": {
+        "kr": 466729000,
+        "change": 0
+       },
+       "6": {
+        "kr": 436429000,
+        "change": -30300000
+       },
+       "7": {
+        "kr": 466729000,
+        "change": 0
+       },
+       "8": {
+        "kr": 466729000,
+        "change": 0
+       },
+       "9": {
+        "kr": 466729000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "22",
+      "formal": "Større IKT-/digitaliseringsprosjekter",
+      "amounts": {
+       "3": {
+        "kr": 657747000,
+        "change": 0
+       },
+       "4": {
+        "kr": 617747000,
+        "change": -40000000
+       },
+       "5": {
+        "kr": 657747000,
+        "change": 0
+       },
+       "6": {
+        "kr": 657747000,
+        "change": 0
+       },
+       "7": {
+        "kr": 657747000,
+        "change": 0
+       },
+       "8": {
+        "kr": 657747000,
+        "change": 0
+       },
+       "9": {
+        "kr": 657747000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 2565444000,
+        "change": 0
+       },
+       "4": {
+        "kr": 2565444000,
+        "change": 0
+       },
+       "5": {
+        "kr": 2165444000,
+        "change": -400000000
+       },
+       "6": {
+        "kr": 2437444000,
+        "change": -128000000
+       },
+       "7": {
+        "kr": 2580444000,
+        "change": 15000000
+       },
+       "8": {
+        "kr": 2565444000,
+        "change": 0
+       },
+       "9": {
+        "kr": 2625444000,
+        "change": 60000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "30",
+      "formal": "Prosjektering av bygg",
+      "amounts": {
+       "3": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 15000000,
+        "change": -45000000
+       },
+       "6": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 60000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 60000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "36",
+      "formal": "Kunstnerisk utsmykking",
+      "amounts": {
+       "3": {
+        "kr": 54613000,
+        "change": 0
+       },
+       "4": {
+        "kr": 54613000,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": -54613000
+       },
+       "6": {
+        "kr": 54613000,
+        "change": 0
+       },
+       "7": {
+        "kr": 54613000,
+        "change": 0
+       },
+       "8": {
+        "kr": 54613000,
+        "change": 0
+       },
+       "9": {
+        "kr": 54613000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 43889000,
+        "change": 0
+       },
+       "4": {
+        "kr": 43889000,
+        "change": 0
+       },
+       "5": {
+        "kr": 43889000,
+        "change": 0
+       },
+       "6": {
+        "kr": 43889000,
+        "change": 0
+       },
+       "7": {
+        "kr": 43889000,
+        "change": 0
+       },
+       "8": {
+        "kr": 32889000,
+        "change": -11000000
+       },
+       "9": {
+        "kr": 43889000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "45",
+      "formal": "Større utstyrsanskaffelser og vedlikehold",
+      "amounts": {
+       "3": {
+        "kr": 45992000,
+        "change": 0
+       },
+       "4": {
+        "kr": 45992000,
+        "change": 0
+       },
+       "5": {
+        "kr": 45992000,
+        "change": 0
+       },
+       "6": {
+        "kr": 45992000,
+        "change": 0
+       },
+       "7": {
+        "kr": 45992000,
+        "change": 0
+       },
+       "8": {
+        "kr": 34492000,
+        "change": -11500000
+       },
+       "9": {
+        "kr": 45992000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 183694000,
+        "change": 0
+       },
+       "4": {
+        "kr": 180194000,
+        "change": -3500000
+       },
+       "5": {
+        "kr": 183694000,
+        "change": 0
+       },
+       "6": {
+        "kr": 183694000,
+        "change": 0
+       },
+       "7": {
+        "kr": 183694000,
+        "change": 0
+       },
+       "8": {
+        "kr": 183694000,
+        "change": 0
+       },
+       "9": {
+        "kr": 183694000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 21320000,
+        "change": 0
+       },
+       "4": {
+        "kr": 21320000,
+        "change": 0
+       },
+       "5": {
+        "kr": 21320000,
+        "change": 0
+       },
+       "6": {
+        "kr": 26320000,
+        "change": 5000000
+       },
+       "7": {
+        "kr": 21320000,
+        "change": 0
+       },
+       "8": {
+        "kr": 21320000,
+        "change": 0
+       },
+       "9": {
+        "kr": 21320000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "26",
+      "formal": "Stimulab",
+      "amounts": {
+       "3": {
+        "kr": 5486000,
+        "change": 0
+       },
+       "4": {
+        "kr": 5486000,
+        "change": 0
+       },
+       "5": {
+        "kr": 5486000,
+        "change": 0
+       },
+       "6": {
+        "kr": 10086000,
+        "change": 4600000
+       },
+       "7": {
+        "kr": 5486000,
+        "change": 0
+       },
+       "8": {
+        "kr": 5486000,
+        "change": 0
+       },
+       "9": {
+        "kr": 5486000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "28",
+      "formal": "KI Norge",
+      "amounts": {
+       "3": {
+        "kr": 10000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 10000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": -10000000
+       },
+       "6": {
+        "kr": 10000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 10000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 10000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 10000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "22",
+      "formal": "Utvikling, gjennomføring og samordning av IT- og ekompolitikken",
+      "amounts": {
+       "3": {
+        "kr": 26574000,
+        "change": 0
+       },
+       "4": {
+        "kr": 26574000,
+        "change": 0
+       },
+       "5": {
+        "kr": 26574000,
+        "change": 0
+       },
+       "6": {
+        "kr": 26574000,
+        "change": 0
+       },
+       "7": {
+        "kr": 26574000,
+        "change": 0
+       },
+       "8": {
+        "kr": 27574000,
+        "change": 1000000
+       },
+       "9": {
+        "kr": 26574000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "60",
+      "formal": "Bredbåndsutbygging",
+      "amounts": {
+       "3": {
+        "kr": 34110000,
+        "change": 0
+       },
+       "4": {
+        "kr": 159110000,
+        "change": 125000000
+       },
+       "5": {
+        "kr": 34110000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -34110000
+       },
+       "7": {
+        "kr": 34110000,
+        "change": 0
+       },
+       "8": {
+        "kr": 34110000,
+        "change": 0
+       },
+       "9": {
+        "kr": 34110000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Telesikkerhet og -beredskap",
+      "amounts": {
+       "3": {
+        "kr": 421161000,
+        "change": 0
+       },
+       "4": {
+        "kr": 401161000,
+        "change": -20000000
+       },
+       "5": {
+        "kr": 421161000,
+        "change": 0
+       },
+       "6": {
+        "kr": 421161000,
+        "change": 0
+       },
+       "7": {
+        "kr": 421161000,
+        "change": 0
+       },
+       "8": {
+        "kr": 421161000,
+        "change": 0
+       },
+       "9": {
+        "kr": 421161000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "24",
+      "formal": "Driftsresultat:",
+      "amounts": {
+       "3": {
+        "kr": -397642000,
+        "change": 0
+       },
+       "4": {
+        "kr": -399142000,
+        "change": -1500000
+       },
+       "5": {
+        "kr": -397642000,
+        "change": 0
+       },
+       "6": {
+        "kr": -397642000,
+        "change": 0
+       },
+       "7": {
+        "kr": -397642000,
+        "change": 0
+       },
+       "8": {
+        "kr": -397642000,
+        "change": 0
+       },
+       "9": {
+        "kr": -397642000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "30",
+      "formal": "Prosjektering av bygg",
+      "amounts": {
+       "3": {
+        "kr": 302300000,
+        "change": 0
+       },
+       "4": {
+        "kr": 302300000,
+        "change": 0
+       },
+       "5": {
+        "kr": 202300000,
+        "change": -100000000
+       },
+       "6": {
+        "kr": 302300000,
+        "change": 0
+       },
+       "7": {
+        "kr": 202300000,
+        "change": -100000000
+       },
+       "8": {
+        "kr": 212300000,
+        "change": -90000000
+       },
+       "9": {
+        "kr": 302300000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "45",
+      "formal": "Større utstyrsanskaffelser og vedlikehold",
+      "amounts": {
+       "3": {
+        "kr": 381779000,
+        "change": 0
+       },
+       "4": {
+        "kr": 381779000,
+        "change": 0
+       },
+       "5": {
+        "kr": 381779000,
+        "change": 0
+       },
+       "6": {
+        "kr": 295779000,
+        "change": -86000000
+       },
+       "7": {
+        "kr": 381779000,
+        "change": 0
+       },
+       "8": {
+        "kr": 381779000,
+        "change": 0
+       },
+       "9": {
+        "kr": 381779000,
+        "change": 0
+       }
+      }
+     }
+    ],
+    "inntekter": [
+     {
+      "kap": "",
+      "post": "40",
+      "formal": "Salgsinntekter",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 1200000000,
+        "change": 1200000000
+       },
+       "7": {
+        "kr": 0,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     }
+    ]
+   },
+   "check_failures": []
+  },
+  {
+   "document": "Innst. 16 S (2025-2026) - stortinget.no",
+   "number": 16,
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-016s/?all=true",
+   "rammeomrade": 6,
+   "unit": "tusen kroner",
+   "columns": {
+    "3": {
+     "kind": "government"
+    },
+    "4": {
+     "kind": "forlik",
+     "parties": [
+      "ap",
+      "sv",
+      "sp",
+      "r",
+      "mdg"
+     ]
+    },
+    "5": {
+     "kind": "party",
+     "party": "frp"
+    },
+    "6": {
+     "kind": "party",
+     "party": "h"
+    },
+    "7": {
+     "kind": "party",
+     "party": "sv"
+    },
+    "8": {
+     "kind": "party",
+     "party": "r"
+    },
+    "9": {
+     "kind": "party",
+     "party": "mdg"
+    }
+   },
+   "sums": {},
+   "posts": {
+    "utgifter": [
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 1419285000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1419285000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1002285000,
+        "change": -417000000
+       },
+       "6": {
+        "kr": 1479285000,
+        "change": 60000000
+       },
+       "7": {
+        "kr": 1503285000,
+        "change": 84000000
+       },
+       "8": {
+        "kr": 1344285000,
+        "change": -75000000
+       },
+       "9": {
+        "kr": 1509837000,
+        "change": 90552000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter, asylmottak",
+      "amounts": {
+       "3": {
+        "kr": 2284327000,
+        "change": 0
+       },
+       "4": {
+        "kr": 2284327000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1454327000,
+        "change": -830000000
+       },
+       "6": {
+        "kr": 2284327000,
+        "change": 0
+       },
+       "7": {
+        "kr": 2264327000,
+        "change": -20000000
+       },
+       "8": {
+        "kr": 2284327000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1931327000,
+        "change": -353000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "60",
+      "formal": "Tilskudd til vertskommuner for asylmottak",
+      "amounts": {
+       "3": {
+        "kr": 352257000,
+        "change": 0
+       },
+       "4": {
+        "kr": 352257000,
+        "change": 0
+       },
+       "5": {
+        "kr": 231257000,
+        "change": -121000000
+       },
+       "6": {
+        "kr": 352257000,
+        "change": 0
+       },
+       "7": {
+        "kr": 372757000,
+        "change": 20500000
+       },
+       "8": {
+        "kr": 352257000,
+        "change": 0
+       },
+       "9": {
+        "kr": 341257000,
+        "change": -11000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Stønader til beboere i asylmottak",
+      "amounts": {
+       "3": {
+        "kr": 502172000,
+        "change": 0
+       },
+       "4": {
+        "kr": 502172000,
+        "change": 0
+       },
+       "5": {
+        "kr": 321172000,
+        "change": -181000000
+       },
+       "6": {
+        "kr": 502172000,
+        "change": 0
+       },
+       "7": {
+        "kr": 499172000,
+        "change": -3000000
+       },
+       "8": {
+        "kr": 502172000,
+        "change": 0
+       },
+       "9": {
+        "kr": 466172000,
+        "change": -36000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Tilskudd til aktivitetstilbud for barn i asylmottak",
+      "amounts": {
+       "3": {
+        "kr": 16971000,
+        "change": 0
+       },
+       "4": {
+        "kr": 16971000,
+        "change": 0
+       },
+       "5": {
+        "kr": 16971000,
+        "change": 0
+       },
+       "6": {
+        "kr": 16971000,
+        "change": 0
+       },
+       "7": {
+        "kr": 26971000,
+        "change": 10000000
+       },
+       "8": {
+        "kr": 26971000,
+        "change": 10000000
+       },
+       "9": {
+        "kr": 16971000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Beskyttelse til flyktninger utenfor Norge mv., støttetiltak",
+      "amounts": {
+       "3": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "4": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "5": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "6": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "7": {
+        "kr": 30136000,
+        "change": 19636000
+       },
+       "8": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "9": {
+        "kr": 31668000,
+        "change": 21168000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Reiseutgifter for flyktninger fra utlandet",
+      "amounts": {
+       "3": {
+        "kr": 4476000,
+        "change": 0
+       },
+       "4": {
+        "kr": 4476000,
+        "change": 0
+       },
+       "5": {
+        "kr": 4476000,
+        "change": 0
+       },
+       "6": {
+        "kr": 4476000,
+        "change": 0
+       },
+       "7": {
+        "kr": 58385000,
+        "change": 53909000
+       },
+       "8": {
+        "kr": 4476000,
+        "change": 0
+       },
+       "9": {
+        "kr": 62590000,
+        "change": 58114000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 299697000,
+        "change": 0
+       },
+       "4": {
+        "kr": 299697000,
+        "change": 0
+       },
+       "5": {
+        "kr": 299697000,
+        "change": 0
+       },
+       "6": {
+        "kr": 299697000,
+        "change": 0
+       },
+       "7": {
+        "kr": 303697000,
+        "change": 4000000
+       },
+       "8": {
+        "kr": 299697000,
+        "change": 0
+       },
+       "9": {
+        "kr": 299697000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter, nemndbehandling mv.",
+      "amounts": {
+       "3": {
+        "kr": 7939000,
+        "change": 0
+       },
+       "4": {
+        "kr": 7939000,
+        "change": 0
+       },
+       "5": {
+        "kr": 7939000,
+        "change": 0
+       },
+       "6": {
+        "kr": 7939000,
+        "change": 0
+       },
+       "7": {
+        "kr": 27939000,
+        "change": 20000000
+       },
+       "8": {
+        "kr": 7939000,
+        "change": 0
+       },
+       "9": {
+        "kr": 7939000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 316223000,
+        "change": 0
+       },
+       "4": {
+        "kr": 315223000,
+        "change": -1000000
+       },
+       "5": {
+        "kr": 316223000,
+        "change": 0
+       },
+       "6": {
+        "kr": 316223000,
+        "change": 0
+       },
+       "7": {
+        "kr": 316223000,
+        "change": 0
+       },
+       "8": {
+        "kr": 316223000,
+        "change": 0
+       },
+       "9": {
+        "kr": 316223000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "21",
+      "formal": "Spesielle driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 54111000,
+        "change": 0
+       },
+       "4": {
+        "kr": 54111000,
+        "change": 0
+       },
+       "5": {
+        "kr": 53111000,
+        "change": -1000000
+       },
+       "6": {
+        "kr": 54111000,
+        "change": 0
+       },
+       "7": {
+        "kr": 54111000,
+        "change": 0
+       },
+       "8": {
+        "kr": 54111000,
+        "change": 0
+       },
+       "9": {
+        "kr": 54111000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "50",
+      "formal": "Forskningssenter",
+      "amounts": {
+       "3": {
+        "kr": 10400000,
+        "change": 0
+       },
+       "4": {
+        "kr": 10400000,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": -10400000
+       },
+       "6": {
+        "kr": 10400000,
+        "change": 0
+       },
+       "7": {
+        "kr": 10400000,
+        "change": 0
+       },
+       "8": {
+        "kr": 10400000,
+        "change": 0
+       },
+       "9": {
+        "kr": 10400000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Diverse formål",
+      "amounts": {
+       "3": {
+        "kr": 3376000,
+        "change": 0
+       },
+       "4": {
+        "kr": 3376000,
+        "change": 0
+       },
+       "5": {
+        "kr": 3376000,
+        "change": 0
+       },
+       "6": {
+        "kr": 5376000,
+        "change": 2000000
+       },
+       "7": {
+        "kr": 3376000,
+        "change": 0
+       },
+       "8": {
+        "kr": 3376000,
+        "change": 0
+       },
+       "9": {
+        "kr": 4376000,
+        "change": 1000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "60",
+      "formal": "Kompetanse og arbeidskraft i distriktene",
+      "amounts": {
+       "3": {
+        "kr": 74674000,
+        "change": 0
+       },
+       "4": {
+        "kr": 74674000,
+        "change": 0
+       },
+       "5": {
+        "kr": 74674000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -74674000
+       },
+       "7": {
+        "kr": 74674000,
+        "change": 0
+       },
+       "8": {
+        "kr": 74674000,
+        "change": 0
+       },
+       "9": {
+        "kr": 74674000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "61",
+      "formal": "Mobiliserende og kvalifiserende næringsutvikling",
+      "amounts": {
+       "3": {
+        "kr": 793553000,
+        "change": 0
+       },
+       "4": {
+        "kr": 793553000,
+        "change": 0
+       },
+       "5": {
+        "kr": 793553000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -793553000
+       },
+       "7": {
+        "kr": 793553000,
+        "change": 0
+       },
+       "8": {
+        "kr": 793553000,
+        "change": 0
+       },
+       "9": {
+        "kr": 793553000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "63",
+      "formal": "Interreg, Arktis 2030 og det norske Barentssekretariatet",
+      "amounts": {
+       "3": {
+        "kr": 163400000,
+        "change": 0
+       },
+       "4": {
+        "kr": 170950000,
+        "change": 7550000
+       },
+       "5": {
+        "kr": 163400000,
+        "change": 0
+       },
+       "6": {
+        "kr": 163400000,
+        "change": 0
+       },
+       "7": {
+        "kr": 173400000,
+        "change": 10000000
+       },
+       "8": {
+        "kr": 165900000,
+        "change": 2500000
+       },
+       "9": {
+        "kr": 163400000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "65",
+      "formal": "Omstilling og utvikling i områder med særlige distriktsutfordringer",
+      "amounts": {
+       "3": {
+        "kr": 129000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 129000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 129000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 69000000,
+        "change": -60000000
+       },
+       "7": {
+        "kr": 129000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 129000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 129000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "66",
+      "formal": "Bygdevekstavtaler",
+      "amounts": {
+       "3": {
+        "kr": 73963000,
+        "change": 0
+       },
+       "4": {
+        "kr": 73963000,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": -73963000
+       },
+       "6": {
+        "kr": 0,
+        "change": -73963000
+       },
+       "7": {
+        "kr": 73963000,
+        "change": 0
+       },
+       "8": {
+        "kr": 73963000,
+        "change": 0
+       },
+       "9": {
+        "kr": 173963000,
+        "change": 100000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "69",
+      "formal": "Mobilisering til forskningsbasert innovasjon",
+      "amounts": {
+       "3": {
+        "kr": 6386000,
+        "change": 0
+       },
+       "4": {
+        "kr": 66586000,
+        "change": 60200000
+       },
+       "5": {
+        "kr": 6386000,
+        "change": 0
+       },
+       "6": {
+        "kr": 6386000,
+        "change": 0
+       },
+       "7": {
+        "kr": 6386000,
+        "change": 0
+       },
+       "8": {
+        "kr": 6386000,
+        "change": 0
+       },
+       "9": {
+        "kr": 66386000,
+        "change": 60000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Investeringstilskudd for store grønne investeringer",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 0,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 100000000,
+        "change": 100000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 39297000,
+        "change": 0
+       },
+       "4": {
+        "kr": 38797000,
+        "change": -500000
+       },
+       "5": {
+        "kr": 39297000,
+        "change": 0
+       },
+       "6": {
+        "kr": 39297000,
+        "change": 0
+       },
+       "7": {
+        "kr": 39297000,
+        "change": 0
+       },
+       "8": {
+        "kr": 39297000,
+        "change": 0
+       },
+       "9": {
+        "kr": 39297000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Merkur",
+      "amounts": {
+       "3": {
+        "kr": 79573000,
+        "change": 0
+       },
+       "4": {
+        "kr": 98573000,
+        "change": 19000000
+       },
+       "5": {
+        "kr": 79573000,
+        "change": 0
+       },
+       "6": {
+        "kr": 79573000,
+        "change": 0
+       },
+       "7": {
+        "kr": 79573000,
+        "change": 0
+       },
+       "8": {
+        "kr": 79573000,
+        "change": 0
+       },
+       "9": {
+        "kr": 82573000,
+        "change": 3000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "50",
+      "formal": "Samisk språk, kultur og samfunnsliv",
+      "amounts": {
+       "3": {
+        "kr": 772881000,
+        "change": 0
+       },
+       "4": {
+        "kr": 782881000,
+        "change": 10000000
+       },
+       "5": {
+        "kr": 472881000,
+        "change": -300000000
+       },
+       "6": {
+        "kr": 772881000,
+        "change": 0
+       },
+       "7": {
+        "kr": 932881000,
+        "change": 160000000
+       },
+       "8": {
+        "kr": 872881000,
+        "change": 100000000
+       },
+       "9": {
+        "kr": 822881000,
+        "change": 50000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "60",
+      "formal": "Romer",
+      "amounts": {
+       "3": {
+        "kr": 7475000,
+        "change": 0
+       },
+       "4": {
+        "kr": 7475000,
+        "change": 0
+       },
+       "5": {
+        "kr": 7475000,
+        "change": 0
+       },
+       "6": {
+        "kr": 7475000,
+        "change": 0
+       },
+       "7": {
+        "kr": 7475000,
+        "change": 0
+       },
+       "8": {
+        "kr": 7475000,
+        "change": 0
+       },
+       "9": {
+        "kr": 8475000,
+        "change": 1000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Nasjonale minoriteter",
+      "amounts": {
+       "3": {
+        "kr": 12433000,
+        "change": 0
+       },
+       "4": {
+        "kr": 12433000,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": -12433000
+       },
+       "6": {
+        "kr": 12433000,
+        "change": 0
+       },
+       "7": {
+        "kr": 19433000,
+        "change": 7000000
+       },
+       "8": {
+        "kr": 27433000,
+        "change": 15000000
+       },
+       "9": {
+        "kr": 15433000,
+        "change": 3000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Jødiske samfunn i Norge",
+      "amounts": {
+       "3": {
+        "kr": 17958000,
+        "change": 0
+       },
+       "4": {
+        "kr": 17958000,
+        "change": 0
+       },
+       "5": {
+        "kr": 17958000,
+        "change": 0
+       },
+       "6": {
+        "kr": 17958000,
+        "change": 0
+       },
+       "7": {
+        "kr": 18958000,
+        "change": 1000000
+       },
+       "8": {
+        "kr": 17958000,
+        "change": 0
+       },
+       "9": {
+        "kr": 19958000,
+        "change": 2000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Kvensk språk og kvensk/norskfinsk kultur",
+      "amounts": {
+       "3": {
+        "kr": 25120000,
+        "change": 0
+       },
+       "4": {
+        "kr": 25120000,
+        "change": 0
+       },
+       "5": {
+        "kr": 25120000,
+        "change": 0
+       },
+       "6": {
+        "kr": 25120000,
+        "change": 0
+       },
+       "7": {
+        "kr": 40120000,
+        "change": 15000000
+       },
+       "8": {
+        "kr": 25120000,
+        "change": 0
+       },
+       "9": {
+        "kr": 28120000,
+        "change": 3000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "75",
+      "formal": "Romanifolket/taterne",
+      "amounts": {
+       "3": {
+        "kr": 6264000,
+        "change": 0
+       },
+       "4": {
+        "kr": 6264000,
+        "change": 0
+       },
+       "5": {
+        "kr": 6264000,
+        "change": 0
+       },
+       "6": {
+        "kr": 6264000,
+        "change": 0
+       },
+       "7": {
+        "kr": 6264000,
+        "change": 0
+       },
+       "8": {
+        "kr": 6264000,
+        "change": 0
+       },
+       "9": {
+        "kr": 7264000,
+        "change": 1000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "70",
+      "formal": "Bostøtte",
+      "amounts": {
+       "3": {
+        "kr": 4280000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 4280000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 4280000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 4280000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 4280000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 4570000000,
+        "change": 290000000
+       },
+       "9": {
+        "kr": 4760000000,
+        "change": 480000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Etablering og tilpasning i distriktskommuner",
+      "amounts": {
+       "3": {
+        "kr": 11000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 11000000,
+        "change": 0
+       },
+       "5": {
+        "kr": 11000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": -11000000
+       },
+       "7": {
+        "kr": 11000000,
+        "change": 0
+       },
+       "8": {
+        "kr": 11000000,
+        "change": 0
+       },
+       "9": {
+        "kr": 11000000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "76",
+      "formal": "Utleieboliger",
+      "amounts": {
+       "3": {
+        "kr": 26664000,
+        "change": 0
+       },
+       "4": {
+        "kr": 26664000,
+        "change": 0
+       },
+       "5": {
+        "kr": 26664000,
+        "change": 0
+       },
+       "6": {
+        "kr": 126664000,
+        "change": 100000000
+       },
+       "7": {
+        "kr": 26664000,
+        "change": 0
+       },
+       "8": {
+        "kr": 26664000,
+        "change": 0
+       },
+       "9": {
+        "kr": 726664000,
+        "change": 700000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "78",
+      "formal": "Boligtiltak",
+      "amounts": {
+       "3": {
+        "kr": 39242000,
+        "change": 0
+       },
+       "4": {
+        "kr": 39242000,
+        "change": 0
+       },
+       "5": {
+        "kr": 39242000,
+        "change": 0
+       },
+       "6": {
+        "kr": 29242000,
+        "change": -10000000
+       },
+       "7": {
+        "kr": 39242000,
+        "change": 0
+       },
+       "8": {
+        "kr": 47242000,
+        "change": 8000000
+       },
+       "9": {
+        "kr": 339242000,
+        "change": 300000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "79",
+      "formal": "Ny boligsektor",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 255700000,
+        "change": 255700000
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 0,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "65",
+      "formal": "Områdesatsing i byer",
+      "amounts": {
+       "3": {
+        "kr": 144850000,
+        "change": 0
+       },
+       "4": {
+        "kr": 144850000,
+        "change": 0
+       },
+       "5": {
+        "kr": 144850000,
+        "change": 0
+       },
+       "6": {
+        "kr": 144850000,
+        "change": 0
+       },
+       "7": {
+        "kr": 144850000,
+        "change": 0
+       },
+       "8": {
+        "kr": 165850000,
+        "change": 21000000
+       },
+       "9": {
+        "kr": 144850000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "DOGA",
+      "amounts": {
+       "3": {
+        "kr": 51048000,
+        "change": 0
+       },
+       "4": {
+        "kr": 51048000,
+        "change": 0
+       },
+       "5": {
+        "kr": 51048000,
+        "change": 0
+       },
+       "6": {
+        "kr": 34218000,
+        "change": -16830000
+       },
+       "7": {
+        "kr": 51048000,
+        "change": 0
+       },
+       "8": {
+        "kr": 51048000,
+        "change": 0
+       },
+       "9": {
+        "kr": 51048000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Bolig- og områdeutvikling i byer",
+      "amounts": {
+       "3": {
+        "kr": 20527000,
+        "change": 0
+       },
+       "4": {
+        "kr": 20527000,
+        "change": 0
+       },
+       "5": {
+        "kr": 20527000,
+        "change": 0
+       },
+       "6": {
+        "kr": 20527000,
+        "change": 0
+       },
+       "7": {
+        "kr": 70527000,
+        "change": 50000000
+       },
+       "8": {
+        "kr": 20527000,
+        "change": 0
+       },
+       "9": {
+        "kr": 20527000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "81",
+      "formal": "Kompetansetiltak innen planlegging og geodata",
+      "amounts": {
+       "3": {
+        "kr": 10235000,
+        "change": 0
+       },
+       "4": {
+        "kr": 10235000,
+        "change": 0
+       },
+       "5": {
+        "kr": 10235000,
+        "change": 0
+       },
+       "6": {
+        "kr": 2035000,
+        "change": -8200000
+       },
+       "7": {
+        "kr": 10235000,
+        "change": 0
+       },
+       "8": {
+        "kr": 10235000,
+        "change": 0
+       },
+       "9": {
+        "kr": 10235000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 1105429000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1103929000,
+        "change": -1500000
+       },
+       "5": {
+        "kr": 1105429000,
+        "change": 0
+       },
+       "6": {
+        "kr": 1105429000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1105429000,
+        "change": 0
+       },
+       "8": {
+        "kr": 1105429000,
+        "change": 0
+       },
+       "9": {
+        "kr": 1105429000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "31",
+      "formal": "Nasjonalt marint grunnkart",
+      "amounts": {
+       "3": {
+        "kr": 0,
+        "change": 0
+       },
+       "4": {
+        "kr": 0,
+        "change": 0
+       },
+       "5": {
+        "kr": 0,
+        "change": 0
+       },
+       "6": {
+        "kr": 0,
+        "change": 0
+       },
+       "7": {
+        "kr": 0,
+        "change": 0
+       },
+       "8": {
+        "kr": 0,
+        "change": 0
+       },
+       "9": {
+        "kr": 40000000,
+        "change": 40000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "1",
+      "formal": "Driftsutgifter",
+      "amounts": {
+       "3": {
+        "kr": 363417000,
+        "change": 0
+       },
+       "4": {
+        "kr": 363417000,
+        "change": 0
+       },
+       "5": {
+        "kr": 327417000,
+        "change": -36000000
+       },
+       "6": {
+        "kr": 363417000,
+        "change": 0
+       },
+       "7": {
+        "kr": 380872000,
+        "change": 17455000
+       },
+       "8": {
+        "kr": 368417000,
+        "change": 5000000
+       },
+       "9": {
+        "kr": 382233000,
+        "change": 18816000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "60",
+      "formal": "Integreringstilskudd",
+      "amounts": {
+       "3": {
+        "kr": 17435182000,
+        "change": 0
+       },
+       "4": {
+        "kr": 17435182000,
+        "change": 0
+       },
+       "5": {
+        "kr": 13754182000,
+        "change": -3681000000
+       },
+       "6": {
+        "kr": 17435182000,
+        "change": 0
+       },
+       "7": {
+        "kr": 18025364000,
+        "change": 590182000
+       },
+       "8": {
+        "kr": 18372748000,
+        "change": 937566000
+       },
+       "9": {
+        "kr": 18071398000,
+        "change": 636216000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "61",
+      "formal": "Særskilt tilskudd ved bosetting av enslige mindreårige flyktninger",
+      "amounts": {
+       "3": {
+        "kr": 2439340000,
+        "change": 0
+       },
+       "4": {
+        "kr": 2439340000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1799340000,
+        "change": -640000000
+       },
+       "6": {
+        "kr": 2439340000,
+        "change": 0
+       },
+       "7": {
+        "kr": 2460613000,
+        "change": 21273000
+       },
+       "8": {
+        "kr": 2439340000,
+        "change": 0
+       },
+       "9": {
+        "kr": 2462272000,
+        "change": 22932000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "62",
+      "formal": "Kommunale integreringstiltak",
+      "amounts": {
+       "3": {
+        "kr": 379521000,
+        "change": 0
+       },
+       "4": {
+        "kr": 379521000,
+        "change": 0
+       },
+       "5": {
+        "kr": 379521000,
+        "change": 0
+       },
+       "6": {
+        "kr": 398921000,
+        "change": 19400000
+       },
+       "7": {
+        "kr": 444521000,
+        "change": 65000000
+       },
+       "8": {
+        "kr": 379521000,
+        "change": 0
+       },
+       "9": {
+        "kr": 379521000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "71",
+      "formal": "Tilskudd til integreringsarbeid i regi av sivilsamfunn og frivillige organisasjoner",
+      "amounts": {
+       "3": {
+        "kr": 249410000,
+        "change": 0
+       },
+       "4": {
+        "kr": 249410000,
+        "change": 0
+       },
+       "5": {
+        "kr": 249410000,
+        "change": 0
+       },
+       "6": {
+        "kr": 249410000,
+        "change": 0
+       },
+       "7": {
+        "kr": 274410000,
+        "change": 25000000
+       },
+       "8": {
+        "kr": 261410000,
+        "change": 12000000
+       },
+       "9": {
+        "kr": 249410000,
+        "change": 0
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "73",
+      "formal": "Tilskudd",
+      "amounts": {
+       "3": {
+        "kr": 21393000,
+        "change": 0
+       },
+       "4": {
+        "kr": 21393000,
+        "change": 0
+       },
+       "5": {
+        "kr": 21393000,
+        "change": 0
+       },
+       "6": {
+        "kr": 21393000,
+        "change": 0
+       },
+       "7": {
+        "kr": 21393000,
+        "change": 0
+       },
+       "8": {
+        "kr": 21393000,
+        "change": 0
+       },
+       "9": {
+        "kr": 31393000,
+        "change": 10000000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "60",
+      "formal": "Tilskudd til opplæring i norsk og samfunnskunnskap for voksne innvandrere",
+      "amounts": {
+       "3": {
+        "kr": 1416935000,
+        "change": 0
+       },
+       "4": {
+        "kr": 1416935000,
+        "change": 0
+       },
+       "5": {
+        "kr": 1046935000,
+        "change": -370000000
+       },
+       "6": {
+        "kr": 1416935000,
+        "change": 0
+       },
+       "7": {
+        "kr": 1486662000,
+        "change": 69727000
+       },
+       "8": {
+        "kr": 1428602000,
+        "change": 11667000
+       },
+       "9": {
+        "kr": 1472697000,
+        "change": 55762000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "72",
+      "formal": "Rentestøtte",
+      "amounts": {
+       "3": {
+        "kr": 200000,
+        "change": 0
+       },
+       "4": {
+        "kr": 200000,
+        "change": 0
+       },
+       "5": {
+        "kr": 200000,
+        "change": 0
+       },
+       "6": {
+        "kr": 200000,
+        "change": 0
+       },
+       "7": {
+        "kr": 200000,
+        "change": 0
+       },
+       "8": {
+        "kr": 200000,
+        "change": 0
+       },
+       "9": {
+        "kr": 150200000,
+        "change": 150000000
+       }
+      }
+     }
+    ],
+    "inntekter": [
+     {
+      "kap": "",
+      "post": "3",
+      "formal": "Reiseutgifter for flyktninger fra utlandet, ODA-godkjente utgifter",
+      "amounts": {
+       "3": {
+        "kr": 6844000,
+        "change": 0
+       },
+       "4": {
+        "kr": 6844000,
+        "change": 0
+       },
+       "5": {
+        "kr": 6844000,
+        "change": 0
+       },
+       "6": {
+        "kr": 6844000,
+        "change": 0
+       },
+       "7": {
+        "kr": 6844000,
+        "change": 0
+       },
+       "8": {
+        "kr": 6844000,
+        "change": 0
+       },
+       "9": {
+        "kr": 70118000,
+        "change": 63274000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "6",
+      "formal": "Beskyttelse til flyktninger utenfor Norge mv., ODA-godkjente utgifter",
+      "amounts": {
+       "3": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "4": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "5": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "6": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "7": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "8": {
+        "kr": 10500000,
+        "change": 0
+       },
+       "9": {
+        "kr": 30180000,
+        "change": 19680000
+       }
+      }
+     },
+     {
+      "kap": "",
+      "post": "80",
+      "formal": "Renter",
+      "amounts": {
+       "3": {
+        "kr": 8480000000,
+        "change": 0
+       },
+       "4": {
+        "kr": 8483000000,
+        "change": 3000000
+       },
+       "5": {
+        "kr": 8480000000,
+        "change": 0
+       },
+       "6": {
+        "kr": 8480000000,
+        "change": 0
+       },
+       "7": {
+        "kr": 8509000000,
+        "change": 29000000
+       },
+       "8": {
+        "kr": 8496000000,
+        "change": 16000000
+       },
+       "9": {
+        "kr": 8488000000,
+        "change": 8000000
        }
       }
      }

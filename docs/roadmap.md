@@ -2726,3 +2726,38 @@ is not for on any cited vote ['27523']» before PASS returned on restore; `verif
 failed, `verify_votes` 0 MISMATCH, MIXED unchanged at 23; `go test ./...` green. No cell's
 position, mean or date count moved: every 2026 row in the case moved to the same day, and the
 null row that stayed behind is attributed to no party.
+
+## Year coverage, re-derived: 29 of 517 cells span a year, and seven dimensions have none (2026-10-30)
+
+The recorded figure was "27 of 517". Re-deriving it from the dataset gave **29**, because
+two cells gained a second dated row while the number was being quoted. The denominator is
+defined so it can be reproduced: a cell is a (statement, party) pair that carries at least
+one evidence row with a coded position, which is 517. A cell "spans a year" when its rows
+carry two or more distinct evidence years.
+
+The single number hides the thing that matters. Seven of the twelve dimensions have no
+cell that can speak about a change over time at all:
+
+| Dimension | One year | More than one |
+|---|---:|---:|
+| Norsk handlefrihet | 61 | 0 |
+| Finansiering av fellesskapet | 58 | 2 |
+| Forvaltning av fellesskapets ressurser / energi | 55 | 8 |
+| Universell grunnmur | 54 | 0 |
+| Barns muligheter | 52 | 2 |
+| Tilgang, integrering og rettsstat | 46 | 8 |
+| Demokratisk åpenhet | 36 | 9 |
+| Robusthet / adaptabilitet | 36 | 0 |
+| Innovasjon / omstillingsevne | 27 | 0 |
+| Teknologisk kapasitet | 27 | 0 |
+| Generasjonsansvar | 18 | 0 |
+| Tillegg (utenfor de 42) | 18 | 0 |
+
+So "the timeline" currently exists for five dimensions: demokratisk åpenhet, tilgang,
+forvaltning, finansiering and barns muligheter. Everywhere else the map answers "what does
+this party stand for" and cannot answer "what changed".
+
+Note on method: 680 evidence rows all carry a date, so the gap is not missing metadata; it
+is missing *breadth* — one dated observation per cell rather than two separated in time.
+Closing it means harvesting a second dated source for a cell that already has one, which is
+the harvester loop's job and cannot be done by re-reading what is already in the repo.

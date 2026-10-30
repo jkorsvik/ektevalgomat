@@ -1,6 +1,7 @@
 package server
 
 import (
+	"sort"
 	"strconv"
 	"strings"
 
@@ -32,6 +33,9 @@ type partyBudgetSection struct {
 	SelectedDoc  string
 	SelectedURL  string
 	PostRows     []partyBudgetPostRow
+	// Common is the comparable total, and Sort names the ordering in force.
+	Common partyBudgetCommon
+	Sort   string
 }
 
 type partyBudgetCol struct {
@@ -49,7 +53,11 @@ type partyBudgetRow struct {
 	// Spread is how far apart the parties are in this area, in mrd kroner: the
 	// largest deviation minus the smallest. It is a comparison inside one row, so
 	// it does not suffer the coverage problem a total across areas would.
-	Spread string
+	Spread    string
+	SpreadMrd float64
+	// PeakMrd is the largest absolute deviation in the row, kept so the table can
+	// be ordered by size without re-reading the formatted cells.
+	PeakMrd float64
 }
 
 // partyBudgetPostRow is one bevilgning as the drill-down shows it.
@@ -65,13 +73,33 @@ type partyBudgetCell struct {
 	// the party had no column in this area at all, blank means it had one but the
 	// document printed no total for it. Rendering both as the same dash let a
 	// reader read "not on the committee" and "chose not to propose" as one thing.
-	Kind   string
-	Change string // signed deviation, mrd kroner, comma decimal
-	Class  string // "up", "down" or "flat"
+	Kind string
+	// ChangeKr is the deviation in kroner, kept beside the printed text. A total
+	// must never be re-read from formatted text: mrd() prints U+2212 for a negative,
+	// and a parser expecting ASCII "-" dropped every negative cell silently, so the
+	// "comparable total" summed only the increases and looked plausible.
+	ChangeKr int64
+	Change   string // signed deviation, mrd kroner, comma decimal
+	Class    string // "up", "down" or "flat"
 	// Bucket is 1..5, the share of this row's largest deviation, so magnitude shows
 	// as a bar. The CSP forbids inline styles (style-src 'self'), so the width is a
 	// class, never a computed attribute.
 	Bucket int
+}
+
+// partyBudgetCommon is the only cross-area total this page is allowed to print:
+// the sum over the areas where every party has a column. A total over all 24 areas
+// would add a party's 11 areas to another's 24, which compares coverage, not money.
+type partyBudgetCommon struct {
+	Areas []int
+	Of    int
+	Cols  []partyBudgetCommonCol
+}
+
+type partyBudgetCommonCol struct {
+	Label string
+	Total string
+	Class string
 }
 
 type partyBudgetCoverage struct {
@@ -210,7 +238,9 @@ func buildPartyBudgetSection(ds *data.Dataset) partyBudgetSection {
 		}
 		if len(changes) > 0 {
 			row.Spread = mrd(hi - lo)
+			row.SpreadMrd = float64(hi-lo) / 1e9
 		}
+		row.PeakMrd = float64(peak) / 1e9
 
 		for _, col := range s.Cols {
 			cell := partyBudgetCell{Kind: "absent", Bucket: 0}
@@ -219,6 +249,7 @@ func buildPartyBudgetSection(ds *data.Dataset) partyBudgetSection {
 				cell.Kind = "blank"
 				if m, ok := netto[key]; ok {
 					cell.Kind = "fig"
+					cell.ChangeKr = m.Change
 					cell.Change = mrd(m.Change)
 					cell.Class = mrdClass(m.Change)
 					cell.Bucket = bucketOf(m.Change, peak)
@@ -227,6 +258,60 @@ func buildPartyBudgetSection(ds *data.Dataset) partyBudgetSection {
 			row.Cells = append(row.Cells, cell)
 		}
 		s.Rows = append(s.Rows, row)
+	}
+
+	// Which areas carry every party column. The joint Forlik column is not a party
+	// and never gates this: it exists only where several parties stand together.
+	carries := map[int]map[string]bool{}
+	for _, r := range s.Rows {
+		carries[r.Area] = map[string]bool{}
+		for i, col := range s.Cols {
+			if col.Joint {
+				continue
+			}
+			if entry := r.Cells[i]; entry.Kind != "absent" {
+				carries[r.Area][col.Party] = true
+			}
+		}
+	}
+	var common []int
+	for _, r := range s.Rows {
+		full := true
+		for _, col := range s.Cols {
+			if col.Joint {
+				continue
+			}
+			if !carries[r.Area][col.Party] {
+				full = false
+				break
+			}
+		}
+		if full {
+			common = append(common, r.Area)
+		}
+	}
+	s.Common = partyBudgetCommon{Areas: common, Of: s.Areas}
+	for i, col := range s.Cols {
+		if col.Joint {
+			continue
+		}
+		var total int64
+		for _, r := range s.Rows {
+			if !carries[r.Area][col.Party] {
+				continue
+			}
+			if !containsInt(common, r.Area) {
+				continue
+			}
+			m, ok := rowChange(r, i)
+			if !ok {
+				continue
+			}
+			total += m
+		}
+		s.Common.Cols = append(s.Common.Cols, partyBudgetCommonCol{
+			Label: col.Label, Total: mrd(total), Class: mrdClass(total),
+		})
 	}
 
 	cov := data.PartyAreas()
@@ -322,5 +407,48 @@ func selectArea(s partyBudgetSection, area int) partyBudgetSection {
 			s.PostRows = append(s.PostRows, row)
 		}
 	}
+	return s
+}
+
+func containsInt(xs []int, v int) bool {
+	for _, x := range xs {
+		if x == v {
+			return true
+		}
+	}
+	return false
+}
+
+// rowChange reads a cell's deviation in kroner, from the number the cell was built
+// with rather than from the text it prints. The text uses U+2212 for a negative, so
+// re-parsing it must normalise that or negatives vanish; not re-parsing at all is
+// the safer rule.
+func rowChange(r partyBudgetRow, i int) (int64, bool) {
+	if i >= len(r.Cells) || r.Cells[i].Kind != "fig" {
+		return 0, false
+	}
+	return r.Cells[i].ChangeKr, true
+}
+
+// sortRows orders the table. The default is the administrative order, which is what
+// a reader checking a committee's own innstilling expects; the two alternatives are
+// where the disagreement is largest and where the money moves most, which is what a
+// reader asking "who differs" needs.
+func sortRows(s partyBudgetSection, mode string) partyBudgetSection {
+	// Sort a copy. sorting the caller's slice in place would leave the "unsorted"
+	// section ordered by whatever the last request asked for, and two requests on
+	// one cached section would compound.
+	rows := make([]partyBudgetRow, len(s.Rows))
+	copy(rows, s.Rows)
+	s.Rows = rows
+	switch mode {
+	case "spredning":
+		sort.SliceStable(s.Rows, func(i, j int) bool { return s.Rows[i].SpreadMrd > s.Rows[j].SpreadMrd })
+	case "storrelse":
+		sort.SliceStable(s.Rows, func(i, j int) bool { return s.Rows[i].PeakMrd > s.Rows[j].PeakMrd })
+	default:
+		mode = ""
+	}
+	s.Sort = mode
 	return s
 }

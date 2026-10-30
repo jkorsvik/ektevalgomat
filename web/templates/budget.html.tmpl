@@ -71,6 +71,12 @@
     <summary class="budget-section-sum"><h2>Partienes egne budsjetter</h2></summary>
     <p class="budget-lede">{{.PartyBudgetLede}}</p>
     <p class="budget-status">{{.PartyBudget.Areas}} rammeområder, {{.PartyBudget.Posts}} bevilgninger, sesjonen {{.PartyBudget.Session}}. Kilde: komiteinnstillingene for 2025–2026, kolonnekartet lest fra hver tabells egen overskrift.</p>
+    <p class="party-budget-sort">
+      Rekkefølge:
+      <a href="/budsjett#partibudsjett"{{if not .PartyBudget.Sort}} aria-current="true"{{end}}>rammeområde</a>
+      <a href="/budsjett?sort=spredning#partibudsjett"{{if eq .PartyBudget.Sort "spredning"}} aria-current="true"{{end}}>størst uenighet</a>
+      <a href="/budsjett?sort=storrelse#partibudsjett"{{if eq .PartyBudget.Sort "storrelse"}} aria-current="true"{{end}}>størst beløp</a>
+    </p>
     <table class="budget-table party-budget">
       <thead>
         <tr>
@@ -90,6 +96,15 @@
       </tbody>
     </table>
 
+    <div class="party-budget-common">
+      <h3>Sammenlignbar sum</h3>
+      <p>Summen av avvikene i de {{len .PartyBudget.Common.Areas}} rammeområdene der alle sju partiene har en kolonne (av {{.PartyBudget.Common.Of}}). Her er dekningen lik, så tallene kan sammenlignes; over alle rammeområdene kan de ikke det, fordi partiene er med i ulike komiteer.</p>
+      <ul class="party-budget-common-list">
+        {{range .PartyBudget.Common.Cols}}<li><span class="party-budget-common-name">{{.Label}}</span> <span class="num {{.Class}}">{{.Total}}</span></li>{{end}}
+      </ul>
+      <p class="party-budget-common-areas">Rammeområdene i summen:
+        {{range $i, $a := .PartyBudget.Common.Areas}}{{if $i}}, {{end}}<a href="/budsjett?omrade={{$a}}#partibudsjett">{{$a}}</a>{{end}}.</p>
+    </div>
     {{if ge .PartyBudget.SelectedArea 0}}
     <div id="partibudsjett" class="party-posts">
       <h3>Bevilgningene i rammeområde {{.PartyBudget.SelectedArea}}</h3>

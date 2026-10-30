@@ -1,6 +1,9 @@
 package server
 
 import (
+	"fmt"
+	"math"
+	"strconv"
 	"strings"
 	"testing"
 
@@ -214,4 +217,168 @@ func TestPartyBudgetBucketsAreBoundedAndZeroOnlyAtZero(t *testing.T) {
 	if a, b := bucketOf(700, 1000), bucketOf(-700, 1000); a != b {
 		t.Errorf("bucketOf(700) = %d and bucketOf(-700) = %d: the bar shows magnitude, not sign", a, b)
 	}
+}
+
+// The comparable total is the only cross-area figure on the page, so it must never
+// reach beyond the areas where every party has a column. If it counted an area one
+// party is missing from, it would compare coverage and call it money.
+func TestPartyBudgetCommonSumCoversOnlySharedAreas(t *testing.T) {
+	s := buildPartyBudgetSection(&data.Dataset{})
+	common := s.Common.Areas
+	if len(common) == 0 {
+		t.Fatal("no common areas: the comparable sum has nothing to stand on")
+	}
+	// The binding constraint is the party with the fewest columns, so the shared set
+	// can never be larger than the smallest coverage.
+	smallest := s.Areas
+	for _, c := range s.Coverage {
+		if c.Areas < smallest {
+			smallest = c.Areas
+		}
+	}
+	if len(common) > smallest {
+		t.Errorf("%d shared areas, but the thinnest party covers only %d", len(common), smallest)
+	}
+
+	// Every shared area must carry every party column.
+	for _, area := range common {
+		var row partyBudgetRow
+		found := false
+		for _, r := range s.Rows {
+			if r.Area == area {
+				row, found = r, true
+				break
+			}
+		}
+		if !found {
+			t.Fatalf("shared area %d has no row", area)
+		}
+		for i, col := range s.Cols {
+			if col.Joint {
+				continue
+			}
+			if row.Cells[i].Kind == "absent" {
+				t.Errorf("area %d is counted as shared, but %s has no column there", area, col.Label)
+			}
+		}
+	}
+
+	// And each total must equal the cells it claims to sum, read back from the text
+	// the reader sees. This is deliberately a second, independent path: comparing
+	// the total against rowChange() would use the same function that built it, and
+	// that is exactly how a dropped sign stayed invisible. mrd() prints U+2212, so
+	// the parser must normalise it; a parser expecting ASCII "-" reads every
+	// negative as zero and the "sum" becomes a sum of increases only.
+	parse := func(txt string) (int64, bool) {
+		norm := strings.NewReplacer("\u2212", "-", "\u2013", "-", "\u2014", "-", "\u00a0", "").Replace(txt)
+		norm = strings.TrimSpace(strings.ReplaceAll(norm, ",", "."))
+		var f float64
+		if _, err := fmt.Sscanf(norm, "%g", &f); err != nil {
+			return 0, false
+		}
+		return int64(math.Round(f * 1e9)), true
+	}
+	for i, col := range s.Cols {
+		if col.Joint {
+			continue
+		}
+		var want, posOnly, biggestNegative int64
+		negatives := 0
+		for _, r := range s.Rows {
+			if !containsInt(common, r.Area) {
+				continue
+			}
+			if i >= len(r.Cells) || r.Cells[i].Kind != "fig" {
+				continue
+			}
+			v, ok := parse(r.Cells[i].Change)
+			if !ok {
+				t.Fatalf("%s: the cell %q does not parse, so the total cannot be checked", col.Label, r.Cells[i].Change)
+			}
+			want += v
+			if v > 0 {
+				posOnly += v
+			} else if v < 0 {
+				negatives++
+				if -v > biggestNegative {
+					biggestNegative = -v
+				}
+			}
+		}
+		var got int64
+		found := false
+		for _, cc := range s.Common.Cols {
+			if cc.Label == col.Label {
+				v, ok := parse(cc.Total)
+				if !ok {
+					t.Fatalf("%s: the printed total %q does not parse", col.Label, cc.Total)
+				}
+				got, found = v, true
+			}
+		}
+		if !found {
+			t.Fatalf("%s has no printed total", col.Label)
+		}
+		// Each cell truncates to one decimal, so a text-based sum can drift by up to
+		// 0.1 mrd per cell against the exact total.
+		tolerance := int64(len(common)+2) * 100_000_000
+		if diff := got - want; diff > tolerance || diff < -tolerance {
+			t.Errorf("%s: total %s, but its shared cells sum to %s", col.Label, mrd(got), mrd(want))
+		}
+		// The direct guard against the dropped sign: if a negative cell exists, the
+		// total must sit at least that far below the sum of the increases.
+		if negatives > 0 {
+			gap := posOnly - got
+			if gap < biggestNegative/2 {
+				t.Errorf("%s: has %d negative cells (largest %s) but its total %s sits only %s below the sum of increases %s: negatives were left out",
+					col.Label, negatives, mrd(biggestNegative), mrd(got), mrd(gap), mrd(posOnly))
+			}
+		}
+	}
+	var as []string
+	for _, a := range common {
+		as = append(as, strconv.Itoa(a))
+	}
+	t.Logf("%d shared areas of %d: %s", len(common), s.Areas, strings.Join(as, ", "))
+}
+
+// The ordering must be a real ordering: sorting by spread has to put the largest
+// disagreement first, and the default must leave the administrative order alone.
+func TestPartyBudgetSortPutsTheLargestSpreadFirst(t *testing.T) {
+	s := buildPartyBudgetSection(&data.Dataset{})
+	first := s.Rows[0].Area
+
+	bySpread := sortRows(s, "spredning")
+	if bySpread.Sort != "spredning" {
+		t.Errorf("Sort = %q, want spredning", bySpread.Sort)
+	}
+	for i := 1; i < len(bySpread.Rows); i++ {
+		if bySpread.Rows[i-1].SpreadMrd < bySpread.Rows[i].SpreadMrd {
+			t.Fatalf("row %d spreads %.1f after row %d's %.1f",
+				bySpread.Rows[i-1].Area, bySpread.Rows[i-1].SpreadMrd,
+				bySpread.Rows[i].Area, bySpread.Rows[i].SpreadMrd)
+		}
+	}
+	if bySpread.Rows[0].SpreadMrd <= 0 {
+		t.Error("the largest spread is not positive")
+	}
+
+	bySize := sortRows(s, "storrelse")
+	for i := 1; i < len(bySize.Rows); i++ {
+		if bySize.Rows[i-1].PeakMrd < bySize.Rows[i].PeakMrd {
+			t.Fatalf("storrelse is out of order at %d", i)
+		}
+	}
+
+	plain := sortRows(s, "")
+	if plain.Rows[0].Area != first {
+		t.Errorf("the default order moved area %d off the top", first)
+	}
+	for i, r := range plain.Rows {
+		if r.Area != i {
+			t.Fatalf("the default order is not the administrative one: row %d is area %d", i, r.Area)
+		}
+	}
+	t.Logf("størst uenighet: område %d (%.1f), størst beløp: område %d (%.1f)",
+		bySpread.Rows[0].Area, bySpread.Rows[0].SpreadMrd, bySize.Rows[0].Area, bySize.Rows[0].PeakMrd)
 }

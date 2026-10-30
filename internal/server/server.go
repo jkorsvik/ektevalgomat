@@ -829,6 +829,9 @@ func New(logger *slog.Logger) http.Handler {
 				view.PartyBudget = selectArea(view.PartyBudget, n)
 			}
 		}
+		// Ordering is a parameter too: the administrative order answers "what did this
+		// committee do", the two alternatives answer "where do the parties differ".
+		view.PartyBudget = sortRows(view.PartyBudget, r.URL.Query().Get("sort"))
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := budgetTmpl.Execute(w, view); err != nil {
 			logger.Error("render budget", "err", err)

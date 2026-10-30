@@ -18,6 +18,11 @@
   --accent-soft: #f1ecf7;
   --accent-ink: #ffffff;
   --seg-empty: #d6d0e0;
+  /* Direction of a figure: used where the sign of a number is the message, as in
+     the party-budget deviations. Defined here because the token guard requires
+     every colour to come from this block, not from the rule that uses it. */
+  --up: #1b6b3a;
+  --down: #9b2c2c;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --serif: "IBM Plex Serif", Georgia, serif;
   --max-width: 780px;
@@ -1359,6 +1364,10 @@ details[open] > .budget-section-sum h2 { color: var(--ink); }
     --accent-soft: #2a2438;
     --accent-ink: #14141a;
     --seg-empty: #423c52;
+    /* Direction on a dark surface: the light theme's green and red are too dark to
+       read here, so each is lightened rather than inherited. */
+    --up: #7fd6a0;
+    --down: #f08a8a;
   }
 }
 
@@ -1372,3 +1381,13 @@ details[open] > .budget-section-sum h2 { color: var(--ink); }
 /* Front-page caveat for statements with no documented party position
    (2026-10-25): a question that cannot count says so before the answer. */
 .front-caveat { font-size: var(--fs-sm); color: var(--muted); margin: var(--sp-4) 0 0; max-width: 62ch; }
+
+/* Partienes egne budsjetter (/budsjett): the deviation columns carry direction in
+   colour and sign, and a party that proposed nothing keeps a dash, never a zero.
+   The distinction matters: a zero would be a claim the party made. */
+.party-budget td.up { color: var(--up); }
+.party-budget td.down { color: var(--down); }
+.party-budget td.flat { color: var(--muted); }
+.party-budget td.missing { color: var(--line); }
+.party-budget th.joint { border-bottom: 2px solid var(--line); }
+.party-budget-posts { color: var(--muted); font-size: 0.85em; }

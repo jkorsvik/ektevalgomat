@@ -53,6 +53,12 @@ type budgetView struct {
 	Meta     pageMeta
 	Budget   data.Budget
 	Findings []budgetFinding
+
+	// PartyBudget is what each party would spend per rammeområde, read out of the
+	// committee innstillinger. It is a different question from the government's
+	// proposal above it, so it stands in its own section with its own caveats.
+	PartyBudget     partyBudgetSection
+	PartyBudgetLede string
 }
 
 type budgetFinding struct {
@@ -120,5 +126,7 @@ func buildBudgetView(ds *data.Dataset, budgetID string) (budgetView, bool) {
 		}
 		v.Findings = append(v.Findings, bf)
 	}
+	v.PartyBudget = buildPartyBudgetSection(ds)
+	v.PartyBudgetLede = partyBudgetLede(v.PartyBudget)
 	return v, true
 }

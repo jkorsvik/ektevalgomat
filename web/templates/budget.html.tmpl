@@ -68,6 +68,28 @@
   </details>
 
   <details class="budget-section" open>
+    <summary class="budget-section-sum"><h2>Partienes egne budsjetter</h2></summary>
+    <p class="budget-lede">{{.PartyBudgetLede}}</p>
+    <p class="budget-status">{{.PartyBudget.Areas}} rammeområder, {{.PartyBudget.Posts}} bevilgninger, sesjonen {{.PartyBudget.Session}}. Kilde: komiteinnstillingene for 2025–2026, kolonnekartet lest fra hver tabells egen overskrift.</p>
+    <table class="budget-table party-budget">
+      <thead>
+        <tr>
+          <th>Rammeområde</th>
+          {{range .PartyBudget.Cols}}<th class="num{{if .Joint}} joint{{end}}">{{.Label}}</th>{{end}}
+        </tr>
+      </thead>
+      <tbody>
+        {{range .PartyBudget.Rows}}
+        <tr>
+          <td><a href="{{.URL}}">{{.Area}}</a> <span class="party-budget-posts">{{.Posts}} poster</span></td>
+          {{range .Cells}}{{if .Has}}<td class="num change {{.Class}}">{{.Change}}</td>{{else}}<td class="num missing" title="Ingen alternativbudsjett i dette rammeområdet">–</td>{{end}}{{end}}
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </details>
+
+  <details class="budget-section" open>
     <summary class="budget-section-sum"><h2>Hva regjeringen foreslår for 2027</h2></summary>
     <p class="budget-lede">Funn i forslaget som berører utsagnene. Hvert funn viser til utsagnet det gjelder, eller sier at ingen utsagn dekker det ennå. Dette er forslag, ikke vedtak.</p>
     {{range .Findings}}

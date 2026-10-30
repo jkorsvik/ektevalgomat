@@ -61,8 +61,18 @@ PARTY_NAME = {
 # eight tables that use the short form, which is how rammeområde 1, 4, 5, 6, 8
 # and 14 first looked empty.
 SECTION = re.compile(r"^(Utgifter|Inntekter)\b", re.I)
-TOTAL = re.compile(r"^Sum\s+(utgifter|inntekter|netto)\s+rammeområde\s+(\d+)", re.I)
+# The total row is printed "Sum utgifter rammeområde 12" in most documents and only
+# "Sum utgifter" in the ones that head their section without an area. Requiring the
+# area left Sums empty for seven tables, and an empty Sums made every party cell on
+# /budsjett render as a dash, which claims the party proposed nothing there. That is
+# a false statement about a real proposal, so the area is optional here.
+TOTAL = re.compile(r"^Sum\s+(utgifter|inntekter|netto)\b", re.I)
 AMOUNT = re.compile(r"^(-?[\d][\d\s\u00a0]*)(?:\(([+-]?[\d\s\u00a0]*)\))?$")
+# A third form: a party column that prints only its deviation, signed and without a
+# parenthesised amount ("+209 000"). Innst. 3 S rammeområde 21 uses it in its total
+# rows. Reading that as an absolute amount would report every party as unchanged
+# there, so a leading sign with no parentheses is the deviation and no base.
+SIGNED_ONLY = re.compile(r"^([+-][\d\s\u00a0]*)$")
 
 
 def session_dir(session: str) -> tuple[str, str]:
@@ -232,7 +242,7 @@ def column_map(header: list[str]) -> dict | None:
     return roles if parties >= 3 else None
 
 
-def amount(cell: str) -> tuple[int, int] | None:
+def amount(cell: str, deviation_ok: bool = False) -> tuple[int, int] | None:
     """'415 000(+415 000)' -> (415_000_000, 415_000_000) in kroner; '81 500' -> (81_500_000, 0).
 
     A base amount can be negative: an inntekt post carried as a cost, and any
@@ -241,6 +251,13 @@ def amount(cell: str) -> tuple[int, int] | None:
     Innst. 9 S rammeområde 12 add to 529 000 000 against a printed +52 000 000.
     """
     cell = cell.replace("\u00a0", " ").replace("\u2212", "-").strip()
+    # Only a party or forlik column may print a bare deviation. The government
+    # column always prints an absolute amount, and reading its "-397 642" as a
+    # change made Innst. 16 S rammeområde 1 add to -397 642 000 against a sum of 0.
+    so = SIGNED_ONLY.match(cell) if deviation_ok else None
+    if so:
+        raw = so.group(1).replace(" ", "")
+        return 0, int(raw) * 1000
     m = AMOUNT.match(cell)
     if not m:
         return None
@@ -269,13 +286,14 @@ def extract(rows: list[list[str]], roles: dict) -> dict:
             if u:
                 unit = u.group(1)
             continue
-        tm = TOTAL.search(cells[2] if len(cells) > 2 else "")
+        label = cells[2] if len(cells) > 2 else ""
+        tm = TOTAL.search(label) if len(label) < 60 else None
         if tm:
             kind = tm.group(1).lower()
             line = {}
             for i, role in roles.items():
                 if i < len(cells):
-                    a = amount(cells[i])
+                    a = amount(cells[i], role["kind"] != "government")
                     if a:
                         line[i] = a
             sums[kind] = line
@@ -293,7 +311,7 @@ def extract(rows: list[list[str]], roles: dict) -> dict:
         posted = {}
         for i, role in roles.items():
             if i < len(cells):
-                a = amount(cells[i])
+                a = amount(cells[i], role["kind"] != "government")
                 if a:
                     posted[i] = a
         if not posted:

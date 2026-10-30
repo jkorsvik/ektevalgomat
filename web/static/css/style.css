@@ -1391,3 +1391,32 @@ details[open] > .budget-section-sum h2 { color: var(--ink); }
 .party-budget td.missing { color: var(--line); }
 .party-budget th.joint { border-bottom: 2px solid var(--line); }
 .party-budget-posts { color: var(--muted); font-size: 0.85em; }
+
+/* /rommet exploration (2026-10-30): the controls that let a reader choose what the
+   drawing shows, and the panel that answers for one party. The panel is a quiet
+   card, because it sits under a picture and must not compete with it. */
+.rom-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4) var(--sp-6);
+  align-items: end;
+  margin: var(--sp-6) 0 var(--sp-5);
+}
+.rom-control { display: flex; flex-direction: column; gap: var(--sp-2); font-size: var(--fs-sm); color: var(--muted); }
+.rom-control select,
+.rom-control input[type="range"] { font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: var(--sp-2) var(--sp-3); }
+.rom-control input[type="range"] { padding: 0; }
+.rom-check { flex-direction: row; align-items: center; gap: var(--sp-3); }
+.rom-focus {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: var(--sp-5) var(--sp-6);
+  margin: var(--sp-5) 0 var(--sp-7);
+  min-height: 4.5rem;
+}
+.rom-focus-empty { color: var(--muted); font-size: var(--fs-sm); margin: 0; }
+.rom-focus-head { font-weight: 600; margin: 0 0 var(--sp-3); }
+.rom-focus-line { color: var(--muted); font-size: var(--fs-sm); margin: 0 0 var(--sp-3); }
+.rom-focus-list { margin: 0; padding-left: var(--sp-7); font-size: var(--fs-sm); font-variant-numeric: tabular-nums; }
+.rom-focus-mine { font-weight: 600; color: var(--ink); }

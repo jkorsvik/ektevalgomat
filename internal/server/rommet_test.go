@@ -145,3 +145,80 @@ func TestRommetCarriesTheNumbersWithoutWebGL(t *testing.T) {
 			"see how thinly some dimensions are supported")
 	}
 }
+
+// The exploration is the page's point: a reader must be able to choose what the
+// drawing shows and to ask one party for its own numbers. Each control is named
+// here, because a control that disappears from the template leaves the canvas
+// readable but the space unexplorable, and nothing else would notice.
+func TestRommetCarriesTheExplorationControls(t *testing.T) {
+	body := getRommet(t)
+	// Match the id attribute exactly. A substring check would pass on
+	// "rommet-springs-renamed", which is how this guard first failed to fail:
+	// renaming the control left the test green while the script found nothing.
+	for _, id := range []string{"rommet-dim", "rommet-springs", "rommet-zoom", "rommet-focus"} {
+		if !strings.Contains(body, `id="`+id+`"`) {
+			t.Errorf("the page has no %q control, so the drawing cannot be explored", id)
+		}
+	}
+	// Every dimension must be offered by the selector, or a reader cannot reach it.
+	p := rommetPayload(t)
+	for _, d := range p.Dims {
+		if !strings.Contains(body, d.Name) {
+			t.Errorf("dimension %q is not offered anywhere on the page", d.Name)
+		}
+	}
+	// The focus panel reads these two off the payload; empty ones would render an
+	// unnamed party and a blank answer count.
+	for _, c := range p.Clouds {
+		if c.Short == "" {
+			t.Errorf("party %q carries no short name, so the panel cannot name it", c.ID)
+		}
+		if c.Answers == 0 {
+			t.Errorf("party %q carries no answer count", c.ID)
+		}
+		if len(c.Points) != len(p.Dims) {
+			t.Errorf("party %q has %d dimension offsets for %d dimensions, so highlighting "+
+				"a dimension would draw nothing for it", c.ID, len(c.Points), len(p.Dims))
+		}
+	}
+}
+
+// rommetPayload is the canvas payload, parsed from the page it is served in. Parsing
+// the rendered page rather than structs built in the test keeps the check on what
+// the browser actually receives.
+func rommetPayload(t *testing.T) struct {
+	Explained float64 `json:"explained"`
+	Dims      []struct {
+		Name string `json:"name"`
+	} `json:"dims"`
+	Clouds []struct {
+		ID      string       `json:"id"`
+		Short   string       `json:"short"`
+		Answers int          `json:"answers"`
+		Points  [][3]float64 `json:"points"`
+	} `json:"clouds"`
+} {
+	t.Helper()
+	body := getRommet(t)
+	re := regexp.MustCompile(`(?s)<script id="rommet-data" type="application/json">(.*?)</script>`)
+	m := re.FindStringSubmatch(body)
+	if m == nil {
+		t.Fatal("no rommet-data JSON block: the canvas would have nothing to draw")
+	}
+	var p struct {
+		Explained float64 `json:"explained"`
+		Dims      []struct {
+			Name string `json:"name"`
+		} `json:"dims"`
+		Clouds []struct {
+			ID      string       `json:"id"`
+			Short   string       `json:"short"`
+			Answers int          `json:"answers"`
+			Points  [][3]float64 `json:"points"`
+		} `json:"clouds"`
+	}
+	if err := json.Unmarshal([]byte(m[1]), &p); err != nil {
+		t.Fatalf("rommet-data is not valid JSON: %v", err)
+	}
+	return p
+}

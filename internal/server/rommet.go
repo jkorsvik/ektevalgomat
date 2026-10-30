@@ -119,10 +119,12 @@ type dimOut struct {
 }
 
 type cloudOut struct {
-	ID     string                `json:"id"`
-	Centre [space.Axes]float64   `json:"centre"`
-	Spread float64               `json:"spread"`
-	Points [][space.Axes]float64 `json:"points"` // aligned with Dims
+	ID      string                `json:"id"`
+	Short   string                `json:"short"`   // the name the reader sees, from Party.Short
+	Answers int                   `json:"answers"` // coded cells the centre rests on
+	Centre  [space.Axes]float64   `json:"centre"`
+	Spread  float64               `json:"spread"`
+	Points  [][space.Axes]float64 `json:"points"` // aligned with Dims
 }
 
 type springOut struct {
@@ -198,8 +200,13 @@ func buildSpaceView(ds *data.Dataset) spaceView {
 		for j, pt := range c.Points {
 			pts[j] = pt.Offset
 		}
+		short := c.PartyID
+		if p.Short != "" {
+			short = p.Short
+		}
 		cloudsOut = append(cloudsOut, cloudOut{
-			ID: c.PartyID, Centre: c.Centre, Spread: c.Spread, Points: pts,
+			ID: c.PartyID, Short: short, Answers: c.Answers,
+			Centre: c.Centre, Spread: c.Spread, Points: pts,
 		})
 		if c.Spread < spreadLo {
 			spreadLo = c.Spread

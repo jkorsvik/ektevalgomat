@@ -80,6 +80,28 @@
       stemte likt i {{.Closest}} av sakene der begge tok stilling, over
       {{.Busiest}} avstemninger. Det finnes ingen perfekte allierte.
     </p>
+
+    <div class="rom-controls">
+      <label class="rom-control">
+        <span>Framhev én dimensjon</span>
+        <select id="rommet-dim">
+          <option value="-1">Ingen, vis hele rommet</option>
+          {{range $i, $d := .Dimensions}}<option value="{{$i}}">{{$d.Name}}</option>{{end}}
+        </select>
+      </label>
+      <label class="rom-control rom-check">
+        <input type="checkbox" id="rommet-springs" checked>
+        <span>Vis stemmebånd</span>
+      </label>
+      <label class="rom-control">
+        <span>Avstand</span>
+        <input type="range" id="rommet-zoom" min="14" max="46" value="24">
+      </label>
+    </div>
+
+    <div id="rommet-focus" class="rom-focus" aria-live="polite">
+      <p class="rom-focus-empty">Klikk et punkt for å se partiets egne tall.</p>
+    </div>
   </section>
 
   <section class="rom-table-wrap">

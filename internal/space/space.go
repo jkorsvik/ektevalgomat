@@ -87,6 +87,12 @@ type Space struct {
 	// Standardised is always true; it is a field so the page cannot claim the
 	// raw scale without the projection disagreeing.
 	Standardised bool
+	// Scores is each party's standardised position on each dimension, aligned with
+	// Clouds and Dimensions. The three-axis space is a summary: it keeps 83 % of the
+	// variation and mixes the dimensions. A reader asking "where does the spectrum
+	// run on this one question" needs the dimension itself, and this is it, before
+	// the projection mixes anything.
+	Scores [][]float64
 }
 
 // Project builds the space from the loaded dataset and the committed vote index.
@@ -321,6 +327,7 @@ func project(ds *data.Dataset, votes []data.Vote) Space {
 	}
 
 	return Space{
+		Scores:       z,
 		Axes:         axes,
 		Clouds:       clouds,
 		Springs:      springs(parties, votes),

@@ -191,11 +191,15 @@ func rommetPayload(t *testing.T) struct {
 	Dims      []struct {
 		Name string `json:"name"`
 	} `json:"dims"`
+	Axes []struct {
+		Variance float64 `json:"variance"`
+	} `json:"axes"`
 	Clouds []struct {
 		ID      string       `json:"id"`
 		Short   string       `json:"short"`
 		Answers int          `json:"answers"`
 		Points  [][3]float64 `json:"points"`
+		Scores  []float64    `json:"scores"`
 	} `json:"clouds"`
 } {
 	t.Helper()
@@ -210,15 +214,104 @@ func rommetPayload(t *testing.T) struct {
 		Dims      []struct {
 			Name string `json:"name"`
 		} `json:"dims"`
+		Axes []struct {
+			Variance float64 `json:"variance"`
+		} `json:"axes"`
 		Clouds []struct {
 			ID      string       `json:"id"`
 			Short   string       `json:"short"`
 			Answers int          `json:"answers"`
 			Points  [][3]float64 `json:"points"`
+			Scores  []float64    `json:"scores"`
 		} `json:"clouds"`
 	}
 	if err := json.Unmarshal([]byte(m[1]), &p); err != nil {
 		t.Fatalf("rommet-data is not valid JSON: %v", err)
 	}
 	return p
+}
+
+// The spectrum strip plots the dimension itself, one dot per party, and calls the
+// positions standardised. That claim is only true if the payload carries the score
+// matrix and each dimension is centred and unit-spread. A strip fed by the three-axis
+// projection would draw a mixture and label it "this question".
+func TestRommetCarriesThePerDimensionScores(t *testing.T) {
+	p := rommetPayload(t)
+	if len(p.Clouds) < 2 {
+		t.Fatalf("only %d clouds", len(p.Clouds))
+	}
+	if len(p.Dims) < 2 {
+		t.Fatalf("only %d dimensions", len(p.Dims))
+	}
+	for _, c := range p.Clouds {
+		if len(c.Scores) != len(p.Dims) {
+			t.Fatalf("%s has %d scores for %d dimensions", c.ID, len(c.Scores), len(p.Dims))
+		}
+	}
+	// Standardised: every dimension has mean 0 and spread 1 across the parties.
+	worstMean, worstSD := 0.0, 0.0
+	for j := range p.Dims {
+		var sum float64
+		for _, c := range p.Clouds {
+			sum += c.Scores[j]
+		}
+		mean := sum / float64(len(p.Clouds))
+		var sq float64
+		for _, c := range p.Clouds {
+			sq += (c.Scores[j] - mean) * (c.Scores[j] - mean)
+		}
+		sd := math.Sqrt(sq / float64(len(p.Clouds)))
+		if math.Abs(mean) > worstMean {
+			worstMean = math.Abs(mean)
+		}
+		if math.Abs(sd-1) > worstSD {
+			worstSD = math.Abs(sd - 1)
+		}
+	}
+	if worstMean > 1e-9 || worstSD > 1e-9 {
+		t.Fatalf("scores are not standardised: worst |mean| %.3g, worst |sd-1| %.3g", worstMean, worstSD)
+	}
+	// And the strip must have a real spectrum to draw: at least one dimension where
+	// the parties are not all on one point.
+	spread := 0
+	for j := range p.Dims {
+		lo, hi := p.Clouds[0].Scores[j], p.Clouds[0].Scores[j]
+		for _, c := range p.Clouds {
+			lo = math.Min(lo, c.Scores[j])
+			hi = math.Max(hi, c.Scores[j])
+		}
+		if hi-lo > 0.5 {
+			spread++
+		}
+	}
+	if spread < len(p.Dims)/2 {
+		t.Errorf("only %d of %d dimensions separate the parties by more than half a spread", spread, len(p.Dims))
+	}
+	t.Logf("%d parties x %d dimensions, standardised, %d dimensions with a visible spectrum",
+		len(p.Clouds), len(p.Dims), spread)
+}
+
+// The frame and the strip are the page's orientation: without the axis labels a
+// reader sees that parties are apart but not along what, and without the strip the
+// one-dimension view does not exist at all.
+func TestRommetHasTheFrameAndTheSpectrum(t *testing.T) {
+	body := getRommet(t)
+	for _, want := range []string{`id="rommet-axes"`, `id="rommet-spectrum"`, `id="rommet-spectrum-note"`} {
+		if !strings.Contains(body, want) {
+			t.Fatalf("the page has no %s", want)
+		}
+	}
+	// The percentages the labels print must come from the payload, not the template.
+	p := rommetPayload(t)
+	if len(p.Axes) != 3 {
+		t.Fatalf("%d axes", len(p.Axes))
+	}
+	var sum float64
+	for _, a := range p.Axes {
+		sum += a.Variance
+	}
+	if math.Abs(sum-p.Explained) > 1e-9 {
+		t.Errorf("axes keep %.4f but Explained says %.4f", sum, p.Explained)
+	}
+	t.Logf("three axes labelled from the payload, keeping %.1f %%", sum*100)
 }

@@ -74,6 +74,7 @@
   var lineVerts = [];
   var pointVerts = [];
   var springVerts = [];
+  var frameVerts = [];
 
   function pushLine(buf, x1, y1, z1, x2, y2, z2, rgb, alpha) {
     buf.push(x1 / maxAbs, y1 / maxAbs, z1 / maxAbs, rgb[0], rgb[1], rgb[2], alpha);
@@ -100,6 +101,27 @@
       b.centre[0], b.centre[1], b.centre[2],
       [0.549, 0.561, 0.600], 0.10 + 0.45 * t);
   });
+
+  // The reference frame. Without it the cloud has no orientation: a reader can see
+  // that parties are apart but cannot say along what. Each axis is drawn from the
+  // origin to a fixed length, so the frame does not move when the data grows, and
+  // its label carries the share of the variation that axis keeps.
+  var FRAME_LEN = 1.25;
+  var AXIS_RGB = [[0.40, 0.44, 0.50], [0.55, 0.49, 0.42], [0.44, 0.52, 0.46]];
+  for (var ai = 0; ai < 3; ai++) {
+    var tip = [0, 0, 0];
+    tip[ai] = FRAME_LEN * maxAbs;
+    pushLine(frameVerts, 0, 0, 0, tip[0], tip[1], tip[2], AXIS_RGB[ai], 0.75);
+    // A short cross at the tip, in the two other directions, so the line reads as an
+    // axis with an end rather than as one more spoke through the cloud.
+    for (var bi = 0; bi < 3; bi++) {
+      if (bi === ai) continue;
+      var a0 = [0, 0, 0], a1 = [0, 0, 0];
+      a0[ai] = FRAME_LEN * maxAbs; a1[ai] = FRAME_LEN * maxAbs;
+      a0[bi] = -0.05 * maxAbs; a1[bi] = 0.05 * maxAbs;
+      pushLine(frameVerts, a0[0], a0[1], a0[2], a1[0], a1[1], a1[2], AXIS_RGB[ai], 0.75);
+    }
+  }
 
   space.clouds.forEach(function (c) {
     var rgb = colourOf(c.id);
@@ -179,6 +201,7 @@
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verts), gl.STATIC_DRAW);
     return { buf: b, count: verts.length / 7 };
   }
+  var frame = bufferFrom(frameVerts);
   var lines = bufferFrom(lineVerts);
   var points = bufferFrom(pointVerts);
   var springs = bufferFrom(springVerts);
@@ -222,6 +245,40 @@
     gl.bindBuffer(gl.ARRAY_BUFFER, focusRing.buf);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verts), gl.DYNAMIC_DRAW);
     focusRing.count = 1;
+  }
+
+  // Axis labels: HTML, because WebGL cannot write text, positioned from the same
+  // matrix the frame was drawn with. They are aria-hidden: the percentages are in
+  // the table below, and a screen reader should not read a floating duplicate.
+  var axesEl = document.getElementById('rommet-axes');
+  var axisLabels = [];
+  function tenths(v) {
+    return (Math.round(v * 1000) / 10).toFixed(1).replace('.', ',') + ' %';
+  }
+  if (axesEl) {
+    for (var k = 0; k < 3; k++) {
+      var sp = document.createElement('span');
+      sp.className = 'rom-axis-label rom-axis-label-' + (k + 1);
+      var av = (space.axes || [])[k];
+      sp.textContent = 'Akse ' + (k + 1) + (av ? ' \u00b7 ' + tenths(av.variance) : '');
+      axesEl.appendChild(sp);
+      axisLabels.push(sp);
+    }
+  }
+  function placeAxisLabels() {
+    if (!axisLabels.length || !canvas.clientWidth) return;
+    var sx = canvas.width / canvas.clientWidth;
+    var sy = canvas.height / canvas.clientHeight;
+    for (var k = 0; k < 3; k++) {
+      var lbl = axisLabels[k];
+      var tip = [0, 0, 0];
+      tip[k] = FRAME_LEN * maxAbs;
+      var pt = projectPoint(tip[0], tip[1], tip[2]);
+      if (!pt) { lbl.hidden = true; continue; }
+      lbl.hidden = false;
+      lbl.style.left = Math.round(pt.x / sx) + 'px';
+      lbl.style.top = Math.round(pt.y / sy) + 'px';
+    }
   }
 
   // state the reader drives
@@ -296,12 +353,20 @@
 
     gl.uniformMatrix4fv(uMVP, false, m);
 
-    gl.bindBuffer(gl.ARRAY_BUFFER, lines.buf);
     gl.enableVertexAttribArray(aPos);
     gl.enableVertexAttribArray(aCol);
+    gl.uniform1f(uSize, 1);
+
+    // The frame first, and thinner than the spokes, so it reads as the box the
+    // parties sit in rather than as one more party.
+    gl.bindBuffer(gl.ARRAY_BUFFER, frame.buf);
     gl.vertexAttribPointer(aPos, 3, gl.FLOAT, false, 28, 0);
     gl.vertexAttribPointer(aCol, 4, gl.FLOAT, false, 28, 12);
-    gl.uniform1f(uSize, 1);
+    gl.drawArrays(gl.LINES, 0, frame.count);
+
+    gl.bindBuffer(gl.ARRAY_BUFFER, lines.buf);
+    gl.vertexAttribPointer(aPos, 3, gl.FLOAT, false, 28, 0);
+    gl.vertexAttribPointer(aCol, 4, gl.FLOAT, false, 28, 12);
     gl.drawArrays(gl.LINES, 0, lines.count);
 
     if (springsOn && springs.count) {
@@ -337,6 +402,7 @@
         gl.drawArrays(gl.POINTS, 0, focusRing.count);
       }
     }
+    placeAxisLabels();
   }
 
   function loop() {
@@ -515,11 +581,131 @@
     return best;
   }
 
+
+  // --- the spectrum of one dimension ------------------------------------------
+  //
+  // The three-axis space is a summary: it keeps shared variation and mixes the
+  // dimensions. A reader asking "where does the spectrum run on THIS question"
+  // would otherwise have to read a mixture, so the strip plots the dimension
+  // itself, standardised per dimension by the same projection, one dot per party.
+  var spectrumEl = document.getElementById('rommet-spectrum');
+  var spectrumNote = document.getElementById('rommet-spectrum-note');
+  var SVGNS = 'http://www.w3.org/2000/svg';
+
+  function svgEl(name, attrs) {
+    var el = document.createElementNS(SVGNS, name);
+    for (var key in attrs) {
+      if (Object.prototype.hasOwnProperty.call(attrs, key)) {
+        el.setAttribute(key, String(attrs[key]));
+      }
+    }
+    return el;
+  }
+  function ink(rgb) {
+    return 'rgb(' + Math.round(rgb[0] * 255) + ',' + Math.round(rgb[1] * 255) +
+      ',' + Math.round(rgb[2] * 255) + ')';
+  }
+
+  function renderSpectrum(dim) {
+    if (!spectrumEl) return;
+    while (spectrumEl.firstChild) spectrumEl.removeChild(spectrumEl.firstChild);
+    var dimName = dim >= 0 ? ((space.dims || [])[dim] || {}).name : '';
+    if (dim < 0) {
+      spectrumEl.setAttribute('hidden', 'hidden');
+      if (spectrumNote) {
+        spectrumNote.textContent = 'Velg en dimensjon over, og partiene stilles opp ' +
+          'etter hvor de faktisk står på akkurat den.';
+      }
+      return;
+    }
+    spectrumEl.removeAttribute('hidden');
+
+    // Standardised scores, so the axis reads as "how many spreads from the mean"
+    // rather than in the unit of whichever statements happen to be coded there.
+    var rows = space.clouds.map(function (c) {
+      return { id: c.id, short: c.short || c.id, v: (c.scores || [])[dim] };
+    }).filter(function (r) { return typeof r.v === 'number'; });
+    if (!rows.length) {
+      spectrumEl.setAttribute('hidden', 'hidden');
+      if (spectrumNote) spectrumNote.textContent = 'Denne dimensjonen har ingen kodede posisjoner.';
+      return;
+    }
+    var lo = Infinity, hi = -Infinity;
+    rows.forEach(function (r) {
+      if (r.v < lo) lo = r.v;
+      if (r.v > hi) hi = r.v;
+    });
+    if (hi - lo < 1e-9) { hi = lo + 1; }
+
+    var W = 620, PAD = 46, BASE = 44;
+    var x = function (v) { return PAD + (v - lo) / (hi - lo) * (W - 2 * PAD); };
+
+    spectrumEl.setAttribute('viewBox', '0 0 ' + W + ' 78');
+    spectrumEl.appendChild(svgEl('line', {
+      x1: PAD, y1: BASE, x2: W - PAD, y2: BASE, class: 'rom-spectrum-axis'
+    }));
+    // The mean, marked because the scale is standardised and zero is meaningful.
+    var zero = (lo <= 0 && hi >= 0) ? x(0) : null;
+    if (zero !== null) {
+      spectrumEl.appendChild(svgEl('line', {
+        x1: zero, y1: BASE - 7, x2: zero, y2: BASE + 7, class: 'rom-spectrum-zero'
+      }));
+    }
+
+    // Parties that share a position are drawn as one stack with one label, because
+    // an overlap is a finding: on this dimension Ap, SV and R are the same point,
+    // and three dots on top of each other would hide that rather than say it.
+    var sorted = rows.slice().sort(function (a, b) { return a.v - b.v; });
+    var groups = [];
+    sorted.forEach(function (r) {
+      var last = groups[groups.length - 1];
+      if (last && x(r.v) - x(last[0].v) < 16) last.push(r);
+      else groups.push([r]);
+    });
+    groups.forEach(function (g) {
+      var cx = x(g[0].v);
+      var n = g.length;
+      g.forEach(function (r, i) {
+        var dot = svgEl('circle', {
+          cx: cx, cy: BASE - (n > 1 ? (i - (n - 1) / 2) * 9 : 0), r: 7,
+          fill: ink(colourOf(r.id)), class: 'rom-spectrum-dot'
+        });
+        if (r.id === selected) dot.setAttribute('class', 'rom-spectrum-dot rom-spectrum-mine');
+        var t = svgEl('title', {});
+        t.textContent = r.short + ' ' + fmt(r.v);
+        dot.appendChild(t);
+        spectrumEl.appendChild(dot);
+      });
+      var lab = svgEl('text', {
+        x: cx, y: BASE - 14 - (n > 1 ? (n - 1) * 4.5 : 0), 'text-anchor': 'middle',
+        class: 'rom-spectrum-name' +
+          (g.some(function (r) { return r.id === selected; }) ? ' rom-spectrum-name-mine' : '')
+      });
+      lab.textContent = g.map(function (r) { return r.short; }).join(' \u00b7 ');
+      spectrumEl.appendChild(lab);
+    });
+
+    [[lo, PAD, 'start'], [hi, W - PAD, 'end']].forEach(function (end) {
+      var t = svgEl('text', {
+        x: end[1], y: BASE + 22, 'text-anchor': end[2], class: 'rom-spectrum-scale'
+      });
+      t.textContent = fmt(end[0]);
+      spectrumEl.appendChild(t);
+    });
+
+    if (spectrumNote) {
+      spectrumNote.textContent = '\u00ab' + dimName + '\u00bb: hvert parti plassert etter ' +
+        'sin egen posisjon på denne dimensjonen, standardisert så tallet er antall ' +
+        'spredninger fra gjennomsnittet. ' + rows.length + ' partier.';
+    }
+  }
+
   if (dimEl) {
     dimEl.addEventListener('change', function () {
       dimSel = parseInt(dimEl.value, 10);
       if (isNaN(dimSel)) dimSel = -1;
       setSpikes(dimSel);
+      renderSpectrum(dimSel);
       renderFocus();
     });
   }
@@ -549,10 +735,12 @@
     var id = pickAt(e.clientX, e.clientY);
     setFocus(id);
     renderFocus();
+    renderSpectrum(dimSel);
   });
 
   setSpikes(-1);
   setFocus(null);
+  renderSpectrum(-1);
 
   // Draw one frame BEFORE announcing success. Announcing first meant the page
   // said it had drawn while the canvas was blank, because the message was set

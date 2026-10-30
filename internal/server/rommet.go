@@ -125,6 +125,12 @@ type cloudOut struct {
 	Centre  [space.Axes]float64   `json:"centre"`
 	Spread  float64               `json:"spread"`
 	Points  [][space.Axes]float64 `json:"points"` // aligned with Dims
+	// Scores is the party's standardised position on each dimension, aligned with
+	// Dims. It is not the projection: it is the dimension itself, which is what the
+	// spectrum strip draws. The three axes keep 83 % of the variation and mix the
+	// rest, so reading a one-question spectrum off the projection would be reading
+	// a mixture.
+	Scores []float64 `json:"scores"`
 }
 
 type springOut struct {
@@ -194,7 +200,7 @@ func buildSpaceView(ds *data.Dataset) spaceView {
 	busiest := 0
 	var closest, closestPair string
 	maxAg := -1.0
-	for _, c := range sp.Clouds {
+	for ci, c := range sp.Clouds {
 		p := byID[c.PartyID]
 		pts := make([][space.Axes]float64, len(c.Points))
 		for j, pt := range c.Points {
@@ -204,9 +210,13 @@ func buildSpaceView(ds *data.Dataset) spaceView {
 		if p.Short != "" {
 			short = p.Short
 		}
+		var scores []float64
+		if ci < len(sp.Scores) {
+			scores = sp.Scores[ci]
+		}
 		cloudsOut = append(cloudsOut, cloudOut{
 			ID: c.PartyID, Short: short, Answers: c.Answers,
-			Centre: c.Centre, Spread: c.Spread, Points: pts,
+			Centre: c.Centre, Spread: c.Spread, Points: pts, Scores: scores,
 		})
 		if c.Spread < spreadLo {
 			spreadLo = c.Spread

@@ -1495,3 +1495,77 @@ tr.party-budget-open { background: var(--accent-soft); }
 .party-budget-common-areas {
   font-size: var(--fs-2xs) !important;
 }
+/* /rommet: the reference frame and the one-dimension spectrum (2026-10-30) */
+.rom-canvas-wrap {
+  position: relative;
+}
+.rom-axes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.rom-axis-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: var(--fs-2xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  background: var(--bg);
+  padding: 0 var(--sp-1);
+  white-space: nowrap;
+  border-radius: var(--sp-1);
+}
+.rom-axis-label-1 { color: var(--accent-strong); }
+.rom-axis-label-2 { color: var(--muted); }
+.rom-axis-label-3 { color: var(--muted); }
+.rom-spectrum-wrap {
+  margin: var(--sp-7) 0 0;
+}
+.rom-spectrum-wrap h3 {
+  margin: 0 0 var(--sp-2);
+  font-size: var(--fs-md);
+}
+.rom-spectrum {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 46rem;
+  margin: var(--sp-3) 0 var(--sp-4);
+}
+.rom-spectrum[hidden] {
+  display: none;
+}
+.rom-spectrum-axis {
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+.rom-spectrum-zero {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  opacity: 0.7;
+}
+.rom-spectrum-dot {
+  opacity: 0.95;
+  stroke: var(--bg);
+  stroke-width: 1.6;
+}
+.rom-spectrum-mine {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+  opacity: 1;
+}
+.rom-spectrum-name {
+  font-size: 12px;
+  fill: var(--ink);
+  font-family: inherit;
+}
+.rom-spectrum-name-mine {
+  font-weight: 700;
+}
+.rom-spectrum-scale {
+  font-size: 11px;
+  fill: var(--muted);
+  font-family: inherit;
+  font-variant-numeric: tabular-nums;
+}

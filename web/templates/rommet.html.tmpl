@@ -71,6 +71,7 @@
             aria-label="Tredimensjonal visning av partienes posisjoner. Tabellen under har de samme tallene.">
       Nettleseren din viser ikke denne tegningen. Tabellen under har de samme tallene.
     </canvas>
+    <div id="rommet-axes" class="rom-axes" aria-hidden="true"></div>
     <p id="rommet-status" class="rom-status" aria-live="polite">
       Tegningen trenger WebGL. Tallene under er de samme.
     </p>
@@ -98,6 +99,17 @@
         <input type="range" id="rommet-zoom" min="14" max="46" value="24">
       </label>
     </div>
+
+    <section class="rom-spectrum-wrap">
+      <h3>Spekteret på én dimensjon</h3>
+      <p id="rommet-spectrum-note" class="prose-note">
+        Velg en dimensjon over, og partiene stilles opp etter hvor de faktisk står
+        på akkurat den.
+      </p>
+      <svg id="rommet-spectrum" class="rom-spectrum" viewBox="0 0 620 84"
+           preserveAspectRatio="xMidYMid meet" role="img" hidden="hidden"
+           aria-label="Partiene plassert etter sin posisjon på den valgte dimensjonen. Tabellen under har de samme tallene."></svg>
+    </section>
 
     <div id="rommet-focus" class="rom-focus" aria-live="polite">
       <p class="rom-focus-empty">Klikk et punkt for å se partiets egne tall.</p>

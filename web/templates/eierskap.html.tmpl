@@ -8,14 +8,14 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Kilde: {{.SourceName}}, hentet {{.RetrievedAt}}</span>
 
   {{/* Derived, never hand-written: every figure is computed from the ownership
        index at request time. 2026-10-27. */}}
-  <h2>Statens eierskap</h2>
+  <h1>Statens eierskap</h1>
   <p class="prose-lede">
     Hva staten eier, hvor stor andel den eier, og hvilken eierkategori selskapet
     styres etter. {{.Companies}} selskaper, hvorav {{.WhollyOwned}} er heleid og

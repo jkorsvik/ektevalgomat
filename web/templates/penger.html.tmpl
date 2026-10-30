@@ -8,14 +8,14 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Kilde: SSB tabell {{.Table}}, hentet {{.RetrievedAt}}</span>
 
   {{/* Derived, never hand-written: every figure is computed from the finance
        index at request time. 2026-10-27. */}}
-  <h2>Penger</h2>
+  <h1>Penger</h1>
   <p class="prose-lede">
     Hvem betaler for partiene. Tallene er partienes egne årsregnskap slik de
     rapporteres til SSB, i kroner, fra {{.FirstYear}} til {{.LatestYear}}.

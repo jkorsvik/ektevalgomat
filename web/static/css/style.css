@@ -112,7 +112,12 @@ header.site .wrap {
   gap: var(--sp-3);
 }
 
-header.site h1 { margin: 0; font-size: var(--fs-2xl); letter-spacing: -0.015em; }
+/* The site name is a paragraph now: it was an <h1> on all thirteen pages, so no page
+   had its own first-level heading and /rommet had two. Each page carries its own h1;
+   the brand is a link, not a heading. */
+header.site .site-title { margin: 0; font-size: var(--fs-2xl); letter-spacing: -0.015em; }
+header.site .site-title a { color: inherit; text-decoration: none; }
+main > h1, .wrap > h1 { font-size: var(--fs-3xl); margin: var(--sp-1) 0 var(--sp-5); }
 .brand {
   display: inline-flex;
   align-items: center;
@@ -1496,8 +1501,13 @@ tr.party-budget-open { background: var(--accent-soft); }
   font-size: var(--fs-2xs) !important;
 }
 /* /rommet: the reference frame and the one-dimension spectrum (2026-10-30) */
-.rom-canvas-wrap {
+/* The labels are positioned from the projection, so their coordinate space must be
+   the canvas alone. Anchored to the whole section, an axis tip that projects above
+   the canvas landed on the section heading: measured on the live page, "Akse 2" sat
+   on top of "Partiene som volum". */
+.rom-canvas-box {
   position: relative;
+  overflow: hidden;
 }
 .rom-axes {
   position: absolute;

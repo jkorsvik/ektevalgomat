@@ -1,6 +1,7 @@
 package analysis
 
 import (
+	"math"
 	"strconv"
 	"strings"
 
@@ -43,11 +44,27 @@ func (r DimensionRow) Span() int {
 // MeanLabel renders the mean on the same -2..+2 scale the rest of the site uses.
 // ok is false when nothing was coded, so a caller never prints "0.0" for
 // "nothing known".
+//
+// The separator is a comma and the sign a typographic minus, because this string
+// goes straight into a Norwegian page. strconv's dot form shipped 108 cells reading
+// "-0.2" on /kart while every other figure on the site read "-0,2", which is the
+// kind of inconsistency a reader reads as two different scales.
 func (r DimensionRow) MeanLabel() (string, bool) {
 	if r.Coded == 0 {
 		return "", false
 	}
-	return strconv.FormatFloat(r.Mean, 'f', 1, 64), true
+	neg := r.Mean < 0
+	v := math.Abs(r.Mean)
+	// Round, not truncate, at one decimal: a mean of 1.96 is 2.0, and printing 1.9
+	// would understate it on a scale whose ends are exactly what a reader looks at.
+	hundredths := int64(math.Round(v * 10))
+	whole := hundredths / 10
+	tenths := hundredths % 10
+	out := strconv.FormatInt(whole, 10) + "," + strconv.FormatInt(tenths, 10)
+	if neg {
+		return "\u2212" + out, true
+	}
+	return out, true
 }
 
 // yearOf pulls the year out of an evidence date. Evidence dates are ISO in

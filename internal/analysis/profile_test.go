@@ -86,8 +86,20 @@ func TestMeanLabelIsAbsentWhenNothingIsCoded(t *testing.T) {
 	if _, ok := (DimensionRow{}).MeanLabel(); ok {
 		t.Error("MeanLabel reported a value for a row with nothing coded: \"unknown\" would render as 0.0")
 	}
-	if got, ok := (DimensionRow{Coded: 2, Mean: 1.5}).MeanLabel(); !ok || got != "1.5" {
-		t.Errorf("MeanLabel = %q/%v, want 1.5/true", got, ok)
+	// Norwegian separators: a comma, and U+2212 rather than a hyphen, because the
+	// string is printed on a page where every other figure reads that way.
+	if got, ok := (DimensionRow{Coded: 2, Mean: 1.5}).MeanLabel(); !ok || got != "1,5" {
+		t.Errorf("MeanLabel = %q/%v, want 1,5/true", got, ok)
+	}
+	if got, _ := (DimensionRow{Coded: 2, Mean: -1.44}).MeanLabel(); got != "\u22121,4" {
+		t.Errorf("MeanLabel for -1.44 = %q, want \u22121,4", got)
+	}
+	// Rounded, not truncated, at the far end of the scale.
+	if got, _ := (DimensionRow{Coded: 2, Mean: 1.96}).MeanLabel(); got != "2,0" {
+		t.Errorf("MeanLabel for 1.96 = %q, want 2,0", got)
+	}
+	if got, _ := (DimensionRow{Coded: 2, Mean: 0}).MeanLabel(); got != "0,0" {
+		t.Errorf("MeanLabel for 0 = %q, want 0,0", got)
 	}
 }
 

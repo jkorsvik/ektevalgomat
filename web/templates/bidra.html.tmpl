@@ -8,7 +8,7 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
@@ -18,7 +18,7 @@
        hand drifts away from the real gaps and sends volunteers after work
        that is already done, which is the fastest way to lose them. The test
        fails if a count here stops matching the data. 2026-10-24. */}}
-  <h2>Hva som mangler, akkurat nå</h2>
+  <h1>Hva som mangler, akkurat nå</h1>
   <p class="prose-lede">
     Av {{.StatementCount}} utsagn og {{.PartyCount}} partier er
     {{.GapCells}} partiposisjoner ikke kodet, fordelt på

@@ -7,7 +7,7 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 {{/* Every party's programme points on one page, each a verbatim quote from
      that party's own 2025-2029 programme. This answers "hva sier de at de
@@ -15,6 +15,7 @@
      party the autopilot has not read yet says so, rather than showing an
      empty section that reads like "the party promises nothing". */}}
 <main>
+  <h1>Partiprogrammene</h1>
   <section class="hero">
     <div class="hero-meta">
       <span class="hero-dimension">Kildebasen</span>

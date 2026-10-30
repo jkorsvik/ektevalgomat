@@ -8,7 +8,7 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
@@ -24,7 +24,7 @@
        method vocabulary (transparens/konsekvens), the build status, the
        addendum caveat and the correction log all moved into <details>
        tiers below that answer — depth one click down, not the entrance. */}}
-  <h2>Hvorfor dette finnes</h2>
+  <h1>Hvorfor dette finnes</h1>
   <p class="prose-lede">
     Mediene skriver mest om sakene som er store denne uken. Det er ikke
     alltid de samme sakene som avgjør hvor mye handlefrihet, åpenhet

@@ -74,8 +74,8 @@ func TestEveryPageUsesSharedPartials(t *testing.T) {
 		for _, want := range []string{
 			`<link rel="stylesheet" href="/static/css/style.css?v=`,
 			`<link rel="preload" href="/static/fonts/IBMPlexSerif-SemiBold-Latin1.woff2"`,
-			`<h1 class="site-title"><a class="brand" href="/"><svg class="brand-mark"`,
-			`<a href="/metode">Metode</a>`,
+			`<p class="site-title"><a class="brand" href="/"><svg class="brand-mark"`,
+			`href="/metode"`,
 		} {
 			if w.Code != 200 || !strings.Contains(body, want) {
 				t.Errorf("%s (status %d): missing %s", path, w.Code, want)

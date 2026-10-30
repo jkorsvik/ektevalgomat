@@ -8,14 +8,14 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
 
   {{/* Derived, never hand-written: every cell is computed from the dataset at
        request time. 2026-10-27. */}}
-  <h2>Kartet</h2>
+  <h1>Kartet</h1>
   <p class="prose-lede">
     Hvert partis kodede posisjon per sakområde, regnet ut fra datasettet.
     Tallet i en celle er gjennomsnittet på skalaen −2 til +2, og tallet i

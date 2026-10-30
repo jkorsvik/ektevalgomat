@@ -7,7 +7,7 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
@@ -16,7 +16,7 @@
        privacy is the one topic people expect one click away from any
        footer, and a personal-data policy shouldn't need clicking a
        "hva betyr dette" toggle to even see it exists. */}}
-  <h2>Personvern</h2>
+  <h1>Personvern</h1>
   <p class="lede">
     Så langt ser prosjektet bare på partier, stortingsrepresentanter i
     offisiell rolle og statlige institusjoner. Alt kommer fra dokumenter

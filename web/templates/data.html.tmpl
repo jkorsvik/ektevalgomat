@@ -8,7 +8,7 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
@@ -20,7 +20,7 @@
        before guessing. Column names and descriptions come from
        server.evidenceColumns, the same list the CSV header is built from,
        so this page cannot describe a column the file does not have. */}}
-  <h2>Hele datasettet, som filer</h2>
+  <h1>Hele datasettet, som filer</h1>
   <p class="prose-lede">
     Alt valgomaten bygger på ligger åpent: {{.StatementCount}} utsagn og
     {{.EvidenceCount}} påstander med kilde. Du kan laste det ned og sjekke

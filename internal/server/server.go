@@ -595,6 +595,7 @@ func New(logger *slog.Logger) http.Handler {
 		"sourceTierShort":    sourceTierShort,
 		"issueURL":           issueURL,
 		"siteBase":           func() string { return siteBase },
+		"nav":                func() []navLink { return navLinks },
 		"nok":                nok,
 		"dateNO":             dateNO,
 		"pct":                pct,

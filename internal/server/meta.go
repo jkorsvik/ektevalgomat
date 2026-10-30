@@ -22,6 +22,9 @@ type pageMeta struct {
 	Title       string
 	Description string
 	Canonical   string
+	// Path is the route this page lives on. The navigation marks the current page
+	// from it, so a reader can see where they are without reading the URL.
+	Path string
 }
 
 func meta(title, description, path string) pageMeta {
@@ -29,6 +32,7 @@ func meta(title, description, path string) pageMeta {
 		Title:       title,
 		Description: trimTo(description, 155),
 		Canonical:   siteBase + path,
+		Path:        path,
 	}
 }
 
@@ -66,4 +70,33 @@ func partyMeta(p data.Party, points int) pageMeta {
 		desc += " " + strconv.Itoa(points) + " utvalgte løfter, sitert med side."
 	}
 	return meta(p.Name+" · partiprogram · Ekte valgomat", desc, "/parti/"+p.ID)
+}
+
+// navLink is one destination in the site's navigation.
+type navLink struct {
+	Href  string
+	Label string
+}
+
+// navLinks is the single definition of the site's navigation, and every page that a
+// reader is meant to reach appears here. Before 2026-10-30 eight pages — Kartet,
+// Stemmemønster, År for år, Rommet, Makt, Penger, Eierskap and Data — were reachable
+// only from one line of small footer links, so the most substantial work on the site
+// was invisible from the top of every page. A test walks the route table and fails if
+// a page is missing here.
+var navLinks = []navLink{
+	{"/", "Valgomat"},
+	{"/resultat", "Resultat"},
+	{"/partier", "Partiene"},
+	{"/kart", "Kartet"},
+	{"/stemmer", "Stemmemønster"},
+	{"/tidslinje", "År for år"},
+	{"/rommet", "Rommet"},
+	{"/budsjett", "Budsjettet"},
+	{"/penger", "Penger"},
+	{"/eierskap", "Eierskap"},
+	{"/makt", "Makt"},
+	{"/data", "Data"},
+	{"/metode", "Metode"},
+	{"/om", "Om"},
 }

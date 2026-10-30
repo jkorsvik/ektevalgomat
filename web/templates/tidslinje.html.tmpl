@@ -8,14 +8,14 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
 
   {{/* Derived, never hand-written: every cell is computed from the dataset at
        request time. 2026-10-27. */}}
-  <h2>Parti, sakområde og år</h2>
+  <h1>Parti, sakområde og år</h1>
   <p class="prose-lede">
     Samme kart som <a href="/kart">Kartet</a>, men med årene bevart.
     En celle viser gjennomsnittet på skalaen −2 til +2 for posisjonene partiet

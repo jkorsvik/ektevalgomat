@@ -9,7 +9,7 @@
 </head>
 <body>
 
-{{template "header"}}
+{{template "header" .}}
 
 <main>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
@@ -67,11 +67,13 @@
       alle partiene ({{.SpreadLo}} til {{.SpreadHi}}), så det er retningen som
       betyr noe, ikke omfanget.
     </p>
+    <div class="rom-canvas-box">
     <canvas id="rommet-canvas" width="960" height="620" role="img"
             aria-label="Tredimensjonal visning av partienes posisjoner. Tabellen under har de samme tallene.">
       Nettleseren din viser ikke denne tegningen. Tabellen under har de samme tallene.
     </canvas>
     <div id="rommet-axes" class="rom-axes" aria-hidden="true"></div>
+    </div>
     <p id="rommet-status" class="rom-status" aria-live="polite">
       Tegningen trenger WebGL. Tallene under er de samme.
     </p>

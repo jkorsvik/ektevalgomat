@@ -276,8 +276,16 @@
       var pt = projectPoint(tip[0], tip[1], tip[2]);
       if (!pt) { lbl.hidden = true; continue; }
       lbl.hidden = false;
-      lbl.style.left = Math.round(pt.x / sx) + 'px';
-      lbl.style.top = Math.round(pt.y / sy) + 'px';
+      // Clamped inside the canvas box: an axis tip that projects past the edge would
+      // otherwise draw its label on whatever sits above or below the picture.
+      var boxW = canvas.clientWidth, boxH = canvas.clientHeight;
+      var lx = pt.x / sx, ly = pt.y / sy;
+      if (lx < 34) lx = 34;
+      if (lx > boxW - 34) lx = boxW - 34;
+      if (ly < 14) ly = 14;
+      if (ly > boxH - 14) ly = boxH - 14;
+      lbl.style.left = Math.round(lx) + 'px';
+      lbl.style.top = Math.round(ly) + 'px';
     }
   }
 

@@ -821,6 +821,14 @@ func New(logger *slog.Logger) http.Handler {
 			http.NotFound(w, r)
 			return
 		}
+		// The party-budget table drills down to the posts of one rammeområde. It is a
+		// query parameter rather than 751 rows inlined: the page stays readable, and
+		// the drill-down is a link anyone can share.
+		if raw := r.URL.Query().Get("omrade"); raw != "" {
+			if n, err := strconv.Atoi(raw); err == nil {
+				view.PartyBudget = selectArea(view.PartyBudget, n)
+			}
+		}
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := budgetTmpl.Execute(w, view); err != nil {
 			logger.Error("render budget", "err", err)

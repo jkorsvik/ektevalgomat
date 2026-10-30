@@ -1420,3 +1420,24 @@ details[open] > .budget-section-sum h2 { color: var(--ink); }
 .rom-focus-line { color: var(--muted); font-size: var(--fs-sm); margin: 0 0 var(--sp-3); }
 .rom-focus-list { margin: 0; padding-left: var(--sp-7); font-size: var(--fs-sm); font-variant-numeric: tabular-nums; }
 .rom-focus-mine { font-weight: 600; color: var(--ink); }
+
+/* Party-budget cells (2026-10-30): sign is the colour, magnitude is the bar, and the
+   two kinds of empty are told apart. Widths are classes because the CSP forbids
+   inline styles, and five steps is as many as a 30px cell can distinguish. */
+.party-budget td.fig { white-space: nowrap; }
+.party-bar { display: inline-block; height: 0.5em; border-radius: 2px; margin-right: 0.4em; vertical-align: middle; }
+.party-bar.up { background: var(--up); }
+.party-bar.down { background: var(--down); }
+.party-bar.b1 { width: 5px; }
+.party-bar.b2 { width: 12px; }
+.party-bar.b3 { width: 20px; }
+.party-bar.b4 { width: 28px; }
+.party-bar.b5 { width: 36px; }
+.party-num { font-variant-numeric: tabular-nums; }
+.party-absent { color: var(--line); }
+.party-blank { color: var(--muted); font-style: italic; }
+tr.party-budget-open { background: var(--accent-soft); }
+.party-posts { margin-top: var(--sp-7); }
+.party-posts h3 { font-size: var(--fs-lg); margin: 0 0 var(--sp-3); }
+.party-posts-table { font-size: var(--fs-sm); }
+.party-post-id { color: var(--muted); white-space: nowrap; }

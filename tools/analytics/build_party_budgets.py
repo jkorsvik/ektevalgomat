@@ -276,6 +276,11 @@ def extract(rows: list[list[str]], roles: dict) -> dict:
     sections: dict[str, list] = {}
     sums: dict[str, dict] = {}
     current = None
+    # The kapittel is printed once, on a heading row with no post number. Post rows
+    # leave their Kap. cell empty, so without carrying it forward every extracted
+    # post was identified as "/1" with no chapter, which is not a bevilgning anyone
+    # can look up.
+    current_kap = ""
     for cells in rows:
         joined = " ".join(cells)
         sm = SECTION.search(cells[0] if cells else "")
@@ -306,7 +311,12 @@ def extract(rows: list[list[str]], roles: dict) -> dict:
         # "3 Lete- og feltutviklingsutgifter" with the same figure, and
         # Innst. 8 S rammeområde 9 prints a kapittel's total and then its parts.
         # Adding both doubled the column, which the sum check caught twice.
-        if not (cells[1].strip().isdigit() if len(cells) > 1 else False):
+        kap = cells[0].strip() if cells else ""
+        post = cells[1].strip() if len(cells) > 1 else ""
+        if kap and not post:
+            current_kap = kap
+            continue
+        if not post.isdigit():
             continue
         posted = {}
         for i, role in roles.items():
@@ -317,8 +327,8 @@ def extract(rows: list[list[str]], roles: dict) -> dict:
         if not posted:
             continue
         sections[current].append({
-            "kap": cells[0] if len(cells) > 0 else "",
-            "post": cells[1] if len(cells) > 1 else "",
+            "kap": kap or current_kap,
+            "post": post,
             "formal": cells[2] if len(cells) > 2 else "",
             "amounts": {str(i): {"kr": a[0], "change": a[1]} for i, a in posted.items()},
         })

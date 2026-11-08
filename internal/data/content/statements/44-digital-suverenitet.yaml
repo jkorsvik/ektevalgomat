@@ -1,7 +1,7 @@
 id: utsagn-44
 number: 44
-dimension: "Tillegg (utenfor de 42)"
-primary_question: "Beholder Norge reell beslutnings- og operasjonsevne over kritisk infrastruktur og sensitive data?"
+dimension: "Teknologisk kapasitet"
+primary_question: "Kan kritiske digitale funksjoner og kompetanse opprettholdes under press?"
 case_tag: digital_suverenitet
 short_name: "Fortsatt tillate skytjenester utenfor EØS"
 text: >

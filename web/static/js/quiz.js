@@ -71,7 +71,7 @@
   var QUICK_STATEMENT_IDS = [
     "utsagn-01", "utsagn-07", "utsagn-12", "utsagn-19",
     "utsagn-21", "utsagn-27", "utsagn-32", "utsagn-37",
-    "utsagn-39", "utsagn-45", "utsagn-46", "utsagn-53",
+    "utsagn-39", "utsagn-44", "utsagn-46", "utsagn-53",
   ];
   var QUICK_SET = {};
   QUICK_STATEMENT_IDS.forEach(function (id) { QUICK_SET[id] = true; });
@@ -108,8 +108,22 @@
   var viewMode = loadViewMode();
   var quickMode = loadQuickMode();
 
+  function hasAnyPartyPosition(stId) {
+    var row = DATA.cells && DATA.cells[stId];
+    if (!row) return false;
+    var keys = Object.keys(row);
+    for (var i = 0; i < keys.length; i++) {
+      if (row[keys[i]] && isPosition(row[keys[i]].party_position)) return true;
+    }
+    return false;
+  }
+
   function activeStatements() {
-    if (!quickMode) return DATA.statements;
+    if (!quickMode) {
+      return DATA.statements.filter(function (st) {
+        return hasAnyPartyPosition(st.id) || answers[st.id] !== undefined;
+      });
+    }
     return DATA.statements.filter(function (st) { return !!QUICK_SET[st.id]; });
   }
 
@@ -1063,7 +1077,7 @@
     });
     wrap.appendChild(list);
     if (quickMode) {
-      var expandBtn = el("button", "quiz-btn quiz-back", "Fortsett med alle " + DATA.statements.length + " utsagn");
+      var expandBtn = el("button", "quiz-btn quiz-back", "Fortsett med alle kodede utsagn");
       expandBtn.type = "button";
       expandBtn.addEventListener("click", function () {
         quickMode = false;

@@ -79,17 +79,14 @@
     </p>
   </details>
 
-  {{if .AddendumCount}}
   <details class="disclosure metode-disclosure">
-    <summary>Om de {{.AddendumCount}} utsagnene utenfor de 42</summary>
+    <summary>Utsagn 44 og 45 (opprinnelig nummerert utenfor de 42)</summary>
     <p>
-      Utsagn 44 og 45 hører ikke til noen av de elleve dimensjonene, og
-      ble derfor nummerert utenfor notatets område 1 til 42. Numrene over
-      45 er senere tilføyelser som hører hjemme i en dimensjon, så
-      nummeret alene avgjør ikke om et utsagn står utenfor. Et tredje
-      utsagn fra samme gruppe ble senere flyttet til dimensjonen det
-      hører hjemme i (Norsk handlefrihet) og fikk plassen som utsagn 7.
-      Begge rettelsene står i
+      Utsagn 44 og 45 ble først ført i en egen tilleggsgruppe utenfor
+      notatets område 1 til 42, og er nå plassert i dimensjonene de hører
+      hjemme i: utsagn 44 under «Teknologisk kapasitet» og utsagn 45 under
+      «Norsk handlefrihet». Et tredje utsagn fra samme gruppe ble tidligere
+      flyttet til «Norsk handlefrihet» som utsagn 7. Rettelsene står i
       <a href="#rettelseslogg">rettelsesloggen</a> nederst på siden.
     </p>
     <p>
@@ -101,7 +98,6 @@
       og dekker {{.C45.Coded}} av {{.C45.Total}} partier.
     </p>
   </details>
-  {{end}}
 
   <details class="disclosure metode-disclosure" id="rettelseslogg">
     <summary>Rettelseslogg ({{len .Corrections}})</summary>

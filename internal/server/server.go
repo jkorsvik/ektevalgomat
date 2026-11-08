@@ -905,6 +905,8 @@ func New(logger *slog.Logger) http.Handler {
 			SnapshotDate   string
 			Licence        string
 			StatementCount int
+			PartyCount     int
+			CellCount      int
 			EvidenceCount  int
 			WithQuote      int
 			ArchiveCount   int
@@ -916,6 +918,8 @@ func New(logger *slog.Logger) http.Handler {
 			SnapshotDate:   SnapshotDate,
 			Licence:        licenceNote,
 			StatementCount: len(ds.Statements),
+			PartyCount:     len(ds.Parties),
+			CellCount:      len(ds.Statements) * len(ds.Parties),
 			EvidenceCount:  total,
 			WithQuote:      withQuote,
 			ArchiveCount:   data.SourceWindowCount(),
@@ -937,6 +941,10 @@ func New(logger *slog.Logger) http.Handler {
 
 	mux.HandleFunc("GET /data/utsagn.json", func(w http.ResponseWriter, r *http.Request) {
 		serveStatementsJSON(w, ds)
+	})
+
+	mux.HandleFunc("GET /data/celler.json", func(w http.ResponseWriter, r *http.Request) {
+		serveCellsJSON(w, ds)
 	})
 
 	mux.HandleFunc("GET /data/evidens.json", func(w http.ResponseWriter, r *http.Request) {

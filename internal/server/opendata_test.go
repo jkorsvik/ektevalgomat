@@ -253,6 +253,7 @@ func TestDataPageIsTheFrontDoorToTheFiles(t *testing.T) {
 	total, withQuote := quoteCounts(data.Store)
 	for _, want := range []string{
 		`href="/data/utsagn.json"`,
+		`href="/data/celler.json"`,
 		`href="/data/evidens.json"`,
 		`href="/data/evidens.csv"`,
 		strconv.Itoa(len(data.Store.Statements)) + " utsagn",
@@ -266,7 +267,7 @@ func TestDataPageIsTheFrontDoorToTheFiles(t *testing.T) {
 		}
 	}
 
-	for _, path := range []string{"/data/utsagn.json", "/data/evidens.json", "/data/evidens.csv"} {
+	for _, path := range []string{"/data/utsagn.json", "/data/celler.json", "/data/evidens.json", "/data/evidens.csv"} {
 		if resp := get(t, path); resp.Code != http.StatusOK {
 			t.Errorf("%s returned %d", path, resp.Code)
 		}
@@ -283,5 +284,31 @@ func TestSitemapListsTheDataPage(t *testing.T) {
 	}
 	if !strings.Contains(string(body), "<loc>"+siteBase+"/data</loc>") {
 		t.Error("sitemap does not list /data")
+	}
+}
+
+// TestCellsJSONMatchesScoring verifies that /data/celler.json exports all
+// statement×party cells with the exact position, range, strength, and
+// consistency labels computed by scoring.ComputeCell.
+func TestCellsJSONMatchesScoring(t *testing.T) {
+	var env envelope[cellExport]
+	if err := json.Unmarshal(get(t, "/data/celler.json").Body.Bytes(), &env); err != nil {
+		t.Fatalf("celler.json does not parse: %v", err)
+	}
+	wantCount := len(data.Store.Statements) * len(data.Store.Parties)
+	if env.Count != wantCount || len(env.Items) != wantCount {
+		t.Fatalf("count=%d items=%d want=%d", env.Count, len(env.Items), wantCount)
+	}
+	coded := 0
+	for _, item := range env.Items {
+		if item.StatementID == "" || item.PartyID == "" || item.Dimension == "" {
+			t.Errorf("cell missing statement_id, party_id, or dimension: %+v", item)
+		}
+		if item.PartyPosition != nil {
+			coded++
+		}
+	}
+	if coded == 0 {
+		t.Fatal("no coded cells in celler.json")
 	}
 }

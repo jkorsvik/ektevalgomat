@@ -77,11 +77,11 @@ func TestThemeBlockMarksTheLinkedPoints(t *testing.T) {
 	}
 }
 
-// TestThemeBlockAbsentWhereNoPartyHasPoints: three of the twelve dimensions
-// have no programme points at all, so the block must be absent rather than
-// empty — an empty block would read as "no party has a position here".
+// TestThemeBlockAbsentWhereNoPartyHasPoints: dimensions that have no
+// programme points at all must omit the block rather than render an empty
+// shell — an empty block would read as "no party has a position here".
 func TestThemeBlockAbsentWhereNoPartyHasPoints(t *testing.T) {
-	for _, id := range []string{"utsagn-52", "utsagn-46", "utsagn-44"} {
+	for _, id := range []string{"utsagn-52", "utsagn-46"} {
 		page := buildStatementPage(data.Store, mustStatement(t, id))
 		if len(page.Theme) != 0 {
 			t.Errorf("%s is in a dimension with no programme points, but the theme block holds %d parties", id, len(page.Theme))

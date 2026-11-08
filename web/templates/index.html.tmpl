@@ -51,10 +51,10 @@
     <details class="disclosure front-caveat">
       <summary>{{len .NoPosition}} utsagn teller ikke ennå</summary>
       <p>
-        Du kan svare på dem
-        ({{range $i, $s := .NoPosition}}{{if $i}}, {{end}}<a href="/utsagn/{{$s.Number}}">utsagn {{$s.Number}}</a>{{end}}),
-        men de teller ikke i resultatet før partiposisjonene er kodet.
-        Resultatsiden sier det samme etter at du har svart.
+        {{range $i, $s := .NoPosition}}{{if $i}}, {{end}}<a href="/utsagn/{{$s.Number}}">Utsagn {{$s.Number}}</a>{{end}}
+        har ennå ingen kodede partiposisjoner og hoppes derfor over i
+        valgomaten til posisjonene er på plass. Resultatsiden sier det samme
+        hvis du har svart på dem tidligere.
       </p>
     </details>
     {{end}}

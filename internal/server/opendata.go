@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/jkorsvik/ektevalgomat/internal/data"
+	"github.com/jkorsvik/ektevalgomat/internal/scoring"
 )
 
 // Open data (2026-10-23). Until now the dataset was reachable only by
@@ -310,6 +311,69 @@ func serveWindowsJSON(w http.ResponseWriter) {
 		SnapshotDate:  SnapshotDate,
 		Dataset:       "kildetekst",
 		Licence:       windowLicenceNote,
+		Count:         len(items),
+		Items:         items,
+	})
+}
+
+// cellExport is one derived (statement, party) cell as the quiz and statement
+// pages see it: the newest coded position, the min/max range across all coded
+// rows, the evidence strength, the multi-year consistency summary, and the IDs
+// of the underlying evidence items.
+type cellExport struct {
+	StatementID        string   `json:"statement_id"`
+	StatementNumber    int      `json:"statement_number"`
+	Dimension          string   `json:"dimension"`
+	PartyID            string   `json:"party_id"`
+	PartyShort         string   `json:"party_short"`
+	PartyPosition      *int     `json:"party_position"`
+	PositionMin        int      `json:"position_min"`
+	PositionMax        int      `json:"position_max"`
+	PositionYears      []int    `json:"position_years"`
+	Evidensstyrke      string   `json:"evidensstyrke"`
+	EvidensstyrkeCount int      `json:"evidensstyrke_count"`
+	EvidensstyrkeBasis int      `json:"evidensstyrke_basis"`
+	Konsistens         string   `json:"konsistens"`
+	EvidenceIDs        []string `json:"evidence_ids"`
+}
+
+func serveCellsJSON(w http.ResponseWriter, ds *data.Dataset) {
+	items := make([]cellExport, 0, len(ds.Statements)*len(ds.Parties))
+	for _, s := range ds.Statements {
+		for _, p := range ds.Parties {
+			c := scoring.ComputeCell(ds, s.ID, p.ID)
+			evs := ds.EvidenceForCell(s.ID, p.ID)
+			ids := make([]string, 0, len(evs))
+			for _, e := range evs {
+				ids = append(ids, e.ID)
+			}
+			years := c.PositionYears
+			if years == nil {
+				years = []int{}
+			}
+			items = append(items, cellExport{
+				StatementID:        s.ID,
+				StatementNumber:    s.Number,
+				Dimension:          s.Dimension,
+				PartyID:            p.ID,
+				PartyShort:         p.Short,
+				PartyPosition:      c.PartyPosition,
+				PositionMin:        c.PositionMin,
+				PositionMax:        c.PositionMax,
+				PositionYears:      years,
+				Evidensstyrke:      c.Evidensstyrke,
+				EvidensstyrkeCount: c.EvidensstyrkeCount,
+				EvidensstyrkeBasis: c.EvidensstyrkeBasis,
+				Konsistens:         c.Konsistens,
+				EvidenceIDs:        ids,
+			})
+		}
+	}
+	writeJSON(w, envelope[cellExport]{
+		SchemaVersion: openDataSchemaVersion,
+		SnapshotDate:  SnapshotDate,
+		Dataset:       "celler",
+		Licence:       licenceNote,
 		Count:         len(items),
 		Items:         items,
 	})

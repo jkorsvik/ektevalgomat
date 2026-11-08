@@ -12,8 +12,8 @@ func TestProjectionCoversEveryPartyAndDimension(t *testing.T) {
 	if len(sp.Clouds) != 9 {
 		t.Fatalf("clouds = %d, want 9 parties", len(sp.Clouds))
 	}
-	if len(sp.Dimensions) != 12 {
-		t.Fatalf("dimensions = %d, want 12", len(sp.Dimensions))
+	if len(sp.Dimensions) != 11 {
+		t.Fatalf("dimensions = %d, want 11", len(sp.Dimensions))
 	}
 	if len(sp.Axes) != Axes {
 		t.Fatalf("axes = %d, want %d", len(sp.Axes), Axes)
@@ -35,15 +35,16 @@ func TestProjectionCoversEveryPartyAndDimension(t *testing.T) {
 
 // The variance shares are the projection's headline claim, so they are pinned
 // against an independent implementation. After the blind coding corrections on
-// 2026-11-01, numpy's SVD on the same 9×12 matrix gives 48.4 % / 23.1 % / 12.8 %,
-// total 84.3 %. A Jacobi bug that still produced plausible numbers would pass a
-// "sums to something" check and fail this.
+// 2026-11-01 and moving utsagn-44/45 into their canonical dimensions (2026-11-08),
+// SVD on the 9×11 matrix gives 50.8 % / 22.5 % / 11.8 %, total 85.1 %. A Jacobi bug
+// that still produced plausible numbers would pass a "sums to something" check and
+// fail this.
 func TestThreeAxesHoldTheMeasuredShare(t *testing.T) {
 	sp := Project(data.Store)
-	if math.Abs(sp.Explained-0.843) > 0.005 {
-		t.Errorf("explained = %.4f, want 0.843 (numpy SVD cross-check)", sp.Explained)
+	if math.Abs(sp.Explained-0.851) > 0.005 {
+		t.Errorf("explained = %.4f, want 0.851 (numpy SVD cross-check)", sp.Explained)
 	}
-	want := []float64{0.484, 0.231, 0.128}
+	want := []float64{0.508, 0.225, 0.118}
 	sum := 0.0
 	for i, a := range sp.Axes {
 		if math.Abs(a.Variance-want[i]) > 0.005 {

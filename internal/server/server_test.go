@@ -236,7 +236,8 @@ func TestFrontPageDimensionTotalsAreDerived(t *testing.T) {
 	h.ServeHTTP(w, httptest.NewRequest("GET", "/", nil))
 	body := w.Body.String()
 	want := map[string]int{
-		"norsk-handlefrihet":           7, // old map said 6
+		"norsk-handlefrihet":           8, // old map said 6
+		"teknologisk-kapasitet":        4, // old map said 3
 		"universell-grunnmur":          7, // old map said 6
 		"robusthet-adaptabilitet":      5, // old map said 4
 		"finansiering-av-fellesskapet": 7, // old map said 5

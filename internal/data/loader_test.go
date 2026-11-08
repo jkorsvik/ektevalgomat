@@ -805,9 +805,9 @@ func TestPolitiskReklamePositionsAreCoded(t *testing.T) {
 func TestStatementsPerDimension(t *testing.T) {
 	want := map[string]int{
 		"Demokratisk åpenhet":                             5,
-		"Norsk handlefrihet":                              7,
+		"Norsk handlefrihet":                              8,
 		"Forvaltning av fellesskapets ressurser / energi": 7,
-		"Teknologisk kapasitet":                           3,
+		"Teknologisk kapasitet":                           4,
 		"Innovasjon / omstillingsevne":                    3,
 		"Universell grunnmur":                             7,
 		"Barns muligheter":                                6,
@@ -815,7 +815,6 @@ func TestStatementsPerDimension(t *testing.T) {
 		"Generasjonsansvar":                               2,
 		"Finansiering av fellesskapet":                    7,
 		"Tilgang, integrering og rettsstat":               6,
-		"Tillegg (utenfor de 42)":                         2,
 	}
 	got := map[string]int{}
 	for _, s := range Store.Statements {

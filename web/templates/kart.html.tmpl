@@ -37,7 +37,7 @@
       <tr>
         <th>{{.Dimension}}</th>
         {{range .Cells}}
-          {{if .HasData}}<td>{{.Mean}}<span class="muted"> ({{.Coded}}/{{.Statements}})</span>{{if .Dated}}<span class="dated-mark" title="Minst ett utsagn i denne cellen har to daterte observasjoner">†</span>{{end}}</td>
+          {{if .HasData}}<td><span class="kart-bar" aria-hidden="true"><span class="kart-bar-fill {{.BarClass}}"></span></span>{{.Mean}}<span class="muted"> ({{.Coded}}/{{.Statements}})</span>{{if .Dated}}<span class="dated-mark" title="Minst ett utsagn i denne cellen har to daterte observasjoner">†</span>{{end}}</td>
           {{else}}<td class="muted">–</td>{{end}}
         {{end}}
       </tr>

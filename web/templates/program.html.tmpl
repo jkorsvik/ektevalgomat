@@ -33,6 +33,41 @@
     {{end}}
   </section>
 
+  {{if .Statements}}
+  <section class="party-record">
+    <h2>Ord og handling på Stortinget ({{len .Statements}} kodede utsagn)</h2>
+    <p class="lede">
+      Konsistens på tvers av kilder: <strong>{{.ConsistentCount}} konsistente</strong> (flere uavhengige kilder peker samme vei),
+      <strong>{{.SplitCount}} splittede</strong> (kilder peker i ulik retning), og
+      <strong>{{.SingleSource}} med én kilde</strong>.
+    </p>
+    <details class="disclosure">
+      <summary>Vis alle {{len .Statements}} kodede standpunkter og kilder for {{.Party.Name}}</summary>
+      <table class="party-overview">
+        <thead>
+          <tr>
+            <th scope="col">Utsagn</th>
+            <th scope="col">Standpunkt</th>
+            <th scope="col">Konsistens og nyeste kilde</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{range .Statements}}
+          <tr>
+            <td><a href="/utsagn/{{.Number}}#party-{{$.Party.ID}}">Utsagn {{.Number}}: {{.ShortName}}</a></td>
+            <td class="po-word">{{.PositionWord}} <span class="po-value">({{.PositionLabel}})</span></td>
+            <td class="po-evidence">
+              <strong>{{.KonsistensLabel}}</strong> · {{.EvidensLabel}}
+              {{if .ActionSummary}}<br><span class="muted">{{if .ActionDate}}{{.ActionDate}}: {{end}}{{.ActionSummary}}</span>{{end}}
+            </td>
+          </tr>
+        {{end}}
+        </tbody>
+      </table>
+    </details>
+  </section>
+  {{end}}
+
   {{if .HasPoints}}
   <div class="party-program">
     <p class="program-source">

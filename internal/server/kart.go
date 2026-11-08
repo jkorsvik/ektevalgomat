@@ -1,6 +1,8 @@
 package server
 
 import (
+	"fmt"
+	"math"
 	"strconv"
 
 	"github.com/jkorsvik/ektevalgomat/internal/analysis"
@@ -18,6 +20,7 @@ type kartCell struct {
 	Party      string
 	Short      string
 	Mean       string
+	BarClass   string
 	Coded      int
 	Statements int
 	HasData    bool
@@ -126,6 +129,14 @@ func buildKartView(ds *data.Dataset, snapshotDate string) kartView {
 				}
 				if label, ok := r.MeanLabel(); ok {
 					cell.Mean, cell.HasData = label, true
+					step := int(math.Round(((r.Mean+2.0)/4.0)*20.0)) * 5
+					if step < 0 {
+						step = 0
+					}
+					if step > 100 {
+						step = 100
+					}
+					cell.BarClass = fmt.Sprintf("pct-%d", step)
 				}
 				break
 			}

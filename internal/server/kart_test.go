@@ -120,6 +120,9 @@ func TestKartMarksExactlyTheDatedCells(t *testing.T) {
 	if got := strings.Count(body, "dated-mark"); got != want {
 		t.Errorf("%d dated markers rendered, %d cells have a multi-dated statement", got, want)
 	}
+	if !strings.Contains(body, `class="kart-bar-fill pct-`) {
+		t.Error("/kart does not render visual position bars")
+	}
 	t.Logf("%d dated cells marked", want)
 }
 

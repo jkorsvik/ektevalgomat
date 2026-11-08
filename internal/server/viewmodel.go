@@ -229,6 +229,16 @@ func buildStatementPage(ds *data.Dataset, statement data.Statement) statementPag
 				items = append(items, withWindow(e))
 			}
 		}
+		// Newest dated item first, matching scoring.ComputeCell's newest-wins
+		// rule, so the first coded item ($lead in statement.html.tmpl) is
+		// always the exact source that determined PartyPosition.
+		sort.SliceStable(items, func(i, j int) bool {
+			di, dj := items[i].Date, items[j].Date
+			if di != dj {
+				return di > dj
+			}
+			return items[i].ID > items[j].ID
+		})
 		cell := scoring.ComputeCell(ds, statement.ID, party.ID)
 		row := partyEvidenceRow{Party: party, Cell: cell, Evidence: items}
 		if cell.HasEvidence() {

@@ -30,6 +30,7 @@ type bidraCell struct {
 	NoSource      bool
 	EvidenceCount int
 	IssueURL      string
+	MailURL       string
 }
 
 type bidraGap struct {
@@ -120,16 +121,18 @@ func buildBidraPage(ds *data.Dataset, snapshotDate string) bidraPage {
 			}
 			if c.NoSource {
 				page.NoSourceCells++
-				c.IssueURL = issueURL("rapporter-kilde.md",
-					fmt.Sprintf("Kilde mangler: %s / %s", s.ID, p.Name),
-					fmt.Sprintf("Kilden som mangler, og hva den sier:\n\n- Utsagn: %s (%s)\n- Parti: %s\n- Kilden jeg fant: \n- Hvor i kilden: \n\nUtsagnet:\n\"%s\"\n",
-						s.ID, gap.Path, p.Name, s.Text))
+				subj := fmt.Sprintf("Kilde mangler: %s / %s", s.ID, p.Name)
+				body := fmt.Sprintf("Kilden som mangler, og hva den sier:\n\n- Utsagn: %s (%s)\n- Parti: %s\n- Kilden jeg fant: \n- Hvor i kilden: \n\nUtsagnet:\n\"%s\"\n",
+					s.ID, gap.Path, p.Name, s.Text)
+				c.IssueURL = issueURL("rapporter-kilde.md", subj, body)
+				c.MailURL = mailtoURL("Ekte valgomat - "+subj, body)
 			} else {
 				page.UncodedCells++
-				c.IssueURL = issueURL("rapporter-kilde.md",
-					fmt.Sprintf("Tolkning mangler: %s / %s", s.ID, p.Name),
-					fmt.Sprintf("Kilden ligger allerede på siden, men ingen posisjon er kodet. Hva sier den?\n\n- Utsagn: %s (%s)\n- Parti: %s\n- Kilden sier (enig/uenig, og hvorfor): \n\nUtsagnet:\n\"%s\"\n",
-						s.ID, gap.Path, p.Name, s.Text))
+				subj := fmt.Sprintf("Tolkning mangler: %s / %s", s.ID, p.Name)
+				body := fmt.Sprintf("Kilden ligger allerede på siden, men ingen posisjon er kodet. Hva sier den?\n\n- Utsagn: %s (%s)\n- Parti: %s\n- Kilden sier (enig/uenig, og hvorfor): \n\nUtsagnet:\n\"%s\"\n",
+					s.ID, gap.Path, p.Name, s.Text)
+				c.IssueURL = issueURL("rapporter-kilde.md", subj, body)
+				c.MailURL = mailtoURL("Ekte valgomat - "+subj, body)
 			}
 			gap.Cells = append(gap.Cells, c)
 		}

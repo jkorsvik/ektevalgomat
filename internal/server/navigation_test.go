@@ -12,8 +12,8 @@ func TestNavigationGroupsAreExplicitAndMarkExploreCurrent(t *testing.T) {
 	if got := len(exploreNavLinks()); got != 8 {
 		t.Errorf("explore navigation has %d links, want 8", got)
 	}
-	if got := len(metaNavLinks()); got != 3 {
-		t.Errorf("meta navigation has %d links, want 3", got)
+	if got := len(metaNavLinks()); got != 4 {
+		t.Errorf("meta navigation has %d links, want 4", got)
 	}
 	for _, link := range navLinks {
 		switch link.Group {

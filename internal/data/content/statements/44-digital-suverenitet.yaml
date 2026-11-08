@@ -1,7 +1,7 @@
 id: utsagn-44
 number: 44
 dimension: "Tillegg (utenfor de 42)"
-primary_question: "Beholder Norge reell beslutnings- og operasjonsevne? (ikke en av memoens 9 dimensjoner — se docs/roadmap.md)"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne over kritisk infrastruktur og sensitive data?"
 case_tag: digital_suverenitet
 short_name: "Fortsatt tillate skytjenester utenfor EØS"
 text: >
@@ -10,10 +10,6 @@ text: >
   sensitive data, så lenge GDPR og norske sikkerhetskrav følges.
 practical_stakes:
   enig: >
-    Offentlige virksomheter kan fortsatt bruke skytjenesteleverandører
-    utenfor EØS til kritisk infrastruktur og sensitive data, så lenge GDPR
-    og norske sikkerhetskrav følges.
+    Stat og kommuner kan lagre sensitive opplysninger og drifte samfunnskritisk IT hos skyselskaper med hovedkontor utenfor Europa (som amerikanske Microsoft, Amazon og Google), forutsatt at personvernforordningen (GDPR) og norske sikkerhetskrav følges.
   uenig: >
-    Offentlige virksomheter kan ikke lenger bruke skytjenesteleverandører
-    utenfor EØS til kritisk infrastruktur og sensitive data, uansett
-    sikkerhetskrav.
+    Det innføres forbud eller strenge restriksjoner mot å legge samfunnskritisk IT og sensitive innbyggerdata hos skyselskaper utenfor EØS, fordi amerikanske og andre utenlandske eiere kan pålegges å utlevere data etter sitt hjemlands etterretningslover.

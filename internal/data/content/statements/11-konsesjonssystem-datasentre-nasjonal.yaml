@@ -9,8 +9,6 @@ text: >
   datasentre.
 practical_stakes:
   enig: >
-    Regjeringen setter i gang en utredning av et nasjonalt konsesjonssystem
-    for datasentre.
+    Regjeringen utreder en nasjonal konsesjonsordning der nye datasentre må søke statlig tillatelse før de får koble seg på strømnettet, slik at myndighetene kan prioritere hva kraften skal brukes til (for eksempel industri fremfor utvinning av kryptovaluta).
   uenig: >
-    Ingen slik utredning settes i gang. Datasentre etableres videre uten et
-    nasjonalt konsesjonssystem.
+    Det utredes ikke et eget nasjonalt konsesjonssystem for datasentre. Datasentre får tilgang til strømnettet etter de vanlige reglene for nettilknytning og kommunal regulering.

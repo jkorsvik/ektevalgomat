@@ -1,7 +1,7 @@
 id: utsagn-45
 number: 45
 dimension: "Tillegg (utenfor de 42)"
-primary_question: "Beholder Norge reell beslutnings- og operasjonsevne? (ikke en av memoens 9 dimensjoner — se docs/roadmap.md)"
+primary_question: "Beholder Norge reell beslutnings- og operasjonsevne i krise og krig?"
 case_tag: forsvar_beredskap_suverenitet
 short_name: "Nasjonal kontroll over forsvar og beredskap"
 text: >
@@ -10,9 +10,6 @@ text: >
   begrense norsk operativt handlingsrom.
 practical_stakes:
   enig: >
-    Norsk forsvars- og beredskapslovgivning vedtas av Stortinget og
-    regjeringen alene, uavhengig av EØS-koordinering eller EU-mandater som
-    kan begrense norsk operativt handlingsrom.
+    Norske lover og regler for forsvar og beredskap skal vedtas av Stortinget og regjeringen alene, uten at EØS-regler eller EU-organer kan binde eller begrense norske myndigheters operative handlingsrom i krise og krig.
   uenig: >
-    Norsk forsvars- og beredskapslovgivning kan bindes av EØS-koordinering
-    eller EU-mandater som begrenser norsk operativt handlingsrom.
+    Norge kan inngå tettere forpliktende forsvars-, industri- og beredskapssamarbeid med EU gjennom EØS og særavtaler, også der felles europeiske regler legger føringer for norsk lovgivning.

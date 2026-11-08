@@ -67,6 +67,14 @@
   // the choice survives a reload. It is a display preference, not an answer;
   // a write for it is skipped while ephemeral mode is on.
   var VIEW_KEY = "ektevalgomat-visning-v1";
+  var QUICK_KEY = "ektevalgomat-hurtig-v1";
+  var QUICK_STATEMENT_IDS = [
+    "utsagn-01", "utsagn-07", "utsagn-12", "utsagn-19",
+    "utsagn-21", "utsagn-27", "utsagn-32", "utsagn-37",
+    "utsagn-39", "utsagn-45", "utsagn-46", "utsagn-53",
+  ];
+  var QUICK_SET = {};
+  QUICK_STATEMENT_IDS.forEach(function (id) { QUICK_SET[id] = true; });
   function loadViewMode() {
     try {
       return localStorage.getItem(VIEW_KEY) === "utforsker" ? "utforsker" : "enkel";
@@ -83,7 +91,27 @@
          won't survive a reload; the quiz still works */
     }
   }
+  function loadQuickMode() {
+    try {
+      return localStorage.getItem(QUICK_KEY) === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+  function persistQuickMode(on) {
+    if (ephemeral) return;
+    try {
+      if (on) localStorage.setItem(QUICK_KEY, "1");
+      else localStorage.removeItem(QUICK_KEY);
+    } catch (e) {}
+  }
   var viewMode = loadViewMode();
+  var quickMode = loadQuickMode();
+
+  function activeStatements() {
+    if (!quickMode) return DATA.statements;
+    return DATA.statements.filter(function (st) { return !!QUICK_SET[st.id]; });
+  }
 
   // Importance weighting (2026-10-13). A weight says how much a statement
   // should pull the result; it is NOT a position and never enters an
@@ -475,10 +503,12 @@
   function updateProgress() {
     var text = document.getElementById("quiz-progress-text");
     var fill = document.getElementById("quiz-progress-fill");
-    var totalN = DATA.statements.length;
+    var stList = activeStatements();
+    var totalN = stList.length;
     if (viewMode === "utforsker") {
-      var answered = countAnswered();
-      if (text) text.textContent = "Besvart " + answered + " av " + totalN + " utsagn";
+      var answered = 0;
+      stList.forEach(function (st) { if (isPosition(answers[st.id])) answered++; });
+      if (text) text.textContent = "Besvart " + answered + " av " + totalN + " utsagn" + (quickMode ? " (hurtigmodus)" : "");
       if (fill) fill.className = "quiz-progress-fill " + progressStepClass(totalN ? answered / totalN : 0);
       return;
     }
@@ -493,7 +523,7 @@
       return;
     }
     var pos = currentIndex + 1;
-    if (text) text.textContent = "Spørsmål " + pos + " av " + totalN;
+    if (text) text.textContent = "Spørsmål " + pos + " av " + totalN + (quickMode ? " (hurtigmodus)" : "");
     if (fill) {
       var cls = progressStepClass(totalN ? pos / totalN : 0);
       // A sliver at the first question, so the line is never invisible while
@@ -641,7 +671,7 @@
   var showingResult = false; // ephemeral inline result
 
   function clampIndex(i) {
-    var max = DATA.statements.length - 1;
+    var max = activeStatements().length - 1;
     if (max < 0) return 0;
     if (i < 0) return 0;
     if (i > max) return max;
@@ -670,14 +700,20 @@
     text.tabIndex = -1;
     card.appendChild(text);
 
-    // Collapsed by default so it doesn't add weight to the card, but it sits
-    // right where you're about to answer — someone unfamiliar with a specific
-    // policy area should be able to judge "sterkt enig" vs "sterkt uenig" from
-    // the two extremes alone, without reading the whole evidence chain first
-    // (2026-09-25 review). Only rendered when the statement actually has one.
-    if (st.practical_stakes_enig || st.practical_stakes_uenig) {
+    // Open by default in the one-question view ("enkel") so a beginner can
+    // immediately read what "Sterkt enig" and "Sterkt uenig" mean in practice
+    // without hunting for a toggle; collapsed in explorer mode where 60 cards
+    // are stacked on one screen.
+    if (st.practical_stakes_enig || st.practical_stakes_uenig || st.primary_question) {
       var stakes = el("details", "disclosure stakes-disclosure");
+      if (viewMode === "enkel") stakes.open = true;
       stakes.appendChild(el("summary", null, "Hva betyr et svar i praksis?"));
+      if (st.primary_question) {
+        var pQuestion = el("p", "stakes-question");
+        pQuestion.appendChild(el("strong", null, "Kjernespørsmål: "));
+        pQuestion.appendChild(document.createTextNode(st.primary_question));
+        stakes.appendChild(pQuestion);
+      }
       if (st.practical_stakes_enig) {
         var pEnig = el("p", null);
         pEnig.appendChild(el("strong", null, "Sterkt enig betyr: "));
@@ -804,6 +840,28 @@
       }
     });
 
+    var qkWrap = el("label", "quiz-settings-item");
+    var qk = document.createElement("input");
+    qk.type = "checkbox";
+    qk.id = "quiz-quick";
+    qk.checked = quickMode;
+    qkWrap.appendChild(qk);
+    qkWrap.appendChild(el("span", "quiz-settings-label", "Hurtigmodus (12 nøkkelutsagn)"));
+    fs.appendChild(qkWrap);
+    qk.addEventListener("change", function () {
+      noteState.resume = null;
+      paintNote();
+      quickMode = qk.checked;
+      persistQuickMode(quickMode);
+      currentIndex = 0;
+      renderQuiz();
+      announce(
+        quickMode
+          ? "Hurtigmodus er slått på. Du ser 12 nøkkelutsagn, ett fra hvert tema."
+          : "Hurtigmodus er slått av. Du ser alle " + DATA.statements.length + " utsagn."
+      );
+    });
+
     var expWrap = el("label", "quiz-settings-item");
     var exp = document.createElement("input");
     exp.type = "checkbox";
@@ -830,7 +888,7 @@
       el(
         "p",
         "quiz-settings-help",
-        "Midlertidig økt lagrer ingenting på enheten, nyttig hvis flere skal bruke den. Utforskermodus viser alle utsagnene i én liste."
+        "Hurtigmodus velger 12 nøkkelutsagn (ett per tema) så du får et gyldig resultat på to minutter. Midlertidig økt lagrer ingenting på enheten. Utforskermodus viser utsagnene i én liste."
       )
     );
     return wrap;
@@ -886,7 +944,8 @@
     });
     nav.appendChild(prev);
 
-    var isLast = currentIndex === DATA.statements.length - 1;
+    var stList = activeStatements();
+    var isLast = currentIndex === stList.length - 1;
     var next = el("button", "quiz-btn quiz-next", isLast ? "Se over svarene dine" : "Neste");
     next.type = "button";
     next.addEventListener("click", function () {
@@ -941,11 +1000,12 @@
     }
     reviewing = false;
     showingResult = false;
+    var stList = activeStatements();
     currentIndex = clampIndex(idx);
     var region = document.getElementById("quiz-region");
     if (!region) return;
     region.innerHTML = "";
-    var card = buildStatementCard(DATA.statements[currentIndex]);
+    var card = buildStatementCard(stList[currentIndex]);
     region.appendChild(card);
     // The hint goes directly under the scale, not after the card: below the
     // card it landed past the fold on a 900px viewport, so the shortcut it
@@ -961,7 +1021,7 @@
     renderNav();
     if (focus) {
       focusRegionHeading(region);
-      announce("Spørsmål " + (currentIndex + 1) + " av " + DATA.statements.length + ".");
+      announce("Spørsmål " + (currentIndex + 1) + " av " + stList.length + ".");
     }
   }
 
@@ -971,6 +1031,7 @@
   function renderReview() {
     showingResult = false;
     reviewing = true;
+    var stList = activeStatements();
     var region = document.getElementById("quiz-region");
     if (!region) return;
     region.innerHTML = "";
@@ -986,7 +1047,7 @@
       )
     );
     var list = el("ul", "review-list");
-    DATA.statements.forEach(function (st, i) {
+    stList.forEach(function (st, i) {
       var li = el("li", "review-item");
       li.appendChild(el("span", "review-stmt", "Utsagn " + st.number));
       var answer = el("span", "review-answer", answerLabel(answers[st.id]));
@@ -1001,6 +1062,18 @@
       list.appendChild(li);
     });
     wrap.appendChild(list);
+    if (quickMode) {
+      var expandBtn = el("button", "quiz-btn quiz-back", "Fortsett med alle " + DATA.statements.length + " utsagn");
+      expandBtn.type = "button";
+      expandBtn.addEventListener("click", function () {
+        quickMode = false;
+        persistQuickMode(false);
+        var r = resumePoint();
+        currentIndex = r ? r.index : 0;
+        renderQuiz();
+      });
+      wrap.appendChild(expandBtn);
+    }
     region.appendChild(wrap);
     updateProgress();
     renderNav();
@@ -1057,7 +1130,7 @@
     root.appendChild(buildSettingsRow());
     var list = el("div", "quiz-explorer-list");
     list.id = "quiz-explorer-list";
-    DATA.statements.forEach(function (st) {
+    activeStatements().forEach(function (st) {
       list.appendChild(buildStatementCard(st));
     });
     root.appendChild(list);
@@ -1087,15 +1160,17 @@
   // page's "Kjerneverdiene" dimension links) resolves to the first statement
   // of that dimension — the theme itself is never shown as a heading here.
   function statementIndexByNumber(n) {
-    for (var i = 0; i < DATA.statements.length; i++) {
-      if (DATA.statements[i].number === n) return i;
+    var stList = activeStatements();
+    for (var i = 0; i < stList.length; i++) {
+      if (stList[i].number === n) return i;
     }
     return -1;
   }
 
   function firstIndexOfDimension(slug) {
-    for (var i = 0; i < DATA.statements.length; i++) {
-      if (slugify(DATA.statements[i].dimension) === slug) return i;
+    var stList = activeStatements();
+    for (var i = 0; i < stList.length; i++) {
+      if (slugify(stList[i].dimension) === slug) return i;
     }
     return -1;
   }
@@ -1117,7 +1192,15 @@
   function resolveIndexForHash(hash) {
     if (!hash) return -1;
     if (hash.indexOf("#utsagn-") === 0) {
-      return statementIndexByNumber(parseInt(hash.slice("#utsagn-".length), 10));
+      var n = parseInt(hash.slice("#utsagn-".length), 10);
+      var idx = statementIndexByNumber(n);
+      if (idx < 0 && quickMode) {
+        quickMode = false;
+        persistQuickMode(false);
+        renderQuiz();
+        idx = statementIndexByNumber(n);
+      }
+      return idx;
     }
     if (hash.indexOf("#dim-") === 0) {
       return firstIndexOfDimension(hash.slice("#dim-".length));
@@ -1128,8 +1211,9 @@
   function handleHash() {
     var idx = resolveIndexForHash(window.location.hash);
     if (idx < 0) return;
+    var stList = activeStatements();
     if (viewMode === "utforsker") {
-      scrollToCard(DATA.statements[idx].number);
+      scrollToCard(stList[idx].number);
     } else {
       showQuestion(idx, true);
     }
@@ -1715,19 +1799,54 @@
 
     if (dims.length > 1) {
       var dimWrap = el("div", "dimension-breakdown");
-      dimWrap.appendChild(el("h3", null, "Samsvar per kjerneverdi"));
+      dimWrap.appendChild(el("h3", null, "Kjerneverdi-profil (samsvar per tema)"));
+      dimWrap.appendChild(
+        el(
+          "p",
+          "lede",
+          "Her ser du hvordan samsvaret ditt med de tre nærmeste partiene fordeler seg på hvert sakområde. Åpne et tema for å se alle ni partiene."
+        )
+      );
+      var topThree = overall.slice(0, 3);
+      var grid = el("div", "dim-profile-grid");
       dims.forEach(function (dim) {
         var dimStatements = documented.filter(function (st) {
           return st.dimension === dim;
         });
+        var dimScores = computeAggregate(dimStatements);
+        var byParty = {};
+        dimScores.forEach(function (r) { byParty[r.party.id] = r; });
+
+        var row = el("div", "dim-profile-row");
+        var head = el("div", "dim-profile-head");
+        head.appendChild(el("span", "dim-profile-name", dim));
+        head.appendChild(el("span", "dim-profile-count", dimStatements.length + (dimStatements.length === 1 ? " utsagn" : " utsagn")));
+        row.appendChild(head);
+
+        var bars = el("div", "dim-profile-bars");
+        topThree.forEach(function (top) {
+          var r = byParty[top.party.id];
+          var bRow = el("div", "dim-mini-row");
+          bRow.appendChild(el("span", "dim-mini-party", top.party.short));
+          var track = el("div", "bar-track");
+          var fill = el("div", "bar-fill " + (r && r.avg !== null ? pctStepClass(r.avg) : "pct-0"));
+          track.appendChild(fill);
+          bRow.appendChild(track);
+          bRow.appendChild(el("span", "dim-mini-pct", r && r.avg !== null ? r.avg + "%" : "—"));
+          bars.appendChild(bRow);
+        });
+        row.appendChild(bars);
+
         var details = document.createElement("details");
         details.className = "disclosure dimension-disclosure";
         var summaryEl = document.createElement("summary");
-        summaryEl.textContent = dim + " (" + dimStatements.length + " utsagn)";
+        summaryEl.textContent = "Alle partier i " + dim + " (" + dimStatements.length + " utsagn)";
         details.appendChild(summaryEl);
-        details.appendChild(renderBarChart(computeAggregate(dimStatements)));
-        dimWrap.appendChild(details);
+        details.appendChild(renderBarChart(dimScores));
+        row.appendChild(details);
+        grid.appendChild(row);
       });
+      dimWrap.appendChild(grid);
       wrap.appendChild(dimWrap);
     }
 
@@ -2027,8 +2146,9 @@
   // answered the quiz opened on question 1 again. It opens on the first
   // statement with no reply instead, or the last one when all are answered.
   function resumePoint() {
+    var stList = activeStatements();
     var replied = 0, first = -1;
-    DATA.statements.forEach(function (st, i) {
+    stList.forEach(function (st, i) {
       if (answers[st.id] === undefined) {
         if (first < 0) first = i;
       } else {
@@ -2036,7 +2156,7 @@
       }
     });
     if (replied === 0) return null;
-    return { index: first < 0 ? DATA.statements.length - 1 : first, replied: replied };
+    return { index: first < 0 ? stList.length - 1 : first, replied: replied };
   }
 
   // Number-key shortcuts (2026-10-23 review): 1-5 pick a point on the
@@ -2054,7 +2174,8 @@
     if (e.ctrlKey || e.metaKey || e.altKey) return;
     var t = e.target;
     if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT" || t.isContentEditable)) return;
-    var st = DATA.statements[currentIndex];
+    var stList = activeStatements();
+    var st = stList[currentIndex];
     if (!st) return;
     var card = document.getElementById(statementCardId(st.number));
     if (!card) return;
@@ -2080,7 +2201,7 @@
     if (resume) {
       currentIndex = resume.index;
       noteState.resume =
-        "Du fortsetter der du slapp. Du har svart på " + resume.replied + " av " + DATA.statements.length + ".";
+        "Du fortsetter der du slapp. Du har svart på " + resume.replied + " av " + activeStatements().length + ".";
     }
   }
   paintNote();

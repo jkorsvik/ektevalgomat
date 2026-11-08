@@ -1,9 +1,11 @@
 package server
 
 import (
+	"sort"
 	"strings"
 
 	"github.com/jkorsvik/ektevalgomat/internal/data"
+	"github.com/jkorsvik/ektevalgomat/internal/scoring"
 )
 
 // The programme pages (2026-10-03): /partier lists all nine parties' 2025-2029
@@ -14,12 +16,30 @@ import (
 // of the site. Built and filled by the autopilot (tools/autopilot/), so a
 // party with no programme file yet renders as "not read yet", not as empty.
 
+type partyStatementRecord struct {
+	Number          int
+	ShortName       string
+	Dimension       string
+	PositionWord    string
+	PositionLabel   string
+	EvidensLabel    string
+	KonsistensLabel string
+	IsSplit         bool
+	PromiseQuote    string
+	ActionSummary   string
+	ActionDate      string
+}
+
 type programPage struct {
-	Meta      pageMeta
-	Party     data.Party
-	Program   data.Program
-	HasPoints bool
-	Groups    []programGroup
+	Meta            pageMeta
+	Party           data.Party
+	Program         data.Program
+	HasPoints       bool
+	Groups          []programGroup
+	Statements      []partyStatementRecord
+	SplitCount      int
+	ConsistentCount int
+	SingleSource    int
 }
 
 type programGroup struct {
@@ -88,17 +108,70 @@ func groupPoints(ds *data.Dataset, p data.Program) []programGroup {
 	return groups
 }
 
+func buildPartyProgramPage(ds *data.Dataset, party data.Party) programPage {
+	pp := programPage{Meta: partyMeta(party, 0), Party: party}
+	if prog, ok := ds.Program(party.ID); ok {
+		pp.Program = prog
+		pp.Groups = groupPoints(ds, prog)
+		pp.HasPoints = len(prog.Points) > 0
+		pp.Meta = partyMeta(party, len(prog.Points))
+	}
+	for _, st := range ds.Statements {
+		cell := scoring.ComputeCell(ds, st.ID, party.ID)
+		if cell.PartyPosition == nil {
+			continue
+		}
+		rec := partyStatementRecord{
+			Number:          st.Number,
+			ShortName:       st.ShortName,
+			Dimension:       st.Dimension,
+			PositionWord:    scoring.PositionWord(cell.PartyPosition),
+			PositionLabel:   scoring.PositionLabel(cell.PartyPosition),
+			EvidensLabel:    cell.Evidensstyrke,
+			KonsistensLabel: cell.Konsistens,
+			IsSplit:         strings.HasPrefix(cell.Konsistens, "splittet"),
+		}
+		if rec.IsSplit {
+			pp.SplitCount++
+		} else if cell.Konsistens == "konsistent" {
+			pp.ConsistentCount++
+		} else {
+			pp.SingleSource++
+		}
+		for _, pt := range ds.ProgramPointsForStatement(st.ID) {
+			if pt.PartyID == party.ID && rec.PromiseQuote == "" {
+				rec.PromiseQuote = pt.Point.Quote
+			}
+		}
+		var acts []data.Evidence
+		for _, e := range ds.EvidenceForStatement(st.ID) {
+			if e.PartyID == party.ID && e.Position != nil {
+				acts = append(acts, e)
+			}
+		}
+		sort.SliceStable(acts, func(i, j int) bool {
+			if acts[i].Date != acts[j].Date {
+				return acts[i].Date > acts[j].Date
+			}
+			return acts[i].ID > acts[j].ID
+		})
+		if len(acts) > 0 {
+			top := acts[0]
+			rec.ActionSummary = top.ScanSummary
+			if rec.ActionSummary == "" {
+				rec.ActionSummary = top.ClaimAction
+			}
+			rec.ActionDate = dateNO(top.Date)
+		}
+		pp.Statements = append(pp.Statements, rec)
+	}
+	return pp
+}
+
 func buildProgramPages(ds *data.Dataset) []programPage {
 	pages := make([]programPage, 0, len(ds.Parties))
 	for _, party := range ds.Parties {
-		pp := programPage{Meta: partyMeta(party, 0), Party: party}
-		if prog, ok := ds.Program(party.ID); ok {
-			pp.Program = prog
-			pp.Groups = groupPoints(ds, prog)
-			pp.HasPoints = len(prog.Points) > 0
-			pp.Meta = partyMeta(party, len(prog.Points))
-		}
-		pages = append(pages, pp)
+		pages = append(pages, buildPartyProgramPage(ds, party))
 	}
 	return pages
 }

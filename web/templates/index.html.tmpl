@@ -28,11 +28,22 @@
   <section class="card front-intro">
     <h2>Slik bruker du valgomaten</h2>
     <p class="lede front-lede">
-      Du tar stilling til {{.Statements}} utsagn og ser hvilke partier
-      som står nærmest deg. Hver partiposisjon bygger på en kilde.
-      Svarene dine blir i nettleseren din, og du kan svare på så mange du
-      vil.
+      Vanlige valgomater sammenligner deg med hva partiene skriver i
+      valgkampen. Her måles de mot <strong>hva de faktisk har stemt,
+      foreslått og prioritert på Stortinget</strong>. Du tar stilling til
+      12 nøkkelutsagn (hurtigmodus) eller alle {{.Statements}} utsagn, og
+      ser kilden bak hver eneste partiposisjon. Svarene dine blir i
+      nettleseren din.
     </p>
+    <div class="front-hook" aria-label="Eksempel på kildesjekket sak">
+      <p class="front-hook-title"><strong>Eksempel:</strong> <a href="/utsagn/1">Utsagn 1 · Offentlig lobbyregister</a></p>
+      <p class="front-hook-body">
+        Stortinget stemte 21.04.2026 over forslag om å innføre et offentlig lobbyregister (Innst. 250 S).
+        <strong>For:</strong> Rødt, SV, Venstre og MDG.
+        <strong>Mot:</strong> Ap, Høyre, Sp, FrP og KrF.
+        <a href="/utsagn/1">Åpne kildene og voteringen <span aria-hidden="true">→</span></a>
+      </p>
+    </div>
     <p class="front-start">
       <a class="start-link" href="#quiz-frame">Start valgomaten <span aria-hidden="true">↓</span></a>
     </p>
@@ -48,8 +59,11 @@
     </details>
     {{end}}
     <p class="front-more">
-      Les mer om <a href="/om">bakgrunnen</a> og
-      <a href="/metode">metoden</a>.
+      Les <a href="/om">hvorfor dette finnes</a>,
+      <a href="/metode">metoden</a>,
+      <a href="/data">åpne data</a>,
+      <a href="/bidra">hva som mangler</a> og
+      <a href="https://github.com/jkorsvik/ektevalgomat">kildekoden på GitHub</a>.
     </p>
   </section>
 
@@ -136,9 +150,11 @@
       du gjøre mer, ligger hele datasettet som åpne YAML-filer i repoet.
     </p>
     <p class="cta-actions">
-      <a class="cta-link" href='{{issueURL "rapporter-kilde.md" "" ""}}'>Meld fra om en kilde <span aria-hidden="true">→</span></a>
+      <a class="cta-link" href="/bidra">Se hva som mangler nå <span aria-hidden="true">→</span></a>
     </p>
     <p class="cta-secondary">
+      <a href='{{issueURL "rapporter-kilde.md" "" ""}}'>Meld fra om en kilde</a>
+      <span aria-hidden="true">·</span>
       <a href='{{issueURL "foresla-utsagn.md" "" ""}}'>Foreslå et utsagn</a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/jkorsvik/ektevalgomat/blob/main/CONTRIBUTING.md">Hvordan bidra</a>

@@ -102,6 +102,10 @@ func TestEveryBidraRowHasAUsableIssueLink(t *testing.T) {
 	if len(links) != rows-1 { // one <tr> is the header
 		t.Errorf("%d rows but %d prefilled issues: every row needs one", rows-1, len(links))
 	}
+	mails := regexp.MustCompile(`mailto:jkorsvik@outlook\.com\?[^"]*subject=[^"]+`).FindAllString(body, -1)
+	if len(mails) < rows-1 {
+		t.Errorf("%d rows but only %d mailto links: every row needs a non-GitHub option", rows-1, len(mails))
+	}
 	for _, l := range links {
 		if !strings.Contains(l, "title=") {
 			t.Errorf("issue link with no title: GitHub would open a blank required field: %s", l[:80])

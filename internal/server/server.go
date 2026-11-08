@@ -398,6 +398,16 @@ func issueURL(tmplName, title, body string) string {
 	return repoURL + "/issues/new?" + q.Encode()
 }
 
+// mailtoURL builds a prefilled mailto: link for contributors who do not want
+// to create a GitHub account.
+func mailtoURL(subject, body string) string {
+	q := url.Values{}
+	q.Set("subject", subject)
+	q.Set("body", body)
+	// url.Values.Encode uses + for spaces; mail clients expect %20 in mailto:.
+	return "mailto:jkorsvik@outlook.com?" + strings.ReplaceAll(q.Encode(), "+", "%20")
+}
+
 // quoteCounts reports how many evidence claims carry an archived verbatim
 // excerpt from their source, and how many carry none.
 //
@@ -743,13 +753,7 @@ func New(logger *slog.Logger) http.Handler {
 			http.NotFound(w, r)
 			return
 		}
-		page := programPage{Meta: partyMeta(party, 0), Party: party}
-		if prog, ok := ds.Program(party.ID); ok {
-			page.Program = prog
-			page.Groups = groupPoints(ds, prog)
-			page.HasPoints = len(prog.Points) > 0
-			page.Meta = partyMeta(party, len(prog.Points))
-		}
+		page := buildPartyProgramPage(ds, party)
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := programTmpl.Execute(w, page); err != nil {
 			logger.Error("render party program", "err", err, "party", party.ID)

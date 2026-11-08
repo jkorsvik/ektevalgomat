@@ -1610,6 +1610,90 @@ tr.party-budget-open { background: var(--accent-soft); }
 .rom-spectrum-name-mine {
   font-weight: 700;
 }
+/* /kart visual position bars and /resultat Kjerneverdi-profil (2026-11-08) */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--sp-5) 0;
+  font-size: var(--fs-sm);
+}
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: var(--sp-2) var(--sp-2);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.data-table thead th {
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+@media (max-width: 720px) {
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.kart-bar {
+  display: inline-block;
+  width: 1.8rem;
+  height: 0.45rem;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: var(--sp-1);
+}
+.kart-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.dim-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-5);
+  margin-top: var(--sp-4);
+}
+@media (max-width: 620px) {
+  .dim-profile-grid { grid-template-columns: 1fr; }
+}
+.dim-profile-row {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--surface);
+}
+.dim-profile-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-3);
+}
+.dim-profile-name { font-weight: 700; font-size: var(--fs-md); }
+.dim-profile-count { font-size: var(--fs-2xs); color: var(--muted); white-space: nowrap; }
+.dim-profile-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-2);
+}
+.dim-mini-row {
+  display: grid;
+  grid-template-columns: 2.8rem 1fr 2.8rem;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.dim-mini-party { font-weight: 600; font-size: var(--fs-xs); }
+.dim-mini-pct { font-size: var(--fs-2xs); color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+.party-record { margin: var(--sp-7) 0; }
 .rom-spectrum-scale {
   font-size: 11px;
   fill: var(--muted);

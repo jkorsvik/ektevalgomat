@@ -20,7 +20,7 @@ import (
 // party, not from the menu.
 func readerPages() []string {
 	return []string{"/", "/resultat", "/partier", "/kart", "/stemmer", "/tidslinje",
-		"/rommet", "/budsjett", "/penger", "/eierskap", "/makt", "/data", "/metode", "/om"}
+		"/rommet", "/budsjett", "/penger", "/eierskap", "/makt", "/bidra", "/data", "/metode", "/om"}
 }
 
 func newTestServer() http.Handler {
@@ -40,7 +40,7 @@ func bodyOf(t *testing.T, h http.Handler, path string) string {
 // TestEveryPageHasExactlyOneHeadingOfItsOwn: one h1, and it is not the site name.
 func TestEveryPageHasExactlyOneHeadingOfItsOwn(t *testing.T) {
 	h := newTestServer()
-	pages := append(readerPages(), "/personvern", "/bidra")
+	pages := append(readerPages(), "/personvern")
 	checked := 0
 	for _, path := range pages {
 		body := bodyOf(t, h, path)
@@ -113,7 +113,7 @@ func TestTheNavReachesEveryReaderPage(t *testing.T) {
 func TestNoPagePrintsADotDecimal(t *testing.T) {
 	h := newTestServer()
 	dot := regexp.MustCompile(`>[-−]?[0-9]+\.[0-9]+<`)
-	pages := append(readerPages(), "/personvern", "/bidra", "/utsagn/52")
+	pages := append(readerPages(), "/personvern", "/utsagn/52")
 	scanned, cells := 0, 0
 	for _, path := range pages {
 		body := bodyOf(t, h, path)

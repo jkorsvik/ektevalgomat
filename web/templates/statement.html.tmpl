@@ -39,6 +39,17 @@
     {{if .Statement.PrimaryQuestion}}
     <p class="hero-question"><strong>Hva handler dette om?</strong> {{.Statement.PrimaryQuestion}}</p>
     {{end}}
+    {{if .Statement.PracticalStakes}}
+    <details class="disclosure stakes-disclosure" open>
+      <summary>Hva betyr dette i praksis?</summary>
+      {{if .Statement.PracticalStakes.Enig}}
+      <p><strong>Sterkt enig betyr:</strong> {{.Statement.PracticalStakes.Enig}}</p>
+      {{end}}
+      {{if .Statement.PracticalStakes.Uenig}}
+      <p><strong>Sterkt uenig betyr:</strong> {{.Statement.PracticalStakes.Uenig}}</p>
+      {{end}}
+    </details>
+    {{end}}
     <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
     {{/* The one place on a statement page where a reader who disagrees
          has somewhere to go. Prefilled with the statement and its own

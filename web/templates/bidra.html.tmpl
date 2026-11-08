@@ -47,7 +47,7 @@
         <td><a href="{{$g.Path}}">{{$g.Statement.ID}}</a>{{if $g.AllParties}} <span class="bidra-note">hele utsagnet</span>{{end}}</td>
         <td><a href="/parti/{{.Party.ID}}">{{.Party.Name}}</a></td>
         <td>{{if .NoSource}}ingen kilde{{else}}kilden er der, men ikke tolket{{end}}</td>
-        <td><a href="{{.IssueURL}}">meld fra <span aria-hidden="true">→</span></a></td>
+        <td><a href="{{.IssueURL}}">meld fra <span aria-hidden="true">→</span></a> · <a href="{{.MailURL}}">e-post</a></td>
       </tr>
       {{end}}
       {{end}}
@@ -84,9 +84,11 @@
       og lenken, så du trenger bare å skrive hva kilden sier og hvor.</li>
   </ol>
   <p>
-    Du trenger ingen konto utover en vanlig GitHub-konto, og du trenger ikke
-    kunne kode. <a href="{{.Contributing}}">CONTRIBUTING.md</a> har alle
-    veiene inn, med tidsbruk, og hva som skjer med en melding etterpå.
+    Har du en GitHub-konto, åpner «meld fra» et skjema der. Vil du ikke lage
+    konto, trykker du «e-post» på samme rad for å åpne e-postklienten din med
+    alt ferdig utfylt. Du trenger ikke kunne kode.
+    <a href="{{.Contributing}}">CONTRIBUTING.md</a> har alle veiene inn, med
+    tidsbruk, og hva som skjer med en melding etterpå.
   </p>
 
   <h2>Hva du ikke kan gjøre herfra</h2>

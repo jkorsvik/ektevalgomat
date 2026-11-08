@@ -97,9 +97,26 @@
     return rows.filter(function (r) { return r.avg === best; });
   }
 
+  // nearLeaders returns the group within tolerance of the best score. It keeps
+  // a one- or two-point numerical lead from reading as a settled political
+  // conclusion. The default is two percentage points. Null scores never lead.
+  var NEAR_LEADER_TOLERANCE = 2;
+  function nearLeaders(rows, tolerance) {
+    var t = typeof tolerance === "number" && tolerance >= 0 ? tolerance : NEAR_LEADER_TOLERANCE;
+    var best = null;
+    rows.forEach(function (r) {
+      if (r.avg !== null && r.avg !== undefined && (best === null || r.avg > best)) best = r.avg;
+    });
+    if (best === null) return [];
+    return rows.filter(function (r) {
+      return r.avg !== null && r.avg !== undefined && best - r.avg <= t;
+    });
+  }
+
   return {
     SKIP: SKIP, isPosition: isPosition, isSkip: isSkip, pct: pct,
     MIN_WEIGHT: MIN_WEIGHT, MAX_WEIGHT: MAX_WEIGHT,
     weightOf: weightOf, weightedMean: weightedMean, leaders: leaders,
+    nearLeaders: nearLeaders, NEAR_LEADER_TOLERANCE: NEAR_LEADER_TOLERANCE,
   };
 });

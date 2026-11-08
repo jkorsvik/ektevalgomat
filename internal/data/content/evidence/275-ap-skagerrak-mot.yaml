@@ -12,14 +12,14 @@ scan_summary: >
   finnes i innstillingen.
 claim_action: "Votering_id 28136, Ap 32 mot, 0 for."
 status: forslag_avvist_stemte_mot
-position: -1
+position: 1
 source_tier: A
 source_name: "Innst. 374 S (2025–2026); votering_id 28136"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: svakt_dokumentert
 context_note: >
-  Kodet -1: stemmen er dokumentert, men Ap har IKKE besvart Rødts
+  Kodet +1: stemmen er dokumentert, men Ap har IKKE besvart Rødts
   konkrete løftebrudd-anklage (se evidence/274) i denne innstillingen.
   Ap deler for øvrig flertallets generelle "kraftutveksling styrker
   forsyningssikkerheten"-linje (evidence/267), som indirekte er svaret,
@@ -27,4 +27,5 @@ context_note: >
   er en anklage som IKKE er imøtegått i den offentlige
   saksbehandlingen — verdt å flagge som "ubesvart" heller enn
   "avvist".
+  Utsagnet er snudd 2026-11-01, og posisjonen er speilvendt fra -1 til +1.
 retrieved_at: "2026-09-24"

@@ -25,13 +25,10 @@ source_name: "Individuell votering, votering_id 26057"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=103531&dnid=1&vt=26057"
 claim_confidence: dokumentert
 context_note: >
-  Kodet +1, ikke +2, fordi MDG ikke har egen merknad å sitere ordlyd fra
-  — kun en individuell plenumsstemme (2 for, 0 mot, resten fraværende).
-  Dette er svakere enn de komitépartiene som skrev egen merknad
-  (Ap/H/Sp/SV/Rødt, kodet +2), men er samtidig et klart, utvetydig
-  ja-stemme på selve forbudsparagrafens konkrete tekst — ikke den
-  vage typen flertallsvedtak ("legg frem en stortingsmelding") som
-  utsagn-06s FrP-fil advarer mot å overtolke. Individuell
-  representantstemme hentet direkte fra data.stortinget.no for votering_id
-  26057.
+  Kodet +1 fordi MDG ikke har en egen komitemerknad, bare den individuelle
+  plenumsstemmen (2 for, 0 mot). Ap, H, Sp og SV har samme styrke etter
+  konsistens kontrollen 2026-11-01. Rødt har +2 fordi partiet fremmet egne
+  tilleggsforslag. Stemmen er likevel et klart ja til selve paragrafen,
+  ikke en vag prosedyreavstemning. Votering 26057 er kontrollert mot
+  data.stortinget.no.
 retrieved_at: "2026-09-23"

@@ -20,15 +20,16 @@ verbatim_excerpt: >
   [...] Disse medlemmer mener at regjeringen må holde egne løfter og
   avslutte konsesjonsbehandlingen.
 status: forslag_avvist_stemte_for
-position: 2
+position: -2
 source_tier: A
 source_name: "Innst. 374 S (2025–2026); votering_id 28136"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: null
 context_note: >
-  Kodet +2: Rødts skarpeste argument i saken er ikke mot
+  Kodet -2: Rødts skarpeste argument i saken er ikke mot
   regjeringspartiene generelt, men et spesifikt løftebrudd-angrep på
   Ap — verdt å koble til Aps egen stemme mot dette forslaget
   (evidence/275) for en fullstendig "løfte vs. stemme"-lesning.
+  Utsagnet er snudd 2026-11-01, og posisjonen er speilvendt fra +2 til -2.
 retrieved_at: "2026-09-24"

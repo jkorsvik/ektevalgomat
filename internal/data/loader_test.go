@@ -631,12 +631,12 @@ func TestPartilovenAnonymeBidragPositionsAreCoded(t *testing.T) {
 	// alone was actively misleading — here the vote is ON the operative
 	// text itself, not a vague "legg frem en stortingsmelding" motion.
 	wantPosition := map[string]int{
-		"ap":   2,  // committee majority merknad + unanimous "for" vote
-		"h":    2,  // own merknad + "for" vote (own extra forslag asked for MORE, not less)
-		"sp":   2,  // committee majority merknad + unanimous "for" vote
-		"sv":   2,  // committee majority merknad + unanimous "for" vote
-		"rodt": 2,  // committee majority merknad + unanimous "for" vote
-		"frp":  -2, // own merknad objects to the ban's substance + unanimous 12/12 "mot" vote, 0 "for"
+		"ap":   1,  // shared committee majority merknad + unanimous "for" vote, no party-only instrument
+		"h":    1,  // joint H/FrP proposal is a co-sponsorship; the vote documents direction
+		"sp":   1,  // shared committee majority merknad + unanimous "for" vote, no party-only instrument
+		"sv":   1,  // joint SV/Rødt proposal is a co-sponsorship; Rødt's party-specific proposals stay +2
+		"rodt": 2,  // own party-specific additional proposals plus unanimous "for" vote
+		"frp":  -1, // own committee merknad and 12/12 against, but no party-only instrument
 		"mdg":  1,  // no committee seat, no own merknad, but a clean "for" vote on the operative text
 		"v":    1,  // same as MDG
 		"krf":  1,  // same as MDG
@@ -678,13 +678,13 @@ func TestAcerEnergyMarketPositionsAreCoded(t *testing.T) {
 	// context_note for the full reasoning.
 	wantPosition := map[string]int{
 		"sp":   -2, // own forslag (Dok 8:58 S), for on all 4 votes to LIMIT ACER — disagrees control is intact
-		"sv":   -2, // for on all 4 votes, joint merknad w/ Sp/Rødt — disagrees control is intact
+		"sv":   -1, // blind audit 2026-11-01: votes and joint merknad show direction, but are not a party-only instrument
 		"rodt": -2, // own forslag (Dok 8:75 S), for on all 4 votes to LIMIT ACER — disagrees control is intact
 		"frp":  -1, // for the milder asks, against the most drastic one — mildly disagrees
 		"ap":   1,  // defends status quo (cites Høyesterett) — this IS the flipped statement's own claim
 		"h":    1,  // defends status quo (cites Høyesterett) — this IS the flipped statement's own claim
-		"v":    2,  // explicitly wants FASTER/FULLER integration — even stronger agreement
-		"mdg":  2,  // same as V, joint merknad — even stronger agreement
+		"v":    1,  // joint V/MDG merknad and votes show direction, not a party-only instrument
+		"mdg":  1,  // same joint merknad; rhetoric does not create an instrument
 		"krf":  1,  // voting-record only, no own merknad, against all 4 limit-ACER votes
 	}
 	for partyID, want := range wantPosition {

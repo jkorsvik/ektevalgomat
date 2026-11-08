@@ -155,6 +155,23 @@ check("contribution order", contrib.map(function (r) { return r.statement.id; })
 check("contribution top avg", contrib[0].avg, 100);
 check("contribution bottom avg", contrib[contrib.length - 1].avg, 50);
 
+// Party-specific reasons must use the same cells as the headline, but name
+// where THAT party agrees and disagrees with the visitor.
+var partyRows = A.partyContribution(data, answers, { s2: 3 }, "a");
+check("party contribution order", partyRows.map(function (r) { return r.statement.id; }), ["s1", "s3", "s2"]);
+check("party contribution keeps the weight", partyRows[2].weight, 3);
+check("party contribution scores only its own party", partyRows.map(function (r) { return r.avg; }), [100, 75, 0]);
+check("party contribution excludes undocumented and skipped", A.partyContribution(data, answers, {}, "b").map(function (r) { return r.statement.id; }), ["s1", "s2"]);
+check("party contribution unknown party is empty", A.partyContribution(data, answers, {}, "nobody").length, 0);
+check("disagreements exclude perfect matches", A.actualDisagreements([{ avg: 100 }, { avg: 75 }, { avg: 0 }]).map(function (r) { return r.avg; }), [75, 0]);
+check("disagreements can be empty when everything agrees", A.actualDisagreements([{ avg: 100 }]).length, 0);
+var stableStatements = { total: 3, unchanged: 3 };
+var stableThemes = { total: 2, unchanged: 2 };
+check("stability includes equal themes only when computable", A.insightStabilityLine(["Parti B"], [], stableStatements, stableThemes, "b"), "Parti B blir øverst i 3 av 3 enkeltutsagn og i 2 av 2 temasjekker og ved lik vekt per tema.");
+check("stability does not claim an unavailable equal-theme result", A.insightStabilityLine(["Parti B"], [], stableStatements, stableThemes, null), "Parti B blir øverst i 3 av 3 enkeltutsagn og i 2 av 2 temasjekker.");
+check("exact ties have no single leader", A.insightStabilityLine(["A", "B"], [], stableStatements, stableThemes, "b"), "Resultatet har ingen entydig leder. Se den fullstendige stabilitetsanalysen under.");
+check("alternative leaders include the number of checks", A.insightStabilityLine(["Parti B"], ["Parti A (1 av 6)"], stableStatements, stableThemes, "a"), "Parti A (1 av 6) kan også komme på topp. Toppgruppen kan derfor endre seg.");
+
 // --- 4. Documentation gaps (Q2). -------------------------------------
 var gaps = A.documentationGaps(data, answers);
 check("gaps statement order", gaps.map(function (g) { return g.statement.id; }), ["s1", "s2", "s3", "s4"]);

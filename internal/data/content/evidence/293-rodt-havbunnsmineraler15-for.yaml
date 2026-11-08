@@ -13,13 +13,12 @@ claim_action: >
   sannsynligvis er det Kina som vil ha mest å gagne på en
   internasjonal åpning for havbunnsmineralutvinning.
 status: forslag_avvist_stemte_for
-position: 2
+position: 1
 source_tier: A
 source_name: "Innst. 354 S (2024–2025); votering_id 25348"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: null
 context_note: >
-  Kodet +2: Rødt medforslagsstiller, delt begrunnelse med SV/Venstre/
-  MDG/KrF.
+  Kodet +1 etter metodekonsistenskontroll 2026-11-01: Rødt er medforslagsstiller til det delte moratorium-forslaget. Det viser retning, men er ikke et parti-eget instrument.
 retrieved_at: "2026-09-24"

@@ -8,12 +8,19 @@ every claim is honestly sourced, and that discipline has to apply to
 this project's own scope claims too, including its own mistakes (see
 "Correction" below).
 
-## Current state (2026-10-29)
+## Current state (2026-11-01)
 
 Read this section first. The phase entries below are the build log, in
 order, and their "FINAL STATE" lines were true on the day they were
 written, not today.
 
+- **Blind coding review.** 18 of 517 coded cells, two per party, were independently
+  reviewed without the published positions. Reviewers agreed exactly on 15,
+  disagreed only on magnitude on 1 and on direction or answerability on 2.
+  A separate adjudication of 11 disputes changed eight positions and kept three.
+  The complete sample, rationales, model identities and method ambiguities are
+  published at `/metode#kodingskontroll` and checked against the live cells by
+  `internal/scoring/coding_review_test.go`.
 - **60 statements, 675 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
@@ -49,7 +56,7 @@ written, not today.
   no dash, no "selv om"/"fordi", and has a "Hva betyr et svar i
   praksis?" box (`practical_stakes`). Enforced by
   `internal/data/statement_form_test.go`.
-- **Direction balance.** 13 statements are phrased in the opposite
+- **Direction balance.** 14 statements are phrased in the opposite
   direction (`FLIPPED_2026_09_27` in `quiz.js`, which also migrates
   returning users' stored answers). A user who answers the same on
   everything now sees a 12-point gap between best and worst party (was
@@ -64,8 +71,8 @@ written, not today.
 - **Statement page headline** counts coded positions ("Kodet posisjon
   for N av 9 partier"), not parties with any source.
 - **Corrections are published on the site.** `/om` carries a dated
-  corrections log (`internal/data/content/corrections/`), seven entries
-  taken from this build log: five `rettelse` (something a reader could
+  corrections log (`internal/data/content/corrections/`), eight entries
+  taken from this build log: six `rettelse` (something a reader could
   see was wrong and changed) and two `nesten` (caught before it reached
   the site). This log plus this file are the readable public record, and
   the gate below holds the count. The repository's git history starts at
@@ -2761,3 +2768,81 @@ Note on method: 680 evidence rows all carry a date, so the gap is not missing me
 is missing *breadth* — one dated observation per cell rather than two separated in time.
 Closing it means harvesting a second dated source for a cell that already has one, which is
 the harvester loop's job and cannot be done by re-reading what is already in the repo.
+
+## Blind coding review and the result-page rebuild (2026-11-01)
+
+The first blind editorial audit covered **18 of 517 cells**, selected by the fixed seed
+`ektevalgomat-coding-audit-2026-11-01-v1`, with two cells per party and one from each
+available magnitude bucket. The sampler removed positions, context notes, scan summaries
+and evidence ids. `blind.json` is reproducible byte for byte; the SHA-256 was
+`44384acb9318db7c7a4b44ad2ef40d506c03016dd2e65101ebab1985c8cb2ace`.
+
+Reviewer A was source-checker on DeepSeek V4.1 Flash 1017. Reviewer B was RAIWork on
+`moonshotai/kimi-k3.1-pro`. Neither saw the other's answers or the published positions.
+They agreed exactly on **15 of 18**, disagreed only on magnitude on **1**, and disagreed
+on direction or whether a position existed on **2**. A third context adjudicated the 11
+disputed cells against the primary sources. It changed **8** positions and kept **3**.
+This is an agent pilot, not independent human review or a reliability estimate for the
+whole dataset.
+
+The eight corrections all move one step toward zero. A later consistency check across
+those same nine statements found 19 more cells: H and FrP on utsagn-03; SV, Sp, Ap, H,
+MDG and V on utsagn-08; SV, Rødt, V and KrF on utsagn-15; and SV and MDG on utsagn-42.
+All 19 move one step toward zero. Rødt on utsagn-03 and utsagn-08 stays at ±2 because its
+party-specific documents are own instruments. The public correction therefore covers 27
+cells across nine statements, while the blind audit still reports exactly eight findings
+from its 18-cell sample. The remaining 517-cell population is not fully double-coded.
+
+| Statement | Party | Before | After | Why |
+|---|---|---:|---:|---|
+| 07 | SV | −2 | −1 | votes and joint merknad, no party-only instrument |
+| 08 | FrP | −2 | −1 | operative committee merknad is still not an instrument |
+| 15 | MDG | +2 | +1 | co-sponsorship and vote, no party-only instrument |
+| 26 | H | −2 | −1 | specific committee merknad, no party-only instrument |
+| 38 | KrF | +2 | +1 | co-sponsorship and shared merknad |
+| 42 | Rødt | +2 | +1 | co-sponsorship and unanimous vote |
+| 48 | Ap | −2 | −1 | committee merknad and two votes against |
+| 50 | Sp | +2 | +1 | support for the government's proposal, not an own instrument |
+
+The old context notes had rated how distinctive or strong the argument sounded. The
+scale rates the instrument. `position-scale.md` now says that a numeral is not mandatory
+for a direct party goal, that a joint minority proposal is a co-sponsorship, and that an
+operative committee merknad stays at magnitude 1. Its distribution table is re-derived:
+579 coded rows, 210 at ±2 and 356 at ±1. `internal/data/coding_review/index.json`
+publishes all 18 rows, both blind verdicts, the old and final positions, rationales,
+sources and the four method ambiguities. `/metode#kodingskontroll` renders the same
+artefact. A Go test requires every audit correction to remain in its immutable source row,
+and the public correction log carries all 27 changes.
+
+The result page now puts the decision before the detail. A new insights card names the
+two-point top group, alternative leaders under leave-one-out and equal-theme weighting,
+two statements that explain the leader and two that still disagree. The party bars come
+before the trade-off module. `partyContribution` uses the same answer, coded position
+and importance weight as the headline. `nearLeaders` prevents a one-point numerical lead
+from reading as a settled winner. The full robustness panel remains below all statement
+tables instead of being the only place these facts could be found.
+
+Evidence cards now show a short public coding statement. The original `context_note`
+stays available under `Teknisk kodegrunnlag`, so internal production language is not the
+default public explanation. The main menu has six links plus `Utforsk`, which holds the
+eight analysis pages without removing any route. The homepage's two-question caveat is
+collapsed behind a disclosure after the start action.
+
+The 27 rating corrections moved the always-agree spread from 12 to 13. Raising the ratchet
+was not an option. Reversing utsagn-09, so it now asks whether the Skagerrak study should
+continue, restores 12 while leaving every reviewed rating intact. All nine positions on
+that statement were negated, and `DIRECTION_VERSION = 3` migrates only utsagn-09 for
+returning users. The older 13-statement migration still runs only for version-1 blobs.
+
+Rommet had a real class collision: the axis information cards and the absolute canvas
+overlay both used `.rom-axes`, which put the cards over the header. The cards now use
+`.rom-axis-section`; the overlay keeps `.rom-axes`. After all 27 position corrections and
+the utsagn-09 polarity repair, an independent numpy SVD on the 9×12 matrix gives
+**48.3852721 % / 23.1011000 % / 12.7982825 %**, total **84.2846546 %**, matching the Go
+projection's 84.28 %. The old 82.6 % expectation was updated only after that cross-check.
+
+Verification in this session: the full 60-question flow, desktop and 390 px mobile result
+pages, all 18 audit rows and exactly 8 corrections in the browser, technical evidence
+notes opening on demand, no horizontal overflow and no browser console errors.
+`go test -count=1 ./...` and `bun test tools/*.test.js` are green. The audit artefact and
+protocol also pass the mechanical public-writing scans.

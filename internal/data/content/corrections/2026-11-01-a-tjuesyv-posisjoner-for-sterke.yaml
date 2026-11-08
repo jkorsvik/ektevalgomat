@@ -1,0 +1,28 @@
+id: 2026-11-01-a-tjuesyv-posisjoner-for-sterke
+date: "2026-11-01"
+kind: rettelse
+title: "27 partiposisjoner var kodet for sterkt"
+statements: ["03", "07", "08", "15", "26", "38", "42", "48", "50"]
+what: >
+  En blind dobbelkoding av 18 celler førte til åtte rettelser. En separat
+  konsistens kontroll av de samme ni utsagnene førte til 19 til. Alle 27 er
+  flyttet ett trinn nærmere null, fra −2 til −1 eller fra +2 til +1.
+  Retningen er uendret. Partier med et dokumentert eget instrument beholder
+  styrke 2, blant annet Rødt på utsagn 03 og 08.
+reason: >
+  Kodingen hadde brukt særpreget begrunnelsesstyrke, medforslagsstillelse
+  og konkrete komitemerknader som grunnlag for styrke 2. Posisjonsskalaen
+  krever et eget instrument for dette. Voteringer, medforslag og
+  komitemerknader viser retning og gir styrke 1, også når begrunnelsen er
+  detaljert. To lesere så ikke de publiserte posisjonene. En separat
+  adjudikasjon kontrollerte de omstridte cellene mot primærkildene.
+  Konsistensrettelsene bruker de samme instrumentreglene på alle partiene
+  på de ni utsagnene.
+effect: >
+  Samsvaret på de ni utsagnene kan endres med inntil 25 prosentpoeng for
+  berørte partier. Effekten på sluttresultatet avhenger av brukerens svar
+  og vekting. Ingen sitater, stemmer eller andre kildefakta er endret.
+  Stikkprøven, uenighetene og metodeavgjørelsene er publisert under
+  /metode#kodingskontroll. Konsistensrettelsene er skilt fra stikkprøvens
+  åtte funn slik at de ikke gjør utvalget større enn det var. Resten av
+  datasettet er ikke fullt dobbelkodet.

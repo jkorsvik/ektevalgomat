@@ -35,6 +35,7 @@
   var weightOf = EkteScoring.weightOf;
   var MAX_WEIGHT = EkteScoring.MAX_WEIGHT;
   var leaders = EkteScoring.leaders;
+  var nearLeaders = EkteScoring.nearLeaders;
 
   // 2026-09-27: these statements were rewritten to the opposite direction
   // (and every party code negated) so that always-agree no longer lands on
@@ -42,12 +43,16 @@
   // it is negated once on load; without this, a returning user's "enig"
   // would silently count as agreement with the opposite position. The
   // snapshot date is locked on purpose, so the version field marks this.
-  var DIRECTION_VERSION = 2;
+  var DIRECTION_VERSION = 3;
   var FLIPPED_2026_09_27 = [
     "utsagn-04", "utsagn-07", "utsagn-08", "utsagn-12", "utsagn-18",
     "utsagn-19", "utsagn-20", "utsagn-21", "utsagn-24", "utsagn-25",
     "utsagn-31", "utsagn-37", "utsagn-44",
   ];
+  // 2026-11-01: the corrected instrument ratings moved the always-agree
+  // spread to 13. Reversing utsagn-09 restores 12 without changing any
+  // reviewed rating. Version 3 negates only this statement for returning users.
+  var FLIPPED_2026_11_01 = ["utsagn-09"];
 
   // Ephemeral mode ("midlertidig økt"): the visitor asked to take the quiz
   // without anything being stored on this device, e.g. on a shared phone.
@@ -215,8 +220,13 @@
     // overwrite the stored answers a refresh just could not carry over,
     // before the visitor was even told.
     if (r.blob && r.kept > 0 && (version < DIRECTION_VERSION || r.legacy)) {
-      if (version < DIRECTION_VERSION) {
+      if (version < 2) {
         FLIPPED_2026_09_27.forEach(function (id) {
+          if (typeof saved[id] === "number") saved[id] = -saved[id];
+        });
+      }
+      if (version < 3) {
+        FLIPPED_2026_11_01.forEach(function (id) {
           if (typeof saved[id] === "number") saved[id] = -saved[id];
         });
       }
@@ -574,6 +584,9 @@
     yes.addEventListener("click", function () {
       clearAllAnswers();
       renderQuiz();
+      document.dispatchEvent(
+        new CustomEvent("ektevalgomat:vekt-endret", { detail: { weights: weights, answers: answers } })
+      );
       announce("Alle svar er slettet.");
       var freshBtn = document.getElementById("slett-svar-knapp");
       if (freshBtn) freshBtn.focus();
@@ -1644,30 +1657,32 @@
       return wrap;
     }
     wrap.appendChild(el("h2", null, "Hvem er du mest på linje med?"));
-    // A tie at the top is a tie. The headline used to name overall[0], so the
-    // order of the data picked a winner among parties with the same number.
-    var lead = leaders(overall);
-    if (lead.length > 0) {
-      var tied = lead.length > 1;
-      wrap.appendChild(
-        el(
-          "p",
-          "summary-lede",
-          "Du har svart på " + countAnswered() + " utsagn. " +
-            documented.length + " av dem har en partiposisjon med kilde. Ut fra disse er du foreløpig " +
-            (tied ? "like mye på linje med " : "mest på linje med ") +
-            AV.namesList(lead.map(partyName)) + " (" + lead[0].avg + "% samsvar" + (tied ? " hver" : "") + ")."
-        )
-      );
+    // Exact ties stay ties. A separate near-group covers small numerical leads.
+    var exact = leaders(overall);
+    var near = nearLeaders(overall);
+    if (exact.length > 0) {
+      var summary = "Du har svart på " + countAnswered() + " utsagn. " +
+        documented.length + " av dem har en partiposisjon med kilde. ";
+      if (exact.length > 1) {
+        summary += "Ut fra disse er du like mye på linje med " +
+          AV.namesList(exact.map(partyName)) + " (" + exact[0].avg + "% samsvar hver).";
+      } else if (near.length > 1) {
+        summary += AV.namesList(near.map(partyName)) +
+          " ligger nærmest, innen " + EkteScoring.NEAR_LEADER_TOLERANCE +
+          " prosentpoeng. " + exact[0].party.name + " har " + exact[0].avg + "% samsvar.";
+      } else {
+        summary += "Ut fra disse er du foreløpig mest på linje med " +
+          exact[0].party.name + " (" + exact[0].avg + "% samsvar).";
+      }
+      wrap.appendChild(el("p", "summary-lede", summary));
     }
 
     wrap.appendChild(
       el(
         "p",
         "lede",
-        "Dette er ikke «hele sannheten» om et parti. Det er snittet av samsvaret ditt på utsagnene som har en posisjon med kilde så langt. " +
-          "Datagrunnlaget er fortsatt lite og bygges ut jevnlig. Tallet til høyre for hver bar viser hvor mange utsagn snittet " +
-          "bygger på for det partiet."
+        "Prosentene viser samsvar med kodede posisjoner, ikke hele partiet. " +
+          "Antall utsagn bak hvert snitt står ved siden av baren."
       )
     );
     // Say the weighting out loud. An unexplained weighting would make the
@@ -1686,8 +1701,8 @@
       );
     }
 
-    wrap.appendChild(buildAvveining(documented));
     wrap.appendChild(renderBarChart(overall));
+    wrap.appendChild(buildAvveining(documented));
 
     var dims = [];
     var seenDim = {};

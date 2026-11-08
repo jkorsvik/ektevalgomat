@@ -26,11 +26,11 @@
 // exported so web/static/js/analyse.test.js can call them directly.
 (function (root, factory) {
   if (typeof module === "object" && module.exports) {
-    module.exports = factory(require("./scoring.js"), require("./store.js"));
+    module.exports = factory(require("./scoring.js"), require("./store.js"), require("./avveining.js"));
   } else {
-    root.EkteAnalyse = factory(root.EkteScoring, root.EkteStore);
+    root.EkteAnalyse = factory(root.EkteScoring, root.EkteStore, root.EkteAvveining);
   }
-})(typeof self !== "undefined" ? self : this, function (S, Store) {
+})(typeof self !== "undefined" ? self : this, function (S, Store, AV) {
   "use strict";
 
   // The weight store is quiz.js's own key and payload shape. Read here, never
@@ -198,6 +198,27 @@
       return b.avg - a.avg || a.statement.number - b.statement.number;
     });
     return rows;
+  }
+
+  // partyContribution ranks one party's agreements and disagreements with the
+  // visitor. It uses the same answer, coded position and importance weight as
+  // the headline, but does not average the other parties into the explanation.
+  function partyContribution(data, answers, weights, partyId) {
+    var rows = [];
+    data.statements.forEach(function (st) {
+      var cell = (data.cells[st.id] || {})[partyId];
+      var match = S.pct(answers[st.id], positionOf(cell));
+      if (match === null) return;
+      rows.push({ statement: st, avg: match, weight: S.weightOf(weights, st.id) });
+    });
+    rows.sort(function (a, b) {
+      return b.avg - a.avg || a.statement.number - b.statement.number;
+    });
+    return rows;
+  }
+
+  function actualDisagreements(rows) {
+    return rows.filter(function (r) { return r.avg < 100; });
   }
 
   // documentationGaps lists answered statements whose documentation is
@@ -534,6 +555,97 @@
     return head;
   }
 
+  function reasonList(title, rows) {
+    var wrap = el("div", "insight-reason-group");
+    wrap.appendChild(el("h3", null, title));
+    var list = el("ul", "insight-list");
+    rows.forEach(function (r) {
+      var item = el("li");
+      var link = el("a", null, statementLabel(r.statement));
+      link.href = "/utsagn/" + r.statement.number;
+      item.appendChild(link);
+      item.appendChild(el("span", "insight-match", r.avg + " % samsvar" +
+        (r.weight > 1 ? " · vekt " + r.weight : "")));
+      list.appendChild(item);
+    });
+    wrap.appendChild(list);
+    return wrap;
+  }
+
+  function insightStabilityLine(leaderNames, alternativeDetails, statementSt, themeSt, equalTop) {
+    if (alternativeDetails.length > 0) {
+      return AV.namesList(alternativeDetails) + " kan også komme på topp. Toppgruppen kan derfor endre seg.";
+    }
+    if (leaderNames.length > 1) {
+      return "Resultatet har ingen entydig leder. Se den fullstendige stabilitetsanalysen under.";
+    }
+    var line = leaderNames[0] + " blir øverst i " + statementSt.unchanged + " av " +
+      statementSt.total + " enkeltutsagn og i " + themeSt.unchanged + " av " +
+      themeSt.total + " temasjekker";
+    if (equalTop !== null) line += " og ved lik vekt per tema";
+    return line + ".";
+  }
+
+  // renderInsights puts the decision-relevant analysis before the ranking:
+  // who else can reach the top under a small change, which statements explain
+  // the leaders, and where the visitor still disagrees with those parties.
+  function renderInsights(data, answers, mountEl, weights) {
+    if (!mountEl) return null;
+    mountEl.innerHTML = "";
+    var ids = contributingIds(data, answers);
+    if (ids.length < 10) return null;
+
+    var overall = ranked(aggregate(data, answers, ids, weights));
+    var top = topPartyId(overall);
+    if (top === null) return null;
+    var names = partyNameMap(data);
+    var exactLeaders = S.leaders(overall);
+    var leaderIds = exactLeaders.map(function (r) { return r.partyId; });
+    var leaderNames = exactLeaders.map(function (r) { return r.party.name; });
+    var statementStability = stability(data, answers, ids, weights);
+    var themeSt = themeStability(data, answers, ids, weights);
+    var equalTop = topPartyId(themeEqualWeight(data, answers));
+    var alternatives = {};
+    [statementStability, themeSt].forEach(function (st) {
+      Object.keys(st.flips).forEach(function (id) {
+        if (leaderIds.indexOf(id) === -1) alternatives[id] = (alternatives[id] || 0) + st.flips[id];
+      });
+    });
+    if (equalTop !== null && leaderIds.indexOf(equalTop) === -1) {
+      alternatives[equalTop] = (alternatives[equalTop] || 0) + 1;
+    }
+    var alternativeIds = Object.keys(alternatives).sort(function (a, b) {
+      return alternatives[b] - alternatives[a] || names[a].name.localeCompare(names[b].name, "nb");
+    });
+    var alternativeDetails = alternativeIds.map(function (id) {
+      return names[id].name + " (" + alternatives[id] + " av " +
+        (statementStability.total + themeSt.total + 1) + ")";
+    });
+
+    var card = el("section", "insights");
+    card.setAttribute("aria-label", "Dette bør du se først");
+    card.appendChild(el("h2", null, "Dette bør du se først"));
+    card.appendChild(el("p", "insight-stability",
+      insightStabilityLine(leaderNames, alternativeDetails, statementStability, themeSt, equalTop)));
+
+    var grid = el("div", "insight-grid");
+    exactLeaders.forEach(function (leader) {
+      var reasons = partyContribution(data, answers, weights, leader.partyId);
+      var high = reasons.slice(0, exactLeaders.length > 1 ? 1 : 2);
+      var low = actualDisagreements(reasons)
+        .slice(exactLeaders.length > 1 ? -1 : -2).reverse()
+        .filter(function (r) { return high.indexOf(r) === -1; });
+      grid.appendChild(reasonList("Hvorfor " + leader.party.name + " treffer deg", high));
+      if (low.length > 0) grid.appendChild(reasonList("Der dere er mest uenige", low));
+    });
+    card.appendChild(grid);
+    card.appendChild(el("p", "insight-note",
+      "Dette er samsvar med kodede posisjoner, ikke en måling av hele partiet. " +
+      "Åpne utsagnene for å kontrollere kildene selv."));
+    mountEl.appendChild(card);
+    return card;
+  }
+
   function render(data, answers, mountEl, weights) {
     mountEl.innerHTML = "";
     var details = document.createElement("details");
@@ -576,6 +688,8 @@
       return;
     }
     var details = render(data, loadAnswers(data), mountEl, loadWeights(data));
+    var insightsEl = document.getElementById("result-insights-root");
+    renderInsights(data, loadAnswers(data), insightsEl, loadWeights(data));
     // A trade-off changes the weights while the page is open. The quiz says so
     // with an event that CARRIES the weights and answers now in force, so the
     // panel explains exactly the result on screen. Re-reading storage instead
@@ -585,6 +699,7 @@
       var wasOpen = details && details.open;
       var d = (ev && ev.detail) || {};
       details = render(data, d.answers || loadAnswers(data), mountEl, d.weights || loadWeights(data));
+      renderInsights(data, d.answers || loadAnswers(data), insightsEl, d.weights || loadWeights(data));
       if (wasOpen) details.open = true;
     });
   }
@@ -608,6 +723,8 @@
     topPartyId: topPartyId,
     contributingIds: contributingIds,
     contribution: contribution,
+    partyContribution: partyContribution,
+    actualDisagreements: actualDisagreements,
     documentationGaps: documentationGaps,
     dimensionIds: dimensionIds,
     themeEqualWeight: themeEqualWeight,
@@ -615,6 +732,8 @@
     stability: stability,
     themeStability: themeStability,
     pctStepClass: pctStepClass,
+    insightStabilityLine: insightStabilityLine,
+    renderInsights: renderInsights,
     render: render,
   };
 });

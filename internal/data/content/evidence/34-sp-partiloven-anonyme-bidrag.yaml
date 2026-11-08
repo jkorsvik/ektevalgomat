@@ -16,14 +16,14 @@ verbatim_excerpt: >
   finansieringen av politiske partier og dermed opprettholde tilliten
   til partiene og de politiske institusjonene."
 status: vedtatt
-position: 2
+position: 1
 source_tier: A
 source_name: "Innst. 528 L (2024–2025)"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
 claim_confidence: dokumentert
 context_note: >
-  Kodet +2: Sp er medforfatter av flertallsmerknaden (samme tekst som
-  Ap/SV/Rødt deler) og stemte FOR uten unntak (17 av 17 tilstedeværende
-  representanter). Individuell representantstemme hentet direkte fra
-  data.stortinget.no for votering_id 26057.
+  Kodet +1 etter metodekonsistenskontroll 2026-11-01: Sp står bak den
+  delte flertallsmerknaden og stemte for, men medforslag og enstemmig
+  votering er ikke et parti-eget instrument på posisjonsskalaen.
+  Votering 26057 er kontrollert: Sp 17 for / 0 mot.
 retrieved_at: "2026-09-23"

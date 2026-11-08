@@ -23,21 +23,16 @@ verbatim_excerpt: >
   analyse for 2025, som legges frem senere i år, og støtter ikke det
   fremlagte representantforslaget.
 status: forslag_avvist_stemte_mot
-position: -2
+position: -1
 source_tier: A
 source_name: "Innst. 239 S (2025–2026); votering_id 27610"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: null
 context_note: >
-  Kodet -2 (sterkt mot): Høyre er det eneste partiet i saken med en
-  navngitt, forslagsspesifikk begrunnelse for mot-stemmen — direkte
-  kontrast til FrP (evidence/174), som deler nesten hele
-  problembeskrivelsen tekstlig men ikke forklarer sin egen mot-stemme.
-  Høyre støtter uttrykkelig "forslagsstillernes intensjon" men avviser
-  selve mekanismen (et bindende 2030-årstall) med en konkret,
-  navngitt kilde (statsrådens brev) og et alternativ (avvente Nkoms
-  2025-analyse) — samme type "støtter intensjonen, ikke mekanismen"-
-  argumentasjon som Høyre har brukt tidligere i datasettet (f.eks.
-  evidence/135, Microsoft 365-exit).
+  Kodet -1 etter blind kodingsgjennomgang 2026-11-01: Høyre støtter
+  intensjonen, men avviser den bindende 2030-fristen i egen merknad og
+  gjennom motstemmen. Retningen er klar, men komitemerknaden er ikke
+  eget instrument på posisjonsskalaen. Tidligere -2 la for mye vekt på
+  at begrunnelsen var forslagsspesifikk.
 retrieved_at: "2026-09-24"

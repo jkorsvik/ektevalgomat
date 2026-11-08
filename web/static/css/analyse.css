@@ -69,6 +69,33 @@
 .analyse-gap-title { font-weight: 600; margin: 0 0 var(--sp-1); }
 .analyse-flag { font-size: var(--fs-sm); color: var(--muted); margin: var(--sp-1) 0 0; }
 
+.insights {
+  margin: var(--sp-6) 0;
+  padding: var(--sp-6);
+  background: var(--card);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+}
+.insights h2 { margin-top: 0; }
+.insight-lead { font-weight: 600; }
+.insight-stability { color: var(--muted); }
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-6);
+  margin-top: var(--sp-6);
+}
+.insight-reason-group h3 { margin: 0 0 var(--sp-3); }
+.insight-list { list-style: none; padding: 0; margin: 0; }
+.insight-list li { margin-bottom: var(--sp-4); }
+.insight-list a { display: block; font-weight: 600; }
+.insight-match { display: block; color: var(--muted); font-size: var(--fs-sm); }
+.insight-note { margin: var(--sp-5) 0 0; color: var(--muted); font-size: var(--fs-sm); }
+
+@media (max-width: 620px) {
+  .insight-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 520px) {
   .analyse-row { grid-template-columns: 1fr 3.2rem; }
   .analyse-row-label { grid-column: 1 / -1; margin-bottom: var(--sp-1); }

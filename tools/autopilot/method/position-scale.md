@@ -32,6 +32,13 @@ as a goal. A *vote*, a *co-sponsorship*, or a *committee remark that states only
 a direction* is not an instrument. It tells you which way the party pushed, not
 how far it committed.
 
+A numeral is not mandatory when the party's own instrument states a direct goal;
+the KrF programme example below settles that case. A joint minority proposal is
+a co-sponsorship, not a party-only instrument, even when the party signed it and
+voted for it. A committee merknad stays at magnitude 1 even when it describes a
+complete operative rule. These readings follow the blind review on 2026-11-01;
+they stop argumentative strength from being mistaken for instrument strength.
+
 Two rows on the same statement show the cut. FrP is coded `2` on utsagn-55
 because its own alternative budget lowers the total level by a stated 51,4 mrd.
 kroner; its programme point says the same in words. Sp is coded `1` on the same
@@ -41,17 +48,18 @@ instrument, no figure for the total.
 
 ## What the existing rows show
 
-Derived from the 543 coded rows in `internal/data/content/evidence`:
+Derived from the 579 coded rows in `internal/data/content/evidence` on 2026-11-01:
 
 | | rows | carrying `partiets_begrunnelse` | carrying `uklart` |
 |---|---|---|---|
-| `±2` | 235 | 228 (97 %) | 6 |
-| `±1` | 293 | 125 (42 %) | 122 |
+| `±2` | 210 | 203 (97 %) | 6 |
+| `±1` | 356 | 156 (44 %) | 122 |
 
-Of the 131 rows classed `uklart`, 122 sit at magnitude 1. The practice
-already follows the rule: magnitude 2 rests on the party's own reasoning, and
-magnitude 1 is where attribution is uncertain. The full spread is
-`2` 146, `1` 128, `0` 15, `-1` 165, `-2` 89.
+Of the 131 rows classed `uklart`, 122 sit at magnitude 1. These classes describe
+the evidence, not whether every row obeys the instrument rule. The blind pilot and
+the same-statement consistency pass on 2026-11-01 corrected 27 cells across nine
+statements. The rest of the dataset is not fully double-coded. The full spread is
+`2` 127, `1` 168, `0` 13, `-1` 188, `-2` 83.
 
 ## A row's magnitude comes from the row's own evidence
 

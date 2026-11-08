@@ -10,13 +10,14 @@ scan_summary: >
   stemte for, samme ene avviker som på utsagn-08.
 claim_action: "Votering_id 28136, FrP 28 for, 1 mot."
 status: forslag_avvist_stemte_for
-position: 2
+position: -2
 source_tier: A
 source_name: "Innst. 374 S (2025–2026); votering_id 28136"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: null
 context_note: >
-  Kodet +2: samme koalisjon og samme avviker (1 av 29) som på
+  Kodet -2: samme koalisjon og samme avviker (1 av 29) som på
   utsagn-08 — konsistent FrP-stemmegivning innad i denne saken.
+  Utsagnet er snudd 2026-11-01, og posisjonen er speilvendt fra +2 til -2.
 retrieved_at: "2026-09-24"

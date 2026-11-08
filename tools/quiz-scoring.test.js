@@ -134,6 +134,16 @@ check("leaders: no figures at all", S.leaders([row("a", null), row("b", null)]).
 check("leaders: null never leads, even beside a real zero", ids(S.leaders([row("a", null), row("b", 0)])), '["b"]');
 check("leaders: an empty list", S.leaders([]).length, 0);
 
+// nearLeaders: a small numerical lead is a top group, not a durable winner.
+check("nearLeaders includes a one-point challenger", ids(S.nearLeaders([row("a", 64), row("b", 63), row("c", 60)], 2)), '["a","b"]');
+check("nearLeaders includes the boundary", ids(S.nearLeaders([row("a", 64), row("b", 62), row("c", 61)], 2)), '["a","b"]');
+check("nearLeaders keeps a clear leader alone", ids(S.nearLeaders([row("a", 64), row("b", 61)], 2)), '["a"]');
+check("nearLeaders preserves exact ties", ids(S.nearLeaders([row("a", 64), row("b", 64)], 2)), '["a","b"]');
+check("nearLeaders ignores unscored parties", ids(S.nearLeaders([row("a", null), row("b", 0)], 2)), '["b"]');
+check("nearLeaders defaults to two points", ids(S.nearLeaders([row("a", 64), row("b", 63)])), '["a","b"]');
+check("nearLeaders honors a narrower tolerance", ids(S.nearLeaders([row("a", 64), row("b", 62)], 1)), '["a"]');
+check("nearLeaders exports the prose tolerance", S.NEAR_LEADER_TOLERANCE, 2);
+
 if (failures > 0) {
   console.error("\n" + failures + " check(s) failed");
   process.exit(1);

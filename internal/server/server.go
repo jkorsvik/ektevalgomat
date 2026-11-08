@@ -576,9 +576,15 @@ func evidensstyrkeDots(label string) string {
 func New(logger *slog.Logger) http.Handler {
 	ds := data.Store
 	funcs := template.FuncMap{
-		"year":               currentYear,
-		"asset":              withVersion,
-		"positionLabel":      scoring.PositionLabel,
+		"year":          currentYear,
+		"asset":         withVersion,
+		"positionLabel": scoring.PositionLabel,
+		"reviewPosition": func(p *int) string {
+			if p == nil {
+				return "Kilden svarer ikke"
+			}
+			return scoring.PositionLabel(p)
+		},
 		"positionWord":       scoring.PositionWord,
 		"positionText":       func(c scoring.Cell) string { return c.PositionText() },
 		"positionDisagrees":  func(c scoring.Cell) bool { return c.PositionDisagrees() },
@@ -595,10 +601,21 @@ func New(logger *slog.Logger) http.Handler {
 		"sourceTierShort":    sourceTierShort,
 		"issueURL":           issueURL,
 		"siteBase":           func() string { return siteBase },
-		"nav":                func() []navLink { return navLinks },
-		"nok":                nok,
-		"dateNO":             dateNO,
-		"pct":                pct,
+		"partyShort": func(id string) string {
+			p, ok := ds.Party(id)
+			if ok {
+				return p.Short
+			}
+			return id
+		},
+		"nav":           func() []navLink { return navLinks },
+		"coreNav":       coreNavLinks,
+		"exploreNav":    exploreNavLinks,
+		"metaNav":       metaNavLinks,
+		"isExplorePath": isExplorePath,
+		"nok":           nok,
+		"dateNO":        dateNO,
+		"pct":           pct,
 	}
 
 	// Every page shares partials.tmpl ({{template "head"}}, {{template
@@ -852,6 +869,8 @@ func New(logger *slog.Logger) http.Handler {
 			EvidenceWithoutQuote int
 			ProgrammeOnly        int
 			CodedCells           int
+			CodingReview         data.CodingReview
+			FlippedStatements    int
 		}{
 			Meta: meta("Metode · Ekte valgomat",
 				"Slik blir en partiposisjon til: hva som er kilde, hva som er tolkning, og hvorfor tre separate mål aldri slås sammen til én score.",
@@ -862,6 +881,8 @@ func New(logger *slog.Logger) http.Handler {
 			EvidenceWithoutQuote: evidenceTotal - evidenceWithQuote,
 			ProgrammeOnly:        po,
 			CodedCells:           cc,
+			CodingReview:         data.CodingReviewData(),
+			FlippedStatements:    14,
 		}
 		if err := metodeTmpl.Execute(w, vm); err != nil {
 			logger.Error("render metode", "err", err)

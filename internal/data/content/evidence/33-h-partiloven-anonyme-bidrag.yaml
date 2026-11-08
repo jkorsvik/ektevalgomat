@@ -24,15 +24,11 @@ verbatim_excerpt: >
   endringer i partiloven slik at indirekte bidrag med kjent bidragsyter
   skal innrapporteres på lik linje med direkte bidrag.
 status: vedtatt
-position: 2
+position: 1
 source_tier: A
 source_name: "Innst. 528 L (2024–2025)"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
 claim_confidence: dokumentert
 context_note: >
-  Kodet +2, ikke lavere: Høyre stemte FOR selve forbudet (§ 17 a) uten
-  unntak — deres egne tilleggsforslag (falt) ba om MER åpenhet, ikke
-  mindre, så de trekker ikke posisjonen ned. Individuell
-  representantstemme hentet direkte fra data.stortinget.no for votering_id
-  26057 (22 av Høyres representanter stemte for, 0 mot).
+  Kodet +1 etter metodekonsistenskontroll 2026-11-01: Høyres tilleggsforslag var felles med FrP og regnes som medforslag, ikke et parti-eget instrument. Stemmen dokumenterer retningen.
 retrieved_at: "2026-09-23"

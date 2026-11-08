@@ -1,0 +1,307 @@
+{
+  "reviewer": "B",
+  "packets": [
+    {
+      "packet_id": "packet-01",
+      "cell_position": 1,
+      "confidence": "high",
+      "reason": "KrF medforfattet forslag 1 i Innst. 392 S, som ordrett ber om desentraliserte såkorn- og matkornlagre på gårder; medforfatterskap er ikke et eget instrument.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-02",
+      "cell_position": -1,
+      "confidence": "high",
+      "reason": "SV medforfattet forslag om ikke å innlemme fjerde energimarkedspakke og om utmelding av ACER, det motsatte av en uendret EØS-tilknytning.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-03",
+      "cell_position": 2,
+      "confidence": "high",
+      "reason": "Nyeste rad er Venstres eget Dok. 8:53 S, som går inn for et offentlig register og ber om modeller for registrering av påvirkning mot både Stortinget og regjeringen.",
+      "sources_checked": [
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=21354&format=json",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26219&format=json",
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2025-2026/dok8-202526-053s/"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        },
+        {
+          "index": 1,
+          "position": 1,
+          "confidence": "high"
+        },
+        {
+          "index": 2,
+          "position": 2,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-04",
+      "cell_position": 1,
+      "confidence": "high",
+      "reason": "KrF stemte for § 17 a, som forbyr anonyme bidrag og bidrag via personer som har mottatt pengene fra andre; en votering er ikke et eget instrument.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=103531&dnid=1&vt=26057"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-05",
+      "cell_position": -1,
+      "confidence": "high",
+      "reason": "FrP stemte mot forslag 1 og vil i egen merknad vurdere dørterskeltjenester lokalt med selvstendig finansiering, ikke som en landsdekkende posttjeneste.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-06",
+      "cell_position": -1,
+      "confidence": "medium",
+      "reason": "Rødt stemte fem mot og null for forslag 1 i Innst. 126 S, som ordrett samsvarer med økt grunnbemanning i levekårsutsatte områder; ingen egen begrunnelse er dokumentert.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-07",
+      "cell_position": -1,
+      "confidence": "high",
+      "reason": "Ap mener dagens statsborgerskapsvilkår ligger på riktig nivå og at B1 bør opprettholdes, og stemte mot FrPs og Høyres skjerpende forslag.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-08",
+      "cell_position": 1,
+      "confidence": "high",
+      "reason": "Høyre stemte mot kravet om kun norsk eller europeisk jurisdiksjon og vil bruke smart suverenitet med leverandørmangfold og strenge sikkerhetskrav.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-09",
+      "cell_position": 1,
+      "confidence": "high",
+      "reason": "Venstre stemte for Høyres forslag 10, som ordrett ber om utredning av felleskommunale KI-innkjøp etter KOMBIT-modellen.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-10",
+      "cell_position": -1,
+      "confidence": "medium",
+      "reason": "Sp stemte fem mot og null for MDGs forslag 21 om å utrede et uavhengig nasjonalt digitalt kriseråd; det finnes ingen egen Sp-merknad om nettopp rådet.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-11",
+      "cell_position": -1,
+      "confidence": "high",
+      "reason": "Høyre støttet intensjonen, men mente full dekning innen 2030 var urealistisk og for dyr og stemte mot den bindende 2030-fristen.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-12",
+      "cell_position": 1,
+      "confidence": "high",
+      "reason": "MDG medforfattet forslag 2 om aktivt internasjonalt arbeid for et moratorium fram til virksomheten er bevist trygg for naturmangfoldet.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-13",
+      "cell_position": -1,
+      "confidence": "high",
+      "reason": "FrP vil gi Statnett fullmakt til å redusere eksportkapasiteten ved lav fyllingsgrad, som er det motsatte av utsagnet.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-14",
+      "cell_position": 1,
+      "confidence": "high",
+      "reason": "Rødt medforfattet forslag 3 om tettere nordisk og europeisk samarbeid med åpen kildekode og digital suverenitet som førende prinsipper.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-15",
+      "cell_position": null,
+      "confidence": "medium",
+      "reason": "Votering 27496 gjaldt kontinuerlig kartlegging og én førsterapport, ikke jevnlig rapportering; Tung svarte dessuten for regjeringen, så kilden svarer ikke på Aps posisjon til det nøyaktige utsagnet.",
+      "sources_checked": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05",
+        "https://data.stortinget.no/eksport/voteringsforslag?voteringid=27496"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": null,
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-16",
+      "cell_position": null,
+      "confidence": "medium",
+      "reason": "SV stemte mot en samlet reform som også omfattet tredjeland og lovfrist; uten egen tekst om «uavhengig av tilknytning» kan ikke motstemmen svare på nettopp tilknytningsvurderingen.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": null,
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-17",
+      "cell_position": -1,
+      "confidence": "high",
+      "reason": "MDG stemte for SVs forslag 19 om en forpliktende plan for universell rett til offentlig tannbehandling for hele befolkningen innen 2030, det motsatte av utsagnet.",
+      "sources_checked": [
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25387",
+        "https://data.stortinget.no/eksport/voteringsforslag?voteringid=25387"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": -1,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-18",
+      "cell_position": 1,
+      "confidence": "high",
+      "reason": "Sp støttet proposisjonen om signeringsplikt og erstatning av integreringskontrakten, med krav om evaluering og full statlig kompensasjon for merkostnader.",
+      "sources_checked": [
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true"
+      ],
+      "row_positions": [
+        {
+          "index": 0,
+          "position": 1,
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}

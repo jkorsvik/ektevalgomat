@@ -91,8 +91,13 @@ func TestMetodeStatementFormNumbers(t *testing.T) {
 		t.Fatal("FLIPPED_2026_09_27 not found in quiz.js")
 	}
 	flipped := len(regexp.MustCompile(`"utsagn-\d+"`).FindAll(m[1], -1))
+	m2 := regexp.MustCompile(`(?s)FLIPPED_2026_11_01 = \[(.*?)\]`).FindSubmatch(js)
+	if m2 == nil {
+		t.Fatal("FLIPPED_2026_11_01 not found in quiz.js")
+	}
+	flipped += len(regexp.MustCompile(`"utsagn-\d+"`).FindAll(m2[1], -1))
 	if flipped == 0 {
-		t.Fatal("FLIPPED_2026_09_27 parsed as empty")
+		t.Fatal("polarity migration lists parsed as empty")
 	}
 
 	h := New(slog.New(slog.NewTextHandler(os.Stderr, nil)))

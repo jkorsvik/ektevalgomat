@@ -49,7 +49,7 @@ func TestFrontPageNamesUncomparableStatements(t *testing.T) {
 		t.Skip("every statement has at least one coded position; nothing to disclose")
 	}
 	body := pageText(t, "/")
-	want := fmt.Sprintf("%d av dem har foreløpig ingen dokumentert partiposisjon", len(noPos))
+	want := fmt.Sprintf("%d utsagn teller ikke ennå", len(noPos))
 	if !strings.Contains(body, want) {
 		t.Errorf("/ does not state %q", want)
 	}

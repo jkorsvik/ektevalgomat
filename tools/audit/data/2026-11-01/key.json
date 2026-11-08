@@ -1,0 +1,168 @@
+{
+  "packets": [
+    {
+      "packet_id": "packet-01",
+      "statement_id": "utsagn-38",
+      "party_id": "krf",
+      "published_position": 2,
+      "evidence_files": [
+        "internal/data/content/evidence/166-krf-matberedskap-saakorn-for.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-02",
+      "statement_id": "utsagn-07",
+      "party_id": "sv",
+      "published_position": -2,
+      "evidence_files": [
+        "internal/data/content/evidence/43-sv-acer-begrensning.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-03",
+      "statement_id": "utsagn-01",
+      "party_id": "v",
+      "published_position": 2,
+      "evidence_files": [
+        "internal/data/content/evidence/801-v-lobbyregister-forslag.yaml",
+        "internal/data/content/evidence/810-v-lobbyregister-forslag.yaml",
+        "internal/data/content/evidence/01-venstre-lobbyregister-forslag.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-04",
+      "statement_id": "utsagn-03",
+      "party_id": "krf",
+      "published_position": 1,
+      "evidence_files": [
+        "internal/data/content/evidence/40-krf-partiloven-anonyme-bidrag.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-05",
+      "statement_id": "utsagn-29",
+      "party_id": "frp",
+      "published_position": -1,
+      "evidence_files": [
+        "internal/data/content/evidence/368-frp-dorterskel-mot.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-06",
+      "statement_id": "utsagn-33",
+      "party_id": "rodt",
+      "published_position": -1,
+      "evidence_files": [
+        "internal/data/content/evidence/349-rodt-barnehage-mot.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-07",
+      "statement_id": "utsagn-48",
+      "party_id": "ap",
+      "published_position": -2,
+      "evidence_files": [
+        "internal/data/content/evidence/476-ap-statsborgerskap-skjerpede-krav.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-08",
+      "statement_id": "utsagn-44",
+      "party_id": "h",
+      "published_position": 1,
+      "evidence_files": [
+        "internal/data/content/evidence/448-h-digital-suverenitet-jurisdiksjon.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-09",
+      "statement_id": "utsagn-22",
+      "party_id": "v",
+      "published_position": 1,
+      "evidence_files": [
+        "internal/data/content/evidence/225-v-kombit-for.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-10",
+      "statement_id": "utsagn-41",
+      "party_id": "sp",
+      "published_position": -1,
+      "evidence_files": [
+        "internal/data/content/evidence/248-sp-kriserad-mot.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-11",
+      "statement_id": "utsagn-26",
+      "party_id": "h",
+      "published_position": -2,
+      "evidence_files": [
+        "internal/data/content/evidence/175-h-mobildekning-mot.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-12",
+      "statement_id": "utsagn-15",
+      "party_id": "mdg",
+      "published_position": 2,
+      "evidence_files": [
+        "internal/data/content/evidence/295-mdg-havbunnsmineraler15-for.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-13",
+      "statement_id": "utsagn-08",
+      "party_id": "frp",
+      "published_position": -2,
+      "evidence_files": [
+        "internal/data/content/evidence/262-frp-krafteksport-for.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-14",
+      "statement_id": "utsagn-42",
+      "party_id": "rodt",
+      "published_position": 2,
+      "evidence_files": [
+        "internal/data/content/evidence/253-rodt-nordisk-for.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-15",
+      "statement_id": "utsagn-59",
+      "party_id": "ap",
+      "published_position": -1,
+      "evidence_files": [
+        "internal/data/content/evidence/742-ap-digitale-avhengigheter-plenum.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-16",
+      "statement_id": "utsagn-47",
+      "party_id": "sv",
+      "published_position": 1,
+      "evidence_files": [
+        "internal/data/content/evidence/654-sv-utvisning-individuell-tilknytning.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-17",
+      "statement_id": "utsagn-25",
+      "party_id": "mdg",
+      "published_position": -1,
+      "evidence_files": [
+        "internal/data/content/evidence/103-mdg-tannhelse-universell-for.yaml"
+      ]
+    },
+    {
+      "packet_id": "packet-18",
+      "statement_id": "utsagn-50",
+      "party_id": "sp",
+      "published_position": 2,
+      "evidence_files": [
+        "internal/data/content/evidence/491-sp-integreringserklaering-skriftlig-forpliktelse.yaml"
+      ]
+    }
+  ]
+}

@@ -11,14 +11,15 @@ scan_summary: >
   Ingen Skagerrak-spesifikk merknad.
 claim_action: "Votering_id 28136, Høyre 12 mot, 0 for."
 status: forslag_avvist_stemte_mot
-position: -1
+position: 1
 source_tier: A
 source_name: "Innst. 374 S (2025–2026); votering_id 28136"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: svakt_dokumentert
 context_note: >
-  Kodet -1: samme generelle flertallslinje som på utsagn-08
+  Kodet +1: samme generelle flertallslinje som på utsagn-08
   (evidence/268), gjenbrukt her uten en Skagerrak-spesifikk
   begrunnelse.
+  Utsagnet er snudd 2026-11-01, og posisjonen er speilvendt fra -1 til +1.
 retrieved_at: "2026-09-24"

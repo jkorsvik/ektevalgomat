@@ -14,14 +14,12 @@ claim_action: >
   reservekapasitet og gir inntekter fra offentlig eid fornybar kraft
   "som kommer fellesskapet til gode".
 status: forslag_avvist_stemte_mot
-position: 2
+position: 1
 source_tier: A
 source_name: "Innst. 374 S (2025–2026); votering_id 28137"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: null
 context_note: >
-  Kodet +2: samme delte merknad som MDG (evidence/269), nøyaktig det
-  snudde utsagnet hevder. Eneste forslag i denne saken der Venstre
-  stemmer sammen med MDG mot en FrP/SV/Sp/Rødt-koalisjon. Utsagnet ble snudd 2026-09-27 slik at ikke alle utsagn peker samme vei, og posisjonen er speilvendt fra -2 til +2.
+  Kodet +1 etter metodekonsistenskontroll 2026-11-01: Venstre deler merknad med MDG. Det viser retning, men er ikke et parti-eget instrument.
 retrieved_at: "2026-09-24"

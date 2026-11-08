@@ -76,6 +76,7 @@ func partyMeta(p data.Party, points int) pageMeta {
 type navLink struct {
 	Href  string
 	Label string
+	Group string
 }
 
 // navLinks is the single definition of the site's navigation, and every page that a
@@ -85,18 +86,41 @@ type navLink struct {
 // was invisible from the top of every page. A test walks the route table and fails if
 // a page is missing here.
 var navLinks = []navLink{
-	{"/", "Valgomat"},
-	{"/resultat", "Resultat"},
-	{"/partier", "Partiene"},
-	{"/kart", "Kartet"},
-	{"/stemmer", "Stemmemønster"},
-	{"/tidslinje", "År for år"},
-	{"/rommet", "Rommet"},
-	{"/budsjett", "Budsjettet"},
-	{"/penger", "Penger"},
-	{"/eierskap", "Eierskap"},
-	{"/makt", "Makt"},
-	{"/data", "Data"},
-	{"/metode", "Metode"},
-	{"/om", "Om"},
+	{"/", "Valgomat", "core"},
+	{"/resultat", "Resultat", "core"},
+	{"/partier", "Partiene", "core"},
+	{"/kart", "Kartet", "explore"},
+	{"/stemmer", "Stemmemønster", "explore"},
+	{"/tidslinje", "År for år", "explore"},
+	{"/rommet", "Rommet", "explore"},
+	{"/budsjett", "Budsjettet", "explore"},
+	{"/penger", "Penger", "explore"},
+	{"/eierskap", "Eierskap", "explore"},
+	{"/makt", "Makt", "explore"},
+	{"/data", "Data", "meta"},
+	{"/metode", "Metode", "meta"},
+	{"/om", "Om", "meta"},
+}
+
+func navGroup(name string) []navLink {
+	var out []navLink
+	for _, link := range navLinks {
+		if link.Group == name {
+			out = append(out, link)
+		}
+	}
+	return out
+}
+
+func coreNavLinks() []navLink    { return navGroup("core") }
+func exploreNavLinks() []navLink { return navGroup("explore") }
+func metaNavLinks() []navLink    { return navGroup("meta") }
+
+func isExplorePath(path string) bool {
+	for _, link := range exploreNavLinks() {
+		if link.Href == path {
+			return true
+		}
+	}
+	return false
 }

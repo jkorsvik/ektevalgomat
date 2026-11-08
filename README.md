@@ -19,7 +19,7 @@ that do not are utsagn-06 (7 of 9), utsagn-52 (8 of 9), utsagn-55 (8 of 9)
 and utsagn-57 (8 of 9), each one searched and left honestly empty, plus
 utsagn-60 and 61, which carry institutional evidence only. roadmap.md's
 "Current state" section says why each gap is a gap. Every statement is one
-claim with a "Hva betyr et svar i praksis?" box, and 13 are phrased in the
+claim with a "Hva betyr et svar i praksis?" box, and 14 are phrased in the
 opposite direction to hold the acquiescence spread at 12 points (was 41).
 Tests enforce both, see the roadmap. Every verbatim excerpt and every
 "stemte for/mot" is checked against its source by

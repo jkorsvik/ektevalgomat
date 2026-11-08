@@ -34,6 +34,73 @@
     heller.
   </p>
 
+  <section id="kodingskontroll" class="coding-review">
+    <h2>Blind kodingskontroll</h2>
+    <p class="prose-lede">
+      {{.CodingReview.Meta.SampleCells}} av {{.CodingReview.Meta.PopulationCells}} celler er kontrollert, to per parti.
+      To lesere vurderte kildene uten å se de publiserte posisjonene. De var helt enige i
+      {{.CodingReview.Meta.ExactAgreement}} tilfeller, enige om retningen men ikke styrken i
+      {{.CodingReview.Meta.SameDirection}}, og uenige om retning eller om posisjonen fantes i
+      {{.CodingReview.Meta.SubstantiveDisagreement}}. En separat gjennomgang av primærkildene førte til
+      {{.CodingReview.Meta.ChangedPositions}} rettelser.
+    </p>
+    <p class="prose-note">
+      En separat konsistens kontroll av de samme ni utsagnene rettet 19 celler til,
+      totalt 27. <a href="/om#rettelseslogg">Les rettelsesloggen</a>.
+      Resten av datasettet er ikke fullt dobbelkodet.
+    </p>
+    <p class="prose-note">{{.CodingReview.Meta.Limitations}}</p>
+
+    <details class="disclosure metode-disclosure">
+      <summary>Se alle {{.CodingReview.Meta.SampleCells}} kontrollerte posisjonene</summary>
+      <p>
+        {{.CodingReview.Meta.ReviewedAt}} · fast utvalg med frøet
+        <code>{{.CodingReview.Meta.Seed}}</code> · kildeversjon
+        <code>{{.CodingReview.Meta.SourceRevision}}</code>. A: {{.CodingReview.Meta.ReviewerA}}.
+        B: {{.CodingReview.Meta.ReviewerB}}. Adjudikasjon: {{.CodingReview.Meta.Adjudicator}}.
+      </p>
+      <table class="results coding-review-table">
+        <thead>
+          <tr><th>Utsagn</th><th>Parti</th><th>A</th><th>B</th><th>Før</th><th>Nå</th></tr>
+        </thead>
+        <tbody>
+        {{range .CodingReview.Packets}}
+          <tr>
+            <td><a href="/utsagn/{{trimPrefix .StatementID "utsagn-"}}">{{trimPrefix .StatementID "utsagn-"}}</a></td>
+            <td>{{partyShort .PartyID}}</td>
+            <td>{{reviewPosition .ReviewerA}}</td>
+            <td>{{reviewPosition .ReviewerB}}</td>
+            <td>{{positionLabel .PublishedPosition}}</td>
+            <td>{{if eq .Resolution "unresolved"}}Uavklart{{else}}{{positionLabel .FinalPosition}}{{end}}{{if eq .Resolution "changed"}} · rettet{{end}}</td>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <details class="disclosure">
+                <summary>Begrunnelse og kilder for {{.PacketID}}</summary>
+                <p><strong>A:</strong> {{.ReviewerAReason}}</p>
+                <p><strong>B:</strong> {{.ReviewerBReason}}</p>
+                {{if .AdjudicationRationale}}<p><strong>Adjudikasjon:</strong> {{.AdjudicationRationale}}</p>{{end}}
+                <p>{{if .Adjudicated}}Separat adjudikasjon.{{else}}Ingen separat adjudikasjon nødvendig.{{end}}
+                {{if gt (len .SourceURLs) 0}}Kontrollerte kilder:{{end}}
+                {{range .SourceURLs}} <a href="{{.}}" target="_blank" rel="noopener">åpne</a>{{end}}</p>
+              </details>
+            </td>
+          </tr>
+        {{end}}
+        </tbody>
+      </table>
+    </details>
+
+    {{if .CodingReview.Ambiguities}}
+    <details class="disclosure metode-disclosure">
+      <summary>Metodeavgjørelsene som var nødvendige</summary>
+      {{range .CodingReview.Ambiguities}}
+      <p><strong>{{.ID}}</strong>: {{.Text}}</p>
+      {{end}}
+    </details>
+    {{end}}
+  </section>
+
   <details class="disclosure metode-disclosure">
     <summary>Tre separate mål, aldri én score</summary>
     <p class="lede">
@@ -91,7 +158,7 @@
     <p>
       Mange svarer «enig» oftere enn de egentlig mener. Hvis alle
       utsagnene pekte samme vei, ville noen partier fått et forsprang
-      uten grunn. 13 av utsagnene er derfor formulert
+      uten grunn. {{.FlippedStatements}} av utsagnene er derfor formulert
       motsatt vei. Svarer du «sterkt enig» på alt, skiller det nå
       {{acquiescenceSpread}} prosentpoeng mellom partiet som treffer
       best og partiet som treffer dårligst. Før omskrivingen var det 41.

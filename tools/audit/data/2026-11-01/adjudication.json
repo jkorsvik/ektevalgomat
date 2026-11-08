@@ -1,0 +1,246 @@
+{
+ "meta": {
+  "task": "Adjudication of disputed cells in ektevalgomat's blind coding pilot",
+  "protocol": "docs/coding-review-protocol.md",
+  "scale": "tools/autopilot/method/position-scale.md",
+  "repo_head": "0ae4e11",
+  "adjudicated_at": "2026-11-01",
+  "method": "Read key.json and the named evidence files, then opened the deciding primary source for every packet: Innst. 392 S, 196 S, 232 S, 239 S, 354 S (2024-2025), 374 S, 225 S, 205 S, 309 L and Dok. 8:53 S via data.stortinget.no/eksport/publikasjon, the voteringer list per sak (forslagstekst, antall_for/mot, vedtatt) and the individual voteringsresultat per representative. Vote codes were resolved against the XML export: in the JSON export 1=ikke_tilstede, 2=for, 3=mot.",
+  "counts": {
+   "disputed": 11,
+   "change": 8,
+   "stand": 3,
+   "unresolved": 0
+  },
+  "counts_by_dispute_type": {
+   "magnitude": 9,
+   "direction_or_answerability": 2
+  },
+  "repo_state_note": "The working tree was clean of tracked modifications when this task started (04:10 CET) and 5 tracked files were modified while it ran: web/static/js/analyse.js (04:15:26), web/static/js/quiz.js (04:14:13), web/static/js/scoring.js (04:12:28), tools/analyse.test.js (04:11:48), tools/quiz-scoring.test.js (04:11:35). None of them is an adjudication input. Every file read here (docs/coding-review-protocol.md, tools/autopilot/method/position-scale.md, internal/data/content/evidence/*.yaml) stayed unmodified, and nothing in this task wrote to, committed to or pushed the repository.",
+  "cell_scope_check": "Every disputed cell holds exactly one evidence row except utsagn-01 (V), which holds four; its newest row (2025-11-25) is the one adjudicated, since the cell reports the newest dated row."
+ },
+ "ambiguities": [
+  {
+   "id": "figure_requirement",
+   "text": "The scale's headline rule says an own instrument «with a number»/«with a figure» earns magnitude 2, but its own KrF ruling gives -2 to a programme point with no numeral («Holde skatte- og avgiftsnivået om lag på dagens nivå»). A numeral therefore cannot be a necessary condition. Best reading: own-instrument status decides, a figure is the typical marker and not a requirement. Applied to packet-03 (+2). If numerals were required, packet-03 would be +1.",
+   "affects": [
+    "packet-03"
+   ]
+  },
+  {
+   "id": "joint_forslag",
+   "text": "The scale lists «its own legislative proposal» as an instrument and separately says «a co-sponsorship … is not an instrument». A minority forslag in an innstilling that four or five parties put their names on is both: a legislative proposal and a joint text. Best reading: joint texts are co-sponsorships, because the scale's worked examples use party-only documents (KrF's programme, KrF's budget draft). Applied to packet-01, 02, 12, 13 and 14. If joint forslag counted, packet-01, 12 and 14 would hold at ±2 and packet-02 at -2.",
+   "affects": [
+    "packet-01",
+    "packet-02",
+    "packet-12",
+    "packet-13",
+    "packet-14"
+   ]
+  },
+  {
+   "id": "merknad_operativ",
+   "text": "The scale excludes only «a committee remark that states only a direction», leaving open whether a party's own merknad that states a complete operative rule (FrP's fullmakt mechanism, packet-13) can be an instrument. Best reading: no, because a merknad in another party's innstilling is none of the three named instrument types and it carries no figure. Applied to packet-07, 11, 13 and 18, all magnitude 1.",
+   "affects": [
+    "packet-07",
+    "packet-11",
+    "packet-13",
+    "packet-18"
+   ]
+  },
+  {
+   "id": "vote_answers_exact_question",
+   "text": "The protocol says a vote against one design does not by itself prove opposition to the principle. Where the division is on the statement's own formulation or its exact negation (packets 15 and 16), I treat the vote as answering, at magnitude 1. Read strictly, both could be null, which is what reviewer B did.",
+   "affects": [
+    "packet-15",
+    "packet-16"
+   ]
+  }
+ ],
+ "packets": [
+  {
+   "packet_id": "packet-01",
+   "statement_id": "utsagn-38",
+   "party_id": "krf",
+   "dispute_type": "magnitude",
+   "published_position": 2,
+   "final_position": 1,
+   "resolution": "change",
+   "confidence": "high",
+   "rationale": "KrF er medforslagsstiller til Forslag 1 i Innst. 392 S og stemte 4 for / 0 mot (votering 28068, 48–53), og har egen merknad sammen med FrP om at staten «burde sikre fysiske beredskapslagre, etter modell fra Finland». Begge er retningssignaler: skalatabellen sier uttrykkelig at verken voteringsspor eller medforslagsstillelse er eget instrument, og merknaden har ingen tallfestet forpliktelse. Retningen er entydig for, derfor +1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=28068&format=json",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-392s",
+    "https://data.stortinget.no/eksport/voteringer?sakid=200187&sesjonid=2025-2026"
+   ],
+   "ambiguity": "Hvis et felles mindretallsforslag på partiets eget navn regnes som «eget lovforslag», ville raden blitt +2. Se ambiguities.joint_forslag."
+  },
+  {
+   "packet_id": "packet-02",
+   "statement_id": "utsagn-07",
+   "party_id": "sv",
+   "dispute_type": "magnitude",
+   "published_position": -2,
+   "final_position": -1,
+   "resolution": "change",
+   "confidence": "high",
+   "rationale": "SV stemte for forslagene 1–6 mot EUs fjerde energimarkedspakke (votering 24383–24385, SV 7 for / 0 mot hver) og mot komiteens tilråding om at dokumentene «vedtas ikke» (votering 24386, SV 0 for / 7 mot). Retningen er klart mot utsagnet, men raden hviler på voteringsspor og en felles Sp/SV/R-merknad uten tall eller eget instrument, så −1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=24386&format=json",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-196s",
+    "https://data.stortinget.no/eksport/voteringer?sakid=101682&sesjonid=2024-2025"
+   ],
+   "ambiguity": "Samme joint-forslag-spørsmål som packet-01: med den vide lesningen ville −2 stått."
+  },
+  {
+   "packet_id": "packet-03",
+   "statement_id": "utsagn-01",
+   "party_id": "v",
+   "dispute_type": "magnitude",
+   "published_position": 2,
+   "final_position": 2,
+   "resolution": "stand",
+   "confidence": "medium",
+   "rationale": "Nyeste rad i cellen er Venstres eget Dok. 8:53 S (25.11.2025), fremmet av Melby, Raja og Almeland: «Et enkelt og offentlig tilgjengelig register bør vise hvem som møter hvem, hvilken sak det gjelder, og hvem lobbyisten representerer – både for Stortinget og regjeringen», med to konkrete forslag om registreringsordning for dem som oppsøker Stortinget og regjeringens politiske ledelse. Det er partiets eget instrument som uttrykker kravet i egne ord, og +2 står. De to voteringsradene (21354, 26219: V 4 og 5 for / 0 mot) er svakere, men de er ikke nyeste rad og kan ikke trekke cellen ned.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=dok8-202526-053s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26219&format=json",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=21354&format=json"
+   ],
+   "ambiguity": "Instrumentet ber om å «utrede og innføre» et register, ikke om å vedta det med tall. Under en lesning som krever tallfestet forpliktelse ville raden vært +1. Se ambiguities.figure_requirement."
+  },
+  {
+   "packet_id": "packet-07",
+   "statement_id": "utsagn-48",
+   "party_id": "ap",
+   "dispute_type": "magnitude",
+   "published_position": -2,
+   "final_position": -1,
+   "resolution": "change",
+   "confidence": "high",
+   "rationale": "Ap skriver i egen merknad i Innst. 232 S at «dagens krav om nivå B1 gir et godt grunnlag … og bør opprettholdes», og stemte mot både Høyres (votering 27522) og FrPs (votering 27524) forslag med 0 for / 32 mot i begge. Retningen er klar mot skjerping, men en komitemerknad som viser til en ekstern rapport (IMPECT) er ikke eget instrument og bærer ingen egen tallfestet forpliktelse, så −1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-232s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27524&format=json",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27522&format=json"
+   ]
+  },
+  {
+   "packet_id": "packet-11",
+   "statement_id": "utsagn-26",
+   "party_id": "h",
+   "dispute_type": "magnitude",
+   "published_position": -2,
+   "final_position": -1,
+   "resolution": "change",
+   "confidence": "high",
+   "rationale": "Høyres egen merknad i Innst. 239 S støtter «forslagsstillernes intensjon», men avviser den bindende 2030-fristen med henvisning til statsrådens kostnadsvurdering og vil «avvente Nkoms analyse for 2025»; H stemte mot (votering 27610, 0 for / 14 mot). Klar retning mot, men merknaden er ikke eget instrument og har ingen tallfestet forpliktelse, så −1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-239s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27610&format=json",
+    "https://data.stortinget.no/eksport/voteringer?sakid=200111&sesjonid=2025-2026"
+   ]
+  },
+  {
+   "packet_id": "packet-12",
+   "statement_id": "utsagn-15",
+   "party_id": "mdg",
+   "dispute_type": "magnitude",
+   "published_position": 2,
+   "final_position": 1,
+   "resolution": "change",
+   "confidence": "high",
+   "rationale": "MDG er medforslagsstiller til Forslag 2 i Innst. 354 S, som ordrett ber regjeringen «jobbe aktivt internasjonalt, særlig i Den internasjonale havbunnsmyndigheten (ISA), for et moratorium», og stemte 2 for / 0 mot (votering 25348, 23–82). Raden dokumenterer bare medforslag og stemme; skalatabellen sier at medforslagsstillelse ikke er eget instrument, og MDG har ingen egen merknad med tall → +1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-354s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25348&format=json",
+    "https://data.stortinget.no/eksport/voteringer?sakid=103035&sesjonid=2024-2025"
+   ],
+   "ambiguity": "Samme joint-forslag-spørsmål som packet-01; med den vide lesningen ville +2 stått."
+  },
+  {
+   "packet_id": "packet-13",
+   "statement_id": "utsagn-08",
+   "party_id": "frp",
+   "dispute_type": "magnitude",
+   "published_position": -2,
+   "final_position": -1,
+   "resolution": "change",
+   "confidence": "medium",
+   "rationale": "FrP er medforslagsstiller til forslag 1–3 (votering 28137, FrP 28 for / 1 mot) og krever i egen merknad i Innst. 374 S at Statnett «gis fullmakt til å redusere eksportkapasiteten når fyllingsgraden i sentrale vannmagasiner er under historisk mediannivå» – det motsatte av utsagnet. Merknaden er en komitemerknad uten tall og uten eget instrument, så −1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-374s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=28137&format=json",
+    "https://data.stortinget.no/eksport/voteringer?sakid=200210&sesjonid=2025-2026"
+   ],
+   "ambiguity": "Merknaden angir en full operativ regel, ikke bare en retning, og faller i et gap i skalatabellen som bare unntar merknader som «states only a direction». Jeg lar hovedregelen (eget instrument + tall) gjelde. Se ambiguities.merknad_operativ."
+  },
+  {
+   "packet_id": "packet-14",
+   "statement_id": "utsagn-42",
+   "party_id": "rodt",
+   "dispute_type": "magnitude",
+   "published_position": 2,
+   "final_position": 1,
+   "resolution": "change",
+   "confidence": "high",
+   "rationale": "Rødt er medforslagsstiller til forslag nr. 3 i Innst. 225 S, som ordrett ber om å «samarbeide tettere med nordiske og europeiske land om felles digitale løsninger og beredskap, hvor åpne kildekoder og digital suverenitet … er førende», og stemte 5 for / 0 mot (votering 27493, 21–80). Raden dokumenterer bare medforslag og stemme, ikke eget instrument, så +1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27493&format=json",
+    "https://data.stortinget.no/eksport/voteringer?sakid=200036&sesjonid=2025-2026"
+   ],
+   "ambiguity": "Samme joint-forslag-spørsmål som packet-01; med den vide lesningen ville +2 stått."
+  },
+  {
+   "packet_id": "packet-15",
+   "statement_id": "utsagn-59",
+   "party_id": "ap",
+   "dispute_type": "answerability",
+   "published_position": -1,
+   "final_position": -1,
+   "resolution": "stand",
+   "confidence": "medium",
+   "rationale": "Ap stemte mot komiteens tilråding i Innst. 225 S, som ba regjeringen «kontinuerlig kartlegge Norges digitale avhengigheter til andre land og jurisdiksjoner» og levere «den første rapporten … til Stortinget innen utgangen av 2026» (votering 27496, Ap 0 for / 32 mot, tilrådingen falt 47–54). Statsråd Tung forklarte i debatten 5. mai at regjeringen alt har kartlagt gjennom flere rapporter, og stemmen gjelder nøyaktig det utsagnet spør om. −1 står; Bs null er for streng fordi både stemmen og begrunnelsen svarer på kravet om jevnlig rapportering.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/voteringer?sakid=200036&sesjonid=2025-2026",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27496&format=json",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05"
+   ],
+   "ambiguity": "Tilrådingen bandt kartleggingen sammen med en frist (første rapport innen utgangen av 2026); et nei kan i prinsippet gjelde fristen alene. Utsagnets enig-alternativ nevner nettopp den fristen, så jeg leser stemmen som svar på utsagnet."
+  },
+  {
+   "packet_id": "packet-16",
+   "statement_id": "utsagn-47",
+   "party_id": "sv",
+   "dispute_type": "answerability",
+   "published_position": 1,
+   "final_position": 1,
+   "resolution": "stand",
+   "confidence": "medium",
+   "rationale": "SV stemte mot FrPs forslag 2 i Innst. 205 S, som ba om en utvisningsreform der alvorlig kriminalitet skal gi utvisning «uavhengig av tilknytning til landet» (votering 27441, SV 0 for / 5 mot, 26–66). Forslaget er den nøyaktige motsetningen av utsagnet, og nei-stemmen er et retningssignal på at tilknytning fortsatt skal veie. SV har ingen egen tekst om nettopp dette forslaget, så +1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-205s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27441&format=json",
+    "https://data.stortinget.no/eksport/voteringer?sakid=106246&sesjonid=2025-2026"
+   ],
+   "ambiguity": "Protokollen advarer mot å lese en stemme mot ett design som motstand mot prinsippet. Her er forslaget formulert som det motsatte prinsippet, så jeg anser spørsmålet besvart; strengt lest kunne raden vært null."
+  },
+  {
+   "packet_id": "packet-18",
+   "statement_id": "utsagn-50",
+   "party_id": "sp",
+   "dispute_type": "magnitude",
+   "published_position": 2,
+   "final_position": 1,
+   "resolution": "change",
+   "confidence": "high",
+   "rationale": "Sp sier i egen merknad i Innst. 309 L at det «er rett og rimelig å stille krav og forventninger», men knytter støtten til at byråkrati- og kostnadsbekymringene tas på alvor: «Med disse forutsetningene vil dette medlem støtte proposisjonen», og stemte for loven (votering 27779, Sp 5 for / 0 mot). Retningen er klar for, men loven er regjeringens proposisjon og Sp har ingen eget instrument eller tall, så +1.",
+   "source_urls": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-309l",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27779&format=json",
+    "https://data.stortinget.no/eksport/voteringer?sakid=200258&sesjonid=2025-2026"
+   ]
+  }
+ ]
+}

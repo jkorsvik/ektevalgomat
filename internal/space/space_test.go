@@ -34,15 +34,16 @@ func TestProjectionCoversEveryPartyAndDimension(t *testing.T) {
 }
 
 // The variance shares are the projection's headline claim, so they are pinned
-// against an independent implementation (numpy's SVD on the same matrix gave
-// 50.0 % / 20.3 % / 12.3 %, total 82.6 %). A Jacobi bug that still produced
-// three plausible numbers would pass a "sums to something" check and fail this.
+// against an independent implementation. After the blind coding corrections on
+// 2026-11-01, numpy's SVD on the same 9×12 matrix gives 48.4 % / 23.1 % / 12.8 %,
+// total 84.3 %. A Jacobi bug that still produced plausible numbers would pass a
+// "sums to something" check and fail this.
 func TestThreeAxesHoldTheMeasuredShare(t *testing.T) {
 	sp := Project(data.Store)
-	if math.Abs(sp.Explained-0.826) > 0.005 {
-		t.Errorf("explained = %.4f, want 0.826 (numpy SVD cross-check)", sp.Explained)
+	if math.Abs(sp.Explained-0.843) > 0.005 {
+		t.Errorf("explained = %.4f, want 0.843 (numpy SVD cross-check)", sp.Explained)
 	}
-	want := []float64{0.500, 0.203, 0.123}
+	want := []float64{0.484, 0.231, 0.128}
 	sum := 0.0
 	for i, a := range sp.Axes {
 		if math.Abs(a.Variance-want[i]) > 0.005 {

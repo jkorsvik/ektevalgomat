@@ -144,6 +144,43 @@ header.site nav a {
 }
 header.site nav a:hover { color: var(--ink); border-bottom-color: var(--accent); }
 
+.nav-explore { position: relative; color: var(--muted); font-size: var(--fs-md); }
+.nav-explore > summary {
+  cursor: pointer;
+  padding: var(--sp-4) 0;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.nav-explore > summary[aria-current="page"] { color: var(--accent-strong); font-weight: 600; }
+.nav-explore-list {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--sp-4);
+  width: max-content;
+  max-width: 80vw;
+  padding: var(--sp-3) var(--sp-5);
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+header.site nav .nav-explore-list a { padding: var(--sp-3) var(--sp-4); }
+
+@media (max-width: 520px) {
+  .nav-explore { width: 100%; }
+  .nav-explore-list {
+    position: static;
+    grid-template-columns: 1fr;
+    width: auto;
+    max-width: none;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
 main {
   max-width: var(--max-width);
   margin: 0 auto;

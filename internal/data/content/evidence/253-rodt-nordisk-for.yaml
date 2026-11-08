@@ -12,17 +12,15 @@ scan_summary: >
   egen medforslagsstiller-status.
 claim_action: "Votering_id 27493, Rødt 5 for, 0 mot."
 status: forslag_avvist_stemte_for
-position: 2
+position: 1
 source_tier: A
 source_name: "Innst. 225 S (2025–2026); votering_id 27493"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
 claim_confidence: dokumentert
 attribution_confidence: null
 context_note: >
-  Kodet +2: Rødt medforslagsstiller, enstemmig for. Sammen med
-  evidence/243 (utsagn-41, der Rødt splittet 4 mot/1 for) gir dette et
-  klart bilde: Rødt støtter internasjonalt samarbeid om digital
-  beredskap (dette forslaget) sterkere enn et nytt, uavhengig
-  rådgivende organ (kriserådet) — en reell, dokumenterbar nyanse i
-  partiets digitalpolitikk, ikke bare tilfeldig spredning.
+  Kodet +1 etter blind kodingsgjennomgang 2026-11-01: Rødt er
+  medforslagsstiller og stemte enstemmig for, men medforslagsstillelse
+  er ikke eget instrument på posisjonsskalaen. Tidligere +2 la for mye
+  vekt på begrunnelsen og sammenhengen med andre avstemninger.
 retrieved_at: "2026-09-24"

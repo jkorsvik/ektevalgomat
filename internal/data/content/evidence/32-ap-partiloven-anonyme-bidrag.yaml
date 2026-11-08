@@ -28,18 +28,15 @@ verbatim_excerpt: >
   partiledd økonomisk c. privatpersoner som har mottatt bidrag fra andre
   for å gi disse til politiske partier eller partiledd.
 status: vedtatt
-position: 2
+position: 1
 source_tier: A
 source_name: "Innst. 528 L (2024–2025)"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
 claim_confidence: dokumentert
 context_note: >
-  Kodet +2: dette er ikke en tolkning av stemmegivning, men den vedtatte
-  lovteksten selv — § 17 a forbyr nøyaktig det utsagnet spør om (anonyme
-  bidrag og bidrag via mellomledd som skjuler den egentlige giveren).
-  Individuell representantstemme hentet direkte fra
-  data.stortinget.no/eksport/voteringsresultat for votering_id 26057 (169
-  representanter, kryssjekket mot offisielt for/mot-tall 89/12 — stemmer
-  eksakt). Full innstillingstekst (PDF, 603 linjer) lest før koding, ikke
-  bare voteringstallet.
+  Kodet +1 etter metodekonsistenskontroll 2026-11-01: den delte
+  flertallsmerknaden og stemmen viser klar retning, men er ikke et
+  parti-eget instrument på posisjonsskalaen. Den vedtatte lovteksten og
+  votering 26057 er uendret og kontrollert mot den offisielle 89/12-
+  fordelingen.
 retrieved_at: "2026-09-23"

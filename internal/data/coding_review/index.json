@@ -1,0 +1,607 @@
+{
+  "meta": {
+    "reviewed_at": "2026-11-01",
+    "source_revision": "0ae4e11",
+    "input_sha256": {
+      "blind.json": "44384acb9318db7c7a4b44ad2ef40d506c03016dd2e65101ebab1985c8cb2ace",
+      "key.json": "6ba5791f42bc116c1c046ef95443e83a054a006a8835042bdb3069d3b89b309a",
+      "reviewer-a.json": "a157a723820d2a6e6ad11c4d2d384fe17992f6fd19d6835489e2b03bc2359ecf",
+      "reviewer-b.json": "d287c9fd6e39ec1cef80803755bd000874751610bac8948d447c814212cc51bb",
+      "adjudication.json": "c215546fd8235e98b08bb725ad08b137f4f25176c275dfbf09f512030e740aed",
+      "reviewed-evidence.json": "b019ab463df05fbad5b05b26b447a8736302306cd9e311aa79908fea7037ed84"
+    },
+    "protocol": "docs/coding-review-protocol.md",
+    "scale": "tools/autopilot/method/position-scale.md",
+    "seed": "ektevalgomat-coding-audit-2026-11-01-v1",
+    "population_cells": 517,
+    "sample_cells": 18,
+    "reviewer_a": "source-checker, DeepSeek V4.1 Flash 1017",
+    "reviewer_b": "RAIWork, moonshotai/kimi-k3.1-pro",
+    "adjudicator": "trust-auditor, DeepSeek V4.1 Flash 1017, separate context",
+    "exact_agreement": 15,
+    "same_direction": 1,
+    "substantive_disagreement": 2,
+    "changed_positions": 8,
+    "kept_positions": 10,
+    "unresolved_positions": 0,
+    "limitations": "Agentgjennomgang, ikke uavhengig menneskelig kontroll. Dette er en stratifisert pilot med 18 celler, ikke et pålitelighetsmål for alle 517. To lesere så ingen publiserte posisjoner. En tredje kontekst vurderte de 11 cellene der svarene eller den publiserte kodingen var omstridt, på nytt mot primærkildene."
+  },
+  "ambiguities": [
+    {
+      "id": "figure_requirement",
+      "text": "Hovedregelen krever et eget instrument «med et tall», mens KrF-eksempelet gir −2 for et programpunkt uten siffer. Et siffer kan derfor ikke være et absolutt krav. Vår lesning: eget instrument avgjør, og et tall er et typisk tegn, ikke et vilkår. Derfor står Venstre på +2 i packet-03. Med et absolutt tallkrav ville cellen vært +1.",
+      "affects": [
+        "packet-03"
+      ]
+    },
+    {
+      "id": "joint_forslag",
+      "text": "Skalaen regner et eget lovforslag som instrument, men sier også at medforslagsstillelse ikke er instrument. Et mindretallsforslag fra flere partier er begge deler. Vår lesning: felles forslag er medforslag, fordi eksemplene i skalaen bruker dokumenter fra ett parti. Hvis felles forslag telles som eget instrument, går flere celler tilbake til ±2.",
+      "affects": [
+        "packet-01",
+        "packet-02",
+        "packet-12",
+        "packet-13",
+        "packet-14"
+      ]
+    },
+    {
+      "id": "merknad_operativ",
+      "text": "Skalaen unntar bare komitemerknader som «states only a direction». Den sier ikke eksplisitt hva som skjer når en merknad beskriver en full operativ regel. Vår lesning: en merknad i en annen innstilling er ikke et av de tre instrumenttypene, og den har ingen tallfestet forpliktelse. Derfor blir disse cellene magnitude 1.",
+      "affects": [
+        "packet-07",
+        "packet-11",
+        "packet-13",
+        "packet-18"
+      ]
+    },
+    {
+      "id": "vote_answers_exact_question",
+      "text": "Protokollen sier at en stemme mot ett design ikke automatisk beviser motstand mot prinsippet. Når avstemningen gjelder utsagnets egen formulering eller dens eksakte motsetning, vurderer vi den som et svar med magnitude 1. En strengere lesning kan gi null. Dette gjelder packet-15 og packet-16.",
+      "affects": [
+        "packet-15",
+        "packet-16"
+      ]
+    }
+  ],
+  "packets": [
+    {
+      "packet_id": "packet-01",
+      "statement_id": "utsagn-38",
+      "party_id": "krf",
+      "reviewer_a": 1,
+      "reviewer_b": 1,
+      "published_position": 2,
+      "final_position": 1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "KrF er medforslagsstiller til og stemte for det ordrett identiske forslaget i Innst. 392 S: «Stortinget ber regjeringen sikre beredskapslagre for såkorn og matkorn i en desentralisert modell på gårdene rundt om i landet» (votering 28068: 48 for, 53 mot; KrF 4 for, 0 mot). Egen merknad: en desentralisert lagringsstruktur gir mer robust beredskap enn sentraliserte lager. Retningen er klart for, men verken voteringen eller merknaden har tall eller eget instrument med figur, så ikke +2.",
+      "reviewer_b_reason": "KrF medforfattet forslag 1 i Innst. 392 S, som ordrett ber om desentraliserte såkorn- og matkornlagre på gårder; medforfatterskap er ikke et eget instrument.",
+      "adjudication_rationale": "KrF er medforslagsstiller til Forslag 1 i Innst. 392 S og stemte 4 for / 0 mot (votering 28068, 48–53), og har egen merknad sammen med FrP om at staten «burde sikre fysiske beredskapslagre, etter modell fra Finland». Begge er retningssignaler: skalatabellen sier uttrykkelig at verken voteringsspor eller medforslagsstillelse er eget instrument, og merknaden har ingen tallfestet forpliktelse. Retningen er entydig for, derfor +1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=28068&format=json",
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-392s",
+        "https://data.stortinget.no/eksport/voteringer?sakid=200187&sesjonid=2025-2026"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-06-05-krf-matberedskap-saakorn-for",
+          "date": "2026-06-05",
+          "file": "internal/data/content/evidence/166-krf-matberedskap-saakorn-for.yaml",
+          "sha256": "5ac78cc9eee356be288c4ee32dac91e30c574f29f34f44b0d8f3ae6a03c2e3de"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-02",
+      "statement_id": "utsagn-07",
+      "party_id": "sv",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -2,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "SV var medforslagsstiller til og stemte for forslag 1–3 i Innst. 196 S: rettsaktene i EUs fjerde energimarkedspakke skal ikke innlemmes, Norge skal melde seg ut av ACER og tredje pakke reverseres (votering 24383/24384/24385, SV 7 for i hver; 24386 SV 7 mot flertallets avvisning). Det er det motsatte av å beholde dagens EØS-tilknytning med ACERs rolle uendret. Bare voteringsspor og egen merknad uten tall – derfor −1, ikke −2.",
+      "reviewer_b_reason": "SV medforfattet forslag om ikke å innlemme fjerde energimarkedspakke og om utmelding av ACER, det motsatte av en uendret EØS-tilknytning.",
+      "adjudication_rationale": "SV stemte for forslagene 1–6 mot EUs fjerde energimarkedspakke (votering 24383–24385, SV 7 for / 0 mot hver) og mot komiteens tilråding om at dokumentene «vedtas ikke» (votering 24386, SV 0 for / 7 mot). Retningen er klart mot utsagnet, men raden hviler på voteringsspor og en felles Sp/SV/R-merknad uten tall eller eget instrument, så −1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=24386&format=json",
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-196s",
+        "https://data.stortinget.no/eksport/voteringer?sakid=101682&sesjonid=2024-2025"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2025-04-10-sv-acer-begrensning",
+          "date": "2025-04-10",
+          "file": "internal/data/content/evidence/43-sv-acer-begrensning.yaml",
+          "sha256": "b8cc35918fc399e34e01db6ff0639c9f01d8596ae07c744ba0fd6fd2629f2873"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-03",
+      "statement_id": "utsagn-01",
+      "party_id": "v",
+      "reviewer_a": 1,
+      "reviewer_b": 2,
+      "published_position": 2,
+      "final_position": 2,
+      "agreement": "same_direction",
+      "adjudicated": true,
+      "resolution": "kept",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "Venstre stemte for registreringsordningene både 15.06.2023 (votering 21354, V 4 for, 20 for/81 mot) og 19.06.2025 (votering 26219, V 5 for, 20 for/82 mot), og fremmet selv Dok. 8:53 S «om å utrede og innføre et lobbyregister for Stortinget og regjeringen», der den gjengitte teksten står ordrett. Retningen er klart for. Eget forslag ber om utredning av modeller og inneholder ingen tall eller ferdig registreringsplikt, så +2 er ikke grunnet.",
+      "reviewer_b_reason": "Nyeste rad er Venstres eget Dok. 8:53 S, som går inn for et offentlig register og ber om modeller for registrering av påvirkning mot både Stortinget og regjeringen.",
+      "adjudication_rationale": "Nyeste rad i cellen er Venstres eget Dok. 8:53 S (25.11.2025), fremmet av Melby, Raja og Almeland: «Et enkelt og offentlig tilgjengelig register bør vise hvem som møter hvem, hvilken sak det gjelder, og hvem lobbyisten representerer – både for Stortinget og regjeringen», med to konkrete forslag om registreringsordning for dem som oppsøker Stortinget og regjeringens politiske ledelse. Det er partiets eget instrument som uttrykker kravet i egne ord, og +2 står. De to voteringsradene (21354, 26219: V 4 og 5 for / 0 mot) er svakere, men de er ikke nyeste rad og kan ikke trekke cellen ned.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=dok8-202526-053s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26219&format=json",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=21354&format=json"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2023-06-15-v-lobbyregister-forslag",
+          "date": "2023-06-15",
+          "file": "internal/data/content/evidence/801-v-lobbyregister-forslag.yaml",
+          "sha256": "8c80008e23b2fe0bfdab15c0a824972ea2bad445961bb8f7e469234591143168"
+        },
+        {
+          "id": "ev-2025-06-19-v-lobbyregister-forslag",
+          "date": "2025-06-19",
+          "file": "internal/data/content/evidence/810-v-lobbyregister-forslag.yaml",
+          "sha256": "e16a07fad73357dfd7534eb87e07d27eca6187bdb7368239efd6d9dbef0160d7"
+        },
+        {
+          "id": "ev-2025-11-25-venstre-lobby-forslag",
+          "date": "2025-11-25",
+          "file": "internal/data/content/evidence/01-venstre-lobbyregister-forslag.yaml",
+          "sha256": "d281fa81cca7726b2561fc0c4bf20cc8be607ab2b39efa26f3989b7d09f0384f"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-04",
+      "statement_id": "utsagn-03",
+      "party_id": "krf",
+      "reviewer_a": 1,
+      "reviewer_b": 1,
+      "published_position": 1,
+      "final_position": 1,
+      "agreement": "exact",
+      "adjudicated": false,
+      "resolution": "kept",
+      "dispute_type": "agreement",
+      "reviewer_a_reason": "Forbudet mot anonyme bidrag og bidrag via mellomledd står ordrett i § 17 a slik den er gjengitt i Innst. 528 L, og KrF stemte for (votering 26057: 89 for, 12 mot; KrF 2 for, 0 mot – kun FrP stemte mot). KrF hadde ingen egen merknad i saken. Klar retning for, men bare votering – ingen eget instrument med tall.",
+      "reviewer_b_reason": "KrF stemte for § 17 a, som forbyr anonyme bidrag og bidrag via personer som har mottatt pengene fra andre; en votering er ikke et eget instrument.",
+      "adjudication_rationale": "",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-528l",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26057",
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=103531&dnid=1&vt=26057"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2025-06-13-krf-partiloven-anonyme-bidrag",
+          "date": "2025-06-13",
+          "file": "internal/data/content/evidence/40-krf-partiloven-anonyme-bidrag.yaml",
+          "sha256": "ebd634205f3107bf7e1af67b94cc3e3e4e880fa778d73b75c747f21278725319"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-05",
+      "statement_id": "utsagn-29",
+      "party_id": "frp",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -1,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": false,
+      "resolution": "kept",
+      "dispute_type": "agreement",
+      "reviewer_a_reason": "Forslag 1 i Innst. 280 S (fra Sp og Rødt) lyder ordrett som utsagnet: «utrede innføring av dørterskeltjenesten som en landsdekkende tjeneste». FrP stemte 0 for og 29 mot (votering 27675: 23 for, 77 mot), og FrPs egen merknad vil heller vurdere slike tilbud lokalt med selvstendig finansiering. Klar retning mot, ingen egen instrument-figur.",
+      "reviewer_b_reason": "FrP stemte mot forslag 1 og vil i egen merknad vurdere dørterskeltjenester lokalt med selvstendig finansiering, ikke som en landsdekkende posttjeneste.",
+      "adjudication_rationale": "",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-280s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27675",
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-frp-dorterskel-mot",
+          "date": "2026-05-10",
+          "file": "internal/data/content/evidence/368-frp-dorterskel-mot.yaml",
+          "sha256": "bf1098c39dc7626ed20780f123019dbf92c18f4e6154bc13618679175240a3bf"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-06",
+      "statement_id": "utsagn-33",
+      "party_id": "rodt",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -1,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": false,
+      "resolution": "kept",
+      "dispute_type": "agreement",
+      "reviewer_a_reason": "Utsagnet er ordrett forslag 1 i Innst. 126 S (fra SV, MDG og KrF), og Rødt stemte mot: 0 for, 5 mot (votering 26946: 16 for, 85 mot; for-siden er nøyaktig KrF 4 + MDG 5 + SV 5 + V 2). Voteringssporet er entydig mot, men jeg fant ikke voteringen i referatet og kan derfor ikke utelukke at id-en gjelder et av de to andre SV/MDG/KrF-forslagene i samme innstilling; derfor medium.",
+      "reviewer_b_reason": "Rødt stemte fem mot og null for forslag 1 i Innst. 126 S, som ordrett samsvarer med økt grunnbemanning i levekårsutsatte områder; ingen egen begrunnelse er dokumentert.",
+      "adjudication_rationale": "",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-126s",
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-02-26",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26946",
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-rodt-barnehage-mot",
+          "date": "2026-02-01",
+          "file": "internal/data/content/evidence/349-rodt-barnehage-mot.yaml",
+          "sha256": "6add820c0e153c444c2dc9d2057025925b7b676bfd7d9a2b389ee3b85766cdb7"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-07",
+      "statement_id": "utsagn-48",
+      "party_id": "ap",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -2,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "Ap skrev i Innst. 232 S at «dagens krav om nivå B1 gir et godt grunnlag ... og bør opprettholdes», og at ytterligere skjerping ikke vil styrke integreringen, og stemte mot både Høyres (27522) og FrPs (27524) skjerpingsforslag (Ap 0 for, 32 mot i begge). Klar retning mot skjerping; egen merknad uten tall.",
+      "reviewer_b_reason": "Ap mener dagens statsborgerskapsvilkår ligger på riktig nivå og at B1 bør opprettholdes, og stemte mot FrPs og Høyres skjerpende forslag.",
+      "adjudication_rationale": "Ap skriver i egen merknad i Innst. 232 S at «dagens krav om nivå B1 gir et godt grunnlag … og bør opprettholdes», og stemte mot både Høyres (votering 27522) og FrPs (votering 27524) forslag med 0 for / 32 mot i begge. Retningen er klar mot skjerping, men en komitemerknad som viser til en ekstern rapport (IMPECT) er ikke eget instrument og bærer ingen egen tallfestet forpliktelse, så −1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-232s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27524&format=json",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27522&format=json"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-05-12-ap-statsborgerskap-skjerpede-krav",
+          "date": "2026-05-12",
+          "file": "internal/data/content/evidence/476-ap-statsborgerskap-skjerpede-krav.yaml",
+          "sha256": "a9a35d0cd3ec7a6de76afa6cd6b7bc9f0e05c1cd6fb2905f46320ba0ff557889"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-08",
+      "statement_id": "utsagn-44",
+      "party_id": "h",
+      "reviewer_a": 1,
+      "reviewer_b": 1,
+      "published_position": 1,
+      "final_position": 1,
+      "agreement": "exact",
+      "adjudicated": false,
+      "resolution": "kept",
+      "dispute_type": "agreement",
+      "reviewer_a_reason": "Høyre stemte mot forslag 4 i Innst. 225 S om at sensitiv og samfunnskritisk informasjon «utelukkende skal behandles i løsninger som er under norsk eller europeisk jurisdiksjon» (votering 27492: 15 for, 86 mot; H 0 for, 14 mot), og skriver i egen merknad at digitale handlefrihet best sikres gjennom «smart suverenitet» og at «ytterligere nasjonale særreguleringer» frarådes. Retning klart for utsagnet; merknad uten tall.",
+      "reviewer_b_reason": "Høyre stemte mot kravet om kun norsk eller europeisk jurisdiksjon og vil bruke smart suverenitet med leverandørmangfold og strenge sikkerhetskrav.",
+      "adjudication_rationale": "",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27492",
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-05-07-h-digital-suverenitet-jurisdiksjon",
+          "date": "2026-05-07",
+          "file": "internal/data/content/evidence/448-h-digital-suverenitet-jurisdiksjon.yaml",
+          "sha256": "4f80157dd5ac3bc3f236351c0c1efbd12b302ae10856f9a49da99b6e9fee369e"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-09",
+      "statement_id": "utsagn-22",
+      "party_id": "v",
+      "reviewer_a": 1,
+      "reviewer_b": 1,
+      "published_position": 1,
+      "final_position": 1,
+      "agreement": "exact",
+      "adjudicated": false,
+      "resolution": "kept",
+      "dispute_type": "agreement",
+      "reviewer_a_reason": "Venstre stemte for Høyres forslag 10 i Innst. 225 S om å «utrede felleskommunale innkjøpsordninger for avanserte digitale teknologier som kunstig intelligens, etter modell av Danmarks KOMBIT» (votering 27486: 23 for, 77 mot; V 2 for, 0 mot). Retning klart for, men bare votering og ingen eget instrument med tall – derfor +1.",
+      "reviewer_b_reason": "Venstre stemte for Høyres forslag 10, som ordrett ber om utredning av felleskommunale KI-innkjøp etter KOMBIT-modellen.",
+      "adjudication_rationale": "",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27486",
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-04-28-v-kombit-for",
+          "date": "2026-04-28",
+          "file": "internal/data/content/evidence/225-v-kombit-for.yaml",
+          "sha256": "7f72ab57352d9748222d1765f57ff4841c97dd42dcb9111f89cdf180b63e9380"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-10",
+      "statement_id": "utsagn-41",
+      "party_id": "sp",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -1,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": false,
+      "resolution": "kept",
+      "dispute_type": "agreement",
+      "reviewer_a_reason": "Sp stemte mot forslag 21 i Innst. 225 S, som er utsagnet ordrett («utrede etablering av et uavhengig nasjonalt digitalt kriseråd ...»), med 5 mot og 0 for (votering 27475: 8 for, 91 mot). Klar retning mot; ingen egen tekst med tall.",
+      "reviewer_b_reason": "Sp stemte fem mot og null for MDGs forslag 21 om å utrede et uavhengig nasjonalt digitalt kriseråd; det finnes ingen egen Sp-merknad om nettopp rådet.",
+      "adjudication_rationale": "",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27475",
+        "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-04-28-sp-kriserad-mot",
+          "date": "2026-04-28",
+          "file": "internal/data/content/evidence/248-sp-kriserad-mot.yaml",
+          "sha256": "616e57cfb130bb59e3b0f5e139c78992f779bce8cf067fb2e2c9d5ddd21380fc"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-11",
+      "statement_id": "utsagn-26",
+      "party_id": "h",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -2,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "Høyre stemte mot Sps forslag i Innst. 239 S om mobildekning på alle offentlige veier innen 2030 (votering 27610: 9 for, 90 mot; H 0 for, 14 mot) og skriver i egen merknad at det «ikke er realistisk» med full dekning innen 2030 med kjente virkemidler og at de «støtter denne vurderingen». Retning mot den bindende fristen er klar, men merknaden sier samtidig at de støtter forslagsstillernes intensjon, så medium.",
+      "reviewer_b_reason": "Høyre støttet intensjonen, men mente full dekning innen 2030 var urealistisk og for dyr og stemte mot den bindende 2030-fristen.",
+      "adjudication_rationale": "Høyres egen merknad i Innst. 239 S støtter «forslagsstillernes intensjon», men avviser den bindende 2030-fristen med henvisning til statsrådens kostnadsvurdering og vil «avvente Nkoms analyse for 2025»; H stemte mot (votering 27610, 0 for / 14 mot). Klar retning mot, men merknaden er ikke eget instrument og har ingen tallfestet forpliktelse, så −1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-239s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27610&format=json",
+        "https://data.stortinget.no/eksport/voteringer?sakid=200111&sesjonid=2025-2026"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-05-19-h-mobildekning-mot",
+          "date": "2026-05-19",
+          "file": "internal/data/content/evidence/175-h-mobildekning-mot.yaml",
+          "sha256": "b06c3b0ab913f18f9e4bdc8d9aed85f6c4481cd22aab4301055a4de0d3d2030a"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-12",
+      "statement_id": "utsagn-15",
+      "party_id": "mdg",
+      "reviewer_a": 1,
+      "reviewer_b": 1,
+      "published_position": 2,
+      "final_position": 1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "MDG er medforslagsstiller til forslag 2 i Innst. 354 S om å «jobbe aktivt internasjonalt, særlig i ... (ISA), for et moratorium på mineralutvinning på havbunnen fram til det er bevist at slik virksomhet kan skje uten tap av naturmangfold» og stemte for (votering 25348: 23 for, 82 mot; MDG 2 for, 0 mot). Retning klart for; forslaget har ingen tall.",
+      "reviewer_b_reason": "MDG medforfattet forslag 2 om aktivt internasjonalt arbeid for et moratorium fram til virksomheten er bevist trygg for naturmangfoldet.",
+      "adjudication_rationale": "MDG er medforslagsstiller til Forslag 2 i Innst. 354 S, som ordrett ber regjeringen «jobbe aktivt internasjonalt, særlig i Den internasjonale havbunnsmyndigheten (ISA), for et moratorium», og stemte 2 for / 0 mot (votering 25348, 23–82). Raden dokumenterer bare medforslag og stemme; skalatabellen sier at medforslagsstillelse ikke er eget instrument, og MDG har ingen egen merknad med tall → +1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-354s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25348&format=json",
+        "https://data.stortinget.no/eksport/voteringer?sakid=103035&sesjonid=2024-2025"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2025-06-mdg-havbunnsmineraler15-for",
+          "date": "2025-06-10",
+          "file": "internal/data/content/evidence/295-mdg-havbunnsmineraler15-for.yaml",
+          "sha256": "9f5ac0b3b4b1b888076b26989d78f760a106ac4855d8dfe6f2144217e05ce568"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-13",
+      "statement_id": "utsagn-08",
+      "party_id": "frp",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -2,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "FrP er medforslagsstiller til og stemte for forslaget i Innst. 374 S om å «innføre en styringsmekanisme hvor Statnett må vurdere og har fullmakt til å redusere kapasiteten for krafteksport når fyllingsgraden er under mediannivå» (votering 28137: 47 for, 54 mot; FrP 28 for). Egen merknad sier det samme ordrett. Det er stikk i strid med at Statnett ikke skal få en ny fullmakt. Ingen figur gir −2.",
+      "reviewer_b_reason": "FrP vil gi Statnett fullmakt til å redusere eksportkapasiteten ved lav fyllingsgrad, som er det motsatte av utsagnet.",
+      "adjudication_rationale": "FrP er medforslagsstiller til forslag 1–3 (votering 28137, FrP 28 for / 1 mot) og krever i egen merknad i Innst. 374 S at Statnett «gis fullmakt til å redusere eksportkapasiteten når fyllingsgraden i sentrale vannmagasiner er under historisk mediannivå» – det motsatte av utsagnet. Merknaden er en komitemerknad uten tall og uten eget instrument, så −1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-374s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=28137&format=json",
+        "https://data.stortinget.no/eksport/voteringer?sakid=200210&sesjonid=2025-2026"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-05-26-frp-krafteksport-for",
+          "date": "2026-05-26",
+          "file": "internal/data/content/evidence/262-frp-krafteksport-for.yaml",
+          "sha256": "66aaa4062972a1edb036451cb0815c71022fe80db7b262ef5023d4f2d3603dc5"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-14",
+      "statement_id": "utsagn-42",
+      "party_id": "rodt",
+      "reviewer_a": 1,
+      "reviewer_b": 1,
+      "published_position": 2,
+      "final_position": 1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "Rødt er medforslagsstiller til forslag 3 i Innst. 225 S, som er utsagnet ordrett («samarbeide tettere med nordiske og europeiske land om felles digitale løsninger og beredskap, hvor åpne kildekoder og digital suverenitet ... er førende»), og stemte for (votering 27493: 21 for, 80 mot; R 5 for). Retning klart for; ingen tall.",
+      "reviewer_b_reason": "Rødt medforfattet forslag 3 om tettere nordisk og europeisk samarbeid med åpen kildekode og digital suverenitet som førende prinsipper.",
+      "adjudication_rationale": "Rødt er medforslagsstiller til forslag nr. 3 i Innst. 225 S, som ordrett ber om å «samarbeide tettere med nordiske og europeiske land om felles digitale løsninger og beredskap, hvor åpne kildekoder og digital suverenitet … er førende», og stemte 5 for / 0 mot (votering 27493, 21–80). Raden dokumenterer bare medforslag og stemme, ikke eget instrument, så +1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27493&format=json",
+        "https://data.stortinget.no/eksport/voteringer?sakid=200036&sesjonid=2025-2026"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-04-28-rodt-nordisk-for",
+          "date": "2026-04-28",
+          "file": "internal/data/content/evidence/253-rodt-nordisk-for.yaml",
+          "sha256": "4d23599db1735bb9322d04120519b31dc2fd70d99750c52c7dfc370561170f0e"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-15",
+      "statement_id": "utsagn-59",
+      "party_id": "ap",
+      "reviewer_a": -1,
+      "reviewer_b": null,
+      "published_position": -1,
+      "final_position": -1,
+      "agreement": "substantive",
+      "adjudicated": true,
+      "resolution": "kept",
+      "dispute_type": "answerability",
+      "reviewer_a_reason": "Ap stemte mot komiteens tilråding i Innst. 225 S om at regjeringen skal «kontinuerlig kartlegge Norges digitale avhengigheter ... Den første rapporten leveres til Stortinget innen utgangen av 2026» (votering 27496: 47 for, 54 mot; Ap 0 for, 32 mot), og statsråd Tung viste i debatten til at regjeringen allerede har «kartlagt Norges digitale avhengigheter» gjennom flere rapporter. Retning mot en egen fast rapport er klar. Statsrådens ord alene teller ikke som partistandpunkt, men voteringen gjør det; ingen egen figur.",
+      "reviewer_b_reason": "Votering 27496 gjaldt kontinuerlig kartlegging og én førsterapport, ikke jevnlig rapportering; Tung svarte dessuten for regjeringen, så kilden svarer ikke på Aps posisjon til det nøyaktige utsagnet.",
+      "adjudication_rationale": "Ap stemte mot komiteens tilråding i Innst. 225 S, som ba regjeringen «kontinuerlig kartlegge Norges digitale avhengigheter til andre land og jurisdiksjoner» og levere «den første rapporten … til Stortinget innen utgangen av 2026» (votering 27496, Ap 0 for / 32 mot, tilrådingen falt 47–54). Statsråd Tung forklarte i debatten 5. mai at regjeringen alt har kartlagt gjennom flere rapporter, og stemmen gjelder nøyaktig det utsagnet spør om. −1 står; Bs null er for streng fordi både stemmen og begrunnelsen svarer på kravet om jevnlig rapportering.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/voteringer?sakid=200036&sesjonid=2025-2026",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27496&format=json",
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-05-05-ap-digitale-avhengigheter-plenum",
+          "date": "2026-05-05",
+          "file": "internal/data/content/evidence/742-ap-digitale-avhengigheter-plenum.yaml",
+          "sha256": "4fb5657849d783a1ea7d4917c69368e17d475053ed96cf16f0ecaaf446341eb3"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-16",
+      "statement_id": "utsagn-47",
+      "party_id": "sv",
+      "reviewer_a": 1,
+      "reviewer_b": null,
+      "published_position": 1,
+      "final_position": 1,
+      "agreement": "substantive",
+      "adjudicated": true,
+      "resolution": "kept",
+      "dispute_type": "answerability",
+      "reviewer_a_reason": "SV stemte mot FrPs forslag 2 i Innst. 205 S, som vil at innvandrere som begår alvorlig kriminalitet «skal utvises, uavhengig av tilknytning til landet» (votering 27441: 26 for, 66 mot; SV 0 for, 5 mot). Å stemme ned nettopp «uavhengig av tilknytning» støtter at tilknytning fortsatt skal veies. SV har ingen egen tekst i saken og ingen figur – derfor +1 med medium, ikke +2.",
+      "reviewer_b_reason": "SV stemte mot en samlet reform som også omfattet tredjeland og lovfrist; uten egen tekst om «uavhengig av tilknytning» kan ikke motstemmen svare på nettopp tilknytningsvurderingen.",
+      "adjudication_rationale": "SV stemte mot FrPs forslag 2 i Innst. 205 S, som ba om en utvisningsreform der alvorlig kriminalitet skal gi utvisning «uavhengig av tilknytning til landet» (votering 27441, SV 0 for / 5 mot, 26–66). Forslaget er den nøyaktige motsetningen av utsagnet, og nei-stemmen er et retningssignal på at tilknytning fortsatt skal veie. SV har ingen egen tekst om nettopp dette forslaget, så +1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-205s",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27441&format=json",
+        "https://data.stortinget.no/eksport/voteringer?sakid=106246&sesjonid=2025-2026"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-04-14-sv-utvisning-individuell-tilknytning",
+          "date": "2026-04-14",
+          "file": "internal/data/content/evidence/654-sv-utvisning-individuell-tilknytning.yaml",
+          "sha256": "5ae4a1a438d5ccd5609e216f885e24cf98ed79281bd3ce04b33409c7fad147be"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-17",
+      "statement_id": "utsagn-25",
+      "party_id": "mdg",
+      "reviewer_a": -1,
+      "reviewer_b": -1,
+      "published_position": -1,
+      "final_position": -1,
+      "agreement": "exact",
+      "adjudicated": false,
+      "resolution": "kept",
+      "dispute_type": "agreement",
+      "reviewer_a_reason": "Forslag 19 i innstillingen (SV) ba om «en forpliktende plan som sikrer at hele befolkningen er omfattet av en universell rett til tannbehandling i det offentlige ... innen 2030». MDG stemte for: 2 for (votering 25387: 9 for, 94 mot, der for-siden er nøyaktig SV 7 + MDG 2). Utsagnet avviser nettopp en slik universell rett innen 2030, så MDG står på motsatt side. Bare voteringsresultat, ingen egen figur.",
+      "reviewer_b_reason": "MDG stemte for SVs forslag 19 om en forpliktende plan for universell rett til offentlig tannbehandling for hele befolkningen innen 2030, det motsatte av utsagnet.",
+      "adjudication_rationale": "",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202425-06-04",
+        "https://data.stortinget.no/eksport/voteringsforslag?voteringid=25387",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25387"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2025-06-04-mdg-tannhelse-universell-for",
+          "date": "2025-06-04",
+          "file": "internal/data/content/evidence/103-mdg-tannhelse-universell-for.yaml",
+          "sha256": "064c0fd3bd3204fff91918741127de9f3aa85694c12b205bbe57149eede0aabd"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-18",
+      "statement_id": "utsagn-50",
+      "party_id": "sp",
+      "reviewer_a": 1,
+      "reviewer_b": 1,
+      "published_position": 2,
+      "final_position": 1,
+      "agreement": "exact",
+      "adjudicated": true,
+      "resolution": "changed",
+      "dispute_type": "magnitude",
+      "reviewer_a_reason": "Sp er del av komiteflertallet bak Innst. 309 L, der endringen i integreringsloven § 16 gir plikt til å signere integreringserklæring som erstatter dagens kontrakt, og Sp skriver «Med disse forutsetningene vil dette medlem støtte proposisjonen». Sp stemte for (votering 27779: 54 for, 44 mot; Sp 5 for, 0 mot). Retning klart for; forbeholdene om kostnader og evaluering er ikke tallfestet.",
+      "reviewer_b_reason": "Sp støttet proposisjonen om signeringsplikt og erstatning av integreringskontrakten, med krav om evaluering og full statlig kompensasjon for merkostnader.",
+      "adjudication_rationale": "Sp sier i egen merknad i Innst. 309 L at det «er rett og rimelig å stille krav og forventninger», men knytter støtten til at byråkrati- og kostnadsbekymringene tas på alvor: «Med disse forutsetningene vil dette medlem støtte proposisjonen», og stemte for loven (votering 27779, Sp 5 for / 0 mot). Retningen er klar for, men loven er regjeringens proposisjon og Sp har ingen eget instrument eller tall, så +1.",
+      "source_urls": [
+        "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-309l",
+        "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27779&format=json",
+        "https://data.stortinget.no/eksport/voteringer?sakid=200258&sesjonid=2025-2026"
+      ],
+      "reviewed_evidence": [
+        {
+          "id": "ev-2026-05-19-sp-integreringserklaering-skriftlig-forpliktelse",
+          "date": "2026-05-19",
+          "file": "internal/data/content/evidence/491-sp-integreringserklaering-skriftlig-forpliktelse.yaml",
+          "sha256": "a5d45e1dad5d81419a68c04fd065499d3300d7925acd7a95aec323835c6d70f7"
+        }
+      ]
+    }
+  ]
+}

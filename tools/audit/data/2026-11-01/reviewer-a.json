@@ -1,0 +1,337 @@
+{
+ "reviewer": "A",
+ "packets": [
+  {
+   "packet_id": "packet-01",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "KrF er medforslagsstiller til og stemte for det ordrett identiske forslaget i Innst. 392 S: «Stortinget ber regjeringen sikre beredskapslagre for såkorn og matkorn i en desentralisert modell på gårdene rundt om i landet» (votering 28068: 48 for, 53 mot; KrF 4 for, 0 mot). Egen merknad: en desentralisert lagringsstruktur gir mer robust beredskap enn sentraliserte lager. Retningen er klart for, men verken voteringen eller merknaden har tall eller eget instrument med figur, så ikke +2.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-392s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=28068",
+    "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-02",
+   "cell_position": -1,
+   "confidence": "high",
+   "reason": "SV var medforslagsstiller til og stemte for forslag 1–3 i Innst. 196 S: rettsaktene i EUs fjerde energimarkedspakke skal ikke innlemmes, Norge skal melde seg ut av ACER og tredje pakke reverseres (votering 24383/24384/24385, SV 7 for i hver; 24386 SV 7 mot flertallets avvisning). Det er det motsatte av å beholde dagens EØS-tilknytning med ACERs rolle uendret. Bare voteringsspor og egen merknad uten tall – derfor −1, ikke −2.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-196s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=24383",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=24384",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=24385",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=24386"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-03",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "Venstre stemte for registreringsordningene både 15.06.2023 (votering 21354, V 4 for, 20 for/81 mot) og 19.06.2025 (votering 26219, V 5 for, 20 for/82 mot), og fremmet selv Dok. 8:53 S «om å utrede og innføre et lobbyregister for Stortinget og regjeringen», der den gjengitte teksten står ordrett. Retningen er klart for. Eget forslag ber om utredning av modeller og inneholder ingen tall eller ferdig registreringsplikt, så +2 er ikke grunnet.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=dok8-202526-053s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=21354",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26219",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202223-06-15",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202425-06-19"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "medium"
+    },
+    {
+     "index": 1,
+     "position": 1,
+     "confidence": "medium"
+    },
+    {
+     "index": 2,
+     "position": 1,
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-04",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "Forbudet mot anonyme bidrag og bidrag via mellomledd står ordrett i § 17 a slik den er gjengitt i Innst. 528 L, og KrF stemte for (votering 26057: 89 for, 12 mot; KrF 2 for, 0 mot – kun FrP stemte mot). KrF hadde ingen egen merknad i saken. Klar retning for, men bare votering – ingen eget instrument med tall.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-528l",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26057"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-05",
+   "cell_position": -1,
+   "confidence": "high",
+   "reason": "Forslag 1 i Innst. 280 S (fra Sp og Rødt) lyder ordrett som utsagnet: «utrede innføring av dørterskeltjenesten som en landsdekkende tjeneste». FrP stemte 0 for og 29 mot (votering 27675: 23 for, 77 mot), og FrPs egen merknad vil heller vurdere slike tilbud lokalt med selvstendig finansiering. Klar retning mot, ingen egen instrument-figur.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-280s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27675"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-06",
+   "cell_position": -1,
+   "confidence": "medium",
+   "reason": "Utsagnet er ordrett forslag 1 i Innst. 126 S (fra SV, MDG og KrF), og Rødt stemte mot: 0 for, 5 mot (votering 26946: 16 for, 85 mot; for-siden er nøyaktig KrF 4 + MDG 5 + SV 5 + V 2). Voteringssporet er entydig mot, men jeg fant ikke voteringen i referatet og kan derfor ikke utelukke at id-en gjelder et av de to andre SV/MDG/KrF-forslagene i samme innstilling; derfor medium.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-126s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26946",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-02-26"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-07",
+   "cell_position": -1,
+   "confidence": "high",
+   "reason": "Ap skrev i Innst. 232 S at «dagens krav om nivå B1 gir et godt grunnlag ... og bør opprettholdes», og at ytterligere skjerping ikke vil styrke integreringen, og stemte mot både Høyres (27522) og FrPs (27524) skjerpingsforslag (Ap 0 for, 32 mot i begge). Klar retning mot skjerping; egen merknad uten tall.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-232s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27522",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27524"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-08",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "Høyre stemte mot forslag 4 i Innst. 225 S om at sensitiv og samfunnskritisk informasjon «utelukkende skal behandles i løsninger som er under norsk eller europeisk jurisdiksjon» (votering 27492: 15 for, 86 mot; H 0 for, 14 mot), og skriver i egen merknad at digitale handlefrihet best sikres gjennom «smart suverenitet» og at «ytterligere nasjonale særreguleringer» frarådes. Retning klart for utsagnet; merknad uten tall.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27492",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-09",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "Venstre stemte for Høyres forslag 10 i Innst. 225 S om å «utrede felleskommunale innkjøpsordninger for avanserte digitale teknologier som kunstig intelligens, etter modell av Danmarks KOMBIT» (votering 27486: 23 for, 77 mot; V 2 for, 0 mot). Retning klart for, men bare votering og ingen eget instrument med tall – derfor +1.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27486",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-10",
+   "cell_position": -1,
+   "confidence": "high",
+   "reason": "Sp stemte mot forslag 21 i Innst. 225 S, som er utsagnet ordrett («utrede etablering av et uavhengig nasjonalt digitalt kriseråd ...»), med 5 mot og 0 for (votering 27475: 8 for, 91 mot). Klar retning mot; ingen egen tekst med tall.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27475",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-11",
+   "cell_position": -1,
+   "confidence": "medium",
+   "reason": "Høyre stemte mot Sps forslag i Innst. 239 S om mobildekning på alle offentlige veier innen 2030 (votering 27610: 9 for, 90 mot; H 0 for, 14 mot) og skriver i egen merknad at det «ikke er realistisk» med full dekning innen 2030 med kjente virkemidler og at de «støtter denne vurderingen». Retning mot den bindende fristen er klar, men merknaden sier samtidig at de støtter forslagsstillernes intensjon, så medium.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-239s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27610"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-12",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "MDG er medforslagsstiller til forslag 2 i Innst. 354 S om å «jobbe aktivt internasjonalt, særlig i ... (ISA), for et moratorium på mineralutvinning på havbunnen fram til det er bevist at slik virksomhet kan skje uten tap av naturmangfold» og stemte for (votering 25348: 23 for, 82 mot; MDG 2 for, 0 mot). Retning klart for; forslaget har ingen tall.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202425-354s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25348"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-13",
+   "cell_position": -1,
+   "confidence": "high",
+   "reason": "FrP er medforslagsstiller til og stemte for forslaget i Innst. 374 S om å «innføre en styringsmekanisme hvor Statnett må vurdere og har fullmakt til å redusere kapasiteten for krafteksport når fyllingsgraden er under mediannivå» (votering 28137: 47 for, 54 mot; FrP 28 for). Egen merknad sier det samme ordrett. Det er stikk i strid med at Statnett ikke skal få en ny fullmakt. Ingen figur gir −2.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-374s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=28137"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-14",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "Rødt er medforslagsstiller til forslag 3 i Innst. 225 S, som er utsagnet ordrett («samarbeide tettere med nordiske og europeiske land om felles digitale løsninger og beredskap, hvor åpne kildekoder og digital suverenitet ... er førende»), og stemte for (votering 27493: 21 for, 80 mot; R 5 for). Retning klart for; ingen tall.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27493",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-15",
+   "cell_position": -1,
+   "confidence": "medium",
+   "reason": "Ap stemte mot komiteens tilråding i Innst. 225 S om at regjeringen skal «kontinuerlig kartlegge Norges digitale avhengigheter ... Den første rapporten leveres til Stortinget innen utgangen av 2026» (votering 27496: 47 for, 54 mot; Ap 0 for, 32 mot), og statsråd Tung viste i debatten til at regjeringen allerede har «kartlagt Norges digitale avhengigheter» gjennom flere rapporter. Retning mot en egen fast rapport er klar. Statsrådens ord alene teller ikke som partistandpunkt, men voteringen gjør det; ingen egen figur.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-225s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27496",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-07"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-16",
+   "cell_position": 1,
+   "confidence": "medium",
+   "reason": "SV stemte mot FrPs forslag 2 i Innst. 205 S, som vil at innvandrere som begår alvorlig kriminalitet «skal utvises, uavhengig av tilknytning til landet» (votering 27441: 26 for, 66 mot; SV 0 for, 5 mot). Å stemme ned nettopp «uavhengig av tilknytning» støtter at tilknytning fortsatt skal veies. SV har ingen egen tekst i saken og ingen figur – derfor +1 med medium, ikke +2.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05",
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-205s",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27441"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-17",
+   "cell_position": -1,
+   "confidence": "high",
+   "reason": "Forslag 19 i innstillingen (SV) ba om «en forpliktende plan som sikrer at hele befolkningen er omfattet av en universell rett til tannbehandling i det offentlige ... innen 2030». MDG stemte for: 2 for (votering 25387: 9 for, 94 mot, der for-siden er nøyaktig SV 7 + MDG 2). Utsagnet avviser nettopp en slik universell rett innen 2030, så MDG står på motsatt side. Bare voteringsresultat, ingen egen figur.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202425-06-04",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25387"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": -1,
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "packet_id": "packet-18",
+   "cell_position": 1,
+   "confidence": "high",
+   "reason": "Sp er del av komiteflertallet bak Innst. 309 L, der endringen i integreringsloven § 16 gir plikt til å signere integreringserklæring som erstatter dagens kontrakt, og Sp skriver «Med disse forutsetningene vil dette medlem støtte proposisjonen». Sp stemte for (votering 27779: 54 for, 44 mot; Sp 5 for, 0 mot). Retning klart for; forbeholdene om kostnader og evaluering er ikke tallfestet.",
+   "sources_checked": [
+    "https://data.stortinget.no/eksport/publikasjon?publikasjonid=inns-202526-309l",
+    "https://data.stortinget.no/eksport/voteringsresultat?voteringid=27779"
+   ],
+   "row_positions": [
+    {
+     "index": 0,
+     "position": 1,
+     "confidence": "high"
+    }
+   ]
+  }
+ ]
+}

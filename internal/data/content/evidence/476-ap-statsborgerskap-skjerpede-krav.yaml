@@ -20,14 +20,15 @@ verbatim_excerpt: >
   gir et godt grunnlag for deltaking i samfunns- og arbeidsliv og bør
   opprettholdes.»
 status: forslag_avvist_stemte_mot
-position: -2
+position: -1
 source_tier: A
 source_name: "Innst. 232 S (2025–2026); voteringene 27522 og 27524 (12.05.2026; innstillingen signert 30.04.2026)"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true"
 claim_confidence: dokumentert
 context_note: >
-  Kodet -2: egen, spesifikk begrunnelse (ikke bare stemmegivning) mot
-  både botidskrav, B2-språkkrav og troskapsed, samt mot Høyres B2-
-  evaluering. Bekreftet [OK] i votes.py: Ap 0 for / 32 mot på begge
-  voteringer.
+  Kodet -1 etter blind kodingsgjennomgang 2026-11-01: egen merknad og
+  to motstemmer viser klar retning, men en komitemerknad er ikke eget
+  instrument på posisjonsskalaen. Tidligere -2 la for mye vekt på at
+  begrunnelsen var spesifikk. Voteringene 27522 og 27524 er kontrollert:
+  Ap 0 for / 32 mot i begge.
 retrieved_at: "2026-09-27"

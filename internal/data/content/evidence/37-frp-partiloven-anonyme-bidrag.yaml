@@ -24,21 +24,11 @@ verbatim_excerpt: >
   tekniske justeringer. […] fremmes av medlemmene fra Arbeiderpartiet,
   Høyre, Senterpartiet, Sosialistisk Venstreparti og Rødt.
 status: vedtatt
-position: -2
+position: -1
 source_tier: A
 source_name: "Innst. 528 L (2024–2025)"
 source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-528l/?all=true"
 claim_confidence: dokumentert
 context_note: >
-  Kodet -2: dette er IKKE en prosedyre-innvending som falt sammen med et
-  reelt "for"-standpunkt (den fellen kjernekraft-saken advarer mot, se
-  utsagn-06s evidensfiler) — FrPs egen merknad tar substansielt til orde
-  mot selve forbudets treffsikkerhet ("begrense... mulighet til å motta
-  bidrag fra andre organisasjoner enn de Arbeiderpartiet får støtte
-  fra"), og den individuelle stemmegivningen viser et unisont,
-  udelt nei: 12 av 12 FrP-representanter til stede stemte mot, 0 stemte
-  for. Individuell representantstemme hentet direkte fra
-  data.stortinget.no/eksport/voteringsresultat for votering_id 26057 (169
-  representanter, kryssjekket mot offisielt for/mot-tall 89/12 — stemmer
-  eksakt, og mot-stemmene er 100% FrP).
+  Kodet -1 etter metodekonsistenskontroll 2026-11-01: FrPs egen komitemerknad og de 12 motstemmene viser klar retning, men er ikke et parti-eget instrument på posisjonsskalaen.
 retrieved_at: "2026-09-23"

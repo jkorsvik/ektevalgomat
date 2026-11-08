@@ -1,0 +1,564 @@
+{
+  "protocol": "docs/coding-review-protocol.md",
+  "seed": "ektevalgomat-coding-audit-2026-11-01-v1",
+  "population_cells": 517,
+  "sample_cells": 18,
+  "packets": [
+    {
+      "packet_id": "packet-01",
+      "statement": {
+        "number": 38,
+        "text": "Regjeringen bør sikre beredskapslagre for såkorn og matkorn i en desentralisert modell på gårdene rundt om i landet.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen sikrer beredskapslagre for såkorn og matkorn i en desentralisert modell på gårder rundt om i landet.\n",
+          "uenig": "Regjeringen sikrer ikke slike beredskapslagre. Lagringen av såkorn og matkorn overlates til markedet alene.\n"
+        }
+      },
+      "party": {
+        "name": "Kristelig Folkeparti",
+        "short": "KrF"
+      },
+      "evidence": [
+        {
+          "actor": "Kristelig Folkeparti (næringskomiteen)",
+          "date": "2026-06-05",
+          "evidence_type": "innstilling",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Votering_id 28068, KrF 4 for, 0 mot. Medforfatter av FrPs delte merknad om den finske modellen for fysiske beredskapslagre.\n",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Innst. 392 S (2025–2026); votering_id 28068",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-392s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-02",
+      "statement": {
+        "number": 7,
+        "text": "Norge bør beholde dagens EØS-tilknytning til EUs energimarkedsregelverk, inkludert ACERs rolle, uten nye nasjonale begrensninger.\n",
+        "practical_stakes": {
+          "enig": "Norge beholder dagens EØS-tilknytning til EUs energimarkedsregelverk og ACERs rolle uendret, uten nye nasjonale begrensninger på kraftmarkedet.\n",
+          "uenig": "Norge innfører nye nasjonale begrensninger på energimarkedet, eller endrer dagens EØS-tilknytning til EUs energiregelverk.\n"
+        }
+      },
+      "party": {
+        "name": "Sosialistisk Venstreparti",
+        "short": "SV"
+      },
+      "evidence": [
+        {
+          "actor": "Sosialistisk Venstreparti (Lars Haltbrekken, energi- og miljøkomiteen)",
+          "date": "2025-04-10",
+          "evidence_type": "voteringsspor",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "SV stemte FOR på alle fire voteringer i saken (votering_id 24383, 24384, 24385: 7 for hver; votering_id 24386: 7 mot flertallets avvisning). Individuell votering kryssjekket mot data.stortinget.no/eksport/voteringsresultat.\n",
+          "verbatim_excerpt": "Komiteens medlemmer fra Senterpartiet, Sosialistisk Venstreparti og Rødt vil påpeke at det ikke er tilstrekkelig å se på hva som står i de enkelte direktivene, men at man må vurdere konsekvensene av å innlemme stadig flere områder i EØS-avtalen [...] Disse medlemmer viser til at ACER, gjennom ESA og Reguleringsmyndigheten for energi (RME), blant annet kan treffe vedtak om kostnadsfordeling og strømflyten i mellomlandsforbindelsene.\n",
+          "status": "forslag_avvist_av_flertallet",
+          "source_tier": "A",
+          "source_name": "Innst. 196 S (2024–2025); votering_id 24383-24386",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-196s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-03",
+      "statement": {
+        "number": 1,
+        "text": "Alle som driver profesjonell påvirkning mot Stortinget eller regjeringen bør være registrert i et offentlig lobbyregister.\n",
+        "practical_stakes": {
+          "enig": "Alle som driver profesjonell lobbyvirksomhet mot Stortinget eller regjeringen må registrere seg åpent: navn, oppdragsgiver og hvilken sak det gjelder. Alle kan se hvem som forsøker å påvirke hvilken politiker, om hva, og på hvis oppdrag.\n",
+          "uenig": "Ingen slik registreringsplikt finnes. Lobbyvirksomhet mot politikere kan skje uten at noen utenfor møtet vet at det skjedde, hvem som var der, eller hvem de representerte.\n"
+        }
+      },
+      "party": {
+        "name": "Venstre",
+        "short": "V"
+      },
+      "evidence": [
+        {
+          "actor": "Venstre",
+          "date": "2023-06-15",
+          "evidence_type": "voteringsspor",
+          "evidence_class": "fakta",
+          "claim_action": "Venstre stemte for forslag nr. 1 og 2 fra femte visepresident Ingrid Fiskaa (SV), som ba Stortingets presidentskap og regjeringen «utrede mulige modeller for en registreringsordning for dem som oppsøker Stortinget og Stortingets representanter» og «den politiske ledelsen i departementene eller på Statsministerens kontor» i Dokument 8:223 S (2022–2023). Votering 21354 (15.06.2023) avgjorde begge forslag i én avstemning. Venstre 4 for / 0 mot. Forslagene falt 20 for / 81 mot.\n",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Dokument 8:223 S (2022–2023); votering 21354 (15.06.2023)",
+          "source_url": "https://data.stortinget.no/eksport/voteringsresultat?voteringid=21354&format=json",
+          "claim_confidence": "dokumentert"
+        },
+        {
+          "actor": "Venstre",
+          "date": "2025-06-19",
+          "evidence_type": "voteringsspor",
+          "evidence_class": "fakta",
+          "claim_action": "Venstre stemte for forslag nr. 1 og 2 fra femte visepresident Ingrid Fiskaa (SV): nr. 1 ba presidentskapet «utrede og legge frem forslag til hvordan en registreringsordning for lobbyister som oppsøker Stortinget … kan innføres gjennom endringer i Stortingets forretningsorden», nr. 2 ba regjeringen nedsette et utvalg om «et lobbyistregister hjemlet i åpenhetsloven eller annen egnet lov» med registrerings- og innrapporteringsplikt og adgang til sanksjoner i Dokument 8:241 S (2024–2025). Votering 26219 (19.06.2025) avgjorde begge forslag i én avstemning. Venstre 5 for / 0 mot. Forslagene falt 20 for / 82 mot.\n",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Dokument 8:241 S (2024–2025); votering 26219 (19.06.2025)",
+          "source_url": "https://data.stortinget.no/eksport/voteringsresultat?voteringid=26219&format=json",
+          "claim_confidence": "dokumentert"
+        },
+        {
+          "actor": "Venstre (Abid Raja, Grunde Almeland, Guri Melby)",
+          "date": "2025-11-25",
+          "evidence_type": "representantforslag",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Fremmet Dok. 8:53 S (2025–2026) om modeller for registrering av påvirkning mot Stortinget og politisk ledelse i regjeringen.\n",
+          "verbatim_excerpt": "Stortinget anmoder Stortingets presidentskap om å utrede mulige modeller for en registreringsordning for dem som oppsøker Stortinget og Stortingets representanter, på vegne av seg selv eller andre, for å påvirke Stortinget i saker som er til behandling. … Stortinget ber regjeringen utarbeide mulige modeller for en registreringsordning for dem som oppsøker den politiske ledelsen i departementene eller på Statsministerens kontor, på vegne av seg selv eller andre, for å påvirke regjeringen i saker som er til behandling.\n",
+          "status": "fremmet",
+          "source_tier": "A",
+          "source_name": "Dok. 8:53 S (2025–2026)",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2025-2026/dok8-202526-053s/",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-04",
+      "statement": {
+        "number": 3,
+        "text": "Politiske partier skal ikke kunne motta bidrag fra anonyme givere eller via skjulte mellomledd.\n",
+        "practical_stakes": {
+          "enig": "Partiloven forbyr partier å ta imot bidrag fra givere partiet ikke kjenner identiteten til, eller bidrag kanalisert gjennom mellomledd som skjuler hvem den egentlige giveren er.\n",
+          "uenig": "Ingen slikt forbud innføres. Partier kan fortsatt ta imot bidrag uten å kunne identifisere den egentlige giveren.\n"
+        }
+      },
+      "party": {
+        "name": "Kristelig Folkeparti",
+        "short": "KrF"
+      },
+      "evidence": [
+        {
+          "actor": "Kristelig Folkeparti",
+          "date": "2025-06-13",
+          "evidence_type": "voteringsspor",
+          "evidence_class": "fakta",
+          "claim_action": "KrF har ikke medlem i kommunal- og forvaltningskomiteen for denne saken og har derfor ingen egen merknad i innstillingen. I den avgjørende plenumsvoteringen over selve forbudsparagrafen (§ 17 a, votering_id 26057) stemte 2 av KrFs tilstedeværende representanter for, 0 mot.\n",
+          "verbatim_excerpt": "Politiske partier og partiledd kan ikke motta bidrag fra a . givere som er ukjente for partiet (anonyme bidrag) b . juridiske personer som har som formål eller vesentlig del av sin virksomhet å støtte politiske partier eller partiledd økonomisk c. privatpersoner som har mottatt bidrag fra andre for å gi disse til politiske partier eller partiledd.\n",
+          "status": "vedtatt",
+          "source_tier": "A",
+          "source_name": "Individuell votering, votering_id 26057",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=103531&dnid=1&vt=26057",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-05",
+      "statement": {
+        "number": 29,
+        "text": "Regjeringen bør utrede innføring av dørterskeltjenesten (levering til dør for ikke-digitale og sårbare mottakere) som en landsdekkende posttjeneste.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen utreder å innføre dørterskeltjeneste, levering av post til døren for ikke-digitale og sårbare mottakere, som en landsdekkende tjeneste.\n",
+          "uenig": "Ingen slik utredning gjennomføres. Dørterskeltjeneste innføres ikke som en landsdekkende posttjeneste.\n"
+        }
+      },
+      "party": {
+        "name": "Fremskrittspartiet",
+        "short": "FrP"
+      },
+      "evidence": [
+        {
+          "actor": "Fremskrittspartiet",
+          "date": "2026-05-10",
+          "evidence_type": "innstilling",
+          "evidence_class": "uklart",
+          "claim_action": "Votering_id 27675, FrP 29 mot, 0 for.",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Innst. 280 S (2025–2026); votering_id 27675",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-280s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-06",
+      "statement": {
+        "number": 33,
+        "text": "Regjeringen bør legge til rette for økt grunnbemanning i barnehager i levekårsutsatte områder.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen legger til rette for økt grunnbemanning i barnehager i levekårsutsatte områder.\n",
+          "uenig": "Regjeringen legger ikke til rette for økt grunnbemanning i barnehager i levekårsutsatte områder utover dagens nivå.\n"
+        }
+      },
+      "party": {
+        "name": "Rødt",
+        "short": "R"
+      },
+      "evidence": [
+        {
+          "actor": "Rødt",
+          "date": "2026-02-01",
+          "evidence_type": "innstilling",
+          "evidence_class": "uklart",
+          "claim_action": "Votering_id 26946, Rødt 5 mot, 0 for.",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Innst. 126 S (2025–2026); votering_id 26946",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-126s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-07",
+      "statement": {
+        "number": 48,
+        "text": "Kravene for norsk statsborgerskap bør skjerpes, for eksempel med høyere språkkrav og krav om å forsørge seg selv.\n",
+        "practical_stakes": {
+          "enig": "Det blir vanskeligere å få norsk statsborgerskap: søkere må dokumentere bedre norskkunnskaper enn i dag og vise at de kan forsørge seg selv, i tillegg til de kravene som allerede gjelder (botid, vandel med mer).\n",
+          "uenig": "Kravene for norsk statsborgerskap holdes som i dag. Verken språkkrav eller krav om selvforsørgelse skjerpes.\n"
+        }
+      },
+      "party": {
+        "name": "Arbeiderpartiet",
+        "short": "Ap"
+      },
+      "evidence": [
+        {
+          "actor": "Arbeiderpartiet",
+          "date": "2026-05-12",
+          "evidence_type": "innstilling",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Ap skriver i Innst. 232 S at dagens vilkår for statsborgerskap ligger på et riktig nivå, viser til IMPECT-rapporten (Høgskulen på Vestlandet, august 2025) om at bare 13 pst. av innvandrere med lav utdanning og fluktbakgrunn når B1-nivå, og mener at et krav om B2 vil ekskludere personer med reelle forutsetninger for integrering. Stemte mot FrPs (27524) og Høyres (27522) forslag.\n",
+          "verbatim_excerpt": "«Disse medlemmer mener med bakgrunn i rapporten at en ytterligere skjerping av kravet til ferdigheter i norsk muntlig ikke vil styrke integreringen. [...] Disse medlemmer mener at dagens krav om nivå B1 gir et godt grunnlag for deltaking i samfunns- og arbeidsliv og bør opprettholdes.»\n",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Innst. 232 S (2025–2026); voteringene 27522 og 27524 (12.05.2026; innstillingen signert 30.04.2026)",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-232s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-08",
+      "statement": {
+        "number": 44,
+        "text": "Offentlige virksomheter bør fortsatt kunne bruke skytjenesteleverandører utenfor EØS for kritisk infrastruktur og sensitive data, så lenge GDPR og norske sikkerhetskrav følges.\n",
+        "practical_stakes": {
+          "enig": "Offentlige virksomheter kan fortsatt bruke skytjenesteleverandører utenfor EØS til kritisk infrastruktur og sensitive data, så lenge GDPR og norske sikkerhetskrav følges.\n",
+          "uenig": "Offentlige virksomheter kan ikke lenger bruke skytjenesteleverandører utenfor EØS til kritisk infrastruktur og sensitive data, uansett sikkerhetskrav.\n"
+        }
+      },
+      "party": {
+        "name": "Høyre",
+        "short": "H"
+      },
+      "evidence": [
+        {
+          "actor": "Høyre (Mudassar Kapur, Tage Pettersen)",
+          "date": "2026-05-07",
+          "evidence_type": "voteringsspor",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Høyre stemte mot forslag 4 i Innst. 225 S (2025–2026) (votering 18, 07.05.2026) — kravet om at sensitiv og samfunnskritisk informasjon utelukkende skal behandles under norsk eller europeisk jurisdiksjon. I egen merknad skriver Høyre at Norges digitale handlefrihet best sikres gjennom «smart suverenitet» (mangfold, konkurranse, strenge sikkerhetskrav til alle leverandører) og eksplisitt fraråder «ytterligere nasjonale særreguleringer» utover GDPR.\n",
+          "verbatim_excerpt": "Komiteens medlemmer fra Høyre mener Norges digitale handlefrihet best sikres gjennom det disse medlemmer omtaler som smart suverenitet: bruk av beste tilgjengelige teknologi kombinert med strenge sikkerhetskrav, diversifisering av leverandører og sterk europeisk og nordisk forankring. Svaret på avhengighet av internasjonale teknologigiganter er mangfold og konkurranse – ikke statlige monopoler eller isolasjon fra den teknologiske utviklingen. [...] Norge er allerede forpliktet av EUs personvernforordning (GDPR), og disse medlemmer mener ytterligere nasjonale særreguleringer bør utvikles i nær dialog med EUs regulatoriske rammeverk for å unngå rettslig uklarhet og unødige handelsbarrierer.\n",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Innst. 225 S (2025–2026); votering_id 27492 (07.05.2026)",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-09",
+      "statement": {
+        "number": 22,
+        "text": "Regjeringen bør utrede felleskommunale innkjøpsordninger for kunstig intelligens, etter modell av Danmarks KOMBIT.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen setter i gang en utredning av felleskommunale innkjøpsordninger for kunstig intelligens, etter modell av den danske selskapsmodellen KOMBIT.\n",
+          "uenig": "Ingen slik utredning settes i gang. Hver kommune fortsetter å forhandle og kjøpe slike løsninger hver for seg.\n"
+        }
+      },
+      "party": {
+        "name": "Venstre",
+        "short": "V"
+      },
+      "evidence": [
+        {
+          "actor": "Venstre",
+          "date": "2026-04-28",
+          "evidence_type": "innstilling",
+          "evidence_class": "uklart",
+          "claim_action": "Votering_id 27486, Venstre 2 for, 0 mot.",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Innst. 225 S (2025–2026); votering_id 27486",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-10",
+      "statement": {
+        "number": 41,
+        "text": "Regjeringen bør utrede etablering av et uavhengig nasjonalt digitalt kriseråd med ansvar for strategiske råd om digital sikkerhet, suverenitet og personvern.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen utreder å opprette et uavhengig nasjonalt digitalt kriseråd som skal gi strategiske råd om digital sikkerhet, suverenitet og personvern.\n",
+          "uenig": "Regjeringen utreder ikke et slikt kriseråd. Det finnes ikke et eget, uavhengig organ for denne typen strategiske råd på tvers av sektorer.\n"
+        }
+      },
+      "party": {
+        "name": "Senterpartiet",
+        "short": "Sp"
+      },
+      "evidence": [
+        {
+          "actor": "Senterpartiet",
+          "date": "2026-04-28",
+          "evidence_type": "innstilling",
+          "evidence_class": "uklart",
+          "claim_action": "Votering_id 27475, Sp 5 mot, 0 for.",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Innst. 225 S (2025–2026); votering_id 27475",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-11",
+      "statement": {
+        "number": 26,
+        "text": "Regjeringen bør sørge for at alle offentlige veier i Norge har mobildekning innen 2030, som en bindende frist.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen forplikter seg til en bindende frist: alle offentlige veier i Norge skal ha mobildekning innen 2030.\n",
+          "uenig": "Ingen slik bindende frist innføres. Mobildekning på alle offentlige veier innen 2030 forblir et langsiktig mål, ikke en forpliktelse.\n"
+        }
+      },
+      "party": {
+        "name": "Høyre",
+        "short": "H"
+      },
+      "evidence": [
+        {
+          "actor": "Høyre (kommunal- og forvaltningskomiteen)",
+          "date": "2026-05-19",
+          "evidence_type": "innstilling",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Votering_id 27610, H 0 for, 14 mot. Fra Høyres egen merknad: \"Disse medlemmer viser til statsrådens svar, der hun skriver at det ikke er realistisk å etablere full mobildekning langs alle offentlige veistrekninger innen 2030 med kjente virkemidler som dekningskrav, utbyggingstilskudd mv. Kostnadene vil være altfor store. Disse medlemmer støtter denne vurderingen.\"\n",
+          "verbatim_excerpt": "Disse medlemmer støtter forslagsstillernes intensjon. [...] Disse medlemmer mener det uansett vil være naturlig å avvente Nkoms analyse for 2025, som legges frem senere i år, og støtter ikke det fremlagte representantforslaget.\n",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Innst. 239 S (2025–2026); votering_id 27610",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-239s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-12",
+      "statement": {
+        "number": 15,
+        "text": "Regjeringen bør jobbe aktivt internasjonalt for et moratorium på havbunnsmineralutvinning fram til det er bevist trygt for naturmangfoldet.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen arbeider aktivt internasjonalt for et moratorium (midlertidig stans) på havbunnsmineralutvinning, fram til det er bevist trygt for naturmangfoldet.\n",
+          "uenig": "Regjeringen arbeider ikke for et slikt moratorium internasjonalt. Havbunnsmineralutvinning kan fortsette å utvikle seg uten en slik midlertidig stans.\n"
+        }
+      },
+      "party": {
+        "name": "Miljøpartiet De Grønne",
+        "short": "MDG"
+      },
+      "evidence": [
+        {
+          "actor": "Miljøpartiet De Grønne",
+          "date": "2025-06-10",
+          "evidence_type": "innstilling",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Votering_id 25348, MDG 2 for, 0 mot.",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Innst. 354 S (2024–2025); votering_id 25348",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-354s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-13",
+      "statement": {
+        "number": 8,
+        "text": "Statnett bør ikke få en ny fullmakt til å redusere krafteksportkapasiteten når fyllingsgraden i vannmagasinene er lav.\n",
+        "practical_stakes": {
+          "enig": "Statnett får ikke en ny fullmakt til å redusere krafteksportkapasiteten ved lav fyllingsgrad. Dagens eksportordning videreføres.\n",
+          "uenig": "Statnett får en ny fullmakt til å redusere krafteksportkapasiteten når fyllingsgraden i vannmagasinene er lav.\n"
+        }
+      },
+      "party": {
+        "name": "Fremskrittspartiet",
+        "short": "FrP"
+      },
+      "evidence": [
+        {
+          "actor": "Fremskrittspartiet (energi- og miljøkomiteen)",
+          "date": "2026-05-26",
+          "evidence_type": "innstilling",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Votering_id 28137, FrP 28 for, 1 mot. Fra FrPs egen merknad: \"Etter disse medlemmers syn er det en svakhet ved dagens modell at eksportkapasiteten i liten grad justeres dynamisk i takt med den faktiske forsyningssituasjonen. Disse medlemmer mener derfor det er nødvendig å etablere en tydelig operativ styringsmekanisme hvor Statnett pålegges å vurdere og gis fullmakt til å redusere eksportkapasiteten når fyllingsgraden i sentrale vannmagasiner er under historisk mediannivå.\"\n",
+          "verbatim_excerpt": "Etter disse medlemmers syn er det en svakhet ved dagens modell at eksportkapasiteten i liten grad justeres dynamisk i takt med den faktiske forsyningssituasjonen. Disse medlemmer mener derfor det er nødvendig å etablere en tydelig operativ styringsmekanisme hvor Statnett pålegges å vurdere og gis fullmakt til å redusere eksportkapasiteten når fyllingsgraden i sentrale vannmagasiner er under historisk mediannivå.\n",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Innst. 374 S (2025–2026); votering_id 28137",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-374s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-14",
+      "statement": {
+        "number": 42,
+        "text": "Regjeringen bør samarbeide tettere med nordiske og europeiske land om felles digitale løsninger og beredskap, der åpne kildekoder og digital suverenitet er førende.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen samarbeider tettere med nordiske og europeiske land om felles digitale løsninger og beredskap, med åpne kildekoder og digital suverenitet som ledende prinsipper.\n",
+          "uenig": "Samarbeidet med nordiske og europeiske land om felles digitale løsninger og beredskap blir ikke tettere enn i dag.\n"
+        }
+      },
+      "party": {
+        "name": "Rødt",
+        "short": "R"
+      },
+      "evidence": [
+        {
+          "actor": "Rødt (kommunal- og forvaltningskomiteen)",
+          "date": "2026-04-28",
+          "evidence_type": "innstilling",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Votering_id 27493, Rødt 5 for, 0 mot.",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Innst. 225 S (2025–2026); votering_id 27493",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-225s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-15",
+      "statement": {
+        "number": 59,
+        "text": "Regjeringen bør jevnlig rapportere til Stortinget om hvilke digitale avhengigheter Norge har til andre land.\n",
+        "practical_stakes": {
+          "enig": "Regjeringen kartlegger løpende hvilke digitale tjenester og systemer Norge er avhengig av fra andre land, og legger fram en egen rapport for Stortinget med jevne mellomrom. Forslaget i 2026 ba om første rapport innen utgangen av 2026.\n",
+          "uenig": "Det kommer ingen egen fast rapport til Stortinget. Regjeringen vurderer digitale avhengigheter som i dag, gjennom blant annet Nasjonal sikkerhetsmyndighet, Nasjonal kommunikasjonsmyndighet og egne utvalg.\n"
+        }
+      },
+      "party": {
+        "name": "Arbeiderpartiet",
+        "short": "Ap"
+      },
+      "evidence": [
+        {
+          "actor": "Arbeiderpartiet (statsråd Karianne O. Tung)",
+          "date": "2026-05-05",
+          "evidence_type": "plenumsinnlegg",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Digitaliseringsminister Tung (Ap) i debatten om Innst. 225 S, 5. mai 2026. Hun viste til de tre Lysne-utvalgene, analyser fra Nasjonal kommunikasjonsmyndighet, NSM og DFØ. Votering 27496: Ap 32 mot, 0 for.\n",
+          "verbatim_excerpt": "Regjeringen har gjennom flere rapporter kartlagt Norges digitale avhengigheter og risikoer knyttet til dette [...] Ja, lista er lang, og arbeidet pågår.\n",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Stortingsreferat 05.05.2026 (Innst. 225 S); votering 27496",
+          "source_url": "https://data.stortinget.no/eksport/publikasjon?publikasjonid=refs-202526-05-05",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-16",
+      "statement": {
+        "number": 47,
+        "text": "Utvisning av utlendinger som har begått kriminalitet, bør fortsatt avgjøres ut fra en konkret vurdering av tilknytningen personen har til Norge.\n",
+        "practical_stakes": {
+          "enig": "Når myndighetene vurderer om en utlending som har begått kriminalitet skal utvises, veier de fortsatt inn hvor sterk tilknytning personen har til Norge (for eksempel botid, familie eller oppholdsgrunnlag) i den enkelte saken, ikke bare lovbruddets alvorlighetsgrad.\n",
+          "uenig": "Tilknytningen til Norge veier ikke lenger inn i den enkelte utvisningssaken. Om personen skal utvises, avgjøres av lovbruddets alvorlighetsgrad alene.\n"
+        }
+      },
+      "party": {
+        "name": "Sosialistisk Venstreparti",
+        "short": "SV"
+      },
+      "evidence": [
+        {
+          "actor": "Sosialistisk Venstreparti",
+          "date": "2026-04-14",
+          "evidence_type": "voteringsspor",
+          "evidence_class": "fakta",
+          "claim_action": "SV er medlem av komiteen (del av komiteens flertall som beskriver dagens regelverk generelt), men har ingen egen tekst som tar stilling til nettopp forslag 2s «uavhengig av tilknytning»-formulering. Stemte mot forslag nr. 2 (votering 27441).\n",
+          "verbatim_excerpt": "«Stortinget ber regjeringen ta initiativ til et samarbeid med Danmark om en utvisningsreform som sikrer at innvandrere som begår alvorlig kriminalitet i Norge, skal utvises, uavhengig av tilknytning til landet, herunder også asylsøkere og flyktninger.»\n",
+          "status": "forslag_avvist_stemte_mot",
+          "source_tier": "A",
+          "source_name": "Innst. 205 S (2025–2026), forslag 2; votering 27441 (14.04.2026)",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-205s/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-17",
+      "statement": {
+        "number": 25,
+        "text": "Regjeringen bør utvide det offentlige tannhelsetilbudet gradvis og målrettet mot dem som trenger det mest, ikke forplikte seg til en universell rett innen 2030.\n",
+        "practical_stakes": {
+          "enig": "Det offentlige tannhelsetilbudet utvides gradvis og målrettet mot dem som trenger det mest. Ingen universell rett til tannbehandling innføres innen 2030.\n",
+          "uenig": "Regjeringen forplikter seg til at hele befolkningen skal ha en universell rett til tannbehandling i det offentlige innen 2030.\n"
+        }
+      },
+      "party": {
+        "name": "Miljøpartiet De Grønne",
+        "short": "MDG"
+      },
+      "evidence": [
+        {
+          "actor": "Miljøpartiet De Grønne",
+          "date": "2025-06-04",
+          "evidence_type": "voteringsresultat",
+          "evidence_class": "fakta",
+          "claim_action": "Votering_id 25387 (forslag 19, på vegne av SV): MDG 2 for, 1 ikke til stede.\n",
+          "status": "forslag_avvist_stemte_for",
+          "source_tier": "A",
+          "source_name": "Votering 25387 — data.stortinget.no",
+          "source_url": "https://data.stortinget.no/eksport/voteringsresultat?voteringid=25387",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-18",
+      "statement": {
+        "number": 50,
+        "text": "Nyankomne bør forplikte seg skriftlig til norske lover, verdier og foreldreansvar i en integreringserklæring.\n",
+        "practical_stakes": {
+          "enig": "Deltakere i introduksjonsprogrammet må signere en integreringserklæring som tydeliggjør forventninger om blant annet å følge norske lover, delta i arbeids- og samfunnsliv og ivareta foreldreansvar. Erklæringen erstatter dagens integreringskontrakt.\n",
+          "uenig": "Ingen slik erklæring innføres. Deltakere i introduksjonsprogrammet signerer ikke et eget dokument om lover, verdier og foreldreansvar; dagens integreringskontrakt består uendret.\n"
+        }
+      },
+      "party": {
+        "name": "Senterpartiet",
+        "short": "Sp"
+      },
+      "evidence": [
+        {
+          "actor": "Senterpartiet",
+          "date": "2026-05-19",
+          "evidence_type": "innstilling",
+          "evidence_class": "partiets_begrunnelse",
+          "claim_action": "Sp mener det er rett og rimelig å stille krav og forventninger til nyankomne, og forventer at ordningen evalueres etter en tid. Sp knytter sin støtte til at regjeringen tar bekymringene fra høringsinstansene om økt byråkrati og kostnader (blant annet tolkeutgifter) på alvor, og at eventuelle merkostnader kompenseres fullt ut av staten. Del av komiteflertallet, stemte for (votering 27779: 54 for, 44 mot).\n",
+          "verbatim_excerpt": "«Dette medlem mener regjeringen må merke seg høringsinstansene som frykter at innføringen av denne erklæringen vil føre til mer byråkrati. [...] Med disse forutsetningene vil dette medlem støtte proposisjonen.»\n",
+          "status": "vedtatt",
+          "source_tier": "A",
+          "source_name": "Innst. 309 L (2025–2026); votering 27779 (19.05.2026)",
+          "source_url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2025-2026/inns-202526-309l/?all=true",
+          "claim_confidence": "dokumentert"
+        }
+      ]
+    }
+  ]
+}

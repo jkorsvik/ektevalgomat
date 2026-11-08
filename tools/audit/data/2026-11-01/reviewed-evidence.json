@@ -1,0 +1,215 @@
+{
+  "source_revision": "0ae4e11",
+  "packets": [
+    {
+      "packet_id": "packet-01",
+      "evidence": [
+        {
+          "id": "ev-2026-06-05-krf-matberedskap-saakorn-for",
+          "date": "2026-06-05",
+          "file": "internal/data/content/evidence/166-krf-matberedskap-saakorn-for.yaml",
+          "sha256": "5ac78cc9eee356be288c4ee32dac91e30c574f29f34f44b0d8f3ae6a03c2e3de"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-02",
+      "evidence": [
+        {
+          "id": "ev-2025-04-10-sv-acer-begrensning",
+          "date": "2025-04-10",
+          "file": "internal/data/content/evidence/43-sv-acer-begrensning.yaml",
+          "sha256": "b8cc35918fc399e34e01db6ff0639c9f01d8596ae07c744ba0fd6fd2629f2873"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-03",
+      "evidence": [
+        {
+          "id": "ev-2023-06-15-v-lobbyregister-forslag",
+          "date": "2023-06-15",
+          "file": "internal/data/content/evidence/801-v-lobbyregister-forslag.yaml",
+          "sha256": "8c80008e23b2fe0bfdab15c0a824972ea2bad445961bb8f7e469234591143168"
+        },
+        {
+          "id": "ev-2025-06-19-v-lobbyregister-forslag",
+          "date": "2025-06-19",
+          "file": "internal/data/content/evidence/810-v-lobbyregister-forslag.yaml",
+          "sha256": "e16a07fad73357dfd7534eb87e07d27eca6187bdb7368239efd6d9dbef0160d7"
+        },
+        {
+          "id": "ev-2025-11-25-venstre-lobby-forslag",
+          "date": "2025-11-25",
+          "file": "internal/data/content/evidence/01-venstre-lobbyregister-forslag.yaml",
+          "sha256": "d281fa81cca7726b2561fc0c4bf20cc8be607ab2b39efa26f3989b7d09f0384f"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-04",
+      "evidence": [
+        {
+          "id": "ev-2025-06-13-krf-partiloven-anonyme-bidrag",
+          "date": "2025-06-13",
+          "file": "internal/data/content/evidence/40-krf-partiloven-anonyme-bidrag.yaml",
+          "sha256": "ebd634205f3107bf7e1af67b94cc3e3e4e880fa778d73b75c747f21278725319"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-05",
+      "evidence": [
+        {
+          "id": "ev-2026-frp-dorterskel-mot",
+          "date": "2026-05-10",
+          "file": "internal/data/content/evidence/368-frp-dorterskel-mot.yaml",
+          "sha256": "bf1098c39dc7626ed20780f123019dbf92c18f4e6154bc13618679175240a3bf"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-06",
+      "evidence": [
+        {
+          "id": "ev-2026-rodt-barnehage-mot",
+          "date": "2026-02-01",
+          "file": "internal/data/content/evidence/349-rodt-barnehage-mot.yaml",
+          "sha256": "6add820c0e153c444c2dc9d2057025925b7b676bfd7d9a2b389ee3b85766cdb7"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-07",
+      "evidence": [
+        {
+          "id": "ev-2026-05-12-ap-statsborgerskap-skjerpede-krav",
+          "date": "2026-05-12",
+          "file": "internal/data/content/evidence/476-ap-statsborgerskap-skjerpede-krav.yaml",
+          "sha256": "a9a35d0cd3ec7a6de76afa6cd6b7bc9f0e05c1cd6fb2905f46320ba0ff557889"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-08",
+      "evidence": [
+        {
+          "id": "ev-2026-05-07-h-digital-suverenitet-jurisdiksjon",
+          "date": "2026-05-07",
+          "file": "internal/data/content/evidence/448-h-digital-suverenitet-jurisdiksjon.yaml",
+          "sha256": "4f80157dd5ac3bc3f236351c0c1efbd12b302ae10856f9a49da99b6e9fee369e"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-09",
+      "evidence": [
+        {
+          "id": "ev-2026-04-28-v-kombit-for",
+          "date": "2026-04-28",
+          "file": "internal/data/content/evidence/225-v-kombit-for.yaml",
+          "sha256": "7f72ab57352d9748222d1765f57ff4841c97dd42dcb9111f89cdf180b63e9380"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-10",
+      "evidence": [
+        {
+          "id": "ev-2026-04-28-sp-kriserad-mot",
+          "date": "2026-04-28",
+          "file": "internal/data/content/evidence/248-sp-kriserad-mot.yaml",
+          "sha256": "616e57cfb130bb59e3b0f5e139c78992f779bce8cf067fb2e2c9d5ddd21380fc"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-11",
+      "evidence": [
+        {
+          "id": "ev-2026-05-19-h-mobildekning-mot",
+          "date": "2026-05-19",
+          "file": "internal/data/content/evidence/175-h-mobildekning-mot.yaml",
+          "sha256": "b06c3b0ab913f18f9e4bdc8d9aed85f6c4481cd22aab4301055a4de0d3d2030a"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-12",
+      "evidence": [
+        {
+          "id": "ev-2025-06-mdg-havbunnsmineraler15-for",
+          "date": "2025-06-10",
+          "file": "internal/data/content/evidence/295-mdg-havbunnsmineraler15-for.yaml",
+          "sha256": "9f5ac0b3b4b1b888076b26989d78f760a106ac4855d8dfe6f2144217e05ce568"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-13",
+      "evidence": [
+        {
+          "id": "ev-2026-05-26-frp-krafteksport-for",
+          "date": "2026-05-26",
+          "file": "internal/data/content/evidence/262-frp-krafteksport-for.yaml",
+          "sha256": "66aaa4062972a1edb036451cb0815c71022fe80db7b262ef5023d4f2d3603dc5"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-14",
+      "evidence": [
+        {
+          "id": "ev-2026-04-28-rodt-nordisk-for",
+          "date": "2026-04-28",
+          "file": "internal/data/content/evidence/253-rodt-nordisk-for.yaml",
+          "sha256": "4d23599db1735bb9322d04120519b31dc2fd70d99750c52c7dfc370561170f0e"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-15",
+      "evidence": [
+        {
+          "id": "ev-2026-05-05-ap-digitale-avhengigheter-plenum",
+          "date": "2026-05-05",
+          "file": "internal/data/content/evidence/742-ap-digitale-avhengigheter-plenum.yaml",
+          "sha256": "4fb5657849d783a1ea7d4917c69368e17d475053ed96cf16f0ecaaf446341eb3"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-16",
+      "evidence": [
+        {
+          "id": "ev-2026-04-14-sv-utvisning-individuell-tilknytning",
+          "date": "2026-04-14",
+          "file": "internal/data/content/evidence/654-sv-utvisning-individuell-tilknytning.yaml",
+          "sha256": "5ae4a1a438d5ccd5609e216f885e24cf98ed79281bd3ce04b33409c7fad147be"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-17",
+      "evidence": [
+        {
+          "id": "ev-2025-06-04-mdg-tannhelse-universell-for",
+          "date": "2025-06-04",
+          "file": "internal/data/content/evidence/103-mdg-tannhelse-universell-for.yaml",
+          "sha256": "064c0fd3bd3204fff91918741127de9f3aa85694c12b205bbe57149eede0aabd"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet-18",
+      "evidence": [
+        {
+          "id": "ev-2026-05-19-sp-integreringserklaering-skriftlig-forpliktelse",
+          "date": "2026-05-19",
+          "file": "internal/data/content/evidence/491-sp-integreringserklaering-skriftlig-forpliktelse.yaml",
+          "sha256": "a5d45e1dad5d81419a68c04fd065499d3300d7925acd7a95aec323835c6d70f7"
+        }
+      ]
+    }
+  ]
+}

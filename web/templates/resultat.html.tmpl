@@ -21,9 +21,7 @@
        nothing here ever reaches the server; quiz.js reads the same
        answers from localStorage that the quiz itself writes. */}}
   <p class="lede">
-    Resultatet ditt, regnet ut fra svarene du har gitt i
-    <a href="/">valgomaten</a>. Det oppdateres etter hvert svar, og lever
-    bare i denne nettleseren.
+    Samsvaret regnes ut lokalt fra svarene dine i <a href="/">valgomaten</a>. Ingenting sendes til en server.
   </p>
 
   <noscript>
@@ -39,6 +37,7 @@
   </noscript>
 
   <div id="storage-note" class="js-only" role="status"></div>
+  <div id="result-insights-root" class="js-only"></div>
   <div id="quiz-root" class="js-only"></div>
 
   {{/* "Hvorfor dette resultatet?" robustness panel (2026-10-12). Its own

@@ -271,10 +271,12 @@ actually asks of a single documented position, in order:
   1. Hva er dokumentert?  the document, its type and date, its source
      class (A-E) and its evidence class. Wayfinding, but never hidden.
   2. Hva skjedde?         one sober sentence (ScanSummary).
-  3. Hvordan er dette tolket?  the coding rationale (ContextNote) and,
-     always, what the source does NOT establish. This half is the point:
-     it is where the honesty lives, so it is never behind a disclosure.
-  4. Originalkilde og kodebegrunnelse  the verbatim quote, the mechanical
+  3. Hvordan er dette tolket?  the public position and a link to the
+     coding review, then what the source does NOT establish. The detailed
+     ContextNote stays available as a technical audit note, not as the
+     public explanation. This half is the point: the distinction between
+     action and editorial coding is never hidden.
+  4. Sitat, kilde og teknisk kodegrunnlag  the verbatim quote, the mechanical
      claim and the link that opens the original document. One click.
 
 Native <details>/<summary>, no JavaScript — this page must stay readable
@@ -298,12 +300,16 @@ sub-label, so the heading order stays h1 > h2 > h3 > h4.
   <p class="sc-what">{{.ScanSummary}}</p>
 
   <h4 class="sc-q">Hvordan er dette tolket?</h4>
-  {{if .ContextNote}}<p class="sc-interp">{{.ContextNote}}</p>{{end}}
+  {{if .Position}}
+  <p class="sc-interp"><strong>{{positionWord .Position}}.</strong> Dette er en redaksjonell koding av handlingen over på skalaen fra −2 til +2. <a href="/metode#kodingskontroll">Slik kontrollerer vi kodingen</a>.</p>
+  {{else}}
+  <p class="sc-interp">Kilden brukes som kontekst. Den koder ingen partiposisjon på utsagnet.</p>
+  {{end}}
   <p class="sc-limit"><span class="sc-limit-label">Hva dette ikke sier</span>
     {{if .Position}}ett dokument på én dato. Det sier ikke om standpunktet står seg over tid.{{else if eq .EvidenceClass "analyse"}}dette er en vurdering, ikke en handling noen har utført.{{else}}kilden koder ingen posisjon på selve utsagnet.{{end}}</p>
 
   <details class="disclosure">
-    <summary>Originalkilden og begrunnelsen</summary>
+    <summary>Sitat, kilde og teknisk kodegrunnlag</summary>
     {{if .VerbatimExcerpt}}
     <blockquote class="verbatim">{{.VerbatimExcerpt}}</blockquote>
     {{else}}
@@ -327,6 +333,12 @@ sub-label, so the heading order stays h1 > h2 > h3 > h4.
     </details>
     {{end}}
     <p class="claim">{{.ClaimAction}}</p>
+    {{if .ContextNote}}
+    <details class="disclosure audit-note">
+      <summary>Teknisk kodebegrunnelse</summary>
+      <p class="sc-interp">{{.ContextNote}}</p>
+    </details>
+    {{end}}
     <p class="sc-facts">Status {{.Status}} · Tillit {{.ClaimConfidence}}{{if .AttributionConfidence}} · Tilskriving {{.AttributionConfidence}}{{end}}</p>
     {{if .SourceURL}}<p class="source-doc-meta">{{.SourceName}} · <a href="{{.SourceURL}}" target="_blank" rel="noopener">↗ Åpne originalkilden</a></p>{{else}}<p class="source-doc-meta">{{.SourceName}}</p>{{end}}
     {{/* The report link sits on the claim, not on a contact page: doubt

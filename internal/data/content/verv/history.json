@@ -1,0 +1,787 @@
+{
+  "generated_at": "2026-11-09T20:00:22+00:00",
+  "snapshots": [
+    {
+      "date": "2024-04-19",
+      "pdf_sha256": "17a1e847a83dcb592abb858f49fa0bd236a2f31d4b8c1cb62c29425441fd7dc8",
+      "people": 288
+    },
+    {
+      "date": "2026-10-30",
+      "pdf_sha256": "ded620b4f02d7eb9e197ddf32c7ede42813665dc7c1dc67fdd629317356cdf6a",
+      "people": 267
+    }
+  ],
+  "compared_between": [
+    "2024-04-19",
+    "2026-10-30"
+  ],
+  "note": "A role present in an earlier edition and absent from the newest was held in between. The register states neither its start nor its end, so none is written here: only the two dates the comparison rests on.",
+  "counts": {
+    "people_in_both": 123,
+    "roles_carried": 50,
+    "roles_ended": 45,
+    "roles_new": 44
+  },
+  "ended": [
+    {
+      "name": "Aasen-Svensrud, Maria",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Kommunestyremedlem, Horten (honorert)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Aasland, Terje",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder i Bølebåtens venner - org.nr. 992 528 443 (ulønnet)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Brenna, Tonje",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Nestleder i Arbeiderpartiet (ulønnet).",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Jacobsen, Frode",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Nestleder Oslo Idrettskrets (honorar)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Jakobsen, Benjamin",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Kommunestyrerepresentant Askøy kommune, samt leder av",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Linge, Tobias Hangaard",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem, Perfect Living AS, ulønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Myrli, Sverre",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Pensjonskassen for fylkene Akershus, Buskerud og",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Nordli, Ramani",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Bystyrerepresentant for Arbeiderpartiet i Arendal kommune, lønnes",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Rafaelsen, Sigurd Kvammen",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Ordfører Lebesby Kommune. Lønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Røed, Even A.",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Varamedlem, Folkets Hus Drammen SA, ulønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Skjæran, Bjørnar",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Medlem av fylkestinget i Nordland. Ubetalt. Fritak fra 01.10.2021.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Sundnes, Trine Lise",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Schultzehaugen Vel, org nr. 887399492 - lønnet.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Viljugrein, Agnes Nærland",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Leder i bydelsutvalget i Gamle Oslo. Lønnet.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Vitanza, Solveig",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Representant i Kommunstyre Halden, møtegodtgjørelse.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Vågslid, Lene",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Parlamentarisk nestleder i Arbeiderpartiets Stortingsgruppe, lønnet.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Østensen, Kai Steffen",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Folkevalgt i Agder fylkesting, fylkesutvalg og administrasjonsutvalg",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Engen-Helgheim, Jon",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Leder av Drammen FrP, ulønnet.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Ervik, May Helen Hetland",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Rogaland fylkeskommune: Medlem i fylkestinget og",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Gustavsen, Liv",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "1) Nes Kommune Akershus, FrP Kommunestyrerepresentant 2015-",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Hjemdal, Silje",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Er styremedlem i Vestland FrP. Vervet er ikke lønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Hoksrud, Bård",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Medlem Bamble Kommunestyre 2023-2027 (møtegodtgjørelse)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Laabak, Bjørnar",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Bystyremedlem Fredrikstad kommune, møtegodtgjørelse.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Limi, Hans Andreas",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Parlamentarisk nestleder i FrP (lønnet).",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Nilsen, Marius Arion",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder Smite AS - Ulønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Olsen, Dagfinn Henrik",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder Losen Eiendomsdrift A/S (ikke godtgjørelse)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Bjørnsen, Kari Sofie",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder i Advokatfirmaet Normann & Bjørnsen AS - ingen",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Elvenes, Hårek",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Den norske Atlanterhavskomite, ulønnet styreverv",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Frølich, Peter",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder i (og grunnlegger av) den frivillige organisasjonen Fritt",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Gunnufsen, Amalie",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Bystyret (Kristiansand kommune) - medlem (lønnet)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Larsen, Erlend",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder AS Raadhuset - ulønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Linnestad, Anne Kristine",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem Futuragruppen AS, (styrehonorar).",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Pettersen, Tage",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "President i Norges ishockeyforbund, ingen godtgjørelse.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Solberg, Erna",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Partileder i Høyre (ytelser)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Stokkebø, Aleksander",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Ikke-lønnet:",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Marhaug, Sofie",
+      "party": "R",
+      "section": 2,
+      "kind": "verv",
+      "text": "- Vara i styret til Skrivekunstakademiet i Hordaland",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Martinussen, Marie Sneve",
+      "party": "R",
+      "section": 2,
+      "kind": "verv",
+      "text": "Nestleder i Rødt. Ikke lengre lønnet.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Nyholt, Hege Bae",
+      "party": "R",
+      "section": 2,
+      "kind": "verv",
+      "text": "Møtende vara i Fylkesstyret til FO Trøndelag. Vervet er ubetalt.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Bergstø, Kirsti",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Leder i Sosialistisk Venstreparti (ikke lønnet)",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Ellingsen, Cato Brunvand",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Medlem Rådet for mennesker med funksjonsnedsettelse i Oslo",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Fiskaa, Ingrid",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Første vara til kommunestyret i Time kommune. Mottek ikkje",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Haltbrekken, Lars",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i NTNU Vitenskapsmuseet. Møtegodtgjørelse.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Lie, Kathy",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Nestleder i Buskerud SV, ikke lønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Pollestad, Geir",
+      "party": "Sp",
+      "section": 2,
+      "kind": "verv",
+      "text": "Søkt fritak fra følgende verv i Time kommune med virkning fra 4.",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Toppe, Kjersti",
+      "party": "Sp",
+      "section": 2,
+      "kind": "verv",
+      "text": "Nestleder i Senterpartiet (Godtgjørelse).",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    },
+    {
+      "name": "Almeland, Grunde",
+      "party": "V",
+      "section": 2,
+      "kind": "verv",
+      "text": "- Styremedlem, Regnbuedagene i Bergen AS, ikke lønnet",
+      "seen": "2024-04-19",
+      "gone_by": "2026-10-30"
+    }
+  ],
+  "new": [
+    {
+      "name": "Aasen-Svensrud, Maria",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Tiltredende styret i Horten Arbeiderparti - ikke honorar.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Aasland, Terje",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder i Bølebåtens venner - org.nr. 992 528 443 (ulønnet)",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Brenna, Tonje",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Nestleder i Arbeiderpartiet (ulønnet).",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Jacobsen, Frode",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem Løkkevikfjellet vann- og avløpslag SA, org. nr.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Jaffery, Lubna Boby",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder Hageveien Invest AS - ulønnet.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Linge, Tobias Hangaard",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem, Folkets Hus Sandvika AS, ulønnet",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Moflag, Tuva",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Arbeiderpartiet, parlamentarisk nestleder (godtgjørelse)",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Myrli, Sverre",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder i Den norsk-tyske Willy Brandt-stiftelsen (ingen",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Nordli, Ramani",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Bystyrerepresentant og leder for helse- og omsorgsutvalget for",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Rafaelsen, Sigurd Kvammen",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Ordfører Lebesby Kommune. Lønnet- permisjon fra vervet.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Sandtrøen, Nils Kristen",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Sentralstyret i Arbeiderpartiet - ikke godtgjørelse",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Skjæran, Bjørnar",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Medlem av Sikkerhetskonferansen i Münchens Foundation Council,",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Skjæran, Bjørnar",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Parlamentarisk leder Arbeiderpartiet - godtgjørelse",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Skjæran, Bjørnar",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder Tiurlia hytteforening (ulønnet)",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Støstad, Rune",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Valgt medlem i samfunnskomiteen i Norsk Vann (ikke lønna).",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Sundnes, Trine Lise",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Leder i Europabevegelsen, org. nr. 971022205 - ulønnet.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Viljugrein, Agnes Nærland",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Toppfotball Kvinner for perioden 2026-2028. Ikke",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Vitanza, Solveig",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "Varamedlem Halden arbeid og vekst, ikke godtgjørelse.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Østensen, Kai Steffen",
+      "party": "A",
+      "section": 2,
+      "kind": "verv",
+      "text": "- Eksternt styremedlem i styret ved Fakultet for humaniora og",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Engen-Helgheim, Jon",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Leder av Drammen FrP, ulønnet.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Ervik, May Helen Hetland",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Rogaland fylkeskommune: Medlem i fylkestinget - godtgjørelse/årlig",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Gustavsen, Liv",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Kommunestyrerepresentant FrP 2015-2027, Nes Kommune Akershus",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Hjemdal, Silje",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Vestland FrP (ikke lønnet).",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Hoksrud, Bård",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Medlem Bamble Kommunestyre 2023-2027 (møtegodtgjørelse)",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Laabak, Bjørnar",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Bystyremedlem Fredrikstad kommune, møtegodtgjørelse.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Limi, Hans Andreas",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Parlamentarisk nestleder i FrP (lønnet).",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Nilsen, Marius Arion",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder og daglig leder i Smite AS - Ulønnet",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Olsen, Dagfinn Henrik",
+      "party": "FrP",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styreleder Losen Eiendomsdrift A/S (ikke godtgjørelse)",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Bjørnsen, Kari Sofie",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Asplan Viak AS - styrehonorar.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Gunnufsen, Amalie",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem, Kristiansand internasjonale barnefilmfestival - (lønnet)",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Larsen, Erlend",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem Krossbakkmyri Hytteforening - ulønnet",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Linnestad, Anne Kristine",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem Futuragruppen AS, Eid av de fleste kommunene i Follo i",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Pettersen, Tage",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Elitehockey AS (ingen godtgjørelse).",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Solberg, Erna",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Global Citizen, 2022 - (ubetalt) -2025",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Stokkebø, Aleksander",
+      "party": "H",
+      "section": 2,
+      "kind": "verv",
+      "text": "British-Norwegian Chamber of Commerce (BNCC) Ikke lønnet.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Marhaug, Sofie",
+      "party": "R",
+      "section": 2,
+      "kind": "verv",
+      "text": "- Medlem i styret til Solidaritet med Kurdistan (ulønnet).",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Martinussen, Marie Sneve",
+      "party": "R",
+      "section": 2,
+      "kind": "verv",
+      "text": "Leder i Rødt. Ikke lengre lønnet.",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Nyholt, Hege Bae",
+      "party": "R",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem Ship to Gaza (Ubetalt).",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Bergstø, Kirsti",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Leder i Sosialistisk Venstreparti (ikke lønnet)",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Ellingsen, Cato Brunvand",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Medlem bydelsutvalget i Søndre Nordstrand (godtgjørelse),",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Fiskaa, Ingrid",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Første vara til kommunestyret i Time kommune. Mottek ikkje",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Haltbrekken, Lars",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem Sameiet Danmarksgate 25 (Eierseksjonssameie) Ingen",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Lie, Kathy",
+      "party": "SV",
+      "section": 2,
+      "kind": "verv",
+      "text": "Styremedlem i Lier SV, ikke lønnet",
+      "first_seen": "2026-10-30"
+    },
+    {
+      "name": "Pollestad, Geir",
+      "party": "Sp",
+      "section": 2,
+      "kind": "verv",
+      "text": "parlamentarisk nestleder i Senterpartiets stortingsgruppe",
+      "first_seen": "2026-10-30"
+    }
+  ]
+}

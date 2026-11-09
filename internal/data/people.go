@@ -1,6 +1,7 @@
 package data
 
 import (
+	"encoding/json"
 	"fmt"
 	"path"
 	"sort"
@@ -130,3 +131,51 @@ func PersonByID(id string) (Person, bool) {
 	}
 	return Person{}, false
 }
+
+// RegisterHistory is the diff between two editions of the verv register. A role
+// present in an earlier edition and absent from the newest was held in between;
+// the register states neither its start nor its end, so none is written here.
+type RegisterHistory struct {
+	GeneratedAt     string   `json:"generated_at"`
+	ComparedBetween []string `json:"compared_between"`
+	Counts          struct {
+		PeopleInBoth int `json:"people_in_both"`
+		RolesCarried int `json:"roles_carried"`
+		RolesEnded   int `json:"roles_ended"`
+		RolesNew     int `json:"roles_new"`
+	} `json:"counts"`
+	Ended []RegisterChange `json:"ended"`
+	New   []RegisterChange `json:"new"`
+}
+
+// RegisterChange is one post that appeared or disappeared between two editions.
+type RegisterChange struct {
+	Name      string `json:"name"`
+	Party     string `json:"party"`
+	Section   int    `json:"section"`
+	Kind      string `json:"kind"`
+	Text      string `json:"text"`
+	Seen      string `json:"seen,omitempty"`
+	GoneBy    string `json:"gone_by,omitempty"`
+	FirstSeen string `json:"first_seen,omitempty"`
+}
+
+var registerHistory = mustLoadHistory()
+
+func mustLoadHistory() RegisterHistory {
+	b, err := contentFS.ReadFile(path.Join(contentRoot, "verv", "history.json"))
+	if err != nil {
+		// The history is optional: a build without two register editions still
+		// serves the person page, it just cannot say what changed.
+		return RegisterHistory{}
+	}
+	var h RegisterHistory
+	if err := json.Unmarshal(b, &h); err != nil {
+		panic("data: parsing verv/history.json: " + err.Error())
+	}
+	return h
+}
+
+// RegisterHistoryDiff returns the register comparison, or a zero value when no
+// two editions were compared.
+func RegisterHistoryDiff() RegisterHistory { return registerHistory }

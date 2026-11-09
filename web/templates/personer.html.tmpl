@@ -58,6 +58,35 @@
     </table>
   </div>
 
+  {{if .History}}
+  <h2>Verv som er borte siden {{.HistoryFrom}}</h2>
+  <p class="prose-lede">
+    Registeret er et øyeblikksbilde, så en rolle har sjelden en oppgitt start- eller
+    sluttdato. To utgaver gir likevel et ekte svar: {{.HistoryPeople}} personer står i
+    både utgaven fra {{.HistoryFrom}} og utgaven fra {{.HistoryTo}}. Av vervene deres
+    står {{.HistoryEnded}} i den eldste utgaven og ikke i den nyeste, og {{.HistoryNew}}
+    er kommet til. Registeret oppgir ingen dato for når et verv tok slutt, så denne
+    tabellen sier bare at det var der i {{.HistoryFrom}} og ikke i {{.HistoryTo}}.
+  </p>
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr><th>Person</th><th>Parti</th><th>Verv</th><th>Sist sett</th></tr>
+      </thead>
+      <tbody>
+        {{range .History}}
+        <tr>
+          <td>{{.Name}}</td>
+          <td><span class="party-tag {{.Bar}}">{{.PartyShort}}</span></td>
+          <td>{{.Text}}</td>
+          <td class="date-cell">{{.Seen}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </div>
+  {{end}}
+
   <h2>Alle representanter</h2>
   <div class="table-scroll">
     <table class="data-table">

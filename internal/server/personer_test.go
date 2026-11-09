@@ -88,3 +88,56 @@ func TestSnapshotDatesAreLabelled(t *testing.T) {
 		t.Fatal("no role carries a date the register stated; date extraction is dead")
 	}
 }
+
+// The register comparison is the only place the page can say what changed
+// rather than what is. It must appear when two editions were compared, and it
+// must not claim a date the register does not state.
+func TestRegisterHistorySection(t *testing.T) {
+	hist := data.RegisterHistoryDiff()
+	if len(hist.ComparedBetween) != 2 {
+		t.Skip("no two register editions compared in this build")
+	}
+	h := New(slog.New(slog.NewTextHandler(os.Stderr, &slog.HandlerOptions{Level: slog.LevelError})))
+	w := httptest.NewRecorder()
+	h.ServeHTTP(w, httptest.NewRequest("GET", "/personer", nil))
+	body := w.Body.String()
+
+	for _, want := range []string{
+		"Verv som er borte siden " + hist.ComparedBetween[0],
+		hist.ComparedBetween[1],
+	} {
+		if !strings.Contains(body, want) {
+			t.Errorf("/personer is missing %q", want)
+		}
+	}
+	if hist.Counts.RolesEnded == 0 {
+		t.Error("history has no ended roles; the comparison produced nothing")
+	}
+	// The wording must not turn the comparison into a claim about a date the
+	// register never published.
+	if strings.Contains(body, "tok slutt ") {
+		t.Error("the page claims an end date the register does not state")
+	}
+}
+
+// The party table must be deterministic. Sorting on count alone left equal
+// counts in map-iteration order, so the table reshuffled on every request.
+func TestPartyTableOrderIsDeterministic(t *testing.T) {
+	first := buildPersonerView(data.Store, SnapshotDate).Parties
+	for i := 0; i < 5; i++ {
+		again := buildPersonerView(data.Store, SnapshotDate).Parties
+		for j := range first {
+			if first[j] != again[j] {
+				t.Fatalf("party order changed between builds at %d: %v vs %v", j, first[j], again[j])
+			}
+		}
+	}
+	for i := 1; i < len(first); i++ {
+		if first[i-1].Count < first[i].Count {
+			t.Errorf("party %s comes after a smaller count", first[i].Party)
+		}
+		if first[i-1].Count == first[i].Count && first[i-1].Party > first[i].Party {
+			t.Errorf("ties not sorted by name: %s before %s", first[i-1].Party, first[i].Party)
+		}
+	}
+}

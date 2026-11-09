@@ -179,3 +179,21 @@ record cannot be reached from the page.
 Not done yet: Brreg company roles (needs the bulk `roller/totalbestand`
 inversion on name + birth date), per-person hearing participation, and the
 `statssekretar` scope. Lane H's open leads are unchanged.
+
+## Register history, 2026-11-09
+
+A verv role is snapshot-dated because the register is a snapshot. Two dated
+editions turn that into a real answer without inventing a date. The National
+Library's web archive lists earlier editions; `pr-19-april-2024.pdf` is the
+oldest usable copy we could fetch (the archive blocks bulk requests as bot
+traffic, so this is one edition per run, not a batch).
+
+`tools/analytics/build_verv_history.py` compares two editions and writes
+`internal/data/content/verv/history.json`. Between 2024-04-19 and 2026-10-30:
+123 people appear in both, 50 verv carried, **45 verv gone**, 44 new.
+The page shows the 45 as "står i 2024-04-19, ikke i 2026-10-30" and never as an
+end date, because the register publishes none.
+
+To extend: add older editions as `--snapshot DATE PDF` pairs. Each run compares
+the oldest and newest only, so adding one edition refines the interval rather
+than multiplying tables.

@@ -49,6 +49,16 @@ type partyCount struct {
 	Count int
 }
 
+type endedRole struct {
+	Party      string
+	PartyShort string
+	Bar        string
+	Name       string
+	Text       string
+	Seen       string
+	GoneBy     string
+}
+
 type personerView struct {
 	Meta           pageMeta
 	SnapshotDate   string
@@ -59,6 +69,12 @@ type personerView struct {
 	WithGovernment int
 	RoleTotal      int
 	RegisterDate   string
+	History        []endedRole
+	HistoryFrom    string
+	HistoryTo      string
+	HistoryEnded   int
+	HistoryNew     int
+	HistoryPeople  int
 }
 
 var roleLabels = map[string]string{
@@ -153,7 +169,35 @@ func buildPersonerView(ds *data.Dataset, snapshotDate string) personerView {
 			Count: n,
 		})
 	}
-	sort.SliceStable(parties, func(i, j int) bool { return parties[i].Count > parties[j].Count })
+	// Count descending, then name ascending. Without the tie-breaker the order of
+	// equal counts came from the map iteration and changed on every request.
+	sort.SliceStable(parties, func(i, j int) bool {
+		if parties[i].Count != parties[j].Count {
+			return parties[i].Count > parties[j].Count
+		}
+		return parties[i].Party < parties[j].Party
+	})
+
+	hist := data.RegisterHistoryDiff()
+	apiToID := map[string]string{"A": "ap", "FrP": "frp", "H": "h", "SV": "sv", "Sp": "sp",
+		"R": "rodt", "MDG": "mdg", "KrF": "krf", "V": "v"}
+	var ended []endedRole
+	for _, c := range hist.Ended {
+		id := apiToID[c.Party]
+		ended = append(ended, endedRole{
+			Party:      byID[id].Name,
+			PartyShort: byID[id].Short,
+			Bar:        "bar-" + id,
+			Name:       c.Name,
+			Text:       c.Text,
+			Seen:       c.Seen,
+			GoneBy:     c.GoneBy,
+		})
+	}
+	from, to := "", ""
+	if len(hist.ComparedBetween) == 2 {
+		from, to = hist.ComparedBetween[0], hist.ComparedBetween[1]
+	}
 
 	return personerView{
 		Meta: meta("Personer · verv og offentlige roller",
@@ -167,5 +211,11 @@ func buildPersonerView(ds *data.Dataset, snapshotDate string) personerView {
 		WithGovernment: withGov,
 		RoleTotal:      roleTotal,
 		RegisterDate:   data.VervSnapshotDate(),
+		History:        ended,
+		HistoryFrom:    from,
+		HistoryTo:      to,
+		HistoryEnded:   hist.Counts.RolesEnded,
+		HistoryNew:     hist.Counts.RolesNew,
+		HistoryPeople:  hist.Counts.PeopleInBoth,
 	}
 }

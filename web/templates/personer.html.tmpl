@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
+</head>
+<body>
+
+{{template "header" .}}
+
+<main>
+  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
+  <span class="snapshot-badge">Vervregisteret ajourført {{.RegisterDate}}</span>
+
+  <h1>Personer</h1>
+  <p class="prose-lede">
+    {{.Total}} stortingsrepresentanter med {{.RoleTotal}} daterte roller. Rollene
+    kommer fra Stortingets eget vervregister og fra regjeringens ministerliste, og
+    hver rolle viser kilden den er lest fra. {{.WithVerv}} av dem har minst ett
+    verv eller tillitspost registrert, og {{.WithGovernment}} har sittet i regjering.
+  </p>
+  <p class="prose-lede">
+    Grensen er offentlig verv, ikke privatliv. Fødselsdato, adresse, telefon,
+    familie, helse, gaver, reiser, eiendom og private beløp lagres ikke. Registerets
+    egne punkter om tidligere og framtidig arbeidsgiver, økonomisk støtte, eiendom,
+    aksjer, reiser, gaver og «andre forhold» er forkastet ved indekseringen, og en
+    port avviser en personfil som inneholder et slikt felt.
+  </p>
+  <p class="prose-lede">
+    En dato merket «registrert» er registerets øyeblikksdato, ikke startdatoen for
+    vervet. Der registeret selv oppgir et årstall eller en dato, står den.
+    «Ikke avsluttet i registeret» betyr at registeret ikke oppgir en sluttdato —
+    det er ikke det samme som at vervet løper i dag.
+  </p>
+
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Parti</th>
+          <th>Personer</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range .Parties}}
+        <tr>
+          <td><span class="party-tag {{.Bar}}">{{.Short}}</span> {{.Party}}</td>
+          <td>{{.Count}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Alle representanter</h2>
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Person</th>
+          <th>Parti</th>
+          <th>Rolle</th>
+          <th>Fra</th>
+          <th>Til</th>
+          <th>Kilde</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range .People}}
+        {{$p := .}}
+        {{range $i, $r := .Roles}}
+        <tr>
+          {{if eq $i 0}}
+          <td rowspan="{{len $p.Roles}}"><strong>{{$p.Name}}</strong></td>
+          <td rowspan="{{len $p.Roles}}"><span class="party-tag {{$p.PartyBarClass}}">{{$p.PartyShort}}</span></td>
+          {{end}}
+          <td>
+            {{$r.Label}}{{if $r.Post}} · {{$r.Post}}{{end}}
+            {{if $r.Organisation}}<br><span class="role-org">{{$r.Organisation}}</span>{{end}}
+          </td>
+          <td>{{if $r.Snapshot}}<span class="date-snapshot" title="Registerets øyeblikksdato, ikke vervets start">registrert {{$r.From}}</span>{{else}}{{$r.From}}{{end}}</td>
+          <td>{{if $r.To}}{{$r.To}}{{else}}<span class="date-open">{{$r.OpenLabel}}</span>{{end}}</td>
+          <td><a href="{{$r.SourceURL}}" rel="nofollow noopener">kilde</a></td>
+        </tr>
+        {{end}}
+        {{end}}
+      </tbody>
+    </table>
+  </div>
+</main>
+
+{{template "footerlinks"}}
+</body>
+</html>

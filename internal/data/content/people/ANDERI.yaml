@@ -1,0 +1,37 @@
+id: ANDERI
+name: Eriksen, Andreas Bjelland
+scope: representant
+consent_basis: public_office
+party_id: ap
+roles:
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Klima- og miljødepartementet
+  from: '2023-10-16'
+  to: '2024-09-01'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  post: Klima- og miljøminister
+- role: statsrad
+  organisation: Klima- og miljødepartementet
+  from: '2024-09-02'
+  to: '2024-12-31'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  post: Klima- og miljøminister
+- role: statsrad
+  organisation: Klima- og miljødepartementet
+  from: '2025-01-01'
+  to: '2026-09-11'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  post: Klima- og miljøminister

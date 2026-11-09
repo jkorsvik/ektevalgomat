@@ -1,0 +1,29 @@
+id: GP
+name: "Pollestad, Geir"
+scope: representant
+consent_basis: public_office
+party_id: sp
+roles:
+  - role: stortingsrepresentant
+    organisation: "Stortinget"
+    from: "2025-10-01"
+    to: ""
+    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+  - role: verv
+    organisation: "Senterpartiets stortingsgruppe"
+    from: "2026-10-30"
+    to: ""
+    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+    source_note: "register snapshot 2026-10-30, not a role start"
+  - role: statsrad
+    organisation: "Landbruks- og matdepartementet"
+    post: "Landbruks- og matminister"
+    from: "2023-08-04"
+    to: "2025-02-04"
+    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/"
+    source_tier: A
+    retrieved_at: "2026-11-09"

@@ -1,0 +1,69 @@
+id: JGS
+name: Støre, Jonas Gahr
+scope: representant
+consent_basis: public_office
+party_id: ap
+roles:
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Utenriksdepartementet
+  post: Utenriksminister
+  from: '2005-10-17'
+  to: '2012-09-21'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jens-stoltenbergs-andre-regjering/id449424/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Helse- og omsorgsdepartementet
+  post: Helse- og omsorgsminister
+  from: '2012-09-21'
+  to: '2013-10-16'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jens-stoltenbergs-andre-regjering/id449424/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Statsministerens kontor
+  post: Statsminister
+  from: '2021-10-14'
+  to: ''
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Arbeiderpartiet
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Femstø AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Samarbeidskomiteen LO-AP
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: SAMAK
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start

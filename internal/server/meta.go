@@ -97,6 +97,7 @@ var navLinks = []navLink{
 	{"/penger", "Penger", "explore"},
 	{"/eierskap", "Eierskap", "explore"},
 	{"/makt", "Makt", "explore"},
+	{"/personer", "Personer", "explore"},
 	{"/bidra", "Bidra", "meta"},
 	{"/data", "Data", "meta"},
 	{"/metode", "Metode", "meta"},

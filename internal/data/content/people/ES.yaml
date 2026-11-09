@@ -1,0 +1,43 @@
+id: ES
+name: Solberg, Erna
+scope: representant
+consent_basis: public_office
+party_id: h
+roles:
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Statsministerens kontor
+  post: Statsminister
+  from: '2013-10-16'
+  to: '2021-10-14'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Global Citizen
+  from: '2022'
+  to: '2025'
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: FNs høynivåpanel for flerdimensjonal sårbarhetsindeks for SIDS-land
+  from: '2022'
+  to: '2024'
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: The Global Fund (til bekjempelse av Malaria, tuberkulose og AIDS)
+  from: '2026-10-29'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register states start 29. oktober 2026

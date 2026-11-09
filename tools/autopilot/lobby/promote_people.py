@@ -10,8 +10,8 @@ destination. `--apply` writes the file.
     uv run tools/autopilot/lobby/promote_people.py tools/autopilot/lobby/staging/<id>
     uv run tools/autopilot/lobby/promote_people.py tools/autopilot/lobby/staging/<id> --apply
 
-Destination is `internal/data/people/<id>.yaml`, deliberately NOT
-`internal/data/content/`. The Go loader and the `/personer` page are the next
+Destination is `internal/data/content/people/<id>.yaml`, inside the
+embedded content root so the Go loader can read it. The Go loader and the `/personer` page are the next
 loop item; until they exist, a promoted record is verified but not served. That
 is honest: a record the site cannot show is not yet a claim on the site.
 
@@ -32,16 +32,22 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import gate_people as G  # noqa: E402 - reuse the one validator
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-DEST = ROOT / "internal/data/people"
+DEST = ROOT / "internal/data/content/people"
+STAGING = pathlib.Path(__file__).resolve().parent / "staging"
 
 
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("path", help="staging directory or person.yaml")
+    ap.add_argument("path", nargs="?", default="--all",
+                    help="staging directory or person.yaml (default: --all)")
+    ap.add_argument("--all", action="store_true", help="promote every staged record")
     ap.add_argument("--apply", action="store_true", help="write the file (default: dry run)")
     ap.add_argument("--force", action="store_true", help="overwrite an existing record")
     ap.add_argument("--no-fetch", action="store_true", help="skip the source fetch (offline)")
     args = ap.parse_args(argv)
+
+    if args.all or args.path == "--all":
+        return promote_all(args)
 
     target = pathlib.Path(args.path)
     if not target.exists():
@@ -80,6 +86,31 @@ def main(argv: list[str]) -> int:
     shutil.copyfile(src, out)
     print(f"wrote {out.relative_to(ROOT)}")
     return 0
+
+
+def promote_all(args) -> int:
+    """Promote every staged record in one process. Existing files need --force."""
+    scope = yaml.safe_load(G.SCOPE.read_text())
+    snap = G.snapshot_date()
+    DEST.mkdir(parents=True, exist_ok=True)
+    ok = skipped = failed = 0
+    for src in sorted(G.collect(STAGING)):
+        errs = G.validate(src, scope, snap, False)
+        if errs:
+            failed += 1
+            print(f"FAIL {src}: {errs[0]}")
+            continue
+        doc = yaml.safe_load(src.read_text())
+        out = DEST / f"{doc['id']}.yaml"
+        if out.exists() and not args.force:
+            skipped += 1
+            continue
+        if args.apply:
+            shutil.copyfile(src, out)
+        ok += 1
+    print(f"promoted {ok}, unchanged {skipped}, failed {failed}"
+          f"{'' if args.apply else ' (dry run)'}")
+    return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":

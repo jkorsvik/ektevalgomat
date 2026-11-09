@@ -1,0 +1,53 @@
+id: MARHAM
+name: "Hammer, Marthe"
+scope: representant
+consent_basis: public_office
+party_id: sv
+roles:
+  - role: stortingsrepresentant
+    organisation: "Stortinget"
+    from: "2025-10-01"
+    to: ""
+    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+  - role: verv
+    organisation: "Stiftelsen Bergen Kjøtt"
+    from: "2026-10-30"
+    to: ""
+    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+    source_note: "register snapshot 2026-10-30, not a role start"
+  - role: verv
+    organisation: "Foreininga for Fjordvegen Riksveg 13"
+    from: "2026-10-30"
+    to: ""
+    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+    source_note: "register snapshot 2026-10-30, not a role start"
+  - role: verv
+    organisation: "Verdensarvrådet Bryggen"
+    from: "2026-10-30"
+    to: ""
+    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+    source_note: "register snapshot 2026-10-30, not a role start"
+  - role: verv
+    organisation: "Syklistenes Landsforening"
+    from: "2026-10-30"
+    to: ""
+    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+    source_note: "register snapshot 2026-10-30, not a role start"
+  - role: verv
+    organisation: "Syklistene Bergen og omeng"
+    from: "2026-10-30"
+    to: ""
+    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
+    source_tier: A
+    retrieved_at: "2026-11-09"
+    source_note: "register snapshot 2026-10-30, not a role start"

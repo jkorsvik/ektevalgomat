@@ -140,3 +140,42 @@ Lane L, in order:
   source the lobby-scout must prove; hearings and Brreg company roles follow.
 - **Cadence is manual first.** No schedule runs the loop. A human fires one
   iteration, reads the report, and decides whether to continue.
+
+## Measured state, 2026-11-09 (lane L first full pass)
+
+The verv register is one dated PDF for the whole Storting, so it is parsed once
+into `internal/data/verv/index.json` by `tools/analytics/build_verv_index.py`:
+**267 people, 201 with roles, 371 role entries**, snapshot 2026-10-30. Sections
+§5–§11 are dropped at index time and counted in `counts.dropped_sections`; §9
+keeps company names only, with share counts and kroner stripped.
+
+All **169 sitting representatives** now have a record in
+`internal/data/content/people/`, written from the roster (mandate), the verv
+index (§2 posts) and `ministers.yaml` (statsråd). **525 dated roles**, of which
+115 people have at least one verv and 26 have held government office.
+
+Three defect classes were found by adversarial sampling (3 of 12 wrong) and then
+scanned across all 169:
+
+1. `party_id` held the roster API code (`A`) instead of the dataset id (`ap`):
+   40 records.
+2. A `statsrad` role copied department and dates but not the post: 8 roles.
+3. A `verv` organisation was clipped, or dated with the snapshot although the
+   register states a year range: 2 joins, 15 dates. Where the register states
+   "2022 - 2025" or "Fra 29. oktober 2026", that date is now used; the snapshot
+   date is kept only where the register states nothing, and the page labels it
+   `registrert`.
+
+The page is `/personer`: a full table, one row per role, every row citing its
+source. A mandate with no end date reads `sitter`; a register role with no end
+date reads `ikke avsluttet i registeret`, because the register going quiet is
+not the same as the post still running.
+
+Gates: `gate_people.py --no-fetch` 169/169 PASS; `TestNoForbiddenFieldInPeopleFiles`
+scans the raw YAML; `TestRegisterSnapshotMatchesIndex` fails if the pinned
+snapshot drifts from the index; `TestPersonerPageShowsEveryRecord` fails if a
+record cannot be reached from the page.
+
+Not done yet: Brreg company roles (needs the bulk `roller/totalbestand`
+inversion on name + birth date), per-person hearing participation, and the
+`statssekretar` scope. Lane H's open leads are unchanged.

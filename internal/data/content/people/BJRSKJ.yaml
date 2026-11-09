@@ -1,0 +1,61 @@
+id: BJRSKJ
+name: Skjæran, Bjørnar
+scope: representant
+consent_basis: public_office
+party_id: ap
+roles:
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Nærings- og fiskeridepartementet
+  post: Fiskeri- og havminister
+  from: '2021-10-14'
+  to: '2023-10-16'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Arbeids- og inkluderingsdepartementet (av 2022)
+  post: Arbeids- og inkluderingsminister
+  from: '2022-03-04'
+  to: '2022-03-07'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Kommunal- og distriktsdepartementet
+  post: Kommunal- og distriktsminister
+  from: '2025-09-16'
+  to: ''
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Arbeiderpartiet
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Tiurlia hytteforening
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Sikkerhetskonferansen i Münchens Foundation Council
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start

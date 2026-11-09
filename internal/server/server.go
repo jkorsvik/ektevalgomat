@@ -640,6 +640,7 @@ func New(logger *slog.Logger) http.Handler {
 	dataTmpl := page("data.html.tmpl")
 	omTmpl := page("om.html.tmpl")
 	stemmerTmpl := page("stemmer.html.tmpl")
+	personerTmpl := page("personer.html.tmpl")
 	kartTmpl := page("kart.html.tmpl")
 	pengerTmpl := page("penger.html.tmpl")
 	eierskapTmpl := page("eierskap.html.tmpl")
@@ -769,6 +770,16 @@ func New(logger *slog.Logger) http.Handler {
 	// Every number on it is derived at request time (internal/analysis), and the
 	// votes it rests on are listed with their proposal text so a reader can check
 	// a cell instead of trusting it.
+	// Public-office records: who holds which post, when, on what source. Read
+	// from content/people/, which the privacy gate and a verifier have passed.
+	mux.HandleFunc("GET /personer", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		if err := personerTmpl.Execute(w, buildPersonerView(ds, SnapshotDate)); err != nil {
+			logger.Error("render personer", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
 	mux.HandleFunc("GET /stemmer", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		if err := stemmerTmpl.Execute(w, buildStemmerView(ds, SnapshotDate)); err != nil {

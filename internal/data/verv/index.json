@@ -1,0 +1,3690 @@
+{
+  "generated_at": "2026-11-09T13:37:30+00:00",
+  "snapshot_date": "2026-10-30",
+  "source_url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf",
+  "source_sha256": "ded620b4f02d7eb9e197ddf32c7ede42813665dc7c1dc67fdd629317356cdf6a",
+  "not_stored": [
+    "andre_forhold",
+    "eiendom",
+    "framtidig_arbeidsgiver",
+    "gaver",
+    "okonomisk_stotte",
+    "tidligere_arbeidsgiver",
+    "utenlandsreiser"
+  ],
+  "retained_note": "Section text is the register's own wording. Section 9 keeps company names only; share counts and kroner amounts are stripped. Compensation percentages in section 2 describe the office, not the person's wealth.",
+  "counts": {
+    "people": 267,
+    "with_roles": 201,
+    "roles": 371,
+    "dropped_sections": {
+      "utenlandsreiser": 23,
+      "tidligere_arbeidsgiver": 66,
+      "framtidig_arbeidsgiver": 11,
+      "eiendom": 14,
+      "gaver": 31,
+      "andre_forhold": 12,
+      "okonomisk_stotte": 4
+    }
+  },
+  "people": [
+    {
+      "name": "Aaland, Bente Irene",
+      "party": "A",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyrerepresentant i Elverum kommune. Mottar\nmøtehonorar, samt møtehonorar og godtgjørelse 5% av ordførers lønn\nsom leder av helse- og omsorgskomiteen."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Jeg er pensjonist og mottar pensjon fra KLP\nAjourført pr. 30. oktober 2026 75"
+        }
+      ]
+    },
+    {
+      "name": "Aasen-Svensrud, Maria",
+      "party": "A",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Tiltredende styret i Horten Arbeiderparti - ikke honorar.\nTiltredene styret Vestfold Arbeiderparti - ikke honorar.\nMedlem fagligpolitisk samarbeidskomite, Vestfold Arbeiderparti -\nikke honorar."
+        }
+      ]
+    },
+    {
+      "name": "Aasland, Terje",
+      "party": "A",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i Bølebåtens venner - org.nr. 992 528 443 (ulønnet)"
+        }
+      ]
+    },
+    {
+      "name": "Abdi, Hashim",
+      "party": "A",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Folkevalgt verv i Fredrikstad kommune som bystyremedlem\n(godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Abrahamsen, Stig Atle",
+      "party": "FrP",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Askøy kommune:\nMedlem av kommunestyret godtgjøres 1% av ordførers godtgjørelse (\nOrdfører har 95% av Stortingsrepresentants godtgjørelse) Ble\ninnvilget fritak fra dette vervet 23.10.2025\nLeder av utvalg for oppvekst og levekår godtgjøres 40% av ordførers\ngodtgjørelse ( Ordfører har 95% av Stortingsrepresentants\ngodtgjørelse) Ble innvilget fritak fra dette vervet 23.10.2025"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Innehaver av enkeltpersonforetak Vekstpartner Stig Abrahamsen"
+        }
+      ]
+    },
+    {
+      "name": "Akselsen, Ulvar",
+      "party": "A",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Godtgjørelse/lønn kommunestyrerepresentant i Stord kommune\nGodtgjørelse/lønn medlem av rehabilitering, helse og omsorgsutvalet\nStord kommune\nGodtgjørelse/lønn ved møte, 4. vararepresentant formannskapet i\nStord kommune.\nUlønnet styremedlem i LO i Sunnhordland"
+        }
+      ]
+    },
+    {
+      "name": "Aleem, Bisma",
+      "party": "SV",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Vararepresentant for SV til bystyret i Trondheim (honorar)"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Voldskoordinator, enhet for psykisk helse og rus, Trondheim\nkommune"
+        }
+      ]
+    },
+    {
+      "name": "Almeland, Grunde",
+      "party": "V",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Alvær, Konstanse Marie",
+      "party": "A",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fylkestingsrepresentant Telemark fylkesting, godtgjort (permisjon\nuten lønn mens jeg møter på stortinget).\nMedlem av utvalg for utdanning, folkehelse og tannhelse Telemark\nfylkeskommune, godtgjort (permisjon uten lønn mens jeg møter på\nStortinget).\nVara fylkesutvalget i Telemark fylkeskommune, godtgjort (permisjon\nuten lønn mens jeg møter på Stortinget).\nVara til Partssammensatt utvalg i Telemark fylkeskommune, godtgjort\n(permisjon uten lønn mens jeg møter på Stortinget).\nLeder av ungdomsutvalget Fagforbundet Telemark, godtgjort\n(permisjon uten lønn mens jeg møter på Stortinget).\nVara OKOS Telemark, honorar (permisjon uten lønn mens jeg møter\npå Stortinget).\nAjourført pr. 30. oktober 2026 5\nStyremedlem Fagforbundet Telemark, godtgjort (permisjon uten lønn\nmens jeg møter på Stortinget).\nMedlem av LOs ungdomsutvalg i Telemark, ikke godtgjort (permisjon\nuten lønn mens jeg møter på Stortinget)"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Ungdomstillitsvalgt i fagforbundet Telemark (permisjon uten lønn\nmens jeg møter på stortinget)"
+        }
+      ]
+    },
+    {
+      "name": "Amundsen, Per-Willy",
+      "party": "FrP",
+      "county": "Troms",
+      "roles": []
+    },
+    {
+      "name": "Andersen, Alf Erik",
+      "party": "FrP",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyremedlem Lindesnes kommune (møtegodtgjørelse).\nMedlem av formannskapet i Lindesnes kommune (møtegodtgjørelse).\nStyremedlem Egeland & Andersen Holding AS (ikke godtgjørelse)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "50% eier av Egeland & Andersen Holding AS sammen med kona\nNina Bø Egeland"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Egeland & Andersen Holding AS, eier"
+        }
+      ]
+    },
+    {
+      "name": "Asheim, Henrik",
+      "party": "H",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Sex og Samfunn 2012-2014, vervet er godtgjort, men\nhar frasagt meg godtgjørelsen\n1.vara i styret i Bærum Montesorriskole, ulønnet"
+        }
+      ]
+    },
+    {
+      "name": "Askjer, Hans Edvard",
+      "party": "KrF",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Modulservice AS 998 210 585 - Lønnet\nStyremedlem Telemarkskanalen FKF 990 599 386 - Lønnet\nHar frasagt meg plass i styret i Oneway."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Askjer job utført 926 343 796 - Ikke aktivitet"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "REC Silicon ASA 1373 aksjer kjøpt år 2022 nåverdi 521,-\nT1 Energy Inc 268 akjer kjøpt år 2022 nåverdi 20.467,-"
+        }
+      ]
+    },
+    {
+      "name": "Aspaas, Kjell-Arve",
+      "party": "A",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Fellesforbundet avd. 16 Midtnorsk\nTransportarbeiderforening (lønnet).\nStyremedlem Industriaksjonen ( ulønnet).\nVaramedlem styret i LO Trondheim og omegn (ulønnet).\nMedlem i LO Trøndelag regionråd (ulønnet).\nMedlem i representantskapet i Fellesforbundet fram til 2027 (ulønnet)."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Avdelingsleder Fellesforbundet avd. 16 Midtnorsk\nTransportarbeiderforening."
+        }
+      ]
+    },
+    {
+      "name": "Astrup, Nikolai",
+      "party": "H",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder, Pactum Beta AS (ikke godtgjørelse)\nStyreleder, Pactum Epsilon AS (ikke godtgjørelse)\nVaramedlem, Pactum Theta AS (ikke godtgjørelse)\nVaramedlem, Pactum Sigma AS (ikke godtgjørelse)\nStyreleder, Storehorn AS (ikke godtgjørelse)\nStyreleder, Pactum AS (ikke godtgjørelse)\n2. nestleder i Høyres stortingsgruppe (godtgjørelse)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Pactum Epsilon AS (). Selskapet investerer i fond. Ingen\nregistreringspliktige investeringer i henhold til § 9.\nStorehorn AS ( sammen med nærstående). Selskapet er et\nholdingselskap som eier  av aksjene i\nfamilievirksomheten Pactum AS. Justert for Pactum AS egne aksjer er\neiersatsen .\nPactum Beta AS ().\nPactum Beta AS eier  av aksjene i familievirksomheten\nPactum AS. Justert for Pactum AS egne aksjer er eiersatsen . I\ntillegg eier selskapet aksjer i\nfølgende selskap (per 30.09.2026):\nEden Research PLC, 47500 aksjer ()\nPactum AS er morselskap i en konsernstruktur med de heleide\ndatterselskapene Pactum Eiendom AS og Pactum Vekst AS. I tillegg\neier Pactum AS  av selskapet Seabulk AS og  av\naksjefondet Pactum Capital AS. Konsernet investerer i aksjer og andre\nverdipapirer, shipping og næringseiendom. Porteføljen oppgis i\nhenhold til § 9\nher (per 30.09.2026):\nAksjer:\nAFRY AB, 90 000 aksjer ()\nAlna Big Box AS, 2475 aksjer ()\nAnchorman AS, 850 aksjer ()\nArctic Fish Holding AS, 157 701 aksjer ()\nBakkafrost P/F, 19 000 aksjer ()\nBonheur ASA, 15 003 aksjer ()\nCytovation ASA, 3631 aksjer ()\nCytovation ASA - 8"
+        }
+      ]
+    },
+    {
+      "name": "Aukrust, Ronny",
+      "party": "A",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder interesseorganisasjon, The Seagulls Norway (org.nr\n922151458), ikke lønnet\nLeder interesseorganisasjon, Furutangen Hyttevelforening (org.nr.\n996849015), godtgjørelse."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Selskap: 991 356 568 Furutangen Aktivitetssenter AS\nSelskapsform: Aksjeselskap\nAntall aksjer: 3\nFormueverdi: 5.217"
+        }
+      ]
+    },
+    {
+      "name": "Aukrust, Åsmund",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fra 2019: medlem av rådet Den norske Helsingforskomite, ulønnet\nParlamentarisk nestleder i Arbeiderpartiets stortingsgruppe, lønnet."
+        }
+      ]
+    },
+    {
+      "name": "Aydar, Seher",
+      "party": "R",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Bahrami, Farahnaz",
+      "party": "A",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i organisasjonen NOK, Hamar. Mottar honorar for\noppmøte.\nStyremedlem i Frivillighetssentralen. Ikke godtgjørelse.\nStyremedlem i Hamar AP. Ikke godtgjørelse.\nMedlem i Internasjonal utvalg, Innlandet. Ikke godtgjørelse."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Jeg har permisjon fra min stilling i Integrerings- og\nmangfoldsdirektoratet f.o.m. 01.10.25 og for 4 år, med 3 mnd\nforvarsel hvis jeg ikke lenger er fast møtende vara og må tilbake til\njobben."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eier  av aksjene i Gyllen AS, et lite familieselskap, hvor min\nsønn eier resterende ."
+        }
+      ]
+    },
+    {
+      "name": "Bakervik, Rune",
+      "party": "A",
+      "county": "Hordaland",
+      "roles": []
+    },
+    {
+      "name": "Bakke, Åse Kristin Ask",
+      "party": "A",
+      "county": "Møre og Romsdal",
+      "roles": []
+    },
+    {
+      "name": "Bastholm, Une",
+      "party": "MDG",
+      "county": "Akershus",
+      "roles": []
+    },
+    {
+      "name": "Bentzen, Bent-Joacim",
+      "party": "Sp",
+      "county": "Nordland",
+      "roles": []
+    },
+    {
+      "name": "Bergheim, Ragnhild",
+      "party": "A",
+      "county": "Akershus",
+      "roles": []
+    },
+    {
+      "name": "Bergstø, Kirsti",
+      "party": "SV",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder i Sosialistisk Venstreparti (ikke lønnet)\nAjourført pr. 30. oktober 2026 9"
+        }
+      ]
+    },
+    {
+      "name": "Bjuland, Hadle Rasmus",
+      "party": "KrF",
+      "county": "Rogaland",
+      "roles": []
+    },
+    {
+      "name": "Bjørbæk, Synne Høyforsslett",
+      "party": "R",
+      "county": "Nordland",
+      "roles": []
+    },
+    {
+      "name": "Bjørnerud, Angelika",
+      "party": "FrP",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Bjørnsen, Kari Sofie",
+      "party": "H",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Asplan Viak AS - styrehonorar.\nLeder Akershus Høyre - ingen godtgjørelse."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Har permisjon fra jobben som advokat i Advokatfirmaet Normann &\nBjørnsen AS fra 1.januar 2020. Ingen eierinteresser fra 1. oktober\n2025."
+        }
+      ]
+    },
+    {
+      "name": "Blikra, Jone",
+      "party": "A",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Vestfold Telemark og Agder Kontrollutvalgssekretariat\nIKS (godtgjørelse).\nStyremedlem i Senteret mot Incest og Seksuelle overgrep, Skien\n(godtgjørelse)\nStyremedlem i Vestfold og Telemark Arbeiderparti"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltpersonforetaket Blikra Consulting - orgnr. 923661840. Etablert\ni 2019. Ingen aktivitet i selskapet. Avvikles i løpet av 2023"
+        }
+      ]
+    },
+    {
+      "name": "Borgli, Pål Morten",
+      "party": "FrP",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styrets leder Sandnes Havn KF (fast godtgjørelse )\nStyrets leder Freeman AS ( lønnet t.o.m 01.10.2025 )\nStyrets leder Fryd Forvaltning 8 (ingen godtgjørelse )\nVaramedlem Forus Næringspark ( godtgjørelse ved innkalling og\nmøtedeltakelse)\nSMB Norge avd. Stavanger, leder, (ingen godtgjørelse)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Freeman AS 1000 aksjer\nHÖEGH Autoliners ASA 2855 aksjer\nRogaland Sparebank 4486 aksjer\nSunation Energy Inc 20 aksjer\nWallenius Wilhelmsen 585 aksjer\nAutostore AS 1312 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Breivik, Ane",
+      "party": "V",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder av Unge Venstre (godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Brenna, Tonje",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Nestleder i Arbeiderpartiet (ulønnet).\nParlamentarisk leder, Arbeiderpartiets stortingsgruppe (lønnet)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Bokutgivelse: \"22. juli - og alle dagene etterpå\" (2021), bok og\nlydbok."
+        }
+      ]
+    },
+    {
+      "name": "Bruflot, Sandra",
+      "party": "H",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av Unge Høyres desisjonskomite. Ikke lønnet."
+        }
+      ]
+    },
+    {
+      "name": "Busch, Isak Veierud",
+      "party": "A",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem nasjonalparkstyret for Forollhogna (utgående. Mottar\nmøtegodtgjørelse).\nStyremedlem i Sør-Trøndelag interkommunalt politisk råd (utgående.\nVervet følger ordfører-vervet. Mottar ikke godtgjørelse).\nFylkesstyremedlem KS Trøndelag (utgående. Møtegodtgjørelse).\nVara til hovedstyret i KS (utgående. Møtegodtgjørelse).\nLeder av valgkomiteen for Verket Røros AS (utgående, mottar ikke\ngodtgjørelse).\nStyreleder i Peder Hiorts Stiftelse (utgående. Vervet følger ordfører-\nvervet. Mottar ikke godtgjørelse).\nLeder av Verdensarvrådet for Røros bergstad og circumferensen\n(utgående. Vervet følger ordfører-vervet. Mottar ikke godtgjørelse).\nLeder av Norges Verdensarvs politiske råd (utgående. Mottar ikke\ngodtgjørelse).\nKommunal repr. årsmøte Revisjon Midt-Norge (utgående. Mottar ikke\ngodtgjørelse).\nKommunal repr. oppgavefellesskap Helseplattformen (utgående.\nMottar ikke godtgjørelse).\nKommunal repr. helsefelleskap for St. Olav (utgående. Mottar ikke\ngodtgjørelse).\nRepr. Skoleutvalg Røros VGS (utgående. Mottar ikke godtgjørelse).\nVaramedlem Kil, Kommunenes Interesseforening For Lokalsykehus\n(utgående, aldri møtt, mottar ikke godtgjørelse)\nVarmedlem KS Holding AS (utgående, aldri møtt, mot"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Busch Agri. Innehaver. Enkeltmannsforetak på småbruket."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Fjell-Ljom AS, 2 aksjer. Total eierandel:"
+        }
+      ]
+    },
+    {
+      "name": "Bye, Margit",
+      "party": "MDG",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Bøe, Erlend Svardal",
+      "party": "H",
+      "county": "Troms",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Nestleder i Tromsø Matsentral - (ingen godtgjørelse)\nVaramedlem Tromsø Parkering AS - (ingen godtgjørelse) har bedt om\nå fratre."
+        }
+      ]
+    },
+    {
+      "name": "Dalin, Marius Langballe",
+      "party": "MDG",
+      "county": "Sogn og Fjordane",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Nestleiar i styret i Sunnfjord Miljøverk, får godtgjersle, planlagt å gå\nut av vervet fra våren 2026"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Har 0-kontrakt med Helse Møre og Romsdal som generellkirurg og\nurolog. Planlegger å jobbe ca 1 dag per måned, når det lar seg gjøre."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Jeg har 350 aksjer i Gjensidige forsikring"
+        }
+      ]
+    },
+    {
+      "name": "Danielsen, Hilde Marie Gaebpie",
+      "party": "SV",
+      "county": "Sør-Trøndelag",
+      "roles": []
+    },
+    {
+      "name": "Dons-Hansen, Nina",
+      "party": "H",
+      "county": "Troms",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem/nestleder stiftelsen Sør-Troms museum:\nmøtegodtgjørelse\nVaramedlem Festspillene i Nord-Norge; møtegodtgjørelse\n(Vil ikke stille i styremøter når jeg møter på Stortinget)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Har et ENK org nr 987387467"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Fast ansatt i Hyr Nordland AS - permisjon uten lønn ved oppmøte på\nStortinget"
+        }
+      ]
+    },
+    {
+      "name": "Eidsvoll, Sunniva Holmås",
+      "party": "SV",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Eikeland, Julia",
+      "party": "A",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Energiråd UNG, ungdomsrådet til Energirådet/Energihovedstaden\nStavanger (ulønna)\nStyremedlem i Stiftelsen for høyere økonomisk-administrativ\nutdanning og forskning i Rogaland (lønnet). Ba om å fratre da jeg ble\nvalgt til stortingsrepresentant."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Equinor ASA (ASA) – 172 aksjer\nNorsk Hydro ASA (ASA) – 200 aksjer\nYara International ASA (ASA) – 20 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Eilertsen, Kristian August",
+      "party": "FrP",
+      "county": "Troms",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Harstad Kulturhus AS. (godtgjørelse)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Har enkeltpersonforetaket Kristian Eilertsen Consulting som har hatt\nbegrenset aktivitet de siste årene. Ingen fremtidig oppdrag avtalt."
+        }
+      ]
+    },
+    {
+      "name": "Ellingsen, Cato Brunvand",
+      "party": "SV",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem bydelsutvalget i Søndre Nordstrand (godtgjørelse),\nVaramedlem styret i Solgården ferie- og helsesenter (godtgjørelse)."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Universitetslektor NTNU, institutt for psykisk helse, Nasjonalt\nkompetansemiljø om utviklingshemming (ulønnet permisjon i tiden\njeg er innkalt som vararepresentant på stortinget)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "En eierandel i Solgården SA/ Solgården ferie- og helsesenter."
+        }
+      ]
+    },
+    {
+      "name": "Elseth, Anette Carnarius",
+      "party": "FrP",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem kommunestyre Lillestrøm kommune, møtegodtgjørelse\nVara utvalg Lillestrøm kommune, møtegodtgjørelse dersom det er\nbehov for å møte.\nVara bedriftsforsamling Vinmonopolet, møtegodtgjørelse dersom det\ner behov for å møte.\nValgkomite Mira IKS, Lillestrøm parkering, møtegodtgjørelse når\nbehov for å møte."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Permisjon som politi ved Øst pd. Får ingen lønn eller godtgjørelse\nunder permisjon."
+        }
+      ]
+    },
+    {
+      "name": "Elvenes, Hårek",
+      "party": "H",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltmannsforetak: Hårek Elvenes Bedriftsrådgivning. Ingen\naktivitet og inntekter siden 2007. Forventes inntekt fra 01.08.2026"
+        }
+      ]
+    },
+    {
+      "name": "Engen-Helgheim, Jon",
+      "party": "FrP",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder av Drammen FrP, ulønnet.\nKommunestyrerepresentant Drammen Kommune, møtegodtgjørelse\nper møte\nMedlem av Hovedutvalg Drammen Kommune, møtegodtgjørelse per\nmøte"
+        }
+      ]
+    },
+    {
+      "name": "Eriksen, Andreas Bjelland",
+      "party": "A",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "2 aksjer i BrewDog, Public Limited Company."
+        }
+      ]
+    },
+    {
+      "name": "Eriksen, Even H.",
+      "party": "A",
+      "county": "Hedmark",
+      "roles": []
+    },
+    {
+      "name": "Ervik, May Helen Hetland",
+      "party": "FrP",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Rogaland fylkeskommune: Medlem i fylkestinget - godtgjørelse/årlig\ngodtgjørelse.\nEigersund kommune: Medlem av kommunestyret og varamedlem av\nformannskapet. Kun møtegodtgjørelse ved oppmøte."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Har permisjon fra min jobb i Eigersund kommune."
+        }
+      ]
+    },
+    {
+      "name": "Eskeland, Liv Kari",
+      "party": "H",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Paladio AS, ikkje honorar.\nStyreleiar/DL L.K.Eskeland AS, ikkje honorar.\nStyremedlem Sethaugen AS, ikkje honorar.\nStyremedlem Geopark Sunnhordland AS, ikkje honorar\nLeiar i nasjonal valkomite kulturskulerådet, mottek møtegodtgjerdsle\nog evt dekka reise\nStyremedlem Løvebakken Mållag (ikke honorar)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "L. K. Eskeland AS, ingen aktive oppdrag"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "L. K .Eskeland AS,  eigar\nPaladio AS,  eigar gjennom L. K. Eskeland AS. (Saman med\nHalleraker AS som eig )\nPaladio AS eig i følgjande selskap:\n- Sethaugen AS -  eigar\n- Dyrskar AS -  eigar\n- Rimsvarde AS  eigar\n- Skrog Eigedom AS  eigar\n- Totland Utvikling AS  eigar\n- Tysnes Sparebank 3738 aksjer (Slås sammen med Haugesund\nSparebank ila 2024)\nSparebanken Øst 1000 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Estil, Bente",
+      "party": "A",
+      "county": "Nord-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Varamedlem til styret i Trøndelag idrettskrets (møtegodtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Fagervik, Trine",
+      "party": "Sp",
+      "county": "Nordland",
+      "roles": []
+    },
+    {
+      "name": "Farahmand, Mahmoud",
+      "party": "H",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Bystyremedlem i Porsgrunn kommune\nStyremedlem Betanien Skien"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Inaktivt enkeltmannsforetak"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjeposter på under en prosent i flere norske selskaper.\n- Aker Horizons\n- Odfjell\n- DNO\n- Frontline\n- MPC\n- Shelf\n- Borr\n- Desert Controll\n- HydrogenPro\n- Odfjell Tech\n- Hoegh Autoliners\n- Siem Offshore\n- Cadeler\n- DOF group\n- Standard Supply\nDiverse fond"
+        }
+      ]
+    },
+    {
+      "name": "Fasteraune, Bengt",
+      "party": "Sp",
+      "county": "Oppland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyremedlem Dovre kommune (møtegodtgjørelse)\nStyremedlem i prosjekt \"villreinfangsten som verdensarv\"\n(møtegodtgjørelse)\nStyremedlem norsks villreinsenter (møtegodtgjørelse)\nStyreleder Nasjonalparkstyre for Dovrefjell/Sunndalsfjella\nnasjonalparkstyre (møtegodtgjørelse)"
+        }
+      ]
+    },
+    {
+      "name": "Fiksdal, Anne Marie",
+      "party": "FrP",
+      "county": "Møre og Romsdal",
+      "roles": []
+    },
+    {
+      "name": "Fiskaa, Ingrid",
+      "party": "SV",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Første vara til kommunestyret i Time kommune. Mottek ikkje\ngodtgjering.\nVara til styret for Arkeologisk museum ved Universitetet i Stavanger.\nMottek ikkje godtgjering."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "5 aksjar i Klassekampen AS. 1 aksje i Dag og Tid AS."
+        }
+      ]
+    },
+    {
+      "name": "Foshaug, Nils-Ole",
+      "party": "A",
+      "county": "Troms",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Gammelgårdshaugvegen Skogsveivedlikeholdsforening,\nulønnet\nStyreleder i dansekompaniet Kartellet AS, ulønnet\nStyremedlem i Midtre Målselv Bestandsplanområde, ulønnet\nStyremedlem Villaksen i Målselvvassdraget, ulønnet\nLeder Troms Arbeiderparti, ulønnet"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eier  av aksjene i dansekompaniet Kartellet AS"
+        }
+      ]
+    },
+    {
+      "name": "Fredheim, Lasse Anfinsen",
+      "party": "H",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem Rogaland Fylkesting - lønnet\nMedlem Rogaland Fylkesutvalg - lønnet\nLeder, Samferdselsutvalget Rogaland Fylkeskommune - lønnet"
+        }
+      ]
+    },
+    {
+      "name": "Fredlund, Anne Lise Gjerstad",
+      "party": "SV",
+      "county": "Oppland",
+      "roles": []
+    },
+    {
+      "name": "Friskilæ, Roy-Håkon Skårvik",
+      "party": "MDG",
+      "county": "Finnmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Ulønnet styremedlem Palestina komiteen i Finnmark."
+        }
+      ]
+    },
+    {
+      "name": "Frølich, Peter",
+      "party": "H",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Kontrakt med Universitetsforlaget inngått 22.4.15 om å skrive\nlærebok i kontraktsrett. Royalty av salg: 13 pst.\nAvtale med Cappellen Damm om utgivelse av boken \"Om krigen\nkommer\" med medforfatter Birger Emmanuelsen, inngått 2026.\nRoyalty av salg: 13%"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjer i:\nAnthope AS, 33 pst. - 132 av 400 aksjer (B-aksjer uten stemmerett på\ngeneralforsamling), som eier aksjer i følgende selskaper:\nSPAREBANK 1 SMN, 1440 aksjer.\nSparebanken Møre, 2560 aksjer.\nAjourført pr. 30. oktober 2026 15\nRogaland Sparebank, 1900 aksjer.\nSpareBank 1 Sør-Norge, 1475 aksjer.\nSPAREBANKEN NORGE, 1500 aksjer.\nSPAREBANKEN ØST, 3460 aksjer.\nDI Norge II (aksjefond) 21,5584 andeler.\nFond (for mine to barn):\nDNB Barnefond A\nUtenlandske aksjer:\nSafetyWing (amerikansk unotert selskap som formidler forsikringer til\nfreelancere). Antall aksjer: 2 093 873 (verdsatt av Carta Valuations\nLLC til 0.04$ per aksje, per 31.12.25)\nFond (for mine to barn):\nDNB Barnefond A\nUtenlandske aksjer:\nSafetyWing (amerikansk unotert selskap som formidler forsikringer til\nfreelancere). Antall aksjer: 2 093 873 (verdsatt av Carta Valuations\nLLC til 0.04$ per aksje, per 31.12.25)\nNote 1:\nAnthope gjorde ila 2026 salg av følgende aksjer (listes her siden\nskjemaet for enkelttransaksjoner ikke ser ut til å ha direkte relevans):\nEquinor ASA, 2931 aksjer.\nNorsk Hydro ASA, 4551 aksjer.\nYara International ASA, 680 aksjer.\nNote 2:\nJeg ble tvangsinnløst som aksjonær i REC Silicon sommeren 2026\n(Antall:"
+        }
+      ]
+    },
+    {
+      "name": "Gharahkhani, Masud",
+      "party": "A",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Inntekter fra bokutgivelse «Norge i mitt hjerte: fra flyktning til\nstortingspresident» 2022, Aschehoug Forlag."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Orkla ASA (Eierandel 100 aksjer)"
+        }
+      ]
+    },
+    {
+      "name": "Gihlemoen, Truls",
+      "party": "FrP",
+      "county": "Hedmark",
+      "roles": []
+    },
+    {
+      "name": "Giske, Trond",
+      "party": "A",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i AØF, driftsorganisasjonen for Folkets Hus i Trondheim.\nHonoreres etterskuddsvis i henhold til årsmøtevedtak."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltpersonforetak org. nr. 915704514.\nNoe inntekt fra bokutgivelse: \"Verdt å sloss for\" 2023, Kagge Forlag\nAS."
+        }
+      ]
+    },
+    {
+      "name": "Gjerde, Kristin Løvaas",
+      "party": "FrP",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Folkevalgte verv i Drammen kommune:\nKommunestyret, Formannskapet, Hovedutvalg for tekniske tjenester,\nHovedutvalg for oppvekst, Ungdomsrådet - alle møtegodtgjørelse.\nFolkevalgte verv i Buskerud fylkeskommune:\nFylkestinget, Fylkesutvalget, Hovedutvalg for opplæring, Leder av\nhovedutvalg for kultur, idrett og folkehelse (permisjon innvilget mens\njeg møter på Stortinget) - alle er fast godtgjort."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Frikjøpt politiker i Buskerud fylkeskommune"
+        }
+      ]
+    },
+    {
+      "name": "Gorseth, Vebjørn",
+      "party": "A",
+      "county": "Nord-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Stiftelsen Justismuseet - Nasjonalt museum for politi,\nrettsvesen og kriminalomsorg.\n(Lønnet verv)."
+        }
+      ]
+    },
+    {
+      "name": "Gram, Bjørn Arild",
+      "party": "Sp",
+      "county": "Nord-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "1. nestleder i Senterpartiet. Årlig godtgjøring."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Gårdbruker Steinkjer kommune (GNR 189, BNR 2)."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "31 aksjer i AS Nord-Trøndelag\n3 aksjer i AS Bøndernes Hus\nAjourført pr. 30. oktober 2026 17\nMedlem/Andelseier i Felleskjøpet, Allskog, og Steinkjer kornsilo i\nforbindelse med gårdsdrifta (ulønnet)."
+        }
+      ]
+    },
+    {
+      "name": "Grande, Hilde",
+      "party": "FrP",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Daglig leder Hjartland AS (Ikke aktivt)"
+        }
+      ]
+    },
+    {
+      "name": "Gruer, June Trengereid",
+      "party": "A",
+      "county": "Hordaland",
+      "roles": []
+    },
+    {
+      "name": "Grøthe, Maren",
+      "party": "Sp",
+      "county": "Sør-Trøndelag",
+      "roles": []
+    },
+    {
+      "name": "Gulati, Himanshu",
+      "party": "FrP",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i My Nordic Travel AS (ikke-lønnet verv).\nStyreleder i Alternative Development Organisation (ikke-lønnet verv).\nStyremedlem i stiftelsen India Center (ikke-lønnet verv).\nNestleder i World Foundation for Peace and Sustainibility (ikke-\nlønnet verv)\nMedinitativtaker/cofounder i Pharmint (ikke-lønnet verv)\nAdvisory board member of WERT-international (ikke-lønnet verv)\nStyremedlem i The Northern Lights AS (ikke-lønnet verv)\nStyremedlem i norsk-kurdisk handelskammer (ikke-lønnet verv)\nStyremedlem i Atlanterhavskomiteen (ikke-lønnet verv)\nStyremedlem i norsk-sveitsisk handelskammer (ikke-lønnet verv)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Jeg eier  av aksjene i My Nordic Travel AS."
+        }
+      ]
+    },
+    {
+      "name": "Gulli, Georg",
+      "party": "KrF",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fylkestingsrepresentant ved Agder Fylkeskommune (lønnet verv)\nVararepresentant i Kraftfylka (lønna verv)\nVararepresentant for kommunestyret i Lindesnes (lønnet verv)"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Deltidsansatt ved Kiwi Spangereid\nAvløser ved Gullis Gartneri"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Kongsberg gruppen -17 798 - 55 stk\nAker Horizons -  - 68 stk\nEquinor - 1254 - 5 stk\nmowi -  . 1 stk"
+        }
+      ]
+    },
+    {
+      "name": "Gunaratnam, Kamzy",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Nestleder, Oslo Arbeiderparti (Ulønnet)\nStyremedlem, Stiftelsen Vålerenga Fotball Samfunn (Ulønnet)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Forfatter: \"Din kamp er min kamp\" Bok-og lydbok (2021-2022)\nMedforfatter: \"Norsk nok\" (2022)\nForfatteroppdrag for Deichman Lambertseter (September 2021)\nForfatteroppdrag for Sakprosafestivalen (Oktober 2021)\nForfatteroppdrag for Sakprosafestivalen Kontrast (Mai 2022)\nForfatteroppdrag, OsloMet (2022)"
+        }
+      ]
+    },
+    {
+      "name": "Gunnufsen, Amalie",
+      "party": "H",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem, Kristiansand internasjonale barnefilmfestival - (lønnet)"
+        }
+      ]
+    },
+    {
+      "name": "Gustavsen, Liv",
+      "party": "FrP",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyrerepresentant FrP 2015-2027, Nes Kommune Akershus\n(møtegodtgjørelse).\nMedlem av Kontrollutvalget 2023-2027, Nes Kommune Akershus\n(møtegodtgjørelse).\nStyreleder Årnes Vannverk, 2023- Årlig godtgjørelse 50.000,-. +\nmøtegodtgjørelse 2000,- per møte (ca. 10 møter per år)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Innehaver av enkeltmannsforetaket Paperlife, org.nr. 995.949.563"
+        }
+      ]
+    },
+    {
+      "name": "Hagenborg, Anne",
+      "party": "A",
+      "county": "Oppland",
+      "roles": []
+    },
+    {
+      "name": "Hager, Erik",
+      "party": "A",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Ca  eiendeler i Hedmark Alkemiske Destilleri AS"
+        }
+      ]
+    },
+    {
+      "name": "Hagerup, Margret",
+      "party": "H",
+      "county": "Rogaland",
+      "roles": []
+    },
+    {
+      "name": "Haltbrekken, Lars",
+      "party": "SV",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Sameiet Danmarksgate 25 (Eierseksjonssameie) Ingen\ngodtgjørelse."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Har et enkeltmannsforetak som ikke er aktivt."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "10 aksjer i Klima2020"
+        }
+      ]
+    },
+    {
+      "name": "Hammer, Marthe",
+      "party": "SV",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Høst 2025: Søkte om fritak for verv som jeg hadde i kraft av å være\ngruppeleder i Vestland fylke når jeg ble valgt inn på Stortinget\n(september 2025), men fylkestinget valgte nok først noen nye personer\nfor følgende verv først i desember 2025: Styremedlem og nestleder i\nStiftelsen Bergen Kjøtt Org nr 922 635 471 (honorar), Foreininga for\nFjordvegen Riksveg 13, Org nr 987 550 341 (ikke honorar) og leder i\nVerdensarvrådet Bryggen (ikke honorar). I 2026 har jeg ikke hatt verv\nher.\nJeg var medlem av hovedstyret til Syklistenes Landsforening 964 122\n105 frem til landsmøte høsten 2025 (honorar - men siden jeg ikke\nmøtte ble aldri noe utbetalt). Jeg har sittet i styret i Syklistene Bergen\nog omeng Org nr. 997 705 319 frem til årsmøtet 2026, men på grunn\nav at ny styresammensetning ikke enda har blitt godkjent pga en\nmanglende signatur i registermeldingen til Brønnøysundregisteret så\nstår mitt navn der fortsatt."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "KLASSEKAMPEN AS - 925 350 605 - 1 aksje til verdi av kr 1\n215,72\nPALESTINABUTIKKEN I BERGEN AS - 919 672 137 2 aksjer til\nen verdi av kr 5 479,48"
+        }
+      ]
+    },
+    {
+      "name": "Hanssen, Mathias Willassen",
+      "party": "H",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder i utvalg for oppvekst og opplæring i Tønsberg kommune, lønnet\nMedlem av kommunestyret i Tønsberg kommune, lønnet"
+        }
+      ]
+    },
+    {
+      "name": "Hauan, Anne Grethe",
+      "party": "FrP",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Varamedlem i Holtanveiens Borettslag II, Horten. (Ingen\ngodtgjerdsle)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltpersonforetak Kurs Akademiet Ans, Org.nr.: 982058066\n(Sovende, ingen aktivitet)."
+        }
+      ]
+    },
+    {
+      "name": "Haug, Kristoffer Robin",
+      "party": "MDG",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltpersonforetak: Konsulent Kristoffer Robin Haug"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Rådgiver i Norges forskningsråd"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "IPS-sparing i Storebrand"
+        }
+      ]
+    },
+    {
+      "name": "Haugen, Line Marlene",
+      "party": "FrP",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "- Gruppeleder for FrP sin kommunestyregruppe, Notodden kommune.\nFast årlig godtgjøring.\n- Fast medlem av formannskapet, Notodden kommune\n(møtegodtgjørelse).\n- Fast medlem av Notodden kommunestyre (møtegodtgjørelse).\n- Fast medlem av partssammensatt utvalg i Notodden kommune\n(møtegodtgjørelse).\n- Fast medlem av Kongsbergregionen IPR (møtegodtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Heen, Aleksander Øren",
+      "party": "Sp",
+      "county": "Sogn og Fjordane",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem Vestland fylkesting og fylkesutval (permisjon)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Eget foretak innen bygg: Byggmester Aleksander Heen. Org. nr. 995\n639 777. Pt. inaktivt (nov 2023)."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Norsk Hydro ASA, 66 aksjer."
+        }
+      ]
+    },
+    {
+      "name": "Heggem, Guri",
+      "party": "Sp",
+      "county": "Sør-Trøndelag",
+      "roles": []
+    },
+    {
+      "name": "Helleland, Trond",
+      "party": "H",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Parlamentarisk nestleder i Høyres stortingsgruppe (godtgjørelse)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Sundrevegen 86 as, 3570 Ål\nStyreleder og aksjonær () (forretningsbygg arvet av min mor)"
+        }
+      ]
+    },
+    {
+      "name": "Henriksen, Lars Lønberg",
+      "party": "MDG",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Gruppeleder MDG kommunestyret i Horten- Får godtgjørelse\nFormannskapet i Horten kommune- Får godtgjørelse\nHovedutvalgsleder HKMK Horten Kommune- Får godtgjørelse\nStyremedlem Traktern A/S- Ikke betalt"
+        }
+      ]
+    },
+    {
+      "name": "Henriksen, Mats",
+      "party": "FrP",
+      "county": "Nord-Trøndelag",
+      "roles": []
+    },
+    {
+      "name": "Hermstad, Arild",
+      "party": "MDG",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Bystyrerepresentant i Oslo, innvalgt i 2023. Søkt og innvilget fritak ut\nperioden (dvs til september 2027) fra og med oktober 2023."
+        }
+      ]
+    },
+    {
+      "name": "Hjemdal, Silje",
+      "party": "FrP",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Vestland FrP (ikke lønnet)."
+        }
+      ]
+    },
+    {
+      "name": "Hogstad, Jan Erik",
+      "party": "FrP",
+      "county": "Vest-Agder",
+      "roles": []
+    },
+    {
+      "name": "Hoksrud, Bård",
+      "party": "FrP",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem Bamble Kommunestyre 2023-2027 (møtegodtgjørelse)\n2. Varamedlem til Bamble Formannskap 2023-2027\n(møtegodtgjørelse) Vedtatt å gå fra 1 varamedlem til 2 varamedlem i\nforbindelse med nyvalg den 08.09.25)\nMedlem i Generalforsamlingen i Grenland Brann og redning\n(møtegodtgjørelse)\nLeder av stiftelsen for utleieboliger i Bamble (Møtegodtgjørelse)\nSiste vara til utvalg for Velferd 2023-2027 (møtegodtgjørelse)\nPresident i 1000 klubben fra September 2024 (ulønnet)\nVaramedlem Stortingets utvalg for rettferdsvederlag (godtgjøring)\nParlamentarisk 2. nestleder Fremskrittspartiets stortingsgruppe (lønn)\nfra 12.05.21-\nLeder Transport- og kommunikasjonskomiteen (Godgjørelse/lønn)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Hoksrud Consulting.\nDeltakelse \"4-stjerners middag\", TVNorge 2016 (Honorar)\nDeltakelse \"I lomma på Silje\", TV3 2020 (Honorar)\nDeltakelse \"4-stjerners middag\", TVNorge 2020 (Honorar)"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Vært sommer hjelper på Trosby Underbar (Trosby superen AS\nBamble) hjulpet til i sommer og har mottatt 13 930 kr i lønn\n(selvangivelsen 2025). Av dette er så langt 5000kr overført til Mental\nHelse Bamble i September 2025."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjer i Skagerrak Sparebank 202 andeler (EK-Bevis)\nAksjefond Danske Bank Di Horisont,(månedlig sparing)\nAksjefond Danske Bank (Flexifond (måndlig sparing)"
+        }
+      ]
+    },
+    {
+      "name": "Holte, Beathe Beckstrøm",
+      "party": "FrP",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av kontrollutvalget i Lillesand kommune (møtegodtgjørelse)"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Daglig leder, arbeidsgiver Norges Blindeforbund (100 % stilling)\nFunksjonsassistent på tilkalling, Ecura\nAjourført pr. 30. oktober 2026 61"
+        }
+      ]
+    },
+    {
+      "name": "Hop, Ruth Mariann",
+      "party": "A",
+      "county": "Rogaland",
+      "roles": []
+    },
+    {
+      "name": "Horn, Sander Delp",
+      "party": "A",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "-Leder for representantskapet i Salten kommunerevisjon\n(godtgjørelse).\n-Medlem representantskapet i Salten kontrollutvalgservice\n(godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Hovda, Audun Hammer",
+      "party": "SV",
+      "county": "Buskerud",
+      "roles": []
+    },
+    {
+      "name": "Hussaini, Mani",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Vara til kommunestyre i Nordre Follo kommune (lønnet ved\ninnkalling og oppmøte).\nStyremedlem i Kloden AS (lønnet).\nStyremedlem Akershus AP (ulønnet).\nNestleder i samarbeidsutvalget Hellerasten barnehage (ulønnet).\nMedlem i rådet i Helsingforskomiteens (ulønnet)\nVara til styre i PRIO (lønnet)"
+        }
+      ]
+    },
+    {
+      "name": "Hussein, Marian",
+      "party": "SV",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Håland, Christoffer Emberland",
+      "party": "A",
+      "county": "Rogaland",
+      "roles": []
+    },
+    {
+      "name": "Høyer-Berntsen, Mirell",
+      "party": "SV",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Permisjon fra 100 % stilling som rådgiver i Grimstad kommune.\nTidsubegrenset fritak fra stilling som gruppeleder og\nfylkestingsrepresentant i Agder fylkeskommune."
+        }
+      ]
+    },
+    {
+      "name": "Indgaard, Oda",
+      "party": "MDG",
+      "county": "Nord-Trøndelag",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Navn\nRemarkable Employee Share Holding i AS\nOrg nr 924 463 120\nAksjetype: B-aksjer\nAnt aksjer 129\nAndel:"
+        }
+      ]
+    },
+    {
+      "name": "Jacobsen, Frode",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Løkkevikfjellet vann- og avløpslag SA, org. nr.\n926105000 (ingen godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Jaffery, Lubna Boby",
+      "party": "A",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Hageveien Invest AS - ulønnet."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Hageveien Invest AS - org.nr. 920 135 560. Selskapet eies  av\nTorgeir Micaelsen. Micaelsen er også styrets leder. Selskapets\ntilgjengelige midler er plassert som bankinnskudd, rentefond og\nrenteplasseringer med forhåndsavtalt rente.\nSelskapet eier videre aksjer i følgende unoterte aksjeselskaper:\nNap Norway Invest 1 AS - org.nr. 921 222 483. Antall aksjer: 18, som\ntilsvarer  av totalt antall aksjer i selskapet.\nHotelonline AS - org.nr. 889 615 702. Antall aksjer: 4 388, som\ntilsvarer  av totalt antall aksjer i selskapet.\nNyby AS - org.nr. 916 333 994. Antall aksjer: 527, som tilsvarer\n av totalt antall aksjer i selskapet.\nCxs Growth AS - org.nr. 917 635 293. Antall aksjer: 1 159, som\ntilsvarer  av totalt antall aksjer i selskapet."
+        }
+      ]
+    },
+    {
+      "name": "Jakobsen, Benjamin",
+      "party": "A",
+      "county": "Hordaland",
+      "roles": []
+    },
+    {
+      "name": "Jensen, Siren Julianne",
+      "party": "MDG",
+      "county": "Finnmark",
+      "roles": []
+    },
+    {
+      "name": "Johnsen, Tor André",
+      "party": "FrP",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjer i Global Infrastruktur AS, Danefjellveien 1 og i US\nOpportunities\nHafjell Helse- og Handelsbygg"
+        }
+      ]
+    },
+    {
+      "name": "Jonsterhaug, Martin Virkesdal",
+      "party": "FrP",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem, Stiftelsen Seilskipet Statsraad Lehmkuhl. Mottar ikke\ngodtgjørelse, men har anledning til å seile på tokt i kraft av rollen som\nstyremedlem."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Torghatten Aqua AS: 300 aksjer\nStack By Me AS: 4 500 aksjer\nBagid AS: 500 aksjer\nLildog AS: 50 000 aksjer\nNordic Semiconductor: 4000 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Jørgensen, Geir",
+      "party": "R",
+      "county": "Nordland",
+      "roles": []
+    },
+    {
+      "name": "Kapur, Mudassar",
+      "party": "H",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Karlsen, Kamilla Bjerkholt",
+      "party": "A",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Museumssenteret i Hordaland (møtegodtgjørelse)."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Feddie Ocean Distillery AS 25 000 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Karlsen, Mette-Gro",
+      "party": "A",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av kommunestyret, Moss kommune, møtegodtgjørelse.\nMedlem av hovedutvalg for helse og mestring, Moss kommune,\nmøtegodtgjørelse.\nVaramedlem formannskap, Moss kommune, møtegodtgjørelse.\nVaramedlem hovedutvalg for plan, bygg og teknisk, Moss kommune,\nmøtegodtgjørelse.\nPlasstillitsvalgt for Fagforbundet, Kirkens bymisjon, Virksomhet\nFamilieforum Øst, ikke godtgjørelse."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Koordinator i Home-Start, Stiftelsen Kirkens Bymisjon\nHovedtillitsvalgt (Fagforbundet) Region øst, Stiftelsen Kirkens\nBymisjon"
+        }
+      ]
+    },
+    {
+      "name": "Karlsen, Tom Einar",
+      "party": "A",
+      "county": "Troms",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av Harstad Kommunestyre, Formannskapet og\npartssammensatt utvalg i Harstad Kommune - Ulønnet, mottar\nmøtegodtgjørelse i henhold til reglement:\nhttps://www.harstad.kommune.no/politisk-reglement.4880506-\n177640.html\nIkke tiltrådt medlem av Troms Fylkesting - Fritak / Permisjon som\nfølge av innkalling til Stortinget. Ikke lønnet.\nVara til styret - Hålogaland Ressursselskap IKS - ORG.NR.\nAjourført pr. 30. oktober 2026 25\n959019126 - møtegodtgjørelse\nMedlem av valgkomite - Hålogaland Kraft Holding AS - 925756563 -\nUlønnet"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Ulønnet permisjon fra Stilling som Organisasjonsarbeider - 100 %\nstilling - Fellesforbundet Nordre Nordland og Sør-Troms"
+        }
+      ]
+    },
+    {
+      "name": "Kierulf, Henrik Gottfries",
+      "party": "H",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Er til daglig frikjøpt politiker på heltid i Trøndelag fylkesting.\nStyremedlem Vangslia Alpinklubb. Årlig godtgjørelse på 5000 kroner.\nStyremedlem Vitensenteret i Trondheim. Årlig godtgjørelse på 5000\nkroner.\nMedlem Sparebankstiftelsen SMN sin generalforsamling. Årlig\ngodtgjørelse på 5000 kroner.\nStyremedlem Ungt Entreprenørskap Trøndelag. Ingen godtgjørelse."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Nordic Semiconductor 1045 aksjer\nDNB Bank 61 aksjer\nMPC Container Ships 1604 aksjer\nMowi 101 aksjer\nSubsea 7 93 aksjer\nLogistea B 513 aksjer\nLogistea A 38 aksjer\nLerøy Seafood Group 400 aksjer\nPioneer Property Group 100 aksjer\nCavendish Hydrogen 9 aksjer\nAker BP 23 aksjer\n5th Planet Games 4000 aksjer\nKMC Properties 10 aksjer\nNEL 425 aksjer\nOKEA 550 aksjer\nSalMar 126 aksjer\nTelenor 75 aksjer\nNVIDIA 182 aksjer\nMeta Platforms A 20 aksjer\nCardinal Health 20 aksjer\nFrontline 220 aksjer\nJohnson & Johnson 14 aksjer\nCoinbase Global A 4 aksjer\nSportradar Group 100 aksjer\nApple 1 aksje\nGameStop 92 aksjer\nTesla 3 aksjer\nAirbnb A 2 aksjer\nRana Gruber 150 aksjer\nMåsøval 232 aksjer\nNorse Atlantic 2100 aksjer\nNovavax 9 aksjer\nBlueye Robotics AS 500 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Kjølmoen, Per Vidar",
+      "party": "A",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "250 aksjer i DOF ASA\n89 aksjer i Protector forsikring\n862 grunnfondsbevis i Sunndal sparebank\n200 aksjer i Storebrand ASA\n123 aksjer i BYDDY\n600 aksjer i Odfjell ser. A\n630 aksjer i Atrium Ljungberg AB ser. B\n73 aksjer i Salmar ASA\n1500 aksjer i Public Property Invest ASA\n250 aksjer i Fabege AB\n300 aksjer i Diös fastigheter AB\n1190 aksjer i Aurora Eiendom AS\n75 aksjer i Hemnet AB\n182 aksjer i Envipco Holding N.V\n40 aksjer i Novo Nordisk B\n90 aksjer i Medistim\n50 aksjer i Golar LNG\n137 Borregaard ASA\nDeler av dette er bundet pensjonssparing"
+        }
+      ]
+    },
+    {
+      "name": "Kjøndal, Kjerstin Lianes",
+      "party": "KrF",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Forvaltningsrevisor i SK-revisjon."
+        }
+      ]
+    },
+    {
+      "name": "Kolbjørnsen, Morten",
+      "party": "FrP",
+      "county": "Hedmark",
+      "roles": []
+    },
+    {
+      "name": "Kollbotn, Terje",
+      "party": "R",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Ullensvang kommune, kommunestyre- og formannskapsmedlem.\nMøtegodtgjørelse.\nVestland Fylke, fylkestingsrepresentant og utvalgsmedlem.\nAjourført pr. 30. oktober 2026 63\nMøtegodtgjørelse.\nStyremedlem LO Indre Hardanger. Møtegodtgjørelse.\nStyremedlem Raudt. Møtegodtgjørelse."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Engasjement (deltid) Kraftmuseet i Tyssedal."
+        }
+      ]
+    },
+    {
+      "name": "Kollstrand, Amalie",
+      "party": "H",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Fynboer AS (godtgjørelse).\nStyremedlem Arendal boligutleie (ulønnet).\nVaramedlem styret Jobbklar AS med datterselskaper, ikke møtt i\nstyret (ulønnet)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Legevirksomhet, Gjerstad kommune.\nLegevirksomhet Legevakt i Arendal.\nGjennom Fynboer AS"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Lege for Fynboer AS - hovedjobb.\nLege Overgrepsmottaket i Agder - bijobb.\nFolkevalgt Arendal kommune - bijobb."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Fynboer AS ()\nNorse Atlantic ASA (mindre enn )\nAgdir Drift AS (mindre enn )\nWilhelm Wilhelmsen Holding ASA (mindre enn )\nNorske Skog ASA (mindre enn )\nArendals Fossekompani (mindre enn )"
+        }
+      ]
+    },
+    {
+      "name": "Kristiansen, Jørgen H.",
+      "party": "KrF",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem: Kristiansand kommunale pensjonskasse (orgnr: 840 046\n672). Godtgjørelse.\nStyremedlem: Trygve Tellefsens Legat Stiftelse (orgnr: 938 517 614)\nGodtgjørelse."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Ticker Oslo Børs: NRC. Selskapsnavn: NRC Group ASA. Antall\naksjer 1200\nTicker Oslo Børs: SB1NO. Selskapsnavn: SpareBank1 Sør Norge AS.\nAntall aksjer 1631.\nTicker Oslo Børs: SBNOR. Selskapsnavn: Sparebanken Norge. Antall\naksjer 133\nSelskapsnavn: Scatec ASA. Antall aksjer 70 (min 16 år gamle sønn\nsom eier de via hans ASK som står i mitt navn)"
+        }
+      ]
+    },
+    {
+      "name": "Kristjánsson, Mímir",
+      "party": "R",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Innehaver, enkeltmannsforetaket Mímir Kristjánsson,\norganisasjonsnummer 896 218 972.\nAjourført pr. 30. oktober 2026 27\nOppdrag under 50.000 kroner:\nEn rekke mindre oppdrag innenfor litteraturformidling, deltakelse i\nulike programmer, podkast og skribentvirksomhet, samtlige honorert\nunder 50.000 kroner. Pengene betales inn i partiskatt til Rødt.\nOppdrag over 50.000 kroner:\nOppdrag samlet hos Norsk Forfattersentrum overstiger 50.000 kroner i\n2021, 2022, 2023 og 2024. Det dreier seg om en rekke mindre\noppdrag innenfor litteraturformidling hos ulike oppdragsgivere som\nbibliotek og litteraturfestivaler - men fakturert gjennom Norsk\nForfattersentrum. Mottar i forbindelse med slike bokoppdrag Norsk\nForfattersentrums minstesats. Pengene betales inn i partiskatt til Rødt,\nmen ikke for oppdrag i forbindelse med boka \"Pabbi\".\nBokutgivelse: «Jon Michelet. En folkets helt», Kagge Forlag, 2021.\nRoyalties overstiger 50 000 kroner. Boka ble skrevet før jeg kom inn\npå Stortinget, men utgitt etter valget i 2021.\nBokutgivelse: \"Mamma er trygda\", Kagge forlag, 2019. Boka ble\nplukket opp av Hele Rogaland Leser, som utløste en royalties-\nutbetaling våren 2023 på 50.000 kroner eller mer. I tillegg kom en"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Deltakelse i Sommer i P2, utbetalt som lønn fra NRK. 12.000 kroner\nbrutto, pengene etter skatt betales videre som partiskatt til Rødt.\nFast gjest i podkasten \"Mørch og VM\" under verdensmesterskapet i\nfotball. Honorar: 30.000 kroner, som blir donert videre til\norganisasjonen Blå Kors."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eier 1 aksje i foreningen Klassekampens venner (Klassekampen AS).\nEier 1 aksje i foreningen Vikings venner AS."
+        }
+      ]
+    },
+    {
+      "name": "Krokeide, Finn",
+      "party": "FrP",
+      "county": "Oppland",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "International Consolidated Airlines Group SA. 2200 aksjer. Notert på\nbørsen i London."
+        }
+      ]
+    },
+    {
+      "name": "Kroken, Marie Kristine",
+      "party": "MDG",
+      "county": "Sogn og Fjordane",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyrerpresentant i Stad kommune godtgjerdsle\nMeldem av Samfunnsutvalet i Stad kommune godtgjerdsle\nMedlem av Stad eldreråd godtgjerdsle\nStyremedlem i N.K.S Vestland Sogn og Fjordane (Norske kvinners\nsanitetsforening) godtgjerdsle\nStyremedlem Movia godtgjerdsle\nMedlem representantskapen i IUA Nordfjord ikkje lønna\nSkrivar i Totland sokneråd ikkje lønna\nStyremedlem Bryggja Skule AS ikkje lønna\nStyreleiar Bryggja Grendahus ikkje lønna\nStyremedlem Naturvernforbundet i Eid ikkje lønna\nVaramedlem i Fjordane Friluftsråd godtgjerdsle\nVaramedlem i Eid idrettspark AS ikkje lønna\nVaramedlem til representantskapen til NoMil AS ikkje lønna"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Deltidsstilling som assistent i Fjordly barnehage"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Citybox AS 120 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Krutå, Rune",
+      "party": "A",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Varaordfører i Vefsn kommune (godtgjørelse).\nStyret Nordland Ap (ulønnet).\nLeder Vefsn Ap (ulønnet).\nStyreleder Mosjøen og Omegn Næringsselskap KF (ulønnet)"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Ansatt ved Alcoa Mosjøen 100%. Frikjøpt 60 % som varaordfører og\n15 % som gruppeleder i Ap."
+        }
+      ]
+    },
+    {
+      "name": "Laabak, Bjørnar",
+      "party": "FrP",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Bystyremedlem Fredrikstad kommune, møtegodtgjørelse.\nStyremedlem Ytre Hvaler nasjonalpark, møtegodtgjørelse.\nAjourført pr. 30. oktober 2026 31"
+        }
+      ]
+    },
+    {
+      "name": "Lahlum, Hans Olav",
+      "party": "SV",
+      "county": "Oppland",
+      "roles": []
+    },
+    {
+      "name": "Langfeldt, Morgan",
+      "party": "FrP",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Nestleder Lier FrP (ikke godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Larsen, Bjørn",
+      "party": "FrP",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Vefsn kommunestyre, representant, møtegodtgjørelse.\nNordland Fylkeskommune, representant, møtegodtgjørelse."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltmannsforetak: Stall Ekvipasjen, 980 988 767\nAnsvarlig selskap: Hanssen & Larsen Import ANS, 965 086 102"
+        }
+      ]
+    },
+    {
+      "name": "Larsen, Erlend",
+      "party": "H",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Krossbakkmyri Hytteforening - ulønnet"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "E-forlag - forlag, eneeier"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "E-forlag, forlag (aktivt, utgir egne og andres bøker)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "E-forlag, 100 pst.\nFrontline 416 aksjer\nKongsberg Automotive 100 aksjer\nKOG 100 aksjer\nKongsberg Maritime 100 aksjer (som følge av oppsplitting av KOG)\nAjourført pr. 30. oktober 2026 29\nNorske Skogindustri 7000 aksjer (vet ikke hvorfor den dukket opp,\nhar ikke kjøpt)\nNorwegian Air Shutle 5 aksjer\nOtello Corporation 820 aksjer\nSolstad maritime 508\nTechstep 110 aksjer\nTelenor 150 aksjer\nVestfold flyplassinvest 12 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Liane, Alexander",
+      "party": "SV",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder av Fagforbundet Kristiansand. Dette er lønnet.\nStyreleder i Fagforeningshuset Kongensgate24 AS. Dette er ulønnet."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Leder av Fagforbundet Kristiansand."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eier 15 aksjer i Norsk Hydro"
+        }
+      ]
+    },
+    {
+      "name": "Lie, Kathy",
+      "party": "SV",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Lier SV, ikke lønnet\nVararepresentant til Lier kommunestyre, møtegodtgjørelse ved\noppmøte."
+        }
+      ]
+    },
+    {
+      "name": "Lien, Geir Inge",
+      "party": "Sp",
+      "county": "Møre og Romsdal",
+      "roles": []
+    },
+    {
+      "name": "Liland, Ingrid",
+      "party": "MDG",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Lillestøl, Stig Even",
+      "party": "FrP",
+      "county": "Sogn og Fjordane",
+      "roles": []
+    },
+    {
+      "name": "Limi, Hans Andreas",
+      "party": "FrP",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Parlamentarisk nestleder i FrP (lønnet)."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "EC-Play AS 223000 aksjer\nRec Silicon ASA 31 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Linge, Tobias Hangaard",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem, Folkets Hus Sandvika AS, ulønnet"
+        }
+      ]
+    },
+    {
+      "name": "Linnes, Cathrine",
+      "party": "FrP",
+      "county": "Østfold",
+      "roles": []
+    },
+    {
+      "name": "Linnestad, Anne Kristine",
+      "party": "H",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Futuragruppen AS, Eid av de fleste kommunene i Follo i\ntillegg til frivillige organisasjoner (styrehonorar).\nI styrehonoraret for Futuragruppen AS, inngår styremedlem i Follo\nFutura AS, Opplæringskontoret i Follo AS og Brekkeveien 43 AS\nAlle disse er datterselskaper i Futuragruppen AS\nStyremedlem Felleslegatet for Kråkstad Sokn (ikke honorar).\nStyremedlem EMPO AS, heleid av Nordre Follo kommune\n(styrehonorar) - avsluttet 29.09.26."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Nordre Follo kommune, ansatt fra 01.08.20, permisjon uten lønn."
+        }
+      ]
+    },
+    {
+      "name": "Listhaug, Sylvi",
+      "party": "FrP",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Parlamentarisk leder FrPs Stortingsgruppe (mottar godtgjørelse)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Gav i oktober 2018 ut boken \"Der andre tier\" på Kagge Forlag"
+        }
+      ]
+    },
+    {
+      "name": "Lossius, Jorunn Gleditsch",
+      "party": "KrF",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder av representantskapet i LiBiR IKS - møtegodtgjørelse\nLeder i KUAS - Kokkenes utvikling AS - sovende selskap, ikke\nmottatt honorar eller møtegodtgjørelse"
+        }
+      ]
+    },
+    {
+      "name": "Lunde, Heidi Nordby",
+      "party": "H",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem, Stiftelsen Liberalt Forskningsinstitutt (LIFO), ulønnet.\nLeder, Europabevegelsen, ulønnet."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Har registrert enkeltpersonsforetak, uten omsetning de siste år.\nHovedsakelig foredrag og konferansier-oppdrag. Ikke hatt oppdrag fra\nsamme oppdragsgiver på mer enn 50 000 kr innenfor et kalenderår."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eier 41 aksjer i Kitron."
+        }
+      ]
+    },
+    {
+      "name": "Lyngstad, Lavrans",
+      "party": "A",
+      "county": "Finnmark",
+      "roles": [
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Fast ansatt som resepsjonist ved Scandic Alta\nArbeidsgiver er Scandic Alta"
+        }
+      ]
+    },
+    {
+      "name": "Lønseth, Mari Holm",
+      "party": "H",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjonær i Lønseth Eiendom AS, (25 aksjer)."
+        }
+      ]
+    },
+    {
+      "name": "Malik, Mohammed",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyrerepresentant for Lillestrøm AP / Lønnet\nHovedutvalg for miljø og samfunn for Lillestrøm AP /Lønnet\nLO på Nedre Romerike Nestleder / Lønnet\nPrøvenemndsmedlem for Utdanningsetaten Oslo / Lønnet"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Fast arbeidsgiver - Fellesforbundet"
+        }
+      ]
+    },
+    {
+      "name": "Marhaug, Sofie",
+      "party": "R",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "- Medlem i styret til Solidaritet med Kurdistan (ulønnet).\n- Medlem i styret for Litteraturhuset i Stavanger (ulønnet og på vei\nut).\n- Medlem i styret til Manifest (ulønnet)."
+        }
+      ]
+    },
+    {
+      "name": "Martinussen, Marie Sneve",
+      "party": "R",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder i Rødt. Ikke lengre lønnet."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Har et enkeltpersonsforetak som ikke lengre er aktivt.\nMottar ved ujevne mellomrom mindre beløp som vederlag for\navspilling av musikk jeg har deltatt i innspilling av, utbetalingene\nskjer via TONO."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "1 aksje i Klassekampen AS"
+        }
+      ]
+    },
+    {
+      "name": "Mathisen, Øystein",
+      "party": "A",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Stiftelsen Vegaøyan verdensarv - medlem i råd - april 2023 - ikke\ngodtgjørelse\nRådet for Andøy Space Education - medlem i råd - januar 2022 - ikke\ngodtgjørelse"
+        }
+      ]
+    },
+    {
+      "name": "Mehl, Emilie",
+      "party": "Sp",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Deltaker i programmet «Kompani Lauritzen» produsert av Seefood for\nTV2 (mars 2022). Honorar donert direkte til Kvinnherad Sogelag,\nKvinnherad Mållag og Åsnes Finnskog Idrettslag.\nDeltaker i programmet \"Asbjørns julekalender\" produsert av Seefood\nfor TV2 (desember 2023). Honorar donert direkte til Kirkens SOS."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Registrert enkeltpersonforetak Emilie Mehl\nKahoot AS (under 1 pst.)\nBergen Carbon Solutions AS (under 1 pst.)"
+        }
+      ]
+    },
+    {
+      "name": "Melby, Guri",
+      "party": "V",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder i Venstre (godtgjørelse).\nParlamentarisk leder av Venstres stortingsgruppe (godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Merkesdal, Linda Monsen",
+      "party": "A",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Vestnorsk Kulturakademi- ikke lønnet\nStyremedlem i Bergslien kunstsenter- ikke lønnet\nVara Nærøydalen Verdensarvpark- ikke lønnet"
+        }
+      ]
+    },
+    {
+      "name": "Midtun, Rune",
+      "party": "FrP",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Daglig Leder og Styreleder i Rumasi Holding AS (Org nr918 613\n323) - ikke lønnet.\nStyremedlem i Haakonsen Marine AS (Org nr976 683 722) - ikke\nlønnet.\nStyremedlem i Nvmh AS (Org nr926 733 451) - ikke lønnet."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Eier av konsulentfirma Rumasi Holding AS (Org nr918 613 323)."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Det er 3000 aksjer i Rumasi Holding AS (Org nr918 613 323) og\nRune Midtun eier  av disse."
+        }
+      ]
+    },
+    {
+      "name": "Mikkelsen, Camilla Renate",
+      "party": "R",
+      "county": "Troms",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i Lien Mangesysleri SA - ulønnet\n1.fylkestingsvara og sekretær for fylkesgruppa til Rødt 2023-2027,\nTroms fylkesting - 2% stillingsbrøk - lønnet."
+        }
+      ]
+    },
+    {
+      "name": "Moflag, Tuva",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Arbeiderpartiet, parlamentarisk nestleder (godtgjørelse)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "132 aksjer i Telenor ASA."
+        }
+      ]
+    },
+    {
+      "name": "Molberg, Anna",
+      "party": "H",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i Ny norsk kulturpris - ikke godtgjørelse"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjer i REC Silicon 22 204 stk"
+        }
+      ]
+    },
+    {
+      "name": "Moltumyr, Carl-Henrik Myrseth",
+      "party": "H",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fylkestingsrepresentant i Møre Og Romsdal - Lønnet verv.\nKommunestyrerepresentant i Herøy Kommune - Lønnet verv."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Salgssjef for ettermarkedsavdelingen til MMC First Process."
+        }
+      ]
+    },
+    {
+      "name": "Molvær, Monica",
+      "party": "H",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Stiftelsen Fontenehuset Ålesund - styreleder - uten honorar\nÅlesund Sentrumsforening - styreleder - honorar\nÅlesund Brannvesen KF - styreleder - honorar\nStiftelsen Kommandosentralen i byfjellet Aksla - styreleder - uten\nhonorar\nFjord Cadenza Festivalen - styreleder - uten honorar\nDen Norske Matfestivalen i Ålesund AS - styremedlem - uten honorar\nSørsida Utvikling AS (inkl. datterselskap Sørsida Eiendom og\nKipervika) - styremedlem - heleid av Ålesund kommune - honorar\nÅ Studio: Dans - Theater - Musikal AS - styremedlem - uten honorar\nÅlesund Cruisenettverk - styremedlem - uten honorar\nStiftelsen Molde Internasjonale Jazzfestival - varamedlem, aldri møtt i\nperioden, honorar ved innkalling til møte\nMedlem valgkomiteen til Attvin AS - honorar\nStyremedlem sameiet Kongens gate 18 i Ålesund - uten honorar\nStyremedlem Bunker Oil AS – honorar"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltmannsforetak org.nr. 926089609, 79.121 Aktiviteter utført av\nutflukts- og eventarrangører. Foretaket har aldri hatt noen aktivitet."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Timebasert hos Vino Bar AS med arbeid som sommelier, med vinkurs\nog arbeid som servitør.\nAjourført pr. 30. oktober 2026 33"
+        }
+      ]
+    },
+    {
+      "name": "Mossleth, Siv",
+      "party": "Sp",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av rådet Den norske Helsingforskomite, ulønnet."
+        }
+      ]
+    },
+    {
+      "name": "Moxnes, Bjørnar",
+      "party": "R",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Klassekampen A/S. Eier 1 aksje"
+        }
+      ]
+    },
+    {
+      "name": "Myrli, Sverre",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i Den norsk-tyske Willy Brandt-stiftelsen (ingen\ngodtgjørelse).\nMedlem av Lillestrøm kommunestyre (godtgjørelse pr møte)."
+        }
+      ]
+    },
+    {
+      "name": "Myrseth, Cecilie",
+      "party": "A",
+      "county": "Troms",
+      "roles": []
+    },
+    {
+      "name": "Mørland, Tellef Inge",
+      "party": "A",
+      "county": "Aust-Agder",
+      "roles": []
+    },
+    {
+      "name": "Nakstad, Elin Ileby",
+      "party": "H",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Jeg deltar politisk i Sarpsborg Høyre og får betalt for møter og\nkompensasjon for tapt arbeidsinntekt. Mine verv er representant i :\nBystyret, Utvalg for velferd og folkehelse, og Partssammensatt utvalg."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Jeg jobber som fastlege ved Capio fastleger i Sarpsborg som\nselvstendig næringsdrivende. Jeg er også veileder for leger i\nspesialisering som blir spesialister i allmennmedisin."
+        }
+      ]
+    },
+    {
+      "name": "Ness, Emma Berge",
+      "party": "Sp",
+      "county": "Sogn og Fjordane",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Viksdalen i utvikling AS - ikkje lønna.\nVaramedlem til det Vest norske teater - ikkje lønna.\nVaramedlem til fylkestinget og utval for kultur og idrett i Vestland\nfylkeskommune - lønna dersom møtande."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Rådgjevar Norconsult Norge AS - 100%."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjer i Norconsult (86 stk)"
+        }
+      ]
+    },
+    {
+      "name": "Nielsen, Monica",
+      "party": "A",
+      "county": "Finnmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Nielsenkaia AS organisasjonsnummer 982 956 625,\nstyrevervet er lønnet."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Nielsenkaia AS\nOrganisasjonsnummer 982 956 625\nBossekopveien 51\n9513 Alta\nAksjeselskap\nNæringskode 68.200 Utleie av een eller leid fast eiendom.\nInstitusjonell sektorkode 2100 Private akjeselskap mv.\nSelskapet eier areal og leier ut areal- lager.\nJeg eier 95 aksjer i selskapet, aksjetype B, som utgjør ca  av\nselskapets aksjer.\nMin far Finn Diedrik Nielsen eier 938 aksjer i selskapet aksjetype A,\nsom utgjør ca.  av selskapets aksjer.\nMin far eier også 748 B aksjer i selskapet aksjetype B, som utgjør\nca av selskapets aksjer.\nMin søster Marianne Nielsen eier 95 aksjer, akjsetype B, som utgjør\nca av selskapets aksjer.\nØvrige aksjer i selskapet eies av min fars søskeebarn, mitt søskeebarn\nog et firma eiet av et annet av mine søskenbarn.\nNielsenkaia AS eier 30 stk aksjer i Orinor AS, organisasjonsnummer\n983 251 463, dette utgjør ca,  av selskapets aksjer,"
+        }
+      ]
+    },
+    {
+      "name": "Nilsen, Kai-Helge",
+      "party": "R",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Utdanningsforbundet Trøndelag (lønnet)\nStyremedlem Velforeningen Lundamo Park (lønnet)"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Ansatt i Trondheim kommune som lærer. Er i 100 %\norganisasjonsfrikjøp etter Hovedavtalen for Utdanningsforbundet\nTrøndelag som organisasjonstillitsvalgt. Min lønn betales av\nUtdanningsforbundet i perioden med frikjøp. Perioden er 2023-2027.\nVed representasjon på Stortinget, så ber jeg om ulønnet permisjon fra\nvervet som organisasjonstillitsvalgt."
+        }
+      ]
+    },
+    {
+      "name": "Nilsen, Marius Arion",
+      "party": "FrP",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder og daglig leder i Smite AS - Ulønnet"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eier selskapet Smite AS \nEier privat aksjer i:\nVend Marketplaces\nAutostore\nHubso Group - Delistet/konkurs\nKongsberg Gruppen\nKongsberg Maritime - Fisjonert ut fra Kongsberg Gruppen aksjen\nFrontline\nEquinor\nTGS\nrt\nCarriers\nAjourført pr. 30. oktober 2026 35"
+        }
+      ]
+    },
+    {
+      "name": "Nilsen, Mona",
+      "party": "A",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder Nordland Arbeiderparti, godtgjørelse.\nStyremedlem Petter Dass' og Fredrikke Tønder-Olsens Stipendiefond,\nikke godtgjørelse."
+        }
+      ]
+    },
+    {
+      "name": "Njåstad, Helge André",
+      "party": "FrP",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av kommunestyret, leiar utval for plan og byggesak og vara\ntil formannskapet i Austevoll kommune, godtgjørelse"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksjer i Austevoll Seafood ASA. Eierandel: 1159 aksjer\nAksjer i DOF Group ASA . Eierandel: 339 aksjer\nAksjer i Grieg Seafood. Eierandel: 500 aksjer\nAksjer i Endur. Eierandel: 8 aksjer\nAksjer i Aker Solutions. Eierandel: 550 aksjer\nAksjer i TietoEvry. Eierandel:7 aksjer\nAksjer i Questerre Energy Corporation. Eierandel: 100 aksjer\nAksjer i Axactor. Eierandel: 1807 aksjer\nAksjer i Mowi. Eierandel: 136 aksjer\nAksjer i Norsk Hydro. Eierandel: 100 aksjer\nAksjer i Panoro Energy. Eierandel: 300 aksjer\nAksjer i Petronor E&P ASA. Eierandel: 26 aksjer\nAksjer i Salmar. Eierandel: 3 aksjer\nAksjer i Sparebank1 SMN. Eierandel: 35 aksjer\nAksjer i Noise Control Systems AS. Eierandel: 2000 aksjer\nAskjer i SAS. Eierandel: 400 aksjer\nAksjer i Norwegian Air Shuttle ASA. Eierandel: 20 aksjer\nAksjer i Pareto Bank. Eierandel: 151 aksjer\nAksjer i Equinor. Eierandel: 785 aksjer\nAksjer i Sparebanken Vest: Eierandel: 366 aksjer\nAksjer i VINO PIEMONTE AS, 2000 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Nordli, Ramani",
+      "party": "A",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Bystyrerepresentant og leder for helse- og omsorgsutvalget for\nArbeiderpartiet i Arendal kommune. Frikjøpt 24,9% av\narbeidsforhold, lønnes med tilsvarende prosent fra ordførers sats. ."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Sykepleier i fast 100% stilling hos avdeling 2C på Sørlandet sykehus\nArendal\nAjourført pr. 30. oktober 2026 67"
+        }
+      ]
+    },
+    {
+      "name": "Nordtug, Julia Brännström",
+      "party": "FrP",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Bystyremedlem i Sarpsborg kommune (møtegodtgjørelse).\nØstfold avfallssortering IKS, 2. varamedlem til representantskapet\n(ulønnet)."
+        }
+      ]
+    },
+    {
+      "name": "Nygård, Jon-Ivar",
+      "party": "A",
+      "county": "Østfold",
+      "roles": []
+    },
+    {
+      "name": "Nyholt, Hege Bae",
+      "party": "R",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Ship to Gaza (Ubetalt)."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "1 aksje i Klassekampen AS"
+        }
+      ]
+    },
+    {
+      "name": "Næss, Jørn Inge",
+      "party": "FrP",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Daglig leder/eier Næss Frisør AS - styreleder (ulønnet).\nOda Eiendom AS - styreleder (ikke godtgjort).\nGjerpen Utvikling AS - styremedlem (ikke godtgjort).\nSkien næringsfond AS - Skien kommune sitt næringsfond - styreleder\npå vegne av Skien kommune (honorar).\nVaraordfører Skien kommune (godtgjørelse).\nMedlem av Skien Bystyre og Formannskap (godtgjørelse)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Næss Frisør AS Skien"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Næss Frisør AS og Skien kommune"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Oda Eiendom AS Eier \nNæss Frisør AS  eierandel\nGjerpen utvikling AS  eierandel"
+        }
+      ]
+    },
+    {
+      "name": "Næss, Marianne Sivertsen",
+      "party": "A",
+      "county": "Finnmark",
+      "roles": []
+    },
+    {
+      "name": "Odden, Bengt Halvard",
+      "party": "A",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Legat til utdanning - Hjartdal kommune. Styreleder, ulønnet\nHaukelivegen as - vararepresentant til styret. Honorar pr møte man\ndeltar i\nLandsstyret Landssammenslutningen for vannkraftkommuner (LVK) -\nvararepresentant til styret - Honorar pr. møte man deltar i\nStiftelsen Notodden Bluesfestival - styremedlem - ulønnet\nSauland bygdelag - nestleder - ulønnet"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Ordfører i Hjartdal kommune i valgperioden 2023 - 2027"
+        }
+      ]
+    },
+    {
+      "name": "Olafsen, Balder Alvær",
+      "party": "SV",
+      "county": "Akershus",
+      "roles": []
+    },
+    {
+      "name": "Olsen, Dagfinn Henrik",
+      "party": "FrP",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Losen Eiendomsdrift A/S (ikke godtgjørelse)\nVararepresentant i Lødingen Havn KF(godtgjørelse)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "50 pst. av aksjene i Losen Eiendomsdrift A/S"
+        }
+      ]
+    },
+    {
+      "name": "Ormevik, Andreas Breivik",
+      "party": "MDG",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Innvalgt som kommunestyrerepresentant og gruppeleder for MDG i\nØygarden kommune 2023-2027, samt Kommuneplanutvalet i samme\nkommune, samme periode. Begge verv er lønnet iht. kommunens\ngjeldende satser og utgjør samlet omtrent 10% av stortingslønnen."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Ansatt som postdoktor for NHH Norges Handelshøyskole, Institutt for\nForetaksøkonomi. Midlertidig ansettelse med fire års varighet (2025-\n2029), med mulighet for forlengelse."
+        }
+      ]
+    },
+    {
+      "name": "Papas, Alexander",
+      "party": "SV",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av fylkestinget i Vestland (2023-2027) (lønna)\nMedlem av hovudutval for samferdsle og mobilitet i Vestland (lønna)\nMedlem av distriktsprogramrådet i NRK Vestland - vald av\nfylkestinget i Vestland (lønna)\nStyremedlem i Foreininga for Fjordvegen Riksveg 13 - vald av\nfylkestinget i Vestland (ulønna)"
+        }
+      ]
+    },
+    {
+      "name": "Pederssen, Tonje Lavik",
+      "party": "FrP",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Formannskapsmedlem, kommunestyremedlem og gruppeleder for\nFrP, Asker kommune, lønnet.\nFylkeråd for finans og organisasjon, Akershus fylkeskommune,\nlønnet."
+        }
+      ]
+    },
+    {
+      "name": "Pettersen, Tage",
+      "party": "H",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Elitehockey AS (ingen godtgjørelse).\nStyremedlem i stiftelsen Smilende kunst 2020 (ingen godtgjørelse).\nStyremedlem i Galleri F15 AS (godtgjøres).\nStyremedlem i Den Norske Atlanterhavskomiteen (ingen\ngodtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Pollestad, Geir",
+      "party": "Sp",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "parlamentarisk nestleder i Senterpartiets stortingsgruppe\n(godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Poppe, Haagen",
+      "party": "H",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder - Kanalselskapet for Arendals bymiljø (Verv avvikles innen\nkort tid) - ikke betalt.\nStyreleder - Raet Raad AS- ikke betalt."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Haagen Poppe - enkeltpersonforetak med virksomhet som musiker."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Raet raad AS ( eierandel, 45 aksjer)."
+        }
+      ]
+    },
+    {
+      "name": "Qureshi, Farukh",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder FAU Bjørndal skole (orgnr: 915 999 522)\nStyremedlem Fengselsimamene (orgnr: 933966275)\nIngen av disse vervene er lønnet."
+        }
+      ]
+    },
+    {
+      "name": "Rafaelsen, Sigurd Kvammen",
+      "party": "A",
+      "county": "Finnmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Ordfører Lebesby Kommune. Lønnet- permisjon fra vervet.\nkommunestyremedlem Lebesby kommune\nStyremedlem i Finnmark Havfiske AS.\nStyremedlem i ungt entreprenørskap Troms og Finnmark (ulønnet)."
+        }
+      ]
+    },
+    {
+      "name": "Raja, Abid",
+      "party": "V",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder IPPFORB.com (fra høsten 2022, ulønnet)\nAmbassadør for Aktiv mot kreft (ulønnet, se punkt 11 Gaver).\nRedd Barna Næringslivsråd (fra høsten 23 - høsten 25 ulønnet)\nSOS-barnebyer (fra høsten 23 - høsten 25, ulønnet)\nStyremedlem DSD Explore fra januar 2024 - juni 2025, (honorert\nstyreverv hvor hele styrehonoraret for hele perioden - mer enn 50.000\n- gis direkte fra DSD uavkortet til Redd Barna)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Registrert forfatter/foredragsvirksomhet (org.nr.) (to anledninger)\nHonorerte foredragsserier/bokbad for Cappelen Damm, samlet mer\nenn 50.000 kr\nDiverse ulike bokforedrag for Athenas samlet mer enn 50.000 kr\nDiverse ulike bokforedrag for Plan-B samlet mer enn 50.000 kr\nHonorert sponset podkast Plan-B med Apotek 1 samlet mer enn\n50.000\nHonorert under 50.000 oppdrag som stipendkomitemedlem NFF\nHonorert under 50.000 for TV-serie for NRK\nHonorar under 50.000 fra Fritt-Ord for debatt\nHonorert foredrag Skedsmo kommune under 50.000\nHonorert for TV-program TVNorge over 50.000 (2009)\nHonorert foredrag for Confex under 50.000\nHonorert bokforedrag for Z-event tilsammen over 50.000\nHonorert foredrag for Choice under 50.000\nRoyalty for bøker, mer enn 50.000 kr for samtlige fire bøker, hver for\nseg mer enn 50.000 kr (Talsmann 2008, Dialog 2010, Min Skyld\n2021, Vår Ære og Vår Frykt 2024)\nStipend fra Fritt-Ord for boken Vår Ære og Vår frykt, mer enn 50.000\nHonorert bokforedrag Molde Seilet motivasjon under 50.000\nHonorert foredrag for Nordic Choice under 50.000\nHonorert foredrag ATV Oslo under 50.000\nHonorar mer enn 50.000 fra Maskorama gitt direkte fra arrangør til\nRedd Barna\nHonorar under 50.000"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Enkeltmannsforetak bok/forfatter.\n4 ulike aksjefond."
+        }
+      ]
+    },
+    {
+      "name": "Rajala, Kristin",
+      "party": "A",
+      "county": "Finnmark",
+      "roles": []
+    },
+    {
+      "name": "Refseth, Anniken",
+      "party": "A",
+      "county": "Sør-Trøndelag",
+      "roles": []
+    },
+    {
+      "name": "Reiertsen, Laila",
+      "party": "FrP",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyrerepresentant i Os kommune (godtgjørelse)\nMedlem i formannskapet i Os kommune (godtgjørelse)\nOs Turn Nestleder(ulønnet)\nOs FrP Nestleder"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltmannsforetaket \"NokTid\" (utleie som sykepleier). For tiden\nikke i drift."
+        }
+      ]
+    },
+    {
+      "name": "Rem, Lars",
+      "party": "FrP",
+      "county": "Oppland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fylkestingsrepresentant Innlandet fylke (godtgjørelse)."
+        }
+      ]
+    },
+    {
+      "name": "Røed, Even A.",
+      "party": "A",
+      "county": "Buskerud",
+      "roles": []
+    },
+    {
+      "name": "Røse, Ida Lindtveit",
+      "party": "KrF",
+      "county": "Akershus",
+      "roles": []
+    },
+    {
+      "name": "Røsholt, Helene",
+      "party": "H",
+      "county": "Telemark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "- Bystyret, Skien Kommune, medlem, godtgjøring\n- Gruppeleder Skien Høyre, godtgjøring\n- Formannskapet, Skien Kommune, medlem, godtgjøring\n- Utvalg for teknisk sektor, Skien kommune, vararepresentant,\ngodtgjøring ved oppmøte\nAjourført pr. 30. oktober 2026 69\n- Partssammensatt utvalg, Skien kommune, medlem, godtgjøring\n- Klagenemnda, Skien kommune, varamedlem, godtgjøring ved\noppmøte\n- Valgstyret, Skien kommune, medlem, godtgjøring via\ngruppelederfunksjonen\n- Utvalg for inkludering, frivillighet og kultur, Skien kommune,\nvararepresentant, godtgjøring ved oppmøte\n- Utvalg for oppvekst, Skien kommune, vararepresentant, godtgjøring\nved oppmøte\n- Klagenemnda for eiendomsskattesaker, Skien kommune,\nvararepresentant, godtgjøring ved oppmøte\n-Arbeidsgruppe for etiske retningslinjer, nestleder, Skien kommune,\ngodtgjøring via gruppelederfunksjon\n- Arbeidsgruppe for godtgjøringsreglement til folkevalgte, medlem,\nSkien kommune, godtgjøring via gruppelederfunksjon\n- Arbeidsgruppe for eierskapsmelding, Skien kommune, medlem,\ngodtgjøring via gruppelederfunksjon\n- Skien næringsfond AS, styremedlem, styrehonorar\n- Skien Dalen skipsselskap, medlem av valgkomiteen, ingen\ngodtgjøring\n- Skien Høyre, sty"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Telemark Fylkeskommune, Skien Videregående Skole, samfunnsfag\nog økonomi avdeling, undervisningspersonell"
+        }
+      ]
+    },
+    {
+      "name": "Sand, Reidar",
+      "party": "SV",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyrerepresentant, Suldal Kommune, mottar godtgjersle.\nLeiar i Utval for Landbruk, Miljø og Teknikk, Suldal Kommune,\nmottar godtgjersle.\nMedlem i Kontrollutvalget, Rogaland Fylkeskommune, mottar\ngodtgjersle.\nVararepresentant Fylkestinget, Rogaland Fylkeskommune, mottar\ngodtgjersle ved møte."
+        }
+      ]
+    },
+    {
+      "name": "Sandanger, Morten",
+      "party": "A",
+      "county": "Rogaland",
+      "roles": []
+    },
+    {
+      "name": "Sandaune, Lill Harriet",
+      "party": "FrP",
+      "county": "Sør-Trøndelag",
+      "roles": []
+    },
+    {
+      "name": "Sande, Erling",
+      "party": "Sp",
+      "county": "Sogn og Fjordane",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Sogn og Fjordane Senterparti"
+        }
+      ]
+    },
+    {
+      "name": "Sandnes, Kari Baadstrand",
+      "party": "A",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Permisjon fra styreverv valgt av de ansatte i Helse Nord RHF frem til\nnyvalg i mai 2026.\nPermisjon fra konserntillitsvalgtverv for LO Stat i Helse Nord RHF\nfrem til 30.04.26.\nNestleder i styret Vestvågøy ASVO, honorar.\nVaramedlem styret i Fagforbundet Nordland, møtegodtgjørelse.\nVara landsstyret Fagforbundet, ulønnet.\nLeder LO Stat Nordland, ulønnet."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Omsorgslønn fra Vestvågøy kommune."
+        }
+      ]
+    },
+    {
+      "name": "Sandtrøen, Nils Kristen",
+      "party": "A",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Sentralstyret i Arbeiderpartiet - ikke godtgjørelse"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Odfjell Technology Ltd, 24 av 39,5 mill aksjer, mindre enn 1 pst\nOdfjell Drilling Ltd, 145 av 239 mill aksjer, mindre enn 1 pst\nAwilco LNG ASA, 150 av 132 mill aksjer, mindre enn 1 pst"
+        }
+      ]
+    },
+    {
+      "name": "Sayed, Jonas Andersen",
+      "party": "KrF",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Ulla-Førrefondet. Godtgjørelse per møte. Vanligvis 2 møter\ni året.\nStyremedlem Den norske Atlanterhavskomité. Ulønnet."
+        }
+      ]
+    },
+    {
+      "name": "Selnes, Lise",
+      "party": "A",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Nestleder i Brannkassa, Gjensidige Nord-Odal. Godtgjørelse. Fram til\n11.10.23.\nVararepresentant til styret i Indre Østfold, Andebu og Nord-Odal\nGjensidig Brannkasse."
+        }
+      ]
+    },
+    {
+      "name": "Selvik, Frida Hegranes",
+      "party": "A",
+      "county": "Sogn og Fjordane",
+      "roles": []
+    },
+    {
+      "name": "Sivertsen, Kristoffer",
+      "party": "FrP",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i Stavanger Parkering KF (Godtgjørelse).\nBystyremedlem Stavanger kommune (Godtgjørelse).\nLeder av utvalg for by- og samfunnsutvikling i Stavanger kommune\nfrem til 20. oktober 2025. (Godtgjørelse).\nMedlem av formannskapet i Stavanger kommune frem til 20. oktober\n2025 (Godtgjørelse).\nStyremedlem Museum Stavanger AS frem til og med 20. oktober\n2025 (Godtgjørelse).\nVaramedlem i konsernstyret i Lyse AS frem til og med 7. oktober\n2025 (Godtgjørelse per møte).\nVaramedlem til kommunalutvalget, utvalg for levekår, utvalg for\nutbygging, utvalg for oppvekst, Ivar IKS frem til og med 20. oktober\n2025 (Godtgjørelse per møte).\nMedlem av Boligforum i Stavanger kommune frem til og med 20.\noktober 2025. Vervet var ikke godtgjort særskilt, men del av\nledervervgodtgjørelse for utvalg for by- og samfunnsutvikling."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Permisjon fra stilling som advokat i Elden Advokatfirma og er stille\ndeltaker i advokatfirmaets indre selskap."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Take-Two Interactive Software. 78 aksjer\nBayerische Motoren Werke AG. 1 aksje.\nTekna Holding ASA. 3 aksjer.\nAker Horizons ASA. 14 aksjer.\nEquinor ASA. 44 Aksjer.\nSoftware"
+        }
+      ]
+    },
+    {
+      "name": "Sjursæther, Frøya Skjold",
+      "party": "MDG",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Politisk nestleder i Grønn Ungdom. Godtgjort per måned mellom\n25.01.23 - dd. Avslutter i vervet 29. november 2025."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Politisk rådgiver i MDGs bystyregruppe i Bergen mellom 11.11.24 og\n15.09.25"
+        }
+      ]
+    },
+    {
+      "name": "Skjæran, Bjørnar",
+      "party": "A",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Parlamentarisk leder Arbeiderpartiet - godtgjørelse"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Gårdbruker og selvstendig næringsdrivende, enkeltmannsforetaket\nBjørnar Skjæran"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "5 aksjer i Aldersund Allaktivitetshus AS. Selskapet har 2353 aksjer,\nslik at min eierandel er . Min ektefelle Line Skjæran har også 5\naksjer, det vil si samme eierandel.\n2.000.000,-. Lånet er sikret med pant i fast eiendom Gnr 29 Bnr 2 i\nLurøy og løsøre knyttet til landbruksvirksomheten."
+        },
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Tiurlia hytteforening (ulønnet)"
+        },
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av Sikkerhetskonferansen i Münchens Foundation Council,\noppstart november 2025, og 'co-chair', oppstart november 2026."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "- Inntekt fra bokutgivelse \"Min Historie\". Gyldendal 2016.\n-Inntekt fra bokutgivelse \"På min vakt\" Gyldendal 2025. Utgis også i\nandre land med separate kontrakter."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Tinkern AS (Org. nr. 933 589 811). Eier . Selskap som ble\nopprettet forut for regjeringsutnevnelsen med den hensikt å fasilitere\ntaleoppdrag."
+        }
+      ]
+    },
+    {
+      "name": "Skogmo-Nordvang, Ingunn",
+      "party": "FrP",
+      "county": "Nordland",
+      "roles": []
+    },
+    {
+      "name": "Snortheim, Håkon",
+      "party": "H",
+      "county": "Akershus",
+      "roles": []
+    },
+    {
+      "name": "Solberg, Erna",
+      "party": "H",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Global Citizen, 2022 - (ubetalt) -2025\nLeder av FNs høynivåpanel for flerdimensjonal sårbarhetsindeks for\nSIDS-land, 2022 - (ubetalt)2024\nFra 29. oktober 2026 styreleder The Global Fund (til bekjempelse av\nMalaria, tuberkulose og AIDS) - lønnet."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Bokutgivelse \"Veien videre\", Kagge Forlag. Mars 2023.\nBokutgivelse \"Mennesker, ikke milliarder\", Cappelen Damm 2011.\nHar avtale med Kagge Forlag om å skrive memoarer, når tiden for det\nkommer. Boken kommer i november 2026 - forskudd utbetalt i 2026\n950.000,-"
+        }
+      ]
+    },
+    {
+      "name": "Solhaug, Even",
+      "party": "A",
+      "county": "Oppland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av Gjøvik kommunestyre\nMedlem av Formannskapet i Gjøvik kommune.\nVervet som medlem i Formannskap, opposisjonsleder og gruppeleder\nfor Arbeiderpartiet er lønnet med frikjøp som tilsvarer en 50% stilling."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Bonde"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Frikjøp i Gjøvik kommune som politiker tilsvarende 50% stilling i\ndenne kommunestyreperioden."
+        }
+      ]
+    },
+    {
+      "name": "Solli, Kristine Løfshus",
+      "party": "A",
+      "county": "Sør-Trøndelag",
+      "roles": []
+    },
+    {
+      "name": "Sollie, Anita",
+      "party": "H",
+      "county": "Nordland",
+      "roles": []
+    },
+    {
+      "name": "Spets, Rikard",
+      "party": "FrP",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Malvik kommune - formannskapet (godtgjørelse).\nMalvik kommune - kommunestyret (godtgjørelse)."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Lea Bank AB, 1135 aksjer\nThor Medical ASA, 465 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Staahle, Tom",
+      "party": "FrP",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyremedlem Ullensaker kommune 2023-2027\n(Godtgjørelse)\nMedlem formannskapet Ullensaker kommune 2023-2027\n(Godtgjørelse)\nGruppeleder for kommunestyregruppen kommune 2023-2027\n(Godtgjørelse)\nFylkestinget i Akershus/Fylkesråd for finans Akershus (Innvilget\nfritak for resten av perioden 2023-2027)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Eier av et ENK Staahle Consulting registrert i Brønnøysund. Ingen\naktivitet i selskapet."
+        }
+      ]
+    },
+    {
+      "name": "Stamnes, Eivind Yrjan",
+      "party": "A",
+      "county": "Vestfold",
+      "roles": []
+    },
+    {
+      "name": "Stenersen, Aina",
+      "party": "FrP",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Vararepresentant til bydelsutvalget i Østensjø i Oslo (lønnet). Har\npermisjon ut resten av kommunevalgperioden, 2027."
+        }
+      ]
+    },
+    {
+      "name": "Stenvaag, Hanne Beate",
+      "party": "R",
+      "county": "Troms",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Domkirkens barnehage AS. Ulønnet.\nStyremedlem i Domkirkens menighetspleie. Ulønnet.\nStyrets leder i Støttegruppa i Tromsø. Ulønnet.\nNestleder i St.Hanshaugen velforening. Ulønnet\nVaramedlem i styret for Støttesenteret mot incest og seksuelle\novergrep. Har trådt ut av vervet i 2025, men det er ikke registrert ennå.\nHar vært lønnet med møtegodtgjørelse.\nKommunestyrerepresentant i Tromsø kommune. Permisjon fra\n1.oktober 2025"
+        }
+      ]
+    },
+    {
+      "name": "Stokkebø, Aleksander",
+      "party": "H",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "British-Norwegian Chamber of Commerce (BNCC) Ikke lønnet."
+        }
+      ]
+    },
+    {
+      "name": "Storbukås, Stian",
+      "party": "FrP",
+      "county": "Vest-Agder",
+      "roles": []
+    },
+    {
+      "name": "Stordalen, Morten",
+      "party": "FrP",
+      "county": "Vestfold",
+      "roles": []
+    },
+    {
+      "name": "Strifeldt, Bengt Rune",
+      "party": "FrP",
+      "county": "Finnmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Innvalgt som medlem i Alta kommunestyre 2023-2025.\nMedlem av Formannsskapet i Alta kommune\nOrdinær møtegodtgjørelser etter kommunale satser.\nAjourført pr. 30. oktober 2026 45"
+        }
+      ]
+    },
+    {
+      "name": "Stuestøl, Julie E.",
+      "party": "MDG",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Permisjon ut valgperioden 2025-2027 fra folkevalgt verv som\nkommunestyrerepresentant i Tønsberg kommune. Ingen godtgjørelse i\npermisjonen."
+        }
+      ]
+    },
+    {
+      "name": "Støre, Jonas Gahr",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder i Arbeiderpartiet\nStyreleder i Femstø AS (ulønnet)\nMedlem av Samarbeidskomiteen LO-AP (ulønnet)\nLeder SAMAK (ulønnet)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Inntekt fra bokutgivelse \"I bevegelse\", Cappelen Damm 2014"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Femstø AS (100 pst. eierandel)\nAksje i Sauda Folkets Hus AS (1 aksje)\nAjourført pr. 30. oktober 2026 55"
+        }
+      ]
+    },
+    {
+      "name": "Støstad, Rune",
+      "party": "A",
+      "county": "Oppland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Valgt medlem i samfunnskomiteen i Norsk Vann (ikke lønna)."
+        }
+      ]
+    },
+    {
+      "name": "Sundnes, Trine Lise",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder i Europabevegelsen, org. nr. 971022205 - ulønnet.\nRådsmedlem i Nei til Atomvåpens Råd, org. nr. 971527676 - ulønnet.\nLeder i Internasjonalt Forum i Oslo Arbeiderparti, org. nr. 884060362\n- ulønnet"
+        }
+      ]
+    },
+    {
+      "name": "Svanøe, Dagfinn Homdal",
+      "party": "A",
+      "county": "Aust-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Sparebankstiftelsen Sparebanken Norge. Vervet er\nhonorert.\nAjourført pr. 30. oktober 2026 71"
+        }
+      ]
+    },
+    {
+      "name": "Sve, Frank Edvard",
+      "party": "FrP",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fylkestinget i Møre og Romsdal - betalt verv\nKommunestyret i Stranda kommune -betalt verv\nUtvalg i Møre og Romsdal Fylkeskommune- betalt verv\nStyremedlem Torggården Butikkdrift AS (ikke lønnet)"
+        }
+      ]
+    },
+    {
+      "name": "Sveian, Ole Herman",
+      "party": "Sp",
+      "county": "Sør-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Stiftelsen Rørosmuseet (møtegodtgjørelse).\nStyremedlem Stiftelsen Stiklestad museum (ikke godtgjørelse).\nMedlem av Representantskapet i Sparebank 1 SMN,\n(møtegodtgjørelse).\nMedlem av Generalforsamling i Sparebankstiftelsen SMN,\n(møtegodtgjørelse).\nFylkesleder Trøndelag Senterparti, (årsgodgjøring).\nGruppelder Fylkestingsgruppa Trøndelag Senterparti, permisjon i\ntiden jeg møter på Stortinget.\nVaramedlem til styret i TK Midt (møtegodtgjørelse).\nVaramedlem KS-Holding AS (møtegodtgjørelse).\nRevisor Hommelvik Musikkorps (ikke godtgjørelse).\nRevisor Malvik Senterparti (ikke godtgjørelse)."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Eier av Sveian Gård og Gartneri"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Frostachips AS, Org. nr: 824 923 892, 500 aksjer, eierandel \nAgdir Drift AS, Org. nr: 921 893 639, 850 aksjer, eierandel \nImmuvera Therapautics AS, Org. nr: 926 109 553, 376 aksjer,\neierandel \nHavkraft AS, Org. nr: 994 795 864, 25 aksjer, eierandel"
+        }
+      ]
+    },
+    {
+      "name": "Svendsrud, Bjørn-Kristian",
+      "party": "FrP",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fylkestingsrepresentant og medlem av hovedutvalg for utdanning i\nVestfold, avsluttet 4.november. Godtgjørelse ut oktober.\nStyremedlem i Færder nasjonalpark, avsluttet 4. november.\nGodtgjørelse, men ikke i perioden som stortingsrepresentant.\nStyremedlem i Blå Kors Horten. Ikke godtgjørelse."
+        }
+      ]
+    },
+    {
+      "name": "Svenneby, Ola",
+      "party": "H",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Sætran, Siv",
+      "party": "Sp",
+      "county": "Nord-Trøndelag",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyrerepresentant og formannskapsmedlem i Stjørdal\nkommune. Verv som godtgjøres, men jeg sier ifra meg godtgjøring i\nde tilfeller jeg blir innkalt som vara på Stortinget."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "100 % HUNT 5 koordinator ved HUNT/NTNU. Permisjon uten lønn\nfra denne jobben i de tilfeller jeg er innkalt som vara."
+        }
+      ]
+    },
+    {
+      "name": "Sætre, Yngve",
+      "party": "H",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Kommunestyremedlem, Elverum kommune. Lønnet.\nFormannskapsmedlem, Elverum kommune. Lønnet.\nRepresentantskapsmedlem, Sør-Østerdal Interkommunale Politiske\nRåd (SØIPR). Lønnet.\nDaglig leder, Norzep ANS. Ikke lønnet.\nStyremedlem, Norzep ANS. Ikke lønnet."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Bedriftsrådgiver, Sør-Østerdal Næringshage. Lønnet."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Deltaker med fullt ansvar, Norzep ANS."
+        }
+      ]
+    },
+    {
+      "name": "Sølvberg, Remi",
+      "party": "R",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Sameiet Skoggata 10 (godtgjørelse).\nMedlem i KS fylkesmøtet Østfold (ikke honorar).\nAndre vara i styret Movar IKS (ingen godtgjørelse)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Skoggata Tattoo Parlour org nr 980495140."
+        }
+      ]
+    },
+    {
+      "name": "Søreide, Ine Eriksen",
+      "party": "H",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "* Medlem av International Leadership Council i Center for European\nPolicy Analysis fra 2022. Ulønnet.\n* Medlem av High Level Reflection Group of The Council of Europe,\njuni-september 2022. Ulønnet. Europarådet dekker reise- og\noppholdsutgifter for et møte i Paris 25. august."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "* Fast spaltist i E24 fra høsten 2022. Mottar ikke honorar."
+        }
+      ]
+    },
+    {
+      "name": "Sørensen, Malin Bye",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i Furuset IF (ulønnet), Medlem av miljø- og\nbyutviklingskomiteen i bydel Alna (honorar pr. møte), Varamedlem i\nkontrollkomiteen til Juristforbundet (årlig honorar)."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Fungerende seksjonssjef for HR i Digitaliseringsdirektoratet (Digdir)\nAjourført pr. 30. oktober 2026 47"
+        }
+      ]
+    },
+    {
+      "name": "Tangen, Joakim Myklebost",
+      "party": "FrP",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "1. vara i styret til Øre Vil SA - ulønna\nKommunestyremedlem Gjemnes kommune - møtegodtgjersle"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Gjensidige Forsikring - 15 aksjer\nProtector Forsikring - 21 aksjer\nSparebank 1 Nordmøre - 58 aksjer\nSparebank 1 SMN - 49 aksjer\nØre Vilt SA - 1 andel"
+        }
+      ]
+    },
+    {
+      "name": "Teigland, Hannah",
+      "party": "H",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Fylkestingsrepresentant - godtgjøring\nStyreleder Risøbank IKS - godtgjøring\nNestleder i verneområdestyret for Oksøy, Ryvingen og Flekkefjord\nverneområde - godtgjøring\nMedlem nasjonalparkstyret for Raet nasjonalpark - godtgjøring"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Ansatt i 100 % som seniorrådgiver i Norsk Sykepleierforbund"
+        }
+      ]
+    },
+    {
+      "name": "Thomsen, Hans Jacob Huun",
+      "party": "V",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Thorheim, Bård Ludvig",
+      "party": "H",
+      "county": "Nordland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av styret i Bodø Høyre. Ulønnet"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Enkeltpersonforetaket Thor Bård Ludvig Thorheim. Foretaket er\navviklet."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Som tidligere rapportert var jeg  eier av Thor AS. Det var et\ntomt AS uten verdier. Sent i 2024 overdro jeg selskapet til en annen\neier og er dermed ikke lenger eier av noe AS eller noe annet selskap."
+        }
+      ]
+    },
+    {
+      "name": "Toppe, Kjersti",
+      "party": "Sp",
+      "county": "Hordaland",
+      "roles": []
+    },
+    {
+      "name": "Trellevik, Ove",
+      "party": "H",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "44 aksjer i Equinor ASA.\n400 aksjer i Aker BP\n25200 aksjer i Okea"
+        }
+      ]
+    },
+    {
+      "name": "Trøen, Tone Wilhelmsen",
+      "party": "H",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder i Foreningen Norden Norge (oktober 2020). Ikke honorar.\nStyremedlem i Stiftelsen Norden (oktober 2020). Ikke honorar.\nRådsmedlem hos Likestillingssenteret. Ulønnet. (Rådet kommer med\ninnspill til videre arbeid og strategi, velger nye styremedlemmer og\nfastsetter styrets godtgjørelse)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Aksje i Raumnes AS (Eierandel: mindre enn )"
+        }
+      ]
+    },
+    {
+      "name": "Tybring-Gjedde, Mathilde",
+      "party": "H",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Tønnesen, Berit",
+      "party": "A",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Folkevalgt Kristiansund kommune- Honoreres\nStyreleder Havparken Eiendom. Honoreres ikke\nStyreleder i Havparken AS. Honoreres\nStyremedlem i Imarfinans. Honoreres\nStyremedlem i Todalsfjordprosjektet. Honoreres.\nStyreleder i Folkets Hus SA. Honoreres\nMedlem i Representantskap Kristiansund og Nordmøre Havn.\nHonoreres\nStyremedlem Sameiet Hauggata 24. Honoreres ikke"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Daglig leder Opplæringskontoret for Teknologifag, OTEK Nordmøre\nog Romsdal. Forening"
+        }
+      ]
+    },
+    {
+      "name": "Unneland, Andreas Sjalg",
+      "party": "SV",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Schleppegrells Gate 22 Boligsameie. Årlig godtgjørelse\n5000,-"
+        }
+      ]
+    },
+    {
+      "name": "Valderhaug, Harry",
+      "party": "KrF",
+      "county": "Møre og Romsdal",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "- Styremedlem Brisk AS (styrehonorar pr møte jeg deltar på).\n- Styreleder Sunnmøre Begravelsebyrå AS (ulønnet).\n- Styreleder Valderhaug Holding AS (ulønnet).\n- Styreleder Møre Forsikring AS (ulønnet) (lønnet for arbeid fram til\nokt 2025).\n- Styremedlem Magda Sævik Stiftelse (ulønnet).\n- Medlem Fylkestinget KrF, Møre og Romsdal fylkeskommune -\nGodtgjørelse pr. møte og grunngodtgjørelse etter 15.oktober 2025 -\ndatoen for fylkestingsvedtak om fritak for alle verv utenom medlem i\nfylkestinget.\n- Medlem i kommunestyret KrF, Giske kommune - Godtgjørelse pr.\nmøte etter 23.oktober 2025 - datoen for k-styre sitt vedtak om fritak\nfra varaordførar-verv.\n- 2. varamedlem Attvin AS - pr. okt 2025. Lønnet styrehonorar pr.\nstyremøte jeg møter som vararepr."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "-Møre Forsikring AS Permsjon uten lønn fra november 2025.\n-Næringsforeninga i Ålesundregionen. Permisjon uten lønn fra\noktober 2025.\n-Giske kommunestyre: Godtgjørelse som varaordfører fram til søknad\nom fritak fra varaordfører blei vedtatt 23.oktober 2025. Jeg får\ngodtgjørelse pr kommunestyret jeg deltar på etter 23.oktober 2025.\n-Møre og Romsdal fylkeskommune: Fra godkjent søknad 15.oktober\n2025 om fritak fra alle verv unntatt medlem i fylkestinget, får jeg\ngodtgjørelse som medlem i fylkestinget."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Valderhaug Holding AS ,  aksjeeier\nMøre Forsikring AS ,  aksjeeier gjennom selskapet Valderhaug\nHolding AS"
+        }
+      ]
+    },
+    {
+      "name": "Vasvik, Truls",
+      "party": "A",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder Vestfold og Telemark Arbeiderparti"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Forefallende kontorarbeid i Krydder Kommunikasjon AS"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eier  av TheHe AS - som igjen eier  av Krydder\nKommunikasjon AS\n450 aksjer i Norwegian Air Shuttle\n350 aksjer i Spenn Technology A/S (notert på Københavnbørsen)"
+        }
+      ]
+    },
+    {
+      "name": "Vea, Marit",
+      "party": "V",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Byråd for miljø og samferdsel i Oslo kommune (i permisjon for å\nmøte på Stortinget 7. januar 2026 - 23. januar 2026). Rollen er lønnet.\nSentralstyremedlem i Venstre. Rollen er ikke lønnet.\nJeg mottar kun godtgjørelse fra ett politisk organ av gangen. Det betyr\nat jeg har frasagt meg godtgjørelse fra Stortinget mens jeg har vært\nAjourført pr. 30. oktober 2026 73\nbyråd. Under permisjon fra byråd mottar jeg godtgjørelse fra\nStortinget."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Ingen."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Byråd for miljø og samferdsel i Oslo kommune (i permisjon for å\nmøte på Stortinget 7. januar 2026 - 23. januar 2026). Oslo kommune\ner arbeidsgiver."
+        }
+      ]
+    },
+    {
+      "name": "Vedum, Trygve Slagsvold",
+      "party": "Sp",
+      "county": "Hedmark",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder av Senterpartiet (godtgjørelse)"
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Gårdbruker. Enkeltpersonforetak tilknyttet drift av Bjørby gård,\nStange kommune."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "(1) aksje i Atna Øl AS (992 851 724)"
+        }
+      ]
+    },
+    {
+      "name": "Velle, Simen",
+      "party": "FrP",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Leder i Fremskrittspartiets ungdom - Mottok godtgjøring frem til\n01.10.2025, og mottar ikke lenger godtgjøring for det vervet."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Inntekt fra bokutgivelse \"11 gode grunner til å våkne opp\"\n(Aschehoug, 2025)\nHonorar for at \"Faktafyk\" publiserer utdrag fra boken \"11 gode\ngrunner til å våkne opp\" (November 2025)\nDeltakelse på TV-innspilling (honorar gitt bort, men mottatt diett\nunder innspillingen.)"
+        }
+      ]
+    },
+    {
+      "name": "Vereide, Torbjørn",
+      "party": "A",
+      "county": "Sogn og Fjordane",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Har fram til 1. oktober 2021 vore folkevald i Vestland\nFylkeskommune, med dei verv som har fulgt med i den rolla. Desse er\nno avslutta.\nI oktober 2021 har eg fått refundert utlegg for reisevirksomhet frå LO,\nGloppen Kommune og Vestland Arbeiderparti.\nEg har vore med i ein stiftelse som heiter REKOMP: Stiftinga til\nFremje av Rekruttering og Kompetanseutvikling i Sogn og Fjordane -\nRekomp. - ingen godtgjørelse."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Småbruker: Har ikkje inntekt på bruket. Pakter bort graset til naboen\nuten vederlag.\nI tilknytning til småbruket vil eg få ein delpost av eit småkraftverk der\ndet ved byggeslutt vert eit eingangsbeløp på 200 000 i vederlag, og\nderetter ei fast inntekt mellom 50 000-60 000 pr år. Desse beløpa er\nikkje fastsett pr dags dato ettersom kontrakta ikkje er underteikna\nendå."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Eg har vore styremedlem i Finnmark ishavsreker som er drifta av\nbroren min. Er meldt ut av dette no. Har ingen interesser der.\nHar hatt eit enkeltmannsforetak. Dette har ikkje hatt drift på mange år."
+        }
+      ]
+    },
+    {
+      "name": "Vestenfor, Solveig",
+      "party": "A",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Ordførar i Ål kommune, 2015 - lønna\nStyreleiar Ål kraftverk KF - lønna\nStyremedlem Hardangerviddatunnelene AS - ikkje lønna\nStyremedlem Hallingdal folkehøgskule - ikkje lønna\nStyremedlem Ål Ap - ikkje lønna"
+        }
+      ]
+    },
+    {
+      "name": "Vestre, Jan Christian",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Vestre AS Eierandel: .\nVestre AS eier  av aksjene i følgende selskaper:\nThe Plus AS (No), Vestre Produksjon AS (No), Vestre Sverige AB\n(Se), Vestre Production AB (Se), Vestre GMBH (De), Vestre INC.\n(USA), Vestre Ltd. (UK)."
+        }
+      ]
+    },
+    {
+      "name": "Vik, Solveig",
+      "party": "A",
+      "county": "Rogaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Varamedlem Fjord Norge AS sitt styre. Lønnet ved innkalling.\nVaramedlem Aktio Kompetanse. Lønnet ved innkalling.\nVaramedlem stiftelsen økonomisk og administrativ utdanning og\nforskning i Rogaland. Lønnet ved innkalling.\nVaramedlem UNI-K AS og UNI-K Holding AS. Lønnet ved\ninnkalling."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Et enkeltpersonforetak ved navn Solveig Vik Consulting. I dag ingen\ninntekter eller utgifter tilknyttet foretaket. Tar per i dag ingen oppdrag."
+        }
+      ]
+    },
+    {
+      "name": "Viljugrein, Agnes Nærland",
+      "party": "A",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem i Toppfotball Kvinner for perioden 2026-2028. Ikke\nlønnet, men i vervet som styremedlem i Toppfotball Kvinner\ninkluderes et årlig abonnement på TV2 Play."
+        }
+      ]
+    },
+    {
+      "name": "Vitanza, Solveig",
+      "party": "A",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Varamedlem Halden arbeid og vekst, ikke godtgjørelse.\nRepresentant i Halden kommunestyre, møtegodtgjørelse."
+        }
+      ]
+    },
+    {
+      "name": "Vågslid, Lene",
+      "party": "A",
+      "county": "Telemark",
+      "roles": []
+    },
+    {
+      "name": "Waagen, Elise",
+      "party": "A",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Representantskapet Østfold Handel og Kontor (varamedlem), ikke\nlønnet."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Fagpolitisk ungdomssekretær LO/Østfold (permisjon fra vervet ut\nvalgperioden)"
+        }
+      ]
+    },
+    {
+      "name": "Wara, Tor Mikkel",
+      "party": "FrP",
+      "county": "Oslo",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styreleder Vaara AS (ulønnet)\nStyreleder Kingkenny (ulønnet)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Vaara AS: Eies 100 pst. av Tor Mikkel Wara. Selskapet eier 10000\naksjer i Himalaya Shipping Ltd, HSHP, 1000 aksjer i Frontline og\n5000 aksjer i Borr drilling\nKing Kenny as eies 100 pst av Vaara AS. Selskapet har ingen\neierinteresser"
+        }
+      ]
+    },
+    {
+      "name": "Warsame, Fawzi",
+      "party": "A",
+      "county": "Oslo",
+      "roles": []
+    },
+    {
+      "name": "Wessel, Naomi",
+      "party": "R",
+      "county": "Rogaland",
+      "roles": []
+    },
+    {
+      "name": "Wiborg, Erlend",
+      "party": "FrP",
+      "county": "Østfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem Moss kommunestyre (godtgjøring pr møte)\nStyremedlem, Moss havn KF (godtgjøring pr møte)\nLeder, Flerkulturelt Råd, Moss (godtgjøring pr møte)\nStyreleder, Ewib holding AS(eget holdingselskap, ingen godtgjøring)"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "av aksjene i Ewib holding AS"
+        }
+      ]
+    },
+    {
+      "name": "Wold, Morten",
+      "party": "FrP",
+      "county": "Buskerud",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem av kommunestyret i Modum kommune. Honoreres med\nmøtegodtgjørelse per møte.\nMedlem av kontrollutvalget i Modum kommune. Honoreres med\nmøtegodtgjørelse per møte."
+        }
+      ]
+    },
+    {
+      "name": "Ystebø, Joel",
+      "party": "KrF",
+      "county": "Hordaland",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Styremedlem Kristen Media Norge (ingen godtgjørelse)\nStyremedlem Beveg Bergen (ingen godtgjørelse)\nStyremedlem Hordaland barnevernssamband (ingen godtgjørelse)\nNylig fratrådt:\nStyremedlem Bergen Kristne Grunnskole (styrehonorar)\nStyremedlem Frøkenstiftelsen (styrehonorar)"
+        }
+      ]
+    },
+    {
+      "name": "Ytrevik, Sebastian Saltrø",
+      "party": "FrP",
+      "county": "Vestfold",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "2. Nestleder, Fremskrittspartiets Ungdom. Vært lønnet, men ikke nå\nlenger.\nKommunestyremedlem, Larvik Kommune. Godtgjøres, sagt det fra\nmeg i vara perioden.\nStyremedlem, Larvik kulturhus Bølgen KF.\nStyremedlem, Larviks Kommunale boligstiftelse.\nFylkestingsmedlem, Vestfold fylkeskommune. Godtgjøres."
+        },
+        {
+          "section": 3,
+          "kind": "naering",
+          "text": "Daglig leder \"Ytrevik Egg og Fjærfe\" ENK. Har drevet med små skala\neggproduksjon. Er under avvikling, men per dags dato er ENKet\nfortsatt registrert."
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Elektriker 100% - Reis Elektro AS. Vært i permisjon siden mai 2025."
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "Proximar Seafood AS - 61 aksjer\nNVIDIA - 0,28 aksjer\nRheinmetall AG - 0,02 aksjer"
+        }
+      ]
+    },
+    {
+      "name": "Østensen, Kai Steffen",
+      "party": "A",
+      "county": "Vest-Agder",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "- Eksternt styremedlem i styret ved Fakultet for humaniora og\npedagogikk, UiA (1.1.2024-31.7.2027). Godtgjøres per møte.\n- Varastyremedlem i Vanse Guttekor Deo-Gloria. Ulønnet.\n- Varastyremedlem i Sørlandet krets av Kristne Arbeidere. Ulønnet"
+        }
+      ]
+    },
+    {
+      "name": "Østensen, Marie",
+      "party": "A",
+      "county": "Akershus",
+      "roles": [
+        {
+          "section": 2,
+          "kind": "verv",
+          "text": "Medlem i kommunestyret i Asker, samt medlem i Utvalg for oppvekst\ni Asker.\nMottar godtgjøring"
+        },
+        {
+          "section": 4,
+          "kind": "lonnet_stilling",
+          "text": "Fast ansatt i Equinor ASA"
+        },
+        {
+          "section": 9,
+          "kind": "selskapsinteresse",
+          "text": "775 aksjer i Equinor ASA"
+        }
+      ]
+    }
+  ]
+}

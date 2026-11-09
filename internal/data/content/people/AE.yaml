@@ -1,53 +1,45 @@
-id: ABIR
-name: "Raja, Abid"
+id: AE
+name: "Elseth, Anette Carnarius"
 scope: representant
 consent_basis: public_office
-party_id: v
+party_id: frp
 roles:
   - role: stortingsrepresentant
-    organisation: Stortinget
-    from: "2026"
+    organisation: "Stortinget"
+    from: "2025-10-01"
     to: ""
-    source_url: "https://data.stortinget.no/eksport/representanter?format=json&sesjonid=2026-2027"
+    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
     source_tier: A
     retrieved_at: "2026-11-09"
   - role: verv
-    organisation: IPPFORB.com
+    organisation: "Lillestrøm kommune"
     from: "2026-10-30"
     to: ""
     source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
     source_tier: A
     retrieved_at: "2026-11-09"
-    source_note: "snapshot from the register, not a role start"
+    source_note: "register snapshot 2026-10-30, not a role start"
   - role: verv
-    organisation: "Aktiv mot kreft"
+    organisation: "Lillestrøm kommune"
     from: "2026-10-30"
     to: ""
     source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
     source_tier: A
     retrieved_at: "2026-11-09"
-    source_note: "snapshot from the register, not a role start"
+    source_note: "register snapshot 2026-10-30, not a role start"
   - role: verv
-    organisation: "Redd Barna"
+    organisation: "Vinmonopolet"
     from: "2026-10-30"
     to: ""
     source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
     source_tier: A
     retrieved_at: "2026-11-09"
-    source_note: "snapshot from the register, not a role start"
+    source_note: "register snapshot 2026-10-30, not a role start"
   - role: verv
-    organisation: SOS-barnebyer
+    organisation: "Mira IKS"
     from: "2026-10-30"
     to: ""
     source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
     source_tier: A
     retrieved_at: "2026-11-09"
-    source_note: "snapshot from the register, not a role start"
-  - role: verv
-    organisation: "DSD Explore"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "snapshot from the register, not a role start"
+    source_note: "register snapshot 2026-10-30, not a role start"

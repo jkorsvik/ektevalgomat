@@ -1,0 +1,29 @@
+id: JANVES
+name: Vestre, Jan Christian
+scope: representant
+consent_basis: public_office
+party_id: ap
+roles:
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Nærings- og fiskeridepartementet
+  post: Næringsminister
+  from: '2021-10-14'
+  to: '2024-04-19'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Helse- og omsorgsdepartementet
+  post: Helse- og omsorgsminister
+  from: '2024-04-19'
+  to: ''
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/jonas-gahr-stores-regjering/id2877906/
+  source_tier: A
+  retrieved_at: '2026-11-09'

@@ -1,0 +1,90 @@
+id: BÅH
+name: Hoksrud, Bård
+scope: representant
+consent_basis: public_office
+party_id: frp
+roles:
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Landbruks- og matdepartementet
+  post: Landbruks- og matminister
+  from: '2018-08-31'
+  to: '2019-01-22'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Bamble Kommunestyre
+  from: '2023'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Bamble Formannskap
+  from: '2023'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Grenland Brann og redning
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: stiftelsen for utleieboliger i Bamble
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: utvalg for Velferd
+  from: '2023'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: 1000 klubben
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Stortingets utvalg for rettferdsvederlag
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Fremskrittspartiets stortingsgruppe
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Transport- og kommunikasjonskomiteen
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start

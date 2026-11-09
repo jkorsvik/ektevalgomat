@@ -1,6 +1,9 @@
 package server
 
 import (
+	"fmt"
+	"math"
+	"sort"
 	"strconv"
 	"strings"
 
@@ -49,10 +52,18 @@ func pct(f float64) string {
 // (/partier) and the votes (the statement pages). A finding with no statement
 // is shown as such, never forced into the nearest one.
 
+type budgetDeptBar struct {
+	Name      string
+	Amount    string
+	ChangePct string
+	BarClass  string
+}
+
 type budgetView struct {
-	Meta     pageMeta
-	Budget   data.Budget
-	Findings []budgetFinding
+	Meta           pageMeta
+	Budget         data.Budget
+	TopDepartments []budgetDeptBar
+	Findings       []budgetFinding
 
 	// PartyBudget is what each party would spend per rammeområde, read out of the
 	// committee innstillinger. It is a different question from the government's
@@ -106,6 +117,40 @@ func buildBudgetView(ds *data.Dataset, budgetID string) (budgetView, bool) {
 			"/budsjett"),
 		Budget: b,
 	}
+
+	depts := make([]data.BudgetDept, len(b.Departments))
+	copy(depts, b.Departments)
+	sort.Slice(depts, func(i, j int) bool {
+		return depts[i].Amount > depts[j].Amount
+	})
+	var maxDept int64
+	if len(depts) > 0 {
+		maxDept = depts[0].Amount
+	}
+	topN := 8
+	if len(depts) < topN {
+		topN = len(depts)
+	}
+	for i := 0; i < topN; i++ {
+		d := depts[i]
+		step := 0
+		if maxDept > 0 {
+			step = int(math.Round((float64(d.Amount)/float64(maxDept))*20.0)) * 5
+			if step < 5 && d.Amount > 0 {
+				step = 5
+			}
+			if step > 100 {
+				step = 100
+			}
+		}
+		v.TopDepartments = append(v.TopDepartments, budgetDeptBar{
+			Name:      d.Name,
+			Amount:    nok(d.Amount),
+			ChangePct: pct(d.ChangePct),
+			BarClass:  fmt.Sprintf("pct-%d", step),
+		})
+	}
+
 	for _, f := range b.Findings {
 		bf := budgetFinding{
 			Topic: f.Topic, Note: f.Note, Quote: f.Quote,

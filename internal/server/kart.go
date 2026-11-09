@@ -37,24 +37,27 @@ type kartRow struct {
 }
 
 type kartParty struct {
-	ID         string
-	Short      string
-	Name       string
-	Coded      int
-	MultiDate  int
-	SingleDate int
-	Oldest     int
-	Newest     int
+	ID            string
+	Short         string
+	Name          string
+	Coded         int
+	CodedBarClass string
+	MultiDate     int
+	MultiBarClass string
+	SingleDate    int
+	Oldest        int
+	Newest        int
 }
 
 type kartView struct {
-	Meta         pageMeta
-	SnapshotDate string
-	Dimensions   []string
-	Parties      []kartParty
-	Rows         []kartRow
-	TotalCoded   int
-	TotalMulti   int
+	Meta            pageMeta
+	SnapshotDate    string
+	Dimensions      []string
+	Parties         []kartParty
+	Rows            []kartRow
+	TotalStatements int
+	TotalCoded      int
+	TotalMulti      int
 }
 
 func buildKartView(ds *data.Dataset, snapshotDate string) kartView {
@@ -80,12 +83,14 @@ func buildKartView(ds *data.Dataset, snapshotDate string) kartView {
 		}
 	}
 
+	totalStmts := len(ds.Statements)
 	view := kartView{
 		Meta: meta("Kartet · hva hvert parti har gjort, per sakområde",
 			"Hvert partis kodede posisjon per sakområde, med antall utsagn bak hvert tall og hvor langt tilbake kildene rekker.",
 			"/kart"),
-		SnapshotDate: snapshotDate,
-		Dimensions:   dims,
+		SnapshotDate:    snapshotDate,
+		Dimensions:      dims,
+		TotalStatements: totalStmts,
 	}
 
 	for _, id := range ids {
@@ -93,10 +98,23 @@ func buildKartView(ds *data.Dataset, snapshotDate string) kartView {
 		rows := profiles[id]
 		coded, multi, single := analysis.PartyTotals(rows)
 		oldest, newest := analysis.YearsCovered(rows)
+		codedBar := "pct-0"
+		multiBar := "pct-0"
+		if totalStmts > 0 {
+			codedBar = pctStepClass(100 * float64(coded) / float64(totalStmts))
+			multiBar = pctStepClass(100 * float64(multi) / float64(totalStmts))
+		}
 		view.Parties = append(view.Parties, kartParty{
-			ID: id, Short: p.Short, Name: p.Name,
-			Coded: coded, MultiDate: multi, SingleDate: single,
-			Oldest: oldest, Newest: newest,
+			ID:            id,
+			Short:         p.Short,
+			Name:          p.Name,
+			Coded:         coded,
+			CodedBarClass: codedBar,
+			MultiDate:     multi,
+			MultiBarClass: multiBar,
+			SingleDate:    single,
+			Oldest:        oldest,
+			Newest:        newest,
 		})
 		view.TotalCoded += coded
 		view.TotalMulti += multi

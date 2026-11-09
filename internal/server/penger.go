@@ -1,6 +1,8 @@
 package server
 
 import (
+	"fmt"
+	"math"
 	"strconv"
 	"strings"
 
@@ -38,14 +40,20 @@ type pengerParty struct {
 }
 
 type pengerLatest struct {
-	Short         string
-	Name          string
-	Income        string
-	StateSupport  string
-	StateShare    string
-	Contrib       string
-	ContribShare  string
-	Uncategorised string
+	ID                string
+	Short             string
+	Name              string
+	Income            string
+	IncomeBarClass    string
+	StateSupport      string
+	StateShare        string
+	StateStackClass   string
+	Contrib           string
+	ContribShare      string
+	ContribStackClass string
+	OwnShare          string
+	OwnStackClass     string
+	Uncategorised     string
 }
 
 // RegisterRows is the register's published total per year, and RegisterLatest the
@@ -53,12 +61,15 @@ type pengerLatest struct {
 type pengerRegisterTotal struct {
 	Year     string
 	Millions string
+	BarClass string
 }
 
 type pengerRegisterParty struct {
+	ID       string
 	Short    string
 	Name     string
 	Millions string
+	BarClass string
 }
 
 type pengerView struct {
@@ -152,38 +163,97 @@ func buildPengerView(ds *data.Dataset, snapshotDate string) pengerView {
 	if len(years) > 0 {
 		latestYear = years[len(years)-1]
 	}
+	var maxIncome int64
+	for _, p := range parties {
+		if f, ok := data.FinanceFor(p.ID, latestYear); ok && f.Income != nil && *f.Income > maxIncome {
+			maxIncome = *f.Income
+		}
+	}
 	for _, p := range parties {
 		f, ok := data.FinanceFor(p.ID, latestYear)
 		if !ok {
 			continue
 		}
+		incBar := "pct-0"
+		if maxIncome > 0 && f.Income != nil {
+			incBar = pctStepClass(100 * float64(*f.Income) / float64(maxIncome))
+		}
+		sPct := f.StateShare()
+		cPct := f.ContributionShare()
+		oPct := 0.0
+		if sPct >= 0 && cPct >= 0 {
+			oPct = math.Max(0, 100.0-sPct-cPct)
+		}
+		// Round to 5% steps that sum to at most 100%
+		sStep := int(math.Round(math.Max(0, sPct)/5.0)) * 5
+		cStep := int(math.Round(math.Max(0, cPct)/5.0)) * 5
+		if sStep+cStep > 100 {
+			cStep = 100 - sStep
+		}
+		oStep := 100 - sStep - cStep
 		latest = append(latest, pengerLatest{
-			Short:         p.Short,
-			Name:          p.Name,
-			Income:        kronerMill(f.Income),
-			StateSupport:  kronerMill(f.StateSupport),
-			StateShare:    percent(f.StateShare()),
-			Contrib:       kronerMill(f.Contributions),
-			ContribShare:  percent(f.ContributionShare()),
-			Uncategorised: kronerMill(f.FromUncategorised),
+			ID:                p.ID,
+			Short:             p.Short,
+			Name:              p.Name,
+			Income:            kronerMill(f.Income),
+			IncomeBarClass:    incBar,
+			StateSupport:      kronerMill(f.StateSupport),
+			StateShare:        percent(sPct),
+			StateStackClass:   fmt.Sprintf("pct-%d", sStep),
+			Contrib:           kronerMill(f.Contributions),
+			ContribShare:      percent(cPct),
+			ContribStackClass: fmt.Sprintf("pct-%d", cStep),
+			OwnShare:          percent(oPct),
+			OwnStackClass:     fmt.Sprintf("pct-%d", oStep),
+			Uncategorised:     kronerMill(f.FromUncategorised),
 		})
 	}
 
+	var maxRegTotal int64
+	for _, r := range data.RegisterTotals() {
+		if r.Amount > maxRegTotal {
+			maxRegTotal = r.Amount
+		}
+	}
 	var regTotals []pengerRegisterTotal
 	for _, r := range data.RegisterTotals() {
 		amount := r.Amount
-		regTotals = append(regTotals, pengerRegisterTotal{Year: r.Year, Millions: kronerMill(&amount)})
+		bar := "pct-0"
+		if maxRegTotal > 0 {
+			bar = pctStepClass(100 * float64(amount) / float64(maxRegTotal))
+		}
+		regTotals = append(regTotals, pengerRegisterTotal{
+			Year:     r.Year,
+			Millions: kronerMill(&amount),
+			BarClass: bar,
+		})
 	}
 	regYears := data.RegisterTotals()
 	regYear := ""
 	if len(regYears) > 0 {
 		regYear = regYears[len(regYears)-1].Year
 	}
+	var maxRegParty int64
+	for _, p := range parties {
+		if amount, ok := data.RegisterFor(p.ID, regYear); ok && amount > maxRegParty {
+			maxRegParty = amount
+		}
+	}
 	var regLatest []pengerRegisterParty
 	for _, p := range parties {
 		if amount, ok := data.RegisterFor(p.ID, regYear); ok {
 			v := amount
-			regLatest = append(regLatest, pengerRegisterParty{Short: p.Short, Name: p.Name, Millions: kronerMill(&v)})
+			bar := "pct-0"
+			if maxRegParty > 0 {
+				bar = pctStepClass(100 * float64(v) / float64(maxRegParty))
+			}
+			regLatest = append(regLatest, pengerRegisterParty{
+				ID:       p.ID,
+				Short:    p.Short,
+				Name:     p.Name,
+				Millions: kronerMill(&v),
+				BarClass: bar,
+			})
 		}
 	}
 	regName, _, regURL, regRetrieved, regNote := data.RegisterSourceInfo()

@@ -123,6 +123,9 @@ func TestKartMarksExactlyTheDatedCells(t *testing.T) {
 	if !strings.Contains(body, `class="kart-bar-fill pct-`) {
 		t.Error("/kart does not render visual position bars")
 	}
+	if got := strings.Count(body, `class="viz-paired-row"`); got != len(data.Store.Parties) {
+		t.Errorf("/kart renders %d coverage paired rows, want %d", got, len(data.Store.Parties))
+	}
 	t.Logf("%d dated cells marked", want)
 }
 

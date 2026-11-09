@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "head" .Meta}}
 <link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/rommet.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
 </head>
 <body>
 
@@ -22,29 +24,67 @@
     {{.TotalPartyYears}} parti-år er med.
   </p>
 
+  <section class="viz-panel" aria-label="Inntektssammensetning og totalinntekt per parti">
+    <div class="viz-head">
+      <p class="viz-kicker">Partiregnskap · {{.LatestYear}}</p>
+      <h2 class="viz-title">Hvor stor del av inntekten kommer fra staten mot bidrag</h2>
+      <p class="viz-subtitle">Øverste bånd per parti viser 100 %-fordelingen av inntekten i {{.LatestYear}}. Nederste stolpe viser samlet inntekt i millioner kroner.</p>
+    </div>
+    <ul class="viz-legend">
+      <li class="viz-legend-item"><span class="viz-swatch viz-swatch-primary"></span>Statlig støtte</li>
+      <li class="viz-legend-item"><span class="viz-swatch viz-swatch-secondary"></span>Bidrag (medlemmer, personer, organisasjoner, foretak)</li>
+      <li class="viz-legend-item"><span class="viz-swatch viz-swatch-tertiary"></span>Egeninnsamling og øvrige inntekter</li>
+    </ul>
+    <div class="viz-paired-list">
+      {{range .Latest}}
+      <div class="viz-paired-row">
+        <div class="party-tag"><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</div>
+        <div class="viz-paired-tracks">
+          <div class="viz-paired-line">
+            <div class="viz-stack-track" role="img" aria-label="{{.Short}}: {{.StateShare}} % statlig støtte, {{.ContribShare}} % bidrag">
+              <span class="viz-stack-seg-state {{.StateStackClass}}" title="Statlig støtte: {{.StateShare}} %"></span>
+              <span class="viz-stack-seg-contrib {{.ContribStackClass}}" title="Bidrag: {{.ContribShare}} %"></span>
+              <span class="viz-stack-seg-own {{.OwnStackClass}}" title="Øvrig: {{.OwnShare}} %"></span>
+            </div>
+            <span class="viz-paired-num">{{.StateShare}} % stat</span>
+          </div>
+          <div class="viz-paired-line">
+            <div class="viz-paired-track"><span class="viz-bar-fill-ink {{.IncomeBarClass}}" aria-hidden="true"></span></div>
+            <span class="viz-paired-num">{{.ContribShare}} % bidrag</span>
+          </div>
+        </div>
+        <div class="viz-paired-ratio"><strong>{{.Income}}</strong> mill. kr</div>
+      </div>
+      {{end}}
+    </div>
+    <p class="viz-caption">Kilde: SSB tabell {{.Table}} ({{.LatestYear}}). Andelene står sammen med totalbeløpet fordi høy bidragsandel i et lite parti kan utgjøre færre kroner enn lav bidragsandel i et stort parti.</p>
+  </section>
+
   <h3>Statlig støtte per parti og år</h3>
   <p class="prose-lede">
     Millioner kroner. En tom rute betyr at partiet ikke hadde rapporterte tall
     det året, ikke at støtten var null.
   </p>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>År</th>
-        {{range .Parties}}<th>{{.Short}}</th>{{end}}
-      </tr>
-    </thead>
-    <tbody>
-      {{range .Rows}}
-      <tr>
-        <th>{{.Year}}</th>
-        {{range .Cells}}
-          {{if .Has}}<td>{{.Millions}}</td>{{else}}<td class="muted">–</td>{{end}}
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>År</th>
+          {{range .Parties}}<th>{{.Short}}</th>{{end}}
+        </tr>
+      </thead>
+      <tbody>
+        {{range .Rows}}
+        <tr>
+          <th>{{.Year}}</th>
+          {{range .Cells}}
+            {{if .Has}}<td>{{.Millions}}</td>{{else}}<td class="muted">–</td>{{end}}
+          {{end}}
+        </tr>
         {{end}}
-      </tr>
-      {{end}}
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
 
   <h3>Sammensetningen av inntekten, {{.LatestYear}}</h3>
   <p class="prose-lede">
@@ -52,32 +92,34 @@
     siden av tallet den er regnet fra: 133 millioner er en annen sak for et parti
     med 270 millioner i inntekt enn for et med 60.
   </p>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Parti</th>
-        <th>Inntekt i alt</th>
-        <th>Statlig støtte</th>
-        <th>Andel statlig</th>
-        <th>Bidrag i alt</th>
-        <th>Andel bidrag</th>
-        <th>Ukategoriserte givere</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{range .Latest}}
-      <tr>
-        <th title="{{.Name}}">{{.Short}}</th>
-        <td>{{.Income}}</td>
-        <td>{{.StateSupport}}</td>
-        <td>{{.StateShare}} %</td>
-        <td>{{.Contrib}}</td>
-        <td>{{.ContribShare}} %</td>
-        <td>{{if .Uncategorised}}{{.Uncategorised}}{{else}}<span class="muted">–</span>{{end}}</td>
-      </tr>
-      {{end}}
-    </tbody>
-  </table>
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Parti</th>
+          <th>Inntekt i alt</th>
+          <th>Statlig støtte</th>
+          <th>Andel statlig</th>
+          <th>Bidrag i alt</th>
+          <th>Andel bidrag</th>
+          <th>Ukategoriserte givere</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range .Latest}}
+        <tr>
+          <th title="{{.Name}}">{{.Short}}</th>
+          <td>{{.Income}}</td>
+          <td>{{.StateSupport}}</td>
+          <td>{{.StateShare}} %</td>
+          <td>{{.Contrib}}</td>
+          <td>{{.ContribShare}} %</td>
+          <td>{{if .Uncategorised}}{{.Uncategorised}}{{else}}<span class="muted">–</span>{{end}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </div>
 
   <h3>Bidrag registrert etter partiloven</h3>
   <p class="prose-lede">
@@ -88,21 +130,21 @@
   </p>
   <table class="data-table">
     <thead>
-      <tr><th>År</th><th>Registrerte bidrag i alt</th></tr>
+      <tr><th>År</th><th>Registrerte bidrag i alt</th><th>Omfang</th></tr>
     </thead>
     <tbody>
       {{range .RegisterTotals}}
-      <tr><th>{{.Year}}</th><td>{{.Millions}}</td></tr>
+      <tr><th>{{.Year}}</th><td>{{.Millions}}</td><td><span class="kart-bar" aria-hidden="true"><span class="kart-bar-fill {{.BarClass}}"></span></span></td></tr>
       {{end}}
     </tbody>
   </table>
 
   <p class="prose-lede">Per parti, {{.RegisterYear}}, millioner kroner:</p>
   <table class="data-table">
-    <thead><tr><th>Parti</th><th>Registrerte bidrag</th></tr></thead>
+    <thead><tr><th>Parti</th><th>Registrerte bidrag</th><th>Andel mot største</th></tr></thead>
     <tbody>
       {{range .RegisterLatest}}
-      <tr><th title="{{.Name}}">{{.Short}}</th><td>{{.Millions}}</td></tr>
+      <tr><th title="{{.Name}}">{{.Short}}</th><td>{{.Millions}}</td><td><span class="kart-bar" aria-hidden="true"><span class="kart-bar-fill {{.BarClass}}"></span></span></td></tr>
       {{end}}
     </tbody>
   </table>

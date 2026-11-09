@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "head" .Meta}}
 <link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/rommet.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
 </head>
 <body>
 
@@ -39,37 +41,78 @@
     på {{.Least.Pct}} % ({{.Least.Agree}} av {{.Least.Compared}}).
     Bare par som er sammenlignet på minst 10 voteringer er rangert.
   </p>
+
+  <section class="viz-panel" aria-label="Partipar med høyest og lavest enighet i voteringer">
+    <div class="viz-head">
+      <p class="viz-kicker">Samstemmighet i Stortinget · {{.VoteTotal}} voteringer</p>
+      <h2 class="viz-title">Hvilke partipar stemmer oftest og sjeldnest sammen</h2>
+      <p class="viz-subtitle">Andel voteringer der begge partier tok stilling og stemte på samme side (minst 10 felles voteringer, enstemmige voteringer holdt utenfor).</p>
+    </div>
+    <div class="viz-split-grid">
+      <div class="viz-subpanel">
+        <h3>Mest samstemte par</h3>
+        <div class="viz-bars">
+          {{range .TopPairs}}
+          <div class="viz-bar-row">
+            <div class="viz-bar-label">
+              <span class="rom-dot rom-dot-{{.A}}"></span>{{.AShort}} · <span class="rom-dot rom-dot-{{.B}}"></span>{{.BShort}}
+            </div>
+            <div class="viz-bar-track"><span class="viz-bar-fill {{.BarClass}}" aria-hidden="true"></span></div>
+            <div class="viz-bar-val"><strong>{{.Pct}} %</strong> <span class="muted">({{.Compared}})</span></div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+      <div class="viz-subpanel">
+        <h3>Minst samstemte par</h3>
+        <div class="viz-bars">
+          {{range .BottomPairs}}
+          <div class="viz-bar-row">
+            <div class="viz-bar-label">
+              <span class="rom-dot rom-dot-{{.A}}"></span>{{.AShort}} · <span class="rom-dot rom-dot-{{.B}}"></span>{{.BShort}}
+            </div>
+            <div class="viz-bar-track"><span class="viz-bar-fill-soft {{.BarClass}}" aria-hidden="true"></span></div>
+            <div class="viz-bar-val"><strong>{{.Pct}} %</strong> <span class="muted">({{.Compared}})</span></div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <p class="viz-caption">Kilde: Stortingets åpne data ({{.SessionCount}} sesjoner). Tall i parentes viser antall voteringer paret er sammenlignet på.</p>
+  </section>
   {{else}}
   <p class="prose-lede">Ingen par er sammenlignet på nok voteringer til å rangeres ennå.</p>
   {{end}}
 
   <h3>Hele matrisen</h3>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Parti</th>
-        {{range .Parties}}<th>{{.Short}}</th>{{end}}
-      </tr>
-    </thead>
-    <tbody>
-      {{range $i, $row := .Matrix}}
-      <tr>
-        <th>{{(index $.Parties $i).Short}}</th>
-        {{range $j, $cell := $row}}
-          {{if eq $i $j}}<td class="muted">–</td>
-          {{else if $cell.HasData}}<td>{{$cell.Pct}}<span class="muted"> ({{$cell.Compared}})</span></td>
-          {{else}}<td class="muted">–</td>{{end}}
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Parti</th>
+          {{range .Parties}}<th><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</th>{{end}}
+        </tr>
+      </thead>
+      <tbody>
+        {{range $i, $row := .Matrix}}
+        <tr>
+          <th><span class="rom-dot rom-dot-{{(index $.Parties $i).ID}}"></span>{{(index $.Parties $i).Short}}</th>
+          {{range $j, $cell := $row}}
+            {{if eq $i $j}}<td class="muted">–</td>
+            {{else if $cell.HasData}}<td class="heat-cell {{$cell.HeatClass}}">{{$cell.Pct}}<span class="muted"> ({{$cell.Compared}})</span><span class="heat-bar" aria-hidden="true"><span class="heat-bar-fill {{$cell.BarClass}}"></span></span></td>
+            {{else}}<td class="muted">–</td>{{end}}
+          {{end}}
+        </tr>
         {{end}}
-      </tr>
-      {{end}}
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
 
   <h3>Hvor mange voteringer hvert parti faktisk tok stilling i</h3>
   <table class="data-table">
-    <thead><tr><th>Parti</th><th>Voteringer med stemme</th></tr></thead>
+    <thead><tr><th>Parti</th><th>Voteringer med stemme</th><th>Dekning</th></tr></thead>
     <tbody>
-      {{range .Parties}}<tr><th>{{.Short}}</th><td>{{.Votes}}</td></tr>{{end}}
+      {{range .Parties}}<tr><th><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</th><td>{{.Votes}}</td><td><span class="kart-bar" aria-hidden="true"><span class="kart-bar-fill {{.BarClass}}"></span></span></td></tr>{{end}}
     </tbody>
   </table>
 
@@ -86,7 +129,7 @@
       <tr>
         <td class="mono">{{.ID}}</td>
         <td>{{if .Forslag}}{{.Forslag}}{{else}}<span class="muted">forslagsteksten er ikke publisert i eksporten</span>{{end}}</td>
-        <td>{{range .Sides}}<span class="vote-side">{{.Party}}: {{.Side}}</span> {{end}}</td>
+        <td>{{range .Sides}}<span class="vote-side vote-pill">{{.Party}}: {{.Side}}</span> {{end}}</td>
       </tr>
       {{end}}
     </tbody>

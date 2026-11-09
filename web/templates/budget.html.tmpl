@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/rommet.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
 </head>
 <body>
 
@@ -54,6 +56,24 @@
     <summary class="budget-section-sum"><h2>Utgifter per departement</h2></summary>
     <p class="budget-lede">Alle utgiftskapitler (1–2999, utenom kap. 2800), lagt sammen per departement, i millioner kroner. Kilde: Gul bok-datagrunnlaget for 2027 (én kolonne, forslaget) og 2026-filen ved siden av.
       Endringen sammenligner regjeringens to forslag, 2026 og 2027. Der Stortinget endret 2026-budsjettet etter at forslaget ble lagt fram, er den reelle forskjellen en annen. Bredbåndsposten under er et slikt tilfelle.</p>
+
+    <div class="viz-panel" aria-label="Største utgiftsdepartementer i forslaget for {{.Budget.Year}}">
+      <div class="viz-head">
+        <p class="viz-kicker">Størrelsesorden · {{.Budget.Year}}-forslaget</p>
+        <h3 class="viz-title">De åtte største departementene etter utgiftsramme</h3>
+        <p class="viz-subtitle">Beløp i millioner kroner (avrundet fra Gul bok) og prosentvis endring fra 2026-forslaget.</p>
+      </div>
+      <div class="viz-bars">
+        {{range .TopDepartments}}
+        <div class="viz-bar-row viz-bar-row-wide">
+          <div class="viz-bar-label" title="{{.Name}}">{{.Name}}</div>
+          <div class="viz-bar-track"><span class="viz-bar-fill {{.BarClass}}" aria-hidden="true"></span></div>
+          <div class="viz-bar-val"><strong>{{.Amount}}</strong> <span class="muted">({{.ChangePct}} %)</span></div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+
     <table class="budget-table">
       <thead><tr><th>Departement</th><th class="num">Utgifter</th><th class="num">Endring</th></tr></thead>
       <tbody>
@@ -78,28 +98,43 @@
       <a href="/budsjett?sort=spredning#partibudsjett"{{if eq .PartyBudget.Sort "spredning"}} aria-current="true"{{end}}>størst uenighet</a>
       <a href="/budsjett?sort=storrelse#partibudsjett"{{if eq .PartyBudget.Sort "storrelse"}} aria-current="true"{{end}}>størst beløp</a>
     </p>
-    <table class="budget-table party-budget">
-      <thead>
-        <tr>
-          <th>Rammeområde</th>
-          {{range .PartyBudget.Cols}}<th class="num{{if .Joint}} joint{{end}}">{{.Label}}</th>{{end}}
-          <th class="num">Spredning</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{range .PartyBudget.Rows}}
-        <tr{{if eq .Area $.PartyBudget.SelectedArea}} class="party-budget-open"{{end}}>
-          <td><a href="?omrade={{.Area}}#partibudsjett">{{.Area}}</a> <span class="party-budget-posts">{{.Posts}} poster</span></td>
-          {{range .Cells}}<td class="num change {{.Class}}{{if eq .Kind "fig"}} fig{{end}}">{{if eq .Kind "fig"}}<span class="party-bar b{{.Bucket}} {{.Class}}" aria-hidden="true"></span><span class="party-num">{{.Change}}</span>{{else if eq .Kind "blank"}}<span class="party-blank" title="Partiet har en kolonne her, men dokumentet oppgir ingen sum">?</span>{{else}}<span class="party-absent" title="Partiet er ikke med i denne komiteen og la ikke fram noe alternativ her">–</span>{{end}}</td>{{end}}
-          <td class="num">{{.Spread}}</td>
-        </tr>
-        {{end}}
-      </tbody>
-    </table>
+    <div class="table-scroll">
+      <table class="budget-table party-budget">
+        <thead>
+          <tr>
+            <th>Rammeområde</th>
+            {{range .PartyBudget.Cols}}<th class="num{{if .Joint}} joint{{end}}">{{.Label}}</th>{{end}}
+            <th class="num">Spredning</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{range .PartyBudget.Rows}}
+          <tr{{if eq .Area $.PartyBudget.SelectedArea}} class="party-budget-open"{{end}}>
+            <td><a href="?omrade={{.Area}}#partibudsjett">{{.Area}}</a> <span class="party-budget-posts">{{.Posts}} poster</span></td>
+            {{range .Cells}}<td class="num change {{.Class}}{{if eq .Kind "fig"}} fig{{end}}">{{if eq .Kind "fig"}}<span class="party-bar b{{.Bucket}} {{.Class}}" aria-hidden="true"></span><span class="party-num">{{.Change}}</span>{{else if eq .Kind "blank"}}<span class="party-blank" title="Partiet har en kolonne her, men dokumentet oppgir ingen sum">?</span>{{else}}<span class="party-absent" title="Partiet er ikke med i denne komiteen og la ikke fram noe alternativ her">–</span>{{end}}</td>{{end}}
+            <td class="num">{{.Spread}}</td>
+          </tr>
+          {{end}}
+        </tbody>
+      </table>
+    </div>
 
     <div class="party-budget-common">
       <h3>Sammenlignbar sum</h3>
       <p>Summen av avvikene i de {{len .PartyBudget.Common.Areas}} rammeområdene der alle sju partiene har en kolonne (av {{.PartyBudget.Common.Of}}). Her er dekningen lik, så tallene kan sammenlignes; over alle rammeområdene kan de ikke det, fordi partiene er med i ulike komiteer.</p>
+      <div class="viz-bars">
+        {{range .PartyBudget.Common.Cols}}
+        <div class="viz-bar-row">
+          <div class="viz-bar-label"><span class="rom-dot rom-dot-{{.Party}}"></span>{{.Label}}</div>
+          <div class="viz-bar-track">
+            {{if eq .Class "up"}}<span class="viz-bar-fill-up {{.BarClass}}" aria-hidden="true"></span>
+            {{else if eq .Class "down"}}<span class="viz-bar-fill-down {{.BarClass}}" aria-hidden="true"></span>
+            {{else}}<span class="viz-bar-fill {{.BarClass}}" aria-hidden="true"></span>{{end}}
+          </div>
+          <div class="viz-bar-val"><span class="num {{.Class}}"><strong>{{.Total}}</strong> mrd. kr</span></div>
+        </div>
+        {{end}}
+      </div>
       <ul class="party-budget-common-list">
         {{range .PartyBudget.Common.Cols}}<li><span class="party-budget-common-name">{{.Label}}</span> <span class="num {{.Class}}">{{.Total}}</span></li>{{end}}
       </ul>
@@ -110,24 +145,26 @@
     <div id="partibudsjett" class="party-posts">
       <h3>Bevilgningene i rammeområde {{.PartyBudget.SelectedArea}}</h3>
       <p class="budget-lede">{{.PartyBudget.SelectedDoc}}. Hver kolonne viser avviket fra regjeringens forslag for posten, i milliarder kroner. {{len .PartyBudget.PostRows}} poster.</p>
-      <table class="budget-table party-budget party-posts-table">
-        <thead>
-          <tr>
-            <th>Kap./post</th>
-            <th>Formål</th>
-            {{range .PartyBudget.Cols}}<th class="num{{if .Joint}} joint{{end}}">{{.Label}}</th>{{end}}
-          </tr>
-        </thead>
-        <tbody>
-          {{range .PartyBudget.PostRows}}
-          <tr>
-            <td class="party-post-id">{{.Kap}}{{if .Post}}/{{.Post}}{{end}}</td>
-            <td>{{.Formal}}</td>
-            {{range .Cells}}<td class="num change {{.Class}}{{if eq .Kind "fig"}} fig{{end}}">{{if eq .Kind "fig"}}<span class="party-bar b{{.Bucket}} {{.Class}}" aria-hidden="true"></span><span class="party-num">{{.Change}}</span>{{else}}{{if eq .Kind "blank"}}<span class="party-blank">·</span>{{else}}<span class="party-absent">–</span>{{end}}{{end}}</td>{{end}}
-          </tr>
-          {{end}}
-        </tbody>
-      </table>
+      <div class="table-scroll">
+        <table class="budget-table party-budget party-posts-table">
+          <thead>
+            <tr>
+              <th>Kap./post</th>
+              <th>Formål</th>
+              {{range .PartyBudget.Cols}}<th class="num{{if .Joint}} joint{{end}}">{{.Label}}</th>{{end}}
+            </tr>
+          </thead>
+          <tbody>
+            {{range .PartyBudget.PostRows}}
+            <tr>
+              <td class="party-post-id">{{.Kap}}{{if .Post}}/{{.Post}}{{end}}</td>
+              <td>{{.Formal}}</td>
+              {{range .Cells}}<td class="num change {{.Class}}{{if eq .Kind "fig"}} fig{{end}}">{{if eq .Kind "fig"}}<span class="party-bar b{{.Bucket}} {{.Class}}" aria-hidden="true"></span><span class="party-num">{{.Change}}</span>{{else}}{{if eq .Kind "blank"}}<span class="party-blank">·</span>{{else}}<span class="party-absent">–</span>{{end}}{{end}}</td>{{end}}
+            </tr>
+            {{end}}
+          </tbody>
+        </table>
+      </div>
       <p class="budget-status">Kilde: <a href="{{.PartyBudget.SelectedURL}}">{{.PartyBudget.SelectedDoc}}</a>. Kolonnekartet er lest fra tabellens egen overskrift, og hver kolonne er kontrollert mot dokumentets egen sumrad.</p>
     </div>
     {{end}}

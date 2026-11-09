@@ -217,5 +217,11 @@ func TestStemmerListsOnlyCitedVotesAndSaysSo(t *testing.T) {
 	if len(body) > 2_000_000 {
 		t.Errorf("the page is %d bytes; the vote list has grown back", len(body))
 	}
+	if !strings.Contains(body, `class="heat-bar-fill pct-`) {
+		t.Error("/stemmer matrix does not render visual heatmap bars")
+	}
+	if got := strings.Count(body, `class="viz-bar-row"`); got < 2 {
+		t.Errorf("/stemmer top/bottom alignment chart renders %d rows, want at least 2", got)
+	}
 	t.Logf("%d cited listed, %d unlisted, page %d bytes", cited, uncited, len(body))
 }

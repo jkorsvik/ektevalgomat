@@ -128,6 +128,27 @@ func TestMaktStatesTheEdgesOfTheMap(t *testing.T) {
 	}
 }
 
+// TestMaktRendersHemicycleAndPairedBars checks that the 169-seat SVG hemicycle
+// renders one <circle> per Stortinget seat, colored by party, and that the paired
+// seat-vs-proposal bar chart renders for every party.
+func TestMaktRendersHemicycleAndPairedBars(t *testing.T) {
+	raw := getMakt(t)
+	seats := data.SeatCounts()
+	total := data.SeatTotal()
+	if got := strings.Count(raw, `class="hemicycle-seat `); got != total {
+		t.Errorf("hemicycle renders %d seat circles, want %d", got, total)
+	}
+	for id, n := range seats {
+		cls := `class="hemicycle-seat seat-` + id + `"`
+		if got := strings.Count(raw, cls); got != n {
+			t.Errorf("party %s: %d hemicycle circles, want %d", id, got, n)
+		}
+	}
+	if got := strings.Count(raw, `class="viz-paired-row"`); got != len(seats) {
+		t.Errorf("paired bar chart renders %d rows, want %d", got, len(seats))
+	}
+}
+
 func truncate(s string, n int) string {
 	if len(s) <= n {
 		return s

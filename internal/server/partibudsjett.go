@@ -97,9 +97,12 @@ type partyBudgetCommon struct {
 }
 
 type partyBudgetCommonCol struct {
-	Label string
-	Total string
-	Class string
+	Party    string
+	Label    string
+	Total    string
+	TotalKr  int64
+	Class    string
+	BarClass string
 }
 
 type partyBudgetCoverage struct {
@@ -291,6 +294,7 @@ func buildPartyBudgetSection(ds *data.Dataset) partyBudgetSection {
 		}
 	}
 	s.Common = partyBudgetCommon{Areas: common, Of: s.Areas}
+	var maxCommonAbs int64
 	for i, col := range s.Cols {
 		if col.Joint {
 			continue
@@ -309,9 +313,27 @@ func buildPartyBudgetSection(ds *data.Dataset) partyBudgetSection {
 			}
 			total += m
 		}
+		abs := total
+		if abs < 0 {
+			abs = -abs
+		}
+		if abs > maxCommonAbs {
+			maxCommonAbs = abs
+		}
 		s.Common.Cols = append(s.Common.Cols, partyBudgetCommonCol{
-			Label: col.Label, Total: mrd(total), Class: mrdClass(total),
+			Party: col.Party, Label: col.Label, Total: mrd(total), TotalKr: total, Class: mrdClass(total),
 		})
+	}
+	for i := range s.Common.Cols {
+		abs := s.Common.Cols[i].TotalKr
+		if abs < 0 {
+			abs = -abs
+		}
+		bar := "pct-0"
+		if maxCommonAbs > 0 {
+			bar = pctStepClass(100 * float64(abs) / float64(maxCommonAbs))
+		}
+		s.Common.Cols[i].BarClass = bar
 	}
 
 	cov := data.PartyAreas()

@@ -19,21 +19,24 @@ import (
 const minComparedForRanking = 10
 
 type matrixCell struct {
-	A        string
-	B        string
-	AShort   string
-	BShort   string
-	Pct      int
-	Compared int
-	Agree    int
-	HasData  bool
+	A         string
+	B         string
+	AShort    string
+	BShort    string
+	Pct       int
+	BarClass  string
+	HeatClass string
+	Compared  int
+	Agree     int
+	HasData   bool
 }
 
 type stemmerParty struct {
-	ID    string
-	Short string
-	Name  string
-	Votes int
+	ID       string
+	Short    string
+	Name     string
+	Votes    int
+	BarClass string
 }
 
 type stemmerVote struct {
@@ -56,6 +59,8 @@ type stemmerView struct {
 	Parties       []stemmerParty
 	Matrix        [][]matrixCell
 	Ranked        []matrixCell
+	TopPairs      []matrixCell
+	BottomPairs   []matrixCell
 	Most          matrixCell
 	Least         matrixCell
 	HasRanking    bool
@@ -84,20 +89,42 @@ func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
 		byID[p.ID] = p
 	}
 	counts := analysis.VotesByParty(votes, ids)
+	maxVotes := 0
+	for _, id := range ids {
+		if counts[id] > maxVotes {
+			maxVotes = counts[id]
+		}
+	}
 
 	parties := make([]stemmerParty, 0, len(ids))
 	for _, id := range ids {
+		bar := "pct-0"
+		if maxVotes > 0 {
+			bar = pctStepClass(100 * float64(counts[id]) / float64(maxVotes))
+		}
 		parties = append(parties, stemmerParty{
-			ID: id, Short: byID[id].Short, Name: byID[id].Name, Votes: counts[id],
+			ID: id, Short: byID[id].Short, Name: byID[id].Name, Votes: counts[id], BarClass: bar,
 		})
 	}
 
 	pairs := analysis.VoteAgreement(votes, ids, 1)
 	lookup := make(map[string]matrixCell, len(pairs))
 	for _, p := range pairs {
-		lookup[p.A+"/"+p.B] = matrixCell{A: p.A, B: p.B,
+		pct := int(p.Pct() + 0.5)
+		heat := ""
+		if p.Compared > 0 && pct >= 70 {
+			heat = "heat-hi"
+		}
+		lookup[p.A+"/"+p.B] = matrixCell{
+			A: p.A, B: p.B,
 			AShort: byID[p.A].Short, BShort: byID[p.B].Short,
-			Pct: int(p.Pct() + 0.5), Compared: p.Compared, Agree: p.Agree, HasData: p.Compared > 0}
+			Pct:       pct,
+			BarClass:  pctStepClass(float64(pct)),
+			HeatClass: heat,
+			Compared:  p.Compared,
+			Agree:     p.Agree,
+			HasData:   p.Compared > 0,
+		}
 	}
 
 	matrix := make([][]matrixCell, len(ids))
@@ -134,6 +161,16 @@ func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
 		return ranked[i].Compared > ranked[j].Compared
 	})
 
+	topN := 5
+	if len(ranked) < topN {
+		topN = len(ranked)
+	}
+	topPairs := append([]matrixCell(nil), ranked[:topN]...)
+	var bottomPairs []matrixCell
+	for i := len(ranked) - 1; i >= 0 && len(bottomPairs) < topN; i-- {
+		bottomPairs = append(bottomPairs, ranked[i])
+	}
+
 	view := stemmerView{
 		Meta: meta("Stemmemønster · hvem stemmer med hvem",
 			"Hvor ofte to partier stemte likt på de samme voteringene, regnet ut fra Stortingets voteringsresultat, med nevneren synlig i hver celle.",
@@ -148,6 +185,8 @@ func buildStemmerView(ds *data.Dataset, snapshotDate string) stemmerView {
 		Parties:         parties,
 		Matrix:          matrix,
 		Ranked:          ranked,
+		TopPairs:        topPairs,
+		BottomPairs:     bottomPairs,
 	}
 	// One definition of the headline pair, in analysis.MostAligned, so the page and
 	// any independent recomputation cannot name different pairs. The previous sort

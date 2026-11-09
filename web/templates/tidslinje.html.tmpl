@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "head" .Meta}}
 <link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/rommet.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
 </head>
 <body>
 
@@ -30,29 +32,51 @@
     seg fra {{.Oldest}} til {{.Newest}}.
   </p>
 
+  <section class="viz-panel" aria-label="Fordeling av daterte posisjoner per år">
+    <div class="viz-head">
+      <p class="viz-kicker">Tidsdekning · {{.Oldest}}–{{.Newest}}</p>
+      <h2 class="viz-title">Hvor i tid kildene faktisk ligger</h2>
+      <p class="viz-subtitle">Antall daterte partiposisjoner i korpuset per kalenderår ({{.Dated}} daterte observasjoner i alt).</p>
+    </div>
+    <div class="viz-year-strip" role="img" aria-label="Søylediagram over daterte observasjoner per år fra {{.Oldest}} til {{.Newest}}">
+      {{range .YearDensity}}
+      <div class="viz-year-col">
+        <span class="viz-year-count">{{.Count}}</span>
+        <div class="viz-year-bar-wrap">
+          <span class="viz-year-bar {{.HeightClass}}" aria-hidden="true"></span>
+        </div>
+        <span class="viz-year-label">{{.Year}}</span>
+      </div>
+      {{end}}
+    </div>
+    <p class="viz-caption">Kilde: Ekte valgomats kildekorpus per {{.SnapshotDate}}. Tyngdepunktet i nylige år viser hvilke sesjoner som er tettest høstet, ikke at partiene var tause før.</p>
+  </section>
+
   {{range .Blocks}}
   <h3>{{.Dimension}}</h3>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Parti</th>
-        {{range $.Years}}<th>{{.}}</th>{{end}}
-        <th title="Kodede posisjoner uten årstall">Uten år</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{range .Rows}}
-      <tr>
-        <th title="{{.Name}}">{{.Short}}</th>
-        {{range .Cells}}
-          {{if .Has}}<td class="{{.Tone}}">{{.Label}}</td>
-          {{else}}<td class="muted">·</td>{{end}}
+  <div class="table-scroll">
+    <table class="data-table tidslinje-table">
+      <thead>
+        <tr>
+          <th>Parti</th>
+          {{range $.Years}}<th>{{.}}</th>{{end}}
+          <th title="Kodede posisjoner uten årstall">Uten år</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range .Rows}}
+        <tr>
+          <th title="{{.Name}}"><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</th>
+          {{range .Cells}}
+            {{if .Has}}<td class="{{.Tone}}">{{.Label}}</td>
+            {{else}}<td class="muted">·</td>{{end}}
+          {{end}}
+          <td class="muted">{{if .Undated}}{{.Undated}}{{else}}·{{end}}</td>
+        </tr>
         {{end}}
-        <td class="muted">{{if .Undated}}{{.Undated}}{{else}}·{{end}}</td>
-      </tr>
-      {{end}}
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
   {{end}}
 
   <h3>Hva som ikke står her</h3>

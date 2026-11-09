@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "head" .Meta}}
 <link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/rommet.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
 </head>
 <body>
 
@@ -24,29 +26,87 @@
     enn et parti med få seter og mange forslag.
   </p>
 
-  <h3>Seter og forslag per parti</h3>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Parti</th>
-        <th>Seter</th>
-        <th>Andel av setene</th>
-        <th>Saker med forslag</th>
-        <th>Forslag per sete (indeks)</th>
-      </tr>
-    </thead>
-    <tbody>
+  <section class="viz-panel" aria-label="Stortingssalen og mandatfordeling">
+    <div class="viz-head">
+      <p class="viz-kicker">Mandatfordeling · {{.SeatTotal}} seter</p>
+      <h2 class="viz-title">Stortingssalen etter partistørrelse</h2>
+      <p class="viz-subtitle">Hver sirkel er ett av de {{.SeatTotal}} mandatene i sesjonen {{.Session}}. Flertall krever 85 seter.</p>
+    </div>
+    <div class="hemicycle-wrap">
+      <svg class="hemicycle-svg" viewBox="0 0 400 212" role="img" aria-label="Halvsirkeldiagram med {{.SeatTotal}} stortingsseter fordelt på 9 partier">
+        {{range .HemicycleSeats}}
+        <circle class="hemicycle-seat seat-{{.Party}}" cx="{{.X}}" cy="{{.Y}}" r="4.8"><title>{{.Short}}</title></circle>
+        {{end}}
+        <text class="hemicycle-total-num" x="200" y="176">{{.SeatTotal}}</text>
+        <text class="hemicycle-total-label" x="200" y="194">mandater (85 for flertall)</text>
+      </svg>
+      <ul class="hemicycle-legend">
+        {{range .Rows}}
+        <li class="hemicycle-legend-item">
+          <span class="party-tag"><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</span>
+          <span><strong>{{.Seats}}</strong> ({{.SeatShare}} %)</span>
+        </li>
+        {{end}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="viz-panel" aria-label="Sammenligning av seter og representantforslag">
+    <div class="viz-head">
+      <p class="viz-kicker">Ressurs mot aktivitet · {{.ProposalTotal}} saker</p>
+      <h2 class="viz-title">Seter i salen mot fremmede representantforslag</h2>
+      <p class="viz-subtitle">Øverste stolpe per parti viser antall seter (skalert mot største parti). Nederste stolpe viser antall saker med navngitte forslagsstillere fra partiet.</p>
+    </div>
+    <ul class="viz-legend">
+      <li class="viz-legend-item"><span class="viz-swatch viz-swatch-primary"></span>Seter på Stortinget</li>
+      <li class="viz-legend-item"><span class="viz-swatch viz-swatch-secondary"></span>Saker med forslag fra partiet</li>
+    </ul>
+    <div class="viz-paired-list">
       {{range .Rows}}
-      <tr>
-        <th title="{{.Name}}">{{.Short}}</th>
-        <td>{{.Seats}}</td>
-        <td>{{.SeatShare}} %</td>
-        <td>{{.Proposals}}</td>
-        <td>{{.PerSeat}}</td>
-      </tr>
+      <div class="viz-paired-row">
+        <div class="party-tag"><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</div>
+        <div class="viz-paired-tracks">
+          <div class="viz-paired-line">
+            <div class="viz-paired-track"><span class="viz-bar-fill {{.SeatBarClass}}" aria-hidden="true"></span></div>
+            <span class="viz-paired-num">{{.Seats}} seter</span>
+          </div>
+          <div class="viz-paired-line">
+            <div class="viz-paired-track"><span class="viz-bar-fill-soft {{.PropBarClass}}" aria-hidden="true"></span></div>
+            <span class="viz-paired-num">{{.Proposals}} saker</span>
+          </div>
+        </div>
+        <div class="viz-paired-ratio"><strong>{{.PerSeat}}</strong> per 100 seter</div>
+      </div>
       {{end}}
-    </tbody>
-  </table>
+    </div>
+    <p class="viz-caption">Kilde: Stortingets åpne data ({{.Session}}). Regjeringspartiet fremmer sine saker som proposisjoner fra Kongen i statsråd; opposisjonspartiene fremmer representantforslag (Dokument 8).</p>
+  </section>
+
+  <h3>Seter og forslag per parti</h3>
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Parti</th>
+          <th>Seter</th>
+          <th>Andel av setene</th>
+          <th>Saker med forslag</th>
+          <th>Forslag per sete (indeks)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range .Rows}}
+        <tr>
+          <th title="{{.Name}}">{{.Short}}</th>
+          <td>{{.Seats}}</td>
+          <td>{{.SeatShare}} %</td>
+          <td>{{.Proposals}}</td>
+          <td>{{.PerSeat}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </div>
   <p class="prose-lede">
     En sak kan ha forslagsstillere fra flere partier, så summen av kolonnen er
     høyere enn antall saker. Indeksen er antall saker per sete ganger 100, ikke en

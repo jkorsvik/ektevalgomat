@@ -1,0 +1,581 @@
+/* Civic Ledger Dataviz System (2026-11-09).
+   Principles drawn from Tufte/Few (nalgeon/dataviz), Urban Institute graphics
+   styleguide, BBC cookbook, and GitHub's accessibility checklist:
+   - Remove chartjunk: no heavy gridboxes, no 3D bevels, no decorative shadows.
+   - Direct labelling: put numbers and party labels beside the mark, not in a
+     disconnected legend.
+   - Respect the Civic Ledger palette: red and green never signal "good" or
+     "bad"; party colours identify a party (via dots or strokes); data magnitude
+     uses --accent, --accent-strong, --ink, and --muted.
+   - Every colour and spacing value comes from :root tokens in style.css or
+     rommet.css, enforced by TestEveryColourComesFromAToken and
+     TestEverySizeComesFromAToken.
+   - Zero inline style attributes (CSP style-src 'self'): bar widths use
+     .pct-0 .. .pct-100 classes or SVG viewBox coordinates. */
+
+.viz-panel {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: var(--sp-6);
+  margin: var(--sp-6) 0 var(--sp-7);
+}
+
+.viz-head {
+  margin: 0 0 var(--sp-5);
+}
+
+.viz-kicker {
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-strong);
+  font-weight: 700;
+  margin: 0 0 var(--sp-1);
+}
+
+.viz-title {
+  font-family: var(--serif);
+  font-size: var(--fs-2xl);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 var(--sp-2);
+  line-height: 1.3;
+}
+
+.viz-subtitle {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  margin: 0;
+  max-width: 65ch;
+}
+
+.viz-caption {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  margin: var(--sp-5) 0 0;
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--line);
+}
+
+/* Legend row with max 4 categories */
+.viz-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3) var(--sp-6);
+  margin: 0 0 var(--sp-5);
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+
+.viz-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.viz-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.viz-swatch-primary { background: var(--accent-strong); }
+.viz-swatch-secondary { background: var(--accent); opacity: 0.65; }
+.viz-swatch-tertiary { background: var(--ink); opacity: 0.45; }
+.viz-swatch-muted { background: var(--seg-empty); }
+.viz-swatch-up { background: var(--up); }
+.viz-swatch-down { background: var(--down); }
+
+/* Party identity dots (reusable across all explore pages when rommet.css is linked) */
+.party-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.rom-dot-r { background: var(--parti-rodt); }
+
+/* Horizontal bar rows & paired comparison bars */
+.viz-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.viz-bar-row {
+  display: grid;
+  grid-template-columns: 11rem 1fr 6.5rem;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-sm);
+}
+
+.viz-bar-row-wide {
+  grid-template-columns: 14rem 1fr 7.5rem;
+}
+
+.viz-bar-label {
+  font-weight: 600;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viz-bar-sub {
+  font-weight: 400;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  margin-left: var(--sp-1);
+}
+
+.viz-bar-track {
+  height: 12px;
+  background: var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.viz-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent-strong);
+  border-radius: 3px;
+}
+
+.viz-bar-fill-soft {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.65;
+}
+
+.viz-bar-fill-ink {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+  opacity: 0.55;
+}
+
+.viz-bar-fill-up {
+  display: block;
+  height: 100%;
+  background: var(--up);
+  border-radius: 3px;
+}
+
+.viz-bar-fill-down {
+  display: block;
+  height: 100%;
+  background: var(--down);
+  border-radius: 3px;
+}
+
+.viz-bar-val {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  font-size: var(--fs-xs);
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* Paired dual-bar row (e.g. /makt seats share vs proposals share) */
+.viz-paired-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.viz-paired-row {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr 7.5rem;
+  align-items: center;
+  gap: var(--sp-3);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--line);
+}
+
+.viz-paired-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.viz-paired-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.viz-paired-line {
+  display: grid;
+  grid-template-columns: 1fr 3.8rem;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.viz-paired-track {
+  height: 9px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.viz-paired-num {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--fs-2xs);
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.viz-paired-ratio {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--fs-xs);
+  text-align: right;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* Hemicycle SVG on /makt */
+.hemicycle-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: var(--sp-6);
+  align-items: center;
+}
+
+.hemicycle-svg {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hemicycle-seat {
+  stroke: var(--surface);
+  stroke-width: 1.2;
+}
+
+.seat-ap { fill: var(--parti-ap); }
+.seat-frp { fill: var(--parti-frp); }
+.seat-h { fill: var(--parti-h); }
+.seat-sv { fill: var(--parti-sv); }
+.seat-sp { fill: var(--parti-sp); }
+.seat-r { fill: var(--parti-rodt); }
+.seat-rodt { fill: var(--parti-rodt); }
+.seat-mdg { fill: var(--parti-mdg); }
+.seat-krf { fill: var(--parti-krf); }
+.seat-v { fill: var(--parti-v); }
+
+.hemicycle-total-num {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 600;
+  fill: var(--ink);
+  text-anchor: middle;
+}
+
+.hemicycle-total-label {
+  font-size: 11px;
+  fill: var(--muted);
+  text-anchor: middle;
+}
+
+.hemicycle-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-2) var(--sp-4);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-xs);
+}
+
+.hemicycle-legend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1) 0;
+  border-bottom: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Split two-column grid for /stemmer top/bottom pairs or /eierskap categories */
+.viz-split-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-6);
+}
+
+.viz-subpanel h3 {
+  font-size: var(--fs-md);
+  margin: 0 0 var(--sp-3);
+  color: var(--ink);
+}
+
+/* Heatmap intensity steps for /stemmer 9x9 matrix & /kart cells */
+.heat-cell {
+  position: relative;
+  font-variant-numeric: tabular-nums;
+}
+
+.heat-bar {
+  display: block;
+  height: 4px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: var(--sp-1);
+}
+
+.heat-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent-strong);
+  border-radius: 2px;
+}
+
+.heat-hi {
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.heat-diag {
+  color: var(--muted);
+  background: var(--bg);
+}
+
+/* Vote badges on /stemmer */
+.vote-pill {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  padding: var(--sp-1) var(--sp-2);
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+/* 100% stacked bar for /penger income composition */
+.viz-stack-track {
+  height: 14px;
+  background: var(--seg-empty);
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.viz-stack-seg-state {
+  height: 100%;
+  background: var(--accent-strong);
+  border-right: 1px solid var(--surface);
+}
+
+.viz-stack-seg-contrib {
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.68;
+  border-right: 1px solid var(--surface);
+}
+
+.viz-stack-seg-own {
+  height: 100%;
+  background: var(--ink);
+  opacity: 0.35;
+}
+
+/* Year density strip for /tidslinje */
+.viz-year-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(38px, 1fr));
+  gap: var(--sp-2);
+  align-items: end;
+  margin-top: var(--sp-4);
+}
+
+.viz-year-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-1);
+}
+
+.viz-year-bar-wrap {
+  width: 100%;
+  height: 68px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.viz-year-bar {
+  width: 100%;
+  background: var(--accent-strong);
+  border-radius: 2px 2px 0 0;
+}
+
+.viz-year-count {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--fs-2xs);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.viz-year-label {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--fs-2xs);
+  color: var(--muted);
+}
+
+/* Vertical heights for year bars (CSP-safe steps) */
+.vh-0 { height: 0%; }
+.vh-5 { height: 5%; }
+.vh-10 { height: 10%; }
+.vh-15 { height: 15%; }
+.vh-20 { height: 20%; }
+.vh-25 { height: 25%; }
+.vh-30 { height: 30%; }
+.vh-35 { height: 35%; }
+.vh-40 { height: 40%; }
+.vh-45 { height: 45%; }
+.vh-50 { height: 50%; }
+.vh-55 { height: 55%; }
+.vh-60 { height: 60%; }
+.vh-65 { height: 65%; }
+.vh-70 { height: 70%; }
+.vh-75 { height: 75%; }
+.vh-80 { height: 80%; }
+.vh-85 { height: 85%; }
+.vh-90 { height: 90%; }
+.vh-95 { height: 95%; }
+.vh-100 { height: 100%; }
+
+/* Tidslinje cell pills */
+.tidslinje-table td.pos {
+  color: var(--up);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.tidslinje-table td.neg {
+  color: var(--down);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.tidslinje-table td.zero {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.tidslinje-table td.split {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Category cards for /eierskap */
+.viz-stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-6);
+}
+
+.viz-stat-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  padding: var(--sp-4);
+}
+
+.viz-stat-num {
+  font-family: var(--serif);
+  font-size: var(--fs-3xl);
+  font-weight: 600;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+  margin: 0 0 var(--sp-1);
+}
+
+.viz-stat-label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 var(--sp-1);
+}
+
+.viz-stat-desc {
+  font-size: var(--fs-2xs);
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Responsive scroll container for wide data tables on mobile */
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--sp-5) 0;
+}
+
+.table-scroll > table {
+  margin: 0;
+}
+
+.prose-lede code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-size: var(--fs-sm);
+}
+
+@media (max-width: 720px) {
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .viz-panel {
+    padding: var(--sp-4);
+    overflow-x: hidden;
+  }
+  .hemicycle-wrap,
+  .viz-split-grid,
+  .viz-stat-cards {
+    grid-template-columns: 1fr;
+  }
+  .viz-bar-row,
+  .viz-bar-row-wide {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--sp-1);
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid var(--line);
+  }
+  .viz-bar-val {
+    text-align: left;
+  }
+  .viz-paired-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--sp-2);
+  }
+  .viz-paired-ratio {
+    text-align: left;
+  }
+}

@@ -205,4 +205,7 @@ func TestPengerRegisterPartyFiguresComeFromTheRegister(t *testing.T) {
 	if checked < 8 {
 		t.Fatalf("only %d parties checked", checked)
 	}
+	if got := strings.Count(body, `class="viz-stack-track"`); got != checked {
+		t.Errorf("/penger renders %d stacked income composition tracks, want %d", got, checked)
+	}
 }

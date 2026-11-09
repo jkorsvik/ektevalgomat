@@ -1,6 +1,8 @@
 package server
 
 import (
+	"fmt"
+	"math"
 	"strconv"
 	"strings"
 
@@ -42,10 +44,17 @@ type yearDimBlock struct {
 	Rows       []yearPartyRow
 }
 
+type yearDensityCol struct {
+	Year        int
+	Count       int
+	HeightClass string
+}
+
 type yearView struct {
 	Meta         pageMeta
 	SnapshotDate string
 	Years        []int
+	YearDensity  []yearDensityCol
 	Blocks       []yearDimBlock
 	TotalCoded   int
 	Dated        int
@@ -121,6 +130,7 @@ func buildYearView(snapshotDate string) yearView {
 		Parties:      len(ids),
 	}
 
+	countsPerYear := map[int]int{}
 	for _, dim := range rows {
 		block := yearDimBlock{Dimension: dim.Dimension, Statements: dim.Statements}
 		for _, py := range dim.Parties {
@@ -144,6 +154,7 @@ func buildYearView(snapshotDate string) yearView {
 				})
 				view.TotalCoded += c.Positions
 				view.Dated += c.Positions
+				countsPerYear[y] += c.Positions
 				if c.Positions > 0 {
 					if view.Oldest == 0 || y < view.Oldest {
 						view.Oldest = y
@@ -159,5 +170,30 @@ func buildYearView(snapshotDate string) yearView {
 		view.Blocks = append(view.Blocks, block)
 	}
 	view.TotalCoded += view.Undated
+
+	maxY := 0
+	for _, y := range years {
+		if countsPerYear[y] > maxY {
+			maxY = countsPerYear[y]
+		}
+	}
+	for _, y := range years {
+		c := countsPerYear[y]
+		step := 0
+		if maxY > 0 && c > 0 {
+			step = int(math.Round((float64(c)/float64(maxY))*20.0)) * 5
+			if step < 5 {
+				step = 5
+			}
+			if step > 100 {
+				step = 100
+			}
+		}
+		view.YearDensity = append(view.YearDensity, yearDensityCol{
+			Year:        y,
+			Count:       c,
+			HeightClass: fmt.Sprintf("vh-%d", step),
+		})
+	}
 	return view
 }

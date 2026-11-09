@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "head" .Meta}}
 <link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/rommet.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
 </head>
 <body>
 
@@ -25,30 +27,63 @@
   </p>
 
   <h3>Sakområde × parti</h3>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Sakområde</th>
-        {{range .Parties}}<th>{{.Short}}</th>{{end}}
-      </tr>
-    </thead>
-    <tbody>
-      {{range .Rows}}
-      <tr>
-        <th>{{.Dimension}}</th>
-        {{range .Cells}}
-          {{if .HasData}}<td><span class="kart-bar" aria-hidden="true"><span class="kart-bar-fill {{.BarClass}}"></span></span>{{.Mean}}<span class="muted"> ({{.Coded}}/{{.Statements}})</span>{{if .Dated}}<span class="dated-mark" title="Minst ett utsagn i denne cellen har to daterte observasjoner">†</span>{{end}}</td>
-          {{else}}<td class="muted">–</td>{{end}}
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Sakområde</th>
+          {{range .Parties}}<th><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</th>{{end}}
+        </tr>
+      </thead>
+      <tbody>
+        {{range .Rows}}
+        <tr>
+          <th>{{.Dimension}}</th>
+          {{range .Cells}}
+            {{if .HasData}}<td><span class="kart-bar" aria-hidden="true"><span class="kart-bar-fill {{.BarClass}}"></span></span>{{.Mean}}<span class="muted"> ({{.Coded}}/{{.Statements}})</span>{{if .Dated}}<span class="dated-mark" title="Minst ett utsagn i denne cellen har to daterte observasjoner">†</span>{{end}}</td>
+            {{else}}<td class="muted">–</td>{{end}}
+          {{end}}
+        </tr>
         {{end}}
-      </tr>
-      {{end}}
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
 
   <p class="prose-lede">
     † markerer en celle der minst ett av utsagnene har to daterte observasjoner,
     altså der en endring over tid faktisk kan påvises. Resten er én observasjon.
   </p>
+
+  <section class="viz-panel" aria-label="Kildedekning og tidsdybde per parti">
+    <div class="viz-head">
+      <p class="viz-kicker">Kildedekning og tidsdybde · {{.TotalCoded}} kodede celler</p>
+      <h2 class="viz-title">Kodede posisjoner og observasjoner over flere år</h2>
+      <p class="viz-subtitle">Øverste stolpe per parti viser hvor mange av de {{.TotalStatements}} utsagnene som har en kodet posisjon. Nederste stolpe viser hvor mange som hviler på kilder fra minst to ulike datoer ({{.TotalMulti}} i alt).</p>
+    </div>
+    <ul class="viz-legend">
+      <li class="viz-legend-item"><span class="viz-swatch viz-swatch-primary"></span>Kodede utsagn (av {{.TotalStatements}})</li>
+      <li class="viz-legend-item"><span class="viz-swatch viz-swatch-secondary"></span>Med minst to daterte observasjoner (†)</li>
+    </ul>
+    <div class="viz-paired-list">
+      {{range .Parties}}
+      <div class="viz-paired-row">
+        <div class="party-tag"><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</div>
+        <div class="viz-paired-tracks">
+          <div class="viz-paired-line">
+            <div class="viz-paired-track"><span class="viz-bar-fill {{.CodedBarClass}}" aria-hidden="true"></span></div>
+            <span class="viz-paired-num">{{.Coded}} / {{$.TotalStatements}}</span>
+          </div>
+          <div class="viz-paired-line">
+            <div class="viz-paired-track"><span class="viz-bar-fill-soft {{.MultiBarClass}}" aria-hidden="true"></span></div>
+            <span class="viz-paired-num">{{.MultiDate}} med †</span>
+          </div>
+        </div>
+        <div class="viz-paired-ratio">{{if .Oldest}}{{.Oldest}}–{{.Newest}}{{else}}–{{end}}</div>
+      </div>
+      {{end}}
+    </div>
+    <p class="viz-caption">Kilde: Ekte valgomats kildekorpus per {{.SnapshotDate}}. En celle trenger minst to daterte observasjoner for å vise om partiet holdt linjen eller snudde.</p>
+  </section>
 
   <h3>Hvor langt tilbake rekker kildene</h3>
   <p class="prose-lede">
@@ -64,7 +99,7 @@
     <tbody>
       {{range .Parties}}
       <tr>
-        <th>{{.Short}}</th>
+        <th><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Short}}</th>
         <td>{{.Coded}}</td>
         <td>{{.MultiDate}}</td>
         <td>{{if .Oldest}}{{.Oldest}}{{else}}<span class="muted">–</span>{{end}}</td>

@@ -128,4 +128,10 @@ func TestEierskapCarriesItsSource(t *testing.T) {
 	if !strings.Contains(body, "eksakte navnetreff") {
 		t.Error("page does not state how companies were matched to the register")
 	}
+	if !strings.Contains(body, `class="viz-stat-cards"`) {
+		t.Error("/eierskap does not render portfolio stat cards")
+	}
+	if got := strings.Count(body, `class="kart-bar-fill pct-`); got < 50 {
+		t.Errorf("/eierskap renders %d share bars, want at least 50", got)
+	}
 }

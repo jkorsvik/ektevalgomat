@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "head" .Meta}}
 <link rel="stylesheet" href="{{asset "/static/css/prose.css"}}">
+<link rel="stylesheet" href="{{asset "/static/css/viz.css"}}">
 </head>
 <body>
 
@@ -25,39 +26,96 @@
     {{.SpecialLaw}} er særlovselskap.
   </p>
 
+  <section class="viz-panel" aria-label="Oversikt over statens eierportefølje og største arbeidsgivere">
+    <div class="viz-head">
+      <p class="viz-kicker">Porteføljeoversikt · {{.Companies}} selskaper</p>
+      <h2 class="viz-title">Eierform, kategorier og største statlige arbeidsgivere</h2>
+      <p class="viz-subtitle">Fordeling av statens direkte eierskap etter kontrollgrad, styringsmål og rapporterte ansatte i Enhetsregisteret.</p>
+    </div>
+
+    <div class="viz-stat-cards">
+      <div class="viz-stat-card">
+        <p class="viz-stat-num">{{.WhollyOwned}}</p>
+        <p class="viz-stat-label">Heleide selskaper (100 %)</p>
+        <p class="viz-stat-desc">Full statlig kontroll ({{.SpecialLaw}} særlovselskaper)</p>
+      </div>
+      <div class="viz-stat-card">
+        <p class="viz-stat-num">{{.PartialMajority}}</p>
+        <p class="viz-stat-label">Delvis flertallseide (50–99 %)</p>
+        <p class="viz-stat-desc">Flertall på generalforsamling, med private medeiere</p>
+      </div>
+      <div class="viz-stat-card">
+        <p class="viz-stat-num">{{.Minority}}</p>
+        <p class="viz-stat-label">Minoritetsposter (&lt;50 %)</p>
+        <p class="viz-stat-desc">Strategiske eierposter i børsnoterte og delstatlige foretak</p>
+      </div>
+    </div>
+
+    <div class="viz-split-grid">
+      <div class="viz-subpanel">
+        <h3>Etter statens mål med eierskapet</h3>
+        <div class="viz-bars">
+          {{range .Categories}}
+          <div class="viz-bar-row">
+            <div class="viz-bar-label" title="{{.Label}}">Kategori {{.Code}} <span class="viz-bar-sub">{{.Label}}</span></div>
+            <div class="viz-bar-track"><span class="viz-bar-fill {{.BarClass}}" aria-hidden="true"></span></div>
+            <div class="viz-bar-val"><strong>{{.Count}}</strong> selskaper</div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+
+      <div class="viz-subpanel">
+        <h3>Største arbeidsgivere i registeret</h3>
+        <div class="viz-bars">
+          {{range .TopEmployers}}
+          <div class="viz-bar-row">
+            <div class="viz-bar-label" title="{{.Company}} ({{.Share}} %)">{{.Company}} <span class="viz-bar-sub">{{.Share}} %</span></div>
+            <div class="viz-bar-track"><span class="viz-bar-fill-soft {{.BarClass}}" aria-hidden="true"></span></div>
+            <div class="viz-bar-val"><strong>{{.Employees}}</strong> ansatte</div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <p class="viz-caption">Kilde: {{.SourceName}} og Enhetsregisteret i Brønnøysund ({{.WithEmployees}} av {{.Companies}} morforetak oppgir egne ansatte direkte på registrert organisasjonsnummer).</p>
+  </section>
+
   <h3>Selskapene</h3>
   <p class="prose-lede">
     Sortert etter eierandel. Organisasjonsnummeret lenker til Brønnøysund, så hver
     rad kan kontrolleres i ett klikk. En tom ansattcelle betyr at registeret ikke
     oppgir noe tall, ikke at selskapet er tomt.
   </p>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Selskap</th>
-        <th>Eierandel</th>
-        <th>Kategori</th>
-        <th>Organisasjonsform</th>
-        <th>Ansatte</th>
-        <th>Næring</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{range .Rows}}
-      <tr>
-        <th>
-          {{if .Orgnr}}<a href="{{.BrregURL}}">{{.Company}}</a>{{else}}{{.Company}}{{end}}
-          {{if .SpecialLaw}}<span class="muted"> (særlov)</span>{{end}}
-        </th>
-        <td>{{.Share}} %</td>
-        <td title="{{.CategoryWhy}}">{{.Category}}</td>
-        <td>{{.LegalForm}}</td>
-        <td>{{if .Employees}}{{.Employees}}{{else}}<span class="muted">–</span>{{end}}</td>
-        <td>{{if .Industry}}{{.Industry}}{{else}}<span class="muted">–</span>{{end}}</td>
-      </tr>
-      {{end}}
-    </tbody>
-  </table>
+  <div class="table-scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Selskap</th>
+          <th>Eierandel</th>
+          <th>Kategori</th>
+          <th>Organisasjonsform</th>
+          <th>Ansatte</th>
+          <th>Næring</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range .Rows}}
+        <tr>
+          <th>
+            {{if .Orgnr}}<a href="{{.BrregURL}}">{{.Company}}</a>{{else}}{{.Company}}{{end}}
+            {{if .SpecialLaw}}<span class="muted"> (særlov)</span>{{end}}
+          </th>
+          <td><span class="kart-bar" aria-hidden="true"><span class="kart-bar-fill {{.ShareBarClass}}"></span></span>{{.Share}} %</td>
+          <td title="{{.CategoryWhy}}">{{.Category}}</td>
+          <td>{{.LegalForm}}</td>
+          <td>{{if .Employees}}{{.Employees}}{{else}}<span class="muted">–</span>{{end}}</td>
+          <td>{{if .Industry}}{{.Industry}}{{else}}<span class="muted">–</span>{{end}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </div>
 
   <h3>Kategoriene</h3>
   <p class="prose-lede">

@@ -243,3 +243,13 @@ func TestStatementPageShowsADocumentedChangeOfPosition(t *testing.T) {
 		t.Error("the page does not report the parties whose position held across both years")
 	}
 }
+
+// TestTidslinjeRendersYearDensityStrip checks that /tidslinje renders one
+// vertical bar column per year in the dataset's YearGrid.
+func TestTidslinjeRendersYearDensityStrip(t *testing.T) {
+	body := getTidslinje(t)
+	_, years := analysis.YearGrid(data.Store, analysis.PartyIDs(data.Store))
+	if got := strings.Count(body, `class="viz-year-col"`); got != len(years) {
+		t.Errorf("/tidslinje renders %d year density columns, want %d", got, len(years))
+	}
+}

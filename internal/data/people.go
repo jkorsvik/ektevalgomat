@@ -27,16 +27,16 @@ import (
 // snapshot date is not a role start; SourceNote says so, and the page must not
 // present it as one.
 type PersonRole struct {
-	Role        string `yaml:"role"`
+	Role         string `yaml:"role"`
 	Organisation string `yaml:"organisation"`
-	Orgnr       string `yaml:"orgnr,omitempty"`
-	Post        string `yaml:"post,omitempty"`
-	From        string `yaml:"from"`
-	To          string `yaml:"to"`
-	SourceURL   string `yaml:"source_url"`
-	SourceTier  string `yaml:"source_tier"`
-	RetrievedAt string `yaml:"retrieved_at"`
-	SourceNote  string `yaml:"source_note,omitempty"`
+	Orgnr        string `yaml:"orgnr,omitempty"`
+	Post         string `yaml:"post,omitempty"`
+	From         string `yaml:"from"`
+	To           string `yaml:"to"`
+	SourceURL    string `yaml:"source_url"`
+	SourceTier   string `yaml:"source_tier"`
+	RetrievedAt  string `yaml:"retrieved_at"`
+	SourceNote   string `yaml:"source_note,omitempty"`
 }
 
 // Person is one public official's dated record.

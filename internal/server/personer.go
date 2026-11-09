@@ -66,6 +66,7 @@ var roleLabels = map[string]string{
 	"verv":                  "Verv",
 	"statsrad":              "Statsråd",
 	"statssekretar":         "Statssekretær",
+	"selskapsinteresse":     "Selskapsinteresse",
 	"styrerverv":            "Styreverv",
 	"daglig_leder":          "Daglig leder",
 	"verv_i_organisasjon":   "Verv i organisasjon",

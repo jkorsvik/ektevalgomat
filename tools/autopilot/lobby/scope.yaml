@@ -16,6 +16,9 @@ in_scope:
 
 public_roles:
   - verv                # a register § block: board seat, business, employment
+  - selskapsinteresse    # register §9: a company the person declares an interest in
+  - selvstendig_naering  # register §3: self-employed business (the kind, not the income)
+  - lonnet_stilling      # register §4: paid position held beside the seat
   # A role is in scope only when it is a public function or a declared
   # interest from an official register.
   - stortingsrepresentant

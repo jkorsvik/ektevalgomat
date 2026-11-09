@@ -1,77 +1,101 @@
 id: HARVAL
-name: "Valderhaug, Harry"
+name: Valderhaug, Harry
 scope: representant
 consent_basis: public_office
 party_id: krf
 roles:
-  - role: stortingsrepresentant
-    organisation: "Stortinget"
-    from: "2025-10-01"
-    to: ""
-    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: verv
-    organisation: "Brisk AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Sunnmøre Begravelsebyrå AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Valderhaug Holding AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Møre Forsikring AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Magda Sævik Stiftelse"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Fylkestinget KrF, Møre og Romsdal fylkeskommune"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "kommunestyret KrF, Giske kommune"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Attvin AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Brisk AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Sunnmøre Begravelsebyrå AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Valderhaug Holding AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Møre Forsikring AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Magda Sævik Stiftelse
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Fylkestinget KrF, Møre og Romsdal fylkeskommune
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: kommunestyret KrF, Giske kommune
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Attvin AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: selskapsinteresse
+  organisation: Valderhaug Holding AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Møre Forsikring AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Holding AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored

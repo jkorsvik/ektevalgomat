@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"testing"
 )
@@ -117,6 +118,20 @@ func TestNoForbiddenFieldInPeopleFiles(t *testing.T) {
 		for _, f := range forbidden {
 			if strings.Contains(lower, f+":") {
 				t.Errorf("%s carries forbidden field %q", e.Name(), f)
+			}
+		}
+	}
+}
+
+// TestNoAmountInPersonRoles is the boundary gate for declared interests: the
+// register discloses the interest, not its size, and the site must not carry a
+// kroner amount or a share percentage in a role name.
+func TestNoAmountInPersonRoles(t *testing.T) {
+	amount := regexp.MustCompile(`\d[\d\s.,]*\s*(%|pst|NOK|kr\b)`)
+	for _, p := range People() {
+		for _, r := range p.Roles {
+			if amount.MatchString(r.Organisation) || amount.MatchString(r.Post) {
+				t.Errorf("%s/%s carries an amount: %q", p.ID, r.Role, r.Organisation)
 			}
 		}
 	}

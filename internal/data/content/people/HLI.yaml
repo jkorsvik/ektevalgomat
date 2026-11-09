@@ -1,21 +1,37 @@
 id: HLI
-name: "Limi, Hans Andreas"
+name: Limi, Hans Andreas
 scope: representant
 consent_basis: public_office
 party_id: frp
 roles:
-  - role: stortingsrepresentant
-    organisation: "Stortinget"
-    from: "2025-10-01"
-    to: ""
-    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: verv
-    organisation: "FrP"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: FrP
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: selskapsinteresse
+  organisation: EC-Play AS 223000 aksjer
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Rec Silicon ASA 31 aksjer
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored

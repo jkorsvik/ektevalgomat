@@ -1,53 +1,77 @@
 id: PAMB
-name: "Borgli, Pål Morten"
+name: Borgli, Pål Morten
 scope: representant
 consent_basis: public_office
 party_id: frp
 roles:
-  - role: stortingsrepresentant
-    organisation: "Stortinget"
-    from: "2025-10-01"
-    to: ""
-    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: verv
-    organisation: "Sandnes Havn KF"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Freeman AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Fryd Forvaltning 8"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Forus Næringspark"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "SMB Norge avd. Stavanger"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Sandnes Havn KF
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Freeman AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Fryd Forvaltning 8
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Forus Næringspark
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: SMB Norge avd. Stavanger
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: selskapsinteresse
+  organisation: Freeman AS 1000 aksjer
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: HÖEGH Autoliners ASA 2855 aksjer
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Autostore AS 1312 aksjer
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored

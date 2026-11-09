@@ -19,3 +19,11 @@ roles:
   source_tier: A
   retrieved_at: '2026-11-09'
   source_note: register snapshot 2026-10-30, not a role start
+- role: selskapsinteresse
+  organisation: 1 aksje i Klassekampen AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored

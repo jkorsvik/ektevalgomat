@@ -1,69 +1,141 @@
 id: NA
-name: "Astrup, Nikolai"
+name: Astrup, Nikolai
 scope: representant
 consent_basis: public_office
 party_id: h
 roles:
-  - role: stortingsrepresentant
-    organisation: "Stortinget"
-    from: "2025-10-01"
-    to: ""
-    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: verv
-    organisation: "Pactum Beta AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Pactum Epsilon AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Pactum Theta AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Pactum Sigma AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Storehorn AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Pactum AS"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: verv
-    organisation: "Høyres stortingsgruppe"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: Pactum Beta AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Pactum Epsilon AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Pactum Theta AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Pactum Sigma AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Storehorn AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Pactum AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: verv
+  organisation: Høyres stortingsgruppe
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: selskapsinteresse
+  organisation: Pactum Epsilon AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Storehorn AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Pactum Beta AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Alna Big Box AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Anchorman AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Arctic Fish Holding AS
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Bonheur ASA
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Cytovation ASA
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored
+- role: selskapsinteresse
+  organisation: Cytovation ASA
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30; declared company interest, amounts and share counts not stored

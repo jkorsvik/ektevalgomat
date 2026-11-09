@@ -1,85 +1,85 @@
 id: SYL
-name: "Listhaug, Sylvi"
+name: Listhaug, Sylvi
 scope: representant
 consent_basis: public_office
 party_id: frp
 roles:
-  - role: stortingsrepresentant
-    organisation: "Stortinget"
-    from: "2025-10-01"
-    to: ""
-    source_url: "https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: verv
-    organisation: "FrPs Stortingsgruppe"
-    from: "2026-10-30"
-    to: ""
-    source_url: "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-    source_note: "register snapshot 2026-10-30, not a role start"
-  - role: statsrad
-    organisation: "Landbruks- og matdepartementet"
-    post: "Landbruks- og matminister"
-    from: "2013-10-16"
-    to: "2015-12-16"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: statsrad
-    organisation: "Justis- og beredskapsdepartementet"
-    post: "Innvandrings- og integreringsminister"
-    from: "2015-12-16"
-    to: "2016-03-31"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: statsrad
-    organisation: "Justis- og beredskapsdepartementet"
-    post: "Innvandrings- og integreringsminister"
-    from: "2016-04-01"
-    to: "2017-03-05"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: statsrad
-    organisation: "Justis- og beredskapsdepartementet"
-    post: "Innvandrings- og integreringsminister"
-    from: "2017-03-06"
-    to: "2017-07-02"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: statsrad
-    organisation: "Justis- og beredskapsdepartementet"
-    post: "Innvandrings- og integreringsminister"
-    from: "2017-07-03"
-    to: "2018-01-17"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: statsrad
-    organisation: "Justis- og beredskapsdepartementet"
-    post: "Justis, beredskaps- og innvandringsminister"
-    from: "2018-01-17"
-    to: "2018-03-20"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: statsrad
-    organisation: "Helse- og omsorgsdepartementet"
-    post: "Eldre- og folkehelseminister"
-    from: "2019-05-03"
-    to: "2019-12-18"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
-  - role: statsrad
-    organisation: "Olje- og energidepartementet (av 1997)"
-    post: "Olje- og energiminister"
-    from: "2019-12-18"
-    to: "2020-01-24"
-    source_url: "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/"
-    source_tier: A
-    retrieved_at: "2026-11-09"
+- role: stortingsrepresentant
+  organisation: Stortinget
+  from: '2025-10-01'
+  to: ''
+  source_url: https://data.stortinget.no/eksport/representanter?sesjonid=2026-2027&format=json
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: verv
+  organisation: FrPs Stortingsgruppe
+  from: '2026-10-30'
+  to: ''
+  source_url: https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf
+  source_tier: A
+  retrieved_at: '2026-11-09'
+  source_note: register snapshot 2026-10-30, not a role start
+- role: statsrad
+  organisation: Landbruks- og matdepartementet
+  post: Landbruks- og matminister
+  from: '2013-10-16'
+  to: '2015-12-16'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Justis- og beredskapsdepartementet
+  post: Innvandrings- og integreringsminister
+  from: '2015-12-16'
+  to: '2016-03-31'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Justis- og beredskapsdepartementet
+  post: Innvandrings- og integreringsminister
+  from: '2016-04-01'
+  to: '2017-03-05'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Justis- og beredskapsdepartementet
+  post: Innvandrings- og integreringsminister
+  from: '2017-03-06'
+  to: '2017-07-02'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Justis- og beredskapsdepartementet
+  post: Innvandrings- og integreringsminister
+  from: '2017-07-03'
+  to: '2018-01-17'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Justis- og beredskapsdepartementet
+  post: Justis, beredskaps- og innvandringsminister
+  from: '2018-01-17'
+  to: '2018-03-20'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Helse- og omsorgsdepartementet
+  post: Eldre- og folkehelseminister
+  from: '2019-05-03'
+  to: '2019-12-18'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'
+- role: statsrad
+  organisation: Olje- og energidepartementet (av 1997)
+  post: Olje- og energiminister
+  from: '2019-12-18'
+  to: '2020-01-24'
+  source_url: https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/erna-solbergs-regjering/id742981/
+  source_tier: A
+  retrieved_at: '2026-11-09'

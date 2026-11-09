@@ -8,6 +8,9 @@ The goal it serves: a Norwegian political god's-eye view. For every party,
 dimension and year, a sourced answer to "what did they do and how do we know".
 Derived views over the dataset are generated, never hand-written.
 
+Run two tracks in parallel (evidence history + lobby/persons): see
+`LOOP-TRACKS.md` in this directory.
+
 ## Roles
 
 Different roles run in parallel because they fail differently. A scout cannot

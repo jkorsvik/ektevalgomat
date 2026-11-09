@@ -1,0 +1,75 @@
+# Who lane L may record, and what it may never record.
+#
+# This is a rule file, not a name list. The name list is generated at run time
+# from the Stortinget roster and the government file, so this file can be
+# published without carrying personal data.
+
+in_scope:
+  # Stortinget representatives, sitting and former. Proved by the person id
+  # appearing in a session's representanter payload.
+  - representant
+  # Members of the government, sitting and former. Proved by a row in
+  # internal/data/content/government/ministers.yaml.
+  - minister
+  # State secretaries, when the government publishes them.
+  - statssekretar
+
+public_roles:
+  # A role is in scope only when it is a public function or a declared
+  # interest from an official register.
+  - stortingsrepresentant
+  - komitemedlem
+  - komiteleder
+  - statsrad
+  - statssekretar
+  - styrerverv          # board seat, from Brreg or the official register
+  - daglig_leder        # company leadership, from Brreg
+  - verv_i_organisasjon # declared organisational role
+  - hoyringsdeltaker    # an organisation heard at a hearing
+
+# Any record carrying one of these keys is rejected by gate_people.py, no
+# matter how the value was obtained.
+forbidden_fields:
+  - personnummer
+  - fodselsnummer
+  - privat_adresse
+  - private_address
+  - telefon
+  - phone
+  - privat_epost
+  - private_email
+  - familie
+  - family
+  - ektefelle
+  - spouse
+  - barn
+  - children
+  - helse
+  - health
+  - sykdom
+  - diagnose
+  - religion
+  - seksuell_orientering
+  - politisk_oppfatning_private
+  - bankkonto
+  - inntekt_privat
+  - formue_privat
+
+# Fields that are allowed, because they are public-office facts.
+required_for_each_role:
+  - role
+  - organisation
+  - from
+  - source_url
+  - source_tier
+  - retrieved_at
+
+source_tiers:
+  A: "official register or Stortinget's own record"
+  B: "public statistics agency, or the actor's own filed document"
+  # C, D, E inform but never support a promoted role on their own.
+
+deletion:
+  # A person may ask for removal. The record is deleted; the request is logged
+  # in lobby/corrections/ with the date and no personal detail.
+  policy: delete-on-request

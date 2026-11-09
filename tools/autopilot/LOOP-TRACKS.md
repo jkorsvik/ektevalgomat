@@ -1,0 +1,142 @@
+# The two-track loop
+
+`LOOP.md` is one iteration of the evidence loop. This file runs two tracks in
+parallel, because they now have different bottlenecks.
+
+- **Track H — historikk.** The cells are deep enough on one date and empty on
+  the next. The raw material exists: 25 773 votes across 16 sessions. The work
+  is to give every coded cell a second and third dated observation.
+- **Track L — lobby og personer.** A new domain. Who the elected people are,
+  what roles they hold over time, which companies and organisations they are
+  tied to, and which organisations get heard. This is person data, so it has a
+  different model, a different gate and a different boundary.
+
+The two tracks share one driver, one stop rule set, and one rule: nothing is
+content until a mechanical gate re-fetches the source itself.
+
+## Roles
+
+| role | agent | may write | job | model |
+|---|---|---|---|---|
+| **driver** | this session | queue, content, commits | gate, promote, verify, commit, report | any |
+| **scout** | `ekv-scout` | nothing | leads for lane H | deepseek |
+| **historian** | `ekv-historian` (new) | `staging/<item-id>/` | turn history.py candidates into per-party vote evidence | deepseek |
+| **verifier** | `ekv-verifier` | `staging/<item-id>/VERIFIER.md` | falsify a lane-H batch | deepseek |
+| **lobby-scout** | `ekv-lobby-scout` (new) | `lobby/reports/` | find and validate sources; leads only, no person records | **opus** |
+| **person-tracker** | `ekv-person-tracker` (new) | `lobby/staging/<person-id>/` | record one person's dated role timeline | **opus** |
+| **person-verifier** | `ekv-person-verifier` (new) | `lobby/staging/<person-id>/VERIFIER.md` | falsify a person record | **opus** |
+| **bias-analyst** | `bias-analyst` | `staging/<id>/` report | coverage asymmetry | any |
+
+**The model split is not a preference.** Lane L handles named individuals.
+`USER.md` forbids DeepSeek and GLM from seeing PII. Every lane-L agent is
+pinned to `anthropic/claude-opus-5-5`. The driving session must not read a
+person record either: it sees counts, ids and gate results, never names.
+Lane H is parties and votes only, so deepseek is fine there.
+
+## One parallel iteration
+
+Run the two lanes at the same time, then join.
+
+1. **Read state.** `git status` clean or explained, `git log -1`, both queues
+   (`queue-history.yaml`, `lobby/queue.yaml`) and the last report.
+2. **Pick.** One item per lane. Skip `blocked` and `failed` unless the blocker
+   is cleared in the file itself.
+3. **Fan out, both lanes at once.**
+   - H: spawn `ekv-historian` for the next statement needing a second date.
+   - L: spawn `ekv-person-tracker` for the next person in scope, and
+     `ekv-lobby-scout` on a rotating source-discovery item.
+   - Never two writers in one staging directory.
+4. **Gate each lane.** `gate.py` for H; `gate_people.py` for L. PASS only.
+   A FAIL is a result; quote it back or mark the item `failed`.
+5. **Verify each lane.** `ekv-verifier` for H, `ekv-person-verifier` for L.
+   `WRONG` means the file does not ship.
+6. **Promote serially.** One item at a time, per lane. `promote.py` for H.
+   `promote_people.py` for L, and only after the Go person schema exists.
+7. **Join.** Re-run `tools/verify/verify_excerpts.py` and
+   `tools/verify/verify_votes.py`, then `go test ./... -count=1`.
+8. **Measure.** `uv run tools/analytics/trends.py` and read the two numbers:
+   cells with two or more dates, and persons with two or more dated roles.
+9. **Commit.** One commit per risk. Name the paths. Do not push.
+10. **Report.** What shipped per lane, what is blocked, the exact ask, next item.
+
+## Stop rules, both lanes
+
+- A zero result is a result. Record what was searched and what was not found.
+- Never invent a vote id, a case id, a role, a company or a date.
+- A split vote is not a position. An empty cell stays empty. `0` means neutral.
+- Never lower a gate or the acquiescence ratchet to make a change pass.
+- Every lane-L fact needs `source_url`, `date` and `retrieved_at`. No source,
+  no record.
+
+## Lane L boundary (DPIA)
+
+The site already says it never names a private citizen. Lane L keeps that:
+
+- **In scope:** sitting and former Storting representatives, sitting and former
+  ministers and state secretaries, in their public roles.
+- **Out of scope:** private citizens, family members, private addresses,
+  health, private finances beyond declared interests, and any unverified
+  account.
+- **Each record:** a public role with a start date and, where the source gives
+  it, an end date. Declared interests only from an official register.
+- **Deletion:** a person may ask for removal. The record is deleted, and the
+  request is logged in `lobby/corrections/`.
+
+## Where the work comes from
+
+Lane H, ranked by value per hour:
+1. The 29 cells that already have two dates: verify the series before widening.
+2. The 488 cells with one date: one historical vote each, earliest session first.
+3. Cells whose only evidence is a party merknad: a vote is the stronger date.
+
+Lane L, in order:
+1. The source catalog: which of the candidate registers actually answer, and
+   what each one yields (`lobby/sources.md`).
+2. The roster: 169 sitting representatives, party and constituency.
+3. Committee and role history per person.
+4. Hearings and the organisations heard: access, not opinion.
+5. Declared interests and company roles, from the official registers.
+6. Job changes over time: a new role with a start date is a fact.
+
+## Failure modes this loop has already met
+
+- `gate.py` with a bare item name reads as empty and exits 2. Pass the full path.
+- `history.py` is leads only. A candidate case is not evidence until a human
+  opens the vote and reads the forslag.
+- A historical vote is a second date only when its forslag asks the same
+  question. Two votes in one case can be two questions.
+- Stortinget's `person` export carries no `verv`. Role history is a separate
+  page or register; the lobby-scout must prove which before lane L scales.
+- Brreg gives roles per company (`/enheter/{orgnr}/roller`), not companies per
+  person. A person-to-company reverse lookup is a discovery item, not an
+  assumption.
+
+## Lane H, measured on 2026-11-09
+
+- 517 coded cells: 488 hold one distinct year, 21 hold two, 8 hold three or more.
+- 29 cells (6%) can speak about consistency today.
+- 57 statements need a second date. 55 of them walk through `history.py` from an
+  `Innst.` reference. 2 (utsagn-02, utsagn-45) cite only `votering_id`, and there
+  is no `votering?voteringid=` endpoint to reverse a vote to its case. Those two
+  are `votering-only` in the queue and stay blocked until that route is built.
+- `tools/analytics/trends.py` prints the same numbers, so nobody re-measures by
+  memory.
+
+## Lane L, measured on 2026-11-09
+
+- Roster: 169 sitting representatives, fetched with party and constituency.
+- Hearings: 351 in session 2026-2027, with committee and case; participants are
+  not in the list payload.
+- Company roles: `data.brreg.no/enhetsregisteret/api/enheter/{orgnr}/roller`
+  answers 200. Person-to-company reverse is not this endpoint.
+- Minister appointments: 245 dated rows already in the repo.
+- The person gate passes a valid record and rejects a planted record on all six
+  checks (scope, forbidden field, missing retrieved_at, tier C, to-before-from,
+  missing orgnr).
+
+## Owner decisions, 2026-11-09
+
+- **Lane L starts with the verv/economic-interest register.** That is the first
+  source the lobby-scout must prove; hearings and Brreg company roles follow.
+- **Cadence is manual first.** No schedule runs the loop. A human fires one
+  iteration, reads the report, and decides whether to continue.

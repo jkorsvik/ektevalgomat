@@ -1,0 +1,6 @@
+# Worker output and leads. A record here is not content until gate_people.py
+# passes it and promote_people.py moves it into internal/data/content/people/.
+staging/
+reports/
+__pycache__/
+queue.yaml

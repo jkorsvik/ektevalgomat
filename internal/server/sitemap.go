@@ -27,8 +27,22 @@ func sitemap(w http.ResponseWriter, r *http.Request, ds *data.Dataset) {
 	add := func(path string) {
 		b.WriteString("  <url><loc>" + siteBase + path + "</loc></url>\n")
 	}
-	for _, p := range []string{"/", "/partier", "/budsjett", "/metode", "/data", "/bidra", "/om", "/personvern"} {
-		add(p)
+	// Derived from navLinks so a new page cannot quietly miss the sitemap: the
+	// hardcoded list this replaces had lost /kart, /stemmer, /penger, /eierskap,
+	// /makt, /rommet, /tidslinje and /programmer, and missed /personer on the day
+	// it was added. /resultat stays out: it renders empty to a crawler.
+	seen := map[string]bool{}
+	for _, l := range navLinks {
+		if l.Href == "/resultat" || seen[l.Href] {
+			continue
+		}
+		add(l.Href)
+		seen[l.Href] = true
+	}
+	for _, p := range []string{"/personvern", "/programmer"} {
+		if !seen[p] {
+			add(p)
+		}
 	}
 	for _, s := range ds.Statements {
 		add("/utsagn/" + strconv.Itoa(s.Number))

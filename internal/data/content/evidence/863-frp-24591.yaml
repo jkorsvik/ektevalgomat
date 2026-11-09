@@ -1,0 +1,21 @@
+id: ev-2025-05-06-frp-otp-minstesats-2025
+statement_id: utsagn-37
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2025-05-06"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: >
+  Fremskrittspartiet stemte mot forslag nr. 1 fra SV, Rødt, Venstre og MDG om å øke minstesatsen i OTP til minimum 4 pst. nå — 0 for / 20 mot (votering 24591, 06.05.2025).
+claim_action: >
+  Fremskrittspartiet avgav stemme på forslag nr. 1 fra SV, Rødt, Venstre og Miljøpartiet De Grønne i Dokument 8:92 S (2024–2025) om at regjeringen skal «fremme forslag for Stortinget om å øke pensjonsinnskuddssatsen i obligatorisk tjenestepensjon til minimum 4 pst.» Partiets tall i votering_id 24591: 0 for / 20 mot; forslaget falt 33 for / 136 mot. Voteringen ble holdt 06.05.2025 i sesjonen 2024–2025 (sak 102062, Innst. 193 S).
+verbatim_excerpt: "Stortinget ber regjeringen fremme forslag for Stortinget om å øke pensjonsinnskuddssatsen i obligatorisk tjenestepensjon til minimum 4 pst."
+status: stemte_mot
+position: 1
+source_tier: A
+source_name: "Innst. 193 S (2024–2025); votering_id 24591 (06.05.2025), sak 102062"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=102062&dnid=1&vt=24591"
+claim_confidence: dokumentert
+context_note: >
+  Utspørringen er entydig: voteringsdetaljene viser «Mindretallsforslag: Forslag nr. 1 fra Sosialistisk Venstreparti, Rødt, Venstre, Miljøpartiet De Grønne», og forslaget falt 33 for / 136 mot, så partiene står på hver sin side. Kodet +1, ikke +2: partiet stemte mot å vedta økningen nå, som er utsagnets retning, men denne voteringsposten bærer ingen begrunnelse for «utredes og gradvis» — den ligger i flertallsmerknaden i Innst. 263 S (2025–2026) som allerede er kodet i 2026-raden. Stemmen alene dokumenterer retningen, ikke styrken. Retningen er den samme som i 2026-raden, så serien skal lese «samme posisjon i 2025 og 2026». Samme sak hadde to andre voteringspunkter som ikke kodes her: votering 24592 er komiteens tilråding om at «Dokument 8:92 S (2024–2025) … vedtas ikke» (invertert spørsmål, og Høyre delt der med 35 for / 1 mot, altså ingen partilinje), og votering 24593 samler forslagene nr. 2–7 om overtidsbetaling som pensjonsgivende, obligatorisk uførepensjon, felles pensjonskasse og innarbeiding i folketrygden — et annet spørsmål enn minstesatsen. Saken er Rødts representantforslag; forslag nr. 1 ble fremmet på vegne av SV, Rødt, Venstre og MDG. Cellen på utsagn-37 står uendret på +1 (ev-2026-05-28-frp-otp-minstesats-mot); denne raden er en andre, tidligere dato, ikke en overstyring.
+retrieved_at: "2026-11-09"

@@ -1,0 +1,37 @@
+id: ev-2019-02-12-rodt-statsborgerskap-tilbakekall-tidsfrist
+statement_id: utsagn-49
+party_id: rodt
+actor: "Rødt"
+date: "2019-02-12"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "Rødt stemte for SVs forslag om å utrede en foreldelsesfrist for tilbakekall av statsborgerskap — falt 9 mot 94."
+claim_action: >
+  Rødt stemte for forslag nr. 2 og 3 fra SV i Dokument 8:43 S (2018–2019),
+  der nr. 2 ba regjeringen utrede en foreldelsesfrist som etter en gitt tid
+  avskjærer anledningen til å tilbakekalle et statsborgerskap. Votering 12051
+  (12.02.2019): Rødt 1 for / 0 mot; forslaget falt 9 mot 94.
+verbatim_excerpt: >
+  Stortinget ber regjeringen om å utrede en foreldelsesfrist som etter en gitt
+  tid avskjærer anledningen til å tilbakekalle et statsborgerskap etter
+  statsborgerloven § 26 annet ledd, med sikte på innføring av en slik regel så
+  snart som mulig.
+status: stemte_for
+position: 1
+source_tier: A
+source_name: "Voteringsdetaljer, forslag nr. 2 og 3 fra Sosialistisk Venstreparti; votering 12051 (12.02.2019), sak 74148, Innst. 160 S (2018–2019)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=74148&dnid=1&vt=12051"
+claim_confidence: dokumentert
+context_note: >
+  Tredje dato i cellen: Rødt har fra før 2026-05-12 (+2, den nyere raden (2026-05-12), eget
+  forslag i Innst. 232 S) og 2022-04-07 (+2, den tidligere raden (2022-04-07), Dokument 8:75 S).
+  Denne raden er +2 fra en stemme for SVs forslag i 2019, samme spørsmål og
+  samme side; de tre datoene leses som «Samme posisjon i 2019 og 2026». Ingen
+  eksisterende rad er endret.
+  Votering 12051 avgjorde forslag nr. 2 og 3 i én avstemning; nr. 3 gjaldt krav
+  om dobbelt statsborgerskap ved tilbakekall og er et annet spørsmål, men
+  Rødt stemte for hele pakken og for tilrådingen motsatt vei (mot «vedtas
+  ikke» i 12050), så retningen er entydig. Stemmetallene er kontrollert mot
+  https://data.stortinget.no/eksport/voteringsresultat?voteringid=12051
+  (Rødt 1 for / 0 mot, totalt 9 for / 94 mot).
+retrieved_at: "2026-11-09"

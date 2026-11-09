@@ -1,0 +1,49 @@
+id: ev-2020-10-13-frp-statsborgerskap-skjerpede-krav
+statement_id: utsagn-48
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2020-10-13"
+evidence_type: voteringsspor
+evidence_class: partiets_begrunnelse
+scan_summary: "FrP foreslo ti års botid, språkprøve på C1-nivå, verdiprøve, troskapsed og krav om selvforsørgelse — falt 15 mot 72."
+claim_action: >
+  FrP fremmet forslag nr. 1–3 i sak 79534 (Prop. 98 L, 2019–2020), votert
+  samlet som votering 14826 (13.10.2020). Forslag nr. 2 ba regjeringen påse at
+  følgende krav skal være oppfylt for å få norsk statsborgerskap: ti års botid,
+  bestått språkprøve på minimum C1-nivå, bestått prøve om grunnleggende norske
+  og vestlige verdier, bestått prøve om generelle spørsmål, plettfri vandel og
+  selvforsørget de siste tre årene. FrP stemte 14 for / 0 mot; forslaget falt
+  15 mot 72, der den femtende for-stemmen kom fra en uavhengig representant.
+verbatim_excerpt: >
+  Stortinget ber regjeringen om å påse at følgende krav skal være oppfylt for å
+  få norsk statsborgerskap: ti års botid bestått språkprøve på minimum C1-nivå
+  bestått prøve om grunnleggende norske og vestlige verdier bestått prøve om
+  generelle spørsmål en norsk statsborger bør kunne plettfri vandel selvforsørget
+  de siste tre årene
+status: stemte_for
+position: 2
+source_tier: A
+source_name: "Voteringsdetaljer, forslag nr. 1–3 fra Fremskrittspartiet; votering 14826 (13.10.2020), sak 79534, Innst. 390 L (2019–2020)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=79534&dnid=1&vt=14826"
+claim_confidence: dokumentert
+context_note: >
+  Andre dato i cellen: den eksisterende FrP-raden er datert 2026-05-12 og kodet
+  +2 fra votering 27524 (FrPs egne forslag om ti års botid, B2, troskapsed og
+  selvforsørgelse, 29 for / 72 mot). Denne raden står uendret; raden her er en
+  tidligere observasjon av samme spørsmål, og de to datoene leses som «Samme
+  posisjon i 2020 og 2026».
+  Votering 14826 er den eneste voteringspunkten i saken som ber om nettopp
+  utsagn-48s skjerpelse (høyere språkkrav og krav om selvforsørgelse), og den
+  deler partiene (FrP for, alle andre mot). De øvrige voteringspunktene i sak
+  79534 er bevisst ikke brukt: 14827 og 14829 er innstillingens tilråding og
+  lovvedtaket om krav til norsk muntlig, og der stemte H, Ap, Sp, KrF og V for
+  — det er sakens eget alternativ til FrPs forslag, ikke en posisjon på FrPs
+  spørsmål. 14828 er SV-forslaget om 300 timer norskopplæring, som SV, MDG og
+  Rødt stemte for mens de stemte mot både FrPs forslag og tilrådingen: de valgte
+  et annet virkemiddel i samme sak, og en slik stemmekombinasjon kodes ikke.
+  Derfor er FrP det eneste partiet som får en rad fra denne saken, selv om ni
+  partier har kodet celle på utsagn-48.
+  Kilde: voteringsdetaljene viser forslagsteksten; stemmetallene er kontrollert
+  mot https://data.stortinget.no/eksport/voteringsresultat?voteringid=14826
+  (FrP 14 for / 0 mot, totalt 15 for / 72 mot).
+retrieved_at: "2026-11-09"

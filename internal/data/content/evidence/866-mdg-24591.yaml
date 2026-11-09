@@ -1,0 +1,21 @@
+id: ev-2025-05-06-mdg-otp-minstesats-2025
+statement_id: utsagn-37
+party_id: mdg
+actor: "Miljøpartiet De Grønne"
+date: "2025-05-06"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: >
+  Miljøpartiet De Grønne stemte for forslag nr. 1 fra SV, Rødt, Venstre og MDG om å øke minstesatsen i OTP til minimum 4 pst. nå — 3 for / 0 mot (votering 24591, 06.05.2025).
+claim_action: >
+  Miljøpartiet De Grønne avgav stemme på forslag nr. 1 fra SV, Rødt, Venstre og Miljøpartiet De Grønne i Dokument 8:92 S (2024–2025) om at regjeringen skal «fremme forslag for Stortinget om å øke pensjonsinnskuddssatsen i obligatorisk tjenestepensjon til minimum 4 pst.» Partiets tall i votering_id 24591: 3 for / 0 mot; forslaget falt 33 for / 136 mot. Voteringen ble holdt 06.05.2025 i sesjonen 2024–2025 (sak 102062, Innst. 193 S).
+verbatim_excerpt: "Stortinget ber regjeringen fremme forslag for Stortinget om å øke pensjonsinnskuddssatsen i obligatorisk tjenestepensjon til minimum 4 pst."
+status: stemte_for
+position: -2
+source_tier: A
+source_name: "Innst. 193 S (2024–2025); votering_id 24591 (06.05.2025), sak 102062"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=102062&dnid=1&vt=24591"
+claim_confidence: dokumentert
+context_note: >
+  Utspørringen er entydig: voteringsdetaljene viser «Mindretallsforslag: Forslag nr. 1 fra Sosialistisk Venstreparti, Rødt, Venstre, Miljøpartiet De Grønne», og forslaget falt 33 for / 136 mot, så partiene står på hver sin side. Kodet -2: partiet er navngitt på selve forslaget som ber om en umiddelbar økning til minimum 4 pst. nå, og stemte for det. Det er det motsatte av utsagnets premiss (at en økning skal utredes og skje gradvis, ikke vedtas nå som 2 → 4 pst.), og en navngitt forslagsstiller er en sterkere tilkjennegivelse enn en løs stemme. Retningen er den samme som i 2026-raden, så serien skal lese «samme posisjon i 2025 og 2026». Samme sak hadde to andre voteringspunkter som ikke kodes her: votering 24592 er komiteens tilråding om at «Dokument 8:92 S (2024–2025) … vedtas ikke» (invertert spørsmål, og Høyre delt der med 35 for / 1 mot, altså ingen partilinje), og votering 24593 samler forslagene nr. 2–7 om overtidsbetaling som pensjonsgivende, obligatorisk uførepensjon, felles pensjonskasse og innarbeiding i folketrygden — et annet spørsmål enn minstesatsen. Saken er Rødts representantforslag; forslag nr. 1 ble fremmet på vegne av SV, Rødt, Venstre og MDG. Cellen på utsagn-37 står uendret på -2 (ev-2026-05-28-mdg-otp-minstesats-for); denne raden er en andre, tidligere dato, ikke en overstyring.
+retrieved_at: "2026-11-09"

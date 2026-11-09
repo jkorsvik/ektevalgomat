@@ -21,7 +21,7 @@ written, not today.
   The complete sample, rationales, model identities and method ambiguities are
   published at `/metode#kodingskontroll` and checked against the live cells by
   `internal/scoring/coding_review_test.go`.
-- **60 statements, 711 evidence files.** Memo statements 1-42, two
+- **60 statements, 729 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk

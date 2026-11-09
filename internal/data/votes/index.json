@@ -156879,8 +156879,26 @@
     "krf": "mot",
     "rodt": "for"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2019-02-12-ap-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2019-02-12-frp-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2019-02-12-h-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2019-02-12-krf-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2019-02-12-mdg-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2019-02-12-rodt-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2019-02-12-sv-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2019-02-12-v-statsborgerskap-tilbakekall-tidsfrist"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sv",
+    "v"
+   ],
    "session": "2018-2019",
    "date": "2019-02-12"
   },
@@ -207696,8 +207714,13 @@
    "unmapped_parties": {
     "Uav": "for"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2020-10-13-frp-statsborgerskap-skjerpede-krav",
+    "ev-2019-02-12-frp-statsborgerskap-tilbakekall-tidsfrist"
+   ],
+   "coded_parties": [
+    "frp"
+   ],
    "session": "2020-2021",
    "date": "2020-10-13"
   },
@@ -406052,8 +406075,28 @@
     "PF": "for",
     "Uav": "mot"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2025-05-06-ap-otp-minstesats-2025",
+    "ev-2025-05-06-frp-otp-minstesats-2025",
+    "ev-2025-05-06-h-otp-minstesats-2025",
+    "ev-2025-05-06-krf-otp-minstesats-2025",
+    "ev-2025-05-06-mdg-otp-minstesats-2025",
+    "ev-2025-05-06-rodt-otp-minstesats-2025",
+    "ev-2025-05-06-sp-otp-minstesats-2025",
+    "ev-2025-05-06-sv-otp-minstesats-2025",
+    "ev-2025-05-06-v-otp-minstesats-2025"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sp",
+    "sv",
+    "v"
+   ],
    "session": "2024-2025",
    "date": "2025-05-06"
   },
@@ -406076,8 +406119,28 @@
     "PF": "mot",
     "Uav": "for"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2025-05-06-ap-otp-minstesats-2025",
+    "ev-2025-05-06-frp-otp-minstesats-2025",
+    "ev-2025-05-06-h-otp-minstesats-2025",
+    "ev-2025-05-06-krf-otp-minstesats-2025",
+    "ev-2025-05-06-mdg-otp-minstesats-2025",
+    "ev-2025-05-06-rodt-otp-minstesats-2025",
+    "ev-2025-05-06-sp-otp-minstesats-2025",
+    "ev-2025-05-06-sv-otp-minstesats-2025",
+    "ev-2025-05-06-v-otp-minstesats-2025"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sp",
+    "sv",
+    "v"
+   ],
    "session": "2024-2025",
    "date": "2025-05-06"
   },
@@ -406100,8 +406163,28 @@
     "PF": "for",
     "Uav": "mot"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2025-05-06-ap-otp-minstesats-2025",
+    "ev-2025-05-06-frp-otp-minstesats-2025",
+    "ev-2025-05-06-h-otp-minstesats-2025",
+    "ev-2025-05-06-krf-otp-minstesats-2025",
+    "ev-2025-05-06-mdg-otp-minstesats-2025",
+    "ev-2025-05-06-rodt-otp-minstesats-2025",
+    "ev-2025-05-06-sp-otp-minstesats-2025",
+    "ev-2025-05-06-sv-otp-minstesats-2025",
+    "ev-2025-05-06-v-otp-minstesats-2025"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sp",
+    "sv",
+    "v"
+   ],
    "session": "2024-2025",
    "date": "2025-05-06"
   },
@@ -465259,7 +465342,8 @@
     "ev-2026-05-12-rodt-statsborgerskap-skjerpede-krav",
     "ev-2026-05-12-krf-statsborgerskap-skjerpede-krav",
     "ev-2026-05-12-v-statsborgerskap-skjerpede-krav",
-    "ev-2022-04-07-rodt-statsborgerskap-tilbakekall-tidsfrist"
+    "ev-2022-04-07-rodt-statsborgerskap-tilbakekall-tidsfrist",
+    "ev-2020-10-13-frp-statsborgerskap-skjerpede-krav"
    ],
    "coded_parties": [
     "frp",

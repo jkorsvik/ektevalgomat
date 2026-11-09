@@ -15,6 +15,7 @@ in_scope:
   - statssekretar
 
 public_roles:
+  - verv                # a register § block: board seat, business, employment
   # A role is in scope only when it is a public function or a declared
   # interest from an official register.
   - stortingsrepresentant

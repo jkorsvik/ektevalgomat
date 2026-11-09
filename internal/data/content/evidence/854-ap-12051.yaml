@@ -1,0 +1,35 @@
+id: ev-2019-02-12-ap-statsborgerskap-tilbakekall-tidsfrist
+statement_id: utsagn-49
+party_id: ap
+actor: "Arbeiderpartiet"
+date: "2019-02-12"
+evidence_type: voteringsspor
+evidence_class: uklart
+scan_summary: "Ap stemte mot SVs forslag om å utrede en foreldelsesfrist for tilbakekall av statsborgerskap — falt 9 mot 94."
+claim_action: >
+  Arbeiderpartiet stemte mot forslag nr. 2 og 3 fra SV i Dokument 8:43 S
+  (2018–2019), der nr. 2 ba regjeringen utrede en foreldelsesfrist som etter en
+  gitt tid avskjærer anledningen til å tilbakekalle et statsborgerskap.
+  Votering 12051 (12.02.2019): Ap 0 for / 30 mot; forslaget falt 9 mot 94.
+verbatim_excerpt: >
+  Stortinget ber regjeringen om å utrede en foreldelsesfrist som etter en gitt
+  tid avskjærer anledningen til å tilbakekalle et statsborgerskap etter
+  statsborgerloven § 26 annet ledd, med sikte på innføring av en slik regel så
+  snart som mulig.
+status: stemte_mot
+position: -1
+source_tier: A
+source_name: "Voteringsdetaljer, forslag nr. 2 og 3 fra Sosialistisk Venstreparti; votering 12051 (12.02.2019), sak 74148, Innst. 160 S (2018–2019)"
+source_url: "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/Voteringsoversikt/votering-detaljer/?p=74148&dnid=1&vt=12051"
+claim_confidence: dokumentert
+context_note: >
+  Tredje dato i cellen: Ap har fra før 2026-05-12 (-1, den nyere raden (2026-05-12)) og
+  2022-04-07 (-1, den tidligere raden (2022-04-07)). Denne raden er -1 fra 2019, samme side, og
+  de tre datoene leses som «Samme posisjon i 2019 og 2026». Ingen eksisterende
+  rad er endret.
+  Ap stemte mot et nærliggende forslag i 2022 (den tidligere raden (2022-04-07)) og for tilrådingen
+  (tilradingsvoteringen), så mønsteret er stabilt over tre sesjoner. Stemmetallene er
+  kontrollert mot
+  https://data.stortinget.no/eksport/voteringsresultat?voteringid=12051
+  (Ap 0 for / 30 mot, totalt 9 for / 94 mot).
+retrieved_at: "2026-11-09"

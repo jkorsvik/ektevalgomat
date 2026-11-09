@@ -81,6 +81,26 @@ What still works, and what it means:
 - `data.brreg.no/enhetsregisteret/api/enheter/{orgnr}/roller` — 200, company to
   persons. The only proven role endpoint.
 
+## Proven on 2026-11-09 (second probe)
+
+### Stortinget verv og økonomiske interesser — one PDF for the whole Storting
+- **Index (stable):** `https://www.stortinget.no/no/Stortinget-og-demokratiet/Representantene/Okonomiske-interesser/` (200)
+- **Current register:** `https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-30-oktober-2026.pdf` (200, `application/pdf`, 831 494 bytes, 75 pages)
+- No per-person URL and no API. One dated snapshot. The filename changes; re-fetch the HTML page for the next one; do not guess `arkiv_<session>/` paths.
+- Fields are free text under the reglement's §§2-15: styreverv, selvstendig næring, lønnet stilling, tidligere/framtidig arbeidsgiver, økonomisk støtte, fast eiendom, selskapsinteresser, gjeld, utenlandsreiser, gaver, andre interesser. Person heading = name + party + constituency.
+- Tracker implication: parse the PDF per person heading; a § block is a role group; the register's "pr. <date>" is the snapshot date, not a role start.
+
+### Brreg person → company — only via the bulk file
+- No public reverse API. `autorisert-api/personer/rolleutskrift` and the authorized `roller/totalbestand` return 401 and need fødselsnummer.
+- **Public bulk:** `https://data.brreg.no/enhetsregisteret/api/roller/totalbestand` (200, `application/gzip`, 129 937 200 bytes gzipped, ~3.0 GB decompressed, regenerated nightly, NLOD 2.0).
+- Shape: JSON array of 1 154 881 companies; `rollegrupper[].roller[]` with `person.navn.{fornavn,etternavn}`, `person.fodselsdato`, `type.kode`, `fra`/`til`, `avregistrert`. No fødselsnummer.
+- Tracker implication: invert the file; match on name + fødselsdato (both in the Stortinget person export). Name alone is not unique.
+
+### Hearing participants — two JSON exports
+- **Written submissions:** `https://data.stortinget.no/eksport/horingsinnspill?horingid={id}` (200 JSON) → `horingsinnspill_liste[]` with `id`, `dato`, `organisasjon`, `tittel`. Hearing 10005544: 112 submissions, 110 organisations. Do not store `tekst` (free text, may name individuals).
+- **Oral programme:** `https://data.stortinget.no/eksport/horingsprogram?horingid={id}` (200 JSON) → `horingsprogram_liste[]`; `tekst` is unstructured and names individuals. Do not ingest as-is.
+- Join to `horinger?sesjonid=` on `id` for committee and case.
+
 ## Hard rules
 
 

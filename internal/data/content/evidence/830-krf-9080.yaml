@@ -1,0 +1,30 @@
+id: ev-2017-05-30-krf-utsagn-17-9080-second-date
+statement_id: utsagn-17
+party_id: krf
+actor: Kristelig Folkeparti
+date: '2017-05-30'
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: Ved votering 9080 (2017-05-30) stemte Kristelig Folkeparti mot forslaget «Stortinget ber
+  regjeringen opprette et statlig mineralselskap som kan bidra til at det tas hensyn til miljø og lokalsamfunn
+  ved ny utvinning av mineraler.» (0 for, 6 mot i partiet).
+claim_action: 'Kristelig Folkeparti stemte mot på votering 9080: Forslag nr. 12 fra Sosialistisk Venstreparti,
+  med forslagsteksten «Stortinget ber regjeringen opprette et statlig mineralselskap som kan bidra til
+  at det tas hensyn til miljø og lokalsamfunn ved ny utvinning av mineraler.».'
+verbatim_excerpt: Stortinget ber regjeringen opprette et statlig mineralselskap som kan bidra til at det
+  tas hensyn til miljø og lokalsamfunn ved ny utvinning av mineraler.
+status: stemte_mot
+position: -1
+source_tier: A
+source_name: 'Votering 9080 (2017-05-30), voteringsforslag: Forslag nr. 12 fra Sosialistisk Venstreparti'
+source_url: https://data.stortinget.no/eksport/voteringsforslag?voteringid=9080&format=json
+claim_confidence: dokumentert
+context_note: Votering 9080 (2017-05-30), forslag nr. 12 fra SV om å «opprette et statlig mineralselskap
+  som kan bidra til at det tas hensyn til miljø og lokalsamfunn ved ny utvinning av mineraler». Samme
+  instrument som utsagn-17 spør om (et eget statlig mineralselskap), men formålet er formulert som miljø-
+  og lokalsamfunnshensyn. Saken (Dok 8:41 S (2016–2017) fra Ap) hadde også voteringspunktene 9081–9085
+  om mineralstrategi, avfall, gjenvinning og en stortingsmelding — andre spørsmål, ingen av dem et alternativ
+  til spørsmålet om å opprette et statlig selskap. Rødt hadde ingen stemmende representant og får ingen
+  rad. Partitallet er 0 for og 6 mot for Kristelig Folkeparti, hentet fra voteringsresultatet for 9080.
+  Posisjonen er kodet til -1 fordi bare stemmetallet er dokumentert, ikke en egen begrunnelse fra partiet.
+retrieved_at: '2026-11-09'

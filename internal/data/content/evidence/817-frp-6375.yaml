@@ -1,0 +1,28 @@
+id: ev-2015-11-10-frp-skolemat-opptrappingsplan
+statement_id: utsagn-35
+party_id: frp
+actor: "Fremskrittspartiet"
+date: "2015-11-10"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: >
+  Fremskrittspartiet stemte mot Sp og SVs forslag om en plan for gradvis innføring av skolemåltid i grunnskolen.
+claim_action: >
+  Stemte mot forslag nr. 2 fra Sp og SV (votering_id 6375: Fremskrittspartiet 0 for, 17 mot, 12 ikke tilstede): «Stortinget ber regjeringen innen utgangen av våren 2016 legge fram en plan med sikte på en gradvis innføring av et skolemåltid i grunnskolen.»
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 24 S (2015–2016), sak 62581 (Dokument 8:100 S (2014–2015)); votering_id 6375"
+source_url: "https://data.stortinget.no/eksport/voteringsforslag?voteringid=6375&format=json"
+verbatim_excerpt: >
+  Stortinget ber regjeringen innen utgangen av våren 2016 legge fram en plan med sikte på en gradvis innføring av et skolemåltid i grunnskolen.
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet -1: voteringen gjelder et forslag som ber regjeringen legge fram
+  en plan med sikte på gradvis innføring av et skolemåltid i grunnskolen, som er
+  samme spørsmål som utsagnet (en opptrappingsplan for et daglig skolemåltid for
+  alle elever i grunnskolen). Voteringen delte partiene (9 for, 95 mot nasjonalt).
+  FrP stemte mot både Sp/SVs plan (6375) og Ap sitt forslag nr. 1 (6376: FrP 0 for, 17 mot). Dagens celle (2024-11-28) er kodet -1.
+  Saken hadde tre voteringspunkter: 6375 (forslag nr. 2 fra Sp og SV, kodet her), 6376 (forslag nr. 1 fra A, ikke kodet) og 6377 (komiteens tilråding om at dokumentet vedlegges protokollen, enstemmig vedtatt uten tall). Forslaget er ikke en «vedtas ikke»-tilråding, så for/mot leses rett fram.
+retrieved_at: "2026-11-09"

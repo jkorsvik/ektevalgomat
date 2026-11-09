@@ -1,0 +1,28 @@
+id: ev-2015-11-10-sv-skolemat-opptrappingsplan
+statement_id: utsagn-35
+party_id: sv
+actor: "Sosialistisk Venstreparti"
+date: "2015-11-10"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: >
+  Sosialistisk Venstreparti stemte for Sp og SVs forslag om en plan for gradvis innføring av skolemåltid i grunnskolen.
+claim_action: >
+  Stemte for forslag nr. 2 fra Sp og SV (votering_id 6375: Sosialistisk Venstreparti 3 for, 0 mot, 4 ikke tilstede): «Stortinget ber regjeringen innen utgangen av våren 2016 legge fram en plan med sikte på en gradvis innføring av et skolemåltid i grunnskolen.»
+status: forslag_avvist_stemte_for
+position: 1
+source_tier: A
+source_name: "Innst. 24 S (2015–2016), sak 62581 (Dokument 8:100 S (2014–2015)); votering_id 6375"
+source_url: "https://data.stortinget.no/eksport/voteringsforslag?voteringid=6375&format=json"
+verbatim_excerpt: >
+  Stortinget ber regjeringen innen utgangen av våren 2016 legge fram en plan med sikte på en gradvis innføring av et skolemåltid i grunnskolen.
+claim_confidence: dokumentert
+attribution_confidence: ukjent
+context_note: >
+  Kodet +1: voteringen gjelder et forslag som ber regjeringen legge fram
+  en plan med sikte på gradvis innføring av et skolemåltid i grunnskolen, som er
+  samme spørsmål som utsagnet (en opptrappingsplan for et daglig skolemåltid for
+  alle elever i grunnskolen). Voteringen delte partiene (9 for, 95 mot nasjonalt).
+  SV stod bak representantforslaget (Dokument 8:100 S (2014–2015), Audun Lysbakken) og var medforslagsstiller til forslag nr. 2, så stemmen for er partiets eget forslag. SV stemte mot Ap sitt forslag nr. 1 (votering_id 6376: SV 0 for, 3 mot). Dagens celle (2024-11-28) er kodet +2.
+  Saken hadde tre voteringspunkter: 6375 (forslag nr. 2 fra Sp og SV, kodet her), 6376 (forslag nr. 1 fra A, ikke kodet) og 6377 (komiteens tilråding om at dokumentet vedlegges protokollen, enstemmig vedtatt uten tall). Forslaget er ikke en «vedtas ikke»-tilråding, så for/mot leses rett fram.
+retrieved_at: "2026-11-09"

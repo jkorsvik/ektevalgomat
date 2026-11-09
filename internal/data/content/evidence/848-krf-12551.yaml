@@ -1,0 +1,40 @@
+id: ev-2019-06-05-krf-samordningsfellen-kullene
+statement_id: utsagn-40
+party_id: krf
+actor: "Kristelig Folkeparti (stortingsgruppen 2018–2019)"
+date: "2019-06-05"
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: "KrF stemte mot både Sps forslag nr. 9 og As forslag nr. 6 og 7 om en løsning for offentlig ansatte født 1944-1962 som taper pensjon på å stå lenger i arbeid."
+claim_action: >
+  Votering_id 12549 (forslag nr. 9 på vegne av Sp): KrF 0 for, 5 mot. Votering_id 12551
+  (forslag nr. 6 og 7 på vegne av A): KrF 0 for, 5 mot. Begge forslagene ble forkastet
+  (12549: 20 for / 80 mot / 69 ikke tilstede; 12551: 37 for / 63 mot / 69 ikke tilstede).
+verbatim_excerpt: >
+  Stortinget ber regjeringen komme tilbake til Stortinget med forslag som kan styrke arbeidsinsentivene for offentlig ansatte som er født 1944–1962, med særlig vekt på dem som måtte tape i samlet årlig pensjonsutbetaling på å stå lenger i arbeid.
+status: forslag_avvist_stemte_mot
+position: -1
+source_tier: A
+source_name: "Innst. 314 L (2018–2019), Prop. 87 L (2018–2019); votering_id 12551 og 12549, korroborert av votering_id 12549"
+source_url: "https://data.stortinget.no/eksport/voteringsforslag?voteringid=12551&format=json"
+claim_confidence: dokumentert
+context_note: >
+  Kodet -1 fra votering 2019-06-05 i sak 75802 (Innst. 314 L (2018–2019) om ny
+  tjenestepensjon for ansatte i offentlig sektor), der As forslag nr. 6 og 7 ber
+  regjeringen komme tilbake med forslag som styrker arbeidsinsentivene for offentlig
+  ansatte født 1944–1962, «med særlig vekt på dem som måtte tape i samlet årlig
+  pensjonsutbetaling på å stå lenger i arbeid». Det er samme spørsmål som utsagn-40
+  («utrede tiltak som sikrer at offentlig ansatte født fra og med 1944 ikke taper
+  tjenestepensjon ved å stå lenger i arbeid enn 67 år»): samme kohort (1944–1962) og
+  samme tap, med et sterkere instrument (forslag, ikke utredning). Samme sak inneholder
+  Sps forslag nr. 9 (votering_id 12549: løsning for aldersgruppene 1943–1962 i tråd med
+  Stoltenbergs brev 3. juni 2009, med virkning også for dem rammet av samordningsfellen),
+  som spør det samme om samme kohort — kohorten er der 1943–1962 mot utsagnets «fra og
+  med 1944». Denne raden siterer begge voteringspunktene fordi partiet sto på samme side
+  i begge, og fordi 12551 er bundet sammen med As AFP-garanti (forslag nr. 6): at partiet
+  også stemte mot på det ubundne forslaget 12549 fjerner den innvendingen.
+  Styrken er satt etter hva protokollen viser av handling og egen tekst, ikke etter
+  stemmetallet. KrF stemte for lovvedtaket (12555-12558), med 3 for og 5 ikke til stede pa 12557 og mot begge forslagene om å rette opp tapet. Samme fortegn som dagens celle (2025-12-16, -1). Ap og Sp er ikke kodet fra denne saken: hver av dem stemte for sitt eget og mot det andres forslag om det samme spørsmålet i samme sak (Ap 0 for / 29 mot på 12549 og 29 for / 0 mot på sitt eget 12551; Sp 11 for / 0 mot på sitt eget 12549 og 0 for / 11 mot på 12551), og en stemme mot en rival sitt forslag mens en selv bærer et nesten identisk forslag er ikke en posisjon.
+  Ingen eksisterende posisjon er endret, og raden er en tidligere observasjon som den
+  nyeste raden fortsatt overstyrer.
+retrieved_at: "2026-11-09"

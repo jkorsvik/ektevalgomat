@@ -1,0 +1,34 @@
+id: ev-2021-06-04-frp-utsagn-17-17035-second-date
+statement_id: utsagn-17
+party_id: frp
+actor: Fremskrittspartiet
+date: '2021-06-04'
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: Ved votering 17035 (2021-06-04) stemte Fremskrittspartiet mot forslaget «Stortinget ber
+  regjeringen foreslå opprettelse av et statlig mineralselskap som kan drive utforskning og utvinning
+  av mineraler hvor det sikres lokale arbeidsplasser og verdiskapning med krav om høy miljøstandard.»
+  (0 for, 15 mot i partiet).
+claim_action: 'Fremskrittspartiet stemte mot på votering 17035: Forslag nr. 6 fra Torgeir Knag Fylkesnes
+  på vegne av Sosialistisk Venstreparti, med forslagsteksten «Stortinget ber regjeringen foreslå opprettelse
+  av et statlig mineralselskap som kan drive utforskning og utvinning av mineraler hvor det sikres lokale
+  arbeidsplasser og verdiskapning med krav om høy miljøstandard.».'
+verbatim_excerpt: Stortinget ber regjeringen foreslå opprettelse av et statlig mineralselskap som kan
+  drive utforskning og utvinning av mineraler hvor det sikres lokale arbeidsplasser og verdiskapning med
+  krav om høy miljøstandard.
+status: stemte_mot
+position: -1
+source_tier: A
+source_name: 'Votering 17035 (2021-06-04), voteringsforslag: Forslag nr. 6 fra Torgeir Knag Fylkesnes
+  på vegne av Sosialistisk Venstreparti'
+source_url: https://data.stortinget.no/eksport/voteringsforslag?voteringid=17035&format=json
+claim_confidence: dokumentert
+context_note: Votering 17035 (2021-06-04), forslag nr. 6 fra SV om å «foreslå opprettelse av et statlig
+  mineralselskap som kan drive utforskning og utvinning av mineraler» — samme spørsmål som utsagn-17,
+  nesten ord for ord. Saken var minerallovsaken (Prop. 124 L (2020–2021) med mindretallsforslag); de øvrige
+  voteringspunktene gjelder lovtekst, kartleggingstempo, mineralstrategi og rekkefølgekrav, altså andre
+  spørsmål. Senterpartiet stemte 6 for og 3 mot og er ikke kodet (en splitt er ikke en posisjon). MDG
+  og Rødt var ikke til stede i voteringen og får ingen rad. Partitallet er 0 for og 15 mot for Fremskrittspartiet,
+  hentet fra voteringsresultatet for 17035. Posisjonen er kodet til -1 fordi bare stemmetallet er dokumentert,
+  ikke en egen begrunnelse fra partiet.
+retrieved_at: '2026-11-09'

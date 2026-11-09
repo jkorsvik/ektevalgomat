@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29",
+ "generated_at": "2026-11-09",
  "votes": [
   {
    "votering_id": 1461,
@@ -6858,8 +6858,24 @@
     "v": "mot",
     "sp": "mot"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2019-06-05-frp-samordningsfellen-kullene",
+    "ev-2019-06-05-h-samordningsfellen-kullene",
+    "ev-2019-06-05-krf-samordningsfellen-kullene",
+    "ev-2019-06-05-mdg-samordningsfellen-kullene",
+    "ev-2019-06-05-rodt-samordningsfellen-kullene",
+    "ev-2019-06-05-sv-samordningsfellen-kullene",
+    "ev-2019-06-05-v-samordningsfellen-kullene"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sv",
+    "v"
+   ],
    "session": "2011-2012",
    "date": "2012-03-01"
   },
@@ -66552,8 +66568,22 @@
     "frp": "mot",
     "mdg": "mot"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2015-11-10-frp-skolemat-opptrappingsplan",
+    "ev-2015-11-10-h-skolemat-opptrappingsplan",
+    "ev-2015-11-10-krf-skolemat-opptrappingsplan",
+    "ev-2015-11-10-sp-skolemat-opptrappingsplan",
+    "ev-2015-11-10-sv-skolemat-opptrappingsplan",
+    "ev-2015-11-10-v-skolemat-opptrappingsplan"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "krf",
+    "sp",
+    "sv",
+    "v"
+   ],
    "session": "2015-2016",
    "date": "2015-11-10"
   },
@@ -66571,8 +66601,14 @@
     "frp": "mot",
     "mdg": "for"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2015-11-10-sp-skolemat-opptrappingsplan",
+    "ev-2015-11-10-sv-skolemat-opptrappingsplan"
+   ],
+   "coded_parties": [
+    "sp",
+    "sv"
+   ],
    "session": "2015-2016",
    "date": "2015-11-10"
   },
@@ -106494,8 +106530,26 @@
     "v": "mot",
     "mdg": "mot"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2017-05-30-ap-utsagn-17-9080-second-date",
+    "ev-2017-05-30-frp-utsagn-17-9080-second-date",
+    "ev-2017-05-30-h-utsagn-17-9080-second-date",
+    "ev-2017-05-30-krf-utsagn-17-9080-second-date",
+    "ev-2017-05-30-mdg-utsagn-17-9080-second-date",
+    "ev-2017-05-30-sp-utsagn-17-9080-second-date",
+    "ev-2017-05-30-sv-utsagn-17-9080-second-date",
+    "ev-2017-05-30-v-utsagn-17-9080-second-date"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "sp",
+    "sv",
+    "v"
+   ],
    "session": "2016-2017",
    "date": "2017-05-30"
   },
@@ -166053,8 +166107,12 @@
    "unmapped_parties": {
     "Uav": "absent"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2019-06-05-sv-samordningsfellen-kullene"
+   ],
+   "coded_parties": [
+    "sv"
+   ],
    "session": "2018-2019",
    "date": "2019-06-05"
   },
@@ -166076,8 +166134,24 @@
    "unmapped_parties": {
     "Uav": "absent"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2019-06-05-frp-samordningsfellen-kullene",
+    "ev-2019-06-05-h-samordningsfellen-kullene",
+    "ev-2019-06-05-krf-samordningsfellen-kullene",
+    "ev-2019-06-05-mdg-samordningsfellen-kullene",
+    "ev-2019-06-05-rodt-samordningsfellen-kullene",
+    "ev-2019-06-05-sv-samordningsfellen-kullene",
+    "ev-2019-06-05-v-samordningsfellen-kullene"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sv",
+    "v"
+   ],
    "session": "2018-2019",
    "date": "2019-06-05"
   },
@@ -166122,8 +166196,24 @@
    "unmapped_parties": {
     "Uav": "absent"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2019-06-05-frp-samordningsfellen-kullene",
+    "ev-2019-06-05-h-samordningsfellen-kullene",
+    "ev-2019-06-05-krf-samordningsfellen-kullene",
+    "ev-2019-06-05-mdg-samordningsfellen-kullene",
+    "ev-2019-06-05-rodt-samordningsfellen-kullene",
+    "ev-2019-06-05-sv-samordningsfellen-kullene",
+    "ev-2019-06-05-v-samordningsfellen-kullene"
+   ],
+   "coded_parties": [
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sv",
+    "v"
+   ],
    "session": "2018-2019",
    "date": "2019-06-05"
   },
@@ -166214,8 +166304,12 @@
    "unmapped_parties": {
     "Uav": "absent"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2019-06-05-frp-samordningsfellen-kullene"
+   ],
+   "coded_parties": [
+    "frp"
+   ],
    "session": "2018-2019",
    "date": "2019-06-05"
   },
@@ -252470,8 +252564,22 @@
    "unmapped_parties": {
     "Uav": "absent"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2021-06-04-ap-utsagn-17-17035-second-date",
+    "ev-2021-06-04-frp-utsagn-17-17035-second-date",
+    "ev-2021-06-04-h-utsagn-17-17035-second-date",
+    "ev-2021-06-04-krf-utsagn-17-17035-second-date",
+    "ev-2021-06-04-sv-utsagn-17-17035-second-date",
+    "ev-2021-06-04-v-utsagn-17-17035-second-date"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "sv",
+    "v"
+   ],
    "session": "2020-2021",
    "date": "2021-06-04"
   },
@@ -410508,8 +410616,28 @@
     "PF": "for",
     "Uav": "absent"
    },
-   "cited_by": [],
-   "coded_parties": [],
+   "cited_by": [
+    "ev-2025-05-20-ap-utsagn-11-24811-second-date",
+    "ev-2025-05-20-frp-utsagn-11-24811-second-date",
+    "ev-2025-05-20-h-utsagn-11-24811-second-date",
+    "ev-2025-05-20-krf-utsagn-11-24811-second-date",
+    "ev-2025-05-20-mdg-utsagn-11-24811-second-date",
+    "ev-2025-05-20-rodt-utsagn-11-24811-second-date",
+    "ev-2025-05-20-sp-utsagn-11-24811-second-date",
+    "ev-2025-05-20-sv-utsagn-11-24811-second-date",
+    "ev-2025-05-20-v-utsagn-11-24811-second-date"
+   ],
+   "coded_parties": [
+    "ap",
+    "frp",
+    "h",
+    "krf",
+    "mdg",
+    "rodt",
+    "sp",
+    "sv",
+    "v"
+   ],
    "session": "2024-2025",
    "date": "2025-05-20"
   },

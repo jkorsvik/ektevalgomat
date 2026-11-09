@@ -1,0 +1,31 @@
+id: ev-2025-05-20-sv-utsagn-11-24811-second-date
+statement_id: utsagn-11
+party_id: sv
+actor: Sosialistisk Venstreparti
+date: '2025-05-20'
+evidence_type: voteringsspor
+evidence_class: fakta
+scan_summary: Ved votering 24811 (2025-05-20) stemte Sosialistisk Venstreparti for forslaget «Stortinget
+  ber regjeringen utrede konsesjonsplikt for datasentre.» (8 for, 0 mot i partiet).
+claim_action: 'Sosialistisk Venstreparti stemte for på votering 24811: Forslag nr. 5 og nr. 6 fra Sosialistisk
+  Venstreparti, Rødt, Miljøpartiet De Grønne og Kristelig Folkeparti, med forslagsteksten «Stortinget
+  ber regjeringen utrede konsesjonsplikt for datasentre.».'
+verbatim_excerpt: Stortinget ber regjeringen utrede konsesjonsplikt for datasentre.
+status: stemte_for
+position: 1
+source_tier: A
+source_name: 'Votering 24811 (2025-05-20), voteringsforslag: Forslag nr. 5 og nr. 6 fra Sosialistisk Venstreparti,
+  Rødt, Miljøpartiet De Grønne og Kristelig Folkeparti'
+source_url: https://data.stortinget.no/eksport/voteringsforslag?voteringid=24811&format=json
+claim_confidence: dokumentert
+context_note: 'Votering 24811 (sak om Dok 8:112 S (2024–2025) fra Rødt om å få kontroll over datasenterindustrien),
+  behandlet 2025-05-20. Voteringspunktet slår sammen forslag nr. 5 («Stortinget ber regjeringen utrede
+  konsesjonsplikt for datasentre») og nr. 6 (nye generelle kriterier for nettilknytning i NEM). Forslaget
+  ble ikke vedtatt: Rødt, SV, MDG og KrF stemte for; Ap, FrP, H, Sp og Venstre stemte mot. Ingen av de
+  øvrige voteringspunktene i saken spør om det samme (24810 om 25 MW-grense og stortingsbehandling av
+  krafttildeling, 24812 om overskuddsvarme, 24813 om midlertidig forbud mot ny utbygging, 24814 om kryptoutvinning),
+  så ingen parti er utelatt etter utsagn-35-regelen. Forbehold: forslag nr. 5 og 6 er votert sammen, så
+  en mot-stemme kan i prinsippet gjelde nr. 6 alene; derfor er posisjonen kodet til -1/+1 og ikke -2/+2.
+  Partitallet er 8 for og 0 mot for Sosialistisk Venstreparti, hentet fra voteringsresultatet for 24811.
+  Posisjonen er kodet til +1 fordi bare stemmetallet er dokumentert, ikke en egen begrunnelse fra partiet.'
+retrieved_at: '2026-11-09'

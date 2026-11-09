@@ -1,0 +1,6360 @@
+{
+ "generated_at": "2026-11-09",
+ "session": "2026-2027",
+ "hearings": [
+  {
+   "hearing_id": 10005899,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-07",
+   "sak_id": 200280,
+   "sak_tittel": "Representantforslag om en tydelig og forpliktende integreringskontrakt",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005901,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-07",
+   "sak_id": 200293,
+   "sak_tittel": "Representantforslag om egenbetaling for tolketjenester etter tre års opphold i Norge",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005903,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-12",
+   "sak_id": 200325,
+   "sak_tittel": "Representantforslag om en bedre politikk for å eie bolig og få bolig- og byggebransjen i gang",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005911,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-10-01",
+   "sak_id": 200332,
+   "sak_tittel": "Representantforslag regulering av prediksjonsmarkeder og styrket tilsyn",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005912,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-26",
+   "sak_id": 200321,
+   "sak_tittel": "Representantforslag om tiltak mot kjønnslemlestelse",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005913,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-26",
+   "sak_id": 200284,
+   "sak_tittel": "Representantforslag om hastetiltak for å sette politiet bedre i stand til å trygge samfunnet i en usikker tid",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005914,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-20",
+   "sak_id": 200298,
+   "sak_tittel": "Representantforslag om å bekjempe voldelige og ekstremistiske digitale nettverk rettet mot barn og unge",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005915,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-26",
+   "sak_id": 200303,
+   "sak_tittel": "Representantforslag om å stoppe internettrelaterte overgrep mot barn",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005933,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Pågår",
+   "start_dato": "2026-10-01",
+   "sak_id": 107272,
+   "sak_tittel": "Kontroll og kultur i utenrikstjenesten",
+   "n_submissions": 0,
+   "organisasjoner": []
+  },
+  {
+   "hearing_id": 10005934,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200339,
+   "sak_tittel": "Representantforslag om innføring av makspris på egenandeler knyttet til praktisk bistand",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005935,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200344,
+   "sak_tittel": "Representantforslag om å avvise innstramminger i regulering av snus",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005936,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200360,
+   "sak_tittel": "Representantforslag om å styrke kvinners tilgang på medikamentell abort utenfor sykehus",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005937,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200326,
+   "sak_tittel": "Representantforslag om å sikre videre drift av gasskraftverket i Hammerfest",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005938,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200343,
+   "sak_tittel": "Representantforslag om likebehandling av husholdningsforbruk i kommunale boliger i ordningene for Norgespris og strømstøtte",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005939,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-11-02",
+   "sak_id": 200379,
+   "sak_tittel": "Representantforslag om raskere og skånsom utbygging av solenergi",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005940,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200384,
+   "sak_tittel": "Representantforslag om likere strømpriser og et sterkere forbrukervern",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005941,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200342,
+   "sak_tittel": "Representantforslag fra stortingsrepresentantene Remi Sølvberg, Mímir Kristjánsson og Marie Sneve Martinussen om å si opp trafikkavtalen med Go-Ahead Norge på Sørlandsbanen",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005942,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200347,
+   "sak_tittel": "Representantforslag fra stortingsrepresentantene Geir Inge Lien og Bengt Fasteraune om forenkling og avbyråkratisering i jernbanesektoren",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005943,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200348,
+   "sak_tittel": "Representantforslag fra stortingsrepresentantene Geir Inge Lien, Ole Herman Sveian og Bengt Fasteraune om å legge ned Jernbanedirektoratet",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005944,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200364,
+   "sak_tittel": "Representantforslag om rammebetingelser for entusiastkjøretøy",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005945,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200365,
+   "sak_tittel": "Representantforslag om å øke vektgrensen for førerkortklasse B",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005946,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-13",
+   "sak_id": 200382,
+   "sak_tittel": "Representantforslag om et nasjonalt trafikklyssystem for trygge skoleveier",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005947,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Avholdt",
+   "start_dato": "2026-10-14",
+   "sak_id": 200390,
+   "sak_tittel": "Samtykke til godkjennelse av EØS-komiteens beslutning nr. 228/2026 om innlemmelse i EØS-avtalen av forordning (EU) 2023/588 om opprettelse av EUs program for sikker konnektivitet for perioden 2023–2027 og GOVSATCOM-komponenten i forordning (EU) 2021/",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005948,
+   "komite": "Utdannings- og forskningskomiteen",
+   "komite_id": "UFO",
+   "status": "Avholdt",
+   "start_dato": "2026-10-15",
+   "sak_id": 200357,
+   "sak_tittel": "Representantforslag om fleksibel skolestart",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005949,
+   "komite": "Utdannings- og forskningskomiteen",
+   "komite_id": "UFO",
+   "status": "Avholdt",
+   "start_dato": "2026-10-15",
+   "sak_id": 200369,
+   "sak_tittel": "Representantforslag om å styrke private barnehagers medvirkning, klageadgang og rettssikkerhet gjennom konkrete endringer i finansieringsforskriften",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005950,
+   "komite": "Utdannings- og forskningskomiteen",
+   "komite_id": "UFO",
+   "status": "Avholdt",
+   "start_dato": "2026-10-15",
+   "sak_id": 200380,
+   "sak_tittel": "Representantforslag om en skole å bli nysgjerrig i",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005951,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200351,
+   "sak_tittel": "Endringer i trossamfunnsloven mv. (taushetsplikt)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005952,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-20",
+   "sak_id": 200366,
+   "sak_tittel": "Representantforslag om å styrke ytringsfriheten for lærere",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005953,
+   "komite": "Arbeids- og sosialkomiteen",
+   "komite_id": "ARBSOS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-14",
+   "sak_id": 200446,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til arbeids- og sosialkomiteen)",
+   "n_submissions": 93,
+   "organisasjoner": [
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ADHD NORGE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akademikerne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akademikerne Nav",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Aktivitetsalliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Alopeciaforeningen Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeid & Inkludering i NHO Service og Handel",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Autismeforeningen i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "AVYO i Delta",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Barneombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bipolarforeningen Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Blå Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bokhandlerforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygghåndverk Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Caritas Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "CP-foreningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Creo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Delta - en arbeidstakerorganisasjon i YS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "EBA Entreprenørforeningen Bygg og Anlegg",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fagforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fair Play Bygg Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FO (Fellesorganisasjonen)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fontenehus Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbundet Styrke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen Norges døvblinde",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fotballstiftelsen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Funksjonshemmedes Fellesorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HK Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Håndverksforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "iArbeid",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Juristforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jussbuss",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KFUK-KFUM Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Bymisjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen for skeive funkiser",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Legeforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Likestillings- og diskrimineringsombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Løvemammaene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Mental Helse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "MS-forbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Byggenæringen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Geneo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Reiseliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Service og Handel",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NITO - Norges ingeniør- og teknologorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NOPA Norsk forening for komponister og tekstforfatter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Blindeforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Døveforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Handikapforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund og olympiske og paralympiske komité",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Lastebileier-forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Parkinsonforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk cøliakiforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forbund for Utviklingshemmede (NFU)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forfattersentrum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Fosterhjemsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Kiropraktorforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Manuellterapeutforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sykepleierforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Dansekunstnere, Forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kvinners Sanitetsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Optikerbransjen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Parat Nav",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pensjonistforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Psoriasis og eksemforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pårørendealliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samarbeidsforumet av funksjonshemmedes organisasjoner - SAFO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsviterne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "SPILLAVHENGIGHET-NORGE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Back in the Ring",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen LESE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Rettferd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sunnaasstiftelsen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Uloba Independent Living Norge SA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unge funksjonshemmede",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unio",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unio i Nav",
+     "dato": ""
+    },
+    {
+     "organisasjon": "URO UTVIKLINGSHEMMING - RUS - OPPLYSNING",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Yrkesorganisasjonenes Sentralforbund - YS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Yrkestrafikkforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "AAP-aksjonen",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005954,
+   "komite": "Finanskomiteen",
+   "komite_id": "FINANS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-14",
+   "sak_id": 200434,
+   "sak_tittel": "Statsbudsjettet 2027",
+   "n_submissions": 79,
+   "organisasjoner": [
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akademikerne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bilimportørenes Landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biogass Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biomarint forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bryggeri- og drikkevareforeningen (BROD)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygghåndverk Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Drivkraft Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Eiendom Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Elbilforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Film & Kino",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FIN - Foreningen for innovasjonsselskaper i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finans Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finansforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fiskebåt",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fornybar Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskningsinstituttenes fellesarena (FFA)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Framtiden i våre hender",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Frivillighet Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Grønn Byggallianse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Handel og kontor Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Huseierne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Nødhjelp",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kommunesektorens organisasjon (KS)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kraftfylka",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kystrederiene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maritimt Forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maskinentreprenørenes forbund (MEF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Mediebedriftenes landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Natur og Ungdom",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Naturvernforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NCD-alliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Byggenæringen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Byggenæringen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Luftfart",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Reiseliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NITO - Norges ingeniør- og teknologorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Automobil-Forbund (NAF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bilbransjeforbund (NBF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Blindeforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bondelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdeungdomslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Eiendomsmeglerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Fiskarlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund og olympiske og paralympiske komité",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Lastebileier-forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Rederiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Bioenergiforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Bonde- og Småbrukarlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Eiendom",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Fjernvarme og Overskuddsenergi",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Gartnerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Hydrogenforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Industri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sjøoffisersforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk studentorganisasjon (NSO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tjenestemannslag (NTL)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Boligbyggelags Landsforbund (NBBL)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORSKOG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringslivets Hovedorganisasjon (NHO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Opplysningsrådet for veitrafikken",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pensjonistforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene Avfall og ressurs",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sjømat Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Syklistforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tax Justice Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unio",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Verdipapirfondenes forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "WWF Verdens naturfond",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Yrkesorganisasjonenes sentralforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ZERO",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005955,
+   "komite": "Utdannings- og forskningskomiteen",
+   "komite_id": "UFO",
+   "status": "Avholdt",
+   "start_dato": "2026-10-19",
+   "sak_id": 200443,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til utdannings- og forskningskomiteen)",
+   "n_submissions": 110,
+   "organisasjoner": [
+    {
+     "organisasjon": "Kystrederiene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akademikerne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Aktive Fredsreiser AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ANSA - Association of Norwegian Students Abroad",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Autismeforeningen i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Barneombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bibliotekarforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Creo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Delta",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske Forleggerforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske legeforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske veterinærforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Dysleksi Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Econa",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Elevorganisasjonen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fagforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesorganisasjonen (FO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FFO (Funksjonshemmedes fellesorganisasjon)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FIN - Foreningen for innovasjonsselskaper i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finansforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fleksibel utdanning Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Flyte",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Folkehøgskolerådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbundet Styrke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreldreutvalget for grunnopplæringen (FUG)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreldreutvalget for grunnopplæringen (FUG)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskningsinstituttenes fellesarena, FFA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forum for fagskoler",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Friskolenes Kontaktforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hjernesvulstforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HK Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen KA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hvite Busser STI",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Høy - Interesseorganisasjonen for offentlige fagskoler",
+     "dato": ""
+    },
+    {
+     "organisasjon": "International Council for Open and Distance Education - ICDE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Juristforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Juristforbundet - Student",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kommunesektorens organisasjon (KS)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kommunesektorens organisasjon (KS)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kompetanseforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kulturskolerådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Lektorlaget",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Likestillings- og diskrimineringsombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Lærerstudentene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonalt elevombud for folkehøyskolelevene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Byggenæringen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Geneo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO REISELIV",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Sjøfart",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NIFRO - Norsk Industriforum for Romvirksomhet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NITO - Norges Ingeniør- og teknologorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Blindeforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdeungdomslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Døveforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges fagskolestudenter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Farmaceutiske Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges forskningsråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Handikapforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund og olympiske og paralympiske komité",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Rederiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk bibliotekforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk faglitterær forfatter- og oversetterforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forbund for Utviklingshemmede",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Industri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk kvanteklynge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Leirskoleforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk logopedforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Manuellterapeutforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk musikkråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk psykologforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk studentorganisasjon (NSO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sykepleierforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sykepleierforbund Student",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Fag- og Friskolers Landsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nynorsk forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringslivets Hovedorganisasjon (NHO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Opplæringskontorenes Landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Organisasjonen Ferske Forskere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "PBL (Private Barnehagers Landsforbund)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samarbeidsforumet av funksjonshemmedes organisasjoner - SAFO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsviterne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samskipnadsrådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sex og Politikk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Skolelederforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Skolenes landsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "SRHR ung-nettverket",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Dam",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen LESE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Store norske leksikon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Støttegruppen etter 22. juli",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna Student",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tverga",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ungt Entreprenørskap Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unio",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Universitets- og høgskolerådet (UHR)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Utdanningsforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke helse og velferd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "VOKSENOPPLÆRINGSFORBUNDET",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Yrkesorganisasjonenes sentralforbund",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005956,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200445,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til familie- og kulturkomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005957,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Avholdt",
+   "start_dato": "2026-10-21",
+   "sak_id": 200439,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til næringskomiteen)",
+   "n_submissions": 101,
+   "organisasjoner": [
+    {
+     "organisasjon": "4H Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akademikerne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biogass Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biologisk-dynamisk forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biomarint forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bondens marked",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bryggeri- og drikkevareforeningen (BROD)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygghåndverk Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den Norske Verftsforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske veterinærforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Drivkraft Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Dyrebeskyttelsen Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Dyrevernalliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FIN - Foreningen for innovasjonsselskaper i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finans Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fiskebåt",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Flyte",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskningsinstituttenes fellesarena, FFA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Framtiden i våre hender",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fundraising Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Geitmyra matkultursenter for barn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "GMO-nettverket",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Grafill",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Håndverksforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Innlandet fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kystrederiene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Legemiddelindustrien (LMI)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LO Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maritimt Forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Matsentralen Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Miljømerking Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Miljøstiftelsen Bellona",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Naturvernforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Mat og Drikke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Reiseliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NIFRO - Norsk Industriforum for Romvirksomhet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NOAH",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nordland fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Astma- og Allergiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bondelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdekvinnelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdeungdomslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Fiskarlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Fjellstyresamband",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges forskningsråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Idrettsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges jeger- og fiskerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Kystfiskarlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Lastebileier-forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Rederiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Skogeierforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Vel",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Bonde- og Småbrukarlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk cøliakiforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk datasenterindustri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Gardsost",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Gartnerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Hydrogenforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Industri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Journalistlag (NJ)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Kennel Klub",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Reiseliv / Norwegian Tourism Partners",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Senter for økologisk landbruk (NORSØK)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sjømannsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sjøoffisersforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk.Design - Foreningen for Norsk Designnæring",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Formgivere (NF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Lakseelver",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Maritime Eksportører (NME)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norskog",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsvin SA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norwegian Alliance for Startups & Tech (NAST)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringshagene i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringslivets Hovedorganisasjon (NHO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringsorganisasjonen HANEN",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redningsselskapet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Regenerativt Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene Avfall og ressurs",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sjømat Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sjømatbedriftene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Skognæringa Kyst SA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "SMB Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Miljøfyrtårn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Styrke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tax Justice Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tine SA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Trygg Trafikk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ungt Entreprenørskap Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke reiseliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "WWF Verdens naturfond",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ZERO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Økologisk Norge",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005958,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-21",
+   "sak_id": 200437,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til justiskomiteen)",
+   "n_submissions": 88,
+   "organisasjoner": [
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Actis - Rusfeltets samarbeidsorgan",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Advokatforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Aktivitetsalliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Amnesty International i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Autismeforeningen i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Back in the Ring STI",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Barneombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Betong Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Blå Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Det Frivillige Skyttervesen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "DiMe Oslo og Bergen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fair Play Bygg Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finans Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "For Fangers Pårørende (FFP)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forandringsfabrikken Stiftelse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fotballstiftelsen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Frelsesarmeen, Fengselsarbeidet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Funksjonshemmedes fellesorganisasjon (FFO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Juridisk rådgivning for kvinner",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Juristforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Juristforbundet - Dommerforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jussbuss",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jussformidlingen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KFUK-KFUM Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Bymisjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kontoret for fri rettshjelp, Oslo kommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kriminalomsorgens Yrkesforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Krisesentersekretariatet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS - Kommunesektorens organisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kystrederiene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Langsikt",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Likestillings- og diskrimineringsombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Løvemammaene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Microsoft Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Elektro",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NOAH",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdekvinnelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund og olympiske og paralympiske komité",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Jeger- og Fiskerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Politilederlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Skiskytterforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Sportsskytterforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk datasenterindustri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forbund for Utviklingshemmede (NFU)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Journalistlag (NJ)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Presseforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk tolkeforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tollerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kvinners Sanitetsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORSKOG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "PION - Prostituertes interesseorganisasjon i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Politiets Fellesforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Politijuristene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Preventio",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pro Sentret",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Profesjonelle Vergers Interesseorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redningsselskapet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Rettshjelpsalliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Rettspolitisk forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ROSA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Rådet for psykisk helse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene Avfall og ressurs",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene Brann og redning",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samtykkealliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "SMB Tolkeforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Spillavhengighet Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen CRUX",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Norsk Brannvernforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Norsk Luftambulanse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Rettferd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stine Sofies Stiftelse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Syklistforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "TiA - Tolkene i Akademikerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tilsynsrådet for kriminalomsorgen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ungdom og Fritid",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Wayback, Stiftelsen Livet Etter Sonin",
+     "dato": ""
+    },
+    {
+     "organisasjon": "YS Stat",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005959,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-19",
+   "sak_id": 200444,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til samferdelskomiteen)",
+   "n_submissions": 78,
+   "organisasjoner": [
+    {
+     "organisasjon": "Agder fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bilimportørenes Landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biogass Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Changing Places Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Delta - en arbeidstakerorganisasjon i YS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Delta Luftfart",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Drivkraft Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "EBA - Entreprenørforeningen Bygg og Anlegg",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Elbilforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Energigass Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fagforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbundet Styrke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskningsinstituttenes fellesarena, FFA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskningsinstituttenes fellesarena, FFA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Godsalliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Grønt landtransportprogram",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Innlandet fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "InterCity-nettverket",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Interkommunalt politisk råd for Ringeriksregionen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jernbaneforum Kongsvingerbanen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jernbaneforum Røros- og Solørbanen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kollektivtrafikkforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landslaget for lokalaviser, LLA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LO Norge og tilknyttede forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maritimt Forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maskinentreprenørenes forbund (MEF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Mediebedriftenes landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Miljøstiftelsen ZERO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NAF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonal rassikringsgruppe",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Naturvernforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nettverk fjord- og kystkommuner",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Elektro",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO og tilknyttede forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nordland fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Astma- og Allergiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Blindeforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Handikapforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Kulturvernforbund og tilknyttede forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Lastebileier-forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges museumsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Rederiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Flygerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forbund for Utviklingshemmede",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Glaukomforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Hydrogenforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Jernbaneforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Kommunalteknisk Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Lokomotivførerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Reiseliv / Norwegian Tourism Partners",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sjøoffisersforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Havner",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kvinners Sanitetsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORSKOG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NTL - Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ofotbanealliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Opplysningsrådet for veitrafikken",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Oslo kommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Osloregionen IPR",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pensjonistforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "RIF - Rådgivende Ingeniørers Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ring 4-samarbeidet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sálas - Samisk forlegger- og avisforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Syklistforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Telemark fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Treindustriens Landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Troms fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Trygg Trafikk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Trøndelag fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Vestfold Fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "VESTLAND FYLKESKOMMUNE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Yrkestrafikkforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Østfold fylkeskommune",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005960,
+   "komite": "Utdannings- og forskningskomiteen",
+   "komite_id": "UFO",
+   "status": "Avholdt",
+   "start_dato": "2026-10-26",
+   "sak_id": 200443,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til utdannings- og forskningskomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005961,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-10-19",
+   "sak_id": 200445,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til familie- og kulturkomiteen)",
+   "n_submissions": 190,
+   "organisasjoner": [
+    {
+     "organisasjon": "1001-alliansen (under Landsforeningen 1001 dager)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Actis - Rusfeltets Samarbeidsorgan",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Adopsjon Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "AMEDIA AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arkivforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arkivforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arrangørforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arrangørforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Balansekunst",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Barneombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Barnevernspedagogene i Akademikerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Blå Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bokhandlerforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygdekinoen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygghåndverk Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "CP-foreningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Creo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Danseinformasjonen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "De Unges Orkesterforbund (UNOF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske Forfatterforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske kirke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den Norske Turistforening (DNT)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Det Vestnorske Teateret",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Dramatikerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Døves Media",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fagforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fairtrade Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Film & Kino",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FilmReg",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finans Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FO (Fellesorganisasjonen)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Folkeakademienes Landsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FOLKORG - ORGANISASJON FOR FOLKEMUSIKK OG FOLKEDANS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forandringsfabrikken Stiftelse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbrukerrådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen Fredet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen INIO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen Mot Psykisk Vold",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen Norden",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forfatterforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forleggerforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fortidsminneforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Frivillighet Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fundraising Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fundraising Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Funksjonshemmedes fellesorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Grafill",
+     "dato": ""
+    },
+    {
+     "organisasjon": "GramArt",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Helsesykepleierne NSF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hjernesvulstforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HK Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Home-Start Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HOVEDORGANISASJONEN KA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Huseierne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ideelt Barnevernsforum (IB)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Internasjonalt Samisk filminstitutt",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Isaac Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jordmorforbundet NSF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KABB - Kristent arbeid blant blinde og svaksynte",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Bymisjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kloden teater STI",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kopinor",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Koralliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Krisesentersekretariatet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS Kommunesektorens organisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kulturalliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kulturrom",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kulturrådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kunstnernettverket",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kunstsentrene i Norge (KiN)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen for barnevernsbarn (LFB)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen for Skeive Funkiser",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen Norske Malere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landslaget for lokalaviser, LLA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsrådet for Norges barne- og ungdomsorganisasjoner",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Likestillings- og diskrimineringsombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ly - for deg med en oppvekst preget av voksnes rus",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Mediebedriftenes landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "MIR",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Moster Amfi- og kyrkjehistoriske senter AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Museene for kystkultur og gjenreising i Finnmark IKS (MKGF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Musikk i Skolen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Musikkens studieforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonalmuseet / Kunstmuseumsnettverket",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Geneo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NOPA - Norsk forening for komponister og tekstforfattere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Noregs Ungdomslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Astma- og Allergiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Døveforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges e-sportforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges frivilligsentraler",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Handikapforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund og olympiske og paralympiske komité",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Korforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Kristne Råd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges kulturvernforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Kvinnelobby",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges museumsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORGES MUSIKKORPS FORBUND",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORGES VERDENSARV",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk bibliotekforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Billedhoggerforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk faglitterær forfatter- og oversetterforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk filmforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forbund for Utviklingshemmede",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk forening for musikkterapi",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forfattersentrum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Fosterhjemsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Friluftsliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk jazzforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Journalistlag (NJ)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Komponistforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk kritikerlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Kvinnesaksforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Lokalradioforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORSK NETTVERK FOR DATASPILLBEDRIFTER - NONEDA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Operasangerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Oversetterforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk radio AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Redaktørforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sykepleierforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk teater- og orkesterforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk tidsskriftforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Barne- og Ungdomsbokforfattere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Billedkunstnere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Dansekunstnere, Forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Filmdistributørers Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Grafikere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kulturarrangører",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kunstforeninger",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kunsthåndverkere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kvinners Sanitetsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norwaco",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NRK",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nynorsk bedriftsforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nynorsk forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringslivets Hovedorganisasjon (NHO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "OperaNorge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "OscarsborgOperaen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Oslo Pride aS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "PAHN - Senter for Scenekunst Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Parat Media",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Press - Redd Barna Ungdom",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redningsselskapet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Reform - ressurssenter for menn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Riksmålsforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ruijan kvääniliitto / Norske kveners forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Rådet for psykisk helse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sálas - Samisk forlegger- og avisforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samspill International Music Network",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Schibsted",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Selvhjelp for innvandrere og flyktninger SEIF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sjømannskirken",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Skeivt kristent nettverk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Skuespiller- og danseralliansen AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Skuespillerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Slekt og Data",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Spillavhengighet Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Spir - profesjonsforbundet for prester, diakoner, kateketer og pedagoger",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen CRUX",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Dam",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Helseutvalget",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Kirkens Familievern",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen LESE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Litteraturhuset",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Miljøfyrtårn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "STIFTELSEN NOK. NORGE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen PRODA profesjonell dansetrening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stine Sofies Stiftelse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "STL (Samarbeidsrådet for tros- og livssynssamfunn)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Store norske leksikon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Studieforbundet Funkis",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Teater Manu",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tverga",
+     "dato": ""
+    },
+    {
+     "organisasjon": "TVILLINGFORENINGEN",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ungdom og Fritid",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unge funksjonshemmede",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unge Kunstneres Samfund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "UNICEF Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke helse og velferd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke Produsentforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "VOKSENOPPLÆRINGSFORBUNDET",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005962,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-20",
+   "sak_id": 200442,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til helse- og omsorgskomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005963,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Pågår",
+   "start_dato": "2026-10-21",
+   "sak_id": 200442,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til helse- og omsorgskomiteen)",
+   "n_submissions": 173,
+   "organisasjoner": [
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Actis - Rusfeltets samarbeidsorgan",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akan Kompetansesenter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Aktivitetsalliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akupunkturforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Amathea",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ammehjelpen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ANSA - Association of Norwegian Students Abroad",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Apotekforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Autismeforeningen i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Back in the Ring STI",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Barneombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Blodkreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Blå Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bryggeri- og drikkevareforeningen (BROD)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Camphill Landsbystiftelse i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Cerebral parese-foreningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Delta",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den Nasjonale Støttegruppen etter 22.juli",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske jordmorforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske legeforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske tannlegeforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den Norske Turistforening (DNT)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Det Hjelper, bruker og pårørendeorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Diabetesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Elevorganisasjonen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Endometrioseforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Erfaringssentrum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Et liv i bevegelse STI, (ELIB)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fagforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Farma Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Flyte",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FO (Fellesorganisasjonen)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fontenehus Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forandringsfabrikken",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen JAG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen Mot Psykisk Vold",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen Tryggere Ruspolitikk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fotballstiftelsen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Framtiden i våre hender",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fremsam - Nettverk for helsefremmende samfunn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FRI - Foreningen for kjønns- og seksualitetsmangfold",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Friluftsrådenes Landsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Frivillighet Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Funksjonshemmedes Fellesorganisasjon (FFO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Gynkreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Helsesykepleierne NSF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Helsetjenesteaksjonen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HivNorge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hjernerystelsesforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hjernerådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hjernesvulstforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HOVEDORGANISASJONEN KA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Huseierne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hørselsforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ICDP Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jordmorforbundet NSF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Bymisjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens SOS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kliniske ernæringsfysiologers forening tilsluttet Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kos & Kaos - The Nordic Jewish Network",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Krisesentersekretariatet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen 1001 dager",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen for Nyrepasienter og Transplanterte",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen for Overvektige (LFO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen for Pårørende innen Psykisk helse (LPP)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Legemiddelindustrien (LMI)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LHL, Landsforeningen for hjerte, lunge og hjerneslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Likestillings- og diskrimineringsombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Livsglede for Eldre",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Lungekreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ly - for deg med en oppvekst preget av voksnes rus",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Løvemammaene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Melanor",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Mental Helse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Mental Helse Ungdom",
+     "dato": ""
+    },
+    {
+     "organisasjon": "MOT NORGE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Motvind Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "MPS-Foreningen / Epilepsiforbundet Dravet / Foreningen for sjeldne nevroutviklingsforstyrrelser",
+     "dato": ""
+    },
+    {
+     "organisasjon": "MS-forbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonalforeningen for folkehelsen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonalt kompetansesenter for kultur, helse og omsorg",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonalt senter for erfaringskompetanse innen psykisk helse (Mental Helse)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonalt SRHR-nettverk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NBBL",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Geneo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Mat og Drikke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NITO - Norges Ingeniør- og teknologorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORCE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Astma- og Allergiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Blindeforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Døveforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Farmaceutiske Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges forskningsråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges frivilligsentraler",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Handikapforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Myalgisk Encefalopati Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Parkinsonforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Barnelegeforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forbund for Utviklingshemmede",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk forening for musikkterapi",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Friluftsliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Fysioterapeutforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Glaukomforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Kiropraktorforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk kvalitetsforbedring av laboratorieundersøkelser (Noklus)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk logopedforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Manuellterapeutforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk musikkråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Osteopatforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk psykologforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Radiografforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sykepleierforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tannpleierforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Vann",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kvinners Sanitetsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Optikerbransjen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pensjonistforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "PION - Prostituertes interesseorganisasjon i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Preventio",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pro Sentret",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Psoriasis og eksemforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Psyksik helse og rus NSF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pårørendealliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Regionale Brukerstyrte Senter (RBS)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "RELIS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "RUSFELTETS HOVEDORGANISASJON",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Rådet for Muskelskjeletthelse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Rådet for psykisk helse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samarbeidsforumet av funksjonshemmedes organisasjoner - SAFO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsviterne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samskipnadsrådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sang i eldreomsorgen- Stiftelsen Krafttak for sang",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sendt Bort",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sex og Politikk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sex og samfunn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Spillavhengighet Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "SRHR ung-nettverket",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen CRUX",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Dam",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Helseutvalget",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen LESE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "STIFTELSEN NOK. NORGE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Norsk Brannvernforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Norsk Luftambulanse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Sykehusklovnene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Verdighetsenteret",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stine Sofies Stiftelse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "STOLPEJAKTEN",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sunnaasstiftelsen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Syklistforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "TEK Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tverga",
+     "dato": ""
+    },
+    {
+     "organisasjon": "TVILLINGFORENINGEN",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unio",
+     "dato": ""
+    },
+    {
+     "organisasjon": "URO UTVIKLINGSHEMMING - RUS - OPPLYSNING",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Vernepleierforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke helse og velferd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "VOKSENOPPLÆRINGSFORBUNDET",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Voksne for Barn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Wayback Stiftelsen Livet Etter Soning",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ønsketransporten",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005964,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-22",
+   "sak_id": 200447,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til kommunal- og forvaltningskomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005965,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-16",
+   "sak_id": 200447,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til kommunal- og forvaltningskomiteen)",
+   "n_submissions": 122,
+   "organisasjoner": [
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Akershus fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Aktive Fredsreiser AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Amnesty International i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Antirasistisk Senter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Arbeidsgiverforeningen Spekter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Asker kommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Autismeforeningen i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Barneombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Betong Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Blå Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bokhandlerforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Buskerud Fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygghåndverk Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Caritas Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Coop Norge SA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Delta",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Econa",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fagforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FIN - Foreningen for innovasjonsselskaper i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finans Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finnmark fylkeskommun",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fjellnettverket",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Flyte",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FN-sambandet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FO (Fellesorganisasjonen)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Foreningen INIO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forleggerforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskningsinstituttenes fellesarena, FFA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Funksjonshemmedes fellesorganisasjon (FFO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Helsesykepleierne NSF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hjernesvulstforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HK Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HOVEDORGANISASJONEN KA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Huseierne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hvite Busser STI",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Innlandet fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Jussbuss",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Bymisjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kjøpmannshuset",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kollektivtrafikkforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Krisesentersekretariatet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsforeningen for Pårørende innen Psykisk helse (LPP)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsrådet for Norges barne- og ungdomsorganisasjoner",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Langsikt",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Leieboerforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Lektorlaget",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Likestillings- og diskrimineringsombudet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LIN - Likestilling, Inkludering og Nettverk",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Lærerstudentene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maskinentreprenørenes Forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "MiRA-Senteret",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Møre og Romsdal fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonal rassikringsgruppe",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nasjonalt Bredbåndsråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Naturvernforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Byggenæringen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Geneo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Service og Handel",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Transport",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NITO - Norges Ingeniør- og teknologorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nordland Fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Automobil-forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Blindeforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdeungdomslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Eiendomsmeglerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Handikapforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Juristforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Lastebileier-forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk bibliotekforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk datasenterindustri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Eiendom",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Forbund for Utviklingshemmede (NFU)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Friluftsliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Kommunalteknisk Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Leirskoleforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk psykologforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Reiseliv /Norwegian Tourism Partners",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORSK SYKEPLEIERFORBUND",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Vann",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kvinners Sanitetsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nynorsk forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NÆRINGSHAGENE I NORGE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Opplysningsrådet for veitrafikken",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Oslo kommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Osloregionen IPR",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Parat Nav",
+     "dato": ""
+    },
+    {
+     "organisasjon": "PBL (Private Barnehagers Landsforbund)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pensjonistforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pårørendealliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "RIF - Rådgivende Ingeniørers Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sabima",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samarbeidsforumet av funksjonshemmedes organisasjoner - SAFO",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sámediggi - Sametinget",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsviterne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Senja Kommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Skolelederforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Spillavhengighet Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen LESE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Treindustriens landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Troms fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ungdom og Fritid",
+     "dato": ""
+    },
+    {
+     "organisasjon": "UNICEF Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Unio",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Utdanningsforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Vestfold Fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Vestland fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Vestland fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Yrkestrafikkforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Østfold fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "AAP-aksjonen",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005966,
+   "komite": "Utenriks- og forsvarskomiteen",
+   "komite_id": "UFK",
+   "status": "Avholdt",
+   "start_dato": "2026-10-16",
+   "sak_id": 200438,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til utenriks- og forsvarskomiteen)",
+   "n_submissions": 37,
+   "organisasjoner": [
+    {
+     "organisasjon": "Andøy Kommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Befalets Fellesorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygghåndverk Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Det Frivillige Skyttervesen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "EBA Entreprenørforeningen Bygg og Anlegg",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbundet Styrke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskerforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forsvars- og sikkerhetsindustriens forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forsvarsforum Innlandet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forsvarsforum Nord",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KONGSBERG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kystrederiene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsrådet for Heimevernet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Luftmilitært Samfund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maritimt Forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NIFRO - Norsk Industriforum for Romvirksomhet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nordland fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges forskningsråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Forsvarsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges veteranforbund for internasjonale oppdrag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Industri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Vann",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk-ukrainsk venneforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Kvinners Sanitetsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORSKOG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NTL - Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ofotbanealliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Parat forsvar",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Radionor Communications",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tillitsvalgtordningen i Forsvaret",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Troms fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "VETERANFORBUNDET SIOPS - SKADDE I INTERNASJONALE OPERASJONER",
+     "dato": ""
+    },
+    {
+     "organisasjon": "YATA Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Østfold fylkeskommune",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005967,
+   "komite": "Utenriks- og forsvarskomiteen",
+   "komite_id": "UFK",
+   "status": "Avholdt",
+   "start_dato": "2026-10-15",
+   "sak_id": 200438,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til utenriks- og forsvarskomiteen)",
+   "n_submissions": 54,
+   "organisasjoner": [
+    {
+     "organisasjon": "Fattigdomsbekjemper! – Strømmestiftelsen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ADRA Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Afghanistankomiteen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Amnesty International i  Amnesty",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Atlas-alliansen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biomarint forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Caritas Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Changemaker",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Creo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den norske Helsingforskomité",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Digni",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FIN - Foreningen for innovasjonsselskaper i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finans Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FN-sambandet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FOKUS - Forum for kvinner og utviklingsspørsmål",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forum for utvikling og mijlø",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FORUT",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Framtiden i våre hender",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Global Campaign for Education - Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Human Rights House Foundation (HRHF)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "International Council for Open and Distance Education - ICDE",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Nødhjelp",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kreftforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Langsikt",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Leger Uten Grenser",
+     "dato": ""
+    },
+    {
+     "organisasjon": "LHLs internasjonale tuberkulosestiftelse (LHL Internasjonal)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nei til EU",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NOPA Norsk forening for komponister og tekstforfattere",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norge-Amerika Foreningen (NORAM)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Blindeforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdekvinnelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund og olympiske og paralympiske komité",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Kvinnelobby",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Rederiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Vel",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Folkehjelp",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Nettverk for Global Mental Helse / Norwegian network on Global Mental Health",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk-ukrainsk venneforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske leger mot atomvåpen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norwegian Arts Abroad (NAA)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringslivets Hovedorganisasjon (NHO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Plan International Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "SAIH, Studentenes og akademikernes internasjonale hjelpefond",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sjømat Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "SOS-barnebyer Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Trygg Mat Tracking (TMT)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "UNICEF Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "URO – ungdommens rettighetsorgan",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Utdanningsforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "WWF Verdens naturfond",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ZERO",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005968,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-10-22",
+   "sak_id": 200440,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til energi- og miljøkomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005970,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-10-16",
+   "sak_id": 200440,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til energi- og miljøkomiteen)",
+   "n_submissions": 109,
+   "organisasjoner": [
+    {
+     "organisasjon": "Abelia",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bellona",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Betong Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bilimportørenes Landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biogass Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Biomarint forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Bygghåndverk Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Dagligvarehandelens Miljøforum AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Den Norske Turistforening (DNT)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Distriktsenergi",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Drivkraft Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Econa",
+     "dato": ""
+    },
+    {
+     "organisasjon": "EL og IT Forbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Elbilforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fellesforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Finans Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "FISKEBÅT",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbrukerrådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbundet Styrke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Fornybar Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forskningsinstituttenes fellesarena, FFA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forum for utvikling og mijlø",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Framtiden i våre hender",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Friluftsrådenes Landsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Greenpeace",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Grønt Landtransportprogram",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Haugalandsrådet IPR",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HK Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hold Norge Rent",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Huseierne",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Innlandet fylkeskommune",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kirkens Nødhjelp",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KS - Kommunesektorens organisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kulturlandskapssenteret i Telemark AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Kystrederiene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "La Humla Suse",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maritime CleanTech",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maritimt Forum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Maskinentreprenørenes Forbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Miljømerking Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Motvind Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Narvik Havn KF",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Naturvernforbundet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NBBL",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nettverk fjord- og kystkommuner",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NG Nordic",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Byggenæringen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Elektro",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Mat og Drikke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Sjøfart",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NINA (Norsk institutt for naturforskning)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NITO - Norges Ingeniør- og teknologorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NOAH",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Astma- og Allergiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bondelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges forskningsråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges idrettsforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORGES JEGER- OG FISKERFORBUND",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges kulturvernforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Rederiforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Skogeierforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORGES VERDENSARV",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Bioenergiforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk datasenterindustri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Eiendom",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Fjernvarme og Overskuddsenergi",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Friluftsliv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Gartnerforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Hydrogenforum",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Industri",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Kommunalteknisk Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Sjøoffisersforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Vann",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Varmepumpeforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Lakseelver",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norske Trevarer",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NORSKOG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NTL - Norsk Tjenestemannslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Næringslivets Hovedorganisasjon",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ocean-Power AS",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Offshore Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Oslo kommune, byrådsavdeling for miljø og samferdsel",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Oslofjordens Friluftsråd",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Osloregionen IPR",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Pådriv",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Redd Barna",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Regnskogfondet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "RIF - Rådgivende Ingeniørers Forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Runde miljøsenter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Ruteretur",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sabima",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene Avfall og ressurs",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Samfunnsbedriftene Energi og IKT",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sjømat Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Sjømatbedriftene",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Spire",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Standard Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Statkraft",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Stiftelsen Miljøfyrtårn",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Syklistforeningen",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "TINE SA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Treindustriens Landsforening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Utviklingsfondet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "WWF Verdens naturfond",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ZERO",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005971,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-15",
+   "sak_id": 200437,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til justiskomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005972,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200362,
+   "sak_tittel": "Representantforslag om å gi stortingsrepresentanter og regjeringsmedlemmer vigselsrett",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005973,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200367,
+   "sak_tittel": "Representantforslag om å tillate digitale lotterier for frivillige organisasjoner og idrettslag",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005974,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-26",
+   "sak_id": 200370,
+   "sak_tittel": "Endringer i utlendingsloven (familiegjenforening med barn m.m.)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005975,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Avholdt",
+   "start_dato": "2026-10-23",
+   "sak_id": 200389,
+   "sak_tittel": "Datatilsynets og Personvernnemndas årsrapportar for 2025",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005976,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Planlagt",
+   "start_dato": "2026-11-13",
+   "sak_id": 200328,
+   "sak_tittel": "Redegjørelse av forsvarsministeren om styring og kontroll i forsvarssektoren",
+   "n_submissions": 0,
+   "organisasjoner": []
+  },
+  {
+   "hearing_id": 10005977,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Avholdt",
+   "start_dato": "2026-11-04",
+   "sak_id": 200405,
+   "sak_tittel": "Endringer i lov om god handelsskikk i dagligvarekjeden mv. (presiseringer i god handelsskikk-standarden mv.)",
+   "n_submissions": 19,
+   "organisasjoner": [
+    {
+     "organisasjon": "Bondens marked Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Coop Norge SA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Dagligvareleverandørenes forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forbrukerrådet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "HK Norge",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Hovedorganisasjonen Virke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Konkurransetilsynet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Landsorganisasjonen i Norge (LO)",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Mat og Drikke",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NHO Service og Handel, bransjeforeningen Handel",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bondelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdekvinnelag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Bygdeungdomslag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "NorgesGruppen ASA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Bonde- og Småbrukarlag",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norsk Nærings- og Nytelsesmiddelarbeiderforbund",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Oda",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Reitan Retail",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Virke Servicehandel",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10005978,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Avholdt",
+   "start_dato": "2026-10-27",
+   "sak_id": 200352,
+   "sak_tittel": "Representantforslag om innføring av rullerende maksimal tillatt biomasse (MTB) for å sikre helårsarbeidsplasser, bidra til bedre miljø og dyrevelferd og økt verdiskaping",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005979,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Avholdt",
+   "start_dato": "2026-10-27",
+   "sak_id": 200381,
+   "sak_tittel": "Representantforslag om en nasjonal strategi for datasenterindustrien",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005980,
+   "komite": "Utdannings- og forskningskomiteen",
+   "komite_id": "UFO",
+   "status": "Avholdt",
+   "start_dato": "2026-10-21",
+   "sak_id": 200420,
+   "sak_tittel": "Representantforslag om en mer kunnskapsorientert læreplan med en styrket lærerrolle",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005981,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-26",
+   "sak_id": 200356,
+   "sak_tittel": "Representantforslag om modernisering av regelverket for offentlige søkerlister",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005982,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Avholdt",
+   "start_dato": "2026-10-30",
+   "sak_id": 200439,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til næringskomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005983,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-20",
+   "sak_id": 200421,
+   "sak_tittel": "Representantforslag om å redusere bompengebelastningen på E39 Mandal-Kristiansand",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005984,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Avholdt",
+   "start_dato": "2026-10-26",
+   "sak_id": 200444,
+   "sak_tittel": "Statsbudsjettet 2027 (kapitler fordelt til samferdelskomiteen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005985,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200422,
+   "sak_tittel": "Representantforslag fra stortingsrepresentantene Marie Sneve Martinussen, Bjørnar Moxnes og Remi Sølvberg om å få kriminelle aktører ut fra barnevernet",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005986,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200403,
+   "sak_tittel": "Samtykke til godkjenning av EØS-komiteen si avgjerd nr. 70/2026 om innlemming av forordninga i EØS-avtalen (S-delen)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005987,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200404,
+   "sak_tittel": "Endringar i lov om medisinsk utstyr (gjennomføring av forordning (EU) 2024/568 om gebyrer og avgifter som skal betales til  Det europeiske legemiddelbyrå (EMA))",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005988,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200368,
+   "sak_tittel": "Representantforslag om digital suverenitet og nasjonal kontroll over digital helseinfrastruktur",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005989,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-28",
+   "sak_id": 200383,
+   "sak_tittel": "Representantforslag om bedre oppfølging av overlevende og etterlatte etter katastrofer",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005990,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-11-02",
+   "sak_id": 200462,
+   "sak_tittel": "Representantforslag om å lovliggjøre og legge til rette for pluggbare solceller og batterier",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005991,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-11-02",
+   "sak_id": 200429,
+   "sak_tittel": "Representantforslag om å forby jakt på ekorn",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005992,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-11-02",
+   "sak_id": 200431,
+   "sak_tittel": "Representantforslag om å forby reklame for fossil energi",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005993,
+   "komite": "Energi- og miljøkomiteen",
+   "komite_id": "ENERGI",
+   "status": "Avholdt",
+   "start_dato": "2026-11-02",
+   "sak_id": 200466,
+   "sak_tittel": "Representantforslag om å stanse opptrappingsplanen for CO2-avgiften",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005994,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Aktiv",
+   "start_dato": "2026-11-12",
+   "sak_id": 200456,
+   "sak_tittel": "Representantforslag om stemmerett ved kommune- og fylkestingsvalg",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005995,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 99386,
+   "sak_tittel": "Grunnlovsframlegg om ny § 120 b (om norsk som nasjonalt hovudspråk)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005996,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 100019,
+   "sak_tittel": "Grunnlovsforslag om ny 112 a (om viltlevende marine ressurser)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005998,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 100037,
+   "sak_tittel": "Grunnlovsforslag om ny § 112 a (om at de viltlevende marine ressursene tilhører fellesskapet og skal komme kystsamfunnene til gode)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10005999,
+   "komite": "Familie- og kulturkomiteen",
+   "komite_id": "FAMKULT",
+   "status": "Avholdt",
+   "start_dato": "2026-11-04",
+   "sak_id": 200469,
+   "sak_tittel": "Representantforslag om et trygt og sikkert institusjonsbarnevern",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006000,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 100020,
+   "sak_tittel": "Grunnlovsforslag om endring i § 96 (om uavhengig påtalemyndighet)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006001,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 100035,
+   "sak_tittel": "Grunnlovsforslag om endring i § 96 (om uavhengig offentlig påtale)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006002,
+   "komite": "Kontroll- og konstitusjonskomiteen",
+   "komite_id": "KONTROLL",
+   "status": "Planlagt",
+   "start_dato": "2026-11-16",
+   "sak_id": 100020,
+   "sak_tittel": "Grunnlovsforslag om endring i § 96 (om uavhengig påtalemyndighet)",
+   "n_submissions": 0,
+   "organisasjoner": []
+  },
+  {
+   "hearing_id": 10006003,
+   "komite": "Utenriks- og forsvarskomiteen",
+   "komite_id": "UFK",
+   "status": "Avholdt",
+   "start_dato": "2026-11-02",
+   "sak_id": 200374,
+   "sak_tittel": "Eksport av forsvarsmateriell fra Norge og eksportkontroll i 2025",
+   "n_submissions": 5,
+   "organisasjoner": [
+    {
+     "organisasjon": "Changemaker",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Forsvars- og sikkerhetsindustriens forening",
+     "dato": ""
+    },
+    {
+     "organisasjon": "KONGSBERG",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Nammo",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Fredslag",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10006004,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-11-04",
+   "sak_id": 200425,
+   "sak_tittel": "Representantforslag om å forby koranskoler med overnatting og innføre nytt straffebud mot negativ sosial kontroll",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006005,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-10-27",
+   "sak_id": 200454,
+   "sak_tittel": "Representantforslag om tiltak for å motarbeide tvangsekteskap og kjønnslemlestelser",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006007,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Avholdt",
+   "start_dato": "2026-11-05",
+   "sak_id": 200417,
+   "sak_tittel": "Endringer i utlendingsloven (overføring av driften av utlendingsinternatet fra politiet til kriminalomsorgen, restriksjoner under oppholdet mv.)",
+   "n_submissions": 6,
+   "organisasjoner": [
+    {
+     "organisasjon": "Jussbuss",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges institusjon for menneskerettigheter",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Norges Røde Kors",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Parat Politiet",
+     "dato": ""
+    },
+    {
+     "organisasjon": "ROSA",
+     "dato": ""
+    },
+    {
+     "organisasjon": "Tilsynsrådet for tvangsreturer og utlendingsinternatet",
+     "dato": ""
+    }
+   ]
+  },
+  {
+   "hearing_id": 10006008,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Aktiv",
+   "start_dato": "2026-11-10",
+   "sak_id": 200417,
+   "sak_tittel": "Endringer i utlendingsloven (overføring av driften av utlendingsinternatet fra politiet til kriminalomsorgen, restriksjoner under oppholdet mv.)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006009,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Aktiv",
+   "start_dato": "2026-11-18",
+   "sak_id": 200426,
+   "sak_tittel": "Representantforslag om et midlertidig forbud mot KI-briller og andre former for kroppsbåret teknologi som muliggjør skjult overvåkning av andre",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006010,
+   "komite": "Kommunal- og forvaltningskomiteen",
+   "komite_id": "KOMMFORV",
+   "status": "Aktiv",
+   "start_dato": "2026-11-18",
+   "sak_id": 200455,
+   "sak_tittel": "Representantforslag om å gi kommunene reell vetorett ved etablering av asylmottak",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006011,
+   "komite": "Samferdselskomiteen",
+   "komite_id": "SAM",
+   "status": "Aktiv",
+   "start_dato": "2026-11-10",
+   "sak_id": 200482,
+   "sak_tittel": "Representantforslag om å gjenreise norsk jernbane",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006012,
+   "komite": "Utdannings- og forskningskomiteen",
+   "komite_id": "UFO",
+   "status": "Aktiv",
+   "start_dato": "2026-11-12",
+   "sak_id": 200476,
+   "sak_tittel": "Representantforslag om organisasjonsfrihet og arbeiderrettigheter på statsstøttede private skoler",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006013,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 200478,
+   "sak_tittel": "Representantforslag om å få Luftambulansen tilbake i statlig regi ",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006014,
+   "komite": "Helse- og omsorgskomiteen",
+   "komite_id": "HELSEOMS",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 200477,
+   "sak_tittel": "Representantforslag om å gjennomgå og modernisere norsk alkoholpolitikk",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006015,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 200486,
+   "sak_tittel": "Representantforslag om en nasjonal miljøfleksibilitetsordning",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006016,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 200488,
+   "sak_tittel": "Representantforslag om en mer fremtidsrettet havbruksnæring",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006017,
+   "komite": "Næringskomiteen",
+   "komite_id": "NÆRING",
+   "status": "Aktiv",
+   "start_dato": "2026-11-17",
+   "sak_id": 200479,
+   "sak_tittel": "Representantforslag om å omklassifisere Statkraft fra kategori 1 til kategori 2 i statens eierskapsforvaltning",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+   "hearing_id": 10006018,
+   "komite": "Justiskomiteen",
+   "komite_id": "JUSTIS",
+   "status": "Aktiv",
+   "start_dato": "2026-11-11",
+   "sak_id": 200492,
+   "sak_tittel": "Endringer i straffeprosessloven mv. (prosessuelle regler for selvstendig inndragning)",
+   "n_submissions": 0,
+   "organisasjoner": [],
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  }
+ ],
+ "top_organisasjoner": [
+  {
+   "organisasjon": "Hovedorganisasjonen Virke",
+   "hearings": 10
+  },
+  {
+   "organisasjon": "Redd Barna",
+   "hearings": 10
+  },
+  {
+   "organisasjon": "Abelia",
+   "hearings": 9
+  },
+  {
+   "organisasjon": "Arbeidsgiverforeningen Spekter",
+   "hearings": 8
+  },
+  {
+   "organisasjon": "Landsorganisasjonen i Norge (LO)",
+   "hearings": 8
+  },
+  {
+   "organisasjon": "Forskerforbundet",
+   "hearings": 8
+  },
+  {
+   "organisasjon": "Bygghåndverk Norge",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Fellesforbundet",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Kreftforeningen",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Norges Blindeforbund",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Norges Røde Kors",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Norske Kvinners Sanitetsforening",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Finans Norge",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Tekna - Teknisk-naturvitenskapelig forening",
+   "hearings": 7
+  },
+  {
+   "organisasjon": "Barneombudet",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Fagforbundet",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "HK Norge",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Likestillings- og diskrimineringsombudet",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "NHO Byggenæringen",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Norges Handikapforbund",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Norges idrettsforbund og olympiske og paralympiske komité",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Kystrederiene",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Norges Rederiforbund",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Forskningsinstituttenes fellesarena, FFA",
+   "hearings": 6
+  },
+  {
+   "organisasjon": "Autismeforeningen i Norge",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Blå Kors",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Forbundet Styrke",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Kirkens Bymisjon",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "KS",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "NHO Geneo",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Norges Lastebileier-forbund",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Norsk Tjenestemannslag",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Pensjonistforbundet",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Stiftelsen LESE",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Unio",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "FIN - Foreningen for innovasjonsselskaper i Norge",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Framtiden i våre hender",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Huseierne",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Maritimt Forum",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Naturvernforbundet",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Norges Bygdeungdomslag",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Norsk Industri",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "NORSKOG",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Næringslivets Hovedorganisasjon (NHO)",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Syklistforeningen",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Norges forskningsråd",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Norges Astma- og Allergiforbund",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "LO",
+   "hearings": 5
+  },
+  {
+   "organisasjon": "Akademikerne",
+   "hearings": 4
+  },
+  {
+   "organisasjon": "Creo",
+   "hearings": 4
+  }
+ ],
+ "summary": {
+  "hearings": 91,
+  "hearings_with_submissions": 15,
+  "hearings_http_500_no_data": 73,
+  "submissions": 1264,
+  "distinct_organisasjoner": null
+ }
+}

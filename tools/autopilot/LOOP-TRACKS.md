@@ -234,3 +234,39 @@ previous session's version of the same case.
 
 The consequence for lane H is the important one: breadth is solved and cheap,
 selection needs a reader. That is the whole reason the source feeder exists.
+
+## Open rule question: utsagn-25 / rodt, reverted 2026-11-11
+
+A row dated 2023-11-27 was promoted as +1 and reverted twenty minutes later
+(66b6abd, then 038cf94). The reason it was withdrawn is worth more than the row.
+
+My argument for +1 had two legs. One was affirmative: Rødt 2023 proposes
+phasing by covering part of the bill for those with the largest costs, 40 pct.
+refund above a 2,500 kr deductible, more than 3 bn for the first step, which is
+the statement's own instrument. The other leg was not: I said the text does not
+commit to a universal right by 2030. The source feeder named that as the defect.
+Absence of a commitment is not evidence for the statement's negative clause, and
+agreement with the non-discriminating half of a statement is not agreement with
+the statement. A row cannot rest on what a document fails to say.
+
+The disputed sentence is «Målet er å likestille tannhelse med andre
+helsetjenester i løpet av fire år», next to «offentlig finansiert gratis
+tannhelse» and «gratis tannhelse for alle». Three readings are defensible and
+they point in different directions:
+
+1. It is a universal commitment with a deadline earlier than 2030, so -1.
+   This is what both blind reviewers read.
+2. It is fiscal equalisation, how dental care is paid for, not a right, so the
+   sentence says nothing about the negative clause and the row is uncoded.
+3. The mechanism is the coded clause, so +1, which is what the sibling row
+   ev-2025-12-08-rodt-tannhelse-innst11s already does.
+
+The sibling makes this urgent rather than academic: it codes +1, and its own
+note leans on Rødt not binding itself to 2030, which is the same absence defect.
+So the pair cannot be read with one rule until that question is answered, and
+until it is, this cell is not admitted in either direction. Reversal or
+consistency would both be a coin flip dressed as evidence.
+
+The rule to settle first: does the corpus code the discriminating clause of a
+statement, or the mechanism it names? Pick one, apply it to both rows, and
+re-examine the sibling before admitting anything here.

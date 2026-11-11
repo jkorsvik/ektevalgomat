@@ -79,8 +79,23 @@ def test_two_references_withhold():
 def test_a_lagting_reference_withholds():
     # The letter is the chamber. Only S is covered; L is pre-2009 and outside
     # a corpus that starts in 2011.
-    with pytest.raises(Withheld, match="names no Innst"):
+    with pytest.raises(Withheld, match="not the Storting"):
         locate("Innst. 5 L (2005-2006)", "1")
+
+
+def test_a_mixed_chamber_reference_withholds():
+    # Counting only S references would let the S half of a mixed pair through
+    # and silently ignore the other document.
+    with pytest.raises(Withheld, match="names 2"):
+        locate("Innst. 5 S (2025-2026), Innst. 6 L (2005-2006)", "1")
+
+
+@pytest.mark.parametrize("years", ["(2022-2025)", "(2025-2025)", "(2026-2025)"])
+def test_non_consecutive_session_years_withhold(years):
+    # A Storting session spans exactly two consecutive years. Anything else is
+    # a misparse, and a misparse here builds a directory that does not exist.
+    with pytest.raises(Withheld, match="not one year"):
+        locate("Innst. 12 S %s" % years, "1")
 
 
 VERIFIED_200 = [

@@ -22,9 +22,9 @@ import re
 
 BASE = "https://www.stortinget.no/globalassets/pdf/innstillinger/stortinget"
 
-# Innst. <number> S (<from year>-<to year>). The letter is the chamber: S is
-# the Storting, which is every innstilling in the period this corpus covers.
-INNST = re.compile(r"Innst\.\s*(\d+)\s*S\s*\((\d{4})-(\d{4})\)")
+# Any innstilling reference at all, whatever the chamber letter. Counted first
+# so a reference that mixes S and L cannot pass by matching only its S half.
+ANY_INNST = re.compile(r"Innst\.\s*(\d+)\s*([A-Z])\s*\((\d{4})-(\d{4})\)")
 
 
 class Withheld(Exception):
@@ -34,22 +34,27 @@ class Withheld(Exception):
 def locate(henvisning, innstilling_kode):
     """Return the PDF URL for one `saker` row, or raise Withheld.
 
-    Four conditions withhold, and each one is a real shape measured in the
-    2025-2026 payload: the enum says no innstilling, the reference names none,
-    the reference names more than one, or the number is outside 1-999 and
-    cannot be expressed in the file name's three digits.
+    Six conditions withhold, and each one is a shape that occurs in real
+    payloads: the enum says no innstilling, the reference names none, the
+    reference names more than one, the chamber is not the Storting, the two
+    session years are not consecutive, or the number does not fit three digits.
     """
     kode = str(innstilling_kode if innstilling_kode is not None else "").strip()
     if kode != "1":
         raise Withheld("innstilling_kode %r: the sak has no innstilling" % kode)
 
-    found = INNST.findall(henvisning or "")
+    found = ANY_INNST.findall(henvisning or "")
     if not found:
         raise Withheld("henvisning names no Innst. N S (year-year)")
     if len(found) > 1:
         raise Withheld("henvisning names %d innstillinger" % len(found))
 
-    number, first, second = found[0]
+    number, chamber, first, second = found[0]
+    if chamber != "S":
+        raise Withheld("chamber %r is not the Storting" % chamber)
+    if int(second) != int(first) + 1:
+        raise Withheld("session %s-%s is not one year" % (first, second))
+
     nr = int(number)
     if not 1 <= nr <= 999:
         raise Withheld("innstilling number %d does not fit three digits" % nr)

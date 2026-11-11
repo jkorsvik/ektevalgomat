@@ -303,8 +303,11 @@ read all sixty texts and named seven counterexamples, each verified here:
 - 37  «... utredes og skje gradvis, ikke vedtas nå som en økning fra 2 til
   4 prosent.»
 
-So the contrastive form «do X, not Y» is the normal shape of these statements,
-not an exception. The clause question is corpus-wide.
+So the contrastive form «do X, not Y» is not confined to utsagn-25. Said
+precisely, because the first version of this paragraph said «the normal shape»:
+nine of sixty is neither a majority nor a rare curiosity, and it does not
+establish which schema is needed. What it rules out is treating the question as
+one statement's problem. The clause question is corpus-wide.
 
 WHAT THIS COSTS. The earlier reading priced the rule at one statement and made a
 per-statement field look like machinery for a single case. With at least eight

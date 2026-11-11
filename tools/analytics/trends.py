@@ -90,10 +90,17 @@ def evidence_readiness() -> dict:
             ordered = sorted(rows, key=lambda r: (str(r.get("date") or ""), str(r.get("id") or "")))
             first, last = ordered[0].get("position"), ordered[-1].get("position")
             if first is not None and last is not None and sign(first) != sign(last):
+                # A sign change is not always an opposing reversal: a cell can
+                # move to or from the neutral 0, which is a weaker claim. Keep
+                # the distinction so a report cannot call all of them reversals.
+                if {first, last} & {0}:
+                    kind = "to_zero" if last == 0 else "from_zero"
+                else:
+                    kind = "opposing"
                 changed.append({"statement": sid, "party": pid,
                                 "from_year": year(ordered[0].get("date", "")),
                                 "to_year": year(ordered[-1].get("date", "")),
-                                "from": first, "to": last})
+                                "from": first, "to": last, "kind": kind})
     return {
         "coded_cells": len(cells),
         "by_distinct_years": {"0": by_year_count[0], "1": by_year_count[1],
@@ -104,6 +111,7 @@ def evidence_readiness() -> dict:
         "ready_per_dimension": {k: {"ready": per_dim_ready[k], "total": per_dim_total[k]}
                                 for k in sorted(per_dim_total)},
         "direction_changes": changed,
+        "direction_change_kinds": dict(collections.Counter(c["kind"] for c in changed)),
     }
 
 
@@ -194,9 +202,15 @@ def render(ev: dict, vt: dict) -> str:
     if ev["direction_changes"]:
         L.append("### Dokumenterte retningsendringer")
         L.append("")
+        kinds = ev.get("direction_change_kinds") or {}
+        L.append(f"Motsatte omslag: **{kinds.get('opposing', 0)}**. "
+                 f"Til eller fra nøytral 0: **{kinds.get('to_zero', 0) + kinds.get('from_zero', 0)}**.")
+        L.append("")
         for c in ev["direction_changes"][:20]:
+            label = {"opposing": "omslag", "to_zero": "til 0",
+                     "from_zero": "fra 0"}.get(c.get("kind"), "endring")
             L.append(f"- {c['statement']} / {c['party']}: {c['from']:+d} ({c['from_year']}) "
-                     f"→ {c['to']:+d} ({c['to_year']})")
+                     f"→ {c['to']:+d} ({c['to_year']}) — {label}")
         L.append("")
     L.append("## Per dimensjon")
     L.append("")
@@ -240,8 +254,11 @@ def main() -> int:
                                                   ensure_ascii=False, indent=2))
     (dest / "summary.md").write_text(render(ev, vt))
     b = ev["by_distinct_years"]
+    k = ev.get("direction_change_kinds") or {}
     print(f"coded cells {ev['coded_cells']}: 1 date {b['1']}, 2 dates {b['2']}, 3+ {b['3+']}; "
-          f"direction changes {len(ev['direction_changes'])}")
+          f"direction changes {len(ev['direction_changes'])} "
+          f"(opposing {k.get('opposing', 0)}, to/from zero "
+          f"{k.get('to_zero', 0) + k.get('from_zero', 0)})")
     print(f"votes {vt['generated_from_votes']} over {len(vt['per_session'])} sessions")
     print(f"wrote {dest.relative_to(ROOT)}/summary.{{json,md}}")
     return 0

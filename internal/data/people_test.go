@@ -65,10 +65,15 @@ func TestNoPersonRoleEndsAfterSnapshot(t *testing.T) {
 
 // TestRegisterSnapshotMatchesIndex is the drift gate for the pinned constant.
 // The index is a build artefact outside content/, so nothing else compares them.
+//
+// The index is committed, so a missing file is a defect and not an environment
+// condition: this gate failed open for weeks because the path resolved to
+// internal/verv/index.json, the read errored, and the error was turned into a
+// skip. A gate that skips when its input is absent is green and blind.
 func TestRegisterSnapshotMatchesIndex(t *testing.T) {
-	b, err := os.ReadFile(filepath.Join("..", "verv", "index.json"))
+	b, err := os.ReadFile(filepath.Join("verv", "index.json"))
 	if err != nil {
-		t.Skipf("verv index not built: %v", err)
+		t.Fatalf("verv index is committed and must be readable: %v", err)
 	}
 	var idx struct {
 		SnapshotDate string `json:"snapshot_date"`

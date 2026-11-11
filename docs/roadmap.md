@@ -8,7 +8,7 @@ every claim is honestly sourced, and that discipline has to apply to
 this project's own scope claims too, including its own mistakes (see
 "Correction" below).
 
-## Current state (2026-11-09)
+## Current state (2026-11-11)
 
 Read this section first. The phase entries below are the build log, in
 order, and their "FINAL STATE" lines were true on the day they were
@@ -21,7 +21,7 @@ written, not today.
   The complete sample, rationales, model identities and method ambiguities are
   published at `/metode#kodingskontroll` and checked against the live cells by
   `internal/scoring/coding_review_test.go`.
-- **60 statements, 729 evidence files.** Memo statements 1-42, two
+- **60 statements, 730 evidence files.** Memo statements 1-42, two
   "Tillegg" extras (44, 45), two dimensions the owner approved after
   user feedback: "Tilgang, integrering og rettsstat" (46-51) and
   "Finansiering av fellesskapet" (52-58), and utsagn-59 in "Norsk

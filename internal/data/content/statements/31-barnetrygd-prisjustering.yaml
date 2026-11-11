@@ -1,6 +1,7 @@
 id: utsagn-31
 number: 31
 dimension: "Barns muligheter"
+codes_on: avvist_alternativ
 primary_question: "I hvilken grad kompenserer samfunnet for forhold barn ikke har valgt?"
 case_tag: barnetrygd_prisjustering_lovfestet
 short_name: "Barnetrygden fastsettes i budsjettet"

@@ -1,6 +1,7 @@
 id: utsagn-13
 number: 13
 dimension: "Forvaltning av fellesskapets ressurser / energi"
+codes_on: avvist_alternativ
 primary_question: "Hvem kontrollerer ressursene, risikoen og verdiskapingen?"
 case_tag: kjernekraft_kommersiell_hastighet
 short_name: "Kommersiell kjernekraft nå, ikke senere"

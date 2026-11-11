@@ -329,3 +329,26 @@ the count honest, whichever pattern is used.
 A word scan cannot answer a question about meaning. If scoping this again, read
 the texts, or count the «, ikke » and «, uten » constructions as patterns to
 review rather than as a complete set.
+
+### Applied: utsagn-25 declares codes_on, and 814 is flagged
+
+The user chose the per-statement rule: each statement file records which clause a
+row must address. The field is `codes_on`, and the nine statements with a
+contrastive clause now declare `avvist_alternativ`:
+04, 07, 13, 18, 20, 21, 25, 31, 37. A Go test enforces that the field is present
+when the text contains `, ikke ` or `, uten `, that its value is one of the two
+declared ones, and that it is absent otherwise. Mutating one declaration makes
+the test fail on that statement id.
+
+Under that rule the 2023 Rødt merknad is coded -1: it affirms the universal
+commitment the statement rejects, with a deadline (four years) earlier than 2030.
+Admitted as ev-2023-11-27-rodt-tannhelse-innst2s.
+
+FLAGGED, NOT CHANGED: ev-2025-12-08-rodt-tannhelse-innst11s codes +1 on the
+mechanism and leans on Rødt not binding itself to 2030, which is absence. Under
+`codes_on: avvist_alternativ` that row is not admissible on its own. It is left
+published because its direction coincides with the vote row
+ev-2025-06-04-rodt-tannhelse-universell-mot (+1, Rødt voted against a binding
+2030 deadline), which is affirmative. So the cell's 2025 leg does not depend on
+it, and the reversal rests on a vote and a dated merknad, not on an inference
+from silence. Anyone re-reading this cell should decide 814 separately.

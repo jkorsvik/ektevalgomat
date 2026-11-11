@@ -28,6 +28,14 @@ type Statement struct {
 	PrimaryQuestion string `yaml:"primary_question"`
 	CaseTag         string `yaml:"case_tag"`
 	Text            string `yaml:"text"`
+	// CodesOn says which clause an evidence row must address to be admissible
+	// for this statement. The statements here are written as «do X, not Y», and
+	// X on its own is usually what every party already claims, so a row that
+	// affirms only X says nothing about the choice the statement poses.
+	// "avvist_alternativ" means the row must affirm the rejection of Y;
+	// "virkemiddel" means the instrument itself is the discriminating clause.
+	// Empty for the 51 statements that pose a single clause.
+	CodesOn string `yaml:"codes_on"`
 	// ShortName is a 2-5 word label for use in navigation, breadcrumbs,
 	// and result overviews — anywhere the full multi-line statement text
 	// would be too heavy to serve as a wayfinding element. The full Text

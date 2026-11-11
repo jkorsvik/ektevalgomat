@@ -1,6 +1,7 @@
 id: utsagn-20
 number: 20
 dimension: "Teknologisk kapasitet"
+codes_on: avvist_alternativ
 primary_question: "Kan kritiske digitale funksjoner og kompetanse opprettholdes under press?"
 case_tag: microsoft365_exit_strategi
 short_name: "Flere leverandører fremfor rask exit"

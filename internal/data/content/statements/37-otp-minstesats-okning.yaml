@@ -1,6 +1,7 @@
 id: utsagn-37
 number: 37
 dimension: "Generasjonsansvar"
+codes_on: avvist_alternativ
 primary_question: "Synliggjøres konsekvensene 10–30 år frem?"
 case_tag: otp_minstesats_okning
 short_name: "Gradvis og utredet økning av OTP"

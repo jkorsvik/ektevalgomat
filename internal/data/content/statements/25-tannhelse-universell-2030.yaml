@@ -1,6 +1,7 @@
 id: utsagn-25
 number: 25
 dimension: "Universell grunnmur"
+codes_on: avvist_alternativ
 primary_question: "Fungerer samfunnets grunnleggende tjenester uansett bosted og inntekt?"
 case_tag: tannhelse_universell_2030
 short_name: "Gradvis og målrettet tannhelsereform"

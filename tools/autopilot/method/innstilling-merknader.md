@@ -78,8 +78,46 @@ falling back to the neighbouring text:
 
 - a number occurring once, or three or more times
 - a body count that does not equal the expected section count
-- a heading whose party is not one of the nine canonical ids
+- a heading whose party cannot be resolved to the nine canonical ids
 - any document whose bytes were not hashed at fetch time
+
+## 4b. A heading can name two parties, and can be wrapped mid-word
+
+Measured on `inns-202324-002s.pdf`: a section heading reads «Arbeiderpartiet og
+Senterpartiet» and the label is hyphen-wrapped across the printed line as
+crosses a printed line as `Sen-\nterpartiet`. Spacing inside a label also
+collapses, so `Miljøpartiet De Grønne` may arrive as `Miljøpartiet DeGrønne`.
+
+So two normalisations are required before matching:
+
+- join a word broken by a trailing hyphen and a line break;
+- split the label on ` og ` and resolve each part to a canonical id.
+
+A coalition section is evidence for every party it names. Requiring exactly one
+canonical id rejects a real, common shape and reports it as a missing source.
+
+## 4c. The date comes from the API, not from the PDF's signature line
+
+The PDF ends with a line like «Oslo, i finanskomiteen, den 27. november 2023».
+That is a harder parse than necessary, because `sak?sakid=<id>` already carries
+the same fact as data:
+
+```
+saksgang.saksgang_steg_liste[*].saksgang_hendelse_liste[*]
+    dato                    "27.11.2023 00:00:00"
+    publikasjonsReferanse   "http://www.stortinget.no/inns/2023/inns-202324-002.html"
+```
+
+Measured on sak 95557 (Innst. 2 S, 2023-2024): the komitebehandling event is
+dated 27.11.2023 and its reference file name `inns-202324-002` agrees with the
+PDF the locator builds. Use the API date as the source date and keep the PDF
+line as a cross-check.
+
+Two traps in that payload. `01.01.0001 00:00:00` is a null sentinel that appears
+on empty events; treat it as absent, never as year 1. And several saker rows can
+share one `innstilling_id` — four rows do for Innst. 2 S — so key on the
+innstilling reference, not on a single sak id.
+
 
 Measured on `inns-202526-002s.pdf`: 18 numbers, each exactly twice, second
 occurrences at offsets 36,396 (2.1.2.1) through 322,865 (3.1.2.9).

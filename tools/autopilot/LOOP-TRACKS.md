@@ -237,8 +237,9 @@ selection needs a reader. That is the whole reason the source feeder exists.
 
 ## Open rule question: utsagn-25 / rodt, reverted 2026-11-11
 
-A row dated 2023-11-27 was promoted as +1 and reverted twenty minutes later
-(66b6abd, then 038cf94). The reason it was withdrawn is worth more than the row.
+A row dated 2023-11-27 was promoted as +1 at 13:22:44 and withdrawn by revert at
+13:23:34, fifty seconds later (66b6abd, then 038cf94; times read from the commit
+records, not estimated). The reason it was withdrawn is worth more than the row.
 
 My argument for +1 had two legs. One was affirmative: Rødt 2023 proposes
 phasing by covering part of the bill for those with the largest costs, 40 pct.
@@ -264,8 +265,10 @@ they point in different directions:
 The sibling makes this urgent rather than academic: it codes +1, and its own
 note leans on Rødt not binding itself to 2030, which is the same absence defect.
 So the pair cannot be read with one rule until that question is answered, and
-until it is, this cell is not admitted in either direction. Reversal or
-consistency would both be a coin flip dressed as evidence.
+until it is, the proposed 2023 observation stays withheld. The cell is not
+uncoded: the 2025 row at +1 is published and stands. What is withheld is the
+second date, and with it both the reversal and the consistency claim that date
+would produce. Publishing either now would be a coin flip dressed as evidence.
 
 The rule to settle first: does the corpus code the discriminating clause of a
 statement, or the mechanism it names? Pick one, apply it to both rows, and

@@ -59,12 +59,28 @@ def norm_label(s):
     return s
 
 
+def resolve_part(part):
+    """One heading part as a canonical id, or None.
+
+    A part may already BE a canonical id: `sv` and `mdg` are how the rest of the
+    codebase names those parties, so a packet that speaks the dataset's language
+    must not be rejected for not speaking the document's. Checked before the
+    label map because `h` is both an id and the start of a longer label.
+    """
+    if part in CANONICAL:
+        return part
+    return LABEL_TO_ID.get(part)
+
+
 def parties_of(label):
     """Return the canonical ids a heading names, or None if one does not resolve."""
-    parts = re.split(r"\s+og\s+", norm_label(label))
+    whole = norm_label(label)
+    if whole in CANONICAL or whole in LABEL_TO_ID:
+        return [resolve_part(whole)]
+    parts = re.split(r"\s+og\s+", whole)
     ids = []
     for part in parts:
-        pid = LABEL_TO_ID.get(part)
+        pid = resolve_part(part)
         if pid is None:
             return None
         ids.append(pid)
@@ -114,9 +130,15 @@ def check(packet, sak_body=None):
         put("excerpt_is_substring", spans is not None,
             "%d span(s)" % len(spans) if spans else "not found in to_text")
         if spans:
-            window = sum(e - s for s, e in spans)
-            put("window_under_limit", window <= WINDOW_MAX,
-                "%d chars (limit %d)" % (window, WINDOW_MAX))
+            # Two numbers, because they differ by the whitespace each edge
+            # carries: build_archive strips the slice before writing it, so the
+            # raw span is the wider of the two. Report both rather than pick the
+            # flattering one.
+            raw_window = sum(e - s for s, e in spans)
+            stripped = sum(len(text[s:e].strip()) for s, e in spans)
+            put("window_under_limit", raw_window <= WINDOW_MAX,
+                "%d chars raw, %d stripped (limit %d)"
+                % (raw_window, stripped, WINDOW_MAX))
         else:
             put("window_under_limit", False, "cannot measure a quote that does not locate")
 

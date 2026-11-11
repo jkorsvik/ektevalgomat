@@ -344,11 +344,16 @@ Under that rule the 2023 Rødt merknad is coded -1: it affirms the universal
 commitment the statement rejects, with a deadline (four years) earlier than 2030.
 Admitted as ev-2023-11-27-rodt-tannhelse-innst2s.
 
-FLAGGED, NOT CHANGED: ev-2025-12-08-rodt-tannhelse-innst11s codes +1 on the
-mechanism and leans on Rødt not binding itself to 2030, which is absence. Under
-`codes_on: avvist_alternativ` that row is not admissible on its own. It is left
-published because its direction coincides with the vote row
-ev-2025-06-04-rodt-tannhelse-universell-mot (+1, Rødt voted against a binding
-2030 deadline), which is affirmative. So the cell's 2025 leg does not depend on
-it, and the reversal rests on a vote and a dated merknad, not on an inference
-from silence. Anyone re-reading this cell should decide 814 separately.
+POSITION WITHDRAWN, ARTEFACT KEPT: ev-2025-12-08-rodt-tannhelse-innst11s codes
++1 on the mechanism and leans on Rødt not binding itself to 2030, which is
+absence. Under `codes_on: avvist_alternativ` it is not admissible, so its coded
+position is removed and it stays as a listed source with its excerpt, URL and
+reasoning intact.
+
+Not leaving it coded because another row agreed was the wrong first instinct.
+Both readers pick the newest dated row, and with 814 still coded the reversal
+ended on the inadmissible merknad (2025-12-08) rather than on the vote
+(2025-06-04). Equal position values made the output numerically identical and the
+attribution wrong. Measured after the change: coded basis 3 to 2, newest coded
+row is the vote, counts and the reversal unchanged
+(446 / 50 / 21, 11 sign changes).

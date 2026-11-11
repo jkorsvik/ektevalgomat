@@ -132,17 +132,26 @@ innstilling reference, not on a single sak id.
 Measured on `inns-202526-002s.pdf`: 18 numbers, each exactly twice, second
 occurrences at offsets 36,396 (2.1.2.1) through 322,865 (3.1.2.9).
 
-## 4d. A section slice can run to the end of the document
+## 4d. The search interval and the excerpt are two different limits
 
-Measured via `to_text`: section slices run from 1,006 to 234,520 characters on
-inns-202526-002s and 215 to 88,773 on inns-202324-002s. The long one is the last
-section, whose slice continues into the rest of the document because no further
-«Merknader fra» heading stops it.
+A section slice can run to the end of the document: measured via `to_text`,
+slices run 1,006 to 234,520 characters on inns-202526-002s and 215 to 88,773 on
+inns-202324-002s. The long one is the last section, which continues into the rest
+of the document because no further «Merknader fra» heading stops it. End the
+search interval at the next heading of any kind, and zero sections will contain
+another heading; that isolation was verified on both documents.
 
-Cap the slice at the next `\d\.\d` numbering or 6,000 characters, whichever comes
-first, before picking a quote. Zero sections were found to contain another
-heading on either document, so heading isolation holds; the risk is the unmapped
-tail, not a neighbour's prose.
+The **6,000-character limit applies to the excerpt you emit and to its padded
+archive window**, never to how far you may look. Capping the party section itself
+at 6,000 characters is wrong: the three party sections the source feeder read on
+inns-202324-002s are 19,876, 17,622 and 23,995 characters, and every one of them
+starts below the first 6,000.
+
+Which leads to the other half: a whole section is not an excerpt. At 17,622 to
+23,995 characters it cannot be archived under a 6,000-character window at any
+extractor. Pick a bounded passage inside the verified party interval — a few
+sentences that carry the position — and prove its archive window is under the
+limit.
 
 ## 5. What the section does and does not prove
 

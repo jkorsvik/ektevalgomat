@@ -28,7 +28,10 @@ def test_queue_parses_and_every_item_is_whole():
         # rejects the state the documented workflow creates. Same shape as the
         # gate's CONFIDENCE set rejecting a value the corpus already used: the
         # check was calibrated against one author's idea, not the artefacts.
-        assert it.get("status") in {"pending", "running", "passed", "failed", "blocked"}, \
+        # "refused" is the same miss once more: nine items carry it with the
+        # search that failed, so a set without it rejects work the corpus
+        # already documents. Read the queue's own values before extending this.
+        assert it.get("status") in {"pending", "running", "passed", "failed", "blocked", "refused"}, \
             f"{it['id']}: unexpected status {it.get('status')!r}"
 
 

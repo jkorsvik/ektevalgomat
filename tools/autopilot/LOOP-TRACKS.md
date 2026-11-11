@@ -274,25 +274,45 @@ The rule to settle first: does the corpus code the discriminating clause of a
 statement, or the mechanism it names? Pick one, apply it to both rows, and
 re-examine the sibling before admitting anything here.
 
-## Scope of the clause rule: one statement, measured 2026-11-11
+## Scope of the clause rule, measured and then corrected 2026-11-11
 
-Before settling the rule above, here is how wide it actually is. Every one of the
-60 statement files was scanned for an explicit negative or commitment clause
-(«ikke forplikte», «ikke binde», «ikke pålegge», «ikke love») and for a stated
-deadline («innen 2030», «innen N år», «senest»).
+A first attempt at scoping this question reported that only one statement
+carried a two-clause structure. That was wrong, and the way it was wrong matters
+more than the number.
 
-- 58 statements have neither.
-- 1 has both: utsagn-25, the dental reform. This is the only two-clause
-  statement in the corpus.
-- 1 has a deadline and no negative clause: utsagn-26, mobile coverage on all
-  public roads by 2030 as a binding deadline. Its instrument and its commitment
-  point the same way, so nothing is ambiguous there.
+WHAT WAS ACTUALLY MEASURED. Every `text` field was scanned for four literal verbs
+(«ikke forplikte», «ikke binde», «ikke pålegge», «ikke love») plus a stated
+deadline («innen 2030», «innen N år», «senest»). Under those two literal
+patterns, exactly one statement matched both: utsagn-25. One more, utsagn-26, has
+a deadline and no negative half, and its instrument and commitment point the same
+way.
 
-So the rule question is one statement wide. That changes what the answer costs:
-always coding the discriminating clause touches exactly utsagn-25, and its
-sibling row 814; a per-statement field would be machinery for a single case; and
-keeping the mechanism rule leaves one known defect in one cell.
+WHY THAT SUPPORTS NOTHING. The scan's scope was four verbs. The report drawn from
+it was semantic: «the only two-clause statement», «the rule touches nothing
+else». Those are different claims, and the second is false. The source feeder
+read all sixty texts and named seven counterexamples, each verified here:
 
-Do not generalise this into a schema change before a second two-clause statement
-appears. The measurement is cheap to repeat: scan `text` for the two patterns
-above.
+- 04  «... er tilstrekkelig, uten et eget oppdrag ...»
+- 13  «... vedta lovendringer ..., ikke vente på en stortingsmelding.»
+- 18  «... videreføre dagens hjemmelslengde ..., ikke gjeninnføre et strengere
+  28-meter meterskille.»
+- 20  «... flere leverandører, ikke en rask, tidfestet exit-strategi ...»
+- 21  «... selv avgjøre sin organisasjonsform, uten en bindende føring ...»
+- 31  «... i de årlige statsbudsjettene, ikke lovfestes med en automatisk årlig
+  prisjustering.»
+- 37  «... utredes og skje gradvis, ikke vedtas nå som en økning fra 2 til
+  4 prosent.»
+
+So the contrastive form «do X, not Y» is the normal shape of these statements,
+not an exception. The clause question is corpus-wide.
+
+WHAT THIS COSTS. The earlier reading priced the rule at one statement and made a
+per-statement field look like machinery for a single case. With at least eight
+statements carrying a real contrast, that reasoning is void: which clause
+discriminates has to be decided for many statements, and a per-statement field is
+no longer disproportionate. The decision is the user's and the options are
+unchanged; only their price was wrong.
+
+A word scan cannot answer a question about meaning. If scoping this again, read
+the texts, or count the «, ikke » and «, uten » constructions as patterns to
+review rather than as a complete set.

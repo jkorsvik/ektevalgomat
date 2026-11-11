@@ -273,3 +273,26 @@ would produce. Publishing either now would be a coin flip dressed as evidence.
 The rule to settle first: does the corpus code the discriminating clause of a
 statement, or the mechanism it names? Pick one, apply it to both rows, and
 re-examine the sibling before admitting anything here.
+
+## Scope of the clause rule: one statement, measured 2026-11-11
+
+Before settling the rule above, here is how wide it actually is. Every one of the
+60 statement files was scanned for an explicit negative or commitment clause
+(«ikke forplikte», «ikke binde», «ikke pålegge», «ikke love») and for a stated
+deadline («innen 2030», «innen N år», «senest»).
+
+- 58 statements have neither.
+- 1 has both: utsagn-25, the dental reform. This is the only two-clause
+  statement in the corpus.
+- 1 has a deadline and no negative clause: utsagn-26, mobile coverage on all
+  public roads by 2030 as a binding deadline. Its instrument and its commitment
+  point the same way, so nothing is ambiguous there.
+
+So the rule question is one statement wide. That changes what the answer costs:
+always coding the discriminating clause touches exactly utsagn-25, and its
+sibling row 814; a per-statement field would be machinery for a single case; and
+keeping the mechanism rule leaves one known defect in one cell.
+
+Do not generalise this into a schema change before a second two-clause statement
+appears. The measurement is cheap to repeat: scan `text` for the two patterns
+above.

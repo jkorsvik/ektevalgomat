@@ -357,3 +357,21 @@ ended on the inadmissible merknad (2025-12-08) rather than on the vote
 attribution wrong. Measured after the change: coded basis 3 to 2, newest coded
 row is the vote, counts and the reversal unchanged
 (446 / 50 / 21, 11 sign changes).
+
+## HOLD: no promotions while the submission worktree is open
+
+ekv-review is scoping the contribution workflow (private queue versus the
+existing issue/mailto transport) in an isolated worktree, starting 2026-11-11.
+Until they close it: no promote.py runs, and no edits to loader_test.go, the
+README/docs counts, the statements or evidence/814.
+
+Reason: promote.py rewrites the evidence count in README.md, docs/roadmap.md and
+loader_test.go on every run, which are the same lines a new statement has to
+move, and a 61st statement breaks loader_test.go:263.
+
+Correction on the record: I told the peer there was no submission model. There
+is. server.go:386 issueURL and :403 mailtoURL, GET /bidra at :945, the call sites
+at index.html.tmpl:158 and statement.html.tmpl:59, and two templates under
+.github/ISSUE_TEMPLATE/. I searched three directories for innspill/submission/
+foreslå; the templates live in a fourth and the code says bidra. What is missing
+is a durable queue and any parser from intake to statement.

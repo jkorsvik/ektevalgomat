@@ -197,3 +197,40 @@ end date, because the register publishes none.
 To extend: add older editions as `--snapshot DATE PDF` pairs. Each run compares
 the oldest and newest only, so adding one edition refines the interval rather
 than multiplying tables.
+
+## Measured dead ends, 2026-11-11
+
+Recorded so the next session does not spend a day rediscovering them. Each was
+probed, not assumed.
+
+**Committee membership is not in the API.** `komiteer?sesjonid=` returns 16
+committees with only `id`, `navn` and `versjon` — no member list. Asking for one
+committee by id fails with the server's own error:
+
+```
+GET /eksport/komite?id=ARBSOS&format=json
+{"feilkode":0,"feilmelding":"Forespoersel med ukjent parameter:
+ 'Metode=HentKomiteMedlemmer' feilet.","metode":""}
+```
+
+The message names the internal method the request reached, so the data exists
+behind a route that cannot be called. `komitemedlemmer` is 404. The verv register
+does not carry committee posts either, and only 8 of 169 person records mention
+the word "komite" at all, all incidentally. So committee membership is absent,
+and it is absent because the source withholds it, not because nobody built the
+loader.
+
+**Subject tags cannot find the earlier document.** Measured across 15 sessions:
+7,124 innstillinger have a resolvable PDF URL, but only 165 distinct subject tags
+exist, and the best overlap between a statement's own wording and an earlier
+innstilling's tags plus short title is 4. Nothing reaches 5, and 6 of 13
+statements score zero. `tools/analytics/gen_merknad_candidates.py` enumerates a
+session; it does not locate a document that asks the same question, and its
+docstring says so.
+
+**Sak relations do not cross sessions.** `sak_relasjon_liste` links siblings
+inside one session — four saker rows share innstilling 16082 — and never a
+previous session's version of the same case.
+
+The consequence for lane H is the important one: breadth is solved and cheap,
+selection needs a reader. That is the whole reason the source feeder exists.

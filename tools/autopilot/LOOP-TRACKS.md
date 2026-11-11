@@ -313,6 +313,16 @@ discriminates has to be decided for many statements, and a per-statement field i
 no longer disproportionate. The decision is the user's and the options are
 unchanged; only their price was wrong.
 
+MEASURED PROPERLY, as a count rather than a conclusion. Counting the literal
+constructions `, ikke ` and `, uten ` across all 60 `text` fields returns 9
+statements: 04, 07, 13, 18, 20, 21, 25, 31, 37. That is a lower bound on the
+contrastive form, and it is the number to use when pricing the rule. Nine of
+sixty is a review pass, not a schema change and not a one-off.
+
+One further trap, from the source feeder's own scan: a stem match on `lov\w*`
+catches `lovfestes` and would inflate the count. Word boundaries are what make
+the count honest, whichever pattern is used.
+
 A word scan cannot answer a question about meaning. If scoping this again, read
 the texts, or count the «, ikke » and «, uten » constructions as patterns to
 review rather than as a complete set.

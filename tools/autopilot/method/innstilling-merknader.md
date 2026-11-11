@@ -39,16 +39,26 @@ The letter is the chamber; only `S` is in range for a corpus that starts in 2011
 The innstilling HTML page is a table of contents only, about 7,900 characters of
 text. The document is the PDF. Do not build an extractor against the HTML.
 
-## 2. Extract with -raw, never -layout
+## 2. Extract with the production extractor, never with pdftotext
 
-Storting PDFs are printed in two columns. `pdftotext -layout` reproduces the page
-geometry, so it interleaves the columns: left-column prose and right-column
-headings land on one line. Measured on `inns-202526-002s.pdf` (3,563,108 bytes):
-`-layout` produces **932** runs of spaced-out letters («Ko m i t e e n s m e d l e m m e r») and mixes the columns; `-raw` produces **0** spaced-letter runs and
-correct reading order.
+The gate that decides whether a quote may be archived reads the document through
+`tools/verify/verify_excerpts.py:to_text`, which uses PyMuPDF and then removes
+line-break hyphenation (`-\n` becomes nothing). A quote chosen from any other
+extraction is not a substring of what the gate reads, so `build_archive.locate`
+returns None and the row cannot be archived. Measured on three exact quotes: all
+three failed to locate despite being faithful to the document.
 
-A reader that uses `-layout` will attach one party's prose to another party's
-heading. Nothing errors. The excerpt reads plausibly and is wrong.
+So extract with that same function. It is also better text than `pdftotext`:
+
+| extractor | spaced-letter runs on inns-202526-002s | headings | numbers occurring twice |
+|---|---|---|---|
+| `pdftotext -layout` | 932 | 36 | not separable, columns interleaved |
+| `pdftotext -raw` | 0 | 36 | 18 of 18 |
+| `to_text` (PyMuPDF) | 1 | 36 | 18 of 18 |
+
+`to_text` also resolves the hyphen wrap for you: `Sen-\nterpartiet` arrives as
+`Senterpartiet`. Measured on inns-202324-002s the coalition heading comes through
+intact as «Arbeiderpartiet og Senterpartiet».
 
 ## 3. Split digits from letters before matching
 
@@ -121,6 +131,18 @@ innstilling reference, not on a single sak id.
 
 Measured on `inns-202526-002s.pdf`: 18 numbers, each exactly twice, second
 occurrences at offsets 36,396 (2.1.2.1) through 322,865 (3.1.2.9).
+
+## 4d. A section slice can run to the end of the document
+
+Measured via `to_text`: section slices run from 1,006 to 234,520 characters on
+inns-202526-002s and 215 to 88,773 on inns-202324-002s. The long one is the last
+section, whose slice continues into the rest of the document because no further
+«Merknader fra» heading stops it.
+
+Cap the slice at the next `\d\.\d` numbering or 6,000 characters, whichever comes
+first, before picking a quote. Zero sections were found to contain another
+heading on either document, so heading isolation holds; the risk is the unmapped
+tail, not a neighbour's prose.
 
 ## 5. What the section does and does not prove
 

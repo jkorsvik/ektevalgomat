@@ -116,12 +116,31 @@ PORT=8099 ADDR=127.0.0.1 /tmp/ektevalgomat
 Datasettet ligger innebygd i binæret, så en endring i YAML krever ny bygging.
 Ingen database, ingen innlogging, ingen skrivetilgang til noe.
 
+## Bygg det committede treet, ikke arbeidstreet
+
+`go test ./...` kjører i arbeidstreet. Det er ikke det som deployes. En commit
+kan mangle en fil som fortsatt ligger på disk, og da kompilerer arbeidstreet
+mens commiten dør ved oppstart.
+
+```sh
+tools/verify/check_head.sh          # pakker HEAD ut i /tmp og bygger der
+```
+
+Skriptet er installert som pre-push:
+
+```sh
+git config core.hooksPath .githooks
+```
+
+Ett unntak finnes, og det skal stå i loggen: `EKV_SKIP_HEAD_CHECK=1 git push`.
+
 ## Gatene, før du åpner en PR
 
 ```sh
 gofmt -l .                                  # skal være tom
 go vet ./...
 go test ./...                               # data, scoring, server, web
+tools/verify/check_head.sh                 # samme tester, på HEAD fra et arkiv
 for f in web/static/js/*.js; do node --check "$f"; done
 for t in tools/*.test.js; do node "$t"; done
 python3 tools/autopilot/test_gate.py

@@ -1,0 +1,12 @@
+#!/bin/sh
+# Refuse to push a commit whose own tree does not build.
+#
+# The working tree is not what ships; HEAD is. See tools/verify/check_head.sh.
+# Set EKV_SKIP_HEAD_CHECK=1 to push anyway (a docs-only emergency), and say why.
+if [ "${EKV_SKIP_HEAD_CHECK:-0}" = "1" ]; then
+	echo "pre-push: head check skipped by EKV_SKIP_HEAD_CHECK=1" >&2
+	exit 0
+fi
+
+ROOT=$(git rev-parse --show-toplevel)
+exec "$ROOT/tools/verify/check_head.sh" HEAD

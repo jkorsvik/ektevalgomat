@@ -487,3 +487,30 @@ TWO BUGS CAUGHT BEFORE SHIPPING:
 2. The handoff was inserted before {{template "footerlinks"}}, which sits outside
    <main>, so it rendered flush at the page edge below the footer. A screenshot
    caught it; the markup alone read as correct.
+
+## Incident 2026-11-12: the working tree built, main did not
+
+I committed the Utforsk walk with an explicit file list and left
+`internal/server/server.go` out — the line registering the `explore` template
+function. The nine templates on main then called a function that did not exist.
+
+Failure mode, reproduced from 5caf73d before fixing:
+
+    panic: template: stemmer.html.tmpl:22: function "explore" not defined
+
+Template parse happens at startup, so the binary died on boot, the healthcheck
+failed, and poll-deploy kept the previous container serving exactly as designed.
+Symptom: no deploy for 19 minutes when every earlier one took five to seven, and
+the site still up on the older build.
+
+WHY MY TESTS DID NOT CATCH IT: `go test ./...` runs in the working tree, which
+had the line. The committed tree did not. A test can only fail on what is on disk.
+
+DISCIPLINE, from now on, before any push that touches Go or templates:
+
+    rm -rf /tmp/ekv-clean && mkdir -p /tmp/ekv-clean
+    git archive HEAD | tar -x -C /tmp/ekv-clean
+    cd /tmp/ekv-clean && go build ./... && go test ./... -count=1
+
+Building HEAD from an archive removes the working tree from the evidence. It
+would have caught this in seconds.

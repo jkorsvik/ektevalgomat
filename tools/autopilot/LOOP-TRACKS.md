@@ -375,3 +375,29 @@ at index.html.tmpl:158 and statement.html.tmpl:59, and two templates under
 .github/ISSUE_TEMPLATE/. I searched three directories for innspill/submission/
 foreslå; the templates live in a fourth and the code says bidra. What is missing
 is a durable queue and any parser from intake to statement.
+
+## The builder image is the shipped standard library (fixed 2026-11-12)
+
+ekv-review found `govulncheck ./...` red on the local go1.26.1 and correctly
+called it a baseline problem outside their feature. The measurement that decided
+it came from the artefact, not the toolchain:
+
+| binary | reachable stdlib vulnerabilities |
+|---|---|
+| built with go1.23.12, which production shipped | 47 |
+| built with go1.27.4, after the fix | 0 |
+
+The local source scan reported 32, so the number on screen was never the number
+that mattered. The pin was `golang:1.23-alpine@sha256:383395b7`, which is Go
+1.23.12 of 2025-08-06 — the last patch of a line that has had no security fixes
+since Go 1.25 shipped.
+
+Fixed in eeda375: builder pinned to `golang:1.27.4-alpine` by digest, and
+`toolchain go1.27.4` in go.mod so a local build cannot fall back.
+
+UNRESOLVED AND NAMED: nothing external proves which Go built the binary that is
+serving. Content is identical either way, and the deploy host is not this machine
+and has no reachable log. The proof today is the pin plus a local
+`govulncheck -mode=binary`. A response header or a `/helse` field carrying
+`runtime.Version()` would make it verifiable forever; that is a product change
+and has not been made.

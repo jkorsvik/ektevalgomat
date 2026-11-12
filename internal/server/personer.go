@@ -46,6 +46,9 @@ type personRow struct {
 	// in Go rather than in the template so the wording sits next to the numbers
 	// it describes and can be tested.
 	VoteText string
+	// CommitteeText names the committees this person sits on now. The source is a
+	// snapshot with no dates, so the wording never implies when the seat began.
+	CommitteeText string
 }
 
 type partyCount struct {
@@ -84,6 +87,9 @@ type personerView struct {
 	// VoteCoverage states how much of the vote record is per-person, so a reader
 	// can weigh a person's number against what the source actually publishes.
 	VoteCoverage string
+	// CommitteeCoverage states what the committee pages cover and which bodies
+	// they do not publish at all.
+	CommitteeCoverage string
 }
 
 var roleLabels = map[string]string{
@@ -123,6 +129,7 @@ func buildPersonerView(ds *data.Dataset, snapshotDate string) personerView {
 		}
 		row := personRow{
 			VoteText:      voteText,
+			CommitteeText: committeeSentence(data.CommitteesForPerson(p.ID)),
 			ID:            p.ID,
 			Name:          p.Name,
 			Party:         party.Name,
@@ -217,21 +224,22 @@ func buildPersonerView(ds *data.Dataset, snapshotDate string) personerView {
 		Meta: meta("Personer · verv og offentlige roller",
 			"Hvem som sitter i hvilke verv: stortingsrepresentanter med daterte roller fra Stortingets vervregister og regjeringsapparatet. Hver rolle har en kilde.",
 			"/personer"),
-		SnapshotDate:   snapshotDate,
-		People:         rows,
-		Parties:        parties,
-		Total:          len(rows),
-		WithVerv:       withVerv,
-		WithGovernment: withGov,
-		RoleTotal:      roleTotal,
-		RegisterDate:   data.VervSnapshotDate(),
-		History:        ended,
-		HistoryFrom:    from,
-		HistoryTo:      to,
-		HistoryEnded:   hist.Counts.RolesEnded,
-		HistoryNew:     hist.Counts.RolesNew,
-		HistoryPeople:  hist.Counts.PeopleInBoth,
-		VoteCoverage:   voteCoverage(),
+		SnapshotDate:      snapshotDate,
+		People:            rows,
+		Parties:           parties,
+		Total:             len(rows),
+		WithVerv:          withVerv,
+		WithGovernment:    withGov,
+		RoleTotal:         roleTotal,
+		RegisterDate:      data.VervSnapshotDate(),
+		History:           ended,
+		HistoryFrom:       from,
+		HistoryTo:         to,
+		HistoryEnded:      hist.Counts.RolesEnded,
+		HistoryNew:        hist.Counts.RolesNew,
+		HistoryPeople:     hist.Counts.PeopleInBoth,
+		VoteCoverage:      voteCoverage(),
+		CommitteeCoverage: committeeCoverage(),
 	}
 }
 
@@ -250,6 +258,50 @@ func voteSentence(voted, divisions, deviation int) string {
 		ord = "gang"
 	}
 	return fmt.Sprintf("%s %s %s mot eget partis linje.", s, thousands(deviation), ord)
+}
+
+// committeeSentence names a person's committee seats. The role is shown only when
+// it is more than "Medlem", so a leader is visible and an ordinary seat is not
+// padded with a word that adds nothing.
+func committeeSentence(seats []data.CommitteeSeat) string {
+	if len(seats) == 0 {
+		return ""
+	}
+	parts := make([]string, 0, len(seats))
+	for _, s := range seats {
+		switch s.Role {
+		case "Leder":
+			parts = append(parts, s.CommitteeName+" (leder)")
+		case "Første nestleder":
+			parts = append(parts, s.CommitteeName+" (første nestleder)")
+		case "Nestleder":
+			parts = append(parts, s.CommitteeName+" (nestleder)")
+		default:
+			parts = append(parts, s.CommitteeName)
+		}
+	}
+	return "Komité: " + strings.Join(parts, ", ") + "."
+}
+
+// committeeCoverage states the artefact's reach, including the bodies the source
+// publishes no member list for. Naming them is the point: silence would read as
+// "nobody sits there".
+func committeeCoverage() string {
+	ci := data.CommitteeSummary()
+	if len(ci.Committees) == 0 {
+		return ""
+	}
+	text := fmt.Sprintf("Komitémedlemskap er hentet fra Stortingets komitésider %s: %d komiteer, %d medlemskap. Sidene oppgir ingen start- eller sluttdato, så dette er et øyeblikksbilde, ikke en datert rolle.",
+		ci.GeneratedAt[:10], len(ci.Committees), ci.Counts["memberships"])
+	if len(ci.Unpublished) > 0 {
+		names := make([]string, 0, len(ci.Unpublished))
+		for _, u := range ci.Unpublished {
+			names = append(names, u["name"])
+		}
+		sort.Strings(names)
+		text += " Uten publisert medlemsliste: " + strings.Join(names, ", ") + "."
+	}
+	return text
 }
 
 // voteCoverage reports how much of the division record is per-person, so nobody

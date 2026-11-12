@@ -429,3 +429,33 @@ test (bumping one person's `for` by one) fails on the totals.
 how often they voted in divisions where names were recorded, and how often that
 differed from their own party's line. Absence is not mentioned, because a missing
 row and an absent member look identical from here.
+
+## Committee membership from the committee pages, 2026-11-12
+
+The export API still refuses (`komite?id=` → 400 naming HentKomiteMedlemmer,
+`komitemedlemmer` → 404, no committee field on the representative payload). The
+committee pages under /no/Representanter-og-komiteer/Komiteene/ embed the roster
+as JSON keyed by the same perid as our person records, so membership joins
+without name matching.
+
+Measured: 13 committees, 183 memberships, 159 of 169 published representatives
+seated. `tools/analytics/build_committee_index.py` writes
+internal/data/komiteer/index.json; roles come from the page's own table (Leder,
+Første nestleder, Nestleder, Medlem).
+
+SIX BODIES HAVE NO PUBLISHED MEMBER PAGE and are listed as such in the artefact
+rather than left out: Presidentskapet, Fullmaktskomiteen, Valgkomiteen, Den
+utvidede utenriks- og forsvarskomité, the corona committee and the EOS
+committee. Direct URL guesses return 404. Ten representatives therefore have no
+seat on the site, and some of them sit on those six.
+
+TWO BUGS FOUND WHILE BUILDING, both now gated:
+1. The page-title fallback shared its variable name with the member loop, so
+   every committee took the name of its last member. TestCommitteeNamesAreNames
+   fails if a committee is named after one of its own members.
+2. committeeId carries ÆØÅ (NÆRING), so a [A-Z0-9] regex silently dropped the
+   committee while its members still parsed. The id regex is widened and a
+   committee that parses to fewer than five members fails the build.
+
+Membership is a snapshot: the pages state no start or end date. That word is in
+the artefact and on the page, so nobody renders it as a dated role.

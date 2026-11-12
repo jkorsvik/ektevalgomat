@@ -38,13 +38,7 @@
     «Ikke avsluttet i registeret» betyr at registeret ikke oppgir en sluttdato —
     det er ikke det samme som at vervet løper i dag.
   </p>
-  <p class="prose-lede">
-    Komitéverv vises ikke ennå. Eksport-API-et svarer med en feil når det blir
-    spurt om komitémedlemmer, men Stortingets egne komitésider lister dem, med
-    samme person-id som vi bruker her. Det er altså ikke en manglende kilde, og
-    det skal hentes. Til det er gjort, sier denne siden ingenting om hvilke
-    komiteer den enkelte har sittet i.
-  </p>
+  {{if .CommitteeCoverage}}<p class="prose-lede">{{.CommitteeCoverage}}</p>{{end}}
 
   <div class="table-scroll">
     <table class="data-table">
@@ -116,6 +110,7 @@
           {{if eq $i 0}}
           <td rowspan="{{len $p.Roles}}">
             <strong>{{$p.Name}}</strong>
+            {{if $p.CommitteeText}}<br><span class="vote-note">{{$p.CommitteeText}}</span>{{end}}
             {{if $p.VoteText}}<br><span class="vote-note">{{$p.VoteText}}</span>{{end}}
           </td>
           <td rowspan="{{len $p.Roles}}"><span class="party-tag {{$p.PartyBarClass}}">{{$p.PartyShort}}</span></td>

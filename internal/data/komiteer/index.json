@@ -1,0 +1,2281 @@
+{
+ "generated_at": "2026-11-12T08:21:03Z",
+ "source": "stortinget.no committee pages, ?tab=MembersCommittee, embedded membership JSON",
+ "session": "2026-2027",
+ "snapshot": true,
+ "snapshot_note": "The pages state who sits on a committee now and no start or end date. This is the membership at fetch time, not when the seat began.",
+ "committees": [
+  {
+   "id": "ARBSOS",
+   "name": "Arbeids- og sosialkomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Arbeids--og-sosialkomiteen/",
+   "members": [
+    {
+     "person_id": "MAAH",
+     "name": "Hussein, Marian",
+     "role": "Leder"
+    },
+    {
+     "person_id": "AMAGUN",
+     "name": "Gunnufsen, Amalie",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SIHJE",
+     "name": "Hjemdal, Silje",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "PERKJL",
+     "name": "Kjølmoen, Per Vidar",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BJOL",
+     "name": "Laabak, Bjørnar",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MARMAR",
+     "name": "Martinussen, Marie Sneve",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "AIM",
+     "name": "Molberg, Anna",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JSB",
+     "name": "Nordtug, Julia Brännström",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "BSV",
+     "name": "Svendsrud, Bjørn-Kristian",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TVER",
+     "name": "Vereide, Torbjørn",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "AGNVIL",
+     "name": "Viljugrein, Agnes Nærland",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ELW",
+     "name": "Waagen, Elise",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "ENERGI",
+   "name": "Energi- og miljøkomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Energi--og-miljokomiteen/",
+   "members": [
+    {
+     "person_id": "MHU",
+     "name": "Hussaini, Mani",
+     "role": "Leder"
+    },
+    {
+     "person_id": "GKAL",
+     "name": "Almeland, Grunde",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HANASK",
+     "name": "Askjer, Hans Edvard",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KARBJR",
+     "name": "Bjørnsen, Kari Sofie",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MARGRT",
+     "name": "Grøthe, Maren",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ANNHAG",
+     "name": "Hagenborg, Anne",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LAHA",
+     "name": "Haltbrekken, Lars",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SOFMAR",
+     "name": "Marhaug, Sofie",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LIM",
+     "name": "Merkesdal, Linda Monsen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SIGRAF",
+     "name": "Rafaelsen, Sigurd Kvammen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MORSAN",
+     "name": "Sandanger, Morten",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KRISIV",
+     "name": "Sivertsen, Kristoffer",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "FRYSJU",
+     "name": "Sjursæther, Frøya Skjold",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "RIKSPE",
+     "name": "Spets, Rikard",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ALES",
+     "name": "Stokkebø, Aleksander",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "FMS",
+     "name": "Stordalen, Morten",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TOWA",
+     "name": "Wara, Tor Mikkel",
+     "role": "Første nestleder"
+    }
+   ]
+  },
+  {
+   "id": "EØS",
+   "name": "Europautvalget",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Europautvalget/",
+   "members": [
+    {
+     "person_id": "RUB",
+     "name": "Bakervik, Rune",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KIB",
+     "name": "Bergstø, Kirsti",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TONB",
+     "name": "Brenna, Tonje",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "PCF",
+     "name": "Frølich, Peter",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HGU",
+     "name": "Gulati, Himanshu",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "GEIRAJ",
+     "name": "Jørgensen, Geir",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MORKOL",
+     "name": "Kolbjørnsen, Morten",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "INGLIL",
+     "name": "Liland, Ingrid",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HLI",
+     "name": "Limi, Hans Andreas",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TOBLIN",
+     "name": "Linge, Tobias Hangaard",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SYL",
+     "name": "Listhaug, Sylvi",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BJMO",
+     "name": "Moxnes, Bjørnar",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TIM",
+     "name": "Mørland, Tellef Inge",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ABIR",
+     "name": "Raja, Abid",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JONSAY",
+     "name": "Sayed, Jonas Andersen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TRISUN",
+     "name": "Sundnes, Trine Lise",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "IME",
+     "name": "Søreide, Ine Eriksen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TMV",
+     "name": "Vedum, Trygve Slagsvold",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TOWA",
+     "name": "Wara, Tor Mikkel",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "FAMKULT",
+   "name": "Familie- og kulturkomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Familie--og-kulturkomiteen/",
+   "members": [
+    {
+     "person_id": "BENEST",
+     "name": "Estil, Bente",
+     "role": "Leder"
+    },
+    {
+     "person_id": "HASABD",
+     "name": "Abdi, Hashim",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MATHEN",
+     "name": "Henriksen, Mats",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MIREHB",
+     "name": "Høyer-Berntsen, Mirell",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BENJAK",
+     "name": "Jakobsen, Benjamin",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SIRJEN",
+     "name": "Jensen, Siren Julianne",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MORL",
+     "name": "Langfeldt, Morgan",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JLO",
+     "name": "Lossius, Jorunn Gleditsch",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "HSP",
+     "name": "Poppe, Haagen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TWT",
+     "name": "Trøen, Tone Wilhelmsen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MOW",
+     "name": "Wold, Morten",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "FINANS",
+   "name": "Finanskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Finanskomiteen/",
+   "members": [
+    {
+     "person_id": "TUMO",
+     "name": "Moflag, Tuva",
+     "role": "Leder"
+    },
+    {
+     "person_id": "AASE",
+     "name": "Aasen-Svensrud, Maria",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HEA",
+     "name": "Asheim, Henrik",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ANDERI",
+     "name": "Eriksen, Andreas Bjelland",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BJAG",
+     "name": "Gram, Bjørn Arild",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HILGRA",
+     "name": "Grande, Hilde",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MARHAM",
+     "name": "Hammer, Marthe",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ODAIND",
+     "name": "Indgaard, Oda",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "FROJAC",
+     "name": "Jacobsen, Frode",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MARJON",
+     "name": "Jonsterhaug, Martin Virkesdal",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JRGKRI",
+     "name": "Kristiansen, Jørgen H.",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MMIKRI",
+     "name": "Kristjánsson, Mímir",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HLI",
+     "name": "Limi, Hans Andreas",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "ABIR",
+     "name": "Raja, Abid",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "EVR",
+     "name": "Røed, Even A.",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TSTA",
+     "name": "Staahle, Tom",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "HELSEOMS",
+   "name": "Helse- og omsorgskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Helse--og-omsorgskomiteen/",
+   "members": [
+    {
+     "person_id": "KJT",
+     "name": "Toppe, Kjersti",
+     "role": "Leder"
+    },
+    {
+     "person_id": "STIA",
+     "name": "Abrahamsen, Stig Atle",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ALFAND",
+     "name": "Andersen, Alf Erik",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SEA",
+     "name": "Aydar, Seher",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "RAGBER",
+     "name": "Bergheim, Ragnhild",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ERLBE1",
+     "name": "Bøe, Erlend Svardal",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "MARDAL",
+     "name": "Dalin, Marius Langballe",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JULEIK",
+     "name": "Eikeland, Julia",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KEI",
+     "name": "Eilertsen, Kristian August",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MAHAG",
+     "name": "Hagerup, Margret",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "AGHA",
+     "name": "Hauan, Anne Grethe",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KATLIE",
+     "name": "Lie, Kathy",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MONNIL",
+     "name": "Nilsen, Mona",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "IDARSE",
+     "name": "Røse, Ida Lindtveit",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TRV",
+     "name": "Vasvik, Truls",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KOS",
+     "name": "Østensen, Kai Steffen",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "JUSTIS",
+   "name": "Justiskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Justiskomiteen/",
+   "members": [
+    {
+     "person_id": "JOEH",
+     "name": "Engen-Helgheim, Jon",
+     "role": "Leder"
+    },
+    {
+     "person_id": "BENBEN",
+     "name": "Bentzen, Bent-Joacim",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JONBLI",
+     "name": "Blikra, Jone",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MAHF",
+     "name": "Farahmand, Mahmoud",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JUNGRU",
+     "name": "Gruer, June Trengereid",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "FINKRO",
+     "name": "Krokeide, Finn",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MHL",
+     "name": "Lønseth, Mari Holm",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "FARQUR",
+     "name": "Qureshi, Farukh",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KRISOL",
+     "name": "Solli, Kristine Løfshus",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "STISTO",
+     "name": "Storbukås, Stian",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JULSTU",
+     "name": "Stuestøl, Julie E.",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "KOMMFORV",
+   "name": "Kommunal- og forvaltningskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Kommunal--og-forvaltningskomiteen/",
+   "members": [
+    {
+     "person_id": "HANSTE",
+     "name": "Stenvaag, Hanne Beate",
+     "role": "Leder"
+    },
+    {
+     "person_id": "KONALV",
+     "name": "Alvær, Konstanse Marie",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BFA",
+     "name": "Fasteraune, Bengt",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ANNFRE",
+     "name": "Fredlund, Anne Lise Gjerstad",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MUK",
+     "name": "Kapur, Mudassar",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BLA",
+     "name": "Larsen, Bjørn",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "RUNMID",
+     "name": "Midtun, Rune",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MONNIE",
+     "name": "Nielsen, Monica",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HNJ",
+     "name": "Njåstad, Helge André",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JONN",
+     "name": "Nygård, Jon-Ivar",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TAGP",
+     "name": "Pettersen, Tage",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MALSRE",
+     "name": "Sørensen, Malin Bye",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "KONTROLL",
+   "name": "Kontroll- og konstitusjonskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Kontroll--og-konstitusjonskomiteen/",
+   "members": [
+    {
+     "person_id": "PTA",
+     "name": "Amundsen, Per-Willy",
+     "role": "Leder"
+    },
+    {
+     "person_id": "PAMB",
+     "name": "Borgli, Pål Morten",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ISABUS",
+     "name": "Busch, Isak Veierud",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LAHA",
+     "name": "Haltbrekken, Lars",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SMY",
+     "name": "Myrli, Sverre",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "HEGNYH",
+     "name": "Nyholt, Hege Bae",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LARREM",
+     "name": "Rem, Lars",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KARSAN",
+     "name": "Sandnes, Kari Baadstrand",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JONSAY",
+     "name": "Sayed, Jonas Andersen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LISSEL",
+     "name": "Selnes, Lise",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "AICS",
+     "name": "Stenersen, Aina",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JULSTU",
+     "name": "Stuestøl, Julie E.",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "OBT",
+     "name": "Trellevik, Ove",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "NÆRING",
+   "name": "Næringskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Naringskomiteen/",
+   "members": [
+    {
+     "person_id": "RUNSTS",
+     "name": "Støstad, Rune",
+     "role": "Leder"
+    },
+    {
+     "person_id": "UAB",
+     "name": "Bastholm, Une",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "INF",
+     "name": "Fiskaa, Ingrid",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "RUTHOP",
+     "name": "Hop, Ruth Mariann",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TAJ",
+     "name": "Johnsen, Tor André",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "GEIRAJ",
+     "name": "Jørgensen, Geir",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ERLL",
+     "name": "Larsen, Erlend",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "STILIL",
+     "name": "Lillestøl, Stig Even",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TOBLIN",
+     "name": "Linge, Tobias Hangaard",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MARNIL",
+     "name": "Nilsen, Marius Arion",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BERST",
+     "name": "Strifeldt, Bengt Rune",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BRDTHO",
+     "name": "Thorheim, Bård Ludvig",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HARVAL",
+     "name": "Valderhaug, Harry",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SOLVIT",
+     "name": "Vitanza, Solveig",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "SAM",
+   "name": "Samferdselskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/samferdselskomiteen/",
+   "members": [
+    {
+     "person_id": "EVEERI",
+     "name": "Eriksen, Even H.",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "MHER",
+     "name": "Ervik, May Helen Hetland",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LIG",
+     "name": "Gustavsen, Liv",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TROH",
+     "name": "Helleland, Trond",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ARIHER",
+     "name": "Hermstad, Arild",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TOMKAR",
+     "name": "Karlsen, Tom Einar",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "GEL",
+     "name": "Lien, Geir Inge",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ALI",
+     "name": "Linnestad, Anne Kristine",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "DHO",
+     "name": "Olsen, Dagfinn Henrik",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ANNREF",
+     "name": "Refseth, Anniken",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "FES",
+     "name": "Sve, Frank Edvard",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "REMSLV",
+     "name": "Sølvberg, Remi",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SOLVES",
+     "name": "Vestenfor, Solveig",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "UFK",
+   "name": "Utenriks- og forsvarskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Utenriks--og-forsvarskomiteen/",
+   "members": [
+    {
+     "person_id": "PCF",
+     "name": "Frølich, Peter",
+     "role": "Leder"
+    },
+    {
+     "person_id": "RUB",
+     "name": "Bakervik, Rune",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "KIB",
+     "name": "Bergstø, Kirsti",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TONB",
+     "name": "Brenna, Tonje",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HGU",
+     "name": "Gulati, Himanshu",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "MORKOL",
+     "name": "Kolbjørnsen, Morten",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "INGLIL",
+     "name": "Liland, Ingrid",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SYL",
+     "name": "Listhaug, Sylvi",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "BJMO",
+     "name": "Moxnes, Bjørnar",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TIM",
+     "name": "Mørland, Tellef Inge",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ABIR",
+     "name": "Raja, Abid",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JONSAY",
+     "name": "Sayed, Jonas Andersen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TRISUN",
+     "name": "Sundnes, Trine Lise",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "IME",
+     "name": "Søreide, Ine Eriksen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "TMV",
+     "name": "Vedum, Trygve Slagsvold",
+     "role": "Medlem"
+    }
+   ]
+  },
+  {
+   "id": "UFO",
+   "name": "Utdannings- og forskningskomiteen",
+   "url": "https://www.stortinget.no/no/Representanter-og-komiteer/Komiteene/Utdannings--og-forskningskomiteen/",
+   "members": [
+    {
+     "person_id": "MTY",
+     "name": "Tybring-Gjedde, Mathilde",
+     "role": "Leder"
+    },
+    {
+     "person_id": "SEKBAK",
+     "name": "Bakke, Åse Kristin Ask",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SUNEID",
+     "name": "Eidsvoll, Sunniva Holmås",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "VEBGOR",
+     "name": "Gorseth, Vebjørn",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LINHAU",
+     "name": "Haugen, Line Marlene",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "YSTMAT",
+     "name": "Mathisen, Øystein",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "GME",
+     "name": "Melby, Guri",
+     "role": "Første nestleder"
+    },
+    {
+     "person_id": "MMO",
+     "name": "Molvær, Monica",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "HEGNYH",
+     "name": "Nyholt, Hege Bae",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "LHS",
+     "name": "Sandaune, Lill Harriet",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "ESAN",
+     "name": "Sande, Erling",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JOATAN",
+     "name": "Tangen, Joakim Myklebost",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "SIMVEL",
+     "name": "Velle, Simen",
+     "role": "Medlem"
+    },
+    {
+     "person_id": "JOEYST",
+     "name": "Ystebø, Joel",
+     "role": "Medlem"
+    }
+   ]
+  }
+ ],
+ "people": {
+  "AASE": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ABIR": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "AGHA": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "AGNVIL": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "AICS": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "AIM": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ALES": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ALFAND": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ALI": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "AMAGUN": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ANDERI": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ANNFRE": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ANNHAG": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ANNREF": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ARIHER": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BENBEN": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BENEST": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Leder"
+   }
+  ],
+  "BENJAK": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BERST": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BFA": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BJAG": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BJMO": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BJOL": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BLA": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BRDTHO": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "BSV": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "DHO": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ELW": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ERLBE1": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "ERLL": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ESAN": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "EVEERI": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "EVR": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "FARQUR": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "FES": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "FINKRO": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "FMS": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "FROJAC": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "FRYSJU": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "GEIRAJ": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "GEL": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "GKAL": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "GME": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "HANASK": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HANSTE": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "HARVAL": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HASABD": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HEA": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HEGNYH": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HGU": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HILGRA": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HLI": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "HNJ": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "HSP": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "IDARSE": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "IME": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "INF": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "INGLIL": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ISABUS": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JLO": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "JOATAN": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JOEH": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "JOEYST": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JONBLI": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JONN": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JONSAY": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JRGKRI": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JSB": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "JULEIK": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JULSTU": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "JUNGRU": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KARBJR": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KARSAN": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KATLIE": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KEI": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KIB": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KJT": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "KONALV": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KOS": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KRISIV": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "KRISOL": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "LAHA": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "LARREM": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "LHS": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "LIG": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "LIM": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "LINHAU": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "LISSEL": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MAAH": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Leder"
+   }
+  ],
+  "MAHAG": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MAHF": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MALSRE": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MARDAL": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MARGRT": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MARHAM": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MARJON": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MARMAR": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MARNIL": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MATHEN": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MHER": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MHL": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MHU": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Leder"
+   }
+  ],
+  "MIREHB": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MMIKRI": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MMO": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MONNIE": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MONNIL": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MORKOL": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MORL": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MORSAN": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MOW": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "MTY": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "MUK": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "OBT": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "ODAIND": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "PAMB": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "PCF": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "PERKJL": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "PTA": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "RAGBER": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "REMSLV": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "RIKSPE": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "RUB": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "RUNMID": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "RUNSTS": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "RUTHOP": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SEA": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SEKBAK": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SIGRAF": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SIHJE": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SIMVEL": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SIRJEN": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SMY": [
+   {
+    "committee_id": "KONTROLL",
+    "committee_name": "Kontroll- og konstitusjonskomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "SOFMAR": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SOLVES": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SOLVIT": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "STIA": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "STILIL": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "STISTO": [
+   {
+    "committee_id": "JUSTIS",
+    "committee_name": "Justiskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SUNEID": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "SYL": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TAGP": [
+   {
+    "committee_id": "KOMMFORV",
+    "committee_name": "Kommunal- og forvaltningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TAJ": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TIM": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TMV": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TOBLIN": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TOMKAR": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TONB": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TOWA": [
+   {
+    "committee_id": "ENERGI",
+    "committee_name": "Energi- og miljøkomiteen",
+    "role": "Første nestleder"
+   },
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   }
+  ],
+  "TRISUN": [
+   {
+    "committee_id": "EØS",
+    "committee_name": "Europautvalget",
+    "role": "Medlem"
+   },
+   {
+    "committee_id": "UFK",
+    "committee_name": "Utenriks- og forsvarskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TROH": [
+   {
+    "committee_id": "SAM",
+    "committee_name": "Samferdselskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TRV": [
+   {
+    "committee_id": "HELSEOMS",
+    "committee_name": "Helse- og omsorgskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TSTA": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TUMO": [
+   {
+    "committee_id": "FINANS",
+    "committee_name": "Finanskomiteen",
+    "role": "Leder"
+   }
+  ],
+  "TVER": [
+   {
+    "committee_id": "ARBSOS",
+    "committee_name": "Arbeids- og sosialkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "TWT": [
+   {
+    "committee_id": "FAMKULT",
+    "committee_name": "Familie- og kulturkomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "UAB": [
+   {
+    "committee_id": "NÆRING",
+    "committee_name": "Næringskomiteen",
+    "role": "Første nestleder"
+   }
+  ],
+  "VEBGOR": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ],
+  "YSTMAT": [
+   {
+    "committee_id": "UFO",
+    "committee_name": "Utdannings- og forskningskomiteen",
+    "role": "Medlem"
+   }
+  ]
+ },
+ "unpublished": [
+  {
+   "id": "EOS",
+   "name": "Den særskilte komité for å behandle Særskilt melding fra EOS-utvalget (Dokument 7:2 (2020-2021))"
+  },
+  {
+   "id": "FULLMAKT",
+   "name": "Fullmaktskomiteen"
+  },
+  {
+   "id": "KOR",
+   "name": "Den særskilte komité for å behandle spesielle saker vedrørende korona-krisen"
+  },
+  {
+   "id": "PRES",
+   "name": "Stortingets presidentskap"
+  },
+  {
+   "id": "UUFK",
+   "name": "Den utvidede utenriks- og forsvarskomité"
+  },
+  {
+   "id": "VALG",
+   "name": "Valgkomiteen"
+  }
+ ],
+ "counts": {
+  "committees": 13,
+  "memberships": 183,
+  "people": 159
+ }
+}

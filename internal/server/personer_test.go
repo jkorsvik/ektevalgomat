@@ -173,3 +173,37 @@ func TestPersonerPageStatesVoteCoverage(t *testing.T) {
 		t.Error("no representative carries a vote sentence at all")
 	}
 }
+
+// Committee seats are a snapshot, so the wording must not read like a dated role,
+// and a leader must be distinguishable from an ordinary member.
+func TestCommitteeSentenceNamesSeatsAndRoles(t *testing.T) {
+	// Order is the data layer's job (CommitteesForPerson puts the leader first);
+	// this function only formats. The test feeds the order it would receive.
+	seats := []data.CommitteeSeat{
+		{CommitteeName: "Kontroll- og konstitusjonskomiteen", Role: "Leder"},
+		{CommitteeName: "Finanskomiteen", Role: "Medlem"},
+	}
+	got := committeeSentence(seats)
+	want := "Komité: Kontroll- og konstitusjonskomiteen (leder), Finanskomiteen."
+	if got != want {
+		t.Errorf("committeeSentence\n got: %s\nwant: %s", got, want)
+	}
+	if committeeSentence(nil) != "" {
+		t.Error("a person with no seat must render nothing, not an empty label")
+	}
+}
+
+// The page must name the bodies the source publishes no member list for. Silence
+// about them would read as "nobody sits there".
+func TestPersonerPageStatesCommitteeCoverageAndGaps(t *testing.T) {
+	body := bodyOf(t, newTestServer(), "/personer")
+	if !strings.Contains(body, "Komitémedlemskap er hentet") {
+		t.Fatal("the page does not say where committee membership comes from")
+	}
+	if !strings.Contains(body, "øyeblikksbilde") {
+		t.Error("the page does not state that membership is a snapshot, not a dated role")
+	}
+	if !strings.Contains(body, "Uten publisert medlemsliste") {
+		t.Error("the page does not name the bodies the source omits")
+	}
+}

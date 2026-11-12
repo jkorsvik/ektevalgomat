@@ -37,8 +37,9 @@ type Representative struct {
 	Deputy     bool   `json:"deputy"`
 }
 
-// Committee is one standing committee, by id and name. Membership is not included;
-// see RefusedCommitteeMembership.
+// Committee is one standing committee, by id and name. Membership is not included
+// here: the export API cannot answer it. See CommitteeRosters for what the
+// Stortinget committee pages do publish.
 type Committee struct {
 	ID   string `json:"id"`
 	Name string `json:"name"`

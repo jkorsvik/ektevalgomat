@@ -514,3 +514,23 @@ DISCIPLINE, from now on, before any push that touches Go or templates:
 
 Building HEAD from an archive removes the working tree from the evidence. It
 would have caught this in seconds.
+
+## The push gate, 2026-11-12
+
+`tools/verify/check_head.sh` extracts HEAD into a temp dir and runs build and
+tests there, so the check sees what deploys instead of what is on disk.
+`.githooks/pre-push` runs it; install with `git config core.hooksPath .githooks`
+(machine-local, documented in CONTRIBUTING.md). One escape hatch:
+`EKV_SKIP_HEAD_CHECK=1`.
+
+Measured, not asserted:
+- on 5caf73d (the commit that panics at template parse) it exits non-zero;
+- on HEAD it exits zero with 6 packages ok;
+- a real push printed `check_head: OK HEAD builds and 6 packages pass` before
+  the refs transferred;
+- with the registration line removed and committed, `git push --dry-run` was
+  refused: `check_head: FAIL tests (5 packages ok, 3 failing)`, exit 1.
+
+`tools/verify/test_check_head.py` (6 tests) keeps the script, the hook and the
+CONTRIBUTING wiring from being deleted, and pins that a bad ref still fails and
+that a run reporting no package ok counts as failure.

@@ -141,3 +141,35 @@ func TestPartyTableOrderIsDeterministic(t *testing.T) {
 		}
 	}
 }
+
+// The vote sentence is the first thing on the site that says how one named person
+// voted, so the wording has to match the numbers behind it. Absence is never
+// mentioned: a missing row and an absent member are indistinguishable here.
+func TestVoteSentenceStatesWhatTheNumbersSay(t *testing.T) {
+	cases := []struct {
+		voted, divisions, deviation int
+		want                        string
+	}{
+		{45, 101, 0, "Stemte i 45 av 101 divisjoner der Stortinget førte navn. Aldri mot eget partis linje."},
+		{45, 101, 1, "Stemte i 45 av 101 divisjoner der Stortinget førte navn. 1 gang mot eget partis linje."},
+		{45, 101, 3, "Stemte i 45 av 101 divisjoner der Stortinget førte navn. 3 ganger mot eget partis linje."},
+		{1234, 2000, 0, "Stemte i 1 234 av 2 000 divisjoner der Stortinget førte navn. Aldri mot eget partis linje."},
+	}
+	for _, c := range cases {
+		if got := voteSentence(c.voted, c.divisions, c.deviation); got != c.want {
+			t.Errorf("voteSentence(%d,%d,%d)\n got: %s\nwant: %s", c.voted, c.divisions, c.deviation, got, c.want)
+		}
+	}
+}
+
+// The page must carry the artefact's coverage, because a reader who sees "stemte
+// i 45 av 101 divisjoner" needs to know that 101 is not every division held.
+func TestPersonerPageStatesVoteCoverage(t *testing.T) {
+	body := bodyOf(t, newTestServer(), "/personer")
+	if !strings.Contains(body, "Navngitte stemmer:") {
+		t.Fatal("the page does not state how much of the vote record is per-person")
+	}
+	if !strings.Contains(body, "mot eget partis linje") && !strings.Contains(body, "Aldri mot eget partis linje") {
+		t.Error("no representative carries a vote sentence at all")
+	}
+}

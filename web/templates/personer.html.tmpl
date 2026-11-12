@@ -94,6 +94,7 @@
   {{end}}
 
   <h2>Alle representanter</h2>
+  {{if .VoteCoverage}}<p class="vote-note">{{.VoteCoverage}}</p>{{end}}
   <div class="table-scroll">
     <table class="data-table">
       <thead>
@@ -112,7 +113,10 @@
         {{range $i, $r := .Roles}}
         <tr>
           {{if eq $i 0}}
-          <td rowspan="{{len $p.Roles}}"><strong>{{$p.Name}}</strong></td>
+          <td rowspan="{{len $p.Roles}}">
+            <strong>{{$p.Name}}</strong>
+            {{if $p.VoteText}}<br><span class="vote-note">{{$p.VoteText}}</span>{{end}}
+          </td>
           <td rowspan="{{len $p.Roles}}"><span class="party-tag {{$p.PartyBarClass}}">{{$p.PartyShort}}</span></td>
           {{end}}
           <td>

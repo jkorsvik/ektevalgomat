@@ -1692,3 +1692,7 @@ tr.party-budget-open { background: var(--accent-soft); }
   font-family: inherit;
   font-variant-numeric: tabular-nums;
 }
+
+/* A person's voting record, under the name in the /personer table. Muted so it
+   reads as a footnote to the roles, not as a second heading. */
+.vote-note { color: var(--muted); font-size: var(--fs-sm); line-height: 1.45; }

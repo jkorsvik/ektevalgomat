@@ -1,6 +1,7 @@
 package server
 
 import (
+	"fmt"
 	"sort"
 	"strings"
 
@@ -40,6 +41,11 @@ type personRow struct {
 	Roles         []personRoleView
 	VervCount     int
 	HasGovernment bool
+	// VoteText is one sentence about how this person actually voted, or empty
+	// when the source published no per-representative rows for them. It is built
+	// in Go rather than in the template so the wording sits next to the numbers
+	// it describes and can be tested.
+	VoteText string
 }
 
 type partyCount struct {
@@ -75,6 +81,9 @@ type personerView struct {
 	HistoryEnded   int
 	HistoryNew     int
 	HistoryPeople  int
+	// VoteCoverage states how much of the vote record is per-person, so a reader
+	// can weigh a person's number against what the source actually publishes.
+	VoteCoverage string
 }
 
 var roleLabels = map[string]string{
@@ -108,7 +117,12 @@ func buildPersonerView(ds *data.Dataset, snapshotDate string) personerView {
 
 	for _, p := range data.People() {
 		party := byID[p.PartyID]
+		voteText := ""
+		if v, ok := data.PersonVotesFor(p.ID); ok && v.Voted > 0 {
+			voteText = voteSentence(v.Voted, v.Divisions, v.Deviation)
+		}
 		row := personRow{
+			VoteText:      voteText,
 			ID:            p.ID,
 			Name:          p.Name,
 			Party:         party.Name,
@@ -217,5 +231,35 @@ func buildPersonerView(ds *data.Dataset, snapshotDate string) personerView {
 		HistoryEnded:   hist.Counts.RolesEnded,
 		HistoryNew:     hist.Counts.RolesNew,
 		HistoryPeople:  hist.Counts.PeopleInBoth,
+		VoteCoverage:   voteCoverage(),
 	}
+}
+
+// voteSentence states what a reader can actually conclude: how often the person
+// voted in divisions where the source names every representative, and how often
+// that vote differed from their own party's line. Absences are not mentioned
+// because a missing row and an absent member look the same from here.
+func voteSentence(voted, divisions, deviation int) string {
+	s := fmt.Sprintf("Stemte i %s av %s divisjoner der Stortinget førte navn.",
+		thousands(voted), thousands(divisions))
+	if deviation == 0 {
+		return s + " Aldri mot eget partis linje."
+	}
+	ord := "ganger"
+	if deviation == 1 {
+		ord = "gang"
+	}
+	return fmt.Sprintf("%s %s %s mot eget partis linje.", s, thousands(deviation), ord)
+}
+
+// voteCoverage reports how much of the division record is per-person, so nobody
+// reads one person's number as if it covered every division the Storting held.
+func voteCoverage() string {
+	pv := data.PersonVoteSummary()
+	if pv.DivisionsWithRows == 0 {
+		return ""
+	}
+	return fmt.Sprintf("Navngitte stemmer: %s av %s divisjoner, %s rader. Personopplysningene er bygget %s.",
+		thousands(pv.DivisionsWithRows), thousands(pv.DivisionsChecked),
+		thousands(pv.RepresentativeRows), pv.GeneratedAt[:10])
 }

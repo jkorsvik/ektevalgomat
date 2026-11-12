@@ -401,3 +401,31 @@ and has no reachable log. The proof today is the pin plus a local
 `govulncheck -mode=binary`. A response header or a `/helse` field carrying
 `runtime.Version()` would make it verifiable forever; that is a product change
 and has not been made.
+
+## Person-level votes built 2026-11-12
+
+The division payload carries one row per representative, and the party index threw
+those rows away. `tools/analytics/build_person_vote_index.py` reads them back:
+
+| measure | value |
+|---|---|
+| people | 942 |
+| representative rows | 3 324 047 |
+| divisions with rows | 19 669 of 25 773 |
+| party-line mismatches vs the party index | 0 |
+| people with at least one deviation | 583 |
+
+The remaining 6 104 divisions are not a gap in our collection: the source returns
+an empty `voteringsresultat_liste` for them, checked live today on votering 1467.
+
+The builder fails rather than writes if the party line it derives from the
+per-person rows disagrees with `votes/index.json`. `internal/data/person_votes.go`
+embeds the result and `person_votes_test.go` re-checks the artefact: division and
+row totals must reconcile, `voted` must equal for+mot, deviation cannot exceed
+votes cast, and somebody must deviate or the calculation is blind. The mutation
+test (bumping one person's `for` by one) fails on the totals.
+
+/­personer now states the coverage and gives each representative one sentence:
+how often they voted in divisions where names were recorded, and how often that
+differed from their own party's line. Absence is not mentioned, because a missing
+row and an absent member look identical from here.

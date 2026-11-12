@@ -18,6 +18,8 @@
   {{/* Derived, never hand-written: every cell is computed from the dataset at
        request time. 2026-10-27. */}}
   <h1>Parti, sakområde og år</h1>
+
+  {{template "explore-contract" (explore "/tidslinje")}}
   <p class="prose-lede">
     Samme kart som <a href="/kart">Kartet</a>, men med årene bevart.
     En celle viser gjennomsnittet på skalaen −2 til +2 for posisjonene partiet
@@ -87,7 +89,10 @@
     nettopp det feltet viser. <a href="/metode">Metoden</a> beskriver hvordan en
     posisjon kodes, og <a href="/data">Åpne data</a> har filene.
   </p>
+  {{template "explore-next" (explore "/tidslinje")}}
+
 </main>
+
 
 {{template "footerlinks"}}
 </body>

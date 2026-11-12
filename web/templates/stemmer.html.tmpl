@@ -18,6 +18,8 @@
   {{/* Generated, never hand-written: every cell below is computed from the votes
        the evidence cites, at request time. 2026-10-27. */}}
   <h1>Hvem stemmer med hvem</h1>
+
+  {{template "explore-contract" (explore "/stemmer")}}
   <p class="prose-lede">
     Tabellen viser hvor ofte to partier stemte likt på de samme voteringene.
     Den bygger på {{.VoteTotal}} voteringsspor hentet fra Stortingets eget
@@ -141,7 +143,10 @@
     kilde peker på dem, så det finnes ingen rad på siden å sjekke dem mot. De ligger i
     <a href="/data">åpne data</a>.
   </p>
+  {{template "explore-next" (explore "/stemmer")}}
+
 </main>
+
 
 {{template "footerlinks"}}
 </body>

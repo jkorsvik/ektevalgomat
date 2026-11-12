@@ -16,6 +16,8 @@
   <span class="snapshot-badge">Vervregisteret ajourført {{.RegisterDate}}</span>
 
   <h1>Personer</h1>
+
+  {{template "explore-contract" (explore "/personer")}}
   <p class="prose-lede">
     {{.Total}} stortingsrepresentanter med {{.RoleTotal}} daterte roller. Rollene
     kommer fra Stortingets eget vervregister og fra regjeringens ministerliste, og
@@ -128,7 +130,10 @@
       </tbody>
     </table>
   </div>
+  {{template "explore-next" (explore "/personer")}}
+
 </main>
+
 
 {{template "footerlinks"}}
 </body>

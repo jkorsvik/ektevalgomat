@@ -1696,3 +1696,24 @@ tr.party-budget-open { background: var(--accent-soft); }
 /* A person's voting record, under the name in the /personer table. Muted so it
    reads as a footnote to the roles, not as a second heading. */
 .vote-note { color: var(--muted); font-size: var(--fs-sm); line-height: 1.45; }
+
+/* The contract at the top of every Utforsk page. Deliberately quiet: it is a
+   frame around the numbers, not a second headline. */
+.explore-contract {
+  border-left: 3px solid var(--muted);
+  padding: var(--sp-1) 0 var(--sp-1) var(--sp-3);
+  margin: var(--sp-3) 0 var(--sp-4);
+  font-size: var(--fs-md);
+  color: var(--muted);
+}
+.explore-contract p { margin: 0 0 var(--sp-1); }
+.explore-contract strong { color: var(--ink); font-weight: 600; }
+
+/* The handoff to the neighbouring question, so the walk continues instead of
+   ending at the footer. */
+.explore-next {
+  margin: var(--sp-5) 0 var(--sp-3);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--rule, rgba(0,0,0,.12));
+  font-size: var(--fs-lg);
+}

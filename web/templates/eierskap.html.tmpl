@@ -17,6 +17,8 @@
   {{/* Derived, never hand-written: every figure is computed from the ownership
        index at request time. 2026-10-27. */}}
   <h1>Statens eierskap</h1>
+
+  {{template "explore-contract" (explore "/eierskap")}}
   <p class="prose-lede">
     Hva staten eier, hvor stor andel den eier, og hvilken eierkategori selskapet
     styres etter. {{.Companies}} selskaper, hvorav {{.WhollyOwned}} er heleid og
@@ -133,7 +135,10 @@
     Se også <a href="/penger">penger</a>, <a href="/kart">kartet</a> og
     <a href="/stemmer">stemmemønsteret</a>.
   </p>
+  {{template "explore-next" (explore "/eierskap")}}
+
 </main>
+
 
 {{template "footerlinks"}}
 </body>

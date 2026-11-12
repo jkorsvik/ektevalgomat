@@ -89,15 +89,19 @@ var navLinks = []navLink{
 	{"/", "Valgomat", "core"},
 	{"/resultat", "Resultat", "core"},
 	{"/partier", "Partiene", "core"},
+	// Utforsk is ordered as the walk, not as a history of what was built: what the
+	// parties mean, then what they did, then what it costs. The spine in
+	// explore.go is the same order, and a reader who follows the menu follows the
+	// argument.
 	{"/kart", "Kartet", "explore"},
+	{"/rommet", "Rommet", "explore"},
 	{"/stemmer", "Stemmemønster", "explore"},
 	{"/tidslinje", "År for år", "explore"},
-	{"/rommet", "Rommet", "explore"},
+	{"/personer", "Personer", "explore"},
+	{"/makt", "Makt", "explore"},
 	{"/budsjett", "Budsjettet", "explore"},
 	{"/penger", "Penger", "explore"},
 	{"/eierskap", "Eierskap", "explore"},
-	{"/makt", "Makt", "explore"},
-	{"/personer", "Personer", "explore"},
 	{"/bidra", "Bidra", "meta"},
 	{"/data", "Data", "meta"},
 	{"/metode", "Metode", "meta"},

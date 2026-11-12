@@ -18,6 +18,8 @@
   {{/* Derived, never hand-written: every figure is computed from the storting,
        proposals and audits indexes at request time. 2026-10-27. */}}
   <h1>Makt</h1>
+
+  {{template "explore-contract" (explore "/makt")}}
   <p class="prose-lede">
     Setene er ressursen et parti fikk, forslagene er hva det gjorde med den.
     {{.SeatTotal}} representanter og {{.ProposalTotal}} saker med navngitte
@@ -146,7 +148,10 @@
     Se også <a href="/stemmer">stemmemønsteret</a>, <a href="/kart">kartet</a>,
     <a href="/penger">penger</a> og <a href="/eierskap">statens eierskap</a>.
   </p>
+  {{template "explore-next" (explore "/makt")}}
+
 </main>
+
 
 {{template "footerlinks"}}
 </body>

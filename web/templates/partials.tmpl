@@ -41,3 +41,24 @@
 </header>{{end}}
 
 {{define "footerlinks"}}<p class="footer-links"><a href="/kart">Kartet</a> · <a href="/tidslinje">År for år</a> · <a href="/rommet">Rommet</a> · <a href="/stemmer">Stemmemønster</a> · <a href="/penger">Penger</a> · <a href="/eierskap">Statens eierskap</a> · <a href="/makt">Makt</a> · <a href="/bidra">Det som mangler</a> · <a href="/data">Åpne data</a> · <a href="/metode">Metoden</a></p>{{end}}
+
+{{/* The contract at the top of every Utforsk page: the question it answers, the
+     source behind the numbers, and what it cannot show. Same three lines, same
+     order, on every page, because a reader who learns it once should not have to
+     learn it nine times. */}}
+{{define "explore-contract"}}
+  <div class="explore-contract">
+    <p><strong>Spørsmålet:</strong> {{.Question}}</p>
+    <p><strong>Kilden:</strong> {{.Source}}</p>
+    <p><strong>Det som mangler:</strong> {{.Missing}}</p>
+  </div>
+{{end}}
+
+{{/* The handoff: the neighbouring question, not the next menu item. */}}
+{{define "explore-next"}}
+  {{if .NextHref}}
+  <nav class="explore-next" aria-label="Neste spørsmål">
+    <p>Neste spørsmål: <a href="{{.NextHref}}">{{.NextLabel}}</a> — {{.NextQuestion}}</p>
+  </nav>
+  {{end}}
+{{end}}

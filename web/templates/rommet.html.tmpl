@@ -16,6 +16,8 @@
 
   <h1>Rommet</h1>
 
+  {{template "explore-contract" (explore "/rommet")}}
+
   <p class="prose-lede">
     Tolv dimensjoner kan ikke vises som én linje, og de er ikke en linje heller.
     Her er de projisert ned til tre akser, så hvert parti blir et volum i stedet
@@ -171,10 +173,13 @@
     hånd. Er en posisjon endret, endrer bildet seg med den, og en test krever at
     tallene på denne siden stemmer med projeksjonen.
   </p>
+  {{template "explore-next" (explore "/rommet")}}
+
 </main>
 
 <script id="rommet-data" type="application/json">{{.PayloadJSON}}</script>
 <script src="{{asset "/static/js/rom.js"}}"></script>
+
 
 {{template "footerlinks"}}
 

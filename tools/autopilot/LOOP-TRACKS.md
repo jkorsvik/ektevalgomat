@@ -459,3 +459,31 @@ TWO BUGS FOUND WHILE BUILDING, both now gated:
 
 Membership is a snapshot: the pages state no start or end date. That word is in
 the artefact and on the page, so nobody renders it as a dated role.
+
+## The Utforsk walk, 2026-11-12
+
+Nine explore pages were nine doors: a reader landed, the page answered in its own
+visual language, and three of them (Stemmemønster, Rommet, Personer) linked to no
+other explore page at all. The menu order also disagreed with any reading order.
+
+internal/server/explore.go now holds the spine: one walk in three questions —
+what the parties mean, what they did, what it costs — with a fixed contract at the
+top of every page (Spørsmålet / Kilden / Det som mangler) and one handoff at the
+bottom naming the neighbouring question. Eierskap closes the loop back to the
+Valgomat rather than ending in a dead end.
+
+The contract's numbers are derived (quoteCounts, PersonVoteSummary,
+CommitteeSummary, len(People)), never typed, and four tests hold it: every explore
+nav link is in the spine, every step states question/source/gap, the walk has no
+dead ends but the closing link, and each of the nine pages actually renders its
+contract and handoff. The nav order was reordered to match the walk.
+
+TWO BUGS CAUGHT BEFORE SHIPPING:
+1. quoteCounts returns (total, withQuote) and I named them the other way round, so
+   /kart said "730 av 730 har et ordrett sitat" next to "406 mangler sitat" in the
+   same block. TestContractQuoteNumbersMatchTheData ties each number to the
+   function that produces it and refuses to run on a fixture where the two are
+   equal.
+2. The handoff was inserted before {{template "footerlinks"}}, which sits outside
+   <main>, so it rendered flush at the page edge below the footer. A screenshot
+   caught it; the markup alone read as correct.

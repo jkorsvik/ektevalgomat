@@ -2,10 +2,22 @@
 # on the host (`build: .` in docker-compose.yml), no cross-compilation,
 # no registry push.
 #
-# Base image pinned by the same digest the other two public Go stacks
-# already use. Bump deliberately, in all three Dockerfiles together:
-# `docker pull golang:1.23-alpine && docker inspect --format
-# '{{index .RepoDigests 0}}' golang:1.23-alpine`.
+# The builder toolchain is the shipped standard library: a scratch image
+# copies the binary, so whatever Go compiled it is what runs in production.
+# It sat on 1.23.12 (2025-08-06) until 2026-11-12, and govulncheck reported
+# 32 reachable standard-library vulnerabilities against the newer local
+# toolchain while production ran a line that has had no security patches
+# since Go 1.25. Pin the patch, not the line, and check the pin with
+# `govulncheck -mode=binary` on a built binary: that measures the artefact,
+# where `govulncheck ./...` measures whichever toolchain happens to be on
+# the developer's PATH.
+#
+# Derive the digest without Docker, from the registry itself:
+#   TOKEN=$(curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/golang:pull" | jq -r .token)
+#   curl -sI -H "Authorization: Bearer $TOKEN" \
+#     -H "Accept: application/vnd.oci.image.index.v1+json" \
+#     https://registry-1.docker.io/v2/library/golang/manifests/1.27.4-alpine \
+#     | grep -i docker-content-digest
 #
 # Everything — statement/party/evidence YAML, HTML templates, CSS, JS —
 # is go:embed'd into the binary at compile time (see internal/data/loader.go
@@ -15,7 +27,7 @@
 # (gopkg.in/yaml.v3, for parsing the evidence tree) is resolved from
 # go.sum in the builder stage only — never present in the final image.
 
-FROM golang:1.23-alpine@sha256:383395b794dffa5b53012a212365d40c8e37109a626ca30d6151c8348d380b5f AS builder
+FROM golang:1.27.4-alpine@sha256:0a5f7fe796599ff487605987432e7619ae45beeb2fba4c2ce0b907879932aebf AS builder
 WORKDIR /src
 COPY go.mod go.sum ./
 RUN go mod download

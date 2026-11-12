@@ -610,6 +610,7 @@ func New(logger *slog.Logger) http.Handler {
 		"evidensstyrkeDots":  evidensstyrkeDots,
 		"sourceTierShort":    sourceTierShort,
 		"issueURL":           issueURL,
+		"explore":            exploreInfo,
 		"siteBase":           func() string { return siteBase },
 		"partyShort": func(id string) string {
 			p, ok := ds.Party(id)

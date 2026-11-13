@@ -1461,36 +1461,7 @@ details[open] > .budget-section-sum h2 { color: var(--ink); }
 .party-budget th.joint { border-bottom: 2px solid var(--line); }
 .party-budget-posts { color: var(--muted); font-size: 0.85em; }
 
-/* /rommet exploration (2026-10-30): the controls that let a reader choose what the
-   drawing shows, and the panel that answers for one party. The panel is a quiet
-   card, because it sits under a picture and must not compete with it. */
-.rom-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sp-4) var(--sp-6);
-  align-items: end;
-  margin: var(--sp-6) 0 var(--sp-5);
-}
-.rom-control { display: flex; flex-direction: column; gap: var(--sp-2); font-size: var(--fs-sm); color: var(--muted); }
-.rom-control select,
-.rom-control input[type="range"] { font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: var(--sp-2) var(--sp-3); }
-.rom-control input[type="range"] { padding: 0; }
-.rom-check { flex-direction: row; align-items: center; gap: var(--sp-3); }
-.rom-focus {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: var(--sp-5) var(--sp-6);
-  margin: var(--sp-5) 0 var(--sp-7);
-  min-height: 4.5rem;
-}
-.rom-focus-empty { color: var(--muted); font-size: var(--fs-sm); margin: 0; }
-.rom-focus-head { font-weight: 600; margin: 0 0 var(--sp-3); }
-.rom-focus-line { color: var(--muted); font-size: var(--fs-sm); margin: 0 0 var(--sp-3); }
-.rom-focus-list { margin: 0; padding-left: var(--sp-7); font-size: var(--fs-sm); font-variant-numeric: tabular-nums; }
-.rom-focus-mine { font-weight: 600; color: var(--ink); }
-
-/* Party-budget cells (2026-10-30): sign is the colour, magnitude is the bar, and the
+/* /rommet controls and statement comparisons live in rommet.css. *//* Party-budget cells (2026-10-30): sign is the colour, magnitude is the bar, and the
    two kinds of empty are told apart. Widths are classes because the CSP forbids
    inline styles, and five steps is as many as a 30px cell can distinguish. */
 .party-budget td.fig { white-space: nowrap; }
@@ -1564,79 +1535,8 @@ tr.party-budget-open { background: var(--accent-soft); }
 .party-budget-common-areas {
   font-size: var(--fs-2xs) !important;
 }
-/* /rommet: the reference frame and the one-dimension spectrum (2026-10-30) */
-/* The labels are positioned from the projection, so their coordinate space must be
-   the canvas alone. Anchored to the whole section, an axis tip that projects above
-   the canvas landed on the section heading: measured on the live page, "Akse 2" sat
-   on top of "Partiene som volum". */
-.rom-canvas-box {
-  position: relative;
-  overflow: hidden;
-}
-.rom-axes {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-.rom-axis-label {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: var(--fs-2xs);
-  font-variant-numeric: tabular-nums;
-  color: var(--muted);
-  background: var(--bg);
-  padding: 0 var(--sp-1);
-  white-space: nowrap;
-  border-radius: var(--sp-1);
-}
-.rom-axis-label-1 { color: var(--accent-strong); }
-.rom-axis-label-2 { color: var(--muted); }
-.rom-axis-label-3 { color: var(--muted); }
-.rom-spectrum-wrap {
-  margin: var(--sp-7) 0 0;
-}
-.rom-spectrum-wrap h3 {
-  margin: 0 0 var(--sp-2);
-  font-size: var(--fs-md);
-}
-.rom-spectrum {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 46rem;
-  margin: var(--sp-3) 0 var(--sp-4);
-}
-.rom-spectrum[hidden] {
-  display: none;
-}
-.rom-spectrum-axis {
-  stroke: var(--line);
-  stroke-width: 1.5;
-}
-.rom-spectrum-zero {
-  stroke: var(--muted);
-  stroke-width: 1;
-  stroke-dasharray: 3 3;
-  opacity: 0.7;
-}
-.rom-spectrum-dot {
-  opacity: 0.95;
-  stroke: var(--bg);
-  stroke-width: 1.6;
-}
-.rom-spectrum-mine {
-  stroke: var(--ink);
-  stroke-width: 2.5;
-  opacity: 1;
-}
-.rom-spectrum-name {
-  font-size: 12px;
-  fill: var(--ink);
-  font-family: inherit;
-}
-.rom-spectrum-name-mine {
-  font-weight: 700;
-}
+/* The retired canvas, axis overlay and one-dimension SVG have no styles here.
+   /rommet now uses ordinary document flow in rommet.css. */
 /* /kart visual position bars and /resultat Kjerneverdi-profil (2026-11-08) */
 .data-table {
   width: 100%;
@@ -1713,13 +1613,7 @@ tr.party-budget-open { background: var(--accent-soft); }
 .dim-mini-party { font-weight: 600; font-size: var(--fs-xs); }
 .dim-mini-pct { font-size: var(--fs-2xs); color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
 .party-record { margin: var(--sp-7) 0; }
-.rom-spectrum-scale {
-  font-size: 11px;
-  fill: var(--muted);
-  font-family: inherit;
-  font-variant-numeric: tabular-nums;
-}
-
+/* Legacy spectrum labels were removed with the WebGL page. */
 /* A person's voting record, under the name in the /personer table. Muted so it
    reads as a footnote to the roles, not as a second heading. */
 .vote-note { color: var(--muted); font-size: var(--fs-sm); line-height: 1.45; }

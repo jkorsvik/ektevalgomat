@@ -1,10 +1,6 @@
-/* /rommet.
-   Party colour is data here, never chrome, and each party stays inside the hue
-   family style.css's :root already assigns: red for Ap, Rødt and SV, blue for H
-   and FrP, green for Sp and MDG, teal for V, yellow for KrF. The nine values below
-   are the same nine that static/js/rom.js paints on the canvas, and
-   web/palette_guard_test.go fails if the two drift apart: a dot in the table that
-   is a different colour from the cloud it labels is a quiet lie. */
+/* /rommet: concrete statement comparisons, not a projection. Party colour is
+   data and stays on the party dots. Position and selection use neutral Civic
+   Ledger surfaces so colour never implies that one answer is better. */
 
 :root {
   --parti-ap: #d7263d;
@@ -16,135 +12,118 @@
   --parti-sp: #6b8e23;
   --parti-sv: #c1462f;
   --parti-v: #0f8f8a;
-
-  /* One neutral for the vote springs, so they read as structure and not as a
-     tenth party. */
-  --rom-spring: #8c8f99;
 }
 
-.rom-canvas-wrap {
+main.rom-comparison { max-width: 1120px; }
+.rom-hero { max-width: 850px; margin-bottom: var(--sp-8); }
+.rom-kicker {
+  margin: var(--sp-4) 0 var(--sp-2);
+  color: var(--accent-strong);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.rom-hero h1 { margin: 0 0 var(--sp-5); font-size: var(--fs-4xl); }
+.rom-lede { max-width: 48rem; color: var(--muted); font-size: var(--fs-2xl); line-height: 1.55; }
+
+.rom-finder {
   margin: var(--sp-8) 0 var(--sp-9);
-}
-
-#rommet-canvas {
-  width: 100%;
-  max-width: 960px;
-  height: auto;
-  aspect-ratio: 960 / 620;
-  display: block;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  padding: var(--sp-6);
+  border-top: 3px solid var(--accent);
   background: var(--surface);
-  touch-action: none;
-  cursor: grab;
 }
-
-#rommet-canvas:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 3px;
-}
-
-#rommet-canvas:active {
-  cursor: grabbing;
-}
-
-.rom-status {
-  font-size: var(--fs-md);
-  color: var(--muted);
-  margin: var(--sp-4) 0 0;
-}
-
-.rom-hint {
-  font-size: var(--fs-md);
-  margin: var(--sp-4) 0 0;
-}
-
-.rom-axis-list {
-  list-style: none;
-  padding: 0;
+.rom-finder-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.8fr); gap: var(--sp-5); align-items: end; }
+.rom-finder-heading .rom-kicker { grid-column: 1 / -1; margin-top: 0; margin-bottom: calc(-1 * var(--sp-3)); }
+.rom-finder-heading h2 { margin: 0; font-size: var(--fs-2xl); }
+.rom-finder-heading > p:last-child { margin: 0; color: var(--muted); font-size: var(--fs-md); }
+.rom-controls {
   display: grid;
-  gap: var(--sp-6);
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: minmax(12rem, 1.4fr) minmax(10rem, 1fr) minmax(10rem, 1fr) auto;
+  gap: var(--sp-4);
+  align-items: end;
+  margin-top: var(--sp-6);
 }
-
-.rom-axis {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: var(--sp-5) var(--sp-6);
-}
-
-.rom-axis h3 {
-  margin: 0 0 var(--sp-3);
-  font-size: var(--fs-lg);
-}
-
-.rom-axis-share {
-  font-weight: 400;
-  color: var(--muted);
-  margin-left: var(--sp-2);
-}
-
-.rom-axis-top {
-  margin: 0 0 var(--sp-3);
-  line-height: 1.6;
-}
-
-.rom-dim {
-  font-size: var(--fs-md);
-}
-
-.rom-load {
-  font-variant-numeric: tabular-nums;
-  color: var(--muted);
-}
-
-.rom-axis-uneven {
-  font-size: var(--fs-sm);
-  color: var(--muted);
-  margin: 0 0 var(--sp-3);
-}
-
-.rom-loads {
-  margin: var(--sp-2) 0 0;
-  padding-left: var(--sp-6);
-  font-size: var(--fs-md);
-}
-
-.rom-table {
+.rom-control { display: flex; flex-direction: column; gap: var(--sp-2); font-size: var(--fs-sm); font-weight: 600; }
+.rom-control select {
   width: 100%;
-  border-collapse: collapse;
-  font-size: var(--fs-md);
+  min-height: 48px;
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 400;
 }
-
-.rom-table caption {
-  text-align: left;
-  font-size: var(--fs-sm);
-  color: var(--muted);
-  padding-bottom: var(--sp-3);
-}
-
-.rom-table th,
-.rom-table td {
-  border-bottom: 1px solid var(--line);
-  padding: var(--sp-2) var(--sp-3);
-  text-align: left;
-  vertical-align: top;
-}
-
-.rom-num {
-  font-variant-numeric: tabular-nums;
+.rom-submit {
+  min-height: 48px;
+  padding: var(--sp-3) var(--sp-5);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
   white-space: nowrap;
 }
+.rom-submit:hover { border-color: var(--accent-strong); background: var(--accent-strong); }
+.rom-notice, .rom-reset { margin: var(--sp-4) 0 0; font-size: var(--fs-md); }
+.rom-notice { color: var(--accent-strong); }
 
-.rom-dot {
-  display: inline-block;
-  width: 0.7em;
-  height: 0.7em;
-  border-radius: 50%;
-  margin-right: var(--sp-2);
-  vertical-align: baseline;
+.rom-results { scroll-margin-top: var(--sp-6); }
+.rom-results-heading { display: flex; justify-content: space-between; align-items: end; gap: var(--sp-6); }
+.rom-results-heading .rom-kicker { margin-top: 0; }
+.rom-results-heading h2 { margin: 0; font-size: var(--fs-3xl); }
+.rom-summary { max-width: 25rem; margin: 0; color: var(--accent-strong); font-size: var(--fs-lg); font-weight: 600; line-height: 1.45; }
+.rom-sort-note { margin: var(--sp-3) 0 var(--sp-6); color: var(--muted); font-size: var(--fs-md); }
+.rom-statements { display: grid; gap: var(--sp-6); }
+.rom-statement { border: 1px solid var(--line); background: var(--card); }
+.rom-statement-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--sp-6);
+  align-items: start;
+  padding: var(--sp-6);
 }
+.rom-statement-meta { margin: 0 0 var(--sp-2); color: var(--muted); font-size: var(--fs-xs); }
+.rom-statement-head h3 { margin: 0 0 var(--sp-3); font-size: var(--fs-2xl); line-height: 1.25; }
+.rom-statement-head h3 a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+.rom-statement-text { max-width: 70ch; margin: 0; color: var(--muted); font-size: var(--fs-md); line-height: 1.6; }
+.rom-open { display: inline-flex; align-items: center; gap: var(--sp-2); min-height: 44px; white-space: nowrap; font-size: var(--fs-sm); font-weight: 600; }
+.rom-pair-gap { margin: 0; padding: var(--sp-3) var(--sp-6); border-top: 1px solid var(--line); background: var(--accent-soft); color: var(--accent-strong); font-size: var(--fs-sm); font-weight: 700; }
+.rom-positions { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+.rom-position { min-width: 0; padding: var(--sp-4); border-right: 1px solid var(--line); }
+.rom-position:last-child { border-right: 0; }
+.rom-position h4 { margin: 0 0 var(--sp-3); color: var(--muted); font-family: var(--sans); font-size: var(--fs-xs); font-weight: 700; line-height: 1.35; }
+.rom-position ul { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: 0; padding: 0; list-style: none; }
+.rom-party {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-height: 36px;
+  padding: var(--sp-1) var(--sp-2);
+  border: 1px solid transparent;
+  color: var(--ink);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  text-decoration: none;
+}
+.rom-party:hover { border-color: var(--line); background: var(--card); color: var(--ink); }
+.rom-party.is-selected { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 1px var(--accent); }
+.rom-empty { margin: 0; color: var(--muted); font-size: var(--fs-sm); font-weight: 400; }
+.rom-statement-foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--sp-2) var(--sp-5); padding: var(--sp-3) var(--sp-6); color: var(--muted); font-size: var(--fs-sm); }
+.rom-undocumented a { color: var(--muted); }
+.rom-all { display: flex; justify-content: space-between; align-items: center; min-height: 56px; margin-top: var(--sp-5); padding: var(--sp-4) var(--sp-5); border: 1px solid var(--accent); color: var(--accent-strong); font-size: var(--fs-lg); font-weight: 700; text-decoration: none; }
+.rom-all:hover { background: var(--accent-soft); }
+.rom-no-results { padding: var(--sp-7); border: 1px solid var(--line); background: var(--surface); }
+.rom-no-results h3 { margin-top: 0; }
+.rom-method { margin: var(--sp-9) 0 var(--sp-6); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.rom-method summary { min-height: 52px; padding: var(--sp-4) 0; font-weight: 700; cursor: pointer; }
+.rom-method-body { max-width: 760px; padding-bottom: var(--sp-5); color: var(--muted); }
+.rom-method-body .explore-contract { margin-top: var(--sp-6); }
 
+.rom-dot { display: inline-block; flex: 0 0 auto; width: 0.7em; height: 0.7em; border-radius: 50%; }
 .rom-dot-ap { background: var(--parti-ap); }
 .rom-dot-frp { background: var(--parti-frp); }
 .rom-dot-h { background: var(--parti-h); }
@@ -154,3 +133,33 @@
 .rom-dot-sp { background: var(--parti-sp); }
 .rom-dot-sv { background: var(--parti-sv); }
 .rom-dot-v { background: var(--parti-v); }
+
+@media (max-width: 960px) {
+  .rom-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rom-submit { width: 100%; }
+}
+
+@media (max-width: 760px) {
+  .rom-finder { padding: var(--sp-5); }
+  .rom-finder-heading { grid-template-columns: 1fr; gap: var(--sp-3); }
+  .rom-results-heading { align-items: start; flex-direction: column; gap: var(--sp-3); }
+  .rom-summary { max-width: none; }
+  .rom-statement-head { grid-template-columns: 1fr; gap: var(--sp-2); padding: var(--sp-5); }
+  .rom-positions { grid-template-columns: 1fr; }
+  .rom-position { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--sp-3); align-items: start; border-right: 0; border-bottom: 1px solid var(--line); }
+  .rom-party { min-height: 44px; }
+  .rom-position:last-child { border-bottom: 0; }
+  .rom-position h4 { margin: var(--sp-2) 0 0; }
+  .rom-statement-foot { padding-inline: var(--sp-5); }
+}
+
+@media (max-width: 520px) {
+  .rom-hero h1 { font-size: var(--fs-3xl); }
+  .rom-lede { font-size: var(--fs-lg); }
+  .rom-controls { grid-template-columns: 1fr; }
+  .rom-finder { margin-inline: calc(-1 * var(--sp-3)); }
+  .rom-results-heading h2 { font-size: var(--fs-2xl); }
+  .rom-statement-head h3 { font-size: var(--fs-xl); }
+  .rom-position { grid-template-columns: 6.5rem minmax(0, 1fr); padding-inline: var(--sp-3); }
+  .rom-pair-gap { padding-inline: var(--sp-5); }
+}

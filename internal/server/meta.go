@@ -81,7 +81,7 @@ type navLink struct {
 
 // navLinks is the single definition of the site's navigation, and every page that a
 // reader is meant to reach appears here. Before 2026-10-30 eight pages — Kartet,
-// Stemmemønster, År for år, Rommet, Makt, Penger, Eierskap and Data — were reachable
+// Stemmemønster, År for år, Uenigheter, Makt, Penger, Eierskap and Data — were reachable
 // only from one line of small footer links, so the most substantial work on the site
 // was invisible from the top of every page. A test walks the route table and fails if
 // a page is missing here.
@@ -93,7 +93,7 @@ var navLinks = []navLink{
 	// directly available in the menu, grouped by the question they answer.
 	{"/utforsk", "Utforsk", "explore"},
 	{"/kart", "Kartet", "explore"},
-	{"/rommet", "Rommet", "explore"},
+	{"/rommet", "Uenigheter", "explore"},
 	{"/stemmer", "Stemmemønster", "explore"},
 	{"/tidslinje", "År for år", "explore"},
 	{"/personer", "Personer", "explore"},

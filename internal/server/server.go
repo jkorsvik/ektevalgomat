@@ -738,17 +738,37 @@ func New(logger *slog.Logger) http.Handler {
 		}
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		page := buildStatementPage(ds, *found)
-		// A result opened from the statement finder carries only the two
-		// read-only filter parameters. Return to that exact list, not to a
-		// different query or to an external URL supplied by the request.
+		// Return only to a known read-only view with an allowlisted query.
+		// Arbitrary return URLs and unrelated request parameters never survive.
 		returnQuery := url.Values{}
-		for _, key := range []string{"q", "tema"} {
-			if value := r.URL.Query().Get(key); value != "" {
-				returnQuery.Set(key, value)
+		if r.URL.Query().Get("fra") == "rommet" {
+			if value := r.URL.Query().Get("tema"); value != "" {
+				returnQuery.Set("tema", value)
 			}
-		}
-		if len(returnQuery) > 0 {
-			page.ExploreTopicHref = "/utforsk?" + returnQuery.Encode() + "#saker"
+			for _, key := range []string{"a", "b"} {
+				if value := r.URL.Query().Get(key); value != "" {
+					if _, ok := ds.Party(value); ok {
+						returnQuery.Set(key, value)
+					}
+				}
+			}
+			if r.URL.Query().Get("alle") == "1" {
+				returnQuery.Set("alle", "1")
+			}
+			page.ExploreTopicHref = "/rommet#saker"
+			page.ExploreReturnLabel = "Til uenighetene"
+			if len(returnQuery) > 0 {
+				page.ExploreTopicHref = "/rommet?" + returnQuery.Encode() + "#saker"
+			}
+		} else {
+			for _, key := range []string{"q", "tema"} {
+				if value := r.URL.Query().Get(key); value != "" {
+					returnQuery.Set(key, value)
+				}
+			}
+			if len(returnQuery) > 0 {
+				page.ExploreTopicHref = "/utforsk?" + returnQuery.Encode() + "#saker"
+			}
 		}
 		if err := statementTmpl.Execute(w, page); err != nil {
 			logger.Error("render statement", "err", err, "number", n)
@@ -854,11 +874,11 @@ func New(logger *slog.Logger) http.Handler {
 		}
 	})
 
-	// The twelve dimensions projected onto three axes, computed per request so the
-	// picture cannot drift from the data it claims to show.
+	// Concrete statement comparisons. Topic and party-pair filters are ordinary
+	// GET parameters, so the full reader journey also works without JavaScript.
 	mux.HandleFunc("GET /rommet", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		if err := rommetTmpl.Execute(w, buildSpaceView(ds)); err != nil {
+		if err := rommetTmpl.Execute(w, buildRommetView(ds, r.URL.Query())); err != nil {
 			logger.Error("render rommet", "err", err)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}

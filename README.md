@@ -82,7 +82,9 @@ changes evidence.
 `/healthz` returns 200 once the server is up. `/utforsk` is the question-led
 index: a server-rendered search and topic filter over all statements, plus the
 nine analysis pages grouped by reader question. It works without JavaScript.
-`/utsagn/{number}` renders the evidence-chain page for each statement. `/om` explains why this
+`/rommet` is labelled **Uenigheter**: concrete statements with topic and party-pair
+filters, plain-language position groups and direct evidence links. It also works
+without JavaScript. `/utsagn/{number}` renders the evidence-chain page for each statement. `/om` explains why this
 exists, `/metode` explains the methodology (source tiers, attribution),
 `/personvern` is the privacy page. `/data` lists the whole dataset and
 links it as files: `/data/utsagn.json`, `/data/evidens.json` and

@@ -1,283 +1,341 @@
 package server
 
 import (
-	"encoding/json"
-	"html/template"
+	"fmt"
 	"math"
+	"net/url"
+	"sort"
 	"strconv"
 	"strings"
 
 	"github.com/jkorsvik/ektevalgomat/internal/data"
-	"github.com/jkorsvik/ektevalgomat/internal/space"
+	"github.com/jkorsvik/ektevalgomat/internal/scoring"
 )
 
-// The space view: the twelve dimensions projected onto three axes, so a party is a
-// volume instead of a dot on a line.
-//
-// Why this page exists beside /kart: the map answers one question at a time, one
-// number per cell. That makes every cell look equally certain and hides that the
-// dimensions are not on a common scale at all — "Teknologisk kapasitet" varies 9.6
-// times as much as "Norsk handlefrihet" across the nine parties. Projected raw, the
-// first axis would be that dimension and the page would name the master axis of
-// Norwegian politics after a measurement artefact.
-//
-// So the projection standardises, and the page says so, prints the share of the
-// variation the three axes keep, and prints the spread that each party's cloud is
-// drawn from. A reader must be able to see the 17 % that is off-screen.
+// /rommet used to project twelve dimensions into a rotating three-dimensional
+// space. The geometry was correct, but it made readers interpret a statistical
+// model before they could answer a practical question. The page now compares
+// concrete statements instead. No averaging, projection, canvas or JavaScript:
+// every visible position is scoring.ComputeCell's newest coded evidence row.
 
-type spaceDimensionView struct {
-	Name       string
-	Statements int
-	Coded      int
-	Variance   string // already formatted, so the table cannot print a dot
+type romTopic struct {
+	Name   string
+	Slug   string
+	Active bool
 }
 
-type spacePartyView struct {
-	ID      string
-	Name    string
-	Short   string
-	Centre  string // formatted coordinates, for the accessible table
-	Spread  string
-	Answers int
+type romPartyOption struct {
+	ID        string
+	Short     string
+	Name      string
+	SelectedA bool
+	SelectedB bool
 }
 
-// spaceWeightView is a loading already formatted for a Norwegian reader: comma
-// decimals and a typographic minus. Formatting it in the template turned the
-// separators into their own flex items and printed "0.37" on a Norwegian page.
-type spaceWeightView struct {
-	Dimension string
-	Loading   string
+type romPartyChip struct {
+	ID        string
+	Short     string
+	Name      string
+	Href      string
+	AriaLabel string
+	Selected  bool
 }
 
-type spaceAxisView struct {
-	Number  string
-	Percent string
-	TopText string            // heaviest three, already joined for one text flow
-	Rest    []spaceWeightView // the remainder, kept available but not shouted
+type romPositionGroup struct {
+	Label   string
+	Parties []romPartyChip
 }
 
-type spaceView struct {
+type romStatement struct {
+	Number       int
+	ShortName    string
+	Text         string
+	Dimension    string
+	Href         string
+	Coded        int
+	Total        int
+	Groups       []romPositionGroup
+	Undocumented []romPartyChip
+	PairGap      string
+}
+
+type rommetView struct {
 	Meta         pageMeta
 	SnapshotDate string
-	Explained    string // share kept by three axes, one decimal
-	Rest         string // 100 minus Explained, so the page cannot round it away
-	Axes         []spaceAxisView
-	Parties      []spacePartyView
-	Dimensions   []spaceDimensionView
-	Springs      int
-	Busiest      int
-	Closest      string
-	ClosestPair  string
-	// SpreadLo and SpreadHi are the smallest and largest measured spread, so the
-	// page can say how much of the shape is size. Measured, never typed.
-	SpreadLo    string
-	SpreadHi    string
-	PayloadJSON template.JS
+	Topics       []romTopic
+	Parties      []romPartyOption
+	Statements   []romStatement
+	TopicName    string
+	PartyAName   string
+	PartyBName   string
+	Comparing    bool
+	Filtered     bool
+	ShowAll      bool
+	AllHref      string
+	Summary      string
+	Notice       string
+	TotalMatches int
 }
 
-// decimal formats a share of 1 as a percentage with one decimal and a Norwegian
-// comma, so the page never mixes "82.6" and "82,6".
-func decimal(share float64) string {
-	s := strconv.FormatFloat(share*100, 'f', 1, 64)
-	return strings.Replace(s, ".", ",", -1)
+type romCandidate struct {
+	view     romStatement
+	spread   int
+	variance float64
+	pairGap  int
 }
 
-// comma formats with a Norwegian decimal comma and a typographic minus sign.
-func comma(v float64, dp int) string {
-	s := strconv.FormatFloat(v, 'f', dp, 64)
-	s = strings.Replace(s, ".", ",", -1)
-	return strings.Replace(s, "-", "\u2212", 1)
+var romPositionLabels = []struct {
+	value int
+	label string
+}{
+	{-2, "Sterkt mot"},
+	{-1, "Mot"},
+	{0, "Nøytral / delt"},
+	{1, "For"},
+	{2, "Sterkt for"},
 }
 
-func signedDecimal(v float64) string {
-	s := strconv.FormatFloat(v, 'f', 2, 64)
-	s = strings.Replace(s, ".", ",", -1)
-	return s
-}
-
-// spacePayload is the geometry the canvas draws, with dimension names replaced by
-// their index. The names appear once in Dims instead of once per point, which
-// keeps the inlined payload about a tenth of its naive size.
-type spacePayload struct {
-	Explained float64     `json:"explained"`
-	Axes      []axisOut   `json:"axes"`
-	Dims      []dimOut    `json:"dims"`
-	Clouds    []cloudOut  `json:"clouds"`
-	Springs   []springOut `json:"springs"`
-}
-
-type axisOut struct {
-	Variance float64   `json:"variance"`
-	Loadings []float64 `json:"loadings"` // aligned with Dims
-}
-
-type dimOut struct {
-	Name       string  `json:"name"`
-	Statements int     `json:"statements"`
-	Coded      int     `json:"coded"`
-	Variance   float64 `json:"variance"`
-}
-
-type cloudOut struct {
-	ID      string                `json:"id"`
-	Short   string                `json:"short"`   // the name the reader sees, from Party.Short
-	Answers int                   `json:"answers"` // coded cells the centre rests on
-	Centre  [space.Axes]float64   `json:"centre"`
-	Spread  float64               `json:"spread"`
-	Points  [][space.Axes]float64 `json:"points"` // aligned with Dims
-	// Scores is the party's standardised position on each dimension, aligned with
-	// Dims. It is not the projection: it is the dimension itself, which is what the
-	// spectrum strip draws. The three axes keep 83 % of the variation and mix the
-	// rest, so reading a one-question spectrum off the projection would be reading
-	// a mixture.
-	Scores []float64 `json:"scores"`
-}
-
-type springOut struct {
-	A          string  `json:"a"`
-	B          string  `json:"b"`
-	Agreement  float64 `json:"agreement"`
-	Comparable int     `json:"comparable"`
-}
-
-func buildSpaceView(ds *data.Dataset) spaceView {
-	sp := space.Project(ds)
-
-	dimIndex := map[string]int{}
-	for j, d := range sp.Dimensions {
-		dimIndex[d.Name] = j
+func buildRommetView(ds *data.Dataset, query url.Values) rommetView {
+	topic := strings.TrimSpace(query.Get("tema"))
+	showAll := query.Get("alle") == "1"
+	partyA, partyB := query.Get("a"), query.Get("b")
+	partyByID := map[string]data.Party{}
+	for _, party := range ds.Parties {
+		partyByID[party.ID] = party
 	}
+	if _, ok := partyByID[partyA]; !ok {
+		partyA = ""
+	}
+	if _, ok := partyByID[partyB]; !ok {
+		partyB = ""
+	}
+	notice := ""
+	if partyA != "" && partyA == partyB {
+		partyB = ""
+		notice = "Velg to ulike partier for å sammenligne dem."
+	}
+	comparing := partyA != "" && partyB != ""
 
-	axes := make([]spaceAxisView, 0, len(sp.Axes))
-	axesOut := make([]axisOut, 0, len(sp.Axes))
-	for i, a := range sp.Axes {
-		top := a.Loadings
-		if len(top) > 3 {
-			top = top[:3]
-		}
-		var parts []string
-		for _, w := range top {
-			parts = append(parts, w.Dimension+" "+comma(w.Loading, 2))
-		}
-		rest := make([]spaceWeightView, 0, len(a.Loadings)-len(top))
-		for _, w := range a.Loadings[len(top):] {
-			rest = append(rest, spaceWeightView{Dimension: w.Dimension, Loading: comma(w.Loading, 2)})
-		}
-		axes = append(axes, spaceAxisView{
-			Number:  strconv.Itoa(i + 1),
-			Percent: decimal(a.Variance),
-			TopText: strings.Join(parts, " \u00b7 "),
-			Rest:    rest,
-		})
-		loadings := make([]float64, len(sp.Dimensions))
-		for _, w := range a.Loadings {
-			loadings[dimIndex[w.Dimension]] = w.Loading
-		}
-		axesOut = append(axesOut, axisOut{Variance: a.Variance, Loadings: loadings})
-	}
-
-	dimsView := make([]spaceDimensionView, 0, len(sp.Dimensions))
-	for _, d := range sp.Dimensions {
-		dimsView = append(dimsView, spaceDimensionView{
-			Name: d.Name, Statements: d.Statements, Coded: d.Coded, Variance: comma(d.Variance, 2),
-		})
-	}
-	dimsOut := make([]dimOut, 0, len(sp.Dimensions))
-	for _, d := range sp.Dimensions {
-		dimsOut = append(dimsOut, dimOut{
-			Name: d.Name, Statements: d.Statements, Coded: d.Coded, Variance: d.Variance,
-		})
-	}
-
-	byID := map[string]data.Party{}
-	for _, p := range ds.Parties {
-		byID[p.ID] = p
-	}
-
-	spreadLo, spreadHi := math.Inf(1), 0.0
-	parties := make([]spacePartyView, 0, len(sp.Clouds))
-	cloudsOut := make([]cloudOut, 0, len(sp.Clouds))
-	busiest := 0
-	var closest, closestPair string
-	maxAg := -1.0
-	for ci, c := range sp.Clouds {
-		p := byID[c.PartyID]
-		pts := make([][space.Axes]float64, len(c.Points))
-		for j, pt := range c.Points {
-			pts[j] = pt.Offset
-		}
-		short := c.PartyID
-		if p.Short != "" {
-			short = p.Short
-		}
-		var scores []float64
-		if ci < len(sp.Scores) {
-			scores = sp.Scores[ci]
-		}
-		cloudsOut = append(cloudsOut, cloudOut{
-			ID: c.PartyID, Short: short, Answers: c.Answers,
-			Centre: c.Centre, Spread: c.Spread, Points: pts, Scores: scores,
-		})
-		if c.Spread < spreadLo {
-			spreadLo = c.Spread
-		}
-		if c.Spread > spreadHi {
-			spreadHi = c.Spread
-		}
-		parties = append(parties, spacePartyView{
-			ID:      c.PartyID,
-			Name:    p.Name,
-			Short:   p.Short,
-			Centre:  signedDecimal(c.Centre[0]) + " · " + signedDecimal(c.Centre[1]) + " · " + signedDecimal(c.Centre[2]),
-			Spread:  signedDecimal(c.Spread),
-			Answers: c.Answers,
-		})
-	}
-	springsOut := make([]springOut, 0, len(sp.Springs))
-	for _, s := range sp.Springs {
-		springsOut = append(springsOut, springOut{
-			A: s.A, B: s.B, Agreement: s.Agreement, Comparable: s.Comparable,
-		})
-		if s.Comparable > busiest {
-			busiest = s.Comparable
-		}
-		if s.Agreement > maxAg {
-			maxAg = s.Agreement
-			closest = decimal(s.Agreement) + " %"
-			closestPair = strings.ToUpper(s.A) + "–" + strings.ToUpper(s.B)
-		}
-	}
-
-	payload := spacePayload{
-		Explained: sp.Explained,
-		Axes:      axesOut,
-		Dims:      dimsOut,
-		Clouds:    cloudsOut,
-		Springs:   springsOut,
-	}
-	b, err := json.Marshal(payload)
-	if err != nil {
-		// The payload is built from committed data with no interface values, so a
-		// failure here is a build defect, not a runtime condition.
-		panic("server: marshaling space payload: " + err.Error())
-	}
-
-	return spaceView{
-		Meta: meta("Rommet · Ekte valgomat",
-			"Tolv politiske dimensjoner projisert ned til tre akser, så hvert parti blir et volum og ikke et punkt. "+
-				"Siden viser hvor mye av variasjonen aksene beholder, og hva som faller utenfor.", "/rommet"),
+	view := rommetView{
+		Meta: meta("Uenigheter · Ekte valgomat",
+			"Se konkrete saker der partiene har ulike dokumenterte posisjoner. Filtrer på tema eller sammenlign to partier, og åpne kildene bak hvert svar.",
+			"/rommet"),
 		SnapshotDate: SnapshotDate,
-		Explained:    decimal(sp.Explained),
-		Rest:         decimal(1 - sp.Explained),
-		Axes:         axes,
-		Parties:      parties,
-		Dimensions:   dimsView,
-		Springs:      len(sp.Springs),
-		Busiest:      busiest,
-		Closest:      closest,
-		ClosestPair:  closestPair,
-		SpreadLo:     signedDecimal(spreadLo),
-		SpreadHi:     signedDecimal(spreadHi),
-		PayloadJSON:  template.JS(b), //nolint:gosec // our own generated JSON, never user input
+		TopicName:    "Ukjent tema",
+		Comparing:    comparing,
+		Filtered:     topic != "" || comparing || showAll,
+		ShowAll:      showAll,
+		AllHref:      "/rommet?alle=1#saker",
+		Notice:       notice,
+	}
+	if comparing {
+		view.PartyAName = shortPartyName(partyByID[partyA])
+		view.PartyBName = shortPartyName(partyByID[partyB])
+	}
+
+	for _, party := range ds.Parties {
+		view.Parties = append(view.Parties, romPartyOption{
+			ID: party.ID, Short: shortPartyName(party), Name: party.Name,
+			SelectedA: party.ID == partyA, SelectedB: party.ID == partyB,
+		})
+	}
+
+	for _, dimension := range orderedRomTopics(ds) {
+		slug := slugify(dimension)
+		active := slug == topic
+		if active {
+			view.TopicName = dimension
+		}
+		view.Topics = append(view.Topics, romTopic{Name: dimension, Slug: slug, Active: active})
+	}
+	if topic == "" {
+		view.TopicName = ""
+	}
+
+	candidates := make([]romCandidate, 0, len(ds.Statements))
+	for _, statement := range ds.Statements {
+		if topic != "" && slugify(statement.Dimension) != topic {
+			continue
+		}
+
+		returnQuery := url.Values{"fra": []string{"rommet"}}
+		if topic != "" {
+			returnQuery.Set("tema", topic)
+		}
+		if comparing {
+			returnQuery.Set("a", partyA)
+			returnQuery.Set("b", partyB)
+		}
+		if showAll {
+			returnQuery.Set("alle", "1")
+		}
+		statementHref := "/utsagn/" + strconv.Itoa(statement.Number) + "?" + returnQuery.Encode()
+
+		positions := map[string]*int{}
+		groups := map[int][]romPartyChip{}
+		var undocumented []romPartyChip
+		coded := 0
+		lo, hi := 0, 0
+		var values []float64
+		for _, party := range ds.Parties {
+			cell := scoring.ComputeCell(ds, statement.ID, party.ID)
+			chip := romPartyChip{
+				ID: party.ID, Short: shortPartyName(party), Name: party.Name,
+				Href:     statementHref + "#party-" + party.ID,
+				Selected: comparing && (party.ID == partyA || party.ID == partyB),
+			}
+			if cell.PartyPosition == nil {
+				chip.AriaLabel = party.Name + ": ikke vurdert. Se saken."
+				undocumented = append(undocumented, chip)
+				continue
+			}
+			position := *cell.PartyPosition
+			positions[party.ID] = cell.PartyPosition
+			chip.AriaLabel = fmt.Sprintf("%s: %s. Se kilden for %s.",
+				party.Name, strings.ToLower(scoring.PositionWord(cell.PartyPosition)), statement.ShortName)
+			groups[position] = append(groups[position], chip)
+			values = append(values, float64(position))
+			if coded == 0 || position < lo {
+				lo = position
+			}
+			if coded == 0 || position > hi {
+				hi = position
+			}
+			coded++
+		}
+		spread := hi - lo
+		if coded < 2 || spread == 0 {
+			continue
+		}
+
+		pairGap := 0
+		if comparing {
+			a, b := positions[partyA], positions[partyB]
+			if a == nil || b == nil || *a == *b {
+				continue
+			}
+			pairGap = *a - *b
+			if pairGap < 0 {
+				pairGap = -pairGap
+			}
+		}
+
+		item := romStatement{
+			Number: statement.Number, ShortName: statement.ShortName, Text: statement.Text,
+			Dimension: statement.Dimension,
+			Href:      statementHref,
+			Coded:     coded, Total: len(ds.Parties), Undocumented: undocumented,
+		}
+		for _, definition := range romPositionLabels {
+			item.Groups = append(item.Groups, romPositionGroup{
+				Label: definition.label, Parties: groups[definition.value],
+			})
+		}
+		if comparing {
+			item.PairGap = fmt.Sprintf("%d steg mellom %s og %s", pairGap, view.PartyAName, view.PartyBName)
+		}
+		candidates = append(candidates, romCandidate{
+			view: item, spread: spread, variance: romVariance(values), pairGap: pairGap,
+		})
+	}
+
+	sort.SliceStable(candidates, func(i, j int) bool {
+		a, b := candidates[i], candidates[j]
+		if comparing && a.pairGap != b.pairGap {
+			return a.pairGap > b.pairGap
+		}
+		if a.spread != b.spread {
+			return a.spread > b.spread
+		}
+		if math.Abs(a.variance-b.variance) > 1e-12 {
+			return a.variance > b.variance
+		}
+		if a.view.Coded != b.view.Coded {
+			return a.view.Coded > b.view.Coded
+		}
+		return a.view.Number < b.view.Number
+	})
+
+	view.TotalMatches = len(candidates)
+	if !view.Filtered && len(candidates) > 6 {
+		candidates = candidates[:6]
+	}
+	for _, candidate := range candidates {
+		view.Statements = append(view.Statements, candidate.view)
+	}
+	view.Summary = romResultSummary(view, len(candidates))
+	return view
+}
+
+func orderedRomTopics(ds *data.Dataset) []string {
+	counts := map[string]int{}
+	for _, statement := range ds.Statements {
+		counts[statement.Dimension]++
+	}
+	ordered := append([]string{}, dimensionOrder...)
+	seen := map[string]bool{}
+	for _, dimension := range ordered {
+		seen[dimension] = true
+	}
+	for _, statement := range ds.Statements {
+		if !seen[statement.Dimension] {
+			seen[statement.Dimension] = true
+			ordered = append(ordered, statement.Dimension)
+		}
+	}
+	out := ordered[:0]
+	for _, dimension := range ordered {
+		if counts[dimension] > 0 {
+			out = append(out, dimension)
+		}
+	}
+	return out
+}
+
+func shortPartyName(party data.Party) string {
+	if party.Short != "" {
+		return party.Short
+	}
+	return strings.ToUpper(party.ID)
+}
+
+func romVariance(values []float64) float64 {
+	if len(values) == 0 {
+		return 0
+	}
+	mean := 0.0
+	for _, value := range values {
+		mean += value
+	}
+	mean /= float64(len(values))
+	variance := 0.0
+	for _, value := range values {
+		variance += (value - mean) * (value - mean)
+	}
+	return variance / float64(len(values))
+}
+
+func romResultSummary(view rommetView, shown int) string {
+	if view.TotalMatches == 0 {
+		if view.Comparing {
+			return fmt.Sprintf("%s og %s har ingen dokumenterte uenigheter i dette utvalget.", view.PartyAName, view.PartyBName)
+		}
+		return "Ingen saker med ulike dokumenterte posisjoner passer til dette valget."
+	}
+	noun := "saker"
+	if view.TotalMatches == 1 {
+		noun = "sak"
+	}
+	switch {
+	case view.Comparing && view.TopicName != "":
+		return fmt.Sprintf("%s og %s er uenige i %d %s innen %s.", view.PartyAName, view.PartyBName, view.TotalMatches, noun, view.TopicName)
+	case view.Comparing:
+		return fmt.Sprintf("%s og %s er uenige i %d %s.", view.PartyAName, view.PartyBName, view.TotalMatches, noun)
+	case view.TopicName != "":
+		return fmt.Sprintf("%d %s med ulike posisjoner innen %s.", view.TotalMatches, noun, view.TopicName)
+	case view.ShowAll:
+		return fmt.Sprintf("%d %s der partiene har ulike dokumenterte posisjoner.", view.TotalMatches, noun)
+	default:
+		return fmt.Sprintf("De %d sakene med størst uenighet, av %d mulige.", shown, view.TotalMatches)
 	}
 }

@@ -11,12 +11,12 @@
 {{template "header" .}}
 
 {{/* Sticky mini-header: keeps the statement and its topic visible after the
-     hero. "Alle saker" returns to the filtered hub when the reader arrived
-     from a search. "Til valgomaten" still lands on this exact statement's
-     quiz card through the #utsagn-N fragment handled by quiz.js. */}}
+     hero. The first link returns to the exact finder or party comparison the
+     reader came from. "Til valgomaten" lands on this statement's quiz card
+     through the #utsagn-N fragment handled by quiz.js. */}}
 <nav class="sticky-context" aria-label="Utsagn og oversikter">
   <span class="sticky-context-links">
-    <a href="{{.ExploreTopicHref}}"><span aria-hidden="true">←</span> Alle saker</a>
+    <a href="{{.ExploreTopicHref}}"><span aria-hidden="true">←</span> {{.ExploreReturnLabel}}</a>
     <a href="/#utsagn-{{.Statement.Number}}">Til valgomaten</a>
   </span>
   <span>{{.Statement.Dimension}} · utsagn {{.Statement.Number}}</span>

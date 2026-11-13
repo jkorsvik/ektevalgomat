@@ -101,6 +101,7 @@ type statementPage struct {
 	Statement             data.Statement
 	SnapshotDate          string
 	ExploreTopicHref      string
+	ExploreReturnLabel    string
 	Previous              *statementNeighbour
 	Next                  *statementNeighbour
 	TotalParties          int
@@ -216,6 +217,7 @@ func buildStatementPage(ds *data.Dataset, statement data.Statement) statementPag
 
 	page := statementPage{Meta: statementMeta(statement), Statement: statement, SnapshotDate: SnapshotDate, TotalParties: len(ds.Parties)}
 	page.ExploreTopicHref = "/utforsk?tema=" + url.QueryEscape(slugify(statement.Dimension)) + "#saker"
+	page.ExploreReturnLabel = "Alle saker"
 	for i, candidate := range ds.Statements {
 		if candidate.ID != statement.ID {
 			continue

@@ -11,177 +11,130 @@
 
 {{template "header" .}}
 
-<main>
-  <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
-
-  <h1>Rommet</h1>
-
-  {{template "explore-contract" (explore "/rommet")}}
-
-  <p class="prose-lede">
-    Tolv dimensjoner kan ikke vises som én linje, og de er ikke en linje heller.
-    Her er de projisert ned til tre akser, så hvert parti blir et volum i stedet
-    for et punkt. De tre aksene beholder <strong>{{.Explained}} prosent</strong>
-    av variasjonen. De siste <strong>{{.Rest}} prosent</strong> er ikke på skjermen,
-    og det står her fordi en projeksjon som skjuler tapet sitt lyver uten å si det.
-  </p>
-
-  <p class="prose-note">
-    Dimensjonene er standardisert før projeksjonen. Uten det ville første akse
-    blitt «Teknologisk kapasitet», rett og slett fordi den dimensjonen har tre
-    ganske ekstreme utsagn og dermed større spredning enn de andre. Da ville
-    bildet vist hvilken dimensjon som har mest ekstreme vedtak, ikke hvordan
-    partiene skiller seg.
-  </p>
-
-  {{if .Axes}}
-  <section class="rom-axis-section">
-    <h2>Hva aksene består av</h2>
-    <ol class="rom-axis-list">
-      {{range .Axes}}
-      <li class="rom-axis">
-        <h3>Akse {{.Number}} <span class="rom-axis-share">{{.Percent}} %</span></h3>
-        <p class="rom-axis-top">{{.TopText}}</p>
-        <p class="rom-axis-uneven">
-          Ingen enkeltdimensjon bærer aksen alene. Det er poenget: det finnes
-          ingen enkelt akse i norsk politikk som de andre bare er varianter av.
-        </p>
-        {{if .Rest}}
-        <details>
-          <summary>Alle tolv vektene på denne aksen</summary>
-          <ul class="rom-loads">
-            {{range .Rest}}<li>{{.Dimension}} <span class="rom-load">{{.Loading}}</span></li>{{end}}
-          </ul>
-        </details>
-        {{end}}
-      </li>
-      {{end}}
-    </ol>
-  </section>
-  {{end}}
-
-  <section class="rom-canvas-wrap">
-    <h2>Partiene som volum</h2>
-    <p class="prose-note">
-      Hver sky er partiets egne tolv dimensjonsbidrag, tegnet rundt der partiet
-      faktisk ligger. Formen viser hvilke dimensjoner som drar partiet hvor.
-      Størrelsen er målt spredning, ikke pynt: skyden er omtrent like stor for
-      alle partiene ({{.SpreadLo}} til {{.SpreadHi}}), så det er retningen som
-      betyr noe, ikke omfanget.
+<main class="rom-comparison">
+  <header class="rom-hero">
+    <span class="snapshot-badge">Kilder til og med {{.SnapshotDate}}</span>
+    <p class="rom-kicker">Sammenlign posisjoner</p>
+    <h1>Hva skiller partiene?</h1>
+    <p class="rom-lede">
+      Se konkrete saker der partiene har svart ulikt. Velg et tema eller to
+      partier. Hvert navn tar deg til begrunnelsen og kilden for akkurat det svaret.
     </p>
-    <div class="rom-canvas-box">
-    <canvas id="rommet-canvas" width="960" height="620" role="img"
-            aria-label="Tredimensjonal visning av partienes posisjoner. Tabellen under har de samme tallene.">
-      Nettleseren din viser ikke denne tegningen. Tabellen under har de samme tallene.
-    </canvas>
-    <div id="rommet-axes" class="rom-axes" aria-hidden="true"></div>
+  </header>
+
+  <section class="rom-finder" aria-labelledby="rom-finder-title">
+    <div class="rom-finder-heading">
+      <p class="rom-kicker">Finn en reell uenighet</p>
+      <h2 id="rom-finder-title">Hva vil du sammenligne?</h2>
+      <p>Uten valg viser vi seks saker med tydelig uenighet. Med to partier viser vi bare sakene der de er uenige.</p>
     </div>
-    <p id="rommet-status" class="rom-status" aria-live="polite">
-      Tegningen trenger WebGL. Tallene under er de samme.
-    </p>
-    <p class="rom-hint">
-      Dra for å rotere. Partiene er bundet sammen av hvor ofte de stemte likt i
-      Stortinget: {{.Springs}} par, og det nærmeste paret ({{.ClosestPair}})
-      stemte likt i {{.Closest}} av sakene der begge tok stilling, over
-      {{.Busiest}} avstemninger. Det finnes ingen perfekte allierte.
-    </p>
-
-    <div class="rom-controls">
-      <label class="rom-control">
-        <span>Framhev én dimensjon</span>
-        <select id="rommet-dim">
-          <option value="-1">Ingen, vis hele rommet</option>
-          {{range $i, $d := .Dimensions}}<option value="{{$i}}">{{$d.Name}}</option>{{end}}
+    <form class="rom-controls" action="/rommet#saker" method="get">
+      <label class="rom-control rom-control-topic">
+        <span>Tema</span>
+        <select id="rom-topic" name="tema">
+          <option value="">Alle temaer</option>
+          {{range .Topics}}<option value="{{.Slug}}"{{if .Active}} selected{{end}}>{{.Name}}</option>{{end}}
         </select>
       </label>
-      <label class="rom-control rom-check">
-        <input type="checkbox" id="rommet-springs" checked>
-        <span>Vis stemmebånd</span>
+      <label class="rom-control">
+        <span>Første parti</span>
+        <select id="rom-party-a" name="a">
+          <option value="">Velg parti</option>
+          {{range .Parties}}<option value="{{.ID}}"{{if .SelectedA}} selected{{end}}>{{.Name}}</option>{{end}}
+        </select>
       </label>
       <label class="rom-control">
-        <span>Avstand</span>
-        <input type="range" id="rommet-zoom" min="14" max="46" value="24">
+        <span>Andre parti</span>
+        <select id="rom-party-b" name="b">
+          <option value="">Velg parti</option>
+          {{range .Parties}}<option value="{{.ID}}"{{if .SelectedB}} selected{{end}}>{{.Name}}</option>{{end}}
+        </select>
       </label>
+      <button class="rom-submit" type="submit">Vis uenigheter</button>
+    </form>
+    {{if .Notice}}<p class="rom-notice" role="alert">{{.Notice}}</p>{{end}}
+    {{if .Filtered}}<p class="rom-reset"><a href="/rommet">Nullstill valgene</a></p>{{end}}
+  </section>
+
+  <section class="rom-results" id="saker" aria-labelledby="rom-results-title">
+    <div class="rom-results-heading">
+      <div>
+        <p class="rom-kicker">Utsagn for utsagn</p>
+        <h2 id="rom-results-title">Her går partiene i ulike retninger</h2>
+      </div>
+      <p class="rom-summary" role="status">{{.Summary}}</p>
     </div>
+    <p class="rom-sort-note">Rekkefølgen måler avstanden mellom svarene, ikke hvor viktig saken er.</p>
 
-    <section class="rom-spectrum-wrap">
-      <h3>Spekteret på én dimensjon</h3>
-      <p id="rommet-spectrum-note" class="prose-note">
-        Velg en dimensjon over, og partiene stilles opp etter hvor de faktisk står
-        på akkurat den.
-      </p>
-      <svg id="rommet-spectrum" class="rom-spectrum" viewBox="0 0 620 84"
-           preserveAspectRatio="xMidYMid meet" role="img" hidden="hidden"
-           aria-label="Partiene plassert etter sin posisjon på den valgte dimensjonen. Tabellen under har de samme tallene."></svg>
-    </section>
+    {{if .Statements}}
+    <div class="rom-statements">
+      {{range .Statements}}
+      <article class="rom-statement">
+        <header class="rom-statement-head">
+          <div>
+            <p class="rom-statement-meta">Utsagn {{.Number}} <span aria-hidden="true">·</span> {{.Dimension}}</p>
+            <h3><a href="{{.Href}}">{{.ShortName}}</a></h3>
+            <p class="rom-statement-text">{{.Text}}</p>
+          </div>
+          <a class="rom-open" href="{{.Href}}">Se hele saken <span aria-hidden="true">→</span></a>
+        </header>
 
-    <div id="rommet-focus" class="rom-focus" aria-live="polite">
-      <p class="rom-focus-empty">Klikk et punkt for å se partiets egne tall.</p>
+        {{if .PairGap}}<p class="rom-pair-gap">{{.PairGap}}</p>{{end}}
+
+        <div class="rom-positions" role="group" aria-label="Partienes posisjoner på utsagn {{.Number}}">
+          {{range .Groups}}
+          <section class="rom-position">
+            <h4>{{.Label}}</h4>
+            {{if .Parties}}
+            <ul>
+              {{range .Parties}}
+              <li><a class="rom-party{{if .Selected}} is-selected{{end}}" href="{{.Href}}" aria-label="{{.AriaLabel}}"><span class="rom-dot rom-dot-{{.ID}}" aria-hidden="true"></span>{{.Short}}</a></li>
+              {{end}}
+            </ul>
+            {{else}}<p class="rom-empty">Ingen</p>{{end}}
+          </section>
+          {{end}}
+        </div>
+
+        <div class="rom-statement-foot">
+          <span>{{.Coded}} av {{.Total}} partier har et dokumentert svar</span>
+          {{if .Undocumented}}
+          <span class="rom-undocumented">Ikke vurdert:
+            {{range $i, $p := .Undocumented}}{{if $i}}, {{end}}<a href="{{$p.Href}}" aria-label="{{$p.AriaLabel}}">{{$p.Short}}</a>{{end}}
+          </span>
+          {{end}}
+        </div>
+      </article>
+      {{end}}
     </div>
+    {{if not .Filtered}}
+    <a class="rom-all" href="{{.AllHref}}">Se alle {{.TotalMatches}} uenighetene <span aria-hidden="true">→</span></a>
+    {{end}}
+    {{else}}
+    <div class="rom-no-results">
+      <h3>Ingen uenigheter å vise her</h3>
+      <p>Prøv et annet tema eller et annet partipar. Partiene kan også mangle dokumenterte svar på samme sak.</p>
+      <a href="/rommet">Se de største uenighetene</a>
+    </div>
+    {{end}}
   </section>
 
-  <section class="rom-table-wrap">
-    <h2>Tallene bak tegningen</h2>
-    <table class="rom-table">
-      <caption>Partiets plassering på de tre aksene, spredningen i egne svar, og hvor mange utsagn som er kodet.</caption>
-      <thead>
-        <tr><th scope="col">Parti</th><th scope="col">Akse 1 · 2 · 3</th><th scope="col">Spredning</th><th scope="col">Kodede utsagn</th></tr>
-      </thead>
-      <tbody>
-        {{range .Parties}}
-        <tr>
-          <th scope="row"><span class="rom-dot rom-dot-{{.ID}}"></span>{{.Name}}</th>
-          <td class="rom-num">{{.Centre}}</td>
-          <td class="rom-num">{{.Spread}}</td>
-          <td class="rom-num">{{.Answers}}</td>
-        </tr>
-        {{end}}
-      </tbody>
-    </table>
-  </section>
+  <details class="rom-method">
+    <summary>Slik leser du posisjonene</summary>
+    <div class="rom-method-body">
+      <p><strong>For og mot gjelder alltid det konkrete utsagnet.</strong> Skalaen er ikke en venstre–høyre-akse. Vi viser den nyeste daterte kildens posisjon, ikke et gjennomsnitt av gamle og nye svar.</p>
+      <p>Et parti uten kodet posisjon står under «Ikke vurdert». Det blir aldri regnet som nøytralt. Sorteringen bruker avstanden på skalaen fra sterkt mot til sterkt for.</p>
+      <p><a href="/metode">Les metoden</a> eller åpne et partinavn for å kontrollere den konkrete kilden.</p>
+      {{template "explore-contract" (explore "/rommet")}}
+    </div>
+  </details>
 
-  {{if .Dimensions}}
-  <section class="rom-dims">
-    <h2>Dimensjonene og hvor godt de er dekket</h2>
-    <p class="prose-note">
-      Spredningen her er rå, altså før standardiseringen. Den viser hvorfor
-      standardiseringen er nødvendig, og hvor mange utsagn hver dimensjon
-      faktisk hviler på. En dimensjon med to utsagn er ikke like sikker som en
-      med sju.
-    </p>
-    <table class="rom-table">
-      <caption>Dimensjoner, antall utsagn, hvor mange partier som har en kodet posisjon, og rå spredning.</caption>
-      <thead>
-        <tr><th scope="col">Dimensjon</th><th scope="col">Utsagn</th><th scope="col">Partier kodet</th><th scope="col">Rå spredning</th></tr>
-      </thead>
-      <tbody>
-        {{range .Dimensions}}
-        <tr>
-          <th scope="row">{{.Name}}</th>
-          <td class="rom-num">{{.Statements}}</td>
-          <td class="rom-num">{{.Coded}}</td>
-          <td class="rom-num">{{.Variance}}</td>
-        </tr>
-        {{end}}
-      </tbody>
-    </table>
-  </section>
-  {{end}}
-
-  <p class="prose-note">
-    Aksene er beregnet fra datasettet ved hver forespørsel, ikke skrevet for
-    hånd. Er en posisjon endret, endrer bildet seg med den, og en test krever at
-    tallene på denne siden stemmer med projeksjonen.
-  </p>
   {{template "explore-next" (explore "/rommet")}}
-
 </main>
 
-<script id="rommet-data" type="application/json">{{.PayloadJSON}}</script>
-<script src="{{asset "/static/js/rom.js"}}"></script>
-
-
-{{template "footerlinks"}}
-
+<footer class="site">
+  <p>Posisjonene kommer fra den åpne kildebasen. <a href="/data">Åpne data</a> · <a href="/metode">Metoden</a></p>
+  {{template "footerlinks"}}
+</footer>
 </body>
 </html>

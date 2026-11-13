@@ -5,15 +5,25 @@ import (
 	"testing"
 )
 
-func TestRommetAxisCardsDoNotShareTheAbsoluteOverlayClass(t *testing.T) {
+func TestRommetPutsTheTaskBeforeTheResultsInLinearDocumentFlow(t *testing.T) {
 	body := getRommet(t)
-	if !strings.Contains(body, `<section class="rom-axis-section">`) {
-		t.Error("axis cards lost their in-flow section class")
+	for _, want := range []string{
+		`<main class="rom-comparison">`,
+		`<section class="rom-finder"`,
+		`<div class="rom-positions"`,
+	} {
+		if !strings.Contains(body, want) {
+			t.Errorf("the linear comparison layout is missing %q", want)
+		}
 	}
-	if strings.Contains(body, `<section class="rom-axes">`) {
-		t.Error("axis cards reuse the canvas overlay class and leave the document flow")
+	formAt := strings.Index(body, `<form class="rom-controls"`)
+	resultsAt := strings.Index(body, `<section class="rom-results"`)
+	if formAt < 0 || resultsAt < 0 || formAt > resultsAt {
+		t.Errorf("the task must precede the results: form=%d results=%d", formAt, resultsAt)
 	}
-	if !strings.Contains(body, `<div id="rommet-axes" class="rom-axes"`) {
-		t.Error("the canvas lost its absolute axis overlay")
+	for _, unwanted := range []string{`class="rom-axes"`, `class="rom-canvas-wrap"`, `class="rom-spectrum-wrap"`} {
+		if strings.Contains(body, unwanted) {
+			t.Errorf("an absolute or canvas-specific layout survived: %q", unwanted)
+		}
 	}
 }

@@ -36,8 +36,8 @@ var explorePages = []exploreStep{
 	},
 	{
 		Href:     "/rommet",
-		Label:    "Rommet",
-		Question: "Hvilke dimensjoner skiller partiene når alle utsagnene sees samlet?",
+		Label:    "Uenigheter",
+		Question: "Hvilke konkrete saker er partiene uenige om, og hvor langt fra hverandre står de?",
 	},
 	{
 		Href:     "/stemmer",

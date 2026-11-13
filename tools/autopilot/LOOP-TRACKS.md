@@ -564,3 +564,30 @@ blocked the GET finder. It is now `form-action 'self'`, with a regression test.
 The front page does NOT promise 12 questions by default: the existing default is
 58 scored statements, and the copy now offers quick mode or all 60 explicitly.
 No evidence, scoring or stored-answer behaviour changed.
+
+## Rommet replaced by concrete disagreements, 2026-11-13
+
+The old /rommet asked readers to interpret a rotating WebGL projection before it
+answered a practical question. The same URL is now labelled Uenigheter. It shows
+real statements, grouped from sterkt mot to sterkt for, with a GET topic filter
+and a two-party comparison. Every party chip links to that party's evidence on
+the statement. There is no canvas, projection, averaging or client JavaScript.
+
+The positions still come from scoring.ComputeCell's newest coded row. A nil
+position is Ikke vurdert, never neutral. Sorting uses the distance between
+positions, not an editorial importance ranking. Default: six of 58 statements
+with disagreement. Measured Ap-H: 25 statements where both have different coded
+positions. The party comparison survives statement -> Til uenighetene through
+allowlisted a/b/tema/alle parameters; unrelated return parameters are discarded.
+
+Browser measurements after the redesign:
+- Chromium 1280x900: six statements, five position groups, zero canvas elements,
+  no overflow, zero console errors;
+- 390x844: linear position rows, 44px party targets, no overflow;
+- real Chrome preserved a=ap and b=h through /rommet -> /utsagn/55#party-ap ->
+  /rommet#saker;
+- hub cards reduced from a 13rem minimum to 10rem; coverage text now says
+  "dokumentert svar" instead of "posisjon med kilde".
+
+The old rom.js is removed. Its palette test now protects the actual chip tokens,
+not a retired consumer. No evidence files or scoring code changed.

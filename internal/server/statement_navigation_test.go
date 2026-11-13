@@ -62,6 +62,20 @@ func TestStatementReturnPreservesExactFinderQuery(t *testing.T) {
 	}
 }
 
+func TestStatementReturnPreservesRommetComparison(t *testing.T) {
+	body := bodyOf(t, newTestServer(), "/utsagn/55?fra=rommet&tema=finansiering-av-fellesskapet&a=ap&b=h&alle=1&external=https%3A%2F%2Fevil.example")
+	want := `href="/rommet?a=ap&amp;alle=1&amp;b=h&amp;tema=finansiering-av-fellesskapet#saker"`
+	if !strings.Contains(body, want) {
+		t.Errorf("statement does not return to the exact comparison; missing %q", want)
+	}
+	if !strings.Contains(body, "Til uenighetene") {
+		t.Error("the return link does not name the comparison the reader came from")
+	}
+	if strings.Contains(body, "evil.example") {
+		t.Error("an unrelated query parameter entered the comparison return link")
+	}
+}
+
 func TestStatementNeighboursFollowTheRealNumbering(t *testing.T) {
 	for i, statement := range data.Store.Statements {
 		page := buildStatementPage(data.Store, statement)

@@ -80,7 +80,7 @@ func TestExploreHubRendersServerSideSearchWithoutJavaScript(t *testing.T) {
 		`value="tannhelse"`,
 		`value="universell-grunnmur" selected`,
 		`href="/utsagn/25?q=tannhelse&amp;tema=universell-grunnmur"`,
-		"partier har en posisjon med kilde",
+		"partier har et dokumentert svar",
 		"Hva vil du finne ut?",
 	} {
 		if !strings.Contains(body, want) {

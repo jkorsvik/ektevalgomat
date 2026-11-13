@@ -79,8 +79,10 @@ The same gofmt, vet and test run on every PR that touches this stack
 `tools/verify/` fetch live pages, so run them locally before a PR that
 changes evidence.
 
-`/healthz` returns 200 once the server is up. `/utsagn/{number}` renders
-the evidence-chain page for each statement. `/om` explains why this
+`/healthz` returns 200 once the server is up. `/utforsk` is the question-led
+index: a server-rendered search and topic filter over all statements, plus the
+nine analysis pages grouped by reader question. It works without JavaScript.
+`/utsagn/{number}` renders the evidence-chain page for each statement. `/om` explains why this
 exists, `/metode` explains the methodology (source tiers, attribution),
 `/personvern` is the privacy page. `/data` lists the whole dataset and
 links it as files: `/data/utsagn.json`, `/data/evidens.json` and

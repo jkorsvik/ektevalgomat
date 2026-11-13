@@ -534,3 +534,33 @@ Measured, not asserted:
 `tools/verify/test_check_head.py` (6 tests) keeps the script, the hook and the
 CONTRIBUTING wiring from being deleted, and pins that a bad ref still fails and
 that a run reporting no package ok counts as failure.
+
+## Question-led exploration, 2026-11-13
+
+The reader journey is now organised around questions rather than artefacts.
+`/utforsk` is a no-JavaScript hub with GET search, topic filters and coverage
+counts derived from scoring cells. The nine analysis pages remain at their old
+URLs, grouped under three reader questions. Their question/source/gap contract
+stays; the forced nine-step walk is replaced by the hub plus two related pages.
+
+Statement pages put party positions before the evidence-chain model and programme
+promises. A lead source's verbatim quote and original URL are visible before the
+technical disclosure. Previous/next links follow the real numbering, and a result
+opened from a filtered hub carries q/tema so "Alle saker" returns to that exact
+search.
+
+Browser measurements, Chromium desktop 1280x900 and mobile 390x844:
+- default hub: 60 statement results, no horizontal overflow;
+- q=tannhelse + tema=universell-grunnmur: 1 result, utsagn 25, 9 of 9 parties;
+- form submission returns to #saker: desktop result top 340 px, mobile 506 px,
+  both inside the viewport;
+- the real Chrome browser preserved q and tema through statement -> Alle saker;
+- lead quote and original-source link visible with technical details closed;
+- desktop and mobile grouped menu and statement page: no horizontal overflow,
+  zero console errors.
+
+The browser caught a blocker no server test had seen: CSP `form-action 'none'`
+blocked the GET finder. It is now `form-action 'self'`, with a regression test.
+The front page does NOT promise 12 questions by default: the existing default is
+58 scored statements, and the copy now offers quick mode or all 60 explicitly.
+No evidence, scoring or stored-answer behaviour changed.

@@ -611,6 +611,7 @@ func New(logger *slog.Logger) http.Handler {
 		"sourceTierShort":    sourceTierShort,
 		"issueURL":           issueURL,
 		"explore":            exploreInfo,
+		"exploreMenu":        exploreMenuGroups,
 		"siteBase":           func() string { return siteBase },
 		"partyShort": func(id string) string {
 			p, ok := ds.Party(id)
@@ -636,6 +637,7 @@ func New(logger *slog.Logger) http.Handler {
 			ParseFS(web.Templates, "templates/"+name, "templates/partials.tmpl"))
 	}
 	indexTmpl := page("index.html.tmpl")
+	exploreHubTmpl := page("utforsk.html.tmpl")
 	statementTmpl := page("statement.html.tmpl")
 	metodeTmpl := page("metode.html.tmpl")
 	dataTmpl := page("data.html.tmpl")
@@ -707,6 +709,15 @@ func New(logger *slog.Logger) http.Handler {
 		}
 	})
 
+	mux.HandleFunc("GET /utforsk", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		view := buildExploreHub(ds, r.URL.Query().Get("q"), r.URL.Query().Get("tema"))
+		if err := exploreHubTmpl.Execute(w, view); err != nil {
+			logger.Error("render explore hub", "err", err)
+			http.Error(w, "internal error", http.StatusInternalServerError)
+		}
+	})
+
 	mux.HandleFunc("GET /utsagn/{number}", func(w http.ResponseWriter, r *http.Request) {
 		n, err := strconv.Atoi(r.PathValue("number"))
 		if err != nil {
@@ -726,7 +737,20 @@ func New(logger *slog.Logger) http.Handler {
 			return
 		}
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		if err := statementTmpl.Execute(w, buildStatementPage(ds, *found)); err != nil {
+		page := buildStatementPage(ds, *found)
+		// A result opened from the statement finder carries only the two
+		// read-only filter parameters. Return to that exact list, not to a
+		// different query or to an external URL supplied by the request.
+		returnQuery := url.Values{}
+		for _, key := range []string{"q", "tema"} {
+			if value := r.URL.Query().Get(key); value != "" {
+				returnQuery.Set(key, value)
+			}
+		}
+		if len(returnQuery) > 0 {
+			page.ExploreTopicHref = "/utforsk?" + returnQuery.Encode() + "#saker"
+		}
+		if err := statementTmpl.Execute(w, page); err != nil {
 			logger.Error("render statement", "err", err, "number", n)
 			http.Error(w, "internal error", http.StatusInternalServerError)
 		}

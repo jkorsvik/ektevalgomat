@@ -89,10 +89,9 @@ var navLinks = []navLink{
 	{"/", "Valgomat", "core"},
 	{"/resultat", "Resultat", "core"},
 	{"/partier", "Partiene", "core"},
-	// Utforsk is ordered as the walk, not as a history of what was built: what the
-	// parties mean, then what they did, then what it costs. The spine in
-	// explore.go is the same order, and a reader who follows the menu follows the
-	// argument.
+	// Utforsk starts at a question-led hub. The nine analysis pages remain
+	// directly available in the menu, grouped by the question they answer.
+	{"/utforsk", "Utforsk", "explore"},
 	{"/kart", "Kartet", "explore"},
 	{"/rommet", "Rommet", "explore"},
 	{"/stemmer", "Stemmemønster", "explore"},

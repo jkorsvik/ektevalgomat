@@ -6,85 +6,68 @@ import (
 	"github.com/jkorsvik/ektevalgomat/internal/data"
 )
 
-// The Utforsk pages were nine separate doors. A reader landed on one from the
-// menu, the page answered its question in its own visual language, and there was
-// no way onward to the page that answers the neighbouring question — three of the
-// nine had no link to any other Utforsk page at all.
+// The Utforsk pages answer different reader questions; they are not chapters in
+// a course. This file defines the question/source/gap contract at the top of each
+// page and the related questions at the bottom. The /utforsk hub groups the same
+// pages by reader intent, so nobody has to follow nine pages in a fixed order.
 //
-// This file is the spine: one ordered walk in three questions, a fixed contract at
-// the top of every page saying what it answers, where the numbers come from and
-// what is missing, and one handoff at the bottom naming the next question. The
-// contract is derived from the artefacts rather than typed, so it cannot drift
-// away from the data the page itself is drawing.
-//
-// A test walks navLinks and fails if an Utforsk page is missing from the spine, if
-// a step has an empty contract line, or if a step points at a page that is not in
-// the walk.
+// The contract is derived from the artefacts rather than typed, so it cannot drift
+// away from the data the page itself is drawing. Tests cover every menu page and
+// prove that the hub and related-question links actually render.
 
-// exploreStep is one page's place in the walk.
+// exploreStep is one page's public explanation.
 type exploreStep struct {
 	Href     string
 	Label    string
 	Question string
 	Source   string
 	Missing  string
-	// Next is the neighbouring question, not the next menu item: the walk reads
-	// "what do they mean" into "what did they do" into "what does it cost".
-	NextHref     string
-	NextLabel    string
-	NextQuestion string
+	// Related contains the other pages that answer the same broad reader
+	// question. It is deliberately not a single prescribed next step.
+	Related []exploreStep
 }
 
-// exploreSpine is the ordered walk. Order is the argument: meaning, then record,
-// then money.
-var exploreSpine = []exploreStep{
+// explorePages is the set of analysis pages, in menu order.
+var explorePages = []exploreStep{
 	{
 		Href:     "/kart",
 		Label:    "Kartet",
 		Question: "Hvor enige er partiene, utsagn for utsagn?",
-		NextHref: "/rommet",
 	},
 	{
 		Href:     "/rommet",
 		Label:    "Rommet",
 		Question: "Hvilke dimensjoner skiller partiene når alle utsagnene sees samlet?",
-		NextHref: "/stemmer",
 	},
 	{
 		Href:     "/stemmer",
 		Label:    "Stemmemønster",
 		Question: "Hvilke partier stemmer sammen i salen, og hvilke gjør det ikke?",
-		NextHref: "/tidslinje",
 	},
 	{
 		Href:     "/tidslinje",
 		Label:    "År for år",
 		Question: "Når i tid ligger kildene vi bygger på?",
-		NextHref: "/personer",
 	},
 	{
 		Href:     "/personer",
 		Label:    "Personer",
 		Question: "Hvem sitter på hvilke verv, i hvilke komiteer, og hvordan stemmer de?",
-		NextHref: "/makt",
 	},
 	{
 		Href:     "/makt",
 		Label:    "Makt",
 		Question: "Hvem har makt til å bestemme, og hvor mange er de?",
-		NextHref: "/budsjett",
 	},
 	{
 		Href:     "/budsjett",
 		Label:    "Budsjettet",
 		Question: "Hva vil partiene bruke penger på?",
-		NextHref: "/penger",
 	},
 	{
 		Href:     "/penger",
 		Label:    "Penger",
 		Question: "Hvor kommer partienes penger fra?",
-		NextHref: "/eierskap",
 	},
 	{
 		Href:     "/eierskap",
@@ -93,32 +76,47 @@ var exploreSpine = []exploreStep{
 	},
 }
 
-// exploreInfo returns a page's contract and handoff, with the source and gap lines
-// built from the artefacts.
+// exploreInfo returns a page's contract and the related pages in its reader
+// group. Related pages are built without recursion: they need their own contract,
+// but not another copy of their own related list.
 func exploreInfo(href string) exploreStep {
-	for i, s := range exploreSpine {
-		if s.Href != href {
+	var found exploreStep
+	for _, candidate := range explorePages {
+		if candidate.Href == href {
+			found = candidate
+			break
+		}
+	}
+	if found.Href == "" {
+		return exploreStep{}
+	}
+	found.Source = exploreSource(href)
+	found.Missing = exploreGap(href)
+	for _, definition := range exploreGroupDefinitions {
+		inGroup := false
+		for _, member := range definition.Hrefs {
+			if member == href {
+				inGroup = true
+				break
+			}
+		}
+		if !inGroup {
 			continue
 		}
-		s.Source = exploreSource(href)
-		s.Missing = exploreGap(href)
-		if i+1 < len(exploreSpine) {
-			next := exploreSpine[i+1]
-			s.NextHref = next.Href
-			s.NextLabel = next.Label
-			s.NextQuestion = next.Question
-		} else {
-			// The walk closes where a reader's question starts: having seen what
-			// the parties mean, did and cost, the next thing to do is answer the
-			// valgomat. Ending on the last page with no way out is the dead end
-			// this whole file exists to remove.
-			s.NextHref = "/"
-			s.NextLabel = "Valgomat"
-			s.NextQuestion = "Hvilket parti er du mest enig med?"
+		for _, member := range definition.Hrefs {
+			if member == href {
+				continue
+			}
+			for _, candidate := range explorePages {
+				if candidate.Href == member {
+					candidate.Source = exploreSource(member)
+					candidate.Missing = exploreGap(member)
+					found.Related = append(found.Related, candidate)
+				}
+			}
 		}
-		return s
 	}
-	return exploreStep{}
+	return found
 }
 
 // exploreSource states, in one line, what the page draws on.

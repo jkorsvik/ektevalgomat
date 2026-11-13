@@ -2,7 +2,9 @@ package server
 
 import (
 	"encoding/json"
+	"net/url"
 	"sort"
+	"strconv"
 
 	"github.com/jkorsvik/ektevalgomat/internal/data"
 	"github.com/jkorsvik/ektevalgomat/internal/scoring"
@@ -88,10 +90,19 @@ func (p quizPayload) MarshalIndent() ([]byte, error) {
 // reproduserbar politisk hendelseslogg der enhver bruker kan åpne
 // utsagnet og se" the full chain — rendered directly, not hidden behind
 // client-side JS, so it's linkable and readable with no script at all.
+type statementNeighbour struct {
+	Number    int
+	ShortName string
+	Href      string
+}
+
 type statementPage struct {
 	Meta                  pageMeta
 	Statement             data.Statement
 	SnapshotDate          string
+	ExploreTopicHref      string
+	Previous              *statementNeighbour
+	Next                  *statementNeighbour
 	TotalParties          int
 	InstitutionalEvidence []evidenceView
 	// DocumentedRows and UndocumentedRows split PartyRows in two so the
@@ -204,6 +215,27 @@ func buildStatementPage(ds *data.Dataset, statement data.Statement) statementPag
 	all := ds.EvidenceForStatement(statement.ID)
 
 	page := statementPage{Meta: statementMeta(statement), Statement: statement, SnapshotDate: SnapshotDate, TotalParties: len(ds.Parties)}
+	page.ExploreTopicHref = "/utforsk?tema=" + url.QueryEscape(slugify(statement.Dimension)) + "#saker"
+	for i, candidate := range ds.Statements {
+		if candidate.ID != statement.ID {
+			continue
+		}
+		if i > 0 {
+			previous := ds.Statements[i-1]
+			page.Previous = &statementNeighbour{
+				Number: previous.Number, ShortName: previous.ShortName,
+				Href: "/utsagn/" + strconv.Itoa(previous.Number),
+			}
+		}
+		if i+1 < len(ds.Statements) {
+			next := ds.Statements[i+1]
+			page.Next = &statementNeighbour{
+				Number: next.Number, ShortName: next.ShortName,
+				Href: "/utsagn/" + strconv.Itoa(next.Number),
+			}
+		}
+		break
+	}
 	page.Chain = buildChain(ds, statement.ID)
 	page.ChainAny = chainHasAny(page.Chain)
 	for _, s := range page.Chain {

@@ -7,34 +7,32 @@ import (
 	"github.com/jkorsvik/ektevalgomat/internal/data"
 )
 
-// The spine is the only thing standing between nine separate doors and a walk, so
-// these tests check the walk itself: nobody missing, no dead ends except the last
-// step, and every page actually rendering its contract.
+// These tests cover the shared contract, the hub and the related-question links.
 
-func TestSpineCoversEveryExplorePage(t *testing.T) {
-	inSpine := map[string]bool{}
-	for _, s := range exploreSpine {
-		if inSpine[s.Href] {
-			t.Errorf("%s appears twice in the spine", s.Href)
+func TestPageSetCoversEveryExploreMenuPage(t *testing.T) {
+	inPages := map[string]bool{}
+	for _, s := range explorePages {
+		if inPages[s.Href] {
+			t.Errorf("%s appears twice in the page set", s.Href)
 		}
-		inSpine[s.Href] = true
+		inPages[s.Href] = true
 	}
 	for _, link := range navLinks {
-		if link.Group != "explore" {
+		if link.Group != "explore" || link.Href == "/utforsk" {
 			continue
 		}
-		if !inSpine[link.Href] {
-			t.Errorf("%s is in the Utforsk menu but not in the spine", link.Href)
+		if !inPages[link.Href] {
+			t.Errorf("%s is in the Utforsk menu but not in the page set", link.Href)
 		}
 	}
-	if len(inSpine) != len(exploreSpine) {
-		t.Fatalf("%d entries but %d distinct hrefs", len(exploreSpine), len(inSpine))
+	if len(inPages) != len(explorePages) {
+		t.Fatalf("%d entries but %d distinct hrefs", len(explorePages), len(inPages))
 	}
 }
 
 // A step with an empty contract line would render a heading over nothing.
 func TestEveryStepStatesQuestionSourceAndGap(t *testing.T) {
-	for _, s := range exploreSpine {
+	for _, s := range explorePages {
 		info := exploreInfo(s.Href)
 		if strings.TrimSpace(info.Question) == "" {
 			t.Errorf("%s has no question", s.Href)
@@ -48,39 +46,30 @@ func TestEveryStepStatesQuestionSourceAndGap(t *testing.T) {
 	}
 }
 
-// Every step but the last must hand off to the next question, and the handoff must
-// point somewhere in the walk. This is what stops the spine drifting into the dead
-// ends it replaced.
-func TestSpineIsOneWalkWithoutDeadEnds(t *testing.T) {
-	for i, s := range exploreSpine {
+// Every page offers two related questions in its own reader group. There is no
+// prescribed next chapter and no last page that becomes a dead end.
+func TestEveryExplorePageHasRelatedQuestions(t *testing.T) {
+	for _, s := range explorePages {
 		info := exploreInfo(s.Href)
-		last := i == len(exploreSpine)-1
-		if last {
-			// The walk closes back at the valgomat rather than stopping dead.
-			if info.NextHref != "/" || info.NextLabel == "" || info.NextQuestion == "" {
-				t.Errorf("the last step %s does not close the loop: %q %q %q",
-					s.Href, info.NextHref, info.NextLabel, info.NextQuestion)
+		if len(info.Related) != 2 {
+			t.Errorf("%s has %d related pages, want 2", s.Href, len(info.Related))
+		}
+		for _, related := range info.Related {
+			if related.Href == s.Href {
+				t.Errorf("%s points to itself", s.Href)
 			}
-			continue
-		}
-		want := exploreSpine[i+1]
-		if info.NextHref != want.Href {
-			t.Errorf("%s hands off to %q, want %q", s.Href, info.NextHref, want.Href)
-		}
-		if info.NextLabel == "" || info.NextQuestion == "" {
-			t.Errorf("%s hands off without naming the next question", s.Href)
-		}
-		if exploreInfo(info.NextHref).Href == "" {
-			t.Errorf("%s points at %s, which is not in the spine", s.Href, info.NextHref)
+			if exploreInfo(related.Href).Href == "" {
+				t.Errorf("%s points at unknown related page %s", s.Href, related.Href)
+			}
 		}
 	}
 }
 
-// The pages must show what the spine says. A contract defined in Go and never
-// rendered is a comment, not a mechanism.
-func TestEveryExplorePageRendersItsContract(t *testing.T) {
+// The pages must show the contract and the way back to the hub. A contract
+// defined in Go and never rendered is a comment, not a mechanism.
+func TestEveryExplorePageRendersItsContractAndRelatedQuestions(t *testing.T) {
 	srv := newTestServer()
-	for i, s := range exploreSpine {
+	for _, s := range explorePages {
 		body := bodyOf(t, srv, s.Href)
 		if !strings.Contains(body, "Spørsmålet:") {
 			t.Errorf("%s does not state its question", s.Href)
@@ -88,16 +77,16 @@ func TestEveryExplorePageRendersItsContract(t *testing.T) {
 		if !strings.Contains(body, "Det som mangler:") {
 			t.Errorf("%s does not state what it cannot show", s.Href)
 		}
-		next := exploreSpine[(i+1)%len(exploreSpine)]
-		nextHref := next.Href
-		if i == len(exploreSpine)-1 {
-			nextHref = "/"
+		if !strings.Contains(body, `href="/utforsk"`) || !strings.Contains(body, "Alle spørsmål") {
+			t.Errorf("%s does not link back to the question hub", s.Href)
 		}
-		if !strings.Contains(body, `href="`+nextHref+`"`) {
-			t.Errorf("%s does not link onward to %s", s.Href, nextHref)
+		if !strings.Contains(body, "Relaterte spørsmål:") {
+			t.Errorf("%s has no related-question navigation", s.Href)
 		}
-		if !strings.Contains(body, "Neste spørsmål:") {
-			t.Errorf("%s has no handoff line", s.Href)
+		for _, related := range exploreInfo(s.Href).Related {
+			if !strings.Contains(body, `href="`+related.Href+`"`) {
+				t.Errorf("%s does not link to related page %s", s.Href, related.Href)
+			}
 		}
 	}
 }

@@ -16,25 +16,18 @@
   <h1>Ekte valgomat</h1>
   <span class="snapshot-badge">Øyeblikksbilde: hendelser til og med {{.SnapshotDate}}</span>
 
-  {{/* Front page: one task first, everything else one level down.
-       (2026-10-12, after feedback that the eleven-dimension overview,
-       every element reasonable on its own, was the first thing a
-       visitor met before being given any task.) The first screen now
-       answers "what do I do here" in a short intro plus one start
-       action; the dimension overview keeps all its content but moves
-       below the quiz, inside a collapsed <details>. Why this exists
-       and how it is built stay on /om and /metode, the opted-into
-       depth. */}}
+  {{/* Front page: the quiz is the primary task, with an explicit alternative
+       for readers who want to inspect sources without a match score. The
+       worked example shows the evidence model in one concrete case. Why this
+       exists and how it is built stay on /om and /metode. */}}
   <section class="card front-intro">
-    <h2>Slik bruker du valgomaten</h2>
+    <h2>Svar på utsagn. Kontroller partienes kilder.</h2>
     <p class="lede front-lede">
-      Vanlige valgomater sammenligner deg med hva partiene skriver i
-      valgkampen. Her måles de mot <strong>hva de faktisk har stemt,
-      foreslått og prioritert på Stortinget</strong>. Du tar stilling til
-      12 nøkkelutsagn (hurtigmodus) eller alle {{.Statements}} utsagn, og
-      ser kilden bak hver eneste partiposisjon. Svarene dine blir i
-      nettleseren din.
+      Se hvilke partier som er nærmest deg, målt mot <strong>hva de faktisk
+      har stemt, foreslått og prioritert på Stortinget</strong>. Du kan
+      kontrollere hver dokumenterte posisjon mot kilden.
     </p>
+    <p class="front-facts">Ingen registrering · Svarene blir i nettleseren din</p>
     <div class="front-hook" aria-label="Eksempel på kildesjekket sak">
       <p class="front-hook-title"><strong>Eksempel:</strong> <a href="/utsagn/1">Utsagn 1 · Offentlig lobbyregister</a></p>
       <p class="front-hook-body">
@@ -44,9 +37,16 @@
         <a href="/utsagn/1">Åpne kildene og voteringen <span aria-hidden="true">→</span></a>
       </p>
     </div>
-    <p class="front-start">
-      <a class="start-link" href="#quiz-frame">Start valgomaten <span aria-hidden="true">↓</span></a>
-    </p>
+    <div class="front-actions">
+      <p class="front-start">
+        <a class="start-link" href="#quiz-frame">Start valgomaten <span aria-hidden="true">↓</span></a>
+      </p>
+      <p class="front-explore">
+        <a class="explore-link" href="/utforsk">Utforsk sakene og kildene <span aria-hidden="true">→</span></a>
+        <span>Ingen matchscore. Velg et utsagn og se hva partiene har gjort.</span>
+      </p>
+    </div>
+    <p class="front-all">Velg hurtigmodus med 12 nøkkelutsagn eller alle {{.Statements}} utsagn inne i valgomaten.</p>
     {{if .NoPosition}}
     <details class="disclosure front-caveat">
       <summary>{{len .NoPosition}} utsagn teller ikke ennå</summary>

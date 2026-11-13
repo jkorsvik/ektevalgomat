@@ -32,7 +32,13 @@
       <details class="nav-explore">
         <summary{{if isExplorePath .Meta.Path}} aria-current="page"{{end}}>Utforsk</summary>
         <div class="nav-explore-list">
-          {{range exploreNav}}<a href="{{.Href}}"{{if eq .Href $.Meta.Path}} aria-current="page"{{end}}>{{.Label}}</a>{{end}}
+          <a class="nav-explore-home" href="/utforsk"{{if eq "/utforsk" $.Meta.Path}} aria-current="page"{{end}}>Start med et spørsmål</a>
+          {{range exploreMenu}}
+          <div class="nav-explore-group">
+            <p>{{.Title}}</p>
+            {{range .Steps}}<a href="{{.Href}}"{{if eq .Href $.Meta.Path}} aria-current="page"{{end}}>{{.Label}}</a>{{end}}
+          </div>
+          {{end}}
         </div>
       </details>
       {{range metaNav}}<a href="{{.Href}}"{{if eq .Href $.Meta.Path}} aria-current="page"{{end}}>{{.Label}}</a>{{end}}
@@ -54,11 +60,20 @@
   </div>
 {{end}}
 
-{{/* The handoff: the neighbouring question, not the next menu item. */}}
+{{/* Orientation without a prescribed course: return to every question, or
+     open one of the two pages that answers a neighbouring question. */}}
 {{define "explore-next"}}
-  {{if .NextHref}}
-  <nav class="explore-next" aria-label="Neste spørsmål">
-    <p>Neste spørsmål: <a href="{{.NextHref}}">{{.NextLabel}}</a> — {{.NextQuestion}}</p>
+  <nav class="explore-next" aria-label="Flere spørsmål å utforske">
+    <p class="explore-all"><a href="/utforsk"><span aria-hidden="true">←</span> Alle spørsmål</a></p>
+    {{if .Related}}
+    <div class="explore-related">
+      <p>Relaterte spørsmål:</p>
+      <ul>
+        {{range .Related}}
+        <li><a href="{{.Href}}">{{.Label}}</a> — {{.Question}}</li>
+        {{end}}
+      </ul>
+    </div>
+    {{end}}
   </nav>
-  {{end}}
 {{end}}

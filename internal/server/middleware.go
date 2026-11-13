@@ -4,14 +4,16 @@ import "net/http"
 
 // withSecurityHeaders: no cookies, no third-party scripts, no inline
 // event handlers — the quiz's own JS lives in /static/js and is loaded
-// by <script src>, so a strict CSP costs nothing here. 'unsafe-inline'
+// by <script src>, so a strict CSP costs little here. 'unsafe-inline'
 // is granted only for the one small JSON data block index.html embeds
 // (see server.go) — that block is our own generated data, never user
-// input, so this does not open an XSS path.
+// input, so this does not open an XSS path. Forms may target only this
+// origin: /utforsk has a read-only GET search form, and there are no POST
+// routes or writes. form-action 'none' silently blocked that search.
 func withSecurityHeaders(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		h := w.Header()
-		h.Set("Content-Security-Policy", "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'")
+		h.Set("Content-Security-Policy", "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'")
 		h.Set("X-Content-Type-Options", "nosniff")
 		h.Set("X-Frame-Options", "DENY")
 		h.Set("Referrer-Policy", "no-referrer-when-downgrade")

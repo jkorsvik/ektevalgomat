@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{template "head" .Meta}}
+<link rel="stylesheet" href="{{asset "/static/css/explore.css"}}">
+</head>
+<body>
+
+{{template "header" .}}
+
+<main class="explore-hub">
+  <header class="hub-hero">
+    <p class="hub-kicker">Utforsk kildene</p>
+    <h1>Hva vil du finne ut?</h1>
+    <p class="hub-lede">
+      Du trenger ikke ta valgomaten for å bruke siden. Start med en sak,
+      en person eller et spørsmål om makt og penger. Hver side viser hva
+      tallene bygger på, og hva de ikke kan fortelle deg.
+    </p>
+  </header>
+
+  <nav class="hub-paths" aria-label="Tre måter å utforske på">
+    <a class="hub-path" href="#saker">
+      <span class="hub-path-number">01</span>
+      <strong>Hva mener partiene om en sak?</strong>
+      <span>Søk i {{.TotalStatements}} utsagn og åpne kildene bak hver posisjon.</span>
+    </a>
+    <a class="hub-path" href="#posisjoner">
+      <span class="hub-path-number">02</span>
+      <strong>Hvordan ser det ut samlet?</strong>
+      <span>Se posisjoner, stemmemønster, personer og makt i større sammenheng.</span>
+    </a>
+    <a class="hub-path" href="#ressurser">
+      <span class="hub-path-number">03</span>
+      <strong>Hva koster det, og hvem eier?</strong>
+      <span>Følg budsjettene, partienes finansiering og statens eierposter.</span>
+    </a>
+  </nav>
+
+  <section class="hub-finder-section" id="saker" aria-labelledby="saker-title">
+    <p class="hub-kicker">Start med saken</p>
+    <h2 id="saker-title">Hva har partiene gjort?</h2>
+    <p class="hub-section-lede">
+      Søk etter et tema, et utsagn eller et nummer. Resultatet viser hvor
+      mange partier som har en dokumentert posisjon, ikke bare et løfte.
+    </p>
+
+    <form class="statement-finder" action="/utforsk#saker" method="get">
+      <div class="finder-query">
+        <label for="statement-query">Søk i utsagnene</label>
+        <input id="statement-query" name="q" type="search" value="{{.Query}}"
+          placeholder="For eksempel tannhelse, skatt eller 25">
+      </div>
+      <div class="finder-topic">
+        <label for="statement-topic">Tema</label>
+        <select id="statement-topic" name="tema">
+          <option value="">Alle temaer</option>
+          {{range .Topics}}
+          <option value="{{.Slug}}"{{if .Active}} selected{{end}}>{{.Name}} ({{.Count}})</option>
+          {{end}}
+        </select>
+      </div>
+      <button class="finder-submit" type="submit">Vis utsagn</button>
+    </form>
+
+    {{if .Filtered}}
+    <p class="finder-context">
+      {{if .TopicName}}Tema: <strong>{{.TopicName}}</strong>.{{end}}
+      <a href="/utforsk#saker">Nullstill søket</a>
+    </p>
+    {{end}}
+    <p class="finder-summary" role="status">{{.ResultSummary}}</p>
+
+    {{if .Statements}}
+    <div class="statement-results">
+      {{range .Statements}}
+      <a class="statement-result" href="{{.Href}}">
+        <span class="statement-result-number" aria-label="Utsagn {{.Number}}">{{.Number}}</span>
+        <span class="statement-result-body">
+          <span class="statement-result-dimension">{{.Dimension}}</span>
+          <strong class="statement-result-title">{{.ShortName}}</strong>
+          <span class="statement-result-text">{{.Text}}</span>
+          {{if .Coded}}
+          <span class="statement-result-coverage">{{.Coded}} av {{.Total}} partier har en posisjon med kilde</span>
+          {{else}}
+          <span class="statement-result-coverage is-empty">Ingen kodede partiposisjoner ennå</span>
+          {{end}}
+        </span>
+        <span class="statement-result-arrow" aria-hidden="true">→</span>
+      </a>
+      {{end}}
+    </div>
+    {{else}}
+    <div class="finder-empty">
+      <p>Prøv et kortere søkeord eller velg et annet tema.</p>
+      <p><a href="/utforsk#saker">Se alle {{.TotalStatements}} utsagn</a></p>
+    </div>
+    {{end}}
+  </section>
+
+  <section class="hub-analysis" aria-labelledby="analysis-title">
+    <p class="hub-kicker">Se større sammenhenger</p>
+    <h2 id="analysis-title">Velg spørsmålet, ikke diagrammet</h2>
+    <p class="hub-section-lede">
+      Disse sidene bruker samme kildegrunnlag, men svarer på ulike spørsmål.
+      Du kan åpne dem i hvilken rekkefølge du vil.
+    </p>
+
+    {{range .Groups}}
+    <section class="hub-group" id="{{.ID}}" aria-labelledby="group-{{.ID}}">
+      <div class="hub-group-heading">
+        <h3 id="group-{{.ID}}">{{.Title}}</h3>
+        <p>{{.Description}}</p>
+      </div>
+      <div class="hub-group-links">
+        {{range .Steps}}
+        <a class="hub-page-link" href="{{.Href}}">
+          <span class="hub-page-label">{{.Label}}</span>
+          <strong>{{.Question}}</strong>
+          <span class="hub-page-action">Åpne siden <span aria-hidden="true">→</span></span>
+        </a>
+        {{end}}
+      </div>
+    </section>
+    {{end}}
+  </section>
+
+  <aside class="hub-promise-note">
+    <strong>Løfter og handling er ikke det samme.</strong>
+    <a href="/partier">Partiprogrammene</a> viser hva partiene sier at de vil.
+    Utsagnssidene viser hva de har foreslått, stemt og prioritert.
+  </aside>
+</main>
+
+<footer class="site">
+  <p>Søket bruker den åpne kildebasen. Svarene dine i valgomaten blir i nettleseren. <a href="/data">Åpne data</a> · <a href="/personvern">Personvern</a></p>
+  {{template "footerlinks"}}
+</footer>
+</body>
+</html>

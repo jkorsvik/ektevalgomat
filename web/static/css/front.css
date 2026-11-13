@@ -18,11 +18,22 @@
 .front-hook p { margin: 0; }
 .front-hook-body { margin-top: var(--sp-1) !important; color: var(--muted); }
 .front-hook-body strong { color: var(--ink); }
-.front-start { margin: var(--sp-6) 0 var(--sp-5); }
+.front-start { margin: 0; }
+.front-facts { margin: var(--sp-3) 0 0; color: var(--muted); font-size: var(--fs-sm); }
+.front-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-6);
+  margin: var(--sp-6) 0 var(--sp-3);
+}
+.front-explore { display: flex; flex-direction: column; gap: var(--sp-1); margin: 0; }
+.front-explore > span { color: var(--muted); font-size: var(--fs-xs); max-width: 18rem; }
+.explore-link { font-weight: 600; font-size: var(--fs-lg); }
+.front-all { margin: 0 0 var(--sp-5); color: var(--muted); font-size: var(--fs-sm); }
 
-/* The one clear action that begins the quiz. Anchors to #quiz-frame (the
-   storage note and #quiz-root together, where quiz.js renders the first
-   question); no quiz logic here. */
+/* Two clear next steps: start the quiz, or inspect the statements without a
+   match score. The primary anchor targets #quiz-frame (the storage note and
+   #quiz-root together); the secondary one goes to /utforsk. */
 .start-link {
   display: inline-block;
   background: var(--accent);
@@ -45,6 +56,11 @@
 /* No JS: the quiz cannot start, so the start action is removed and the
    noscript statement list becomes the visible next step instead. */
 .no-js .front-start { display: none; }
+
+@media (max-width: 620px) {
+  .front-actions { align-items: flex-start; flex-direction: column; }
+  .front-explore > span { max-width: none; }
+}
 
 /* Demoted dimension overview: one click, not the wall in front of the
    task. Native <details>/<summary>, keyboard-operable by default. */

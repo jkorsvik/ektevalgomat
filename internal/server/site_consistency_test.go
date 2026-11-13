@@ -19,7 +19,7 @@ import (
 // and detail pages are deliberately absent: they are reached from a statement or a
 // party, not from the menu.
 func readerPages() []string {
-	return []string{"/", "/resultat", "/partier", "/kart", "/stemmer", "/tidslinje",
+	return []string{"/", "/resultat", "/partier", "/utforsk", "/kart", "/stemmer", "/tidslinje",
 		"/rommet", "/budsjett", "/penger", "/eierskap", "/makt", "/bidra", "/data", "/metode", "/om"}
 }
 

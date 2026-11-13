@@ -8,12 +8,11 @@
    CSP has no 'unsafe-inline' for style-src (see middleware.go), so any
    inline style write is silently dropped by the browser.
 
-   Design note (2026-10-13): one source card carries four questions, and
-   the card is NOT a card-inside-card. The party card is the only box; the
-   source card is type and open space, anchored by a single hairline rule.
-   The interpretation and its "what this does not say" line are always at
-   the top level — never behind the one disclosure, which holds only the
-   verbatim quote and the mechanical coding record. */
+   Design note (2026-11-13): the source card still answers four questions,
+   but the verbatim quote and original-source link are visible before the
+   technical disclosure. Only archived text, the mechanical coding record
+   and review status require the extra click. The party card is the only
+   box; the source card is type and open space, anchored by one rule. */
 
 /* The institutional-context sub-label became an <h3> (was a <p>) so the
    source card's h4 questions stay in order under it (h1 > h2 > h3 > h4).
@@ -121,6 +120,30 @@
 .source-card .claim { font-size: var(--fs-md); line-height: 1.5; margin: var(--sp-1) 0; }
 .source-card a { color: var(--accent); }
 .sc-facts { font-size: var(--fs-xs); color: var(--muted); margin: var(--sp-1) 0; }
+.sc-quote-label { margin: var(--sp-4) 0 var(--sp-1); color: var(--muted); font-size: var(--fs-xs); font-weight: 600; }
+.source-open { margin: var(--sp-2) 0 var(--sp-4); font-size: var(--fs-md); font-weight: 600; }
+.source-open a { display: inline-flex; align-items: center; gap: var(--sp-1); min-height: 44px; }
+
+/* Previous/next is a choice, not a forced course: both links name the actual
+   statement, and "Alle saker" remains in the sticky context above. */
+.statement-pagination {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-5);
+  margin-top: var(--sp-8);
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--line);
+}
+.statement-pagination a { display: flex; flex-direction: column; gap: var(--sp-1); color: var(--ink); text-decoration: none; }
+.statement-pagination a:hover strong { color: var(--accent); text-decoration: underline; }
+.statement-pagination a > span { color: var(--muted); font-size: var(--fs-sm); }
+.statement-pagination a > strong { font-family: var(--serif); font-size: var(--fs-lg); }
+.statement-next { text-align: right; grid-column: 2; }
+.statement-previous { grid-column: 1; }
+@media (max-width: 520px) {
+  .statement-pagination { grid-template-columns: 1fr; }
+  .statement-next, .statement-previous { grid-column: 1; text-align: left; }
+}
 
 /* ---- Party card: the divergence line -------------------------------- */
 /* When a party's own sources code different positions, this says so at
